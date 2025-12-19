@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb TER — 100 Phrases</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            color: #eee;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #00d4aa;
+            text-decoration: none;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 0;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #00d4aa;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(0, 212, 170, 0.3);
+        }
+
+        .subtitle {
+            color: #888;
+            font-size: 1.1rem;
+        }
+
+        .controls {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .btn-primary {
+            background: #00d4aa;
+            color: #1a1a2e;
+        }
+
+        .btn-primary:hover {
+            background: #00f5c4;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0, 212, 170, 0.4);
+        }
+
+        .btn-secondary {
+            background: #3a3a5c;
+            color: #eee;
+        }
+
+        .btn-secondary:hover {
+            background: #4a4a7c;
+        }
+
+        .stats {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #888;
+        }
+
+        .phrase-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .phrase-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .phrase-card:hover {
+            border-color: rgba(0, 212, 170, 0.3);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .phrase-header {
+            display: flex;
+            align-items: center;
+            padding: 18px 20px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .phrase-number {
+            background: #00d4aa;
+            color: #1a1a2e;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .origin-text {
+            flex: 1;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        .toggle-icon {
+            font-size: 1.5rem;
+            color: #00d4aa;
+            transition: transform 0.3s ease;
+            margin-left: 15px;
+        }
+
+        .phrase-card.open .toggle-icon {
+            transform: rotate(180deg);
+        }
+
+        .portuguese-text {
+            padding: 0 20px 20px 71px;
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .phrase-card.open .portuguese-text {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .pt-content {
+            background: rgba(0, 212, 170, 0.1);
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 4px solid #00d4aa;
+        }
+
+        .pt-label {
+            font-size: 0.8rem;
+            color: #00d4aa;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .pt-phrase {
+            font-size: 1.15rem;
+            color: #fff;
+            font-style: italic;
+        }
+
+        .verb-highlight {
+            color: #00d4aa;
+            font-weight: 600;
+        }
+
+        .tense-tag {
+            display: inline-block;
+            background: rgba(255, 193, 7, 0.2);
+            color: #ffc107;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            margin-top: 10px;
+        }
+
+        .search-box {
+            width: 100%;
+            max-width: 400px;
+            padding: 12px 20px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            color: #eee;
+            font-size: 1rem;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .search-box:focus {
+            border-color: #00d4aa;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .search-box::placeholder {
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0 20px;
+            color: #555;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            .phrase-header { padding: 15px; }
+            .portuguese-text { padding-left: 15px; }
+            .phrase-number { width: 30px; height: 30px; font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../" class="back-link">← Back to verb list</a>
+            <h1>🇵🇹 Verb TER</h1>
+            <p class="subtitle">100 popular phrases — European Portuguese</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Show all translations</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
+        </div>
+
+        <div class="stats" id="stats">Showing: 100 of 100 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            European Portuguese Practice — Verb TER
+        </footer>
+    </div>
+
+    <script>
+        const phrases = [
+            // Presente do Indicativo (Present) - possession, age, obligations
+            { en: "I have a car.", pt: "Tenho um carro.", tense: "Presente" },
+            { en: "You have time.", pt: "Tu tens tempo.", tense: "Presente" },
+            { en: "He has a brother.", pt: "Ele tem um irmão.", tense: "Presente" },
+            { en: "She has blue eyes.", pt: "Ela tem olhos azuis.", tense: "Presente" },
+            { en: "We have a meeting.", pt: "Temos uma reunião.", tense: "Presente" },
+            { en: "You (plural) have good ideas.", pt: "Vocês têm boas ideias.", tense: "Presente" },
+            { en: "They have children.", pt: "Eles têm filhos.", tense: "Presente" },
+            { en: "I don't have money.", pt: "Não tenho dinheiro.", tense: "Presente" },
+            { en: "Do you have a pen?", pt: "Tens uma caneta?", tense: "Presente" },
+            { en: "I have to go.", pt: "Tenho de ir.", tense: "Presente" },
+
+            // Age expressions
+            { en: "I am 30 years old.", pt: "Tenho trinta anos.", tense: "Presente" },
+            { en: "How old are you?", pt: "Quantos anos tens?", tense: "Presente" },
+            { en: "She is 25 years old.", pt: "Ela tem vinte e cinco anos.", tense: "Presente" },
+            { en: "The building is 100 years old.", pt: "O edifício tem cem anos.", tense: "Presente" },
+            { en: "My son is 5 years old.", pt: "O meu filho tem cinco anos.", tense: "Presente" },
+
+            // Questions in present
+            { en: "Do you have a moment?", pt: "Tens um momento?", tense: "Presente" },
+            { en: "Does he have experience?", pt: "Ele tem experiência?", tense: "Presente" },
+            { en: "Do we have enough?", pt: "Temos o suficiente?", tense: "Presente" },
+            { en: "What do you have?", pt: "O que tens?", tense: "Presente" },
+            { en: "Do they have the keys?", pt: "Eles têm as chaves?", tense: "Presente" },
+
+            // Pretérito Imperfeito (Imperfect Past)
+            { en: "I had a dog when I was young.", pt: "Eu tinha um cão quando era novo.", tense: "Imperfeito" },
+            { en: "You had more patience before.", pt: "Tu tinhas mais paciência antes.", tense: "Imperfeito" },
+            { en: "He had a good job.", pt: "Ele tinha um bom emprego.", tense: "Imperfeito" },
+            { en: "She had long hair.", pt: "Ela tinha cabelo comprido.", tense: "Imperfeito" },
+            { en: "We had a house by the sea.", pt: "Tínhamos uma casa junto ao mar.", tense: "Imperfeito" },
+            { en: "They had many friends.", pt: "Eles tinham muitos amigos.", tense: "Imperfeito" },
+            { en: "I didn't have time.", pt: "Eu não tinha tempo.", tense: "Imperfeito" },
+            { en: "Did you have a car?", pt: "Tinhas carro?", tense: "Imperfeito" },
+            { en: "There was a problem.", pt: "Havia um problema.", tense: "Imperfeito" },
+            { en: "I used to have doubts.", pt: "Eu tinha dúvidas.", tense: "Imperfeito" },
+
+            // Pretérito Perfeito Simples (Simple Past)
+            { en: "I had a great day.", pt: "Tive um ótimo dia.", tense: "Perfeito" },
+            { en: "You had luck.", pt: "Tu tiveste sorte.", tense: "Perfeito" },
+            { en: "He had an accident.", pt: "Ele teve um acidente.", tense: "Perfeito" },
+            { en: "We had a party.", pt: "Tivemos uma festa.", tense: "Perfeito" },
+            { en: "They had problems.", pt: "Eles tiveram problemas.", tense: "Perfeito" },
+            { en: "I had to leave early.", pt: "Tive de sair cedo.", tense: "Perfeito" },
+            { en: "Did you have fun?", pt: "Tiveste divertimento?", tense: "Perfeito" },
+            { en: "She had a baby.", pt: "Ela teve um bebé.", tense: "Perfeito" },
+            { en: "We had no choice.", pt: "Não tivemos escolha.", tense: "Perfeito" },
+            { en: "I had an idea.", pt: "Tive uma ideia.", tense: "Perfeito" },
+
+            // Futuro do Indicativo (Future)
+            { en: "I will have time tomorrow.", pt: "Terei tempo amanhã.", tense: "Futuro" },
+            { en: "You will have success.", pt: "Tu terás sucesso.", tense: "Futuro" },
+            { en: "He will have to decide.", pt: "Ele terá de decidir.", tense: "Futuro" },
+            { en: "We will have a solution.", pt: "Teremos uma solução.", tense: "Futuro" },
+            { en: "They will have everything ready.", pt: "Eles terão tudo pronto.", tense: "Futuro" },
+            { en: "You will have many opportunities.", pt: "Terás muitas oportunidades.", tense: "Futuro" },
+            { en: "I won't have problems.", pt: "Não terei problemas.", tense: "Futuro" },
+            { en: "Will you have time?", pt: "Terás tempo?", tense: "Futuro" },
+            { en: "She will have to work.", pt: "Ela terá de trabalhar.", tense: "Futuro" },
+            { en: "We will have news soon.", pt: "Teremos notícias em breve.", tense: "Futuro" },
+
+            // Condicional (Conditional)
+            { en: "I would have more time.", pt: "Teria mais tempo.", tense: "Condicional" },
+            { en: "You would have a better life.", pt: "Tu terias uma vida melhor.", tense: "Condicional" },
+            { en: "He would have to agree.", pt: "Ele teria de concordar.", tense: "Condicional" },
+            { en: "We would have enough money.", pt: "Teríamos dinheiro suficiente.", tense: "Condicional" },
+            { en: "They would have no reason.", pt: "Eles não teriam razão.", tense: "Condicional" },
+            { en: "I wouldn't have done that.", pt: "Não teria feito isso.", tense: "Condicional" },
+            { en: "Would you have time?", pt: "Terias tempo?", tense: "Condicional" },
+            { en: "She would have to choose.", pt: "Ela teria de escolher.", tense: "Condicional" },
+            { en: "It would have been better.", pt: "Teria sido melhor.", tense: "Condicional" },
+            { en: "I would have preferred.", pt: "Teria preferido.", tense: "Condicional" },
+
+            // Presente do Conjuntivo (Present Subjunctive)
+            { en: "I hope you have luck.", pt: "Espero que tenhas sorte.", tense: "Conjuntivo" },
+            { en: "It's important that he has support.", pt: "É importante que ele tenha apoio.", tense: "Conjuntivo" },
+            { en: "I want us to have peace.", pt: "Quero que tenhamos paz.", tense: "Conjuntivo" },
+            { en: "I doubt that she has time.", pt: "Duvido que ela tenha tempo.", tense: "Conjuntivo" },
+            { en: "Even though you have money...", pt: "Embora tenhas dinheiro...", tense: "Conjuntivo" },
+            { en: "Whatever you have...", pt: "O que quer que tenhas...", tense: "Conjuntivo" },
+            { en: "It's necessary that they have patience.", pt: "É preciso que eles tenham paciência.", tense: "Conjuntivo" },
+            { en: "I don't think he has reason.", pt: "Não acho que ele tenha razão.", tense: "Conjuntivo" },
+            { en: "Unless you have proof...", pt: "A menos que tenhas provas...", tense: "Conjuntivo" },
+            { en: "I want you to have success.", pt: "Quero que tenhas sucesso.", tense: "Conjuntivo" },
+
+            // Imperfeito do Conjuntivo (Imperfect Subjunctive)
+            { en: "If I had money...", pt: "Se eu tivesse dinheiro...", tense: "Imperfeito Conj." },
+            { en: "I wish you had time.", pt: "Quem me dera que tivesses tempo.", tense: "Imperfeito Conj." },
+            { en: "If he had known...", pt: "Se ele tivesse sabido...", tense: "Imperfeito Conj." },
+            { en: "If we had a car...", pt: "Se tivéssemos um carro...", tense: "Imperfeito Conj." },
+            { en: "If they had helped...", pt: "Se eles tivessem ajudado...", tense: "Imperfeito Conj." },
+            { en: "I would go if I had time.", pt: "Iria se tivesse tempo.", tense: "Imperfeito Conj." },
+            { en: "Even if I had money...", pt: "Mesmo que tivesse dinheiro...", tense: "Imperfeito Conj." },
+            { en: "If it had value...", pt: "Se tivesse valor...", tense: "Imperfeito Conj." },
+            { en: "As if you had seen...", pt: "Como se tivesses visto...", tense: "Imperfeito Conj." },
+            { en: "I wish I had more time.", pt: "Quem me dera que tivesse mais tempo.", tense: "Imperfeito Conj." },
+
+            // Ter que/de (obligation)
+            { en: "I have to study.", pt: "Tenho de estudar.", tense: "Obrigação" },
+            { en: "You have to eat.", pt: "Tens de comer.", tense: "Obrigação" },
+            { en: "We have to leave.", pt: "Temos de sair.", tense: "Obrigação" },
+            { en: "She has to work.", pt: "Ela tem de trabalhar.", tense: "Obrigação" },
+            { en: "I had to wait.", pt: "Tive de esperar.", tense: "Obrigação" },
+            { en: "You will have to pay.", pt: "Terás de pagar.", tense: "Obrigação" },
+            { en: "Do I have to go?", pt: "Tenho de ir?", tense: "Obrigação" },
+            { en: "We don't have to stay.", pt: "Não temos de ficar.", tense: "Obrigação" },
+            { en: "They had to decide.", pt: "Eles tiveram de decidir.", tense: "Obrigação" },
+            { en: "I would have to think.", pt: "Teria de pensar.", tense: "Obrigação" },
+
+            // Common expressions with ter
+            { en: "I'm hungry.", pt: "Tenho fome.", tense: "Expressão" },
+            { en: "I'm thirsty.", pt: "Tenho sede.", tense: "Expressão" },
+            { en: "I'm sleepy.", pt: "Tenho sono.", tense: "Expressão" },
+            { en: "I'm cold.", pt: "Tenho frio.", tense: "Expressão" },
+            { en: "I'm hot.", pt: "Tenho calor.", tense: "Expressão" },
+            { en: "I'm afraid.", pt: "Tenho medo.", tense: "Expressão" },
+            { en: "I'm in a hurry.", pt: "Tenho pressa.", tense: "Expressão" },
+            { en: "I'm right.", pt: "Tenho razão.", tense: "Expressão" },
+            { en: "I'm lucky.", pt: "Tenho sorte.", tense: "Expressão" },
+            { en: "Be careful!", pt: "Tem cuidado!", tense: "Expressão" }
+        ];
+
+        function renderPhrases(filteredPhrases = phrases) {
+            const container = document.getElementById('phraseList');
+            container.innerHTML = '';
+
+            filteredPhrases.forEach((phrase, index) => {
+                const card = document.createElement('div');
+                card.className = 'phrase-card';
+                card.innerHTML = `
+                    <div class="phrase-header" onclick="toggleCard(this.parentElement)">
+                        <span class="phrase-number">${index + 1}</span>
+                        <span class="origin-text">${phrase.en}</span>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="portuguese-text">
+                        <div class="pt-content">
+                            <div class="pt-label">European Portuguese</div>
+                            <div class="pt-phrase">${highlightVerb(phrase.pt)}</div>
+                            <span class="tense-tag">${phrase.tense}</span>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+
+            document.getElementById('stats').textContent =
+                `Showing: ${filteredPhrases.length} of ${phrases.length} phrases`;
+        }
+
+        function highlightVerb(text) {
+            const forms = [
+                'tenho', 'tens', 'tem', 'temos', 'têm',
+                'tinha', 'tinhas', 'tínhamos', 'tinham',
+                'tive', 'tiveste', 'teve', 'tivemos', 'tiveram',
+                'terei', 'terás', 'terá', 'teremos', 'terão',
+                'teria', 'terias', 'teríamos', 'teriam',
+                'tenha', 'tenhas', 'tenhamos', 'tenham',
+                'tivesse', 'tivesses', 'tivéssemos', 'tivessem',
+                'ter', 'tendo', 'tido'
+            ];
+
+            let result = text;
+            forms.forEach(form => {
+                const regex = new RegExp(`\\b(${form})\\b`, 'gi');
+                result = result.replace(regex, '<span class="verb-highlight">$1</span>');
+            });
+            return result;
+        }
+
+        function toggleCard(card) {
+            card.classList.toggle('open');
+        }
+
+        function showAll() {
+            document.querySelectorAll('.phrase-card').forEach(card => {
+                card.classList.add('open');
+            });
+        }
+
+        function hideAll() {
+            document.querySelectorAll('.phrase-card').forEach(card => {
+                card.classList.remove('open');
+            });
+        }
+
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            const filtered = phrases.filter(p =>
+                p.en.toLowerCase().includes(query) ||
+                p.pt.toLowerCase().includes(query) ||
+                p.tense.toLowerCase().includes(query)
+            );
+            renderPhrases(filtered);
+        });
+
+        // Initialize
+        renderPhrases();
+    </script>
+</body>
+</html>
