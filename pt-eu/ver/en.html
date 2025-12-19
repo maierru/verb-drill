@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb VER — 100 Phrases</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            color: #eee;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #00d4aa;
+            text-decoration: none;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 0;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #00d4aa;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(0, 212, 170, 0.3);
+        }
+
+        .subtitle {
+            color: #888;
+            font-size: 1.1rem;
+        }
+
+        .controls {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .btn-primary {
+            background: #00d4aa;
+            color: #1a1a2e;
+        }
+
+        .btn-primary:hover {
+            background: #00f5c4;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0, 212, 170, 0.4);
+        }
+
+        .btn-secondary {
+            background: #3a3a5c;
+            color: #eee;
+        }
+
+        .btn-secondary:hover {
+            background: #4a4a7c;
+        }
+
+        .stats {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #888;
+        }
+
+        .phrase-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .phrase-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .phrase-card:hover {
+            border-color: rgba(0, 212, 170, 0.3);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .phrase-header {
+            display: flex;
+            align-items: center;
+            padding: 18px 20px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .phrase-number {
+            background: #00d4aa;
+            color: #1a1a2e;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .origin-text {
+            flex: 1;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        .toggle-icon {
+            font-size: 1.5rem;
+            color: #00d4aa;
+            transition: transform 0.3s ease;
+            margin-left: 15px;
+        }
+
+        .phrase-card.open .toggle-icon {
+            transform: rotate(180deg);
+        }
+
+        .portuguese-text {
+            padding: 0 20px 20px 71px;
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .phrase-card.open .portuguese-text {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .pt-content {
+            background: rgba(0, 212, 170, 0.1);
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 4px solid #00d4aa;
+        }
+
+        .pt-label {
+            font-size: 0.8rem;
+            color: #00d4aa;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .pt-phrase {
+            font-size: 1.15rem;
+            color: #fff;
+            font-style: italic;
+        }
+
+        .verb-highlight {
+            color: #00d4aa;
+            font-weight: 600;
+        }
+
+        .tense-tag {
+            display: inline-block;
+            background: rgba(255, 193, 7, 0.2);
+            color: #ffc107;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            margin-top: 10px;
+        }
+
+        .search-box {
+            width: 100%;
+            max-width: 400px;
+            padding: 12px 20px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            color: #eee;
+            font-size: 1rem;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .search-box:focus {
+            border-color: #00d4aa;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .search-box::placeholder {
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0 20px;
+            color: #555;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            .phrase-header { padding: 15px; }
+            .portuguese-text { padding-left: 15px; }
+            .phrase-number { width: 30px; height: 30px; font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../" class="back-link">← Back to verb list</a>
+            <h1>🇵🇹 Verb VER</h1>
+            <p class="subtitle">100 popular phrases — European Portuguese</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Show all translations</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
+        </div>
+
+        <div class="stats" id="stats">Showing: 100 of 100 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            European Portuguese Practice — Verb VER
+        </footer>
+    </div>
+
+    <script>
+        const phrases = [
+            // Presente do Indicativo (Present)
+            { en: "I see you.", pt: "Vejo-te.", tense: "Presente" },
+            { en: "Do you see that?", pt: "Vês aquilo?", tense: "Presente" },
+            { en: "He sees everything.", pt: "Ele vê tudo.", tense: "Presente" },
+            { en: "She sees the problem.", pt: "Ela vê o problema.", tense: "Presente" },
+            { en: "We see the sea.", pt: "Vemos o mar.", tense: "Presente" },
+            { en: "They see us.", pt: "Eles veem-nos.", tense: "Presente" },
+            { en: "I don't see anything.", pt: "Não vejo nada.", tense: "Presente" },
+            { en: "Can you see?", pt: "Consegues ver?", tense: "Presente" },
+            { en: "I see what you mean.", pt: "Vejo o que queres dizer.", tense: "Presente" },
+            { en: "Who do you see?", pt: "Quem vês?", tense: "Presente" },
+
+            // More present tense
+            { en: "I see him every day.", pt: "Vejo-o todos os dias.", tense: "Presente" },
+            { en: "Do you see the difference?", pt: "Vês a diferença?", tense: "Presente" },
+            { en: "He sees things differently.", pt: "Ele vê as coisas de forma diferente.", tense: "Presente" },
+            { en: "She doesn't see well.", pt: "Ela não vê bem.", tense: "Presente" },
+            { en: "We see each other often.", pt: "Vemo-nos frequentemente.", tense: "Presente" },
+            { en: "They see the truth.", pt: "Eles veem a verdade.", tense: "Presente" },
+            { en: "I can see clearly now.", pt: "Agora vejo claramente.", tense: "Presente" },
+            { en: "Do you see what I see?", pt: "Vês o que eu vejo?", tense: "Presente" },
+            { en: "He sees the future.", pt: "Ele vê o futuro.", tense: "Presente" },
+            { en: "I see the light.", pt: "Vejo a luz.", tense: "Presente" },
+
+            // Pretérito Imperfeito (Imperfect Past)
+            { en: "I used to see him often.", pt: "Via-o frequentemente.", tense: "Imperfeito" },
+            { en: "You could see the mountains.", pt: "Vias as montanhas.", tense: "Imperfeito" },
+            { en: "He saw everything clearly.", pt: "Ele via tudo claramente.", tense: "Imperfeito" },
+            { en: "She saw him every day.", pt: "Ela via-o todos os dias.", tense: "Imperfeito" },
+            { en: "We used to see each other.", pt: "Víamo-nos.", tense: "Imperfeito" },
+            { en: "They saw the signs.", pt: "Eles viam os sinais.", tense: "Imperfeito" },
+            { en: "I couldn't see anything.", pt: "Não via nada.", tense: "Imperfeito" },
+            { en: "Could you see from there?", pt: "Vias dali?", tense: "Imperfeito" },
+            { en: "Nobody saw us.", pt: "Ninguém nos via.", tense: "Imperfeito" },
+            { en: "I saw what was happening.", pt: "Via o que estava a acontecer.", tense: "Imperfeito" },
+
+            // Pretérito Perfeito Simples (Simple Past)
+            { en: "I saw him yesterday.", pt: "Vi-o ontem.", tense: "Perfeito" },
+            { en: "Did you see that?", pt: "Viste aquilo?", tense: "Perfeito" },
+            { en: "He saw the accident.", pt: "Ele viu o acidente.", tense: "Perfeito" },
+            { en: "She saw the movie.", pt: "Ela viu o filme.", tense: "Perfeito" },
+            { en: "We saw everything.", pt: "Vimos tudo.", tense: "Perfeito" },
+            { en: "They saw us leaving.", pt: "Eles viram-nos a sair.", tense: "Perfeito" },
+            { en: "I never saw that.", pt: "Nunca vi isso.", tense: "Perfeito" },
+            { en: "When did you see her?", pt: "Quando a viste?", tense: "Perfeito" },
+            { en: "I saw it with my own eyes.", pt: "Vi com os meus próprios olhos.", tense: "Perfeito" },
+            { en: "Did you see the news?", pt: "Viste as notícias?", tense: "Perfeito" },
+
+            // Futuro do Indicativo (Future)
+            { en: "I will see you tomorrow.", pt: "Ver-te-ei amanhã.", tense: "Futuro" },
+            { en: "You will see the results.", pt: "Verás os resultados.", tense: "Futuro" },
+            { en: "He will see the doctor.", pt: "Ele verá o médico.", tense: "Futuro" },
+            { en: "We will see what happens.", pt: "Veremos o que acontece.", tense: "Futuro" },
+            { en: "They will see the difference.", pt: "Eles verão a diferença.", tense: "Futuro" },
+            { en: "I won't see him again.", pt: "Não o verei outra vez.", tense: "Futuro" },
+            { en: "Will you see her?", pt: "Vê-la-ás?", tense: "Futuro" },
+            { en: "Time will tell.", pt: "O tempo verá.", tense: "Futuro" },
+            { en: "We'll see about that.", pt: "Veremos isso.", tense: "Futuro" },
+            { en: "You will see for yourself.", pt: "Verás por ti mesmo.", tense: "Futuro" },
+
+            // Condicional (Conditional)
+            { en: "I would see him if...", pt: "Vê-lo-ia se...", tense: "Condicional" },
+            { en: "You would see better.", pt: "Verias melhor.", tense: "Condicional" },
+            { en: "He would see the problem.", pt: "Ele veria o problema.", tense: "Condicional" },
+            { en: "We would see each other.", pt: "Ver-nos-íamos.", tense: "Condicional" },
+            { en: "They would see the truth.", pt: "Eles veriam a verdade.", tense: "Condicional" },
+            { en: "I wouldn't see the point.", pt: "Não veria o sentido.", tense: "Condicional" },
+            { en: "Would you see her?", pt: "Vê-la-ias?", tense: "Condicional" },
+            { en: "She would see it differently.", pt: "Ela veria de forma diferente.", tense: "Condicional" },
+            { en: "I would like to see.", pt: "Gostaria de ver.", tense: "Condicional" },
+            { en: "Who would see that coming?", pt: "Quem veria isso a chegar?", tense: "Condicional" },
+
+            // Presente do Conjuntivo (Present Subjunctive)
+            { en: "I hope you see.", pt: "Espero que vejas.", tense: "Conjuntivo" },
+            { en: "It's important that he sees.", pt: "É importante que ele veja.", tense: "Conjuntivo" },
+            { en: "I doubt she sees.", pt: "Duvido que ela veja.", tense: "Conjuntivo" },
+            { en: "Even though you see...", pt: "Embora vejas...", tense: "Conjuntivo" },
+            { en: "Whoever sees this...", pt: "Quem veja isto...", tense: "Conjuntivo" },
+            { en: "It's necessary that we see.", pt: "É preciso que vejamos.", tense: "Conjuntivo" },
+            { en: "I don't think he sees.", pt: "Não acho que ele veja.", tense: "Conjuntivo" },
+            { en: "Unless you see...", pt: "A menos que vejas...", tense: "Conjuntivo" },
+            { en: "So that they see...", pt: "Para que vejam...", tense: "Conjuntivo" },
+            { en: "Whatever you see...", pt: "O que quer que vejas...", tense: "Conjuntivo" },
+
+            // Imperfeito do Conjuntivo (Imperfect Subjunctive)
+            { en: "If I saw...", pt: "Se eu visse...", tense: "Imperfeito Conj." },
+            { en: "I wish you could see.", pt: "Quem me dera que visses.", tense: "Imperfeito Conj." },
+            { en: "If he saw the truth...", pt: "Se ele visse a verdade...", tense: "Imperfeito Conj." },
+            { en: "If we saw earlier...", pt: "Se víssemos antes...", tense: "Imperfeito Conj." },
+            { en: "If they saw...", pt: "Se eles vissem...", tense: "Imperfeito Conj." },
+            { en: "I would tell you if I saw.", pt: "Dizia-te se visse.", tense: "Imperfeito Conj." },
+            { en: "Even if I saw...", pt: "Mesmo que visse...", tense: "Imperfeito Conj." },
+            { en: "If she saw this...", pt: "Se ela visse isto...", tense: "Imperfeito Conj." },
+            { en: "As if he saw everything...", pt: "Como se visse tudo...", tense: "Imperfeito Conj." },
+            { en: "If only I could see.", pt: "Se ao menos visse.", tense: "Imperfeito Conj." },
+
+            // Futuro do Conjuntivo (Future Subjunctive)
+            { en: "When I see...", pt: "Quando vir...", tense: "Futuro Conj." },
+            { en: "If you see him...", pt: "Se o vires...", tense: "Futuro Conj." },
+            { en: "When he sees...", pt: "Quando ele vir...", tense: "Futuro Conj." },
+            { en: "If we see...", pt: "Se virmos...", tense: "Futuro Conj." },
+            { en: "When they see...", pt: "Quando eles virem...", tense: "Futuro Conj." },
+            { en: "As soon as I see...", pt: "Assim que vir...", tense: "Futuro Conj." },
+            { en: "Whoever sees...", pt: "Quem vir...", tense: "Futuro Conj." },
+            { en: "If you ever see...", pt: "Se alguma vez vires...", tense: "Futuro Conj." },
+            { en: "When we see each other...", pt: "Quando nos virmos...", tense: "Futuro Conj." },
+            { en: "Tell me if you see.", pt: "Diz-me se vires.", tense: "Futuro Conj." },
+
+            // Common expressions
+            { en: "Let's see.", pt: "Vamos ver.", tense: "Expressão" },
+            { en: "See you later.", pt: "Até logo.", tense: "Expressão" },
+            { en: "See you tomorrow.", pt: "Até amanhã.", tense: "Expressão" },
+            { en: "As you can see.", pt: "Como podes ver.", tense: "Expressão" },
+            { en: "I can't wait to see.", pt: "Mal posso esperar para ver.", tense: "Expressão" },
+            { en: "Nice to see you.", pt: "Bom ver-te.", tense: "Expressão" },
+            { en: "I've never seen that.", pt: "Nunca vi isso.", tense: "Expressão" },
+            { en: "We'll see.", pt: "Veremos.", tense: "Expressão" },
+            { en: "Seeing is believing.", pt: "Ver para crer.", tense: "Expressão" },
+            { en: "Let me see.", pt: "Deixa-me ver.", tense: "Expressão" }
+        ];
+
+        function renderPhrases(filteredPhrases = phrases) {
+            const container = document.getElementById('phraseList');
+            container.innerHTML = '';
+
+            filteredPhrases.forEach((phrase, index) => {
+                const card = document.createElement('div');
+                card.className = 'phrase-card';
+                card.innerHTML = `
+                    <div class="phrase-header" onclick="toggleCard(this.parentElement)">
+                        <span class="phrase-number">${index + 1}</span>
+                        <span class="origin-text">${phrase.en}</span>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="portuguese-text">
+                        <div class="pt-content">
+                            <div class="pt-label">European Portuguese</div>
+                            <div class="pt-phrase">${highlightVerb(phrase.pt)}</div>
+                            <span class="tense-tag">${phrase.tense}</span>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+
+            document.getElementById('stats').textContent =
+                `Showing: ${filteredPhrases.length} of ${phrases.length} phrases`;
+        }
+
+        function highlightVerb(text) {
+            const forms = [
+                'vejo', 'vês', 'vê', 'vemos', 'veem',
+                'via', 'vias', 'víamos', 'viam',
+                'vi', 'viste', 'viu', 'vimos', 'viram',
+                'verei', 'verás', 'verá', 'veremos', 'verão',
+                'veria', 'verias', 'veríamos', 'veriam',
+                'veja', 'vejas', 'vejamos', 'vejam',
+                'visse', 'visses', 'víssemos', 'vissem',
+                'vir', 'vires', 'virmos', 'virem',
+                'ver', 'vendo', 'visto'
+            ];
+
+            let result = text;
+            forms.forEach(form => {
+                const regex = new RegExp(`\\b(${form})\\b`, 'gi');
+                result = result.replace(regex, '<span class="verb-highlight">$1</span>');
+            });
+            return result;
+        }
+
+        function toggleCard(card) {
+            card.classList.toggle('open');
+        }
+
+        function showAll() {
+            document.querySelectorAll('.phrase-card').forEach(card => {
+                card.classList.add('open');
+            });
+        }
+
+        function hideAll() {
+            document.querySelectorAll('.phrase-card').forEach(card => {
+                card.classList.remove('open');
+            });
+        }
+
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            const filtered = phrases.filter(p =>
+                p.en.toLowerCase().includes(query) ||
+                p.pt.toLowerCase().includes(query) ||
+                p.tense.toLowerCase().includes(query)
+            );
+            renderPhrases(filtered);
+        });
+
+        // Initialize
+        renderPhrases();
+    </script>
+</body>
+</html>
