@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb DAR — 100 Phrases</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            color: #eee;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #00d4aa;
+            text-decoration: none;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 0;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #00d4aa;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(0, 212, 170, 0.3);
+        }
+
+        .subtitle {
+            color: #888;
+            font-size: 1.1rem;
+        }
+
+        .controls {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .btn-primary {
+            background: #00d4aa;
+            color: #1a1a2e;
+        }
+
+        .btn-primary:hover {
+            background: #00f5c4;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0, 212, 170, 0.4);
+        }
+
+        .btn-secondary {
+            background: #3a3a5c;
+            color: #eee;
+        }
+
+        .btn-secondary:hover {
+            background: #4a4a7c;
+        }
+
+        .stats {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #888;
+        }
+
+        .phrase-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .phrase-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .phrase-card:hover {
+            border-color: rgba(0, 212, 170, 0.3);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .phrase-header {
+            display: flex;
+            align-items: center;
+            padding: 18px 20px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .phrase-number {
+            background: #00d4aa;
+            color: #1a1a2e;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .origin-text {
+            flex: 1;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        .toggle-icon {
+            font-size: 1.5rem;
+            color: #00d4aa;
+            transition: transform 0.3s ease;
+            margin-left: 15px;
+        }
+
+        .phrase-card.open .toggle-icon {
+            transform: rotate(180deg);
+        }
+
+        .portuguese-text {
+            padding: 0 20px 20px 71px;
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .phrase-card.open .portuguese-text {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .pt-content {
+            background: rgba(0, 212, 170, 0.1);
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 4px solid #00d4aa;
+        }
+
+        .pt-label {
+            font-size: 0.8rem;
+            color: #00d4aa;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .pt-phrase {
+            font-size: 1.15rem;
+            color: #fff;
+            font-style: italic;
+        }
+
+        .verb-highlight {
+            color: #00d4aa;
+            font-weight: 600;
+        }
+
+        .tense-tag {
+            display: inline-block;
+            background: rgba(255, 193, 7, 0.2);
+            color: #ffc107;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            margin-top: 10px;
+        }
+
+        .search-box {
+            width: 100%;
+            max-width: 400px;
+            padding: 12px 20px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            color: #eee;
+            font-size: 1rem;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .search-box:focus {
+            border-color: #00d4aa;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .search-box::placeholder {
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0 20px;
+            color: #555;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            .phrase-header { padding: 15px; }
+            .portuguese-text { padding-left: 15px; }
+            .phrase-number { width: 30px; height: 30px; font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../" class="back-link">← Back to verb list</a>
+            <h1>🇵🇹 Verb DAR</h1>
+            <p class="subtitle">100 popular phrases — European Portuguese</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Show all translations</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
+        </div>
+
+        <div class="stats" id="stats">Showing: 100 of 100 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            European Portuguese Practice — Verb DAR
+        </footer>
+    </div>
+
+    <script>
+        const phrases = [
+            // Presente do Indicativo (Present)
+            { en: "I give you my word.", pt: "Dou-te a minha palavra.", tense: "Presente" },
+            { en: "Do you give permission?", pt: "Dás permissão?", tense: "Presente" },
+            { en: "He gives good advice.", pt: "Ele dá bons conselhos.", tense: "Presente" },
+            { en: "She gives classes.", pt: "Ela dá aulas.", tense: "Presente" },
+            { en: "We give our best.", pt: "Damos o nosso melhor.", tense: "Presente" },
+            { en: "They give gifts.", pt: "Eles dão presentes.", tense: "Presente" },
+            { en: "I don't give up.", pt: "Não dou desisto.", tense: "Presente" },
+            { en: "Can you give me a hand?", pt: "Podes dar-me uma ajuda?", tense: "Presente" },
+            { en: "It gives me pleasure.", pt: "Dá-me prazer.", tense: "Presente" },
+            { en: "I give you a hug.", pt: "Dou-te um abraço.", tense: "Presente" },
+
+            // More present tense
+            { en: "What does that give us?", pt: "O que é que isso nos dá?", tense: "Presente" },
+            { en: "He gives his opinion.", pt: "Ele dá a sua opinião.", tense: "Presente" },
+            { en: "She gives a lot of work.", pt: "Ela dá muito trabalho.", tense: "Presente" },
+            { en: "We give thanks.", pt: "Damos graças.", tense: "Presente" },
+            { en: "They give money.", pt: "Eles dão dinheiro.", tense: "Presente" },
+            { en: "I give you an example.", pt: "Dou-te um exemplo.", tense: "Presente" },
+            { en: "This gives me hope.", pt: "Isto dá-me esperança.", tense: "Presente" },
+            { en: "He gives priority.", pt: "Ele dá prioridade.", tense: "Presente" },
+            { en: "She gives attention.", pt: "Ela dá atenção.", tense: "Presente" },
+            { en: "We give our support.", pt: "Damos o nosso apoio.", tense: "Presente" },
+
+            // Pretérito Imperfeito (Imperfect Past)
+            { en: "I used to give lessons.", pt: "Eu dava aulas.", tense: "Imperfeito" },
+            { en: "You gave me strength.", pt: "Tu davas-me força.", tense: "Imperfeito" },
+            { en: "He gave good tips.", pt: "Ele dava boas dicas.", tense: "Imperfeito" },
+            { en: "She gave her all.", pt: "Ela dava tudo de si.", tense: "Imperfeito" },
+            { en: "We gave our time.", pt: "Dávamos o nosso tempo.", tense: "Imperfeito" },
+            { en: "They gave opportunities.", pt: "Eles davam oportunidades.", tense: "Imperfeito" },
+            { en: "I didn't give importance.", pt: "Não dava importância.", tense: "Imperfeito" },
+            { en: "Did you give permission?", pt: "Davas permissão?", tense: "Imperfeito" },
+            { en: "Nobody gave answers.", pt: "Ninguém dava respostas.", tense: "Imperfeito" },
+            { en: "I always gave my best.", pt: "Dava sempre o meu melhor.", tense: "Imperfeito" },
+
+            // Pretérito Perfeito Simples (Simple Past)
+            { en: "I gave him a gift.", pt: "Dei-lhe um presente.", tense: "Perfeito" },
+            { en: "You gave a good answer.", pt: "Deste uma boa resposta.", tense: "Perfeito" },
+            { en: "He gave his life.", pt: "Ele deu a vida.", tense: "Perfeito" },
+            { en: "She gave birth.", pt: "Ela deu à luz.", tense: "Perfeito" },
+            { en: "We gave everything.", pt: "Demos tudo.", tense: "Perfeito" },
+            { en: "They gave up.", pt: "Eles deram desistência.", tense: "Perfeito" },
+            { en: "I didn't give an answer.", pt: "Não dei resposta.", tense: "Perfeito" },
+            { en: "What did you give?", pt: "O que deste?", tense: "Perfeito" },
+            { en: "Who gave you that?", pt: "Quem te deu isso?", tense: "Perfeito" },
+            { en: "I gave my word.", pt: "Dei a minha palavra.", tense: "Perfeito" },
+
+            // Futuro do Indicativo (Future)
+            { en: "I will give you a call.", pt: "Dar-te-ei uma chamada.", tense: "Futuro" },
+            { en: "You will give me news.", pt: "Darás notícias.", tense: "Futuro" },
+            { en: "He will give a speech.", pt: "Ele dará um discurso.", tense: "Futuro" },
+            { en: "We will give our answer.", pt: "Daremos a nossa resposta.", tense: "Futuro" },
+            { en: "They will give support.", pt: "Eles darão apoio.", tense: "Futuro" },
+            { en: "I won't give up.", pt: "Não darei desistência.", tense: "Futuro" },
+            { en: "Will you give permission?", pt: "Darás permissão?", tense: "Futuro" },
+            { en: "Time will give answers.", pt: "O tempo dará respostas.", tense: "Futuro" },
+            { en: "I will give you my opinion.", pt: "Dar-te-ei a minha opinião.", tense: "Futuro" },
+            { en: "She will give a party.", pt: "Ela dará uma festa.", tense: "Futuro" },
+
+            // Condicional (Conditional)
+            { en: "I would give anything.", pt: "Daria qualquer coisa.", tense: "Condicional" },
+            { en: "You would give a good impression.", pt: "Darias uma boa impressão.", tense: "Condicional" },
+            { en: "He would give his opinion.", pt: "Ele daria a opinião dele.", tense: "Condicional" },
+            { en: "We would give our support.", pt: "Daríamos o nosso apoio.", tense: "Condicional" },
+            { en: "They would give more.", pt: "Eles dariam mais.", tense: "Condicional" },
+            { en: "I wouldn't give permission.", pt: "Não daria permissão.", tense: "Condicional" },
+            { en: "Would you give a hand?", pt: "Darias uma ajuda?", tense: "Condicional" },
+            { en: "What would that give us?", pt: "O que nos daria isso?", tense: "Condicional" },
+            { en: "I would give my life.", pt: "Daria a minha vida.", tense: "Condicional" },
+            { en: "She would give everything.", pt: "Ela daria tudo.", tense: "Condicional" },
+
+            // Presente do Conjuntivo (Present Subjunctive)
+            { en: "I hope you give me a chance.", pt: "Espero que me dês uma oportunidade.", tense: "Conjuntivo" },
+            { en: "It's important that he gives.", pt: "É importante que ele dê.", tense: "Conjuntivo" },
+            { en: "I doubt she gives permission.", pt: "Duvido que ela dê permissão.", tense: "Conjuntivo" },
+            { en: "Even if you give...", pt: "Mesmo que dês...", tense: "Conjuntivo" },
+            { en: "Whoever gives more...", pt: "Quem dê mais...", tense: "Conjuntivo" },
+            { en: "It's necessary that we give.", pt: "É preciso que demos.", tense: "Conjuntivo" },
+            { en: "I don't think he gives priority.", pt: "Não acho que ele dê prioridade.", tense: "Conjuntivo" },
+            { en: "Unless you give an answer...", pt: "A menos que dês uma resposta...", tense: "Conjuntivo" },
+            { en: "So that they give support...", pt: "Para que deem apoio...", tense: "Conjuntivo" },
+            { en: "Whatever you give...", pt: "O que quer que dês...", tense: "Conjuntivo" },
+
+            // Imperfeito do Conjuntivo (Imperfect Subjunctive)
+            { en: "If I gave more time...", pt: "Se eu desse mais tempo...", tense: "Imperfeito Conj." },
+            { en: "I wish you gave me a chance.", pt: "Quem me dera que me desses uma oportunidade.", tense: "Imperfeito Conj." },
+            { en: "If he gave his opinion...", pt: "Se ele desse a opinião...", tense: "Imperfeito Conj." },
+            { en: "If we gave more effort...", pt: "Se déssemos mais esforço...", tense: "Imperfeito Conj." },
+            { en: "If they gave support...", pt: "Se eles dessem apoio...", tense: "Imperfeito Conj." },
+            { en: "I would accept if you gave.", pt: "Aceitaria se desses.", tense: "Imperfeito Conj." },
+            { en: "Even if I gave everything...", pt: "Mesmo que desse tudo...", tense: "Imperfeito Conj." },
+            { en: "If she gave permission...", pt: "Se ela desse permissão...", tense: "Imperfeito Conj." },
+            { en: "As if he gave importance...", pt: "Como se desse importância...", tense: "Imperfeito Conj." },
+            { en: "If only I gave more attention.", pt: "Se ao menos desse mais atenção.", tense: "Imperfeito Conj." },
+
+            // Futuro do Conjuntivo (Future Subjunctive)
+            { en: "When I give the signal...", pt: "Quando der o sinal...", tense: "Futuro Conj." },
+            { en: "If you give permission...", pt: "Se deres permissão...", tense: "Futuro Conj." },
+            { en: "When he gives an answer...", pt: "Quando ele der uma resposta...", tense: "Futuro Conj." },
+            { en: "If we give our best...", pt: "Se dermos o nosso melhor...", tense: "Futuro Conj." },
+            { en: "When they give news...", pt: "Quando eles derem notícias...", tense: "Futuro Conj." },
+            { en: "As soon as I give the order...", pt: "Assim que der a ordem...", tense: "Futuro Conj." },
+            { en: "Whoever gives the most...", pt: "Quem der mais...", tense: "Futuro Conj." },
+            { en: "If you ever give up...", pt: "Se alguma vez deres desistência...", tense: "Futuro Conj." },
+            { en: "When we give feedback...", pt: "Quando dermos feedback...", tense: "Futuro Conj." },
+            { en: "Call me if you give news.", pt: "Liga-me se deres notícias.", tense: "Futuro Conj." },
+
+            // Common expressions with dar
+            { en: "It works out.", pt: "Dá certo.", tense: "Expressão" },
+            { en: "It doesn't matter.", pt: "Não dá.", tense: "Expressão" },
+            { en: "It's possible.", pt: "Dá para fazer.", tense: "Expressão" },
+            { en: "To realize.", pt: "Dar conta.", tense: "Expressão" },
+            { en: "To go for a walk.", pt: "Dar um passeio.", tense: "Expressão" },
+            { en: "To give a hand.", pt: "Dar uma mão.", tense: "Expressão" },
+            { en: "To give up.", pt: "Dar desistência.", tense: "Expressão" },
+            { en: "To give birth.", pt: "Dar à luz.", tense: "Expressão" },
+            { en: "To take a look.", pt: "Dar uma olhada.", tense: "Expressão" },
+            { en: "To give thanks.", pt: "Dar graças.", tense: "Expressão" }
+        ];
+
+        function renderPhrases(filteredPhrases = phrases) {
+            const container = document.getElementById('phraseList');
+            container.innerHTML = '';
+
+            filteredPhrases.forEach((phrase, index) => {
+                const card = document.createElement('div');
+                card.className = 'phrase-card';
+                card.innerHTML = `
+                    <div class="phrase-header" onclick="toggleCard(this.parentElement)">
+                        <span class="phrase-number">${index + 1}</span>
+                        <span class="origin-text">${phrase.en}</span>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="portuguese-text">
+                        <div class="pt-content">
+                            <div class="pt-label">European Portuguese</div>
+                            <div class="pt-phrase">${highlightVerb(phrase.pt)}</div>
+                            <span class="tense-tag">${phrase.tense}</span>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+
+            document.getElementById('stats').textContent =
+                `Showing: ${filteredPhrases.length} of ${phrases.length} phrases`;
+        }
+
+        function highlightVerb(text) {
+            const forms = [
+                'dou', 'dás', 'dá', 'damos', 'dão',
+                'dava', 'davas', 'dávamos', 'davam',
+                'dei', 'deste', 'deu', 'demos', 'deram',
+                'darei', 'darás', 'dará', 'daremos', 'darão',
+                'daria', 'darias', 'daríamos', 'dariam',
+                'dê', 'dês', 'deem',
+                'desse', 'desses', 'déssemos', 'dessem',
+                'der', 'deres', 'dermos', 'derem',
+                'dar', 'dando', 'dado'
+            ];
+
+            let result = text;
+            forms.forEach(form => {
+                const regex = new RegExp(`\\b(${form})\\b`, 'gi');
+                result = result.replace(regex, '<span class="verb-highlight">$1</span>');
+            });
+            return result;
+        }
+
+        function toggleCard(card) {
+            card.classList.toggle('open');
+        }
+
+        function showAll() {
+            document.querySelectorAll('.phrase-card').forEach(card => {
+                card.classList.add('open');
+            });
+        }
+
+        function hideAll() {
+            document.querySelectorAll('.phrase-card').forEach(card => {
+                card.classList.remove('open');
+            });
+        }
+
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            const filtered = phrases.filter(p =>
+                p.en.toLowerCase().includes(query) ||
+                p.pt.toLowerCase().includes(query) ||
+                p.tense.toLowerCase().includes(query)
+            );
+            renderPhrases(filtered);
+        });
+
+        // Initialize
+        renderPhrases();
+    </script>
+</body>
+</html>
