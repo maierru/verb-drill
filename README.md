@@ -2,7 +2,7 @@
 
 Practice verb conjugations with real-world phrases.
 
-**[→ Start practicing](https://verb-drill.cc/pt-eu/)**
+[GitHub](https://github.com/maierru/verb-drill)
 
 ## What is this?
 
