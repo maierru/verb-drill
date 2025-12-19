@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb PODER — 100 Phrases</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            color: #eee;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #00d4aa;
+            text-decoration: none;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 0;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #00d4aa;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(0, 212, 170, 0.3);
+        }
+
+        .subtitle {
+            color: #888;
+            font-size: 1.1rem;
+        }
+
+        .controls {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .btn-primary {
+            background: #00d4aa;
+            color: #1a1a2e;
+        }
+
+        .btn-primary:hover {
+            background: #00f5c4;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0, 212, 170, 0.4);
+        }
+
+        .btn-secondary {
+            background: #3a3a5c;
+            color: #eee;
+        }
+
+        .btn-secondary:hover {
+            background: #4a4a7c;
+        }
+
+        .stats {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #888;
+        }
+
+        .phrase-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .phrase-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .phrase-card:hover {
+            border-color: rgba(0, 212, 170, 0.3);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .phrase-header {
+            display: flex;
+            align-items: center;
+            padding: 18px 20px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .phrase-number {
+            background: #00d4aa;
+            color: #1a1a2e;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .origin-text {
+            flex: 1;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        .toggle-icon {
+            font-size: 1.5rem;
+            color: #00d4aa;
+            transition: transform 0.3s ease;
+            margin-left: 15px;
+        }
+
+        .phrase-card.open .toggle-icon {
+            transform: rotate(180deg);
+        }
+
+        .portuguese-text {
+            padding: 0 20px 20px 71px;
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .phrase-card.open .portuguese-text {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .pt-content {
+            background: rgba(0, 212, 170, 0.1);
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 4px solid #00d4aa;
+        }
+
+        .pt-label {
+            font-size: 0.8rem;
+            color: #00d4aa;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .pt-phrase {
+            font-size: 1.15rem;
+            color: #fff;
+            font-style: italic;
+        }
+
+        .verb-highlight {
+            color: #00d4aa;
+            font-weight: 600;
+        }
+
+        .tense-tag {
+            display: inline-block;
+            background: rgba(255, 193, 7, 0.2);
+            color: #ffc107;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            margin-top: 10px;
+        }
+
+        .search-box {
+            width: 100%;
+            max-width: 400px;
+            padding: 12px 20px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            color: #eee;
+            font-size: 1rem;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .search-box:focus {
+            border-color: #00d4aa;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .search-box::placeholder {
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0 20px;
+            color: #555;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            .phrase-header { padding: 15px; }
+            .portuguese-text { padding-left: 15px; }
+            .phrase-number { width: 30px; height: 30px; font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../" class="back-link">← Back to verb list</a>
+            <h1>🇵🇹 Verb PODER</h1>
+            <p class="subtitle">100 popular phrases — European Portuguese</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Show all translations</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
+        </div>
+
+        <div class="stats" id="stats">Showing: 100 of 100 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            European Portuguese Practice — Verb PODER
+        </footer>
+    </div>
+
+    <script>
+        const phrases = [
+            // Presente do Indicativo (Present)
+            { en: "I can help you.", pt: "Posso ajudar-te.", tense: "Presente" },
+            { en: "You can come in.", pt: "Podes entrar.", tense: "Presente" },
+            { en: "He can come tomorrow.", pt: "Ele pode vir amanhã.", tense: "Presente" },
+            { en: "We can start.", pt: "Podemos começar.", tense: "Presente" },
+            { en: "You (plural) can wait here.", pt: "Podem esperar aqui.", tense: "Presente" },
+            { en: "They can speak Portuguese.", pt: "Eles podem falar português.", tense: "Presente" },
+            { en: "I can't understand.", pt: "Não posso compreender.", tense: "Presente" },
+            { en: "You can't leave now.", pt: "Não podes sair agora.", tense: "Presente" },
+            { en: "She can't work today.", pt: "Ela não pode trabalhar hoje.", tense: "Presente" },
+            { en: "We can't wait any longer.", pt: "Não podemos esperar mais.", tense: "Presente" },
+
+            // Questions in present
+            { en: "Can I ask?", pt: "Posso perguntar?", tense: "Presente" },
+            { en: "Can you help me?", pt: "Podes ajudar-me?", tense: "Presente" },
+            { en: "Can we talk?", pt: "Podemos conversar?", tense: "Presente" },
+            { en: "Can I sit here?", pt: "Posso sentar-me aqui?", tense: "Presente" },
+            { en: "Can you repeat?", pt: "Podes repetir?", tense: "Presente" },
+            { en: "Can you speak slower?", pt: "Podem falar mais devagar?", tense: "Presente" },
+            { en: "Can I try?", pt: "Posso experimentar?", tense: "Presente" },
+            { en: "Can you wait a minute?", pt: "Podes esperar um minuto?", tense: "Presente" },
+            { en: "Can we go together?", pt: "Podemos ir juntos?", tense: "Presente" },
+            { en: "Can I take this?", pt: "Posso levar isto?", tense: "Presente" },
+
+            // Pretérito Imperfeito (Imperfect Past)
+            { en: "I could run faster before.", pt: "Eu podia correr mais rápido antes.", tense: "Imperfeito" },
+            { en: "You could see the sea from the window.", pt: "Podias ver o mar da janela.", tense: "Imperfeito" },
+            { en: "He could work many hours.", pt: "Ele podia trabalhar muitas horas.", tense: "Imperfeito" },
+            { en: "We could walk every day.", pt: "Podíamos passear todos os dias.", tense: "Imperfeito" },
+            { en: "They could come whenever they wanted.", pt: "Eles podiam vir quando queriam.", tense: "Imperfeito" },
+            { en: "Before, I could eat everything.", pt: "Antes eu podia comer tudo.", tense: "Imperfeito" },
+            { en: "You could speak freely.", pt: "Podias falar livremente.", tense: "Imperfeito" },
+            { en: "She could dance all night.", pt: "Ela podia dançar a noite toda.", tense: "Imperfeito" },
+            { en: "We could travel more often.", pt: "Podíamos viajar mais vezes.", tense: "Imperfeito" },
+            { en: "They couldn't understand the reason.", pt: "Eles não podiam perceber a razão.", tense: "Imperfeito" },
+
+            // Pretérito Perfeito Simples (Simple Past)
+            { en: "I was able to finish the work.", pt: "Pude terminar o trabalho.", tense: "Perfeito" },
+            { en: "You managed to find the answer.", pt: "Pudeste encontrar a resposta.", tense: "Perfeito" },
+            { en: "He was able to solve the problem.", pt: "Ele pôde resolver o problema.", tense: "Perfeito" },
+            { en: "We managed to reach an agreement.", pt: "Pudemos chegar a um acordo.", tense: "Perfeito" },
+            { en: "They were able to arrive on time.", pt: "Eles puderam chegar a tempo.", tense: "Perfeito" },
+            { en: "I couldn't call you.", pt: "Não pude ligar-te.", tense: "Perfeito" },
+            { en: "You couldn't come.", pt: "Não pudeste vir.", tense: "Perfeito" },
+            { en: "She couldn't answer.", pt: "Ela não pôde responder.", tense: "Perfeito" },
+            { en: "We couldn't buy the tickets.", pt: "Não pudemos comprar os bilhetes.", tense: "Perfeito" },
+            { en: "They couldn't understand.", pt: "Eles não puderam compreender.", tense: "Perfeito" },
+
+            // Futuro do Indicativo (Future)
+            { en: "I will be able to help tomorrow.", pt: "Poderei ajudar amanhã.", tense: "Futuro" },
+            { en: "You will understand later.", pt: "Poderás compreender mais tarde.", tense: "Futuro" },
+            { en: "He will be able to come next week.", pt: "Ele poderá vir na próxima semana.", tense: "Futuro" },
+            { en: "We will be able to meet on Friday.", pt: "Poderemos encontrar-nos na sexta-feira.", tense: "Futuro" },
+            { en: "They will be able to finish the project.", pt: "Eles poderão terminar o projeto.", tense: "Futuro" },
+            { en: "I won't be able to come.", pt: "Não poderei vir.", tense: "Futuro" },
+            { en: "You won't be able to do it alone.", pt: "Não poderás fazer isso sozinho.", tense: "Futuro" },
+            { en: "She won't be able to work on Saturday.", pt: "Ela não poderá trabalhar no sábado.", tense: "Futuro" },
+            { en: "We won't be able to go on vacation.", pt: "Não poderemos ir de férias.", tense: "Futuro" },
+            { en: "They won't be able to attend.", pt: "Eles não poderão estar presentes.", tense: "Futuro" },
+
+            // Condicional (Conditional)
+            { en: "I could help if I knew.", pt: "Poderia ajudar se soubesse.", tense: "Condicional" },
+            { en: "You could try again.", pt: "Poderias tentar outra vez.", tense: "Condicional" },
+            { en: "He could be more attentive.", pt: "Ele poderia ser mais atento.", tense: "Condicional" },
+            { en: "We could go to the cinema.", pt: "Poderíamos ir ao cinema.", tense: "Condicional" },
+            { en: "They could call in advance.", pt: "Eles poderiam ligar com antecedência.", tense: "Condicional" },
+            { en: "You could have told me earlier.", pt: "Poderias ter-me dito antes.", tense: "Condicional" },
+            { en: "She could be here.", pt: "Ela poderia estar aqui.", tense: "Condicional" },
+            { en: "We could do better.", pt: "Poderíamos fazer melhor.", tense: "Condicional" },
+            { en: "Could you explain?", pt: "Poderiam explicar?", tense: "Condicional" },
+            { en: "I could stay longer.", pt: "Poderia ficar mais tempo.", tense: "Condicional" },
+
+            // Presente do Conjuntivo (Present Subjunctive)
+            { en: "I hope you can come.", pt: "Espero que possas vir.", tense: "Conjuntivo" },
+            { en: "It's important that he can participate.", pt: "É importante que ele possa participar.", tense: "Conjuntivo" },
+            { en: "I want us to be able to talk.", pt: "Quero que possamos conversar.", tense: "Conjuntivo" },
+            { en: "I doubt they can help.", pt: "Duvido que eles possam ajudar.", tense: "Conjuntivo" },
+            { en: "It's necessary that you understand.", pt: "É preciso que possas compreender.", tense: "Conjuntivo" },
+            { en: "I'm sorry I can't stay.", pt: "Lamento que não possa ficar.", tense: "Conjuntivo" },
+            { en: "It would be good if we could.", pt: "Seria bom que pudéssemos.", tense: "Conjuntivo" },
+            { en: "I don't think he can come.", pt: "Não acho que ele possa vir.", tense: "Conjuntivo" },
+            { en: "Even though you can, don't do it.", pt: "Embora possas, não faças isso.", tense: "Conjuntivo" },
+            { en: "Until I can...", pt: "Até que eu possa...", tense: "Conjuntivo" },
+
+            // Polite requests
+            { en: "Could you help me?", pt: "Poderia ajudar-me?", tense: "Condicional" },
+            { en: "Could you repeat?", pt: "Poderia repetir?", tense: "Condicional" },
+            { en: "Could you speak slower?", pt: "Poderia falar mais devagar?", tense: "Condicional" },
+            { en: "Could you open the window?", pt: "Poderia abrir a janela?", tense: "Condicional" },
+            { en: "Could you wait?", pt: "Poderia esperar?", tense: "Condicional" },
+            { en: "Could you show me?", pt: "Poderia mostrar-me?", tense: "Condicional" },
+            { en: "Could you explain again?", pt: "Poderia explicar outra vez?", tense: "Condicional" },
+            { en: "Could you bring the bill?", pt: "Poderia trazer a conta?", tense: "Condicional" },
+            { en: "Could you call me?", pt: "Poderia ligar-me?", tense: "Condicional" },
+            { en: "Could you send the information?", pt: "Poderia enviar a informação?", tense: "Condicional" },
+
+            // Common expressions
+            { en: "Maybe.", pt: "Pode ser.", tense: "Expressão" },
+            { en: "It's possible.", pt: "É possível. / Pode acontecer.", tense: "Expressão" },
+            { en: "As far as I can tell...", pt: "Pelo que posso ver...", tense: "Expressão" },
+            { en: "I can't do anything about it.", pt: "Não posso fazer nada.", tense: "Expressão" },
+            { en: "What can I do for you?", pt: "O que posso fazer por ti?", tense: "Expressão" },
+            { en: "It can wait.", pt: "Isso pode esperar.", tense: "Expressão" },
+            { en: "I can't anymore.", pt: "Não posso mais.", tense: "Expressão" },
+            { en: "You can count on me.", pt: "Podes contar comigo.", tense: "Expressão" },
+            { en: "It can happen.", pt: "Isso pode acontecer.", tense: "Expressão" },
+            { en: "I can't believe it!", pt: "Não posso acreditar!", tense: "Expressão" },
+
+            // Additional useful phrases
+            { en: "Can I help with anything?", pt: "Posso ajudar em alguma coisa?", tense: "Presente" },
+            { en: "You can go.", pt: "Podes ir.", tense: "Presente" },
+            { en: "We can start over.", pt: "Podemos recomeçar.", tense: "Presente" },
+            { en: "She can prepare dinner.", pt: "Ela pode preparar o jantar.", tense: "Presente" },
+            { en: "I can't guarantee.", pt: "Não posso garantir.", tense: "Presente" },
+            { en: "You can trust me.", pt: "Podes confiar em mim.", tense: "Presente" },
+            { en: "We can arrange it.", pt: "Podemos combinar.", tense: "Presente" },
+            { en: "They can come anytime.", pt: "Eles podem vir a qualquer hora.", tense: "Presente" },
+            { en: "I can explain.", pt: "Posso explicar.", tense: "Presente" },
+            { en: "You can stay.", pt: "Podes ficar.", tense: "Presente" },
+
+            // Imperfeito do Conjuntivo (Imperfect Subjunctive)
+            { en: "If I could, I would do it.", pt: "Se pudesse, fazia.", tense: "Imperfeito Conj." },
+            { en: "I wish you could understand.", pt: "Gostava que pudesses compreender.", tense: "Imperfeito Conj." },
+            { en: "If he could come...", pt: "Se ele pudesse vir...", tense: "Imperfeito Conj." },
+            { en: "If we could start over...", pt: "Se pudéssemos recomeçar...", tense: "Imperfeito Conj." },
+            { en: "It would be good if they could.", pt: "Seria bom se eles pudessem.", tense: "Imperfeito Conj." }
+        ];
+
+        function renderPhrases(filteredPhrases = phrases) {
+            const container = document.getElementById('phraseList');
+            container.innerHTML = '';
+
+            filteredPhrases.forEach((phrase, index) => {
+                const card = document.createElement('div');
+                card.className = 'phrase-card';
+                card.innerHTML = `
+                    <div class="phrase-header" onclick="toggleCard(this.parentElement)">
+                        <span class="phrase-number">${index + 1}</span>
+                        <span class="origin-text">${phrase.en}</span>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="portuguese-text">
+                        <div class="pt-content">
+                            <div class="pt-label">European Portuguese</div>
+                            <div class="pt-phrase">${highlightVerb(phrase.pt)}</div>
+                            <span class="tense-tag">${phrase.tense}</span>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+
+            document.getElementById('stats').textContent =
+                `Showing: ${filteredPhrases.length} of ${phrases.length} phrases`;
+        }
+
+        function highlightVerb(text) {
+            const forms = [
+                'posso', 'podes', 'pode', 'podemos', 'podem',
+                'podia', 'podias', 'podíamos', 'podiam',
+                'pude', 'pudeste', 'pôde', 'pudemos', 'puderam',
+                'poderei', 'poderás', 'poderá', 'poderemos', 'poderão',
+                'poderia', 'poderias', 'poderíamos', 'poderiam',
+                'possa', 'possas', 'possamos', 'possam',
+                'pudesse', 'pudesses', 'pudéssemos', 'pudessem',
+                'poder', 'podendo', 'podido'
+            ];
+
+            let result = text;
+            forms.forEach(form => {
+                const regex = new RegExp(`\\b(${form})\\b`, 'gi');
+                result = result.replace(regex, '<span class="verb-highlight">$1</span>');
+            });
+            return result;
+        }
+
+        function toggleCard(card) {
+            card.classList.toggle('open');
+        }
+
+        function showAll() {
+            document.querySelectorAll('.phrase-card').forEach(card => {
+                card.classList.add('open');
+            });
+        }
+
+        function hideAll() {
+            document.querySelectorAll('.phrase-card').forEach(card => {
+                card.classList.remove('open');
+            });
+        }
+
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            const filtered = phrases.filter(p =>
+                p.en.toLowerCase().includes(query) ||
+                p.pt.toLowerCase().includes(query) ||
+                p.tense.toLowerCase().includes(query)
+            );
+            renderPhrases(filtered);
+        });
+
+        // Initialize
+        renderPhrases();
+    </script>
+</body>
+</html>

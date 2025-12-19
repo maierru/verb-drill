@@ -103,6 +103,13 @@
             padding: 5px 12px;
             border-radius: 20px;
             font-size: 0.8rem;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .lang-badge:hover {
+            background: #00d4aa;
+            color: #1a1a2e;
         }
 
         footer {
@@ -127,15 +134,16 @@
         </header>
 
         <div class="verb-list">
-            <a href="poder/ru.html" class="verb-card">
+            <div class="verb-card">
                 <div class="verb-info">
                     <div class="verb-name">poder</div>
                     <div class="verb-meaning">can, to be able to — 100 phrases</div>
                 </div>
                 <div class="verb-langs">
-                    <span class="lang-badge">🇷🇺 RU</span>
+                    <a href="poder/en.html" class="lang-badge">🇬🇧 EN</a>
+                    <a href="poder/ru.html" class="lang-badge">🇷🇺 RU</a>
                 </div>
-            </a>
+            </div>
 
             <!-- Future verbs
             <a href="ser/ru.html" class="verb-card">
