@@ -16,14 +16,9 @@ verb-drill/
 └── README.md
 ```
 
-### Language codes
-- `pt-eu` — Portuguese (European/Continental)
-- `pt-br` — Portuguese (Brazilian) *(planned)*
-- `es-es` — Spanish (Castilian) *(planned)*
+## Available
 
-### Origin language codes
-- `ru` — Russian
-- `en` — English *(planned)*
+- [🇵🇹 Portuguese (European)](https://verb-drill.cc/pt-eu/)
 
 ## How it works
 
