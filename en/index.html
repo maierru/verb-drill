@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English — Verb Drill</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            color: #eee;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #00d4aa;
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            color: #00d4aa;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(0, 212, 170, 0.3);
+        }
+
+        .subtitle {
+            color: #888;
+            font-size: 1rem;
+            margin-bottom: 40px;
+        }
+
+        .verb-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .verb-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 20px 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .verb-card:hover {
+            border-color: #00d4aa;
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateX(8px);
+        }
+
+        .verb-info {
+            flex: 1;
+        }
+
+        .verb-name {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        .verb-meaning {
+            color: #888;
+            font-size: 0.95rem;
+        }
+
+        .verb-langs {
+            display: flex;
+            gap: 8px;
+        }
+
+        .lang-badge {
+            background: rgba(0, 212, 170, 0.2);
+            color: #00d4aa;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .lang-badge:hover {
+            background: #00d4aa;
+            color: #1a1a2e;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #555;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.6rem; }
+            .verb-card { flex-direction: column; align-items: flex-start; gap: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../" class="back-link">← Back to languages</a>
+            <h1>🇬🇧 English</h1>
+            <p class="subtitle">Select a verb to practice</p>
+        </header>
+
+        <div class="verb-list">
+            <div class="verb-card">
+                <div class="verb-info">
+                    <div class="verb-name">can</div>
+                    <div class="verb-meaning">to be able to, poder/moci — 100 phrases</div>
+                </div>
+                <div class="verb-langs">
+                    <a href="can/pt.html" class="lang-badge">🇵🇹 PT</a>
+                    <a href="can/ru.html" class="lang-badge">🇷🇺 RU</a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Verb Drill — Open source language practice</p>
+        </footer>
+    </div>
+</body>
+</html>

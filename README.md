@@ -10,6 +10,7 @@ Flashcards for mastering verb conjugations. Pick a language you want to learn, t
 
 ## Which languages can I learn?
 
+- 🇬🇧 [English](https://verb-drill.cc/en/)
 - 🇵🇹 [Portuguese (European)](https://verb-drill.cc/pt-eu/)
 
 More coming.
@@ -17,6 +18,7 @@ More coming.
 ## Which mother tongues are supported?
 
 - 🇬🇧 English
+- 🇵🇹 Portuguese
 - 🇷🇺 Russian
 
 ## How many phrases per verb?
