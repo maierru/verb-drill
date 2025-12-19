@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andar — Portuguese Verb Practice</title>
+<style>
+*{box-sizing:border-box}body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);min-height:100vh;margin:0;padding:20px;color:#eee}.container{max-width:800px;margin:0 auto}header{text-align:center;padding:20px 0}.back-link{color:#00d4aa;text-decoration:none;font-size:.9rem}.back-link:hover{text-decoration:underline}h1{color:#00d4aa;font-size:2rem;margin:10px 0;text-shadow:0 0 20px rgba(0,212,170,.3)}.subtitle{color:#888;font-size:1rem;margin-bottom:20px}.controls{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}.btn{background:rgba(0,212,170,.2);color:#00d4aa;border:1px solid #00d4aa;padding:8px 16px;border-radius:20px;cursor:pointer;font-size:.85rem;transition:all .2s}.btn:hover{background:#00d4aa;color:#1a1a2e}.search-box{width:100%;max-width:400px;padding:10px 15px;border-radius:20px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.05);color:#eee;font-size:1rem;margin-bottom:20px}.search-box::placeholder{color:#666}.phrase-list{display:flex;flex-direction:column;gap:10px}.phrase-card{background:rgba(255,255,255,.05);border-radius:10px;padding:15px;border:1px solid rgba(255,255,255,.1);cursor:pointer;transition:all .2s}.phrase-card:hover{border-color:rgba(0,212,170,.3)}.phrase-card.revealed .translation{opacity:1;transform:translateY(0)}.source{font-size:1.1rem;color:#fff;margin-bottom:8px}.translation{font-size:1rem;color:#00d4aa;opacity:0;transform:translateY(-5px);transition:all .2s}.tense-tag{display:inline-block;background:rgba(0,212,170,.15);color:#00d4aa;padding:2px 8px;border-radius:10px;font-size:.75rem;margin-left:8px}.verb-highlight{color:#ff6b6b;font-weight:600}footer{text-align:center;padding:30px 0;color:#555;font-size:.85rem}@media(max-width:600px){h1{font-size:1.5rem}.source{font-size:1rem}.translation{font-size:.95rem}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<a href="../" class="back-link">← Back to verbs</a>
+<h1>🇵🇹 Andar</h1>
+<p class="subtitle">to walk, to go — 100 phrases</p>
+</header>
+<input type="text" class="search-box" placeholder="Search phrases...">
+<div class="controls">
+<button class="btn" onclick="showAll()">Show All</button>
+<button class="btn" onclick="hideAll()">Hide All</button>
+</div>
+<div class="phrase-list"></div>
+<footer>Verb Drill — Portuguese Verb Practice</footer>
+</div>
+<script>
+const phrases = [
+{en: "I walk every day.", pt: "Ando todos os dias.", tense: "Presente"},
+{en: "You walk fast.", pt: "Andas depressa.", tense: "Presente"},
+{en: "He walks slowly.", pt: "Ele anda devagar.", tense: "Presente"},
+{en: "We walk together.", pt: "Andamos juntos.", tense: "Presente"},
+{en: "They walk to school.", pt: "Eles andam para a escola.", tense: "Presente"},
+{en: "I'm walking on the street.", pt: "Ando na rua.", tense: "Presente"},
+{en: "You're walking too slowly.", pt: "Andas muito devagar.", tense: "Presente"},
+{en: "She walks with me.", pt: "Ela anda comigo.", tense: "Presente"},
+{en: "We walk in the park.", pt: "Andamos no parque.", tense: "Presente"},
+{en: "They walk home.", pt: "Eles andam para casa.", tense: "Presente"},
+{en: "I was walking.", pt: "Andava.", tense: "Imperfeito"},
+{en: "You were walking around.", pt: "Andavas por aí.", tense: "Imperfeito"},
+{en: "He was walking a lot.", pt: "Ele andava muito.", tense: "Imperfeito"},
+{en: "We were walking every day.", pt: "Andávamos todos os dias.", tense: "Imperfeito"},
+{en: "They were walking slowly.", pt: "Eles andavam devagar.", tense: "Imperfeito"},
+{en: "I used to walk here.", pt: "Andava aqui.", tense: "Imperfeito"},
+{en: "You used to walk with him.", pt: "Andavas com ele.", tense: "Imperfeito"},
+{en: "She used to walk alone.", pt: "Ela andava sozinha.", tense: "Imperfeito"},
+{en: "We used to walk at night.", pt: "Andávamos à noite.", tense: "Imperfeito"},
+{en: "They used to walk in the city.", pt: "Eles andavam na cidade.", tense: "Imperfeito"},
+{en: "I walked yesterday.", pt: "Andei ontem.", tense: "Perfeito"},
+{en: "You walked all day.", pt: "Andaste o dia todo.", tense: "Perfeito"},
+{en: "He walked for hours.", pt: "Ele andou durante horas.", tense: "Perfeito"},
+{en: "We walked together.", pt: "Andámos juntos.", tense: "Perfeito"},
+{en: "They walked to the beach.", pt: "Eles andaram até à praia.", tense: "Perfeito"},
+{en: "I walked a lot today.", pt: "Andei muito hoje.", tense: "Perfeito"},
+{en: "You walked too fast.", pt: "Andaste muito depressa.", tense: "Perfeito"},
+{en: "She walked in the rain.", pt: "Ela andou à chuva.", tense: "Perfeito"},
+{en: "We walked around the city.", pt: "Andámos pela cidade.", tense: "Perfeito"},
+{en: "They walked home.", pt: "Eles andaram para casa.", tense: "Perfeito"},
+{en: "I will walk.", pt: "Andarei.", tense: "Futuro"},
+{en: "You will walk with me.", pt: "Andarás comigo.", tense: "Futuro"},
+{en: "He will walk there.", pt: "Ele andará lá.", tense: "Futuro"},
+{en: "We will walk tomorrow.", pt: "Andaremos amanhã.", tense: "Futuro"},
+{en: "They will walk together.", pt: "Eles andarão juntos.", tense: "Futuro"},
+{en: "I will walk more.", pt: "Andarei mais.", tense: "Futuro"},
+{en: "You will walk faster.", pt: "Andarás mais depressa.", tense: "Futuro"},
+{en: "She will walk in the park.", pt: "Ela andará no parque.", tense: "Futuro"},
+{en: "We will walk every day.", pt: "Andaremos todos os dias.", tense: "Futuro"},
+{en: "They will walk to work.", pt: "Eles andarão para o trabalho.", tense: "Futuro"},
+{en: "I would walk.", pt: "Andaria.", tense: "Condicional"},
+{en: "You would walk with me.", pt: "Andarias comigo.", tense: "Condicional"},
+{en: "He would walk more.", pt: "Ele andaria mais.", tense: "Condicional"},
+{en: "We would walk together.", pt: "Andaríamos juntos.", tense: "Condicional"},
+{en: "They would walk here.", pt: "Eles andariam aqui.", tense: "Condicional"},
+{en: "I would walk if I could.", pt: "Andaria se pudesse.", tense: "Condicional"},
+{en: "You would walk faster.", pt: "Andarias mais depressa.", tense: "Condicional"},
+{en: "She would walk alone.", pt: "Ela andaria sozinha.", tense: "Condicional"},
+{en: "We would walk every day.", pt: "Andaríamos todos os dias.", tense: "Condicional"},
+{en: "They would walk to the park.", pt: "Eles andariam até ao parque.", tense: "Condicional"},
+{en: "I want you to walk.", pt: "Quero que andes.", tense: "Conjuntivo"},
+{en: "I hope he walks.", pt: "Espero que ele ande.", tense: "Conjuntivo"},
+{en: "It's important that we walk.", pt: "É importante que andemos.", tense: "Conjuntivo"},
+{en: "I doubt they walk.", pt: "Duvido que eles andem.", tense: "Conjuntivo"},
+{en: "Although I walk.", pt: "Embora eu ande.", tense: "Conjuntivo"},
+{en: "So that you walk.", pt: "Para que tu andes.", tense: "Conjuntivo"},
+{en: "Unless she walks.", pt: "A menos que ela ande.", tense: "Conjuntivo"},
+{en: "Before they walk.", pt: "Antes que eles andem.", tense: "Conjuntivo"},
+{en: "It's possible we walk.", pt: "É possível que andemos.", tense: "Conjuntivo"},
+{en: "I prefer that you walk.", pt: "Prefiro que tu andes.", tense: "Conjuntivo"},
+{en: "If I walked.", pt: "Se eu andasse.", tense: "Imperfeito Conj."},
+{en: "If you walked.", pt: "Se tu andasses.", tense: "Imperfeito Conj."},
+{en: "If he walked.", pt: "Se ele andasse.", tense: "Imperfeito Conj."},
+{en: "If we walked.", pt: "Se nós andássemos.", tense: "Imperfeito Conj."},
+{en: "If they walked.", pt: "Se eles andassem.", tense: "Imperfeito Conj."},
+{en: "I wish I walked more.", pt: "Quem me dera andar mais.", tense: "Imperfeito Conj."},
+{en: "As if she walked.", pt: "Como se ela andasse.", tense: "Imperfeito Conj."},
+{en: "If only you walked.", pt: "Se tu andasses.", tense: "Imperfeito Conj."},
+{en: "I wanted you to walk.", pt: "Queria que tu andasses.", tense: "Imperfeito Conj."},
+{en: "It would be good if they walked.", pt: "Seria bom se eles andassem.", tense: "Imperfeito Conj."},
+{en: "I've been busy.", pt: "Ando ocupado.", tense: "Presente"},
+{en: "You've been tired.", pt: "Andas cansado.", tense: "Presente"},
+{en: "He's been sad.", pt: "Ele anda triste.", tense: "Presente"},
+{en: "We've been working.", pt: "Andamos a trabalhar.", tense: "Presente"},
+{en: "They've been studying.", pt: "Eles andam a estudar.", tense: "Presente"},
+{en: "How are you doing?", pt: "Como andas?", tense: "Presente"},
+{en: "I'm doing well.", pt: "Ando bem.", tense: "Presente"},
+{en: "She's been stressed.", pt: "Ela anda stressada.", tense: "Presente"},
+{en: "We've been busy lately.", pt: "Andamos ocupados ultimamente.", tense: "Presente"},
+{en: "They've been happy.", pt: "Eles andam felizes.", tense: "Presente"},
+{en: "Walk faster!", pt: "Anda mais depressa!", tense: "Imperativo"},
+{en: "Let's walk!", pt: "Andemos!", tense: "Imperativo"},
+{en: "Walk with me!", pt: "Anda comigo!", tense: "Imperativo"},
+{en: "Don't walk there!", pt: "Não andes lá!", tense: "Imperativo"},
+{en: "Walk slowly!", pt: "Anda devagar!", tense: "Imperativo"},
+{en: "Are you walking?", pt: "Estás a andar?", tense: "Presente"},
+{en: "Is he walking?", pt: "Ele está a andar?", tense: "Presente"},
+{en: "Are they walking?", pt: "Eles estão a andar?", tense: "Presente"},
+{en: "I'm not walking.", pt: "Não estou a andar.", tense: "Presente"},
+{en: "She isn't walking.", pt: "Ela não está a andar.", tense: "Presente"},
+{en: "When I walk.", pt: "Quando eu andar.", tense: "Futuro Conj."},
+{en: "As soon as you walk.", pt: "Assim que andares.", tense: "Futuro Conj."},
+{en: "If he walks.", pt: "Se ele andar.", tense: "Futuro Conj."},
+{en: "When we walk.", pt: "Quando andarmos.", tense: "Futuro Conj."},
+{en: "As they walk.", pt: "Conforme eles andarem.", tense: "Futuro Conj."},
+{en: "I'm walking around.", pt: "Ando por aí.", tense: "Presente"},
+{en: "You walk a lot.", pt: "Tu andas muito.", tense: "Presente"},
+{en: "He walks to work.", pt: "Ele anda para o trabalho.", tense: "Presente"},
+{en: "We walk together.", pt: "Andamos juntos.", tense: "Presente"},
+{en: "They walk in the morning.", pt: "Eles andam de manhã.", tense: "Presente"}
+];
+
+const phraseList = document.querySelector('.phrase-list');
+const searchBox = document.querySelector('.search-box');
+
+function highlightVerb(text) {
+const forms = ['ando', 'andas', 'anda', 'andamos', 'andam', 'andava', 'andavas', 'andávamos', 'andavam', 'andei', 'andaste', 'andou', 'andámos', 'andaram', 'andarei', 'andarás', 'andará', 'andaremos', 'andarão', 'andaria', 'andarias', 'andaríamos', 'andariam', 'ande', 'andes', 'andemos', 'andem', 'andasse', 'andasses', 'andássemos', 'andassem', 'andar', 'andares', 'andarmos', 'andarem'];
+const pattern = new RegExp(`\\b(${forms.join('|')})\\b`, 'gi');
+return text.replace(pattern, '<span class="verb-highlight">$1</span>');
+}
+
+function renderPhrases(filter = '') {
+const filtered = phrases.filter(p =>
+p.en.toLowerCase().includes(filter.toLowerCase()) ||
+p.pt.toLowerCase().includes(filter.toLowerCase())
+);
+phraseList.innerHTML = filtered.map(p => `
+<div class="phrase-card" onclick="this.classList.toggle('revealed')">
+<div class="source">${p.en}<span class="tense-tag">${p.tense}</span></div>
+<div class="translation">${highlightVerb(p.pt)}</div>
+</div>
+`).join('');
+}
+
+function showAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.add('revealed'));
+}
+
+function hideAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.remove('revealed'));
+}
+
+searchBox.addEventListener('input', (e) => renderPhrases(e.target.value));
+renderPhrases();
+</script>
+</body>
+</html>

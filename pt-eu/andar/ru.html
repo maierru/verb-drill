@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andar — Португальский глагол</title>
+<style>
+*{box-sizing:border-box}body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);min-height:100vh;margin:0;padding:20px;color:#eee}.container{max-width:800px;margin:0 auto}header{text-align:center;padding:20px 0}.back-link{color:#00d4aa;text-decoration:none;font-size:.9rem}.back-link:hover{text-decoration:underline}h1{color:#00d4aa;font-size:2rem;margin:10px 0;text-shadow:0 0 20px rgba(0,212,170,.3)}.subtitle{color:#888;font-size:1rem;margin-bottom:20px}.controls{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}.btn{background:rgba(0,212,170,.2);color:#00d4aa;border:1px solid #00d4aa;padding:8px 16px;border-radius:20px;cursor:pointer;font-size:.85rem;transition:all .2s}.btn:hover{background:#00d4aa;color:#1a1a2e}.search-box{width:100%;max-width:400px;padding:10px 15px;border-radius:20px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.05);color:#eee;font-size:1rem;margin-bottom:20px}.search-box::placeholder{color:#666}.phrase-list{display:flex;flex-direction:column;gap:10px}.phrase-card{background:rgba(255,255,255,.05);border-radius:10px;padding:15px;border:1px solid rgba(255,255,255,.1);cursor:pointer;transition:all .2s}.phrase-card:hover{border-color:rgba(0,212,170,.3)}.phrase-card.revealed .translation{opacity:1;transform:translateY(0)}.source{font-size:1.1rem;color:#fff;margin-bottom:8px}.translation{font-size:1rem;color:#00d4aa;opacity:0;transform:translateY(-5px);transition:all .2s}.tense-tag{display:inline-block;background:rgba(0,212,170,.15);color:#00d4aa;padding:2px 8px;border-radius:10px;font-size:.75rem;margin-left:8px}.verb-highlight{color:#ff6b6b;font-weight:600}footer{text-align:center;padding:30px 0;color:#555;font-size:.85rem}@media(max-width:600px){h1{font-size:1.5rem}.source{font-size:1rem}.translation{font-size:.95rem}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<a href="../" class="back-link">← Назад к глаголам</a>
+<h1>🇵🇹 Andar</h1>
+<p class="subtitle">ходить, идти — 100 фраз</p>
+</header>
+<input type="text" class="search-box" placeholder="Поиск фраз...">
+<div class="controls">
+<button class="btn" onclick="showAll()">Показать все</button>
+<button class="btn" onclick="hideAll()">Скрыть все</button>
+</div>
+<div class="phrase-list"></div>
+<footer>Verb Drill — Практика португальских глаголов</footer>
+</div>
+<script>
+const phrases = [
+{ru: "Я хожу каждый день.", pt: "Ando todos os dias.", tense: "Presente"},
+{ru: "Ты ходишь быстро.", pt: "Andas depressa.", tense: "Presente"},
+{ru: "Он ходит медленно.", pt: "Ele anda devagar.", tense: "Presente"},
+{ru: "Мы ходим вместе.", pt: "Andamos juntos.", tense: "Presente"},
+{ru: "Они ходят в школу.", pt: "Eles andam para a escola.", tense: "Presente"},
+{ru: "Я иду по улице.", pt: "Ando na rua.", tense: "Presente"},
+{ru: "Ты идёшь слишком медленно.", pt: "Andas muito devagar.", tense: "Presente"},
+{ru: "Она ходит со мной.", pt: "Ela anda comigo.", tense: "Presente"},
+{ru: "Мы гуляем в парке.", pt: "Andamos no parque.", tense: "Presente"},
+{ru: "Они идут домой.", pt: "Eles andam para casa.", tense: "Presente"},
+{ru: "Я ходил.", pt: "Andava.", tense: "Imperfeito"},
+{ru: "Ты ходил туда-сюда.", pt: "Andavas por aí.", tense: "Imperfeito"},
+{ru: "Он много ходил.", pt: "Ele andava muito.", tense: "Imperfeito"},
+{ru: "Мы ходили каждый день.", pt: "Andávamos todos os dias.", tense: "Imperfeito"},
+{ru: "Они ходили медленно.", pt: "Eles andavam devagar.", tense: "Imperfeito"},
+{ru: "Я раньше ходил здесь.", pt: "Andava aqui.", tense: "Imperfeito"},
+{ru: "Ты раньше ходил с ним.", pt: "Andavas com ele.", tense: "Imperfeito"},
+{ru: "Она раньше ходила одна.", pt: "Ela andava sozinha.", tense: "Imperfeito"},
+{ru: "Мы раньше гуляли ночью.", pt: "Andávamos à noite.", tense: "Imperfeito"},
+{ru: "Они раньше ходили по городу.", pt: "Eles andavam na cidade.", tense: "Imperfeito"},
+{ru: "Я ходил вчера.", pt: "Andei ontem.", tense: "Perfeito"},
+{ru: "Ты ходил весь день.", pt: "Andaste o dia todo.", tense: "Perfeito"},
+{ru: "Он ходил часами.", pt: "Ele andou durante horas.", tense: "Perfeito"},
+{ru: "Мы ходили вместе.", pt: "Andámos juntos.", tense: "Perfeito"},
+{ru: "Они дошли до пляжа.", pt: "Eles andaram até à praia.", tense: "Perfeito"},
+{ru: "Я много ходил сегодня.", pt: "Andei muito hoje.", tense: "Perfeito"},
+{ru: "Ты шёл слишком быстро.", pt: "Andaste muito depressa.", tense: "Perfeito"},
+{ru: "Она шла под дождём.", pt: "Ela andou à chuva.", tense: "Perfeito"},
+{ru: "Мы гуляли по городу.", pt: "Andámos pela cidade.", tense: "Perfeito"},
+{ru: "Они пошли домой.", pt: "Eles andaram para casa.", tense: "Perfeito"},
+{ru: "Я буду ходить.", pt: "Andarei.", tense: "Futuro"},
+{ru: "Ты будешь ходить со мной.", pt: "Andarás comigo.", tense: "Futuro"},
+{ru: "Он будет ходить туда.", pt: "Ele andará lá.", tense: "Futuro"},
+{ru: "Мы будем ходить завтра.", pt: "Andaremos amanhã.", tense: "Futuro"},
+{ru: "Они будут ходить вместе.", pt: "Eles andarão juntos.", tense: "Futuro"},
+{ru: "Я буду ходить больше.", pt: "Andarei mais.", tense: "Futuro"},
+{ru: "Ты будешь ходить быстрее.", pt: "Andarás mais depressa.", tense: "Futuro"},
+{ru: "Она будет гулять в парке.", pt: "Ela andará no parque.", tense: "Futuro"},
+{ru: "Мы будем ходить каждый день.", pt: "Andaremos todos os dias.", tense: "Futuro"},
+{ru: "Они будут ходить на работу.", pt: "Eles andarão para o trabalho.", tense: "Futuro"},
+{ru: "Я бы ходил.", pt: "Andaria.", tense: "Condicional"},
+{ru: "Ты бы ходил со мной.", pt: "Andarias comigo.", tense: "Condicional"},
+{ru: "Он бы ходил больше.", pt: "Ele andaria mais.", tense: "Condicional"},
+{ru: "Мы бы ходили вместе.", pt: "Andaríamos juntos.", tense: "Condicional"},
+{ru: "Они бы ходили здесь.", pt: "Eles andariam aqui.", tense: "Condicional"},
+{ru: "Я бы ходил, если бы мог.", pt: "Andaria se pudesse.", tense: "Condicional"},
+{ru: "Ты бы ходил быстрее.", pt: "Andarias mais depressa.", tense: "Condicional"},
+{ru: "Она бы ходила одна.", pt: "Ela andaria sozinha.", tense: "Condicional"},
+{ru: "Мы бы ходили каждый день.", pt: "Andaríamos todos os dias.", tense: "Condicional"},
+{ru: "Они бы дошли до парка.", pt: "Eles andariam até ao parque.", tense: "Condicional"},
+{ru: "Хочу, чтобы ты ходил.", pt: "Quero que andes.", tense: "Conjuntivo"},
+{ru: "Надеюсь, что он ходит.", pt: "Espero que ele ande.", tense: "Conjuntivo"},
+{ru: "Важно, чтобы мы ходили.", pt: "É importante que andemos.", tense: "Conjuntivo"},
+{ru: "Сомневаюсь, что они ходят.", pt: "Duvido que eles andem.", tense: "Conjuntivo"},
+{ru: "Хотя я хожу.", pt: "Embora eu ande.", tense: "Conjuntivo"},
+{ru: "Чтобы ты ходил.", pt: "Para que tu andes.", tense: "Conjuntivo"},
+{ru: "Если только она не ходит.", pt: "A menos que ela ande.", tense: "Conjuntivo"},
+{ru: "До того как они пойдут.", pt: "Antes que eles andem.", tense: "Conjuntivo"},
+{ru: "Возможно, мы ходим.", pt: "É possível que andemos.", tense: "Conjuntivo"},
+{ru: "Предпочитаю, чтобы ты ходил.", pt: "Prefiro que tu andes.", tense: "Conjuntivo"},
+{ru: "Если бы я ходил.", pt: "Se eu andasse.", tense: "Imperfeito Conj."},
+{ru: "Если бы ты ходил.", pt: "Se tu andasses.", tense: "Imperfeito Conj."},
+{ru: "Если бы он ходил.", pt: "Se ele andasse.", tense: "Imperfeito Conj."},
+{ru: "Если бы мы ходили.", pt: "Se nós andássemos.", tense: "Imperfeito Conj."},
+{ru: "Если бы они ходили.", pt: "Se eles andassem.", tense: "Imperfeito Conj."},
+{ru: "Хотел бы я больше ходить.", pt: "Quem me dera andar mais.", tense: "Imperfeito Conj."},
+{ru: "Как будто она ходила.", pt: "Como se ela andasse.", tense: "Imperfeito Conj."},
+{ru: "Если бы только ты ходил.", pt: "Se tu andasses.", tense: "Imperfeito Conj."},
+{ru: "Хотел, чтобы ты ходил.", pt: "Queria que tu andasses.", tense: "Imperfeito Conj."},
+{ru: "Было бы хорошо, если бы они ходили.", pt: "Seria bom se eles andassem.", tense: "Imperfeito Conj."},
+{ru: "Я занят в последнее время.", pt: "Ando ocupado.", tense: "Presente"},
+{ru: "Ты устал в последнее время.", pt: "Andas cansado.", tense: "Presente"},
+{ru: "Он грустный в последнее время.", pt: "Ele anda triste.", tense: "Presente"},
+{ru: "Мы работаем.", pt: "Andamos a trabalhar.", tense: "Presente"},
+{ru: "Они учатся.", pt: "Eles andam a estudar.", tense: "Presente"},
+{ru: "Как у тебя дела?", pt: "Como andas?", tense: "Presente"},
+{ru: "У меня всё хорошо.", pt: "Ando bem.", tense: "Presente"},
+{ru: "Она напряжена.", pt: "Ela anda stressada.", tense: "Presente"},
+{ru: "Мы заняты в последнее время.", pt: "Andamos ocupados ultimamente.", tense: "Presente"},
+{ru: "Они счастливы.", pt: "Eles andam felizes.", tense: "Presente"},
+{ru: "Иди быстрее!", pt: "Anda mais depressa!", tense: "Imperativo"},
+{ru: "Пойдём!", pt: "Andemos!", tense: "Imperativo"},
+{ru: "Иди со мной!", pt: "Anda comigo!", tense: "Imperativo"},
+{ru: "Не ходи туда!", pt: "Não andes lá!", tense: "Imperativo"},
+{ru: "Иди медленно!", pt: "Anda devagar!", tense: "Imperativo"},
+{ru: "Ты идёшь?", pt: "Estás a andar?", tense: "Presente"},
+{ru: "Он идёт?", pt: "Ele está a andar?", tense: "Presente"},
+{ru: "Они идут?", pt: "Eles estão a andar?", tense: "Presente"},
+{ru: "Я не иду.", pt: "Não estou a andar.", tense: "Presente"},
+{ru: "Она не идёт.", pt: "Ela não está a andar.", tense: "Presente"},
+{ru: "Когда я пойду.", pt: "Quando eu andar.", tense: "Futuro Conj."},
+{ru: "Как только ты пойдёшь.", pt: "Assim que andares.", tense: "Futuro Conj."},
+{ru: "Если он пойдёт.", pt: "Se ele andar.", tense: "Futuro Conj."},
+{ru: "Когда мы пойдём.", pt: "Quando andarmos.", tense: "Futuro Conj."},
+{ru: "По мере того как они идут.", pt: "Conforme eles andarem.", tense: "Futuro Conj."},
+{ru: "Я хожу туда-сюда.", pt: "Ando por aí.", tense: "Presente"},
+{ru: "Ты много ходишь.", pt: "Tu andas muito.", tense: "Presente"},
+{ru: "Он ходит на работу пешком.", pt: "Ele anda para o trabalho.", tense: "Presente"},
+{ru: "Мы ходим вместе.", pt: "Andamos juntos.", tense: "Presente"},
+{ru: "Они ходят по утрам.", pt: "Eles andam de manhã.", tense: "Presente"}
+];
+
+const phraseList = document.querySelector('.phrase-list');
+const searchBox = document.querySelector('.search-box');
+
+function highlightVerb(text) {
+const forms = ['ando', 'andas', 'anda', 'andamos', 'andam', 'andava', 'andavas', 'andávamos', 'andavam', 'andei', 'andaste', 'andou', 'andámos', 'andaram', 'andarei', 'andarás', 'andará', 'andaremos', 'andarão', 'andaria', 'andarias', 'andaríamos', 'andariam', 'ande', 'andes', 'andemos', 'andem', 'andasse', 'andasses', 'andássemos', 'andassem', 'andar', 'andares', 'andarmos', 'andarem'];
+const pattern = new RegExp(`\\b(${forms.join('|')})\\b`, 'gi');
+return text.replace(pattern, '<span class="verb-highlight">$1</span>');
+}
+
+function renderPhrases(filter = '') {
+const filtered = phrases.filter(p =>
+p.ru.toLowerCase().includes(filter.toLowerCase()) ||
+p.pt.toLowerCase().includes(filter.toLowerCase())
+);
+phraseList.innerHTML = filtered.map(p => `
+<div class="phrase-card" onclick="this.classList.toggle('revealed')">
+<div class="source">${p.ru}<span class="tense-tag">${p.tense}</span></div>
+<div class="translation">${highlightVerb(p.pt)}</div>
+</div>
+`).join('');
+}
+
+function showAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.add('revealed'));
+}
+
+function hideAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.remove('revealed'));
+}
+
+searchBox.addEventListener('input', (e) => renderPhrases(e.target.value));
+renderPhrases();
+</script>
+</body>
+</html>

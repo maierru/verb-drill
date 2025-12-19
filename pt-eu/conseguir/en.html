@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb CONSEGUIR — 100 Phrases</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); min-height: 100vh; margin: 0; padding: 20px; color: #eee; }
+        .container { max-width: 900px; margin: 0 auto; }
+        .back-link { display: inline-block; color: #00d4aa; text-decoration: none; margin-bottom: 10px; font-size: 0.9rem; }
+        .back-link:hover { text-decoration: underline; }
+        header { text-align: center; padding: 30px 0; margin-bottom: 20px; }
+        h1 { color: #00d4aa; font-size: 2.5rem; margin-bottom: 10px; text-shadow: 0 0 20px rgba(0, 212, 170, 0.3); }
+        .subtitle { color: #888; font-size: 1.1rem; }
+        .controls { display: flex; gap: 15px; justify-content: center; margin-bottom: 30px; flex-wrap: wrap; }
+        .btn { padding: 12px 24px; border: none; border-radius: 8px; cursor: pointer; font-size: 1rem; transition: all 0.3s ease; font-weight: 600; }
+        .btn-primary { background: #00d4aa; color: #1a1a2e; }
+        .btn-primary:hover { background: #00f5c4; transform: translateY(-2px); box-shadow: 0 5px 20px rgba(0, 212, 170, 0.4); }
+        .btn-secondary { background: #3a3a5c; color: #eee; }
+        .btn-secondary:hover { background: #4a4a7c; }
+        .stats { text-align: center; margin-bottom: 20px; color: #888; }
+        .phrase-list { display: flex; flex-direction: column; gap: 12px; }
+        .phrase-card { background: rgba(255, 255, 255, 0.05); border-radius: 12px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1); transition: all 0.3s ease; }
+        .phrase-card:hover { border-color: rgba(0, 212, 170, 0.3); background: rgba(255, 255, 255, 0.08); }
+        .phrase-header { display: flex; align-items: center; padding: 18px 20px; cursor: pointer; user-select: none; }
+        .phrase-number { background: #00d4aa; color: #1a1a2e; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9rem; margin-right: 15px; flex-shrink: 0; }
+        .origin-text { flex: 1; font-size: 1.1rem; line-height: 1.5; }
+        .toggle-icon { font-size: 1.5rem; color: #00d4aa; transition: transform 0.3s ease; margin-left: 15px; }
+        .phrase-card.open .toggle-icon { transform: rotate(180deg); }
+        .portuguese-text { padding: 0 20px 20px 71px; display: none; animation: fadeIn 0.3s ease; }
+        .phrase-card.open .portuguese-text { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+        .pt-content { background: rgba(0, 212, 170, 0.1); padding: 15px 20px; border-radius: 8px; border-left: 4px solid #00d4aa; }
+        .pt-label { font-size: 0.8rem; color: #00d4aa; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 5px; }
+        .pt-phrase { font-size: 1.15rem; color: #fff; font-style: italic; }
+        .verb-highlight { color: #00d4aa; font-weight: 600; }
+        .tense-tag { display: inline-block; background: rgba(255, 193, 7, 0.2); color: #ffc107; padding: 3px 10px; border-radius: 20px; font-size: 0.75rem; margin-top: 10px; }
+        .search-box { width: 100%; max-width: 400px; padding: 12px 20px; border: 2px solid rgba(255, 255, 255, 0.1); border-radius: 30px; background: rgba(255, 255, 255, 0.05); color: #eee; font-size: 1rem; outline: none; transition: all 0.3s ease; }
+        .search-box:focus { border-color: #00d4aa; background: rgba(255, 255, 255, 0.08); }
+        .search-box::placeholder { color: #666; }
+        footer { text-align: center; padding: 40px 0 20px; color: #555; font-size: 0.9rem; }
+        @media (max-width: 600px) { h1 { font-size: 1.8rem; } .phrase-header { padding: 15px; } .portuguese-text { padding-left: 15px; } .phrase-number { width: 30px; height: 30px; font-size: 0.8rem; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../" class="back-link">← Back to verb list</a>
+            <h1>🇵🇹 Verb CONSEGUIR</h1>
+            <p class="subtitle">100 popular phrases — European Portuguese</p>
+        </header>
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search phrases..." id="searchInput">
+        </div>
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Show all translations</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
+        </div>
+        <div class="stats" id="stats">Showing: 100 of 100 phrases</div>
+        <div class="phrase-list" id="phraseList"></div>
+        <footer>European Portuguese Practice — Verb CONSEGUIR</footer>
+    </div>
+    <script>
+        const phrases = [
+            { en: "I can do it.", pt: "Consigo fazer.", tense: "Presente" },
+            { en: "Can you see?", pt: "Consegues ver?", tense: "Presente" },
+            { en: "He manages to arrive on time.", pt: "Ele consegue chegar a tempo.", tense: "Presente" },
+            { en: "She can't sleep.", pt: "Ela não consegue dormir.", tense: "Presente" },
+            { en: "We can help.", pt: "Conseguimos ajudar.", tense: "Presente" },
+            { en: "They can't understand.", pt: "Eles não conseguem perceber.", tense: "Presente" },
+            { en: "I can't find it.", pt: "Não consigo encontrar.", tense: "Presente" },
+            { en: "Can you hear me?", pt: "Consegues ouvir-me?", tense: "Presente" },
+            { en: "He can speak Portuguese.", pt: "Ele consegue falar português.", tense: "Presente" },
+            { en: "She manages everything.", pt: "Ela consegue tudo.", tense: "Presente" },
+            { en: "I can't believe it.", pt: "Não consigo acreditar.", tense: "Presente" },
+            { en: "Can you explain?", pt: "Consegues explicar?", tense: "Presente" },
+            { en: "He can't concentrate.", pt: "Ele não consegue concentrar-se.", tense: "Presente" },
+            { en: "She can solve it.", pt: "Ela consegue resolver.", tense: "Presente" },
+            { en: "We can finish today.", pt: "Conseguimos acabar hoje.", tense: "Presente" },
+            { en: "They manage to survive.", pt: "Eles conseguem sobreviver.", tense: "Presente" },
+            { en: "I can imagine.", pt: "Consigo imaginar.", tense: "Presente" },
+            { en: "Can you remember?", pt: "Consegues lembrar-te?", tense: "Presente" },
+            { en: "He can read fast.", pt: "Ele consegue ler rápido.", tense: "Presente" },
+            { en: "She can't stop.", pt: "Ela não consegue parar.", tense: "Presente" },
+            { en: "I used to manage.", pt: "Conseguia.", tense: "Imperfeito" },
+            { en: "You could do it before.", pt: "Conseguias fazer antes.", tense: "Imperfeito" },
+            { en: "He could run faster.", pt: "Ele conseguia correr mais rápido.", tense: "Imperfeito" },
+            { en: "She couldn't sleep.", pt: "Ela não conseguia dormir.", tense: "Imperfeito" },
+            { en: "We could understand.", pt: "Conseguíamos perceber.", tense: "Imperfeito" },
+            { en: "They couldn't find it.", pt: "Eles não conseguiam encontrar.", tense: "Imperfeito" },
+            { en: "I couldn't believe.", pt: "Não conseguia acreditar.", tense: "Imperfeito" },
+            { en: "Could you hear?", pt: "Conseguias ouvir?", tense: "Imperfeito" },
+            { en: "He could work more.", pt: "Ele conseguia trabalhar mais.", tense: "Imperfeito" },
+            { en: "She could always help.", pt: "Ela conseguia sempre ajudar.", tense: "Imperfeito" },
+            { en: "I managed to finish.", pt: "Consegui acabar.", tense: "Perfeito" },
+            { en: "Did you manage to see?", pt: "Conseguiste ver?", tense: "Perfeito" },
+            { en: "He managed to escape.", pt: "Ele conseguiu escapar.", tense: "Perfeito" },
+            { en: "She got the job.", pt: "Ela conseguiu o emprego.", tense: "Perfeito" },
+            { en: "We managed to arrive.", pt: "Conseguimos chegar.", tense: "Perfeito" },
+            { en: "They managed to win.", pt: "Eles conseguiram ganhar.", tense: "Perfeito" },
+            { en: "I couldn't do it.", pt: "Não consegui fazer.", tense: "Perfeito" },
+            { en: "Did you manage to sleep?", pt: "Conseguiste dormir?", tense: "Perfeito" },
+            { en: "He finally managed.", pt: "Ele finalmente conseguiu.", tense: "Perfeito" },
+            { en: "She couldn't find it.", pt: "Ela não conseguiu encontrar.", tense: "Perfeito" },
+            { en: "I will manage.", pt: "Conseguirei.", tense: "Futuro" },
+            { en: "You will be able to.", pt: "Conseguirás.", tense: "Futuro" },
+            { en: "He will manage to finish.", pt: "Ele conseguirá acabar.", tense: "Futuro" },
+            { en: "We will manage somehow.", pt: "Conseguiremos de alguma forma.", tense: "Futuro" },
+            { en: "They will manage to come.", pt: "Eles conseguirão vir.", tense: "Futuro" },
+            { en: "I won't be able to.", pt: "Não conseguirei.", tense: "Futuro" },
+            { en: "Will you manage?", pt: "Conseguirás?", tense: "Futuro" },
+            { en: "She will manage everything.", pt: "Ela conseguirá tudo.", tense: "Futuro" },
+            { en: "We will manage to solve.", pt: "Conseguiremos resolver.", tense: "Futuro" },
+            { en: "They will manage to arrive.", pt: "Eles conseguirão chegar.", tense: "Futuro" },
+            { en: "I would manage.", pt: "Conseguiria.", tense: "Condicional" },
+            { en: "You would be able to.", pt: "Conseguirias.", tense: "Condicional" },
+            { en: "He would manage if...", pt: "Ele conseguiria se...", tense: "Condicional" },
+            { en: "We would manage together.", pt: "Conseguiríamos juntos.", tense: "Condicional" },
+            { en: "They would manage to help.", pt: "Eles conseguiriam ajudar.", tense: "Condicional" },
+            { en: "I wouldn't be able to.", pt: "Não conseguiria.", tense: "Condicional" },
+            { en: "Would you manage?", pt: "Conseguirias?", tense: "Condicional" },
+            { en: "She would manage alone.", pt: "Ela conseguiria sozinha.", tense: "Condicional" },
+            { en: "We would manage to finish.", pt: "Conseguiríamos acabar.", tense: "Condicional" },
+            { en: "He would manage better.", pt: "Ele conseguiria melhor.", tense: "Condicional" },
+            { en: "I hope you manage.", pt: "Espero que consigas.", tense: "Conjuntivo" },
+            { en: "It's important that he manages.", pt: "É importante que ele consiga.", tense: "Conjuntivo" },
+            { en: "I doubt she manages.", pt: "Duvido que ela consiga.", tense: "Conjuntivo" },
+            { en: "Even if you manage...", pt: "Mesmo que consigas...", tense: "Conjuntivo" },
+            { en: "Whoever manages...", pt: "Quem consiga...", tense: "Conjuntivo" },
+            { en: "It's necessary that we manage.", pt: "É preciso que consigamos.", tense: "Conjuntivo" },
+            { en: "I don't think he manages.", pt: "Não acho que ele consiga.", tense: "Conjuntivo" },
+            { en: "Unless you manage...", pt: "A menos que consigas...", tense: "Conjuntivo" },
+            { en: "So that they manage...", pt: "Para que consigam...", tense: "Conjuntivo" },
+            { en: "I hope we manage.", pt: "Espero que consigamos.", tense: "Conjuntivo" },
+            { en: "If I managed...", pt: "Se eu conseguisse...", tense: "Imperfeito Conj." },
+            { en: "I wish you managed.", pt: "Quem me dera que conseguisses.", tense: "Imperfeito Conj." },
+            { en: "If he managed...", pt: "Se ele conseguisse...", tense: "Imperfeito Conj." },
+            { en: "If we managed...", pt: "Se conseguíssemos...", tense: "Imperfeito Conj." },
+            { en: "If they managed...", pt: "Se eles conseguissem...", tense: "Imperfeito Conj." },
+            { en: "I would help if you managed.", pt: "Ajudaria se conseguisses.", tense: "Imperfeito Conj." },
+            { en: "Even if I managed...", pt: "Mesmo que conseguisse...", tense: "Imperfeito Conj." },
+            { en: "If she managed to come...", pt: "Se ela conseguisse vir...", tense: "Imperfeito Conj." },
+            { en: "As if he managed...", pt: "Como se conseguisse...", tense: "Imperfeito Conj." },
+            { en: "If only I managed.", pt: "Se ao menos conseguisse.", tense: "Imperfeito Conj." },
+            { en: "When I manage...", pt: "Quando conseguir...", tense: "Futuro Conj." },
+            { en: "If you manage...", pt: "Se conseguires...", tense: "Futuro Conj." },
+            { en: "When he manages...", pt: "Quando ele conseguir...", tense: "Futuro Conj." },
+            { en: "If we manage...", pt: "Se conseguirmos...", tense: "Futuro Conj." },
+            { en: "When they manage...", pt: "Quando eles conseguirem...", tense: "Futuro Conj." },
+            { en: "As soon as I manage...", pt: "Assim que conseguir...", tense: "Futuro Conj." },
+            { en: "Whoever manages...", pt: "Quem conseguir...", tense: "Futuro Conj." },
+            { en: "If you ever manage...", pt: "Se alguma vez conseguires...", tense: "Futuro Conj." },
+            { en: "When we manage to finish...", pt: "Quando conseguirmos acabar...", tense: "Futuro Conj." },
+            { en: "Tell me if you manage.", pt: "Diz-me se conseguires.", tense: "Futuro Conj." },
+            { en: "To be able to.", pt: "Conseguir fazer.", tense: "Expressão" },
+            { en: "I can't take it anymore.", pt: "Não consigo mais.", tense: "Expressão" },
+            { en: "Can you manage?", pt: "Consegues?", tense: "Expressão" },
+            { en: "To get a job.", pt: "Conseguir emprego.", tense: "Expressão" },
+            { en: "To achieve success.", pt: "Conseguir sucesso.", tense: "Expressão" },
+            { en: "To manage to understand.", pt: "Conseguir perceber.", tense: "Expressão" },
+            { en: "Can you handle it?", pt: "Consegues aguentar?", tense: "Expressão" },
+            { en: "I finally got it.", pt: "Finalmente consegui.", tense: "Expressão" },
+            { en: "To obtain permission.", pt: "Conseguir permissão.", tense: "Expressão" },
+            { en: "Mission accomplished.", pt: "Conseguido.", tense: "Expressão" }
+        ];
+
+        function renderPhrases(filteredPhrases = phrases) {
+            const container = document.getElementById('phraseList');
+            container.innerHTML = '';
+            filteredPhrases.forEach((phrase, index) => {
+                const card = document.createElement('div');
+                card.className = 'phrase-card';
+                card.innerHTML = `
+                    <div class="phrase-header" onclick="toggleCard(this.parentElement)">
+                        <span class="phrase-number">${index + 1}</span>
+                        <span class="origin-text">${phrase.en}</span>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="portuguese-text">
+                        <div class="pt-content">
+                            <div class="pt-label">European Portuguese</div>
+                            <div class="pt-phrase">${highlightVerb(phrase.pt)}</div>
+                            <span class="tense-tag">${phrase.tense}</span>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+            document.getElementById('stats').textContent = `Showing: ${filteredPhrases.length} of ${phrases.length} phrases`;
+        }
+
+        function highlightVerb(text) {
+            const forms = ['consigo', 'consegues', 'consegue', 'conseguimos', 'conseguem', 'conseguia', 'conseguias', 'conseguíamos', 'conseguiam', 'consegui', 'conseguiste', 'conseguiu', 'conseguiram', 'conseguirei', 'conseguirás', 'conseguirá', 'conseguiremos', 'conseguirão', 'conseguiria', 'conseguirias', 'conseguiríamos', 'conseguiriam', 'consiga', 'consigas', 'consigamos', 'consigam', 'conseguisse', 'conseguisses', 'conseguíssemos', 'conseguissem', 'conseguir', 'conseguires', 'conseguirmos', 'conseguirem', 'conseguindo', 'conseguido'];
+            let result = text;
+            forms.forEach(form => {
+                const regex = new RegExp(`\\b(${form})\\b`, 'gi');
+                result = result.replace(regex, '<span class="verb-highlight">$1</span>');
+            });
+            return result;
+        }
+
+        function toggleCard(card) { card.classList.toggle('open'); }
+        function showAll() { document.querySelectorAll('.phrase-card').forEach(card => card.classList.add('open')); }
+        function hideAll() { document.querySelectorAll('.phrase-card').forEach(card => card.classList.remove('open')); }
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            const filtered = phrases.filter(p => p.en.toLowerCase().includes(query) || p.pt.toLowerCase().includes(query) || p.tense.toLowerCase().includes(query));
+            renderPhrases(filtered);
+        });
+        renderPhrases();
+    </script>
+</body>
+</html>

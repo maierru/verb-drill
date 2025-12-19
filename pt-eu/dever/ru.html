@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dever — Португальский глагол</title>
+<style>
+*{box-sizing:border-box}body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);min-height:100vh;margin:0;padding:20px;color:#eee}.container{max-width:800px;margin:0 auto}header{text-align:center;padding:20px 0}.back-link{color:#00d4aa;text-decoration:none;font-size:.9rem}.back-link:hover{text-decoration:underline}h1{color:#00d4aa;font-size:2rem;margin:10px 0;text-shadow:0 0 20px rgba(0,212,170,.3)}.subtitle{color:#888;font-size:1rem;margin-bottom:20px}.controls{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}.btn{background:rgba(0,212,170,.2);color:#00d4aa;border:1px solid #00d4aa;padding:8px 16px;border-radius:20px;cursor:pointer;font-size:.85rem;transition:all .2s}.btn:hover{background:#00d4aa;color:#1a1a2e}.search-box{width:100%;max-width:400px;padding:10px 15px;border-radius:20px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.05);color:#eee;font-size:1rem;margin-bottom:20px}.search-box::placeholder{color:#666}.phrase-list{display:flex;flex-direction:column;gap:10px}.phrase-card{background:rgba(255,255,255,.05);border-radius:10px;padding:15px;border:1px solid rgba(255,255,255,.1);cursor:pointer;transition:all .2s}.phrase-card:hover{border-color:rgba(0,212,170,.3)}.phrase-card.revealed .translation{opacity:1;transform:translateY(0)}.source{font-size:1.1rem;color:#fff;margin-bottom:8px}.translation{font-size:1rem;color:#00d4aa;opacity:0;transform:translateY(-5px);transition:all .2s}.tense-tag{display:inline-block;background:rgba(0,212,170,.15);color:#00d4aa;padding:2px 8px;border-radius:10px;font-size:.75rem;margin-left:8px}.verb-highlight{color:#ff6b6b;font-weight:600}footer{text-align:center;padding:30px 0;color:#555;font-size:.85rem}@media(max-width:600px){h1{font-size:1.5rem}.source{font-size:1rem}.translation{font-size:.95rem}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<a href="../" class="back-link">← Назад к глаголам</a>
+<h1>🇵🇹 Dever</h1>
+<p class="subtitle">должен, быть должным — 100 фраз</p>
+</header>
+<input type="text" class="search-box" placeholder="Поиск фраз...">
+<div class="controls">
+<button class="btn" onclick="showAll()">Показать все</button>
+<button class="btn" onclick="hideAll()">Скрыть все</button>
+</div>
+<div class="phrase-list"></div>
+<footer>Verb Drill — Практика португальских глаголов</footer>
+</div>
+<script>
+const phrases = [
+{ru: "Я должен идти.", pt: "Devo ir.", tense: "Presente"},
+{ru: "Ты должен учиться.", pt: "Deves estudar.", tense: "Presente"},
+{ru: "Он должен работать.", pt: "Ele deve trabalhar.", tense: "Presente"},
+{ru: "Мы должны помочь.", pt: "Devemos ajudar.", tense: "Presente"},
+{ru: "Они должны заплатить.", pt: "Eles devem pagar.", tense: "Presente"},
+{ru: "Я должен тебе деньги.", pt: "Devo-te dinheiro.", tense: "Presente"},
+{ru: "Это должно быть здесь.", pt: "Deve estar aqui.", tense: "Presente"},
+{ru: "Ты должен быть осторожен.", pt: "Deves ter cuidado.", tense: "Presente"},
+{ru: "Она должна прийти сегодня.", pt: "Ela deve chegar hoje.", tense: "Presente"},
+{ru: "Мы должны уважать других.", pt: "Devemos respeitar os outros.", tense: "Presente"},
+{ru: "Я должен был идти.", pt: "Devia ir.", tense: "Imperfeito"},
+{ru: "Ты должен был сказать.", pt: "Devias dizer.", tense: "Imperfeito"},
+{ru: "Он должен был знать.", pt: "Ele devia saber.", tense: "Imperfeito"},
+{ru: "Мы должны были подождать.", pt: "Devíamos esperar.", tense: "Imperfeito"},
+{ru: "Они должны были прийти.", pt: "Eles deviam vir.", tense: "Imperfeito"},
+{ru: "Я должен был позвонить.", pt: "Devia telefonar.", tense: "Imperfeito"},
+{ru: "Ты должен был учиться больше.", pt: "Devias estudar mais.", tense: "Imperfeito"},
+{ru: "Она должна была остаться.", pt: "Ela devia ficar.", tense: "Imperfeito"},
+{ru: "Мы должны были быть там.", pt: "Devíamos estar lá.", tense: "Imperfeito"},
+{ru: "Они должны были заплатить.", pt: "Eles deviam pagar.", tense: "Imperfeito"},
+{ru: "Я должен буду вернуться.", pt: "Deverei voltar.", tense: "Futuro"},
+{ru: "Ты должен будешь решить.", pt: "Deverás decidir.", tense: "Futuro"},
+{ru: "Он должен будет объяснить.", pt: "Ele deverá explicar.", tense: "Futuro"},
+{ru: "Мы должны будем подождать.", pt: "Deveremos esperar.", tense: "Futuro"},
+{ru: "Они должны будут согласиться.", pt: "Eles deverão concordar.", tense: "Futuro"},
+{ru: "Документ должен быть готов.", pt: "O documento deverá estar pronto.", tense: "Futuro"},
+{ru: "Результаты должны появиться завтра.", pt: "Os resultados deverão sair amanhã.", tense: "Futuro"},
+{ru: "Мы должны будем принять меры.", pt: "Deveremos tomar medidas.", tense: "Futuro"},
+{ru: "Ты должен будешь сказать правду.", pt: "Deverás dizer a verdade.", tense: "Futuro"},
+{ru: "Они должны будут изменить план.", pt: "Eles deverão mudar o plano.", tense: "Futuro"},
+{ru: "Я должен был бы идти.", pt: "Deveria ir.", tense: "Condicional"},
+{ru: "Ты должен был бы помочь.", pt: "Deverias ajudar.", tense: "Condicional"},
+{ru: "Он должен был бы извиниться.", pt: "Ele deveria pedir desculpa.", tense: "Condicional"},
+{ru: "Мы должны были бы согласиться.", pt: "Deveríamos concordar.", tense: "Condicional"},
+{ru: "Они должны были бы подождать.", pt: "Eles deveriam esperar.", tense: "Condicional"},
+{ru: "Тебе следовало бы отдохнуть.", pt: "Deverias descansar.", tense: "Condicional"},
+{ru: "Ей следовало бы попробовать.", pt: "Ela deveria tentar.", tense: "Condicional"},
+{ru: "Нам следовало бы поговорить.", pt: "Deveríamos falar.", tense: "Condicional"},
+{ru: "Им следовало бы понять.", pt: "Eles deveriam compreender.", tense: "Condicional"},
+{ru: "Мне следовало бы быть там.", pt: "Deveria estar lá.", tense: "Condicional"},
+{ru: "Нужно, чтобы я должен был.", pt: "É preciso que eu deva.", tense: "Conjuntivo"},
+{ru: "Хочу, чтобы ты должен был.", pt: "Quero que tu devas.", tense: "Conjuntivo"},
+{ru: "Важно, чтобы он должен был.", pt: "É importante que ele deva.", tense: "Conjuntivo"},
+{ru: "Надеюсь, что мы должны.", pt: "Espero que devamos.", tense: "Conjuntivo"},
+{ru: "Сомневаюсь, что они должны.", pt: "Duvido que eles devam.", tense: "Conjuntivo"},
+{ru: "Чтобы ты был обязан.", pt: "Para que tu devas.", tense: "Conjuntivo"},
+{ru: "Хотя я должен.", pt: "Embora eu deva.", tense: "Conjuntivo"},
+{ru: "Пока она должна.", pt: "Até que ela deva.", tense: "Conjuntivo"},
+{ru: "Если мы должны.", pt: "Caso devamos.", tense: "Conjuntivo"},
+{ru: "Боюсь, что они должны.", pt: "Receio que eles devam.", tense: "Conjuntivo"},
+{ru: "Если бы я должен был.", pt: "Se eu devesse.", tense: "Imperfeito Conj."},
+{ru: "Если бы ты должен был.", pt: "Se tu devesses.", tense: "Imperfeito Conj."},
+{ru: "Если бы он должен был.", pt: "Se ele devesse.", tense: "Imperfeito Conj."},
+{ru: "Если бы мы должны были.", pt: "Se nós devêssemos.", tense: "Imperfeito Conj."},
+{ru: "Если бы они должны были.", pt: "Se eles devessem.", tense: "Imperfeito Conj."},
+{ru: "Хотел бы, чтобы я должен был.", pt: "Gostaria que eu devesse.", tense: "Imperfeito Conj."},
+{ru: "Было бы лучше, если бы ты должен был.", pt: "Seria melhor se tu devesses.", tense: "Imperfeito Conj."},
+{ru: "Как будто он должен был.", pt: "Como se ele devesse.", tense: "Imperfeito Conj."},
+{ru: "Чтобы мы были обязаны.", pt: "Para que nós devêssemos.", tense: "Imperfeito Conj."},
+{ru: "Если бы они были обязаны.", pt: "Se eles devessem.", tense: "Imperfeito Conj."},
+{ru: "Сколько я тебе должен?", pt: "Quanto te devo?", tense: "Presente"},
+{ru: "Ты мне ничего не должен.", pt: "Não me deves nada.", tense: "Presente"},
+{ru: "Он должен мне извинение.", pt: "Ele deve-me um pedido de desculpa.", tense: "Presente"},
+{ru: "Они мне должны много денег.", pt: "Eles devem-me muito dinheiro.", tense: "Presente"},
+{ru: "Я никому ничего не должен.", pt: "Não devo nada a ninguém.", tense: "Presente"},
+{ru: "Это должно быть правда.", pt: "Deve ser verdade.", tense: "Presente"},
+{ru: "Он должно быть устал.", pt: "Ele deve estar cansado.", tense: "Presente"},
+{ru: "Они должно быть заблудились.", pt: "Eles devem estar perdidos.", tense: "Presente"},
+{ru: "Это должно быть сложно.", pt: "Deve ser difícil.", tense: "Presente"},
+{ru: "Она должно быть дома.", pt: "Ela deve estar em casa.", tense: "Presente"},
+{ru: "Мы должны сделать это вместе.", pt: "Devemos fazer isto juntos.", tense: "Presente"},
+{ru: "Ты должен слушать внимательно.", pt: "Deves ouvir com atenção.", tense: "Presente"},
+{ru: "Они должны принять решение.", pt: "Eles devem tomar uma decisão.", tense: "Presente"},
+{ru: "Я должен признать ошибку.", pt: "Devo admitir o erro.", tense: "Presente"},
+{ru: "Она должна сказать правду.", pt: "Ela deve dizer a verdade.", tense: "Presente"},
+{ru: "Ты не должен делать это.", pt: "Não deves fazer isso.", tense: "Presente"},
+{ru: "Мы не должны опаздывать.", pt: "Não devemos chegar atrasados.", tense: "Presente"},
+{ru: "Они не должны знать.", pt: "Eles não devem saber.", tense: "Presente"},
+{ru: "Я не должен забывать.", pt: "Não devo esquecer.", tense: "Presente"},
+{ru: "Она не должна беспокоиться.", pt: "Ela não deve preocupar-se.", tense: "Presente"},
+{ru: "Я задолжал ему услугу.", pt: "Devi-lhe um favor.", tense: "Perfeito"},
+{ru: "Ты задолжал объяснение.", pt: "Deveste uma explicação.", tense: "Perfeito"},
+{ru: "Он задолжал мне ответ.", pt: "Ele deveu-me uma resposta.", tense: "Perfeito"},
+{ru: "Мы задолжали им помощь.", pt: "Devemos-lhes ajuda.", tense: "Perfeito"},
+{ru: "Они задолжали много денег.", pt: "Eles deveram muito dinheiro.", tense: "Perfeito"},
+{ru: "Тебе следует идти сейчас.", pt: "Deves ir agora.", tense: "Presente"},
+{ru: "Нам следует поговорить.", pt: "Devemos conversar.", tense: "Presente"},
+{ru: "Ей следует подумать.", pt: "Ela deve pensar.", tense: "Presente"},
+{ru: "Им следует быть здесь.", pt: "Eles devem estar aqui.", tense: "Presente"},
+{ru: "Мне следует позвонить.", pt: "Devo telefonar.", tense: "Presente"},
+{ru: "Ты должен мне пиво.", pt: "Deves-me uma cerveja.", tense: "Presente"},
+{ru: "Она должна объяснение.", pt: "Ela deve uma explicação.", tense: "Presente"},
+{ru: "Мы должны благодарность.", pt: "Devemos gratidão.", tense: "Presente"},
+{ru: "Я должен ему жизнь.", pt: "Devo-lhe a vida.", tense: "Presente"},
+{ru: "Они должны уважение.", pt: "Eles devem respeito.", tense: "Presente"},
+{ru: "Как я должен это делать?", pt: "Como devo fazer isto?", tense: "Presente"},
+{ru: "Что я должен сказать?", pt: "O que devo dizer?", tense: "Presente"},
+{ru: "Когда мы должны прийти?", pt: "Quando devemos chegar?", tense: "Presente"},
+{ru: "Почему я должен согласиться?", pt: "Porque devo concordar?", tense: "Presente"},
+{ru: "Куда мы должны идти?", pt: "Para onde devemos ir?", tense: "Presente"}
+];
+
+const phraseList = document.querySelector('.phrase-list');
+const searchBox = document.querySelector('.search-box');
+
+function highlightVerb(text) {
+const forms = ['devo', 'deves', 'deve', 'devemos', 'devem', 'devia', 'devias', 'devíamos', 'deviam', 'deverei', 'deverás', 'deverá', 'deveremos', 'deverão', 'deveria', 'deverias', 'deveríamos', 'deveriam', 'deva', 'devas', 'devamos', 'devam', 'devesse', 'devesses', 'devêssemos', 'devessem', 'devi', 'deveste', 'deveu', 'devemos', 'deveram'];
+const pattern = new RegExp(`\\b(${forms.join('|')})\\b`, 'gi');
+return text.replace(pattern, '<span class="verb-highlight">$1</span>');
+}
+
+function renderPhrases(filter = '') {
+const filtered = phrases.filter(p =>
+p.ru.toLowerCase().includes(filter.toLowerCase()) ||
+p.pt.toLowerCase().includes(filter.toLowerCase())
+);
+phraseList.innerHTML = filtered.map(p => `
+<div class="phrase-card" onclick="this.classList.toggle('revealed')">
+<div class="source">${p.ru}<span class="tense-tag">${p.tense}</span></div>
+<div class="translation">${highlightVerb(p.pt)}</div>
+</div>
+`).join('');
+}
+
+function showAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.add('revealed'));
+}
+
+function hideAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.remove('revealed'));
+}
+
+searchBox.addEventListener('input', (e) => renderPhrases(e.target.value));
+renderPhrases();
+</script>
+</body>
+</html>

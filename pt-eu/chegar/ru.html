@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chegar — Португальский глагол</title>
+<style>
+*{box-sizing:border-box}body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);min-height:100vh;margin:0;padding:20px;color:#eee}.container{max-width:800px;margin:0 auto}header{text-align:center;padding:20px 0}.back-link{color:#00d4aa;text-decoration:none;font-size:.9rem}.back-link:hover{text-decoration:underline}h1{color:#00d4aa;font-size:2rem;margin:10px 0;text-shadow:0 0 20px rgba(0,212,170,.3)}.subtitle{color:#888;font-size:1rem;margin-bottom:20px}.controls{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}.btn{background:rgba(0,212,170,.2);color:#00d4aa;border:1px solid #00d4aa;padding:8px 16px;border-radius:20px;cursor:pointer;font-size:.85rem;transition:all .2s}.btn:hover{background:#00d4aa;color:#1a1a2e}.search-box{width:100%;max-width:400px;padding:10px 15px;border-radius:20px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.05);color:#eee;font-size:1rem;margin-bottom:20px}.search-box::placeholder{color:#666}.phrase-list{display:flex;flex-direction:column;gap:10px}.phrase-card{background:rgba(255,255,255,.05);border-radius:10px;padding:15px;border:1px solid rgba(255,255,255,.1);cursor:pointer;transition:all .2s}.phrase-card:hover{border-color:rgba(0,212,170,.3)}.phrase-card.revealed .translation{opacity:1;transform:translateY(0)}.source{font-size:1.1rem;color:#fff;margin-bottom:8px}.translation{font-size:1rem;color:#00d4aa;opacity:0;transform:translateY(-5px);transition:all .2s}.tense-tag{display:inline-block;background:rgba(0,212,170,.15);color:#00d4aa;padding:2px 8px;border-radius:10px;font-size:.75rem;margin-left:8px}.verb-highlight{color:#ff6b6b;font-weight:600}footer{text-align:center;padding:30px 0;color:#555;font-size:.85rem}@media(max-width:600px){h1{font-size:1.5rem}.source{font-size:1rem}.translation{font-size:.95rem}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<a href="../" class="back-link">← Назад к глаголам</a>
+<h1>🇵🇹 Chegar</h1>
+<p class="subtitle">приходить, прибывать — 100 фраз</p>
+</header>
+<input type="text" class="search-box" placeholder="Поиск фраз...">
+<div class="controls">
+<button class="btn" onclick="showAll()">Показать все</button>
+<button class="btn" onclick="hideAll()">Скрыть все</button>
+</div>
+<div class="phrase-list"></div>
+<footer>Verb Drill — Практика португальских глаголов</footer>
+</div>
+<script>
+const phrases = [
+{ru: "Я прихожу в 8.", pt: "Chego às 8.", tense: "Presente"},
+{ru: "Ты приходишь поздно.", pt: "Chegas atrasado.", tense: "Presente"},
+{ru: "Он приходит рано.", pt: "Ele chega cedo.", tense: "Presente"},
+{ru: "Мы приходим вместе.", pt: "Chegamos juntos.", tense: "Presente"},
+{ru: "Они приезжают завтра.", pt: "Eles chegam amanhã.", tense: "Presente"},
+{ru: "Я прихожу домой в 6.", pt: "Chego a casa às 6.", tense: "Presente"},
+{ru: "Ты всегда приходишь вовремя.", pt: "Chegas sempre a horas.", tense: "Presente"},
+{ru: "Она приезжает сегодня.", pt: "Ela chega hoje.", tense: "Presente"},
+{ru: "Мы прибываем в Лиссабон.", pt: "Chegamos a Lisboa.", tense: "Presente"},
+{ru: "Они приезжают на поезде.", pt: "Eles chegam de comboio.", tense: "Presente"},
+{ru: "Я раньше приходил рано.", pt: "Chegava cedo.", tense: "Imperfeito"},
+{ru: "Ты раньше приходил поздно.", pt: "Chegavas tarde.", tense: "Imperfeito"},
+{ru: "Он раньше приходил в полдень.", pt: "Ele chegava ao meio-dia.", tense: "Imperfeito"},
+{ru: "Мы раньше приходили вместе.", pt: "Chegávamos juntos.", tense: "Imperfeito"},
+{ru: "Они раньше приходили уставшие.", pt: "Eles chegavam cansados.", tense: "Imperfeito"},
+{ru: "Я подходил.", pt: "Estava a chegar.", tense: "Imperfeito"},
+{ru: "Ты приходил домой.", pt: "Chegavas a casa.", tense: "Imperfeito"},
+{ru: "Она всегда опаздывала.", pt: "Ela chegava sempre atrasada.", tense: "Imperfeito"},
+{ru: "Мы приходили в школу.", pt: "Chegávamos à escola.", tense: "Imperfeito"},
+{ru: "Они приезжали на автобусе.", pt: "Eles chegavam de autocarro.", tense: "Imperfeito"},
+{ru: "Я приехал вчера.", pt: "Cheguei ontem.", tense: "Perfeito"},
+{ru: "Ты опоздал.", pt: "Chegaste atrasado.", tense: "Perfeito"},
+{ru: "Он пришёл вовремя.", pt: "Ele chegou a horas.", tense: "Perfeito"},
+{ru: "Мы приехали ночью.", pt: "Chegámos à noite.", tense: "Perfeito"},
+{ru: "Они приехали сегодня утром.", pt: "Eles chegaram esta manhã.", tense: "Perfeito"},
+{ru: "Я пришёл домой.", pt: "Cheguei a casa.", tense: "Perfeito"},
+{ru: "Ты пришёл первым.", pt: "Chegaste primeiro.", tense: "Perfeito"},
+{ru: "Она добралась благополучно.", pt: "Ela chegou bem.", tense: "Perfeito"},
+{ru: "Мы прибыли в Порту.", pt: "Chegámos ao Porto.", tense: "Perfeito"},
+{ru: "Они прибыли в отель.", pt: "Eles chegaram ao hotel.", tense: "Perfeito"},
+{ru: "Я приеду скоро.", pt: "Chegarei em breve.", tense: "Futuro"},
+{ru: "Ты приедешь завтра.", pt: "Chegarás amanhã.", tense: "Futuro"},
+{ru: "Он приедет в 5.", pt: "Ele chegará às 5.", tense: "Futuro"},
+{ru: "Мы приедем на следующей неделе.", pt: "Chegaremos na próxima semana.", tense: "Futuro"},
+{ru: "Они приедут позже.", pt: "Eles chegarão mais tarde.", tense: "Futuro"},
+{ru: "Я приду вовремя.", pt: "Chegarei a horas.", tense: "Futuro"},
+{ru: "Ты придёшь раньше меня.", pt: "Chegarás antes de mim.", tense: "Futuro"},
+{ru: "Она прилетит на самолёте.", pt: "Ela chegará de avião.", tense: "Futuro"},
+{ru: "Мы прибудем в аэропорт.", pt: "Chegaremos ao aeroporto.", tense: "Futuro"},
+{ru: "Они приедут днём.", pt: "Eles chegarão à tarde.", tense: "Futuro"},
+{ru: "Я бы пришёл.", pt: "Chegaria.", tense: "Condicional"},
+{ru: "Ты бы пришёл рано.", pt: "Chegarias cedo.", tense: "Condicional"},
+{ru: "Он бы пришёл вовремя.", pt: "Ele chegaria a horas.", tense: "Condicional"},
+{ru: "Мы бы пришли вместе.", pt: "Chegaríamos juntos.", tense: "Condicional"},
+{ru: "Они бы опоздали.", pt: "Eles chegariam tarde.", tense: "Condicional"},
+{ru: "Я бы пришёл, если бы мог.", pt: "Chegaria se pudesse.", tense: "Condicional"},
+{ru: "Ты бы пришёл быстрее.", pt: "Chegarias mais depressa.", tense: "Condicional"},
+{ru: "Она бы уже приехала.", pt: "Ela já teria chegado.", tense: "Condicional"},
+{ru: "Мы бы пришли раньше них.", pt: "Chegaríamos antes deles.", tense: "Condicional"},
+{ru: "Они бы пришли в полдень.", pt: "Eles chegariam ao meio-dia.", tense: "Condicional"},
+{ru: "Хочу, чтобы ты пришёл.", pt: "Quero que chegues.", tense: "Conjuntivo"},
+{ru: "Надеюсь, что он придёт.", pt: "Espero que ele chegue.", tense: "Conjuntivo"},
+{ru: "Важно, чтобы мы пришли.", pt: "É importante que cheguemos.", tense: "Conjuntivo"},
+{ru: "Сомневаюсь, что они придут.", pt: "Duvido que eles cheguem.", tense: "Conjuntivo"},
+{ru: "Хотя я приду.", pt: "Embora eu chegue.", tense: "Conjuntivo"},
+{ru: "Чтобы ты пришёл.", pt: "Para que tu chegues.", tense: "Conjuntivo"},
+{ru: "Если только она не придёт.", pt: "A menos que ela chegue.", tense: "Conjuntivo"},
+{ru: "До того как они придут.", pt: "Antes que eles cheguem.", tense: "Conjuntivo"},
+{ru: "Возможно, мы придём.", pt: "É possível que cheguemos.", tense: "Conjuntivo"},
+{ru: "Предпочитаю, чтобы ты пришёл рано.", pt: "Prefiro que chegues cedo.", tense: "Conjuntivo"},
+{ru: "Если бы я пришёл.", pt: "Se eu chegasse.", tense: "Imperfeito Conj."},
+{ru: "Если бы ты пришёл.", pt: "Se tu chegasses.", tense: "Imperfeito Conj."},
+{ru: "Если бы он пришёл.", pt: "Se ele chegasse.", tense: "Imperfeito Conj."},
+{ru: "Если бы мы пришли.", pt: "Se nós chegássemos.", tense: "Imperfeito Conj."},
+{ru: "Если бы они пришли.", pt: "Se eles chegassem.", tense: "Imperfeito Conj."},
+{ru: "Хотел бы я прийти раньше.", pt: "Quem me dera ter chegado mais cedo.", tense: "Imperfeito Conj."},
+{ru: "Как будто она пришла.", pt: "Como se ela chegasse.", tense: "Imperfeito Conj."},
+{ru: "Если бы только ты пришёл.", pt: "Se tu chegasses.", tense: "Imperfeito Conj."},
+{ru: "Хотел, чтобы ты пришёл.", pt: "Queria que tu chegasses.", tense: "Imperfeito Conj."},
+{ru: "Было бы хорошо, если бы они пришли.", pt: "Seria bom se eles chegassem.", tense: "Imperfeito Conj."},
+{ru: "Когда я приду.", pt: "Quando eu chegar.", tense: "Futuro Conj."},
+{ru: "Как только ты придёшь.", pt: "Assim que chegares.", tense: "Futuro Conj."},
+{ru: "Если он придёт.", pt: "Se ele chegar.", tense: "Futuro Conj."},
+{ru: "Когда мы придём.", pt: "Quando chegarmos.", tense: "Futuro Conj."},
+{ru: "По мере того как они придут.", pt: "Conforme eles chegarem.", tense: "Futuro Conj."},
+{ru: "Хватит!", pt: "Chega!", tense: "Expressão"},
+{ru: "Подойди сюда!", pt: "Chega aqui!", tense: "Imperativo"},
+{ru: "Приходи вовремя!", pt: "Chega a horas!", tense: "Imperativo"},
+{ru: "Давайте придём вместе!", pt: "Cheguemos juntos!", tense: "Imperativo"},
+{ru: "Не опаздывай!", pt: "Não chegues atrasado!", tense: "Imperativo"},
+{ru: "Ты подходишь?", pt: "Estás a chegar?", tense: "Presente"},
+{ru: "Он подходит?", pt: "Ele está a chegar?", tense: "Presente"},
+{ru: "Они подходят?", pt: "Eles estão a chegar?", tense: "Presente"},
+{ru: "Я не подхожу.", pt: "Não estou a chegar.", tense: "Presente"},
+{ru: "Она ещё не подходит.", pt: "Ela ainda não está a chegar.", tense: "Presente"},
+{ru: "Я почти на месте.", pt: "Estou quase a chegar.", tense: "Presente"},
+{ru: "Мы уже подъезжаем.", pt: "Estamos a chegar.", tense: "Presente"},
+{ru: "Они только что приехали.", pt: "Eles acabaram de chegar.", tense: "Perfeito"},
+{ru: "Я только что пришёл.", pt: "Acabei de chegar.", tense: "Perfeito"},
+{ru: "Она ещё не приехала.", pt: "Ela ainda não chegou.", tense: "Perfeito"},
+{ru: "Ты хорошо добрался?", pt: "Chegaste bem?", tense: "Perfeito"},
+{ru: "Когда они приехали?", pt: "Quando é que eles chegaram?", tense: "Perfeito"},
+{ru: "Во сколько ты приходишь?", pt: "A que horas chegas?", tense: "Presente"},
+{ru: "Куда мы приезжаем?", pt: "Onde chegamos?", tense: "Presente"},
+{ru: "Как мне туда добраться?", pt: "Como chego lá?", tense: "Presente"},
+{ru: "Я не могу прийти вовремя.", pt: "Não consigo chegar a horas.", tense: "Presente"},
+{ru: "Тебе нужно прийти рано.", pt: "Precisas de chegar cedo.", tense: "Presente"},
+{ru: "Мы должны прийти до полудня.", pt: "Temos de chegar antes do meio-dia.", tense: "Presente"},
+{ru: "Хочу прийти первым.", pt: "Quero chegar primeiro.", tense: "Presente"},
+{ru: "Она решила прийти позже.", pt: "Ela decidiu chegar mais tarde.", tense: "Perfeito"}
+];
+
+const phraseList = document.querySelector('.phrase-list');
+const searchBox = document.querySelector('.search-box');
+
+function highlightVerb(text) {
+const forms = ['chego', 'chegas', 'chega', 'chegamos', 'chegam', 'chegava', 'chegavas', 'chegávamos', 'chegavam', 'cheguei', 'chegaste', 'chegou', 'chegámos', 'chegaram', 'chegarei', 'chegarás', 'chegará', 'chegaremos', 'chegarão', 'chegaria', 'chegarias', 'chegaríamos', 'chegariam', 'chegue', 'chegues', 'cheguemos', 'cheguem', 'chegasse', 'chegasses', 'chegássemos', 'chegassem', 'chegar', 'chegares', 'chegarmos', 'chegarem'];
+const pattern = new RegExp(`\\b(${forms.join('|')})\\b`, 'gi');
+return text.replace(pattern, '<span class="verb-highlight">$1</span>');
+}
+
+function renderPhrases(filter = '') {
+const filtered = phrases.filter(p =>
+p.ru.toLowerCase().includes(filter.toLowerCase()) ||
+p.pt.toLowerCase().includes(filter.toLowerCase())
+);
+phraseList.innerHTML = filtered.map(p => `
+<div class="phrase-card" onclick="this.classList.toggle('revealed')">
+<div class="source">${p.ru}<span class="tense-tag">${p.tense}</span></div>
+<div class="translation">${highlightVerb(p.pt)}</div>
+</div>
+`).join('');
+}
+
+function showAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.add('revealed'));
+}
+
+function hideAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.remove('revealed'));
+}
+
+searchBox.addEventListener('input', (e) => renderPhrases(e.target.value));
+renderPhrases();
+</script>
+</body>
+</html>

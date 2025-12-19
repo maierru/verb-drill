@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chegar — Portuguese Verb Practice</title>
+<style>
+*{box-sizing:border-box}body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);min-height:100vh;margin:0;padding:20px;color:#eee}.container{max-width:800px;margin:0 auto}header{text-align:center;padding:20px 0}.back-link{color:#00d4aa;text-decoration:none;font-size:.9rem}.back-link:hover{text-decoration:underline}h1{color:#00d4aa;font-size:2rem;margin:10px 0;text-shadow:0 0 20px rgba(0,212,170,.3)}.subtitle{color:#888;font-size:1rem;margin-bottom:20px}.controls{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}.btn{background:rgba(0,212,170,.2);color:#00d4aa;border:1px solid #00d4aa;padding:8px 16px;border-radius:20px;cursor:pointer;font-size:.85rem;transition:all .2s}.btn:hover{background:#00d4aa;color:#1a1a2e}.search-box{width:100%;max-width:400px;padding:10px 15px;border-radius:20px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.05);color:#eee;font-size:1rem;margin-bottom:20px}.search-box::placeholder{color:#666}.phrase-list{display:flex;flex-direction:column;gap:10px}.phrase-card{background:rgba(255,255,255,.05);border-radius:10px;padding:15px;border:1px solid rgba(255,255,255,.1);cursor:pointer;transition:all .2s}.phrase-card:hover{border-color:rgba(0,212,170,.3)}.phrase-card.revealed .translation{opacity:1;transform:translateY(0)}.source{font-size:1.1rem;color:#fff;margin-bottom:8px}.translation{font-size:1rem;color:#00d4aa;opacity:0;transform:translateY(-5px);transition:all .2s}.tense-tag{display:inline-block;background:rgba(0,212,170,.15);color:#00d4aa;padding:2px 8px;border-radius:10px;font-size:.75rem;margin-left:8px}.verb-highlight{color:#ff6b6b;font-weight:600}footer{text-align:center;padding:30px 0;color:#555;font-size:.85rem}@media(max-width:600px){h1{font-size:1.5rem}.source{font-size:1rem}.translation{font-size:.95rem}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<a href="../" class="back-link">← Back to verbs</a>
+<h1>🇵🇹 Chegar</h1>
+<p class="subtitle">to arrive, to reach — 100 phrases</p>
+</header>
+<input type="text" class="search-box" placeholder="Search phrases...">
+<div class="controls">
+<button class="btn" onclick="showAll()">Show All</button>
+<button class="btn" onclick="hideAll()">Hide All</button>
+</div>
+<div class="phrase-list"></div>
+<footer>Verb Drill — Portuguese Verb Practice</footer>
+</div>
+<script>
+const phrases = [
+{en: "I arrive at 8.", pt: "Chego às 8.", tense: "Presente"},
+{en: "You arrive late.", pt: "Chegas atrasado.", tense: "Presente"},
+{en: "He arrives early.", pt: "Ele chega cedo.", tense: "Presente"},
+{en: "We arrive together.", pt: "Chegamos juntos.", tense: "Presente"},
+{en: "They arrive tomorrow.", pt: "Eles chegam amanhã.", tense: "Presente"},
+{en: "I arrive home at 6.", pt: "Chego a casa às 6.", tense: "Presente"},
+{en: "You always arrive on time.", pt: "Chegas sempre a horas.", tense: "Presente"},
+{en: "She arrives today.", pt: "Ela chega hoje.", tense: "Presente"},
+{en: "We arrive in Lisbon.", pt: "Chegamos a Lisboa.", tense: "Presente"},
+{en: "They arrive by train.", pt: "Eles chegam de comboio.", tense: "Presente"},
+{en: "I used to arrive early.", pt: "Chegava cedo.", tense: "Imperfeito"},
+{en: "You used to arrive late.", pt: "Chegavas tarde.", tense: "Imperfeito"},
+{en: "He used to arrive at noon.", pt: "Ele chegava ao meio-dia.", tense: "Imperfeito"},
+{en: "We used to arrive together.", pt: "Chegávamos juntos.", tense: "Imperfeito"},
+{en: "They used to arrive tired.", pt: "Eles chegavam cansados.", tense: "Imperfeito"},
+{en: "I was arriving.", pt: "Estava a chegar.", tense: "Imperfeito"},
+{en: "You were arriving home.", pt: "Chegavas a casa.", tense: "Imperfeito"},
+{en: "She was always arriving late.", pt: "Ela chegava sempre atrasada.", tense: "Imperfeito"},
+{en: "We were arriving at school.", pt: "Chegávamos à escola.", tense: "Imperfeito"},
+{en: "They were arriving by bus.", pt: "Eles chegavam de autocarro.", tense: "Imperfeito"},
+{en: "I arrived yesterday.", pt: "Cheguei ontem.", tense: "Perfeito"},
+{en: "You arrived late.", pt: "Chegaste atrasado.", tense: "Perfeito"},
+{en: "He arrived on time.", pt: "Ele chegou a horas.", tense: "Perfeito"},
+{en: "We arrived at night.", pt: "Chegámos à noite.", tense: "Perfeito"},
+{en: "They arrived this morning.", pt: "Eles chegaram esta manhã.", tense: "Perfeito"},
+{en: "I arrived home.", pt: "Cheguei a casa.", tense: "Perfeito"},
+{en: "You arrived first.", pt: "Chegaste primeiro.", tense: "Perfeito"},
+{en: "She arrived safely.", pt: "Ela chegou bem.", tense: "Perfeito"},
+{en: "We arrived in Porto.", pt: "Chegámos ao Porto.", tense: "Perfeito"},
+{en: "They arrived at the hotel.", pt: "Eles chegaram ao hotel.", tense: "Perfeito"},
+{en: "I will arrive soon.", pt: "Chegarei em breve.", tense: "Futuro"},
+{en: "You will arrive tomorrow.", pt: "Chegarás amanhã.", tense: "Futuro"},
+{en: "He will arrive at 5.", pt: "Ele chegará às 5.", tense: "Futuro"},
+{en: "We will arrive next week.", pt: "Chegaremos na próxima semana.", tense: "Futuro"},
+{en: "They will arrive later.", pt: "Eles chegarão mais tarde.", tense: "Futuro"},
+{en: "I will arrive on time.", pt: "Chegarei a horas.", tense: "Futuro"},
+{en: "You will arrive before me.", pt: "Chegarás antes de mim.", tense: "Futuro"},
+{en: "She will arrive by plane.", pt: "Ela chegará de avião.", tense: "Futuro"},
+{en: "We will arrive at the airport.", pt: "Chegaremos ao aeroporto.", tense: "Futuro"},
+{en: "They will arrive in the afternoon.", pt: "Eles chegarão à tarde.", tense: "Futuro"},
+{en: "I would arrive.", pt: "Chegaria.", tense: "Condicional"},
+{en: "You would arrive early.", pt: "Chegarias cedo.", tense: "Condicional"},
+{en: "He would arrive on time.", pt: "Ele chegaria a horas.", tense: "Condicional"},
+{en: "We would arrive together.", pt: "Chegaríamos juntos.", tense: "Condicional"},
+{en: "They would arrive late.", pt: "Eles chegariam tarde.", tense: "Condicional"},
+{en: "I would arrive if I could.", pt: "Chegaria se pudesse.", tense: "Condicional"},
+{en: "You would arrive faster.", pt: "Chegarias mais depressa.", tense: "Condicional"},
+{en: "She would arrive by now.", pt: "Ela já teria chegado.", tense: "Condicional"},
+{en: "We would arrive before them.", pt: "Chegaríamos antes deles.", tense: "Condicional"},
+{en: "They would arrive at noon.", pt: "Eles chegariam ao meio-dia.", tense: "Condicional"},
+{en: "I want you to arrive.", pt: "Quero que chegues.", tense: "Conjuntivo"},
+{en: "I hope he arrives.", pt: "Espero que ele chegue.", tense: "Conjuntivo"},
+{en: "It's important that we arrive.", pt: "É importante que cheguemos.", tense: "Conjuntivo"},
+{en: "I doubt they arrive.", pt: "Duvido que eles cheguem.", tense: "Conjuntivo"},
+{en: "Although I arrive.", pt: "Embora eu chegue.", tense: "Conjuntivo"},
+{en: "So that you arrive.", pt: "Para que tu chegues.", tense: "Conjuntivo"},
+{en: "Unless she arrives.", pt: "A menos que ela chegue.", tense: "Conjuntivo"},
+{en: "Before they arrive.", pt: "Antes que eles cheguem.", tense: "Conjuntivo"},
+{en: "It's possible we arrive.", pt: "É possível que cheguemos.", tense: "Conjuntivo"},
+{en: "I prefer that you arrive early.", pt: "Prefiro que chegues cedo.", tense: "Conjuntivo"},
+{en: "If I arrived.", pt: "Se eu chegasse.", tense: "Imperfeito Conj."},
+{en: "If you arrived.", pt: "Se tu chegasses.", tense: "Imperfeito Conj."},
+{en: "If he arrived.", pt: "Se ele chegasse.", tense: "Imperfeito Conj."},
+{en: "If we arrived.", pt: "Se nós chegássemos.", tense: "Imperfeito Conj."},
+{en: "If they arrived.", pt: "Se eles chegassem.", tense: "Imperfeito Conj."},
+{en: "I wish I arrived earlier.", pt: "Quem me dera ter chegado mais cedo.", tense: "Imperfeito Conj."},
+{en: "As if she arrived.", pt: "Como se ela chegasse.", tense: "Imperfeito Conj."},
+{en: "If only you arrived.", pt: "Se tu chegasses.", tense: "Imperfeito Conj."},
+{en: "I wanted you to arrive.", pt: "Queria que tu chegasses.", tense: "Imperfeito Conj."},
+{en: "It would be good if they arrived.", pt: "Seria bom se eles chegassem.", tense: "Imperfeito Conj."},
+{en: "When I arrive.", pt: "Quando eu chegar.", tense: "Futuro Conj."},
+{en: "As soon as you arrive.", pt: "Assim que chegares.", tense: "Futuro Conj."},
+{en: "If he arrives.", pt: "Se ele chegar.", tense: "Futuro Conj."},
+{en: "When we arrive.", pt: "Quando chegarmos.", tense: "Futuro Conj."},
+{en: "As they arrive.", pt: "Conforme eles chegarem.", tense: "Futuro Conj."},
+{en: "That's enough!", pt: "Chega!", tense: "Expressão"},
+{en: "Come here!", pt: "Chega aqui!", tense: "Imperativo"},
+{en: "Arrive on time!", pt: "Chega a horas!", tense: "Imperativo"},
+{en: "Let's arrive together!", pt: "Cheguemos juntos!", tense: "Imperativo"},
+{en: "Don't arrive late!", pt: "Não chegues atrasado!", tense: "Imperativo"},
+{en: "Are you arriving?", pt: "Estás a chegar?", tense: "Presente"},
+{en: "Is he arriving?", pt: "Ele está a chegar?", tense: "Presente"},
+{en: "Are they arriving?", pt: "Eles estão a chegar?", tense: "Presente"},
+{en: "I'm not arriving.", pt: "Não estou a chegar.", tense: "Presente"},
+{en: "She isn't arriving yet.", pt: "Ela ainda não está a chegar.", tense: "Presente"},
+{en: "I'm almost there.", pt: "Estou quase a chegar.", tense: "Presente"},
+{en: "We're about to arrive.", pt: "Estamos a chegar.", tense: "Presente"},
+{en: "They just arrived.", pt: "Eles acabaram de chegar.", tense: "Perfeito"},
+{en: "I just got here.", pt: "Acabei de chegar.", tense: "Perfeito"},
+{en: "She hasn't arrived yet.", pt: "Ela ainda não chegou.", tense: "Perfeito"},
+{en: "Did you arrive well?", pt: "Chegaste bem?", tense: "Perfeito"},
+{en: "When did they arrive?", pt: "Quando é que eles chegaram?", tense: "Perfeito"},
+{en: "At what time do you arrive?", pt: "A que horas chegas?", tense: "Presente"},
+{en: "Where do we arrive?", pt: "Onde chegamos?", tense: "Presente"},
+{en: "How do I arrive there?", pt: "Como chego lá?", tense: "Presente"},
+{en: "I can't arrive on time.", pt: "Não consigo chegar a horas.", tense: "Presente"},
+{en: "You need to arrive early.", pt: "Precisas de chegar cedo.", tense: "Presente"},
+{en: "We must arrive before noon.", pt: "Temos de chegar antes do meio-dia.", tense: "Presente"},
+{en: "I want to arrive first.", pt: "Quero chegar primeiro.", tense: "Presente"},
+{en: "She decided to arrive later.", pt: "Ela decidiu chegar mais tarde.", tense: "Perfeito"}
+];
+
+const phraseList = document.querySelector('.phrase-list');
+const searchBox = document.querySelector('.search-box');
+
+function highlightVerb(text) {
+const forms = ['chego', 'chegas', 'chega', 'chegamos', 'chegam', 'chegava', 'chegavas', 'chegávamos', 'chegavam', 'cheguei', 'chegaste', 'chegou', 'chegámos', 'chegaram', 'chegarei', 'chegarás', 'chegará', 'chegaremos', 'chegarão', 'chegaria', 'chegarias', 'chegaríamos', 'chegariam', 'chegue', 'chegues', 'cheguemos', 'cheguem', 'chegasse', 'chegasses', 'chegássemos', 'chegassem', 'chegar', 'chegares', 'chegarmos', 'chegarem'];
+const pattern = new RegExp(`\\b(${forms.join('|')})\\b`, 'gi');
+return text.replace(pattern, '<span class="verb-highlight">$1</span>');
+}
+
+function renderPhrases(filter = '') {
+const filtered = phrases.filter(p =>
+p.en.toLowerCase().includes(filter.toLowerCase()) ||
+p.pt.toLowerCase().includes(filter.toLowerCase())
+);
+phraseList.innerHTML = filtered.map(p => `
+<div class="phrase-card" onclick="this.classList.toggle('revealed')">
+<div class="source">${p.en}<span class="tense-tag">${p.tense}</span></div>
+<div class="translation">${highlightVerb(p.pt)}</div>
+</div>
+`).join('');
+}
+
+function showAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.add('revealed'));
+}
+
+function hideAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.remove('revealed'));
+}
+
+searchBox.addEventListener('input', (e) => renderPhrases(e.target.value));
+renderPhrases();
+</script>
+</body>
+</html>
