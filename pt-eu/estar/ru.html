@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол ESTAR — 100 фраз</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            color: #eee;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #00d4aa;
+            text-decoration: none;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 0;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #00d4aa;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(0, 212, 170, 0.3);
+        }
+
+        .subtitle {
+            color: #888;
+            font-size: 1.1rem;
+        }
+
+        .controls {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .btn-primary {
+            background: #00d4aa;
+            color: #1a1a2e;
+        }
+
+        .btn-primary:hover {
+            background: #00f5c4;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0, 212, 170, 0.4);
+        }
+
+        .btn-secondary {
+            background: #3a3a5c;
+            color: #eee;
+        }
+
+        .btn-secondary:hover {
+            background: #4a4a7c;
+        }
+
+        .stats {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #888;
+        }
+
+        .phrase-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .phrase-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .phrase-card:hover {
+            border-color: rgba(0, 212, 170, 0.3);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .phrase-header {
+            display: flex;
+            align-items: center;
+            padding: 18px 20px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .phrase-number {
+            background: #00d4aa;
+            color: #1a1a2e;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .russian-text {
+            flex: 1;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        .toggle-icon {
+            font-size: 1.5rem;
+            color: #00d4aa;
+            transition: transform 0.3s ease;
+            margin-left: 15px;
+        }
+
+        .phrase-card.open .toggle-icon {
+            transform: rotate(180deg);
+        }
+
+        .portuguese-text {
+            padding: 0 20px 20px 71px;
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .phrase-card.open .portuguese-text {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .pt-content {
+            background: rgba(0, 212, 170, 0.1);
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 4px solid #00d4aa;
+        }
+
+        .pt-label {
+            font-size: 0.8rem;
+            color: #00d4aa;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .pt-phrase {
+            font-size: 1.15rem;
+            color: #fff;
+            font-style: italic;
+        }
+
+        .verb-highlight {
+            color: #00d4aa;
+            font-weight: 600;
+        }
+
+        .tense-tag {
+            display: inline-block;
+            background: rgba(255, 193, 7, 0.2);
+            color: #ffc107;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            margin-top: 10px;
+        }
+
+        .search-box {
+            width: 100%;
+            max-width: 400px;
+            padding: 12px 20px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            color: #eee;
+            font-size: 1rem;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .search-box:focus {
+            border-color: #00d4aa;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .search-box::placeholder {
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0 20px;
+            color: #555;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            .phrase-header { padding: 15px; }
+            .portuguese-text { padding-left: 15px; }
+            .phrase-number { width: 30px; height: 30px; font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇵🇹 Глагол ESTAR</h1>
+            <p class="subtitle">100 популярных фраз — Европейский португальский</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 100 из 100 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика европейского португальского — Глагол ESTAR
+        </footer>
+    </div>
+
+    <script>
+        const phrases = [
+            // Presente do Indicativo (Настоящее время) - состояния, местоположение, чувства
+            { ru: "Я дома.", pt: "Estou em casa.", tense: "Presente" },
+            { ru: "Ты устал.", pt: "Tu estás cansado.", tense: "Presente" },
+            { ru: "Он болен.", pt: "Ele está doente.", tense: "Presente" },
+            { ru: "Она сегодня счастлива.", pt: "Ela está feliz hoje.", tense: "Presente" },
+            { ru: "Мы готовы.", pt: "Estamos prontos.", tense: "Presente" },
+            { ru: "Вы заняты.", pt: "Vocês estão ocupados.", tense: "Presente" },
+            { ru: "Они на работе.", pt: "Eles estão no trabalho.", tense: "Presente" },
+            { ru: "Холодно.", pt: "Está frio.", tense: "Presente" },
+            { ru: "Мне нехорошо.", pt: "Não estou bem.", tense: "Presente" },
+            { ru: "Ты не один.", pt: "Tu não estás sozinho.", tense: "Presente" },
+
+            // Вопросы в настоящем времени
+            { ru: "Как ты?", pt: "Como estás?", tense: "Presente" },
+            { ru: "Где ты?", pt: "Onde estás?", tense: "Presente" },
+            { ru: "Ты в порядке?", pt: "Estás bem?", tense: "Presente" },
+            { ru: "Всё хорошо?", pt: "Está tudo bem?", tense: "Presente" },
+            { ru: "Они дома?", pt: "Eles estão em casa?", tense: "Presente" },
+            { ru: "Она проснулась?", pt: "Ela está acordada?", tense: "Presente" },
+            { ru: "Мы опоздали?", pt: "Estamos atrasados?", tense: "Presente" },
+            { ru: "Открыто?", pt: "Está aberto?", tense: "Presente" },
+            { ru: "Еда готова?", pt: "A comida está pronta?", tense: "Presente" },
+            { ru: "Почему ты злишься?", pt: "Porque estás zangado?", tense: "Presente" },
+
+            // Pretérito Imperfeito (Прошедшее несовершенное)
+            { ru: "Я тебя ждал.", pt: "Eu estava à tua espera.", tense: "Imperfeito" },
+            { ru: "Ты спал.", pt: "Tu estavas a dormir.", tense: "Imperfeito" },
+            { ru: "Он работал.", pt: "Ele estava a trabalhar.", tense: "Imperfeito" },
+            { ru: "Она всегда уставала.", pt: "Ela estava sempre cansada.", tense: "Imperfeito" },
+            { ru: "Мы были на пляже.", pt: "Estávamos na praia.", tense: "Imperfeito" },
+            { ru: "Они учились.", pt: "Eles estavam a estudar.", tense: "Imperfeito" },
+            { ru: "Шёл дождь.", pt: "Estava a chover.", tense: "Imperfeito" },
+            { ru: "Дверь была открыта.", pt: "A porta estava aberta.", tense: "Imperfeito" },
+            { ru: "Мне было плохо.", pt: "Eu não estava a sentir-me bem.", tense: "Imperfeito" },
+            { ru: "Где ты был?", pt: "Onde estavas?", tense: "Imperfeito" },
+
+            // Pretérito Perfeito Simples (Прошедшее совершенное)
+            { ru: "Я был там вчера.", pt: "Estive lá ontem.", tense: "Perfeito" },
+            { ru: "Ты был на вечеринке.", pt: "Tu estiveste na festa.", tense: "Perfeito" },
+            { ru: "Он болел на прошлой неделе.", pt: "Ele esteve doente na semana passada.", tense: "Perfeito" },
+            { ru: "Мы были в Лиссабоне.", pt: "Estivemos em Lisboa.", tense: "Perfeito" },
+            { ru: "Они были здесь раньше.", pt: "Eles estiveram aqui mais cedo.", tense: "Perfeito" },
+            { ru: "Погода была хорошая.", pt: "O tempo esteve bom.", tense: "Perfeito" },
+            { ru: "Меня не было дома.", pt: "Não estive em casa.", tense: "Perfeito" },
+            { ru: "Ты был на встрече?", pt: "Estiveste na reunião?", tense: "Perfeito" },
+            { ru: "Она была очень тихой.", pt: "Ela esteve muito calada.", tense: "Perfeito" },
+            { ru: "Было тяжело.", pt: "Esteve difícil.", tense: "Perfeito" },
+
+            // Futuro do Indicativo (Будущее время)
+            { ru: "Я буду там.", pt: "Estarei lá.", tense: "Futuro" },
+            { ru: "Ты будешь в порядке.", pt: "Tu estarás bem.", tense: "Futuro" },
+            { ru: "Он будет ждать.", pt: "Ele estará à espera.", tense: "Futuro" },
+            { ru: "Завтра будет жарко.", pt: "Estará calor amanhã.", tense: "Futuro" },
+            { ru: "Мы будем готовы.", pt: "Estaremos prontos.", tense: "Futuro" },
+            { ru: "Они будут в аэропорту.", pt: "Eles estarão no aeroporto.", tense: "Futuro" },
+            { ru: "Магазин будет открыт.", pt: "A loja estará aberta.", tense: "Futuro" },
+            { ru: "Я не опоздаю.", pt: "Não estarei atrasado.", tense: "Futuro" },
+            { ru: "Ты будешь свободен?", pt: "Estarás disponível?", tense: "Futuro" },
+            { ru: "Всё будет хорошо.", pt: "Tudo estará bem.", tense: "Futuro" },
+
+            // Condicional (Условное наклонение)
+            { ru: "Я был бы благодарен.", pt: "Estaria grato.", tense: "Condicional" },
+            { ru: "Было бы лучше.", pt: "Estaria melhor.", tense: "Condicional" },
+            { ru: "Ты был бы счастливее там.", pt: "Tu estarias mais feliz lá.", tense: "Condicional" },
+            { ru: "Он бы сейчас работал.", pt: "Ele estaria a trabalhar agora.", tense: "Condicional" },
+            { ru: "Мы были бы вместе.", pt: "Estaríamos juntos.", tense: "Condicional" },
+            { ru: "Они были бы удивлены.", pt: "Eles estariam surpreendidos.", tense: "Condicional" },
+            { ru: "Меня бы здесь не было.", pt: "Não estaria aqui.", tense: "Condicional" },
+            { ru: "Тебе было бы интересно?", pt: "Estarias interessado?", tense: "Condicional" },
+            { ru: "Кофе был бы холодным.", pt: "O café estaria frio.", tense: "Condicional" },
+            { ru: "Я бы врал.", pt: "Estaria a mentir.", tense: "Condicional" },
+
+            // Presente do Conjuntivo (Настоящее сослагательное)
+            { ru: "Надеюсь, что у тебя всё хорошо.", pt: "Espero que estejas bem.", tense: "Conjuntivo" },
+            { ru: "Важно, чтобы он присутствовал.", pt: "É importante que ele esteja presente.", tense: "Conjuntivo" },
+            { ru: "Хочу, чтобы мы были вместе.", pt: "Quero que estejamos juntos.", tense: "Conjuntivo" },
+            { ru: "Сомневаюсь, что она дома.", pt: "Duvido que ela esteja em casa.", tense: "Conjuntivo" },
+            { ru: "Хотя и холодно...", pt: "Embora esteja frio...", tense: "Conjuntivo" },
+            { ru: "Где бы ты ни был...", pt: "Onde quer que estejas...", tense: "Conjuntivo" },
+            { ru: "Нужно, чтобы мы были готовы.", pt: "É preciso que estejamos prontos.", tense: "Conjuntivo" },
+            { ru: "Не думаю, что они здесь.", pt: "Não acho que eles estejam aqui.", tense: "Conjuntivo" },
+            { ru: "Если ты не занят...", pt: "A menos que estejas ocupado...", tense: "Conjuntivo" },
+            { ru: "Хочу, чтобы ты был счастлив.", pt: "Quero que estejas feliz.", tense: "Conjuntivo" },
+
+            // Imperfeito do Conjuntivo (Прошедшее сослагательное)
+            { ru: "Если бы я был там...", pt: "Se eu estivesse lá...", tense: "Imperfeito Conj." },
+            { ru: "Хотел бы, чтобы ты был здесь.", pt: "Quem me dera que estivesses aqui.", tense: "Imperfeito Conj." },
+            { ru: "Если бы он был не спал...", pt: "Se ele estivesse acordado...", tense: "Imperfeito Conj." },
+            { ru: "Если бы мы были вместе...", pt: "Se estivéssemos juntos...", tense: "Imperfeito Conj." },
+            { ru: "Если бы они были дома...", pt: "Se eles estivessem em casa...", tense: "Imperfeito Conj." },
+            { ru: "Я бы пошёл, если бы было солнечно.", pt: "Iria se estivesse sol.", tense: "Imperfeito Conj." },
+            { ru: "Даже если бы я устал...", pt: "Mesmo que estivesse cansado...", tense: "Imperfeito Conj." },
+            { ru: "Если бы было открыто...", pt: "Se estivesse aberto...", tense: "Imperfeito Conj." },
+            { ru: "Как будто ничего не случилось...", pt: "Como se nada estivesse mal...", tense: "Imperfeito Conj." },
+            { ru: "Хотел бы, чтобы было теплее.", pt: "Quem me dera que estivesse mais quente.", tense: "Imperfeito Conj." },
+
+            // Местоположение
+            { ru: "Ключи на столе.", pt: "As chaves estão na mesa.", tense: "Presente" },
+            { ru: "Машина в гараже.", pt: "O carro está na garagem.", tense: "Presente" },
+            { ru: "Мы в Португалии.", pt: "Estamos em Portugal.", tense: "Presente" },
+            { ru: "Ресторан рядом.", pt: "O restaurante está perto.", tense: "Presente" },
+            { ru: "Где туалет?", pt: "Onde está a casa de banho?", tense: "Presente" },
+            { ru: "Книга на полке.", pt: "O livro está na prateleira.", tense: "Presente" },
+            { ru: "Я в офисе.", pt: "Estou no escritório.", tense: "Presente" },
+            { ru: "Дети в школе.", pt: "As crianças estão na escola.", tense: "Presente" },
+            { ru: "Она наверху.", pt: "Ela está lá em cima.", tense: "Presente" },
+            { ru: "Поезд на станции.", pt: "O comboio está na estação.", tense: "Presente" },
+
+            // Распространённые выражения
+            { ru: "Я в порядке, спасибо.", pt: "Estou bem, obrigado.", tense: "Expressão" },
+            { ru: "Я голоден.", pt: "Estou com fome.", tense: "Expressão" },
+            { ru: "Я хочу пить.", pt: "Estou com sede.", tense: "Expressão" },
+            { ru: "Я спешу.", pt: "Estou com pressa.", tense: "Expressão" },
+            { ru: "Мне страшно.", pt: "Estou com medo.", tense: "Expressão" },
+            { ru: "Мне жарко.", pt: "Estou com calor.", tense: "Expressão" },
+            { ru: "Мне холодно.", pt: "Estou com frio.", tense: "Expressão" },
+            { ru: "Я хочу спать.", pt: "Estou com sono.", tense: "Expressão" },
+            { ru: "Я шучу.", pt: "Estou a brincar.", tense: "Expressão" },
+            { ru: "Я слушаю.", pt: "Estou a ouvir.", tense: "Expressão" }
+        ];
+
+        function renderPhrases(filteredPhrases = phrases) {
+            const container = document.getElementById('phraseList');
+            container.innerHTML = '';
+
+            filteredPhrases.forEach((phrase, index) => {
+                const card = document.createElement('div');
+                card.className = 'phrase-card';
+                card.innerHTML = `
+                    <div class="phrase-header" onclick="toggleCard(this.parentElement)">
+                        <span class="phrase-number">${index + 1}</span>
+                        <span class="russian-text">${phrase.ru}</span>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="portuguese-text">
+                        <div class="pt-content">
+                            <div class="pt-label">Português Europeu</div>
+                            <div class="pt-phrase">${highlightVerb(phrase.pt)}</div>
+                            <span class="tense-tag">${phrase.tense}</span>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+
+            document.getElementById('stats').textContent =
+                `Показано: ${filteredPhrases.length} из ${phrases.length} фраз`;
+        }
+
+        function highlightVerb(text) {
+            const forms = [
+                'estou', 'estás', 'está', 'estamos', 'estão',
+                'estava', 'estavas', 'estávamos', 'estavam',
+                'estive', 'estiveste', 'esteve', 'estivemos', 'estiveram',
+                'estarei', 'estarás', 'estará', 'estaremos', 'estarão',
+                'estaria', 'estarias', 'estaríamos', 'estariam',
+                'esteja', 'estejas', 'estejamos', 'estejam',
+                'estivesse', 'estivesses', 'estivéssemos', 'estivessem',
+                'estar', 'estando', 'estado'
+            ];
+
+            let result = text;
+            forms.forEach(form => {
+                const regex = new RegExp(`\\b(${form})\\b`, 'gi');
+                result = result.replace(regex, '<span class="verb-highlight">$1</span>');
+            });
+            return result;
+        }
+
+        function toggleCard(card) {
+            card.classList.toggle('open');
+        }
+
+        function showAll() {
+            document.querySelectorAll('.phrase-card').forEach(card => {
+                card.classList.add('open');
+            });
+        }
+
+        function hideAll() {
+            document.querySelectorAll('.phrase-card').forEach(card => {
+                card.classList.remove('open');
+            });
+        }
+
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            const filtered = phrases.filter(p =>
+                p.ru.toLowerCase().includes(query) ||
+                p.pt.toLowerCase().includes(query) ||
+                p.tense.toLowerCase().includes(query)
+            );
+            renderPhrases(filtered);
+        });
+
+        // Инициализация
+        renderPhrases();
+    </script>
+</body>
+</html>

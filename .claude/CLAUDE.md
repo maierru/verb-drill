@@ -58,4 +58,4 @@ Presente, Pretérito Imperfeito, Pretérito Perfeito, Futuro, Condicional, Prese
 
 ## Commits
 
-Focus on why, not what. Keep it concise.
+Focus on why, not what. Keep it concise. No Claude/AI mentions or co-author tags.

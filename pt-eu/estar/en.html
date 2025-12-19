@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb ESTAR — 100 Phrases</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            color: #eee;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #00d4aa;
+            text-decoration: none;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 0;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #00d4aa;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(0, 212, 170, 0.3);
+        }
+
+        .subtitle {
+            color: #888;
+            font-size: 1.1rem;
+        }
+
+        .controls {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .btn-primary {
+            background: #00d4aa;
+            color: #1a1a2e;
+        }
+
+        .btn-primary:hover {
+            background: #00f5c4;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0, 212, 170, 0.4);
+        }
+
+        .btn-secondary {
+            background: #3a3a5c;
+            color: #eee;
+        }
+
+        .btn-secondary:hover {
+            background: #4a4a7c;
+        }
+
+        .stats {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #888;
+        }
+
+        .phrase-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .phrase-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .phrase-card:hover {
+            border-color: rgba(0, 212, 170, 0.3);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .phrase-header {
+            display: flex;
+            align-items: center;
+            padding: 18px 20px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .phrase-number {
+            background: #00d4aa;
+            color: #1a1a2e;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .origin-text {
+            flex: 1;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        .toggle-icon {
+            font-size: 1.5rem;
+            color: #00d4aa;
+            transition: transform 0.3s ease;
+            margin-left: 15px;
+        }
+
+        .phrase-card.open .toggle-icon {
+            transform: rotate(180deg);
+        }
+
+        .portuguese-text {
+            padding: 0 20px 20px 71px;
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .phrase-card.open .portuguese-text {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .pt-content {
+            background: rgba(0, 212, 170, 0.1);
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 4px solid #00d4aa;
+        }
+
+        .pt-label {
+            font-size: 0.8rem;
+            color: #00d4aa;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .pt-phrase {
+            font-size: 1.15rem;
+            color: #fff;
+            font-style: italic;
+        }
+
+        .verb-highlight {
+            color: #00d4aa;
+            font-weight: 600;
+        }
+
+        .tense-tag {
+            display: inline-block;
+            background: rgba(255, 193, 7, 0.2);
+            color: #ffc107;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            margin-top: 10px;
+        }
+
+        .search-box {
+            width: 100%;
+            max-width: 400px;
+            padding: 12px 20px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            color: #eee;
+            font-size: 1rem;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .search-box:focus {
+            border-color: #00d4aa;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .search-box::placeholder {
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0 20px;
+            color: #555;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            .phrase-header { padding: 15px; }
+            .portuguese-text { padding-left: 15px; }
+            .phrase-number { width: 30px; height: 30px; font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../" class="back-link">← Back to verb list</a>
+            <h1>🇵🇹 Verb ESTAR</h1>
+            <p class="subtitle">100 popular phrases — European Portuguese</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Show all translations</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
+        </div>
+
+        <div class="stats" id="stats">Showing: 100 of 100 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            European Portuguese Practice — Verb ESTAR
+        </footer>
+    </div>
+
+    <script>
+        const phrases = [
+            // Presente do Indicativo (Present) - states, locations, feelings
+            { en: "I am at home.", pt: "Estou em casa.", tense: "Presente" },
+            { en: "You are tired.", pt: "Tu estás cansado.", tense: "Presente" },
+            { en: "He is sick.", pt: "Ele está doente.", tense: "Presente" },
+            { en: "She is happy today.", pt: "Ela está feliz hoje.", tense: "Presente" },
+            { en: "We are ready.", pt: "Estamos prontos.", tense: "Presente" },
+            { en: "You (plural) are busy.", pt: "Vocês estão ocupados.", tense: "Presente" },
+            { en: "They are at work.", pt: "Eles estão no trabalho.", tense: "Presente" },
+            { en: "It is cold.", pt: "Está frio.", tense: "Presente" },
+            { en: "I am not well.", pt: "Não estou bem.", tense: "Presente" },
+            { en: "You are not alone.", pt: "Tu não estás sozinho.", tense: "Presente" },
+
+            // Questions in present
+            { en: "How are you?", pt: "Como estás?", tense: "Presente" },
+            { en: "Where are you?", pt: "Onde estás?", tense: "Presente" },
+            { en: "Are you okay?", pt: "Estás bem?", tense: "Presente" },
+            { en: "Is everything alright?", pt: "Está tudo bem?", tense: "Presente" },
+            { en: "Are they at home?", pt: "Eles estão em casa?", tense: "Presente" },
+            { en: "Is she awake?", pt: "Ela está acordada?", tense: "Presente" },
+            { en: "Are we late?", pt: "Estamos atrasados?", tense: "Presente" },
+            { en: "Is it open?", pt: "Está aberto?", tense: "Presente" },
+            { en: "Is the food ready?", pt: "A comida está pronta?", tense: "Presente" },
+            { en: "Why are you angry?", pt: "Porque estás zangado?", tense: "Presente" },
+
+            // Pretérito Imperfeito (Imperfect Past)
+            { en: "I was waiting for you.", pt: "Eu estava à tua espera.", tense: "Imperfeito" },
+            { en: "You were sleeping.", pt: "Tu estavas a dormir.", tense: "Imperfeito" },
+            { en: "He was working.", pt: "Ele estava a trabalhar.", tense: "Imperfeito" },
+            { en: "She was always tired.", pt: "Ela estava sempre cansada.", tense: "Imperfeito" },
+            { en: "We were at the beach.", pt: "Estávamos na praia.", tense: "Imperfeito" },
+            { en: "They were studying.", pt: "Eles estavam a estudar.", tense: "Imperfeito" },
+            { en: "It was raining.", pt: "Estava a chover.", tense: "Imperfeito" },
+            { en: "The door was open.", pt: "A porta estava aberta.", tense: "Imperfeito" },
+            { en: "I wasn't feeling well.", pt: "Eu não estava a sentir-me bem.", tense: "Imperfeito" },
+            { en: "Where were you?", pt: "Onde estavas?", tense: "Imperfeito" },
+
+            // Pretérito Perfeito Simples (Simple Past)
+            { en: "I was there yesterday.", pt: "Estive lá ontem.", tense: "Perfeito" },
+            { en: "You were at the party.", pt: "Tu estiveste na festa.", tense: "Perfeito" },
+            { en: "He was sick last week.", pt: "Ele esteve doente na semana passada.", tense: "Perfeito" },
+            { en: "We were in Lisbon.", pt: "Estivemos em Lisboa.", tense: "Perfeito" },
+            { en: "They were here earlier.", pt: "Eles estiveram aqui mais cedo.", tense: "Perfeito" },
+            { en: "The weather was good.", pt: "O tempo esteve bom.", tense: "Perfeito" },
+            { en: "I wasn't home.", pt: "Não estive em casa.", tense: "Perfeito" },
+            { en: "Were you at the meeting?", pt: "Estiveste na reunião?", tense: "Perfeito" },
+            { en: "She was very quiet.", pt: "Ela esteve muito calada.", tense: "Perfeito" },
+            { en: "It was a difficult time.", pt: "Esteve difícil.", tense: "Perfeito" },
+
+            // Futuro do Indicativo (Future)
+            { en: "I will be there.", pt: "Estarei lá.", tense: "Futuro" },
+            { en: "You will be fine.", pt: "Tu estarás bem.", tense: "Futuro" },
+            { en: "He will be waiting.", pt: "Ele estará à espera.", tense: "Futuro" },
+            { en: "It will be hot tomorrow.", pt: "Estará calor amanhã.", tense: "Futuro" },
+            { en: "We will be ready.", pt: "Estaremos prontos.", tense: "Futuro" },
+            { en: "They will be at the airport.", pt: "Eles estarão no aeroporto.", tense: "Futuro" },
+            { en: "The store will be open.", pt: "A loja estará aberta.", tense: "Futuro" },
+            { en: "I won't be late.", pt: "Não estarei atrasado.", tense: "Futuro" },
+            { en: "Will you be available?", pt: "Estarás disponível?", tense: "Futuro" },
+            { en: "Everything will be okay.", pt: "Tudo estará bem.", tense: "Futuro" },
+
+            // Condicional (Conditional)
+            { en: "I would be grateful.", pt: "Estaria grato.", tense: "Condicional" },
+            { en: "It would be better.", pt: "Estaria melhor.", tense: "Condicional" },
+            { en: "You would be happier there.", pt: "Tu estarias mais feliz lá.", tense: "Condicional" },
+            { en: "He would be working now.", pt: "Ele estaria a trabalhar agora.", tense: "Condicional" },
+            { en: "We would be together.", pt: "Estaríamos juntos.", tense: "Condicional" },
+            { en: "They would be surprised.", pt: "Eles estariam surpreendidos.", tense: "Condicional" },
+            { en: "I wouldn't be here.", pt: "Não estaria aqui.", tense: "Condicional" },
+            { en: "Would you be interested?", pt: "Estarias interessado?", tense: "Condicional" },
+            { en: "The coffee would be cold.", pt: "O café estaria frio.", tense: "Condicional" },
+            { en: "I would be lying.", pt: "Estaria a mentir.", tense: "Condicional" },
+
+            // Presente do Conjuntivo (Present Subjunctive)
+            { en: "I hope you are well.", pt: "Espero que estejas bem.", tense: "Conjuntivo" },
+            { en: "It's important that he is present.", pt: "É importante que ele esteja presente.", tense: "Conjuntivo" },
+            { en: "I want us to be together.", pt: "Quero que estejamos juntos.", tense: "Conjuntivo" },
+            { en: "I doubt that she is at home.", pt: "Duvido que ela esteja em casa.", tense: "Conjuntivo" },
+            { en: "Even though it is cold...", pt: "Embora esteja frio...", tense: "Conjuntivo" },
+            { en: "Wherever you are...", pt: "Onde quer que estejas...", tense: "Conjuntivo" },
+            { en: "It's necessary that we be ready.", pt: "É preciso que estejamos prontos.", tense: "Conjuntivo" },
+            { en: "I don't think they are here.", pt: "Não acho que eles estejam aqui.", tense: "Conjuntivo" },
+            { en: "Unless you are busy...", pt: "A menos que estejas ocupado...", tense: "Conjuntivo" },
+            { en: "I want you to be happy.", pt: "Quero que estejas feliz.", tense: "Conjuntivo" },
+
+            // Imperfeito do Conjuntivo (Imperfect Subjunctive)
+            { en: "If I were there...", pt: "Se eu estivesse lá...", tense: "Imperfeito Conj." },
+            { en: "I wish you were here.", pt: "Quem me dera que estivesses aqui.", tense: "Imperfeito Conj." },
+            { en: "If he were awake...", pt: "Se ele estivesse acordado...", tense: "Imperfeito Conj." },
+            { en: "If we were together...", pt: "Se estivéssemos juntos...", tense: "Imperfeito Conj." },
+            { en: "If they were at home...", pt: "Se eles estivessem em casa...", tense: "Imperfeito Conj." },
+            { en: "I would go if it were sunny.", pt: "Iria se estivesse sol.", tense: "Imperfeito Conj." },
+            { en: "Even if I were tired...", pt: "Mesmo que estivesse cansado...", tense: "Imperfeito Conj." },
+            { en: "If it were open...", pt: "Se estivesse aberto...", tense: "Imperfeito Conj." },
+            { en: "As if nothing were wrong...", pt: "Como se nada estivesse mal...", tense: "Imperfeito Conj." },
+            { en: "I wish it were warmer.", pt: "Quem me dera que estivesse mais quente.", tense: "Imperfeito Conj." },
+
+            // Location and position
+            { en: "The keys are on the table.", pt: "As chaves estão na mesa.", tense: "Presente" },
+            { en: "The car is in the garage.", pt: "O carro está na garagem.", tense: "Presente" },
+            { en: "We are in Portugal.", pt: "Estamos em Portugal.", tense: "Presente" },
+            { en: "The restaurant is nearby.", pt: "O restaurante está perto.", tense: "Presente" },
+            { en: "Where is the bathroom?", pt: "Onde está a casa de banho?", tense: "Presente" },
+            { en: "The book is on the shelf.", pt: "O livro está na prateleira.", tense: "Presente" },
+            { en: "I am at the office.", pt: "Estou no escritório.", tense: "Presente" },
+            { en: "The children are at school.", pt: "As crianças estão na escola.", tense: "Presente" },
+            { en: "She is upstairs.", pt: "Ela está lá em cima.", tense: "Presente" },
+            { en: "The train is at the station.", pt: "O comboio está na estação.", tense: "Presente" },
+
+            // Common expressions
+            { en: "I'm fine, thanks.", pt: "Estou bem, obrigado.", tense: "Expressão" },
+            { en: "I'm hungry.", pt: "Estou com fome.", tense: "Expressão" },
+            { en: "I'm thirsty.", pt: "Estou com sede.", tense: "Expressão" },
+            { en: "I'm in a hurry.", pt: "Estou com pressa.", tense: "Expressão" },
+            { en: "I'm afraid.", pt: "Estou com medo.", tense: "Expressão" },
+            { en: "I'm hot.", pt: "Estou com calor.", tense: "Expressão" },
+            { en: "I'm cold.", pt: "Estou com frio.", tense: "Expressão" },
+            { en: "I'm sleepy.", pt: "Estou com sono.", tense: "Expressão" },
+            { en: "I'm joking.", pt: "Estou a brincar.", tense: "Expressão" },
+            { en: "I'm listening.", pt: "Estou a ouvir.", tense: "Expressão" }
+        ];
+
+        function renderPhrases(filteredPhrases = phrases) {
+            const container = document.getElementById('phraseList');
+            container.innerHTML = '';
+
+            filteredPhrases.forEach((phrase, index) => {
+                const card = document.createElement('div');
+                card.className = 'phrase-card';
+                card.innerHTML = `
+                    <div class="phrase-header" onclick="toggleCard(this.parentElement)">
+                        <span class="phrase-number">${index + 1}</span>
+                        <span class="origin-text">${phrase.en}</span>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="portuguese-text">
+                        <div class="pt-content">
+                            <div class="pt-label">European Portuguese</div>
+                            <div class="pt-phrase">${highlightVerb(phrase.pt)}</div>
+                            <span class="tense-tag">${phrase.tense}</span>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+
+            document.getElementById('stats').textContent =
+                `Showing: ${filteredPhrases.length} of ${phrases.length} phrases`;
+        }
+
+        function highlightVerb(text) {
+            const forms = [
+                'estou', 'estás', 'está', 'estamos', 'estão',
+                'estava', 'estavas', 'estávamos', 'estavam',
+                'estive', 'estiveste', 'esteve', 'estivemos', 'estiveram',
+                'estarei', 'estarás', 'estará', 'estaremos', 'estarão',
+                'estaria', 'estarias', 'estaríamos', 'estariam',
+                'esteja', 'estejas', 'estejamos', 'estejam',
+                'estivesse', 'estivesses', 'estivéssemos', 'estivessem',
+                'estar', 'estando', 'estado'
+            ];
+
+            let result = text;
+            forms.forEach(form => {
+                const regex = new RegExp(`\\b(${form})\\b`, 'gi');
+                result = result.replace(regex, '<span class="verb-highlight">$1</span>');
+            });
+            return result;
+        }
+
+        function toggleCard(card) {
+            card.classList.toggle('open');
+        }
+
+        function showAll() {
+            document.querySelectorAll('.phrase-card').forEach(card => {
+                card.classList.add('open');
+            });
+        }
+
+        function hideAll() {
+            document.querySelectorAll('.phrase-card').forEach(card => {
+                card.classList.remove('open');
+            });
+        }
+
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            const filtered = phrases.filter(p =>
+                p.en.toLowerCase().includes(query) ||
+                p.pt.toLowerCase().includes(query) ||
+                p.tense.toLowerCase().includes(query)
+            );
+            renderPhrases(filtered);
+        });
+
+        // Initialize
+        renderPhrases();
+    </script>
+</body>
+</html>
