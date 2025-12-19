@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb PÔR — 100 Phrases</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            color: #eee;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #00d4aa;
+            text-decoration: none;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 0;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #00d4aa;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(0, 212, 170, 0.3);
+        }
+
+        .subtitle {
+            color: #888;
+            font-size: 1.1rem;
+        }
+
+        .controls {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .btn-primary {
+            background: #00d4aa;
+            color: #1a1a2e;
+        }
+
+        .btn-primary:hover {
+            background: #00f5c4;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0, 212, 170, 0.4);
+        }
+
+        .btn-secondary {
+            background: #3a3a5c;
+            color: #eee;
+        }
+
+        .btn-secondary:hover {
+            background: #4a4a7c;
+        }
+
+        .stats {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #888;
+        }
+
+        .phrase-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .phrase-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .phrase-card:hover {
+            border-color: rgba(0, 212, 170, 0.3);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .phrase-header {
+            display: flex;
+            align-items: center;
+            padding: 18px 20px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .phrase-number {
+            background: #00d4aa;
+            color: #1a1a2e;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .origin-text {
+            flex: 1;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        .toggle-icon {
+            font-size: 1.5rem;
+            color: #00d4aa;
+            transition: transform 0.3s ease;
+            margin-left: 15px;
+        }
+
+        .phrase-card.open .toggle-icon {
+            transform: rotate(180deg);
+        }
+
+        .portuguese-text {
+            padding: 0 20px 20px 71px;
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .phrase-card.open .portuguese-text {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .pt-content {
+            background: rgba(0, 212, 170, 0.1);
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 4px solid #00d4aa;
+        }
+
+        .pt-label {
+            font-size: 0.8rem;
+            color: #00d4aa;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .pt-phrase {
+            font-size: 1.15rem;
+            color: #fff;
+            font-style: italic;
+        }
+
+        .verb-highlight {
+            color: #00d4aa;
+            font-weight: 600;
+        }
+
+        .tense-tag {
+            display: inline-block;
+            background: rgba(255, 193, 7, 0.2);
+            color: #ffc107;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            margin-top: 10px;
+        }
+
+        .search-box {
+            width: 100%;
+            max-width: 400px;
+            padding: 12px 20px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            color: #eee;
+            font-size: 1rem;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .search-box:focus {
+            border-color: #00d4aa;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .search-box::placeholder {
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0 20px;
+            color: #555;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            .phrase-header { padding: 15px; }
+            .portuguese-text { padding-left: 15px; }
+            .phrase-number { width: 30px; height: 30px; font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../" class="back-link">← Back to verb list</a>
+            <h1>🇵🇹 Verb PÔR</h1>
+            <p class="subtitle">100 popular phrases — European Portuguese</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Show all translations</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
+        </div>
+
+        <div class="stats" id="stats">Showing: 100 of 100 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            European Portuguese Practice — Verb PÔR
+        </footer>
+    </div>
+
+    <script>
+        const phrases = [
+            // Presente do Indicativo (Present)
+            { en: "I put it here.", pt: "Ponho aqui.", tense: "Presente" },
+            { en: "Where do you put it?", pt: "Onde pões?", tense: "Presente" },
+            { en: "He puts on his glasses.", pt: "Ele põe os óculos.", tense: "Presente" },
+            { en: "She puts the books on the table.", pt: "Ela põe os livros na mesa.", tense: "Presente" },
+            { en: "We put everything in order.", pt: "Pomos tudo em ordem.", tense: "Presente" },
+            { en: "They put pressure.", pt: "Eles põem pressão.", tense: "Presente" },
+            { en: "I don't put sugar.", pt: "Não ponho açúcar.", tense: "Presente" },
+            { en: "Do you put milk in coffee?", pt: "Pões leite no café?", tense: "Presente" },
+            { en: "He puts on music.", pt: "Ele põe música.", tense: "Presente" },
+            { en: "She puts on makeup.", pt: "Ela põe maquilhagem.", tense: "Presente" },
+
+            // More present tense
+            { en: "I put my trust in you.", pt: "Ponho a minha confiança em ti.", tense: "Presente" },
+            { en: "Where do you put your keys?", pt: "Onde pões as chaves?", tense: "Presente" },
+            { en: "He puts himself in danger.", pt: "Ele põe-se em perigo.", tense: "Presente" },
+            { en: "She puts effort into it.", pt: "Ela põe esforço.", tense: "Presente" },
+            { en: "We put the children to bed.", pt: "Pomos as crianças na cama.", tense: "Presente" },
+            { en: "They put their names.", pt: "Eles põem os nomes.", tense: "Presente" },
+            { en: "I put on my jacket.", pt: "Ponho o casaco.", tense: "Presente" },
+            { en: "The sun sets at seven.", pt: "O sol põe-se às sete.", tense: "Presente" },
+            { en: "He puts doubts.", pt: "Ele põe dúvidas.", tense: "Presente" },
+            { en: "She puts conditions.", pt: "Ela põe condições.", tense: "Presente" },
+
+            // Pretérito Imperfeito (Imperfect Past)
+            { en: "I used to put it there.", pt: "Punha ali.", tense: "Imperfeito" },
+            { en: "You used to put sugar.", pt: "Punhas açúcar.", tense: "Imperfeito" },
+            { en: "He used to put on music.", pt: "Ele punha música.", tense: "Imperfeito" },
+            { en: "She used to put flowers.", pt: "Ela punha flores.", tense: "Imperfeito" },
+            { en: "We used to put everything away.", pt: "Púnhamos tudo guardado.", tense: "Imperfeito" },
+            { en: "They used to put pressure.", pt: "Eles punham pressão.", tense: "Imperfeito" },
+            { en: "I didn't put salt.", pt: "Não punha sal.", tense: "Imperfeito" },
+            { en: "Where did you put it?", pt: "Onde punhas?", tense: "Imperfeito" },
+            { en: "He used to put effort.", pt: "Ele punha esforço.", tense: "Imperfeito" },
+            { en: "She used to put her heart into it.", pt: "Ela punha o coração.", tense: "Imperfeito" },
+
+            // Pretérito Perfeito Simples (Simple Past)
+            { en: "I put it on the table.", pt: "Pus na mesa.", tense: "Perfeito" },
+            { en: "You put it away.", pt: "Puseste guardado.", tense: "Perfeito" },
+            { en: "He put on a tie.", pt: "Ele pôs gravata.", tense: "Perfeito" },
+            { en: "She put the phone down.", pt: "Ela pôs o telefone.", tense: "Perfeito" },
+            { en: "We put everything in place.", pt: "Pusemos tudo no lugar.", tense: "Perfeito" },
+            { en: "They put their signatures.", pt: "Eles puseram as assinaturas.", tense: "Perfeito" },
+            { en: "I didn't put anything.", pt: "Não pus nada.", tense: "Perfeito" },
+            { en: "Where did you put my keys?", pt: "Onde puseste as minhas chaves?", tense: "Perfeito" },
+            { en: "The sun set early.", pt: "O sol pôs-se cedo.", tense: "Perfeito" },
+            { en: "She put on a dress.", pt: "Ela pôs um vestido.", tense: "Perfeito" },
+
+            // Futuro do Indicativo (Future)
+            { en: "I will put it here.", pt: "Porei aqui.", tense: "Futuro" },
+            { en: "You will put it away.", pt: "Porás guardado.", tense: "Futuro" },
+            { en: "He will put on a suit.", pt: "Ele porá um fato.", tense: "Futuro" },
+            { en: "We will put everything in order.", pt: "Poremos tudo em ordem.", tense: "Futuro" },
+            { en: "They will put the signs.", pt: "Eles porão os sinais.", tense: "Futuro" },
+            { en: "I won't put pressure.", pt: "Não porei pressão.", tense: "Futuro" },
+            { en: "Will you put it there?", pt: "Porás ali?", tense: "Futuro" },
+            { en: "She will put flowers.", pt: "Ela porá flores.", tense: "Futuro" },
+            { en: "The sun will set later.", pt: "O sol pôr-se-á mais tarde.", tense: "Futuro" },
+            { en: "I will put my best effort.", pt: "Porei o meu melhor esforço.", tense: "Futuro" },
+
+            // Condicional (Conditional)
+            { en: "I would put it there.", pt: "Poria ali.", tense: "Condicional" },
+            { en: "You would put more.", pt: "Porias mais.", tense: "Condicional" },
+            { en: "He would put on music.", pt: "Ele poria música.", tense: "Condicional" },
+            { en: "We would put it in order.", pt: "Poríamos em ordem.", tense: "Condicional" },
+            { en: "They would put conditions.", pt: "Eles poriam condições.", tense: "Condicional" },
+            { en: "I wouldn't put salt.", pt: "Não poria sal.", tense: "Condicional" },
+            { en: "Would you put sugar?", pt: "Porias açúcar?", tense: "Condicional" },
+            { en: "She would put flowers.", pt: "Ela poria flores.", tense: "Condicional" },
+            { en: "I would put more effort.", pt: "Poria mais esforço.", tense: "Condicional" },
+            { en: "He would put himself at risk.", pt: "Ele pôr-se-ia em risco.", tense: "Condicional" },
+
+            // Presente do Conjuntivo (Present Subjunctive)
+            { en: "I hope you put it here.", pt: "Espero que ponhas aqui.", tense: "Conjuntivo" },
+            { en: "It's important that he puts.", pt: "É importante que ele ponha.", tense: "Conjuntivo" },
+            { en: "I doubt she puts.", pt: "Duvido que ela ponha.", tense: "Conjuntivo" },
+            { en: "Even if you put...", pt: "Mesmo que ponhas...", tense: "Conjuntivo" },
+            { en: "Whoever puts...", pt: "Quem ponha...", tense: "Conjuntivo" },
+            { en: "It's necessary that we put.", pt: "É preciso que ponhamos.", tense: "Conjuntivo" },
+            { en: "I don't think he puts.", pt: "Não acho que ele ponha.", tense: "Conjuntivo" },
+            { en: "Unless you put...", pt: "A menos que ponhas...", tense: "Conjuntivo" },
+            { en: "So that they put...", pt: "Para que ponham...", tense: "Conjuntivo" },
+            { en: "Whatever you put...", pt: "O que quer que ponhas...", tense: "Conjuntivo" },
+
+            // Imperfeito do Conjuntivo (Imperfect Subjunctive)
+            { en: "If I put...", pt: "Se eu pusesse...", tense: "Imperfeito Conj." },
+            { en: "I wish you put.", pt: "Quem me dera que pusesses.", tense: "Imperfeito Conj." },
+            { en: "If he put more effort...", pt: "Se ele pusesse mais esforço...", tense: "Imperfeito Conj." },
+            { en: "If we put it in order...", pt: "Se puséssemos em ordem...", tense: "Imperfeito Conj." },
+            { en: "If they put conditions...", pt: "Se eles pusessem condições...", tense: "Imperfeito Conj." },
+            { en: "I would accept if you put.", pt: "Aceitaria se pusesses.", tense: "Imperfeito Conj." },
+            { en: "Even if I put...", pt: "Mesmo que pusesse...", tense: "Imperfeito Conj." },
+            { en: "If she put flowers...", pt: "Se ela pusesse flores...", tense: "Imperfeito Conj." },
+            { en: "As if he put...", pt: "Como se pusesse...", tense: "Imperfeito Conj." },
+            { en: "If only I put more effort.", pt: "Se ao menos pusesse mais esforço.", tense: "Imperfeito Conj." },
+
+            // Futuro do Conjuntivo (Future Subjunctive)
+            { en: "When I put...", pt: "Quando puser...", tense: "Futuro Conj." },
+            { en: "If you put...", pt: "Se puseres...", tense: "Futuro Conj." },
+            { en: "When he puts...", pt: "Quando ele puser...", tense: "Futuro Conj." },
+            { en: "If we put...", pt: "Se pusermos...", tense: "Futuro Conj." },
+            { en: "When they put...", pt: "Quando eles puserem...", tense: "Futuro Conj." },
+            { en: "As soon as I put...", pt: "Assim que puser...", tense: "Futuro Conj." },
+            { en: "Whoever puts...", pt: "Quem puser...", tense: "Futuro Conj." },
+            { en: "If you ever put...", pt: "Se alguma vez puseres...", tense: "Futuro Conj." },
+            { en: "When we put everything...", pt: "Quando pusermos tudo...", tense: "Futuro Conj." },
+            { en: "Tell me if you put.", pt: "Diz-me se puseres.", tense: "Futuro Conj." },
+
+            // Common expressions with pôr
+            { en: "To set the table.", pt: "Pôr a mesa.", tense: "Expressão" },
+            { en: "To lay eggs.", pt: "Pôr ovos.", tense: "Expressão" },
+            { en: "To sunset.", pt: "Pôr-do-sol.", tense: "Expressão" },
+            { en: "To put in doubt.", pt: "Pôr em causa.", tense: "Expressão" },
+            { en: "To put in order.", pt: "Pôr em ordem.", tense: "Expressão" },
+            { en: "To put oneself.", pt: "Pôr-se.", tense: "Expressão" },
+            { en: "To start to.", pt: "Pôr-se a.", tense: "Expressão" },
+            { en: "To put an end.", pt: "Pôr fim.", tense: "Expressão" },
+            { en: "To put on weight.", pt: "Pôr peso.", tense: "Expressão" },
+            { en: "To bet.", pt: "Pôr a aposta.", tense: "Expressão" }
+        ];
+
+        function renderPhrases(filteredPhrases = phrases) {
+            const container = document.getElementById('phraseList');
+            container.innerHTML = '';
+
+            filteredPhrases.forEach((phrase, index) => {
+                const card = document.createElement('div');
+                card.className = 'phrase-card';
+                card.innerHTML = `
+                    <div class="phrase-header" onclick="toggleCard(this.parentElement)">
+                        <span class="phrase-number">${index + 1}</span>
+                        <span class="origin-text">${phrase.en}</span>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="portuguese-text">
+                        <div class="pt-content">
+                            <div class="pt-label">European Portuguese</div>
+                            <div class="pt-phrase">${highlightVerb(phrase.pt)}</div>
+                            <span class="tense-tag">${phrase.tense}</span>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+
+            document.getElementById('stats').textContent =
+                `Showing: ${filteredPhrases.length} of ${phrases.length} phrases`;
+        }
+
+        function highlightVerb(text) {
+            const forms = [
+                'ponho', 'pões', 'põe', 'pomos', 'põem',
+                'punha', 'punhas', 'púnhamos', 'punham',
+                'pus', 'puseste', 'pôs', 'pusemos', 'puseram',
+                'porei', 'porás', 'porá', 'poremos', 'porão',
+                'poria', 'porias', 'poríamos', 'poriam',
+                'ponha', 'ponhas', 'ponhamos', 'ponham',
+                'pusesse', 'pusesses', 'puséssemos', 'pusessem',
+                'puser', 'puseres', 'pusermos', 'puserem',
+                'pôr', 'pondo', 'posto'
+            ];
+
+            let result = text;
+            forms.forEach(form => {
+                const regex = new RegExp(`\\b(${form})\\b`, 'gi');
+                result = result.replace(regex, '<span class="verb-highlight">$1</span>');
+            });
+            return result;
+        }
+
+        function toggleCard(card) {
+            card.classList.toggle('open');
+        }
+
+        function showAll() {
+            document.querySelectorAll('.phrase-card').forEach(card => {
+                card.classList.add('open');
+            });
+        }
+
+        function hideAll() {
+            document.querySelectorAll('.phrase-card').forEach(card => {
+                card.classList.remove('open');
+            });
+        }
+
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            const filtered = phrases.filter(p =>
+                p.en.toLowerCase().includes(query) ||
+                p.pt.toLowerCase().includes(query) ||
+                p.tense.toLowerCase().includes(query)
+            );
+            renderPhrases(filtered);
+        });
+
+        // Initialize
+        renderPhrases();
+    </script>
+</body>
+</html>
