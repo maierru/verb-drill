@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb QUERER — 100 Phrases</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            color: #eee;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #00d4aa;
+            text-decoration: none;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 0;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #00d4aa;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(0, 212, 170, 0.3);
+        }
+
+        .subtitle {
+            color: #888;
+            font-size: 1.1rem;
+        }
+
+        .controls {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .btn-primary {
+            background: #00d4aa;
+            color: #1a1a2e;
+        }
+
+        .btn-primary:hover {
+            background: #00f5c4;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0, 212, 170, 0.4);
+        }
+
+        .btn-secondary {
+            background: #3a3a5c;
+            color: #eee;
+        }
+
+        .btn-secondary:hover {
+            background: #4a4a7c;
+        }
+
+        .stats {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #888;
+        }
+
+        .phrase-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .phrase-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .phrase-card:hover {
+            border-color: rgba(0, 212, 170, 0.3);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .phrase-header {
+            display: flex;
+            align-items: center;
+            padding: 18px 20px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .phrase-number {
+            background: #00d4aa;
+            color: #1a1a2e;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .origin-text {
+            flex: 1;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        .toggle-icon {
+            font-size: 1.5rem;
+            color: #00d4aa;
+            transition: transform 0.3s ease;
+            margin-left: 15px;
+        }
+
+        .phrase-card.open .toggle-icon {
+            transform: rotate(180deg);
+        }
+
+        .portuguese-text {
+            padding: 0 20px 20px 71px;
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .phrase-card.open .portuguese-text {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .pt-content {
+            background: rgba(0, 212, 170, 0.1);
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 4px solid #00d4aa;
+        }
+
+        .pt-label {
+            font-size: 0.8rem;
+            color: #00d4aa;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .pt-phrase {
+            font-size: 1.15rem;
+            color: #fff;
+            font-style: italic;
+        }
+
+        .verb-highlight {
+            color: #00d4aa;
+            font-weight: 600;
+        }
+
+        .tense-tag {
+            display: inline-block;
+            background: rgba(255, 193, 7, 0.2);
+            color: #ffc107;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            margin-top: 10px;
+        }
+
+        .search-box {
+            width: 100%;
+            max-width: 400px;
+            padding: 12px 20px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            color: #eee;
+            font-size: 1rem;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .search-box:focus {
+            border-color: #00d4aa;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .search-box::placeholder {
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0 20px;
+            color: #555;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            .phrase-header { padding: 15px; }
+            .portuguese-text { padding-left: 15px; }
+            .phrase-number { width: 30px; height: 30px; font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../" class="back-link">← Back to verb list</a>
+            <h1>🇵🇹 Verb QUERER</h1>
+            <p class="subtitle">100 popular phrases — European Portuguese</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Show all translations</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
+        </div>
+
+        <div class="stats" id="stats">Showing: 100 of 100 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            European Portuguese Practice — Verb QUERER
+        </footer>
+    </div>
+
+    <script>
+        const phrases = [
+            // Presente do Indicativo (Present)
+            { en: "I want water.", pt: "Quero água.", tense: "Presente" },
+            { en: "What do you want?", pt: "O que queres?", tense: "Presente" },
+            { en: "He wants to go.", pt: "Ele quer ir.", tense: "Presente" },
+            { en: "She wants to help.", pt: "Ela quer ajudar.", tense: "Presente" },
+            { en: "We want peace.", pt: "Queremos paz.", tense: "Presente" },
+            { en: "You (plural) want more.", pt: "Vocês querem mais.", tense: "Presente" },
+            { en: "They want to know.", pt: "Eles querem saber.", tense: "Presente" },
+            { en: "I don't want that.", pt: "Não quero isso.", tense: "Presente" },
+            { en: "Do you want coffee?", pt: "Queres café?", tense: "Presente" },
+            { en: "I want to learn Portuguese.", pt: "Quero aprender português.", tense: "Presente" },
+
+            // Questions in present
+            { en: "What do you want to eat?", pt: "O que queres comer?", tense: "Presente" },
+            { en: "Do you want to come?", pt: "Queres vir?", tense: "Presente" },
+            { en: "Does he want to stay?", pt: "Ele quer ficar?", tense: "Presente" },
+            { en: "Who wants to go?", pt: "Quem quer ir?", tense: "Presente" },
+            { en: "Why do you want that?", pt: "Porque queres isso?", tense: "Presente" },
+            { en: "Do you want me to help?", pt: "Queres que eu ajude?", tense: "Presente" },
+            { en: "What does she want?", pt: "O que é que ela quer?", tense: "Presente" },
+            { en: "Do they want to play?", pt: "Eles querem jogar?", tense: "Presente" },
+            { en: "How much do you want?", pt: "Quanto queres?", tense: "Presente" },
+            { en: "Do you want anything else?", pt: "Queres mais alguma coisa?", tense: "Presente" },
+
+            // Pretérito Imperfeito (Imperfect Past)
+            { en: "I wanted to go.", pt: "Eu queria ir.", tense: "Imperfeito" },
+            { en: "You wanted to help.", pt: "Tu querias ajudar.", tense: "Imperfeito" },
+            { en: "He wanted to stay.", pt: "Ele queria ficar.", tense: "Imperfeito" },
+            { en: "She wanted a new job.", pt: "Ela queria um emprego novo.", tense: "Imperfeito" },
+            { en: "We wanted to travel.", pt: "Queríamos viajar.", tense: "Imperfeito" },
+            { en: "They wanted more time.", pt: "Eles queriam mais tempo.", tense: "Imperfeito" },
+            { en: "What did you want?", pt: "O que querias?", tense: "Imperfeito" },
+            { en: "I didn't want to bother.", pt: "Não queria incomodar.", tense: "Imperfeito" },
+            { en: "I wanted to tell you.", pt: "Queria dizer-te.", tense: "Imperfeito" },
+            { en: "We wanted to see you.", pt: "Queríamos ver-te.", tense: "Imperfeito" },
+
+            // Pretérito Perfeito Simples (Simple Past)
+            { en: "I wanted it so much.", pt: "Quis tanto.", tense: "Perfeito" },
+            { en: "You wanted to leave.", pt: "Tu quiseste sair.", tense: "Perfeito" },
+            { en: "He wanted to try.", pt: "Ele quis tentar.", tense: "Perfeito" },
+            { en: "She didn't want to come.", pt: "Ela não quis vir.", tense: "Perfeito" },
+            { en: "We wanted to help.", pt: "Quisemos ajudar.", tense: "Perfeito" },
+            { en: "They wanted to know.", pt: "Eles quiseram saber.", tense: "Perfeito" },
+            { en: "I never wanted that.", pt: "Nunca quis isso.", tense: "Perfeito" },
+            { en: "Did you want to go?", pt: "Quiseste ir?", tense: "Perfeito" },
+            { en: "Who wanted this?", pt: "Quem quis isto?", tense: "Perfeito" },
+            { en: "I just wanted to help.", pt: "Só quis ajudar.", tense: "Perfeito" },
+
+            // Futuro do Indicativo (Future)
+            { en: "I will want more.", pt: "Quererei mais.", tense: "Futuro" },
+            { en: "You will want to know.", pt: "Tu quererás saber.", tense: "Futuro" },
+            { en: "He will want to stay.", pt: "Ele quererá ficar.", tense: "Futuro" },
+            { en: "We will want to see.", pt: "Quereremos ver.", tense: "Futuro" },
+            { en: "They will want answers.", pt: "Eles quererão respostas.", tense: "Futuro" },
+            { en: "I won't want to leave.", pt: "Não quererei sair.", tense: "Futuro" },
+            { en: "Will you want to come?", pt: "Quererás vir?", tense: "Futuro" },
+            { en: "She will want to help.", pt: "Ela quererá ajudar.", tense: "Futuro" },
+            { en: "Everyone will want it.", pt: "Todos quererão.", tense: "Futuro" },
+            { en: "You will want it later.", pt: "Quererás mais tarde.", tense: "Futuro" },
+
+            // Condicional (Conditional)
+            { en: "I would want to go.", pt: "Quereria ir.", tense: "Condicional" },
+            { en: "You would want more.", pt: "Tu quererias mais.", tense: "Condicional" },
+            { en: "He would want to know.", pt: "Ele quereria saber.", tense: "Condicional" },
+            { en: "We would want to help.", pt: "Quereríamos ajudar.", tense: "Condicional" },
+            { en: "They would want to stay.", pt: "Eles quereriam ficar.", tense: "Condicional" },
+            { en: "I wouldn't want that.", pt: "Não quereria isso.", tense: "Condicional" },
+            { en: "Would you want to come?", pt: "Quererias vir?", tense: "Condicional" },
+            { en: "She would want the best.", pt: "Ela quereria o melhor.", tense: "Condicional" },
+            { en: "Who would want that?", pt: "Quem quereria isso?", tense: "Condicional" },
+            { en: "I would want to try.", pt: "Quereria tentar.", tense: "Condicional" },
+
+            // Presente do Conjuntivo (Present Subjunctive)
+            { en: "I hope you want to come.", pt: "Espero que queiras vir.", tense: "Conjuntivo" },
+            { en: "It's important that he wants to learn.", pt: "É importante que ele queira aprender.", tense: "Conjuntivo" },
+            { en: "I doubt that she wants to stay.", pt: "Duvido que ela queira ficar.", tense: "Conjuntivo" },
+            { en: "Even though you want it...", pt: "Embora queiras...", tense: "Conjuntivo" },
+            { en: "Whatever you want...", pt: "O que quer que queiras...", tense: "Conjuntivo" },
+            { en: "It's necessary that we want it.", pt: "É preciso que queiramos.", tense: "Conjuntivo" },
+            { en: "I don't think he wants to go.", pt: "Não acho que ele queira ir.", tense: "Conjuntivo" },
+            { en: "Unless you want to...", pt: "A menos que queiras...", tense: "Conjuntivo" },
+            { en: "Whoever wants to join...", pt: "Quem queira participar...", tense: "Conjuntivo" },
+            { en: "If you want...", pt: "Se quiseres...", tense: "Conjuntivo" },
+
+            // Imperfeito do Conjuntivo (Imperfect Subjunctive)
+            { en: "If I wanted to...", pt: "Se eu quisesse...", tense: "Imperfeito Conj." },
+            { en: "I wish you wanted to come.", pt: "Quem me dera que quisesses vir.", tense: "Imperfeito Conj." },
+            { en: "If he wanted to help...", pt: "Se ele quisesse ajudar...", tense: "Imperfeito Conj." },
+            { en: "If we wanted to leave...", pt: "Se quiséssemos sair...", tense: "Imperfeito Conj." },
+            { en: "If they wanted to know...", pt: "Se eles quisessem saber...", tense: "Imperfeito Conj." },
+            { en: "I would help if you wanted.", pt: "Ajudaria se quisesses.", tense: "Imperfeito Conj." },
+            { en: "Even if I wanted to...", pt: "Mesmo que quisesse...", tense: "Imperfeito Conj." },
+            { en: "If she wanted to stay...", pt: "Se ela quisesse ficar...", tense: "Imperfeito Conj." },
+            { en: "As if I wanted that...", pt: "Como se quisesse isso...", tense: "Imperfeito Conj." },
+            { en: "I wish everyone wanted peace.", pt: "Quem me dera que todos quisessem paz.", tense: "Imperfeito Conj." },
+
+            // Querer + infinitive
+            { en: "I want to eat.", pt: "Quero comer.", tense: "Infinitivo" },
+            { en: "I want to sleep.", pt: "Quero dormir.", tense: "Infinitivo" },
+            { en: "I want to see.", pt: "Quero ver.", tense: "Infinitivo" },
+            { en: "I want to talk.", pt: "Quero falar.", tense: "Infinitivo" },
+            { en: "I want to understand.", pt: "Quero perceber.", tense: "Infinitivo" },
+            { en: "I want to try.", pt: "Quero tentar.", tense: "Infinitivo" },
+            { en: "I want to stay.", pt: "Quero ficar.", tense: "Infinitivo" },
+            { en: "I want to leave.", pt: "Quero sair.", tense: "Infinitivo" },
+            { en: "I want to buy.", pt: "Quero comprar.", tense: "Infinitivo" },
+            { en: "I want to know.", pt: "Quero saber.", tense: "Infinitivo" },
+
+            // Common expressions
+            { en: "What do you mean?", pt: "O que queres dizer?", tense: "Expressão" },
+            { en: "I mean...", pt: "Quero dizer...", tense: "Expressão" },
+            { en: "Do you want to?", pt: "Queres?", tense: "Expressão" },
+            { en: "I don't want to know.", pt: "Não quero saber.", tense: "Expressão" },
+            { en: "Whatever you want.", pt: "O que quiseres.", tense: "Expressão" },
+            { en: "If you want.", pt: "Se quiseres.", tense: "Expressão" },
+            { en: "I just want to say...", pt: "Só quero dizer...", tense: "Expressão" },
+            { en: "I wish I could.", pt: "Quem me dera.", tense: "Expressão" },
+            { en: "Where there's a will, there's a way.", pt: "Querer é poder.", tense: "Expressão" },
+            { en: "As you wish.", pt: "Como quiseres.", tense: "Expressão" }
+        ];
+
+        function renderPhrases(filteredPhrases = phrases) {
+            const container = document.getElementById('phraseList');
+            container.innerHTML = '';
+
+            filteredPhrases.forEach((phrase, index) => {
+                const card = document.createElement('div');
+                card.className = 'phrase-card';
+                card.innerHTML = `
+                    <div class="phrase-header" onclick="toggleCard(this.parentElement)">
+                        <span class="phrase-number">${index + 1}</span>
+                        <span class="origin-text">${phrase.en}</span>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="portuguese-text">
+                        <div class="pt-content">
+                            <div class="pt-label">European Portuguese</div>
+                            <div class="pt-phrase">${highlightVerb(phrase.pt)}</div>
+                            <span class="tense-tag">${phrase.tense}</span>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+
+            document.getElementById('stats').textContent =
+                `Showing: ${filteredPhrases.length} of ${phrases.length} phrases`;
+        }
+
+        function highlightVerb(text) {
+            const forms = [
+                'quero', 'queres', 'quer', 'queremos', 'querem',
+                'queria', 'querias', 'queríamos', 'queriam',
+                'quis', 'quiseste', 'quisemos', 'quiseram',
+                'quererei', 'quererás', 'quererá', 'quereremos', 'quererão',
+                'quereria', 'quererias', 'quereríamos', 'quereriam',
+                'queira', 'queiras', 'queiramos', 'queiram',
+                'quisesse', 'quisesses', 'quiséssemos', 'quisessem',
+                'querer', 'querendo', 'querido', 'quiseres'
+            ];
+
+            let result = text;
+            forms.forEach(form => {
+                const regex = new RegExp(`\\b(${form})\\b`, 'gi');
+                result = result.replace(regex, '<span class="verb-highlight">$1</span>');
+            });
+            return result;
+        }
+
+        function toggleCard(card) {
+            card.classList.toggle('open');
+        }
+
+        function showAll() {
+            document.querySelectorAll('.phrase-card').forEach(card => {
+                card.classList.add('open');
+            });
+        }
+
+        function hideAll() {
+            document.querySelectorAll('.phrase-card').forEach(card => {
+                card.classList.remove('open');
+            });
+        }
+
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            const filtered = phrases.filter(p =>
+                p.en.toLowerCase().includes(query) ||
+                p.pt.toLowerCase().includes(query) ||
+                p.tense.toLowerCase().includes(query)
+            );
+            renderPhrases(filtered);
+        });
+
+        // Initialize
+        renderPhrases();
+    </script>
+</body>
+</html>

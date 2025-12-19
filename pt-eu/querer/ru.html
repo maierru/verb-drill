@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол QUERER — 100 фраз</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            color: #eee;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #00d4aa;
+            text-decoration: none;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 0;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #00d4aa;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(0, 212, 170, 0.3);
+        }
+
+        .subtitle {
+            color: #888;
+            font-size: 1.1rem;
+        }
+
+        .controls {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .btn-primary {
+            background: #00d4aa;
+            color: #1a1a2e;
+        }
+
+        .btn-primary:hover {
+            background: #00f5c4;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0, 212, 170, 0.4);
+        }
+
+        .btn-secondary {
+            background: #3a3a5c;
+            color: #eee;
+        }
+
+        .btn-secondary:hover {
+            background: #4a4a7c;
+        }
+
+        .stats {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #888;
+        }
+
+        .phrase-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .phrase-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .phrase-card:hover {
+            border-color: rgba(0, 212, 170, 0.3);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .phrase-header {
+            display: flex;
+            align-items: center;
+            padding: 18px 20px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .phrase-number {
+            background: #00d4aa;
+            color: #1a1a2e;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .russian-text {
+            flex: 1;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        .toggle-icon {
+            font-size: 1.5rem;
+            color: #00d4aa;
+            transition: transform 0.3s ease;
+            margin-left: 15px;
+        }
+
+        .phrase-card.open .toggle-icon {
+            transform: rotate(180deg);
+        }
+
+        .portuguese-text {
+            padding: 0 20px 20px 71px;
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .phrase-card.open .portuguese-text {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .pt-content {
+            background: rgba(0, 212, 170, 0.1);
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 4px solid #00d4aa;
+        }
+
+        .pt-label {
+            font-size: 0.8rem;
+            color: #00d4aa;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .pt-phrase {
+            font-size: 1.15rem;
+            color: #fff;
+            font-style: italic;
+        }
+
+        .verb-highlight {
+            color: #00d4aa;
+            font-weight: 600;
+        }
+
+        .tense-tag {
+            display: inline-block;
+            background: rgba(255, 193, 7, 0.2);
+            color: #ffc107;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            margin-top: 10px;
+        }
+
+        .search-box {
+            width: 100%;
+            max-width: 400px;
+            padding: 12px 20px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            color: #eee;
+            font-size: 1rem;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .search-box:focus {
+            border-color: #00d4aa;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .search-box::placeholder {
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0 20px;
+            color: #555;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            .phrase-header { padding: 15px; }
+            .portuguese-text { padding-left: 15px; }
+            .phrase-number { width: 30px; height: 30px; font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇵🇹 Глагол QUERER</h1>
+            <p class="subtitle">100 популярных фраз — Европейский португальский</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 100 из 100 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика европейского португальского — Глагол QUERER
+        </footer>
+    </div>
+
+    <script>
+        const phrases = [
+            // Presente do Indicativo (Настоящее время)
+            { ru: "Я хочу воды.", pt: "Quero água.", tense: "Presente" },
+            { ru: "Что ты хочешь?", pt: "O que queres?", tense: "Presente" },
+            { ru: "Он хочет уйти.", pt: "Ele quer ir.", tense: "Presente" },
+            { ru: "Она хочет помочь.", pt: "Ela quer ajudar.", tense: "Presente" },
+            { ru: "Мы хотим мира.", pt: "Queremos paz.", tense: "Presente" },
+            { ru: "Вы хотите больше.", pt: "Vocês querem mais.", tense: "Presente" },
+            { ru: "Они хотят знать.", pt: "Eles querem saber.", tense: "Presente" },
+            { ru: "Я этого не хочу.", pt: "Não quero isso.", tense: "Presente" },
+            { ru: "Хочешь кофе?", pt: "Queres café?", tense: "Presente" },
+            { ru: "Хочу выучить португальский.", pt: "Quero aprender português.", tense: "Presente" },
+
+            // Вопросы в настоящем времени
+            { ru: "Что ты хочешь поесть?", pt: "O que queres comer?", tense: "Presente" },
+            { ru: "Хочешь прийти?", pt: "Queres vir?", tense: "Presente" },
+            { ru: "Он хочет остаться?", pt: "Ele quer ficar?", tense: "Presente" },
+            { ru: "Кто хочет пойти?", pt: "Quem quer ir?", tense: "Presente" },
+            { ru: "Почему ты этого хочешь?", pt: "Porque queres isso?", tense: "Presente" },
+            { ru: "Хочешь, чтобы я помог?", pt: "Queres que eu ajude?", tense: "Presente" },
+            { ru: "Чего она хочет?", pt: "O que é que ela quer?", tense: "Presente" },
+            { ru: "Они хотят играть?", pt: "Eles querem jogar?", tense: "Presente" },
+            { ru: "Сколько ты хочешь?", pt: "Quanto queres?", tense: "Presente" },
+            { ru: "Хочешь ещё что-нибудь?", pt: "Queres mais alguma coisa?", tense: "Presente" },
+
+            // Pretérito Imperfeito (Прошедшее несовершенное)
+            { ru: "Я хотел пойти.", pt: "Eu queria ir.", tense: "Imperfeito" },
+            { ru: "Ты хотел помочь.", pt: "Tu querias ajudar.", tense: "Imperfeito" },
+            { ru: "Он хотел остаться.", pt: "Ele queria ficar.", tense: "Imperfeito" },
+            { ru: "Она хотела новую работу.", pt: "Ela queria um emprego novo.", tense: "Imperfeito" },
+            { ru: "Мы хотели путешествовать.", pt: "Queríamos viajar.", tense: "Imperfeito" },
+            { ru: "Они хотели больше времени.", pt: "Eles queriam mais tempo.", tense: "Imperfeito" },
+            { ru: "Чего ты хотел?", pt: "O que querias?", tense: "Imperfeito" },
+            { ru: "Я не хотел беспокоить.", pt: "Não queria incomodar.", tense: "Imperfeito" },
+            { ru: "Я хотел тебе сказать.", pt: "Queria dizer-te.", tense: "Imperfeito" },
+            { ru: "Мы хотели тебя увидеть.", pt: "Queríamos ver-te.", tense: "Imperfeito" },
+
+            // Pretérito Perfeito Simples (Прошедшее совершенное)
+            { ru: "Я так этого хотел.", pt: "Quis tanto.", tense: "Perfeito" },
+            { ru: "Ты захотел уйти.", pt: "Tu quiseste sair.", tense: "Perfeito" },
+            { ru: "Он захотел попробовать.", pt: "Ele quis tentar.", tense: "Perfeito" },
+            { ru: "Она не захотела прийти.", pt: "Ela não quis vir.", tense: "Perfeito" },
+            { ru: "Мы захотели помочь.", pt: "Quisemos ajudar.", tense: "Perfeito" },
+            { ru: "Они захотели узнать.", pt: "Eles quiseram saber.", tense: "Perfeito" },
+            { ru: "Я никогда этого не хотел.", pt: "Nunca quis isso.", tense: "Perfeito" },
+            { ru: "Ты хотел пойти?", pt: "Quiseste ir?", tense: "Perfeito" },
+            { ru: "Кто этого хотел?", pt: "Quem quis isto?", tense: "Perfeito" },
+            { ru: "Я просто хотел помочь.", pt: "Só quis ajudar.", tense: "Perfeito" },
+
+            // Futuro do Indicativo (Будущее время)
+            { ru: "Я захочу больше.", pt: "Quererei mais.", tense: "Futuro" },
+            { ru: "Ты захочешь узнать.", pt: "Tu quererás saber.", tense: "Futuro" },
+            { ru: "Он захочет остаться.", pt: "Ele quererá ficar.", tense: "Futuro" },
+            { ru: "Мы захотим увидеть.", pt: "Quereremos ver.", tense: "Futuro" },
+            { ru: "Они захотят ответов.", pt: "Eles quererão respostas.", tense: "Futuro" },
+            { ru: "Я не захочу уходить.", pt: "Não quererei sair.", tense: "Futuro" },
+            { ru: "Ты захочешь прийти?", pt: "Quererás vir?", tense: "Futuro" },
+            { ru: "Она захочет помочь.", pt: "Ela quererá ajudar.", tense: "Futuro" },
+            { ru: "Все захотят.", pt: "Todos quererão.", tense: "Futuro" },
+            { ru: "Ты захочешь потом.", pt: "Quererás mais tarde.", tense: "Futuro" },
+
+            // Condicional (Условное наклонение)
+            { ru: "Я бы хотел пойти.", pt: "Quereria ir.", tense: "Condicional" },
+            { ru: "Ты бы хотел больше.", pt: "Tu quererias mais.", tense: "Condicional" },
+            { ru: "Он бы хотел узнать.", pt: "Ele quereria saber.", tense: "Condicional" },
+            { ru: "Мы бы хотели помочь.", pt: "Quereríamos ajudar.", tense: "Condicional" },
+            { ru: "Они бы хотели остаться.", pt: "Eles quereriam ficar.", tense: "Condicional" },
+            { ru: "Я бы этого не хотел.", pt: "Não quereria isso.", tense: "Condicional" },
+            { ru: "Ты бы хотел прийти?", pt: "Quererias vir?", tense: "Condicional" },
+            { ru: "Она бы хотела лучшего.", pt: "Ela quereria o melhor.", tense: "Condicional" },
+            { ru: "Кто бы этого хотел?", pt: "Quem quereria isso?", tense: "Condicional" },
+            { ru: "Я бы хотел попробовать.", pt: "Quereria tentar.", tense: "Condicional" },
+
+            // Presente do Conjuntivo (Настоящее сослагательное)
+            { ru: "Надеюсь, что ты захочешь прийти.", pt: "Espero que queiras vir.", tense: "Conjuntivo" },
+            { ru: "Важно, чтобы он хотел учиться.", pt: "É importante que ele queira aprender.", tense: "Conjuntivo" },
+            { ru: "Сомневаюсь, что она захочет остаться.", pt: "Duvido que ela queira ficar.", tense: "Conjuntivo" },
+            { ru: "Хотя ты и хочешь...", pt: "Embora queiras...", tense: "Conjuntivo" },
+            { ru: "Чего бы ты ни хотел...", pt: "O que quer que queiras...", tense: "Conjuntivo" },
+            { ru: "Нужно, чтобы мы хотели.", pt: "É preciso que queiramos.", tense: "Conjuntivo" },
+            { ru: "Не думаю, что он хочет идти.", pt: "Não acho que ele queira ir.", tense: "Conjuntivo" },
+            { ru: "Если ты не хочешь...", pt: "A menos que queiras...", tense: "Conjuntivo" },
+            { ru: "Кто хочет участвовать...", pt: "Quem queira participar...", tense: "Conjuntivo" },
+            { ru: "Если хочешь...", pt: "Se quiseres...", tense: "Conjuntivo" },
+
+            // Imperfeito do Conjuntivo (Прошедшее сослагательное)
+            { ru: "Если бы я хотел...", pt: "Se eu quisesse...", tense: "Imperfeito Conj." },
+            { ru: "Хотел бы, чтобы ты захотел прийти.", pt: "Quem me dera que quisesses vir.", tense: "Imperfeito Conj." },
+            { ru: "Если бы он хотел помочь...", pt: "Se ele quisesse ajudar...", tense: "Imperfeito Conj." },
+            { ru: "Если бы мы хотели уйти...", pt: "Se quiséssemos sair...", tense: "Imperfeito Conj." },
+            { ru: "Если бы они хотели узнать...", pt: "Se eles quisessem saber...", tense: "Imperfeito Conj." },
+            { ru: "Я бы помог, если бы ты хотел.", pt: "Ajudaria se quisesses.", tense: "Imperfeito Conj." },
+            { ru: "Даже если бы я хотел...", pt: "Mesmo que quisesse...", tense: "Imperfeito Conj." },
+            { ru: "Если бы она хотела остаться...", pt: "Se ela quisesse ficar...", tense: "Imperfeito Conj." },
+            { ru: "Как будто я этого хотел...", pt: "Como se quisesse isso...", tense: "Imperfeito Conj." },
+            { ru: "Хотел бы, чтобы все хотели мира.", pt: "Quem me dera que todos quisessem paz.", tense: "Imperfeito Conj." },
+
+            // Querer + инфинитив
+            { ru: "Я хочу есть.", pt: "Quero comer.", tense: "Infinitivo" },
+            { ru: "Я хочу спать.", pt: "Quero dormir.", tense: "Infinitivo" },
+            { ru: "Я хочу видеть.", pt: "Quero ver.", tense: "Infinitivo" },
+            { ru: "Я хочу поговорить.", pt: "Quero falar.", tense: "Infinitivo" },
+            { ru: "Я хочу понять.", pt: "Quero perceber.", tense: "Infinitivo" },
+            { ru: "Я хочу попробовать.", pt: "Quero tentar.", tense: "Infinitivo" },
+            { ru: "Я хочу остаться.", pt: "Quero ficar.", tense: "Infinitivo" },
+            { ru: "Я хочу уйти.", pt: "Quero sair.", tense: "Infinitivo" },
+            { ru: "Я хочу купить.", pt: "Quero comprar.", tense: "Infinitivo" },
+            { ru: "Я хочу знать.", pt: "Quero saber.", tense: "Infinitivo" },
+
+            // Распространённые выражения
+            { ru: "Что ты имеешь в виду?", pt: "O que queres dizer?", tense: "Expressão" },
+            { ru: "Я имею в виду...", pt: "Quero dizer...", tense: "Expressão" },
+            { ru: "Хочешь?", pt: "Queres?", tense: "Expressão" },
+            { ru: "Не хочу знать.", pt: "Não quero saber.", tense: "Expressão" },
+            { ru: "Как хочешь.", pt: "O que quiseres.", tense: "Expressão" },
+            { ru: "Если хочешь.", pt: "Se quiseres.", tense: "Expressão" },
+            { ru: "Просто хочу сказать...", pt: "Só quero dizer...", tense: "Expressão" },
+            { ru: "Хотел бы я.", pt: "Quem me dera.", tense: "Expressão" },
+            { ru: "Было бы желание.", pt: "Querer é poder.", tense: "Expressão" },
+            { ru: "Как пожелаешь.", pt: "Como quiseres.", tense: "Expressão" }
+        ];
+
+        function renderPhrases(filteredPhrases = phrases) {
+            const container = document.getElementById('phraseList');
+            container.innerHTML = '';
+
+            filteredPhrases.forEach((phrase, index) => {
+                const card = document.createElement('div');
+                card.className = 'phrase-card';
+                card.innerHTML = `
+                    <div class="phrase-header" onclick="toggleCard(this.parentElement)">
+                        <span class="phrase-number">${index + 1}</span>
+                        <span class="russian-text">${phrase.ru}</span>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="portuguese-text">
+                        <div class="pt-content">
+                            <div class="pt-label">Português Europeu</div>
+                            <div class="pt-phrase">${highlightVerb(phrase.pt)}</div>
+                            <span class="tense-tag">${phrase.tense}</span>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+
+            document.getElementById('stats').textContent =
+                `Показано: ${filteredPhrases.length} из ${phrases.length} фраз`;
+        }
+
+        function highlightVerb(text) {
+            const forms = [
+                'quero', 'queres', 'quer', 'queremos', 'querem',
+                'queria', 'querias', 'queríamos', 'queriam',
+                'quis', 'quiseste', 'quisemos', 'quiseram',
+                'quererei', 'quererás', 'quererá', 'quereremos', 'quererão',
+                'quereria', 'quererias', 'quereríamos', 'quereriam',
+                'queira', 'queiras', 'queiramos', 'queiram',
+                'quisesse', 'quisesses', 'quiséssemos', 'quisessem',
+                'querer', 'querendo', 'querido', 'quiseres'
+            ];
+
+            let result = text;
+            forms.forEach(form => {
+                const regex = new RegExp(`\\b(${form})\\b`, 'gi');
+                result = result.replace(regex, '<span class="verb-highlight">$1</span>');
+            });
+            return result;
+        }
+
+        function toggleCard(card) {
+            card.classList.toggle('open');
+        }
+
+        function showAll() {
+            document.querySelectorAll('.phrase-card').forEach(card => {
+                card.classList.add('open');
+            });
+        }
+
+        function hideAll() {
+            document.querySelectorAll('.phrase-card').forEach(card => {
+                card.classList.remove('open');
+            });
+        }
+
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            const filtered = phrases.filter(p =>
+                p.ru.toLowerCase().includes(query) ||
+                p.pt.toLowerCase().includes(query) ||
+                p.tense.toLowerCase().includes(query)
+            );
+            renderPhrases(filtered);
+        });
+
+        // Инициализация
+        renderPhrases();
+    </script>
+</body>
+</html>
