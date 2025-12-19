@@ -1,5 +1,7 @@
 # Verb Drill
 
+**Live:** [verb-drill.cc](https://verb-drill.cc/)
+
 Practice verb conjugations through real-world phrases. Read in your native language, translate to target language, then reveal the answer.
 
 ## Structure
