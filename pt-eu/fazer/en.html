@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb FAZER — 100 Phrases</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            color: #eee;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #00d4aa;
+            text-decoration: none;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 0;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #00d4aa;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(0, 212, 170, 0.3);
+        }
+
+        .subtitle {
+            color: #888;
+            font-size: 1.1rem;
+        }
+
+        .controls {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .btn-primary {
+            background: #00d4aa;
+            color: #1a1a2e;
+        }
+
+        .btn-primary:hover {
+            background: #00f5c4;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0, 212, 170, 0.4);
+        }
+
+        .btn-secondary {
+            background: #3a3a5c;
+            color: #eee;
+        }
+
+        .btn-secondary:hover {
+            background: #4a4a7c;
+        }
+
+        .stats {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #888;
+        }
+
+        .phrase-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .phrase-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .phrase-card:hover {
+            border-color: rgba(0, 212, 170, 0.3);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .phrase-header {
+            display: flex;
+            align-items: center;
+            padding: 18px 20px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .phrase-number {
+            background: #00d4aa;
+            color: #1a1a2e;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .origin-text {
+            flex: 1;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        .toggle-icon {
+            font-size: 1.5rem;
+            color: #00d4aa;
+            transition: transform 0.3s ease;
+            margin-left: 15px;
+        }
+
+        .phrase-card.open .toggle-icon {
+            transform: rotate(180deg);
+        }
+
+        .portuguese-text {
+            padding: 0 20px 20px 71px;
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .phrase-card.open .portuguese-text {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .pt-content {
+            background: rgba(0, 212, 170, 0.1);
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 4px solid #00d4aa;
+        }
+
+        .pt-label {
+            font-size: 0.8rem;
+            color: #00d4aa;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .pt-phrase {
+            font-size: 1.15rem;
+            color: #fff;
+            font-style: italic;
+        }
+
+        .verb-highlight {
+            color: #00d4aa;
+            font-weight: 600;
+        }
+
+        .tense-tag {
+            display: inline-block;
+            background: rgba(255, 193, 7, 0.2);
+            color: #ffc107;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            margin-top: 10px;
+        }
+
+        .search-box {
+            width: 100%;
+            max-width: 400px;
+            padding: 12px 20px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            color: #eee;
+            font-size: 1rem;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .search-box:focus {
+            border-color: #00d4aa;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .search-box::placeholder {
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0 20px;
+            color: #555;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            .phrase-header { padding: 15px; }
+            .portuguese-text { padding-left: 15px; }
+            .phrase-number { width: 30px; height: 30px; font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../" class="back-link">← Back to verb list</a>
+            <h1>🇵🇹 Verb FAZER</h1>
+            <p class="subtitle">100 popular phrases — European Portuguese</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Show all translations</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
+        </div>
+
+        <div class="stats" id="stats">Showing: 100 of 100 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            European Portuguese Practice — Verb FAZER
+        </footer>
+    </div>
+
+    <script>
+        const phrases = [
+            // Presente do Indicativo (Present) - to do, to make
+            { en: "I do my homework.", pt: "Faço os meus trabalhos de casa.", tense: "Presente" },
+            { en: "What are you doing?", pt: "O que fazes?", tense: "Presente" },
+            { en: "He makes coffee.", pt: "Ele faz café.", tense: "Presente" },
+            { en: "She makes dinner.", pt: "Ela faz o jantar.", tense: "Presente" },
+            { en: "We do exercise.", pt: "Fazemos exercício.", tense: "Presente" },
+            { en: "You (plural) make noise.", pt: "Vocês fazem barulho.", tense: "Presente" },
+            { en: "They do business.", pt: "Eles fazem negócios.", tense: "Presente" },
+            { en: "I don't do that.", pt: "Não faço isso.", tense: "Presente" },
+            { en: "Do you make mistakes?", pt: "Fazes erros?", tense: "Presente" },
+            { en: "What does this do?", pt: "O que é que isto faz?", tense: "Presente" },
+
+            // Weather expressions
+            { en: "It's hot.", pt: "Faz calor.", tense: "Presente" },
+            { en: "It's cold.", pt: "Faz frio.", tense: "Presente" },
+            { en: "It's nice weather.", pt: "Faz bom tempo.", tense: "Presente" },
+            { en: "It's bad weather.", pt: "Faz mau tempo.", tense: "Presente" },
+            { en: "It's sunny.", pt: "Faz sol.", tense: "Presente" },
+
+            // Questions in present
+            { en: "What do you do for a living?", pt: "O que fazes na vida?", tense: "Presente" },
+            { en: "How do you do this?", pt: "Como fazes isto?", tense: "Presente" },
+            { en: "Does it make sense?", pt: "Faz sentido?", tense: "Presente" },
+            { en: "What should I do?", pt: "O que faço?", tense: "Presente" },
+            { en: "Do you do sports?", pt: "Fazes desporto?", tense: "Presente" },
+
+            // Pretérito Imperfeito (Imperfect Past)
+            { en: "I used to do yoga.", pt: "Eu fazia yoga.", tense: "Imperfeito" },
+            { en: "You used to make bread.", pt: "Tu fazias pão.", tense: "Imperfeito" },
+            { en: "He used to do everything.", pt: "Ele fazia tudo.", tense: "Imperfeito" },
+            { en: "She was making lunch.", pt: "Ela fazia o almoço.", tense: "Imperfeito" },
+            { en: "We used to do this together.", pt: "Fazíamos isto juntos.", tense: "Imperfeito" },
+            { en: "They were doing homework.", pt: "Eles faziam os trabalhos de casa.", tense: "Imperfeito" },
+            { en: "It was cold.", pt: "Fazia frio.", tense: "Imperfeito" },
+            { en: "What were you doing?", pt: "O que fazias?", tense: "Imperfeito" },
+            { en: "I wasn't doing anything.", pt: "Não fazia nada.", tense: "Imperfeito" },
+            { en: "It was hot in summer.", pt: "Fazia calor no verão.", tense: "Imperfeito" },
+
+            // Pretérito Perfeito Simples (Simple Past)
+            { en: "I did it.", pt: "Fiz isso.", tense: "Perfeito" },
+            { en: "You made a mistake.", pt: "Tu fizeste um erro.", tense: "Perfeito" },
+            { en: "He did his best.", pt: "Ele fez o seu melhor.", tense: "Perfeito" },
+            { en: "She made a cake.", pt: "Ela fez um bolo.", tense: "Perfeito" },
+            { en: "We did everything.", pt: "Fizemos tudo.", tense: "Perfeito" },
+            { en: "They made plans.", pt: "Eles fizeram planos.", tense: "Perfeito" },
+            { en: "What did you do?", pt: "O que fizeste?", tense: "Perfeito" },
+            { en: "I didn't do anything.", pt: "Não fiz nada.", tense: "Perfeito" },
+            { en: "Who did this?", pt: "Quem fez isto?", tense: "Perfeito" },
+            { en: "I made a decision.", pt: "Fiz uma decisão.", tense: "Perfeito" },
+
+            // Futuro do Indicativo (Future)
+            { en: "I will do it tomorrow.", pt: "Farei isso amanhã.", tense: "Futuro" },
+            { en: "You will make friends.", pt: "Tu farás amigos.", tense: "Futuro" },
+            { en: "He will do the work.", pt: "Ele fará o trabalho.", tense: "Futuro" },
+            { en: "We will make it happen.", pt: "Faremos com que aconteça.", tense: "Futuro" },
+            { en: "They will do their part.", pt: "Eles farão a sua parte.", tense: "Futuro" },
+            { en: "What will you do?", pt: "O que farás?", tense: "Futuro" },
+            { en: "I won't do that again.", pt: "Não farei isso outra vez.", tense: "Futuro" },
+            { en: "It will be hot tomorrow.", pt: "Fará calor amanhã.", tense: "Futuro" },
+            { en: "She will make dinner.", pt: "Ela fará o jantar.", tense: "Futuro" },
+            { en: "We will do our best.", pt: "Faremos o nosso melhor.", tense: "Futuro" },
+
+            // Condicional (Conditional)
+            { en: "I would do it differently.", pt: "Faria de forma diferente.", tense: "Condicional" },
+            { en: "You would make a good teacher.", pt: "Tu farias um bom professor.", tense: "Condicional" },
+            { en: "He would do anything.", pt: "Ele faria qualquer coisa.", tense: "Condicional" },
+            { en: "We would make time.", pt: "Faríamos tempo.", tense: "Condicional" },
+            { en: "They would do it for free.", pt: "Eles fariam de graça.", tense: "Condicional" },
+            { en: "What would you do?", pt: "O que farias?", tense: "Condicional" },
+            { en: "I wouldn't do that.", pt: "Não faria isso.", tense: "Condicional" },
+            { en: "It would make sense.", pt: "Faria sentido.", tense: "Condicional" },
+            { en: "She would make a great leader.", pt: "Ela faria uma grande líder.", tense: "Condicional" },
+            { en: "It would be better to do it now.", pt: "Seria melhor fazer agora.", tense: "Condicional" },
+
+            // Presente do Conjuntivo (Present Subjunctive)
+            { en: "I hope you do well.", pt: "Espero que faças bem.", tense: "Conjuntivo" },
+            { en: "It's important that he does this.", pt: "É importante que ele faça isto.", tense: "Conjuntivo" },
+            { en: "I want us to make peace.", pt: "Quero que façamos as pazes.", tense: "Conjuntivo" },
+            { en: "I doubt that she does it.", pt: "Duvido que ela faça isso.", tense: "Conjuntivo" },
+            { en: "Even though you do everything...", pt: "Embora faças tudo...", tense: "Conjuntivo" },
+            { en: "Whatever you do...", pt: "Faças o que fizeres...", tense: "Conjuntivo" },
+            { en: "It's necessary that they do it.", pt: "É preciso que eles façam isso.", tense: "Conjuntivo" },
+            { en: "I don't think it makes sense.", pt: "Não acho que faça sentido.", tense: "Conjuntivo" },
+            { en: "Unless you do something...", pt: "A menos que faças alguma coisa...", tense: "Conjuntivo" },
+            { en: "I want you to do your best.", pt: "Quero que faças o teu melhor.", tense: "Conjuntivo" },
+
+            // Imperfeito do Conjuntivo (Imperfect Subjunctive)
+            { en: "If I did that...", pt: "Se eu fizesse isso...", tense: "Imperfeito Conj." },
+            { en: "I wish you did more.", pt: "Quem me dera que fizesses mais.", tense: "Imperfeito Conj." },
+            { en: "If he did the work...", pt: "Se ele fizesse o trabalho...", tense: "Imperfeito Conj." },
+            { en: "If we did it together...", pt: "Se fizéssemos juntos...", tense: "Imperfeito Conj." },
+            { en: "If they did their job...", pt: "Se eles fizessem o trabalho deles...", tense: "Imperfeito Conj." },
+            { en: "I would go if you did too.", pt: "Iria se tu também fizesses.", tense: "Imperfeito Conj." },
+            { en: "Even if I did everything...", pt: "Mesmo que fizesse tudo...", tense: "Imperfeito Conj." },
+            { en: "If it made sense...", pt: "Se fizesse sentido...", tense: "Imperfeito Conj." },
+            { en: "As if nothing happened...", pt: "Como se nada se fizesse...", tense: "Imperfeito Conj." },
+            { en: "I wish it made a difference.", pt: "Quem me dera que fizesse diferença.", tense: "Imperfeito Conj." },
+
+            // Time expressions with fazer
+            { en: "It's been two years.", pt: "Faz dois anos.", tense: "Tempo" },
+            { en: "It's been a long time.", pt: "Faz muito tempo.", tense: "Tempo" },
+            { en: "How long has it been?", pt: "Há quanto tempo faz?", tense: "Tempo" },
+            { en: "It's been a week.", pt: "Faz uma semana.", tense: "Tempo" },
+            { en: "It was three months ago.", pt: "Faz três meses.", tense: "Tempo" },
+
+            // Common expressions with fazer
+            { en: "It doesn't matter.", pt: "Não faz mal.", tense: "Expressão" },
+            { en: "Do me a favor.", pt: "Faz-me um favor.", tense: "Expressão" },
+            { en: "Make an effort.", pt: "Faz um esforço.", tense: "Expressão" },
+            { en: "It makes a difference.", pt: "Faz diferença.", tense: "Expressão" },
+            { en: "To make plans.", pt: "Fazer planos.", tense: "Expressão" },
+            { en: "To go shopping.", pt: "Fazer compras.", tense: "Expressão" },
+            { en: "To ask a question.", pt: "Fazer uma pergunta.", tense: "Expressão" },
+            { en: "To take a trip.", pt: "Fazer uma viagem.", tense: "Expressão" },
+            { en: "To turn years old.", pt: "Fazer anos.", tense: "Expressão" },
+            { en: "To pretend.", pt: "Fazer de conta.", tense: "Expressão" },
+            { en: "To queue.", pt: "Fazer fila.", tense: "Expressão" },
+            { en: "To make friends.", pt: "Fazer amigos.", tense: "Expressão" },
+            { en: "What can you do?", pt: "O que se há de fazer?", tense: "Expressão" },
+            { en: "Well done!", pt: "Bem feito!", tense: "Expressão" },
+            { en: "It's doable.", pt: "É fazível.", tense: "Expressão" }
+        ];
+
+        function renderPhrases(filteredPhrases = phrases) {
+            const container = document.getElementById('phraseList');
+            container.innerHTML = '';
+
+            filteredPhrases.forEach((phrase, index) => {
+                const card = document.createElement('div');
+                card.className = 'phrase-card';
+                card.innerHTML = `
+                    <div class="phrase-header" onclick="toggleCard(this.parentElement)">
+                        <span class="phrase-number">${index + 1}</span>
+                        <span class="origin-text">${phrase.en}</span>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="portuguese-text">
+                        <div class="pt-content">
+                            <div class="pt-label">European Portuguese</div>
+                            <div class="pt-phrase">${highlightVerb(phrase.pt)}</div>
+                            <span class="tense-tag">${phrase.tense}</span>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+
+            document.getElementById('stats').textContent =
+                `Showing: ${filteredPhrases.length} of ${phrases.length} phrases`;
+        }
+
+        function highlightVerb(text) {
+            const forms = [
+                'faço', 'fazes', 'faz', 'fazemos', 'fazem',
+                'fazia', 'fazias', 'fazíamos', 'faziam',
+                'fiz', 'fizeste', 'fez', 'fizemos', 'fizeram',
+                'farei', 'farás', 'fará', 'faremos', 'farão',
+                'faria', 'farias', 'faríamos', 'fariam',
+                'faça', 'faças', 'façamos', 'façam',
+                'fizesse', 'fizesses', 'fizéssemos', 'fizessem',
+                'fazer', 'fazendo', 'feito'
+            ];
+
+            let result = text;
+            forms.forEach(form => {
+                const regex = new RegExp(`\\b(${form})\\b`, 'gi');
+                result = result.replace(regex, '<span class="verb-highlight">$1</span>');
+            });
+            return result;
+        }
+
+        function toggleCard(card) {
+            card.classList.toggle('open');
+        }
+
+        function showAll() {
+            document.querySelectorAll('.phrase-card').forEach(card => {
+                card.classList.add('open');
+            });
+        }
+
+        function hideAll() {
+            document.querySelectorAll('.phrase-card').forEach(card => {
+                card.classList.remove('open');
+            });
+        }
+
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            const filtered = phrases.filter(p =>
+                p.en.toLowerCase().includes(query) ||
+                p.pt.toLowerCase().includes(query) ||
+                p.tense.toLowerCase().includes(query)
+            );
+            renderPhrases(filtered);
+        });
+
+        // Initialize
+        renderPhrases();
+    </script>
+</body>
+</html>

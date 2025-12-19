@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол FAZER — 100 фраз</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            color: #eee;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #00d4aa;
+            text-decoration: none;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 0;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #00d4aa;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(0, 212, 170, 0.3);
+        }
+
+        .subtitle {
+            color: #888;
+            font-size: 1.1rem;
+        }
+
+        .controls {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .btn-primary {
+            background: #00d4aa;
+            color: #1a1a2e;
+        }
+
+        .btn-primary:hover {
+            background: #00f5c4;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0, 212, 170, 0.4);
+        }
+
+        .btn-secondary {
+            background: #3a3a5c;
+            color: #eee;
+        }
+
+        .btn-secondary:hover {
+            background: #4a4a7c;
+        }
+
+        .stats {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #888;
+        }
+
+        .phrase-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .phrase-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .phrase-card:hover {
+            border-color: rgba(0, 212, 170, 0.3);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .phrase-header {
+            display: flex;
+            align-items: center;
+            padding: 18px 20px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .phrase-number {
+            background: #00d4aa;
+            color: #1a1a2e;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .russian-text {
+            flex: 1;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        .toggle-icon {
+            font-size: 1.5rem;
+            color: #00d4aa;
+            transition: transform 0.3s ease;
+            margin-left: 15px;
+        }
+
+        .phrase-card.open .toggle-icon {
+            transform: rotate(180deg);
+        }
+
+        .portuguese-text {
+            padding: 0 20px 20px 71px;
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .phrase-card.open .portuguese-text {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .pt-content {
+            background: rgba(0, 212, 170, 0.1);
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 4px solid #00d4aa;
+        }
+
+        .pt-label {
+            font-size: 0.8rem;
+            color: #00d4aa;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .pt-phrase {
+            font-size: 1.15rem;
+            color: #fff;
+            font-style: italic;
+        }
+
+        .verb-highlight {
+            color: #00d4aa;
+            font-weight: 600;
+        }
+
+        .tense-tag {
+            display: inline-block;
+            background: rgba(255, 193, 7, 0.2);
+            color: #ffc107;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            margin-top: 10px;
+        }
+
+        .search-box {
+            width: 100%;
+            max-width: 400px;
+            padding: 12px 20px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            color: #eee;
+            font-size: 1rem;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .search-box:focus {
+            border-color: #00d4aa;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .search-box::placeholder {
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0 20px;
+            color: #555;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            .phrase-header { padding: 15px; }
+            .portuguese-text { padding-left: 15px; }
+            .phrase-number { width: 30px; height: 30px; font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇵🇹 Глагол FAZER</h1>
+            <p class="subtitle">100 популярных фраз — Европейский португальский</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 100 из 100 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика европейского португальского — Глагол FAZER
+        </footer>
+    </div>
+
+    <script>
+        const phrases = [
+            // Presente do Indicativo (Настоящее время) - делать
+            { ru: "Я делаю домашнее задание.", pt: "Faço os meus trabalhos de casa.", tense: "Presente" },
+            { ru: "Что ты делаешь?", pt: "O que fazes?", tense: "Presente" },
+            { ru: "Он делает кофе.", pt: "Ele faz café.", tense: "Presente" },
+            { ru: "Она готовит ужин.", pt: "Ela faz o jantar.", tense: "Presente" },
+            { ru: "Мы делаем упражнения.", pt: "Fazemos exercício.", tense: "Presente" },
+            { ru: "Вы шумите.", pt: "Vocês fazem barulho.", tense: "Presente" },
+            { ru: "Они ведут бизнес.", pt: "Eles fazem negócios.", tense: "Presente" },
+            { ru: "Я этого не делаю.", pt: "Não faço isso.", tense: "Presente" },
+            { ru: "Ты делаешь ошибки?", pt: "Fazes erros?", tense: "Presente" },
+            { ru: "Что это делает?", pt: "O que é que isto faz?", tense: "Presente" },
+
+            // Выражения о погоде
+            { ru: "Жарко.", pt: "Faz calor.", tense: "Presente" },
+            { ru: "Холодно.", pt: "Faz frio.", tense: "Presente" },
+            { ru: "Хорошая погода.", pt: "Faz bom tempo.", tense: "Presente" },
+            { ru: "Плохая погода.", pt: "Faz mau tempo.", tense: "Presente" },
+            { ru: "Солнечно.", pt: "Faz sol.", tense: "Presente" },
+
+            // Вопросы в настоящем времени
+            { ru: "Чем ты занимаешься?", pt: "O que fazes na vida?", tense: "Presente" },
+            { ru: "Как ты это делаешь?", pt: "Como fazes isto?", tense: "Presente" },
+            { ru: "Это имеет смысл?", pt: "Faz sentido?", tense: "Presente" },
+            { ru: "Что мне делать?", pt: "O que faço?", tense: "Presente" },
+            { ru: "Ты занимаешься спортом?", pt: "Fazes desporto?", tense: "Presente" },
+
+            // Pretérito Imperfeito (Прошедшее несовершенное)
+            { ru: "Я раньше занимался йогой.", pt: "Eu fazia yoga.", tense: "Imperfeito" },
+            { ru: "Ты раньше пёк хлеб.", pt: "Tu fazias pão.", tense: "Imperfeito" },
+            { ru: "Он делал всё.", pt: "Ele fazia tudo.", tense: "Imperfeito" },
+            { ru: "Она готовила обед.", pt: "Ela fazia o almoço.", tense: "Imperfeito" },
+            { ru: "Мы делали это вместе.", pt: "Fazíamos isto juntos.", tense: "Imperfeito" },
+            { ru: "Они делали домашнее задание.", pt: "Eles faziam os trabalhos de casa.", tense: "Imperfeito" },
+            { ru: "Было холодно.", pt: "Fazia frio.", tense: "Imperfeito" },
+            { ru: "Что ты делал?", pt: "O que fazias?", tense: "Imperfeito" },
+            { ru: "Я ничего не делал.", pt: "Não fazia nada.", tense: "Imperfeito" },
+            { ru: "Летом было жарко.", pt: "Fazia calor no verão.", tense: "Imperfeito" },
+
+            // Pretérito Perfeito Simples (Прошедшее совершенное)
+            { ru: "Я это сделал.", pt: "Fiz isso.", tense: "Perfeito" },
+            { ru: "Ты сделал ошибку.", pt: "Tu fizeste um erro.", tense: "Perfeito" },
+            { ru: "Он сделал всё возможное.", pt: "Ele fez o seu melhor.", tense: "Perfeito" },
+            { ru: "Она испекла торт.", pt: "Ela fez um bolo.", tense: "Perfeito" },
+            { ru: "Мы сделали всё.", pt: "Fizemos tudo.", tense: "Perfeito" },
+            { ru: "Они составили планы.", pt: "Eles fizeram planos.", tense: "Perfeito" },
+            { ru: "Что ты сделал?", pt: "O que fizeste?", tense: "Perfeito" },
+            { ru: "Я ничего не сделал.", pt: "Não fiz nada.", tense: "Perfeito" },
+            { ru: "Кто это сделал?", pt: "Quem fez isto?", tense: "Perfeito" },
+            { ru: "Я принял решение.", pt: "Fiz uma decisão.", tense: "Perfeito" },
+
+            // Futuro do Indicativo (Будущее время)
+            { ru: "Я сделаю это завтра.", pt: "Farei isso amanhã.", tense: "Futuro" },
+            { ru: "Ты заведёшь друзей.", pt: "Tu farás amigos.", tense: "Futuro" },
+            { ru: "Он сделает работу.", pt: "Ele fará o trabalho.", tense: "Futuro" },
+            { ru: "Мы сделаем так, чтобы это случилось.", pt: "Faremos com que aconteça.", tense: "Futuro" },
+            { ru: "Они сделают свою часть.", pt: "Eles farão a sua parte.", tense: "Futuro" },
+            { ru: "Что ты будешь делать?", pt: "O que farás?", tense: "Futuro" },
+            { ru: "Я больше этого не сделаю.", pt: "Não farei isso outra vez.", tense: "Futuro" },
+            { ru: "Завтра будет жарко.", pt: "Fará calor amanhã.", tense: "Futuro" },
+            { ru: "Она приготовит ужин.", pt: "Ela fará o jantar.", tense: "Futuro" },
+            { ru: "Мы сделаем всё возможное.", pt: "Faremos o nosso melhor.", tense: "Futuro" },
+
+            // Condicional (Условное наклонение)
+            { ru: "Я бы сделал по-другому.", pt: "Faria de forma diferente.", tense: "Condicional" },
+            { ru: "Ты был бы хорошим учителем.", pt: "Tu farias um bom professor.", tense: "Condicional" },
+            { ru: "Он сделал бы что угодно.", pt: "Ele faria qualquer coisa.", tense: "Condicional" },
+            { ru: "Мы бы нашли время.", pt: "Faríamos tempo.", tense: "Condicional" },
+            { ru: "Они бы сделали бесплатно.", pt: "Eles fariam de graça.", tense: "Condicional" },
+            { ru: "Что бы ты сделал?", pt: "O que farias?", tense: "Condicional" },
+            { ru: "Я бы этого не сделал.", pt: "Não faria isso.", tense: "Condicional" },
+            { ru: "Это имело бы смысл.", pt: "Faria sentido.", tense: "Condicional" },
+            { ru: "Она была бы отличным лидером.", pt: "Ela faria uma grande líder.", tense: "Condicional" },
+            { ru: "Лучше было бы сделать сейчас.", pt: "Seria melhor fazer agora.", tense: "Condicional" },
+
+            // Presente do Conjuntivo (Настоящее сослагательное)
+            { ru: "Надеюсь, что ты справишься.", pt: "Espero que faças bem.", tense: "Conjuntivo" },
+            { ru: "Важно, чтобы он это сделал.", pt: "É importante que ele faça isto.", tense: "Conjuntivo" },
+            { ru: "Хочу, чтобы мы помирились.", pt: "Quero que façamos as pazes.", tense: "Conjuntivo" },
+            { ru: "Сомневаюсь, что она это сделает.", pt: "Duvido que ela faça isso.", tense: "Conjuntivo" },
+            { ru: "Хотя ты делаешь всё...", pt: "Embora faças tudo...", tense: "Conjuntivo" },
+            { ru: "Что бы ты ни делал...", pt: "Faças o que fizeres...", tense: "Conjuntivo" },
+            { ru: "Нужно, чтобы они это сделали.", pt: "É preciso que eles façam isso.", tense: "Conjuntivo" },
+            { ru: "Не думаю, что это имеет смысл.", pt: "Não acho que faça sentido.", tense: "Conjuntivo" },
+            { ru: "Если ты не сделаешь что-то...", pt: "A menos que faças alguma coisa...", tense: "Conjuntivo" },
+            { ru: "Хочу, чтобы ты сделал всё возможное.", pt: "Quero que faças o teu melhor.", tense: "Conjuntivo" },
+
+            // Imperfeito do Conjuntivo (Прошедшее сослагательное)
+            { ru: "Если бы я это сделал...", pt: "Se eu fizesse isso...", tense: "Imperfeito Conj." },
+            { ru: "Хотел бы, чтобы ты делал больше.", pt: "Quem me dera que fizesses mais.", tense: "Imperfeito Conj." },
+            { ru: "Если бы он сделал работу...", pt: "Se ele fizesse o trabalho...", tense: "Imperfeito Conj." },
+            { ru: "Если бы мы сделали вместе...", pt: "Se fizéssemos juntos...", tense: "Imperfeito Conj." },
+            { ru: "Если бы они делали свою работу...", pt: "Se eles fizessem o trabalho deles...", tense: "Imperfeito Conj." },
+            { ru: "Я бы пошёл, если бы ты тоже.", pt: "Iria se tu também fizesses.", tense: "Imperfeito Conj." },
+            { ru: "Даже если бы я сделал всё...", pt: "Mesmo que fizesse tudo...", tense: "Imperfeito Conj." },
+            { ru: "Если бы это имело смысл...", pt: "Se fizesse sentido...", tense: "Imperfeito Conj." },
+            { ru: "Как будто ничего не произошло...", pt: "Como se nada se fizesse...", tense: "Imperfeito Conj." },
+            { ru: "Хотел бы, чтобы это изменило ситуацию.", pt: "Quem me dera que fizesse diferença.", tense: "Imperfeito Conj." },
+
+            // Выражения времени с fazer
+            { ru: "Прошло два года.", pt: "Faz dois anos.", tense: "Tempo" },
+            { ru: "Прошло много времени.", pt: "Faz muito tempo.", tense: "Tempo" },
+            { ru: "Сколько времени прошло?", pt: "Há quanto tempo faz?", tense: "Tempo" },
+            { ru: "Прошла неделя.", pt: "Faz uma semana.", tense: "Tempo" },
+            { ru: "Это было три месяца назад.", pt: "Faz três meses.", tense: "Tempo" },
+
+            // Распространённые выражения с fazer
+            { ru: "Ничего страшного.", pt: "Não faz mal.", tense: "Expressão" },
+            { ru: "Сделай мне одолжение.", pt: "Faz-me um favor.", tense: "Expressão" },
+            { ru: "Постарайся.", pt: "Faz um esforço.", tense: "Expressão" },
+            { ru: "Это имеет значение.", pt: "Faz diferença.", tense: "Expressão" },
+            { ru: "Строить планы.", pt: "Fazer planos.", tense: "Expressão" },
+            { ru: "Ходить за покупками.", pt: "Fazer compras.", tense: "Expressão" },
+            { ru: "Задать вопрос.", pt: "Fazer uma pergunta.", tense: "Expressão" },
+            { ru: "Отправиться в путешествие.", pt: "Fazer uma viagem.", tense: "Expressão" },
+            { ru: "Отмечать день рождения.", pt: "Fazer anos.", tense: "Expressão" },
+            { ru: "Притворяться.", pt: "Fazer de conta.", tense: "Expressão" },
+            { ru: "Стоять в очереди.", pt: "Fazer fila.", tense: "Expressão" },
+            { ru: "Заводить друзей.", pt: "Fazer amigos.", tense: "Expressão" },
+            { ru: "Что поделаешь?", pt: "O que se há de fazer?", tense: "Expressão" },
+            { ru: "Так тебе и надо!", pt: "Bem feito!", tense: "Expressão" },
+            { ru: "Это выполнимо.", pt: "É fazível.", tense: "Expressão" }
+        ];
+
+        function renderPhrases(filteredPhrases = phrases) {
+            const container = document.getElementById('phraseList');
+            container.innerHTML = '';
+
+            filteredPhrases.forEach((phrase, index) => {
+                const card = document.createElement('div');
+                card.className = 'phrase-card';
+                card.innerHTML = `
+                    <div class="phrase-header" onclick="toggleCard(this.parentElement)">
+                        <span class="phrase-number">${index + 1}</span>
+                        <span class="russian-text">${phrase.ru}</span>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="portuguese-text">
+                        <div class="pt-content">
+                            <div class="pt-label">Português Europeu</div>
+                            <div class="pt-phrase">${highlightVerb(phrase.pt)}</div>
+                            <span class="tense-tag">${phrase.tense}</span>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+
+            document.getElementById('stats').textContent =
+                `Показано: ${filteredPhrases.length} из ${phrases.length} фраз`;
+        }
+
+        function highlightVerb(text) {
+            const forms = [
+                'faço', 'fazes', 'faz', 'fazemos', 'fazem',
+                'fazia', 'fazias', 'fazíamos', 'faziam',
+                'fiz', 'fizeste', 'fez', 'fizemos', 'fizeram',
+                'farei', 'farás', 'fará', 'faremos', 'farão',
+                'faria', 'farias', 'faríamos', 'fariam',
+                'faça', 'faças', 'façamos', 'façam',
+                'fizesse', 'fizesses', 'fizéssemos', 'fizessem',
+                'fazer', 'fazendo', 'feito'
+            ];
+
+            let result = text;
+            forms.forEach(form => {
+                const regex = new RegExp(`\\b(${form})\\b`, 'gi');
+                result = result.replace(regex, '<span class="verb-highlight">$1</span>');
+            });
+            return result;
+        }
+
+        function toggleCard(card) {
+            card.classList.toggle('open');
+        }
+
+        function showAll() {
+            document.querySelectorAll('.phrase-card').forEach(card => {
+                card.classList.add('open');
+            });
+        }
+
+        function hideAll() {
+            document.querySelectorAll('.phrase-card').forEach(card => {
+                card.classList.remove('open');
+            });
+        }
+
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            const filtered = phrases.filter(p =>
+                p.ru.toLowerCase().includes(query) ||
+                p.pt.toLowerCase().includes(query) ||
+                p.tense.toLowerCase().includes(query)
+            );
+            renderPhrases(filtered);
+        });
+
+        // Инициализация
+        renderPhrases();
+    </script>
+</body>
+</html>
