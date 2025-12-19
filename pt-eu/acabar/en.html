@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acabar — Portuguese Verb Practice</title>
+<style>
+*{box-sizing:border-box}body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);min-height:100vh;margin:0;padding:20px;color:#eee}.container{max-width:800px;margin:0 auto}header{text-align:center;padding:20px 0}.back-link{color:#00d4aa;text-decoration:none;font-size:.9rem}.back-link:hover{text-decoration:underline}h1{color:#00d4aa;font-size:2rem;margin:10px 0;text-shadow:0 0 20px rgba(0,212,170,.3)}.subtitle{color:#888;font-size:1rem;margin-bottom:20px}.controls{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}.btn{background:rgba(0,212,170,.2);color:#00d4aa;border:1px solid #00d4aa;padding:8px 16px;border-radius:20px;cursor:pointer;font-size:.85rem;transition:all .2s}.btn:hover{background:#00d4aa;color:#1a1a2e}.search-box{width:100%;max-width:400px;padding:10px 15px;border-radius:20px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.05);color:#eee;font-size:1rem;margin-bottom:20px}.search-box::placeholder{color:#666}.phrase-list{display:flex;flex-direction:column;gap:10px}.phrase-card{background:rgba(255,255,255,.05);border-radius:10px;padding:15px;border:1px solid rgba(255,255,255,.1);cursor:pointer;transition:all .2s}.phrase-card:hover{border-color:rgba(0,212,170,.3)}.phrase-card.revealed .translation{opacity:1;transform:translateY(0)}.source{font-size:1.1rem;color:#fff;margin-bottom:8px}.translation{font-size:1rem;color:#00d4aa;opacity:0;transform:translateY(-5px);transition:all .2s}.tense-tag{display:inline-block;background:rgba(0,212,170,.15);color:#00d4aa;padding:2px 8px;border-radius:10px;font-size:.75rem;margin-left:8px}.verb-highlight{color:#ff6b6b;font-weight:600}footer{text-align:center;padding:30px 0;color:#555;font-size:.85rem}@media(max-width:600px){h1{font-size:1.5rem}.source{font-size:1rem}.translation{font-size:.95rem}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<a href="../" class="back-link">← Back to verbs</a>
+<h1>🇵🇹 Acabar</h1>
+<p class="subtitle">to finish, to end — 100 phrases</p>
+</header>
+<input type="text" class="search-box" placeholder="Search phrases...">
+<div class="controls">
+<button class="btn" onclick="showAll()">Show All</button>
+<button class="btn" onclick="hideAll()">Hide All</button>
+</div>
+<div class="phrase-list"></div>
+<footer>Verb Drill — Portuguese Verb Practice</footer>
+</div>
+<script>
+const phrases = [
+{en: "I finish now.", pt: "Acabo agora.", tense: "Presente"},
+{en: "You finish early.", pt: "Acabas cedo.", tense: "Presente"},
+{en: "He finishes work.", pt: "Ele acaba o trabalho.", tense: "Presente"},
+{en: "We finish together.", pt: "Acabamos juntos.", tense: "Presente"},
+{en: "They finish late.", pt: "Eles acabam tarde.", tense: "Presente"},
+{en: "I finish at 5.", pt: "Acabo às 5.", tense: "Presente"},
+{en: "You finish the book.", pt: "Acabas o livro.", tense: "Presente"},
+{en: "She finishes eating.", pt: "Ela acaba de comer.", tense: "Presente"},
+{en: "We finish the project.", pt: "Acabamos o projeto.", tense: "Presente"},
+{en: "They finish the course.", pt: "Eles acabam o curso.", tense: "Presente"},
+{en: "I used to finish early.", pt: "Acabava cedo.", tense: "Imperfeito"},
+{en: "You used to finish late.", pt: "Acabavas tarde.", tense: "Imperfeito"},
+{en: "He used to finish work.", pt: "Ele acabava o trabalho.", tense: "Imperfeito"},
+{en: "We used to finish together.", pt: "Acabávamos juntos.", tense: "Imperfeito"},
+{en: "They used to finish here.", pt: "Eles acabavam aqui.", tense: "Imperfeito"},
+{en: "I was finishing.", pt: "Estava a acabar.", tense: "Imperfeito"},
+{en: "You were finishing the task.", pt: "Estavas a acabar a tarefa.", tense: "Imperfeito"},
+{en: "She was finishing dinner.", pt: "Ela estava a acabar o jantar.", tense: "Imperfeito"},
+{en: "We were finishing the work.", pt: "Estávamos a acabar o trabalho.", tense: "Imperfeito"},
+{en: "They were finishing up.", pt: "Eles estavam a acabar.", tense: "Imperfeito"},
+{en: "I finished.", pt: "Acabei.", tense: "Perfeito"},
+{en: "You finished the exam.", pt: "Acabaste o exame.", tense: "Perfeito"},
+{en: "He finished the meeting.", pt: "Ele acabou a reunião.", tense: "Perfeito"},
+{en: "We finished early.", pt: "Acabámos cedo.", tense: "Perfeito"},
+{en: "They finished everything.", pt: "Eles acabaram tudo.", tense: "Perfeito"},
+{en: "I finished reading.", pt: "Acabei de ler.", tense: "Perfeito"},
+{en: "You finished working.", pt: "Acabaste de trabalhar.", tense: "Perfeito"},
+{en: "She finished studying.", pt: "Ela acabou de estudar.", tense: "Perfeito"},
+{en: "We finished the project.", pt: "Acabámos o projeto.", tense: "Perfeito"},
+{en: "They finished the game.", pt: "Eles acabaram o jogo.", tense: "Perfeito"},
+{en: "I will finish.", pt: "Acabarei.", tense: "Futuro"},
+{en: "You will finish soon.", pt: "Acabarás em breve.", tense: "Futuro"},
+{en: "He will finish tomorrow.", pt: "Ele acabará amanhã.", tense: "Futuro"},
+{en: "We will finish next week.", pt: "Acabaremos na próxima semana.", tense: "Futuro"},
+{en: "They will finish later.", pt: "Eles acabarão mais tarde.", tense: "Futuro"},
+{en: "I will finish the work.", pt: "Acabarei o trabalho.", tense: "Futuro"},
+{en: "You will finish the course.", pt: "Acabarás o curso.", tense: "Futuro"},
+{en: "She will finish early.", pt: "Ela acabará cedo.", tense: "Futuro"},
+{en: "We will finish on time.", pt: "Acabaremos a tempo.", tense: "Futuro"},
+{en: "They will finish everything.", pt: "Eles acabarão tudo.", tense: "Futuro"},
+{en: "I would finish.", pt: "Acabaria.", tense: "Condicional"},
+{en: "You would finish early.", pt: "Acabarias cedo.", tense: "Condicional"},
+{en: "He would finish now.", pt: "Ele acabaria agora.", tense: "Condicional"},
+{en: "We would finish together.", pt: "Acabaríamos juntos.", tense: "Condicional"},
+{en: "They would finish later.", pt: "Eles acabariam mais tarde.", tense: "Condicional"},
+{en: "I would finish if I could.", pt: "Acabaria se pudesse.", tense: "Condicional"},
+{en: "You would finish faster.", pt: "Acabarias mais rápido.", tense: "Condicional"},
+{en: "She would finish the book.", pt: "Ela acabaria o livro.", tense: "Condicional"},
+{en: "We would finish the project.", pt: "Acabaríamos o projeto.", tense: "Condicional"},
+{en: "They would finish on time.", pt: "Eles acabariam a tempo.", tense: "Condicional"},
+{en: "I want you to finish.", pt: "Quero que acabes.", tense: "Conjuntivo"},
+{en: "I hope he finishes.", pt: "Espero que ele acabe.", tense: "Conjuntivo"},
+{en: "It's important that we finish.", pt: "É importante que acabemos.", tense: "Conjuntivo"},
+{en: "I doubt they finish.", pt: "Duvido que eles acabem.", tense: "Conjuntivo"},
+{en: "Although I finish.", pt: "Embora eu acabe.", tense: "Conjuntivo"},
+{en: "So that you finish.", pt: "Para que tu acabes.", tense: "Conjuntivo"},
+{en: "Unless she finishes.", pt: "A menos que ela acabe.", tense: "Conjuntivo"},
+{en: "Before they finish.", pt: "Antes que eles acabem.", tense: "Conjuntivo"},
+{en: "It's possible we finish.", pt: "É possível que acabemos.", tense: "Conjuntivo"},
+{en: "I prefer that you finish.", pt: "Prefiro que tu acabes.", tense: "Conjuntivo"},
+{en: "If I finished.", pt: "Se eu acabasse.", tense: "Imperfeito Conj."},
+{en: "If you finished.", pt: "Se tu acabasses.", tense: "Imperfeito Conj."},
+{en: "If he finished.", pt: "Se ele acabasse.", tense: "Imperfeito Conj."},
+{en: "If we finished.", pt: "Se nós acabássemos.", tense: "Imperfeito Conj."},
+{en: "If they finished.", pt: "Se eles acabassem.", tense: "Imperfeito Conj."},
+{en: "I wish I could finish.", pt: "Quem me dera acabar.", tense: "Imperfeito Conj."},
+{en: "As if she finished.", pt: "Como se ela acabasse.", tense: "Imperfeito Conj."},
+{en: "If only you finished.", pt: "Se tu acabasses.", tense: "Imperfeito Conj."},
+{en: "I wanted you to finish.", pt: "Queria que tu acabasses.", tense: "Imperfeito Conj."},
+{en: "It would be good if they finished.", pt: "Seria bom se eles acabassem.", tense: "Imperfeito Conj."},
+{en: "When I finish.", pt: "Quando eu acabar.", tense: "Futuro Conj."},
+{en: "As soon as you finish.", pt: "Assim que acabares.", tense: "Futuro Conj."},
+{en: "If he finishes.", pt: "Se ele acabar.", tense: "Futuro Conj."},
+{en: "When we finish.", pt: "Quando acabarmos.", tense: "Futuro Conj."},
+{en: "As they finish.", pt: "Conforme eles acabarem.", tense: "Futuro Conj."},
+{en: "Finish!", pt: "Acaba!", tense: "Imperativo"},
+{en: "Let's finish!", pt: "Acabemos!", tense: "Imperativo"},
+{en: "Finish now!", pt: "Acaba agora!", tense: "Imperativo"},
+{en: "Don't finish!", pt: "Não acabes!", tense: "Imperativo"},
+{en: "Finish it!", pt: "Acaba isto!", tense: "Imperativo"},
+{en: "I just arrived.", pt: "Acabo de chegar.", tense: "Presente"},
+{en: "You just left.", pt: "Acabas de sair.", tense: "Presente"},
+{en: "He just called.", pt: "Ele acaba de ligar.", tense: "Presente"},
+{en: "We just finished.", pt: "Acabamos de terminar.", tense: "Presente"},
+{en: "They just started.", pt: "Eles acabam de começar.", tense: "Presente"},
+{en: "I had just eaten.", pt: "Acabava de comer.", tense: "Imperfeito"},
+{en: "It's over.", pt: "Acabou.", tense: "Perfeito"},
+{en: "It's all over.", pt: "Acabou tudo.", tense: "Perfeito"},
+{en: "Is it finished?", pt: "Acabou?", tense: "Perfeito"},
+{en: "The movie ended.", pt: "O filme acabou.", tense: "Perfeito"},
+{en: "The party is over.", pt: "A festa acabou.", tense: "Perfeito"},
+{en: "I'm finishing.", pt: "Estou a acabar.", tense: "Presente"},
+{en: "Are you finishing?", pt: "Estás a acabar?", tense: "Presente"},
+{en: "He's finishing up.", pt: "Ele está a acabar.", tense: "Presente"},
+{en: "We're almost finished.", pt: "Estamos quase a acabar.", tense: "Presente"},
+{en: "They're finishing the work.", pt: "Eles estão a acabar o trabalho.", tense: "Presente"},
+{en: "It never ends.", pt: "Nunca acaba.", tense: "Presente"},
+{en: "Everything ends.", pt: "Tudo acaba.", tense: "Presente"},
+{en: "I need to finish.", pt: "Preciso de acabar.", tense: "Presente"},
+{en: "I want to finish.", pt: "Quero acabar.", tense: "Presente"}
+];
+
+const phraseList = document.querySelector('.phrase-list');
+const searchBox = document.querySelector('.search-box');
+
+function highlightVerb(text) {
+const forms = ['acabo', 'acabas', 'acaba', 'acabamos', 'acabam', 'acabava', 'acabavas', 'acabávamos', 'acabavam', 'acabei', 'acabaste', 'acabou', 'acabámos', 'acabaram', 'acabarei', 'acabarás', 'acabará', 'acabaremos', 'acabarão', 'acabaria', 'acabarias', 'acabaríamos', 'acabariam', 'acabe', 'acabes', 'acabemos', 'acabem', 'acabasse', 'acabasses', 'acabássemos', 'acabassem', 'acabar', 'acabares', 'acabarmos', 'acabarem'];
+const pattern = new RegExp(`\\b(${forms.join('|')})\\b`, 'gi');
+return text.replace(pattern, '<span class="verb-highlight">$1</span>');
+}
+
+function renderPhrases(filter = '') {
+const filtered = phrases.filter(p =>
+p.en.toLowerCase().includes(filter.toLowerCase()) ||
+p.pt.toLowerCase().includes(filter.toLowerCase())
+);
+phraseList.innerHTML = filtered.map(p => `
+<div class="phrase-card" onclick="this.classList.toggle('revealed')">
+<div class="source">${p.en}<span class="tense-tag">${p.tense}</span></div>
+<div class="translation">${highlightVerb(p.pt)}</div>
+</div>
+`).join('');
+}
+
+function showAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.add('revealed'));
+}
+
+function hideAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.remove('revealed'));
+}
+
+searchBox.addEventListener('input', (e) => renderPhrases(e.target.value));
+renderPhrases();
+</script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ouvir — Portuguese Verb Practice</title>
+<style>
+*{box-sizing:border-box}body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);min-height:100vh;margin:0;padding:20px;color:#eee}.container{max-width:800px;margin:0 auto}header{text-align:center;padding:20px 0}.back-link{color:#00d4aa;text-decoration:none;font-size:.9rem}.back-link:hover{text-decoration:underline}h1{color:#00d4aa;font-size:2rem;margin:10px 0;text-shadow:0 0 20px rgba(0,212,170,.3)}.subtitle{color:#888;font-size:1rem;margin-bottom:20px}.controls{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}.btn{background:rgba(0,212,170,.2);color:#00d4aa;border:1px solid #00d4aa;padding:8px 16px;border-radius:20px;cursor:pointer;font-size:.85rem;transition:all .2s}.btn:hover{background:#00d4aa;color:#1a1a2e}.search-box{width:100%;max-width:400px;padding:10px 15px;border-radius:20px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.05);color:#eee;font-size:1rem;margin-bottom:20px}.search-box::placeholder{color:#666}.phrase-list{display:flex;flex-direction:column;gap:10px}.phrase-card{background:rgba(255,255,255,.05);border-radius:10px;padding:15px;border:1px solid rgba(255,255,255,.1);cursor:pointer;transition:all .2s}.phrase-card:hover{border-color:rgba(0,212,170,.3)}.phrase-card.revealed .translation{opacity:1;transform:translateY(0)}.source{font-size:1.1rem;color:#fff;margin-bottom:8px}.translation{font-size:1rem;color:#00d4aa;opacity:0;transform:translateY(-5px);transition:all .2s}.tense-tag{display:inline-block;background:rgba(0,212,170,.15);color:#00d4aa;padding:2px 8px;border-radius:10px;font-size:.75rem;margin-left:8px}.verb-highlight{color:#ff6b6b;font-weight:600}footer{text-align:center;padding:30px 0;color:#555;font-size:.85rem}@media(max-width:600px){h1{font-size:1.5rem}.source{font-size:1rem}.translation{font-size:.95rem}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<a href="../" class="back-link">← Back to verbs</a>
+<h1>🇵🇹 Ouvir</h1>
+<p class="subtitle">to hear, to listen — 100 phrases</p>
+</header>
+<input type="text" class="search-box" placeholder="Search phrases...">
+<div class="controls">
+<button class="btn" onclick="showAll()">Show All</button>
+<button class="btn" onclick="hideAll()">Hide All</button>
+</div>
+<div class="phrase-list"></div>
+<footer>Verb Drill — Portuguese Verb Practice</footer>
+</div>
+<script>
+const phrases = [
+{en: "I hear.", pt: "Ouço.", tense: "Presente"},
+{en: "You hear the music.", pt: "Ouves a música.", tense: "Presente"},
+{en: "He hears the noise.", pt: "Ele ouve o barulho.", tense: "Presente"},
+{en: "We hear everything.", pt: "Ouvimos tudo.", tense: "Presente"},
+{en: "They hear the news.", pt: "Eles ouvem as notícias.", tense: "Presente"},
+{en: "I hear you.", pt: "Ouço-te.", tense: "Presente"},
+{en: "You hear well.", pt: "Ouves bem.", tense: "Presente"},
+{en: "She hears the birds.", pt: "Ela ouve os pássaros.", tense: "Presente"},
+{en: "We hear the radio.", pt: "Ouvimos a rádio.", tense: "Presente"},
+{en: "They hear voices.", pt: "Eles ouvem vozes.", tense: "Presente"},
+{en: "I used to hear.", pt: "Ouvia.", tense: "Imperfeito"},
+{en: "You used to hear music.", pt: "Ouvias música.", tense: "Imperfeito"},
+{en: "He used to hear stories.", pt: "Ele ouvia histórias.", tense: "Imperfeito"},
+{en: "We used to hear them.", pt: "Ouvíamos-los.", tense: "Imperfeito"},
+{en: "They used to hear the radio.", pt: "Eles ouviam a rádio.", tense: "Imperfeito"},
+{en: "I was listening.", pt: "Estava a ouvir.", tense: "Imperfeito"},
+{en: "You were listening to music.", pt: "Estavas a ouvir música.", tense: "Imperfeito"},
+{en: "She was listening carefully.", pt: "Ela estava a ouvir com atenção.", tense: "Imperfeito"},
+{en: "We were listening to the news.", pt: "Estávamos a ouvir as notícias.", tense: "Imperfeito"},
+{en: "They were listening.", pt: "Eles estavam a ouvir.", tense: "Imperfeito"},
+{en: "I heard.", pt: "Ouvi.", tense: "Perfeito"},
+{en: "You heard the song.", pt: "Ouviste a canção.", tense: "Perfeito"},
+{en: "He heard the news.", pt: "Ele ouviu as notícias.", tense: "Perfeito"},
+{en: "We heard everything.", pt: "Ouvimos tudo.", tense: "Perfeito"},
+{en: "They heard the story.", pt: "Eles ouviram a história.", tense: "Perfeito"},
+{en: "I heard a noise.", pt: "Ouvi um barulho.", tense: "Perfeito"},
+{en: "You heard it right.", pt: "Ouviste bem.", tense: "Perfeito"},
+{en: "She heard the truth.", pt: "Ela ouviu a verdade.", tense: "Perfeito"},
+{en: "We heard about it.", pt: "Ouvimos falar disso.", tense: "Perfeito"},
+{en: "They heard the rumor.", pt: "Eles ouviram o boato.", tense: "Perfeito"},
+{en: "I will hear.", pt: "Ouvirei.", tense: "Futuro"},
+{en: "You will hear soon.", pt: "Ouvirás em breve.", tense: "Futuro"},
+{en: "He will hear the verdict.", pt: "Ele ouvirá o veredicto.", tense: "Futuro"},
+{en: "We will hear from them.", pt: "Ouviremos deles.", tense: "Futuro"},
+{en: "They will hear the truth.", pt: "Eles ouvirão a verdade.", tense: "Futuro"},
+{en: "I will hear you out.", pt: "Ouvir-te-ei.", tense: "Futuro"},
+{en: "You will hear the news.", pt: "Ouvirás as notícias.", tense: "Futuro"},
+{en: "She will hear everything.", pt: "Ela ouvirá tudo.", tense: "Futuro"},
+{en: "We will hear the result.", pt: "Ouviremos o resultado.", tense: "Futuro"},
+{en: "They will hear about it.", pt: "Eles ouvirão falar disso.", tense: "Futuro"},
+{en: "I would hear.", pt: "Ouviria.", tense: "Condicional"},
+{en: "You would hear better.", pt: "Ouvirias melhor.", tense: "Condicional"},
+{en: "He would hear it.", pt: "Ele ouviria.", tense: "Condicional"},
+{en: "We would hear everything.", pt: "Ouviríamos tudo.", tense: "Condicional"},
+{en: "They would hear the music.", pt: "Eles ouviriam a música.", tense: "Condicional"},
+{en: "I would hear if I could.", pt: "Ouviria se pudesse.", tense: "Condicional"},
+{en: "You would hear the truth.", pt: "Ouvirias a verdade.", tense: "Condicional"},
+{en: "She would hear the news.", pt: "Ela ouviria as notícias.", tense: "Condicional"},
+{en: "We would hear from him.", pt: "Ouviríamos dele.", tense: "Condicional"},
+{en: "They would hear more.", pt: "Eles ouviriam mais.", tense: "Condicional"},
+{en: "I want you to hear.", pt: "Quero que ouças.", tense: "Conjuntivo"},
+{en: "I hope he hears.", pt: "Espero que ele ouça.", tense: "Conjuntivo"},
+{en: "It's important that we hear.", pt: "É importante que ouçamos.", tense: "Conjuntivo"},
+{en: "I doubt they hear.", pt: "Duvido que eles ouçam.", tense: "Conjuntivo"},
+{en: "Although I hear.", pt: "Embora eu ouça.", tense: "Conjuntivo"},
+{en: "So that you hear.", pt: "Para que tu ouças.", tense: "Conjuntivo"},
+{en: "Unless she hears.", pt: "A menos que ela ouça.", tense: "Conjuntivo"},
+{en: "Before they hear.", pt: "Antes que eles ouçam.", tense: "Conjuntivo"},
+{en: "It's possible we hear.", pt: "É possível que ouçamos.", tense: "Conjuntivo"},
+{en: "I prefer that you hear.", pt: "Prefiro que tu ouças.", tense: "Conjuntivo"},
+{en: "If I heard.", pt: "Se eu ouvisse.", tense: "Imperfeito Conj."},
+{en: "If you heard.", pt: "Se tu ouvisses.", tense: "Imperfeito Conj."},
+{en: "If he heard.", pt: "Se ele ouvisse.", tense: "Imperfeito Conj."},
+{en: "If we heard.", pt: "Se nós ouvíssemos.", tense: "Imperfeito Conj."},
+{en: "If they heard.", pt: "Se eles ouvissem.", tense: "Imperfeito Conj."},
+{en: "I wish I could hear.", pt: "Quem me dera ouvir.", tense: "Imperfeito Conj."},
+{en: "As if she heard.", pt: "Como se ela ouvisse.", tense: "Imperfeito Conj."},
+{en: "If only you heard.", pt: "Se tu ouvisses.", tense: "Imperfeito Conj."},
+{en: "I wanted you to hear.", pt: "Queria que tu ouvisses.", tense: "Imperfeito Conj."},
+{en: "It would be good if they heard.", pt: "Seria bom se eles ouvissem.", tense: "Imperfeito Conj."},
+{en: "When I hear.", pt: "Quando eu ouvir.", tense: "Futuro Conj."},
+{en: "As soon as you hear.", pt: "Assim que ouvires.", tense: "Futuro Conj."},
+{en: "If he hears.", pt: "Se ele ouvir.", tense: "Futuro Conj."},
+{en: "When we hear.", pt: "Quando ouvirmos.", tense: "Futuro Conj."},
+{en: "As they hear.", pt: "Conforme eles ouvirem.", tense: "Futuro Conj."},
+{en: "Listen!", pt: "Ouve!", tense: "Imperativo"},
+{en: "Let's listen!", pt: "Ouçamos!", tense: "Imperativo"},
+{en: "Listen to this!", pt: "Ouve isto!", tense: "Imperativo"},
+{en: "Don't listen!", pt: "Não ouças!", tense: "Imperativo"},
+{en: "Listen to me!", pt: "Ouve-me!", tense: "Imperativo"},
+{en: "Can you hear me?", pt: "Ouves-me?", tense: "Presente"},
+{en: "Did you hear that?", pt: "Ouviste isso?", tense: "Perfeito"},
+{en: "I'm listening.", pt: "Estou a ouvir.", tense: "Presente"},
+{en: "You're listening to music.", pt: "Estás a ouvir música.", tense: "Presente"},
+{en: "He's listening carefully.", pt: "Ele está a ouvir com atenção.", tense: "Presente"},
+{en: "We're listening to you.", pt: "Estamos a ouvir-te.", tense: "Presente"},
+{en: "They're listening to the radio.", pt: "Eles estão a ouvir a rádio.", tense: "Presente"},
+{en: "I didn't hear anything.", pt: "Não ouvi nada.", tense: "Perfeito"},
+{en: "I can't hear you.", pt: "Não te consigo ouvir.", tense: "Presente"},
+{en: "I want to hear.", pt: "Quero ouvir.", tense: "Presente"},
+{en: "I need to hear the truth.", pt: "Preciso de ouvir a verdade.", tense: "Presente"},
+{en: "I like to listen to music.", pt: "Gosto de ouvir música.", tense: "Presente"},
+{en: "Can you hear?", pt: "Consegues ouvir?", tense: "Presente"},
+{en: "I've never heard of it.", pt: "Nunca ouvi falar.", tense: "Perfeito"},
+{en: "Have you heard?", pt: "Já ouviste?", tense: "Perfeito"},
+{en: "I heard you.", pt: "Ouvi-te.", tense: "Perfeito"},
+{en: "Listen carefully.", pt: "Ouve com atenção.", tense: "Imperativo"},
+{en: "I heard it on the radio.", pt: "Ouvi na rádio.", tense: "Perfeito"},
+{en: "I love listening to podcasts.", pt: "Adoro ouvir podcasts.", tense: "Presente"},
+{en: "We heard him singing.", pt: "Ouvimo-lo cantar.", tense: "Perfeito"}
+];
+
+const phraseList = document.querySelector('.phrase-list');
+const searchBox = document.querySelector('.search-box');
+
+function highlightVerb(text) {
+const forms = ['ouço', 'ouves', 'ouve', 'ouvimos', 'ouvem', 'ouvia', 'ouvias', 'ouvíamos', 'ouviam', 'ouvi', 'ouviste', 'ouviu', 'ouviram', 'ouvirei', 'ouvirás', 'ouvirá', 'ouviremos', 'ouvirão', 'ouviria', 'ouvirias', 'ouviríamos', 'ouviriam', 'ouça', 'ouças', 'ouçamos', 'ouçam', 'ouvisse', 'ouvisses', 'ouvíssemos', 'ouvissem', 'ouvir', 'ouvires', 'ouvirmos', 'ouvirem'];
+const pattern = new RegExp(`\\b(${forms.join('|')})\\b`, 'gi');
+return text.replace(pattern, '<span class="verb-highlight">$1</span>');
+}
+
+function renderPhrases(filter = '') {
+const filtered = phrases.filter(p =>
+p.en.toLowerCase().includes(filter.toLowerCase()) ||
+p.pt.toLowerCase().includes(filter.toLowerCase())
+);
+phraseList.innerHTML = filtered.map(p => `
+<div class="phrase-card" onclick="this.classList.toggle('revealed')">
+<div class="source">${p.en}<span class="tense-tag">${p.tense}</span></div>
+<div class="translation">${highlightVerb(p.pt)}</div>
+</div>
+`).join('');
+}
+
+function showAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.add('revealed'));
+}
+
+function hideAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.remove('revealed'));
+}
+
+searchBox.addEventListener('input', (e) => renderPhrases(e.target.value));
+renderPhrases();
+</script>
+</body>
+</html>

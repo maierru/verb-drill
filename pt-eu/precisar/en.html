@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Precisar — Portuguese Verb Practice</title>
+<style>
+*{box-sizing:border-box}body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);min-height:100vh;margin:0;padding:20px;color:#eee}.container{max-width:800px;margin:0 auto}header{text-align:center;padding:20px 0}.back-link{color:#00d4aa;text-decoration:none;font-size:.9rem}.back-link:hover{text-decoration:underline}h1{color:#00d4aa;font-size:2rem;margin:10px 0;text-shadow:0 0 20px rgba(0,212,170,.3)}.subtitle{color:#888;font-size:1rem;margin-bottom:20px}.controls{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}.btn{background:rgba(0,212,170,.2);color:#00d4aa;border:1px solid #00d4aa;padding:8px 16px;border-radius:20px;cursor:pointer;font-size:.85rem;transition:all .2s}.btn:hover{background:#00d4aa;color:#1a1a2e}.search-box{width:100%;max-width:400px;padding:10px 15px;border-radius:20px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.05);color:#eee;font-size:1rem;margin-bottom:20px}.search-box::placeholder{color:#666}.phrase-list{display:flex;flex-direction:column;gap:10px}.phrase-card{background:rgba(255,255,255,.05);border-radius:10px;padding:15px;border:1px solid rgba(255,255,255,.1);cursor:pointer;transition:all .2s}.phrase-card:hover{border-color:rgba(0,212,170,.3)}.phrase-card.revealed .translation{opacity:1;transform:translateY(0)}.source{font-size:1.1rem;color:#fff;margin-bottom:8px}.translation{font-size:1rem;color:#00d4aa;opacity:0;transform:translateY(-5px);transition:all .2s}.tense-tag{display:inline-block;background:rgba(0,212,170,.15);color:#00d4aa;padding:2px 8px;border-radius:10px;font-size:.75rem;margin-left:8px}.verb-highlight{color:#ff6b6b;font-weight:600}footer{text-align:center;padding:30px 0;color:#555;font-size:.85rem}@media(max-width:600px){h1{font-size:1.5rem}.source{font-size:1rem}.translation{font-size:.95rem}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<a href="../" class="back-link">← Back to verbs</a>
+<h1>🇵🇹 Precisar</h1>
+<p class="subtitle">to need — 100 phrases</p>
+</header>
+<input type="text" class="search-box" placeholder="Search phrases...">
+<div class="controls">
+<button class="btn" onclick="showAll()">Show All</button>
+<button class="btn" onclick="hideAll()">Hide All</button>
+</div>
+<div class="phrase-list"></div>
+<footer>Verb Drill — Portuguese Verb Practice</footer>
+</div>
+<script>
+const phrases = [
+{en: "I need help.", pt: "Preciso de ajuda.", tense: "Presente"},
+{en: "You need to rest.", pt: "Precisas de descansar.", tense: "Presente"},
+{en: "He needs money.", pt: "Ele precisa de dinheiro.", tense: "Presente"},
+{en: "We need more time.", pt: "Precisamos de mais tempo.", tense: "Presente"},
+{en: "They need to work.", pt: "Eles precisam de trabalhar.", tense: "Presente"},
+{en: "I need to go.", pt: "Preciso de ir.", tense: "Presente"},
+{en: "You need water.", pt: "Precisas de água.", tense: "Presente"},
+{en: "She needs a doctor.", pt: "Ela precisa de um médico.", tense: "Presente"},
+{en: "We need to talk.", pt: "Precisamos de falar.", tense: "Presente"},
+{en: "They need food.", pt: "Eles precisam de comida.", tense: "Presente"},
+{en: "I needed help.", pt: "Precisava de ajuda.", tense: "Imperfeito"},
+{en: "You needed to study.", pt: "Precisavas de estudar.", tense: "Imperfeito"},
+{en: "He needed time.", pt: "Ele precisava de tempo.", tense: "Imperfeito"},
+{en: "We needed support.", pt: "Precisávamos de apoio.", tense: "Imperfeito"},
+{en: "They needed money.", pt: "Eles precisavam de dinheiro.", tense: "Imperfeito"},
+{en: "I needed to rest.", pt: "Precisava de descansar.", tense: "Imperfeito"},
+{en: "You needed a break.", pt: "Precisavas de uma pausa.", tense: "Imperfeito"},
+{en: "She needed advice.", pt: "Ela precisava de conselhos.", tense: "Imperfeito"},
+{en: "We needed more resources.", pt: "Precisávamos de mais recursos.", tense: "Imperfeito"},
+{en: "They needed information.", pt: "Eles precisavam de informação.", tense: "Imperfeito"},
+{en: "I needed this.", pt: "Precisei disto.", tense: "Perfeito"},
+{en: "You needed that.", pt: "Precisaste disso.", tense: "Perfeito"},
+{en: "He needed help.", pt: "Ele precisou de ajuda.", tense: "Perfeito"},
+{en: "We needed to decide.", pt: "Precisámos de decidir.", tense: "Perfeito"},
+{en: "They needed time.", pt: "Eles precisaram de tempo.", tense: "Perfeito"},
+{en: "I needed to leave.", pt: "Precisei de sair.", tense: "Perfeito"},
+{en: "You needed support.", pt: "Precisaste de apoio.", tense: "Perfeito"},
+{en: "She needed rest.", pt: "Ela precisou de descanso.", tense: "Perfeito"},
+{en: "We needed a solution.", pt: "Precisámos de uma solução.", tense: "Perfeito"},
+{en: "They needed answers.", pt: "Eles precisaram de respostas.", tense: "Perfeito"},
+{en: "I will need help.", pt: "Precisarei de ajuda.", tense: "Futuro"},
+{en: "You will need time.", pt: "Precisarás de tempo.", tense: "Futuro"},
+{en: "He will need money.", pt: "Ele precisará de dinheiro.", tense: "Futuro"},
+{en: "We will need support.", pt: "Precisaremos de apoio.", tense: "Futuro"},
+{en: "They will need more.", pt: "Eles precisarão de mais.", tense: "Futuro"},
+{en: "I will need to go.", pt: "Precisarei de ir.", tense: "Futuro"},
+{en: "You will need a car.", pt: "Precisarás de um carro.", tense: "Futuro"},
+{en: "She will need rest.", pt: "Ela precisará de descanso.", tense: "Futuro"},
+{en: "We will need patience.", pt: "Precisaremos de paciência.", tense: "Futuro"},
+{en: "They will need training.", pt: "Eles precisarão de formação.", tense: "Futuro"},
+{en: "I would need help.", pt: "Precisaria de ajuda.", tense: "Condicional"},
+{en: "You would need time.", pt: "Precisarias de tempo.", tense: "Condicional"},
+{en: "He would need support.", pt: "Ele precisaria de apoio.", tense: "Condicional"},
+{en: "We would need more.", pt: "Precisaríamos de mais.", tense: "Condicional"},
+{en: "They would need money.", pt: "Eles precisariam de dinheiro.", tense: "Condicional"},
+{en: "I would need to think.", pt: "Precisaria de pensar.", tense: "Condicional"},
+{en: "You would need a plan.", pt: "Precisarias de um plano.", tense: "Condicional"},
+{en: "She would need advice.", pt: "Ela precisaria de conselhos.", tense: "Condicional"},
+{en: "We would need resources.", pt: "Precisaríamos de recursos.", tense: "Condicional"},
+{en: "They would need training.", pt: "Eles precisariam de formação.", tense: "Condicional"},
+{en: "I want you to need.", pt: "Quero que precises.", tense: "Conjuntivo"},
+{en: "I hope he needs.", pt: "Espero que ele precise.", tense: "Conjuntivo"},
+{en: "It's important that we need.", pt: "É importante que precisemos.", tense: "Conjuntivo"},
+{en: "I doubt they need.", pt: "Duvido que eles precisem.", tense: "Conjuntivo"},
+{en: "Although I need.", pt: "Embora eu precise.", tense: "Conjuntivo"},
+{en: "So that you need.", pt: "Para que tu precises.", tense: "Conjuntivo"},
+{en: "Unless she needs.", pt: "A menos que ela precise.", tense: "Conjuntivo"},
+{en: "Before they need.", pt: "Antes que eles precisem.", tense: "Conjuntivo"},
+{en: "It's possible we need.", pt: "É possível que precisemos.", tense: "Conjuntivo"},
+{en: "I prefer that you need.", pt: "Prefiro que tu precises.", tense: "Conjuntivo"},
+{en: "If I needed.", pt: "Se eu precisasse.", tense: "Imperfeito Conj."},
+{en: "If you needed.", pt: "Se tu precisasses.", tense: "Imperfeito Conj."},
+{en: "If he needed.", pt: "Se ele precisasse.", tense: "Imperfeito Conj."},
+{en: "If we needed.", pt: "Se nós precisássemos.", tense: "Imperfeito Conj."},
+{en: "If they needed.", pt: "Se eles precisassem.", tense: "Imperfeito Conj."},
+{en: "I wish I needed less.", pt: "Quem me dera precisar menos.", tense: "Imperfeito Conj."},
+{en: "As if she needed.", pt: "Como se ela precisasse.", tense: "Imperfeito Conj."},
+{en: "If only you needed.", pt: "Se tu precisasses.", tense: "Imperfeito Conj."},
+{en: "I wanted you to need.", pt: "Queria que tu precisasses.", tense: "Imperfeito Conj."},
+{en: "It would be good if they needed.", pt: "Seria bom se eles precisassem.", tense: "Imperfeito Conj."},
+{en: "When I need.", pt: "Quando eu precisar.", tense: "Futuro Conj."},
+{en: "As soon as you need.", pt: "Assim que precisares.", tense: "Futuro Conj."},
+{en: "If he needs.", pt: "Se ele precisar.", tense: "Futuro Conj."},
+{en: "When we need.", pt: "Quando precisarmos.", tense: "Futuro Conj."},
+{en: "As they need.", pt: "Conforme eles precisarem.", tense: "Futuro Conj."},
+{en: "Do you need anything?", pt: "Precisas de alguma coisa?", tense: "Presente"},
+{en: "What do you need?", pt: "De que precisas?", tense: "Presente"},
+{en: "I don't need it.", pt: "Não preciso.", tense: "Presente"},
+{en: "She doesn't need help.", pt: "Ela não precisa de ajuda.", tense: "Presente"},
+{en: "Do we need to go?", pt: "Precisamos de ir?", tense: "Presente"},
+{en: "I need to eat.", pt: "Preciso de comer.", tense: "Presente"},
+{en: "You need to sleep.", pt: "Precisas de dormir.", tense: "Presente"},
+{en: "He needs to study.", pt: "Ele precisa de estudar.", tense: "Presente"},
+{en: "We need to hurry.", pt: "Precisamos de nos despachar.", tense: "Presente"},
+{en: "They need to leave.", pt: "Eles precisam de sair.", tense: "Presente"},
+{en: "I need your help.", pt: "Preciso da tua ajuda.", tense: "Presente"},
+{en: "You need more practice.", pt: "Precisas de mais prática.", tense: "Presente"},
+{en: "She needs attention.", pt: "Ela precisa de atenção.", tense: "Presente"},
+{en: "We need a break.", pt: "Precisamos de uma pausa.", tense: "Presente"},
+{en: "They need an answer.", pt: "Eles precisam de uma resposta.", tense: "Presente"},
+{en: "I really need this.", pt: "Preciso mesmo disto.", tense: "Presente"},
+{en: "You don't need to worry.", pt: "Não precisas de te preocupar.", tense: "Presente"},
+{en: "He needs to understand.", pt: "Ele precisa de perceber.", tense: "Presente"},
+{en: "We need to be careful.", pt: "Precisamos de ter cuidado.", tense: "Presente"},
+{en: "They need to know.", pt: "Eles precisam de saber.", tense: "Presente"},
+{en: "I need a moment.", pt: "Preciso de um momento.", tense: "Presente"},
+{en: "You need to try.", pt: "Precisas de tentar.", tense: "Presente"},
+{en: "She needs time to think.", pt: "Ela precisa de tempo para pensar.", tense: "Presente"},
+{en: "We need to decide.", pt: "Precisamos de decidir.", tense: "Presente"},
+{en: "Whatever you need.", pt: "O que precisares.", tense: "Futuro Conj."}
+];
+
+const phraseList = document.querySelector('.phrase-list');
+const searchBox = document.querySelector('.search-box');
+
+function highlightVerb(text) {
+const forms = ['preciso', 'precisas', 'precisa', 'precisamos', 'precisam', 'precisava', 'precisavas', 'precisávamos', 'precisavam', 'precisei', 'precisaste', 'precisou', 'precisámos', 'precisaram', 'precisarei', 'precisarás', 'precisará', 'precisaremos', 'precisarão', 'precisaria', 'precisarias', 'precisaríamos', 'precisariam', 'precise', 'precises', 'precisemos', 'precisem', 'precisasse', 'precisasses', 'precisássemos', 'precisassem', 'precisar', 'precisares', 'precisarmos', 'precisarem'];
+const pattern = new RegExp(`\\b(${forms.join('|')})\\b`, 'gi');
+return text.replace(pattern, '<span class="verb-highlight">$1</span>');
+}
+
+function renderPhrases(filter = '') {
+const filtered = phrases.filter(p =>
+p.en.toLowerCase().includes(filter.toLowerCase()) ||
+p.pt.toLowerCase().includes(filter.toLowerCase())
+);
+phraseList.innerHTML = filtered.map(p => `
+<div class="phrase-card" onclick="this.classList.toggle('revealed')">
+<div class="source">${p.en}<span class="tense-tag">${p.tense}</span></div>
+<div class="translation">${highlightVerb(p.pt)}</div>
+</div>
+`).join('');
+}
+
+function showAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.add('revealed'));
+}
+
+function hideAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.remove('revealed'));
+}
+
+searchBox.addEventListener('input', (e) => renderPhrases(e.target.value));
+renderPhrases();
+</script>
+</body>
+</html>

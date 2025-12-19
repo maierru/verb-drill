@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Passar — Portuguese Verb Practice</title>
+<style>
+*{box-sizing:border-box}body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);min-height:100vh;margin:0;padding:20px;color:#eee}.container{max-width:800px;margin:0 auto}header{text-align:center;padding:20px 0}.back-link{color:#00d4aa;text-decoration:none;font-size:.9rem}.back-link:hover{text-decoration:underline}h1{color:#00d4aa;font-size:2rem;margin:10px 0;text-shadow:0 0 20px rgba(0,212,170,.3)}.subtitle{color:#888;font-size:1rem;margin-bottom:20px}.controls{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}.btn{background:rgba(0,212,170,.2);color:#00d4aa;border:1px solid #00d4aa;padding:8px 16px;border-radius:20px;cursor:pointer;font-size:.85rem;transition:all .2s}.btn:hover{background:#00d4aa;color:#1a1a2e}.search-box{width:100%;max-width:400px;padding:10px 15px;border-radius:20px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.05);color:#eee;font-size:1rem;margin-bottom:20px}.search-box::placeholder{color:#666}.phrase-list{display:flex;flex-direction:column;gap:10px}.phrase-card{background:rgba(255,255,255,.05);border-radius:10px;padding:15px;border:1px solid rgba(255,255,255,.1);cursor:pointer;transition:all .2s}.phrase-card:hover{border-color:rgba(0,212,170,.3)}.phrase-card.revealed .translation{opacity:1;transform:translateY(0)}.source{font-size:1.1rem;color:#fff;margin-bottom:8px}.translation{font-size:1rem;color:#00d4aa;opacity:0;transform:translateY(-5px);transition:all .2s}.tense-tag{display:inline-block;background:rgba(0,212,170,.15);color:#00d4aa;padding:2px 8px;border-radius:10px;font-size:.75rem;margin-left:8px}.verb-highlight{color:#ff6b6b;font-weight:600}footer{text-align:center;padding:30px 0;color:#555;font-size:.85rem}@media(max-width:600px){h1{font-size:1.5rem}.source{font-size:1rem}.translation{font-size:.95rem}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<a href="../" class="back-link">← Back to verbs</a>
+<h1>🇵🇹 Passar</h1>
+<p class="subtitle">to pass, to spend (time) — 100 phrases</p>
+</header>
+<input type="text" class="search-box" placeholder="Search phrases...">
+<div class="controls">
+<button class="btn" onclick="showAll()">Show All</button>
+<button class="btn" onclick="hideAll()">Hide All</button>
+</div>
+<div class="phrase-list"></div>
+<footer>Verb Drill — Portuguese Verb Practice</footer>
+</div>
+<script>
+const phrases = [
+{en: "I pass by here.", pt: "Passo por aqui.", tense: "Presente"},
+{en: "You spend time with me.", pt: "Passas tempo comigo.", tense: "Presente"},
+{en: "He passes the ball.", pt: "Ele passa a bola.", tense: "Presente"},
+{en: "We spend the day together.", pt: "Passamos o dia juntos.", tense: "Presente"},
+{en: "They pass by every day.", pt: "Eles passam todos os dias.", tense: "Presente"},
+{en: "Time passes quickly.", pt: "O tempo passa depressa.", tense: "Presente"},
+{en: "You pass the exam.", pt: "Passas no exame.", tense: "Presente"},
+{en: "She passes the salt.", pt: "Ela passa o sal.", tense: "Presente"},
+{en: "We pass through the city.", pt: "Passamos pela cidade.", tense: "Presente"},
+{en: "They spend the holidays here.", pt: "Eles passam as férias aqui.", tense: "Presente"},
+{en: "I used to pass by here.", pt: "Passava por aqui.", tense: "Imperfeito"},
+{en: "You used to spend time there.", pt: "Passavas tempo lá.", tense: "Imperfeito"},
+{en: "He used to pass every day.", pt: "Ele passava todos os dias.", tense: "Imperfeito"},
+{en: "We used to spend summers here.", pt: "Passávamos verões aqui.", tense: "Imperfeito"},
+{en: "They used to pass by.", pt: "Eles passavam por aqui.", tense: "Imperfeito"},
+{en: "Time was passing.", pt: "O tempo passava.", tense: "Imperfeito"},
+{en: "You were passing through.", pt: "Passavas por aqui.", tense: "Imperfeito"},
+{en: "She was spending time alone.", pt: "Ela passava tempo sozinha.", tense: "Imperfeito"},
+{en: "We were passing by.", pt: "Passávamos por aqui.", tense: "Imperfeito"},
+{en: "They were spending the day.", pt: "Eles passavam o dia.", tense: "Imperfeito"},
+{en: "I passed by yesterday.", pt: "Passei por aqui ontem.", tense: "Perfeito"},
+{en: "You passed the test.", pt: "Passaste no teste.", tense: "Perfeito"},
+{en: "He passed away.", pt: "Ele passou.", tense: "Perfeito"},
+{en: "We spent the weekend there.", pt: "Passámos o fim de semana lá.", tense: "Perfeito"},
+{en: "They passed through here.", pt: "Eles passaram por aqui.", tense: "Perfeito"},
+{en: "I spent a good time.", pt: "Passei um bom bocado.", tense: "Perfeito"},
+{en: "You passed me the book.", pt: "Passaste-me o livro.", tense: "Perfeito"},
+{en: "She spent hours reading.", pt: "Ela passou horas a ler.", tense: "Perfeito"},
+{en: "We passed the exam.", pt: "Passámos no exame.", tense: "Perfeito"},
+{en: "They spent the night.", pt: "Eles passaram a noite.", tense: "Perfeito"},
+{en: "I will pass by.", pt: "Passarei por aqui.", tense: "Futuro"},
+{en: "You will spend time here.", pt: "Passarás tempo aqui.", tense: "Futuro"},
+{en: "He will pass.", pt: "Ele passará.", tense: "Futuro"},
+{en: "We will spend the day.", pt: "Passaremos o dia.", tense: "Futuro"},
+{en: "They will pass soon.", pt: "Eles passarão em breve.", tense: "Futuro"},
+{en: "This will pass.", pt: "Isto passará.", tense: "Futuro"},
+{en: "You will pass the exam.", pt: "Passarás no exame.", tense: "Futuro"},
+{en: "She will spend time with us.", pt: "Ela passará tempo connosco.", tense: "Futuro"},
+{en: "We will pass by tomorrow.", pt: "Passaremos amanhã.", tense: "Futuro"},
+{en: "They will spend the holidays.", pt: "Eles passarão as férias.", tense: "Futuro"},
+{en: "I would pass.", pt: "Passaria.", tense: "Condicional"},
+{en: "You would spend time.", pt: "Passarias tempo.", tense: "Condicional"},
+{en: "He would pass by.", pt: "Ele passaria.", tense: "Condicional"},
+{en: "We would spend the day.", pt: "Passaríamos o dia.", tense: "Condicional"},
+{en: "They would pass.", pt: "Eles passariam.", tense: "Condicional"},
+{en: "I would pass it to you.", pt: "Passar-te-ia.", tense: "Condicional"},
+{en: "You would pass the test.", pt: "Passarias no teste.", tense: "Condicional"},
+{en: "She would spend more time.", pt: "Ela passaria mais tempo.", tense: "Condicional"},
+{en: "We would pass through.", pt: "Passaríamos por aqui.", tense: "Condicional"},
+{en: "They would spend the summer.", pt: "Eles passariam o verão.", tense: "Condicional"},
+{en: "I want you to pass.", pt: "Quero que passes.", tense: "Conjuntivo"},
+{en: "I hope he passes.", pt: "Espero que ele passe.", tense: "Conjuntivo"},
+{en: "It's important that we pass.", pt: "É importante que passemos.", tense: "Conjuntivo"},
+{en: "I doubt they pass.", pt: "Duvido que eles passem.", tense: "Conjuntivo"},
+{en: "Although I pass.", pt: "Embora eu passe.", tense: "Conjuntivo"},
+{en: "So that you pass.", pt: "Para que tu passes.", tense: "Conjuntivo"},
+{en: "Unless she passes.", pt: "A menos que ela passe.", tense: "Conjuntivo"},
+{en: "Before they pass.", pt: "Antes que eles passem.", tense: "Conjuntivo"},
+{en: "It's possible we pass.", pt: "É possível que passemos.", tense: "Conjuntivo"},
+{en: "I prefer that you pass.", pt: "Prefiro que tu passes.", tense: "Conjuntivo"},
+{en: "If I passed.", pt: "Se eu passasse.", tense: "Imperfeito Conj."},
+{en: "If you passed.", pt: "Se tu passasses.", tense: "Imperfeito Conj."},
+{en: "If he passed.", pt: "Se ele passasse.", tense: "Imperfeito Conj."},
+{en: "If we passed.", pt: "Se nós passássemos.", tense: "Imperfeito Conj."},
+{en: "If they passed.", pt: "Se eles passassem.", tense: "Imperfeito Conj."},
+{en: "I wish time passed faster.", pt: "Quem me dera que o tempo passasse mais depressa.", tense: "Imperfeito Conj."},
+{en: "As if she passed.", pt: "Como se ela passasse.", tense: "Imperfeito Conj."},
+{en: "If only you passed.", pt: "Se tu passasses.", tense: "Imperfeito Conj."},
+{en: "I wanted you to pass.", pt: "Queria que tu passasses.", tense: "Imperfeito Conj."},
+{en: "It would be good if they passed.", pt: "Seria bom se eles passassem.", tense: "Imperfeito Conj."},
+{en: "When I pass.", pt: "Quando eu passar.", tense: "Futuro Conj."},
+{en: "As soon as you pass.", pt: "Assim que passares.", tense: "Futuro Conj."},
+{en: "If he passes.", pt: "Se ele passar.", tense: "Futuro Conj."},
+{en: "When we pass.", pt: "Quando passarmos.", tense: "Futuro Conj."},
+{en: "As they pass.", pt: "Conforme eles passarem.", tense: "Futuro Conj."},
+{en: "Pass!", pt: "Passa!", tense: "Imperativo"},
+{en: "Let's pass!", pt: "Passemos!", tense: "Imperativo"},
+{en: "Pass it here!", pt: "Passa para cá!", tense: "Imperativo"},
+{en: "Don't pass!", pt: "Não passes!", tense: "Imperativo"},
+{en: "Pass me the water!", pt: "Passa-me a água!", tense: "Imperativo"},
+{en: "How are you doing?", pt: "Como estás a passar?", tense: "Presente"},
+{en: "I'm doing well.", pt: "Passo bem.", tense: "Presente"},
+{en: "What happened?", pt: "O que se passou?", tense: "Perfeito"},
+{en: "Nothing happened.", pt: "Não se passou nada.", tense: "Perfeito"},
+{en: "It will pass.", pt: "Vai passar.", tense: "Futuro"},
+{en: "I spent the whole day.", pt: "Passei o dia todo.", tense: "Perfeito"},
+{en: "You spent a lot of time.", pt: "Passaste muito tempo.", tense: "Perfeito"},
+{en: "She spent the night awake.", pt: "Ela passou a noite acordada.", tense: "Perfeito"},
+{en: "We spent years there.", pt: "Passámos anos lá.", tense: "Perfeito"},
+{en: "They spent the holidays abroad.", pt: "Eles passaram as férias no estrangeiro.", tense: "Perfeito"},
+{en: "I pass by every day.", pt: "Passo por aqui todos os dias.", tense: "Presente"},
+{en: "You pass the street.", pt: "Passas a rua.", tense: "Presente"},
+{en: "He passes information.", pt: "Ele passa informação.", tense: "Presente"},
+{en: "We pass through here.", pt: "Passamos por aqui.", tense: "Presente"},
+{en: "They pass the message.", pt: "Eles passam a mensagem.", tense: "Presente"},
+{en: "Time doesn't pass.", pt: "O tempo não passa.", tense: "Presente"},
+{en: "The pain will pass.", pt: "A dor vai passar.", tense: "Futuro"},
+{en: "I'm going to pass by your house.", pt: "Vou passar por tua casa.", tense: "Futuro"},
+{en: "Can you pass me that?", pt: "Podes passar-me isso?", tense: "Presente"},
+{en: "I'll pass it to you later.", pt: "Passo-te depois.", tense: "Presente"}
+];
+
+const phraseList = document.querySelector('.phrase-list');
+const searchBox = document.querySelector('.search-box');
+
+function highlightVerb(text) {
+const forms = ['passo', 'passas', 'passa', 'passamos', 'passam', 'passava', 'passavas', 'passávamos', 'passavam', 'passei', 'passaste', 'passou', 'passámos', 'passaram', 'passarei', 'passarás', 'passará', 'passaremos', 'passarão', 'passaria', 'passarias', 'passaríamos', 'passariam', 'passe', 'passes', 'passemos', 'passem', 'passasse', 'passasses', 'passássemos', 'passassem', 'passar', 'passares', 'passarmos', 'passarem'];
+const pattern = new RegExp(`\\b(${forms.join('|')})\\b`, 'gi');
+return text.replace(pattern, '<span class="verb-highlight">$1</span>');
+}
+
+function renderPhrases(filter = '') {
+const filtered = phrases.filter(p =>
+p.en.toLowerCase().includes(filter.toLowerCase()) ||
+p.pt.toLowerCase().includes(filter.toLowerCase())
+);
+phraseList.innerHTML = filtered.map(p => `
+<div class="phrase-card" onclick="this.classList.toggle('revealed')">
+<div class="source">${p.en}<span class="tense-tag">${p.tense}</span></div>
+<div class="translation">${highlightVerb(p.pt)}</div>
+</div>
+`).join('');
+}
+
+function showAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.add('revealed'));
+}
+
+function hideAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.remove('revealed'));
+}
+
+searchBox.addEventListener('input', (e) => renderPhrases(e.target.value));
+renderPhrases();
+</script>
+</body>
+</html>

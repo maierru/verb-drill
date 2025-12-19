@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acabar — Португальский глагол</title>
+<style>
+*{box-sizing:border-box}body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);min-height:100vh;margin:0;padding:20px;color:#eee}.container{max-width:800px;margin:0 auto}header{text-align:center;padding:20px 0}.back-link{color:#00d4aa;text-decoration:none;font-size:.9rem}.back-link:hover{text-decoration:underline}h1{color:#00d4aa;font-size:2rem;margin:10px 0;text-shadow:0 0 20px rgba(0,212,170,.3)}.subtitle{color:#888;font-size:1rem;margin-bottom:20px}.controls{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}.btn{background:rgba(0,212,170,.2);color:#00d4aa;border:1px solid #00d4aa;padding:8px 16px;border-radius:20px;cursor:pointer;font-size:.85rem;transition:all .2s}.btn:hover{background:#00d4aa;color:#1a1a2e}.search-box{width:100%;max-width:400px;padding:10px 15px;border-radius:20px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.05);color:#eee;font-size:1rem;margin-bottom:20px}.search-box::placeholder{color:#666}.phrase-list{display:flex;flex-direction:column;gap:10px}.phrase-card{background:rgba(255,255,255,.05);border-radius:10px;padding:15px;border:1px solid rgba(255,255,255,.1);cursor:pointer;transition:all .2s}.phrase-card:hover{border-color:rgba(0,212,170,.3)}.phrase-card.revealed .translation{opacity:1;transform:translateY(0)}.source{font-size:1.1rem;color:#fff;margin-bottom:8px}.translation{font-size:1rem;color:#00d4aa;opacity:0;transform:translateY(-5px);transition:all .2s}.tense-tag{display:inline-block;background:rgba(0,212,170,.15);color:#00d4aa;padding:2px 8px;border-radius:10px;font-size:.75rem;margin-left:8px}.verb-highlight{color:#ff6b6b;font-weight:600}footer{text-align:center;padding:30px 0;color:#555;font-size:.85rem}@media(max-width:600px){h1{font-size:1.5rem}.source{font-size:1rem}.translation{font-size:.95rem}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<a href="../" class="back-link">← Назад к глаголам</a>
+<h1>🇵🇹 Acabar</h1>
+<p class="subtitle">заканчивать, завершать — 100 фраз</p>
+</header>
+<input type="text" class="search-box" placeholder="Поиск фраз...">
+<div class="controls">
+<button class="btn" onclick="showAll()">Показать все</button>
+<button class="btn" onclick="hideAll()">Скрыть все</button>
+</div>
+<div class="phrase-list"></div>
+<footer>Verb Drill — Практика португальских глаголов</footer>
+</div>
+<script>
+const phrases = [
+{ru: "Я заканчиваю сейчас.", pt: "Acabo agora.", tense: "Presente"},
+{ru: "Ты заканчиваешь рано.", pt: "Acabas cedo.", tense: "Presente"},
+{ru: "Он заканчивает работу.", pt: "Ele acaba o trabalho.", tense: "Presente"},
+{ru: "Мы заканчиваем вместе.", pt: "Acabamos juntos.", tense: "Presente"},
+{ru: "Они заканчивают поздно.", pt: "Eles acabam tarde.", tense: "Presente"},
+{ru: "Я заканчиваю в 5.", pt: "Acabo às 5.", tense: "Presente"},
+{ru: "Ты заканчиваешь книгу.", pt: "Acabas o livro.", tense: "Presente"},
+{ru: "Она заканчивает есть.", pt: "Ela acaba de comer.", tense: "Presente"},
+{ru: "Мы заканчиваем проект.", pt: "Acabamos o projeto.", tense: "Presente"},
+{ru: "Они заканчивают курс.", pt: "Eles acabam o curso.", tense: "Presente"},
+{ru: "Я раньше заканчивал рано.", pt: "Acabava cedo.", tense: "Imperfeito"},
+{ru: "Ты раньше заканчивал поздно.", pt: "Acabavas tarde.", tense: "Imperfeito"},
+{ru: "Он раньше заканчивал работу.", pt: "Ele acabava o trabalho.", tense: "Imperfeito"},
+{ru: "Мы раньше заканчивали вместе.", pt: "Acabávamos juntos.", tense: "Imperfeito"},
+{ru: "Они раньше заканчивали здесь.", pt: "Eles acabavam aqui.", tense: "Imperfeito"},
+{ru: "Я заканчивал.", pt: "Estava a acabar.", tense: "Imperfeito"},
+{ru: "Ты заканчивал задание.", pt: "Estavas a acabar a tarefa.", tense: "Imperfeito"},
+{ru: "Она заканчивала ужин.", pt: "Ela estava a acabar o jantar.", tense: "Imperfeito"},
+{ru: "Мы заканчивали работу.", pt: "Estávamos a acabar o trabalho.", tense: "Imperfeito"},
+{ru: "Они заканчивали.", pt: "Eles estavam a acabar.", tense: "Imperfeito"},
+{ru: "Я закончил.", pt: "Acabei.", tense: "Perfeito"},
+{ru: "Ты закончил экзамен.", pt: "Acabaste o exame.", tense: "Perfeito"},
+{ru: "Он закончил собрание.", pt: "Ele acabou a reunião.", tense: "Perfeito"},
+{ru: "Мы закончили рано.", pt: "Acabámos cedo.", tense: "Perfeito"},
+{ru: "Они закончили всё.", pt: "Eles acabaram tudo.", tense: "Perfeito"},
+{ru: "Я закончил читать.", pt: "Acabei de ler.", tense: "Perfeito"},
+{ru: "Ты закончил работать.", pt: "Acabaste de trabalhar.", tense: "Perfeito"},
+{ru: "Она закончила учиться.", pt: "Ela acabou de estudar.", tense: "Perfeito"},
+{ru: "Мы закончили проект.", pt: "Acabámos o projeto.", tense: "Perfeito"},
+{ru: "Они закончили игру.", pt: "Eles acabaram o jogo.", tense: "Perfeito"},
+{ru: "Я закончу.", pt: "Acabarei.", tense: "Futuro"},
+{ru: "Ты скоро закончишь.", pt: "Acabarás em breve.", tense: "Futuro"},
+{ru: "Он закончит завтра.", pt: "Ele acabará amanhã.", tense: "Futuro"},
+{ru: "Мы закончим на следующей неделе.", pt: "Acabaremos na próxima semana.", tense: "Futuro"},
+{ru: "Они закончат позже.", pt: "Eles acabarão mais tarde.", tense: "Futuro"},
+{ru: "Я закончу работу.", pt: "Acabarei o trabalho.", tense: "Futuro"},
+{ru: "Ты закончишь курс.", pt: "Acabarás o curso.", tense: "Futuro"},
+{ru: "Она закончит рано.", pt: "Ela acabará cedo.", tense: "Futuro"},
+{ru: "Мы закончим вовремя.", pt: "Acabaremos a tempo.", tense: "Futuro"},
+{ru: "Они закончат всё.", pt: "Eles acabarão tudo.", tense: "Futuro"},
+{ru: "Я бы закончил.", pt: "Acabaria.", tense: "Condicional"},
+{ru: "Ты бы закончил рано.", pt: "Acabarias cedo.", tense: "Condicional"},
+{ru: "Он бы закончил сейчас.", pt: "Ele acabaria agora.", tense: "Condicional"},
+{ru: "Мы бы закончили вместе.", pt: "Acabaríamos juntos.", tense: "Condicional"},
+{ru: "Они бы закончили позже.", pt: "Eles acabariam mais tarde.", tense: "Condicional"},
+{ru: "Я бы закончил, если бы мог.", pt: "Acabaria se pudesse.", tense: "Condicional"},
+{ru: "Ты бы закончил быстрее.", pt: "Acabarias mais rápido.", tense: "Condicional"},
+{ru: "Она бы закончила книгу.", pt: "Ela acabaria o livro.", tense: "Condicional"},
+{ru: "Мы бы закончили проект.", pt: "Acabaríamos o projeto.", tense: "Condicional"},
+{ru: "Они бы закончили вовремя.", pt: "Eles acabariam a tempo.", tense: "Condicional"},
+{ru: "Хочу, чтобы ты закончил.", pt: "Quero que acabes.", tense: "Conjuntivo"},
+{ru: "Надеюсь, что он закончит.", pt: "Espero que ele acabe.", tense: "Conjuntivo"},
+{ru: "Важно, чтобы мы закончили.", pt: "É importante que acabemos.", tense: "Conjuntivo"},
+{ru: "Сомневаюсь, что они закончат.", pt: "Duvido que eles acabem.", tense: "Conjuntivo"},
+{ru: "Хотя я заканчиваю.", pt: "Embora eu acabe.", tense: "Conjuntivo"},
+{ru: "Чтобы ты закончил.", pt: "Para que tu acabes.", tense: "Conjuntivo"},
+{ru: "Если только она не закончит.", pt: "A menos que ela acabe.", tense: "Conjuntivo"},
+{ru: "До того как они закончат.", pt: "Antes que eles acabem.", tense: "Conjuntivo"},
+{ru: "Возможно, мы закончим.", pt: "É possível que acabemos.", tense: "Conjuntivo"},
+{ru: "Предпочитаю, чтобы ты закончил.", pt: "Prefiro que tu acabes.", tense: "Conjuntivo"},
+{ru: "Если бы я закончил.", pt: "Se eu acabasse.", tense: "Imperfeito Conj."},
+{ru: "Если бы ты закончил.", pt: "Se tu acabasses.", tense: "Imperfeito Conj."},
+{ru: "Если бы он закончил.", pt: "Se ele acabasse.", tense: "Imperfeito Conj."},
+{ru: "Если бы мы закончили.", pt: "Se nós acabássemos.", tense: "Imperfeito Conj."},
+{ru: "Если бы они закончили.", pt: "Se eles acabassem.", tense: "Imperfeito Conj."},
+{ru: "Хотел бы я закончить.", pt: "Quem me dera acabar.", tense: "Imperfeito Conj."},
+{ru: "Как будто она закончила.", pt: "Como se ela acabasse.", tense: "Imperfeito Conj."},
+{ru: "Если бы только ты закончил.", pt: "Se tu acabasses.", tense: "Imperfeito Conj."},
+{ru: "Хотел, чтобы ты закончил.", pt: "Queria que tu acabasses.", tense: "Imperfeito Conj."},
+{ru: "Было бы хорошо, если бы они закончили.", pt: "Seria bom se eles acabassem.", tense: "Imperfeito Conj."},
+{ru: "Когда я закончу.", pt: "Quando eu acabar.", tense: "Futuro Conj."},
+{ru: "Как только ты закончишь.", pt: "Assim que acabares.", tense: "Futuro Conj."},
+{ru: "Если он закончит.", pt: "Se ele acabar.", tense: "Futuro Conj."},
+{ru: "Когда мы закончим.", pt: "Quando acabarmos.", tense: "Futuro Conj."},
+{ru: "По мере того как они закончат.", pt: "Conforme eles acabarem.", tense: "Futuro Conj."},
+{ru: "Заканчивай!", pt: "Acaba!", tense: "Imperativo"},
+{ru: "Давайте закончим!", pt: "Acabemos!", tense: "Imperativo"},
+{ru: "Заканчивай сейчас!", pt: "Acaba agora!", tense: "Imperativo"},
+{ru: "Не заканчивай!", pt: "Não acabes!", tense: "Imperativo"},
+{ru: "Закончи это!", pt: "Acaba isto!", tense: "Imperativo"},
+{ru: "Я только что пришёл.", pt: "Acabo de chegar.", tense: "Presente"},
+{ru: "Ты только что ушёл.", pt: "Acabas de sair.", tense: "Presente"},
+{ru: "Он только что позвонил.", pt: "Ele acaba de ligar.", tense: "Presente"},
+{ru: "Мы только что закончили.", pt: "Acabamos de terminar.", tense: "Presente"},
+{ru: "Они только что начали.", pt: "Eles acabam de começar.", tense: "Presente"},
+{ru: "Я только что поел.", pt: "Acabava de comer.", tense: "Imperfeito"},
+{ru: "Это конец.", pt: "Acabou.", tense: "Perfeito"},
+{ru: "Всё кончено.", pt: "Acabou tudo.", tense: "Perfeito"},
+{ru: "Закончилось?", pt: "Acabou?", tense: "Perfeito"},
+{ru: "Фильм закончился.", pt: "O filme acabou.", tense: "Perfeito"},
+{ru: "Вечеринка закончилась.", pt: "A festa acabou.", tense: "Perfeito"},
+{ru: "Я заканчиваю.", pt: "Estou a acabar.", tense: "Presente"},
+{ru: "Ты заканчиваешь?", pt: "Estás a acabar?", tense: "Presente"},
+{ru: "Он заканчивает.", pt: "Ele está a acabar.", tense: "Presente"},
+{ru: "Мы почти закончили.", pt: "Estamos quase a acabar.", tense: "Presente"},
+{ru: "Они заканчивают работу.", pt: "Eles estão a acabar o trabalho.", tense: "Presente"},
+{ru: "Это никогда не заканчивается.", pt: "Nunca acaba.", tense: "Presente"},
+{ru: "Всё заканчивается.", pt: "Tudo acaba.", tense: "Presente"},
+{ru: "Мне нужно закончить.", pt: "Preciso de acabar.", tense: "Presente"},
+{ru: "Я хочу закончить.", pt: "Quero acabar.", tense: "Presente"}
+];
+
+const phraseList = document.querySelector('.phrase-list');
+const searchBox = document.querySelector('.search-box');
+
+function highlightVerb(text) {
+const forms = ['acabo', 'acabas', 'acaba', 'acabamos', 'acabam', 'acabava', 'acabavas', 'acabávamos', 'acabavam', 'acabei', 'acabaste', 'acabou', 'acabámos', 'acabaram', 'acabarei', 'acabarás', 'acabará', 'acabaremos', 'acabarão', 'acabaria', 'acabarias', 'acabaríamos', 'acabariam', 'acabe', 'acabes', 'acabemos', 'acabem', 'acabasse', 'acabasses', 'acabássemos', 'acabassem', 'acabar', 'acabares', 'acabarmos', 'acabarem'];
+const pattern = new RegExp(`\\b(${forms.join('|')})\\b`, 'gi');
+return text.replace(pattern, '<span class="verb-highlight">$1</span>');
+}
+
+function renderPhrases(filter = '') {
+const filtered = phrases.filter(p =>
+p.ru.toLowerCase().includes(filter.toLowerCase()) ||
+p.pt.toLowerCase().includes(filter.toLowerCase())
+);
+phraseList.innerHTML = filtered.map(p => `
+<div class="phrase-card" onclick="this.classList.toggle('revealed')">
+<div class="source">${p.ru}<span class="tense-tag">${p.tense}</span></div>
+<div class="translation">${highlightVerb(p.pt)}</div>
+</div>
+`).join('');
+}
+
+function showAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.add('revealed'));
+}
+
+function hideAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.remove('revealed'));
+}
+
+searchBox.addEventListener('input', (e) => renderPhrases(e.target.value));
+renderPhrases();
+</script>
+</body>
+</html>

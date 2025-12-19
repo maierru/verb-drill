@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pedir — Portuguese Verb Practice</title>
+<style>
+*{box-sizing:border-box}body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);min-height:100vh;margin:0;padding:20px;color:#eee}.container{max-width:800px;margin:0 auto}header{text-align:center;padding:20px 0}.back-link{color:#00d4aa;text-decoration:none;font-size:.9rem}.back-link:hover{text-decoration:underline}h1{color:#00d4aa;font-size:2rem;margin:10px 0;text-shadow:0 0 20px rgba(0,212,170,.3)}.subtitle{color:#888;font-size:1rem;margin-bottom:20px}.controls{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}.btn{background:rgba(0,212,170,.2);color:#00d4aa;border:1px solid #00d4aa;padding:8px 16px;border-radius:20px;cursor:pointer;font-size:.85rem;transition:all .2s}.btn:hover{background:#00d4aa;color:#1a1a2e}.search-box{width:100%;max-width:400px;padding:10px 15px;border-radius:20px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.05);color:#eee;font-size:1rem;margin-bottom:20px}.search-box::placeholder{color:#666}.phrase-list{display:flex;flex-direction:column;gap:10px}.phrase-card{background:rgba(255,255,255,.05);border-radius:10px;padding:15px;border:1px solid rgba(255,255,255,.1);cursor:pointer;transition:all .2s}.phrase-card:hover{border-color:rgba(0,212,170,.3)}.phrase-card.revealed .translation{opacity:1;transform:translateY(0)}.source{font-size:1.1rem;color:#fff;margin-bottom:8px}.translation{font-size:1rem;color:#00d4aa;opacity:0;transform:translateY(-5px);transition:all .2s}.tense-tag{display:inline-block;background:rgba(0,212,170,.15);color:#00d4aa;padding:2px 8px;border-radius:10px;font-size:.75rem;margin-left:8px}.verb-highlight{color:#ff6b6b;font-weight:600}footer{text-align:center;padding:30px 0;color:#555;font-size:.85rem}@media(max-width:600px){h1{font-size:1.5rem}.source{font-size:1rem}.translation{font-size:.95rem}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<a href="../" class="back-link">← Back to verbs</a>
+<h1>🇵🇹 Pedir</h1>
+<p class="subtitle">to ask, to request, to order — 100 phrases</p>
+</header>
+<input type="text" class="search-box" placeholder="Search phrases...">
+<div class="controls">
+<button class="btn" onclick="showAll()">Show All</button>
+<button class="btn" onclick="hideAll()">Hide All</button>
+</div>
+<div class="phrase-list"></div>
+<footer>Verb Drill — Portuguese Verb Practice</footer>
+</div>
+<script>
+const phrases = [
+{en: "I ask.", pt: "Peço.", tense: "Presente"},
+{en: "You ask for help.", pt: "Pedes ajuda.", tense: "Presente"},
+{en: "He asks for money.", pt: "Ele pede dinheiro.", tense: "Presente"},
+{en: "We ask for information.", pt: "Pedimos informações.", tense: "Presente"},
+{en: "They ask for more time.", pt: "Eles pedem mais tempo.", tense: "Presente"},
+{en: "I ask for a favor.", pt: "Peço um favor.", tense: "Presente"},
+{en: "You ask for the bill.", pt: "Pedes a conta.", tense: "Presente"},
+{en: "She asks for forgiveness.", pt: "Ela pede desculpa.", tense: "Presente"},
+{en: "We ask for permission.", pt: "Pedimos permissão.", tense: "Presente"},
+{en: "They ask for directions.", pt: "Eles pedem direções.", tense: "Presente"},
+{en: "I used to ask.", pt: "Pedia.", tense: "Imperfeito"},
+{en: "You used to ask for more.", pt: "Pedias mais.", tense: "Imperfeito"},
+{en: "He used to ask questions.", pt: "Ele pedia perguntas.", tense: "Imperfeito"},
+{en: "We used to ask for help.", pt: "Pedíamos ajuda.", tense: "Imperfeito"},
+{en: "They used to ask every day.", pt: "Eles pediam todos os dias.", tense: "Imperfeito"},
+{en: "I was asking.", pt: "Estava a pedir.", tense: "Imperfeito"},
+{en: "You were asking for help.", pt: "Estavas a pedir ajuda.", tense: "Imperfeito"},
+{en: "She was asking for time.", pt: "Ela estava a pedir tempo.", tense: "Imperfeito"},
+{en: "We were asking for advice.", pt: "Estávamos a pedir conselhos.", tense: "Imperfeito"},
+{en: "They were asking questions.", pt: "Eles estavam a pedir perguntas.", tense: "Imperfeito"},
+{en: "I asked.", pt: "Pedi.", tense: "Perfeito"},
+{en: "You asked for water.", pt: "Pediste água.", tense: "Perfeito"},
+{en: "He asked for the menu.", pt: "Ele pediu o menu.", tense: "Perfeito"},
+{en: "We asked for help.", pt: "Pedimos ajuda.", tense: "Perfeito"},
+{en: "They asked for directions.", pt: "Eles pediram direções.", tense: "Perfeito"},
+{en: "I asked for forgiveness.", pt: "Pedi desculpa.", tense: "Perfeito"},
+{en: "You asked for more.", pt: "Pediste mais.", tense: "Perfeito"},
+{en: "She asked for the bill.", pt: "Ela pediu a conta.", tense: "Perfeito"},
+{en: "We asked for permission.", pt: "Pedimos permissão.", tense: "Perfeito"},
+{en: "They asked for information.", pt: "Eles pediram informações.", tense: "Perfeito"},
+{en: "I will ask.", pt: "Pedirei.", tense: "Futuro"},
+{en: "You will ask for help.", pt: "Pedirás ajuda.", tense: "Futuro"},
+{en: "He will ask tomorrow.", pt: "Ele pedirá amanhã.", tense: "Futuro"},
+{en: "We will ask for more.", pt: "Pediremos mais.", tense: "Futuro"},
+{en: "They will ask later.", pt: "Eles pedirão mais tarde.", tense: "Futuro"},
+{en: "I will ask for information.", pt: "Pedirei informações.", tense: "Futuro"},
+{en: "You will ask the teacher.", pt: "Pedirás ao professor.", tense: "Futuro"},
+{en: "She will ask for money.", pt: "Ela pedirá dinheiro.", tense: "Futuro"},
+{en: "We will ask for permission.", pt: "Pediremos permissão.", tense: "Futuro"},
+{en: "They will ask for time.", pt: "Eles pedirão tempo.", tense: "Futuro"},
+{en: "I would ask.", pt: "Pediria.", tense: "Condicional"},
+{en: "You would ask for more.", pt: "Pedirias mais.", tense: "Condicional"},
+{en: "He would ask.", pt: "Ele pediria.", tense: "Condicional"},
+{en: "We would ask for help.", pt: "Pediríamos ajuda.", tense: "Condicional"},
+{en: "They would ask for advice.", pt: "Eles pediriam conselhos.", tense: "Condicional"},
+{en: "I would ask if I could.", pt: "Pediria se pudesse.", tense: "Condicional"},
+{en: "You would ask for forgiveness.", pt: "Pedirias desculpa.", tense: "Condicional"},
+{en: "She would ask for time.", pt: "Ela pediria tempo.", tense: "Condicional"},
+{en: "We would ask for permission.", pt: "Pediríamos permissão.", tense: "Condicional"},
+{en: "They would ask for money.", pt: "Eles pediriam dinheiro.", tense: "Condicional"},
+{en: "I want you to ask.", pt: "Quero que peças.", tense: "Conjuntivo"},
+{en: "I hope he asks.", pt: "Espero que ele peça.", tense: "Conjuntivo"},
+{en: "It's important that we ask.", pt: "É importante que peçamos.", tense: "Conjuntivo"},
+{en: "I doubt they ask.", pt: "Duvido que eles peçam.", tense: "Conjuntivo"},
+{en: "Although I ask.", pt: "Embora eu peça.", tense: "Conjuntivo"},
+{en: "So that you ask.", pt: "Para que tu peças.", tense: "Conjuntivo"},
+{en: "Unless she asks.", pt: "A menos que ela peça.", tense: "Conjuntivo"},
+{en: "Before they ask.", pt: "Antes que eles peçam.", tense: "Conjuntivo"},
+{en: "It's possible we ask.", pt: "É possível que peçamos.", tense: "Conjuntivo"},
+{en: "I prefer that you ask.", pt: "Prefiro que tu peças.", tense: "Conjuntivo"},
+{en: "If I asked.", pt: "Se eu pedisse.", tense: "Imperfeito Conj."},
+{en: "If you asked.", pt: "Se tu pedisses.", tense: "Imperfeito Conj."},
+{en: "If he asked.", pt: "Se ele pedisse.", tense: "Imperfeito Conj."},
+{en: "If we asked.", pt: "Se nós pedíssemos.", tense: "Imperfeito Conj."},
+{en: "If they asked.", pt: "Se eles pedissem.", tense: "Imperfeito Conj."},
+{en: "I wish I could ask.", pt: "Quem me dera pedir.", tense: "Imperfeito Conj."},
+{en: "As if she asked.", pt: "Como se ela pedisse.", tense: "Imperfeito Conj."},
+{en: "If only you asked.", pt: "Se tu pedisses.", tense: "Imperfeito Conj."},
+{en: "I wanted you to ask.", pt: "Queria que tu pedisses.", tense: "Imperfeito Conj."},
+{en: "It would be good if they asked.", pt: "Seria bom se eles pedissem.", tense: "Imperfeito Conj."},
+{en: "When I ask.", pt: "Quando eu pedir.", tense: "Futuro Conj."},
+{en: "As soon as you ask.", pt: "Assim que pedires.", tense: "Futuro Conj."},
+{en: "If he asks.", pt: "Se ele pedir.", tense: "Futuro Conj."},
+{en: "When we ask.", pt: "Quando pedirmos.", tense: "Futuro Conj."},
+{en: "As they ask.", pt: "Conforme eles pedirem.", tense: "Futuro Conj."},
+{en: "Ask!", pt: "Pede!", tense: "Imperativo"},
+{en: "Let's ask!", pt: "Peçamos!", tense: "Imperativo"},
+{en: "Ask for help!", pt: "Pede ajuda!", tense: "Imperativo"},
+{en: "Don't ask!", pt: "Não peças!", tense: "Imperativo"},
+{en: "Ask me!", pt: "Pede-me!", tense: "Imperativo"},
+{en: "Can I ask you something?", pt: "Posso pedir-te uma coisa?", tense: "Presente"},
+{en: "What did you order?", pt: "O que pediste?", tense: "Perfeito"},
+{en: "I'm asking for help.", pt: "Estou a pedir ajuda.", tense: "Presente"},
+{en: "You're asking too much.", pt: "Estás a pedir demais.", tense: "Presente"},
+{en: "He's asking for the bill.", pt: "Ele está a pedir a conta.", tense: "Presente"},
+{en: "We're asking for time.", pt: "Estamos a pedir tempo.", tense: "Presente"},
+{en: "They're asking for money.", pt: "Eles estão a pedir dinheiro.", tense: "Presente"},
+{en: "I didn't ask for this.", pt: "Não pedi isto.", tense: "Perfeito"},
+{en: "I want to order food.", pt: "Quero pedir comida.", tense: "Presente"},
+{en: "I need to ask for help.", pt: "Preciso de pedir ajuda.", tense: "Presente"},
+{en: "May I order?", pt: "Posso pedir?", tense: "Presente"},
+{en: "I have to ask.", pt: "Tenho de pedir.", tense: "Presente"},
+{en: "I'll order a coffee.", pt: "Vou pedir um café.", tense: "Presente"},
+{en: "She orders pizza.", pt: "Ela pede pizza.", tense: "Presente"},
+{en: "We ordered food.", pt: "Pedimos comida.", tense: "Perfeito"},
+{en: "They order drinks.", pt: "Eles pedem bebidas.", tense: "Presente"},
+{en: "I asked him to come.", pt: "Pedi-lhe para vir.", tense: "Perfeito"},
+{en: "I'm sorry, I apologize.", pt: "Peço desculpa.", tense: "Presente"},
+{en: "Can I ask a question?", pt: "Posso fazer uma pergunta?", tense: "Presente"},
+{en: "I beg you.", pt: "Peço-te.", tense: "Presente"}
+];
+
+const phraseList = document.querySelector('.phrase-list');
+const searchBox = document.querySelector('.search-box');
+
+function highlightVerb(text) {
+const forms = ['peço', 'pedes', 'pede', 'pedimos', 'pedem', 'pedia', 'pedias', 'pedíamos', 'pediam', 'pedi', 'pediste', 'pediu', 'pediram', 'pedirei', 'pedirás', 'pedirá', 'pediremos', 'pedirão', 'pediria', 'pedirias', 'pediríamos', 'pediriam', 'peça', 'peças', 'peçamos', 'peçam', 'pedisse', 'pedisses', 'pedíssemos', 'pedissem', 'pedir', 'pedires', 'pedirmos', 'pedirem'];
+const pattern = new RegExp(`\\b(${forms.join('|')})\\b`, 'gi');
+return text.replace(pattern, '<span class="verb-highlight">$1</span>');
+}
+
+function renderPhrases(filter = '') {
+const filtered = phrases.filter(p =>
+p.en.toLowerCase().includes(filter.toLowerCase()) ||
+p.pt.toLowerCase().includes(filter.toLowerCase())
+);
+phraseList.innerHTML = filtered.map(p => `
+<div class="phrase-card" onclick="this.classList.toggle('revealed')">
+<div class="source">${p.en}<span class="tense-tag">${p.tense}</span></div>
+<div class="translation">${highlightVerb(p.pt)}</div>
+</div>
+`).join('');
+}
+
+function showAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.add('revealed'));
+}
+
+function hideAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.remove('revealed'));
+}
+
+searchBox.addEventListener('input', (e) => renderPhrases(e.target.value));
+renderPhrases();
+</script>
+</body>
+</html>

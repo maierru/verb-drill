@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deixar — Portuguese Verb Practice</title>
+<style>
+*{box-sizing:border-box}body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);min-height:100vh;margin:0;padding:20px;color:#eee}.container{max-width:800px;margin:0 auto}header{text-align:center;padding:20px 0}.back-link{color:#00d4aa;text-decoration:none;font-size:.9rem}.back-link:hover{text-decoration:underline}h1{color:#00d4aa;font-size:2rem;margin:10px 0;text-shadow:0 0 20px rgba(0,212,170,.3)}.subtitle{color:#888;font-size:1rem;margin-bottom:20px}.controls{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}.btn{background:rgba(0,212,170,.2);color:#00d4aa;border:1px solid #00d4aa;padding:8px 16px;border-radius:20px;cursor:pointer;font-size:.85rem;transition:all .2s}.btn:hover{background:#00d4aa;color:#1a1a2e}.search-box{width:100%;max-width:400px;padding:10px 15px;border-radius:20px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.05);color:#eee;font-size:1rem;margin-bottom:20px}.search-box::placeholder{color:#666}.phrase-list{display:flex;flex-direction:column;gap:10px}.phrase-card{background:rgba(255,255,255,.05);border-radius:10px;padding:15px;border:1px solid rgba(255,255,255,.1);cursor:pointer;transition:all .2s}.phrase-card:hover{border-color:rgba(0,212,170,.3)}.phrase-card.revealed .translation{opacity:1;transform:translateY(0)}.source{font-size:1.1rem;color:#fff;margin-bottom:8px}.translation{font-size:1rem;color:#00d4aa;opacity:0;transform:translateY(-5px);transition:all .2s}.tense-tag{display:inline-block;background:rgba(0,212,170,.15);color:#00d4aa;padding:2px 8px;border-radius:10px;font-size:.75rem;margin-left:8px}.verb-highlight{color:#ff6b6b;font-weight:600}footer{text-align:center;padding:30px 0;color:#555;font-size:.85rem}@media(max-width:600px){h1{font-size:1.5rem}.source{font-size:1rem}.translation{font-size:.95rem}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<a href="../" class="back-link">← Back to verbs</a>
+<h1>🇵🇹 Deixar</h1>
+<p class="subtitle">to leave, to let — 100 phrases</p>
+</header>
+<input type="text" class="search-box" placeholder="Search phrases...">
+<div class="controls">
+<button class="btn" onclick="showAll()">Show All</button>
+<button class="btn" onclick="hideAll()">Hide All</button>
+</div>
+<div class="phrase-list"></div>
+<footer>Verb Drill — Portuguese Verb Practice</footer>
+</div>
+<script>
+const phrases = [
+{en: "I leave it here.", pt: "Deixo aqui.", tense: "Presente"},
+{en: "You let me go.", pt: "Deixas-me ir.", tense: "Presente"},
+{en: "He leaves everything.", pt: "Ele deixa tudo.", tense: "Presente"},
+{en: "We let them play.", pt: "Deixamos-os brincar.", tense: "Presente"},
+{en: "They leave at night.", pt: "Eles deixam à noite.", tense: "Presente"},
+{en: "I let you decide.", pt: "Deixo-te decidir.", tense: "Presente"},
+{en: "You leave the door open.", pt: "Deixas a porta aberta.", tense: "Presente"},
+{en: "She lets me help.", pt: "Ela deixa-me ajudar.", tense: "Presente"},
+{en: "We leave early.", pt: "Deixamos cedo.", tense: "Presente"},
+{en: "They let us enter.", pt: "Eles deixam-nos entrar.", tense: "Presente"},
+{en: "I used to leave early.", pt: "Deixava cedo.", tense: "Imperfeito"},
+{en: "You used to let me.", pt: "Deixavas-me.", tense: "Imperfeito"},
+{en: "He used to leave things.", pt: "Ele deixava coisas.", tense: "Imperfeito"},
+{en: "We used to let them.", pt: "Deixávamos-os.", tense: "Imperfeito"},
+{en: "They used to leave late.", pt: "Eles deixavam tarde.", tense: "Imperfeito"},
+{en: "I was leaving.", pt: "Deixava.", tense: "Imperfeito"},
+{en: "You were letting me go.", pt: "Deixavas-me ir.", tense: "Imperfeito"},
+{en: "She was leaving him.", pt: "Ela deixava-o.", tense: "Imperfeito"},
+{en: "We were leaving everything.", pt: "Deixávamos tudo.", tense: "Imperfeito"},
+{en: "They were letting us.", pt: "Eles deixavam-nos.", tense: "Imperfeito"},
+{en: "I left it there.", pt: "Deixei lá.", tense: "Perfeito"},
+{en: "You let me know.", pt: "Deixaste-me saber.", tense: "Perfeito"},
+{en: "He left the job.", pt: "Ele deixou o trabalho.", tense: "Perfeito"},
+{en: "We left them alone.", pt: "Deixámo-los em paz.", tense: "Perfeito"},
+{en: "They left early.", pt: "Eles deixaram cedo.", tense: "Perfeito"},
+{en: "I left the book.", pt: "Deixei o livro.", tense: "Perfeito"},
+{en: "You let him go.", pt: "Deixaste-o ir.", tense: "Perfeito"},
+{en: "She left the city.", pt: "Ela deixou a cidade.", tense: "Perfeito"},
+{en: "We left a message.", pt: "Deixámos uma mensagem.", tense: "Perfeito"},
+{en: "They let it happen.", pt: "Eles deixaram acontecer.", tense: "Perfeito"},
+{en: "I will leave.", pt: "Deixarei.", tense: "Futuro"},
+{en: "You will let me.", pt: "Deixar-me-ás.", tense: "Futuro"},
+{en: "He will leave soon.", pt: "Ele deixará em breve.", tense: "Futuro"},
+{en: "We will let them.", pt: "Deixá-los-emos.", tense: "Futuro"},
+{en: "They will leave tomorrow.", pt: "Eles deixarão amanhã.", tense: "Futuro"},
+{en: "I will leave it here.", pt: "Deixarei aqui.", tense: "Futuro"},
+{en: "You will let me know.", pt: "Deixar-me-ás saber.", tense: "Futuro"},
+{en: "She will leave early.", pt: "Ela deixará cedo.", tense: "Futuro"},
+{en: "We will leave a note.", pt: "Deixaremos um recado.", tense: "Futuro"},
+{en: "They will let us go.", pt: "Eles deixar-nos-ão ir.", tense: "Futuro"},
+{en: "I would leave.", pt: "Deixaria.", tense: "Condicional"},
+{en: "You would let me.", pt: "Deixar-me-ias.", tense: "Condicional"},
+{en: "He would leave.", pt: "Ele deixaria.", tense: "Condicional"},
+{en: "We would let them.", pt: "Deixá-los-íamos.", tense: "Condicional"},
+{en: "They would leave.", pt: "Eles deixariam.", tense: "Condicional"},
+{en: "I would leave it.", pt: "Deixaria isso.", tense: "Condicional"},
+{en: "You would let her.", pt: "Deixá-la-ias.", tense: "Condicional"},
+{en: "She would leave him.", pt: "Ela deixá-lo-ia.", tense: "Condicional"},
+{en: "We would leave early.", pt: "Deixaríamos cedo.", tense: "Condicional"},
+{en: "They would let us.", pt: "Eles deixar-nos-iam.", tense: "Condicional"},
+{en: "I want you to leave.", pt: "Quero que deixes.", tense: "Conjuntivo"},
+{en: "I hope he lets me.", pt: "Espero que ele me deixe.", tense: "Conjuntivo"},
+{en: "It's important that we leave.", pt: "É importante que deixemos.", tense: "Conjuntivo"},
+{en: "I doubt they let.", pt: "Duvido que eles deixem.", tense: "Conjuntivo"},
+{en: "Although I leave.", pt: "Embora eu deixe.", tense: "Conjuntivo"},
+{en: "So that you let.", pt: "Para que tu deixes.", tense: "Conjuntivo"},
+{en: "Unless she leaves.", pt: "A menos que ela deixe.", tense: "Conjuntivo"},
+{en: "Before they leave.", pt: "Antes que eles deixem.", tense: "Conjuntivo"},
+{en: "It's possible we leave.", pt: "É possível que deixemos.", tense: "Conjuntivo"},
+{en: "I prefer that you let.", pt: "Prefiro que tu deixes.", tense: "Conjuntivo"},
+{en: "If I left.", pt: "Se eu deixasse.", tense: "Imperfeito Conj."},
+{en: "If you let.", pt: "Se tu deixasses.", tense: "Imperfeito Conj."},
+{en: "If he left.", pt: "Se ele deixasse.", tense: "Imperfeito Conj."},
+{en: "If we left.", pt: "Se nós deixássemos.", tense: "Imperfeito Conj."},
+{en: "If they left.", pt: "Se eles deixassem.", tense: "Imperfeito Conj."},
+{en: "I wish I could leave.", pt: "Quem me dera deixar.", tense: "Imperfeito Conj."},
+{en: "As if she left.", pt: "Como se ela deixasse.", tense: "Imperfeito Conj."},
+{en: "If only you let.", pt: "Se tu deixasses.", tense: "Imperfeito Conj."},
+{en: "I wanted you to leave.", pt: "Queria que tu deixasses.", tense: "Imperfeito Conj."},
+{en: "It would be good if they left.", pt: "Seria bom se eles deixassem.", tense: "Imperfeito Conj."},
+{en: "When I leave.", pt: "Quando eu deixar.", tense: "Futuro Conj."},
+{en: "As soon as you leave.", pt: "Assim que deixares.", tense: "Futuro Conj."},
+{en: "If he leaves.", pt: "Se ele deixar.", tense: "Futuro Conj."},
+{en: "When we leave.", pt: "Quando deixarmos.", tense: "Futuro Conj."},
+{en: "As they leave.", pt: "Conforme eles deixarem.", tense: "Futuro Conj."},
+{en: "Leave it!", pt: "Deixa!", tense: "Imperativo"},
+{en: "Let's leave!", pt: "Deixemos!", tense: "Imperativo"},
+{en: "Leave me alone!", pt: "Deixa-me em paz!", tense: "Imperativo"},
+{en: "Don't leave!", pt: "Não deixes!", tense: "Imperativo"},
+{en: "Let him go!", pt: "Deixa-o ir!", tense: "Imperativo"},
+{en: "Can you let me?", pt: "Podes deixar-me?", tense: "Presente"},
+{en: "Let me see.", pt: "Deixa-me ver.", tense: "Imperativo"},
+{en: "I don't leave things.", pt: "Não deixo coisas.", tense: "Presente"},
+{en: "She doesn't let anyone.", pt: "Ela não deixa ninguém.", tense: "Presente"},
+{en: "Leave it there.", pt: "Deixa aí.", tense: "Imperativo"},
+{en: "I have to leave.", pt: "Tenho de deixar.", tense: "Presente"},
+{en: "You can't leave.", pt: "Não podes deixar.", tense: "Presente"},
+{en: "He wants to leave.", pt: "Ele quer deixar.", tense: "Presente"},
+{en: "We need to leave.", pt: "Precisamos de deixar.", tense: "Presente"},
+{en: "They can leave.", pt: "Eles podem deixar.", tense: "Presente"},
+{en: "I left it at home.", pt: "Deixei em casa.", tense: "Perfeito"},
+{en: "You left your bag.", pt: "Deixaste a tua mala.", tense: "Perfeito"},
+{en: "She left the door open.", pt: "Ela deixou a porta aberta.", tense: "Perfeito"},
+{en: "We left the keys.", pt: "Deixámos as chaves.", tense: "Perfeito"},
+{en: "They left everything behind.", pt: "Eles deixaram tudo para trás.", tense: "Perfeito"},
+{en: "Let me explain.", pt: "Deixa-me explicar.", tense: "Imperativo"},
+{en: "Let me think.", pt: "Deixa-me pensar.", tense: "Imperativo"},
+{en: "Leave it to me.", pt: "Deixa comigo.", tense: "Imperativo"},
+{en: "I stopped smoking.", pt: "Deixei de fumar.", tense: "Perfeito"},
+{en: "Don't let me down.", pt: "Não me deixes ficar mal.", tense: "Imperativo"}
+];
+
+const phraseList = document.querySelector('.phrase-list');
+const searchBox = document.querySelector('.search-box');
+
+function highlightVerb(text) {
+const forms = ['deixo', 'deixas', 'deixa', 'deixamos', 'deixam', 'deixava', 'deixavas', 'deixávamos', 'deixavam', 'deixei', 'deixaste', 'deixou', 'deixámos', 'deixaram', 'deixarei', 'deixarás', 'deixará', 'deixaremos', 'deixarão', 'deixaria', 'deixarias', 'deixaríamos', 'deixariam', 'deixe', 'deixes', 'deixemos', 'deixem', 'deixasse', 'deixasses', 'deixássemos', 'deixassem', 'deixar', 'deixares', 'deixarmos', 'deixarem'];
+const pattern = new RegExp(`\\b(${forms.join('|')})\\b`, 'gi');
+return text.replace(pattern, '<span class="verb-highlight">$1</span>');
+}
+
+function renderPhrases(filter = '') {
+const filtered = phrases.filter(p =>
+p.en.toLowerCase().includes(filter.toLowerCase()) ||
+p.pt.toLowerCase().includes(filter.toLowerCase())
+);
+phraseList.innerHTML = filtered.map(p => `
+<div class="phrase-card" onclick="this.classList.toggle('revealed')">
+<div class="source">${p.en}<span class="tense-tag">${p.tense}</span></div>
+<div class="translation">${highlightVerb(p.pt)}</div>
+</div>
+`).join('');
+}
+
+function showAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.add('revealed'));
+}
+
+function hideAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.remove('revealed'));
+}
+
+searchBox.addEventListener('input', (e) => renderPhrases(e.target.value));
+renderPhrases();
+</script>
+</body>
+</html>

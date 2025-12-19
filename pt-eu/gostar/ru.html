@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gostar — Португальский глагол</title>
+<style>
+*{box-sizing:border-box}body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);min-height:100vh;margin:0;padding:20px;color:#eee}.container{max-width:800px;margin:0 auto}header{text-align:center;padding:20px 0}.back-link{color:#00d4aa;text-decoration:none;font-size:.9rem}.back-link:hover{text-decoration:underline}h1{color:#00d4aa;font-size:2rem;margin:10px 0;text-shadow:0 0 20px rgba(0,212,170,.3)}.subtitle{color:#888;font-size:1rem;margin-bottom:20px}.controls{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}.btn{background:rgba(0,212,170,.2);color:#00d4aa;border:1px solid #00d4aa;padding:8px 16px;border-radius:20px;cursor:pointer;font-size:.85rem;transition:all .2s}.btn:hover{background:#00d4aa;color:#1a1a2e}.search-box{width:100%;max-width:400px;padding:10px 15px;border-radius:20px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.05);color:#eee;font-size:1rem;margin-bottom:20px}.search-box::placeholder{color:#666}.phrase-list{display:flex;flex-direction:column;gap:10px}.phrase-card{background:rgba(255,255,255,.05);border-radius:10px;padding:15px;border:1px solid rgba(255,255,255,.1);cursor:pointer;transition:all .2s}.phrase-card:hover{border-color:rgba(0,212,170,.3)}.phrase-card.revealed .translation{opacity:1;transform:translateY(0)}.source{font-size:1.1rem;color:#fff;margin-bottom:8px}.translation{font-size:1rem;color:#00d4aa;opacity:0;transform:translateY(-5px);transition:all .2s}.tense-tag{display:inline-block;background:rgba(0,212,170,.15);color:#00d4aa;padding:2px 8px;border-radius:10px;font-size:.75rem;margin-left:8px}.verb-highlight{color:#ff6b6b;font-weight:600}footer{text-align:center;padding:30px 0;color:#555;font-size:.85rem}@media(max-width:600px){h1{font-size:1.5rem}.source{font-size:1rem}.translation{font-size:.95rem}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<a href="../" class="back-link">← Назад к глаголам</a>
+<h1>🇵🇹 Gostar</h1>
+<p class="subtitle">нравиться, любить — 100 фраз</p>
+</header>
+<input type="text" class="search-box" placeholder="Поиск фраз...">
+<div class="controls">
+<button class="btn" onclick="showAll()">Показать все</button>
+<button class="btn" onclick="hideAll()">Скрыть все</button>
+</div>
+<div class="phrase-list"></div>
+<footer>Verb Drill — Практика португальских глаголов</footer>
+</div>
+<script>
+const phrases = [
+{ru: "Мне нравится.", pt: "Gosto.", tense: "Presente"},
+{ru: "Тебе нравится кофе.", pt: "Gostas de café.", tense: "Presente"},
+{ru: "Ему нравится музыка.", pt: "Ele gosta de música.", tense: "Presente"},
+{ru: "Нам нравится пляж.", pt: "Gostamos da praia.", tense: "Presente"},
+{ru: "Им нравится путешествовать.", pt: "Eles gostam de viajar.", tense: "Presente"},
+{ru: "Мне это нравится.", pt: "Gosto disto.", tense: "Presente"},
+{ru: "Тебе нравится читать.", pt: "Gostas de ler.", tense: "Presente"},
+{ru: "Ей нравится танцевать.", pt: "Ela gosta de dançar.", tense: "Presente"},
+{ru: "Нам нравится португальская еда.", pt: "Gostamos de comida portuguesa.", tense: "Presente"},
+{ru: "Им нравится город.", pt: "Eles gostam da cidade.", tense: "Presente"},
+{ru: "Мне раньше нравилось.", pt: "Gostava.", tense: "Imperfeito"},
+{ru: "Тебе раньше нравились сладости.", pt: "Gostavas de doces.", tense: "Imperfeito"},
+{ru: "Ему раньше нравился футбол.", pt: "Ele gostava de futebol.", tense: "Imperfeito"},
+{ru: "Нам раньше нравился старый дом.", pt: "Gostávamos da casa antiga.", tense: "Imperfeito"},
+{ru: "Им раньше нравилось то место.", pt: "Eles gostavam daquele lugar.", tense: "Imperfeito"},
+{ru: "Мне начинало нравиться.", pt: "Estava a gostar.", tense: "Imperfeito"},
+{ru: "Тебе нравился фильм.", pt: "Estavas a gostar do filme.", tense: "Imperfeito"},
+{ru: "Ей нравилась книга.", pt: "Ela estava a gostar do livro.", tense: "Imperfeito"},
+{ru: "Нам нравилась поездка.", pt: "Estávamos a gostar da viagem.", tense: "Imperfeito"},
+{ru: "Им нравилась еда.", pt: "Eles estavam a gostar da comida.", tense: "Imperfeito"},
+{ru: "Мне понравилось.", pt: "Gostei.", tense: "Perfeito"},
+{ru: "Тебе понравился фильм.", pt: "Gostaste do filme.", tense: "Perfeito"},
+{ru: "Ему понравился подарок.", pt: "Ele gostou do presente.", tense: "Perfeito"},
+{ru: "Нам понравился концерт.", pt: "Gostámos do concerto.", tense: "Perfeito"},
+{ru: "Им понравилась идея.", pt: "Eles gostaram da ideia.", tense: "Perfeito"},
+{ru: "Мне понравилось познакомиться с тобой.", pt: "Gostei de te conhecer.", tense: "Perfeito"},
+{ru: "Тебе понравился ужин.", pt: "Gostaste do jantar.", tense: "Perfeito"},
+{ru: "Ей понравился сюрприз.", pt: "Ela gostou da surpresa.", tense: "Perfeito"},
+{ru: "Нам понравился отель.", pt: "Gostámos do hotel.", tense: "Perfeito"},
+{ru: "Им понравилось всё.", pt: "Eles gostaram de tudo.", tense: "Perfeito"},
+{ru: "Мне понравится.", pt: "Gostarei.", tense: "Futuro"},
+{ru: "Тебе понравится это место.", pt: "Gostarás deste lugar.", tense: "Futuro"},
+{ru: "Ему понравятся новости.", pt: "Ele gostará das notícias.", tense: "Futuro"},
+{ru: "Нам понравится жить здесь.", pt: "Gostaremos de viver aqui.", tense: "Futuro"},
+{ru: "Им понравится результат.", pt: "Eles gostarão do resultado.", tense: "Futuro"},
+{ru: "Мне понравится перемена.", pt: "Gostarei da mudança.", tense: "Futuro"},
+{ru: "Тебе понравится Португалия.", pt: "Gostarás de Portugal.", tense: "Futuro"},
+{ru: "Ей понравится квартира.", pt: "Ela gostará do apartamento.", tense: "Futuro"},
+{ru: "Нам понравится новая работа.", pt: "Gostaremos do novo trabalho.", tense: "Futuro"},
+{ru: "Они понравятся друг другу.", pt: "Eles gostarão um do outro.", tense: "Futuro"},
+{ru: "Мне бы хотелось.", pt: "Gostaria.", tense: "Condicional"},
+{ru: "Тебе бы хотелось прийти.", pt: "Gostarias de vir.", tense: "Condicional"},
+{ru: "Ему бы хотелось помочь.", pt: "Ele gostaria de ajudar.", tense: "Condicional"},
+{ru: "Нам бы хотелось знать.", pt: "Gostaríamos de saber.", tense: "Condicional"},
+{ru: "Им бы хотелось остаться.", pt: "Eles gostariam de ficar.", tense: "Condicional"},
+{ru: "Я бы хотел кофе.", pt: "Gostaria de um café.", tense: "Condicional"},
+{ru: "Тебе бы хотелось увидеть.", pt: "Gostarias de ver.", tense: "Condicional"},
+{ru: "Ей бы хотелось попробовать.", pt: "Ela gostaria de experimentar.", tense: "Condicional"},
+{ru: "Нам бы хотелось пойти.", pt: "Gostaríamos de ir.", tense: "Condicional"},
+{ru: "Им бы хотелось посетить.", pt: "Eles gostariam de visitar.", tense: "Condicional"},
+{ru: "Хочу, чтобы тебе понравилось.", pt: "Quero que gostes.", tense: "Conjuntivo"},
+{ru: "Надеюсь, ему понравится.", pt: "Espero que ele goste.", tense: "Conjuntivo"},
+{ru: "Важно, чтобы нам понравилось.", pt: "É importante que gostemos.", tense: "Conjuntivo"},
+{ru: "Сомневаюсь, что им понравится.", pt: "Duvido que eles gostem.", tense: "Conjuntivo"},
+{ru: "Хотя мне нравится.", pt: "Embora eu goste.", tense: "Conjuntivo"},
+{ru: "Чтобы тебе понравилось.", pt: "Para que tu gostes.", tense: "Conjuntivo"},
+{ru: "Если только ей не понравится.", pt: "A menos que ela goste.", tense: "Conjuntivo"},
+{ru: "До того как им понравится.", pt: "Antes que eles gostem.", tense: "Conjuntivo"},
+{ru: "Возможно, нам понравится.", pt: "É possível que gostemos.", tense: "Conjuntivo"},
+{ru: "Предпочитаю, чтобы тебе понравилось.", pt: "Prefiro que tu gostes.", tense: "Conjuntivo"},
+{ru: "Если бы мне понравилось.", pt: "Se eu gostasse.", tense: "Imperfeito Conj."},
+{ru: "Если бы тебе понравилось.", pt: "Se tu gostasses.", tense: "Imperfeito Conj."},
+{ru: "Если бы ему понравилось.", pt: "Se ele gostasse.", tense: "Imperfeito Conj."},
+{ru: "Если бы нам понравилось.", pt: "Se nós gostássemos.", tense: "Imperfeito Conj."},
+{ru: "Если бы им понравилось.", pt: "Se eles gostassem.", tense: "Imperfeito Conj."},
+{ru: "Хотел бы я, чтобы нравилось.", pt: "Quem me dera gostar.", tense: "Imperfeito Conj."},
+{ru: "Как будто ей нравилось.", pt: "Como se ela gostasse.", tense: "Imperfeito Conj."},
+{ru: "Если бы только тебе нравилось.", pt: "Se tu gostasses.", tense: "Imperfeito Conj."},
+{ru: "Хотел, чтобы тебе нравилось.", pt: "Queria que tu gostasses.", tense: "Imperfeito Conj."},
+{ru: "Было бы хорошо, если бы им понравилось.", pt: "Seria bom se eles gostassem.", tense: "Imperfeito Conj."},
+{ru: "Когда мне понравится.", pt: "Quando eu gostar.", tense: "Futuro Conj."},
+{ru: "Как только тебе понравится.", pt: "Assim que gostares.", tense: "Futuro Conj."},
+{ru: "Если ему понравится.", pt: "Se ele gostar.", tense: "Futuro Conj."},
+{ru: "Когда нам понравится.", pt: "Quando gostarmos.", tense: "Futuro Conj."},
+{ru: "По мере того как им понравится.", pt: "Conforme eles gostarem.", tense: "Futuro Conj."},
+{ru: "Тебе нравится?", pt: "Gostas?", tense: "Presente"},
+{ru: "Тебе нравится еда?", pt: "Gostas da comida?", tense: "Presente"},
+{ru: "Она ему нравится?", pt: "Ele gosta dela?", tense: "Presente"},
+{ru: "Им здесь нравится?", pt: "Eles gostam daqui?", tense: "Presente"},
+{ru: "Тебе понравилось?", pt: "Gostaste?", tense: "Perfeito"},
+{ru: "Мне не нравится.", pt: "Não gosto.", tense: "Presente"},
+{ru: "Тебе не нравятся овощи.", pt: "Não gostas de legumes.", tense: "Presente"},
+{ru: "Ему не нравится холод.", pt: "Ele não gosta do frio.", tense: "Presente"},
+{ru: "Нам не нравится ждать.", pt: "Não gostamos de esperar.", tense: "Presente"},
+{ru: "Им не нравится шум.", pt: "Eles não gostam de barulho.", tense: "Presente"},
+{ru: "Мне не понравилось.", pt: "Não gostei.", tense: "Perfeito"},
+{ru: "Мне очень нравится.", pt: "Gosto muito.", tense: "Presente"},
+{ru: "Мне это очень нравится.", pt: "Gosto bastante.", tense: "Presente"},
+{ru: "Ты мне нравишься.", pt: "Gosto de ti.", tense: "Presente"},
+{ru: "Я тебе нравлюсь?", pt: "Gostas de mim?", tense: "Presente"},
+{ru: "Мне начинает нравиться.", pt: "Estou a começar a gostar.", tense: "Presente"},
+{ru: "Мне бы очень хотелось.", pt: "Gostaria muito.", tense: "Condicional"},
+{ru: "Тебе бы хотелось узнать.", pt: "Gostarias de saber.", tense: "Condicional"},
+{ru: "Мне нравится, как ты думаешь.", pt: "Gosto da forma como pensas.", tense: "Presente"},
+{ru: "Ей нравится то, что она делает.", pt: "Ela gosta do que faz.", tense: "Presente"},
+{ru: "Нам нравится быть вместе.", pt: "Gostamos de estar juntos.", tense: "Presente"},
+{ru: "Ему нравится готовить.", pt: "Ele gosta de cozinhar.", tense: "Presente"},
+{ru: "Я бы хотел говорить по-португальски.", pt: "Gostaria de falar português.", tense: "Condicional"},
+{ru: "Хочешь чего-нибудь?", pt: "Gostarias de alguma coisa?", tense: "Condicional"}
+];
+
+const phraseList = document.querySelector('.phrase-list');
+const searchBox = document.querySelector('.search-box');
+
+function highlightVerb(text) {
+const forms = ['gosto', 'gostas', 'gosta', 'gostamos', 'gostam', 'gostava', 'gostavas', 'gostávamos', 'gostavam', 'gostei', 'gostaste', 'gostou', 'gostámos', 'gostaram', 'gostarei', 'gostarás', 'gostará', 'gostaremos', 'gostarão', 'gostaria', 'gostarias', 'gostaríamos', 'gostariam', 'goste', 'gostes', 'gostemos', 'gostem', 'gostasse', 'gostasses', 'gostássemos', 'gostassem', 'gostar', 'gostares', 'gostarmos', 'gostarem'];
+const pattern = new RegExp(`\\b(${forms.join('|')})\\b`, 'gi');
+return text.replace(pattern, '<span class="verb-highlight">$1</span>');
+}
+
+function renderPhrases(filter = '') {
+const filtered = phrases.filter(p =>
+p.ru.toLowerCase().includes(filter.toLowerCase()) ||
+p.pt.toLowerCase().includes(filter.toLowerCase())
+);
+phraseList.innerHTML = filtered.map(p => `
+<div class="phrase-card" onclick="this.classList.toggle('revealed')">
+<div class="source">${p.ru}<span class="tense-tag">${p.tense}</span></div>
+<div class="translation">${highlightVerb(p.pt)}</div>
+</div>
+`).join('');
+}
+
+function showAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.add('revealed'));
+}
+
+function hideAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.remove('revealed'));
+}
+
+searchBox.addEventListener('input', (e) => renderPhrases(e.target.value));
+renderPhrases();
+</script>
+</body>
+</html>

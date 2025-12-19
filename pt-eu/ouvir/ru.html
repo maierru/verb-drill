@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ouvir — Португальский глагол</title>
+<style>
+*{box-sizing:border-box}body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);min-height:100vh;margin:0;padding:20px;color:#eee}.container{max-width:800px;margin:0 auto}header{text-align:center;padding:20px 0}.back-link{color:#00d4aa;text-decoration:none;font-size:.9rem}.back-link:hover{text-decoration:underline}h1{color:#00d4aa;font-size:2rem;margin:10px 0;text-shadow:0 0 20px rgba(0,212,170,.3)}.subtitle{color:#888;font-size:1rem;margin-bottom:20px}.controls{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}.btn{background:rgba(0,212,170,.2);color:#00d4aa;border:1px solid #00d4aa;padding:8px 16px;border-radius:20px;cursor:pointer;font-size:.85rem;transition:all .2s}.btn:hover{background:#00d4aa;color:#1a1a2e}.search-box{width:100%;max-width:400px;padding:10px 15px;border-radius:20px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.05);color:#eee;font-size:1rem;margin-bottom:20px}.search-box::placeholder{color:#666}.phrase-list{display:flex;flex-direction:column;gap:10px}.phrase-card{background:rgba(255,255,255,.05);border-radius:10px;padding:15px;border:1px solid rgba(255,255,255,.1);cursor:pointer;transition:all .2s}.phrase-card:hover{border-color:rgba(0,212,170,.3)}.phrase-card.revealed .translation{opacity:1;transform:translateY(0)}.source{font-size:1.1rem;color:#fff;margin-bottom:8px}.translation{font-size:1rem;color:#00d4aa;opacity:0;transform:translateY(-5px);transition:all .2s}.tense-tag{display:inline-block;background:rgba(0,212,170,.15);color:#00d4aa;padding:2px 8px;border-radius:10px;font-size:.75rem;margin-left:8px}.verb-highlight{color:#ff6b6b;font-weight:600}footer{text-align:center;padding:30px 0;color:#555;font-size:.85rem}@media(max-width:600px){h1{font-size:1.5rem}.source{font-size:1rem}.translation{font-size:.95rem}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<a href="../" class="back-link">← Назад к глаголам</a>
+<h1>🇵🇹 Ouvir</h1>
+<p class="subtitle">слышать, слушать — 100 фраз</p>
+</header>
+<input type="text" class="search-box" placeholder="Поиск фраз...">
+<div class="controls">
+<button class="btn" onclick="showAll()">Показать все</button>
+<button class="btn" onclick="hideAll()">Скрыть все</button>
+</div>
+<div class="phrase-list"></div>
+<footer>Verb Drill — Практика португальских глаголов</footer>
+</div>
+<script>
+const phrases = [
+{ru: "Я слышу.", pt: "Ouço.", tense: "Presente"},
+{ru: "Ты слышишь музыку.", pt: "Ouves a música.", tense: "Presente"},
+{ru: "Он слышит шум.", pt: "Ele ouve o barulho.", tense: "Presente"},
+{ru: "Мы слышим всё.", pt: "Ouvimos tudo.", tense: "Presente"},
+{ru: "Они слышат новости.", pt: "Eles ouvem as notícias.", tense: "Presente"},
+{ru: "Я тебя слышу.", pt: "Ouço-te.", tense: "Presente"},
+{ru: "Ты хорошо слышишь.", pt: "Ouves bem.", tense: "Presente"},
+{ru: "Она слышит птиц.", pt: "Ela ouve os pássaros.", tense: "Presente"},
+{ru: "Мы слушаем радио.", pt: "Ouvimos a rádio.", tense: "Presente"},
+{ru: "Они слышат голоса.", pt: "Eles ouvem vozes.", tense: "Presente"},
+{ru: "Я раньше слышал.", pt: "Ouvia.", tense: "Imperfeito"},
+{ru: "Ты раньше слушал музыку.", pt: "Ouvias música.", tense: "Imperfeito"},
+{ru: "Он раньше слушал истории.", pt: "Ele ouvia histórias.", tense: "Imperfeito"},
+{ru: "Мы раньше их слышали.", pt: "Ouvíamos-los.", tense: "Imperfeito"},
+{ru: "Они раньше слушали радио.", pt: "Eles ouviam a rádio.", tense: "Imperfeito"},
+{ru: "Я слушал.", pt: "Estava a ouvir.", tense: "Imperfeito"},
+{ru: "Ты слушал музыку.", pt: "Estavas a ouvir música.", tense: "Imperfeito"},
+{ru: "Она внимательно слушала.", pt: "Ela estava a ouvir com atenção.", tense: "Imperfeito"},
+{ru: "Мы слушали новости.", pt: "Estávamos a ouvir as notícias.", tense: "Imperfeito"},
+{ru: "Они слушали.", pt: "Eles estavam a ouvir.", tense: "Imperfeito"},
+{ru: "Я услышал.", pt: "Ouvi.", tense: "Perfeito"},
+{ru: "Ты услышал песню.", pt: "Ouviste a canção.", tense: "Perfeito"},
+{ru: "Он услышал новости.", pt: "Ele ouviu as notícias.", tense: "Perfeito"},
+{ru: "Мы услышали всё.", pt: "Ouvimos tudo.", tense: "Perfeito"},
+{ru: "Они услышали историю.", pt: "Eles ouviram a história.", tense: "Perfeito"},
+{ru: "Я услышал шум.", pt: "Ouvi um barulho.", tense: "Perfeito"},
+{ru: "Ты правильно услышал.", pt: "Ouviste bem.", tense: "Perfeito"},
+{ru: "Она услышала правду.", pt: "Ela ouviu a verdade.", tense: "Perfeito"},
+{ru: "Мы слышали об этом.", pt: "Ouvimos falar disso.", tense: "Perfeito"},
+{ru: "Они услышали слух.", pt: "Eles ouviram o boato.", tense: "Perfeito"},
+{ru: "Я услышу.", pt: "Ouvirei.", tense: "Futuro"},
+{ru: "Ты скоро услышишь.", pt: "Ouvirás em breve.", tense: "Futuro"},
+{ru: "Он услышит вердикт.", pt: "Ele ouvirá o veredicto.", tense: "Futuro"},
+{ru: "Мы услышим от них.", pt: "Ouviremos deles.", tense: "Futuro"},
+{ru: "Они услышат правду.", pt: "Eles ouvirão a verdade.", tense: "Futuro"},
+{ru: "Я тебя выслушаю.", pt: "Ouvir-te-ei.", tense: "Futuro"},
+{ru: "Ты услышишь новости.", pt: "Ouvirás as notícias.", tense: "Futuro"},
+{ru: "Она услышит всё.", pt: "Ela ouvirá tudo.", tense: "Futuro"},
+{ru: "Мы услышим результат.", pt: "Ouviremos o resultado.", tense: "Futuro"},
+{ru: "Они услышат об этом.", pt: "Eles ouvirão falar disso.", tense: "Futuro"},
+{ru: "Я бы услышал.", pt: "Ouviria.", tense: "Condicional"},
+{ru: "Ты бы лучше слышал.", pt: "Ouvirias melhor.", tense: "Condicional"},
+{ru: "Он бы услышал.", pt: "Ele ouviria.", tense: "Condicional"},
+{ru: "Мы бы всё услышали.", pt: "Ouviríamos tudo.", tense: "Condicional"},
+{ru: "Они бы услышали музыку.", pt: "Eles ouviriam a música.", tense: "Condicional"},
+{ru: "Я бы услышал, если бы мог.", pt: "Ouviria se pudesse.", tense: "Condicional"},
+{ru: "Ты бы услышал правду.", pt: "Ouvirias a verdade.", tense: "Condicional"},
+{ru: "Она бы услышала новости.", pt: "Ela ouviria as notícias.", tense: "Condicional"},
+{ru: "Мы бы услышали от него.", pt: "Ouviríamos dele.", tense: "Condicional"},
+{ru: "Они бы услышали больше.", pt: "Eles ouviriam mais.", tense: "Condicional"},
+{ru: "Хочу, чтобы ты услышал.", pt: "Quero que ouças.", tense: "Conjuntivo"},
+{ru: "Надеюсь, что он услышит.", pt: "Espero que ele ouça.", tense: "Conjuntivo"},
+{ru: "Важно, чтобы мы услышали.", pt: "É importante que ouçamos.", tense: "Conjuntivo"},
+{ru: "Сомневаюсь, что они услышат.", pt: "Duvido que eles ouçam.", tense: "Conjuntivo"},
+{ru: "Хотя я слышу.", pt: "Embora eu ouça.", tense: "Conjuntivo"},
+{ru: "Чтобы ты услышал.", pt: "Para que tu ouças.", tense: "Conjuntivo"},
+{ru: "Если только она не услышит.", pt: "A menos que ela ouça.", tense: "Conjuntivo"},
+{ru: "До того как они услышат.", pt: "Antes que eles ouçam.", tense: "Conjuntivo"},
+{ru: "Возможно, мы услышим.", pt: "É possível que ouçamos.", tense: "Conjuntivo"},
+{ru: "Предпочитаю, чтобы ты услышал.", pt: "Prefiro que tu ouças.", tense: "Conjuntivo"},
+{ru: "Если бы я услышал.", pt: "Se eu ouvisse.", tense: "Imperfeito Conj."},
+{ru: "Если бы ты услышал.", pt: "Se tu ouvisses.", tense: "Imperfeito Conj."},
+{ru: "Если бы он услышал.", pt: "Se ele ouvisse.", tense: "Imperfeito Conj."},
+{ru: "Если бы мы услышали.", pt: "Se nós ouvíssemos.", tense: "Imperfeito Conj."},
+{ru: "Если бы они услышали.", pt: "Se eles ouvissem.", tense: "Imperfeito Conj."},
+{ru: "Хотел бы я услышать.", pt: "Quem me dera ouvir.", tense: "Imperfeito Conj."},
+{ru: "Как будто она услышала.", pt: "Como se ela ouvisse.", tense: "Imperfeito Conj."},
+{ru: "Если бы только ты услышал.", pt: "Se tu ouvisses.", tense: "Imperfeito Conj."},
+{ru: "Хотел, чтобы ты услышал.", pt: "Queria que tu ouvisses.", tense: "Imperfeito Conj."},
+{ru: "Было бы хорошо, если бы они услышали.", pt: "Seria bom se eles ouvissem.", tense: "Imperfeito Conj."},
+{ru: "Когда я услышу.", pt: "Quando eu ouvir.", tense: "Futuro Conj."},
+{ru: "Как только ты услышишь.", pt: "Assim que ouvires.", tense: "Futuro Conj."},
+{ru: "Если он услышит.", pt: "Se ele ouvir.", tense: "Futuro Conj."},
+{ru: "Когда мы услышим.", pt: "Quando ouvirmos.", tense: "Futuro Conj."},
+{ru: "По мере того как они услышат.", pt: "Conforme eles ouvirem.", tense: "Futuro Conj."},
+{ru: "Слушай!", pt: "Ouve!", tense: "Imperativo"},
+{ru: "Давайте послушаем!", pt: "Ouçamos!", tense: "Imperativo"},
+{ru: "Послушай это!", pt: "Ouve isto!", tense: "Imperativo"},
+{ru: "Не слушай!", pt: "Não ouças!", tense: "Imperativo"},
+{ru: "Послушай меня!", pt: "Ouve-me!", tense: "Imperativo"},
+{ru: "Ты меня слышишь?", pt: "Ouves-me?", tense: "Presente"},
+{ru: "Ты это слышал?", pt: "Ouviste isso?", tense: "Perfeito"},
+{ru: "Я слушаю.", pt: "Estou a ouvir.", tense: "Presente"},
+{ru: "Ты слушаешь музыку.", pt: "Estás a ouvir música.", tense: "Presente"},
+{ru: "Он внимательно слушает.", pt: "Ele está a ouvir com atenção.", tense: "Presente"},
+{ru: "Мы тебя слушаем.", pt: "Estamos a ouvir-te.", tense: "Presente"},
+{ru: "Они слушают радио.", pt: "Eles estão a ouvir a rádio.", tense: "Presente"},
+{ru: "Я ничего не слышал.", pt: "Não ouvi nada.", tense: "Perfeito"},
+{ru: "Я тебя не слышу.", pt: "Não te consigo ouvir.", tense: "Presente"},
+{ru: "Я хочу услышать.", pt: "Quero ouvir.", tense: "Presente"},
+{ru: "Мне нужно услышать правду.", pt: "Preciso de ouvir a verdade.", tense: "Presente"},
+{ru: "Я люблю слушать музыку.", pt: "Gosto de ouvir música.", tense: "Presente"},
+{ru: "Ты слышишь?", pt: "Consegues ouvir?", tense: "Presente"},
+{ru: "Я никогда об этом не слышал.", pt: "Nunca ouvi falar.", tense: "Perfeito"},
+{ru: "Ты слышал?", pt: "Já ouviste?", tense: "Perfeito"},
+{ru: "Я тебя услышал.", pt: "Ouvi-te.", tense: "Perfeito"},
+{ru: "Слушай внимательно.", pt: "Ouve com atenção.", tense: "Imperativo"},
+{ru: "Я услышал по радио.", pt: "Ouvi na rádio.", tense: "Perfeito"},
+{ru: "Я обожаю слушать подкасты.", pt: "Adoro ouvir podcasts.", tense: "Presente"},
+{ru: "Мы слышали, как он поёт.", pt: "Ouvimo-lo cantar.", tense: "Perfeito"}
+];
+
+const phraseList = document.querySelector('.phrase-list');
+const searchBox = document.querySelector('.search-box');
+
+function highlightVerb(text) {
+const forms = ['ouço', 'ouves', 'ouve', 'ouvimos', 'ouvem', 'ouvia', 'ouvias', 'ouvíamos', 'ouviam', 'ouvi', 'ouviste', 'ouviu', 'ouviram', 'ouvirei', 'ouvirás', 'ouvirá', 'ouviremos', 'ouvirão', 'ouviria', 'ouvirias', 'ouviríamos', 'ouviriam', 'ouça', 'ouças', 'ouçamos', 'ouçam', 'ouvisse', 'ouvisses', 'ouvíssemos', 'ouvissem', 'ouvir', 'ouvires', 'ouvirmos', 'ouvirem'];
+const pattern = new RegExp(`\\b(${forms.join('|')})\\b`, 'gi');
+return text.replace(pattern, '<span class="verb-highlight">$1</span>');
+}
+
+function renderPhrases(filter = '') {
+const filtered = phrases.filter(p =>
+p.ru.toLowerCase().includes(filter.toLowerCase()) ||
+p.pt.toLowerCase().includes(filter.toLowerCase())
+);
+phraseList.innerHTML = filtered.map(p => `
+<div class="phrase-card" onclick="this.classList.toggle('revealed')">
+<div class="source">${p.ru}<span class="tense-tag">${p.tense}</span></div>
+<div class="translation">${highlightVerb(p.pt)}</div>
+</div>
+`).join('');
+}
+
+function showAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.add('revealed'));
+}
+
+function hideAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.remove('revealed'));
+}
+
+searchBox.addEventListener('input', (e) => renderPhrases(e.target.value));
+renderPhrases();
+</script>
+</body>
+</html>

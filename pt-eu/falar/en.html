@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Falar — Portuguese Verb Practice</title>
+<style>
+*{box-sizing:border-box}body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);min-height:100vh;margin:0;padding:20px;color:#eee}.container{max-width:800px;margin:0 auto}header{text-align:center;padding:20px 0}.back-link{color:#00d4aa;text-decoration:none;font-size:.9rem}.back-link:hover{text-decoration:underline}h1{color:#00d4aa;font-size:2rem;margin:10px 0;text-shadow:0 0 20px rgba(0,212,170,.3)}.subtitle{color:#888;font-size:1rem;margin-bottom:20px}.controls{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}.btn{background:rgba(0,212,170,.2);color:#00d4aa;border:1px solid #00d4aa;padding:8px 16px;border-radius:20px;cursor:pointer;font-size:.85rem;transition:all .2s}.btn:hover{background:#00d4aa;color:#1a1a2e}.search-box{width:100%;max-width:400px;padding:10px 15px;border-radius:20px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.05);color:#eee;font-size:1rem;margin-bottom:20px}.search-box::placeholder{color:#666}.phrase-list{display:flex;flex-direction:column;gap:10px}.phrase-card{background:rgba(255,255,255,.05);border-radius:10px;padding:15px;border:1px solid rgba(255,255,255,.1);cursor:pointer;transition:all .2s}.phrase-card:hover{border-color:rgba(0,212,170,.3)}.phrase-card.revealed .translation{opacity:1;transform:translateY(0)}.source{font-size:1.1rem;color:#fff;margin-bottom:8px}.translation{font-size:1rem;color:#00d4aa;opacity:0;transform:translateY(-5px);transition:all .2s}.tense-tag{display:inline-block;background:rgba(0,212,170,.15);color:#00d4aa;padding:2px 8px;border-radius:10px;font-size:.75rem;margin-left:8px}.verb-highlight{color:#ff6b6b;font-weight:600}footer{text-align:center;padding:30px 0;color:#555;font-size:.85rem}@media(max-width:600px){h1{font-size:1.5rem}.source{font-size:1rem}.translation{font-size:.95rem}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<a href="../" class="back-link">← Back to verbs</a>
+<h1>🇵🇹 Falar</h1>
+<p class="subtitle">to speak, to talk — 100 phrases</p>
+</header>
+<input type="text" class="search-box" placeholder="Search phrases...">
+<div class="controls">
+<button class="btn" onclick="showAll()">Show All</button>
+<button class="btn" onclick="hideAll()">Hide All</button>
+</div>
+<div class="phrase-list"></div>
+<footer>Verb Drill — Portuguese Verb Practice</footer>
+</div>
+<script>
+const phrases = [
+{en: "I speak Portuguese.", pt: "Falo português.", tense: "Presente"},
+{en: "You speak well.", pt: "Falas bem.", tense: "Presente"},
+{en: "He speaks three languages.", pt: "Ele fala três línguas.", tense: "Presente"},
+{en: "We speak every day.", pt: "Falamos todos os dias.", tense: "Presente"},
+{en: "They speak too fast.", pt: "Eles falam muito depressa.", tense: "Presente"},
+{en: "I speak with my mother.", pt: "Falo com a minha mãe.", tense: "Presente"},
+{en: "You speak clearly.", pt: "Falas claramente.", tense: "Presente"},
+{en: "She speaks softly.", pt: "Ela fala baixinho.", tense: "Presente"},
+{en: "We speak the truth.", pt: "Falamos a verdade.", tense: "Presente"},
+{en: "They speak about work.", pt: "Eles falam sobre trabalho.", tense: "Presente"},
+{en: "I used to speak French.", pt: "Falava francês.", tense: "Imperfeito"},
+{en: "You used to speak a lot.", pt: "Falavas muito.", tense: "Imperfeito"},
+{en: "He used to speak slowly.", pt: "Ele falava devagar.", tense: "Imperfeito"},
+{en: "We used to speak often.", pt: "Falávamos frequentemente.", tense: "Imperfeito"},
+{en: "They used to speak about it.", pt: "Eles falavam disso.", tense: "Imperfeito"},
+{en: "I was speaking with him.", pt: "Falava com ele.", tense: "Imperfeito"},
+{en: "You were speaking loudly.", pt: "Falavas alto.", tense: "Imperfeito"},
+{en: "She was speaking on the phone.", pt: "Ela falava ao telefone.", tense: "Imperfeito"},
+{en: "We were speaking about you.", pt: "Falávamos de ti.", tense: "Imperfeito"},
+{en: "They were speaking in English.", pt: "Eles falavam em inglês.", tense: "Imperfeito"},
+{en: "I spoke yesterday.", pt: "Falei ontem.", tense: "Perfeito"},
+{en: "You spoke with the boss.", pt: "Falaste com o chefe.", tense: "Perfeito"},
+{en: "He spoke for an hour.", pt: "Ele falou durante uma hora.", tense: "Perfeito"},
+{en: "We spoke last week.", pt: "Falámos na semana passada.", tense: "Perfeito"},
+{en: "They spoke at the meeting.", pt: "Eles falaram na reunião.", tense: "Perfeito"},
+{en: "I spoke the truth.", pt: "Falei a verdade.", tense: "Perfeito"},
+{en: "You spoke too much.", pt: "Falaste demais.", tense: "Perfeito"},
+{en: "She spoke clearly.", pt: "Ela falou claramente.", tense: "Perfeito"},
+{en: "We spoke about the problem.", pt: "Falámos sobre o problema.", tense: "Perfeito"},
+{en: "They spoke in Portuguese.", pt: "Eles falaram em português.", tense: "Perfeito"},
+{en: "I will speak tomorrow.", pt: "Falarei amanhã.", tense: "Futuro"},
+{en: "You will speak with her.", pt: "Falarás com ela.", tense: "Futuro"},
+{en: "He will speak at the conference.", pt: "Ele falará na conferência.", tense: "Futuro"},
+{en: "We will speak later.", pt: "Falaremos mais tarde.", tense: "Futuro"},
+{en: "They will speak soon.", pt: "Eles falarão em breve.", tense: "Futuro"},
+{en: "I will speak the truth.", pt: "Falarei a verdade.", tense: "Futuro"},
+{en: "You will speak better.", pt: "Falarás melhor.", tense: "Futuro"},
+{en: "She will speak to him.", pt: "Ela falar-lhe-á.", tense: "Futuro"},
+{en: "We will speak about it.", pt: "Falaremos sobre isso.", tense: "Futuro"},
+{en: "They will speak publicly.", pt: "Eles falarão publicamente.", tense: "Futuro"},
+{en: "I would speak.", pt: "Falaria.", tense: "Condicional"},
+{en: "You would speak with them.", pt: "Falarias com eles.", tense: "Condicional"},
+{en: "He would speak if asked.", pt: "Ele falaria se pedissem.", tense: "Condicional"},
+{en: "We would speak more.", pt: "Falaríamos mais.", tense: "Condicional"},
+{en: "They would speak better.", pt: "Eles falariam melhor.", tense: "Condicional"},
+{en: "I would speak the truth.", pt: "Falaria a verdade.", tense: "Condicional"},
+{en: "You would speak slowly.", pt: "Falarias devagar.", tense: "Condicional"},
+{en: "She would speak to you.", pt: "Ela falar-te-ia.", tense: "Condicional"},
+{en: "We would speak privately.", pt: "Falaríamos em privado.", tense: "Condicional"},
+{en: "They would speak openly.", pt: "Eles falariam abertamente.", tense: "Condicional"},
+{en: "I want you to speak.", pt: "Quero que fales.", tense: "Conjuntivo"},
+{en: "I hope he speaks.", pt: "Espero que ele fale.", tense: "Conjuntivo"},
+{en: "It's important that we speak.", pt: "É importante que falemos.", tense: "Conjuntivo"},
+{en: "I doubt they speak.", pt: "Duvido que eles falem.", tense: "Conjuntivo"},
+{en: "Although I speak.", pt: "Embora eu fale.", tense: "Conjuntivo"},
+{en: "So that you speak.", pt: "Para que tu fales.", tense: "Conjuntivo"},
+{en: "Unless she speaks.", pt: "A menos que ela fale.", tense: "Conjuntivo"},
+{en: "Before they speak.", pt: "Antes que eles falem.", tense: "Conjuntivo"},
+{en: "It's possible we speak.", pt: "É possível que falemos.", tense: "Conjuntivo"},
+{en: "I prefer that you speak.", pt: "Prefiro que tu fales.", tense: "Conjuntivo"},
+{en: "If I spoke.", pt: "Se eu falasse.", tense: "Imperfeito Conj."},
+{en: "If you spoke.", pt: "Se tu falasses.", tense: "Imperfeito Conj."},
+{en: "If he spoke.", pt: "Se ele falasse.", tense: "Imperfeito Conj."},
+{en: "If we spoke.", pt: "Se nós falássemos.", tense: "Imperfeito Conj."},
+{en: "If they spoke.", pt: "Se eles falassem.", tense: "Imperfeito Conj."},
+{en: "I wish I spoke better.", pt: "Quem me dera falar melhor.", tense: "Imperfeito Conj."},
+{en: "As if she spoke.", pt: "Como se ela falasse.", tense: "Imperfeito Conj."},
+{en: "If only you spoke.", pt: "Se tu falasses.", tense: "Imperfeito Conj."},
+{en: "I wanted you to speak.", pt: "Queria que tu falasses.", tense: "Imperfeito Conj."},
+{en: "It would be good if they spoke.", pt: "Seria bom se eles falassem.", tense: "Imperfeito Conj."},
+{en: "When I speak.", pt: "Quando eu falar.", tense: "Futuro Conj."},
+{en: "As soon as you speak.", pt: "Assim que falares.", tense: "Futuro Conj."},
+{en: "If he speaks.", pt: "Se ele falar.", tense: "Futuro Conj."},
+{en: "When we speak.", pt: "Quando falarmos.", tense: "Futuro Conj."},
+{en: "As they speak.", pt: "Conforme eles falarem.", tense: "Futuro Conj."},
+{en: "Speak!", pt: "Fala!", tense: "Imperativo"},
+{en: "Let's speak!", pt: "Falemos!", tense: "Imperativo"},
+{en: "Speak louder!", pt: "Fala mais alto!", tense: "Imperativo"},
+{en: "Don't speak!", pt: "Não fales!", tense: "Imperativo"},
+{en: "Speak slowly!", pt: "Fala devagar!", tense: "Imperativo"},
+{en: "Do you speak English?", pt: "Falas inglês?", tense: "Presente"},
+{en: "Does he speak Portuguese?", pt: "Ele fala português?", tense: "Presente"},
+{en: "Can we speak?", pt: "Podemos falar?", tense: "Presente"},
+{en: "I don't speak German.", pt: "Não falo alemão.", tense: "Presente"},
+{en: "She doesn't speak much.", pt: "Ela não fala muito.", tense: "Presente"},
+{en: "I need to speak with you.", pt: "Preciso de falar contigo.", tense: "Presente"},
+{en: "I want to speak.", pt: "Quero falar.", tense: "Presente"},
+{en: "Can I speak?", pt: "Posso falar?", tense: "Presente"},
+{en: "We have to speak.", pt: "Temos de falar.", tense: "Presente"},
+{en: "They like to speak.", pt: "Eles gostam de falar.", tense: "Presente"},
+{en: "I'm speaking now.", pt: "Estou a falar agora.", tense: "Presente"},
+{en: "You're speaking too fast.", pt: "Estás a falar muito depressa.", tense: "Presente"},
+{en: "He's speaking on the phone.", pt: "Ele está a falar ao telefone.", tense: "Presente"},
+{en: "We're speaking about it.", pt: "Estamos a falar disso.", tense: "Presente"},
+{en: "They're speaking Portuguese.", pt: "Eles estão a falar português.", tense: "Presente"},
+{en: "Who is speaking?", pt: "Quem está a falar?", tense: "Presente"},
+{en: "What are you speaking about?", pt: "De que estás a falar?", tense: "Presente"},
+{en: "I was speaking to her.", pt: "Estava a falar com ela.", tense: "Imperfeito"},
+{en: "We just spoke.", pt: "Acabámos de falar.", tense: "Perfeito"},
+{en: "I've never spoken to him.", pt: "Nunca falei com ele.", tense: "Perfeito"}
+];
+
+const phraseList = document.querySelector('.phrase-list');
+const searchBox = document.querySelector('.search-box');
+
+function highlightVerb(text) {
+const forms = ['falo', 'falas', 'fala', 'falamos', 'falam', 'falava', 'falavas', 'falávamos', 'falavam', 'falei', 'falaste', 'falou', 'falámos', 'falaram', 'falarei', 'falarás', 'falará', 'falaremos', 'falarão', 'falaria', 'falarias', 'falaríamos', 'falariam', 'fale', 'fales', 'falemos', 'falem', 'falasse', 'falasses', 'falássemos', 'falassem', 'falar', 'falares', 'falarmos', 'falarem'];
+const pattern = new RegExp(`\\b(${forms.join('|')})\\b`, 'gi');
+return text.replace(pattern, '<span class="verb-highlight">$1</span>');
+}
+
+function renderPhrases(filter = '') {
+const filtered = phrases.filter(p =>
+p.en.toLowerCase().includes(filter.toLowerCase()) ||
+p.pt.toLowerCase().includes(filter.toLowerCase())
+);
+phraseList.innerHTML = filtered.map(p => `
+<div class="phrase-card" onclick="this.classList.toggle('revealed')">
+<div class="source">${p.en}<span class="tense-tag">${p.tense}</span></div>
+<div class="translation">${highlightVerb(p.pt)}</div>
+</div>
+`).join('');
+}
+
+function showAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.add('revealed'));
+}
+
+function hideAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.remove('revealed'));
+}
+
+searchBox.addEventListener('input', (e) => renderPhrases(e.target.value));
+renderPhrases();
+</script>
+</body>
+</html>

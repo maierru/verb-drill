@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sair — Португальский глагол</title>
+<style>
+*{box-sizing:border-box}body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);min-height:100vh;margin:0;padding:20px;color:#eee}.container{max-width:800px;margin:0 auto}header{text-align:center;padding:20px 0}.back-link{color:#00d4aa;text-decoration:none;font-size:.9rem}.back-link:hover{text-decoration:underline}h1{color:#00d4aa;font-size:2rem;margin:10px 0;text-shadow:0 0 20px rgba(0,212,170,.3)}.subtitle{color:#888;font-size:1rem;margin-bottom:20px}.controls{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}.btn{background:rgba(0,212,170,.2);color:#00d4aa;border:1px solid #00d4aa;padding:8px 16px;border-radius:20px;cursor:pointer;font-size:.85rem;transition:all .2s}.btn:hover{background:#00d4aa;color:#1a1a2e}.search-box{width:100%;max-width:400px;padding:10px 15px;border-radius:20px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.05);color:#eee;font-size:1rem;margin-bottom:20px}.search-box::placeholder{color:#666}.phrase-list{display:flex;flex-direction:column;gap:10px}.phrase-card{background:rgba(255,255,255,.05);border-radius:10px;padding:15px;border:1px solid rgba(255,255,255,.1);cursor:pointer;transition:all .2s}.phrase-card:hover{border-color:rgba(0,212,170,.3)}.phrase-card.revealed .translation{opacity:1;transform:translateY(0)}.source{font-size:1.1rem;color:#fff;margin-bottom:8px}.translation{font-size:1rem;color:#00d4aa;opacity:0;transform:translateY(-5px);transition:all .2s}.tense-tag{display:inline-block;background:rgba(0,212,170,.15);color:#00d4aa;padding:2px 8px;border-radius:10px;font-size:.75rem;margin-left:8px}.verb-highlight{color:#ff6b6b;font-weight:600}footer{text-align:center;padding:30px 0;color:#555;font-size:.85rem}@media(max-width:600px){h1{font-size:1.5rem}.source{font-size:1rem}.translation{font-size:.95rem}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<a href="../" class="back-link">← Назад к глаголам</a>
+<h1>🇵🇹 Sair</h1>
+<p class="subtitle">выходить, уходить — 100 фраз</p>
+</header>
+<input type="text" class="search-box" placeholder="Поиск фраз...">
+<div class="controls">
+<button class="btn" onclick="showAll()">Показать все</button>
+<button class="btn" onclick="hideAll()">Скрыть все</button>
+</div>
+<div class="phrase-list"></div>
+<footer>Verb Drill — Практика португальских глаголов</footer>
+</div>
+<script>
+const phrases = [
+{ru: "Я выхожу сегодня.", pt: "Saio hoje.", tense: "Presente"},
+{ru: "Ты уходишь рано.", pt: "Sais cedo.", tense: "Presente"},
+{ru: "Он выходит ночью.", pt: "Ele sai à noite.", tense: "Presente"},
+{ru: "Мы выходим вместе.", pt: "Saímos juntos.", tense: "Presente"},
+{ru: "Они уходят сейчас.", pt: "Eles saem agora.", tense: "Presente"},
+{ru: "Я выхожу отсюда.", pt: "Saio daqui.", tense: "Presente"},
+{ru: "Ты выходишь с друзьями.", pt: "Sais com amigos.", tense: "Presente"},
+{ru: "Она уходит в 8.", pt: "Ela sai às 8.", tense: "Presente"},
+{ru: "Мы уходим с работы.", pt: "Saímos do trabalho.", tense: "Presente"},
+{ru: "Они выходят каждые выходные.", pt: "Eles saem todos os fins de semana.", tense: "Presente"},
+{ru: "Я раньше много выходил.", pt: "Saía muito.", tense: "Imperfeito"},
+{ru: "Ты раньше уходил рано.", pt: "Saías cedo.", tense: "Imperfeito"},
+{ru: "Он раньше выходил каждую ночь.", pt: "Ele saía todas as noites.", tense: "Imperfeito"},
+{ru: "Мы раньше выходили вместе.", pt: "Saíamos juntos.", tense: "Imperfeito"},
+{ru: "Они раньше уходили поздно.", pt: "Eles saíam tarde.", tense: "Imperfeito"},
+{ru: "Я уходил.", pt: "Saía.", tense: "Imperfeito"},
+{ru: "Ты выходил.", pt: "Saías.", tense: "Imperfeito"},
+{ru: "Она уходила из дома.", pt: "Ela saía de casa.", tense: "Imperfeito"},
+{ru: "Мы часто выходили.", pt: "Saíamos frequentemente.", tense: "Imperfeito"},
+{ru: "Они уходили.", pt: "Eles saíam.", tense: "Imperfeito"},
+{ru: "Я вышел вчера.", pt: "Saí ontem.", tense: "Perfeito"},
+{ru: "Ты вышел вчера вечером.", pt: "Saíste ontem à noite.", tense: "Perfeito"},
+{ru: "Он вышел из офиса.", pt: "Ele saiu do escritório.", tense: "Perfeito"},
+{ru: "Мы вышли вместе.", pt: "Saímos juntos.", tense: "Perfeito"},
+{ru: "Они ушли рано.", pt: "Eles saíram cedo.", tense: "Perfeito"},
+{ru: "Я вышел поужинать.", pt: "Saí para jantar.", tense: "Perfeito"},
+{ru: "Ты вышел из дома.", pt: "Saíste de casa.", tense: "Perfeito"},
+{ru: "Она вышла с ним.", pt: "Ela saiu com ele.", tense: "Perfeito"},
+{ru: "Мы ушли с вечеринки.", pt: "Saímos da festa.", tense: "Perfeito"},
+{ru: "Они пошли танцевать.", pt: "Eles saíram para dançar.", tense: "Perfeito"},
+{ru: "Я выйду.", pt: "Sairei.", tense: "Futuro"},
+{ru: "Ты скоро уйдёшь.", pt: "Sairás em breve.", tense: "Futuro"},
+{ru: "Он выйдет сегодня вечером.", pt: "Ele sairá esta noite.", tense: "Futuro"},
+{ru: "Мы уйдём завтра.", pt: "Sairemos amanhã.", tense: "Futuro"},
+{ru: "Они выйдут позже.", pt: "Eles sairão mais tarde.", tense: "Futuro"},
+{ru: "Я уйду в 5.", pt: "Sairei às 5.", tense: "Futuro"},
+{ru: "Ты выйдешь с нами.", pt: "Sairás connosco.", tense: "Futuro"},
+{ru: "Она уйдёт с работы.", pt: "Ela sairá do emprego.", tense: "Futuro"},
+{ru: "Мы выйдем в эти выходные.", pt: "Sairemos este fim de semana.", tense: "Futuro"},
+{ru: "Они уедут из страны.", pt: "Eles sairão do país.", tense: "Futuro"},
+{ru: "Я бы вышел.", pt: "Sairia.", tense: "Condicional"},
+{ru: "Ты бы ушёл.", pt: "Sairias.", tense: "Condicional"},
+{ru: "Он бы вышел.", pt: "Ele sairia.", tense: "Condicional"},
+{ru: "Мы бы ушли вместе.", pt: "Sairíamos juntos.", tense: "Condicional"},
+{ru: "Они бы вышли.", pt: "Eles sairiam.", tense: "Condicional"},
+{ru: "Я бы вышел, если бы мог.", pt: "Sairia se pudesse.", tense: "Condicional"},
+{ru: "Ты бы ушёл рано.", pt: "Sairias cedo.", tense: "Condicional"},
+{ru: "Она бы вышла с тобой.", pt: "Ela sairia contigo.", tense: "Condicional"},
+{ru: "Мы бы ушли сейчас.", pt: "Sairíamos agora.", tense: "Condicional"},
+{ru: "Они бы вышли сегодня вечером.", pt: "Eles sairiam esta noite.", tense: "Condicional"},
+{ru: "Хочу, чтобы ты вышел.", pt: "Quero que saias.", tense: "Conjuntivo"},
+{ru: "Надеюсь, что он уйдёт.", pt: "Espero que ele saia.", tense: "Conjuntivo"},
+{ru: "Важно, чтобы мы ушли.", pt: "É importante que saiamos.", tense: "Conjuntivo"},
+{ru: "Сомневаюсь, что они выйдут.", pt: "Duvido que eles saiam.", tense: "Conjuntivo"},
+{ru: "Хотя я выхожу.", pt: "Embora eu saia.", tense: "Conjuntivo"},
+{ru: "Чтобы ты ушёл.", pt: "Para que tu saias.", tense: "Conjuntivo"},
+{ru: "Если только она не выйдет.", pt: "A menos que ela saia.", tense: "Conjuntivo"},
+{ru: "До того как они уйдут.", pt: "Antes que eles saiam.", tense: "Conjuntivo"},
+{ru: "Возможно, мы выйдем.", pt: "É possível que saiamos.", tense: "Conjuntivo"},
+{ru: "Предпочитаю, чтобы ты ушёл.", pt: "Prefiro que tu saias.", tense: "Conjuntivo"},
+{ru: "Если бы я вышел.", pt: "Se eu saísse.", tense: "Imperfeito Conj."},
+{ru: "Если бы ты ушёл.", pt: "Se tu saísses.", tense: "Imperfeito Conj."},
+{ru: "Если бы он вышел.", pt: "Se ele saísse.", tense: "Imperfeito Conj."},
+{ru: "Если бы мы ушли.", pt: "Se nós saíssemos.", tense: "Imperfeito Conj."},
+{ru: "Если бы они вышли.", pt: "Se eles saíssem.", tense: "Imperfeito Conj."},
+{ru: "Хотел бы я выйти.", pt: "Quem me dera sair.", tense: "Imperfeito Conj."},
+{ru: "Как будто она ушла.", pt: "Como se ela saísse.", tense: "Imperfeito Conj."},
+{ru: "Если бы только ты вышел.", pt: "Se tu saísses.", tense: "Imperfeito Conj."},
+{ru: "Хотел, чтобы ты ушёл.", pt: "Queria que tu saísses.", tense: "Imperfeito Conj."},
+{ru: "Было бы хорошо, если бы они ушли.", pt: "Seria bom se eles saíssem.", tense: "Imperfeito Conj."},
+{ru: "Когда я выйду.", pt: "Quando eu sair.", tense: "Futuro Conj."},
+{ru: "Как только ты уйдёшь.", pt: "Assim que saíres.", tense: "Futuro Conj."},
+{ru: "Если он выйдет.", pt: "Se ele sair.", tense: "Futuro Conj."},
+{ru: "Когда мы уйдём.", pt: "Quando sairmos.", tense: "Futuro Conj."},
+{ru: "По мере того как они выйдут.", pt: "Conforme eles saírem.", tense: "Futuro Conj."},
+{ru: "Выходи!", pt: "Sai!", tense: "Imperativo"},
+{ru: "Давайте выйдем!", pt: "Saiamos!", tense: "Imperativo"},
+{ru: "Уходи сейчас!", pt: "Sai agora!", tense: "Imperativo"},
+{ru: "Не выходи!", pt: "Não saias!", tense: "Imperativo"},
+{ru: "Убирайся!", pt: "Sai daqui!", tense: "Imperativo"},
+{ru: "Ты выходишь?", pt: "Vais sair?", tense: "Presente"},
+{ru: "Я не выхожу.", pt: "Não vou sair.", tense: "Presente"},
+{ru: "Она выходит сегодня вечером.", pt: "Ela vai sair esta noite.", tense: "Presente"},
+{ru: "Мы идём ужинать.", pt: "Vamos sair para jantar.", tense: "Presente"},
+{ru: "Они выйдут позже.", pt: "Eles vão sair mais tarde.", tense: "Presente"},
+{ru: "Хочу выйти.", pt: "Quero sair.", tense: "Presente"},
+{ru: "Можно выйти?", pt: "Posso sair?", tense: "Presente"},
+{ru: "Нам нужно уйти.", pt: "Temos de sair.", tense: "Presente"},
+{ru: "Мне нужно выйти.", pt: "Preciso de sair.", tense: "Presente"},
+{ru: "Хочешь выйти?", pt: "Queres sair?", tense: "Presente"},
+{ru: "Я ухожу.", pt: "Estou a sair.", tense: "Presente"},
+{ru: "Ты уже уходишь?", pt: "Já estás a sair?", tense: "Presente"},
+{ru: "Он уходит сейчас.", pt: "Ele está a sair agora.", tense: "Presente"},
+{ru: "Мы скоро уходим.", pt: "Estamos a sair em breve.", tense: "Presente"},
+{ru: "Они выходят из здания.", pt: "Eles estão a sair do prédio.", tense: "Presente"},
+{ru: "Я только что вышел.", pt: "Acabei de sair.", tense: "Perfeito"},
+{ru: "Солнце выходит.", pt: "O sol está a sair.", tense: "Presente"},
+{ru: "Книга вышла вчера.", pt: "O livro saiu ontem.", tense: "Perfeito"},
+{ru: "Не получилось.", pt: "Não saiu bem.", tense: "Perfeito"},
+{ru: "Всё получилось.", pt: "Tudo saiu bem.", tense: "Perfeito"}
+];
+
+const phraseList = document.querySelector('.phrase-list');
+const searchBox = document.querySelector('.search-box');
+
+function highlightVerb(text) {
+const forms = ['saio', 'sais', 'sai', 'saímos', 'saem', 'saía', 'saías', 'saíamos', 'saíam', 'saí', 'saíste', 'saiu', 'saíram', 'sairei', 'sairás', 'sairá', 'sairemos', 'sairão', 'sairia', 'sairias', 'sairíamos', 'sairiam', 'saia', 'saias', 'saiamos', 'saiam', 'saísse', 'saísses', 'saíssemos', 'saíssem', 'sair', 'saíres', 'sairmos', 'saírem'];
+const pattern = new RegExp(`\\b(${forms.join('|')})\\b`, 'gi');
+return text.replace(pattern, '<span class="verb-highlight">$1</span>');
+}
+
+function renderPhrases(filter = '') {
+const filtered = phrases.filter(p =>
+p.ru.toLowerCase().includes(filter.toLowerCase()) ||
+p.pt.toLowerCase().includes(filter.toLowerCase())
+);
+phraseList.innerHTML = filtered.map(p => `
+<div class="phrase-card" onclick="this.classList.toggle('revealed')">
+<div class="source">${p.ru}<span class="tense-tag">${p.tense}</span></div>
+<div class="translation">${highlightVerb(p.pt)}</div>
+</div>
+`).join('');
+}
+
+function showAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.add('revealed'));
+}
+
+function hideAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.remove('revealed'));
+}
+
+searchBox.addEventListener('input', (e) => renderPhrases(e.target.value));
+renderPhrases();
+</script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entender — Portuguese Verb Practice</title>
+<style>
+*{box-sizing:border-box}body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);min-height:100vh;margin:0;padding:20px;color:#eee}.container{max-width:800px;margin:0 auto}header{text-align:center;padding:20px 0}.back-link{color:#00d4aa;text-decoration:none;font-size:.9rem}.back-link:hover{text-decoration:underline}h1{color:#00d4aa;font-size:2rem;margin:10px 0;text-shadow:0 0 20px rgba(0,212,170,.3)}.subtitle{color:#888;font-size:1rem;margin-bottom:20px}.controls{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}.btn{background:rgba(0,212,170,.2);color:#00d4aa;border:1px solid #00d4aa;padding:8px 16px;border-radius:20px;cursor:pointer;font-size:.85rem;transition:all .2s}.btn:hover{background:#00d4aa;color:#1a1a2e}.search-box{width:100%;max-width:400px;padding:10px 15px;border-radius:20px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.05);color:#eee;font-size:1rem;margin-bottom:20px}.search-box::placeholder{color:#666}.phrase-list{display:flex;flex-direction:column;gap:10px}.phrase-card{background:rgba(255,255,255,.05);border-radius:10px;padding:15px;border:1px solid rgba(255,255,255,.1);cursor:pointer;transition:all .2s}.phrase-card:hover{border-color:rgba(0,212,170,.3)}.phrase-card.revealed .translation{opacity:1;transform:translateY(0)}.source{font-size:1.1rem;color:#fff;margin-bottom:8px}.translation{font-size:1rem;color:#00d4aa;opacity:0;transform:translateY(-5px);transition:all .2s}.tense-tag{display:inline-block;background:rgba(0,212,170,.15);color:#00d4aa;padding:2px 8px;border-radius:10px;font-size:.75rem;margin-left:8px}.verb-highlight{color:#ff6b6b;font-weight:600}footer{text-align:center;padding:30px 0;color:#555;font-size:.85rem}@media(max-width:600px){h1{font-size:1.5rem}.source{font-size:1rem}.translation{font-size:.95rem}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<a href="../" class="back-link">← Back to verbs</a>
+<h1>🇵🇹 Entender</h1>
+<p class="subtitle">to understand — 100 phrases</p>
+</header>
+<input type="text" class="search-box" placeholder="Search phrases...">
+<div class="controls">
+<button class="btn" onclick="showAll()">Show All</button>
+<button class="btn" onclick="hideAll()">Hide All</button>
+</div>
+<div class="phrase-list"></div>
+<footer>Verb Drill — Portuguese Verb Practice</footer>
+</div>
+<script>
+const phrases = [
+{en: "I understand.", pt: "Entendo.", tense: "Presente"},
+{en: "You understand Portuguese.", pt: "Entendes português.", tense: "Presente"},
+{en: "He understands the problem.", pt: "Ele entende o problema.", tense: "Presente"},
+{en: "We understand everything.", pt: "Entendemos tudo.", tense: "Presente"},
+{en: "They understand the situation.", pt: "Eles entendem a situação.", tense: "Presente"},
+{en: "I understand you.", pt: "Entendo-te.", tense: "Presente"},
+{en: "You understand well.", pt: "Entendes bem.", tense: "Presente"},
+{en: "She understands the language.", pt: "Ela entende a língua.", tense: "Presente"},
+{en: "We understand each other.", pt: "Entendemo-nos.", tense: "Presente"},
+{en: "They understand the rules.", pt: "Eles entendem as regras.", tense: "Presente"},
+{en: "I used to understand.", pt: "Entendia.", tense: "Imperfeito"},
+{en: "You used to understand more.", pt: "Entendias mais.", tense: "Imperfeito"},
+{en: "He used to understand everything.", pt: "Ele entendia tudo.", tense: "Imperfeito"},
+{en: "We used to understand them.", pt: "Entendíamos-los.", tense: "Imperfeito"},
+{en: "They used to understand us.", pt: "Eles entendiam-nos.", tense: "Imperfeito"},
+{en: "I was understanding.", pt: "Estava a entender.", tense: "Imperfeito"},
+{en: "You were understanding better.", pt: "Estavas a entender melhor.", tense: "Imperfeito"},
+{en: "She was understanding now.", pt: "Ela estava a entender agora.", tense: "Imperfeito"},
+{en: "We were understanding everything.", pt: "Estávamos a entender tudo.", tense: "Imperfeito"},
+{en: "They were starting to understand.", pt: "Eles estavam a começar a entender.", tense: "Imperfeito"},
+{en: "I understood.", pt: "Entendi.", tense: "Perfeito"},
+{en: "You understood the message.", pt: "Entendeste a mensagem.", tense: "Perfeito"},
+{en: "He understood the joke.", pt: "Ele entendeu a piada.", tense: "Perfeito"},
+{en: "We understood clearly.", pt: "Entendemos claramente.", tense: "Perfeito"},
+{en: "They understood everything.", pt: "Eles entenderam tudo.", tense: "Perfeito"},
+{en: "I understood the problem.", pt: "Entendi o problema.", tense: "Perfeito"},
+{en: "You understood wrong.", pt: "Entendeste mal.", tense: "Perfeito"},
+{en: "She understood finally.", pt: "Ela entendeu finalmente.", tense: "Perfeito"},
+{en: "We understood the situation.", pt: "Entendemos a situação.", tense: "Perfeito"},
+{en: "They understood the lesson.", pt: "Eles entenderam a lição.", tense: "Perfeito"},
+{en: "I will understand.", pt: "Entenderei.", tense: "Futuro"},
+{en: "You will understand soon.", pt: "Entenderás em breve.", tense: "Futuro"},
+{en: "He will understand later.", pt: "Ele entenderá mais tarde.", tense: "Futuro"},
+{en: "We will understand everything.", pt: "Entenderemos tudo.", tense: "Futuro"},
+{en: "They will understand one day.", pt: "Eles entenderão um dia.", tense: "Futuro"},
+{en: "I will understand better.", pt: "Entenderei melhor.", tense: "Futuro"},
+{en: "You will understand with time.", pt: "Entenderás com o tempo.", tense: "Futuro"},
+{en: "She will understand the reason.", pt: "Ela entenderá a razão.", tense: "Futuro"},
+{en: "We will understand each other.", pt: "Entender-nos-emos.", tense: "Futuro"},
+{en: "They will understand the truth.", pt: "Eles entenderão a verdade.", tense: "Futuro"},
+{en: "I would understand.", pt: "Entenderia.", tense: "Condicional"},
+{en: "You would understand better.", pt: "Entenderias melhor.", tense: "Condicional"},
+{en: "He would understand.", pt: "Ele entenderia.", tense: "Condicional"},
+{en: "We would understand everything.", pt: "Entenderíamos tudo.", tense: "Condicional"},
+{en: "They would understand the problem.", pt: "Eles entenderiam o problema.", tense: "Condicional"},
+{en: "I would understand if I could.", pt: "Entenderia se pudesse.", tense: "Condicional"},
+{en: "You would understand me.", pt: "Entenderias-me.", tense: "Condicional"},
+{en: "She would understand the situation.", pt: "Ela entenderia a situação.", tense: "Condicional"},
+{en: "We would understand each other.", pt: "Entender-nos-íamos.", tense: "Condicional"},
+{en: "They would understand more.", pt: "Eles entenderiam mais.", tense: "Condicional"},
+{en: "I want you to understand.", pt: "Quero que entendas.", tense: "Conjuntivo"},
+{en: "I hope he understands.", pt: "Espero que ele entenda.", tense: "Conjuntivo"},
+{en: "It's important that we understand.", pt: "É importante que entendamos.", tense: "Conjuntivo"},
+{en: "I doubt they understand.", pt: "Duvido que eles entendam.", tense: "Conjuntivo"},
+{en: "Although I understand.", pt: "Embora eu entenda.", tense: "Conjuntivo"},
+{en: "So that you understand.", pt: "Para que tu entendas.", tense: "Conjuntivo"},
+{en: "Unless she understands.", pt: "A menos que ela entenda.", tense: "Conjuntivo"},
+{en: "Before they understand.", pt: "Antes que eles entendam.", tense: "Conjuntivo"},
+{en: "It's possible we understand.", pt: "É possível que entendamos.", tense: "Conjuntivo"},
+{en: "I prefer that you understand.", pt: "Prefiro que tu entendas.", tense: "Conjuntivo"},
+{en: "If I understood.", pt: "Se eu entendesse.", tense: "Imperfeito Conj."},
+{en: "If you understood.", pt: "Se tu entendesses.", tense: "Imperfeito Conj."},
+{en: "If he understood.", pt: "Se ele entendesse.", tense: "Imperfeito Conj."},
+{en: "If we understood.", pt: "Se nós entendêssemos.", tense: "Imperfeito Conj."},
+{en: "If they understood.", pt: "Se eles entendessem.", tense: "Imperfeito Conj."},
+{en: "I wish I could understand.", pt: "Quem me dera entender.", tense: "Imperfeito Conj."},
+{en: "As if she understood.", pt: "Como se ela entendesse.", tense: "Imperfeito Conj."},
+{en: "If only you understood.", pt: "Se tu entendesses.", tense: "Imperfeito Conj."},
+{en: "I wanted you to understand.", pt: "Queria que tu entendesses.", tense: "Imperfeito Conj."},
+{en: "It would be good if they understood.", pt: "Seria bom se eles entendessem.", tense: "Imperfeito Conj."},
+{en: "When I understand.", pt: "Quando eu entender.", tense: "Futuro Conj."},
+{en: "As soon as you understand.", pt: "Assim que entenderes.", tense: "Futuro Conj."},
+{en: "If he understands.", pt: "Se ele entender.", tense: "Futuro Conj."},
+{en: "When we understand.", pt: "Quando entendermos.", tense: "Futuro Conj."},
+{en: "As they understand.", pt: "Conforme eles entenderem.", tense: "Futuro Conj."},
+{en: "Understand!", pt: "Entende!", tense: "Imperativo"},
+{en: "Let's understand!", pt: "Entendamos!", tense: "Imperativo"},
+{en: "Understand this!", pt: "Entende isto!", tense: "Imperativo"},
+{en: "Try to understand!", pt: "Tenta entender!", tense: "Imperativo"},
+{en: "Understand me!", pt: "Entende-me!", tense: "Imperativo"},
+{en: "Do you understand?", pt: "Entendes?", tense: "Presente"},
+{en: "Did you understand?", pt: "Entendeste?", tense: "Perfeito"},
+{en: "I'm starting to understand.", pt: "Estou a começar a entender.", tense: "Presente"},
+{en: "You're understanding better.", pt: "Estás a entender melhor.", tense: "Presente"},
+{en: "He's not understanding.", pt: "Ele não está a entender.", tense: "Presente"},
+{en: "We're understanding now.", pt: "Estamos a entender agora.", tense: "Presente"},
+{en: "They're finally understanding.", pt: "Eles estão finalmente a entender.", tense: "Presente"},
+{en: "I don't understand.", pt: "Não entendo.", tense: "Presente"},
+{en: "I didn't understand.", pt: "Não entendi.", tense: "Perfeito"},
+{en: "I can't understand.", pt: "Não consigo entender.", tense: "Presente"},
+{en: "I want to understand.", pt: "Quero entender.", tense: "Presente"},
+{en: "I need to understand.", pt: "Preciso de entender.", tense: "Presente"},
+{en: "I'm trying to understand.", pt: "Estou a tentar entender.", tense: "Presente"},
+{en: "Do you understand me?", pt: "Entendes-me?", tense: "Presente"},
+{en: "I understand perfectly.", pt: "Entendo perfeitamente.", tense: "Presente"},
+{en: "I understand now.", pt: "Agora entendo.", tense: "Presente"},
+{en: "It's hard to understand.", pt: "É difícil de entender.", tense: "Presente"},
+{en: "Easy to understand.", pt: "Fácil de entender.", tense: "Presente"},
+{en: "I understand everything.", pt: "Entendo tudo.", tense: "Presente"},
+{en: "He understands Portuguese well.", pt: "Ele entende bem português.", tense: "Presente"}
+];
+
+const phraseList = document.querySelector('.phrase-list');
+const searchBox = document.querySelector('.search-box');
+
+function highlightVerb(text) {
+const forms = ['entendo', 'entendes', 'entende', 'entendemos', 'entendem', 'entendia', 'entendias', 'entendíamos', 'entendiam', 'entendi', 'entendeste', 'entendeu', 'entenderam', 'entenderei', 'entenderás', 'entenderá', 'entenderemos', 'entenderão', 'entenderia', 'entenderias', 'entenderíamos', 'entenderiam', 'entenda', 'entendas', 'entendamos', 'entendam', 'entendesse', 'entendesses', 'entendêssemos', 'entendessem', 'entender', 'entenderes', 'entendermos', 'entenderem'];
+const pattern = new RegExp(`\\b(${forms.join('|')})\\b`, 'gi');
+return text.replace(pattern, '<span class="verb-highlight">$1</span>');
+}
+
+function renderPhrases(filter = '') {
+const filtered = phrases.filter(p =>
+p.en.toLowerCase().includes(filter.toLowerCase()) ||
+p.pt.toLowerCase().includes(filter.toLowerCase())
+);
+phraseList.innerHTML = filtered.map(p => `
+<div class="phrase-card" onclick="this.classList.toggle('revealed')">
+<div class="source">${p.en}<span class="tense-tag">${p.tense}</span></div>
+<div class="translation">${highlightVerb(p.pt)}</div>
+</div>
+`).join('');
+}
+
+function showAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.add('revealed'));
+}
+
+function hideAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.remove('revealed'));
+}
+
+searchBox.addEventListener('input', (e) => renderPhrases(e.target.value));
+renderPhrases();
+</script>
+</body>
+</html>

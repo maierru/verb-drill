@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Encontrar — Portuguese Verb Practice</title>
+<style>
+*{box-sizing:border-box}body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);min-height:100vh;margin:0;padding:20px;color:#eee}.container{max-width:800px;margin:0 auto}header{text-align:center;padding:20px 0}.back-link{color:#00d4aa;text-decoration:none;font-size:.9rem}.back-link:hover{text-decoration:underline}h1{color:#00d4aa;font-size:2rem;margin:10px 0;text-shadow:0 0 20px rgba(0,212,170,.3)}.subtitle{color:#888;font-size:1rem;margin-bottom:20px}.controls{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}.btn{background:rgba(0,212,170,.2);color:#00d4aa;border:1px solid #00d4aa;padding:8px 16px;border-radius:20px;cursor:pointer;font-size:.85rem;transition:all .2s}.btn:hover{background:#00d4aa;color:#1a1a2e}.search-box{width:100%;max-width:400px;padding:10px 15px;border-radius:20px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.05);color:#eee;font-size:1rem;margin-bottom:20px}.search-box::placeholder{color:#666}.phrase-list{display:flex;flex-direction:column;gap:10px}.phrase-card{background:rgba(255,255,255,.05);border-radius:10px;padding:15px;border:1px solid rgba(255,255,255,.1);cursor:pointer;transition:all .2s}.phrase-card:hover{border-color:rgba(0,212,170,.3)}.phrase-card.revealed .translation{opacity:1;transform:translateY(0)}.source{font-size:1.1rem;color:#fff;margin-bottom:8px}.translation{font-size:1rem;color:#00d4aa;opacity:0;transform:translateY(-5px);transition:all .2s}.tense-tag{display:inline-block;background:rgba(0,212,170,.15);color:#00d4aa;padding:2px 8px;border-radius:10px;font-size:.75rem;margin-left:8px}.verb-highlight{color:#ff6b6b;font-weight:600}footer{text-align:center;padding:30px 0;color:#555;font-size:.85rem}@media(max-width:600px){h1{font-size:1.5rem}.source{font-size:1rem}.translation{font-size:.95rem}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<a href="../" class="back-link">← Back to verbs</a>
+<h1>🇵🇹 Encontrar</h1>
+<p class="subtitle">to find, to meet — 100 phrases</p>
+</header>
+<input type="text" class="search-box" placeholder="Search phrases...">
+<div class="controls">
+<button class="btn" onclick="showAll()">Show All</button>
+<button class="btn" onclick="hideAll()">Hide All</button>
+</div>
+<div class="phrase-list"></div>
+<footer>Verb Drill — Portuguese Verb Practice</footer>
+</div>
+<script>
+const phrases = [
+{en: "I find.", pt: "Encontro.", tense: "Presente"},
+{en: "You find the keys.", pt: "Encontras as chaves.", tense: "Presente"},
+{en: "He finds the solution.", pt: "Ele encontra a solução.", tense: "Presente"},
+{en: "We find everything.", pt: "Encontramos tudo.", tense: "Presente"},
+{en: "They find the place.", pt: "Eles encontram o lugar.", tense: "Presente"},
+{en: "I find it interesting.", pt: "Encontro interessante.", tense: "Presente"},
+{en: "You find friends.", pt: "Encontras amigos.", tense: "Presente"},
+{en: "She finds time.", pt: "Ela encontra tempo.", tense: "Presente"},
+{en: "We find answers.", pt: "Encontramos respostas.", tense: "Presente"},
+{en: "They find work.", pt: "Eles encontram trabalho.", tense: "Presente"},
+{en: "I used to find.", pt: "Encontrava.", tense: "Imperfeito"},
+{en: "You used to find easily.", pt: "Encontravas facilmente.", tense: "Imperfeito"},
+{en: "He used to find problems.", pt: "Ele encontrava problemas.", tense: "Imperfeito"},
+{en: "We used to find them.", pt: "Encontrávamos-los.", tense: "Imperfeito"},
+{en: "They used to find time.", pt: "Eles encontravam tempo.", tense: "Imperfeito"},
+{en: "I was finding.", pt: "Estava a encontrar.", tense: "Imperfeito"},
+{en: "You were finding solutions.", pt: "Estavas a encontrar soluções.", tense: "Imperfeito"},
+{en: "She was finding it difficult.", pt: "Ela estava a encontrar difícil.", tense: "Imperfeito"},
+{en: "We were finding answers.", pt: "Estávamos a encontrar respostas.", tense: "Imperfeito"},
+{en: "They were finding problems.", pt: "Eles estavam a encontrar problemas.", tense: "Imperfeito"},
+{en: "I found.", pt: "Encontrei.", tense: "Perfeito"},
+{en: "You found the book.", pt: "Encontraste o livro.", tense: "Perfeito"},
+{en: "He found work.", pt: "Ele encontrou trabalho.", tense: "Perfeito"},
+{en: "We found the solution.", pt: "Encontrámos a solução.", tense: "Perfeito"},
+{en: "They found the answer.", pt: "Eles encontraram a resposta.", tense: "Perfeito"},
+{en: "I found it.", pt: "Encontrei.", tense: "Perfeito"},
+{en: "You found your keys.", pt: "Encontraste as tuas chaves.", tense: "Perfeito"},
+{en: "She found love.", pt: "Ela encontrou amor.", tense: "Perfeito"},
+{en: "We found the place.", pt: "Encontrámos o lugar.", tense: "Perfeito"},
+{en: "They found each other.", pt: "Eles encontraram-se.", tense: "Perfeito"},
+{en: "I will find.", pt: "Encontrarei.", tense: "Futuro"},
+{en: "You will find it.", pt: "Encontrarás.", tense: "Futuro"},
+{en: "He will find the way.", pt: "Ele encontrará o caminho.", tense: "Futuro"},
+{en: "We will find a solution.", pt: "Encontraremos uma solução.", tense: "Futuro"},
+{en: "They will find time.", pt: "Eles encontrarão tempo.", tense: "Futuro"},
+{en: "I will find it later.", pt: "Encontrarei mais tarde.", tense: "Futuro"},
+{en: "You will find someone.", pt: "Encontrarás alguém.", tense: "Futuro"},
+{en: "She will find work.", pt: "Ela encontrará trabalho.", tense: "Futuro"},
+{en: "We will find the answer.", pt: "Encontraremos a resposta.", tense: "Futuro"},
+{en: "They will find each other.", pt: "Eles encontrar-se-ão.", tense: "Futuro"},
+{en: "I would find.", pt: "Encontraria.", tense: "Condicional"},
+{en: "You would find it easier.", pt: "Encontrarias mais fácil.", tense: "Condicional"},
+{en: "He would find.", pt: "Ele encontraria.", tense: "Condicional"},
+{en: "We would find a way.", pt: "Encontraríamos uma maneira.", tense: "Condicional"},
+{en: "They would find solutions.", pt: "Eles encontrariam soluções.", tense: "Condicional"},
+{en: "I would find if I could.", pt: "Encontraria se pudesse.", tense: "Condicional"},
+{en: "You would find help.", pt: "Encontrarias ajuda.", tense: "Condicional"},
+{en: "She would find time.", pt: "Ela encontraria tempo.", tense: "Condicional"},
+{en: "We would find the place.", pt: "Encontraríamos o lugar.", tense: "Condicional"},
+{en: "They would find work.", pt: "Eles encontrariam trabalho.", tense: "Condicional"},
+{en: "I want you to find.", pt: "Quero que encontres.", tense: "Conjuntivo"},
+{en: "I hope he finds.", pt: "Espero que ele encontre.", tense: "Conjuntivo"},
+{en: "It's important that we find.", pt: "É importante que encontremos.", tense: "Conjuntivo"},
+{en: "I doubt they find.", pt: "Duvido que eles encontrem.", tense: "Conjuntivo"},
+{en: "Although I find.", pt: "Embora eu encontre.", tense: "Conjuntivo"},
+{en: "So that you find.", pt: "Para que tu encontres.", tense: "Conjuntivo"},
+{en: "Unless she finds.", pt: "A menos que ela encontre.", tense: "Conjuntivo"},
+{en: "Before they find.", pt: "Antes que eles encontrem.", tense: "Conjuntivo"},
+{en: "It's possible we find.", pt: "É possível que encontremos.", tense: "Conjuntivo"},
+{en: "I prefer that you find.", pt: "Prefiro que tu encontres.", tense: "Conjuntivo"},
+{en: "If I found.", pt: "Se eu encontrasse.", tense: "Imperfeito Conj."},
+{en: "If you found.", pt: "Se tu encontrasses.", tense: "Imperfeito Conj."},
+{en: "If he found.", pt: "Se ele encontrasse.", tense: "Imperfeito Conj."},
+{en: "If we found.", pt: "Se nós encontrássemos.", tense: "Imperfeito Conj."},
+{en: "If they found.", pt: "Se eles encontrassem.", tense: "Imperfeito Conj."},
+{en: "I wish I could find.", pt: "Quem me dera encontrar.", tense: "Imperfeito Conj."},
+{en: "As if she found.", pt: "Como se ela encontrasse.", tense: "Imperfeito Conj."},
+{en: "If only you found.", pt: "Se tu encontrasses.", tense: "Imperfeito Conj."},
+{en: "I wanted you to find.", pt: "Queria que tu encontrasses.", tense: "Imperfeito Conj."},
+{en: "It would be good if they found.", pt: "Seria bom se eles encontrassem.", tense: "Imperfeito Conj."},
+{en: "When I find.", pt: "Quando eu encontrar.", tense: "Futuro Conj."},
+{en: "As soon as you find.", pt: "Assim que encontrares.", tense: "Futuro Conj."},
+{en: "If he finds.", pt: "Se ele encontrar.", tense: "Futuro Conj."},
+{en: "When we find.", pt: "Quando encontrarmos.", tense: "Futuro Conj."},
+{en: "As they find.", pt: "Conforme eles encontrarem.", tense: "Futuro Conj."},
+{en: "Find!", pt: "Encontra!", tense: "Imperativo"},
+{en: "Let's find!", pt: "Encontremos!", tense: "Imperativo"},
+{en: "Find the solution!", pt: "Encontra a solução!", tense: "Imperativo"},
+{en: "Find it!", pt: "Encontra!", tense: "Imperativo"},
+{en: "Find me!", pt: "Encontra-me!", tense: "Imperativo"},
+{en: "I can't find it.", pt: "Não consigo encontrar.", tense: "Presente"},
+{en: "Did you find it?", pt: "Encontraste?", tense: "Perfeito"},
+{en: "I'm trying to find.", pt: "Estou a tentar encontrar.", tense: "Presente"},
+{en: "You're finding problems.", pt: "Estás a encontrar problemas.", tense: "Presente"},
+{en: "He's finding his way.", pt: "Ele está a encontrar o caminho.", tense: "Presente"},
+{en: "We're finding solutions.", pt: "Estamos a encontrar soluções.", tense: "Presente"},
+{en: "They're finding each other.", pt: "Eles estão a encontrar-se.", tense: "Presente"},
+{en: "I didn't find anything.", pt: "Não encontrei nada.", tense: "Perfeito"},
+{en: "I want to find.", pt: "Quero encontrar.", tense: "Presente"},
+{en: "I need to find.", pt: "Preciso de encontrar.", tense: "Presente"},
+{en: "I have to find.", pt: "Tenho de encontrar.", tense: "Presente"},
+{en: "Where did you find it?", pt: "Onde encontraste?", tense: "Perfeito"},
+{en: "I found it here.", pt: "Encontrei aqui.", tense: "Perfeito"},
+{en: "We met yesterday.", pt: "Encontrámo-nos ontem.", tense: "Perfeito"},
+{en: "Let's meet tomorrow.", pt: "Vamos encontrar-nos amanhã.", tense: "Presente"},
+{en: "I met him by chance.", pt: "Encontrei-o por acaso.", tense: "Perfeito"},
+{en: "Where can I find you?", pt: "Onde te posso encontrar?", tense: "Presente"},
+{en: "We finally found it.", pt: "Finalmente encontrámos.", tense: "Perfeito"},
+{en: "I found what I was looking for.", pt: "Encontrei o que procurava.", tense: "Perfeito"},
+{en: "How do you feel?", pt: "Como te encontras?", tense: "Presente"}
+];
+
+const phraseList = document.querySelector('.phrase-list');
+const searchBox = document.querySelector('.search-box');
+
+function highlightVerb(text) {
+const forms = ['encontro', 'encontras', 'encontra', 'encontramos', 'encontram', 'encontrava', 'encontravas', 'encontrávamos', 'encontravam', 'encontrei', 'encontraste', 'encontrou', 'encontrámos', 'encontraram', 'encontrarei', 'encontrarás', 'encontrará', 'encontraremos', 'encontrarão', 'encontraria', 'encontrarias', 'encontraríamos', 'encontrariam', 'encontre', 'encontres', 'encontremos', 'encontrem', 'encontrasse', 'encontrasses', 'encontrássemos', 'encontrassem', 'encontrar', 'encontrares', 'encontrarmos', 'encontrarem'];
+const pattern = new RegExp(`\\b(${forms.join('|')})\\b`, 'gi');
+return text.replace(pattern, '<span class="verb-highlight">$1</span>');
+}
+
+function renderPhrases(filter = '') {
+const filtered = phrases.filter(p =>
+p.en.toLowerCase().includes(filter.toLowerCase()) ||
+p.pt.toLowerCase().includes(filter.toLowerCase())
+);
+phraseList.innerHTML = filtered.map(p => `
+<div class="phrase-card" onclick="this.classList.toggle('revealed')">
+<div class="source">${p.en}<span class="tense-tag">${p.tense}</span></div>
+<div class="translation">${highlightVerb(p.pt)}</div>
+</div>
+`).join('');
+}
+
+function showAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.add('revealed'));
+}
+
+function hideAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.remove('revealed'));
+}
+
+searchBox.addEventListener('input', (e) => renderPhrases(e.target.value));
+renderPhrases();
+</script>
+</body>
+</html>

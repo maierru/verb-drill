@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Encontrar — Португальский глагол</title>
+<style>
+*{box-sizing:border-box}body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);min-height:100vh;margin:0;padding:20px;color:#eee}.container{max-width:800px;margin:0 auto}header{text-align:center;padding:20px 0}.back-link{color:#00d4aa;text-decoration:none;font-size:.9rem}.back-link:hover{text-decoration:underline}h1{color:#00d4aa;font-size:2rem;margin:10px 0;text-shadow:0 0 20px rgba(0,212,170,.3)}.subtitle{color:#888;font-size:1rem;margin-bottom:20px}.controls{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}.btn{background:rgba(0,212,170,.2);color:#00d4aa;border:1px solid #00d4aa;padding:8px 16px;border-radius:20px;cursor:pointer;font-size:.85rem;transition:all .2s}.btn:hover{background:#00d4aa;color:#1a1a2e}.search-box{width:100%;max-width:400px;padding:10px 15px;border-radius:20px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.05);color:#eee;font-size:1rem;margin-bottom:20px}.search-box::placeholder{color:#666}.phrase-list{display:flex;flex-direction:column;gap:10px}.phrase-card{background:rgba(255,255,255,.05);border-radius:10px;padding:15px;border:1px solid rgba(255,255,255,.1);cursor:pointer;transition:all .2s}.phrase-card:hover{border-color:rgba(0,212,170,.3)}.phrase-card.revealed .translation{opacity:1;transform:translateY(0)}.source{font-size:1.1rem;color:#fff;margin-bottom:8px}.translation{font-size:1rem;color:#00d4aa;opacity:0;transform:translateY(-5px);transition:all .2s}.tense-tag{display:inline-block;background:rgba(0,212,170,.15);color:#00d4aa;padding:2px 8px;border-radius:10px;font-size:.75rem;margin-left:8px}.verb-highlight{color:#ff6b6b;font-weight:600}footer{text-align:center;padding:30px 0;color:#555;font-size:.85rem}@media(max-width:600px){h1{font-size:1.5rem}.source{font-size:1rem}.translation{font-size:.95rem}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<a href="../" class="back-link">← Назад к глаголам</a>
+<h1>🇵🇹 Encontrar</h1>
+<p class="subtitle">находить, встречать — 100 фраз</p>
+</header>
+<input type="text" class="search-box" placeholder="Поиск фраз...">
+<div class="controls">
+<button class="btn" onclick="showAll()">Показать все</button>
+<button class="btn" onclick="hideAll()">Скрыть все</button>
+</div>
+<div class="phrase-list"></div>
+<footer>Verb Drill — Практика португальских глаголов</footer>
+</div>
+<script>
+const phrases = [
+{ru: "Я нахожу.", pt: "Encontro.", tense: "Presente"},
+{ru: "Ты находишь ключи.", pt: "Encontras as chaves.", tense: "Presente"},
+{ru: "Он находит решение.", pt: "Ele encontra a solução.", tense: "Presente"},
+{ru: "Мы находим всё.", pt: "Encontramos tudo.", tense: "Presente"},
+{ru: "Они находят место.", pt: "Eles encontram o lugar.", tense: "Presente"},
+{ru: "Я нахожу это интересным.", pt: "Encontro interessante.", tense: "Presente"},
+{ru: "Ты находишь друзей.", pt: "Encontras amigos.", tense: "Presente"},
+{ru: "Она находит время.", pt: "Ela encontra tempo.", tense: "Presente"},
+{ru: "Мы находим ответы.", pt: "Encontramos respostas.", tense: "Presente"},
+{ru: "Они находят работу.", pt: "Eles encontram trabalho.", tense: "Presente"},
+{ru: "Я раньше находил.", pt: "Encontrava.", tense: "Imperfeito"},
+{ru: "Ты раньше легко находил.", pt: "Encontravas facilmente.", tense: "Imperfeito"},
+{ru: "Он раньше находил проблемы.", pt: "Ele encontrava problemas.", tense: "Imperfeito"},
+{ru: "Мы раньше их находили.", pt: "Encontrávamos-los.", tense: "Imperfeito"},
+{ru: "Они раньше находили время.", pt: "Eles encontravam tempo.", tense: "Imperfeito"},
+{ru: "Я находил.", pt: "Estava a encontrar.", tense: "Imperfeito"},
+{ru: "Ты находил решения.", pt: "Estavas a encontrar soluções.", tense: "Imperfeito"},
+{ru: "Она находила это сложным.", pt: "Ela estava a encontrar difícil.", tense: "Imperfeito"},
+{ru: "Мы находили ответы.", pt: "Estávamos a encontrar respostas.", tense: "Imperfeito"},
+{ru: "Они находили проблемы.", pt: "Eles estavam a encontrar problemas.", tense: "Imperfeito"},
+{ru: "Я нашёл.", pt: "Encontrei.", tense: "Perfeito"},
+{ru: "Ты нашёл книгу.", pt: "Encontraste o livro.", tense: "Perfeito"},
+{ru: "Он нашёл работу.", pt: "Ele encontrou trabalho.", tense: "Perfeito"},
+{ru: "Мы нашли решение.", pt: "Encontrámos a solução.", tense: "Perfeito"},
+{ru: "Они нашли ответ.", pt: "Eles encontraram a resposta.", tense: "Perfeito"},
+{ru: "Я нашёл это.", pt: "Encontrei.", tense: "Perfeito"},
+{ru: "Ты нашёл свои ключи.", pt: "Encontraste as tuas chaves.", tense: "Perfeito"},
+{ru: "Она нашла любовь.", pt: "Ela encontrou amor.", tense: "Perfeito"},
+{ru: "Мы нашли место.", pt: "Encontrámos o lugar.", tense: "Perfeito"},
+{ru: "Они нашли друг друга.", pt: "Eles encontraram-se.", tense: "Perfeito"},
+{ru: "Я найду.", pt: "Encontrarei.", tense: "Futuro"},
+{ru: "Ты найдёшь.", pt: "Encontrarás.", tense: "Futuro"},
+{ru: "Он найдёт путь.", pt: "Ele encontrará o caminho.", tense: "Futuro"},
+{ru: "Мы найдём решение.", pt: "Encontraremos uma solução.", tense: "Futuro"},
+{ru: "Они найдут время.", pt: "Eles encontrarão tempo.", tense: "Futuro"},
+{ru: "Я найду позже.", pt: "Encontrarei mais tarde.", tense: "Futuro"},
+{ru: "Ты найдёшь кого-нибудь.", pt: "Encontrarás alguém.", tense: "Futuro"},
+{ru: "Она найдёт работу.", pt: "Ela encontrará trabalho.", tense: "Futuro"},
+{ru: "Мы найдём ответ.", pt: "Encontraremos a resposta.", tense: "Futuro"},
+{ru: "Они найдут друг друга.", pt: "Eles encontrar-se-ão.", tense: "Futuro"},
+{ru: "Я бы нашёл.", pt: "Encontraria.", tense: "Condicional"},
+{ru: "Ты бы нашёл легче.", pt: "Encontrarias mais fácil.", tense: "Condicional"},
+{ru: "Он бы нашёл.", pt: "Ele encontraria.", tense: "Condicional"},
+{ru: "Мы бы нашли способ.", pt: "Encontraríamos uma maneira.", tense: "Condicional"},
+{ru: "Они бы нашли решения.", pt: "Eles encontrariam soluções.", tense: "Condicional"},
+{ru: "Я бы нашёл, если бы мог.", pt: "Encontraria se pudesse.", tense: "Condicional"},
+{ru: "Ты бы нашёл помощь.", pt: "Encontrarias ajuda.", tense: "Condicional"},
+{ru: "Она бы нашла время.", pt: "Ela encontraria tempo.", tense: "Condicional"},
+{ru: "Мы бы нашли место.", pt: "Encontraríamos o lugar.", tense: "Condicional"},
+{ru: "Они бы нашли работу.", pt: "Eles encontrariam trabalho.", tense: "Condicional"},
+{ru: "Хочу, чтобы ты нашёл.", pt: "Quero que encontres.", tense: "Conjuntivo"},
+{ru: "Надеюсь, что он найдёт.", pt: "Espero que ele encontre.", tense: "Conjuntivo"},
+{ru: "Важно, чтобы мы нашли.", pt: "É importante que encontremos.", tense: "Conjuntivo"},
+{ru: "Сомневаюсь, что они найдут.", pt: "Duvido que eles encontrem.", tense: "Conjuntivo"},
+{ru: "Хотя я нахожу.", pt: "Embora eu encontre.", tense: "Conjuntivo"},
+{ru: "Чтобы ты нашёл.", pt: "Para que tu encontres.", tense: "Conjuntivo"},
+{ru: "Если только она не найдёт.", pt: "A menos que ela encontre.", tense: "Conjuntivo"},
+{ru: "До того как они найдут.", pt: "Antes que eles encontrem.", tense: "Conjuntivo"},
+{ru: "Возможно, мы найдём.", pt: "É possível que encontremos.", tense: "Conjuntivo"},
+{ru: "Предпочитаю, чтобы ты нашёл.", pt: "Prefiro que tu encontres.", tense: "Conjuntivo"},
+{ru: "Если бы я нашёл.", pt: "Se eu encontrasse.", tense: "Imperfeito Conj."},
+{ru: "Если бы ты нашёл.", pt: "Se tu encontrasses.", tense: "Imperfeito Conj."},
+{ru: "Если бы он нашёл.", pt: "Se ele encontrasse.", tense: "Imperfeito Conj."},
+{ru: "Если бы мы нашли.", pt: "Se nós encontrássemos.", tense: "Imperfeito Conj."},
+{ru: "Если бы они нашли.", pt: "Se eles encontrassem.", tense: "Imperfeito Conj."},
+{ru: "Хотел бы я найти.", pt: "Quem me dera encontrar.", tense: "Imperfeito Conj."},
+{ru: "Как будто она нашла.", pt: "Como se ela encontrasse.", tense: "Imperfeito Conj."},
+{ru: "Если бы только ты нашёл.", pt: "Se tu encontrasses.", tense: "Imperfeito Conj."},
+{ru: "Хотел, чтобы ты нашёл.", pt: "Queria que tu encontrasses.", tense: "Imperfeito Conj."},
+{ru: "Было бы хорошо, если бы они нашли.", pt: "Seria bom se eles encontrassem.", tense: "Imperfeito Conj."},
+{ru: "Когда я найду.", pt: "Quando eu encontrar.", tense: "Futuro Conj."},
+{ru: "Как только ты найдёшь.", pt: "Assim que encontrares.", tense: "Futuro Conj."},
+{ru: "Если он найдёт.", pt: "Se ele encontrar.", tense: "Futuro Conj."},
+{ru: "Когда мы найдём.", pt: "Quando encontrarmos.", tense: "Futuro Conj."},
+{ru: "По мере того как они найдут.", pt: "Conforme eles encontrarem.", tense: "Futuro Conj."},
+{ru: "Найди!", pt: "Encontra!", tense: "Imperativo"},
+{ru: "Давайте найдём!", pt: "Encontremos!", tense: "Imperativo"},
+{ru: "Найди решение!", pt: "Encontra a solução!", tense: "Imperativo"},
+{ru: "Найди!", pt: "Encontra!", tense: "Imperativo"},
+{ru: "Найди меня!", pt: "Encontra-me!", tense: "Imperativo"},
+{ru: "Я не могу найти.", pt: "Não consigo encontrar.", tense: "Presente"},
+{ru: "Ты нашёл?", pt: "Encontraste?", tense: "Perfeito"},
+{ru: "Я пытаюсь найти.", pt: "Estou a tentar encontrar.", tense: "Presente"},
+{ru: "Ты находишь проблемы.", pt: "Estás a encontrar problemas.", tense: "Presente"},
+{ru: "Он находит свой путь.", pt: "Ele está a encontrar o caminho.", tense: "Presente"},
+{ru: "Мы находим решения.", pt: "Estamos a encontrar soluções.", tense: "Presente"},
+{ru: "Они находят друг друга.", pt: "Eles estão a encontrar-se.", tense: "Presente"},
+{ru: "Я ничего не нашёл.", pt: "Não encontrei nada.", tense: "Perfeito"},
+{ru: "Я хочу найти.", pt: "Quero encontrar.", tense: "Presente"},
+{ru: "Мне нужно найти.", pt: "Preciso de encontrar.", tense: "Presente"},
+{ru: "Я должен найти.", pt: "Tenho de encontrar.", tense: "Presente"},
+{ru: "Где ты это нашёл?", pt: "Onde encontraste?", tense: "Perfeito"},
+{ru: "Я нашёл здесь.", pt: "Encontrei aqui.", tense: "Perfeito"},
+{ru: "Мы встретились вчера.", pt: "Encontrámo-nos ontem.", tense: "Perfeito"},
+{ru: "Давай встретимся завтра.", pt: "Vamos encontrar-nos amanhã.", tense: "Presente"},
+{ru: "Я встретил его случайно.", pt: "Encontrei-o por acaso.", tense: "Perfeito"},
+{ru: "Где я могу тебя найти?", pt: "Onde te posso encontrar?", tense: "Presente"},
+{ru: "Мы наконец нашли.", pt: "Finalmente encontrámos.", tense: "Perfeito"},
+{ru: "Я нашёл то, что искал.", pt: "Encontrei o que procurava.", tense: "Perfeito"},
+{ru: "Как ты себя чувствуешь?", pt: "Como te encontras?", tense: "Presente"}
+];
+
+const phraseList = document.querySelector('.phrase-list');
+const searchBox = document.querySelector('.search-box');
+
+function highlightVerb(text) {
+const forms = ['encontro', 'encontras', 'encontra', 'encontramos', 'encontram', 'encontrava', 'encontravas', 'encontrávamos', 'encontravam', 'encontrei', 'encontraste', 'encontrou', 'encontrámos', 'encontraram', 'encontrarei', 'encontrarás', 'encontrará', 'encontraremos', 'encontrarão', 'encontraria', 'encontrarias', 'encontraríamos', 'encontrariam', 'encontre', 'encontres', 'encontremos', 'encontrem', 'encontrasse', 'encontrasses', 'encontrássemos', 'encontrassem', 'encontrar', 'encontrares', 'encontrarmos', 'encontrarem'];
+const pattern = new RegExp(`\\b(${forms.join('|')})\\b`, 'gi');
+return text.replace(pattern, '<span class="verb-highlight">$1</span>');
+}
+
+function renderPhrases(filter = '') {
+const filtered = phrases.filter(p =>
+p.ru.toLowerCase().includes(filter.toLowerCase()) ||
+p.pt.toLowerCase().includes(filter.toLowerCase())
+);
+phraseList.innerHTML = filtered.map(p => `
+<div class="phrase-card" onclick="this.classList.toggle('revealed')">
+<div class="source">${p.ru}<span class="tense-tag">${p.tense}</span></div>
+<div class="translation">${highlightVerb(p.pt)}</div>
+</div>
+`).join('');
+}
+
+function showAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.add('revealed'));
+}
+
+function hideAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.remove('revealed'));
+}
+
+searchBox.addEventListener('input', (e) => renderPhrases(e.target.value));
+renderPhrases();
+</script>
+</body>
+</html>

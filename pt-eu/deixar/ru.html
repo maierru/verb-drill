@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deixar — Португальский глагол</title>
+<style>
+*{box-sizing:border-box}body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);min-height:100vh;margin:0;padding:20px;color:#eee}.container{max-width:800px;margin:0 auto}header{text-align:center;padding:20px 0}.back-link{color:#00d4aa;text-decoration:none;font-size:.9rem}.back-link:hover{text-decoration:underline}h1{color:#00d4aa;font-size:2rem;margin:10px 0;text-shadow:0 0 20px rgba(0,212,170,.3)}.subtitle{color:#888;font-size:1rem;margin-bottom:20px}.controls{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}.btn{background:rgba(0,212,170,.2);color:#00d4aa;border:1px solid #00d4aa;padding:8px 16px;border-radius:20px;cursor:pointer;font-size:.85rem;transition:all .2s}.btn:hover{background:#00d4aa;color:#1a1a2e}.search-box{width:100%;max-width:400px;padding:10px 15px;border-radius:20px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.05);color:#eee;font-size:1rem;margin-bottom:20px}.search-box::placeholder{color:#666}.phrase-list{display:flex;flex-direction:column;gap:10px}.phrase-card{background:rgba(255,255,255,.05);border-radius:10px;padding:15px;border:1px solid rgba(255,255,255,.1);cursor:pointer;transition:all .2s}.phrase-card:hover{border-color:rgba(0,212,170,.3)}.phrase-card.revealed .translation{opacity:1;transform:translateY(0)}.source{font-size:1.1rem;color:#fff;margin-bottom:8px}.translation{font-size:1rem;color:#00d4aa;opacity:0;transform:translateY(-5px);transition:all .2s}.tense-tag{display:inline-block;background:rgba(0,212,170,.15);color:#00d4aa;padding:2px 8px;border-radius:10px;font-size:.75rem;margin-left:8px}.verb-highlight{color:#ff6b6b;font-weight:600}footer{text-align:center;padding:30px 0;color:#555;font-size:.85rem}@media(max-width:600px){h1{font-size:1.5rem}.source{font-size:1rem}.translation{font-size:.95rem}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<a href="../" class="back-link">← Назад к глаголам</a>
+<h1>🇵🇹 Deixar</h1>
+<p class="subtitle">оставлять, позволять — 100 фраз</p>
+</header>
+<input type="text" class="search-box" placeholder="Поиск фраз...">
+<div class="controls">
+<button class="btn" onclick="showAll()">Показать все</button>
+<button class="btn" onclick="hideAll()">Скрыть все</button>
+</div>
+<div class="phrase-list"></div>
+<footer>Verb Drill — Практика португальских глаголов</footer>
+</div>
+<script>
+const phrases = [
+{ru: "Я оставляю здесь.", pt: "Deixo aqui.", tense: "Presente"},
+{ru: "Ты позволяешь мне идти.", pt: "Deixas-me ir.", tense: "Presente"},
+{ru: "Он оставляет всё.", pt: "Ele deixa tudo.", tense: "Presente"},
+{ru: "Мы позволяем им играть.", pt: "Deixamos-os brincar.", tense: "Presente"},
+{ru: "Они уходят ночью.", pt: "Eles deixam à noite.", tense: "Presente"},
+{ru: "Я позволяю тебе решать.", pt: "Deixo-te decidir.", tense: "Presente"},
+{ru: "Ты оставляешь дверь открытой.", pt: "Deixas a porta aberta.", tense: "Presente"},
+{ru: "Она позволяет мне помогать.", pt: "Ela deixa-me ajudar.", tense: "Presente"},
+{ru: "Мы уходим рано.", pt: "Deixamos cedo.", tense: "Presente"},
+{ru: "Они позволяют нам войти.", pt: "Eles deixam-nos entrar.", tense: "Presente"},
+{ru: "Я раньше уходил рано.", pt: "Deixava cedo.", tense: "Imperfeito"},
+{ru: "Ты раньше позволял мне.", pt: "Deixavas-me.", tense: "Imperfeito"},
+{ru: "Он раньше оставлял вещи.", pt: "Ele deixava coisas.", tense: "Imperfeito"},
+{ru: "Мы раньше позволяли им.", pt: "Deixávamos-os.", tense: "Imperfeito"},
+{ru: "Они раньше уходили поздно.", pt: "Eles deixavam tarde.", tense: "Imperfeito"},
+{ru: "Я уходил.", pt: "Deixava.", tense: "Imperfeito"},
+{ru: "Ты позволял мне идти.", pt: "Deixavas-me ir.", tense: "Imperfeito"},
+{ru: "Она оставляла его.", pt: "Ela deixava-o.", tense: "Imperfeito"},
+{ru: "Мы оставляли всё.", pt: "Deixávamos tudo.", tense: "Imperfeito"},
+{ru: "Они позволяли нам.", pt: "Eles deixavam-nos.", tense: "Imperfeito"},
+{ru: "Я оставил там.", pt: "Deixei lá.", tense: "Perfeito"},
+{ru: "Ты дал мне знать.", pt: "Deixaste-me saber.", tense: "Perfeito"},
+{ru: "Он оставил работу.", pt: "Ele deixou o trabalho.", tense: "Perfeito"},
+{ru: "Мы оставили их в покое.", pt: "Deixámo-los em paz.", tense: "Perfeito"},
+{ru: "Они ушли рано.", pt: "Eles deixaram cedo.", tense: "Perfeito"},
+{ru: "Я оставил книгу.", pt: "Deixei o livro.", tense: "Perfeito"},
+{ru: "Ты позволил ему уйти.", pt: "Deixaste-o ir.", tense: "Perfeito"},
+{ru: "Она покинула город.", pt: "Ela deixou a cidade.", tense: "Perfeito"},
+{ru: "Мы оставили сообщение.", pt: "Deixámos uma mensagem.", tense: "Perfeito"},
+{ru: "Они позволили этому случиться.", pt: "Eles deixaram acontecer.", tense: "Perfeito"},
+{ru: "Я уйду.", pt: "Deixarei.", tense: "Futuro"},
+{ru: "Ты позволишь мне.", pt: "Deixar-me-ás.", tense: "Futuro"},
+{ru: "Он скоро уйдёт.", pt: "Ele deixará em breve.", tense: "Futuro"},
+{ru: "Мы позволим им.", pt: "Deixá-los-emos.", tense: "Futuro"},
+{ru: "Они уйдут завтра.", pt: "Eles deixarão amanhã.", tense: "Futuro"},
+{ru: "Я оставлю здесь.", pt: "Deixarei aqui.", tense: "Futuro"},
+{ru: "Ты дашь мне знать.", pt: "Deixar-me-ás saber.", tense: "Futuro"},
+{ru: "Она уйдёт рано.", pt: "Ela deixará cedo.", tense: "Futuro"},
+{ru: "Мы оставим записку.", pt: "Deixaremos um recado.", tense: "Futuro"},
+{ru: "Они позволят нам уйти.", pt: "Eles deixar-nos-ão ir.", tense: "Futuro"},
+{ru: "Я бы ушёл.", pt: "Deixaria.", tense: "Condicional"},
+{ru: "Ты бы позволил мне.", pt: "Deixar-me-ias.", tense: "Condicional"},
+{ru: "Он бы ушёл.", pt: "Ele deixaria.", tense: "Condicional"},
+{ru: "Мы бы позволили им.", pt: "Deixá-los-íamos.", tense: "Condicional"},
+{ru: "Они бы ушли.", pt: "Eles deixariam.", tense: "Condicional"},
+{ru: "Я бы оставил это.", pt: "Deixaria isso.", tense: "Condicional"},
+{ru: "Ты бы позволил ей.", pt: "Deixá-la-ias.", tense: "Condicional"},
+{ru: "Она бы оставила его.", pt: "Ela deixá-lo-ia.", tense: "Condicional"},
+{ru: "Мы бы ушли рано.", pt: "Deixaríamos cedo.", tense: "Condicional"},
+{ru: "Они бы позволили нам.", pt: "Eles deixar-nos-iam.", tense: "Condicional"},
+{ru: "Хочу, чтобы ты ушёл.", pt: "Quero que deixes.", tense: "Conjuntivo"},
+{ru: "Надеюсь, что он позволит мне.", pt: "Espero que ele me deixe.", tense: "Conjuntivo"},
+{ru: "Важно, чтобы мы ушли.", pt: "É importante que deixemos.", tense: "Conjuntivo"},
+{ru: "Сомневаюсь, что они позволят.", pt: "Duvido que eles deixem.", tense: "Conjuntivo"},
+{ru: "Хотя я ухожу.", pt: "Embora eu deixe.", tense: "Conjuntivo"},
+{ru: "Чтобы ты позволил.", pt: "Para que tu deixes.", tense: "Conjuntivo"},
+{ru: "Если только она не уйдёт.", pt: "A menos que ela deixe.", tense: "Conjuntivo"},
+{ru: "До того как они уйдут.", pt: "Antes que eles deixem.", tense: "Conjuntivo"},
+{ru: "Возможно, мы уйдём.", pt: "É possível que deixemos.", tense: "Conjuntivo"},
+{ru: "Предпочитаю, чтобы ты позволил.", pt: "Prefiro que tu deixes.", tense: "Conjuntivo"},
+{ru: "Если бы я ушёл.", pt: "Se eu deixasse.", tense: "Imperfeito Conj."},
+{ru: "Если бы ты позволил.", pt: "Se tu deixasses.", tense: "Imperfeito Conj."},
+{ru: "Если бы он ушёл.", pt: "Se ele deixasse.", tense: "Imperfeito Conj."},
+{ru: "Если бы мы ушли.", pt: "Se nós deixássemos.", tense: "Imperfeito Conj."},
+{ru: "Если бы они ушли.", pt: "Se eles deixassem.", tense: "Imperfeito Conj."},
+{ru: "Хотел бы я уйти.", pt: "Quem me dera deixar.", tense: "Imperfeito Conj."},
+{ru: "Как будто она ушла.", pt: "Como se ela deixasse.", tense: "Imperfeito Conj."},
+{ru: "Если бы только ты позволил.", pt: "Se tu deixasses.", tense: "Imperfeito Conj."},
+{ru: "Хотел, чтобы ты ушёл.", pt: "Queria que tu deixasses.", tense: "Imperfeito Conj."},
+{ru: "Было бы хорошо, если бы они ушли.", pt: "Seria bom se eles deixassem.", tense: "Imperfeito Conj."},
+{ru: "Когда я уйду.", pt: "Quando eu deixar.", tense: "Futuro Conj."},
+{ru: "Как только ты уйдёшь.", pt: "Assim que deixares.", tense: "Futuro Conj."},
+{ru: "Если он уйдёт.", pt: "Se ele deixar.", tense: "Futuro Conj."},
+{ru: "Когда мы уйдём.", pt: "Quando deixarmos.", tense: "Futuro Conj."},
+{ru: "По мере того как они уйдут.", pt: "Conforme eles deixarem.", tense: "Futuro Conj."},
+{ru: "Оставь!", pt: "Deixa!", tense: "Imperativo"},
+{ru: "Давайте уйдём!", pt: "Deixemos!", tense: "Imperativo"},
+{ru: "Оставь меня в покое!", pt: "Deixa-me em paz!", tense: "Imperativo"},
+{ru: "Не уходи!", pt: "Não deixes!", tense: "Imperativo"},
+{ru: "Позволь ему уйти!", pt: "Deixa-o ir!", tense: "Imperativo"},
+{ru: "Можешь позволить мне?", pt: "Podes deixar-me?", tense: "Presente"},
+{ru: "Дай мне посмотреть.", pt: "Deixa-me ver.", tense: "Imperativo"},
+{ru: "Я не оставляю вещи.", pt: "Não deixo coisas.", tense: "Presente"},
+{ru: "Она никому не позволяет.", pt: "Ela não deixa ninguém.", tense: "Presente"},
+{ru: "Оставь там.", pt: "Deixa aí.", tense: "Imperativo"},
+{ru: "Мне нужно уйти.", pt: "Tenho de deixar.", tense: "Presente"},
+{ru: "Ты не можешь уйти.", pt: "Não podes deixar.", tense: "Presente"},
+{ru: "Он хочет уйти.", pt: "Ele quer deixar.", tense: "Presente"},
+{ru: "Нам нужно уйти.", pt: "Precisamos de deixar.", tense: "Presente"},
+{ru: "Они могут уйти.", pt: "Eles podem deixar.", tense: "Presente"},
+{ru: "Я оставил дома.", pt: "Deixei em casa.", tense: "Perfeito"},
+{ru: "Ты оставила сумку.", pt: "Deixaste a tua mala.", tense: "Perfeito"},
+{ru: "Она оставила дверь открытой.", pt: "Ela deixou a porta aberta.", tense: "Perfeito"},
+{ru: "Мы оставили ключи.", pt: "Deixámos as chaves.", tense: "Perfeito"},
+{ru: "Они всё оставили позади.", pt: "Eles deixaram tudo para trás.", tense: "Perfeito"},
+{ru: "Дай мне объяснить.", pt: "Deixa-me explicar.", tense: "Imperativo"},
+{ru: "Дай мне подумать.", pt: "Deixa-me pensar.", tense: "Imperativo"},
+{ru: "Оставь это мне.", pt: "Deixa comigo.", tense: "Imperativo"},
+{ru: "Я бросил курить.", pt: "Deixei de fumar.", tense: "Perfeito"},
+{ru: "Не подведи меня.", pt: "Não me deixes ficar mal.", tense: "Imperativo"}
+];
+
+const phraseList = document.querySelector('.phrase-list');
+const searchBox = document.querySelector('.search-box');
+
+function highlightVerb(text) {
+const forms = ['deixo', 'deixas', 'deixa', 'deixamos', 'deixam', 'deixava', 'deixavas', 'deixávamos', 'deixavam', 'deixei', 'deixaste', 'deixou', 'deixámos', 'deixaram', 'deixarei', 'deixarás', 'deixará', 'deixaremos', 'deixarão', 'deixaria', 'deixarias', 'deixaríamos', 'deixariam', 'deixe', 'deixes', 'deixemos', 'deixem', 'deixasse', 'deixasses', 'deixássemos', 'deixassem', 'deixar', 'deixares', 'deixarmos', 'deixarem'];
+const pattern = new RegExp(`\\b(${forms.join('|')})\\b`, 'gi');
+return text.replace(pattern, '<span class="verb-highlight">$1</span>');
+}
+
+function renderPhrases(filter = '') {
+const filtered = phrases.filter(p =>
+p.ru.toLowerCase().includes(filter.toLowerCase()) ||
+p.pt.toLowerCase().includes(filter.toLowerCase())
+);
+phraseList.innerHTML = filtered.map(p => `
+<div class="phrase-card" onclick="this.classList.toggle('revealed')">
+<div class="source">${p.ru}<span class="tense-tag">${p.tense}</span></div>
+<div class="translation">${highlightVerb(p.pt)}</div>
+</div>
+`).join('');
+}
+
+function showAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.add('revealed'));
+}
+
+function hideAll() {
+document.querySelectorAll('.phrase-card').forEach(c => c.classList.remove('revealed'));
+}
+
+searchBox.addEventListener('input', (e) => renderPhrases(e.target.value));
+renderPhrases();
+</script>
+</body>
+</html>
