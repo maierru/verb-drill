@@ -1,0 +1,133 @@
+/* Verb Drill - Index Pages */
+
+:root {
+    --accent: #00d4aa;
+    --accent-hover: #00f5c4;
+    --bg-dark: #1a1a2e;
+    --bg-darker: #16213e;
+    --text: #eee;
+    --text-muted: #888;
+    --text-dim: #555;
+    --card-bg: rgba(255, 255, 255, 0.05);
+    --card-bg-hover: rgba(255, 255, 255, 0.08);
+    --border: rgba(255, 255, 255, 0.1);
+}
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-darker) 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    color: var(--text);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.back-link {
+    display: inline-block;
+    color: var(--accent);
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    color: var(--accent);
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    text-shadow: 0 0 20px rgba(0, 212, 170, 0.3);
+}
+
+.subtitle {
+    color: var(--text-muted);
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+.verb-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.verb-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 20px 25px;
+    border: 1px solid var(--border);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.verb-card:hover {
+    border-color: var(--accent);
+    background: var(--card-bg-hover);
+    transform: translateX(8px);
+}
+
+.verb-info {
+    flex: 1;
+}
+
+.verb-name {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.verb-meaning {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.verb-langs {
+    display: flex;
+    gap: 8px;
+}
+
+.lang-badge {
+    background: rgba(0, 212, 170, 0.2);
+    color: var(--accent);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.lang-badge:hover {
+    background: var(--accent);
+    color: var(--bg-dark);
+}
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+    color: var(--text-dim);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    h1 { font-size: 1.6rem; }
+    .verb-card { flex-direction: column; align-items: flex-start; gap: 10px; }
+}

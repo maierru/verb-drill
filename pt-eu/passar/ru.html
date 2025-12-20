@@ -1,30 +1,40 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="pt">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Passar — Португальский глагол</title>
-<style>
-*{box-sizing:border-box}body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);min-height:100vh;margin:0;padding:20px;color:#eee}.container{max-width:800px;margin:0 auto}header{text-align:center;padding:20px 0}.back-link{color:#00d4aa;text-decoration:none;font-size:.9rem}.back-link:hover{text-decoration:underline}h1{color:#00d4aa;font-size:2rem;margin:10px 0;text-shadow:0 0 20px rgba(0,212,170,.3)}.subtitle{color:#888;font-size:1rem;margin-bottom:20px}.controls{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}.btn{background:rgba(0,212,170,.2);color:#00d4aa;border:1px solid #00d4aa;padding:8px 16px;border-radius:20px;cursor:pointer;font-size:.85rem;transition:all .2s}.btn:hover{background:#00d4aa;color:#1a1a2e}.search-box{width:100%;max-width:400px;padding:10px 15px;border-radius:20px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.05);color:#eee;font-size:1rem;margin-bottom:20px}.search-box::placeholder{color:#666}.phrase-list{display:flex;flex-direction:column;gap:10px}.phrase-card{background:rgba(255,255,255,.05);border-radius:10px;padding:15px;border:1px solid rgba(255,255,255,.1);cursor:pointer;transition:all .2s}.phrase-card:hover{border-color:rgba(0,212,170,.3)}.phrase-card.revealed .translation{opacity:1;transform:translateY(0)}.source{font-size:1.1rem;color:#fff;margin-bottom:8px}.translation{font-size:1rem;color:#00d4aa;opacity:0;transform:translateY(-5px);transition:all .2s}.tense-tag{display:inline-block;background:rgba(0,212,170,.15);color:#00d4aa;padding:2px 8px;border-radius:10px;font-size:.75rem;margin-left:8px}.verb-highlight{color:#ff6b6b;font-weight:600}footer{text-align:center;padding:30px 0;color:#555;font-size:.85rem}@media(max-width:600px){h1{font-size:1.5rem}.source{font-size:1rem}.translation{font-size:.95rem}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passar — Португальский глагол</title>
+    <link rel="stylesheet" href="../../css/verb.css">
 </head>
 <body>
-<div class="container">
-<header>
-<a href="../" class="back-link">← Назад к глаголам</a>
-<h1>🇵🇹 Passar</h1>
-<p class="subtitle">проходить, проводить (время) — 100 фраз</p>
-</header>
-<input type="text" class="search-box" placeholder="Поиск фраз...">
-<div class="controls">
-<button class="btn" onclick="showAll()">Показать все</button>
-<button class="btn" onclick="hideAll()">Скрыть все</button>
-</div>
-<div class="phrase-list"></div>
-<footer>Verb Drill — Практика португальских глаголов</footer>
-</div>
-<script>
-const phrases = [
+    <div class="container">
+        <header>
+            <a href="../" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇵🇹 Passar</h1>
+            <p class="subtitle">проходить, проводить (время) — 100 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 100 из 100 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика европейского португальского — PASSAR
+        </footer>
+    </div>
+
+    <script>
+        const phrases = [
 {ru: "Я прохожу здесь.", pt: "Passo por aqui.", tense: "Presente"},
 {ru: "Ты проводишь время со мной.", pt: "Passas tempo comigo.", tense: "Presente"},
 {ru: "Он передаёт мяч.", pt: "Ele passa a bola.", tense: "Presente"},
@@ -125,40 +135,76 @@ const phrases = [
 {ru: "Я зайду к тебе.", pt: "Vou passar por tua casa.", tense: "Futuro"},
 {ru: "Можешь передать мне это?", pt: "Podes passar-me isso?", tense: "Presente"},
 {ru: "Передам тебе потом.", pt: "Passo-te depois.", tense: "Presente"}
-];
+        ];
 
-const phraseList = document.querySelector('.phrase-list');
-const searchBox = document.querySelector('.search-box');
+        function renderPhrases(filteredPhrases = phrases) {
+            const container = document.getElementById('phraseList');
+            container.innerHTML = '';
 
-function highlightVerb(text) {
-const forms = ['passo', 'passas', 'passa', 'passamos', 'passam', 'passava', 'passavas', 'passávamos', 'passavam', 'passei', 'passaste', 'passou', 'passámos', 'passaram', 'passarei', 'passarás', 'passará', 'passaremos', 'passarão', 'passaria', 'passarias', 'passaríamos', 'passariam', 'passe', 'passes', 'passemos', 'passem', 'passasse', 'passasses', 'passássemos', 'passassem', 'passar', 'passares', 'passarmos', 'passarem'];
-const pattern = new RegExp(`\\b(${forms.join('|')})\\b`, 'gi');
-return text.replace(pattern, '<span class="verb-highlight">$1</span>');
-}
+            filteredPhrases.forEach((phrase, index) => {
+                const card = document.createElement('div');
+                card.className = 'phrase-card';
+                card.innerHTML = `
+                    <div class="phrase-header" onclick="toggleCard(this.parentElement)">
+                        <span class="phrase-number">${index + 1}</span>
+                        <span class="russian-text">${phrase.ru}</span>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="portuguese-text">
+                        <div class="pt-content">
+                            <div class="pt-label">Português Europeu</div>
+                            <div class="pt-phrase">${highlightVerb(phrase.pt)}</div>
+                            <span class="tense-tag">${phrase.tense}</span>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
 
-function renderPhrases(filter = '') {
-const filtered = phrases.filter(p =>
-p.ru.toLowerCase().includes(filter.toLowerCase()) ||
-p.pt.toLowerCase().includes(filter.toLowerCase())
-);
-phraseList.innerHTML = filtered.map(p => `
-<div class="phrase-card" onclick="this.classList.toggle('revealed')">
-<div class="source">${p.ru}<span class="tense-tag">${p.tense}</span></div>
-<div class="translation">${highlightVerb(p.pt)}</div>
-</div>
-`).join('');
-}
+            document.getElementById('stats').textContent =
+                `Показано: ${filteredPhrases.length} из ${phrases.length} фраз`;
+        }
 
-function showAll() {
-document.querySelectorAll('.phrase-card').forEach(c => c.classList.add('revealed'));
-}
+        function highlightVerb(text) {
+            const forms = [
+                'passo', 'passas', 'passa', 'passamos', 'passam', 'passava', 'passavas', 'passávamos', 'passavam', 'passei', 'passaste', 'passou', 'passámos', 'passaram', 'passarei', 'passarás', 'passará', 'passaremos', 'passarão', 'passaria', 'passarias', 'passaríamos', 'passariam', 'passe', 'passes', 'passemos', 'passem', 'passasse', 'passasses', 'passássemos', 'passassem', 'passar', 'passares', 'passarmos', 'passarem'
+            ];
 
-function hideAll() {
-document.querySelectorAll('.phrase-card').forEach(c => c.classList.remove('revealed'));
-}
+            let result = text;
+            forms.forEach(form => {
+                const regex = new RegExp(`\\b(${form})\\b`, 'gi');
+                result = result.replace(regex, '<span class="verb-highlight">$1</span>');
+            });
+            return result;
+        }
 
-searchBox.addEventListener('input', (e) => renderPhrases(e.target.value));
-renderPhrases();
-</script>
+        function toggleCard(card) {
+            card.classList.toggle('open');
+        }
+
+        function showAll() {
+            document.querySelectorAll('.phrase-card').forEach(card => {
+                card.classList.add('open');
+            });
+        }
+
+        function hideAll() {
+            document.querySelectorAll('.phrase-card').forEach(card => {
+                card.classList.remove('open');
+            });
+        }
+
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            const filtered = phrases.filter(p =>
+                p.ru.toLowerCase().includes(query) ||
+                p.pt.toLowerCase().includes(query) ||
+                p.tense.toLowerCase().includes(query)
+            );
+            renderPhrases(filtered);
+        });
+
+        renderPhrases();
+    </script>
 </body>
 </html>
