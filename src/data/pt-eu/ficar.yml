@@ -40,6 +40,63 @@ verb_forms:
 - ficarem
 - ficando
 - ficado
+conjugation:
+  - tense: Presente
+    explanation: "Staying, becoming, remaining"
+    forms:
+      eu: fico
+      tu: ficas
+      ele/ela: fica
+      nós: ficamos
+      eles/elas: ficam
+  - tense: Pretérito Imperfeito
+    explanation: "Was staying, used to stay"
+    forms:
+      eu: ficava
+      tu: ficavas
+      ele/ela: ficava
+      nós: ficávamos
+      eles/elas: ficavam
+  - tense: Pretérito Perfeito
+    explanation: "Stayed, became (completed)"
+    forms:
+      eu: fiquei
+      tu: ficaste
+      ele/ela: ficou
+      nós: ficámos
+      eles/elas: ficaram
+  - tense: Futuro
+    explanation: "Will stay"
+    forms:
+      eu: ficarei
+      tu: ficarás
+      ele/ela: ficará
+      nós: ficaremos
+      eles/elas: ficarão
+  - tense: Condicional
+    explanation: "Would stay"
+    forms:
+      eu: ficaria
+      tu: ficarias
+      ele/ela: ficaria
+      nós: ficaríamos
+      eles/elas: ficariam
+  - tense: Presente do Conjuntivo
+    explanation: "Subjunctive for staying"
+    forms:
+      eu: fique
+      tu: fiques
+      ele/ela: fique
+      nós: fiquemos
+      eles/elas: fiquem
+  - tense: Imperfeito do Conjuntivo
+    explanation: "Past subjunctive (if I stayed...)"
+    forms:
+      eu: ficasse
+      tu: ficasses
+      ele/ela: ficasse
+      nós: ficássemos
+      eles/elas: ficassem
 phrases:
   en:
   - en: I stay here.

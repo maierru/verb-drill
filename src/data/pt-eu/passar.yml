@@ -38,6 +38,63 @@ verb_forms:
 - passares
 - passarmos
 - passarem
+conjugation:
+  - tense: Presente
+    explanation: "Passing, spending time"
+    forms:
+      eu: passo
+      tu: passas
+      ele/ela: passa
+      nós: passamos
+      eles/elas: passam
+  - tense: Pretérito Imperfeito
+    explanation: "Was passing"
+    forms:
+      eu: passava
+      tu: passavas
+      ele/ela: passava
+      nós: passávamos
+      eles/elas: passavam
+  - tense: Pretérito Perfeito
+    explanation: "Passed (completed)"
+    forms:
+      eu: passei
+      tu: passaste
+      ele/ela: passou
+      nós: passámos
+      eles/elas: passaram
+  - tense: Futuro
+    explanation: "Will pass"
+    forms:
+      eu: passarei
+      tu: passarás
+      ele/ela: passará
+      nós: passaremos
+      eles/elas: passarão
+  - tense: Condicional
+    explanation: "Would pass"
+    forms:
+      eu: passaria
+      tu: passarias
+      ele/ela: passaria
+      nós: passaríamos
+      eles/elas: passariam
+  - tense: Presente do Conjuntivo
+    explanation: "Subjunctive for passing"
+    forms:
+      eu: passe
+      tu: passes
+      ele/ela: passe
+      nós: passemos
+      eles/elas: passem
+  - tense: Imperfeito do Conjuntivo
+    explanation: "Past subjunctive (if I passed...)"
+    forms:
+      eu: passasse
+      tu: passasses
+      ele/ela: passasse
+      nós: passássemos
+      eles/elas: passassem
 phrases:
   en:
   - en: I pass by here.

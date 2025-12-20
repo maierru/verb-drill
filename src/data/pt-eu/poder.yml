@@ -37,6 +37,63 @@ verb_forms:
 - poder
 - podendo
 - podido
+conjugation:
+  - tense: Presente
+    explanation: "Ability, permission, possibility"
+    forms:
+      eu: posso
+      tu: podes
+      ele/ela: pode
+      nós: podemos
+      eles/elas: podem
+  - tense: Pretérito Imperfeito
+    explanation: "Could (ongoing ability in past)"
+    forms:
+      eu: podia
+      tu: podias
+      ele/ela: podia
+      nós: podíamos
+      eles/elas: podiam
+  - tense: Pretérito Perfeito
+    explanation: "Was able to (specific occasion)"
+    forms:
+      eu: pude
+      tu: pudeste
+      ele/ela: pôde
+      nós: pudemos
+      eles/elas: puderam
+  - tense: Futuro
+    explanation: "Will be able to"
+    forms:
+      eu: poderei
+      tu: poderás
+      ele/ela: poderá
+      nós: poderemos
+      eles/elas: poderão
+  - tense: Condicional
+    explanation: "Could (polite requests, hypotheticals)"
+    forms:
+      eu: poderia
+      tu: poderias
+      ele/ela: poderia
+      nós: poderíamos
+      eles/elas: poderiam
+  - tense: Presente do Conjuntivo
+    explanation: "Subjunctive for possibility"
+    forms:
+      eu: possa
+      tu: possas
+      ele/ela: possa
+      nós: possamos
+      eles/elas: possam
+  - tense: Imperfeito do Conjuntivo
+    explanation: "Past subjunctive (if I could...)"
+    forms:
+      eu: pudesse
+      tu: pudesses
+      ele/ela: pudesse
+      nós: pudéssemos
+      eles/elas: pudessem
 phrases:
   en:
   - en: I can help you.

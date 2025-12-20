@@ -37,6 +37,63 @@ verb_forms:
 - fazer
 - fazendo
 - feito
+conjugation:
+  - tense: Presente
+    explanation: "Doing, making, weather (faz frio)"
+    forms:
+      eu: faço
+      tu: fazes
+      ele/ela: faz
+      nós: fazemos
+      eles/elas: fazem
+  - tense: Pretérito Imperfeito
+    explanation: "Was doing/making (ongoing past)"
+    forms:
+      eu: fazia
+      tu: fazias
+      ele/ela: fazia
+      nós: fazíamos
+      eles/elas: faziam
+  - tense: Pretérito Perfeito
+    explanation: "Did/made (completed)"
+    forms:
+      eu: fiz
+      tu: fizeste
+      ele/ela: fez
+      nós: fizemos
+      eles/elas: fizeram
+  - tense: Futuro
+    explanation: "Will do/make"
+    forms:
+      eu: farei
+      tu: farás
+      ele/ela: fará
+      nós: faremos
+      eles/elas: farão
+  - tense: Condicional
+    explanation: "Would do/make"
+    forms:
+      eu: faria
+      tu: farias
+      ele/ela: faria
+      nós: faríamos
+      eles/elas: fariam
+  - tense: Presente do Conjuntivo
+    explanation: "Subjunctive for wishes, doubts"
+    forms:
+      eu: faça
+      tu: faças
+      ele/ela: faça
+      nós: façamos
+      eles/elas: façam
+  - tense: Imperfeito do Conjuntivo
+    explanation: "Past subjunctive (if I did...)"
+    forms:
+      eu: fizesse
+      tu: fizesses
+      ele/ela: fizesse
+      nós: fizéssemos
+      eles/elas: fizessem
 phrases:
   en:
   - en: I do my homework.

@@ -41,6 +41,63 @@ verb_forms:
 - ver
 - vendo
 - visto
+conjugation:
+  - tense: Presente
+    explanation: "Seeing, watching"
+    forms:
+      eu: vejo
+      tu: vês
+      ele/ela: vê
+      nós: vemos
+      eles/elas: veem
+  - tense: Pretérito Imperfeito
+    explanation: "Was seeing, used to see"
+    forms:
+      eu: via
+      tu: vias
+      ele/ela: via
+      nós: víamos
+      eles/elas: viam
+  - tense: Pretérito Perfeito
+    explanation: "Saw (completed)"
+    forms:
+      eu: vi
+      tu: viste
+      ele/ela: viu
+      nós: vimos
+      eles/elas: viram
+  - tense: Futuro
+    explanation: "Will see"
+    forms:
+      eu: verei
+      tu: verás
+      ele/ela: verá
+      nós: veremos
+      eles/elas: verão
+  - tense: Condicional
+    explanation: "Would see"
+    forms:
+      eu: veria
+      tu: verias
+      ele/ela: veria
+      nós: veríamos
+      eles/elas: veriam
+  - tense: Presente do Conjuntivo
+    explanation: "Subjunctive for seeing"
+    forms:
+      eu: veja
+      tu: vejas
+      ele/ela: veja
+      nós: vejamos
+      eles/elas: vejam
+  - tense: Imperfeito do Conjuntivo
+    explanation: "Past subjunctive (if I saw...)"
+    forms:
+      eu: visse
+      tu: visses
+      ele/ela: visse
+      nós: víssemos
+      eles/elas: vissem
 phrases:
   en:
   - en: I see you.

@@ -38,6 +38,63 @@ verb_forms:
 - gostares
 - gostarmos
 - gostarem
+conjugation:
+  - tense: Presente
+    explanation: "Liking (gostar de)"
+    forms:
+      eu: gosto
+      tu: gostas
+      ele/ela: gosta
+      nós: gostamos
+      eles/elas: gostam
+  - tense: Pretérito Imperfeito
+    explanation: "Used to like, was liking"
+    forms:
+      eu: gostava
+      tu: gostavas
+      ele/ela: gostava
+      nós: gostávamos
+      eles/elas: gostavam
+  - tense: Pretérito Perfeito
+    explanation: "Liked (completed)"
+    forms:
+      eu: gostei
+      tu: gostaste
+      ele/ela: gostou
+      nós: gostámos
+      eles/elas: gostaram
+  - tense: Futuro
+    explanation: "Will like"
+    forms:
+      eu: gostarei
+      tu: gostarás
+      ele/ela: gostará
+      nós: gostaremos
+      eles/elas: gostarão
+  - tense: Condicional
+    explanation: "Would like"
+    forms:
+      eu: gostaria
+      tu: gostarias
+      ele/ela: gostaria
+      nós: gostaríamos
+      eles/elas: gostariam
+  - tense: Presente do Conjuntivo
+    explanation: "Subjunctive for liking"
+    forms:
+      eu: goste
+      tu: gostes
+      ele/ela: goste
+      nós: gostemos
+      eles/elas: gostem
+  - tense: Imperfeito do Conjuntivo
+    explanation: "Past subjunctive (if I liked...)"
+    forms:
+      eu: gostasse
+      tu: gostasses
+      ele/ela: gostasse
+      nós: gostássemos
+      eles/elas: gostassem
 phrases:
   en:
   - en: I like it.

@@ -37,6 +37,63 @@ verb_forms:
 - ouvires
 - ouvirmos
 - ouvirem
+conjugation:
+  - tense: Presente
+    explanation: "Hearing, listening"
+    forms:
+      eu: ouço
+      tu: ouves
+      ele/ela: ouve
+      nós: ouvimos
+      eles/elas: ouvem
+  - tense: Pretérito Imperfeito
+    explanation: "Was hearing"
+    forms:
+      eu: ouvia
+      tu: ouvias
+      ele/ela: ouvia
+      nós: ouvíamos
+      eles/elas: ouviam
+  - tense: Pretérito Perfeito
+    explanation: "Heard (completed)"
+    forms:
+      eu: ouvi
+      tu: ouviste
+      ele/ela: ouviu
+      nós: ouvimos
+      eles/elas: ouviram
+  - tense: Futuro
+    explanation: "Will hear"
+    forms:
+      eu: ouvirei
+      tu: ouvirás
+      ele/ela: ouvirá
+      nós: ouviremos
+      eles/elas: ouvirão
+  - tense: Condicional
+    explanation: "Would hear"
+    forms:
+      eu: ouviria
+      tu: ouvirias
+      ele/ela: ouviria
+      nós: ouviríamos
+      eles/elas: ouviriam
+  - tense: Presente do Conjuntivo
+    explanation: "Subjunctive for hearing"
+    forms:
+      eu: ouça
+      tu: ouças
+      ele/ela: ouça
+      nós: ouçamos
+      eles/elas: ouçam
+  - tense: Imperfeito do Conjuntivo
+    explanation: "Past subjunctive (if I heard...)"
+    forms:
+      eu: ouvisse
+      tu: ouvisses
+      ele/ela: ouvisse
+      nós: ouvíssemos
+      eles/elas: ouvissem
 phrases:
   en:
   - en: I hear.

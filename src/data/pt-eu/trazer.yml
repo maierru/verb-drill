@@ -2,6 +2,63 @@
 slug: trazer
 name: "\U0001F1F5\U0001F1F9 Trazer"
 meaning: to bring
+conjugation:
+  - tense: Presente
+    explanation: "Current actions of bringing"
+    forms:
+      eu: trago
+      tu: trazes
+      ele/ela: traz
+      nós: trazemos
+      eles/elas: trazem
+  - tense: Pretérito Imperfeito
+    explanation: "Past habitual or ongoing bringing"
+    forms:
+      eu: trazia
+      tu: trazias
+      ele/ela: trazia
+      nós: trazíamos
+      eles/elas: traziam
+  - tense: Pretérito Perfeito
+    explanation: "Completed past bringing"
+    forms:
+      eu: trouxe
+      tu: trouxeste
+      ele/ela: trouxe
+      nós: trouxemos
+      eles/elas: trouxeram
+  - tense: Futuro
+    explanation: "Future bringing"
+    forms:
+      eu: trarei
+      tu: trarás
+      ele/ela: trará
+      nós: traremos
+      eles/elas: trarão
+  - tense: Condicional
+    explanation: "Hypothetical bringing"
+    forms:
+      eu: traria
+      tu: trarias
+      ele/ela: traria
+      nós: traríamos
+      eles/elas: trariam
+  - tense: Conjuntivo Presente
+    explanation: "Subjunctive for wishes/doubts about bringing"
+    forms:
+      eu: traga
+      tu: tragas
+      ele/ela: traga
+      nós: tragamos
+      eles/elas: tragam
+  - tense: Conjuntivo Imperfeito
+    explanation: "Past subjunctive for hypothetical bringing"
+    forms:
+      eu: trouxesse
+      tu: trouxesses
+      ele/ela: trouxesse
+      nós: trouxéssemos
+      eles/elas: trouxessem
 verb_forms:
 - trago
 - trazes

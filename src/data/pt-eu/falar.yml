@@ -38,6 +38,63 @@ verb_forms:
 - falares
 - falarmos
 - falarem
+conjugation:
+  - tense: Presente
+    explanation: "Speaking, talking now"
+    forms:
+      eu: falo
+      tu: falas
+      ele/ela: fala
+      nós: falamos
+      eles/elas: falam
+  - tense: Pretérito Imperfeito
+    explanation: "Was speaking, used to speak"
+    forms:
+      eu: falava
+      tu: falavas
+      ele/ela: falava
+      nós: falávamos
+      eles/elas: falavam
+  - tense: Pretérito Perfeito
+    explanation: "Spoke (completed)"
+    forms:
+      eu: falei
+      tu: falaste
+      ele/ela: falou
+      nós: falámos
+      eles/elas: falaram
+  - tense: Futuro
+    explanation: "Will speak"
+    forms:
+      eu: falarei
+      tu: falarás
+      ele/ela: falará
+      nós: falaremos
+      eles/elas: falarão
+  - tense: Condicional
+    explanation: "Would speak"
+    forms:
+      eu: falaria
+      tu: falarias
+      ele/ela: falaria
+      nós: falaríamos
+      eles/elas: falariam
+  - tense: Presente do Conjuntivo
+    explanation: "Subjunctive for speaking"
+    forms:
+      eu: fale
+      tu: fales
+      ele/ela: fale
+      nós: falemos
+      eles/elas: falem
+  - tense: Imperfeito do Conjuntivo
+    explanation: "Past subjunctive (if I spoke...)"
+    forms:
+      eu: falasse
+      tu: falasses
+      ele/ela: falasse
+      nós: falássemos
+      eles/elas: falassem
 phrases:
   en:
   - en: I speak Portuguese.

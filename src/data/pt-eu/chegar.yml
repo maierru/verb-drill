@@ -38,6 +38,63 @@ verb_forms:
 - chegares
 - chegarmos
 - chegarem
+conjugation:
+  - tense: Presente
+    explanation: "Arriving, reaching"
+    forms:
+      eu: chego
+      tu: chegas
+      ele/ela: chega
+      nós: chegamos
+      eles/elas: chegam
+  - tense: Pretérito Imperfeito
+    explanation: "Was arriving"
+    forms:
+      eu: chegava
+      tu: chegavas
+      ele/ela: chegava
+      nós: chegávamos
+      eles/elas: chegavam
+  - tense: Pretérito Perfeito
+    explanation: "Arrived (completed)"
+    forms:
+      eu: cheguei
+      tu: chegaste
+      ele/ela: chegou
+      nós: chegámos
+      eles/elas: chegaram
+  - tense: Futuro
+    explanation: "Will arrive"
+    forms:
+      eu: chegarei
+      tu: chegarás
+      ele/ela: chegará
+      nós: chegaremos
+      eles/elas: chegarão
+  - tense: Condicional
+    explanation: "Would arrive"
+    forms:
+      eu: chegaria
+      tu: chegarias
+      ele/ela: chegaria
+      nós: chegaríamos
+      eles/elas: chegariam
+  - tense: Presente do Conjuntivo
+    explanation: "Subjunctive for arriving"
+    forms:
+      eu: chegue
+      tu: chegues
+      ele/ela: chegue
+      nós: cheguemos
+      eles/elas: cheguem
+  - tense: Imperfeito do Conjuntivo
+    explanation: "Past subjunctive (if I arrived...)"
+    forms:
+      eu: chegasse
+      tu: chegasses
+      ele/ela: chegasse
+      nós: chegássemos
+      eles/elas: chegassem
 phrases:
   en:
   - en: I arrive at 8.

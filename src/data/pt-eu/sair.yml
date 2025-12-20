@@ -2,6 +2,63 @@
 slug: sair
 name: "\U0001F1F5\U0001F1F9 Sair"
 meaning: to go out, to leave
+conjugation:
+  - tense: Presente
+    explanation: "Current actions of leaving/going out"
+    forms:
+      eu: saio
+      tu: sais
+      ele/ela: sai
+      nós: saímos
+      eles/elas: saem
+  - tense: Pretérito Imperfeito
+    explanation: "Past habitual or ongoing leaving"
+    forms:
+      eu: saía
+      tu: saías
+      ele/ela: saía
+      nós: saíamos
+      eles/elas: saíam
+  - tense: Pretérito Perfeito
+    explanation: "Completed past departures"
+    forms:
+      eu: saí
+      tu: saíste
+      ele/ela: saiu
+      nós: saímos
+      eles/elas: saíram
+  - tense: Futuro
+    explanation: "Future departures"
+    forms:
+      eu: sairei
+      tu: sairás
+      ele/ela: sairá
+      nós: sairemos
+      eles/elas: sairão
+  - tense: Condicional
+    explanation: "Hypothetical leaving"
+    forms:
+      eu: sairia
+      tu: sairias
+      ele/ela: sairia
+      nós: sairíamos
+      eles/elas: sairiam
+  - tense: Conjuntivo Presente
+    explanation: "Subjunctive for wishes/doubts about leaving"
+    forms:
+      eu: saia
+      tu: saias
+      ele/ela: saia
+      nós: saiamos
+      eles/elas: saiam
+  - tense: Conjuntivo Imperfeito
+    explanation: "Past subjunctive for hypothetical leaving"
+    forms:
+      eu: saísse
+      tu: saísses
+      ele/ela: saísse
+      nós: saíssemos
+      eles/elas: saíssem
 verb_forms:
 - saio
 - sais

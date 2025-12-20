@@ -38,6 +38,63 @@ verb_forms:
 - começares
 - começarmos
 - começarem
+conjugation:
+  - tense: Presente
+    explanation: "Starting, beginning"
+    forms:
+      eu: começo
+      tu: começas
+      ele/ela: começa
+      nós: começamos
+      eles/elas: começam
+  - tense: Pretérito Imperfeito
+    explanation: "Was starting"
+    forms:
+      eu: começava
+      tu: começavas
+      ele/ela: começava
+      nós: começávamos
+      eles/elas: começavam
+  - tense: Pretérito Perfeito
+    explanation: "Started (completed)"
+    forms:
+      eu: comecei
+      tu: começaste
+      ele/ela: começou
+      nós: começámos
+      eles/elas: começaram
+  - tense: Futuro
+    explanation: "Will start"
+    forms:
+      eu: começarei
+      tu: começarás
+      ele/ela: começará
+      nós: começaremos
+      eles/elas: começarão
+  - tense: Condicional
+    explanation: "Would start"
+    forms:
+      eu: começaria
+      tu: começarias
+      ele/ela: começaria
+      nós: começaríamos
+      eles/elas: começariam
+  - tense: Presente do Conjuntivo
+    explanation: "Subjunctive for starting"
+    forms:
+      eu: comece
+      tu: comeces
+      ele/ela: comece
+      nós: comecemos
+      eles/elas: comecem
+  - tense: Imperfeito do Conjuntivo
+    explanation: "Past subjunctive (if I started...)"
+    forms:
+      eu: começasse
+      tu: começasses
+      ele/ela: começasse
+      nós: começássemos
+      eles/elas: começassem
 phrases:
   en:
   - en: I start now.

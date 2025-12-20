@@ -38,6 +38,63 @@ verb_forms:
 - levares
 - levarmos
 - levarem
+conjugation:
+  - tense: Presente
+    explanation: "Taking, carrying, bringing"
+    forms:
+      eu: levo
+      tu: levas
+      ele/ela: leva
+      nós: levamos
+      eles/elas: levam
+  - tense: Pretérito Imperfeito
+    explanation: "Was taking"
+    forms:
+      eu: levava
+      tu: levavas
+      ele/ela: levava
+      nós: levávamos
+      eles/elas: levavam
+  - tense: Pretérito Perfeito
+    explanation: "Took (completed)"
+    forms:
+      eu: levei
+      tu: levaste
+      ele/ela: levou
+      nós: levámos
+      eles/elas: levaram
+  - tense: Futuro
+    explanation: "Will take"
+    forms:
+      eu: levarei
+      tu: levarás
+      ele/ela: levará
+      nós: levaremos
+      eles/elas: levarão
+  - tense: Condicional
+    explanation: "Would take"
+    forms:
+      eu: levaria
+      tu: levarias
+      ele/ela: levaria
+      nós: levaríamos
+      eles/elas: levariam
+  - tense: Presente do Conjuntivo
+    explanation: "Subjunctive for taking"
+    forms:
+      eu: leve
+      tu: leves
+      ele/ela: leve
+      nós: levemos
+      eles/elas: levem
+  - tense: Imperfeito do Conjuntivo
+    explanation: "Past subjunctive (if I took...)"
+    forms:
+      eu: levasse
+      tu: levasses
+      ele/ela: levasse
+      nós: levássemos
+      eles/elas: levassem
 phrases:
   en:
   - en: I take it.

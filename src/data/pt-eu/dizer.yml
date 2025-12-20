@@ -36,6 +36,63 @@ verb_forms:
 - dizer
 - dizendo
 - dito
+conjugation:
+  - tense: Presente
+    explanation: "Saying, telling"
+    forms:
+      eu: digo
+      tu: dizes
+      ele/ela: diz
+      nós: dizemos
+      eles/elas: dizem
+  - tense: Pretérito Imperfeito
+    explanation: "Was saying, used to say"
+    forms:
+      eu: dizia
+      tu: dizias
+      ele/ela: dizia
+      nós: dizíamos
+      eles/elas: diziam
+  - tense: Pretérito Perfeito
+    explanation: "Said (completed)"
+    forms:
+      eu: disse
+      tu: disseste
+      ele/ela: disse
+      nós: dissemos
+      eles/elas: disseram
+  - tense: Futuro
+    explanation: "Will say"
+    forms:
+      eu: direi
+      tu: dirás
+      ele/ela: dirá
+      nós: diremos
+      eles/elas: dirão
+  - tense: Condicional
+    explanation: "Would say"
+    forms:
+      eu: diria
+      tu: dirias
+      ele/ela: diria
+      nós: diríamos
+      eles/elas: diriam
+  - tense: Presente do Conjuntivo
+    explanation: "Subjunctive for indirect speech"
+    forms:
+      eu: diga
+      tu: digas
+      ele/ela: diga
+      nós: digamos
+      eles/elas: digam
+  - tense: Imperfeito do Conjuntivo
+    explanation: "Past subjunctive (if I said...)"
+    forms:
+      eu: dissesse
+      tu: dissesses
+      ele/ela: dissesse
+      nós: disséssemos
+      eles/elas: dissessem
 phrases:
   en:
   - en: I say the truth.

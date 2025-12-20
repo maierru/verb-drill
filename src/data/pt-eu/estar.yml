@@ -37,6 +37,63 @@ verb_forms:
 - estar
 - estando
 - estado
+conjugation:
+  - tense: Presente
+    explanation: "Temporary states, locations, emotions"
+    forms:
+      eu: estou
+      tu: estás
+      ele/ela: está
+      nós: estamos
+      eles/elas: estão
+  - tense: Pretérito Imperfeito
+    explanation: "Ongoing temporary state in the past"
+    forms:
+      eu: estava
+      tu: estavas
+      ele/ela: estava
+      nós: estávamos
+      eles/elas: estavam
+  - tense: Pretérito Perfeito
+    explanation: "Completed temporary state"
+    forms:
+      eu: estive
+      tu: estiveste
+      ele/ela: esteve
+      nós: estivemos
+      eles/elas: estiveram
+  - tense: Futuro
+    explanation: "Future temporary state"
+    forms:
+      eu: estarei
+      tu: estarás
+      ele/ela: estará
+      nós: estaremos
+      eles/elas: estarão
+  - tense: Condicional
+    explanation: "Hypothetical temporary state"
+    forms:
+      eu: estaria
+      tu: estarias
+      ele/ela: estaria
+      nós: estaríamos
+      eles/elas: estariam
+  - tense: Presente do Conjuntivo
+    explanation: "Subjunctive for wishes, doubts about state"
+    forms:
+      eu: esteja
+      tu: estejas
+      ele/ela: esteja
+      nós: estejamos
+      eles/elas: estejam
+  - tense: Imperfeito do Conjuntivo
+    explanation: "Past subjunctive (if I were there...)"
+    forms:
+      eu: estivesse
+      tu: estivesses
+      ele/ela: estivesse
+      nós: estivéssemos
+      eles/elas: estivessem
 phrases:
   en:
   - en: I am at home.

@@ -40,6 +40,63 @@ verb_forms:
 - dar
 - dando
 - dado
+conjugation:
+  - tense: Presente
+    explanation: "Giving"
+    forms:
+      eu: dou
+      tu: dás
+      ele/ela: dá
+      nós: damos
+      eles/elas: dão
+  - tense: Pretérito Imperfeito
+    explanation: "Was giving, used to give"
+    forms:
+      eu: dava
+      tu: davas
+      ele/ela: dava
+      nós: dávamos
+      eles/elas: davam
+  - tense: Pretérito Perfeito
+    explanation: "Gave (completed)"
+    forms:
+      eu: dei
+      tu: deste
+      ele/ela: deu
+      nós: demos
+      eles/elas: deram
+  - tense: Futuro
+    explanation: "Will give"
+    forms:
+      eu: darei
+      tu: darás
+      ele/ela: dará
+      nós: daremos
+      eles/elas: darão
+  - tense: Condicional
+    explanation: "Would give"
+    forms:
+      eu: daria
+      tu: darias
+      ele/ela: daria
+      nós: daríamos
+      eles/elas: dariam
+  - tense: Presente do Conjuntivo
+    explanation: "Subjunctive for giving"
+    forms:
+      eu: dê
+      tu: dês
+      ele/ela: dê
+      nós: demos
+      eles/elas: deem
+  - tense: Imperfeito do Conjuntivo
+    explanation: "Past subjunctive (if I gave...)"
+    forms:
+      eu: desse
+      tu: desses
+      ele/ela: desse
+      nós: déssemos
+      eles/elas: dessem
 phrases:
   en:
   - en: I give you my word.

@@ -37,6 +37,63 @@ verb_forms:
 - ser
 - sendo
 - sido
+conjugation:
+  - tense: Presente
+    explanation: "Current state or permanent characteristics"
+    forms:
+      eu: sou
+      tu: és
+      ele/ela: é
+      nós: somos
+      eles/elas: são
+  - tense: Pretérito Imperfeito
+    explanation: "Past state or ongoing condition in the past"
+    forms:
+      eu: era
+      tu: eras
+      ele/ela: era
+      nós: éramos
+      eles/elas: eram
+  - tense: Pretérito Perfeito
+    explanation: "Completed action or state in the past"
+    forms:
+      eu: fui
+      tu: foste
+      ele/ela: foi
+      nós: fomos
+      eles/elas: foram
+  - tense: Futuro
+    explanation: "Future state or prediction"
+    forms:
+      eu: serei
+      tu: serás
+      ele/ela: será
+      nós: seremos
+      eles/elas: serão
+  - tense: Condicional
+    explanation: "Hypothetical or polite expressions"
+    forms:
+      eu: seria
+      tu: serias
+      ele/ela: seria
+      nós: seríamos
+      eles/elas: seriam
+  - tense: Presente do Conjuntivo
+    explanation: "Subjunctive for wishes, doubts, emotions"
+    forms:
+      eu: seja
+      tu: sejas
+      ele/ela: seja
+      nós: sejamos
+      eles/elas: sejam
+  - tense: Imperfeito do Conjuntivo
+    explanation: "Past subjunctive for hypotheticals (if I were...)"
+    forms:
+      eu: fosse
+      tu: fosses
+      ele/ela: fosse
+      nós: fôssemos
+      eles/elas: fossem
 phrases:
   en:
   - en: I am a student.

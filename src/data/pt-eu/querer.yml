@@ -37,6 +37,63 @@ verb_forms:
 - querendo
 - querido
 - quiseres
+conjugation:
+  - tense: Presente
+    explanation: "Wanting, desiring"
+    forms:
+      eu: quero
+      tu: queres
+      ele/ela: quer
+      nós: queremos
+      eles/elas: querem
+  - tense: Pretérito Imperfeito
+    explanation: "Wanted (ongoing desire in past)"
+    forms:
+      eu: queria
+      tu: querias
+      ele/ela: queria
+      nós: queríamos
+      eles/elas: queriam
+  - tense: Pretérito Perfeito
+    explanation: "Wanted (specific decision)"
+    forms:
+      eu: quis
+      tu: quiseste
+      ele/ela: quis
+      nós: quisemos
+      eles/elas: quiseram
+  - tense: Futuro
+    explanation: "Will want"
+    forms:
+      eu: quererei
+      tu: quererás
+      ele/ela: quererá
+      nós: quereremos
+      eles/elas: quererão
+  - tense: Condicional
+    explanation: "Would like (polite requests)"
+    forms:
+      eu: quereria
+      tu: quererias
+      ele/ela: quereria
+      nós: quereríamos
+      eles/elas: quereriam
+  - tense: Presente do Conjuntivo
+    explanation: "Subjunctive for wishes"
+    forms:
+      eu: queira
+      tu: queiras
+      ele/ela: queira
+      nós: queiramos
+      eles/elas: queiram
+  - tense: Imperfeito do Conjuntivo
+    explanation: "Past subjunctive (if I wanted...)"
+    forms:
+      eu: quisesse
+      tu: quisesses
+      ele/ela: quisesse
+      nós: quiséssemos
+      eles/elas: quisessem
 phrases:
   en:
   - en: I want water.

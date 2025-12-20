@@ -35,6 +35,63 @@ verb_forms:
 - ir
 - indo
 - ido
+conjugation:
+  - tense: Presente
+    explanation: "Movement, going somewhere, future (ir + infinitive)"
+    forms:
+      eu: vou
+      tu: vais
+      ele/ela: vai
+      nós: vamos
+      eles/elas: vão
+  - tense: Pretérito Imperfeito
+    explanation: "Used to go, was going"
+    forms:
+      eu: ia
+      tu: ias
+      ele/ela: ia
+      nós: íamos
+      eles/elas: iam
+  - tense: Pretérito Perfeito
+    explanation: "Went (completed action)"
+    forms:
+      eu: fui
+      tu: foste
+      ele/ela: foi
+      nós: fomos
+      eles/elas: foram
+  - tense: Futuro
+    explanation: "Will go (formal)"
+    forms:
+      eu: irei
+      tu: irás
+      ele/ela: irá
+      nós: iremos
+      eles/elas: irão
+  - tense: Condicional
+    explanation: "Would go"
+    forms:
+      eu: iria
+      tu: irias
+      ele/ela: iria
+      nós: iríamos
+      eles/elas: iriam
+  - tense: Presente do Conjuntivo
+    explanation: "Subjunctive for wishes about going"
+    forms:
+      eu: vá
+      tu: vás
+      ele/ela: vá
+      nós: vamos
+      eles/elas: vão
+  - tense: Imperfeito do Conjuntivo
+    explanation: "Past subjunctive (if I went...)"
+    forms:
+      eu: fosse
+      tu: fosses
+      ele/ela: fosse
+      nós: fôssemos
+      eles/elas: fossem
 phrases:
   en:
   - en: I go to work.

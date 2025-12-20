@@ -40,6 +40,63 @@ verb_forms:
 - saber
 - sabendo
 - sabido
+conjugation:
+  - tense: Presente
+    explanation: "Knowing (facts, how to do)"
+    forms:
+      eu: sei
+      tu: sabes
+      ele/ela: sabe
+      nós: sabemos
+      eles/elas: sabem
+  - tense: Pretérito Imperfeito
+    explanation: "Knew (ongoing state)"
+    forms:
+      eu: sabia
+      tu: sabias
+      ele/ela: sabia
+      nós: sabíamos
+      eles/elas: sabiam
+  - tense: Pretérito Perfeito
+    explanation: "Found out, learned"
+    forms:
+      eu: soube
+      tu: soubeste
+      ele/ela: soube
+      nós: soubemos
+      eles/elas: souberam
+  - tense: Futuro
+    explanation: "Will know"
+    forms:
+      eu: saberei
+      tu: saberás
+      ele/ela: saberá
+      nós: saberemos
+      eles/elas: saberão
+  - tense: Condicional
+    explanation: "Would know"
+    forms:
+      eu: saberia
+      tu: saberias
+      ele/ela: saberia
+      nós: saberíamos
+      eles/elas: saberiam
+  - tense: Presente do Conjuntivo
+    explanation: "Subjunctive for knowing"
+    forms:
+      eu: saiba
+      tu: saibas
+      ele/ela: saiba
+      nós: saibamos
+      eles/elas: saibam
+  - tense: Imperfeito do Conjuntivo
+    explanation: "Past subjunctive (if I knew...)"
+    forms:
+      eu: soubesse
+      tu: soubesses
+      ele/ela: soubesse
+      nós: soubéssemos
+      eles/elas: soubessem
 phrases:
   en:
   - en: I know the answer.

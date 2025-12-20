@@ -39,6 +39,63 @@ verb_forms:
 - deverem
 - devendo
 - devido
+conjugation:
+  - tense: Presente
+    explanation: "Must, should, ought to"
+    forms:
+      eu: devo
+      tu: deves
+      ele/ela: deve
+      nós: devemos
+      eles/elas: devem
+  - tense: Pretérito Imperfeito
+    explanation: "Should have (ongoing obligation)"
+    forms:
+      eu: devia
+      tu: devias
+      ele/ela: devia
+      nós: devíamos
+      eles/elas: deviam
+  - tense: Pretérito Perfeito
+    explanation: "Had to, owed (completed)"
+    forms:
+      eu: devi
+      tu: deveste
+      ele/ela: deveu
+      nós: devemos
+      eles/elas: deveram
+  - tense: Futuro
+    explanation: "Will have to"
+    forms:
+      eu: deverei
+      tu: deverás
+      ele/ela: deverá
+      nós: deveremos
+      eles/elas: deverão
+  - tense: Condicional
+    explanation: "Should (advice, politeness)"
+    forms:
+      eu: deveria
+      tu: deverias
+      ele/ela: deveria
+      nós: deveríamos
+      eles/elas: deveriam
+  - tense: Presente do Conjuntivo
+    explanation: "Subjunctive for obligation"
+    forms:
+      eu: deva
+      tu: devas
+      ele/ela: deva
+      nós: devamos
+      eles/elas: devam
+  - tense: Imperfeito do Conjuntivo
+    explanation: "Past subjunctive (if I should...)"
+    forms:
+      eu: devesse
+      tu: devesses
+      ele/ela: devesse
+      nós: devêssemos
+      eles/elas: devessem
 phrases:
   en:
   - en: I should go.

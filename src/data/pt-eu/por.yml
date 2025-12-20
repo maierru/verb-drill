@@ -1,7 +1,64 @@
 ---
 slug: por
 name: "\U0001F1F5\U0001F1F9 Verb PÔR"
-meaning: to be (permanent)
+meaning: to put
+conjugation:
+  - tense: Presente
+    explanation: "Current actions of putting/placing"
+    forms:
+      eu: ponho
+      tu: pões
+      ele/ela: põe
+      nós: pomos
+      eles/elas: põem
+  - tense: Pretérito Imperfeito
+    explanation: "Past habitual or ongoing putting"
+    forms:
+      eu: punha
+      tu: punhas
+      ele/ela: punha
+      nós: púnhamos
+      eles/elas: punham
+  - tense: Pretérito Perfeito
+    explanation: "Completed past actions of putting"
+    forms:
+      eu: pus
+      tu: puseste
+      ele/ela: pôs
+      nós: pusemos
+      eles/elas: puseram
+  - tense: Futuro
+    explanation: "Future actions of putting"
+    forms:
+      eu: porei
+      tu: porás
+      ele/ela: porá
+      nós: poremos
+      eles/elas: porão
+  - tense: Condicional
+    explanation: "Hypothetical putting"
+    forms:
+      eu: poria
+      tu: porias
+      ele/ela: poria
+      nós: poríamos
+      eles/elas: poriam
+  - tense: Conjuntivo Presente
+    explanation: "Subjunctive for wishes/doubts about putting"
+    forms:
+      eu: ponha
+      tu: ponhas
+      ele/ela: ponha
+      nós: ponhamos
+      eles/elas: ponham
+  - tense: Conjuntivo Imperfeito
+    explanation: "Past subjunctive for hypothetical putting"
+    forms:
+      eu: pusesse
+      tu: pusesses
+      ele/ela: pusesse
+      nós: puséssemos
+      eles/elas: pusessem
 verb_forms:
 - ponho
 - pões

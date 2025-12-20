@@ -40,6 +40,63 @@ verb_forms:
 - haver
 - havendo
 - havido
+conjugation:
+  - tense: Presente
+    explanation: "There is/are (há), to have (auxiliary)"
+    forms:
+      eu: hei
+      tu: hás
+      ele/ela: há
+      nós: havemos
+      eles/elas: hão
+  - tense: Pretérito Imperfeito
+    explanation: "There was/were (havia)"
+    forms:
+      eu: havia
+      tu: havias
+      ele/ela: havia
+      nós: havíamos
+      eles/elas: haviam
+  - tense: Pretérito Perfeito
+    explanation: "There was (houve) - specific event"
+    forms:
+      eu: houve
+      tu: houveste
+      ele/ela: houve
+      nós: houvemos
+      eles/elas: houveram
+  - tense: Futuro
+    explanation: "There will be (haverá)"
+    forms:
+      eu: haverei
+      tu: haverás
+      ele/ela: haverá
+      nós: haveremos
+      eles/elas: haverão
+  - tense: Condicional
+    explanation: "There would be (haveria)"
+    forms:
+      eu: haveria
+      tu: haverias
+      ele/ela: haveria
+      nós: haveríamos
+      eles/elas: haveriam
+  - tense: Presente do Conjuntivo
+    explanation: "Subjunctive (haja)"
+    forms:
+      eu: haja
+      tu: hajas
+      ele/ela: haja
+      nós: hajamos
+      eles/elas: hajam
+  - tense: Imperfeito do Conjuntivo
+    explanation: "Past subjunctive (if there were...)"
+    forms:
+      eu: houvesse
+      tu: houvesses
+      ele/ela: houvesse
+      nós: houvéssemos
+      eles/elas: houvessem
 phrases:
   en:
   - en: There is a problem.

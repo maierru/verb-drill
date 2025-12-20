@@ -37,6 +37,63 @@ verb_forms:
 - pedires
 - pedirmos
 - pedirem
+conjugation:
+  - tense: Presente
+    explanation: "Asking, requesting"
+    forms:
+      eu: peço
+      tu: pedes
+      ele/ela: pede
+      nós: pedimos
+      eles/elas: pedem
+  - tense: Pretérito Imperfeito
+    explanation: "Was asking"
+    forms:
+      eu: pedia
+      tu: pedias
+      ele/ela: pedia
+      nós: pedíamos
+      eles/elas: pediam
+  - tense: Pretérito Perfeito
+    explanation: "Asked (completed)"
+    forms:
+      eu: pedi
+      tu: pediste
+      ele/ela: pediu
+      nós: pedimos
+      eles/elas: pediram
+  - tense: Futuro
+    explanation: "Will ask"
+    forms:
+      eu: pedirei
+      tu: pedirás
+      ele/ela: pedirá
+      nós: pediremos
+      eles/elas: pedirão
+  - tense: Condicional
+    explanation: "Would ask"
+    forms:
+      eu: pediria
+      tu: pedirias
+      ele/ela: pediria
+      nós: pediríamos
+      eles/elas: pediriam
+  - tense: Presente do Conjuntivo
+    explanation: "Subjunctive for asking"
+    forms:
+      eu: peça
+      tu: peças
+      ele/ela: peça
+      nós: peçamos
+      eles/elas: peçam
+  - tense: Imperfeito do Conjuntivo
+    explanation: "Past subjunctive (if I asked...)"
+    forms:
+      eu: pedisse
+      tu: pedisses
+      ele/ela: pedisse
+      nós: pedíssemos
+      eles/elas: pedissem
 phrases:
   en:
   - en: I ask.

@@ -38,6 +38,63 @@ verb_forms:
 - deixares
 - deixarmos
 - deixarem
+conjugation:
+  - tense: Presente
+    explanation: "Leaving, letting, allowing"
+    forms:
+      eu: deixo
+      tu: deixas
+      ele/ela: deixa
+      nós: deixamos
+      eles/elas: deixam
+  - tense: Pretérito Imperfeito
+    explanation: "Was leaving, used to leave"
+    forms:
+      eu: deixava
+      tu: deixavas
+      ele/ela: deixava
+      nós: deixávamos
+      eles/elas: deixavam
+  - tense: Pretérito Perfeito
+    explanation: "Left, let (completed)"
+    forms:
+      eu: deixei
+      tu: deixaste
+      ele/ela: deixou
+      nós: deixámos
+      eles/elas: deixaram
+  - tense: Futuro
+    explanation: "Will leave"
+    forms:
+      eu: deixarei
+      tu: deixarás
+      ele/ela: deixará
+      nós: deixaremos
+      eles/elas: deixarão
+  - tense: Condicional
+    explanation: "Would leave"
+    forms:
+      eu: deixaria
+      tu: deixarias
+      ele/ela: deixaria
+      nós: deixaríamos
+      eles/elas: deixariam
+  - tense: Presente do Conjuntivo
+    explanation: "Subjunctive for leaving"
+    forms:
+      eu: deixe
+      tu: deixes
+      ele/ela: deixe
+      nós: deixemos
+      eles/elas: deixem
+  - tense: Imperfeito do Conjuntivo
+    explanation: "Past subjunctive (if I left...)"
+    forms:
+      eu: deixasse
+      tu: deixasses
+      ele/ela: deixasse
+      nós: deixássemos
+      eles/elas: deixassem
 phrases:
   en:
   - en: I leave it here.

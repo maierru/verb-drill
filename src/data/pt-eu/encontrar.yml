@@ -38,6 +38,63 @@ verb_forms:
 - encontrares
 - encontrarmos
 - encontrarem
+conjugation:
+  - tense: Presente
+    explanation: "Finding, meeting"
+    forms:
+      eu: encontro
+      tu: encontras
+      ele/ela: encontra
+      nós: encontramos
+      eles/elas: encontram
+  - tense: Pretérito Imperfeito
+    explanation: "Was finding"
+    forms:
+      eu: encontrava
+      tu: encontravas
+      ele/ela: encontrava
+      nós: encontrávamos
+      eles/elas: encontravam
+  - tense: Pretérito Perfeito
+    explanation: "Found, met (completed)"
+    forms:
+      eu: encontrei
+      tu: encontraste
+      ele/ela: encontrou
+      nós: encontrámos
+      eles/elas: encontraram
+  - tense: Futuro
+    explanation: "Will find"
+    forms:
+      eu: encontrarei
+      tu: encontrarás
+      ele/ela: encontrará
+      nós: encontraremos
+      eles/elas: encontrarão
+  - tense: Condicional
+    explanation: "Would find"
+    forms:
+      eu: encontraria
+      tu: encontrarias
+      ele/ela: encontraria
+      nós: encontraríamos
+      eles/elas: encontrariam
+  - tense: Presente do Conjuntivo
+    explanation: "Subjunctive for finding"
+    forms:
+      eu: encontre
+      tu: encontres
+      ele/ela: encontre
+      nós: encontremos
+      eles/elas: encontrem
+  - tense: Imperfeito do Conjuntivo
+    explanation: "Past subjunctive (if I found...)"
+    forms:
+      eu: encontrasse
+      tu: encontrasses
+      ele/ela: encontrasse
+      nós: encontrássemos
+      eles/elas: encontrassem
 phrases:
   en:
   - en: I find.

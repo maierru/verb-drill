@@ -57,6 +57,26 @@ function hideAll() {
     });
 }
 
+// Conjugation modal
+function openConjugation() {
+    document.getElementById('conjugationModal').classList.add('open');
+}
+
+function closeConjugation() {
+    document.getElementById('conjugationModal').classList.remove('open');
+}
+
+// Close modal on background click
+document.addEventListener('click', (e) => {
+    const modal = document.getElementById('conjugationModal');
+    if (e.target === modal) closeConjugation();
+});
+
+// Close modal on Escape
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeConjugation();
+});
+
 // Initialize
 document.getElementById('searchInput').addEventListener('input', (e) => {
     const query = e.target.value.toLowerCase();

@@ -37,6 +37,63 @@ verb_forms:
 - ter
 - tendo
 - tido
+conjugation:
+  - tense: Presente
+    explanation: "Possession, obligation (ter que), age"
+    forms:
+      eu: tenho
+      tu: tens
+      ele/ela: tem
+      nós: temos
+      eles/elas: têm
+  - tense: Pretérito Imperfeito
+    explanation: "Past possession or state"
+    forms:
+      eu: tinha
+      tu: tinhas
+      ele/ela: tinha
+      nós: tínhamos
+      eles/elas: tinham
+  - tense: Pretérito Perfeito
+    explanation: "Completed possession or event"
+    forms:
+      eu: tive
+      tu: tiveste
+      ele/ela: teve
+      nós: tivemos
+      eles/elas: tiveram
+  - tense: Futuro
+    explanation: "Future possession"
+    forms:
+      eu: terei
+      tu: terás
+      ele/ela: terá
+      nós: teremos
+      eles/elas: terão
+  - tense: Condicional
+    explanation: "Hypothetical possession"
+    forms:
+      eu: teria
+      tu: terias
+      ele/ela: teria
+      nós: teríamos
+      eles/elas: teriam
+  - tense: Presente do Conjuntivo
+    explanation: "Subjunctive for wishes about having"
+    forms:
+      eu: tenha
+      tu: tenhas
+      ele/ela: tenha
+      nós: tenhamos
+      eles/elas: tenham
+  - tense: Imperfeito do Conjuntivo
+    explanation: "Past subjunctive (if I had...)"
+    forms:
+      eu: tivesse
+      tu: tivesses
+      ele/ela: tivesse
+      nós: tivéssemos
+      eles/elas: tivessem
 phrases:
   en:
   - en: I have a car.

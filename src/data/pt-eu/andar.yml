@@ -38,6 +38,63 @@ verb_forms:
 - andares
 - andarmos
 - andarem
+conjugation:
+  - tense: Presente
+    explanation: "Walking, going (andar a = been doing)"
+    forms:
+      eu: ando
+      tu: andas
+      ele/ela: anda
+      nós: andamos
+      eles/elas: andam
+  - tense: Pretérito Imperfeito
+    explanation: "Was walking, used to walk"
+    forms:
+      eu: andava
+      tu: andavas
+      ele/ela: andava
+      nós: andávamos
+      eles/elas: andavam
+  - tense: Pretérito Perfeito
+    explanation: "Walked (completed)"
+    forms:
+      eu: andei
+      tu: andaste
+      ele/ela: andou
+      nós: andámos
+      eles/elas: andaram
+  - tense: Futuro
+    explanation: "Will walk"
+    forms:
+      eu: andarei
+      tu: andarás
+      ele/ela: andará
+      nós: andaremos
+      eles/elas: andarão
+  - tense: Condicional
+    explanation: "Would walk"
+    forms:
+      eu: andaria
+      tu: andarias
+      ele/ela: andaria
+      nós: andaríamos
+      eles/elas: andariam
+  - tense: Presente do Conjuntivo
+    explanation: "Subjunctive for walking"
+    forms:
+      eu: ande
+      tu: andes
+      ele/ela: ande
+      nós: andemos
+      eles/elas: andem
+  - tense: Imperfeito do Conjuntivo
+    explanation: "Past subjunctive (if I walked...)"
+    forms:
+      eu: andasse
+      tu: andasses
+      ele/ela: andasse
+      nós: andássemos
+      eles/elas: andassem
 phrases:
   en:
   - en: I walk every day.

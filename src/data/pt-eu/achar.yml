@@ -38,6 +38,63 @@ verb_forms:
 - achares
 - acharmos
 - acharem
+conjugation:
+  - tense: Presente
+    explanation: "Thinking, finding"
+    forms:
+      eu: acho
+      tu: achas
+      ele/ela: acha
+      nós: achamos
+      eles/elas: acham
+  - tense: Pretérito Imperfeito
+    explanation: "Was thinking, used to think"
+    forms:
+      eu: achava
+      tu: achavas
+      ele/ela: achava
+      nós: achávamos
+      eles/elas: achavam
+  - tense: Pretérito Perfeito
+    explanation: "Thought, found (completed)"
+    forms:
+      eu: achei
+      tu: achaste
+      ele/ela: achou
+      nós: achámos
+      eles/elas: acharam
+  - tense: Futuro
+    explanation: "Will think"
+    forms:
+      eu: acharei
+      tu: acharás
+      ele/ela: achará
+      nós: acharemos
+      eles/elas: acharão
+  - tense: Condicional
+    explanation: "Would think"
+    forms:
+      eu: acharia
+      tu: acharias
+      ele/ela: acharia
+      nós: acharíamos
+      eles/elas: achariam
+  - tense: Presente do Conjuntivo
+    explanation: "Subjunctive for thinking"
+    forms:
+      eu: ache
+      tu: aches
+      ele/ela: ache
+      nós: achemos
+      eles/elas: achem
+  - tense: Imperfeito do Conjuntivo
+    explanation: "Past subjunctive (if I thought...)"
+    forms:
+      eu: achasse
+      tu: achasses
+      ele/ela: achasse
+      nós: achássemos
+      eles/elas: achassem
 phrases:
   en:
   - en: I think so.

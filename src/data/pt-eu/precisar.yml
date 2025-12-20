@@ -38,6 +38,63 @@ verb_forms:
 - precisares
 - precisarmos
 - precisarem
+conjugation:
+  - tense: Presente
+    explanation: "Needing (precisar de)"
+    forms:
+      eu: preciso
+      tu: precisas
+      ele/ela: precisa
+      nós: precisamos
+      eles/elas: precisam
+  - tense: Pretérito Imperfeito
+    explanation: "Was needing, used to need"
+    forms:
+      eu: precisava
+      tu: precisavas
+      ele/ela: precisava
+      nós: precisávamos
+      eles/elas: precisavam
+  - tense: Pretérito Perfeito
+    explanation: "Needed (completed)"
+    forms:
+      eu: precisei
+      tu: precisaste
+      ele/ela: precisou
+      nós: precisámos
+      eles/elas: precisaram
+  - tense: Futuro
+    explanation: "Will need"
+    forms:
+      eu: precisarei
+      tu: precisarás
+      ele/ela: precisará
+      nós: precisaremos
+      eles/elas: precisarão
+  - tense: Condicional
+    explanation: "Would need"
+    forms:
+      eu: precisaria
+      tu: precisarias
+      ele/ela: precisaria
+      nós: precisaríamos
+      eles/elas: precisariam
+  - tense: Presente do Conjuntivo
+    explanation: "Subjunctive for needing"
+    forms:
+      eu: precise
+      tu: precises
+      ele/ela: precise
+      nós: precisemos
+      eles/elas: precisem
+  - tense: Imperfeito do Conjuntivo
+    explanation: "Past subjunctive (if I needed...)"
+    forms:
+      eu: precisasse
+      tu: precisasses
+      ele/ela: precisasse
+      nós: precisássemos
+      eles/elas: precisassem
 phrases:
   en:
   - en: I need help.

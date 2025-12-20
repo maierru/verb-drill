@@ -37,6 +37,63 @@ verb_forms:
 - entenderes
 - entendermos
 - entenderem
+conjugation:
+  - tense: Presente
+    explanation: "Understanding"
+    forms:
+      eu: entendo
+      tu: entendes
+      ele/ela: entende
+      nós: entendemos
+      eles/elas: entendem
+  - tense: Pretérito Imperfeito
+    explanation: "Was understanding"
+    forms:
+      eu: entendia
+      tu: entendias
+      ele/ela: entendia
+      nós: entendíamos
+      eles/elas: entendiam
+  - tense: Pretérito Perfeito
+    explanation: "Understood (completed)"
+    forms:
+      eu: entendi
+      tu: entendeste
+      ele/ela: entendeu
+      nós: entendemos
+      eles/elas: entenderam
+  - tense: Futuro
+    explanation: "Will understand"
+    forms:
+      eu: entenderei
+      tu: entenderás
+      ele/ela: entenderá
+      nós: entenderemos
+      eles/elas: entenderão
+  - tense: Condicional
+    explanation: "Would understand"
+    forms:
+      eu: entenderia
+      tu: entenderias
+      ele/ela: entenderia
+      nós: entenderíamos
+      eles/elas: entenderiam
+  - tense: Presente do Conjuntivo
+    explanation: "Subjunctive for understanding"
+    forms:
+      eu: entenda
+      tu: entendas
+      ele/ela: entenda
+      nós: entendamos
+      eles/elas: entendam
+  - tense: Imperfeito do Conjuntivo
+    explanation: "Past subjunctive (if I understood...)"
+    forms:
+      eu: entendesse
+      tu: entendesses
+      ele/ela: entendesse
+      nós: entendêssemos
+      eles/elas: entendessem
 phrases:
   en:
   - en: I understand.

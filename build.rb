@@ -94,6 +94,7 @@ def build_verb_pages(lang_folder, target_lang, origins, verb_template)
       origin_key = origin
       target_key = target_lang
       footer = "#{labels[:footer_prefix]} #{verb_slug.upcase}"
+      conjugation = data['conjugation']
 
       html = verb_template.result(binding)
 

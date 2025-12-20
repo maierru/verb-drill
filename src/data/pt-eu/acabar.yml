@@ -38,6 +38,63 @@ verb_forms:
 - acabares
 - acabarmos
 - acabarem
+conjugation:
+  - tense: Presente
+    explanation: "Finishing, ending (acabar de = just did)"
+    forms:
+      eu: acabo
+      tu: acabas
+      ele/ela: acaba
+      nós: acabamos
+      eles/elas: acabam
+  - tense: Pretérito Imperfeito
+    explanation: "Was finishing"
+    forms:
+      eu: acabava
+      tu: acabavas
+      ele/ela: acabava
+      nós: acabávamos
+      eles/elas: acabavam
+  - tense: Pretérito Perfeito
+    explanation: "Finished (completed)"
+    forms:
+      eu: acabei
+      tu: acabaste
+      ele/ela: acabou
+      nós: acabámos
+      eles/elas: acabaram
+  - tense: Futuro
+    explanation: "Will finish"
+    forms:
+      eu: acabarei
+      tu: acabarás
+      ele/ela: acabará
+      nós: acabaremos
+      eles/elas: acabarão
+  - tense: Condicional
+    explanation: "Would finish"
+    forms:
+      eu: acabaria
+      tu: acabarias
+      ele/ela: acabaria
+      nós: acabaríamos
+      eles/elas: acabariam
+  - tense: Presente do Conjuntivo
+    explanation: "Subjunctive for finishing"
+    forms:
+      eu: acabe
+      tu: acabes
+      ele/ela: acabe
+      nós: acabemos
+      eles/elas: acabem
+  - tense: Imperfeito do Conjuntivo
+    explanation: "Past subjunctive (if I finished...)"
+    forms:
+      eu: acabasse
+      tu: acabasses
+      ele/ela: acabasse
+      nós: acabássemos
+      eles/elas: acabassem
 phrases:
   en:
   - en: I finish now.

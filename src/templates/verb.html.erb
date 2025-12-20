@@ -33,6 +33,41 @@
         </footer>
     </div>
 
+<% if defined?(conjugation) && conjugation -%>
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title"><%= h1 %></h2>
+<% conjugation.each do |tense_data| -%>
+            <div class="tense-explanation">
+                <h4><%= tense_data['tense'] %></h4>
+                <p><%= tense_data['explanation'] %></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+<% tense_data['forms'].each do |pronoun, form| -%>
+                    <tr>
+                        <td class="pronoun"><%= pronoun %></td>
+                        <td><%= form %></td>
+                    </tr>
+<% end -%>
+                </tbody>
+            </table>
+<% end -%>
+        </div>
+    </div>
+<% end -%>
+
     <script>
         const VERB_CONFIG = {
             originKey: '<%= origin_key %>',

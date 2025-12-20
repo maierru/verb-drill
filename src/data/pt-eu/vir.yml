@@ -37,6 +37,63 @@ verb_forms:
 - vir
 - vindo
 - vier
+conjugation:
+  - tense: Presente
+    explanation: "Coming, arriving"
+    forms:
+      eu: venho
+      tu: vens
+      ele/ela: vem
+      nós: vimos
+      eles/elas: vêm
+  - tense: Pretérito Imperfeito
+    explanation: "Was coming, used to come"
+    forms:
+      eu: vinha
+      tu: vinhas
+      ele/ela: vinha
+      nós: vínhamos
+      eles/elas: vinham
+  - tense: Pretérito Perfeito
+    explanation: "Came (completed)"
+    forms:
+      eu: vim
+      tu: vieste
+      ele/ela: veio
+      nós: viemos
+      eles/elas: vieram
+  - tense: Futuro
+    explanation: "Will come"
+    forms:
+      eu: virei
+      tu: virás
+      ele/ela: virá
+      nós: viremos
+      eles/elas: virão
+  - tense: Condicional
+    explanation: "Would come"
+    forms:
+      eu: viria
+      tu: virias
+      ele/ela: viria
+      nós: viríamos
+      eles/elas: viriam
+  - tense: Presente do Conjuntivo
+    explanation: "Subjunctive for coming"
+    forms:
+      eu: venha
+      tu: venhas
+      ele/ela: venha
+      nós: venhamos
+      eles/elas: venham
+  - tense: Imperfeito do Conjuntivo
+    explanation: "Past subjunctive (if I came...)"
+    forms:
+      eu: viesse
+      tu: viesses
+      ele/ela: viesse
+      nós: viéssemos
+      eles/elas: viessem
 phrases:
   en:
   - en: I come from Portugal.

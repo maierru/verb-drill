@@ -39,6 +39,63 @@ verb_forms:
 - conseguirem
 - conseguindo
 - conseguido
+conjugation:
+  - tense: Presente
+    explanation: "Managing to, being able to"
+    forms:
+      eu: consigo
+      tu: consegues
+      ele/ela: consegue
+      nós: conseguimos
+      eles/elas: conseguem
+  - tense: Pretérito Imperfeito
+    explanation: "Was managing to"
+    forms:
+      eu: conseguia
+      tu: conseguias
+      ele/ela: conseguia
+      nós: conseguíamos
+      eles/elas: conseguiam
+  - tense: Pretérito Perfeito
+    explanation: "Managed to (completed)"
+    forms:
+      eu: consegui
+      tu: conseguiste
+      ele/ela: conseguiu
+      nós: conseguimos
+      eles/elas: conseguiram
+  - tense: Futuro
+    explanation: "Will manage to"
+    forms:
+      eu: conseguirei
+      tu: conseguirás
+      ele/ela: conseguirá
+      nós: conseguiremos
+      eles/elas: conseguirão
+  - tense: Condicional
+    explanation: "Would manage to"
+    forms:
+      eu: conseguiria
+      tu: conseguirias
+      ele/ela: conseguiria
+      nós: conseguiríamos
+      eles/elas: conseguiriam
+  - tense: Presente do Conjuntivo
+    explanation: "Subjunctive for managing"
+    forms:
+      eu: consiga
+      tu: consigas
+      ele/ela: consiga
+      nós: consigamos
+      eles/elas: consigam
+  - tense: Imperfeito do Conjuntivo
+    explanation: "Past subjunctive (if I managed...)"
+    forms:
+      eu: conseguisse
+      tu: conseguisses
+      ele/ela: conseguisse
+      nós: conseguíssemos
+      eles/elas: conseguissem
 phrases:
   en:
   - en: I can do it.

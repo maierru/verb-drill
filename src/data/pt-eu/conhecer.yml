@@ -39,6 +39,63 @@ verb_forms:
 - conhecerem
 - conhecê
 - conhecemo
+conjugation:
+  - tense: Presente
+    explanation: "Knowing (people/places), meeting"
+    forms:
+      eu: conheço
+      tu: conheces
+      ele/ela: conhece
+      nós: conhecemos
+      eles/elas: conhecem
+  - tense: Pretérito Imperfeito
+    explanation: "Knew, used to know"
+    forms:
+      eu: conhecia
+      tu: conhecias
+      ele/ela: conhecia
+      nós: conhecíamos
+      eles/elas: conheciam
+  - tense: Pretérito Perfeito
+    explanation: "Met, got to know (completed)"
+    forms:
+      eu: conheci
+      tu: conheceste
+      ele/ela: conheceu
+      nós: conhecemos
+      eles/elas: conheceram
+  - tense: Futuro
+    explanation: "Will meet/know"
+    forms:
+      eu: conhecerei
+      tu: conhecerás
+      ele/ela: conhecerá
+      nós: conheceremos
+      eles/elas: conhecerão
+  - tense: Condicional
+    explanation: "Would know/meet"
+    forms:
+      eu: conheceria
+      tu: conhecerias
+      ele/ela: conheceria
+      nós: conheceríamos
+      eles/elas: conheceriam
+  - tense: Presente do Conjuntivo
+    explanation: "Subjunctive for knowing"
+    forms:
+      eu: conheça
+      tu: conheças
+      ele/ela: conheça
+      nós: conheçamos
+      eles/elas: conheçam
+  - tense: Imperfeito do Conjuntivo
+    explanation: "Past subjunctive (if I knew...)"
+    forms:
+      eu: conhecesse
+      tu: conhecesses
+      ele/ela: conhecesse
+      nós: conhecêssemos
+      eles/elas: conhecessem
 phrases:
   en:
   - en: I know him.
