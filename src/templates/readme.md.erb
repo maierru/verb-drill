@@ -1,6 +1,6 @@
-# Verb Drill
+# <%= name %>
 
-Practice verb conjugations with real-world phrases.
+<%= description %>.
 
 ## What is this?
 
@@ -8,20 +8,21 @@ Flashcards for mastering verb conjugations. Pick a language you want to learn, t
 
 ## Languages to learn
 
-- 🇵🇹 [Portuguese (European)](https://verb-drill.cc/pt-eu/)
-- 🇬🇧 [English](https://verb-drill.cc/en/)
+<% languages.each do |lang| -%>
+- <%= lang['flag'] %> [<%= lang['name'] %>](<%= site_url %>/<%= lang['code'] %>/)
+<% end -%>
 
 More coming.
 
 ## Mother tongues supported
 
-- 🇬🇧 English
-- 🇷🇺 Russian
-- 🇵🇹 Portuguese
+<% origins.each do |o| -%>
+- <%= o['flag'] %> <%= o['name'] %>
+<% end -%>
 
 ## How many phrases per verb?
 
-100, sorted by frequency. Covers all tenses from basic present to subjunctive.
+<%= phrases_per_verb %>, sorted by frequency. Covers all tenses from basic present to subjunctive.
 
 ## Offline?
 

@@ -165,5 +165,26 @@ if File.exist?('src/data/en/index.yml')
   puts "Built: en/index.html"
 end
 
+# Build root index and README from site.yml
+site = YAML.load_file('src/data/site.yml')
+name = site['name']
+description = site['description']
+tagline = site['tagline']
+languages = site['languages']
+origins = site['origins']
+site_url = site['site_url']
+github_url = site['github_url']
+phrases_per_verb = site['phrases_per_verb']
+
+root_template = ERB.new(File.read('src/templates/root.html.erb'), trim_mode: '-')
+html = root_template.result(binding)
+File.write('index.html', html)
+puts "Built: index.html"
+
+readme_template = ERB.new(File.read('src/templates/readme.md.erb'), trim_mode: '-')
+readme = readme_template.result(binding)
+File.write('README.md', readme)
+puts "Built: README.md"
+
 total_pages = Dir.glob('pt-eu/*/*.html').count + Dir.glob('en/*/*.html').count
 puts "\nDone! Built #{total_pages} verb pages"

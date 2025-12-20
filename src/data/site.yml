@@ -1,0 +1,23 @@
+name: Verb Drill
+description: Practice verb conjugations with real-world phrases
+tagline: Interactive flashcards for verb conjugation practice
+
+github_url: https://github.com/maierru/verb-drill
+site_url: https://verb-drill.cc
+
+languages:
+  - code: pt-eu
+    name: Portuguese (European)
+    flag: "🇵🇹"
+    path: pt-eu/index.html
+  - code: en
+    name: English
+    flag: "🇬🇧"
+    path: en/index.html
+
+origins:
+  - { flag: "🇬🇧", name: English }
+  - { flag: "🇷🇺", name: Russian }
+  - { flag: "🇵🇹", name: Portuguese }
+
+phrases_per_verb: 100
