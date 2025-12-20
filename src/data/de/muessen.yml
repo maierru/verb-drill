@@ -1,0 +1,248 @@
+slug: muessen
+name: "🇩🇪 Verb MÜSSEN"
+meaning: must, to have to
+verb_forms:
+  - muss
+  - musst
+  - müssen
+  - müsst
+  - musste
+  - musstest
+  - mussten
+  - musstet
+  - gemusst
+
+conjugation:
+  - tense: Präsens
+    explanation:
+      en: "Present tense - necessity, obligation"
+      ru: "Настоящее время - необходимость, обязанность"
+      pt: "Presente - necessidade, obrigação"
+    forms:
+      ich: muss
+      du: musst
+      er/sie/es: muss
+      wir: müssen
+      ihr: müsst
+      sie/Sie: müssen
+  - tense: Präteritum
+    explanation:
+      en: "Simple past - had to"
+      ru: "Простое прошедшее - должен был"
+      pt: "Pretérito simples - tinha de"
+    forms:
+      ich: musste
+      du: musstest
+      er/sie/es: musste
+      wir: mussten
+      ihr: musstet
+      sie/Sie: mussten
+  - tense: Perfekt
+    explanation:
+      en: "Present perfect - has had to"
+      ru: "Перфект - пришлось"
+      pt: "Pretérito perfeito - teve de"
+    forms:
+      ich: habe gemusst
+      du: hast gemusst
+      er/sie/es: hat gemusst
+      wir: haben gemusst
+      ihr: habt gemusst
+      sie/Sie: haben gemusst
+  - tense: Futur I
+    explanation:
+      en: "Future - will have to"
+      ru: "Будущее время - придётся"
+      pt: "Futuro - terá de"
+    forms:
+      ich: werde müssen
+      du: wirst müssen
+      er/sie/es: wird müssen
+      wir: werden müssen
+      ihr: werdet müssen
+      sie/Sie: werden müssen
+
+phrases:
+  en:
+    - en: "I must go now."
+      de: "Ich muss jetzt gehen."
+      tense: "Präsens"
+    - en: "You have to study."
+      de: "Du musst lernen."
+      tense: "Präsens"
+    - en: "She has to work today."
+      de: "Sie muss heute arbeiten."
+      tense: "Präsens"
+    - en: "We must be careful."
+      de: "Wir müssen vorsichtig sein."
+      tense: "Präsens"
+    - en: "I had to wait."
+      de: "Ich musste warten."
+      tense: "Präteritum"
+    - en: "He had to leave early."
+      de: "Er musste früh gehen."
+      tense: "Präteritum"
+    - en: "I will have to think about it."
+      de: "Ich werde darüber nachdenken müssen."
+      tense: "Futur I"
+    - en: "Do I have to do this?"
+      de: "Muss ich das machen?"
+      tense: "Präsens"
+    - en: "They must hurry."
+      de: "Sie müssen sich beeilen."
+      tense: "Präsens"
+    - en: "I must admit something."
+      de: "Ich muss etwas zugeben."
+      tense: "Präsens"
+    - en: "We had to change our plans."
+      de: "Wir mussten unsere Pläne ändern."
+      tense: "Präteritum"
+    - en: "You must see this."
+      de: "Du musst das sehen."
+      tense: "Präsens"
+    - en: "She had to stay home."
+      de: "Sie musste zu Hause bleiben."
+      tense: "Präteritum"
+    - en: "I must call my mother."
+      de: "Ich muss meine Mutter anrufen."
+      tense: "Präsens"
+    - en: "He will have to pay."
+      de: "Er wird zahlen müssen."
+      tense: "Futur I"
+    - en: "We must find a solution."
+      de: "Wir müssen eine Lösung finden."
+      tense: "Präsens"
+    - en: "I had to take the train."
+      de: "Ich musste den Zug nehmen."
+      tense: "Präteritum"
+    - en: "You don't have to come."
+      de: "Du musst nicht kommen."
+      tense: "Präsens"
+    - en: "They had to start over."
+      de: "Sie mussten von vorne anfangen."
+      tense: "Präteritum"
+    - en: "I must tell you something."
+      de: "Ich muss dir etwas sagen."
+      tense: "Präsens"
+  ru:
+    - ru: "Мне нужно идти."
+      de: "Ich muss jetzt gehen."
+      tense: "Präsens"
+    - ru: "Тебе нужно учиться."
+      de: "Du musst lernen."
+      tense: "Präsens"
+    - ru: "Ей нужно сегодня работать."
+      de: "Sie muss heute arbeiten."
+      tense: "Präsens"
+    - ru: "Мы должны быть осторожны."
+      de: "Wir müssen vorsichtig sein."
+      tense: "Präsens"
+    - ru: "Мне пришлось ждать."
+      de: "Ich musste warten."
+      tense: "Präteritum"
+    - ru: "Ему пришлось уйти рано."
+      de: "Er musste früh gehen."
+      tense: "Präteritum"
+    - ru: "Мне придётся подумать об этом."
+      de: "Ich werde darüber nachdenken müssen."
+      tense: "Futur I"
+    - ru: "Мне нужно это делать?"
+      de: "Muss ich das machen?"
+      tense: "Präsens"
+    - ru: "Им нужно торопиться."
+      de: "Sie müssen sich beeilen."
+      tense: "Präsens"
+    - ru: "Я должен кое-что признать."
+      de: "Ich muss etwas zugeben."
+      tense: "Präsens"
+    - ru: "Нам пришлось изменить планы."
+      de: "Wir mussten unsere Pläne ändern."
+      tense: "Präteritum"
+    - ru: "Ты должен это увидеть."
+      de: "Du musst das sehen."
+      tense: "Präsens"
+    - ru: "Ей пришлось остаться дома."
+      de: "Sie musste zu Hause bleiben."
+      tense: "Präteritum"
+    - ru: "Мне нужно позвонить маме."
+      de: "Ich muss meine Mutter anrufen."
+      tense: "Präsens"
+    - ru: "Ему придётся заплатить."
+      de: "Er wird zahlen müssen."
+      tense: "Futur I"
+    - ru: "Мы должны найти решение."
+      de: "Wir müssen eine Lösung finden."
+      tense: "Präsens"
+    - ru: "Мне пришлось ехать на поезде."
+      de: "Ich musste den Zug nehmen."
+      tense: "Präteritum"
+    - ru: "Тебе не нужно приходить."
+      de: "Du musst nicht kommen."
+      tense: "Präsens"
+    - ru: "Им пришлось начать сначала."
+      de: "Sie mussten von vorne anfangen."
+      tense: "Präteritum"
+    - ru: "Мне нужно тебе кое-что сказать."
+      de: "Ich muss dir etwas sagen."
+      tense: "Präsens"
+  pt:
+    - pt: "Tenho de ir agora."
+      de: "Ich muss jetzt gehen."
+      tense: "Präsens"
+    - pt: "Tens de estudar."
+      de: "Du musst lernen."
+      tense: "Präsens"
+    - pt: "Ela tem de trabalhar hoje."
+      de: "Sie muss heute arbeiten."
+      tense: "Präsens"
+    - pt: "Temos de ter cuidado."
+      de: "Wir müssen vorsichtig sein."
+      tense: "Präsens"
+    - pt: "Tive de esperar."
+      de: "Ich musste warten."
+      tense: "Präteritum"
+    - pt: "Ele teve de sair cedo."
+      de: "Er musste früh gehen."
+      tense: "Präteritum"
+    - pt: "Terei de pensar nisso."
+      de: "Ich werde darüber nachdenken müssen."
+      tense: "Futur I"
+    - pt: "Tenho de fazer isto?"
+      de: "Muss ich das machen?"
+      tense: "Präsens"
+    - pt: "Eles têm de se apressar."
+      de: "Sie müssen sich beeilen."
+      tense: "Präsens"
+    - pt: "Tenho de admitir uma coisa."
+      de: "Ich muss etwas zugeben."
+      tense: "Präsens"
+    - pt: "Tivemos de mudar os planos."
+      de: "Wir mussten unsere Pläne ändern."
+      tense: "Präteritum"
+    - pt: "Tens de ver isto."
+      de: "Du musst das sehen."
+      tense: "Präsens"
+    - pt: "Ela teve de ficar em casa."
+      de: "Sie musste zu Hause bleiben."
+      tense: "Präteritum"
+    - pt: "Tenho de ligar à minha mãe."
+      de: "Ich muss meine Mutter anrufen."
+      tense: "Präsens"
+    - pt: "Ele terá de pagar."
+      de: "Er wird zahlen müssen."
+      tense: "Futur I"
+    - pt: "Temos de encontrar uma solução."
+      de: "Wir müssen eine Lösung finden."
+      tense: "Präsens"
+    - pt: "Tive de apanhar o comboio."
+      de: "Ich musste den Zug nehmen."
+      tense: "Präteritum"
+    - pt: "Não precisas de vir."
+      de: "Du musst nicht kommen."
+      tense: "Präsens"
+    - pt: "Tiveram de recomeçar."
+      de: "Sie mussten von vorne anfangen."
+      tense: "Präteritum"
+    - pt: "Tenho de te dizer uma coisa."
+      de: "Ich muss dir etwas sagen."
+      tense: "Präsens"

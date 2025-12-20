@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇩🇪 VERB HABEN — 20 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇩🇪 Verb HABEN</h1>
+            <p class="subtitle">to have — 20 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 20 de 20 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Prática de alemão — HABEN · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇩🇪 Verb HABEN</h2>
+            <div class="tense-explanation">
+                <h4>Präsens</h4>
+                <p>Presente - posse, auxiliar para tempos perfeitos</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>habe</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>hast</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>hat</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>haben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>habt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>haben</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Präteritum</h4>
+                <p>Pretérito simples - tinha/teve (em narrativas)</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>hatte</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>hattest</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>hatte</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>hatten</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>hattet</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>hatten</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Perfekt</h4>
+                <p>Pretérito perfeito - teve</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>habe gehabt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>hast gehabt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>hat gehabt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>haben gehabt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>habt gehabt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>haben gehabt</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur I</h4>
+                <p>Futuro - terá</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>werde haben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>wirst haben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>wird haben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>werden haben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>werdet haben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>werden haben</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'de',
+            labels: { target: 'Deutsch', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["habe","hast","hat","haben","habt","hatte","hattest","hatten","hattet","gehabt"],
+            phrases: [
+                { pt: "Tenho um carro.", de: "Ich habe ein Auto.", tense: "Präsens" },
+                { pt: "Tens tempo?", de: "Hast du Zeit?", tense: "Präsens" },
+                { pt: "Ela tem dois filhos.", de: "Sie hat zwei Kinder.", tense: "Präsens" },
+                { pt: "Temos um problema.", de: "Wir haben ein Problem.", tense: "Präsens" },
+                { pt: "Eles têm um cão.", de: "Sie haben einen Hund.", tense: "Präsens" },
+                { pt: "Eu tinha dor de cabeça.", de: "Ich hatte Kopfschmerzen.", tense: "Präteritum" },
+                { pt: "Não tínhamos escolha.", de: "Wir hatten keine Wahl.", tense: "Präteritum" },
+                { pt: "Ele já teve o suficiente.", de: "Er hat genug gehabt.", tense: "Perfekt" },
+                { pt: "Amanhã terei mais tempo.", de: "Ich werde morgen mehr Zeit haben.", tense: "Futur I" },
+                { pt: "Tem alguma pergunta?", de: "Haben Sie eine Frage?", tense: "Präsens" },
+                { pt: "Tenho uma ideia.", de: "Ich habe eine Idee.", tense: "Präsens" },
+                { pt: "Ela tinha muito trabalho.", de: "Sie hatte viel Arbeit.", tense: "Präteritum" },
+                { pt: "Já tomaste o pequeno-almoço?", de: "Hast du gefrühstückt?", tense: "Perfekt" },
+                { pt: "Teremos convidados.", de: "Wir werden Gäste haben.", tense: "Futur I" },
+                { pt: "Não tenho dinheiro.", de: "Ich habe kein Geld.", tense: "Präsens" },
+                { pt: "Eles tiveram uma reunião.", de: "Sie hatten eine Besprechung.", tense: "Präteritum" },
+                { pt: "Tens a chave?", de: "Hast du den Schlüssel?", tense: "Präsens" },
+                { pt: "Ele tem boas notícias.", de: "Er hat gute Nachrichten.", tense: "Präsens" },
+                { pt: "Divertimo-nos.", de: "Wir hatten Spaß.", tense: "Präteritum" },
+                { pt: "Terei terminado até lá.", de: "Ich werde bis dahin fertig sein.", tense: "Futur I" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

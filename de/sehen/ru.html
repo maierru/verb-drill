@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇩🇪 VERB SEHEN — 20 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇩🇪 Verb SEHEN</h1>
+            <p class="subtitle">to see — 20 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 20 из 20 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика немецкого — SEHEN · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇩🇪 Verb SEHEN</h2>
+            <div class="tense-explanation">
+                <h4>Präsens</h4>
+                <p>Настоящее время - видеть, смотреть</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>sehe</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>siehst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>sieht</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>sehen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>seht</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>sehen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Präteritum</h4>
+                <p>Простое прошедшее - видел</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>sah</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>sahst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>sah</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>sahen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>saht</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>sahen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Perfekt</h4>
+                <p>Перфект - видел</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>habe gesehen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>hast gesehen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>hat gesehen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>haben gesehen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>habt gesehen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>haben gesehen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur I</h4>
+                <p>Будущее время - увидит</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>werde sehen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>wirst sehen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>wird sehen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>werden sehen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>werdet sehen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>werden sehen</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'de',
+            labels: { target: 'Deutsch', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["sehe","siehst","sieht","sehen","seht","sah","sahst","sahen","saht","gesehen"],
+            phrases: [
+                { ru: "Понятно.", de: "Ich verstehe.", tense: "Präsens" },
+                { ru: "Ты это видишь?", de: "Siehst du das?", tense: "Präsens" },
+                { ru: "Она всё видит.", de: "Sie sieht alles.", tense: "Präsens" },
+                { ru: "Я видел его вчера.", de: "Ich habe ihn gestern gesehen.", tense: "Perfekt" },
+                { ru: "Увидимся!", de: "Bis später!", tense: "Präsens" },
+                { ru: "Посмотрим.", de: "Wir werden sehen.", tense: "Futur I" },
+                { ru: "Он смотрел фильм.", de: "Er hat den Film gesehen.", tense: "Perfekt" },
+                { ru: "Я никогда этого не видел.", de: "Ich habe das noch nie gesehen.", tense: "Perfekt" },
+                { ru: "Она хорошо выглядит.", de: "Sie sieht gut aus.", tense: "Präsens" },
+                { ru: "Ты видел это?", de: "Hast du das gesehen?", tense: "Perfekt" },
+                { ru: "Я понимаю, что ты имеешь в виду.", de: "Ich verstehe, was du meinst.", tense: "Präsens" },
+                { ru: "Мы виделись.", de: "Wir haben uns gesehen.", tense: "Perfekt" },
+                { ru: "Похоже на дождь.", de: "Es sieht nach Regen aus.", tense: "Präsens" },
+                { ru: "Увидимся завтра.", de: "Ich werde dich morgen sehen.", tense: "Futur I" },
+                { ru: "Он ничего не видел.", de: "Er sah nichts.", tense: "Präteritum" },
+                { ru: "Дай посмотреть.", de: "Lass mich sehen.", tense: "Präsens" },
+                { ru: "Она видела аварию.", de: "Sie hat den Unfall gesehen.", tense: "Perfekt" },
+                { ru: "Ты выглядишь уставшим.", de: "Du siehst müde aus.", tense: "Präsens" },
+                { ru: "Я не видел её много лет.", de: "Ich habe sie seit Jahren nicht gesehen.", tense: "Perfekt" },
+                { ru: "Мы это предвидели.", de: "Wir haben es kommen sehen.", tense: "Perfekt" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

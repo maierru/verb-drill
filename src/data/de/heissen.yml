@@ -1,0 +1,246 @@
+slug: heissen
+name: "🇩🇪 Verb HEISSEN"
+meaning: to be called
+verb_forms:
+  - heiße
+  - heißt
+  - heißen
+  - hieß
+  - hießt
+  - hießen
+  - geheißen
+
+conjugation:
+  - tense: Präsens
+    explanation:
+      en: "Present tense - being called, meaning"
+      ru: "Настоящее время - называться, значить"
+      pt: "Presente - chamar-se, significar"
+    forms:
+      ich: heiße
+      du: heißt
+      er/sie/es: heißt
+      wir: heißen
+      ihr: heißt
+      sie/Sie: heißen
+  - tense: Präteritum
+    explanation:
+      en: "Simple past - was called"
+      ru: "Простое прошедшее - назывался"
+      pt: "Pretérito simples - chamava-se"
+    forms:
+      ich: hieß
+      du: hießt
+      er/sie/es: hieß
+      wir: hießen
+      ihr: hießt
+      sie/Sie: hießen
+  - tense: Perfekt
+    explanation:
+      en: "Present perfect - has been called"
+      ru: "Перфект - назывался"
+      pt: "Pretérito perfeito - chamou-se"
+    forms:
+      ich: habe geheißen
+      du: hast geheißen
+      er/sie/es: hat geheißen
+      wir: haben geheißen
+      ihr: habt geheißen
+      sie/Sie: haben geheißen
+  - tense: Futur I
+    explanation:
+      en: "Future - will be called"
+      ru: "Будущее время - будет называться"
+      pt: "Futuro - chamar-se-á"
+    forms:
+      ich: werde heißen
+      du: wirst heißen
+      er/sie/es: wird heißen
+      wir: werden heißen
+      ihr: werdet heißen
+      sie/Sie: werden heißen
+
+phrases:
+  en:
+    - en: "My name is Anna."
+      de: "Ich heiße Anna."
+      tense: "Präsens"
+    - en: "What's your name?"
+      de: "Wie heißt du?"
+      tense: "Präsens"
+    - en: "What does that mean?"
+      de: "Was heißt das?"
+      tense: "Präsens"
+    - en: "He is called Peter."
+      de: "Er heißt Peter."
+      tense: "Präsens"
+    - en: "That is to say..."
+      de: "Das heißt..."
+      tense: "Präsens"
+    - en: "The city was called differently."
+      de: "Die Stadt hieß anders."
+      tense: "Präteritum"
+    - en: "What is this called in German?"
+      de: "Wie heißt das auf Deutsch?"
+      tense: "Präsens"
+    - en: "She used to be called Maria."
+      de: "Sie hieß früher Maria."
+      tense: "Präteritum"
+    - en: "That means I must go."
+      de: "Das heißt, ich muss gehen."
+      tense: "Präsens"
+    - en: "What's the street called?"
+      de: "Wie heißt die Straße?"
+      tense: "Präsens"
+    - en: "My name is Max."
+      de: "Ich heiße Max."
+      tense: "Präsens"
+    - en: "What's the movie called?"
+      de: "Wie heißt der Film?"
+      tense: "Präsens"
+    - en: "That doesn't mean anything."
+      de: "Das heißt nichts."
+      tense: "Präsens"
+    - en: "What's the book called?"
+      de: "Wie heißt das Buch?"
+      tense: "Präsens"
+    - en: "The company was called ABC."
+      de: "Die Firma hieß ABC."
+      tense: "Präteritum"
+    - en: "What's the song called?"
+      de: "Wie heißt das Lied?"
+      tense: "Präsens"
+    - en: "That is, in other words..."
+      de: "Das heißt also..."
+      tense: "Präsens"
+    - en: "How do you spell that?"
+      de: "Wie schreibt man das?"
+      tense: "Präsens"
+    - en: "What was your grandfather called?"
+      de: "Wie hieß dein Großvater?"
+      tense: "Präteritum"
+    - en: "Welcome!"
+      de: "Herzlich willkommen!"
+      tense: "Präsens"
+  ru:
+    - ru: "Меня зовут Анна."
+      de: "Ich heiße Anna."
+      tense: "Präsens"
+    - ru: "Как тебя зовут?"
+      de: "Wie heißt du?"
+      tense: "Präsens"
+    - ru: "Что это значит?"
+      de: "Was heißt das?"
+      tense: "Präsens"
+    - ru: "Его зовут Петер."
+      de: "Er heißt Peter."
+      tense: "Präsens"
+    - ru: "То есть..."
+      de: "Das heißt..."
+      tense: "Präsens"
+    - ru: "Город назывался иначе."
+      de: "Die Stadt hieß anders."
+      tense: "Präteritum"
+    - ru: "Как это по-немецки?"
+      de: "Wie heißt das auf Deutsch?"
+      tense: "Präsens"
+    - ru: "Раньше её звали Мария."
+      de: "Sie hieß früher Maria."
+      tense: "Präteritum"
+    - ru: "Это значит, что мне нужно идти."
+      de: "Das heißt, ich muss gehen."
+      tense: "Präsens"
+    - ru: "Как называется улица?"
+      de: "Wie heißt die Straße?"
+      tense: "Präsens"
+    - ru: "Меня зовут Макс."
+      de: "Ich heiße Max."
+      tense: "Präsens"
+    - ru: "Как называется фильм?"
+      de: "Wie heißt der Film?"
+      tense: "Präsens"
+    - ru: "Это ничего не значит."
+      de: "Das heißt nichts."
+      tense: "Präsens"
+    - ru: "Как называется книга?"
+      de: "Wie heißt das Buch?"
+      tense: "Präsens"
+    - ru: "Компания называлась ABC."
+      de: "Die Firma hieß ABC."
+      tense: "Präteritum"
+    - ru: "Как называется песня?"
+      de: "Wie heißt das Lied?"
+      tense: "Präsens"
+    - ru: "Это значит..."
+      de: "Das heißt also..."
+      tense: "Präsens"
+    - ru: "Как это пишется?"
+      de: "Wie schreibt man das?"
+      tense: "Präsens"
+    - ru: "Как звали твоего дедушку?"
+      de: "Wie hieß dein Großvater?"
+      tense: "Präteritum"
+    - ru: "Добро пожаловать!"
+      de: "Herzlich willkommen!"
+      tense: "Präsens"
+  pt:
+    - pt: "Chamo-me Anna."
+      de: "Ich heiße Anna."
+      tense: "Präsens"
+    - pt: "Como te chamas?"
+      de: "Wie heißt du?"
+      tense: "Präsens"
+    - pt: "O que significa isso?"
+      de: "Was heißt das?"
+      tense: "Präsens"
+    - pt: "Ele chama-se Peter."
+      de: "Er heißt Peter."
+      tense: "Präsens"
+    - pt: "Isto é..."
+      de: "Das heißt..."
+      tense: "Präsens"
+    - pt: "A cidade chamava-se de outra forma."
+      de: "Die Stadt hieß anders."
+      tense: "Präteritum"
+    - pt: "Como se diz isto em alemão?"
+      de: "Wie heißt das auf Deutsch?"
+      tense: "Präsens"
+    - pt: "Antes chamava-se Maria."
+      de: "Sie hieß früher Maria."
+      tense: "Präteritum"
+    - pt: "Isso significa que tenho de ir."
+      de: "Das heißt, ich muss gehen."
+      tense: "Präsens"
+    - pt: "Como se chama a rua?"
+      de: "Wie heißt die Straße?"
+      tense: "Präsens"
+    - pt: "Chamo-me Max."
+      de: "Ich heiße Max."
+      tense: "Präsens"
+    - pt: "Como se chama o filme?"
+      de: "Wie heißt der Film?"
+      tense: "Präsens"
+    - pt: "Isso não significa nada."
+      de: "Das heißt nichts."
+      tense: "Präsens"
+    - pt: "Como se chama o livro?"
+      de: "Wie heißt das Buch?"
+      tense: "Präsens"
+    - pt: "A empresa chamava-se ABC."
+      de: "Die Firma hieß ABC."
+      tense: "Präteritum"
+    - pt: "Como se chama a música?"
+      de: "Wie heißt das Lied?"
+      tense: "Präsens"
+    - pt: "Ou seja..."
+      de: "Das heißt also..."
+      tense: "Präsens"
+    - pt: "Como se escreve?"
+      de: "Wie schreibt man das?"
+      tense: "Präsens"
+    - pt: "Como se chamava o teu avô?"
+      de: "Wie hieß dein Großvater?"
+      tense: "Präteritum"
+    - pt: "Bem-vindo!"
+      de: "Herzlich willkommen!"
+      tense: "Präsens"

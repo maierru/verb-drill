@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇩🇪 VERB HEISSEN — 20 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇩🇪 Verb HEISSEN</h1>
+            <p class="subtitle">to be called — 20 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 20 из 20 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика немецкого — HEISSEN · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇩🇪 Verb HEISSEN</h2>
+            <div class="tense-explanation">
+                <h4>Präsens</h4>
+                <p>Настоящее время - называться, значить</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>heiße</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>heißt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>heißt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>heißen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>heißt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>heißen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Präteritum</h4>
+                <p>Простое прошедшее - назывался</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>hieß</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>hießt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>hieß</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>hießen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>hießt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>hießen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Perfekt</h4>
+                <p>Перфект - назывался</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>habe geheißen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>hast geheißen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>hat geheißen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>haben geheißen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>habt geheißen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>haben geheißen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur I</h4>
+                <p>Будущее время - будет называться</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>werde heißen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>wirst heißen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>wird heißen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>werden heißen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>werdet heißen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>werden heißen</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'de',
+            labels: { target: 'Deutsch', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["heiße","heißt","heißen","hieß","hießt","hießen","geheißen"],
+            phrases: [
+                { ru: "Меня зовут Анна.", de: "Ich heiße Anna.", tense: "Präsens" },
+                { ru: "Как тебя зовут?", de: "Wie heißt du?", tense: "Präsens" },
+                { ru: "Что это значит?", de: "Was heißt das?", tense: "Präsens" },
+                { ru: "Его зовут Петер.", de: "Er heißt Peter.", tense: "Präsens" },
+                { ru: "То есть...", de: "Das heißt...", tense: "Präsens" },
+                { ru: "Город назывался иначе.", de: "Die Stadt hieß anders.", tense: "Präteritum" },
+                { ru: "Как это по-немецки?", de: "Wie heißt das auf Deutsch?", tense: "Präsens" },
+                { ru: "Раньше её звали Мария.", de: "Sie hieß früher Maria.", tense: "Präteritum" },
+                { ru: "Это значит, что мне нужно идти.", de: "Das heißt, ich muss gehen.", tense: "Präsens" },
+                { ru: "Как называется улица?", de: "Wie heißt die Straße?", tense: "Präsens" },
+                { ru: "Меня зовут Макс.", de: "Ich heiße Max.", tense: "Präsens" },
+                { ru: "Как называется фильм?", de: "Wie heißt der Film?", tense: "Präsens" },
+                { ru: "Это ничего не значит.", de: "Das heißt nichts.", tense: "Präsens" },
+                { ru: "Как называется книга?", de: "Wie heißt das Buch?", tense: "Präsens" },
+                { ru: "Компания называлась ABC.", de: "Die Firma hieß ABC.", tense: "Präteritum" },
+                { ru: "Как называется песня?", de: "Wie heißt das Lied?", tense: "Präsens" },
+                { ru: "Это значит...", de: "Das heißt also...", tense: "Präsens" },
+                { ru: "Как это пишется?", de: "Wie schreibt man das?", tense: "Präsens" },
+                { ru: "Как звали твоего дедушку?", de: "Wie hieß dein Großvater?", tense: "Präteritum" },
+                { ru: "Добро пожаловать!", de: "Herzlich willkommen!", tense: "Präsens" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

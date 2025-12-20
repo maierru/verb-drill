@@ -1,0 +1,249 @@
+slug: sein
+name: "🇩🇪 Verb SEIN"
+meaning: to be
+verb_forms:
+  - bin
+  - bist
+  - ist
+  - sind
+  - seid
+  - war
+  - warst
+  - waren
+  - wart
+  - gewesen
+
+conjugation:
+  - tense: Präsens
+    explanation:
+      en: "Present tense - states of being, identity, characteristics"
+      ru: "Настоящее время - состояния, идентичность, характеристики"
+      pt: "Presente - estados, identidade, características"
+    forms:
+      ich: bin
+      du: bist
+      er/sie/es: ist
+      wir: sind
+      ihr: seid
+      sie/Sie: sind
+  - tense: Präteritum
+    explanation:
+      en: "Simple past - was/were in narratives"
+      ru: "Простое прошедшее - был/были в повествованиях"
+      pt: "Pretérito simples - era/foi em narrativas"
+    forms:
+      ich: war
+      du: warst
+      er/sie/es: war
+      wir: waren
+      ihr: wart
+      sie/Sie: waren
+  - tense: Perfekt
+    explanation:
+      en: "Present perfect - has been (spoken German)"
+      ru: "Перфект - был (разговорный немецкий)"
+      pt: "Pretérito perfeito - foi/esteve (alemão falado)"
+    forms:
+      ich: bin gewesen
+      du: bist gewesen
+      er/sie/es: ist gewesen
+      wir: sind gewesen
+      ihr: seid gewesen
+      sie/Sie: sind gewesen
+  - tense: Futur I
+    explanation:
+      en: "Future - will be"
+      ru: "Будущее время - буду"
+      pt: "Futuro - será/estará"
+    forms:
+      ich: werde sein
+      du: wirst sein
+      er/sie/es: wird sein
+      wir: werden sein
+      ihr: werdet sein
+      sie/Sie: werden sein
+
+phrases:
+  en:
+    - en: "I am tired."
+      de: "Ich bin müde."
+      tense: "Präsens"
+    - en: "She is a doctor."
+      de: "Sie ist Ärztin."
+      tense: "Präsens"
+    - en: "We are happy."
+      de: "Wir sind glücklich."
+      tense: "Präsens"
+    - en: "Are you hungry?"
+      de: "Bist du hungrig?"
+      tense: "Präsens"
+    - en: "They are students."
+      de: "Sie sind Studenten."
+      tense: "Präsens"
+    - en: "I was at home yesterday."
+      de: "Ich war gestern zu Hause."
+      tense: "Präteritum"
+    - en: "We were in Berlin."
+      de: "Wir waren in Berlin."
+      tense: "Präteritum"
+    - en: "He has been sick."
+      de: "Er ist krank gewesen."
+      tense: "Perfekt"
+    - en: "I will be there tomorrow."
+      de: "Ich werde morgen da sein."
+      tense: "Futur I"
+    - en: "It is cold today."
+      de: "Es ist heute kalt."
+      tense: "Präsens"
+    - en: "The book is on the table."
+      de: "Das Buch ist auf dem Tisch."
+      tense: "Präsens"
+    - en: "Where were you?"
+      de: "Wo warst du?"
+      tense: "Präteritum"
+    - en: "I am from Germany."
+      de: "Ich bin aus Deutschland."
+      tense: "Präsens"
+    - en: "She was very kind."
+      de: "Sie war sehr nett."
+      tense: "Präteritum"
+    - en: "We will be ready soon."
+      de: "Wir werden bald fertig sein."
+      tense: "Futur I"
+    - en: "Is this your car?"
+      de: "Ist das dein Auto?"
+      tense: "Präsens"
+    - en: "They were late."
+      de: "Sie waren spät dran."
+      tense: "Präteritum"
+    - en: "He is 25 years old."
+      de: "Er ist 25 Jahre alt."
+      tense: "Präsens"
+    - en: "It will be nice tomorrow."
+      de: "Es wird morgen schön sein."
+      tense: "Futur I"
+    - en: "I have never been to Paris."
+      de: "Ich bin nie in Paris gewesen."
+      tense: "Perfekt"
+  ru:
+    - ru: "Я устал."
+      de: "Ich bin müde."
+      tense: "Präsens"
+    - ru: "Она врач."
+      de: "Sie ist Ärztin."
+      tense: "Präsens"
+    - ru: "Мы счастливы."
+      de: "Wir sind glücklich."
+      tense: "Präsens"
+    - ru: "Ты голоден?"
+      de: "Bist du hungrig?"
+      tense: "Präsens"
+    - ru: "Они студенты."
+      de: "Sie sind Studenten."
+      tense: "Präsens"
+    - ru: "Я был дома вчера."
+      de: "Ich war gestern zu Hause."
+      tense: "Präteritum"
+    - ru: "Мы были в Берлине."
+      de: "Wir waren in Berlin."
+      tense: "Präteritum"
+    - ru: "Он был болен."
+      de: "Er ist krank gewesen."
+      tense: "Perfekt"
+    - ru: "Я буду там завтра."
+      de: "Ich werde morgen da sein."
+      tense: "Futur I"
+    - ru: "Сегодня холодно."
+      de: "Es ist heute kalt."
+      tense: "Präsens"
+    - ru: "Книга на столе."
+      de: "Das Buch ist auf dem Tisch."
+      tense: "Präsens"
+    - ru: "Где ты был?"
+      de: "Wo warst du?"
+      tense: "Präteritum"
+    - ru: "Я из Германии."
+      de: "Ich bin aus Deutschland."
+      tense: "Präsens"
+    - ru: "Она была очень милой."
+      de: "Sie war sehr nett."
+      tense: "Präteritum"
+    - ru: "Мы скоро будем готовы."
+      de: "Wir werden bald fertig sein."
+      tense: "Futur I"
+    - ru: "Это твоя машина?"
+      de: "Ist das dein Auto?"
+      tense: "Präsens"
+    - ru: "Они опоздали."
+      de: "Sie waren spät dran."
+      tense: "Präteritum"
+    - ru: "Ему 25 лет."
+      de: "Er ist 25 Jahre alt."
+      tense: "Präsens"
+    - ru: "Завтра будет хорошая погода."
+      de: "Es wird morgen schön sein."
+      tense: "Futur I"
+    - ru: "Я никогда не был в Париже."
+      de: "Ich bin nie in Paris gewesen."
+      tense: "Perfekt"
+  pt:
+    - pt: "Estou cansado."
+      de: "Ich bin müde."
+      tense: "Präsens"
+    - pt: "Ela é médica."
+      de: "Sie ist Ärztin."
+      tense: "Präsens"
+    - pt: "Estamos felizes."
+      de: "Wir sind glücklich."
+      tense: "Präsens"
+    - pt: "Tens fome?"
+      de: "Bist du hungrig?"
+      tense: "Präsens"
+    - pt: "Eles são estudantes."
+      de: "Sie sind Studenten."
+      tense: "Präsens"
+    - pt: "Ontem estive em casa."
+      de: "Ich war gestern zu Hause."
+      tense: "Präteritum"
+    - pt: "Estivemos em Berlim."
+      de: "Wir waren in Berlin."
+      tense: "Präteritum"
+    - pt: "Ele esteve doente."
+      de: "Er ist krank gewesen."
+      tense: "Perfekt"
+    - pt: "Estarei lá amanhã."
+      de: "Ich werde morgen da sein."
+      tense: "Futur I"
+    - pt: "Hoje está frio."
+      de: "Es ist heute kalt."
+      tense: "Präsens"
+    - pt: "O livro está na mesa."
+      de: "Das Buch ist auf dem Tisch."
+      tense: "Präsens"
+    - pt: "Onde estiveste?"
+      de: "Wo warst du?"
+      tense: "Präteritum"
+    - pt: "Sou da Alemanha."
+      de: "Ich bin aus Deutschland."
+      tense: "Präsens"
+    - pt: "Ela foi muito simpática."
+      de: "Sie war sehr nett."
+      tense: "Präteritum"
+    - pt: "Estaremos prontos em breve."
+      de: "Wir werden bald fertig sein."
+      tense: "Futur I"
+    - pt: "Este é o teu carro?"
+      de: "Ist das dein Auto?"
+      tense: "Präsens"
+    - pt: "Eles chegaram atrasados."
+      de: "Sie waren spät dran."
+      tense: "Präteritum"
+    - pt: "Ele tem 25 anos."
+      de: "Er ist 25 Jahre alt."
+      tense: "Präsens"
+    - pt: "Amanhã vai estar bom tempo."
+      de: "Es wird morgen schön sein."
+      tense: "Futur I"
+    - pt: "Nunca estive em Paris."
+      de: "Ich bin nie in Paris gewesen."
+      tense: "Perfekt"

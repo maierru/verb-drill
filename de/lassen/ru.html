@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇩🇪 VERB LASSEN — 20 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇩🇪 Verb LASSEN</h1>
+            <p class="subtitle">to let, to allow — 20 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 20 из 20 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика немецкого — LASSEN · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇩🇪 Verb LASSEN</h2>
+            <div class="tense-explanation">
+                <h4>Präsens</h4>
+                <p>Настоящее время - позволять, оставлять</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>lasse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>lässt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>lässt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>lassen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>lasst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>lassen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Präteritum</h4>
+                <p>Простое прошедшее - позволил</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>ließ</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>ließt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>ließ</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>ließen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>ließt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>ließen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Perfekt</h4>
+                <p>Перфект - позволил</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>habe gelassen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>hast gelassen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>hat gelassen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>haben gelassen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>habt gelassen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>haben gelassen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur I</h4>
+                <p>Будущее время - позволит</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>werde lassen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>wirst lassen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>wird lassen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>werden lassen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>werdet lassen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>werden lassen</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'de',
+            labels: { target: 'Deutsch', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["lasse","lässt","lassen","lasst","ließ","ließt","ließen","ließt","gelassen"],
+            phrases: [
+                { ru: "Позволь мне помочь.", de: "Lass mich dir helfen.", tense: "Präsens" },
+                { ru: "Оставь меня в покое.", de: "Lass mich in Ruhe.", tense: "Präsens" },
+                { ru: "Она подстриглась.", de: "Sie hat sich die Haare schneiden lassen.", tense: "Perfekt" },
+                { ru: "Пойдём!", de: "Lass uns gehen!", tense: "Präsens" },
+                { ru: "Я оставил ключи дома.", de: "Ich habe meine Schlüssel zu Hause gelassen.", tense: "Perfekt" },
+                { ru: "Дай ему сказать.", de: "Lass ihn reden.", tense: "Präsens" },
+                { ru: "Она разрешает детям играть.", de: "Sie lässt ihre Kinder spielen.", tense: "Präsens" },
+                { ru: "Я отдал это в ремонт.", de: "Ich habe es reparieren lassen.", tense: "Perfekt" },
+                { ru: "Не оставляй это там.", de: "Lass das nicht dort.", tense: "Präsens" },
+                { ru: "Он впустил меня.", de: "Er ließ mich rein.", tense: "Präteritum" },
+                { ru: "Дай мне подумать.", de: "Lass mich nachdenken.", tense: "Präsens" },
+                { ru: "Я дам тебе знать.", de: "Ich werde es dich wissen lassen.", tense: "Futur I" },
+                { ru: "Она всё оставила.", de: "Sie ließ alles zurück.", tense: "Präteritum" },
+                { ru: "Отпусти это.", de: "Lass es los.", tense: "Präsens" },
+                { ru: "Он помыл машину.", de: "Er hat das Auto waschen lassen.", tense: "Perfekt" },
+                { ru: "Оставь дверь открытой.", de: "Lass die Tür offen.", tense: "Präsens" },
+                { ru: "Я оставил сумку в машине.", de: "Ich habe meine Tasche im Auto gelassen.", tense: "Perfekt" },
+                { ru: "Дай посмотреть.", de: "Lass mich sehen.", tense: "Präsens" },
+                { ru: "Они меня не пускают.", de: "Sie lassen mich nicht rein.", tense: "Präsens" },
+                { ru: "Позволь объяснить.", de: "Lass mich erklären.", tense: "Präsens" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

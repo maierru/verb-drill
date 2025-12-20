@@ -1,0 +1,248 @@
+slug: bleiben
+name: "🇩🇪 Verb BLEIBEN"
+meaning: to stay, to remain
+verb_forms:
+  - bleibe
+  - bleibst
+  - bleibt
+  - bleiben
+  - blieb
+  - bliebst
+  - blieben
+  - bliebt
+  - geblieben
+
+conjugation:
+  - tense: Präsens
+    explanation:
+      en: "Present tense - staying, remaining"
+      ru: "Настоящее время - оставаться"
+      pt: "Presente - ficar, permanecer"
+    forms:
+      ich: bleibe
+      du: bleibst
+      er/sie/es: bleibt
+      wir: bleiben
+      ihr: bleibt
+      sie/Sie: bleiben
+  - tense: Präteritum
+    explanation:
+      en: "Simple past - stayed"
+      ru: "Простое прошедшее - остался"
+      pt: "Pretérito simples - ficou"
+    forms:
+      ich: blieb
+      du: bliebst
+      er/sie/es: blieb
+      wir: blieben
+      ihr: bliebt
+      sie/Sie: blieben
+  - tense: Perfekt
+    explanation:
+      en: "Present perfect - has stayed"
+      ru: "Перфект - остался"
+      pt: "Pretérito perfeito - ficou"
+    forms:
+      ich: bin geblieben
+      du: bist geblieben
+      er/sie/es: ist geblieben
+      wir: sind geblieben
+      ihr: seid geblieben
+      sie/Sie: sind geblieben
+  - tense: Futur I
+    explanation:
+      en: "Future - will stay"
+      ru: "Будущее время - останется"
+      pt: "Futuro - ficará"
+    forms:
+      ich: werde bleiben
+      du: wirst bleiben
+      er/sie/es: wird bleiben
+      wir: werden bleiben
+      ihr: werdet bleiben
+      sie/Sie: werden bleiben
+
+phrases:
+  en:
+    - en: "I'm staying here."
+      de: "Ich bleibe hier."
+      tense: "Präsens"
+    - en: "Stay calm!"
+      de: "Bleib ruhig!"
+      tense: "Präsens"
+    - en: "She stayed at home."
+      de: "Sie ist zu Hause geblieben."
+      tense: "Perfekt"
+    - en: "How long will you stay?"
+      de: "Wie lange bleibst du?"
+      tense: "Präsens"
+    - en: "I will stay forever."
+      de: "Ich werde für immer bleiben."
+      tense: "Futur I"
+    - en: "He stayed in bed."
+      de: "Er blieb im Bett."
+      tense: "Präteritum"
+    - en: "Stay healthy!"
+      de: "Bleib gesund!"
+      tense: "Präsens"
+    - en: "We stayed until midnight."
+      de: "Wir sind bis Mitternacht geblieben."
+      tense: "Perfekt"
+    - en: "Nothing remains the same."
+      de: "Nichts bleibt gleich."
+      tense: "Präsens"
+    - en: "I stayed with friends."
+      de: "Ich bin bei Freunden geblieben."
+      tense: "Perfekt"
+    - en: "Where are you staying?"
+      de: "Wo bleibst du?"
+      tense: "Präsens"
+    - en: "She remained silent."
+      de: "Sie blieb still."
+      tense: "Präteritum"
+    - en: "Stay seated!"
+      de: "Bleiben Sie sitzen!"
+      tense: "Präsens"
+    - en: "I will stay in touch."
+      de: "Ich werde in Kontakt bleiben."
+      tense: "Futur I"
+    - en: "He has stayed true."
+      de: "Er ist treu geblieben."
+      tense: "Perfekt"
+    - en: "Stay where you are."
+      de: "Bleib, wo du bist."
+      tense: "Präsens"
+    - en: "They stayed together."
+      de: "Sie sind zusammen geblieben."
+      tense: "Perfekt"
+    - en: "The weather stays nice."
+      de: "Das Wetter bleibt schön."
+      tense: "Präsens"
+    - en: "I stayed awake all night."
+      de: "Ich bin die ganze Nacht wach geblieben."
+      tense: "Perfekt"
+    - en: "Stay in touch!"
+      de: "Bleib in Kontakt!"
+      tense: "Präsens"
+  ru:
+    - ru: "Я остаюсь здесь."
+      de: "Ich bleibe hier."
+      tense: "Präsens"
+    - ru: "Успокойся!"
+      de: "Bleib ruhig!"
+      tense: "Präsens"
+    - ru: "Она осталась дома."
+      de: "Sie ist zu Hause geblieben."
+      tense: "Perfekt"
+    - ru: "Как долго ты останешься?"
+      de: "Wie lange bleibst du?"
+      tense: "Präsens"
+    - ru: "Я останусь навсегда."
+      de: "Ich werde für immer bleiben."
+      tense: "Futur I"
+    - ru: "Он остался в постели."
+      de: "Er blieb im Bett."
+      tense: "Präteritum"
+    - ru: "Будь здоров!"
+      de: "Bleib gesund!"
+      tense: "Präsens"
+    - ru: "Мы остались до полуночи."
+      de: "Wir sind bis Mitternacht geblieben."
+      tense: "Perfekt"
+    - ru: "Ничто не остаётся прежним."
+      de: "Nichts bleibt gleich."
+      tense: "Präsens"
+    - ru: "Я остался у друзей."
+      de: "Ich bin bei Freunden geblieben."
+      tense: "Perfekt"
+    - ru: "Где ты?"
+      de: "Wo bleibst du?"
+      tense: "Präsens"
+    - ru: "Она осталась молчать."
+      de: "Sie blieb still."
+      tense: "Präteritum"
+    - ru: "Оставайтесь на местах!"
+      de: "Bleiben Sie sitzen!"
+      tense: "Präsens"
+    - ru: "Я буду на связи."
+      de: "Ich werde in Kontakt bleiben."
+      tense: "Futur I"
+    - ru: "Он остался верен."
+      de: "Er ist treu geblieben."
+      tense: "Perfekt"
+    - ru: "Оставайся на месте."
+      de: "Bleib, wo du bist."
+      tense: "Präsens"
+    - ru: "Они остались вместе."
+      de: "Sie sind zusammen geblieben."
+      tense: "Perfekt"
+    - ru: "Погода остаётся хорошей."
+      de: "Das Wetter bleibt schön."
+      tense: "Präsens"
+    - ru: "Я не спал всю ночь."
+      de: "Ich bin die ganze Nacht wach geblieben."
+      tense: "Perfekt"
+    - ru: "Не теряй связь!"
+      de: "Bleib in Kontakt!"
+      tense: "Präsens"
+  pt:
+    - pt: "Fico aqui."
+      de: "Ich bleibe hier."
+      tense: "Präsens"
+    - pt: "Fica calmo!"
+      de: "Bleib ruhig!"
+      tense: "Präsens"
+    - pt: "Ela ficou em casa."
+      de: "Sie ist zu Hause geblieben."
+      tense: "Perfekt"
+    - pt: "Quanto tempo ficas?"
+      de: "Wie lange bleibst du?"
+      tense: "Präsens"
+    - pt: "Vou ficar para sempre."
+      de: "Ich werde für immer bleiben."
+      tense: "Futur I"
+    - pt: "Ele ficou na cama."
+      de: "Er blieb im Bett."
+      tense: "Präteritum"
+    - pt: "Mantém-te saudável!"
+      de: "Bleib gesund!"
+      tense: "Präsens"
+    - pt: "Ficámos até à meia-noite."
+      de: "Wir sind bis Mitternacht geblieben."
+      tense: "Perfekt"
+    - pt: "Nada permanece igual."
+      de: "Nichts bleibt gleich."
+      tense: "Präsens"
+    - pt: "Fiquei com amigos."
+      de: "Ich bin bei Freunden geblieben."
+      tense: "Perfekt"
+    - pt: "Onde estás?"
+      de: "Wo bleibst du?"
+      tense: "Präsens"
+    - pt: "Ela permaneceu em silêncio."
+      de: "Sie blieb still."
+      tense: "Präteritum"
+    - pt: "Fiquem sentados!"
+      de: "Bleiben Sie sitzen!"
+      tense: "Präsens"
+    - pt: "Vou manter contacto."
+      de: "Ich werde in Kontakt bleiben."
+      tense: "Futur I"
+    - pt: "Ele permaneceu fiel."
+      de: "Er ist treu geblieben."
+      tense: "Perfekt"
+    - pt: "Fica onde estás."
+      de: "Bleib, wo du bist."
+      tense: "Präsens"
+    - pt: "Ficaram juntos."
+      de: "Sie sind zusammen geblieben."
+      tense: "Perfekt"
+    - pt: "O tempo continua bom."
+      de: "Das Wetter bleibt schön."
+      tense: "Präsens"
+    - pt: "Fiquei acordado a noite toda."
+      de: "Ich bin die ganze Nacht wach geblieben."
+      tense: "Perfekt"
+    - pt: "Mantém contacto!"
+      de: "Bleib in Kontakt!"
+      tense: "Präsens"

@@ -1,0 +1,248 @@
+slug: finden
+name: "🇩🇪 Verb FINDEN"
+meaning: to find
+verb_forms:
+  - finde
+  - findest
+  - findet
+  - finden
+  - fand
+  - fandst
+  - fanden
+  - fandet
+  - gefunden
+
+conjugation:
+  - tense: Präsens
+    explanation:
+      en: "Present tense - finding, thinking (opinion)"
+      ru: "Настоящее время - находить, считать (мнение)"
+      pt: "Presente - encontrar, achar (opinião)"
+    forms:
+      ich: finde
+      du: findest
+      er/sie/es: findet
+      wir: finden
+      ihr: findet
+      sie/Sie: finden
+  - tense: Präteritum
+    explanation:
+      en: "Simple past - found"
+      ru: "Простое прошедшее - нашёл"
+      pt: "Pretérito simples - encontrou"
+    forms:
+      ich: fand
+      du: fandst
+      er/sie/es: fand
+      wir: fanden
+      ihr: fandet
+      sie/Sie: fanden
+  - tense: Perfekt
+    explanation:
+      en: "Present perfect - has found"
+      ru: "Перфект - нашёл"
+      pt: "Pretérito perfeito - encontrou"
+    forms:
+      ich: habe gefunden
+      du: hast gefunden
+      er/sie/es: hat gefunden
+      wir: haben gefunden
+      ihr: habt gefunden
+      sie/Sie: haben gefunden
+  - tense: Futur I
+    explanation:
+      en: "Future - will find"
+      ru: "Будущее время - найдёт"
+      pt: "Futuro - encontrará"
+    forms:
+      ich: werde finden
+      du: wirst finden
+      er/sie/es: wird finden
+      wir: werden finden
+      ihr: werdet finden
+      sie/Sie: werden finden
+
+phrases:
+  en:
+    - en: "I find that interesting."
+      de: "Ich finde das interessant."
+      tense: "Präsens"
+    - en: "Did you find it?"
+      de: "Hast du es gefunden?"
+      tense: "Perfekt"
+    - en: "She found the key."
+      de: "Sie hat den Schlüssel gefunden."
+      tense: "Perfekt"
+    - en: "I can't find my phone."
+      de: "Ich finde mein Handy nicht."
+      tense: "Präsens"
+    - en: "What do you think?"
+      de: "Was findest du?"
+      tense: "Präsens"
+    - en: "He found a job."
+      de: "Er hat einen Job gefunden."
+      tense: "Perfekt"
+    - en: "I think she's nice."
+      de: "Ich finde sie nett."
+      tense: "Präsens"
+    - en: "We found a solution."
+      de: "Wir haben eine Lösung gefunden."
+      tense: "Perfekt"
+    - en: "I will find a way."
+      de: "Ich werde einen Weg finden."
+      tense: "Futur I"
+    - en: "She found it strange."
+      de: "Sie fand es seltsam."
+      tense: "Präteritum"
+    - en: "I can't find the words."
+      de: "Ich finde keine Worte."
+      tense: "Präsens"
+    - en: "They found each other."
+      de: "Sie haben sich gefunden."
+      tense: "Perfekt"
+    - en: "How do you find it here?"
+      de: "Wie findest du es hier?"
+      tense: "Präsens"
+    - en: "I found it difficult."
+      de: "Ich fand es schwierig."
+      tense: "Präteritum"
+    - en: "Where did you find this?"
+      de: "Wo hast du das gefunden?"
+      tense: "Perfekt"
+    - en: "I think it's great."
+      de: "Ich finde es toll."
+      tense: "Präsens"
+    - en: "He finally found time."
+      de: "Er hat endlich Zeit gefunden."
+      tense: "Perfekt"
+    - en: "I can't find my way."
+      de: "Ich finde den Weg nicht."
+      tense: "Präsens"
+    - en: "She found her passion."
+      de: "Sie hat ihre Leidenschaft gefunden."
+      tense: "Perfekt"
+    - en: "I think that's unfair."
+      de: "Ich finde das unfair."
+      tense: "Präsens"
+  ru:
+    - ru: "Я нахожу это интересным."
+      de: "Ich finde das interessant."
+      tense: "Präsens"
+    - ru: "Ты нашёл?"
+      de: "Hast du es gefunden?"
+      tense: "Perfekt"
+    - ru: "Она нашла ключ."
+      de: "Sie hat den Schlüssel gefunden."
+      tense: "Perfekt"
+    - ru: "Я не могу найти телефон."
+      de: "Ich finde mein Handy nicht."
+      tense: "Präsens"
+    - ru: "Что ты думаешь?"
+      de: "Was findest du?"
+      tense: "Präsens"
+    - ru: "Он нашёл работу."
+      de: "Er hat einen Job gefunden."
+      tense: "Perfekt"
+    - ru: "Я думаю, она милая."
+      de: "Ich finde sie nett."
+      tense: "Präsens"
+    - ru: "Мы нашли решение."
+      de: "Wir haben eine Lösung gefunden."
+      tense: "Perfekt"
+    - ru: "Я найду способ."
+      de: "Ich werde einen Weg finden."
+      tense: "Futur I"
+    - ru: "Она нашла это странным."
+      de: "Sie fand es seltsam."
+      tense: "Präteritum"
+    - ru: "Я не нахожу слов."
+      de: "Ich finde keine Worte."
+      tense: "Präsens"
+    - ru: "Они нашли друг друга."
+      de: "Sie haben sich gefunden."
+      tense: "Perfekt"
+    - ru: "Как тебе здесь?"
+      de: "Wie findest du es hier?"
+      tense: "Präsens"
+    - ru: "Мне показалось это сложным."
+      de: "Ich fand es schwierig."
+      tense: "Präteritum"
+    - ru: "Где ты это нашёл?"
+      de: "Wo hast du das gefunden?"
+      tense: "Perfekt"
+    - ru: "Я думаю, это отлично."
+      de: "Ich finde es toll."
+      tense: "Präsens"
+    - ru: "Он наконец нашёл время."
+      de: "Er hat endlich Zeit gefunden."
+      tense: "Perfekt"
+    - ru: "Я не могу найти дорогу."
+      de: "Ich finde den Weg nicht."
+      tense: "Präsens"
+    - ru: "Она нашла своё призвание."
+      de: "Sie hat ihre Leidenschaft gefunden."
+      tense: "Perfekt"
+    - ru: "Я считаю это несправедливым."
+      de: "Ich finde das unfair."
+      tense: "Präsens"
+  pt:
+    - pt: "Acho isso interessante."
+      de: "Ich finde das interessant."
+      tense: "Präsens"
+    - pt: "Encontraste?"
+      de: "Hast du es gefunden?"
+      tense: "Perfekt"
+    - pt: "Ela encontrou a chave."
+      de: "Sie hat den Schlüssel gefunden."
+      tense: "Perfekt"
+    - pt: "Não consigo encontrar o telemóvel."
+      de: "Ich finde mein Handy nicht."
+      tense: "Präsens"
+    - pt: "O que achas?"
+      de: "Was findest du?"
+      tense: "Präsens"
+    - pt: "Ele encontrou trabalho."
+      de: "Er hat einen Job gefunden."
+      tense: "Perfekt"
+    - pt: "Acho-a simpática."
+      de: "Ich finde sie nett."
+      tense: "Präsens"
+    - pt: "Encontrámos uma solução."
+      de: "Wir haben eine Lösung gefunden."
+      tense: "Perfekt"
+    - pt: "Vou encontrar um caminho."
+      de: "Ich werde einen Weg finden."
+      tense: "Futur I"
+    - pt: "Ela achou estranho."
+      de: "Sie fand es seltsam."
+      tense: "Präteritum"
+    - pt: "Não encontro palavras."
+      de: "Ich finde keine Worte."
+      tense: "Präsens"
+    - pt: "Eles encontraram-se."
+      de: "Sie haben sich gefunden."
+      tense: "Perfekt"
+    - pt: "O que achas daqui?"
+      de: "Wie findest du es hier?"
+      tense: "Präsens"
+    - pt: "Achei difícil."
+      de: "Ich fand es schwierig."
+      tense: "Präteritum"
+    - pt: "Onde encontraste isso?"
+      de: "Wo hast du das gefunden?"
+      tense: "Perfekt"
+    - pt: "Acho ótimo."
+      de: "Ich finde es toll."
+      tense: "Präsens"
+    - pt: "Ele finalmente arranjou tempo."
+      de: "Er hat endlich Zeit gefunden."
+      tense: "Perfekt"
+    - pt: "Não consigo encontrar o caminho."
+      de: "Ich finde den Weg nicht."
+      tense: "Präsens"
+    - pt: "Ela encontrou a sua paixão."
+      de: "Sie hat ihre Leidenschaft gefunden."
+      tense: "Perfekt"
+    - pt: "Acho isso injusto."
+      de: "Ich finde das unfair."
+      tense: "Präsens"

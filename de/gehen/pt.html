@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇩🇪 VERB GEHEN — 20 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇩🇪 Verb GEHEN</h1>
+            <p class="subtitle">to go — 20 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 20 de 20 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Prática de alemão — GEHEN · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇩🇪 Verb GEHEN</h2>
+            <div class="tense-explanation">
+                <h4>Präsens</h4>
+                <p>Presente - ir, andar</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>gehe</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>gehst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>geht</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>gehen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>geht</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>gehen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Präteritum</h4>
+                <p>Pretérito simples - foi</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>ging</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>gingst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>ging</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>gingen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>gingt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>gingen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Perfekt</h4>
+                <p>Pretérito perfeito - foi</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>bin gegangen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>bist gegangen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>ist gegangen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>sind gegangen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>seid gegangen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>sind gegangen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur I</h4>
+                <p>Futuro - irá</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>werde gehen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>wirst gehen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>wird gehen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>werden gehen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>werdet gehen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>werden gehen</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'de',
+            labels: { target: 'Deutsch', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["gehe","gehst","geht","gehen","ging","gingst","gingen","gingt","gegangen"],
+            phrases: [
+                { pt: "Vou para casa.", de: "Ich gehe nach Hause.", tense: "Präsens" },
+                { pt: "Para onde vais?", de: "Wohin gehst du?", tense: "Präsens" },
+                { pt: "Ela vai à escola.", de: "Sie geht zur Schule.", tense: "Präsens" },
+                { pt: "Como estás?", de: "Wie geht es dir?", tense: "Präsens" },
+                { pt: "Ele foi à loja.", de: "Er ist zum Laden gegangen.", tense: "Perfekt" },
+                { pt: "Vou amanhã.", de: "Ich werde morgen gehen.", tense: "Futur I" },
+                { pt: "Vamos!", de: "Gehen wir!", tense: "Präsens" },
+                { pt: "Correu bem.", de: "Es ist gut gegangen.", tense: "Perfekt" },
+                { pt: "Vou para o trabalho de autocarro.", de: "Ich gehe mit dem Bus zur Arbeit.", tense: "Präsens" },
+                { pt: "Ela foi cedo.", de: "Sie ging früh.", tense: "Präteritum" },
+                { pt: "Vamos sair esta noite.", de: "Wir gehen heute Abend aus.", tense: "Präsens" },
+                { pt: "Ele já foi.", de: "Er ist schon gegangen.", tense: "Perfekt" },
+                { pt: "A reunião demorou.", de: "Das Meeting ging lange.", tense: "Präteritum" },
+                { pt: "Vou contigo.", de: "Ich werde mit dir gehen.", tense: "Futur I" },
+                { pt: "Ela corre todos os dias.", de: "Sie geht jeden Tag joggen.", tense: "Präsens" },
+                { pt: "Está tudo bem.", de: "Alles geht gut.", tense: "Präsens" },
+                { pt: "Fomos passear.", de: "Wir sind spazieren gegangen.", tense: "Perfekt" },
+                { pt: "Não funciona.", de: "Es geht nicht.", tense: "Präsens" },
+                { pt: "Tenho de ir agora.", de: "Ich muss jetzt gehen.", tense: "Präsens" },
+                { pt: "Eles foram para casa.", de: "Sie sind nach Hause gegangen.", tense: "Perfekt" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

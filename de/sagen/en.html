@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇩🇪 VERB SAGEN — 20 Phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Back to verb list</a>
+            <h1>🇩🇪 Verb SAGEN</h1>
+            <p class="subtitle">to say — 20 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Show all translations</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
+        </div>
+
+        <div class="stats" id="stats">Showing: 20 of 20 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            German Practice — SAGEN · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇩🇪 Verb SAGEN</h2>
+            <div class="tense-explanation">
+                <h4>Präsens</h4>
+                <p>Present tense - saying, telling</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>sage</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>sagst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>sagt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>sagen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>sagt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>sagen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Präteritum</h4>
+                <p>Simple past - said</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>sagte</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>sagtest</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>sagte</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>sagten</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>sagtet</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>sagten</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Perfekt</h4>
+                <p>Present perfect - has said</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>habe gesagt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>hast gesagt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>hat gesagt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>haben gesagt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>habt gesagt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>haben gesagt</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur I</h4>
+                <p>Future - will say</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>werde sagen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>wirst sagen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>wird sagen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>werden sagen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>werdet sagen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>werden sagen</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'en',
+            targetKey: 'de',
+            labels: { target: 'German', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["sage","sagst","sagt","sagen","sagte","sagtest","sagten","sagtet","gesagt"],
+            phrases: [
+                { en: "What did you say?", de: "Was hast du gesagt?", tense: "Perfekt" },
+                { en: "I say yes.", de: "Ich sage ja.", tense: "Präsens" },
+                { en: "She said nothing.", de: "Sie sagte nichts.", tense: "Präteritum" },
+                { en: "They say it's true.", de: "Sie sagen, es ist wahr.", tense: "Präsens" },
+                { en: "He told me the truth.", de: "Er hat mir die Wahrheit gesagt.", tense: "Perfekt" },
+                { en: "What does that say?", de: "Was sagt das?", tense: "Präsens" },
+                { en: "I will tell you later.", de: "Ich werde es dir später sagen.", tense: "Futur I" },
+                { en: "She always says the same thing.", de: "Sie sagt immer das Gleiche.", tense: "Präsens" },
+                { en: "I said goodbye.", de: "Ich habe mich verabschiedet.", tense: "Perfekt" },
+                { en: "What would you say?", de: "Was würdest du sagen?", tense: "Präteritum" },
+                { en: "Tell me more.", de: "Sag mir mehr.", tense: "Präsens" },
+                { en: "He said he was busy.", de: "Er sagte, er sei beschäftigt.", tense: "Präteritum" },
+                { en: "I have nothing to say.", de: "Ich habe nichts zu sagen.", tense: "Präsens" },
+                { en: "She never says thank you.", de: "Sie sagt nie danke.", tense: "Präsens" },
+                { en: "They said it was impossible.", de: "Sie sagten, es sei unmöglich.", tense: "Präteritum" },
+                { en: "I will say a few words.", de: "Ich werde ein paar Worte sagen.", tense: "Futur I" },
+                { en: "What does the sign say?", de: "Was sagt das Schild?", tense: "Präsens" },
+                { en: "She told me a secret.", de: "Sie hat mir ein Geheimnis gesagt.", tense: "Perfekt" },
+                { en: "I can't say for sure.", de: "Ich kann es nicht genau sagen.", tense: "Präsens" },
+                { en: "He said hello.", de: "Er hat Hallo gesagt.", tense: "Perfekt" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

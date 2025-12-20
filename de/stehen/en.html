@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇩🇪 VERB STEHEN — 20 Phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Back to verb list</a>
+            <h1>🇩🇪 Verb STEHEN</h1>
+            <p class="subtitle">to stand — 20 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Show all translations</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
+        </div>
+
+        <div class="stats" id="stats">Showing: 20 of 20 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            German Practice — STEHEN · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇩🇪 Verb STEHEN</h2>
+            <div class="tense-explanation">
+                <h4>Präsens</h4>
+                <p>Present tense - standing, being located</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>stehe</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>stehst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>steht</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>stehen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>steht</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>stehen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Präteritum</h4>
+                <p>Simple past - stood</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>stand</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>standst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>stand</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>standen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>standet</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>standen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Perfekt</h4>
+                <p>Present perfect - has stood</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>habe gestanden</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>hast gestanden</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>hat gestanden</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>haben gestanden</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>habt gestanden</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>haben gestanden</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur I</h4>
+                <p>Future - will stand</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>werde stehen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>wirst stehen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>wird stehen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>werden stehen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>werdet stehen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>werden stehen</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'en',
+            targetKey: 'de',
+            labels: { target: 'German', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["stehe","stehst","steht","stehen","stand","standst","standen","standet","gestanden"],
+            phrases: [
+                { en: "I am standing here.", de: "Ich stehe hier.", tense: "Präsens" },
+                { en: "Where is my car?", de: "Wo steht mein Auto?", tense: "Präsens" },
+                { en: "She stood at the door.", de: "Sie stand an der Tür.", tense: "Präteritum" },
+                { en: "It says in the newspaper.", de: "Es steht in der Zeitung.", tense: "Präsens" },
+                { en: "We stood in line.", de: "Wir haben in der Schlange gestanden.", tense: "Perfekt" },
+                { en: "How are things?", de: "Wie steht's?", tense: "Präsens" },
+                { en: "The vase is on the table.", de: "Die Vase steht auf dem Tisch.", tense: "Präsens" },
+                { en: "He stood there for hours.", de: "Er stand dort stundenlang.", tense: "Präteritum" },
+                { en: "What is written here?", de: "Was steht hier?", tense: "Präsens" },
+                { en: "I will stand by you.", de: "Ich werde zu dir stehen.", tense: "Futur I" },
+                { en: "The clock has stopped.", de: "Die Uhr ist stehen geblieben.", tense: "Perfekt" },
+                { en: "Stand up!", de: "Steh auf!", tense: "Präsens" },
+                { en: "We stand together.", de: "Wir stehen zusammen.", tense: "Präsens" },
+                { en: "The door stood open.", de: "Die Tür stand offen.", tense: "Präteritum" },
+                { en: "I like it.", de: "Es steht mir.", tense: "Präsens" },
+                { en: "He was standing in the corner.", de: "Er stand in der Ecke.", tense: "Präteritum" },
+                { en: "Where does that stand?", de: "Wo steht das?", tense: "Präsens" },
+                { en: "I have been standing for an hour.", de: "Ich stehe seit einer Stunde.", tense: "Präsens" },
+                { en: "The car is in the garage.", de: "Das Auto steht in der Garage.", tense: "Präsens" },
+                { en: "She stood up.", de: "Sie ist aufgestanden.", tense: "Perfekt" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

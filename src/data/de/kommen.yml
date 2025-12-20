@@ -1,0 +1,248 @@
+slug: kommen
+name: "🇩🇪 Verb KOMMEN"
+meaning: to come
+verb_forms:
+  - komme
+  - kommst
+  - kommt
+  - kommen
+  - kam
+  - kamst
+  - kamen
+  - kamt
+  - gekommen
+
+conjugation:
+  - tense: Präsens
+    explanation:
+      en: "Present tense - coming, arriving"
+      ru: "Настоящее время - приходить, приезжать"
+      pt: "Presente - vir, chegar"
+    forms:
+      ich: komme
+      du: kommst
+      er/sie/es: kommt
+      wir: kommen
+      ihr: kommt
+      sie/Sie: kommen
+  - tense: Präteritum
+    explanation:
+      en: "Simple past - came"
+      ru: "Простое прошедшее - пришёл"
+      pt: "Pretérito simples - veio"
+    forms:
+      ich: kam
+      du: kamst
+      er/sie/es: kam
+      wir: kamen
+      ihr: kamt
+      sie/Sie: kamen
+  - tense: Perfekt
+    explanation:
+      en: "Present perfect - has come"
+      ru: "Перфект - пришёл"
+      pt: "Pretérito perfeito - veio"
+    forms:
+      ich: bin gekommen
+      du: bist gekommen
+      er/sie/es: ist gekommen
+      wir: sind gekommen
+      ihr: seid gekommen
+      sie/Sie: sind gekommen
+  - tense: Futur I
+    explanation:
+      en: "Future - will come"
+      ru: "Будущее время - придёт"
+      pt: "Futuro - virá"
+    forms:
+      ich: werde kommen
+      du: wirst kommen
+      er/sie/es: wird kommen
+      wir: werden kommen
+      ihr: werdet kommen
+      sie/Sie: werden kommen
+
+phrases:
+  en:
+    - en: "I'm coming!"
+      de: "Ich komme!"
+      tense: "Präsens"
+    - en: "Where do you come from?"
+      de: "Woher kommst du?"
+      tense: "Präsens"
+    - en: "She is coming tomorrow."
+      de: "Sie kommt morgen."
+      tense: "Präsens"
+    - en: "He came late."
+      de: "Er kam spät."
+      tense: "Präteritum"
+    - en: "When did you arrive?"
+      de: "Wann bist du gekommen?"
+      tense: "Perfekt"
+    - en: "I will come at eight."
+      de: "Ich werde um acht kommen."
+      tense: "Futur I"
+    - en: "Come here!"
+      de: "Komm her!"
+      tense: "Präsens"
+    - en: "They came by train."
+      de: "Sie sind mit dem Zug gekommen."
+      tense: "Perfekt"
+    - en: "How do I get there?"
+      de: "Wie komme ich dahin?"
+      tense: "Präsens"
+    - en: "She came to visit."
+      de: "Sie kam zu Besuch."
+      tense: "Präteritum"
+    - en: "I have just arrived."
+      de: "Ich bin gerade gekommen."
+      tense: "Perfekt"
+    - en: "Are you coming with us?"
+      de: "Kommst du mit?"
+      tense: "Präsens"
+    - en: "They will come soon."
+      de: "Sie werden bald kommen."
+      tense: "Futur I"
+    - en: "The bus is coming."
+      de: "Der Bus kommt."
+      tense: "Präsens"
+    - en: "I came as fast as I could."
+      de: "Ich bin so schnell gekommen wie ich konnte."
+      tense: "Perfekt"
+    - en: "Where does this come from?"
+      de: "Woher kommt das?"
+      tense: "Präsens"
+    - en: "She came early."
+      de: "Sie kam früh."
+      tense: "Präteritum"
+    - en: "Come in!"
+      de: "Komm rein!"
+      tense: "Präsens"
+    - en: "I will come back later."
+      de: "Ich werde später zurückkommen."
+      tense: "Futur I"
+    - en: "It comes with a warranty."
+      de: "Es kommt mit Garantie."
+      tense: "Präsens"
+  ru:
+    - ru: "Я иду!"
+      de: "Ich komme!"
+      tense: "Präsens"
+    - ru: "Откуда ты?"
+      de: "Woher kommst du?"
+      tense: "Präsens"
+    - ru: "Она придёт завтра."
+      de: "Sie kommt morgen."
+      tense: "Präsens"
+    - ru: "Он пришёл поздно."
+      de: "Er kam spät."
+      tense: "Präteritum"
+    - ru: "Когда ты приехал?"
+      de: "Wann bist du gekommen?"
+      tense: "Perfekt"
+    - ru: "Я приду в восемь."
+      de: "Ich werde um acht kommen."
+      tense: "Futur I"
+    - ru: "Иди сюда!"
+      de: "Komm her!"
+      tense: "Präsens"
+    - ru: "Они приехали на поезде."
+      de: "Sie sind mit dem Zug gekommen."
+      tense: "Perfekt"
+    - ru: "Как мне туда добраться?"
+      de: "Wie komme ich dahin?"
+      tense: "Präsens"
+    - ru: "Она пришла в гости."
+      de: "Sie kam zu Besuch."
+      tense: "Präteritum"
+    - ru: "Я только что пришёл."
+      de: "Ich bin gerade gekommen."
+      tense: "Perfekt"
+    - ru: "Ты идёшь с нами?"
+      de: "Kommst du mit?"
+      tense: "Präsens"
+    - ru: "Они скоро придут."
+      de: "Sie werden bald kommen."
+      tense: "Futur I"
+    - ru: "Автобус едет."
+      de: "Der Bus kommt."
+      tense: "Präsens"
+    - ru: "Я пришёл так быстро, как мог."
+      de: "Ich bin so schnell gekommen wie ich konnte."
+      tense: "Perfekt"
+    - ru: "Откуда это?"
+      de: "Woher kommt das?"
+      tense: "Präsens"
+    - ru: "Она пришла рано."
+      de: "Sie kam früh."
+      tense: "Präteritum"
+    - ru: "Входи!"
+      de: "Komm rein!"
+      tense: "Präsens"
+    - ru: "Я вернусь позже."
+      de: "Ich werde später zurückkommen."
+      tense: "Futur I"
+    - ru: "Это с гарантией."
+      de: "Es kommt mit Garantie."
+      tense: "Präsens"
+  pt:
+    - pt: "Já vou!"
+      de: "Ich komme!"
+      tense: "Präsens"
+    - pt: "De onde és?"
+      de: "Woher kommst du?"
+      tense: "Präsens"
+    - pt: "Ela vem amanhã."
+      de: "Sie kommt morgen."
+      tense: "Präsens"
+    - pt: "Ele chegou tarde."
+      de: "Er kam spät."
+      tense: "Präteritum"
+    - pt: "Quando chegaste?"
+      de: "Wann bist du gekommen?"
+      tense: "Perfekt"
+    - pt: "Venho às oito."
+      de: "Ich werde um acht kommen."
+      tense: "Futur I"
+    - pt: "Vem cá!"
+      de: "Komm her!"
+      tense: "Präsens"
+    - pt: "Vieram de comboio."
+      de: "Sie sind mit dem Zug gekommen."
+      tense: "Perfekt"
+    - pt: "Como chego lá?"
+      de: "Wie komme ich dahin?"
+      tense: "Präsens"
+    - pt: "Ela veio visitar."
+      de: "Sie kam zu Besuch."
+      tense: "Präteritum"
+    - pt: "Acabei de chegar."
+      de: "Ich bin gerade gekommen."
+      tense: "Perfekt"
+    - pt: "Vens connosco?"
+      de: "Kommst du mit?"
+      tense: "Präsens"
+    - pt: "Eles virão em breve."
+      de: "Sie werden bald kommen."
+      tense: "Futur I"
+    - pt: "O autocarro vem aí."
+      de: "Der Bus kommt."
+      tense: "Präsens"
+    - pt: "Vim o mais rápido que pude."
+      de: "Ich bin so schnell gekommen wie ich konnte."
+      tense: "Perfekt"
+    - pt: "De onde vem isto?"
+      de: "Woher kommt das?"
+      tense: "Präsens"
+    - pt: "Ela chegou cedo."
+      de: "Sie kam früh."
+      tense: "Präteritum"
+    - pt: "Entra!"
+      de: "Komm rein!"
+      tense: "Präsens"
+    - pt: "Volto mais tarde."
+      de: "Ich werde später zurückkommen."
+      tense: "Futur I"
+    - pt: "Vem com garantia."
+      de: "Es kommt mit Garantie."
+      tense: "Präsens"

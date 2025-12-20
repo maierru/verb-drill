@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇩🇪 VERB LIEGEN — 20 Phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Back to verb list</a>
+            <h1>🇩🇪 Verb LIEGEN</h1>
+            <p class="subtitle">to lie, to be located — 20 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Show all translations</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
+        </div>
+
+        <div class="stats" id="stats">Showing: 20 of 20 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            German Practice — LIEGEN · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇩🇪 Verb LIEGEN</h2>
+            <div class="tense-explanation">
+                <h4>Präsens</h4>
+                <p>Present tense - lying, being located</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>liege</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>liegst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>liegt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>liegen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>liegt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>liegen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Präteritum</h4>
+                <p>Simple past - lay, was located</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>lag</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>lagst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>lag</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>lagen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>lagt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>lagen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Perfekt</h4>
+                <p>Present perfect - has lain</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>habe gelegen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>hast gelegen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>hat gelegen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>haben gelegen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>habt gelegen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>haben gelegen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur I</h4>
+                <p>Future - will lie</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>werde liegen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>wirst liegen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>wird liegen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>werden liegen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>werdet liegen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>werden liegen</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'en',
+            targetKey: 'de',
+            labels: { target: 'German', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["liege","liegst","liegt","liegen","lag","lagst","lagen","lagt","gelegen"],
+            phrases: [
+                { en: "I am lying in bed.", de: "Ich liege im Bett.", tense: "Präsens" },
+                { en: "The book is on the table.", de: "Das Buch liegt auf dem Tisch.", tense: "Präsens" },
+                { en: "Berlin is in Germany.", de: "Berlin liegt in Deutschland.", tense: "Präsens" },
+                { en: "She lay on the sofa.", de: "Sie lag auf dem Sofa.", tense: "Präteritum" },
+                { en: "The problem lies elsewhere.", de: "Das Problem liegt woanders.", tense: "Präsens" },
+                { en: "He has been lying in hospital.", de: "Er hat im Krankenhaus gelegen.", tense: "Perfekt" },
+                { en: "It depends on you.", de: "Es liegt an dir.", tense: "Präsens" },
+                { en: "Snow lay on the ground.", de: "Schnee lag auf dem Boden.", tense: "Präteritum" },
+                { en: "The keys are on the table.", de: "Die Schlüssel liegen auf dem Tisch.", tense: "Präsens" },
+                { en: "The fault lies with me.", de: "Der Fehler liegt bei mir.", tense: "Präsens" },
+                { en: "I was lying in the sun.", de: "Ich habe in der Sonne gelegen.", tense: "Perfekt" },
+                { en: "The city lies by the river.", de: "Die Stadt liegt am Fluss.", tense: "Präsens" },
+                { en: "She lay awake all night.", de: "Sie lag die ganze Nacht wach.", tense: "Präteritum" },
+                { en: "Where does the emphasis lie?", de: "Wo liegt die Betonung?", tense: "Präsens" },
+                { en: "The solution lies in teamwork.", de: "Die Lösung liegt in der Teamarbeit.", tense: "Präsens" },
+                { en: "Papers were lying everywhere.", de: "Papiere lagen überall.", tense: "Präteritum" },
+                { en: "I will be lying on the beach.", de: "Ich werde am Strand liegen.", tense: "Futur I" },
+                { en: "The hotel is near the station.", de: "Das Hotel liegt in der Nähe des Bahnhofs.", tense: "Präsens" },
+                { en: "His interest lies in music.", de: "Sein Interesse liegt in der Musik.", tense: "Präsens" },
+                { en: "The cat lay in the sun.", de: "Die Katze lag in der Sonne.", tense: "Präteritum" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

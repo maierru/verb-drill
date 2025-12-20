@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇩🇪 VERB SAGEN — 20 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇩🇪 Verb SAGEN</h1>
+            <p class="subtitle">to say — 20 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 20 из 20 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика немецкого — SAGEN · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇩🇪 Verb SAGEN</h2>
+            <div class="tense-explanation">
+                <h4>Präsens</h4>
+                <p>Настоящее время - говорить, сказать</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>sage</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>sagst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>sagt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>sagen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>sagt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>sagen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Präteritum</h4>
+                <p>Простое прошедшее - сказал</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>sagte</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>sagtest</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>sagte</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>sagten</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>sagtet</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>sagten</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Perfekt</h4>
+                <p>Перфект - сказал</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>habe gesagt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>hast gesagt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>hat gesagt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>haben gesagt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>habt gesagt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>haben gesagt</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur I</h4>
+                <p>Будущее время - скажет</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>werde sagen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>wirst sagen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>wird sagen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>werden sagen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>werdet sagen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>werden sagen</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'de',
+            labels: { target: 'Deutsch', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["sage","sagst","sagt","sagen","sagte","sagtest","sagten","sagtet","gesagt"],
+            phrases: [
+                { ru: "Что ты сказал?", de: "Was hast du gesagt?", tense: "Perfekt" },
+                { ru: "Я говорю да.", de: "Ich sage ja.", tense: "Präsens" },
+                { ru: "Она ничего не сказала.", de: "Sie sagte nichts.", tense: "Präteritum" },
+                { ru: "Они говорят, что это правда.", de: "Sie sagen, es ist wahr.", tense: "Präsens" },
+                { ru: "Он сказал мне правду.", de: "Er hat mir die Wahrheit gesagt.", tense: "Perfekt" },
+                { ru: "Что это значит?", de: "Was sagt das?", tense: "Präsens" },
+                { ru: "Я скажу тебе позже.", de: "Ich werde es dir später sagen.", tense: "Futur I" },
+                { ru: "Она всегда говорит одно и то же.", de: "Sie sagt immer das Gleiche.", tense: "Präsens" },
+                { ru: "Я попрощался.", de: "Ich habe mich verabschiedet.", tense: "Perfekt" },
+                { ru: "Что бы ты сказал?", de: "Was würdest du sagen?", tense: "Präteritum" },
+                { ru: "Расскажи мне больше.", de: "Sag mir mehr.", tense: "Präsens" },
+                { ru: "Он сказал, что занят.", de: "Er sagte, er sei beschäftigt.", tense: "Präteritum" },
+                { ru: "Мне нечего сказать.", de: "Ich habe nichts zu sagen.", tense: "Präsens" },
+                { ru: "Она никогда не говорит спасибо.", de: "Sie sagt nie danke.", tense: "Präsens" },
+                { ru: "Они сказали, что это невозможно.", de: "Sie sagten, es sei unmöglich.", tense: "Präteritum" },
+                { ru: "Я скажу несколько слов.", de: "Ich werde ein paar Worte sagen.", tense: "Futur I" },
+                { ru: "Что написано на табличке?", de: "Was sagt das Schild?", tense: "Präsens" },
+                { ru: "Она рассказала мне секрет.", de: "Sie hat mir ein Geheimnis gesagt.", tense: "Perfekt" },
+                { ru: "Я не могу сказать точно.", de: "Ich kann es nicht genau sagen.", tense: "Präsens" },
+                { ru: "Он поздоровался.", de: "Er hat Hallo gesagt.", tense: "Perfekt" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

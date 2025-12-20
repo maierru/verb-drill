@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇩🇪 VERB GEHEN — 20 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇩🇪 Verb GEHEN</h1>
+            <p class="subtitle">to go — 20 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 20 из 20 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика немецкого — GEHEN · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇩🇪 Verb GEHEN</h2>
+            <div class="tense-explanation">
+                <h4>Präsens</h4>
+                <p>Настоящее время - идти, ходить</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>gehe</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>gehst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>geht</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>gehen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>geht</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>gehen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Präteritum</h4>
+                <p>Простое прошедшее - шёл, пошёл</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>ging</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>gingst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>ging</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>gingen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>gingt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>gingen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Perfekt</h4>
+                <p>Перфект - пошёл</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>bin gegangen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>bist gegangen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>ist gegangen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>sind gegangen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>seid gegangen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>sind gegangen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur I</h4>
+                <p>Будущее время - пойдёт</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>werde gehen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>wirst gehen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>wird gehen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>werden gehen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>werdet gehen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>werden gehen</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'de',
+            labels: { target: 'Deutsch', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["gehe","gehst","geht","gehen","ging","gingst","gingen","gingt","gegangen"],
+            phrases: [
+                { ru: "Я иду домой.", de: "Ich gehe nach Hause.", tense: "Präsens" },
+                { ru: "Куда ты идёшь?", de: "Wohin gehst du?", tense: "Präsens" },
+                { ru: "Она ходит в школу.", de: "Sie geht zur Schule.", tense: "Präsens" },
+                { ru: "Как дела?", de: "Wie geht es dir?", tense: "Präsens" },
+                { ru: "Он пошёл в магазин.", de: "Er ist zum Laden gegangen.", tense: "Perfekt" },
+                { ru: "Я пойду завтра.", de: "Ich werde morgen gehen.", tense: "Futur I" },
+                { ru: "Пошли!", de: "Gehen wir!", tense: "Präsens" },
+                { ru: "Всё прошло хорошо.", de: "Es ist gut gegangen.", tense: "Perfekt" },
+                { ru: "Я езжу на работу на автобусе.", de: "Ich gehe mit dem Bus zur Arbeit.", tense: "Präsens" },
+                { ru: "Она ушла рано.", de: "Sie ging früh.", tense: "Präteritum" },
+                { ru: "Мы идём гулять сегодня вечером.", de: "Wir gehen heute Abend aus.", tense: "Präsens" },
+                { ru: "Он уже ушёл.", de: "Er ist schon gegangen.", tense: "Perfekt" },
+                { ru: "Встреча затянулась.", de: "Das Meeting ging lange.", tense: "Präteritum" },
+                { ru: "Я пойду с тобой.", de: "Ich werde mit dir gehen.", tense: "Futur I" },
+                { ru: "Она бегает каждый день.", de: "Sie geht jeden Tag joggen.", tense: "Präsens" },
+                { ru: "Всё идёт хорошо.", de: "Alles geht gut.", tense: "Präsens" },
+                { ru: "Мы пошли гулять.", de: "Wir sind spazieren gegangen.", tense: "Perfekt" },
+                { ru: "Это не работает.", de: "Es geht nicht.", tense: "Präsens" },
+                { ru: "Мне нужно идти.", de: "Ich muss jetzt gehen.", tense: "Präsens" },
+                { ru: "Они пошли домой.", de: "Sie sind nach Hause gegangen.", tense: "Perfekt" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

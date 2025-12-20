@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇩🇪 VERB KÖNNEN — 20 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇩🇪 Verb KÖNNEN</h1>
+            <p class="subtitle">can, to be able to — 20 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 20 из 20 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика немецкого — KOENNEN · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇩🇪 Verb KÖNNEN</h2>
+            <div class="tense-explanation">
+                <h4>Präsens</h4>
+                <p>Настоящее время - способность, возможность, разрешение</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>kann</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>kannst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>kann</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>können</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>könnt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>können</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Präteritum</h4>
+                <p>Простое прошедшее - мог</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>konnte</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>konntest</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>konnte</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>konnten</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>konntet</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>konnten</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Perfekt</h4>
+                <p>Перфект - смог</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>habe gekonnt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>hast gekonnt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>hat gekonnt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>haben gekonnt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>habt gekonnt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>haben gekonnt</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur I</h4>
+                <p>Будущее время - сможет</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>werde können</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>wirst können</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>wird können</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>werden können</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>werdet können</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>werden können</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'de',
+            labels: { target: 'Deutsch', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["kann","kannst","können","könnt","konnte","konntest","konnten","konntet","gekonnt"],
+            phrases: [
+                { ru: "Я могу говорить по-немецки.", de: "Ich kann Deutsch sprechen.", tense: "Präsens" },
+                { ru: "Можешь мне помочь?", de: "Kannst du mir helfen?", tense: "Präsens" },
+                { ru: "Она умеет очень хорошо плавать.", de: "Sie kann sehr gut schwimmen.", tense: "Präsens" },
+                { ru: "Мы можем прийти завтра.", de: "Wir können morgen kommen.", tense: "Präsens" },
+                { ru: "Я не мог уснуть.", de: "Ich konnte nicht schlafen.", tense: "Präteritum" },
+                { ru: "Он умел читать в четыре года.", de: "Er konnte mit vier Jahren lesen.", tense: "Präteritum" },
+                { ru: "Можно задать вопрос?", de: "Kann ich eine Frage stellen?", tense: "Präsens" },
+                { ru: "Они могут сделать это сами.", de: "Sie können es selbst machen.", tense: "Präsens" },
+                { ru: "Я смогу прийти.", de: "Ich werde kommen können.", tense: "Futur I" },
+                { ru: "Ты можешь остаться здесь.", de: "Du kannst hier bleiben.", tense: "Präsens" },
+                { ru: "Мы не смогли это найти.", de: "Wir konnten es nicht finden.", tense: "Präteritum" },
+                { ru: "Ты видишь это?", de: "Kannst du das sehen?", tense: "Präsens" },
+                { ru: "Она не могла понять.", de: "Sie konnte nicht verstehen.", tense: "Präteritum" },
+                { ru: "Я умею водить.", de: "Ich kann fahren.", tense: "Präsens" },
+                { ru: "Он умеет играть на пианино.", de: "Er kann Klavier spielen.", tense: "Präsens" },
+                { ru: "Не могли бы вы повторить?", de: "Könnten Sie das wiederholen?", tense: "Präteritum" },
+                { ru: "Мы можем попробовать ещё раз.", de: "Wir können es noch mal versuchen.", tense: "Präsens" },
+                { ru: "Я мог всё слышать.", de: "Ich konnte alles hören.", tense: "Präteritum" },
+                { ru: "Можно воспользоваться твоим телефоном?", de: "Kann ich dein Telefon benutzen?", tense: "Präsens" },
+                { ru: "Они не смогли прийти.", de: "Sie konnten nicht kommen.", tense: "Präteritum" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇩🇪 VERB FINDEN — 20 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇩🇪 Verb FINDEN</h1>
+            <p class="subtitle">to find — 20 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 20 из 20 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика немецкого — FINDEN · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇩🇪 Verb FINDEN</h2>
+            <div class="tense-explanation">
+                <h4>Präsens</h4>
+                <p>Настоящее время - находить, считать (мнение)</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>finde</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>findest</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>findet</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>finden</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>findet</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>finden</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Präteritum</h4>
+                <p>Простое прошедшее - нашёл</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>fand</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>fandst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>fand</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>fanden</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>fandet</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>fanden</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Perfekt</h4>
+                <p>Перфект - нашёл</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>habe gefunden</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>hast gefunden</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>hat gefunden</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>haben gefunden</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>habt gefunden</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>haben gefunden</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur I</h4>
+                <p>Будущее время - найдёт</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>werde finden</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>wirst finden</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>wird finden</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>werden finden</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>werdet finden</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>werden finden</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'de',
+            labels: { target: 'Deutsch', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["finde","findest","findet","finden","fand","fandst","fanden","fandet","gefunden"],
+            phrases: [
+                { ru: "Я нахожу это интересным.", de: "Ich finde das interessant.", tense: "Präsens" },
+                { ru: "Ты нашёл?", de: "Hast du es gefunden?", tense: "Perfekt" },
+                { ru: "Она нашла ключ.", de: "Sie hat den Schlüssel gefunden.", tense: "Perfekt" },
+                { ru: "Я не могу найти телефон.", de: "Ich finde mein Handy nicht.", tense: "Präsens" },
+                { ru: "Что ты думаешь?", de: "Was findest du?", tense: "Präsens" },
+                { ru: "Он нашёл работу.", de: "Er hat einen Job gefunden.", tense: "Perfekt" },
+                { ru: "Я думаю, она милая.", de: "Ich finde sie nett.", tense: "Präsens" },
+                { ru: "Мы нашли решение.", de: "Wir haben eine Lösung gefunden.", tense: "Perfekt" },
+                { ru: "Я найду способ.", de: "Ich werde einen Weg finden.", tense: "Futur I" },
+                { ru: "Она нашла это странным.", de: "Sie fand es seltsam.", tense: "Präteritum" },
+                { ru: "Я не нахожу слов.", de: "Ich finde keine Worte.", tense: "Präsens" },
+                { ru: "Они нашли друг друга.", de: "Sie haben sich gefunden.", tense: "Perfekt" },
+                { ru: "Как тебе здесь?", de: "Wie findest du es hier?", tense: "Präsens" },
+                { ru: "Мне показалось это сложным.", de: "Ich fand es schwierig.", tense: "Präteritum" },
+                { ru: "Где ты это нашёл?", de: "Wo hast du das gefunden?", tense: "Perfekt" },
+                { ru: "Я думаю, это отлично.", de: "Ich finde es toll.", tense: "Präsens" },
+                { ru: "Он наконец нашёл время.", de: "Er hat endlich Zeit gefunden.", tense: "Perfekt" },
+                { ru: "Я не могу найти дорогу.", de: "Ich finde den Weg nicht.", tense: "Präsens" },
+                { ru: "Она нашла своё призвание.", de: "Sie hat ihre Leidenschaft gefunden.", tense: "Perfekt" },
+                { ru: "Я считаю это несправедливым.", de: "Ich finde das unfair.", tense: "Präsens" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

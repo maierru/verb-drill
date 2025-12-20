@@ -1,0 +1,248 @@
+slug: lassen
+name: "🇩🇪 Verb LASSEN"
+meaning: to let, to allow
+verb_forms:
+  - lasse
+  - lässt
+  - lassen
+  - lasst
+  - ließ
+  - ließt
+  - ließen
+  - ließt
+  - gelassen
+
+conjugation:
+  - tense: Präsens
+    explanation:
+      en: "Present tense - letting, allowing, having something done"
+      ru: "Настоящее время - позволять, оставлять"
+      pt: "Presente - deixar, permitir"
+    forms:
+      ich: lasse
+      du: lässt
+      er/sie/es: lässt
+      wir: lassen
+      ihr: lasst
+      sie/Sie: lassen
+  - tense: Präteritum
+    explanation:
+      en: "Simple past - let, allowed"
+      ru: "Простое прошедшее - позволил"
+      pt: "Pretérito simples - deixou"
+    forms:
+      ich: ließ
+      du: ließt
+      er/sie/es: ließ
+      wir: ließen
+      ihr: ließt
+      sie/Sie: ließen
+  - tense: Perfekt
+    explanation:
+      en: "Present perfect - has let"
+      ru: "Перфект - позволил"
+      pt: "Pretérito perfeito - deixou"
+    forms:
+      ich: habe gelassen
+      du: hast gelassen
+      er/sie/es: hat gelassen
+      wir: haben gelassen
+      ihr: habt gelassen
+      sie/Sie: haben gelassen
+  - tense: Futur I
+    explanation:
+      en: "Future - will let"
+      ru: "Будущее время - позволит"
+      pt: "Futuro - deixará"
+    forms:
+      ich: werde lassen
+      du: wirst lassen
+      er/sie/es: wird lassen
+      wir: werden lassen
+      ihr: werdet lassen
+      sie/Sie: werden lassen
+
+phrases:
+  en:
+    - en: "Let me help you."
+      de: "Lass mich dir helfen."
+      tense: "Präsens"
+    - en: "Leave me alone."
+      de: "Lass mich in Ruhe."
+      tense: "Präsens"
+    - en: "She had her hair cut."
+      de: "Sie hat sich die Haare schneiden lassen."
+      tense: "Perfekt"
+    - en: "Let's go!"
+      de: "Lass uns gehen!"
+      tense: "Präsens"
+    - en: "I left my keys at home."
+      de: "Ich habe meine Schlüssel zu Hause gelassen."
+      tense: "Perfekt"
+    - en: "Let him speak."
+      de: "Lass ihn reden."
+      tense: "Präsens"
+    - en: "She lets her children play."
+      de: "Sie lässt ihre Kinder spielen."
+      tense: "Präsens"
+    - en: "I had it repaired."
+      de: "Ich habe es reparieren lassen."
+      tense: "Perfekt"
+    - en: "Don't leave that there."
+      de: "Lass das nicht dort."
+      tense: "Präsens"
+    - en: "He let me in."
+      de: "Er ließ mich rein."
+      tense: "Präteritum"
+    - en: "Let me think."
+      de: "Lass mich nachdenken."
+      tense: "Präsens"
+    - en: "I will let you know."
+      de: "Ich werde es dich wissen lassen."
+      tense: "Futur I"
+    - en: "She left everything behind."
+      de: "Sie ließ alles zurück."
+      tense: "Präteritum"
+    - en: "Let it go."
+      de: "Lass es los."
+      tense: "Präsens"
+    - en: "He had the car washed."
+      de: "Er hat das Auto waschen lassen."
+      tense: "Perfekt"
+    - en: "Leave the door open."
+      de: "Lass die Tür offen."
+      tense: "Präsens"
+    - en: "I left my bag in the car."
+      de: "Ich habe meine Tasche im Auto gelassen."
+      tense: "Perfekt"
+    - en: "Let me see."
+      de: "Lass mich sehen."
+      tense: "Präsens"
+    - en: "They won't let me in."
+      de: "Sie lassen mich nicht rein."
+      tense: "Präsens"
+    - en: "Let me explain."
+      de: "Lass mich erklären."
+      tense: "Präsens"
+  ru:
+    - ru: "Позволь мне помочь."
+      de: "Lass mich dir helfen."
+      tense: "Präsens"
+    - ru: "Оставь меня в покое."
+      de: "Lass mich in Ruhe."
+      tense: "Präsens"
+    - ru: "Она подстриглась."
+      de: "Sie hat sich die Haare schneiden lassen."
+      tense: "Perfekt"
+    - ru: "Пойдём!"
+      de: "Lass uns gehen!"
+      tense: "Präsens"
+    - ru: "Я оставил ключи дома."
+      de: "Ich habe meine Schlüssel zu Hause gelassen."
+      tense: "Perfekt"
+    - ru: "Дай ему сказать."
+      de: "Lass ihn reden."
+      tense: "Präsens"
+    - ru: "Она разрешает детям играть."
+      de: "Sie lässt ihre Kinder spielen."
+      tense: "Präsens"
+    - ru: "Я отдал это в ремонт."
+      de: "Ich habe es reparieren lassen."
+      tense: "Perfekt"
+    - ru: "Не оставляй это там."
+      de: "Lass das nicht dort."
+      tense: "Präsens"
+    - ru: "Он впустил меня."
+      de: "Er ließ mich rein."
+      tense: "Präteritum"
+    - ru: "Дай мне подумать."
+      de: "Lass mich nachdenken."
+      tense: "Präsens"
+    - ru: "Я дам тебе знать."
+      de: "Ich werde es dich wissen lassen."
+      tense: "Futur I"
+    - ru: "Она всё оставила."
+      de: "Sie ließ alles zurück."
+      tense: "Präteritum"
+    - ru: "Отпусти это."
+      de: "Lass es los."
+      tense: "Präsens"
+    - ru: "Он помыл машину."
+      de: "Er hat das Auto waschen lassen."
+      tense: "Perfekt"
+    - ru: "Оставь дверь открытой."
+      de: "Lass die Tür offen."
+      tense: "Präsens"
+    - ru: "Я оставил сумку в машине."
+      de: "Ich habe meine Tasche im Auto gelassen."
+      tense: "Perfekt"
+    - ru: "Дай посмотреть."
+      de: "Lass mich sehen."
+      tense: "Präsens"
+    - ru: "Они меня не пускают."
+      de: "Sie lassen mich nicht rein."
+      tense: "Präsens"
+    - ru: "Позволь объяснить."
+      de: "Lass mich erklären."
+      tense: "Präsens"
+  pt:
+    - pt: "Deixa-me ajudar-te."
+      de: "Lass mich dir helfen."
+      tense: "Präsens"
+    - pt: "Deixa-me em paz."
+      de: "Lass mich in Ruhe."
+      tense: "Präsens"
+    - pt: "Ela cortou o cabelo."
+      de: "Sie hat sich die Haare schneiden lassen."
+      tense: "Perfekt"
+    - pt: "Vamos!"
+      de: "Lass uns gehen!"
+      tense: "Präsens"
+    - pt: "Deixei as chaves em casa."
+      de: "Ich habe meine Schlüssel zu Hause gelassen."
+      tense: "Perfekt"
+    - pt: "Deixa-o falar."
+      de: "Lass ihn reden."
+      tense: "Präsens"
+    - pt: "Ela deixa os filhos brincar."
+      de: "Sie lässt ihre Kinder spielen."
+      tense: "Präsens"
+    - pt: "Mandei arranjar."
+      de: "Ich habe es reparieren lassen."
+      tense: "Perfekt"
+    - pt: "Não deixes isso aí."
+      de: "Lass das nicht dort."
+      tense: "Präsens"
+    - pt: "Ele deixou-me entrar."
+      de: "Er ließ mich rein."
+      tense: "Präteritum"
+    - pt: "Deixa-me pensar."
+      de: "Lass mich nachdenken."
+      tense: "Präsens"
+    - pt: "Vou avisar-te."
+      de: "Ich werde es dich wissen lassen."
+      tense: "Futur I"
+    - pt: "Ela deixou tudo para trás."
+      de: "Sie ließ alles zurück."
+      tense: "Präteritum"
+    - pt: "Deixa estar."
+      de: "Lass es los."
+      tense: "Präsens"
+    - pt: "Ele mandou lavar o carro."
+      de: "Er hat das Auto waschen lassen."
+      tense: "Perfekt"
+    - pt: "Deixa a porta aberta."
+      de: "Lass die Tür offen."
+      tense: "Präsens"
+    - pt: "Deixei a mala no carro."
+      de: "Ich habe meine Tasche im Auto gelassen."
+      tense: "Perfekt"
+    - pt: "Deixa-me ver."
+      de: "Lass mich sehen."
+      tense: "Präsens"
+    - pt: "Não me deixam entrar."
+      de: "Sie lassen mich nicht rein."
+      tense: "Präsens"
+    - pt: "Deixa-me explicar."
+      de: "Lass mich erklären."
+      tense: "Präsens"

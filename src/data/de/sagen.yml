@@ -1,0 +1,248 @@
+slug: sagen
+name: "🇩🇪 Verb SAGEN"
+meaning: to say
+verb_forms:
+  - sage
+  - sagst
+  - sagt
+  - sagen
+  - sagte
+  - sagtest
+  - sagten
+  - sagtet
+  - gesagt
+
+conjugation:
+  - tense: Präsens
+    explanation:
+      en: "Present tense - saying, telling"
+      ru: "Настоящее время - говорить, сказать"
+      pt: "Presente - dizer, contar"
+    forms:
+      ich: sage
+      du: sagst
+      er/sie/es: sagt
+      wir: sagen
+      ihr: sagt
+      sie/Sie: sagen
+  - tense: Präteritum
+    explanation:
+      en: "Simple past - said"
+      ru: "Простое прошедшее - сказал"
+      pt: "Pretérito simples - disse"
+    forms:
+      ich: sagte
+      du: sagtest
+      er/sie/es: sagte
+      wir: sagten
+      ihr: sagtet
+      sie/Sie: sagten
+  - tense: Perfekt
+    explanation:
+      en: "Present perfect - has said"
+      ru: "Перфект - сказал"
+      pt: "Pretérito perfeito - disse"
+    forms:
+      ich: habe gesagt
+      du: hast gesagt
+      er/sie/es: hat gesagt
+      wir: haben gesagt
+      ihr: habt gesagt
+      sie/Sie: haben gesagt
+  - tense: Futur I
+    explanation:
+      en: "Future - will say"
+      ru: "Будущее время - скажет"
+      pt: "Futuro - dirá"
+    forms:
+      ich: werde sagen
+      du: wirst sagen
+      er/sie/es: wird sagen
+      wir: werden sagen
+      ihr: werdet sagen
+      sie/Sie: werden sagen
+
+phrases:
+  en:
+    - en: "What did you say?"
+      de: "Was hast du gesagt?"
+      tense: "Perfekt"
+    - en: "I say yes."
+      de: "Ich sage ja."
+      tense: "Präsens"
+    - en: "She said nothing."
+      de: "Sie sagte nichts."
+      tense: "Präteritum"
+    - en: "They say it's true."
+      de: "Sie sagen, es ist wahr."
+      tense: "Präsens"
+    - en: "He told me the truth."
+      de: "Er hat mir die Wahrheit gesagt."
+      tense: "Perfekt"
+    - en: "What does that say?"
+      de: "Was sagt das?"
+      tense: "Präsens"
+    - en: "I will tell you later."
+      de: "Ich werde es dir später sagen."
+      tense: "Futur I"
+    - en: "She always says the same thing."
+      de: "Sie sagt immer das Gleiche."
+      tense: "Präsens"
+    - en: "I said goodbye."
+      de: "Ich habe mich verabschiedet."
+      tense: "Perfekt"
+    - en: "What would you say?"
+      de: "Was würdest du sagen?"
+      tense: "Präteritum"
+    - en: "Tell me more."
+      de: "Sag mir mehr."
+      tense: "Präsens"
+    - en: "He said he was busy."
+      de: "Er sagte, er sei beschäftigt."
+      tense: "Präteritum"
+    - en: "I have nothing to say."
+      de: "Ich habe nichts zu sagen."
+      tense: "Präsens"
+    - en: "She never says thank you."
+      de: "Sie sagt nie danke."
+      tense: "Präsens"
+    - en: "They said it was impossible."
+      de: "Sie sagten, es sei unmöglich."
+      tense: "Präteritum"
+    - en: "I will say a few words."
+      de: "Ich werde ein paar Worte sagen."
+      tense: "Futur I"
+    - en: "What does the sign say?"
+      de: "Was sagt das Schild?"
+      tense: "Präsens"
+    - en: "She told me a secret."
+      de: "Sie hat mir ein Geheimnis gesagt."
+      tense: "Perfekt"
+    - en: "I can't say for sure."
+      de: "Ich kann es nicht genau sagen."
+      tense: "Präsens"
+    - en: "He said hello."
+      de: "Er hat Hallo gesagt."
+      tense: "Perfekt"
+  ru:
+    - ru: "Что ты сказал?"
+      de: "Was hast du gesagt?"
+      tense: "Perfekt"
+    - ru: "Я говорю да."
+      de: "Ich sage ja."
+      tense: "Präsens"
+    - ru: "Она ничего не сказала."
+      de: "Sie sagte nichts."
+      tense: "Präteritum"
+    - ru: "Они говорят, что это правда."
+      de: "Sie sagen, es ist wahr."
+      tense: "Präsens"
+    - ru: "Он сказал мне правду."
+      de: "Er hat mir die Wahrheit gesagt."
+      tense: "Perfekt"
+    - ru: "Что это значит?"
+      de: "Was sagt das?"
+      tense: "Präsens"
+    - ru: "Я скажу тебе позже."
+      de: "Ich werde es dir später sagen."
+      tense: "Futur I"
+    - ru: "Она всегда говорит одно и то же."
+      de: "Sie sagt immer das Gleiche."
+      tense: "Präsens"
+    - ru: "Я попрощался."
+      de: "Ich habe mich verabschiedet."
+      tense: "Perfekt"
+    - ru: "Что бы ты сказал?"
+      de: "Was würdest du sagen?"
+      tense: "Präteritum"
+    - ru: "Расскажи мне больше."
+      de: "Sag mir mehr."
+      tense: "Präsens"
+    - ru: "Он сказал, что занят."
+      de: "Er sagte, er sei beschäftigt."
+      tense: "Präteritum"
+    - ru: "Мне нечего сказать."
+      de: "Ich habe nichts zu sagen."
+      tense: "Präsens"
+    - ru: "Она никогда не говорит спасибо."
+      de: "Sie sagt nie danke."
+      tense: "Präsens"
+    - ru: "Они сказали, что это невозможно."
+      de: "Sie sagten, es sei unmöglich."
+      tense: "Präteritum"
+    - ru: "Я скажу несколько слов."
+      de: "Ich werde ein paar Worte sagen."
+      tense: "Futur I"
+    - ru: "Что написано на табличке?"
+      de: "Was sagt das Schild?"
+      tense: "Präsens"
+    - ru: "Она рассказала мне секрет."
+      de: "Sie hat mir ein Geheimnis gesagt."
+      tense: "Perfekt"
+    - ru: "Я не могу сказать точно."
+      de: "Ich kann es nicht genau sagen."
+      tense: "Präsens"
+    - ru: "Он поздоровался."
+      de: "Er hat Hallo gesagt."
+      tense: "Perfekt"
+  pt:
+    - pt: "O que disseste?"
+      de: "Was hast du gesagt?"
+      tense: "Perfekt"
+    - pt: "Eu digo sim."
+      de: "Ich sage ja."
+      tense: "Präsens"
+    - pt: "Ela não disse nada."
+      de: "Sie sagte nichts."
+      tense: "Präteritum"
+    - pt: "Eles dizem que é verdade."
+      de: "Sie sagen, es ist wahr."
+      tense: "Präsens"
+    - pt: "Ele disse-me a verdade."
+      de: "Er hat mir die Wahrheit gesagt."
+      tense: "Perfekt"
+    - pt: "O que diz isso?"
+      de: "Was sagt das?"
+      tense: "Präsens"
+    - pt: "Dir-te-ei mais tarde."
+      de: "Ich werde es dir später sagen."
+      tense: "Futur I"
+    - pt: "Ela diz sempre a mesma coisa."
+      de: "Sie sagt immer das Gleiche."
+      tense: "Präsens"
+    - pt: "Despedi-me."
+      de: "Ich habe mich verabschiedet."
+      tense: "Perfekt"
+    - pt: "O que dirias?"
+      de: "Was würdest du sagen?"
+      tense: "Präteritum"
+    - pt: "Diz-me mais."
+      de: "Sag mir mehr."
+      tense: "Präsens"
+    - pt: "Ele disse que estava ocupado."
+      de: "Er sagte, er sei beschäftigt."
+      tense: "Präteritum"
+    - pt: "Não tenho nada a dizer."
+      de: "Ich habe nichts zu sagen."
+      tense: "Präsens"
+    - pt: "Ela nunca diz obrigado."
+      de: "Sie sagt nie danke."
+      tense: "Präsens"
+    - pt: "Disseram que era impossível."
+      de: "Sie sagten, es sei unmöglich."
+      tense: "Präteritum"
+    - pt: "Direi algumas palavras."
+      de: "Ich werde ein paar Worte sagen."
+      tense: "Futur I"
+    - pt: "O que diz o sinal?"
+      de: "Was sagt das Schild?"
+      tense: "Präsens"
+    - pt: "Ela contou-me um segredo."
+      de: "Sie hat mir ein Geheimnis gesagt."
+      tense: "Perfekt"
+    - pt: "Não posso dizer ao certo."
+      de: "Ich kann es nicht genau sagen."
+      tense: "Präsens"
+    - pt: "Ele disse olá."
+      de: "Er hat Hallo gesagt."
+      tense: "Perfekt"

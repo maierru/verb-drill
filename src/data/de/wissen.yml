@@ -1,0 +1,248 @@
+slug: wissen
+name: "🇩🇪 Verb WISSEN"
+meaning: to know (facts)
+verb_forms:
+  - weiß
+  - weißt
+  - wissen
+  - wisst
+  - wusste
+  - wusstest
+  - wussten
+  - wusstet
+  - gewusst
+
+conjugation:
+  - tense: Präsens
+    explanation:
+      en: "Present tense - knowing facts or information"
+      ru: "Настоящее время - знать факты или информацию"
+      pt: "Presente - saber factos ou informação"
+    forms:
+      ich: weiß
+      du: weißt
+      er/sie/es: weiß
+      wir: wissen
+      ihr: wisst
+      sie/Sie: wissen
+  - tense: Präteritum
+    explanation:
+      en: "Simple past - knew"
+      ru: "Простое прошедшее - знал"
+      pt: "Pretérito simples - sabia"
+    forms:
+      ich: wusste
+      du: wusstest
+      er/sie/es: wusste
+      wir: wussten
+      ihr: wusstet
+      sie/Sie: wussten
+  - tense: Perfekt
+    explanation:
+      en: "Present perfect - has known"
+      ru: "Перфект - знал"
+      pt: "Pretérito perfeito - soube"
+    forms:
+      ich: habe gewusst
+      du: hast gewusst
+      er/sie/es: hat gewusst
+      wir: haben gewusst
+      ihr: habt gewusst
+      sie/Sie: haben gewusst
+  - tense: Futur I
+    explanation:
+      en: "Future - will know"
+      ru: "Будущее время - узнает"
+      pt: "Futuro - saberá"
+    forms:
+      ich: werde wissen
+      du: wirst wissen
+      er/sie/es: wird wissen
+      wir: werden wissen
+      ihr: werdet wissen
+      sie/Sie: werden wissen
+
+phrases:
+  en:
+    - en: "I know."
+      de: "Ich weiß."
+      tense: "Präsens"
+    - en: "I don't know."
+      de: "Ich weiß nicht."
+      tense: "Präsens"
+    - en: "Do you know the answer?"
+      de: "Weißt du die Antwort?"
+      tense: "Präsens"
+    - en: "She knows everything."
+      de: "Sie weiß alles."
+      tense: "Präsens"
+    - en: "I knew it!"
+      de: "Ich wusste es!"
+      tense: "Präteritum"
+    - en: "We didn't know that."
+      de: "Wir wussten das nicht."
+      tense: "Präteritum"
+    - en: "Who knows?"
+      de: "Wer weiß?"
+      tense: "Präsens"
+    - en: "He knew the truth."
+      de: "Er wusste die Wahrheit."
+      tense: "Präteritum"
+    - en: "I will know soon."
+      de: "Ich werde es bald wissen."
+      tense: "Futur I"
+    - en: "She knows how to cook."
+      de: "Sie weiß, wie man kocht."
+      tense: "Präsens"
+    - en: "I didn't know about that."
+      de: "Ich wusste davon nichts."
+      tense: "Präteritum"
+    - en: "You know what I mean."
+      de: "Du weißt, was ich meine."
+      tense: "Präsens"
+    - en: "They knew nothing."
+      de: "Sie wussten nichts."
+      tense: "Präteritum"
+    - en: "As far as I know."
+      de: "Soweit ich weiß."
+      tense: "Präsens"
+    - en: "I have always known."
+      de: "Ich habe es immer gewusst."
+      tense: "Perfekt"
+    - en: "Do you know what time it is?"
+      de: "Weißt du, wie spät es ist?"
+      tense: "Präsens"
+    - en: "Nobody knew."
+      de: "Niemand wusste."
+      tense: "Präteritum"
+    - en: "I want to know more."
+      de: "Ich will mehr wissen."
+      tense: "Präsens"
+    - en: "She knew my name."
+      de: "Sie wusste meinen Namen."
+      tense: "Präteritum"
+    - en: "I know that already."
+      de: "Das weiß ich schon."
+      tense: "Präsens"
+  ru:
+    - ru: "Я знаю."
+      de: "Ich weiß."
+      tense: "Präsens"
+    - ru: "Я не знаю."
+      de: "Ich weiß nicht."
+      tense: "Präsens"
+    - ru: "Ты знаешь ответ?"
+      de: "Weißt du die Antwort?"
+      tense: "Präsens"
+    - ru: "Она знает всё."
+      de: "Sie weiß alles."
+      tense: "Präsens"
+    - ru: "Я так и знал!"
+      de: "Ich wusste es!"
+      tense: "Präteritum"
+    - ru: "Мы этого не знали."
+      de: "Wir wussten das nicht."
+      tense: "Präteritum"
+    - ru: "Кто знает?"
+      de: "Wer weiß?"
+      tense: "Präsens"
+    - ru: "Он знал правду."
+      de: "Er wusste die Wahrheit."
+      tense: "Präteritum"
+    - ru: "Я скоро узнаю."
+      de: "Ich werde es bald wissen."
+      tense: "Futur I"
+    - ru: "Она умеет готовить."
+      de: "Sie weiß, wie man kocht."
+      tense: "Präsens"
+    - ru: "Я об этом не знал."
+      de: "Ich wusste davon nichts."
+      tense: "Präteritum"
+    - ru: "Ты знаешь, что я имею в виду."
+      de: "Du weißt, was ich meine."
+      tense: "Präsens"
+    - ru: "Они ничего не знали."
+      de: "Sie wussten nichts."
+      tense: "Präteritum"
+    - ru: "Насколько я знаю."
+      de: "Soweit ich weiß."
+      tense: "Präsens"
+    - ru: "Я всегда это знал."
+      de: "Ich habe es immer gewusst."
+      tense: "Perfekt"
+    - ru: "Ты знаешь, который час?"
+      de: "Weißt du, wie spät es ist?"
+      tense: "Präsens"
+    - ru: "Никто не знал."
+      de: "Niemand wusste."
+      tense: "Präteritum"
+    - ru: "Я хочу знать больше."
+      de: "Ich will mehr wissen."
+      tense: "Präsens"
+    - ru: "Она знала моё имя."
+      de: "Sie wusste meinen Namen."
+      tense: "Präteritum"
+    - ru: "Я это уже знаю."
+      de: "Das weiß ich schon."
+      tense: "Präsens"
+  pt:
+    - pt: "Eu sei."
+      de: "Ich weiß."
+      tense: "Präsens"
+    - pt: "Não sei."
+      de: "Ich weiß nicht."
+      tense: "Präsens"
+    - pt: "Sabes a resposta?"
+      de: "Weißt du die Antwort?"
+      tense: "Präsens"
+    - pt: "Ela sabe tudo."
+      de: "Sie weiß alles."
+      tense: "Präsens"
+    - pt: "Eu sabia!"
+      de: "Ich wusste es!"
+      tense: "Präteritum"
+    - pt: "Não sabíamos disso."
+      de: "Wir wussten das nicht."
+      tense: "Präteritum"
+    - pt: "Quem sabe?"
+      de: "Wer weiß?"
+      tense: "Präsens"
+    - pt: "Ele sabia a verdade."
+      de: "Er wusste die Wahrheit."
+      tense: "Präteritum"
+    - pt: "Saberei em breve."
+      de: "Ich werde es bald wissen."
+      tense: "Futur I"
+    - pt: "Ela sabe cozinhar."
+      de: "Sie weiß, wie man kocht."
+      tense: "Präsens"
+    - pt: "Eu não sabia disso."
+      de: "Ich wusste davon nichts."
+      tense: "Präteritum"
+    - pt: "Sabes o que quero dizer."
+      de: "Du weißt, was ich meine."
+      tense: "Präsens"
+    - pt: "Eles não sabiam nada."
+      de: "Sie wussten nichts."
+      tense: "Präteritum"
+    - pt: "Tanto quanto sei."
+      de: "Soweit ich weiß."
+      tense: "Präsens"
+    - pt: "Sempre soube."
+      de: "Ich habe es immer gewusst."
+      tense: "Perfekt"
+    - pt: "Sabes que horas são?"
+      de: "Weißt du, wie spät es ist?"
+      tense: "Präsens"
+    - pt: "Ninguém sabia."
+      de: "Niemand wusste."
+      tense: "Präteritum"
+    - pt: "Quero saber mais."
+      de: "Ich will mehr wissen."
+      tense: "Präsens"
+    - pt: "Ela sabia o meu nome."
+      de: "Sie wusste meinen Namen."
+      tense: "Präteritum"
+    - pt: "Já sei isso."
+      de: "Das weiß ich schon."
+      tense: "Präsens"

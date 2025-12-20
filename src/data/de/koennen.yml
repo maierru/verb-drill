@@ -1,0 +1,248 @@
+slug: koennen
+name: "🇩🇪 Verb KÖNNEN"
+meaning: can, to be able to
+verb_forms:
+  - kann
+  - kannst
+  - können
+  - könnt
+  - konnte
+  - konntest
+  - konnten
+  - konntet
+  - gekonnt
+
+conjugation:
+  - tense: Präsens
+    explanation:
+      en: "Present tense - ability, possibility, permission"
+      ru: "Настоящее время - способность, возможность, разрешение"
+      pt: "Presente - capacidade, possibilidade, permissão"
+    forms:
+      ich: kann
+      du: kannst
+      er/sie/es: kann
+      wir: können
+      ihr: könnt
+      sie/Sie: können
+  - tense: Präteritum
+    explanation:
+      en: "Simple past - could, was able to"
+      ru: "Простое прошедшее - мог"
+      pt: "Pretérito simples - podia, conseguia"
+    forms:
+      ich: konnte
+      du: konntest
+      er/sie/es: konnte
+      wir: konnten
+      ihr: konntet
+      sie/Sie: konnten
+  - tense: Perfekt
+    explanation:
+      en: "Present perfect - has been able to"
+      ru: "Перфект - смог"
+      pt: "Pretérito perfeito - conseguiu"
+    forms:
+      ich: habe gekonnt
+      du: hast gekonnt
+      er/sie/es: hat gekonnt
+      wir: haben gekonnt
+      ihr: habt gekonnt
+      sie/Sie: haben gekonnt
+  - tense: Futur I
+    explanation:
+      en: "Future - will be able to"
+      ru: "Будущее время - сможет"
+      pt: "Futuro - poderá"
+    forms:
+      ich: werde können
+      du: wirst können
+      er/sie/es: wird können
+      wir: werden können
+      ihr: werdet können
+      sie/Sie: werden können
+
+phrases:
+  en:
+    - en: "I can speak German."
+      de: "Ich kann Deutsch sprechen."
+      tense: "Präsens"
+    - en: "Can you help me?"
+      de: "Kannst du mir helfen?"
+      tense: "Präsens"
+    - en: "She can swim very well."
+      de: "Sie kann sehr gut schwimmen."
+      tense: "Präsens"
+    - en: "We can come tomorrow."
+      de: "Wir können morgen kommen."
+      tense: "Präsens"
+    - en: "I could not sleep."
+      de: "Ich konnte nicht schlafen."
+      tense: "Präteritum"
+    - en: "He could read at age four."
+      de: "Er konnte mit vier Jahren lesen."
+      tense: "Präteritum"
+    - en: "Can I ask a question?"
+      de: "Kann ich eine Frage stellen?"
+      tense: "Präsens"
+    - en: "They can do it themselves."
+      de: "Sie können es selbst machen."
+      tense: "Präsens"
+    - en: "I will be able to come."
+      de: "Ich werde kommen können."
+      tense: "Futur I"
+    - en: "You can stay here."
+      de: "Du kannst hier bleiben."
+      tense: "Präsens"
+    - en: "We couldn't find it."
+      de: "Wir konnten es nicht finden."
+      tense: "Präteritum"
+    - en: "Can you see that?"
+      de: "Kannst du das sehen?"
+      tense: "Präsens"
+    - en: "She could not understand."
+      de: "Sie konnte nicht verstehen."
+      tense: "Präteritum"
+    - en: "I can drive."
+      de: "Ich kann fahren."
+      tense: "Präsens"
+    - en: "He can play the piano."
+      de: "Er kann Klavier spielen."
+      tense: "Präsens"
+    - en: "Could you repeat that?"
+      de: "Könnten Sie das wiederholen?"
+      tense: "Präteritum"
+    - en: "We can try again."
+      de: "Wir können es noch mal versuchen."
+      tense: "Präsens"
+    - en: "I could hear everything."
+      de: "Ich konnte alles hören."
+      tense: "Präteritum"
+    - en: "Can I use your phone?"
+      de: "Kann ich dein Telefon benutzen?"
+      tense: "Präsens"
+    - en: "They couldn't come."
+      de: "Sie konnten nicht kommen."
+      tense: "Präteritum"
+  ru:
+    - ru: "Я могу говорить по-немецки."
+      de: "Ich kann Deutsch sprechen."
+      tense: "Präsens"
+    - ru: "Можешь мне помочь?"
+      de: "Kannst du mir helfen?"
+      tense: "Präsens"
+    - ru: "Она умеет очень хорошо плавать."
+      de: "Sie kann sehr gut schwimmen."
+      tense: "Präsens"
+    - ru: "Мы можем прийти завтра."
+      de: "Wir können morgen kommen."
+      tense: "Präsens"
+    - ru: "Я не мог уснуть."
+      de: "Ich konnte nicht schlafen."
+      tense: "Präteritum"
+    - ru: "Он умел читать в четыре года."
+      de: "Er konnte mit vier Jahren lesen."
+      tense: "Präteritum"
+    - ru: "Можно задать вопрос?"
+      de: "Kann ich eine Frage stellen?"
+      tense: "Präsens"
+    - ru: "Они могут сделать это сами."
+      de: "Sie können es selbst machen."
+      tense: "Präsens"
+    - ru: "Я смогу прийти."
+      de: "Ich werde kommen können."
+      tense: "Futur I"
+    - ru: "Ты можешь остаться здесь."
+      de: "Du kannst hier bleiben."
+      tense: "Präsens"
+    - ru: "Мы не смогли это найти."
+      de: "Wir konnten es nicht finden."
+      tense: "Präteritum"
+    - ru: "Ты видишь это?"
+      de: "Kannst du das sehen?"
+      tense: "Präsens"
+    - ru: "Она не могла понять."
+      de: "Sie konnte nicht verstehen."
+      tense: "Präteritum"
+    - ru: "Я умею водить."
+      de: "Ich kann fahren."
+      tense: "Präsens"
+    - ru: "Он умеет играть на пианино."
+      de: "Er kann Klavier spielen."
+      tense: "Präsens"
+    - ru: "Не могли бы вы повторить?"
+      de: "Könnten Sie das wiederholen?"
+      tense: "Präteritum"
+    - ru: "Мы можем попробовать ещё раз."
+      de: "Wir können es noch mal versuchen."
+      tense: "Präsens"
+    - ru: "Я мог всё слышать."
+      de: "Ich konnte alles hören."
+      tense: "Präteritum"
+    - ru: "Можно воспользоваться твоим телефоном?"
+      de: "Kann ich dein Telefon benutzen?"
+      tense: "Präsens"
+    - ru: "Они не смогли прийти."
+      de: "Sie konnten nicht kommen."
+      tense: "Präteritum"
+  pt:
+    - pt: "Sei falar alemão."
+      de: "Ich kann Deutsch sprechen."
+      tense: "Präsens"
+    - pt: "Podes ajudar-me?"
+      de: "Kannst du mir helfen?"
+      tense: "Präsens"
+    - pt: "Ela sabe nadar muito bem."
+      de: "Sie kann sehr gut schwimmen."
+      tense: "Präsens"
+    - pt: "Podemos vir amanhã."
+      de: "Wir können morgen kommen."
+      tense: "Präsens"
+    - pt: "Não consegui dormir."
+      de: "Ich konnte nicht schlafen."
+      tense: "Präteritum"
+    - pt: "Ele sabia ler aos quatro anos."
+      de: "Er konnte mit vier Jahren lesen."
+      tense: "Präteritum"
+    - pt: "Posso fazer uma pergunta?"
+      de: "Kann ich eine Frage stellen?"
+      tense: "Präsens"
+    - pt: "Eles podem fazê-lo sozinhos."
+      de: "Sie können es selbst machen."
+      tense: "Präsens"
+    - pt: "Poderei vir."
+      de: "Ich werde kommen können."
+      tense: "Futur I"
+    - pt: "Podes ficar aqui."
+      de: "Du kannst hier bleiben."
+      tense: "Präsens"
+    - pt: "Não conseguimos encontrá-lo."
+      de: "Wir konnten es nicht finden."
+      tense: "Präteritum"
+    - pt: "Consegues ver isso?"
+      de: "Kannst du das sehen?"
+      tense: "Präsens"
+    - pt: "Ela não conseguia perceber."
+      de: "Sie konnte nicht verstehen."
+      tense: "Präteritum"
+    - pt: "Sei conduzir."
+      de: "Ich kann fahren."
+      tense: "Präsens"
+    - pt: "Ele sabe tocar piano."
+      de: "Er kann Klavier spielen."
+      tense: "Präsens"
+    - pt: "Poderia repetir?"
+      de: "Könnten Sie das wiederholen?"
+      tense: "Präteritum"
+    - pt: "Podemos tentar outra vez."
+      de: "Wir können es noch mal versuchen."
+      tense: "Präsens"
+    - pt: "Conseguia ouvir tudo."
+      de: "Ich konnte alles hören."
+      tense: "Präteritum"
+    - pt: "Posso usar o teu telefone?"
+      de: "Kann ich dein Telefon benutzen?"
+      tense: "Präsens"
+    - pt: "Eles não puderam vir."
+      de: "Sie konnten nicht kommen."
+      tense: "Präteritum"

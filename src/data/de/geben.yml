@@ -1,0 +1,249 @@
+slug: geben
+name: "🇩🇪 Verb GEBEN"
+meaning: to give
+verb_forms:
+  - gebe
+  - gibst
+  - gibt
+  - geben
+  - gebt
+  - gab
+  - gabst
+  - gaben
+  - gabt
+  - gegeben
+
+conjugation:
+  - tense: Präsens
+    explanation:
+      en: "Present tense - giving, there is/are"
+      ru: "Настоящее время - давать, есть (существует)"
+      pt: "Presente - dar, há"
+    forms:
+      ich: gebe
+      du: gibst
+      er/sie/es: gibt
+      wir: geben
+      ihr: gebt
+      sie/Sie: geben
+  - tense: Präteritum
+    explanation:
+      en: "Simple past - gave"
+      ru: "Простое прошедшее - дал"
+      pt: "Pretérito simples - deu"
+    forms:
+      ich: gab
+      du: gabst
+      er/sie/es: gab
+      wir: gaben
+      ihr: gabt
+      sie/Sie: gaben
+  - tense: Perfekt
+    explanation:
+      en: "Present perfect - has given"
+      ru: "Перфект - дал"
+      pt: "Pretérito perfeito - deu"
+    forms:
+      ich: habe gegeben
+      du: hast gegeben
+      er/sie/es: hat gegeben
+      wir: haben gegeben
+      ihr: habt gegeben
+      sie/Sie: haben gegeben
+  - tense: Futur I
+    explanation:
+      en: "Future - will give"
+      ru: "Будущее время - даст"
+      pt: "Futuro - dará"
+    forms:
+      ich: werde geben
+      du: wirst geben
+      er/sie/es: wird geben
+      wir: werden geben
+      ihr: werdet geben
+      sie/Sie: werden geben
+
+phrases:
+  en:
+    - en: "There is a problem."
+      de: "Es gibt ein Problem."
+      tense: "Präsens"
+    - en: "Give me the book."
+      de: "Gib mir das Buch."
+      tense: "Präsens"
+    - en: "She gives good advice."
+      de: "Sie gibt gute Ratschläge."
+      tense: "Präsens"
+    - en: "He gave me a gift."
+      de: "Er hat mir ein Geschenk gegeben."
+      tense: "Perfekt"
+    - en: "There are many options."
+      de: "Es gibt viele Möglichkeiten."
+      tense: "Präsens"
+    - en: "I will give you my number."
+      de: "Ich werde dir meine Nummer geben."
+      tense: "Futur I"
+    - en: "What's happening?"
+      de: "Was gibt's?"
+      tense: "Präsens"
+    - en: "She gave me her word."
+      de: "Sie gab mir ihr Wort."
+      tense: "Präteritum"
+    - en: "There will be a party."
+      de: "Es wird eine Party geben."
+      tense: "Futur I"
+    - en: "Give me a chance."
+      de: "Gib mir eine Chance."
+      tense: "Präsens"
+    - en: "He never gives up."
+      de: "Er gibt nie auf."
+      tense: "Präsens"
+    - en: "There was nothing to eat."
+      de: "Es gab nichts zu essen."
+      tense: "Präteritum"
+    - en: "I gave him the answer."
+      de: "Ich habe ihm die Antwort gegeben."
+      tense: "Perfekt"
+    - en: "She gives lessons."
+      de: "Sie gibt Unterricht."
+      tense: "Präsens"
+    - en: "There are no problems."
+      de: "Es gibt keine Probleme."
+      tense: "Präsens"
+    - en: "He gave everything he had."
+      de: "Er gab alles, was er hatte."
+      tense: "Präteritum"
+    - en: "Can you give me a hand?"
+      de: "Kannst du mir helfen?"
+      tense: "Präsens"
+    - en: "There were many guests."
+      de: "Es gab viele Gäste."
+      tense: "Präteritum"
+    - en: "I will give it back."
+      de: "Ich werde es zurückgeben."
+      tense: "Futur I"
+    - en: "What's for dinner?"
+      de: "Was gibt es zum Abendessen?"
+      tense: "Präsens"
+  ru:
+    - ru: "Есть проблема."
+      de: "Es gibt ein Problem."
+      tense: "Präsens"
+    - ru: "Дай мне книгу."
+      de: "Gib mir das Buch."
+      tense: "Präsens"
+    - ru: "Она даёт хорошие советы."
+      de: "Sie gibt gute Ratschläge."
+      tense: "Präsens"
+    - ru: "Он подарил мне подарок."
+      de: "Er hat mir ein Geschenk gegeben."
+      tense: "Perfekt"
+    - ru: "Есть много вариантов."
+      de: "Es gibt viele Möglichkeiten."
+      tense: "Präsens"
+    - ru: "Я дам тебе свой номер."
+      de: "Ich werde dir meine Nummer geben."
+      tense: "Futur I"
+    - ru: "Что происходит?"
+      de: "Was gibt's?"
+      tense: "Präsens"
+    - ru: "Она дала мне слово."
+      de: "Sie gab mir ihr Wort."
+      tense: "Präteritum"
+    - ru: "Будет вечеринка."
+      de: "Es wird eine Party geben."
+      tense: "Futur I"
+    - ru: "Дай мне шанс."
+      de: "Gib mir eine Chance."
+      tense: "Präsens"
+    - ru: "Он никогда не сдаётся."
+      de: "Er gibt nie auf."
+      tense: "Präsens"
+    - ru: "Есть было нечего."
+      de: "Es gab nichts zu essen."
+      tense: "Präteritum"
+    - ru: "Я дал ему ответ."
+      de: "Ich habe ihm die Antwort gegeben."
+      tense: "Perfekt"
+    - ru: "Она даёт уроки."
+      de: "Sie gibt Unterricht."
+      tense: "Präsens"
+    - ru: "Проблем нет."
+      de: "Es gibt keine Probleme."
+      tense: "Präsens"
+    - ru: "Он отдал всё, что имел."
+      de: "Er gab alles, was er hatte."
+      tense: "Präteritum"
+    - ru: "Можешь мне помочь?"
+      de: "Kannst du mir helfen?"
+      tense: "Präsens"
+    - ru: "Было много гостей."
+      de: "Es gab viele Gäste."
+      tense: "Präteritum"
+    - ru: "Я верну это."
+      de: "Ich werde es zurückgeben."
+      tense: "Futur I"
+    - ru: "Что на ужин?"
+      de: "Was gibt es zum Abendessen?"
+      tense: "Präsens"
+  pt:
+    - pt: "Há um problema."
+      de: "Es gibt ein Problem."
+      tense: "Präsens"
+    - pt: "Dá-me o livro."
+      de: "Gib mir das Buch."
+      tense: "Präsens"
+    - pt: "Ela dá bons conselhos."
+      de: "Sie gibt gute Ratschläge."
+      tense: "Präsens"
+    - pt: "Ele deu-me um presente."
+      de: "Er hat mir ein Geschenk gegeben."
+      tense: "Perfekt"
+    - pt: "Há muitas opções."
+      de: "Es gibt viele Möglichkeiten."
+      tense: "Präsens"
+    - pt: "Dar-te-ei o meu número."
+      de: "Ich werde dir meine Nummer geben."
+      tense: "Futur I"
+    - pt: "O que se passa?"
+      de: "Was gibt's?"
+      tense: "Präsens"
+    - pt: "Ela deu-me a sua palavra."
+      de: "Sie gab mir ihr Wort."
+      tense: "Präteritum"
+    - pt: "Haverá uma festa."
+      de: "Es wird eine Party geben."
+      tense: "Futur I"
+    - pt: "Dá-me uma oportunidade."
+      de: "Gib mir eine Chance."
+      tense: "Präsens"
+    - pt: "Ele nunca desiste."
+      de: "Er gibt nie auf."
+      tense: "Präsens"
+    - pt: "Não havia nada para comer."
+      de: "Es gab nichts zu essen."
+      tense: "Präteritum"
+    - pt: "Dei-lhe a resposta."
+      de: "Ich habe ihm die Antwort gegeben."
+      tense: "Perfekt"
+    - pt: "Ela dá aulas."
+      de: "Sie gibt Unterricht."
+      tense: "Präsens"
+    - pt: "Não há problemas."
+      de: "Es gibt keine Probleme."
+      tense: "Präsens"
+    - pt: "Ele deu tudo o que tinha."
+      de: "Er gab alles, was er hatte."
+      tense: "Präteritum"
+    - pt: "Podes dar-me uma ajuda?"
+      de: "Kannst du mir helfen?"
+      tense: "Präsens"
+    - pt: "Havia muitos convidados."
+      de: "Es gab viele Gäste."
+      tense: "Präteritum"
+    - pt: "Vou devolvê-lo."
+      de: "Ich werde es zurückgeben."
+      tense: "Futur I"
+    - pt: "O que há para o jantar?"
+      de: "Was gibt es zum Abendessen?"
+      tense: "Präsens"

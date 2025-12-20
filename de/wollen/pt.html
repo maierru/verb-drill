@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇩🇪 VERB WOLLEN — 20 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇩🇪 Verb WOLLEN</h1>
+            <p class="subtitle">to want — 20 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 20 de 20 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Prática de alemão — WOLLEN · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇩🇪 Verb WOLLEN</h2>
+            <div class="tense-explanation">
+                <h4>Präsens</h4>
+                <p>Presente - querer</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>will</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>willst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>will</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>wollen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>wollt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>wollen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Präteritum</h4>
+                <p>Pretérito simples - quis</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>wollte</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>wolltest</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>wollte</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>wollten</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>wolltet</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>wollten</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Perfekt</h4>
+                <p>Pretérito perfeito - quis</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>habe gewollt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>hast gewollt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>hat gewollt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>haben gewollt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>habt gewollt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>haben gewollt</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur I</h4>
+                <p>Futuro - quererá</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>werde wollen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>wirst wollen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>wird wollen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>werden wollen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>werdet wollen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>werden wollen</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'de',
+            labels: { target: 'Deutsch', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["will","willst","wollen","wollt","wollte","wolltest","wollten","wolltet","gewollt"],
+            phrases: [
+                { pt: "Quero ir para casa.", de: "Ich will nach Hause gehen.", tense: "Präsens" },
+                { pt: "O que queres?", de: "Was willst du?", tense: "Präsens" },
+                { pt: "Ela quer aprender alemão.", de: "Sie will Deutsch lernen.", tense: "Präsens" },
+                { pt: "Queremos ajudar.", de: "Wir wollen helfen.", tense: "Präsens" },
+                { pt: "Queria perguntar-te uma coisa.", de: "Ich wollte dich etwas fragen.", tense: "Präteritum" },
+                { pt: "Ele não quis vir.", de: "Er wollte nicht kommen.", tense: "Präteritum" },
+                { pt: "Queres café?", de: "Willst du Kaffee?", tense: "Präsens" },
+                { pt: "Eles querem viajar.", de: "Sie wollen reisen.", tense: "Präsens" },
+                { pt: "Quero ficar sozinho.", de: "Ich will allein sein.", tense: "Präsens" },
+                { pt: "Ela queria dizer-me.", de: "Sie wollte mir sagen.", tense: "Präteritum" },
+                { pt: "Queríamos comprar uma casa.", de: "Wir wollten ein Haus kaufen.", tense: "Präteritum" },
+                { pt: "O que queres comer?", de: "Was willst du essen?", tense: "Präsens" },
+                { pt: "Quero dormir.", de: "Ich will schlafen.", tense: "Präsens" },
+                { pt: "Ele quer ser médico.", de: "Er will Arzt werden.", tense: "Präsens" },
+                { pt: "Não quiseram esperar.", de: "Sie wollten nicht warten.", tense: "Präteritum" },
+                { pt: "Queres vir connosco?", de: "Willst du mitkommen?", tense: "Präsens" },
+                { pt: "Só queria dizer olá.", de: "Ich wollte nur Hallo sagen.", tense: "Präteritum" },
+                { pt: "Ela quer mais tempo.", de: "Sie will mehr Zeit.", tense: "Präsens" },
+                { pt: "Queremos experimentar algo novo.", de: "Wir wollen etwas Neues probieren.", tense: "Präsens" },
+                { pt: "Queria agradecer-te.", de: "Ich wollte dir danken.", tense: "Präteritum" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

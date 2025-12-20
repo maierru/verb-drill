@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇩🇪 VERB SEIN — 20 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇩🇪 Verb SEIN</h1>
+            <p class="subtitle">to be — 20 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 20 из 20 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика немецкого — SEIN · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇩🇪 Verb SEIN</h2>
+            <div class="tense-explanation">
+                <h4>Präsens</h4>
+                <p>Настоящее время - состояния, идентичность, характеристики</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>bin</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>bist</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>ist</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>sind</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>seid</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>sind</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Präteritum</h4>
+                <p>Простое прошедшее - был/были в повествованиях</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>war</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>warst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>war</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>waren</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>wart</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>waren</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Perfekt</h4>
+                <p>Перфект - был (разговорный немецкий)</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>bin gewesen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>bist gewesen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>ist gewesen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>sind gewesen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>seid gewesen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>sind gewesen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur I</h4>
+                <p>Будущее время - буду</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>werde sein</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>wirst sein</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>wird sein</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>werden sein</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>werdet sein</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>werden sein</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'de',
+            labels: { target: 'Deutsch', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["bin","bist","ist","sind","seid","war","warst","waren","wart","gewesen"],
+            phrases: [
+                { ru: "Я устал.", de: "Ich bin müde.", tense: "Präsens" },
+                { ru: "Она врач.", de: "Sie ist Ärztin.", tense: "Präsens" },
+                { ru: "Мы счастливы.", de: "Wir sind glücklich.", tense: "Präsens" },
+                { ru: "Ты голоден?", de: "Bist du hungrig?", tense: "Präsens" },
+                { ru: "Они студенты.", de: "Sie sind Studenten.", tense: "Präsens" },
+                { ru: "Я был дома вчера.", de: "Ich war gestern zu Hause.", tense: "Präteritum" },
+                { ru: "Мы были в Берлине.", de: "Wir waren in Berlin.", tense: "Präteritum" },
+                { ru: "Он был болен.", de: "Er ist krank gewesen.", tense: "Perfekt" },
+                { ru: "Я буду там завтра.", de: "Ich werde morgen da sein.", tense: "Futur I" },
+                { ru: "Сегодня холодно.", de: "Es ist heute kalt.", tense: "Präsens" },
+                { ru: "Книга на столе.", de: "Das Buch ist auf dem Tisch.", tense: "Präsens" },
+                { ru: "Где ты был?", de: "Wo warst du?", tense: "Präteritum" },
+                { ru: "Я из Германии.", de: "Ich bin aus Deutschland.", tense: "Präsens" },
+                { ru: "Она была очень милой.", de: "Sie war sehr nett.", tense: "Präteritum" },
+                { ru: "Мы скоро будем готовы.", de: "Wir werden bald fertig sein.", tense: "Futur I" },
+                { ru: "Это твоя машина?", de: "Ist das dein Auto?", tense: "Präsens" },
+                { ru: "Они опоздали.", de: "Sie waren spät dran.", tense: "Präteritum" },
+                { ru: "Ему 25 лет.", de: "Er ist 25 Jahre alt.", tense: "Präsens" },
+                { ru: "Завтра будет хорошая погода.", de: "Es wird morgen schön sein.", tense: "Futur I" },
+                { ru: "Я никогда не был в Париже.", de: "Ich bin nie in Paris gewesen.", tense: "Perfekt" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

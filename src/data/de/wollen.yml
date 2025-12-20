@@ -1,0 +1,248 @@
+slug: wollen
+name: "🇩🇪 Verb WOLLEN"
+meaning: to want
+verb_forms:
+  - will
+  - willst
+  - wollen
+  - wollt
+  - wollte
+  - wolltest
+  - wollten
+  - wolltet
+  - gewollt
+
+conjugation:
+  - tense: Präsens
+    explanation:
+      en: "Present tense - wanting, desiring"
+      ru: "Настоящее время - хотеть"
+      pt: "Presente - querer"
+    forms:
+      ich: will
+      du: willst
+      er/sie/es: will
+      wir: wollen
+      ihr: wollt
+      sie/Sie: wollen
+  - tense: Präteritum
+    explanation:
+      en: "Simple past - wanted"
+      ru: "Простое прошедшее - хотел"
+      pt: "Pretérito simples - quis"
+    forms:
+      ich: wollte
+      du: wolltest
+      er/sie/es: wollte
+      wir: wollten
+      ihr: wolltet
+      sie/Sie: wollten
+  - tense: Perfekt
+    explanation:
+      en: "Present perfect - has wanted"
+      ru: "Перфект - хотел"
+      pt: "Pretérito perfeito - quis"
+    forms:
+      ich: habe gewollt
+      du: hast gewollt
+      er/sie/es: hat gewollt
+      wir: haben gewollt
+      ihr: habt gewollt
+      sie/Sie: haben gewollt
+  - tense: Futur I
+    explanation:
+      en: "Future - will want"
+      ru: "Будущее время - захочет"
+      pt: "Futuro - quererá"
+    forms:
+      ich: werde wollen
+      du: wirst wollen
+      er/sie/es: wird wollen
+      wir: werden wollen
+      ihr: werdet wollen
+      sie/Sie: werden wollen
+
+phrases:
+  en:
+    - en: "I want to go home."
+      de: "Ich will nach Hause gehen."
+      tense: "Präsens"
+    - en: "What do you want?"
+      de: "Was willst du?"
+      tense: "Präsens"
+    - en: "She wants to learn German."
+      de: "Sie will Deutsch lernen."
+      tense: "Präsens"
+    - en: "We want to help."
+      de: "Wir wollen helfen."
+      tense: "Präsens"
+    - en: "I wanted to ask you something."
+      de: "Ich wollte dich etwas fragen."
+      tense: "Präteritum"
+    - en: "He didn't want to come."
+      de: "Er wollte nicht kommen."
+      tense: "Präteritum"
+    - en: "Do you want coffee?"
+      de: "Willst du Kaffee?"
+      tense: "Präsens"
+    - en: "They want to travel."
+      de: "Sie wollen reisen."
+      tense: "Präsens"
+    - en: "I want to be alone."
+      de: "Ich will allein sein."
+      tense: "Präsens"
+    - en: "She wanted to tell me."
+      de: "Sie wollte mir sagen."
+      tense: "Präteritum"
+    - en: "We wanted to buy a house."
+      de: "Wir wollten ein Haus kaufen."
+      tense: "Präteritum"
+    - en: "What do you want to eat?"
+      de: "Was willst du essen?"
+      tense: "Präsens"
+    - en: "I want to sleep."
+      de: "Ich will schlafen."
+      tense: "Präsens"
+    - en: "He wants to become a doctor."
+      de: "Er will Arzt werden."
+      tense: "Präsens"
+    - en: "They didn't want to wait."
+      de: "Sie wollten nicht warten."
+      tense: "Präteritum"
+    - en: "Do you want to come with us?"
+      de: "Willst du mitkommen?"
+      tense: "Präsens"
+    - en: "I just wanted to say hello."
+      de: "Ich wollte nur Hallo sagen."
+      tense: "Präteritum"
+    - en: "She wants more time."
+      de: "Sie will mehr Zeit."
+      tense: "Präsens"
+    - en: "We want to try something new."
+      de: "Wir wollen etwas Neues probieren."
+      tense: "Präsens"
+    - en: "I wanted to thank you."
+      de: "Ich wollte dir danken."
+      tense: "Präteritum"
+  ru:
+    - ru: "Я хочу пойти домой."
+      de: "Ich will nach Hause gehen."
+      tense: "Präsens"
+    - ru: "Что ты хочешь?"
+      de: "Was willst du?"
+      tense: "Präsens"
+    - ru: "Она хочет учить немецкий."
+      de: "Sie will Deutsch lernen."
+      tense: "Präsens"
+    - ru: "Мы хотим помочь."
+      de: "Wir wollen helfen."
+      tense: "Präsens"
+    - ru: "Я хотел тебя спросить."
+      de: "Ich wollte dich etwas fragen."
+      tense: "Präteritum"
+    - ru: "Он не хотел приходить."
+      de: "Er wollte nicht kommen."
+      tense: "Präteritum"
+    - ru: "Хочешь кофе?"
+      de: "Willst du Kaffee?"
+      tense: "Präsens"
+    - ru: "Они хотят путешествовать."
+      de: "Sie wollen reisen."
+      tense: "Präsens"
+    - ru: "Я хочу побыть один."
+      de: "Ich will allein sein."
+      tense: "Präsens"
+    - ru: "Она хотела мне сказать."
+      de: "Sie wollte mir sagen."
+      tense: "Präteritum"
+    - ru: "Мы хотели купить дом."
+      de: "Wir wollten ein Haus kaufen."
+      tense: "Präteritum"
+    - ru: "Что ты хочешь поесть?"
+      de: "Was willst du essen?"
+      tense: "Präsens"
+    - ru: "Я хочу спать."
+      de: "Ich will schlafen."
+      tense: "Präsens"
+    - ru: "Он хочет стать врачом."
+      de: "Er will Arzt werden."
+      tense: "Präsens"
+    - ru: "Они не хотели ждать."
+      de: "Sie wollten nicht warten."
+      tense: "Präteritum"
+    - ru: "Хочешь пойти с нами?"
+      de: "Willst du mitkommen?"
+      tense: "Präsens"
+    - ru: "Я просто хотел поздороваться."
+      de: "Ich wollte nur Hallo sagen."
+      tense: "Präteritum"
+    - ru: "Она хочет больше времени."
+      de: "Sie will mehr Zeit."
+      tense: "Präsens"
+    - ru: "Мы хотим попробовать что-то новое."
+      de: "Wir wollen etwas Neues probieren."
+      tense: "Präsens"
+    - ru: "Я хотел тебя поблагодарить."
+      de: "Ich wollte dir danken."
+      tense: "Präteritum"
+  pt:
+    - pt: "Quero ir para casa."
+      de: "Ich will nach Hause gehen."
+      tense: "Präsens"
+    - pt: "O que queres?"
+      de: "Was willst du?"
+      tense: "Präsens"
+    - pt: "Ela quer aprender alemão."
+      de: "Sie will Deutsch lernen."
+      tense: "Präsens"
+    - pt: "Queremos ajudar."
+      de: "Wir wollen helfen."
+      tense: "Präsens"
+    - pt: "Queria perguntar-te uma coisa."
+      de: "Ich wollte dich etwas fragen."
+      tense: "Präteritum"
+    - pt: "Ele não quis vir."
+      de: "Er wollte nicht kommen."
+      tense: "Präteritum"
+    - pt: "Queres café?"
+      de: "Willst du Kaffee?"
+      tense: "Präsens"
+    - pt: "Eles querem viajar."
+      de: "Sie wollen reisen."
+      tense: "Präsens"
+    - pt: "Quero ficar sozinho."
+      de: "Ich will allein sein."
+      tense: "Präsens"
+    - pt: "Ela queria dizer-me."
+      de: "Sie wollte mir sagen."
+      tense: "Präteritum"
+    - pt: "Queríamos comprar uma casa."
+      de: "Wir wollten ein Haus kaufen."
+      tense: "Präteritum"
+    - pt: "O que queres comer?"
+      de: "Was willst du essen?"
+      tense: "Präsens"
+    - pt: "Quero dormir."
+      de: "Ich will schlafen."
+      tense: "Präsens"
+    - pt: "Ele quer ser médico."
+      de: "Er will Arzt werden."
+      tense: "Präsens"
+    - pt: "Não quiseram esperar."
+      de: "Sie wollten nicht warten."
+      tense: "Präteritum"
+    - pt: "Queres vir connosco?"
+      de: "Willst du mitkommen?"
+      tense: "Präsens"
+    - pt: "Só queria dizer olá."
+      de: "Ich wollte nur Hallo sagen."
+      tense: "Präteritum"
+    - pt: "Ela quer mais tempo."
+      de: "Sie will mehr Zeit."
+      tense: "Präsens"
+    - pt: "Queremos experimentar algo novo."
+      de: "Wir wollen etwas Neues probieren."
+      tense: "Präsens"
+    - pt: "Queria agradecer-te."
+      de: "Ich wollte dir danken."
+      tense: "Präteritum"

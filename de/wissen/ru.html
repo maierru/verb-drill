@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇩🇪 VERB WISSEN — 20 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇩🇪 Verb WISSEN</h1>
+            <p class="subtitle">to know (facts) — 20 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 20 из 20 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика немецкого — WISSEN · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇩🇪 Verb WISSEN</h2>
+            <div class="tense-explanation">
+                <h4>Präsens</h4>
+                <p>Настоящее время - знать факты или информацию</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>weiß</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>weißt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>weiß</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>wissen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>wisst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>wissen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Präteritum</h4>
+                <p>Простое прошедшее - знал</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>wusste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>wusstest</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>wusste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>wussten</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>wusstet</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>wussten</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Perfekt</h4>
+                <p>Перфект - знал</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>habe gewusst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>hast gewusst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>hat gewusst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>haben gewusst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>habt gewusst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>haben gewusst</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur I</h4>
+                <p>Будущее время - узнает</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>werde wissen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>wirst wissen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>wird wissen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>werden wissen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>werdet wissen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>werden wissen</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'de',
+            labels: { target: 'Deutsch', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["weiß","weißt","wissen","wisst","wusste","wusstest","wussten","wusstet","gewusst"],
+            phrases: [
+                { ru: "Я знаю.", de: "Ich weiß.", tense: "Präsens" },
+                { ru: "Я не знаю.", de: "Ich weiß nicht.", tense: "Präsens" },
+                { ru: "Ты знаешь ответ?", de: "Weißt du die Antwort?", tense: "Präsens" },
+                { ru: "Она знает всё.", de: "Sie weiß alles.", tense: "Präsens" },
+                { ru: "Я так и знал!", de: "Ich wusste es!", tense: "Präteritum" },
+                { ru: "Мы этого не знали.", de: "Wir wussten das nicht.", tense: "Präteritum" },
+                { ru: "Кто знает?", de: "Wer weiß?", tense: "Präsens" },
+                { ru: "Он знал правду.", de: "Er wusste die Wahrheit.", tense: "Präteritum" },
+                { ru: "Я скоро узнаю.", de: "Ich werde es bald wissen.", tense: "Futur I" },
+                { ru: "Она умеет готовить.", de: "Sie weiß, wie man kocht.", tense: "Präsens" },
+                { ru: "Я об этом не знал.", de: "Ich wusste davon nichts.", tense: "Präteritum" },
+                { ru: "Ты знаешь, что я имею в виду.", de: "Du weißt, was ich meine.", tense: "Präsens" },
+                { ru: "Они ничего не знали.", de: "Sie wussten nichts.", tense: "Präteritum" },
+                { ru: "Насколько я знаю.", de: "Soweit ich weiß.", tense: "Präsens" },
+                { ru: "Я всегда это знал.", de: "Ich habe es immer gewusst.", tense: "Perfekt" },
+                { ru: "Ты знаешь, который час?", de: "Weißt du, wie spät es ist?", tense: "Präsens" },
+                { ru: "Никто не знал.", de: "Niemand wusste.", tense: "Präteritum" },
+                { ru: "Я хочу знать больше.", de: "Ich will mehr wissen.", tense: "Präsens" },
+                { ru: "Она знала моё имя.", de: "Sie wusste meinen Namen.", tense: "Präteritum" },
+                { ru: "Я это уже знаю.", de: "Das weiß ich schon.", tense: "Präsens" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

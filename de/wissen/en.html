@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇩🇪 VERB WISSEN — 20 Phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Back to verb list</a>
+            <h1>🇩🇪 Verb WISSEN</h1>
+            <p class="subtitle">to know (facts) — 20 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Show all translations</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
+        </div>
+
+        <div class="stats" id="stats">Showing: 20 of 20 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            German Practice — WISSEN · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇩🇪 Verb WISSEN</h2>
+            <div class="tense-explanation">
+                <h4>Präsens</h4>
+                <p>Present tense - knowing facts or information</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>weiß</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>weißt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>weiß</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>wissen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>wisst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>wissen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Präteritum</h4>
+                <p>Simple past - knew</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>wusste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>wusstest</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>wusste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>wussten</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>wusstet</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>wussten</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Perfekt</h4>
+                <p>Present perfect - has known</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>habe gewusst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>hast gewusst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>hat gewusst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>haben gewusst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>habt gewusst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>haben gewusst</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur I</h4>
+                <p>Future - will know</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>werde wissen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>wirst wissen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>wird wissen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>werden wissen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>werdet wissen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>werden wissen</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'en',
+            targetKey: 'de',
+            labels: { target: 'German', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["weiß","weißt","wissen","wisst","wusste","wusstest","wussten","wusstet","gewusst"],
+            phrases: [
+                { en: "I know.", de: "Ich weiß.", tense: "Präsens" },
+                { en: "I don't know.", de: "Ich weiß nicht.", tense: "Präsens" },
+                { en: "Do you know the answer?", de: "Weißt du die Antwort?", tense: "Präsens" },
+                { en: "She knows everything.", de: "Sie weiß alles.", tense: "Präsens" },
+                { en: "I knew it!", de: "Ich wusste es!", tense: "Präteritum" },
+                { en: "We didn't know that.", de: "Wir wussten das nicht.", tense: "Präteritum" },
+                { en: "Who knows?", de: "Wer weiß?", tense: "Präsens" },
+                { en: "He knew the truth.", de: "Er wusste die Wahrheit.", tense: "Präteritum" },
+                { en: "I will know soon.", de: "Ich werde es bald wissen.", tense: "Futur I" },
+                { en: "She knows how to cook.", de: "Sie weiß, wie man kocht.", tense: "Präsens" },
+                { en: "I didn't know about that.", de: "Ich wusste davon nichts.", tense: "Präteritum" },
+                { en: "You know what I mean.", de: "Du weißt, was ich meine.", tense: "Präsens" },
+                { en: "They knew nothing.", de: "Sie wussten nichts.", tense: "Präteritum" },
+                { en: "As far as I know.", de: "Soweit ich weiß.", tense: "Präsens" },
+                { en: "I have always known.", de: "Ich habe es immer gewusst.", tense: "Perfekt" },
+                { en: "Do you know what time it is?", de: "Weißt du, wie spät es ist?", tense: "Präsens" },
+                { en: "Nobody knew.", de: "Niemand wusste.", tense: "Präteritum" },
+                { en: "I want to know more.", de: "Ich will mehr wissen.", tense: "Präsens" },
+                { en: "She knew my name.", de: "Sie wusste meinen Namen.", tense: "Präteritum" },
+                { en: "I know that already.", de: "Das weiß ich schon.", tense: "Präsens" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

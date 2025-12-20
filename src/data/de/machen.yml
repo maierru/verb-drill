@@ -1,0 +1,248 @@
+slug: machen
+name: "🇩🇪 Verb MACHEN"
+meaning: to do, to make
+verb_forms:
+  - mache
+  - machst
+  - macht
+  - machen
+  - machte
+  - machtest
+  - machten
+  - machtet
+  - gemacht
+
+conjugation:
+  - tense: Präsens
+    explanation:
+      en: "Present tense - doing, making"
+      ru: "Настоящее время - делать"
+      pt: "Presente - fazer"
+    forms:
+      ich: mache
+      du: machst
+      er/sie/es: macht
+      wir: machen
+      ihr: macht
+      sie/Sie: machen
+  - tense: Präteritum
+    explanation:
+      en: "Simple past - did, made"
+      ru: "Простое прошедшее - делал, сделал"
+      pt: "Pretérito simples - fez"
+    forms:
+      ich: machte
+      du: machtest
+      er/sie/es: machte
+      wir: machten
+      ihr: machtet
+      sie/Sie: machten
+  - tense: Perfekt
+    explanation:
+      en: "Present perfect - has done, has made"
+      ru: "Перфект - сделал"
+      pt: "Pretérito perfeito - fez"
+    forms:
+      ich: habe gemacht
+      du: hast gemacht
+      er/sie/es: hat gemacht
+      wir: haben gemacht
+      ihr: habt gemacht
+      sie/Sie: haben gemacht
+  - tense: Futur I
+    explanation:
+      en: "Future - will do, will make"
+      ru: "Будущее время - сделает"
+      pt: "Futuro - fará"
+    forms:
+      ich: werde machen
+      du: wirst machen
+      er/sie/es: wird machen
+      wir: werden machen
+      ihr: werdet machen
+      sie/Sie: werden machen
+
+phrases:
+  en:
+    - en: "What are you doing?"
+      de: "Was machst du?"
+      tense: "Präsens"
+    - en: "I make breakfast."
+      de: "Ich mache Frühstück."
+      tense: "Präsens"
+    - en: "She did her homework."
+      de: "Sie hat ihre Hausaufgaben gemacht."
+      tense: "Perfekt"
+    - en: "We will make a plan."
+      de: "Wir werden einen Plan machen."
+      tense: "Futur I"
+    - en: "That makes sense."
+      de: "Das macht Sinn."
+      tense: "Präsens"
+    - en: "He made a mistake."
+      de: "Er hat einen Fehler gemacht."
+      tense: "Perfekt"
+    - en: "I did nothing wrong."
+      de: "Ich habe nichts falsch gemacht."
+      tense: "Perfekt"
+    - en: "What should I do?"
+      de: "Was soll ich machen?"
+      tense: "Präsens"
+    - en: "She makes coffee."
+      de: "Sie macht Kaffee."
+      tense: "Präsens"
+    - en: "They made a lot of noise."
+      de: "Sie machten viel Lärm."
+      tense: "Präteritum"
+    - en: "I will do it tomorrow."
+      de: "Ich werde es morgen machen."
+      tense: "Futur I"
+    - en: "He always makes jokes."
+      de: "Er macht immer Witze."
+      tense: "Präsens"
+    - en: "We made a decision."
+      de: "Wir haben eine Entscheidung getroffen."
+      tense: "Perfekt"
+    - en: "It doesn't matter."
+      de: "Das macht nichts."
+      tense: "Präsens"
+    - en: "She made dinner."
+      de: "Sie hat das Abendessen gemacht."
+      tense: "Perfekt"
+    - en: "What does he do for a living?"
+      de: "Was macht er beruflich?"
+      tense: "Präsens"
+    - en: "I made a reservation."
+      de: "Ich habe eine Reservierung gemacht."
+      tense: "Perfekt"
+    - en: "Let's do something fun."
+      de: "Lass uns etwas Lustiges machen."
+      tense: "Präsens"
+    - en: "They will make changes."
+      de: "Sie werden Änderungen machen."
+      tense: "Futur I"
+    - en: "How do you make this?"
+      de: "Wie macht man das?"
+      tense: "Präsens"
+  ru:
+    - ru: "Что ты делаешь?"
+      de: "Was machst du?"
+      tense: "Präsens"
+    - ru: "Я готовлю завтрак."
+      de: "Ich mache Frühstück."
+      tense: "Präsens"
+    - ru: "Она сделала домашнее задание."
+      de: "Sie hat ihre Hausaufgaben gemacht."
+      tense: "Perfekt"
+    - ru: "Мы составим план."
+      de: "Wir werden einen Plan machen."
+      tense: "Futur I"
+    - ru: "Это имеет смысл."
+      de: "Das macht Sinn."
+      tense: "Präsens"
+    - ru: "Он совершил ошибку."
+      de: "Er hat einen Fehler gemacht."
+      tense: "Perfekt"
+    - ru: "Я ничего плохого не сделал."
+      de: "Ich habe nichts falsch gemacht."
+      tense: "Perfekt"
+    - ru: "Что мне делать?"
+      de: "Was soll ich machen?"
+      tense: "Präsens"
+    - ru: "Она готовит кофе."
+      de: "Sie macht Kaffee."
+      tense: "Präsens"
+    - ru: "Они шумели."
+      de: "Sie machten viel Lärm."
+      tense: "Präteritum"
+    - ru: "Я сделаю это завтра."
+      de: "Ich werde es morgen machen."
+      tense: "Futur I"
+    - ru: "Он всегда шутит."
+      de: "Er macht immer Witze."
+      tense: "Präsens"
+    - ru: "Мы приняли решение."
+      de: "Wir haben eine Entscheidung getroffen."
+      tense: "Perfekt"
+    - ru: "Это не имеет значения."
+      de: "Das macht nichts."
+      tense: "Präsens"
+    - ru: "Она приготовила ужин."
+      de: "Sie hat das Abendessen gemacht."
+      tense: "Perfekt"
+    - ru: "Чем он занимается?"
+      de: "Was macht er beruflich?"
+      tense: "Präsens"
+    - ru: "Я сделал бронь."
+      de: "Ich habe eine Reservierung gemacht."
+      tense: "Perfekt"
+    - ru: "Давай сделаем что-нибудь весёлое."
+      de: "Lass uns etwas Lustiges machen."
+      tense: "Präsens"
+    - ru: "Они внесут изменения."
+      de: "Sie werden Änderungen machen."
+      tense: "Futur I"
+    - ru: "Как это делается?"
+      de: "Wie macht man das?"
+      tense: "Präsens"
+  pt:
+    - pt: "O que estás a fazer?"
+      de: "Was machst du?"
+      tense: "Präsens"
+    - pt: "Faço o pequeno-almoço."
+      de: "Ich mache Frühstück."
+      tense: "Präsens"
+    - pt: "Ela fez os trabalhos de casa."
+      de: "Sie hat ihre Hausaufgaben gemacht."
+      tense: "Perfekt"
+    - pt: "Vamos fazer um plano."
+      de: "Wir werden einen Plan machen."
+      tense: "Futur I"
+    - pt: "Isso faz sentido."
+      de: "Das macht Sinn."
+      tense: "Präsens"
+    - pt: "Ele cometeu um erro."
+      de: "Er hat einen Fehler gemacht."
+      tense: "Perfekt"
+    - pt: "Não fiz nada de errado."
+      de: "Ich habe nichts falsch gemacht."
+      tense: "Perfekt"
+    - pt: "O que devo fazer?"
+      de: "Was soll ich machen?"
+      tense: "Präsens"
+    - pt: "Ela faz café."
+      de: "Sie macht Kaffee."
+      tense: "Präsens"
+    - pt: "Eles fizeram muito barulho."
+      de: "Sie machten viel Lärm."
+      tense: "Präteritum"
+    - pt: "Farei amanhã."
+      de: "Ich werde es morgen machen."
+      tense: "Futur I"
+    - pt: "Ele faz sempre piadas."
+      de: "Er macht immer Witze."
+      tense: "Präsens"
+    - pt: "Tomámos uma decisão."
+      de: "Wir haben eine Entscheidung getroffen."
+      tense: "Perfekt"
+    - pt: "Não faz mal."
+      de: "Das macht nichts."
+      tense: "Präsens"
+    - pt: "Ela fez o jantar."
+      de: "Sie hat das Abendessen gemacht."
+      tense: "Perfekt"
+    - pt: "O que faz ele profissionalmente?"
+      de: "Was macht er beruflich?"
+      tense: "Präsens"
+    - pt: "Fiz uma reserva."
+      de: "Ich habe eine Reservierung gemacht."
+      tense: "Perfekt"
+    - pt: "Vamos fazer algo divertido."
+      de: "Lass uns etwas Lustiges machen."
+      tense: "Präsens"
+    - pt: "Eles vão fazer alterações."
+      de: "Sie werden Änderungen machen."
+      tense: "Futur I"
+    - pt: "Como se faz isto?"
+      de: "Wie macht man das?"
+      tense: "Präsens"

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇩🇪 VERB GEBEN — 20 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇩🇪 Verb GEBEN</h1>
+            <p class="subtitle">to give — 20 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 20 из 20 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика немецкого — GEBEN · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇩🇪 Verb GEBEN</h2>
+            <div class="tense-explanation">
+                <h4>Präsens</h4>
+                <p>Настоящее время - давать, есть (существует)</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>gebe</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>gibst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>gibt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>geben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>gebt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>geben</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Präteritum</h4>
+                <p>Простое прошедшее - дал</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>gab</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>gabst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>gab</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>gaben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>gabt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>gaben</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Perfekt</h4>
+                <p>Перфект - дал</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>habe gegeben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>hast gegeben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>hat gegeben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>haben gegeben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>habt gegeben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>haben gegeben</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur I</h4>
+                <p>Будущее время - даст</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>werde geben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>wirst geben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>wird geben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>werden geben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>werdet geben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>werden geben</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'de',
+            labels: { target: 'Deutsch', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["gebe","gibst","gibt","geben","gebt","gab","gabst","gaben","gabt","gegeben"],
+            phrases: [
+                { ru: "Есть проблема.", de: "Es gibt ein Problem.", tense: "Präsens" },
+                { ru: "Дай мне книгу.", de: "Gib mir das Buch.", tense: "Präsens" },
+                { ru: "Она даёт хорошие советы.", de: "Sie gibt gute Ratschläge.", tense: "Präsens" },
+                { ru: "Он подарил мне подарок.", de: "Er hat mir ein Geschenk gegeben.", tense: "Perfekt" },
+                { ru: "Есть много вариантов.", de: "Es gibt viele Möglichkeiten.", tense: "Präsens" },
+                { ru: "Я дам тебе свой номер.", de: "Ich werde dir meine Nummer geben.", tense: "Futur I" },
+                { ru: "Что происходит?", de: "Was gibt's?", tense: "Präsens" },
+                { ru: "Она дала мне слово.", de: "Sie gab mir ihr Wort.", tense: "Präteritum" },
+                { ru: "Будет вечеринка.", de: "Es wird eine Party geben.", tense: "Futur I" },
+                { ru: "Дай мне шанс.", de: "Gib mir eine Chance.", tense: "Präsens" },
+                { ru: "Он никогда не сдаётся.", de: "Er gibt nie auf.", tense: "Präsens" },
+                { ru: "Есть было нечего.", de: "Es gab nichts zu essen.", tense: "Präteritum" },
+                { ru: "Я дал ему ответ.", de: "Ich habe ihm die Antwort gegeben.", tense: "Perfekt" },
+                { ru: "Она даёт уроки.", de: "Sie gibt Unterricht.", tense: "Präsens" },
+                { ru: "Проблем нет.", de: "Es gibt keine Probleme.", tense: "Präsens" },
+                { ru: "Он отдал всё, что имел.", de: "Er gab alles, was er hatte.", tense: "Präteritum" },
+                { ru: "Можешь мне помочь?", de: "Kannst du mir helfen?", tense: "Präsens" },
+                { ru: "Было много гостей.", de: "Es gab viele Gäste.", tense: "Präteritum" },
+                { ru: "Я верну это.", de: "Ich werde es zurückgeben.", tense: "Futur I" },
+                { ru: "Что на ужин?", de: "Was gibt es zum Abendessen?", tense: "Präsens" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

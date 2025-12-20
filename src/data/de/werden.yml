@@ -1,0 +1,249 @@
+slug: werden
+name: "🇩🇪 Verb WERDEN"
+meaning: to become
+verb_forms:
+  - werde
+  - wirst
+  - wird
+  - werden
+  - werdet
+  - wurde
+  - wurdest
+  - wurden
+  - wurdet
+  - geworden
+
+conjugation:
+  - tense: Präsens
+    explanation:
+      en: "Present tense - becoming, future auxiliary"
+      ru: "Настоящее время - становиться, вспомогательный для будущего"
+      pt: "Presente - tornar-se, auxiliar para futuro"
+    forms:
+      ich: werde
+      du: wirst
+      er/sie/es: wird
+      wir: werden
+      ihr: werdet
+      sie/Sie: werden
+  - tense: Präteritum
+    explanation:
+      en: "Simple past - became"
+      ru: "Простое прошедшее - стал"
+      pt: "Pretérito simples - tornou-se"
+    forms:
+      ich: wurde
+      du: wurdest
+      er/sie/es: wurde
+      wir: wurden
+      ihr: wurdet
+      sie/Sie: wurden
+  - tense: Perfekt
+    explanation:
+      en: "Present perfect - has become"
+      ru: "Перфект - стал"
+      pt: "Pretérito perfeito - tornou-se"
+    forms:
+      ich: bin geworden
+      du: bist geworden
+      er/sie/es: ist geworden
+      wir: sind geworden
+      ihr: seid geworden
+      sie/Sie: sind geworden
+  - tense: Futur I
+    explanation:
+      en: "Future - will become"
+      ru: "Будущее время - станет"
+      pt: "Futuro - tornar-se-á"
+    forms:
+      ich: werde werden
+      du: wirst werden
+      er/sie/es: wird werden
+      wir: werden werden
+      ihr: werdet werden
+      sie/Sie: werden werden
+
+phrases:
+  en:
+    - en: "I am getting tired."
+      de: "Ich werde müde."
+      tense: "Präsens"
+    - en: "She is becoming a doctor."
+      de: "Sie wird Ärztin."
+      tense: "Präsens"
+    - en: "It is getting dark."
+      de: "Es wird dunkel."
+      tense: "Präsens"
+    - en: "The weather is getting better."
+      de: "Das Wetter wird besser."
+      tense: "Präsens"
+    - en: "I became angry."
+      de: "Ich wurde wütend."
+      tense: "Präteritum"
+    - en: "He became famous."
+      de: "Er wurde berühmt."
+      tense: "Präteritum"
+    - en: "She has become very successful."
+      de: "Sie ist sehr erfolgreich geworden."
+      tense: "Perfekt"
+    - en: "It will become easier."
+      de: "Es wird einfacher werden."
+      tense: "Futur I"
+    - en: "What do you want to become?"
+      de: "Was willst du werden?"
+      tense: "Präsens"
+    - en: "I am getting hungry."
+      de: "Ich werde hungrig."
+      tense: "Präsens"
+    - en: "He became ill."
+      de: "Er wurde krank."
+      tense: "Präteritum"
+    - en: "She has become my friend."
+      de: "Sie ist meine Freundin geworden."
+      tense: "Perfekt"
+    - en: "The days are getting longer."
+      de: "Die Tage werden länger."
+      tense: "Präsens"
+    - en: "What became of him?"
+      de: "Was ist aus ihm geworden?"
+      tense: "Perfekt"
+    - en: "I will become better."
+      de: "Ich werde besser werden."
+      tense: "Futur I"
+    - en: "It became clear."
+      de: "Es wurde klar."
+      tense: "Präteritum"
+    - en: "She is getting older."
+      de: "Sie wird älter."
+      tense: "Präsens"
+    - en: "The situation became serious."
+      de: "Die Situation wurde ernst."
+      tense: "Präteritum"
+    - en: "Everything will be fine."
+      de: "Alles wird gut werden."
+      tense: "Futur I"
+    - en: "He has become a teacher."
+      de: "Er ist Lehrer geworden."
+      tense: "Perfekt"
+  ru:
+    - ru: "Я устаю."
+      de: "Ich werde müde."
+      tense: "Präsens"
+    - ru: "Она становится врачом."
+      de: "Sie wird Ärztin."
+      tense: "Präsens"
+    - ru: "Темнеет."
+      de: "Es wird dunkel."
+      tense: "Präsens"
+    - ru: "Погода улучшается."
+      de: "Das Wetter wird besser."
+      tense: "Präsens"
+    - ru: "Я разозлился."
+      de: "Ich wurde wütend."
+      tense: "Präteritum"
+    - ru: "Он стал знаменитым."
+      de: "Er wurde berühmt."
+      tense: "Präteritum"
+    - ru: "Она стала очень успешной."
+      de: "Sie ist sehr erfolgreich geworden."
+      tense: "Perfekt"
+    - ru: "Станет легче."
+      de: "Es wird einfacher werden."
+      tense: "Futur I"
+    - ru: "Кем ты хочешь стать?"
+      de: "Was willst du werden?"
+      tense: "Präsens"
+    - ru: "Я проголодался."
+      de: "Ich werde hungrig."
+      tense: "Präsens"
+    - ru: "Он заболел."
+      de: "Er wurde krank."
+      tense: "Präteritum"
+    - ru: "Она стала моей подругой."
+      de: "Sie ist meine Freundin geworden."
+      tense: "Perfekt"
+    - ru: "Дни становятся длиннее."
+      de: "Die Tage werden länger."
+      tense: "Präsens"
+    - ru: "Что с ним стало?"
+      de: "Was ist aus ihm geworden?"
+      tense: "Perfekt"
+    - ru: "Я стану лучше."
+      de: "Ich werde besser werden."
+      tense: "Futur I"
+    - ru: "Стало ясно."
+      de: "Es wurde klar."
+      tense: "Präteritum"
+    - ru: "Она стареет."
+      de: "Sie wird älter."
+      tense: "Präsens"
+    - ru: "Ситуация стала серьёзной."
+      de: "Die Situation wurde ernst."
+      tense: "Präteritum"
+    - ru: "Всё будет хорошо."
+      de: "Alles wird gut werden."
+      tense: "Futur I"
+    - ru: "Он стал учителем."
+      de: "Er ist Lehrer geworden."
+      tense: "Perfekt"
+  pt:
+    - pt: "Estou a ficar cansado."
+      de: "Ich werde müde."
+      tense: "Präsens"
+    - pt: "Ela está a tornar-se médica."
+      de: "Sie wird Ärztin."
+      tense: "Präsens"
+    - pt: "Está a escurecer."
+      de: "Es wird dunkel."
+      tense: "Präsens"
+    - pt: "O tempo está a melhorar."
+      de: "Das Wetter wird besser."
+      tense: "Präsens"
+    - pt: "Fiquei zangado."
+      de: "Ich wurde wütend."
+      tense: "Präteritum"
+    - pt: "Ele tornou-se famoso."
+      de: "Er wurde berühmt."
+      tense: "Präteritum"
+    - pt: "Ela tornou-se muito bem-sucedida."
+      de: "Sie ist sehr erfolgreich geworden."
+      tense: "Perfekt"
+    - pt: "Vai ficar mais fácil."
+      de: "Es wird einfacher werden."
+      tense: "Futur I"
+    - pt: "O que queres ser?"
+      de: "Was willst du werden?"
+      tense: "Präsens"
+    - pt: "Estou a ficar com fome."
+      de: "Ich werde hungrig."
+      tense: "Präsens"
+    - pt: "Ele ficou doente."
+      de: "Er wurde krank."
+      tense: "Präteritum"
+    - pt: "Ela tornou-se minha amiga."
+      de: "Sie ist meine Freundin geworden."
+      tense: "Perfekt"
+    - pt: "Os dias estão a ficar mais longos."
+      de: "Die Tage werden länger."
+      tense: "Präsens"
+    - pt: "O que foi feito dele?"
+      de: "Was ist aus ihm geworden?"
+      tense: "Perfekt"
+    - pt: "Vou melhorar."
+      de: "Ich werde besser werden."
+      tense: "Futur I"
+    - pt: "Ficou claro."
+      de: "Es wurde klar."
+      tense: "Präteritum"
+    - pt: "Ela está a envelhecer."
+      de: "Sie wird älter."
+      tense: "Präsens"
+    - pt: "A situação ficou séria."
+      de: "Die Situation wurde ernst."
+      tense: "Präteritum"
+    - pt: "Tudo vai correr bem."
+      de: "Alles wird gut werden."
+      tense: "Futur I"
+    - pt: "Ele tornou-se professor."
+      de: "Er ist Lehrer geworden."
+      tense: "Perfekt"

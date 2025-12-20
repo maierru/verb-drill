@@ -1,0 +1,249 @@
+slug: haben
+name: "🇩🇪 Verb HABEN"
+meaning: to have
+verb_forms:
+  - habe
+  - hast
+  - hat
+  - haben
+  - habt
+  - hatte
+  - hattest
+  - hatten
+  - hattet
+  - gehabt
+
+conjugation:
+  - tense: Präsens
+    explanation:
+      en: "Present tense - possession, auxiliary for perfect tenses"
+      ru: "Настоящее время - владение, вспомогательный для перфекта"
+      pt: "Presente - posse, auxiliar para tempos perfeitos"
+    forms:
+      ich: habe
+      du: hast
+      er/sie/es: hat
+      wir: haben
+      ihr: habt
+      sie/Sie: haben
+  - tense: Präteritum
+    explanation:
+      en: "Simple past - had (in narratives)"
+      ru: "Простое прошедшее - имел (в повествованиях)"
+      pt: "Pretérito simples - tinha/teve (em narrativas)"
+    forms:
+      ich: hatte
+      du: hattest
+      er/sie/es: hatte
+      wir: hatten
+      ihr: hattet
+      sie/Sie: hatten
+  - tense: Perfekt
+    explanation:
+      en: "Present perfect - has had"
+      ru: "Перфект - имел"
+      pt: "Pretérito perfeito - teve"
+    forms:
+      ich: habe gehabt
+      du: hast gehabt
+      er/sie/es: hat gehabt
+      wir: haben gehabt
+      ihr: habt gehabt
+      sie/Sie: haben gehabt
+  - tense: Futur I
+    explanation:
+      en: "Future - will have"
+      ru: "Будущее время - буду иметь"
+      pt: "Futuro - terá"
+    forms:
+      ich: werde haben
+      du: wirst haben
+      er/sie/es: wird haben
+      wir: werden haben
+      ihr: werdet haben
+      sie/Sie: werden haben
+
+phrases:
+  en:
+    - en: "I have a car."
+      de: "Ich habe ein Auto."
+      tense: "Präsens"
+    - en: "Do you have time?"
+      de: "Hast du Zeit?"
+      tense: "Präsens"
+    - en: "She has two children."
+      de: "Sie hat zwei Kinder."
+      tense: "Präsens"
+    - en: "We have a problem."
+      de: "Wir haben ein Problem."
+      tense: "Präsens"
+    - en: "They have a dog."
+      de: "Sie haben einen Hund."
+      tense: "Präsens"
+    - en: "I had a headache."
+      de: "Ich hatte Kopfschmerzen."
+      tense: "Präteritum"
+    - en: "We had no choice."
+      de: "Wir hatten keine Wahl."
+      tense: "Präteritum"
+    - en: "He has had enough."
+      de: "Er hat genug gehabt."
+      tense: "Perfekt"
+    - en: "I will have more time tomorrow."
+      de: "Ich werde morgen mehr Zeit haben."
+      tense: "Futur I"
+    - en: "Do you have a question?"
+      de: "Haben Sie eine Frage?"
+      tense: "Präsens"
+    - en: "I have an idea."
+      de: "Ich habe eine Idee."
+      tense: "Präsens"
+    - en: "She had a lot of work."
+      de: "Sie hatte viel Arbeit."
+      tense: "Präteritum"
+    - en: "Have you had breakfast?"
+      de: "Hast du gefrühstückt?"
+      tense: "Perfekt"
+    - en: "We will have guests."
+      de: "Wir werden Gäste haben."
+      tense: "Futur I"
+    - en: "I have no money."
+      de: "Ich habe kein Geld."
+      tense: "Präsens"
+    - en: "They had a meeting."
+      de: "Sie hatten eine Besprechung."
+      tense: "Präteritum"
+    - en: "Do you have the key?"
+      de: "Hast du den Schlüssel?"
+      tense: "Präsens"
+    - en: "He has good news."
+      de: "Er hat gute Nachrichten."
+      tense: "Präsens"
+    - en: "We had fun."
+      de: "Wir hatten Spaß."
+      tense: "Präteritum"
+    - en: "I will have finished by then."
+      de: "Ich werde bis dahin fertig sein."
+      tense: "Futur I"
+  ru:
+    - ru: "У меня есть машина."
+      de: "Ich habe ein Auto."
+      tense: "Präsens"
+    - ru: "У тебя есть время?"
+      de: "Hast du Zeit?"
+      tense: "Präsens"
+    - ru: "У неё двое детей."
+      de: "Sie hat zwei Kinder."
+      tense: "Präsens"
+    - ru: "У нас проблема."
+      de: "Wir haben ein Problem."
+      tense: "Präsens"
+    - ru: "У них есть собака."
+      de: "Sie haben einen Hund."
+      tense: "Präsens"
+    - ru: "У меня болела голова."
+      de: "Ich hatte Kopfschmerzen."
+      tense: "Präteritum"
+    - ru: "У нас не было выбора."
+      de: "Wir hatten keine Wahl."
+      tense: "Präteritum"
+    - ru: "Ему хватит."
+      de: "Er hat genug gehabt."
+      tense: "Perfekt"
+    - ru: "Завтра у меня будет больше времени."
+      de: "Ich werde morgen mehr Zeit haben."
+      tense: "Futur I"
+    - ru: "У вас есть вопрос?"
+      de: "Haben Sie eine Frage?"
+      tense: "Präsens"
+    - ru: "У меня есть идея."
+      de: "Ich habe eine Idee."
+      tense: "Präsens"
+    - ru: "У неё было много работы."
+      de: "Sie hatte viel Arbeit."
+      tense: "Präteritum"
+    - ru: "Ты завтракал?"
+      de: "Hast du gefrühstückt?"
+      tense: "Perfekt"
+    - ru: "У нас будут гости."
+      de: "Wir werden Gäste haben."
+      tense: "Futur I"
+    - ru: "У меня нет денег."
+      de: "Ich habe kein Geld."
+      tense: "Präsens"
+    - ru: "У них было собрание."
+      de: "Sie hatten eine Besprechung."
+      tense: "Präteritum"
+    - ru: "У тебя есть ключ?"
+      de: "Hast du den Schlüssel?"
+      tense: "Präsens"
+    - ru: "У него хорошие новости."
+      de: "Er hat gute Nachrichten."
+      tense: "Präsens"
+    - ru: "Нам было весело."
+      de: "Wir hatten Spaß."
+      tense: "Präteritum"
+    - ru: "Я закончу к тому времени."
+      de: "Ich werde bis dahin fertig sein."
+      tense: "Futur I"
+  pt:
+    - pt: "Tenho um carro."
+      de: "Ich habe ein Auto."
+      tense: "Präsens"
+    - pt: "Tens tempo?"
+      de: "Hast du Zeit?"
+      tense: "Präsens"
+    - pt: "Ela tem dois filhos."
+      de: "Sie hat zwei Kinder."
+      tense: "Präsens"
+    - pt: "Temos um problema."
+      de: "Wir haben ein Problem."
+      tense: "Präsens"
+    - pt: "Eles têm um cão."
+      de: "Sie haben einen Hund."
+      tense: "Präsens"
+    - pt: "Eu tinha dor de cabeça."
+      de: "Ich hatte Kopfschmerzen."
+      tense: "Präteritum"
+    - pt: "Não tínhamos escolha."
+      de: "Wir hatten keine Wahl."
+      tense: "Präteritum"
+    - pt: "Ele já teve o suficiente."
+      de: "Er hat genug gehabt."
+      tense: "Perfekt"
+    - pt: "Amanhã terei mais tempo."
+      de: "Ich werde morgen mehr Zeit haben."
+      tense: "Futur I"
+    - pt: "Tem alguma pergunta?"
+      de: "Haben Sie eine Frage?"
+      tense: "Präsens"
+    - pt: "Tenho uma ideia."
+      de: "Ich habe eine Idee."
+      tense: "Präsens"
+    - pt: "Ela tinha muito trabalho."
+      de: "Sie hatte viel Arbeit."
+      tense: "Präteritum"
+    - pt: "Já tomaste o pequeno-almoço?"
+      de: "Hast du gefrühstückt?"
+      tense: "Perfekt"
+    - pt: "Teremos convidados."
+      de: "Wir werden Gäste haben."
+      tense: "Futur I"
+    - pt: "Não tenho dinheiro."
+      de: "Ich habe kein Geld."
+      tense: "Präsens"
+    - pt: "Eles tiveram uma reunião."
+      de: "Sie hatten eine Besprechung."
+      tense: "Präteritum"
+    - pt: "Tens a chave?"
+      de: "Hast du den Schlüssel?"
+      tense: "Präsens"
+    - pt: "Ele tem boas notícias."
+      de: "Er hat gute Nachrichten."
+      tense: "Präsens"
+    - pt: "Divertimo-nos."
+      de: "Wir hatten Spaß."
+      tense: "Präteritum"
+    - pt: "Terei terminado até lá."
+      de: "Ich werde bis dahin fertig sein."
+      tense: "Futur I"

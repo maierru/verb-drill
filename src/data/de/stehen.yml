@@ -1,0 +1,248 @@
+slug: stehen
+name: "🇩🇪 Verb STEHEN"
+meaning: to stand
+verb_forms:
+  - stehe
+  - stehst
+  - steht
+  - stehen
+  - stand
+  - standst
+  - standen
+  - standet
+  - gestanden
+
+conjugation:
+  - tense: Präsens
+    explanation:
+      en: "Present tense - standing, being located"
+      ru: "Настоящее время - стоять, находиться"
+      pt: "Presente - estar de pé, estar situado"
+    forms:
+      ich: stehe
+      du: stehst
+      er/sie/es: steht
+      wir: stehen
+      ihr: steht
+      sie/Sie: stehen
+  - tense: Präteritum
+    explanation:
+      en: "Simple past - stood"
+      ru: "Простое прошедшее - стоял"
+      pt: "Pretérito simples - estava"
+    forms:
+      ich: stand
+      du: standst
+      er/sie/es: stand
+      wir: standen
+      ihr: standet
+      sie/Sie: standen
+  - tense: Perfekt
+    explanation:
+      en: "Present perfect - has stood"
+      ru: "Перфект - стоял"
+      pt: "Pretérito perfeito - esteve"
+    forms:
+      ich: habe gestanden
+      du: hast gestanden
+      er/sie/es: hat gestanden
+      wir: haben gestanden
+      ihr: habt gestanden
+      sie/Sie: haben gestanden
+  - tense: Futur I
+    explanation:
+      en: "Future - will stand"
+      ru: "Будущее время - будет стоять"
+      pt: "Futuro - estará"
+    forms:
+      ich: werde stehen
+      du: wirst stehen
+      er/sie/es: wird stehen
+      wir: werden stehen
+      ihr: werdet stehen
+      sie/Sie: werden stehen
+
+phrases:
+  en:
+    - en: "I am standing here."
+      de: "Ich stehe hier."
+      tense: "Präsens"
+    - en: "Where is my car?"
+      de: "Wo steht mein Auto?"
+      tense: "Präsens"
+    - en: "She stood at the door."
+      de: "Sie stand an der Tür."
+      tense: "Präteritum"
+    - en: "It says in the newspaper."
+      de: "Es steht in der Zeitung."
+      tense: "Präsens"
+    - en: "We stood in line."
+      de: "Wir haben in der Schlange gestanden."
+      tense: "Perfekt"
+    - en: "How are things?"
+      de: "Wie steht's?"
+      tense: "Präsens"
+    - en: "The vase is on the table."
+      de: "Die Vase steht auf dem Tisch."
+      tense: "Präsens"
+    - en: "He stood there for hours."
+      de: "Er stand dort stundenlang."
+      tense: "Präteritum"
+    - en: "What is written here?"
+      de: "Was steht hier?"
+      tense: "Präsens"
+    - en: "I will stand by you."
+      de: "Ich werde zu dir stehen."
+      tense: "Futur I"
+    - en: "The clock has stopped."
+      de: "Die Uhr ist stehen geblieben."
+      tense: "Perfekt"
+    - en: "Stand up!"
+      de: "Steh auf!"
+      tense: "Präsens"
+    - en: "We stand together."
+      de: "Wir stehen zusammen."
+      tense: "Präsens"
+    - en: "The door stood open."
+      de: "Die Tür stand offen."
+      tense: "Präteritum"
+    - en: "I like it."
+      de: "Es steht mir."
+      tense: "Präsens"
+    - en: "He was standing in the corner."
+      de: "Er stand in der Ecke."
+      tense: "Präteritum"
+    - en: "Where does that stand?"
+      de: "Wo steht das?"
+      tense: "Präsens"
+    - en: "I have been standing for an hour."
+      de: "Ich stehe seit einer Stunde."
+      tense: "Präsens"
+    - en: "The car is in the garage."
+      de: "Das Auto steht in der Garage."
+      tense: "Präsens"
+    - en: "She stood up."
+      de: "Sie ist aufgestanden."
+      tense: "Perfekt"
+  ru:
+    - ru: "Я стою здесь."
+      de: "Ich stehe hier."
+      tense: "Präsens"
+    - ru: "Где моя машина?"
+      de: "Wo steht mein Auto?"
+      tense: "Präsens"
+    - ru: "Она стояла у двери."
+      de: "Sie stand an der Tür."
+      tense: "Präteritum"
+    - ru: "Это написано в газете."
+      de: "Es steht in der Zeitung."
+      tense: "Präsens"
+    - ru: "Мы стояли в очереди."
+      de: "Wir haben in der Schlange gestanden."
+      tense: "Perfekt"
+    - ru: "Как дела?"
+      de: "Wie steht's?"
+      tense: "Präsens"
+    - ru: "Ваза стоит на столе."
+      de: "Die Vase steht auf dem Tisch."
+      tense: "Präsens"
+    - ru: "Он стоял там часами."
+      de: "Er stand dort stundenlang."
+      tense: "Präteritum"
+    - ru: "Что здесь написано?"
+      de: "Was steht hier?"
+      tense: "Präsens"
+    - ru: "Я буду на твоей стороне."
+      de: "Ich werde zu dir stehen."
+      tense: "Futur I"
+    - ru: "Часы остановились."
+      de: "Die Uhr ist stehen geblieben."
+      tense: "Perfekt"
+    - ru: "Встань!"
+      de: "Steh auf!"
+      tense: "Präsens"
+    - ru: "Мы держимся вместе."
+      de: "Wir stehen zusammen."
+      tense: "Präsens"
+    - ru: "Дверь была открыта."
+      de: "Die Tür stand offen."
+      tense: "Präteritum"
+    - ru: "Мне идёт."
+      de: "Es steht mir."
+      tense: "Präsens"
+    - ru: "Он стоял в углу."
+      de: "Er stand in der Ecke."
+      tense: "Präteritum"
+    - ru: "Где это написано?"
+      de: "Wo steht das?"
+      tense: "Präsens"
+    - ru: "Я стою уже час."
+      de: "Ich stehe seit einer Stunde."
+      tense: "Präsens"
+    - ru: "Машина в гараже."
+      de: "Das Auto steht in der Garage."
+      tense: "Präsens"
+    - ru: "Она встала."
+      de: "Sie ist aufgestanden."
+      tense: "Perfekt"
+  pt:
+    - pt: "Estou aqui de pé."
+      de: "Ich stehe hier."
+      tense: "Präsens"
+    - pt: "Onde está o meu carro?"
+      de: "Wo steht mein Auto?"
+      tense: "Präsens"
+    - pt: "Ela estava à porta."
+      de: "Sie stand an der Tür."
+      tense: "Präteritum"
+    - pt: "Diz no jornal."
+      de: "Es steht in der Zeitung."
+      tense: "Präsens"
+    - pt: "Estivemos na fila."
+      de: "Wir haben in der Schlange gestanden."
+      tense: "Perfekt"
+    - pt: "Como vão as coisas?"
+      de: "Wie steht's?"
+      tense: "Präsens"
+    - pt: "O vaso está na mesa."
+      de: "Die Vase steht auf dem Tisch."
+      tense: "Präsens"
+    - pt: "Ele esteve ali horas."
+      de: "Er stand dort stundenlang."
+      tense: "Präteritum"
+    - pt: "O que está escrito aqui?"
+      de: "Was steht hier?"
+      tense: "Präsens"
+    - pt: "Estarei do teu lado."
+      de: "Ich werde zu dir stehen."
+      tense: "Futur I"
+    - pt: "O relógio parou."
+      de: "Die Uhr ist stehen geblieben."
+      tense: "Perfekt"
+    - pt: "Levanta-te!"
+      de: "Steh auf!"
+      tense: "Präsens"
+    - pt: "Estamos unidos."
+      de: "Wir stehen zusammen."
+      tense: "Präsens"
+    - pt: "A porta estava aberta."
+      de: "Die Tür stand offen."
+      tense: "Präteritum"
+    - pt: "Fica-me bem."
+      de: "Es steht mir."
+      tense: "Präsens"
+    - pt: "Ele estava no canto."
+      de: "Er stand in der Ecke."
+      tense: "Präteritum"
+    - pt: "Onde está isso escrito?"
+      de: "Wo steht das?"
+      tense: "Präsens"
+    - pt: "Estou de pé há uma hora."
+      de: "Ich stehe seit einer Stunde."
+      tense: "Präsens"
+    - pt: "O carro está na garagem."
+      de: "Das Auto steht in der Garage."
+      tense: "Präsens"
+    - pt: "Ela levantou-se."
+      de: "Sie ist aufgestanden."
+      tense: "Perfekt"

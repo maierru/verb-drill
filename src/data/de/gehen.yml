@@ -1,0 +1,248 @@
+slug: gehen
+name: "🇩🇪 Verb GEHEN"
+meaning: to go
+verb_forms:
+  - gehe
+  - gehst
+  - geht
+  - gehen
+  - ging
+  - gingst
+  - gingen
+  - gingt
+  - gegangen
+
+conjugation:
+  - tense: Präsens
+    explanation:
+      en: "Present tense - going, walking"
+      ru: "Настоящее время - идти, ходить"
+      pt: "Presente - ir, andar"
+    forms:
+      ich: gehe
+      du: gehst
+      er/sie/es: geht
+      wir: gehen
+      ihr: geht
+      sie/Sie: gehen
+  - tense: Präteritum
+    explanation:
+      en: "Simple past - went"
+      ru: "Простое прошедшее - шёл, пошёл"
+      pt: "Pretérito simples - foi"
+    forms:
+      ich: ging
+      du: gingst
+      er/sie/es: ging
+      wir: gingen
+      ihr: gingt
+      sie/Sie: gingen
+  - tense: Perfekt
+    explanation:
+      en: "Present perfect - has gone"
+      ru: "Перфект - пошёл"
+      pt: "Pretérito perfeito - foi"
+    forms:
+      ich: bin gegangen
+      du: bist gegangen
+      er/sie/es: ist gegangen
+      wir: sind gegangen
+      ihr: seid gegangen
+      sie/Sie: sind gegangen
+  - tense: Futur I
+    explanation:
+      en: "Future - will go"
+      ru: "Будущее время - пойдёт"
+      pt: "Futuro - irá"
+    forms:
+      ich: werde gehen
+      du: wirst gehen
+      er/sie/es: wird gehen
+      wir: werden gehen
+      ihr: werdet gehen
+      sie/Sie: werden gehen
+
+phrases:
+  en:
+    - en: "I'm going home."
+      de: "Ich gehe nach Hause."
+      tense: "Präsens"
+    - en: "Where are you going?"
+      de: "Wohin gehst du?"
+      tense: "Präsens"
+    - en: "She goes to school."
+      de: "Sie geht zur Schule."
+      tense: "Präsens"
+    - en: "How are you?"
+      de: "Wie geht es dir?"
+      tense: "Präsens"
+    - en: "He went to the store."
+      de: "Er ist zum Laden gegangen."
+      tense: "Perfekt"
+    - en: "I will go tomorrow."
+      de: "Ich werde morgen gehen."
+      tense: "Futur I"
+    - en: "Let's go!"
+      de: "Gehen wir!"
+      tense: "Präsens"
+    - en: "It went well."
+      de: "Es ist gut gegangen."
+      tense: "Perfekt"
+    - en: "I go to work by bus."
+      de: "Ich gehe mit dem Bus zur Arbeit."
+      tense: "Präsens"
+    - en: "She went early."
+      de: "Sie ging früh."
+      tense: "Präteritum"
+    - en: "We are going out tonight."
+      de: "Wir gehen heute Abend aus."
+      tense: "Präsens"
+    - en: "He has already left."
+      de: "Er ist schon gegangen."
+      tense: "Perfekt"
+    - en: "The meeting went long."
+      de: "Das Meeting ging lange."
+      tense: "Präteritum"
+    - en: "I will go with you."
+      de: "Ich werde mit dir gehen."
+      tense: "Futur I"
+    - en: "She goes jogging every day."
+      de: "Sie geht jeden Tag joggen."
+      tense: "Präsens"
+    - en: "Everything is going well."
+      de: "Alles geht gut."
+      tense: "Präsens"
+    - en: "We went for a walk."
+      de: "Wir sind spazieren gegangen."
+      tense: "Perfekt"
+    - en: "It doesn't work."
+      de: "Es geht nicht."
+      tense: "Präsens"
+    - en: "I have to go now."
+      de: "Ich muss jetzt gehen."
+      tense: "Präsens"
+    - en: "They went home."
+      de: "Sie sind nach Hause gegangen."
+      tense: "Perfekt"
+  ru:
+    - ru: "Я иду домой."
+      de: "Ich gehe nach Hause."
+      tense: "Präsens"
+    - ru: "Куда ты идёшь?"
+      de: "Wohin gehst du?"
+      tense: "Präsens"
+    - ru: "Она ходит в школу."
+      de: "Sie geht zur Schule."
+      tense: "Präsens"
+    - ru: "Как дела?"
+      de: "Wie geht es dir?"
+      tense: "Präsens"
+    - ru: "Он пошёл в магазин."
+      de: "Er ist zum Laden gegangen."
+      tense: "Perfekt"
+    - ru: "Я пойду завтра."
+      de: "Ich werde morgen gehen."
+      tense: "Futur I"
+    - ru: "Пошли!"
+      de: "Gehen wir!"
+      tense: "Präsens"
+    - ru: "Всё прошло хорошо."
+      de: "Es ist gut gegangen."
+      tense: "Perfekt"
+    - ru: "Я езжу на работу на автобусе."
+      de: "Ich gehe mit dem Bus zur Arbeit."
+      tense: "Präsens"
+    - ru: "Она ушла рано."
+      de: "Sie ging früh."
+      tense: "Präteritum"
+    - ru: "Мы идём гулять сегодня вечером."
+      de: "Wir gehen heute Abend aus."
+      tense: "Präsens"
+    - ru: "Он уже ушёл."
+      de: "Er ist schon gegangen."
+      tense: "Perfekt"
+    - ru: "Встреча затянулась."
+      de: "Das Meeting ging lange."
+      tense: "Präteritum"
+    - ru: "Я пойду с тобой."
+      de: "Ich werde mit dir gehen."
+      tense: "Futur I"
+    - ru: "Она бегает каждый день."
+      de: "Sie geht jeden Tag joggen."
+      tense: "Präsens"
+    - ru: "Всё идёт хорошо."
+      de: "Alles geht gut."
+      tense: "Präsens"
+    - ru: "Мы пошли гулять."
+      de: "Wir sind spazieren gegangen."
+      tense: "Perfekt"
+    - ru: "Это не работает."
+      de: "Es geht nicht."
+      tense: "Präsens"
+    - ru: "Мне нужно идти."
+      de: "Ich muss jetzt gehen."
+      tense: "Präsens"
+    - ru: "Они пошли домой."
+      de: "Sie sind nach Hause gegangen."
+      tense: "Perfekt"
+  pt:
+    - pt: "Vou para casa."
+      de: "Ich gehe nach Hause."
+      tense: "Präsens"
+    - pt: "Para onde vais?"
+      de: "Wohin gehst du?"
+      tense: "Präsens"
+    - pt: "Ela vai à escola."
+      de: "Sie geht zur Schule."
+      tense: "Präsens"
+    - pt: "Como estás?"
+      de: "Wie geht es dir?"
+      tense: "Präsens"
+    - pt: "Ele foi à loja."
+      de: "Er ist zum Laden gegangen."
+      tense: "Perfekt"
+    - pt: "Vou amanhã."
+      de: "Ich werde morgen gehen."
+      tense: "Futur I"
+    - pt: "Vamos!"
+      de: "Gehen wir!"
+      tense: "Präsens"
+    - pt: "Correu bem."
+      de: "Es ist gut gegangen."
+      tense: "Perfekt"
+    - pt: "Vou para o trabalho de autocarro."
+      de: "Ich gehe mit dem Bus zur Arbeit."
+      tense: "Präsens"
+    - pt: "Ela foi cedo."
+      de: "Sie ging früh."
+      tense: "Präteritum"
+    - pt: "Vamos sair esta noite."
+      de: "Wir gehen heute Abend aus."
+      tense: "Präsens"
+    - pt: "Ele já foi."
+      de: "Er ist schon gegangen."
+      tense: "Perfekt"
+    - pt: "A reunião demorou."
+      de: "Das Meeting ging lange."
+      tense: "Präteritum"
+    - pt: "Vou contigo."
+      de: "Ich werde mit dir gehen."
+      tense: "Futur I"
+    - pt: "Ela corre todos os dias."
+      de: "Sie geht jeden Tag joggen."
+      tense: "Präsens"
+    - pt: "Está tudo bem."
+      de: "Alles geht gut."
+      tense: "Präsens"
+    - pt: "Fomos passear."
+      de: "Wir sind spazieren gegangen."
+      tense: "Perfekt"
+    - pt: "Não funciona."
+      de: "Es geht nicht."
+      tense: "Präsens"
+    - pt: "Tenho de ir agora."
+      de: "Ich muss jetzt gehen."
+      tense: "Präsens"
+    - pt: "Eles foram para casa."
+      de: "Sie sind nach Hause gegangen."
+      tense: "Perfekt"

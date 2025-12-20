@@ -1,0 +1,249 @@
+slug: sehen
+name: "🇩🇪 Verb SEHEN"
+meaning: to see
+verb_forms:
+  - sehe
+  - siehst
+  - sieht
+  - sehen
+  - seht
+  - sah
+  - sahst
+  - sahen
+  - saht
+  - gesehen
+
+conjugation:
+  - tense: Präsens
+    explanation:
+      en: "Present tense - seeing, watching"
+      ru: "Настоящее время - видеть, смотреть"
+      pt: "Presente - ver"
+    forms:
+      ich: sehe
+      du: siehst
+      er/sie/es: sieht
+      wir: sehen
+      ihr: seht
+      sie/Sie: sehen
+  - tense: Präteritum
+    explanation:
+      en: "Simple past - saw"
+      ru: "Простое прошедшее - видел"
+      pt: "Pretérito simples - viu"
+    forms:
+      ich: sah
+      du: sahst
+      er/sie/es: sah
+      wir: sahen
+      ihr: saht
+      sie/Sie: sahen
+  - tense: Perfekt
+    explanation:
+      en: "Present perfect - has seen"
+      ru: "Перфект - видел"
+      pt: "Pretérito perfeito - viu"
+    forms:
+      ich: habe gesehen
+      du: hast gesehen
+      er/sie/es: hat gesehen
+      wir: haben gesehen
+      ihr: habt gesehen
+      sie/Sie: haben gesehen
+  - tense: Futur I
+    explanation:
+      en: "Future - will see"
+      ru: "Будущее время - увидит"
+      pt: "Futuro - verá"
+    forms:
+      ich: werde sehen
+      du: wirst sehen
+      er/sie/es: wird sehen
+      wir: werden sehen
+      ihr: werdet sehen
+      sie/Sie: werden sehen
+
+phrases:
+  en:
+    - en: "I see."
+      de: "Ich verstehe."
+      tense: "Präsens"
+    - en: "Can you see that?"
+      de: "Siehst du das?"
+      tense: "Präsens"
+    - en: "She sees everything."
+      de: "Sie sieht alles."
+      tense: "Präsens"
+    - en: "I saw him yesterday."
+      de: "Ich habe ihn gestern gesehen."
+      tense: "Perfekt"
+    - en: "See you later!"
+      de: "Bis später!"
+      tense: "Präsens"
+    - en: "We will see."
+      de: "Wir werden sehen."
+      tense: "Futur I"
+    - en: "He saw the movie."
+      de: "Er hat den Film gesehen."
+      tense: "Perfekt"
+    - en: "I have never seen this."
+      de: "Ich habe das noch nie gesehen."
+      tense: "Perfekt"
+    - en: "She looks good."
+      de: "Sie sieht gut aus."
+      tense: "Präsens"
+    - en: "Did you see that?"
+      de: "Hast du das gesehen?"
+      tense: "Perfekt"
+    - en: "I see what you mean."
+      de: "Ich verstehe, was du meinst."
+      tense: "Präsens"
+    - en: "We saw each other."
+      de: "Wir haben uns gesehen."
+      tense: "Perfekt"
+    - en: "It looks like rain."
+      de: "Es sieht nach Regen aus."
+      tense: "Präsens"
+    - en: "I will see you tomorrow."
+      de: "Ich werde dich morgen sehen."
+      tense: "Futur I"
+    - en: "He saw nothing."
+      de: "Er sah nichts."
+      tense: "Präteritum"
+    - en: "Let me see."
+      de: "Lass mich sehen."
+      tense: "Präsens"
+    - en: "She saw the accident."
+      de: "Sie hat den Unfall gesehen."
+      tense: "Perfekt"
+    - en: "You look tired."
+      de: "Du siehst müde aus."
+      tense: "Präsens"
+    - en: "I haven't seen her in years."
+      de: "Ich habe sie seit Jahren nicht gesehen."
+      tense: "Perfekt"
+    - en: "We saw it coming."
+      de: "Wir haben es kommen sehen."
+      tense: "Perfekt"
+  ru:
+    - ru: "Понятно."
+      de: "Ich verstehe."
+      tense: "Präsens"
+    - ru: "Ты это видишь?"
+      de: "Siehst du das?"
+      tense: "Präsens"
+    - ru: "Она всё видит."
+      de: "Sie sieht alles."
+      tense: "Präsens"
+    - ru: "Я видел его вчера."
+      de: "Ich habe ihn gestern gesehen."
+      tense: "Perfekt"
+    - ru: "Увидимся!"
+      de: "Bis später!"
+      tense: "Präsens"
+    - ru: "Посмотрим."
+      de: "Wir werden sehen."
+      tense: "Futur I"
+    - ru: "Он смотрел фильм."
+      de: "Er hat den Film gesehen."
+      tense: "Perfekt"
+    - ru: "Я никогда этого не видел."
+      de: "Ich habe das noch nie gesehen."
+      tense: "Perfekt"
+    - ru: "Она хорошо выглядит."
+      de: "Sie sieht gut aus."
+      tense: "Präsens"
+    - ru: "Ты видел это?"
+      de: "Hast du das gesehen?"
+      tense: "Perfekt"
+    - ru: "Я понимаю, что ты имеешь в виду."
+      de: "Ich verstehe, was du meinst."
+      tense: "Präsens"
+    - ru: "Мы виделись."
+      de: "Wir haben uns gesehen."
+      tense: "Perfekt"
+    - ru: "Похоже на дождь."
+      de: "Es sieht nach Regen aus."
+      tense: "Präsens"
+    - ru: "Увидимся завтра."
+      de: "Ich werde dich morgen sehen."
+      tense: "Futur I"
+    - ru: "Он ничего не видел."
+      de: "Er sah nichts."
+      tense: "Präteritum"
+    - ru: "Дай посмотреть."
+      de: "Lass mich sehen."
+      tense: "Präsens"
+    - ru: "Она видела аварию."
+      de: "Sie hat den Unfall gesehen."
+      tense: "Perfekt"
+    - ru: "Ты выглядишь уставшим."
+      de: "Du siehst müde aus."
+      tense: "Präsens"
+    - ru: "Я не видел её много лет."
+      de: "Ich habe sie seit Jahren nicht gesehen."
+      tense: "Perfekt"
+    - ru: "Мы это предвидели."
+      de: "Wir haben es kommen sehen."
+      tense: "Perfekt"
+  pt:
+    - pt: "Compreendo."
+      de: "Ich verstehe."
+      tense: "Präsens"
+    - pt: "Consegues ver isso?"
+      de: "Siehst du das?"
+      tense: "Präsens"
+    - pt: "Ela vê tudo."
+      de: "Sie sieht alles."
+      tense: "Präsens"
+    - pt: "Vi-o ontem."
+      de: "Ich habe ihn gestern gesehen."
+      tense: "Perfekt"
+    - pt: "Até logo!"
+      de: "Bis später!"
+      tense: "Präsens"
+    - pt: "Veremos."
+      de: "Wir werden sehen."
+      tense: "Futur I"
+    - pt: "Ele viu o filme."
+      de: "Er hat den Film gesehen."
+      tense: "Perfekt"
+    - pt: "Nunca vi isto."
+      de: "Ich habe das noch nie gesehen."
+      tense: "Perfekt"
+    - pt: "Ela está bonita."
+      de: "Sie sieht gut aus."
+      tense: "Präsens"
+    - pt: "Viste isso?"
+      de: "Hast du das gesehen?"
+      tense: "Perfekt"
+    - pt: "Percebo o que queres dizer."
+      de: "Ich verstehe, was du meinst."
+      tense: "Präsens"
+    - pt: "Vimo-nos."
+      de: "Wir haben uns gesehen."
+      tense: "Perfekt"
+    - pt: "Parece que vai chover."
+      de: "Es sieht nach Regen aus."
+      tense: "Präsens"
+    - pt: "Vejo-te amanhã."
+      de: "Ich werde dich morgen sehen."
+      tense: "Futur I"
+    - pt: "Ele não viu nada."
+      de: "Er sah nichts."
+      tense: "Präteritum"
+    - pt: "Deixa-me ver."
+      de: "Lass mich sehen."
+      tense: "Präsens"
+    - pt: "Ela viu o acidente."
+      de: "Sie hat den Unfall gesehen."
+      tense: "Perfekt"
+    - pt: "Pareces cansado."
+      de: "Du siehst müde aus."
+      tense: "Präsens"
+    - pt: "Não a vejo há anos."
+      de: "Ich habe sie seit Jahren nicht gesehen."
+      tense: "Perfekt"
+    - pt: "Vimos isto a chegar."
+      de: "Wir haben es kommen sehen."
+      tense: "Perfekt"

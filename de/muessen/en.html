@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇩🇪 VERB MÜSSEN — 20 Phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Back to verb list</a>
+            <h1>🇩🇪 Verb MÜSSEN</h1>
+            <p class="subtitle">must, to have to — 20 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Show all translations</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
+        </div>
+
+        <div class="stats" id="stats">Showing: 20 of 20 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            German Practice — MUESSEN · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇩🇪 Verb MÜSSEN</h2>
+            <div class="tense-explanation">
+                <h4>Präsens</h4>
+                <p>Present tense - necessity, obligation</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>muss</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>musst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>muss</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>müssen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>müsst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>müssen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Präteritum</h4>
+                <p>Simple past - had to</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>musste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>musstest</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>musste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>mussten</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>musstet</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>mussten</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Perfekt</h4>
+                <p>Present perfect - has had to</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>habe gemusst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>hast gemusst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>hat gemusst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>haben gemusst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>habt gemusst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>haben gemusst</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur I</h4>
+                <p>Future - will have to</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>werde müssen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>wirst müssen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>wird müssen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>werden müssen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>werdet müssen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>werden müssen</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'en',
+            targetKey: 'de',
+            labels: { target: 'German', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["muss","musst","müssen","müsst","musste","musstest","mussten","musstet","gemusst"],
+            phrases: [
+                { en: "I must go now.", de: "Ich muss jetzt gehen.", tense: "Präsens" },
+                { en: "You have to study.", de: "Du musst lernen.", tense: "Präsens" },
+                { en: "She has to work today.", de: "Sie muss heute arbeiten.", tense: "Präsens" },
+                { en: "We must be careful.", de: "Wir müssen vorsichtig sein.", tense: "Präsens" },
+                { en: "I had to wait.", de: "Ich musste warten.", tense: "Präteritum" },
+                { en: "He had to leave early.", de: "Er musste früh gehen.", tense: "Präteritum" },
+                { en: "I will have to think about it.", de: "Ich werde darüber nachdenken müssen.", tense: "Futur I" },
+                { en: "Do I have to do this?", de: "Muss ich das machen?", tense: "Präsens" },
+                { en: "They must hurry.", de: "Sie müssen sich beeilen.", tense: "Präsens" },
+                { en: "I must admit something.", de: "Ich muss etwas zugeben.", tense: "Präsens" },
+                { en: "We had to change our plans.", de: "Wir mussten unsere Pläne ändern.", tense: "Präteritum" },
+                { en: "You must see this.", de: "Du musst das sehen.", tense: "Präsens" },
+                { en: "She had to stay home.", de: "Sie musste zu Hause bleiben.", tense: "Präteritum" },
+                { en: "I must call my mother.", de: "Ich muss meine Mutter anrufen.", tense: "Präsens" },
+                { en: "He will have to pay.", de: "Er wird zahlen müssen.", tense: "Futur I" },
+                { en: "We must find a solution.", de: "Wir müssen eine Lösung finden.", tense: "Präsens" },
+                { en: "I had to take the train.", de: "Ich musste den Zug nehmen.", tense: "Präteritum" },
+                { en: "You don't have to come.", de: "Du musst nicht kommen.", tense: "Präsens" },
+                { en: "They had to start over.", de: "Sie mussten von vorne anfangen.", tense: "Präteritum" },
+                { en: "I must tell you something.", de: "Ich muss dir etwas sagen.", tense: "Präsens" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

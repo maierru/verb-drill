@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇩🇪 VERB BLEIBEN — 20 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇩🇪 Verb BLEIBEN</h1>
+            <p class="subtitle">to stay, to remain — 20 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 20 из 20 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика немецкого — BLEIBEN · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇩🇪 Verb BLEIBEN</h2>
+            <div class="tense-explanation">
+                <h4>Präsens</h4>
+                <p>Настоящее время - оставаться</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>bleibe</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>bleibst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>bleibt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>bleiben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>bleibt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>bleiben</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Präteritum</h4>
+                <p>Простое прошедшее - остался</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>blieb</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>bliebst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>blieb</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>blieben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>bliebt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>blieben</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Perfekt</h4>
+                <p>Перфект - остался</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>bin geblieben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>bist geblieben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>ist geblieben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>sind geblieben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>seid geblieben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>sind geblieben</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur I</h4>
+                <p>Будущее время - останется</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>werde bleiben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>wirst bleiben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>wird bleiben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>werden bleiben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>werdet bleiben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>werden bleiben</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'de',
+            labels: { target: 'Deutsch', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["bleibe","bleibst","bleibt","bleiben","blieb","bliebst","blieben","bliebt","geblieben"],
+            phrases: [
+                { ru: "Я остаюсь здесь.", de: "Ich bleibe hier.", tense: "Präsens" },
+                { ru: "Успокойся!", de: "Bleib ruhig!", tense: "Präsens" },
+                { ru: "Она осталась дома.", de: "Sie ist zu Hause geblieben.", tense: "Perfekt" },
+                { ru: "Как долго ты останешься?", de: "Wie lange bleibst du?", tense: "Präsens" },
+                { ru: "Я останусь навсегда.", de: "Ich werde für immer bleiben.", tense: "Futur I" },
+                { ru: "Он остался в постели.", de: "Er blieb im Bett.", tense: "Präteritum" },
+                { ru: "Будь здоров!", de: "Bleib gesund!", tense: "Präsens" },
+                { ru: "Мы остались до полуночи.", de: "Wir sind bis Mitternacht geblieben.", tense: "Perfekt" },
+                { ru: "Ничто не остаётся прежним.", de: "Nichts bleibt gleich.", tense: "Präsens" },
+                { ru: "Я остался у друзей.", de: "Ich bin bei Freunden geblieben.", tense: "Perfekt" },
+                { ru: "Где ты?", de: "Wo bleibst du?", tense: "Präsens" },
+                { ru: "Она осталась молчать.", de: "Sie blieb still.", tense: "Präteritum" },
+                { ru: "Оставайтесь на местах!", de: "Bleiben Sie sitzen!", tense: "Präsens" },
+                { ru: "Я буду на связи.", de: "Ich werde in Kontakt bleiben.", tense: "Futur I" },
+                { ru: "Он остался верен.", de: "Er ist treu geblieben.", tense: "Perfekt" },
+                { ru: "Оставайся на месте.", de: "Bleib, wo du bist.", tense: "Präsens" },
+                { ru: "Они остались вместе.", de: "Sie sind zusammen geblieben.", tense: "Perfekt" },
+                { ru: "Погода остаётся хорошей.", de: "Das Wetter bleibt schön.", tense: "Präsens" },
+                { ru: "Я не спал всю ночь.", de: "Ich bin die ganze Nacht wach geblieben.", tense: "Perfekt" },
+                { ru: "Не теряй связь!", de: "Bleib in Kontakt!", tense: "Präsens" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

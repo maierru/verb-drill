@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇩🇪 VERB KÖNNEN — 20 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇩🇪 Verb KÖNNEN</h1>
+            <p class="subtitle">can, to be able to — 20 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 20 de 20 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Prática de alemão — KOENNEN · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇩🇪 Verb KÖNNEN</h2>
+            <div class="tense-explanation">
+                <h4>Präsens</h4>
+                <p>Presente - capacidade, possibilidade, permissão</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>kann</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>kannst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>kann</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>können</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>könnt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>können</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Präteritum</h4>
+                <p>Pretérito simples - podia, conseguia</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>konnte</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>konntest</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>konnte</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>konnten</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>konntet</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>konnten</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Perfekt</h4>
+                <p>Pretérito perfeito - conseguiu</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>habe gekonnt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>hast gekonnt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>hat gekonnt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>haben gekonnt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>habt gekonnt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>haben gekonnt</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur I</h4>
+                <p>Futuro - poderá</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>werde können</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>wirst können</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>wird können</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>werden können</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>werdet können</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>werden können</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'de',
+            labels: { target: 'Deutsch', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["kann","kannst","können","könnt","konnte","konntest","konnten","konntet","gekonnt"],
+            phrases: [
+                { pt: "Sei falar alemão.", de: "Ich kann Deutsch sprechen.", tense: "Präsens" },
+                { pt: "Podes ajudar-me?", de: "Kannst du mir helfen?", tense: "Präsens" },
+                { pt: "Ela sabe nadar muito bem.", de: "Sie kann sehr gut schwimmen.", tense: "Präsens" },
+                { pt: "Podemos vir amanhã.", de: "Wir können morgen kommen.", tense: "Präsens" },
+                { pt: "Não consegui dormir.", de: "Ich konnte nicht schlafen.", tense: "Präteritum" },
+                { pt: "Ele sabia ler aos quatro anos.", de: "Er konnte mit vier Jahren lesen.", tense: "Präteritum" },
+                { pt: "Posso fazer uma pergunta?", de: "Kann ich eine Frage stellen?", tense: "Präsens" },
+                { pt: "Eles podem fazê-lo sozinhos.", de: "Sie können es selbst machen.", tense: "Präsens" },
+                { pt: "Poderei vir.", de: "Ich werde kommen können.", tense: "Futur I" },
+                { pt: "Podes ficar aqui.", de: "Du kannst hier bleiben.", tense: "Präsens" },
+                { pt: "Não conseguimos encontrá-lo.", de: "Wir konnten es nicht finden.", tense: "Präteritum" },
+                { pt: "Consegues ver isso?", de: "Kannst du das sehen?", tense: "Präsens" },
+                { pt: "Ela não conseguia perceber.", de: "Sie konnte nicht verstehen.", tense: "Präteritum" },
+                { pt: "Sei conduzir.", de: "Ich kann fahren.", tense: "Präsens" },
+                { pt: "Ele sabe tocar piano.", de: "Er kann Klavier spielen.", tense: "Präsens" },
+                { pt: "Poderia repetir?", de: "Könnten Sie das wiederholen?", tense: "Präteritum" },
+                { pt: "Podemos tentar outra vez.", de: "Wir können es noch mal versuchen.", tense: "Präsens" },
+                { pt: "Conseguia ouvir tudo.", de: "Ich konnte alles hören.", tense: "Präteritum" },
+                { pt: "Posso usar o teu telefone?", de: "Kann ich dein Telefon benutzen?", tense: "Präsens" },
+                { pt: "Eles não puderam vir.", de: "Sie konnten nicht kommen.", tense: "Präteritum" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

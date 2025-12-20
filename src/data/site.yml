@@ -14,6 +14,10 @@ languages:
     name: English
     flag: "🇬🇧"
     path: en/index.html
+  - code: de
+    name: German
+    flag: "🇩🇪"
+    path: de/index.html
 
 origins:
   - { flag: "🇬🇧", name: English }

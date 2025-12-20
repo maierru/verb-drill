@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇩🇪 VERB SOLLEN — 20 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇩🇪 Verb SOLLEN</h1>
+            <p class="subtitle">should, ought to — 20 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 20 из 20 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика немецкого — SOLLEN · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇩🇪 Verb SOLLEN</h2>
+            <div class="tense-explanation">
+                <h4>Präsens</h4>
+                <p>Настоящее время - должен, следует</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>soll</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>sollst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>soll</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>sollen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>sollt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>sollen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Präteritum</h4>
+                <p>Простое прошедшее - должен был</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>sollte</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>solltest</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>sollte</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>sollten</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>solltet</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>sollten</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Perfekt</h4>
+                <p>Перфект - должен был</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>habe gesollt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>hast gesollt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>hat gesollt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>haben gesollt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>habt gesollt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>haben gesollt</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur I</h4>
+                <p>Будущее время - должен будет</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>werde sollen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>wirst sollen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>wird sollen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>werden sollen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>werdet sollen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>werden sollen</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'de',
+            labels: { target: 'Deutsch', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["soll","sollst","sollen","sollt","sollte","solltest","sollten","solltet","gesollt"],
+            phrases: [
+                { ru: "Что мне делать?", de: "Was soll ich tun?", tense: "Präsens" },
+                { ru: "Тебе следует пойти к врачу.", de: "Du solltest zum Arzt gehen.", tense: "Präteritum" },
+                { ru: "Он должен мне позвонить.", de: "Er soll mich anrufen.", tense: "Präsens" },
+                { ru: "Нам следует уйти сейчас.", de: "Wir sollten jetzt gehen.", tense: "Präteritum" },
+                { ru: "Мне помочь тебе?", de: "Soll ich dir helfen?", tense: "Präsens" },
+                { ru: "Говорят, он богат.", de: "Er soll reich sein.", tense: "Präsens" },
+                { ru: "Тебе следовало мне сказать.", de: "Du hättest es mir sagen sollen.", tense: "Perfekt" },
+                { ru: "Она должна была прийти.", de: "Sie sollte kommen.", tense: "Präteritum" },
+                { ru: "Что это должно означать?", de: "Was soll das bedeuten?", tense: "Präsens" },
+                { ru: "Мне следует больше учиться.", de: "Ich sollte mehr lernen.", tense: "Präteritum" },
+                { ru: "Тебе стоит это попробовать.", de: "Du solltest das probieren.", tense: "Präteritum" },
+                { ru: "Говорят, он очень умный.", de: "Er soll sehr klug sein.", tense: "Präsens" },
+                { ru: "Нам подождать?", de: "Sollen wir warten?", tense: "Präsens" },
+                { ru: "Я должен был её встретить.", de: "Ich sollte sie treffen.", tense: "Präteritum" },
+                { ru: "Тебе не стоит волноваться.", de: "Du solltest dir keine Sorgen machen.", tense: "Präteritum" },
+                { ru: "Что нам теперь делать?", de: "Was sollen wir jetzt machen?", tense: "Präsens" },
+                { ru: "Ей следовало бы знать лучше.", de: "Sie sollte es besser wissen.", tense: "Präteritum" },
+                { ru: "Закрыть окно?", de: "Soll ich das Fenster schließen?", tense: "Präsens" },
+                { ru: "Нам следует быть осторожными.", de: "Wir sollten vorsichtig sein.", tense: "Präteritum" },
+                { ru: "Ему следует извиниться.", de: "Er sollte sich entschuldigen.", tense: "Präteritum" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+slug: liegen
+name: "🇩🇪 Verb LIEGEN"
+meaning: to lie, to be located
+verb_forms:
+  - liege
+  - liegst
+  - liegt
+  - liegen
+  - lag
+  - lagst
+  - lagen
+  - lagt
+  - gelegen
+
+conjugation:
+  - tense: Präsens
+    explanation:
+      en: "Present tense - lying, being located"
+      ru: "Настоящее время - лежать, находиться"
+      pt: "Presente - estar deitado, estar situado"
+    forms:
+      ich: liege
+      du: liegst
+      er/sie/es: liegt
+      wir: liegen
+      ihr: liegt
+      sie/Sie: liegen
+  - tense: Präteritum
+    explanation:
+      en: "Simple past - lay, was located"
+      ru: "Простое прошедшее - лежал"
+      pt: "Pretérito simples - estava deitado"
+    forms:
+      ich: lag
+      du: lagst
+      er/sie/es: lag
+      wir: lagen
+      ihr: lagt
+      sie/Sie: lagen
+  - tense: Perfekt
+    explanation:
+      en: "Present perfect - has lain"
+      ru: "Перфект - лежал"
+      pt: "Pretérito perfeito - esteve deitado"
+    forms:
+      ich: habe gelegen
+      du: hast gelegen
+      er/sie/es: hat gelegen
+      wir: haben gelegen
+      ihr: habt gelegen
+      sie/Sie: haben gelegen
+  - tense: Futur I
+    explanation:
+      en: "Future - will lie"
+      ru: "Будущее время - будет лежать"
+      pt: "Futuro - estará deitado"
+    forms:
+      ich: werde liegen
+      du: wirst liegen
+      er/sie/es: wird liegen
+      wir: werden liegen
+      ihr: werdet liegen
+      sie/Sie: werden liegen
+
+phrases:
+  en:
+    - en: "I am lying in bed."
+      de: "Ich liege im Bett."
+      tense: "Präsens"
+    - en: "The book is on the table."
+      de: "Das Buch liegt auf dem Tisch."
+      tense: "Präsens"
+    - en: "Berlin is in Germany."
+      de: "Berlin liegt in Deutschland."
+      tense: "Präsens"
+    - en: "She lay on the sofa."
+      de: "Sie lag auf dem Sofa."
+      tense: "Präteritum"
+    - en: "The problem lies elsewhere."
+      de: "Das Problem liegt woanders."
+      tense: "Präsens"
+    - en: "He has been lying in hospital."
+      de: "Er hat im Krankenhaus gelegen."
+      tense: "Perfekt"
+    - en: "It depends on you."
+      de: "Es liegt an dir."
+      tense: "Präsens"
+    - en: "Snow lay on the ground."
+      de: "Schnee lag auf dem Boden."
+      tense: "Präteritum"
+    - en: "The keys are on the table."
+      de: "Die Schlüssel liegen auf dem Tisch."
+      tense: "Präsens"
+    - en: "The fault lies with me."
+      de: "Der Fehler liegt bei mir."
+      tense: "Präsens"
+    - en: "I was lying in the sun."
+      de: "Ich habe in der Sonne gelegen."
+      tense: "Perfekt"
+    - en: "The city lies by the river."
+      de: "Die Stadt liegt am Fluss."
+      tense: "Präsens"
+    - en: "She lay awake all night."
+      de: "Sie lag die ganze Nacht wach."
+      tense: "Präteritum"
+    - en: "Where does the emphasis lie?"
+      de: "Wo liegt die Betonung?"
+      tense: "Präsens"
+    - en: "The solution lies in teamwork."
+      de: "Die Lösung liegt in der Teamarbeit."
+      tense: "Präsens"
+    - en: "Papers were lying everywhere."
+      de: "Papiere lagen überall."
+      tense: "Präteritum"
+    - en: "I will be lying on the beach."
+      de: "Ich werde am Strand liegen."
+      tense: "Futur I"
+    - en: "The hotel is near the station."
+      de: "Das Hotel liegt in der Nähe des Bahnhofs."
+      tense: "Präsens"
+    - en: "His interest lies in music."
+      de: "Sein Interesse liegt in der Musik."
+      tense: "Präsens"
+    - en: "The cat lay in the sun."
+      de: "Die Katze lag in der Sonne."
+      tense: "Präteritum"
+  ru:
+    - ru: "Я лежу в кровати."
+      de: "Ich liege im Bett."
+      tense: "Präsens"
+    - ru: "Книга лежит на столе."
+      de: "Das Buch liegt auf dem Tisch."
+      tense: "Präsens"
+    - ru: "Берлин находится в Германии."
+      de: "Berlin liegt in Deutschland."
+      tense: "Präsens"
+    - ru: "Она лежала на диване."
+      de: "Sie lag auf dem Sofa."
+      tense: "Präteritum"
+    - ru: "Проблема в другом."
+      de: "Das Problem liegt woanders."
+      tense: "Präsens"
+    - ru: "Он лежал в больнице."
+      de: "Er hat im Krankenhaus gelegen."
+      tense: "Perfekt"
+    - ru: "Это зависит от тебя."
+      de: "Es liegt an dir."
+      tense: "Präsens"
+    - ru: "На земле лежал снег."
+      de: "Schnee lag auf dem Boden."
+      tense: "Präteritum"
+    - ru: "Ключи лежат на столе."
+      de: "Die Schlüssel liegen auf dem Tisch."
+      tense: "Präsens"
+    - ru: "Вина лежит на мне."
+      de: "Der Fehler liegt bei mir."
+      tense: "Präsens"
+    - ru: "Я лежал на солнце."
+      de: "Ich habe in der Sonne gelegen."
+      tense: "Perfekt"
+    - ru: "Город расположен у реки."
+      de: "Die Stadt liegt am Fluss."
+      tense: "Präsens"
+    - ru: "Она лежала без сна всю ночь."
+      de: "Sie lag die ganze Nacht wach."
+      tense: "Präteritum"
+    - ru: "Где ударение?"
+      de: "Wo liegt die Betonung?"
+      tense: "Präsens"
+    - ru: "Решение в командной работе."
+      de: "Die Lösung liegt in der Teamarbeit."
+      tense: "Präsens"
+    - ru: "Бумаги лежали везде."
+      de: "Papiere lagen überall."
+      tense: "Präteritum"
+    - ru: "Я буду лежать на пляже."
+      de: "Ich werde am Strand liegen."
+      tense: "Futur I"
+    - ru: "Отель находится рядом с вокзалом."
+      de: "Das Hotel liegt in der Nähe des Bahnhofs."
+      tense: "Präsens"
+    - ru: "Его интерес в музыке."
+      de: "Sein Interesse liegt in der Musik."
+      tense: "Präsens"
+    - ru: "Кошка лежала на солнце."
+      de: "Die Katze lag in der Sonne."
+      tense: "Präteritum"
+  pt:
+    - pt: "Estou deitado na cama."
+      de: "Ich liege im Bett."
+      tense: "Präsens"
+    - pt: "O livro está na mesa."
+      de: "Das Buch liegt auf dem Tisch."
+      tense: "Präsens"
+    - pt: "Berlim fica na Alemanha."
+      de: "Berlin liegt in Deutschland."
+      tense: "Präsens"
+    - pt: "Ela estava deitada no sofá."
+      de: "Sie lag auf dem Sofa."
+      tense: "Präteritum"
+    - pt: "O problema está noutro lado."
+      de: "Das Problem liegt woanders."
+      tense: "Präsens"
+    - pt: "Ele esteve internado no hospital."
+      de: "Er hat im Krankenhaus gelegen."
+      tense: "Perfekt"
+    - pt: "Depende de ti."
+      de: "Es liegt an dir."
+      tense: "Präsens"
+    - pt: "A neve cobria o chão."
+      de: "Schnee lag auf dem Boden."
+      tense: "Präteritum"
+    - pt: "As chaves estão na mesa."
+      de: "Die Schlüssel liegen auf dem Tisch."
+      tense: "Präsens"
+    - pt: "A culpa é minha."
+      de: "Der Fehler liegt bei mir."
+      tense: "Präsens"
+    - pt: "Estive deitado ao sol."
+      de: "Ich habe in der Sonne gelegen."
+      tense: "Perfekt"
+    - pt: "A cidade fica junto ao rio."
+      de: "Die Stadt liegt am Fluss."
+      tense: "Präsens"
+    - pt: "Ela ficou acordada toda a noite."
+      de: "Sie lag die ganze Nacht wach."
+      tense: "Präteritum"
+    - pt: "Onde está a ênfase?"
+      de: "Wo liegt die Betonung?"
+      tense: "Präsens"
+    - pt: "A solução está no trabalho de equipa."
+      de: "Die Lösung liegt in der Teamarbeit."
+      tense: "Präsens"
+    - pt: "Havia papéis por todo o lado."
+      de: "Papiere lagen überall."
+      tense: "Präteritum"
+    - pt: "Estarei deitado na praia."
+      de: "Ich werde am Strand liegen."
+      tense: "Futur I"
+    - pt: "O hotel fica perto da estação."
+      de: "Das Hotel liegt in der Nähe des Bahnhofs."
+      tense: "Präsens"
+    - pt: "O seu interesse está na música."
+      de: "Sein Interesse liegt in der Musik."
+      tense: "Präsens"
+    - pt: "O gato estava deitado ao sol."
+      de: "Die Katze lag in der Sonne."
+      tense: "Präteritum"
