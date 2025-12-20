@@ -1,9 +1,9 @@
 // Shared verb page logic
-// Expects VERB_CONFIG: { originKey, labels, verbForms, phrases }
+// Expects VERB_CONFIG: { originKey, targetKey, labels, verbForms, phrases }
 
 function renderPhrases(filteredPhrases = VERB_CONFIG.phrases) {
     const container = document.getElementById('phraseList');
-    const { originKey, labels } = VERB_CONFIG;
+    const { originKey, targetKey, labels } = VERB_CONFIG;
     container.innerHTML = '';
 
     filteredPhrases.forEach((phrase, index) => {
@@ -18,7 +18,7 @@ function renderPhrases(filteredPhrases = VERB_CONFIG.phrases) {
             <div class="portuguese-text">
                 <div class="pt-content">
                     <div class="pt-label">${labels.target}</div>
-                    <div class="pt-phrase">${highlightVerb(phrase.pt)}</div>
+                    <div class="pt-phrase">${highlightVerb(phrase[targetKey])}</div>
                     <span class="tense-tag">${phrase.tense}</span>
                 </div>
             </div>
@@ -60,10 +60,10 @@ function hideAll() {
 // Initialize
 document.getElementById('searchInput').addEventListener('input', (e) => {
     const query = e.target.value.toLowerCase();
-    const { originKey, phrases } = VERB_CONFIG;
+    const { originKey, targetKey, phrases } = VERB_CONFIG;
     const filtered = phrases.filter(p =>
         p[originKey].toLowerCase().includes(query) ||
-        p.pt.toLowerCase().includes(query) ||
+        p[targetKey].toLowerCase().includes(query) ||
         p.tense.toLowerCase().includes(query)
     );
     renderPhrases(filtered);

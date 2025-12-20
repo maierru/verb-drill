@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="<%= target_lang %>">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,11 +36,12 @@
     <script>
         const VERB_CONFIG = {
             originKey: '<%= origin_key %>',
+            targetKey: '<%= target_key %>',
             labels: { target: '<%= labels[:target] %>', showing: '<%= labels[:showing] %>', of: '<%= labels[:of] %>', phrases: '<%= labels[:phrases] %>' },
             verbForms: <%= verb_forms.to_json %>,
             phrases: [
 <% phrases.each do |p| -%>
-                { <%= origin_key %>: <%= p[origin_key].to_json %>, pt: <%= p['pt'].to_json %>, tense: <%= p['tense'].to_json %> },
+                { <%= origin_key %>: <%= p[origin_key].to_json %>, <%= target_key %>: <%= p[target_key].to_json %>, tense: <%= p['tense'].to_json %> },
 <% end -%>
             ]
         };
