@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇫🇷 VERB PRENDRE — 20 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇫🇷 Verb PRENDRE</h1>
+            <p class="subtitle">to take — 20 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 20 из 20 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика французского — PRENDRE · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇫🇷 Verb PRENDRE</h2>
+            <div class="tense-explanation">
+                <h4>Présent</h4>
+                <p>Настоящее время - брать</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>prends</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>prends</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>prend</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>prenons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>prenez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>prennent</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Passé Composé</h4>
+                <p>Прошедшее время - взял</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>ai pris</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>as pris</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>a pris</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>avons pris</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>avez pris</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>ont pris</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imparfait</h4>
+                <p>Имперфект - брал</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>prenais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>prenais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>prenait</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>prenions</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>preniez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>prenaient</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur Simple</h4>
+                <p>Будущее время - возьмёт</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>prendrai</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>prendras</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>prendra</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>prendrons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>prendrez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>prendront</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'fr',
+            labels: { target: 'Français', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["prends","prend","prenons","prenez","prennent","prenais","prenait","prenions","preniez","prenaient","pris","prendrai","prendras","prendra","prendrons","prendrez","prendront"],
+            phrases: [
+                { ru: "Я возьму это.", fr: "Je prends celui-ci.", tense: "Présent" },
+                { ru: "Не торопись.", fr: "Prends ton temps.", tense: "Présent" },
+                { ru: "Она ездит на автобусе.", fr: "Elle prend le bus.", tense: "Présent" },
+                { ru: "Я сделал фото.", fr: "J'ai pris une photo.", tense: "Passé Composé" },
+                { ru: "Он поехал не той дорогой.", fr: "Il a pris la mauvaise route.", tense: "Passé Composé" },
+                { ru: "Мы поедем на поезде.", fr: "Nous prendrons le train.", tense: "Futur Simple" },
+                { ru: "Что ты будешь?", fr: "Qu'est-ce que tu prends ?", tense: "Présent" },
+                { ru: "Я пил кофе.", fr: "Je prenais du café.", tense: "Imparfait" },
+                { ru: "Они взяли всё.", fr: "Ils ont tout pris.", tense: "Passé Composé" },
+                { ru: "Садитесь.", fr: "Prenez place.", tense: "Présent" },
+                { ru: "Я об этом позабочусь.", fr: "Je m'en occuperai.", tense: "Futur Simple" },
+                { ru: "Она сделала перерыв.", fr: "Elle a pris une pause.", tense: "Passé Composé" },
+                { ru: "Мы завтракаем в 8.", fr: "Nous prenons le petit-déjeuner à 8h.", tense: "Présent" },
+                { ru: "Он делал заметки.", fr: "Il prenait des notes.", tense: "Imparfait" },
+                { ru: "Я принял душ.", fr: "J'ai pris une douche.", tense: "Passé Composé" },
+                { ru: "Не переживай.", fr: "Prends-le doucement.", tense: "Présent" },
+                { ru: "Они воспользуются случаем.", fr: "Ils prendront l'occasion.", tense: "Futur Simple" },
+                { ru: "Я отношусь серьёзно.", fr: "Je le prends au sérieux.", tense: "Présent" },
+                { ru: "Мы приняли решение.", fr: "Nous avons pris la décision.", tense: "Passé Composé" },
+                { ru: "Он рискует.", fr: "Il prend des risques.", tense: "Présent" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

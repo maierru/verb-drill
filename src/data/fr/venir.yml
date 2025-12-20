@@ -1,0 +1,256 @@
+slug: venir
+name: "🇫🇷 Verb VENIR"
+meaning: to come
+verb_forms:
+  - viens
+  - vient
+  - venons
+  - venez
+  - viennent
+  - venais
+  - venait
+  - venions
+  - veniez
+  - venaient
+  - venu
+  - viendrai
+  - viendras
+  - viendra
+  - viendrons
+  - viendrez
+  - viendront
+
+conjugation:
+  - tense: Présent
+    explanation:
+      en: "Present tense - coming"
+      ru: "Настоящее время - приходить"
+      pt: "Presente - vir"
+    forms:
+      je: viens
+      tu: viens
+      il/elle: vient
+      nous: venons
+      vous: venez
+      ils/elles: viennent
+  - tense: Passé Composé
+    explanation:
+      en: "Past tense - came"
+      ru: "Прошедшее время - пришёл"
+      pt: "Pretérito perfeito - veio"
+    forms:
+      je: suis venu(e)
+      tu: es venu(e)
+      il/elle: est venu(e)
+      nous: sommes venu(e)s
+      vous: êtes venu(e)(s)
+      ils/elles: sont venu(e)s
+  - tense: Imparfait
+    explanation:
+      en: "Imperfect - was coming, used to come"
+      ru: "Имперфект - приходил"
+      pt: "Imperfeito - vinha"
+    forms:
+      je: venais
+      tu: venais
+      il/elle: venait
+      nous: venions
+      vous: veniez
+      ils/elles: venaient
+  - tense: Futur Simple
+    explanation:
+      en: "Future - will come"
+      ru: "Будущее время - придёт"
+      pt: "Futuro simples - virá"
+    forms:
+      je: viendrai
+      tu: viendras
+      il/elle: viendra
+      nous: viendrons
+      vous: viendrez
+      ils/elles: viendront
+
+phrases:
+  en:
+    - en: "I'm coming!"
+      fr: "J'arrive !"
+      tense: "Présent"
+    - en: "Are you coming?"
+      fr: "Tu viens ?"
+      tense: "Présent"
+    - en: "She comes from France."
+      fr: "Elle vient de France."
+      tense: "Présent"
+    - en: "We come here often."
+      fr: "Nous venons ici souvent."
+      tense: "Présent"
+    - en: "He came yesterday."
+      fr: "Il est venu hier."
+      tense: "Passé Composé"
+    - en: "They came to see us."
+      fr: "Ils sont venus nous voir."
+      tense: "Passé Composé"
+    - en: "I just arrived."
+      fr: "Je viens d'arriver."
+      tense: "Présent"
+    - en: "Will you come tomorrow?"
+      fr: "Tu viendras demain ?"
+      tense: "Futur Simple"
+    - en: "She came late."
+      fr: "Elle est venue en retard."
+      tense: "Passé Composé"
+    - en: "Where do you come from?"
+      fr: "D'où viens-tu ?"
+      tense: "Présent"
+    - en: "I was coming to tell you."
+      fr: "Je venais te dire."
+      tense: "Imparfait"
+    - en: "They will come next week."
+      fr: "Ils viendront la semaine prochaine."
+      tense: "Futur Simple"
+    - en: "Come with me!"
+      fr: "Viens avec moi !"
+      tense: "Présent"
+    - en: "He used to come every day."
+      fr: "Il venait tous les jours."
+      tense: "Imparfait"
+    - en: "I didn't come alone."
+      fr: "Je ne suis pas venu seul."
+      tense: "Passé Composé"
+    - en: "The time has come."
+      fr: "Le moment est venu."
+      tense: "Passé Composé"
+    - en: "She will come back."
+      fr: "Elle reviendra."
+      tense: "Futur Simple"
+    - en: "We came by train."
+      fr: "Nous sommes venus en train."
+      tense: "Passé Composé"
+    - en: "I'm coming right away."
+      fr: "Je viens tout de suite."
+      tense: "Présent"
+    - en: "Nobody came."
+      fr: "Personne n'est venu."
+      tense: "Passé Composé"
+  ru:
+    - ru: "Иду!"
+      fr: "J'arrive !"
+      tense: "Présent"
+    - ru: "Ты идёшь?"
+      fr: "Tu viens ?"
+      tense: "Présent"
+    - ru: "Она из Франции."
+      fr: "Elle vient de France."
+      tense: "Présent"
+    - ru: "Мы часто сюда приходим."
+      fr: "Nous venons ici souvent."
+      tense: "Présent"
+    - ru: "Он приходил вчера."
+      fr: "Il est venu hier."
+      tense: "Passé Composé"
+    - ru: "Они пришли нас навестить."
+      fr: "Ils sont venus nous voir."
+      tense: "Passé Composé"
+    - ru: "Я только что приехал."
+      fr: "Je viens d'arriver."
+      tense: "Présent"
+    - ru: "Ты придёшь завтра?"
+      fr: "Tu viendras demain ?"
+      tense: "Futur Simple"
+    - ru: "Она пришла поздно."
+      fr: "Elle est venue en retard."
+      tense: "Passé Composé"
+    - ru: "Откуда ты?"
+      fr: "D'où viens-tu ?"
+      tense: "Présent"
+    - ru: "Я шёл тебе сказать."
+      fr: "Je venais te dire."
+      tense: "Imparfait"
+    - ru: "Они придут на следующей неделе."
+      fr: "Ils viendront la semaine prochaine."
+      tense: "Futur Simple"
+    - ru: "Пойдём со мной!"
+      fr: "Viens avec moi !"
+      tense: "Présent"
+    - ru: "Он приходил каждый день."
+      fr: "Il venait tous les jours."
+      tense: "Imparfait"
+    - ru: "Я пришёл не один."
+      fr: "Je ne suis pas venu seul."
+      tense: "Passé Composé"
+    - ru: "Пришло время."
+      fr: "Le moment est venu."
+      tense: "Passé Composé"
+    - ru: "Она вернётся."
+      fr: "Elle reviendra."
+      tense: "Futur Simple"
+    - ru: "Мы приехали на поезде."
+      fr: "Nous sommes venus en train."
+      tense: "Passé Composé"
+    - ru: "Иду сейчас."
+      fr: "Je viens tout de suite."
+      tense: "Présent"
+    - ru: "Никто не пришёл."
+      fr: "Personne n'est venu."
+      tense: "Passé Composé"
+  pt:
+    - pt: "Estou a ir!"
+      fr: "J'arrive !"
+      tense: "Présent"
+    - pt: "Vens?"
+      fr: "Tu viens ?"
+      tense: "Présent"
+    - pt: "Ela vem de França."
+      fr: "Elle vient de France."
+      tense: "Présent"
+    - pt: "Vimos aqui frequentemente."
+      fr: "Nous venons ici souvent."
+      tense: "Présent"
+    - pt: "Ele veio ontem."
+      fr: "Il est venu hier."
+      tense: "Passé Composé"
+    - pt: "Vieram ver-nos."
+      fr: "Ils sont venus nous voir."
+      tense: "Passé Composé"
+    - pt: "Acabei de chegar."
+      fr: "Je viens d'arriver."
+      tense: "Présent"
+    - pt: "Vens amanhã?"
+      fr: "Tu viendras demain ?"
+      tense: "Futur Simple"
+    - pt: "Ela veio atrasada."
+      fr: "Elle est venue en retard."
+      tense: "Passé Composé"
+    - pt: "De onde vens?"
+      fr: "D'où viens-tu ?"
+      tense: "Présent"
+    - pt: "Vinha dizer-te."
+      fr: "Je venais te dire."
+      tense: "Imparfait"
+    - pt: "Virão na próxima semana."
+      fr: "Ils viendront la semaine prochaine."
+      tense: "Futur Simple"
+    - pt: "Vem comigo!"
+      fr: "Viens avec moi !"
+      tense: "Présent"
+    - pt: "Ele vinha todos os dias."
+      fr: "Il venait tous les jours."
+      tense: "Imparfait"
+    - pt: "Não vim sozinho."
+      fr: "Je ne suis pas venu seul."
+      tense: "Passé Composé"
+    - pt: "Chegou o momento."
+      fr: "Le moment est venu."
+      tense: "Passé Composé"
+    - pt: "Ela voltará."
+      fr: "Elle reviendra."
+      tense: "Futur Simple"
+    - pt: "Viemos de comboio."
+      fr: "Nous sommes venus en train."
+      tense: "Passé Composé"
+    - pt: "Venho já."
+      fr: "Je viens tout de suite."
+      tense: "Présent"
+    - pt: "Ninguém veio."
+      fr: "Personne n'est venu."
+      tense: "Passé Composé"

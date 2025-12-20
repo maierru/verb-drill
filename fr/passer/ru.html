@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇫🇷 VERB PASSER — 20 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇫🇷 Verb PASSER</h1>
+            <p class="subtitle">to pass, to spend — 20 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 20 из 20 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика французского — PASSER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇫🇷 Verb PASSER</h2>
+            <div class="tense-explanation">
+                <h4>Présent</h4>
+                <p>Настоящее время - проходить, проводить</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>passe</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>passes</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>passe</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>passons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>passez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>passent</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Passé Composé</h4>
+                <p>Прошедшее время - прошёл, провёл</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>suis passé(e) / ai passé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>es passé(e) / as passé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>est passé(e) / a passé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>sommes passé(e)s / avons passé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>êtes passé(e)(s) / avez passé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>sont passé(e)s / ont passé</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imparfait</h4>
+                <p>Имперфект - проходил</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>passais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>passais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>passait</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>passions</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>passiez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>passaient</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur Simple</h4>
+                <p>Будущее время - пройдёт</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>passerai</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>passeras</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>passera</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>passerons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>passerez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>passeront</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'fr',
+            labels: { target: 'Français', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["passe","passes","passons","passez","passent","passais","passait","passions","passiez","passaient","passé","passerai","passeras","passera","passerons","passerez","passeront"],
+            phrases: [
+                { ru: "Время летит быстро.", fr: "Le temps passe vite.", tense: "Présent" },
+                { ru: "Я провёл день дома.", fr: "J'ai passé la journée à la maison.", tense: "Passé Composé" },
+                { ru: "Передай соль.", fr: "Passe-moi le sel.", tense: "Présent" },
+                { ru: "Она сдала экзамен.", fr: "Elle a passé l'examen.", tense: "Passé Composé" },
+                { ru: "Я зайду завтра.", fr: "Je passerai demain.", tense: "Futur Simple" },
+                { ru: "Что случилось?", fr: "Qu'est-ce qui s'est passé ?", tense: "Passé Composé" },
+                { ru: "Мы проводили отпуск там.", fr: "Nous passions les vacances là-bas.", tense: "Imparfait" },
+                { ru: "Он проходит каждое утро.", fr: "Il passe tous les matins.", tense: "Présent" },
+                { ru: "Я хорошо провёл вечер.", fr: "J'ai passé une bonne soirée.", tense: "Passé Composé" },
+                { ru: "Она сдаст тест.", fr: "Elle passera le test.", tense: "Futur Simple" },
+                { ru: "Это пройдёт.", fr: "Ça passera.", tense: "Futur Simple" },
+                { ru: "Я проходил мимо.", fr: "Je passais par là.", tense: "Imparfait" },
+                { ru: "Передай телефон.", fr: "Passe-moi le téléphone.", tense: "Présent" },
+                { ru: "Они провели ночь здесь.", fr: "Ils ont passé la nuit ici.", tense: "Passé Composé" },
+                { ru: "Как прошло?", fr: "Comment ça s'est passé ?", tense: "Passé Composé" },
+                { ru: "Всё идёт хорошо.", fr: "Tout se passe bien.", tense: "Présent" },
+                { ru: "Я проведу неделю в Париже.", fr: "Je passerai une semaine à Paris.", tense: "Futur Simple" },
+                { ru: "Он прошёл мимо меня.", fr: "Il est passé devant moi.", tense: "Passé Composé" },
+                { ru: "Мы часами разговаривали.", fr: "Nous avons passé des heures à parler.", tense: "Passé Composé" },
+                { ru: "Забудь.", fr: "Laisse passer.", tense: "Présent" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

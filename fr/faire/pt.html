@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇫🇷 VERB FAIRE — 20 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇫🇷 Verb FAIRE</h1>
+            <p class="subtitle">to do, to make — 20 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 20 de 20 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Prática de francês — FAIRE · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇫🇷 Verb FAIRE</h2>
+            <div class="tense-explanation">
+                <h4>Présent</h4>
+                <p>Presente - fazer, tempo</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>fais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>fais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>fait</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>faisons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>faites</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>font</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Passé Composé</h4>
+                <p>Pretérito perfeito - fez</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>ai fait</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>as fait</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>a fait</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>avons fait</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>avez fait</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>ont fait</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imparfait</h4>
+                <p>Imperfeito - fazia</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>faisais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>faisais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>faisait</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>faisions</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>faisiez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>faisaient</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur Simple</h4>
+                <p>Futuro simples - fará</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>ferai</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>feras</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>fera</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>ferons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>ferez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>feront</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'fr',
+            labels: { target: 'Français', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["fais","fait","faisons","faites","font","faisais","faisait","faisions","faisiez","faisaient","fait","ferai","feras","fera","ferons","ferez","feront"],
+            phrases: [
+                { pt: "O que estás a fazer?", fr: "Qu'est-ce que tu fais ?", tense: "Présent" },
+                { pt: "Faço o pequeno-almoço.", fr: "Je fais le petit-déjeuner.", tense: "Présent" },
+                { pt: "Ela fez os trabalhos de casa.", fr: "Elle a fait ses devoirs.", tense: "Passé Composé" },
+                { pt: "Vamos fazer um plano.", fr: "Nous ferons un plan.", tense: "Futur Simple" },
+                { pt: "Está bom tempo.", fr: "Il fait beau.", tense: "Présent" },
+                { pt: "Ele cometeu um erro.", fr: "Il a fait une erreur.", tense: "Passé Composé" },
+                { pt: "Não fiz nada de errado.", fr: "Je n'ai rien fait de mal.", tense: "Passé Composé" },
+                { pt: "O que devo fazer?", fr: "Que dois-je faire ?", tense: "Présent" },
+                { pt: "Ela faz café.", fr: "Elle fait du café.", tense: "Présent" },
+                { pt: "Eles faziam barulho.", fr: "Ils faisaient du bruit.", tense: "Imparfait" },
+                { pt: "Farei amanhã.", fr: "Je le ferai demain.", tense: "Futur Simple" },
+                { pt: "Ele faz sempre piadas.", fr: "Il fait toujours des blagues.", tense: "Présent" },
+                { pt: "Tomámos uma decisão.", fr: "Nous avons pris une décision.", tense: "Passé Composé" },
+                { pt: "Não faz mal.", fr: "Ça ne fait rien.", tense: "Présent" },
+                { pt: "Ela fez o jantar.", fr: "Elle a fait le dîner.", tense: "Passé Composé" },
+                { pt: "O que faz ele profissionalmente?", fr: "Que fait-il dans la vie ?", tense: "Présent" },
+                { pt: "Está frio.", fr: "Il fait froid.", tense: "Présent" },
+                { pt: "Vamos fazer algo divertido.", fr: "Faisons quelque chose d'amusant.", tense: "Présent" },
+                { pt: "Eles vão fazer alterações.", fr: "Ils feront des changements.", tense: "Futur Simple" },
+                { pt: "Como se faz isto?", fr: "Comment fait-on ça ?", tense: "Présent" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

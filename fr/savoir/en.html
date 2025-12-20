@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇫🇷 VERB SAVOIR — 20 Phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Back to verb list</a>
+            <h1>🇫🇷 Verb SAVOIR</h1>
+            <p class="subtitle">to know — 20 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Show all translations</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
+        </div>
+
+        <div class="stats" id="stats">Showing: 20 of 20 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            French Practice — SAVOIR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇫🇷 Verb SAVOIR</h2>
+            <div class="tense-explanation">
+                <h4>Présent</h4>
+                <p>Present tense - knowing facts, how to</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>sais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>sais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>sait</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>savons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>savez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>savent</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Passé Composé</h4>
+                <p>Past tense - found out, learned</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>ai su</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>as su</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>a su</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>avons su</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>avez su</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>ont su</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imparfait</h4>
+                <p>Imperfect - knew, used to know</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>savais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>savais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>savait</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>savions</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>saviez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>savaient</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur Simple</h4>
+                <p>Future - will know</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>saurai</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>sauras</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>saura</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>saurons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>saurez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>sauront</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'en',
+            targetKey: 'fr',
+            labels: { target: 'French', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["sais","sait","savons","savez","savent","savais","savait","savions","saviez","savaient","su","saurai","sauras","saura","saurons","saurez","sauront"],
+            phrases: [
+                { en: "I know.", fr: "Je sais.", tense: "Présent" },
+                { en: "I don't know.", fr: "Je ne sais pas.", tense: "Présent" },
+                { en: "Do you know the answer?", fr: "Tu sais la réponse ?", tense: "Présent" },
+                { en: "She knows how to swim.", fr: "Elle sait nager.", tense: "Présent" },
+                { en: "I knew it!", fr: "Je le savais !", tense: "Imparfait" },
+                { en: "We didn't know that.", fr: "Nous ne savions pas ça.", tense: "Imparfait" },
+                { en: "Who knows?", fr: "Qui sait ?", tense: "Présent" },
+                { en: "He knew the truth.", fr: "Il savait la vérité.", tense: "Imparfait" },
+                { en: "I will know soon.", fr: "Je saurai bientôt.", tense: "Futur Simple" },
+                { en: "She knows how to cook.", fr: "Elle sait cuisiner.", tense: "Présent" },
+                { en: "I didn't know about that.", fr: "Je ne savais pas.", tense: "Imparfait" },
+                { en: "You know what I mean.", fr: "Tu sais ce que je veux dire.", tense: "Présent" },
+                { en: "They knew nothing.", fr: "Ils ne savaient rien.", tense: "Imparfait" },
+                { en: "As far as I know.", fr: "Autant que je sache.", tense: "Présent" },
+                { en: "I have always known.", fr: "Je l'ai toujours su.", tense: "Passé Composé" },
+                { en: "Do you know what time it is?", fr: "Tu sais quelle heure il est ?", tense: "Présent" },
+                { en: "Nobody knew.", fr: "Personne ne savait.", tense: "Imparfait" },
+                { en: "I want to know more.", fr: "Je veux en savoir plus.", tense: "Présent" },
+                { en: "She knew my name.", fr: "Elle savait mon nom.", tense: "Imparfait" },
+                { en: "You never know.", fr: "On ne sait jamais.", tense: "Présent" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇫🇷 VERB ÊTRE — 20 Phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Back to verb list</a>
+            <h1>🇫🇷 Verb ÊTRE</h1>
+            <p class="subtitle">to be — 20 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Show all translations</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
+        </div>
+
+        <div class="stats" id="stats">Showing: 20 of 20 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            French Practice — ETRE · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇫🇷 Verb ÊTRE</h2>
+            <div class="tense-explanation">
+                <h4>Présent</h4>
+                <p>Present tense - states of being, identity</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>suis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>es</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>est</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>sommes</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>êtes</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>sont</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Passé Composé</h4>
+                <p>Past tense - completed actions</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>ai été</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>as été</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>a été</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>avons été</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>avez été</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>ont été</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imparfait</h4>
+                <p>Imperfect - ongoing past states</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>étais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>étais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>était</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>étions</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>étiez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>étaient</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur Simple</h4>
+                <p>Future - will be</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>serai</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>seras</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>sera</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>serons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>serez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>seront</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'en',
+            targetKey: 'fr',
+            labels: { target: 'French', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["suis","es","est","sommes","êtes","sont","étais","était","étions","étiez","étaient","été","serai","seras","sera","serons","serez","seront"],
+            phrases: [
+                { en: "I am tired.", fr: "Je suis fatigué.", tense: "Présent" },
+                { en: "She is a doctor.", fr: "Elle est médecin.", tense: "Présent" },
+                { en: "We are happy.", fr: "Nous sommes heureux.", tense: "Présent" },
+                { en: "Are you French?", fr: "Êtes-vous français ?", tense: "Présent" },
+                { en: "They are students.", fr: "Ils sont étudiants.", tense: "Présent" },
+                { en: "I was at home.", fr: "J'étais à la maison.", tense: "Imparfait" },
+                { en: "We were in Paris.", fr: "Nous étions à Paris.", tense: "Imparfait" },
+                { en: "He has been sick.", fr: "Il a été malade.", tense: "Passé Composé" },
+                { en: "I will be there tomorrow.", fr: "Je serai là demain.", tense: "Futur Simple" },
+                { en: "It is cold today.", fr: "Il fait froid aujourd'hui.", tense: "Présent" },
+                { en: "The book is on the table.", fr: "Le livre est sur la table.", tense: "Présent" },
+                { en: "Where were you?", fr: "Où étais-tu ?", tense: "Imparfait" },
+                { en: "I am from France.", fr: "Je suis de France.", tense: "Présent" },
+                { en: "She was very kind.", fr: "Elle était très gentille.", tense: "Imparfait" },
+                { en: "We will be ready soon.", fr: "Nous serons bientôt prêts.", tense: "Futur Simple" },
+                { en: "Is this your car?", fr: "C'est ta voiture ?", tense: "Présent" },
+                { en: "They were late.", fr: "Ils étaient en retard.", tense: "Imparfait" },
+                { en: "He is 25 years old.", fr: "Il a 25 ans.", tense: "Présent" },
+                { en: "It will be nice tomorrow.", fr: "Il fera beau demain.", tense: "Futur Simple" },
+                { en: "I have never been to Paris.", fr: "Je n'ai jamais été à Paris.", tense: "Passé Composé" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

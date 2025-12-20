@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇫🇷 VERB VOULOIR — 20 Phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Back to verb list</a>
+            <h1>🇫🇷 Verb VOULOIR</h1>
+            <p class="subtitle">to want — 20 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Show all translations</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
+        </div>
+
+        <div class="stats" id="stats">Showing: 20 of 20 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            French Practice — VOULOIR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇫🇷 Verb VOULOIR</h2>
+            <div class="tense-explanation">
+                <h4>Présent</h4>
+                <p>Present tense - wanting, wishing</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>veux</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>veux</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>veut</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>voulons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>voulez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>veulent</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Passé Composé</h4>
+                <p>Past tense - wanted</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>ai voulu</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>as voulu</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>a voulu</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>avons voulu</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>avez voulu</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>ont voulu</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imparfait</h4>
+                <p>Imperfect - wanted, used to want</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>voulais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>voulais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>voulait</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>voulions</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>vouliez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>voulaient</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur Simple</h4>
+                <p>Future - will want</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>voudrai</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>voudras</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>voudra</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>voudrons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>voudrez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>voudront</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'en',
+            targetKey: 'fr',
+            labels: { target: 'French', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["veux","veut","voulons","voulez","veulent","voulais","voulait","voulions","vouliez","voulaient","voulu","voudrai","voudras","voudra","voudrons","voudrez","voudront"],
+            phrases: [
+                { en: "I want to go home.", fr: "Je veux rentrer à la maison.", tense: "Présent" },
+                { en: "What do you want?", fr: "Que veux-tu ?", tense: "Présent" },
+                { en: "She wants to learn French.", fr: "Elle veut apprendre le français.", tense: "Présent" },
+                { en: "We want to help.", fr: "Nous voulons aider.", tense: "Présent" },
+                { en: "I wanted to ask you something.", fr: "Je voulais te demander quelque chose.", tense: "Imparfait" },
+                { en: "He didn't want to come.", fr: "Il n'a pas voulu venir.", tense: "Passé Composé" },
+                { en: "Do you want coffee?", fr: "Tu veux du café ?", tense: "Présent" },
+                { en: "They want to travel.", fr: "Ils veulent voyager.", tense: "Présent" },
+                { en: "I want to be alone.", fr: "Je veux être seul.", tense: "Présent" },
+                { en: "She wanted to tell me.", fr: "Elle voulait me dire.", tense: "Imparfait" },
+                { en: "We wanted to buy a house.", fr: "Nous voulions acheter une maison.", tense: "Imparfait" },
+                { en: "What do you want to eat?", fr: "Que veux-tu manger ?", tense: "Présent" },
+                { en: "I want to sleep.", fr: "Je veux dormir.", tense: "Présent" },
+                { en: "He wants to become a doctor.", fr: "Il veut devenir médecin.", tense: "Présent" },
+                { en: "They didn't want to wait.", fr: "Ils n'ont pas voulu attendre.", tense: "Passé Composé" },
+                { en: "Do you want to come with us?", fr: "Tu veux venir avec nous ?", tense: "Présent" },
+                { en: "I just wanted to say hello.", fr: "Je voulais juste dire bonjour.", tense: "Imparfait" },
+                { en: "Would you like some water?", fr: "Voulez-vous de l'eau ?", tense: "Présent" },
+                { en: "I want more time.", fr: "Je veux plus de temps.", tense: "Présent" },
+                { en: "I wanted to thank you.", fr: "Je voulais te remercier.", tense: "Imparfait" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

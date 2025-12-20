@@ -1,0 +1,257 @@
+slug: aller
+name: "🇫🇷 Verb ALLER"
+meaning: to go
+verb_forms:
+  - vais
+  - vas
+  - va
+  - allons
+  - allez
+  - vont
+  - allais
+  - allait
+  - allions
+  - alliez
+  - allaient
+  - allé
+  - irai
+  - iras
+  - ira
+  - irons
+  - irez
+  - iront
+
+conjugation:
+  - tense: Présent
+    explanation:
+      en: "Present tense - going, near future"
+      ru: "Настоящее время - идти, ближайшее будущее"
+      pt: "Presente - ir, futuro próximo"
+    forms:
+      je: vais
+      tu: vas
+      il/elle: va
+      nous: allons
+      vous: allez
+      ils/elles: vont
+  - tense: Passé Composé
+    explanation:
+      en: "Past tense - went"
+      ru: "Прошедшее время - пошёл"
+      pt: "Pretérito perfeito - foi"
+    forms:
+      je: suis allé(e)
+      tu: es allé(e)
+      il/elle: est allé(e)
+      nous: sommes allé(e)s
+      vous: êtes allé(e)(s)
+      ils/elles: sont allé(e)s
+  - tense: Imparfait
+    explanation:
+      en: "Imperfect - was going, used to go"
+      ru: "Имперфект - ходил (регулярно)"
+      pt: "Imperfeito - ia"
+    forms:
+      je: allais
+      tu: allais
+      il/elle: allait
+      nous: allions
+      vous: alliez
+      ils/elles: allaient
+  - tense: Futur Simple
+    explanation:
+      en: "Future - will go"
+      ru: "Будущее время - пойдёт"
+      pt: "Futuro simples - irá"
+    forms:
+      je: irai
+      tu: iras
+      il/elle: ira
+      nous: irons
+      vous: irez
+      ils/elles: iront
+
+phrases:
+  en:
+    - en: "I'm going home."
+      fr: "Je vais à la maison."
+      tense: "Présent"
+    - en: "Where are you going?"
+      fr: "Où vas-tu ?"
+      tense: "Présent"
+    - en: "How are you?"
+      fr: "Comment allez-vous ?"
+      tense: "Présent"
+    - en: "She goes to school."
+      fr: "Elle va à l'école."
+      tense: "Présent"
+    - en: "He went to the store."
+      fr: "Il est allé au magasin."
+      tense: "Passé Composé"
+    - en: "I will go tomorrow."
+      fr: "J'irai demain."
+      tense: "Futur Simple"
+    - en: "Let's go!"
+      fr: "Allons-y !"
+      tense: "Présent"
+    - en: "I'm fine, thank you."
+      fr: "Je vais bien, merci."
+      tense: "Présent"
+    - en: "We used to go there often."
+      fr: "Nous y allions souvent."
+      tense: "Imparfait"
+    - en: "They are going to the cinema."
+      fr: "Ils vont au cinéma."
+      tense: "Présent"
+    - en: "I'm going to eat."
+      fr: "Je vais manger."
+      tense: "Présent"
+    - en: "She went to Paris."
+      fr: "Elle est allée à Paris."
+      tense: "Passé Composé"
+    - en: "We will go together."
+      fr: "Nous irons ensemble."
+      tense: "Futur Simple"
+    - en: "Everything is going well."
+      fr: "Tout va bien."
+      tense: "Présent"
+    - en: "I was going to call you."
+      fr: "J'allais t'appeler."
+      tense: "Imparfait"
+    - en: "Go ahead!"
+      fr: "Vas-y !"
+      tense: "Présent"
+    - en: "They went home."
+      fr: "Ils sont rentrés."
+      tense: "Passé Composé"
+    - en: "How's it going?"
+      fr: "Comment ça va ?"
+      tense: "Présent"
+    - en: "I will go with you."
+      fr: "J'irai avec toi."
+      tense: "Futur Simple"
+    - en: "We went for a walk."
+      fr: "Nous sommes allés nous promener."
+      tense: "Passé Composé"
+  ru:
+    - ru: "Я иду домой."
+      fr: "Je vais à la maison."
+      tense: "Présent"
+    - ru: "Куда ты идёшь?"
+      fr: "Où vas-tu ?"
+      tense: "Présent"
+    - ru: "Как вы поживаете?"
+      fr: "Comment allez-vous ?"
+      tense: "Présent"
+    - ru: "Она ходит в школу."
+      fr: "Elle va à l'école."
+      tense: "Présent"
+    - ru: "Он пошёл в магазин."
+      fr: "Il est allé au magasin."
+      tense: "Passé Composé"
+    - ru: "Я пойду завтра."
+      fr: "J'irai demain."
+      tense: "Futur Simple"
+    - ru: "Пойдём!"
+      fr: "Allons-y !"
+      tense: "Présent"
+    - ru: "Я в порядке, спасибо."
+      fr: "Je vais bien, merci."
+      tense: "Présent"
+    - ru: "Мы часто туда ходили."
+      fr: "Nous y allions souvent."
+      tense: "Imparfait"
+    - ru: "Они идут в кино."
+      fr: "Ils vont au cinéma."
+      tense: "Présent"
+    - ru: "Я собираюсь поесть."
+      fr: "Je vais manger."
+      tense: "Présent"
+    - ru: "Она поехала в Париж."
+      fr: "Elle est allée à Paris."
+      tense: "Passé Composé"
+    - ru: "Мы пойдём вместе."
+      fr: "Nous irons ensemble."
+      tense: "Futur Simple"
+    - ru: "Всё идёт хорошо."
+      fr: "Tout va bien."
+      tense: "Présent"
+    - ru: "Я собирался тебе позвонить."
+      fr: "J'allais t'appeler."
+      tense: "Imparfait"
+    - ru: "Давай!"
+      fr: "Vas-y !"
+      tense: "Présent"
+    - ru: "Они пошли домой."
+      fr: "Ils sont rentrés."
+      tense: "Passé Composé"
+    - ru: "Как дела?"
+      fr: "Comment ça va ?"
+      tense: "Présent"
+    - ru: "Я пойду с тобой."
+      fr: "J'irai avec toi."
+      tense: "Futur Simple"
+    - ru: "Мы пошли гулять."
+      fr: "Nous sommes allés nous promener."
+      tense: "Passé Composé"
+  pt:
+    - pt: "Vou para casa."
+      fr: "Je vais à la maison."
+      tense: "Présent"
+    - pt: "Para onde vais?"
+      fr: "Où vas-tu ?"
+      tense: "Présent"
+    - pt: "Como está?"
+      fr: "Comment allez-vous ?"
+      tense: "Présent"
+    - pt: "Ela vai à escola."
+      fr: "Elle va à l'école."
+      tense: "Présent"
+    - pt: "Ele foi à loja."
+      fr: "Il est allé au magasin."
+      tense: "Passé Composé"
+    - pt: "Vou amanhã."
+      fr: "J'irai demain."
+      tense: "Futur Simple"
+    - pt: "Vamos!"
+      fr: "Allons-y !"
+      tense: "Présent"
+    - pt: "Estou bem, obrigado."
+      fr: "Je vais bien, merci."
+      tense: "Présent"
+    - pt: "Costumávamos ir lá frequentemente."
+      fr: "Nous y allions souvent."
+      tense: "Imparfait"
+    - pt: "Eles vão ao cinema."
+      fr: "Ils vont au cinéma."
+      tense: "Présent"
+    - pt: "Vou comer."
+      fr: "Je vais manger."
+      tense: "Présent"
+    - pt: "Ela foi a Paris."
+      fr: "Elle est allée à Paris."
+      tense: "Passé Composé"
+    - pt: "Iremos juntos."
+      fr: "Nous irons ensemble."
+      tense: "Futur Simple"
+    - pt: "Está tudo bem."
+      fr: "Tout va bien."
+      tense: "Présent"
+    - pt: "Ia telefonar-te."
+      fr: "J'allais t'appeler."
+      tense: "Imparfait"
+    - pt: "Força!"
+      fr: "Vas-y !"
+      tense: "Présent"
+    - pt: "Eles foram para casa."
+      fr: "Ils sont rentrés."
+      tense: "Passé Composé"
+    - pt: "Como vai isso?"
+      fr: "Comment ça va ?"
+      tense: "Présent"
+    - pt: "Vou contigo."
+      fr: "J'irai avec toi."
+      tense: "Futur Simple"
+    - pt: "Fomos passear."
+      fr: "Nous sommes allés nous promener."
+      tense: "Passé Composé"

@@ -1,0 +1,256 @@
+slug: prendre
+name: "🇫🇷 Verb PRENDRE"
+meaning: to take
+verb_forms:
+  - prends
+  - prend
+  - prenons
+  - prenez
+  - prennent
+  - prenais
+  - prenait
+  - prenions
+  - preniez
+  - prenaient
+  - pris
+  - prendrai
+  - prendras
+  - prendra
+  - prendrons
+  - prendrez
+  - prendront
+
+conjugation:
+  - tense: Présent
+    explanation:
+      en: "Present tense - taking"
+      ru: "Настоящее время - брать"
+      pt: "Presente - tomar, levar"
+    forms:
+      je: prends
+      tu: prends
+      il/elle: prend
+      nous: prenons
+      vous: prenez
+      ils/elles: prennent
+  - tense: Passé Composé
+    explanation:
+      en: "Past tense - took"
+      ru: "Прошедшее время - взял"
+      pt: "Pretérito perfeito - tomou"
+    forms:
+      je: ai pris
+      tu: as pris
+      il/elle: a pris
+      nous: avons pris
+      vous: avez pris
+      ils/elles: ont pris
+  - tense: Imparfait
+    explanation:
+      en: "Imperfect - was taking, used to take"
+      ru: "Имперфект - брал"
+      pt: "Imperfeito - tomava"
+    forms:
+      je: prenais
+      tu: prenais
+      il/elle: prenait
+      nous: prenions
+      vous: preniez
+      ils/elles: prenaient
+  - tense: Futur Simple
+    explanation:
+      en: "Future - will take"
+      ru: "Будущее время - возьмёт"
+      pt: "Futuro simples - tomará"
+    forms:
+      je: prendrai
+      tu: prendras
+      il/elle: prendra
+      nous: prendrons
+      vous: prendrez
+      ils/elles: prendront
+
+phrases:
+  en:
+    - en: "I'll take this one."
+      fr: "Je prends celui-ci."
+      tense: "Présent"
+    - en: "Take your time."
+      fr: "Prends ton temps."
+      tense: "Présent"
+    - en: "She takes the bus."
+      fr: "Elle prend le bus."
+      tense: "Présent"
+    - en: "I took a photo."
+      fr: "J'ai pris une photo."
+      tense: "Passé Composé"
+    - en: "He took the wrong road."
+      fr: "Il a pris la mauvaise route."
+      tense: "Passé Composé"
+    - en: "We will take the train."
+      fr: "Nous prendrons le train."
+      tense: "Futur Simple"
+    - en: "What will you have?"
+      fr: "Qu'est-ce que tu prends ?"
+      tense: "Présent"
+    - en: "I used to take coffee."
+      fr: "Je prenais du café."
+      tense: "Imparfait"
+    - en: "They took everything."
+      fr: "Ils ont tout pris."
+      tense: "Passé Composé"
+    - en: "Take a seat."
+      fr: "Prenez place."
+      tense: "Présent"
+    - en: "I will take care of it."
+      fr: "Je m'en occuperai."
+      tense: "Futur Simple"
+    - en: "She took a break."
+      fr: "Elle a pris une pause."
+      tense: "Passé Composé"
+    - en: "We take breakfast at 8."
+      fr: "Nous prenons le petit-déjeuner à 8h."
+      tense: "Présent"
+    - en: "He was taking notes."
+      fr: "Il prenait des notes."
+      tense: "Imparfait"
+    - en: "I took a shower."
+      fr: "J'ai pris une douche."
+      tense: "Passé Composé"
+    - en: "Take it easy."
+      fr: "Prends-le doucement."
+      tense: "Présent"
+    - en: "They will take the opportunity."
+      fr: "Ils prendront l'occasion."
+      tense: "Futur Simple"
+    - en: "I take it seriously."
+      fr: "Je le prends au sérieux."
+      tense: "Présent"
+    - en: "We took the decision."
+      fr: "Nous avons pris la décision."
+      tense: "Passé Composé"
+    - en: "He takes risks."
+      fr: "Il prend des risques."
+      tense: "Présent"
+  ru:
+    - ru: "Я возьму это."
+      fr: "Je prends celui-ci."
+      tense: "Présent"
+    - ru: "Не торопись."
+      fr: "Prends ton temps."
+      tense: "Présent"
+    - ru: "Она ездит на автобусе."
+      fr: "Elle prend le bus."
+      tense: "Présent"
+    - ru: "Я сделал фото."
+      fr: "J'ai pris une photo."
+      tense: "Passé Composé"
+    - ru: "Он поехал не той дорогой."
+      fr: "Il a pris la mauvaise route."
+      tense: "Passé Composé"
+    - ru: "Мы поедем на поезде."
+      fr: "Nous prendrons le train."
+      tense: "Futur Simple"
+    - ru: "Что ты будешь?"
+      fr: "Qu'est-ce que tu prends ?"
+      tense: "Présent"
+    - ru: "Я пил кофе."
+      fr: "Je prenais du café."
+      tense: "Imparfait"
+    - ru: "Они взяли всё."
+      fr: "Ils ont tout pris."
+      tense: "Passé Composé"
+    - ru: "Садитесь."
+      fr: "Prenez place."
+      tense: "Présent"
+    - ru: "Я об этом позабочусь."
+      fr: "Je m'en occuperai."
+      tense: "Futur Simple"
+    - ru: "Она сделала перерыв."
+      fr: "Elle a pris une pause."
+      tense: "Passé Composé"
+    - ru: "Мы завтракаем в 8."
+      fr: "Nous prenons le petit-déjeuner à 8h."
+      tense: "Présent"
+    - ru: "Он делал заметки."
+      fr: "Il prenait des notes."
+      tense: "Imparfait"
+    - ru: "Я принял душ."
+      fr: "J'ai pris une douche."
+      tense: "Passé Composé"
+    - ru: "Не переживай."
+      fr: "Prends-le doucement."
+      tense: "Présent"
+    - ru: "Они воспользуются случаем."
+      fr: "Ils prendront l'occasion."
+      tense: "Futur Simple"
+    - ru: "Я отношусь серьёзно."
+      fr: "Je le prends au sérieux."
+      tense: "Présent"
+    - ru: "Мы приняли решение."
+      fr: "Nous avons pris la décision."
+      tense: "Passé Composé"
+    - ru: "Он рискует."
+      fr: "Il prend des risques."
+      tense: "Présent"
+  pt:
+    - pt: "Levo este."
+      fr: "Je prends celui-ci."
+      tense: "Présent"
+    - pt: "Não te apresses."
+      fr: "Prends ton temps."
+      tense: "Présent"
+    - pt: "Ela apanha o autocarro."
+      fr: "Elle prend le bus."
+      tense: "Présent"
+    - pt: "Tirei uma fotografia."
+      fr: "J'ai pris une photo."
+      tense: "Passé Composé"
+    - pt: "Ele foi pelo caminho errado."
+      fr: "Il a pris la mauvaise route."
+      tense: "Passé Composé"
+    - pt: "Apanharemos o comboio."
+      fr: "Nous prendrons le train."
+      tense: "Futur Simple"
+    - pt: "O que vais tomar?"
+      fr: "Qu'est-ce que tu prends ?"
+      tense: "Présent"
+    - pt: "Eu tomava café."
+      fr: "Je prenais du café."
+      tense: "Imparfait"
+    - pt: "Levaram tudo."
+      fr: "Ils ont tout pris."
+      tense: "Passé Composé"
+    - pt: "Sente-se."
+      fr: "Prenez place."
+      tense: "Présent"
+    - pt: "Eu trato disso."
+      fr: "Je m'en occuperai."
+      tense: "Futur Simple"
+    - pt: "Ela fez uma pausa."
+      fr: "Elle a pris une pause."
+      tense: "Passé Composé"
+    - pt: "Tomamos o pequeno-almoço às 8h."
+      fr: "Nous prenons le petit-déjeuner à 8h."
+      tense: "Présent"
+    - pt: "Ele tirava notas."
+      fr: "Il prenait des notes."
+      tense: "Imparfait"
+    - pt: "Tomei um duche."
+      fr: "J'ai pris une douche."
+      tense: "Passé Composé"
+    - pt: "Tem calma."
+      fr: "Prends-le doucement."
+      tense: "Présent"
+    - pt: "Aproveitarão a oportunidade."
+      fr: "Ils prendront l'occasion."
+      tense: "Futur Simple"
+    - pt: "Levo isto a sério."
+      fr: "Je le prends au sérieux."
+      tense: "Présent"
+    - pt: "Tomámos a decisão."
+      fr: "Nous avons pris la décision."
+      tense: "Passé Composé"
+    - pt: "Ele arrisca."
+      fr: "Il prend des risques."
+      tense: "Présent"

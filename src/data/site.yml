@@ -18,6 +18,10 @@ languages:
     name: German
     flag: "🇩🇪"
     path: de/index.html
+  - code: fr
+    name: French
+    flag: "🇫🇷"
+    path: fr/index.html
 
 origins:
   - { flag: "🇬🇧", name: English }

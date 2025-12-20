@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇫🇷 VERB PASSER — 20 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇫🇷 Verb PASSER</h1>
+            <p class="subtitle">to pass, to spend — 20 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 20 de 20 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Prática de francês — PASSER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇫🇷 Verb PASSER</h2>
+            <div class="tense-explanation">
+                <h4>Présent</h4>
+                <p>Presente - passar</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>passe</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>passes</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>passe</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>passons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>passez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>passent</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Passé Composé</h4>
+                <p>Pretérito perfeito - passou</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>suis passé(e) / ai passé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>es passé(e) / as passé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>est passé(e) / a passé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>sommes passé(e)s / avons passé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>êtes passé(e)(s) / avez passé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>sont passé(e)s / ont passé</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imparfait</h4>
+                <p>Imperfeito - passava</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>passais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>passais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>passait</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>passions</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>passiez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>passaient</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur Simple</h4>
+                <p>Futuro simples - passará</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>passerai</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>passeras</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>passera</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>passerons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>passerez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>passeront</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'fr',
+            labels: { target: 'Français', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["passe","passes","passons","passez","passent","passais","passait","passions","passiez","passaient","passé","passerai","passeras","passera","passerons","passerez","passeront"],
+            phrases: [
+                { pt: "O tempo passa depressa.", fr: "Le temps passe vite.", tense: "Présent" },
+                { pt: "Passei o dia em casa.", fr: "J'ai passé la journée à la maison.", tense: "Passé Composé" },
+                { pt: "Passa-me o sal.", fr: "Passe-moi le sel.", tense: "Présent" },
+                { pt: "Ela fez o exame.", fr: "Elle a passé l'examen.", tense: "Passé Composé" },
+                { pt: "Passo lá amanhã.", fr: "Je passerai demain.", tense: "Futur Simple" },
+                { pt: "O que aconteceu?", fr: "Qu'est-ce qui s'est passé ?", tense: "Passé Composé" },
+                { pt: "Passávamos férias lá.", fr: "Nous passions les vacances là-bas.", tense: "Imparfait" },
+                { pt: "Ele passa todas as manhãs.", fr: "Il passe tous les matins.", tense: "Présent" },
+                { pt: "Passei uma boa noite.", fr: "J'ai passé une bonne soirée.", tense: "Passé Composé" },
+                { pt: "Ela passará no teste.", fr: "Elle passera le test.", tense: "Futur Simple" },
+                { pt: "Vai passar.", fr: "Ça passera.", tense: "Futur Simple" },
+                { pt: "Estava de passagem.", fr: "Je passais par là.", tense: "Imparfait" },
+                { pt: "Passa-me o telefone.", fr: "Passe-moi le téléphone.", tense: "Présent" },
+                { pt: "Passaram a noite aqui.", fr: "Ils ont passé la nuit ici.", tense: "Passé Composé" },
+                { pt: "Como correu?", fr: "Comment ça s'est passé ?", tense: "Passé Composé" },
+                { pt: "Tudo corre bem.", fr: "Tout se passe bien.", tense: "Présent" },
+                { pt: "Passarei uma semana em Paris.", fr: "Je passerai une semaine à Paris.", tense: "Futur Simple" },
+                { pt: "Ele passou à minha frente.", fr: "Il est passé devant moi.", tense: "Passé Composé" },
+                { pt: "Passámos horas a falar.", fr: "Nous avons passé des heures à parler.", tense: "Passé Composé" },
+                { pt: "Deixa passar.", fr: "Laisse passer.", tense: "Présent" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

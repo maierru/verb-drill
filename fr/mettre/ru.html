@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇫🇷 VERB METTRE — 20 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇫🇷 Verb METTRE</h1>
+            <p class="subtitle">to put — 20 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 20 из 20 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика французского — METTRE · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇫🇷 Verb METTRE</h2>
+            <div class="tense-explanation">
+                <h4>Présent</h4>
+                <p>Настоящее время - класть, надевать</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>mets</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>mets</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>met</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>mettons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>mettez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>mettent</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Passé Composé</h4>
+                <p>Прошедшее время - положил, надел</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>ai mis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>as mis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>a mis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>avons mis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>avez mis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>ont mis</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imparfait</h4>
+                <p>Имперфект - клал</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>mettais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>mettais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>mettait</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>mettions</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>mettiez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>mettaient</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur Simple</h4>
+                <p>Будущее время - положит</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>mettrai</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>mettras</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>mettra</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>mettrons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>mettrez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>mettront</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'fr',
+            labels: { target: 'Français', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["mets","met","mettons","mettez","mettent","mettais","mettait","mettions","mettiez","mettaient","mis","mettrai","mettras","mettra","mettrons","mettrez","mettront"],
+            phrases: [
+                { ru: "Я кладу на стол.", fr: "Je le mets sur la table.", tense: "Présent" },
+                { ru: "Надень пальто.", fr: "Mets ton manteau.", tense: "Présent" },
+                { ru: "Она красится.", fr: "Elle se maquille.", tense: "Présent" },
+                { ru: "Я положил ключи сюда.", fr: "J'ai mis les clés ici.", tense: "Passé Composé" },
+                { ru: "Он надел костюм.", fr: "Il a mis un costume.", tense: "Passé Composé" },
+                { ru: "Мы это уберём.", fr: "Nous le rangerons.", tense: "Futur Simple" },
+                { ru: "Куда ты это положил?", fr: "Où l'as-tu mis ?", tense: "Passé Composé" },
+                { ru: "Она наводила порядок.", fr: "Elle mettait de l'ordre.", tense: "Imparfait" },
+                { ru: "Я включаю музыку.", fr: "Je mets de la musique.", tense: "Présent" },
+                { ru: "Они всё положили внутрь.", fr: "Ils ont tout mis à l'intérieur.", tense: "Passé Composé" },
+                { ru: "Положи туда.", fr: "Mets-le là.", tense: "Présent" },
+                { ru: "Это занимает час.", fr: "Ça met une heure.", tense: "Présent" },
+                { ru: "Я носил джинсы.", fr: "Je mettais des jeans.", tense: "Imparfait" },
+                { ru: "Он положил книгу.", fr: "Il a posé le livre.", tense: "Passé Composé" },
+                { ru: "Мы откладываем деньги.", fr: "Nous mettons de l'argent de côté.", tense: "Présent" },
+                { ru: "Она наденет платье.", fr: "Elle mettra une robe.", tense: "Futur Simple" },
+                { ru: "Я кладу сахар в кофе.", fr: "Je mets du sucre dans mon café.", tense: "Présent" },
+                { ru: "Они повесили украшения.", fr: "Ils ont mis des décorations.", tense: "Passé Composé" },
+                { ru: "Поставь себя на моё место.", fr: "Mets-toi à ma place.", tense: "Présent" },
+                { ru: "Я надену что-то тёплое.", fr: "Je mettrai quelque chose de chaud.", tense: "Futur Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

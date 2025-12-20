@@ -11,6 +11,7 @@ Flashcards for mastering verb conjugations. Pick a language you want to learn, t
 - 🇵🇹 [Portuguese (European)](https://verb-drill.cc/pt-eu/)
 - 🇬🇧 [English](https://verb-drill.cc/en/)
 - 🇩🇪 [German](https://verb-drill.cc/de/)
+- 🇫🇷 [French](https://verb-drill.cc/fr/)
 
 More coming.
 

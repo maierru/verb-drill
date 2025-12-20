@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇫🇷 VERB SAVOIR — 20 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇫🇷 Verb SAVOIR</h1>
+            <p class="subtitle">to know — 20 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 20 из 20 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика французского — SAVOIR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇫🇷 Verb SAVOIR</h2>
+            <div class="tense-explanation">
+                <h4>Présent</h4>
+                <p>Настоящее время - знать факты, уметь</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>sais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>sais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>sait</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>savons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>savez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>savent</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Passé Composé</h4>
+                <p>Прошедшее время - узнал</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>ai su</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>as su</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>a su</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>avons su</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>avez su</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>ont su</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imparfait</h4>
+                <p>Имперфект - знал</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>savais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>savais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>savait</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>savions</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>saviez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>savaient</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur Simple</h4>
+                <p>Будущее время - узнает</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>saurai</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>sauras</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>saura</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>saurons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>saurez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>sauront</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'fr',
+            labels: { target: 'Français', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["sais","sait","savons","savez","savent","savais","savait","savions","saviez","savaient","su","saurai","sauras","saura","saurons","saurez","sauront"],
+            phrases: [
+                { ru: "Я знаю.", fr: "Je sais.", tense: "Présent" },
+                { ru: "Я не знаю.", fr: "Je ne sais pas.", tense: "Présent" },
+                { ru: "Ты знаешь ответ?", fr: "Tu sais la réponse ?", tense: "Présent" },
+                { ru: "Она умеет плавать.", fr: "Elle sait nager.", tense: "Présent" },
+                { ru: "Я так и знал!", fr: "Je le savais !", tense: "Imparfait" },
+                { ru: "Мы этого не знали.", fr: "Nous ne savions pas ça.", tense: "Imparfait" },
+                { ru: "Кто знает?", fr: "Qui sait ?", tense: "Présent" },
+                { ru: "Он знал правду.", fr: "Il savait la vérité.", tense: "Imparfait" },
+                { ru: "Я скоро узнаю.", fr: "Je saurai bientôt.", tense: "Futur Simple" },
+                { ru: "Она умеет готовить.", fr: "Elle sait cuisiner.", tense: "Présent" },
+                { ru: "Я об этом не знал.", fr: "Je ne savais pas.", tense: "Imparfait" },
+                { ru: "Ты понимаешь, что я имею в виду.", fr: "Tu sais ce que je veux dire.", tense: "Présent" },
+                { ru: "Они ничего не знали.", fr: "Ils ne savaient rien.", tense: "Imparfait" },
+                { ru: "Насколько я знаю.", fr: "Autant que je sache.", tense: "Présent" },
+                { ru: "Я всегда это знал.", fr: "Je l'ai toujours su.", tense: "Passé Composé" },
+                { ru: "Ты знаешь, который час?", fr: "Tu sais quelle heure il est ?", tense: "Présent" },
+                { ru: "Никто не знал.", fr: "Personne ne savait.", tense: "Imparfait" },
+                { ru: "Я хочу знать больше.", fr: "Je veux en savoir plus.", tense: "Présent" },
+                { ru: "Она знала моё имя.", fr: "Elle savait mon nom.", tense: "Imparfait" },
+                { ru: "Никогда не знаешь.", fr: "On ne sait jamais.", tense: "Présent" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

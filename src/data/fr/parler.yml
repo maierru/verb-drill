@@ -1,0 +1,256 @@
+slug: parler
+name: "🇫🇷 Verb PARLER"
+meaning: to speak
+verb_forms:
+  - parle
+  - parles
+  - parlons
+  - parlez
+  - parlent
+  - parlais
+  - parlait
+  - parlions
+  - parliez
+  - parlaient
+  - parlé
+  - parlerai
+  - parleras
+  - parlera
+  - parlerons
+  - parlerez
+  - parleront
+
+conjugation:
+  - tense: Présent
+    explanation:
+      en: "Present tense - speaking, talking"
+      ru: "Настоящее время - говорить"
+      pt: "Presente - falar"
+    forms:
+      je: parle
+      tu: parles
+      il/elle: parle
+      nous: parlons
+      vous: parlez
+      ils/elles: parlent
+  - tense: Passé Composé
+    explanation:
+      en: "Past tense - spoke"
+      ru: "Прошедшее время - говорил"
+      pt: "Pretérito perfeito - falou"
+    forms:
+      je: ai parlé
+      tu: as parlé
+      il/elle: a parlé
+      nous: avons parlé
+      vous: avez parlé
+      ils/elles: ont parlé
+  - tense: Imparfait
+    explanation:
+      en: "Imperfect - was speaking, used to speak"
+      ru: "Имперфект - говорил"
+      pt: "Imperfeito - falava"
+    forms:
+      je: parlais
+      tu: parlais
+      il/elle: parlait
+      nous: parlions
+      vous: parliez
+      ils/elles: parlaient
+  - tense: Futur Simple
+    explanation:
+      en: "Future - will speak"
+      ru: "Будущее время - будет говорить"
+      pt: "Futuro simples - falará"
+    forms:
+      je: parlerai
+      tu: parleras
+      il/elle: parlera
+      nous: parlerons
+      vous: parlerez
+      ils/elles: parleront
+
+phrases:
+  en:
+    - en: "I speak French."
+      fr: "Je parle français."
+      tense: "Présent"
+    - en: "Do you speak English?"
+      fr: "Parlez-vous anglais ?"
+      tense: "Présent"
+    - en: "She speaks three languages."
+      fr: "Elle parle trois langues."
+      tense: "Présent"
+    - en: "We spoke yesterday."
+      fr: "Nous avons parlé hier."
+      tense: "Passé Composé"
+    - en: "He talks too much."
+      fr: "Il parle trop."
+      tense: "Présent"
+    - en: "I will speak to him."
+      fr: "Je lui parlerai."
+      tense: "Futur Simple"
+    - en: "They were talking about you."
+      fr: "Ils parlaient de toi."
+      tense: "Imparfait"
+    - en: "Can I speak with you?"
+      fr: "Je peux te parler ?"
+      tense: "Présent"
+    - en: "She spoke to me."
+      fr: "Elle m'a parlé."
+      tense: "Passé Composé"
+    - en: "We don't talk anymore."
+      fr: "On ne se parle plus."
+      tense: "Présent"
+    - en: "I used to speak Spanish."
+      fr: "Je parlais espagnol."
+      tense: "Imparfait"
+    - en: "Let's talk about it."
+      fr: "Parlons-en."
+      tense: "Présent"
+    - en: "They spoke for hours."
+      fr: "Ils ont parlé pendant des heures."
+      tense: "Passé Composé"
+    - en: "Speaking of which..."
+      fr: "En parlant de ça..."
+      tense: "Présent"
+    - en: "He will speak first."
+      fr: "Il parlera en premier."
+      tense: "Futur Simple"
+    - en: "Don't speak so fast."
+      fr: "Ne parle pas si vite."
+      tense: "Présent"
+    - en: "We talked all night."
+      fr: "Nous avons parlé toute la nuit."
+      tense: "Passé Composé"
+    - en: "She speaks softly."
+      fr: "Elle parle doucement."
+      tense: "Présent"
+    - en: "I was speaking to myself."
+      fr: "Je me parlais."
+      tense: "Imparfait"
+    - en: "We will talk later."
+      fr: "On parlera plus tard."
+      tense: "Futur Simple"
+  ru:
+    - ru: "Я говорю по-французски."
+      fr: "Je parle français."
+      tense: "Présent"
+    - ru: "Вы говорите по-английски?"
+      fr: "Parlez-vous anglais ?"
+      tense: "Présent"
+    - ru: "Она говорит на трёх языках."
+      fr: "Elle parle trois langues."
+      tense: "Présent"
+    - ru: "Мы говорили вчера."
+      fr: "Nous avons parlé hier."
+      tense: "Passé Composé"
+    - ru: "Он слишком много говорит."
+      fr: "Il parle trop."
+      tense: "Présent"
+    - ru: "Я с ним поговорю."
+      fr: "Je lui parlerai."
+      tense: "Futur Simple"
+    - ru: "Они говорили о тебе."
+      fr: "Ils parlaient de toi."
+      tense: "Imparfait"
+    - ru: "Можно с тобой поговорить?"
+      fr: "Je peux te parler ?"
+      tense: "Présent"
+    - ru: "Она со мной говорила."
+      fr: "Elle m'a parlé."
+      tense: "Passé Composé"
+    - ru: "Мы больше не общаемся."
+      fr: "On ne se parle plus."
+      tense: "Présent"
+    - ru: "Я говорил по-испански."
+      fr: "Je parlais espagnol."
+      tense: "Imparfait"
+    - ru: "Давай об этом поговорим."
+      fr: "Parlons-en."
+      tense: "Présent"
+    - ru: "Они говорили часами."
+      fr: "Ils ont parlé pendant des heures."
+      tense: "Passé Composé"
+    - ru: "Кстати об этом..."
+      fr: "En parlant de ça..."
+      tense: "Présent"
+    - ru: "Он выступит первым."
+      fr: "Il parlera en premier."
+      tense: "Futur Simple"
+    - ru: "Не говори так быстро."
+      fr: "Ne parle pas si vite."
+      tense: "Présent"
+    - ru: "Мы говорили всю ночь."
+      fr: "Nous avons parlé toute la nuit."
+      tense: "Passé Composé"
+    - ru: "Она говорит тихо."
+      fr: "Elle parle doucement."
+      tense: "Présent"
+    - ru: "Я говорил сам с собой."
+      fr: "Je me parlais."
+      tense: "Imparfait"
+    - ru: "Поговорим позже."
+      fr: "On parlera plus tard."
+      tense: "Futur Simple"
+  pt:
+    - pt: "Falo francês."
+      fr: "Je parle français."
+      tense: "Présent"
+    - pt: "Fala inglês?"
+      fr: "Parlez-vous anglais ?"
+      tense: "Présent"
+    - pt: "Ela fala três línguas."
+      fr: "Elle parle trois langues."
+      tense: "Présent"
+    - pt: "Falámos ontem."
+      fr: "Nous avons parlé hier."
+      tense: "Passé Composé"
+    - pt: "Ele fala demais."
+      fr: "Il parle trop."
+      tense: "Présent"
+    - pt: "Falarei com ele."
+      fr: "Je lui parlerai."
+      tense: "Futur Simple"
+    - pt: "Falavam de ti."
+      fr: "Ils parlaient de toi."
+      tense: "Imparfait"
+    - pt: "Posso falar contigo?"
+      fr: "Je peux te parler ?"
+      tense: "Présent"
+    - pt: "Ela falou comigo."
+      fr: "Elle m'a parlé."
+      tense: "Passé Composé"
+    - pt: "Já não nos falamos."
+      fr: "On ne se parle plus."
+      tense: "Présent"
+    - pt: "Eu falava espanhol."
+      fr: "Je parlais espagnol."
+      tense: "Imparfait"
+    - pt: "Vamos falar sobre isso."
+      fr: "Parlons-en."
+      tense: "Présent"
+    - pt: "Falaram durante horas."
+      fr: "Ils ont parlé pendant des heures."
+      tense: "Passé Composé"
+    - pt: "Por falar nisso..."
+      fr: "En parlant de ça..."
+      tense: "Présent"
+    - pt: "Ele falará primeiro."
+      fr: "Il parlera en premier."
+      tense: "Futur Simple"
+    - pt: "Não fales tão depressa."
+      fr: "Ne parle pas si vite."
+      tense: "Présent"
+    - pt: "Falámos a noite toda."
+      fr: "Nous avons parlé toute la nuit."
+      tense: "Passé Composé"
+    - pt: "Ela fala baixinho."
+      fr: "Elle parle doucement."
+      tense: "Présent"
+    - pt: "Falava sozinho."
+      fr: "Je me parlais."
+      tense: "Imparfait"
+    - pt: "Falamos depois."
+      fr: "On parlera plus tard."
+      tense: "Futur Simple"

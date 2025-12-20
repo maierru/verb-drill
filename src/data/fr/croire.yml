@@ -1,0 +1,256 @@
+slug: croire
+name: "🇫🇷 Verb CROIRE"
+meaning: to believe
+verb_forms:
+  - crois
+  - croit
+  - croyons
+  - croyez
+  - croient
+  - croyais
+  - croyait
+  - croyions
+  - croyiez
+  - croyaient
+  - cru
+  - croirai
+  - croiras
+  - croira
+  - croirons
+  - croirez
+  - croiront
+
+conjugation:
+  - tense: Présent
+    explanation:
+      en: "Present tense - believing, thinking"
+      ru: "Настоящее время - верить, думать"
+      pt: "Presente - acreditar, crer"
+    forms:
+      je: crois
+      tu: crois
+      il/elle: croit
+      nous: croyons
+      vous: croyez
+      ils/elles: croient
+  - tense: Passé Composé
+    explanation:
+      en: "Past tense - believed"
+      ru: "Прошедшее время - поверил"
+      pt: "Pretérito perfeito - acreditou"
+    forms:
+      je: ai cru
+      tu: as cru
+      il/elle: a cru
+      nous: avons cru
+      vous: avez cru
+      ils/elles: ont cru
+  - tense: Imparfait
+    explanation:
+      en: "Imperfect - was believing, used to believe"
+      ru: "Имперфект - верил"
+      pt: "Imperfeito - acreditava"
+    forms:
+      je: croyais
+      tu: croyais
+      il/elle: croyait
+      nous: croyions
+      vous: croyiez
+      ils/elles: croyaient
+  - tense: Futur Simple
+    explanation:
+      en: "Future - will believe"
+      ru: "Будущее время - поверит"
+      pt: "Futuro simples - acreditará"
+    forms:
+      je: croirai
+      tu: croiras
+      il/elle: croira
+      nous: croirons
+      vous: croirez
+      ils/elles: croiront
+
+phrases:
+  en:
+    - en: "I believe you."
+      fr: "Je te crois."
+      tense: "Présent"
+    - en: "I don't believe it."
+      fr: "Je n'y crois pas."
+      tense: "Présent"
+    - en: "Do you believe in God?"
+      fr: "Tu crois en Dieu ?"
+      tense: "Présent"
+    - en: "She believes everything."
+      fr: "Elle croit tout."
+      tense: "Présent"
+    - en: "I thought it was true."
+      fr: "J'ai cru que c'était vrai."
+      tense: "Passé Composé"
+    - en: "He believed in himself."
+      fr: "Il croyait en lui."
+      tense: "Imparfait"
+    - en: "We believed you."
+      fr: "Nous t'avons cru."
+      tense: "Passé Composé"
+    - en: "You will believe me."
+      fr: "Tu me croiras."
+      tense: "Futur Simple"
+    - en: "I believe so."
+      fr: "Je crois que oui."
+      tense: "Présent"
+    - en: "Nobody believed him."
+      fr: "Personne ne le croyait."
+      tense: "Imparfait"
+    - en: "I couldn't believe it."
+      fr: "Je n'arrivais pas à y croire."
+      tense: "Imparfait"
+    - en: "They believe in miracles."
+      fr: "Ils croient aux miracles."
+      tense: "Présent"
+    - en: "I believed I was right."
+      fr: "Je croyais avoir raison."
+      tense: "Imparfait"
+    - en: "She will never believe that."
+      fr: "Elle ne croira jamais ça."
+      tense: "Futur Simple"
+    - en: "Who would believe it?"
+      fr: "Qui le croirait ?"
+      tense: "Présent"
+    - en: "I used to believe in Santa."
+      fr: "Je croyais au Père Noël."
+      tense: "Imparfait"
+    - en: "He didn't believe me."
+      fr: "Il ne m'a pas cru."
+      tense: "Passé Composé"
+    - en: "You believe what you want."
+      fr: "Tu crois ce que tu veux."
+      tense: "Présent"
+    - en: "I believe in you."
+      fr: "Je crois en toi."
+      tense: "Présent"
+    - en: "They believed the story."
+      fr: "Ils ont cru l'histoire."
+      tense: "Passé Composé"
+  ru:
+    - ru: "Я тебе верю."
+      fr: "Je te crois."
+      tense: "Présent"
+    - ru: "Я в это не верю."
+      fr: "Je n'y crois pas."
+      tense: "Présent"
+    - ru: "Ты веришь в Бога?"
+      fr: "Tu crois en Dieu ?"
+      tense: "Présent"
+    - ru: "Она верит всему."
+      fr: "Elle croit tout."
+      tense: "Présent"
+    - ru: "Я думал, это правда."
+      fr: "J'ai cru que c'était vrai."
+      tense: "Passé Composé"
+    - ru: "Он верил в себя."
+      fr: "Il croyait en lui."
+      tense: "Imparfait"
+    - ru: "Мы тебе поверили."
+      fr: "Nous t'avons cru."
+      tense: "Passé Composé"
+    - ru: "Ты мне поверишь."
+      fr: "Tu me croiras."
+      tense: "Futur Simple"
+    - ru: "Думаю, да."
+      fr: "Je crois que oui."
+      tense: "Présent"
+    - ru: "Никто ему не верил."
+      fr: "Personne ne le croyait."
+      tense: "Imparfait"
+    - ru: "Я не мог поверить."
+      fr: "Je n'arrivais pas à y croire."
+      tense: "Imparfait"
+    - ru: "Они верят в чудеса."
+      fr: "Ils croient aux miracles."
+      tense: "Présent"
+    - ru: "Я думал, что прав."
+      fr: "Je croyais avoir raison."
+      tense: "Imparfait"
+    - ru: "Она никогда в это не поверит."
+      fr: "Elle ne croira jamais ça."
+      tense: "Futur Simple"
+    - ru: "Кто бы поверил?"
+      fr: "Qui le croirait ?"
+      tense: "Présent"
+    - ru: "Я верил в Деда Мороза."
+      fr: "Je croyais au Père Noël."
+      tense: "Imparfait"
+    - ru: "Он мне не поверил."
+      fr: "Il ne m'a pas cru."
+      tense: "Passé Composé"
+    - ru: "Верь во что хочешь."
+      fr: "Tu crois ce que tu veux."
+      tense: "Présent"
+    - ru: "Я верю в тебя."
+      fr: "Je crois en toi."
+      tense: "Présent"
+    - ru: "Они поверили истории."
+      fr: "Ils ont cru l'histoire."
+      tense: "Passé Composé"
+  pt:
+    - pt: "Acredito em ti."
+      fr: "Je te crois."
+      tense: "Présent"
+    - pt: "Não acredito nisso."
+      fr: "Je n'y crois pas."
+      tense: "Présent"
+    - pt: "Acreditas em Deus?"
+      fr: "Tu crois en Dieu ?"
+      tense: "Présent"
+    - pt: "Ela acredita em tudo."
+      fr: "Elle croit tout."
+      tense: "Présent"
+    - pt: "Pensei que era verdade."
+      fr: "J'ai cru que c'était vrai."
+      tense: "Passé Composé"
+    - pt: "Ele acreditava em si."
+      fr: "Il croyait en lui."
+      tense: "Imparfait"
+    - pt: "Acreditámos em ti."
+      fr: "Nous t'avons cru."
+      tense: "Passé Composé"
+    - pt: "Vais acreditar em mim."
+      fr: "Tu me croiras."
+      tense: "Futur Simple"
+    - pt: "Acho que sim."
+      fr: "Je crois que oui."
+      tense: "Présent"
+    - pt: "Ninguém acreditava nele."
+      fr: "Personne ne le croyait."
+      tense: "Imparfait"
+    - pt: "Não conseguia acreditar."
+      fr: "Je n'arrivais pas à y croire."
+      tense: "Imparfait"
+    - pt: "Acreditam em milagres."
+      fr: "Ils croient aux miracles."
+      tense: "Présent"
+    - pt: "Achava que tinha razão."
+      fr: "Je croyais avoir raison."
+      tense: "Imparfait"
+    - pt: "Ela nunca acreditará nisso."
+      fr: "Elle ne croira jamais ça."
+      tense: "Futur Simple"
+    - pt: "Quem acreditaria?"
+      fr: "Qui le croirait ?"
+      tense: "Présent"
+    - pt: "Acreditava no Pai Natal."
+      fr: "Je croyais au Père Noël."
+      tense: "Imparfait"
+    - pt: "Ele não acreditou em mim."
+      fr: "Il ne m'a pas cru."
+      tense: "Passé Composé"
+    - pt: "Acreditas no que queres."
+      fr: "Tu crois ce que tu veux."
+      tense: "Présent"
+    - pt: "Acredito em ti."
+      fr: "Je crois en toi."
+      tense: "Présent"
+    - pt: "Acreditaram na história."
+      fr: "Ils ont cru l'histoire."
+      tense: "Passé Composé"

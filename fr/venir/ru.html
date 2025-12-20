@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇫🇷 VERB VENIR — 20 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇫🇷 Verb VENIR</h1>
+            <p class="subtitle">to come — 20 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 20 из 20 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика французского — VENIR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇫🇷 Verb VENIR</h2>
+            <div class="tense-explanation">
+                <h4>Présent</h4>
+                <p>Настоящее время - приходить</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>viens</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>viens</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>vient</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>venons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>venez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>viennent</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Passé Composé</h4>
+                <p>Прошедшее время - пришёл</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>suis venu(e)</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>es venu(e)</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>est venu(e)</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>sommes venu(e)s</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>êtes venu(e)(s)</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>sont venu(e)s</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imparfait</h4>
+                <p>Имперфект - приходил</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>venais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>venais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>venait</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>venions</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>veniez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>venaient</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur Simple</h4>
+                <p>Будущее время - придёт</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>viendrai</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>viendras</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>viendra</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>viendrons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>viendrez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>viendront</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'fr',
+            labels: { target: 'Français', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["viens","vient","venons","venez","viennent","venais","venait","venions","veniez","venaient","venu","viendrai","viendras","viendra","viendrons","viendrez","viendront"],
+            phrases: [
+                { ru: "Иду!", fr: "J'arrive !", tense: "Présent" },
+                { ru: "Ты идёшь?", fr: "Tu viens ?", tense: "Présent" },
+                { ru: "Она из Франции.", fr: "Elle vient de France.", tense: "Présent" },
+                { ru: "Мы часто сюда приходим.", fr: "Nous venons ici souvent.", tense: "Présent" },
+                { ru: "Он приходил вчера.", fr: "Il est venu hier.", tense: "Passé Composé" },
+                { ru: "Они пришли нас навестить.", fr: "Ils sont venus nous voir.", tense: "Passé Composé" },
+                { ru: "Я только что приехал.", fr: "Je viens d'arriver.", tense: "Présent" },
+                { ru: "Ты придёшь завтра?", fr: "Tu viendras demain ?", tense: "Futur Simple" },
+                { ru: "Она пришла поздно.", fr: "Elle est venue en retard.", tense: "Passé Composé" },
+                { ru: "Откуда ты?", fr: "D'où viens-tu ?", tense: "Présent" },
+                { ru: "Я шёл тебе сказать.", fr: "Je venais te dire.", tense: "Imparfait" },
+                { ru: "Они придут на следующей неделе.", fr: "Ils viendront la semaine prochaine.", tense: "Futur Simple" },
+                { ru: "Пойдём со мной!", fr: "Viens avec moi !", tense: "Présent" },
+                { ru: "Он приходил каждый день.", fr: "Il venait tous les jours.", tense: "Imparfait" },
+                { ru: "Я пришёл не один.", fr: "Je ne suis pas venu seul.", tense: "Passé Composé" },
+                { ru: "Пришло время.", fr: "Le moment est venu.", tense: "Passé Composé" },
+                { ru: "Она вернётся.", fr: "Elle reviendra.", tense: "Futur Simple" },
+                { ru: "Мы приехали на поезде.", fr: "Nous sommes venus en train.", tense: "Passé Composé" },
+                { ru: "Иду сейчас.", fr: "Je viens tout de suite.", tense: "Présent" },
+                { ru: "Никто не пришёл.", fr: "Personne n'est venu.", tense: "Passé Composé" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

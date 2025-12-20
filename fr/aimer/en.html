@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇫🇷 VERB AIMER — 20 Phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Back to verb list</a>
+            <h1>🇫🇷 Verb AIMER</h1>
+            <p class="subtitle">to love, to like — 20 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Show all translations</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
+        </div>
+
+        <div class="stats" id="stats">Showing: 20 of 20 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            French Practice — AIMER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇫🇷 Verb AIMER</h2>
+            <div class="tense-explanation">
+                <h4>Présent</h4>
+                <p>Present tense - loving, liking</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>aime</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>aimes</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>aime</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>aimons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>aimez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>aiment</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Passé Composé</h4>
+                <p>Past tense - loved, liked</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>ai aimé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>as aimé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>a aimé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>avons aimé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>avez aimé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>ont aimé</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imparfait</h4>
+                <p>Imperfect - was loving, used to love</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>aimais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>aimais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>aimait</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>aimions</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>aimiez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>aimaient</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur Simple</h4>
+                <p>Future - will love</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>aimerai</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>aimeras</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>aimera</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>aimerons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>aimerez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>aimeront</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'en',
+            targetKey: 'fr',
+            labels: { target: 'French', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["aime","aimes","aimons","aimez","aiment","aimais","aimait","aimions","aimiez","aimaient","aimé","aimerai","aimeras","aimera","aimerons","aimerez","aimeront"],
+            phrases: [
+                { en: "I love you.", fr: "Je t'aime.", tense: "Présent" },
+                { en: "I like coffee.", fr: "J'aime le café.", tense: "Présent" },
+                { en: "She loves music.", fr: "Elle aime la musique.", tense: "Présent" },
+                { en: "Do you like it?", fr: "Tu aimes ?", tense: "Présent" },
+                { en: "I loved that movie.", fr: "J'ai aimé ce film.", tense: "Passé Composé" },
+                { en: "He used to love her.", fr: "Il l'aimait.", tense: "Imparfait" },
+                { en: "We like to travel.", fr: "Nous aimons voyager.", tense: "Présent" },
+                { en: "I would like a tea.", fr: "J'aimerais un thé.", tense: "Présent" },
+                { en: "They love each other.", fr: "Ils s'aiment.", tense: "Présent" },
+                { en: "I didn't like that.", fr: "Je n'ai pas aimé ça.", tense: "Passé Composé" },
+                { en: "She loves to dance.", fr: "Elle aime danser.", tense: "Présent" },
+                { en: "I used to like it.", fr: "J'aimais ça.", tense: "Imparfait" },
+                { en: "You will love Paris.", fr: "Tu aimeras Paris.", tense: "Futur Simple" },
+                { en: "I love this place.", fr: "J'adore cet endroit.", tense: "Présent" },
+                { en: "Do you like chocolate?", fr: "Tu aimes le chocolat ?", tense: "Présent" },
+                { en: "He loved his job.", fr: "Il aimait son travail.", tense: "Imparfait" },
+                { en: "We loved the show.", fr: "Nous avons aimé le spectacle.", tense: "Passé Composé" },
+                { en: "I will always love you.", fr: "Je t'aimerai toujours.", tense: "Futur Simple" },
+                { en: "She likes reading.", fr: "Elle aime lire.", tense: "Présent" },
+                { en: "I don't like Mondays.", fr: "Je n'aime pas les lundis.", tense: "Présent" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

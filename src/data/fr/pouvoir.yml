@@ -1,0 +1,256 @@
+slug: pouvoir
+name: "🇫🇷 Verb POUVOIR"
+meaning: can, to be able to
+verb_forms:
+  - peux
+  - peut
+  - pouvons
+  - pouvez
+  - peuvent
+  - pouvais
+  - pouvait
+  - pouvions
+  - pouviez
+  - pouvaient
+  - pu
+  - pourrai
+  - pourras
+  - pourra
+  - pourrons
+  - pourrez
+  - pourront
+
+conjugation:
+  - tense: Présent
+    explanation:
+      en: "Present tense - ability, possibility, permission"
+      ru: "Настоящее время - способность, возможность"
+      pt: "Presente - capacidade, possibilidade"
+    forms:
+      je: peux
+      tu: peux
+      il/elle: peut
+      nous: pouvons
+      vous: pouvez
+      ils/elles: peuvent
+  - tense: Passé Composé
+    explanation:
+      en: "Past tense - was able to, could"
+      ru: "Прошедшее время - смог"
+      pt: "Pretérito perfeito - conseguiu"
+    forms:
+      je: ai pu
+      tu: as pu
+      il/elle: a pu
+      nous: avons pu
+      vous: avez pu
+      ils/elles: ont pu
+  - tense: Imparfait
+    explanation:
+      en: "Imperfect - could, was able to"
+      ru: "Имперфект - мог"
+      pt: "Imperfeito - podia"
+    forms:
+      je: pouvais
+      tu: pouvais
+      il/elle: pouvait
+      nous: pouvions
+      vous: pouviez
+      ils/elles: pouvaient
+  - tense: Futur Simple
+    explanation:
+      en: "Future - will be able to"
+      ru: "Будущее время - сможет"
+      pt: "Futuro simples - poderá"
+    forms:
+      je: pourrai
+      tu: pourras
+      il/elle: pourra
+      nous: pourrons
+      vous: pourrez
+      ils/elles: pourront
+
+phrases:
+  en:
+    - en: "I can speak French."
+      fr: "Je peux parler français."
+      tense: "Présent"
+    - en: "Can you help me?"
+      fr: "Peux-tu m'aider ?"
+      tense: "Présent"
+    - en: "She can swim very well."
+      fr: "Elle sait très bien nager."
+      tense: "Présent"
+    - en: "We can come tomorrow."
+      fr: "Nous pouvons venir demain."
+      tense: "Présent"
+    - en: "I couldn't sleep."
+      fr: "Je n'ai pas pu dormir."
+      tense: "Passé Composé"
+    - en: "Can I ask a question?"
+      fr: "Puis-je poser une question ?"
+      tense: "Présent"
+    - en: "They can do it themselves."
+      fr: "Ils peuvent le faire eux-mêmes."
+      tense: "Présent"
+    - en: "I will be able to come."
+      fr: "Je pourrai venir."
+      tense: "Futur Simple"
+    - en: "You can stay here."
+      fr: "Tu peux rester ici."
+      tense: "Présent"
+    - en: "We couldn't find it."
+      fr: "Nous n'avons pas pu le trouver."
+      tense: "Passé Composé"
+    - en: "Can you see that?"
+      fr: "Tu peux voir ça ?"
+      tense: "Présent"
+    - en: "She couldn't understand."
+      fr: "Elle ne pouvait pas comprendre."
+      tense: "Imparfait"
+    - en: "I can drive."
+      fr: "Je sais conduire."
+      tense: "Présent"
+    - en: "Could you repeat that?"
+      fr: "Pourriez-vous répéter ?"
+      tense: "Présent"
+    - en: "We can try again."
+      fr: "Nous pouvons réessayer."
+      tense: "Présent"
+    - en: "I could hear everything."
+      fr: "Je pouvais tout entendre."
+      tense: "Imparfait"
+    - en: "Can I use your phone?"
+      fr: "Puis-je utiliser ton téléphone ?"
+      tense: "Présent"
+    - en: "They couldn't come."
+      fr: "Ils n'ont pas pu venir."
+      tense: "Passé Composé"
+    - en: "You will be able to see."
+      fr: "Tu pourras voir."
+      tense: "Futur Simple"
+    - en: "I can't do that."
+      fr: "Je ne peux pas faire ça."
+      tense: "Présent"
+  ru:
+    - ru: "Я могу говорить по-французски."
+      fr: "Je peux parler français."
+      tense: "Présent"
+    - ru: "Можешь мне помочь?"
+      fr: "Peux-tu m'aider ?"
+      tense: "Présent"
+    - ru: "Она умеет очень хорошо плавать."
+      fr: "Elle sait très bien nager."
+      tense: "Présent"
+    - ru: "Мы можем прийти завтра."
+      fr: "Nous pouvons venir demain."
+      tense: "Présent"
+    - ru: "Я не мог уснуть."
+      fr: "Je n'ai pas pu dormir."
+      tense: "Passé Composé"
+    - ru: "Можно задать вопрос?"
+      fr: "Puis-je poser une question ?"
+      tense: "Présent"
+    - ru: "Они могут сделать это сами."
+      fr: "Ils peuvent le faire eux-mêmes."
+      tense: "Présent"
+    - ru: "Я смогу прийти."
+      fr: "Je pourrai venir."
+      tense: "Futur Simple"
+    - ru: "Ты можешь остаться здесь."
+      fr: "Tu peux rester ici."
+      tense: "Présent"
+    - ru: "Мы не смогли это найти."
+      fr: "Nous n'avons pas pu le trouver."
+      tense: "Passé Composé"
+    - ru: "Ты видишь это?"
+      fr: "Tu peux voir ça ?"
+      tense: "Présent"
+    - ru: "Она не могла понять."
+      fr: "Elle ne pouvait pas comprendre."
+      tense: "Imparfait"
+    - ru: "Я умею водить."
+      fr: "Je sais conduire."
+      tense: "Présent"
+    - ru: "Не могли бы вы повторить?"
+      fr: "Pourriez-vous répéter ?"
+      tense: "Présent"
+    - ru: "Мы можем попробовать ещё раз."
+      fr: "Nous pouvons réessayer."
+      tense: "Présent"
+    - ru: "Я мог всё слышать."
+      fr: "Je pouvais tout entendre."
+      tense: "Imparfait"
+    - ru: "Можно воспользоваться твоим телефоном?"
+      fr: "Puis-je utiliser ton téléphone ?"
+      tense: "Présent"
+    - ru: "Они не смогли прийти."
+      fr: "Ils n'ont pas pu venir."
+      tense: "Passé Composé"
+    - ru: "Ты сможешь увидеть."
+      fr: "Tu pourras voir."
+      tense: "Futur Simple"
+    - ru: "Я не могу этого сделать."
+      fr: "Je ne peux pas faire ça."
+      tense: "Présent"
+  pt:
+    - pt: "Sei falar francês."
+      fr: "Je peux parler français."
+      tense: "Présent"
+    - pt: "Podes ajudar-me?"
+      fr: "Peux-tu m'aider ?"
+      tense: "Présent"
+    - pt: "Ela sabe nadar muito bem."
+      fr: "Elle sait très bien nager."
+      tense: "Présent"
+    - pt: "Podemos vir amanhã."
+      fr: "Nous pouvons venir demain."
+      tense: "Présent"
+    - pt: "Não consegui dormir."
+      fr: "Je n'ai pas pu dormir."
+      tense: "Passé Composé"
+    - pt: "Posso fazer uma pergunta?"
+      fr: "Puis-je poser une question ?"
+      tense: "Présent"
+    - pt: "Eles podem fazê-lo sozinhos."
+      fr: "Ils peuvent le faire eux-mêmes."
+      tense: "Présent"
+    - pt: "Poderei vir."
+      fr: "Je pourrai venir."
+      tense: "Futur Simple"
+    - pt: "Podes ficar aqui."
+      fr: "Tu peux rester ici."
+      tense: "Présent"
+    - pt: "Não conseguimos encontrá-lo."
+      fr: "Nous n'avons pas pu le trouver."
+      tense: "Passé Composé"
+    - pt: "Consegues ver isso?"
+      fr: "Tu peux voir ça ?"
+      tense: "Présent"
+    - pt: "Ela não conseguia perceber."
+      fr: "Elle ne pouvait pas comprendre."
+      tense: "Imparfait"
+    - pt: "Sei conduzir."
+      fr: "Je sais conduire."
+      tense: "Présent"
+    - pt: "Poderia repetir?"
+      fr: "Pourriez-vous répéter ?"
+      tense: "Présent"
+    - pt: "Podemos tentar outra vez."
+      fr: "Nous pouvons réessayer."
+      tense: "Présent"
+    - pt: "Conseguia ouvir tudo."
+      fr: "Je pouvais tout entendre."
+      tense: "Imparfait"
+    - pt: "Posso usar o teu telefone?"
+      fr: "Puis-je utiliser ton téléphone ?"
+      tense: "Présent"
+    - pt: "Eles não puderam vir."
+      fr: "Ils n'ont pas pu venir."
+      tense: "Passé Composé"
+    - pt: "Poderás ver."
+      fr: "Tu pourras voir."
+      tense: "Futur Simple"
+    - pt: "Não posso fazer isso."
+      fr: "Je ne peux pas faire ça."
+      tense: "Présent"

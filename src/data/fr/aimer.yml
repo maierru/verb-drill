@@ -1,0 +1,256 @@
+slug: aimer
+name: "🇫🇷 Verb AIMER"
+meaning: to love, to like
+verb_forms:
+  - aime
+  - aimes
+  - aimons
+  - aimez
+  - aiment
+  - aimais
+  - aimait
+  - aimions
+  - aimiez
+  - aimaient
+  - aimé
+  - aimerai
+  - aimeras
+  - aimera
+  - aimerons
+  - aimerez
+  - aimeront
+
+conjugation:
+  - tense: Présent
+    explanation:
+      en: "Present tense - loving, liking"
+      ru: "Настоящее время - любить, нравиться"
+      pt: "Presente - amar, gostar"
+    forms:
+      je: aime
+      tu: aimes
+      il/elle: aime
+      nous: aimons
+      vous: aimez
+      ils/elles: aiment
+  - tense: Passé Composé
+    explanation:
+      en: "Past tense - loved, liked"
+      ru: "Прошедшее время - полюбил"
+      pt: "Pretérito perfeito - amou, gostou"
+    forms:
+      je: ai aimé
+      tu: as aimé
+      il/elle: a aimé
+      nous: avons aimé
+      vous: avez aimé
+      ils/elles: ont aimé
+  - tense: Imparfait
+    explanation:
+      en: "Imperfect - was loving, used to love"
+      ru: "Имперфект - любил"
+      pt: "Imperfeito - amava, gostava"
+    forms:
+      je: aimais
+      tu: aimais
+      il/elle: aimait
+      nous: aimions
+      vous: aimiez
+      ils/elles: aimaient
+  - tense: Futur Simple
+    explanation:
+      en: "Future - will love"
+      ru: "Будущее время - полюбит"
+      pt: "Futuro simples - amará"
+    forms:
+      je: aimerai
+      tu: aimeras
+      il/elle: aimera
+      nous: aimerons
+      vous: aimerez
+      ils/elles: aimeront
+
+phrases:
+  en:
+    - en: "I love you."
+      fr: "Je t'aime."
+      tense: "Présent"
+    - en: "I like coffee."
+      fr: "J'aime le café."
+      tense: "Présent"
+    - en: "She loves music."
+      fr: "Elle aime la musique."
+      tense: "Présent"
+    - en: "Do you like it?"
+      fr: "Tu aimes ?"
+      tense: "Présent"
+    - en: "I loved that movie."
+      fr: "J'ai aimé ce film."
+      tense: "Passé Composé"
+    - en: "He used to love her."
+      fr: "Il l'aimait."
+      tense: "Imparfait"
+    - en: "We like to travel."
+      fr: "Nous aimons voyager."
+      tense: "Présent"
+    - en: "I would like a tea."
+      fr: "J'aimerais un thé."
+      tense: "Présent"
+    - en: "They love each other."
+      fr: "Ils s'aiment."
+      tense: "Présent"
+    - en: "I didn't like that."
+      fr: "Je n'ai pas aimé ça."
+      tense: "Passé Composé"
+    - en: "She loves to dance."
+      fr: "Elle aime danser."
+      tense: "Présent"
+    - en: "I used to like it."
+      fr: "J'aimais ça."
+      tense: "Imparfait"
+    - en: "You will love Paris."
+      fr: "Tu aimeras Paris."
+      tense: "Futur Simple"
+    - en: "I love this place."
+      fr: "J'adore cet endroit."
+      tense: "Présent"
+    - en: "Do you like chocolate?"
+      fr: "Tu aimes le chocolat ?"
+      tense: "Présent"
+    - en: "He loved his job."
+      fr: "Il aimait son travail."
+      tense: "Imparfait"
+    - en: "We loved the show."
+      fr: "Nous avons aimé le spectacle."
+      tense: "Passé Composé"
+    - en: "I will always love you."
+      fr: "Je t'aimerai toujours."
+      tense: "Futur Simple"
+    - en: "She likes reading."
+      fr: "Elle aime lire."
+      tense: "Présent"
+    - en: "I don't like Mondays."
+      fr: "Je n'aime pas les lundis."
+      tense: "Présent"
+  ru:
+    - ru: "Я тебя люблю."
+      fr: "Je t'aime."
+      tense: "Présent"
+    - ru: "Я люблю кофе."
+      fr: "J'aime le café."
+      tense: "Présent"
+    - ru: "Она любит музыку."
+      fr: "Elle aime la musique."
+      tense: "Présent"
+    - ru: "Тебе нравится?"
+      fr: "Tu aimes ?"
+      tense: "Présent"
+    - ru: "Мне понравился этот фильм."
+      fr: "J'ai aimé ce film."
+      tense: "Passé Composé"
+    - ru: "Он её любил."
+      fr: "Il l'aimait."
+      tense: "Imparfait"
+    - ru: "Мы любим путешествовать."
+      fr: "Nous aimons voyager."
+      tense: "Présent"
+    - ru: "Я бы хотел чай."
+      fr: "J'aimerais un thé."
+      tense: "Présent"
+    - ru: "Они любят друг друга."
+      fr: "Ils s'aiment."
+      tense: "Présent"
+    - ru: "Мне это не понравилось."
+      fr: "Je n'ai pas aimé ça."
+      tense: "Passé Composé"
+    - ru: "Она любит танцевать."
+      fr: "Elle aime danser."
+      tense: "Présent"
+    - ru: "Мне это нравилось."
+      fr: "J'aimais ça."
+      tense: "Imparfait"
+    - ru: "Тебе понравится Париж."
+      fr: "Tu aimeras Paris."
+      tense: "Futur Simple"
+    - ru: "Обожаю это место."
+      fr: "J'adore cet endroit."
+      tense: "Présent"
+    - ru: "Ты любишь шоколад?"
+      fr: "Tu aimes le chocolat ?"
+      tense: "Présent"
+    - ru: "Он любил свою работу."
+      fr: "Il aimait son travail."
+      tense: "Imparfait"
+    - ru: "Нам понравилось шоу."
+      fr: "Nous avons aimé le spectacle."
+      tense: "Passé Composé"
+    - ru: "Я всегда буду тебя любить."
+      fr: "Je t'aimerai toujours."
+      tense: "Futur Simple"
+    - ru: "Она любит читать."
+      fr: "Elle aime lire."
+      tense: "Présent"
+    - ru: "Не люблю понедельники."
+      fr: "Je n'aime pas les lundis."
+      tense: "Présent"
+  pt:
+    - pt: "Amo-te."
+      fr: "Je t'aime."
+      tense: "Présent"
+    - pt: "Gosto de café."
+      fr: "J'aime le café."
+      tense: "Présent"
+    - pt: "Ela adora música."
+      fr: "Elle aime la musique."
+      tense: "Présent"
+    - pt: "Gostas?"
+      fr: "Tu aimes ?"
+      tense: "Présent"
+    - pt: "Gostei desse filme."
+      fr: "J'ai aimé ce film."
+      tense: "Passé Composé"
+    - pt: "Ele amava-a."
+      fr: "Il l'aimait."
+      tense: "Imparfait"
+    - pt: "Gostamos de viajar."
+      fr: "Nous aimons voyager."
+      tense: "Présent"
+    - pt: "Queria um chá."
+      fr: "J'aimerais un thé."
+      tense: "Présent"
+    - pt: "Eles amam-se."
+      fr: "Ils s'aiment."
+      tense: "Présent"
+    - pt: "Não gostei disso."
+      fr: "Je n'ai pas aimé ça."
+      tense: "Passé Composé"
+    - pt: "Ela adora dançar."
+      fr: "Elle aime danser."
+      tense: "Présent"
+    - pt: "Eu gostava disso."
+      fr: "J'aimais ça."
+      tense: "Imparfait"
+    - pt: "Vais adorar Paris."
+      fr: "Tu aimeras Paris."
+      tense: "Futur Simple"
+    - pt: "Adoro este lugar."
+      fr: "J'adore cet endroit."
+      tense: "Présent"
+    - pt: "Gostas de chocolate?"
+      fr: "Tu aimes le chocolat ?"
+      tense: "Présent"
+    - pt: "Ele gostava do trabalho."
+      fr: "Il aimait son travail."
+      tense: "Imparfait"
+    - pt: "Gostámos do espetáculo."
+      fr: "Nous avons aimé le spectacle."
+      tense: "Passé Composé"
+    - pt: "Amarei-te para sempre."
+      fr: "Je t'aimerai toujours."
+      tense: "Futur Simple"
+    - pt: "Ela gosta de ler."
+      fr: "Elle aime lire."
+      tense: "Présent"
+    - pt: "Não gosto de segundas."
+      fr: "Je n'aime pas les lundis."
+      tense: "Présent"

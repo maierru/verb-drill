@@ -1,0 +1,256 @@
+slug: savoir
+name: "🇫🇷 Verb SAVOIR"
+meaning: to know
+verb_forms:
+  - sais
+  - sait
+  - savons
+  - savez
+  - savent
+  - savais
+  - savait
+  - savions
+  - saviez
+  - savaient
+  - su
+  - saurai
+  - sauras
+  - saura
+  - saurons
+  - saurez
+  - sauront
+
+conjugation:
+  - tense: Présent
+    explanation:
+      en: "Present tense - knowing facts, how to"
+      ru: "Настоящее время - знать факты, уметь"
+      pt: "Presente - saber factos, saber fazer"
+    forms:
+      je: sais
+      tu: sais
+      il/elle: sait
+      nous: savons
+      vous: savez
+      ils/elles: savent
+  - tense: Passé Composé
+    explanation:
+      en: "Past tense - found out, learned"
+      ru: "Прошедшее время - узнал"
+      pt: "Pretérito perfeito - soube"
+    forms:
+      je: ai su
+      tu: as su
+      il/elle: a su
+      nous: avons su
+      vous: avez su
+      ils/elles: ont su
+  - tense: Imparfait
+    explanation:
+      en: "Imperfect - knew, used to know"
+      ru: "Имперфект - знал"
+      pt: "Imperfeito - sabia"
+    forms:
+      je: savais
+      tu: savais
+      il/elle: savait
+      nous: savions
+      vous: saviez
+      ils/elles: savaient
+  - tense: Futur Simple
+    explanation:
+      en: "Future - will know"
+      ru: "Будущее время - узнает"
+      pt: "Futuro simples - saberá"
+    forms:
+      je: saurai
+      tu: sauras
+      il/elle: saura
+      nous: saurons
+      vous: saurez
+      ils/elles: sauront
+
+phrases:
+  en:
+    - en: "I know."
+      fr: "Je sais."
+      tense: "Présent"
+    - en: "I don't know."
+      fr: "Je ne sais pas."
+      tense: "Présent"
+    - en: "Do you know the answer?"
+      fr: "Tu sais la réponse ?"
+      tense: "Présent"
+    - en: "She knows how to swim."
+      fr: "Elle sait nager."
+      tense: "Présent"
+    - en: "I knew it!"
+      fr: "Je le savais !"
+      tense: "Imparfait"
+    - en: "We didn't know that."
+      fr: "Nous ne savions pas ça."
+      tense: "Imparfait"
+    - en: "Who knows?"
+      fr: "Qui sait ?"
+      tense: "Présent"
+    - en: "He knew the truth."
+      fr: "Il savait la vérité."
+      tense: "Imparfait"
+    - en: "I will know soon."
+      fr: "Je saurai bientôt."
+      tense: "Futur Simple"
+    - en: "She knows how to cook."
+      fr: "Elle sait cuisiner."
+      tense: "Présent"
+    - en: "I didn't know about that."
+      fr: "Je ne savais pas."
+      tense: "Imparfait"
+    - en: "You know what I mean."
+      fr: "Tu sais ce que je veux dire."
+      tense: "Présent"
+    - en: "They knew nothing."
+      fr: "Ils ne savaient rien."
+      tense: "Imparfait"
+    - en: "As far as I know."
+      fr: "Autant que je sache."
+      tense: "Présent"
+    - en: "I have always known."
+      fr: "Je l'ai toujours su."
+      tense: "Passé Composé"
+    - en: "Do you know what time it is?"
+      fr: "Tu sais quelle heure il est ?"
+      tense: "Présent"
+    - en: "Nobody knew."
+      fr: "Personne ne savait."
+      tense: "Imparfait"
+    - en: "I want to know more."
+      fr: "Je veux en savoir plus."
+      tense: "Présent"
+    - en: "She knew my name."
+      fr: "Elle savait mon nom."
+      tense: "Imparfait"
+    - en: "You never know."
+      fr: "On ne sait jamais."
+      tense: "Présent"
+  ru:
+    - ru: "Я знаю."
+      fr: "Je sais."
+      tense: "Présent"
+    - ru: "Я не знаю."
+      fr: "Je ne sais pas."
+      tense: "Présent"
+    - ru: "Ты знаешь ответ?"
+      fr: "Tu sais la réponse ?"
+      tense: "Présent"
+    - ru: "Она умеет плавать."
+      fr: "Elle sait nager."
+      tense: "Présent"
+    - ru: "Я так и знал!"
+      fr: "Je le savais !"
+      tense: "Imparfait"
+    - ru: "Мы этого не знали."
+      fr: "Nous ne savions pas ça."
+      tense: "Imparfait"
+    - ru: "Кто знает?"
+      fr: "Qui sait ?"
+      tense: "Présent"
+    - ru: "Он знал правду."
+      fr: "Il savait la vérité."
+      tense: "Imparfait"
+    - ru: "Я скоро узнаю."
+      fr: "Je saurai bientôt."
+      tense: "Futur Simple"
+    - ru: "Она умеет готовить."
+      fr: "Elle sait cuisiner."
+      tense: "Présent"
+    - ru: "Я об этом не знал."
+      fr: "Je ne savais pas."
+      tense: "Imparfait"
+    - ru: "Ты понимаешь, что я имею в виду."
+      fr: "Tu sais ce que je veux dire."
+      tense: "Présent"
+    - ru: "Они ничего не знали."
+      fr: "Ils ne savaient rien."
+      tense: "Imparfait"
+    - ru: "Насколько я знаю."
+      fr: "Autant que je sache."
+      tense: "Présent"
+    - ru: "Я всегда это знал."
+      fr: "Je l'ai toujours su."
+      tense: "Passé Composé"
+    - ru: "Ты знаешь, который час?"
+      fr: "Tu sais quelle heure il est ?"
+      tense: "Présent"
+    - ru: "Никто не знал."
+      fr: "Personne ne savait."
+      tense: "Imparfait"
+    - ru: "Я хочу знать больше."
+      fr: "Je veux en savoir plus."
+      tense: "Présent"
+    - ru: "Она знала моё имя."
+      fr: "Elle savait mon nom."
+      tense: "Imparfait"
+    - ru: "Никогда не знаешь."
+      fr: "On ne sait jamais."
+      tense: "Présent"
+  pt:
+    - pt: "Eu sei."
+      fr: "Je sais."
+      tense: "Présent"
+    - pt: "Não sei."
+      fr: "Je ne sais pas."
+      tense: "Présent"
+    - pt: "Sabes a resposta?"
+      fr: "Tu sais la réponse ?"
+      tense: "Présent"
+    - pt: "Ela sabe nadar."
+      fr: "Elle sait nager."
+      tense: "Présent"
+    - pt: "Eu sabia!"
+      fr: "Je le savais !"
+      tense: "Imparfait"
+    - pt: "Não sabíamos disso."
+      fr: "Nous ne savions pas ça."
+      tense: "Imparfait"
+    - pt: "Quem sabe?"
+      fr: "Qui sait ?"
+      tense: "Présent"
+    - pt: "Ele sabia a verdade."
+      fr: "Il savait la vérité."
+      tense: "Imparfait"
+    - pt: "Saberei em breve."
+      fr: "Je saurai bientôt."
+      tense: "Futur Simple"
+    - pt: "Ela sabe cozinhar."
+      fr: "Elle sait cuisiner."
+      tense: "Présent"
+    - pt: "Eu não sabia."
+      fr: "Je ne savais pas."
+      tense: "Imparfait"
+    - pt: "Sabes o que quero dizer."
+      fr: "Tu sais ce que je veux dire."
+      tense: "Présent"
+    - pt: "Eles não sabiam nada."
+      fr: "Ils ne savaient rien."
+      tense: "Imparfait"
+    - pt: "Tanto quanto sei."
+      fr: "Autant que je sache."
+      tense: "Présent"
+    - pt: "Sempre soube."
+      fr: "Je l'ai toujours su."
+      tense: "Passé Composé"
+    - pt: "Sabes que horas são?"
+      fr: "Tu sais quelle heure il est ?"
+      tense: "Présent"
+    - pt: "Ninguém sabia."
+      fr: "Personne ne savait."
+      tense: "Imparfait"
+    - pt: "Quero saber mais."
+      fr: "Je veux en savoir plus."
+      tense: "Présent"
+    - pt: "Ela sabia o meu nome."
+      fr: "Elle savait mon nom."
+      tense: "Imparfait"
+    - pt: "Nunca se sabe."
+      fr: "On ne sait jamais."
+      tense: "Présent"

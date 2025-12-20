@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇫🇷 VERB DONNER — 20 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇫🇷 Verb DONNER</h1>
+            <p class="subtitle">to give — 20 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 20 из 20 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика французского — DONNER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇫🇷 Verb DONNER</h2>
+            <div class="tense-explanation">
+                <h4>Présent</h4>
+                <p>Настоящее время - давать</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>donne</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>donnes</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>donne</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>donnons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>donnez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>donnent</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Passé Composé</h4>
+                <p>Прошедшее время - дал</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>ai donné</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>as donné</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>a donné</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>avons donné</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>avez donné</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>ont donné</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imparfait</h4>
+                <p>Имперфект - давал</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>donnais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>donnais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>donnait</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>donnions</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>donniez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>donnaient</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur Simple</h4>
+                <p>Будущее время - даст</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>donnerai</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>donneras</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>donnera</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>donnerons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>donnerez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>donneront</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'fr',
+            labels: { target: 'Français', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["donne","donnes","donnons","donnez","donnent","donnais","donnait","donnions","donniez","donnaient","donné","donnerai","donneras","donnera","donnerons","donnerez","donneront"],
+            phrases: [
+                { ru: "Дай мне руку.", fr: "Donne-moi ta main.", tense: "Présent" },
+                { ru: "Даю слово.", fr: "Je te donne ma parole.", tense: "Présent" },
+                { ru: "Она подарила мне подарок.", fr: "Elle m'a donné un cadeau.", tense: "Passé Composé" },
+                { ru: "Он даёт советы.", fr: "Il donne des conseils.", tense: "Présent" },
+                { ru: "Я дам тебе ответ.", fr: "Je te donnerai la réponse.", tense: "Futur Simple" },
+                { ru: "Мы отдали всё.", fr: "Nous avons tout donné.", tense: "Passé Composé" },
+                { ru: "Дай мне это.", fr: "Donne-le-moi.", tense: "Présent" },
+                { ru: "Она давала уроки.", fr: "Elle donnait des cours.", tense: "Imparfait" },
+                { ru: "Я дал ему шанс.", fr: "Je lui ai donné une chance.", tense: "Passé Composé" },
+                { ru: "Они сдают кровь.", fr: "Ils donnent du sang.", tense: "Présent" },
+                { ru: "И что получается?", fr: "Qu'est-ce que ça donne ?", tense: "Présent" },
+                { ru: "Я верну.", fr: "Je le rendrai.", tense: "Futur Simple" },
+                { ru: "Он отдал жизнь.", fr: "Il a donné sa vie.", tense: "Passé Composé" },
+                { ru: "Приведи пример.", fr: "Donne-moi un exemple.", tense: "Présent" },
+                { ru: "Она произносила речь.", fr: "Elle donnait un discours.", tense: "Imparfait" },
+                { ru: "Я дал ему свой номер.", fr: "Je lui ai donné mon numéro.", tense: "Passé Composé" },
+                { ru: "Это мне даёт идею.", fr: "Ça me donne une idée.", tense: "Présent" },
+                { ru: "Они дадут нам время.", fr: "Ils nous donneront du temps.", tense: "Futur Simple" },
+                { ru: "Оставь меня в покое.", fr: "Laisse-moi tranquille.", tense: "Présent" },
+                { ru: "Я выложился.", fr: "J'ai donné le meilleur de moi.", tense: "Passé Composé" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

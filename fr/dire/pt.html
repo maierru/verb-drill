@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇫🇷 VERB DIRE — 20 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇫🇷 Verb DIRE</h1>
+            <p class="subtitle">to say — 20 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 20 de 20 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Prática de francês — DIRE · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇫🇷 Verb DIRE</h2>
+            <div class="tense-explanation">
+                <h4>Présent</h4>
+                <p>Presente - dizer</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>dis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>dis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>dit</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>disons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>dites</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>disent</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Passé Composé</h4>
+                <p>Pretérito perfeito - disse</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>ai dit</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>as dit</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>a dit</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>avons dit</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>avez dit</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>ont dit</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imparfait</h4>
+                <p>Imperfeito - dizia</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>disais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>disais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>disait</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>disions</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>disiez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>disaient</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur Simple</h4>
+                <p>Futuro simples - dirá</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>dirai</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>diras</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>dira</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>dirons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>direz</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>diront</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'fr',
+            labels: { target: 'Français', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["dis","dit","disons","dites","disent","disais","disait","disions","disiez","disaient","dit","dirai","diras","dira","dirons","direz","diront"],
+            phrases: [
+                { pt: "O que disseste?", fr: "Qu'est-ce que tu as dit ?", tense: "Passé Composé" },
+                { pt: "Eu digo sim.", fr: "Je dis oui.", tense: "Présent" },
+                { pt: "Ela não disse nada.", fr: "Elle n'a rien dit.", tense: "Passé Composé" },
+                { pt: "Dizem que é verdade.", fr: "On dit que c'est vrai.", tense: "Présent" },
+                { pt: "Ele disse-me a verdade.", fr: "Il m'a dit la vérité.", tense: "Passé Composé" },
+                { pt: "O que significa isso?", fr: "Qu'est-ce que ça veut dire ?", tense: "Présent" },
+                { pt: "Dir-te-ei mais tarde.", fr: "Je te dirai plus tard.", tense: "Futur Simple" },
+                { pt: "Ela diz sempre a mesma coisa.", fr: "Elle dit toujours la même chose.", tense: "Présent" },
+                { pt: "Despedi-me.", fr: "J'ai dit au revoir.", tense: "Passé Composé" },
+                { pt: "Diz-me mais.", fr: "Dis-moi plus.", tense: "Présent" },
+                { pt: "Ele disse que estava ocupado.", fr: "Il a dit qu'il était occupé.", tense: "Passé Composé" },
+                { pt: "Não tenho nada a dizer.", fr: "Je n'ai rien à dire.", tense: "Présent" },
+                { pt: "Ela nunca diz obrigado.", fr: "Elle ne dit jamais merci.", tense: "Présent" },
+                { pt: "Disseram que era impossível.", fr: "Ils ont dit que c'était impossible.", tense: "Passé Composé" },
+                { pt: "Direi algumas palavras.", fr: "Je dirai quelques mots.", tense: "Futur Simple" },
+                { pt: "O que significa esta palavra?", fr: "Que veut dire ce mot ?", tense: "Présent" },
+                { pt: "Ela contou-me um segredo.", fr: "Elle m'a dit un secret.", tense: "Passé Composé" },
+                { pt: "Não posso dizer ao certo.", fr: "Je ne peux pas dire avec certitude.", tense: "Présent" },
+                { pt: "Ele disse olá.", fr: "Il a dit bonjour.", tense: "Passé Composé" },
+                { pt: "Ou seja...", fr: "C'est-à-dire...", tense: "Présent" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

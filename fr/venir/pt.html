@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇫🇷 VERB VENIR — 20 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇫🇷 Verb VENIR</h1>
+            <p class="subtitle">to come — 20 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 20 de 20 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Prática de francês — VENIR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇫🇷 Verb VENIR</h2>
+            <div class="tense-explanation">
+                <h4>Présent</h4>
+                <p>Presente - vir</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>viens</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>viens</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>vient</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>venons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>venez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>viennent</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Passé Composé</h4>
+                <p>Pretérito perfeito - veio</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>suis venu(e)</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>es venu(e)</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>est venu(e)</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>sommes venu(e)s</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>êtes venu(e)(s)</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>sont venu(e)s</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imparfait</h4>
+                <p>Imperfeito - vinha</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>venais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>venais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>venait</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>venions</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>veniez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>venaient</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur Simple</h4>
+                <p>Futuro simples - virá</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>viendrai</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>viendras</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>viendra</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>viendrons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>viendrez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>viendront</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'fr',
+            labels: { target: 'Français', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["viens","vient","venons","venez","viennent","venais","venait","venions","veniez","venaient","venu","viendrai","viendras","viendra","viendrons","viendrez","viendront"],
+            phrases: [
+                { pt: "Estou a ir!", fr: "J'arrive !", tense: "Présent" },
+                { pt: "Vens?", fr: "Tu viens ?", tense: "Présent" },
+                { pt: "Ela vem de França.", fr: "Elle vient de France.", tense: "Présent" },
+                { pt: "Vimos aqui frequentemente.", fr: "Nous venons ici souvent.", tense: "Présent" },
+                { pt: "Ele veio ontem.", fr: "Il est venu hier.", tense: "Passé Composé" },
+                { pt: "Vieram ver-nos.", fr: "Ils sont venus nous voir.", tense: "Passé Composé" },
+                { pt: "Acabei de chegar.", fr: "Je viens d'arriver.", tense: "Présent" },
+                { pt: "Vens amanhã?", fr: "Tu viendras demain ?", tense: "Futur Simple" },
+                { pt: "Ela veio atrasada.", fr: "Elle est venue en retard.", tense: "Passé Composé" },
+                { pt: "De onde vens?", fr: "D'où viens-tu ?", tense: "Présent" },
+                { pt: "Vinha dizer-te.", fr: "Je venais te dire.", tense: "Imparfait" },
+                { pt: "Virão na próxima semana.", fr: "Ils viendront la semaine prochaine.", tense: "Futur Simple" },
+                { pt: "Vem comigo!", fr: "Viens avec moi !", tense: "Présent" },
+                { pt: "Ele vinha todos os dias.", fr: "Il venait tous les jours.", tense: "Imparfait" },
+                { pt: "Não vim sozinho.", fr: "Je ne suis pas venu seul.", tense: "Passé Composé" },
+                { pt: "Chegou o momento.", fr: "Le moment est venu.", tense: "Passé Composé" },
+                { pt: "Ela voltará.", fr: "Elle reviendra.", tense: "Futur Simple" },
+                { pt: "Viemos de comboio.", fr: "Nous sommes venus en train.", tense: "Passé Composé" },
+                { pt: "Venho já.", fr: "Je viens tout de suite.", tense: "Présent" },
+                { pt: "Ninguém veio.", fr: "Personne n'est venu.", tense: "Passé Composé" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+slug: faire
+name: "🇫🇷 Verb FAIRE"
+meaning: to do, to make
+verb_forms:
+  - fais
+  - fait
+  - faisons
+  - faites
+  - font
+  - faisais
+  - faisait
+  - faisions
+  - faisiez
+  - faisaient
+  - fait
+  - ferai
+  - feras
+  - fera
+  - ferons
+  - ferez
+  - feront
+
+conjugation:
+  - tense: Présent
+    explanation:
+      en: "Present tense - doing, making, weather"
+      ru: "Настоящее время - делать, погода"
+      pt: "Presente - fazer, tempo"
+    forms:
+      je: fais
+      tu: fais
+      il/elle: fait
+      nous: faisons
+      vous: faites
+      ils/elles: font
+  - tense: Passé Composé
+    explanation:
+      en: "Past tense - did, made"
+      ru: "Прошедшее время - сделал"
+      pt: "Pretérito perfeito - fez"
+    forms:
+      je: ai fait
+      tu: as fait
+      il/elle: a fait
+      nous: avons fait
+      vous: avez fait
+      ils/elles: ont fait
+  - tense: Imparfait
+    explanation:
+      en: "Imperfect - was doing, used to do"
+      ru: "Имперфект - делал (длительно)"
+      pt: "Imperfeito - fazia"
+    forms:
+      je: faisais
+      tu: faisais
+      il/elle: faisait
+      nous: faisions
+      vous: faisiez
+      ils/elles: faisaient
+  - tense: Futur Simple
+    explanation:
+      en: "Future - will do, will make"
+      ru: "Будущее время - сделает"
+      pt: "Futuro simples - fará"
+    forms:
+      je: ferai
+      tu: feras
+      il/elle: fera
+      nous: ferons
+      vous: ferez
+      ils/elles: feront
+
+phrases:
+  en:
+    - en: "What are you doing?"
+      fr: "Qu'est-ce que tu fais ?"
+      tense: "Présent"
+    - en: "I make breakfast."
+      fr: "Je fais le petit-déjeuner."
+      tense: "Présent"
+    - en: "She did her homework."
+      fr: "Elle a fait ses devoirs."
+      tense: "Passé Composé"
+    - en: "We will make a plan."
+      fr: "Nous ferons un plan."
+      tense: "Futur Simple"
+    - en: "It's nice weather."
+      fr: "Il fait beau."
+      tense: "Présent"
+    - en: "He made a mistake."
+      fr: "Il a fait une erreur."
+      tense: "Passé Composé"
+    - en: "I did nothing wrong."
+      fr: "Je n'ai rien fait de mal."
+      tense: "Passé Composé"
+    - en: "What should I do?"
+      fr: "Que dois-je faire ?"
+      tense: "Présent"
+    - en: "She makes coffee."
+      fr: "Elle fait du café."
+      tense: "Présent"
+    - en: "They were making noise."
+      fr: "Ils faisaient du bruit."
+      tense: "Imparfait"
+    - en: "I will do it tomorrow."
+      fr: "Je le ferai demain."
+      tense: "Futur Simple"
+    - en: "He always makes jokes."
+      fr: "Il fait toujours des blagues."
+      tense: "Présent"
+    - en: "We made a decision."
+      fr: "Nous avons pris une décision."
+      tense: "Passé Composé"
+    - en: "It doesn't matter."
+      fr: "Ça ne fait rien."
+      tense: "Présent"
+    - en: "She made dinner."
+      fr: "Elle a fait le dîner."
+      tense: "Passé Composé"
+    - en: "What does he do for a living?"
+      fr: "Que fait-il dans la vie ?"
+      tense: "Présent"
+    - en: "It's cold."
+      fr: "Il fait froid."
+      tense: "Présent"
+    - en: "Let's do something fun."
+      fr: "Faisons quelque chose d'amusant."
+      tense: "Présent"
+    - en: "They will make changes."
+      fr: "Ils feront des changements."
+      tense: "Futur Simple"
+    - en: "How do you make this?"
+      fr: "Comment fait-on ça ?"
+      tense: "Présent"
+  ru:
+    - ru: "Что ты делаешь?"
+      fr: "Qu'est-ce que tu fais ?"
+      tense: "Présent"
+    - ru: "Я готовлю завтрак."
+      fr: "Je fais le petit-déjeuner."
+      tense: "Présent"
+    - ru: "Она сделала домашнее задание."
+      fr: "Elle a fait ses devoirs."
+      tense: "Passé Composé"
+    - ru: "Мы составим план."
+      fr: "Nous ferons un plan."
+      tense: "Futur Simple"
+    - ru: "Хорошая погода."
+      fr: "Il fait beau."
+      tense: "Présent"
+    - ru: "Он совершил ошибку."
+      fr: "Il a fait une erreur."
+      tense: "Passé Composé"
+    - ru: "Я ничего плохого не сделал."
+      fr: "Je n'ai rien fait de mal."
+      tense: "Passé Composé"
+    - ru: "Что мне делать?"
+      fr: "Que dois-je faire ?"
+      tense: "Présent"
+    - ru: "Она готовит кофе."
+      fr: "Elle fait du café."
+      tense: "Présent"
+    - ru: "Они шумели."
+      fr: "Ils faisaient du bruit."
+      tense: "Imparfait"
+    - ru: "Я сделаю это завтра."
+      fr: "Je le ferai demain."
+      tense: "Futur Simple"
+    - ru: "Он всегда шутит."
+      fr: "Il fait toujours des blagues."
+      tense: "Présent"
+    - ru: "Мы приняли решение."
+      fr: "Nous avons pris une décision."
+      tense: "Passé Composé"
+    - ru: "Это не имеет значения."
+      fr: "Ça ne fait rien."
+      tense: "Présent"
+    - ru: "Она приготовила ужин."
+      fr: "Elle a fait le dîner."
+      tense: "Passé Composé"
+    - ru: "Чем он занимается?"
+      fr: "Que fait-il dans la vie ?"
+      tense: "Présent"
+    - ru: "Холодно."
+      fr: "Il fait froid."
+      tense: "Présent"
+    - ru: "Давай сделаем что-нибудь весёлое."
+      fr: "Faisons quelque chose d'amusant."
+      tense: "Présent"
+    - ru: "Они внесут изменения."
+      fr: "Ils feront des changements."
+      tense: "Futur Simple"
+    - ru: "Как это делается?"
+      fr: "Comment fait-on ça ?"
+      tense: "Présent"
+  pt:
+    - pt: "O que estás a fazer?"
+      fr: "Qu'est-ce que tu fais ?"
+      tense: "Présent"
+    - pt: "Faço o pequeno-almoço."
+      fr: "Je fais le petit-déjeuner."
+      tense: "Présent"
+    - pt: "Ela fez os trabalhos de casa."
+      fr: "Elle a fait ses devoirs."
+      tense: "Passé Composé"
+    - pt: "Vamos fazer um plano."
+      fr: "Nous ferons un plan."
+      tense: "Futur Simple"
+    - pt: "Está bom tempo."
+      fr: "Il fait beau."
+      tense: "Présent"
+    - pt: "Ele cometeu um erro."
+      fr: "Il a fait une erreur."
+      tense: "Passé Composé"
+    - pt: "Não fiz nada de errado."
+      fr: "Je n'ai rien fait de mal."
+      tense: "Passé Composé"
+    - pt: "O que devo fazer?"
+      fr: "Que dois-je faire ?"
+      tense: "Présent"
+    - pt: "Ela faz café."
+      fr: "Elle fait du café."
+      tense: "Présent"
+    - pt: "Eles faziam barulho."
+      fr: "Ils faisaient du bruit."
+      tense: "Imparfait"
+    - pt: "Farei amanhã."
+      fr: "Je le ferai demain."
+      tense: "Futur Simple"
+    - pt: "Ele faz sempre piadas."
+      fr: "Il fait toujours des blagues."
+      tense: "Présent"
+    - pt: "Tomámos uma decisão."
+      fr: "Nous avons pris une décision."
+      tense: "Passé Composé"
+    - pt: "Não faz mal."
+      fr: "Ça ne fait rien."
+      tense: "Présent"
+    - pt: "Ela fez o jantar."
+      fr: "Elle a fait le dîner."
+      tense: "Passé Composé"
+    - pt: "O que faz ele profissionalmente?"
+      fr: "Que fait-il dans la vie ?"
+      tense: "Présent"
+    - pt: "Está frio."
+      fr: "Il fait froid."
+      tense: "Présent"
+    - pt: "Vamos fazer algo divertido."
+      fr: "Faisons quelque chose d'amusant."
+      tense: "Présent"
+    - pt: "Eles vão fazer alterações."
+      fr: "Ils feront des changements."
+      tense: "Futur Simple"
+    - pt: "Como se faz isto?"
+      fr: "Comment fait-on ça ?"
+      tense: "Présent"

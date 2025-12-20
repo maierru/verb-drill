@@ -1,0 +1,256 @@
+slug: donner
+name: "🇫🇷 Verb DONNER"
+meaning: to give
+verb_forms:
+  - donne
+  - donnes
+  - donnons
+  - donnez
+  - donnent
+  - donnais
+  - donnait
+  - donnions
+  - donniez
+  - donnaient
+  - donné
+  - donnerai
+  - donneras
+  - donnera
+  - donnerons
+  - donnerez
+  - donneront
+
+conjugation:
+  - tense: Présent
+    explanation:
+      en: "Present tense - giving"
+      ru: "Настоящее время - давать"
+      pt: "Presente - dar"
+    forms:
+      je: donne
+      tu: donnes
+      il/elle: donne
+      nous: donnons
+      vous: donnez
+      ils/elles: donnent
+  - tense: Passé Composé
+    explanation:
+      en: "Past tense - gave"
+      ru: "Прошедшее время - дал"
+      pt: "Pretérito perfeito - deu"
+    forms:
+      je: ai donné
+      tu: as donné
+      il/elle: a donné
+      nous: avons donné
+      vous: avez donné
+      ils/elles: ont donné
+  - tense: Imparfait
+    explanation:
+      en: "Imperfect - was giving, used to give"
+      ru: "Имперфект - давал"
+      pt: "Imperfeito - dava"
+    forms:
+      je: donnais
+      tu: donnais
+      il/elle: donnait
+      nous: donnions
+      vous: donniez
+      ils/elles: donnaient
+  - tense: Futur Simple
+    explanation:
+      en: "Future - will give"
+      ru: "Будущее время - даст"
+      pt: "Futuro simples - dará"
+    forms:
+      je: donnerai
+      tu: donneras
+      il/elle: donnera
+      nous: donnerons
+      vous: donnerez
+      ils/elles: donneront
+
+phrases:
+  en:
+    - en: "Give me your hand."
+      fr: "Donne-moi ta main."
+      tense: "Présent"
+    - en: "I give you my word."
+      fr: "Je te donne ma parole."
+      tense: "Présent"
+    - en: "She gave me a gift."
+      fr: "Elle m'a donné un cadeau."
+      tense: "Passé Composé"
+    - en: "He gives advice."
+      fr: "Il donne des conseils."
+      tense: "Présent"
+    - en: "I will give you the answer."
+      fr: "Je te donnerai la réponse."
+      tense: "Futur Simple"
+    - en: "We gave everything."
+      fr: "Nous avons tout donné."
+      tense: "Passé Composé"
+    - en: "Give it to me."
+      fr: "Donne-le-moi."
+      tense: "Présent"
+    - en: "She used to give lessons."
+      fr: "Elle donnait des cours."
+      tense: "Imparfait"
+    - en: "I gave him a chance."
+      fr: "Je lui ai donné une chance."
+      tense: "Passé Composé"
+    - en: "They give blood."
+      fr: "Ils donnent du sang."
+      tense: "Présent"
+    - en: "What does that give?"
+      fr: "Qu'est-ce que ça donne ?"
+      tense: "Présent"
+    - en: "I will give it back."
+      fr: "Je le rendrai."
+      tense: "Futur Simple"
+    - en: "He gave his life."
+      fr: "Il a donné sa vie."
+      tense: "Passé Composé"
+    - en: "Give me an example."
+      fr: "Donne-moi un exemple."
+      tense: "Présent"
+    - en: "She was giving a speech."
+      fr: "Elle donnait un discours."
+      tense: "Imparfait"
+    - en: "I gave him my number."
+      fr: "Je lui ai donné mon numéro."
+      tense: "Passé Composé"
+    - en: "That gives me an idea."
+      fr: "Ça me donne une idée."
+      tense: "Présent"
+    - en: "They will give us time."
+      fr: "Ils nous donneront du temps."
+      tense: "Futur Simple"
+    - en: "Give me a break."
+      fr: "Laisse-moi tranquille."
+      tense: "Présent"
+    - en: "I gave my best."
+      fr: "J'ai donné le meilleur de moi."
+      tense: "Passé Composé"
+  ru:
+    - ru: "Дай мне руку."
+      fr: "Donne-moi ta main."
+      tense: "Présent"
+    - ru: "Даю слово."
+      fr: "Je te donne ma parole."
+      tense: "Présent"
+    - ru: "Она подарила мне подарок."
+      fr: "Elle m'a donné un cadeau."
+      tense: "Passé Composé"
+    - ru: "Он даёт советы."
+      fr: "Il donne des conseils."
+      tense: "Présent"
+    - ru: "Я дам тебе ответ."
+      fr: "Je te donnerai la réponse."
+      tense: "Futur Simple"
+    - ru: "Мы отдали всё."
+      fr: "Nous avons tout donné."
+      tense: "Passé Composé"
+    - ru: "Дай мне это."
+      fr: "Donne-le-moi."
+      tense: "Présent"
+    - ru: "Она давала уроки."
+      fr: "Elle donnait des cours."
+      tense: "Imparfait"
+    - ru: "Я дал ему шанс."
+      fr: "Je lui ai donné une chance."
+      tense: "Passé Composé"
+    - ru: "Они сдают кровь."
+      fr: "Ils donnent du sang."
+      tense: "Présent"
+    - ru: "И что получается?"
+      fr: "Qu'est-ce que ça donne ?"
+      tense: "Présent"
+    - ru: "Я верну."
+      fr: "Je le rendrai."
+      tense: "Futur Simple"
+    - ru: "Он отдал жизнь."
+      fr: "Il a donné sa vie."
+      tense: "Passé Composé"
+    - ru: "Приведи пример."
+      fr: "Donne-moi un exemple."
+      tense: "Présent"
+    - ru: "Она произносила речь."
+      fr: "Elle donnait un discours."
+      tense: "Imparfait"
+    - ru: "Я дал ему свой номер."
+      fr: "Je lui ai donné mon numéro."
+      tense: "Passé Composé"
+    - ru: "Это мне даёт идею."
+      fr: "Ça me donne une idée."
+      tense: "Présent"
+    - ru: "Они дадут нам время."
+      fr: "Ils nous donneront du temps."
+      tense: "Futur Simple"
+    - ru: "Оставь меня в покое."
+      fr: "Laisse-moi tranquille."
+      tense: "Présent"
+    - ru: "Я выложился."
+      fr: "J'ai donné le meilleur de moi."
+      tense: "Passé Composé"
+  pt:
+    - pt: "Dá-me a mão."
+      fr: "Donne-moi ta main."
+      tense: "Présent"
+    - pt: "Dou-te a minha palavra."
+      fr: "Je te donne ma parole."
+      tense: "Présent"
+    - pt: "Ela deu-me um presente."
+      fr: "Elle m'a donné un cadeau."
+      tense: "Passé Composé"
+    - pt: "Ele dá conselhos."
+      fr: "Il donne des conseils."
+      tense: "Présent"
+    - pt: "Dar-te-ei a resposta."
+      fr: "Je te donnerai la réponse."
+      tense: "Futur Simple"
+    - pt: "Demos tudo."
+      fr: "Nous avons tout donné."
+      tense: "Passé Composé"
+    - pt: "Dá-mo."
+      fr: "Donne-le-moi."
+      tense: "Présent"
+    - pt: "Ela dava aulas."
+      fr: "Elle donnait des cours."
+      tense: "Imparfait"
+    - pt: "Dei-lhe uma oportunidade."
+      fr: "Je lui ai donné une chance."
+      tense: "Passé Composé"
+    - pt: "Eles dão sangue."
+      fr: "Ils donnent du sang."
+      tense: "Présent"
+    - pt: "O que é que isso dá?"
+      fr: "Qu'est-ce que ça donne ?"
+      tense: "Présent"
+    - pt: "Devolverei."
+      fr: "Je le rendrai."
+      tense: "Futur Simple"
+    - pt: "Ele deu a vida."
+      fr: "Il a donné sa vie."
+      tense: "Passé Composé"
+    - pt: "Dá-me um exemplo."
+      fr: "Donne-moi un exemple."
+      tense: "Présent"
+    - pt: "Ela estava a dar um discurso."
+      fr: "Elle donnait un discours."
+      tense: "Imparfait"
+    - pt: "Dei-lhe o meu número."
+      fr: "Je lui ai donné mon numéro."
+      tense: "Passé Composé"
+    - pt: "Isso dá-me uma ideia."
+      fr: "Ça me donne une idée."
+      tense: "Présent"
+    - pt: "Dar-nos-ão tempo."
+      fr: "Ils nous donneront du temps."
+      tense: "Futur Simple"
+    - pt: "Deixa-me em paz."
+      fr: "Laisse-moi tranquille."
+      tense: "Présent"
+    - pt: "Dei o meu melhor."
+      fr: "J'ai donné le meilleur de moi."
+      tense: "Passé Composé"

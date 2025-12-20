@@ -89,6 +89,40 @@ LABELS = {
     phrases: 'frases',
     target: 'Deutsch',
     footer_prefix: 'Prática de alemão —'
+  },
+  # Learning French (fr)
+  'en_fr' => {
+    back: '← Back to verb list',
+    search: 'Search phrases...',
+    show_all: 'Show all translations',
+    hide_all: 'Hide all translations',
+    showing: 'Showing',
+    of: 'of',
+    phrases: 'phrases',
+    target: 'French',
+    footer_prefix: 'French Practice —'
+  },
+  'ru_fr' => {
+    back: '← Назад к списку глаголов',
+    search: '🔍 Поиск по фразам...',
+    show_all: 'Показать все переводы',
+    hide_all: 'Скрыть все переводы',
+    showing: 'Показано',
+    of: 'из',
+    phrases: 'фраз',
+    target: 'Français',
+    footer_prefix: 'Практика французского —'
+  },
+  'pt_fr' => {
+    back: '← Voltar para lista de verbos',
+    search: 'Pesquisar frases...',
+    show_all: 'Mostrar todas traduções',
+    hide_all: 'Esconder todas traduções',
+    showing: 'Mostrando',
+    of: 'de',
+    phrases: 'frases',
+    target: 'Français',
+    footer_prefix: 'Prática de francês —'
   }
 }
 
@@ -147,6 +181,9 @@ build_verb_pages('en', 'en', %w[ru pt], verb_template)
 
 # Build de verb pages (learning German from en/ru/pt)
 build_verb_pages('de', 'de', %w[en ru pt], verb_template)
+
+# Build fr verb pages (learning French from en/ru/pt)
+build_verb_pages('fr', 'fr', %w[en ru pt], verb_template)
 
 # Build pt-eu index
 if File.exist?('src/data/pt-eu/index.yml')
@@ -230,6 +267,34 @@ if File.exist?('src/data/de/index.yml')
   puts "Built: de/index.html"
 end
 
+# Build fr index
+if File.exist?('src/data/fr/index.yml')
+  index_data = YAML.load_file('src/data/fr/index.yml')
+
+  title = index_data['title']
+  h1 = index_data['h1']
+  subtitle = index_data['subtitle']
+  back_link = '← Back to languages'
+  footer = 'Verb Drill — Open source language practice'
+
+  verbs = index_data['verbs'].map do |v|
+    {
+      name: v['name'],
+      meaning: v['meaning'],
+      slug: v['slug'],
+      langs: [
+        { code: 'en', label: '🇬🇧 EN' },
+        { code: 'ru', label: '🇷🇺 RU' },
+        { code: 'pt', label: '🇵🇹 PT' }
+      ]
+    }
+  end
+
+  html = index_template.result(binding)
+  File.write('fr/index.html', html)
+  puts "Built: fr/index.html"
+end
+
 # Build root index and README from site.yml
 site = YAML.load_file('src/data/site.yml')
 name = site['name']
@@ -251,5 +316,5 @@ readme = readme_template.result(binding)
 File.write('README.md', readme)
 puts "Built: README.md"
 
-total_pages = Dir.glob('pt-eu/*/*.html').count + Dir.glob('en/*/*.html').count + Dir.glob('de/*/*.html').count
+total_pages = Dir.glob('pt-eu/*/*.html').count + Dir.glob('en/*/*.html').count + Dir.glob('de/*/*.html').count + Dir.glob('fr/*/*.html').count
 puts "\nDone! Built #{total_pages} verb pages"

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇫🇷 VERB ALLER — 20 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇫🇷 Verb ALLER</h1>
+            <p class="subtitle">to go — 20 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 20 de 20 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Prática de francês — ALLER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇫🇷 Verb ALLER</h2>
+            <div class="tense-explanation">
+                <h4>Présent</h4>
+                <p>Presente - ir, futuro próximo</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>vais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>vas</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>va</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>allons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>allez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>vont</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Passé Composé</h4>
+                <p>Pretérito perfeito - foi</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>suis allé(e)</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>es allé(e)</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>est allé(e)</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>sommes allé(e)s</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>êtes allé(e)(s)</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>sont allé(e)s</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imparfait</h4>
+                <p>Imperfeito - ia</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>allais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>allais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>allait</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>allions</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>alliez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>allaient</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur Simple</h4>
+                <p>Futuro simples - irá</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>irai</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>iras</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>ira</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>irons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>irez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>iront</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'fr',
+            labels: { target: 'Français', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["vais","vas","va","allons","allez","vont","allais","allait","allions","alliez","allaient","allé","irai","iras","ira","irons","irez","iront"],
+            phrases: [
+                { pt: "Vou para casa.", fr: "Je vais à la maison.", tense: "Présent" },
+                { pt: "Para onde vais?", fr: "Où vas-tu ?", tense: "Présent" },
+                { pt: "Como está?", fr: "Comment allez-vous ?", tense: "Présent" },
+                { pt: "Ela vai à escola.", fr: "Elle va à l'école.", tense: "Présent" },
+                { pt: "Ele foi à loja.", fr: "Il est allé au magasin.", tense: "Passé Composé" },
+                { pt: "Vou amanhã.", fr: "J'irai demain.", tense: "Futur Simple" },
+                { pt: "Vamos!", fr: "Allons-y !", tense: "Présent" },
+                { pt: "Estou bem, obrigado.", fr: "Je vais bien, merci.", tense: "Présent" },
+                { pt: "Costumávamos ir lá frequentemente.", fr: "Nous y allions souvent.", tense: "Imparfait" },
+                { pt: "Eles vão ao cinema.", fr: "Ils vont au cinéma.", tense: "Présent" },
+                { pt: "Vou comer.", fr: "Je vais manger.", tense: "Présent" },
+                { pt: "Ela foi a Paris.", fr: "Elle est allée à Paris.", tense: "Passé Composé" },
+                { pt: "Iremos juntos.", fr: "Nous irons ensemble.", tense: "Futur Simple" },
+                { pt: "Está tudo bem.", fr: "Tout va bien.", tense: "Présent" },
+                { pt: "Ia telefonar-te.", fr: "J'allais t'appeler.", tense: "Imparfait" },
+                { pt: "Força!", fr: "Vas-y !", tense: "Présent" },
+                { pt: "Eles foram para casa.", fr: "Ils sont rentrés.", tense: "Passé Composé" },
+                { pt: "Como vai isso?", fr: "Comment ça va ?", tense: "Présent" },
+                { pt: "Vou contigo.", fr: "J'irai avec toi.", tense: "Futur Simple" },
+                { pt: "Fomos passear.", fr: "Nous sommes allés nous promener.", tense: "Passé Composé" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

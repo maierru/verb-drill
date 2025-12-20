@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇫🇷 VERB FALLOIR — 20 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇫🇷 Verb FALLOIR</h1>
+            <p class="subtitle">to be necessary — 20 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 20 de 20 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Prática de francês — FALLOIR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇫🇷 Verb FALLOIR</h2>
+            <div class="tense-explanation">
+                <h4>Présent</h4>
+                <p>Presente - é preciso (impessoal)</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">il</td>
+                        <td>faut</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Passé Composé</h4>
+                <p>Pretérito perfeito - foi preciso</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">il</td>
+                        <td>a fallu</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imparfait</h4>
+                <p>Imperfeito - era preciso</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">il</td>
+                        <td>fallait</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur Simple</h4>
+                <p>Futuro simples - será preciso</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">il</td>
+                        <td>faudra</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'fr',
+            labels: { target: 'Français', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["faut","fallait","fallu","faudra"],
+            phrases: [
+                { pt: "É preciso ir.", fr: "Il faut partir.", tense: "Présent" },
+                { pt: "Temos de nos despachar.", fr: "Il faut se dépêcher.", tense: "Présent" },
+                { pt: "É preciso ter paciência.", fr: "Il faut être patient.", tense: "Présent" },
+                { pt: "Foi preciso esperar.", fr: "Il a fallu attendre.", tense: "Passé Composé" },
+                { pt: "Será preciso decidir.", fr: "Il faudra décider.", tense: "Futur Simple" },
+                { pt: "É preciso mais tempo.", fr: "Il faut plus de temps.", tense: "Présent" },
+                { pt: "Era preciso agir.", fr: "Il fallait agir.", tense: "Imparfait" },
+                { pt: "É preciso tentar.", fr: "Il faut essayer.", tense: "Présent" },
+                { pt: "Será preciso trabalhar muito.", fr: "Il faudra travailler dur.", tense: "Futur Simple" },
+                { pt: "Era preciso estar lá.", fr: "Il fallait être là.", tense: "Imparfait" },
+                { pt: "O que é preciso?", fr: "Qu'est-ce qu'il faut ?", tense: "Présent" },
+                { pt: "Foi preciso mudar tudo.", fr: "Il a fallu tout changer.", tense: "Passé Composé" },
+                { pt: "É preciso compreender.", fr: "Il faut comprendre.", tense: "Présent" },
+                { pt: "Levará tempo.", fr: "Il faudra du temps.", tense: "Futur Simple" },
+                { pt: "Era preciso ajuda.", fr: "Il fallait de l'aide.", tense: "Imparfait" },
+                { pt: "É preciso ver isto.", fr: "Il faut voir ça.", tense: "Présent" },
+                { pt: "Foi preciso partir.", fr: "Il a fallu partir.", tense: "Passé Composé" },
+                { pt: "Será preciso pagar.", fr: "Il faudra payer.", tense: "Futur Simple" },
+                { pt: "É preciso saber.", fr: "Il faut savoir.", tense: "Présent" },
+                { pt: "Foi preciso coragem.", fr: "Il a fallu du courage.", tense: "Passé Composé" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

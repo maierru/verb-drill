@@ -1,0 +1,257 @@
+slug: avoir
+name: "🇫🇷 Verb AVOIR"
+meaning: to have
+verb_forms:
+  - ai
+  - as
+  - a
+  - avons
+  - avez
+  - ont
+  - avais
+  - avait
+  - avions
+  - aviez
+  - avaient
+  - eu
+  - aurai
+  - auras
+  - aura
+  - aurons
+  - aurez
+  - auront
+
+conjugation:
+  - tense: Présent
+    explanation:
+      en: "Present tense - possession, auxiliary verb"
+      ru: "Настоящее время - владение, вспомогательный глагол"
+      pt: "Presente - posse, verbo auxiliar"
+    forms:
+      je: ai
+      tu: as
+      il/elle: a
+      nous: avons
+      vous: avez
+      ils/elles: ont
+  - tense: Passé Composé
+    explanation:
+      en: "Past tense - has had"
+      ru: "Прошедшее время - имел"
+      pt: "Pretérito perfeito - teve"
+    forms:
+      je: ai eu
+      tu: as eu
+      il/elle: a eu
+      nous: avons eu
+      vous: avez eu
+      ils/elles: ont eu
+  - tense: Imparfait
+    explanation:
+      en: "Imperfect - used to have"
+      ru: "Имперфект - имел (длительно)"
+      pt: "Imperfeito - tinha"
+    forms:
+      je: avais
+      tu: avais
+      il/elle: avait
+      nous: avions
+      vous: aviez
+      ils/elles: avaient
+  - tense: Futur Simple
+    explanation:
+      en: "Future - will have"
+      ru: "Будущее время - буду иметь"
+      pt: "Futuro simples - terá"
+    forms:
+      je: aurai
+      tu: auras
+      il/elle: aura
+      nous: aurons
+      vous: aurez
+      ils/elles: auront
+
+phrases:
+  en:
+    - en: "I have a car."
+      fr: "J'ai une voiture."
+      tense: "Présent"
+    - en: "Do you have time?"
+      fr: "As-tu le temps ?"
+      tense: "Présent"
+    - en: "She has two children."
+      fr: "Elle a deux enfants."
+      tense: "Présent"
+    - en: "We have a problem."
+      fr: "Nous avons un problème."
+      tense: "Présent"
+    - en: "They have a dog."
+      fr: "Ils ont un chien."
+      tense: "Présent"
+    - en: "I had a headache."
+      fr: "J'avais mal à la tête."
+      tense: "Imparfait"
+    - en: "We had no choice."
+      fr: "Nous n'avions pas le choix."
+      tense: "Imparfait"
+    - en: "I am hungry."
+      fr: "J'ai faim."
+      tense: "Présent"
+    - en: "I will have more time tomorrow."
+      fr: "J'aurai plus de temps demain."
+      tense: "Futur Simple"
+    - en: "Do you have a question?"
+      fr: "Avez-vous une question ?"
+      tense: "Présent"
+    - en: "I have an idea."
+      fr: "J'ai une idée."
+      tense: "Présent"
+    - en: "She had a lot of work."
+      fr: "Elle avait beaucoup de travail."
+      tense: "Imparfait"
+    - en: "I am thirsty."
+      fr: "J'ai soif."
+      tense: "Présent"
+    - en: "We will have guests."
+      fr: "Nous aurons des invités."
+      tense: "Futur Simple"
+    - en: "I have no money."
+      fr: "Je n'ai pas d'argent."
+      tense: "Présent"
+    - en: "They had a meeting."
+      fr: "Ils avaient une réunion."
+      tense: "Imparfait"
+    - en: "How old are you?"
+      fr: "Quel âge as-tu ?"
+      tense: "Présent"
+    - en: "He has good news."
+      fr: "Il a de bonnes nouvelles."
+      tense: "Présent"
+    - en: "We had fun."
+      fr: "Nous nous sommes amusés."
+      tense: "Passé Composé"
+    - en: "I am cold."
+      fr: "J'ai froid."
+      tense: "Présent"
+  ru:
+    - ru: "У меня есть машина."
+      fr: "J'ai une voiture."
+      tense: "Présent"
+    - ru: "У тебя есть время?"
+      fr: "As-tu le temps ?"
+      tense: "Présent"
+    - ru: "У неё двое детей."
+      fr: "Elle a deux enfants."
+      tense: "Présent"
+    - ru: "У нас проблема."
+      fr: "Nous avons un problème."
+      tense: "Présent"
+    - ru: "У них есть собака."
+      fr: "Ils ont un chien."
+      tense: "Présent"
+    - ru: "У меня болела голова."
+      fr: "J'avais mal à la tête."
+      tense: "Imparfait"
+    - ru: "У нас не было выбора."
+      fr: "Nous n'avions pas le choix."
+      tense: "Imparfait"
+    - ru: "Я голоден."
+      fr: "J'ai faim."
+      tense: "Présent"
+    - ru: "Завтра у меня будет больше времени."
+      fr: "J'aurai plus de temps demain."
+      tense: "Futur Simple"
+    - ru: "У вас есть вопрос?"
+      fr: "Avez-vous une question ?"
+      tense: "Présent"
+    - ru: "У меня есть идея."
+      fr: "J'ai une idée."
+      tense: "Présent"
+    - ru: "У неё было много работы."
+      fr: "Elle avait beaucoup de travail."
+      tense: "Imparfait"
+    - ru: "Я хочу пить."
+      fr: "J'ai soif."
+      tense: "Présent"
+    - ru: "У нас будут гости."
+      fr: "Nous aurons des invités."
+      tense: "Futur Simple"
+    - ru: "У меня нет денег."
+      fr: "Je n'ai pas d'argent."
+      tense: "Présent"
+    - ru: "У них было собрание."
+      fr: "Ils avaient une réunion."
+      tense: "Imparfait"
+    - ru: "Сколько тебе лет?"
+      fr: "Quel âge as-tu ?"
+      tense: "Présent"
+    - ru: "У него хорошие новости."
+      fr: "Il a de bonnes nouvelles."
+      tense: "Présent"
+    - ru: "Нам было весело."
+      fr: "Nous nous sommes amusés."
+      tense: "Passé Composé"
+    - ru: "Мне холодно."
+      fr: "J'ai froid."
+      tense: "Présent"
+  pt:
+    - pt: "Tenho um carro."
+      fr: "J'ai une voiture."
+      tense: "Présent"
+    - pt: "Tens tempo?"
+      fr: "As-tu le temps ?"
+      tense: "Présent"
+    - pt: "Ela tem dois filhos."
+      fr: "Elle a deux enfants."
+      tense: "Présent"
+    - pt: "Temos um problema."
+      fr: "Nous avons un problème."
+      tense: "Présent"
+    - pt: "Eles têm um cão."
+      fr: "Ils ont un chien."
+      tense: "Présent"
+    - pt: "Eu tinha dor de cabeça."
+      fr: "J'avais mal à la tête."
+      tense: "Imparfait"
+    - pt: "Não tínhamos escolha."
+      fr: "Nous n'avions pas le choix."
+      tense: "Imparfait"
+    - pt: "Tenho fome."
+      fr: "J'ai faim."
+      tense: "Présent"
+    - pt: "Amanhã terei mais tempo."
+      fr: "J'aurai plus de temps demain."
+      tense: "Futur Simple"
+    - pt: "Tem alguma pergunta?"
+      fr: "Avez-vous une question ?"
+      tense: "Présent"
+    - pt: "Tenho uma ideia."
+      fr: "J'ai une idée."
+      tense: "Présent"
+    - pt: "Ela tinha muito trabalho."
+      fr: "Elle avait beaucoup de travail."
+      tense: "Imparfait"
+    - pt: "Tenho sede."
+      fr: "J'ai soif."
+      tense: "Présent"
+    - pt: "Teremos convidados."
+      fr: "Nous aurons des invités."
+      tense: "Futur Simple"
+    - pt: "Não tenho dinheiro."
+      fr: "Je n'ai pas d'argent."
+      tense: "Présent"
+    - pt: "Eles tiveram uma reunião."
+      fr: "Ils avaient une réunion."
+      tense: "Imparfait"
+    - pt: "Quantos anos tens?"
+      fr: "Quel âge as-tu ?"
+      tense: "Présent"
+    - pt: "Ele tem boas notícias."
+      fr: "Il a de bonnes nouvelles."
+      tense: "Présent"
+    - pt: "Divertimo-nos."
+      fr: "Nous nous sommes amusés."
+      tense: "Passé Composé"
+    - pt: "Tenho frio."
+      fr: "J'ai froid."
+      tense: "Présent"

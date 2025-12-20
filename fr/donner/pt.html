@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇫🇷 VERB DONNER — 20 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇫🇷 Verb DONNER</h1>
+            <p class="subtitle">to give — 20 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 20 de 20 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Prática de francês — DONNER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇫🇷 Verb DONNER</h2>
+            <div class="tense-explanation">
+                <h4>Présent</h4>
+                <p>Presente - dar</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>donne</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>donnes</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>donne</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>donnons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>donnez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>donnent</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Passé Composé</h4>
+                <p>Pretérito perfeito - deu</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>ai donné</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>as donné</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>a donné</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>avons donné</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>avez donné</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>ont donné</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imparfait</h4>
+                <p>Imperfeito - dava</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>donnais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>donnais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>donnait</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>donnions</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>donniez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>donnaient</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur Simple</h4>
+                <p>Futuro simples - dará</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>donnerai</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>donneras</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>donnera</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>donnerons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>donnerez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>donneront</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'fr',
+            labels: { target: 'Français', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["donne","donnes","donnons","donnez","donnent","donnais","donnait","donnions","donniez","donnaient","donné","donnerai","donneras","donnera","donnerons","donnerez","donneront"],
+            phrases: [
+                { pt: "Dá-me a mão.", fr: "Donne-moi ta main.", tense: "Présent" },
+                { pt: "Dou-te a minha palavra.", fr: "Je te donne ma parole.", tense: "Présent" },
+                { pt: "Ela deu-me um presente.", fr: "Elle m'a donné un cadeau.", tense: "Passé Composé" },
+                { pt: "Ele dá conselhos.", fr: "Il donne des conseils.", tense: "Présent" },
+                { pt: "Dar-te-ei a resposta.", fr: "Je te donnerai la réponse.", tense: "Futur Simple" },
+                { pt: "Demos tudo.", fr: "Nous avons tout donné.", tense: "Passé Composé" },
+                { pt: "Dá-mo.", fr: "Donne-le-moi.", tense: "Présent" },
+                { pt: "Ela dava aulas.", fr: "Elle donnait des cours.", tense: "Imparfait" },
+                { pt: "Dei-lhe uma oportunidade.", fr: "Je lui ai donné une chance.", tense: "Passé Composé" },
+                { pt: "Eles dão sangue.", fr: "Ils donnent du sang.", tense: "Présent" },
+                { pt: "O que é que isso dá?", fr: "Qu'est-ce que ça donne ?", tense: "Présent" },
+                { pt: "Devolverei.", fr: "Je le rendrai.", tense: "Futur Simple" },
+                { pt: "Ele deu a vida.", fr: "Il a donné sa vie.", tense: "Passé Composé" },
+                { pt: "Dá-me um exemplo.", fr: "Donne-moi un exemple.", tense: "Présent" },
+                { pt: "Ela estava a dar um discurso.", fr: "Elle donnait un discours.", tense: "Imparfait" },
+                { pt: "Dei-lhe o meu número.", fr: "Je lui ai donné mon numéro.", tense: "Passé Composé" },
+                { pt: "Isso dá-me uma ideia.", fr: "Ça me donne une idée.", tense: "Présent" },
+                { pt: "Dar-nos-ão tempo.", fr: "Ils nous donneront du temps.", tense: "Futur Simple" },
+                { pt: "Deixa-me em paz.", fr: "Laisse-moi tranquille.", tense: "Présent" },
+                { pt: "Dei o meu melhor.", fr: "J'ai donné le meilleur de moi.", tense: "Passé Composé" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+slug: etre
+name: "🇫🇷 Verb ÊTRE"
+meaning: to be
+verb_forms:
+  - suis
+  - es
+  - est
+  - sommes
+  - êtes
+  - sont
+  - étais
+  - était
+  - étions
+  - étiez
+  - étaient
+  - été
+  - serai
+  - seras
+  - sera
+  - serons
+  - serez
+  - seront
+
+conjugation:
+  - tense: Présent
+    explanation:
+      en: "Present tense - states of being, identity"
+      ru: "Настоящее время - состояния, идентичность"
+      pt: "Presente - estados, identidade"
+    forms:
+      je: suis
+      tu: es
+      il/elle: est
+      nous: sommes
+      vous: êtes
+      ils/elles: sont
+  - tense: Passé Composé
+    explanation:
+      en: "Past tense - completed actions"
+      ru: "Прошедшее время - завершённые действия"
+      pt: "Pretérito perfeito - ações concluídas"
+    forms:
+      je: ai été
+      tu: as été
+      il/elle: a été
+      nous: avons été
+      vous: avez été
+      ils/elles: ont été
+  - tense: Imparfait
+    explanation:
+      en: "Imperfect - ongoing past states"
+      ru: "Имперфект - длительные состояния в прошлом"
+      pt: "Imperfeito - estados contínuos no passado"
+    forms:
+      je: étais
+      tu: étais
+      il/elle: était
+      nous: étions
+      vous: étiez
+      ils/elles: étaient
+  - tense: Futur Simple
+    explanation:
+      en: "Future - will be"
+      ru: "Будущее время - буду"
+      pt: "Futuro simples - será"
+    forms:
+      je: serai
+      tu: seras
+      il/elle: sera
+      nous: serons
+      vous: serez
+      ils/elles: seront
+
+phrases:
+  en:
+    - en: "I am tired."
+      fr: "Je suis fatigué."
+      tense: "Présent"
+    - en: "She is a doctor."
+      fr: "Elle est médecin."
+      tense: "Présent"
+    - en: "We are happy."
+      fr: "Nous sommes heureux."
+      tense: "Présent"
+    - en: "Are you French?"
+      fr: "Êtes-vous français ?"
+      tense: "Présent"
+    - en: "They are students."
+      fr: "Ils sont étudiants."
+      tense: "Présent"
+    - en: "I was at home."
+      fr: "J'étais à la maison."
+      tense: "Imparfait"
+    - en: "We were in Paris."
+      fr: "Nous étions à Paris."
+      tense: "Imparfait"
+    - en: "He has been sick."
+      fr: "Il a été malade."
+      tense: "Passé Composé"
+    - en: "I will be there tomorrow."
+      fr: "Je serai là demain."
+      tense: "Futur Simple"
+    - en: "It is cold today."
+      fr: "Il fait froid aujourd'hui."
+      tense: "Présent"
+    - en: "The book is on the table."
+      fr: "Le livre est sur la table."
+      tense: "Présent"
+    - en: "Where were you?"
+      fr: "Où étais-tu ?"
+      tense: "Imparfait"
+    - en: "I am from France."
+      fr: "Je suis de France."
+      tense: "Présent"
+    - en: "She was very kind."
+      fr: "Elle était très gentille."
+      tense: "Imparfait"
+    - en: "We will be ready soon."
+      fr: "Nous serons bientôt prêts."
+      tense: "Futur Simple"
+    - en: "Is this your car?"
+      fr: "C'est ta voiture ?"
+      tense: "Présent"
+    - en: "They were late."
+      fr: "Ils étaient en retard."
+      tense: "Imparfait"
+    - en: "He is 25 years old."
+      fr: "Il a 25 ans."
+      tense: "Présent"
+    - en: "It will be nice tomorrow."
+      fr: "Il fera beau demain."
+      tense: "Futur Simple"
+    - en: "I have never been to Paris."
+      fr: "Je n'ai jamais été à Paris."
+      tense: "Passé Composé"
+  ru:
+    - ru: "Я устал."
+      fr: "Je suis fatigué."
+      tense: "Présent"
+    - ru: "Она врач."
+      fr: "Elle est médecin."
+      tense: "Présent"
+    - ru: "Мы счастливы."
+      fr: "Nous sommes heureux."
+      tense: "Présent"
+    - ru: "Вы француз?"
+      fr: "Êtes-vous français ?"
+      tense: "Présent"
+    - ru: "Они студенты."
+      fr: "Ils sont étudiants."
+      tense: "Présent"
+    - ru: "Я был дома."
+      fr: "J'étais à la maison."
+      tense: "Imparfait"
+    - ru: "Мы были в Париже."
+      fr: "Nous étions à Paris."
+      tense: "Imparfait"
+    - ru: "Он был болен."
+      fr: "Il a été malade."
+      tense: "Passé Composé"
+    - ru: "Я буду там завтра."
+      fr: "Je serai là demain."
+      tense: "Futur Simple"
+    - ru: "Сегодня холодно."
+      fr: "Il fait froid aujourd'hui."
+      tense: "Présent"
+    - ru: "Книга на столе."
+      fr: "Le livre est sur la table."
+      tense: "Présent"
+    - ru: "Где ты был?"
+      fr: "Où étais-tu ?"
+      tense: "Imparfait"
+    - ru: "Я из Франции."
+      fr: "Je suis de France."
+      tense: "Présent"
+    - ru: "Она была очень милой."
+      fr: "Elle était très gentille."
+      tense: "Imparfait"
+    - ru: "Мы скоро будем готовы."
+      fr: "Nous serons bientôt prêts."
+      tense: "Futur Simple"
+    - ru: "Это твоя машина?"
+      fr: "C'est ta voiture ?"
+      tense: "Présent"
+    - ru: "Они опоздали."
+      fr: "Ils étaient en retard."
+      tense: "Imparfait"
+    - ru: "Ему 25 лет."
+      fr: "Il a 25 ans."
+      tense: "Présent"
+    - ru: "Завтра будет хорошая погода."
+      fr: "Il fera beau demain."
+      tense: "Futur Simple"
+    - ru: "Я никогда не был в Париже."
+      fr: "Je n'ai jamais été à Paris."
+      tense: "Passé Composé"
+  pt:
+    - pt: "Estou cansado."
+      fr: "Je suis fatigué."
+      tense: "Présent"
+    - pt: "Ela é médica."
+      fr: "Elle est médecin."
+      tense: "Présent"
+    - pt: "Estamos felizes."
+      fr: "Nous sommes heureux."
+      tense: "Présent"
+    - pt: "É francês?"
+      fr: "Êtes-vous français ?"
+      tense: "Présent"
+    - pt: "Eles são estudantes."
+      fr: "Ils sont étudiants."
+      tense: "Présent"
+    - pt: "Eu estava em casa."
+      fr: "J'étais à la maison."
+      tense: "Imparfait"
+    - pt: "Estivemos em Paris."
+      fr: "Nous étions à Paris."
+      tense: "Imparfait"
+    - pt: "Ele esteve doente."
+      fr: "Il a été malade."
+      tense: "Passé Composé"
+    - pt: "Estarei lá amanhã."
+      fr: "Je serai là demain."
+      tense: "Futur Simple"
+    - pt: "Hoje está frio."
+      fr: "Il fait froid aujourd'hui."
+      tense: "Présent"
+    - pt: "O livro está na mesa."
+      fr: "Le livre est sur la table."
+      tense: "Présent"
+    - pt: "Onde estiveste?"
+      fr: "Où étais-tu ?"
+      tense: "Imparfait"
+    - pt: "Sou de França."
+      fr: "Je suis de France."
+      tense: "Présent"
+    - pt: "Ela era muito simpática."
+      fr: "Elle était très gentille."
+      tense: "Imparfait"
+    - pt: "Estaremos prontos em breve."
+      fr: "Nous serons bientôt prêts."
+      tense: "Futur Simple"
+    - pt: "Este é o teu carro?"
+      fr: "C'est ta voiture ?"
+      tense: "Présent"
+    - pt: "Eles chegaram atrasados."
+      fr: "Ils étaient en retard."
+      tense: "Imparfait"
+    - pt: "Ele tem 25 anos."
+      fr: "Il a 25 ans."
+      tense: "Présent"
+    - pt: "Amanhã vai estar bom tempo."
+      fr: "Il fera beau demain."
+      tense: "Futur Simple"
+    - pt: "Nunca estive em Paris."
+      fr: "Je n'ai jamais été à Paris."
+      tense: "Passé Composé"

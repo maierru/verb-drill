@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇫🇷 VERB FALLOIR — 20 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇫🇷 Verb FALLOIR</h1>
+            <p class="subtitle">to be necessary — 20 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 20 из 20 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика французского — FALLOIR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇫🇷 Verb FALLOIR</h2>
+            <div class="tense-explanation">
+                <h4>Présent</h4>
+                <p>Настоящее время - нужно (безличный)</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">il</td>
+                        <td>faut</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Passé Composé</h4>
+                <p>Прошедшее время - было нужно</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">il</td>
+                        <td>a fallu</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imparfait</h4>
+                <p>Имперфект - было нужно</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">il</td>
+                        <td>fallait</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur Simple</h4>
+                <p>Будущее время - будет нужно</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">il</td>
+                        <td>faudra</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'fr',
+            labels: { target: 'Français', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["faut","fallait","fallu","faudra"],
+            phrases: [
+                { ru: "Нужно идти.", fr: "Il faut partir.", tense: "Présent" },
+                { ru: "Надо поторопиться.", fr: "Il faut se dépêcher.", tense: "Présent" },
+                { ru: "Нужно быть терпеливым.", fr: "Il faut être patient.", tense: "Présent" },
+                { ru: "Пришлось ждать.", fr: "Il a fallu attendre.", tense: "Passé Composé" },
+                { ru: "Придётся решить.", fr: "Il faudra décider.", tense: "Futur Simple" },
+                { ru: "Нужно больше времени.", fr: "Il faut plus de temps.", tense: "Présent" },
+                { ru: "Нужно было действовать.", fr: "Il fallait agir.", tense: "Imparfait" },
+                { ru: "Надо попробовать.", fr: "Il faut essayer.", tense: "Présent" },
+                { ru: "Придётся много работать.", fr: "Il faudra travailler dur.", tense: "Futur Simple" },
+                { ru: "Надо было быть там.", fr: "Il fallait être là.", tense: "Imparfait" },
+                { ru: "Что нужно?", fr: "Qu'est-ce qu'il faut ?", tense: "Présent" },
+                { ru: "Пришлось всё изменить.", fr: "Il a fallu tout changer.", tense: "Passé Composé" },
+                { ru: "Нужно понять.", fr: "Il faut comprendre.", tense: "Présent" },
+                { ru: "Потребуется время.", fr: "Il faudra du temps.", tense: "Futur Simple" },
+                { ru: "Нужна была помощь.", fr: "Il fallait de l'aide.", tense: "Imparfait" },
+                { ru: "Надо это увидеть.", fr: "Il faut voir ça.", tense: "Présent" },
+                { ru: "Пришлось уехать.", fr: "Il a fallu partir.", tense: "Passé Composé" },
+                { ru: "Придётся заплатить.", fr: "Il faudra payer.", tense: "Futur Simple" },
+                { ru: "Надо знать.", fr: "Il faut savoir.", tense: "Présent" },
+                { ru: "Потребовалось мужество.", fr: "Il a fallu du courage.", tense: "Passé Composé" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

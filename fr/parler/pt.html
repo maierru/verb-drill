@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇫🇷 VERB PARLER — 20 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇫🇷 Verb PARLER</h1>
+            <p class="subtitle">to speak — 20 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 20 de 20 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Prática de francês — PARLER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇫🇷 Verb PARLER</h2>
+            <div class="tense-explanation">
+                <h4>Présent</h4>
+                <p>Presente - falar</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>parle</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>parles</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>parle</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>parlons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>parlez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>parlent</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Passé Composé</h4>
+                <p>Pretérito perfeito - falou</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>ai parlé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>as parlé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>a parlé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>avons parlé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>avez parlé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>ont parlé</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imparfait</h4>
+                <p>Imperfeito - falava</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>parlais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>parlais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>parlait</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>parlions</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>parliez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>parlaient</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur Simple</h4>
+                <p>Futuro simples - falará</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>parlerai</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>parleras</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>parlera</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>parlerons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>parlerez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>parleront</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'fr',
+            labels: { target: 'Français', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["parle","parles","parlons","parlez","parlent","parlais","parlait","parlions","parliez","parlaient","parlé","parlerai","parleras","parlera","parlerons","parlerez","parleront"],
+            phrases: [
+                { pt: "Falo francês.", fr: "Je parle français.", tense: "Présent" },
+                { pt: "Fala inglês?", fr: "Parlez-vous anglais ?", tense: "Présent" },
+                { pt: "Ela fala três línguas.", fr: "Elle parle trois langues.", tense: "Présent" },
+                { pt: "Falámos ontem.", fr: "Nous avons parlé hier.", tense: "Passé Composé" },
+                { pt: "Ele fala demais.", fr: "Il parle trop.", tense: "Présent" },
+                { pt: "Falarei com ele.", fr: "Je lui parlerai.", tense: "Futur Simple" },
+                { pt: "Falavam de ti.", fr: "Ils parlaient de toi.", tense: "Imparfait" },
+                { pt: "Posso falar contigo?", fr: "Je peux te parler ?", tense: "Présent" },
+                { pt: "Ela falou comigo.", fr: "Elle m'a parlé.", tense: "Passé Composé" },
+                { pt: "Já não nos falamos.", fr: "On ne se parle plus.", tense: "Présent" },
+                { pt: "Eu falava espanhol.", fr: "Je parlais espagnol.", tense: "Imparfait" },
+                { pt: "Vamos falar sobre isso.", fr: "Parlons-en.", tense: "Présent" },
+                { pt: "Falaram durante horas.", fr: "Ils ont parlé pendant des heures.", tense: "Passé Composé" },
+                { pt: "Por falar nisso...", fr: "En parlant de ça...", tense: "Présent" },
+                { pt: "Ele falará primeiro.", fr: "Il parlera en premier.", tense: "Futur Simple" },
+                { pt: "Não fales tão depressa.", fr: "Ne parle pas si vite.", tense: "Présent" },
+                { pt: "Falámos a noite toda.", fr: "Nous avons parlé toute la nuit.", tense: "Passé Composé" },
+                { pt: "Ela fala baixinho.", fr: "Elle parle doucement.", tense: "Présent" },
+                { pt: "Falava sozinho.", fr: "Je me parlais.", tense: "Imparfait" },
+                { pt: "Falamos depois.", fr: "On parlera plus tard.", tense: "Futur Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+slug: passer
+name: "🇫🇷 Verb PASSER"
+meaning: to pass, to spend
+verb_forms:
+  - passe
+  - passes
+  - passons
+  - passez
+  - passent
+  - passais
+  - passait
+  - passions
+  - passiez
+  - passaient
+  - passé
+  - passerai
+  - passeras
+  - passera
+  - passerons
+  - passerez
+  - passeront
+
+conjugation:
+  - tense: Présent
+    explanation:
+      en: "Present tense - passing, spending"
+      ru: "Настоящее время - проходить, проводить"
+      pt: "Presente - passar"
+    forms:
+      je: passe
+      tu: passes
+      il/elle: passe
+      nous: passons
+      vous: passez
+      ils/elles: passent
+  - tense: Passé Composé
+    explanation:
+      en: "Past tense - passed, spent"
+      ru: "Прошедшее время - прошёл, провёл"
+      pt: "Pretérito perfeito - passou"
+    forms:
+      je: suis passé(e) / ai passé
+      tu: es passé(e) / as passé
+      il/elle: est passé(e) / a passé
+      nous: sommes passé(e)s / avons passé
+      vous: êtes passé(e)(s) / avez passé
+      ils/elles: sont passé(e)s / ont passé
+  - tense: Imparfait
+    explanation:
+      en: "Imperfect - was passing, used to pass"
+      ru: "Имперфект - проходил"
+      pt: "Imperfeito - passava"
+    forms:
+      je: passais
+      tu: passais
+      il/elle: passait
+      nous: passions
+      vous: passiez
+      ils/elles: passaient
+  - tense: Futur Simple
+    explanation:
+      en: "Future - will pass"
+      ru: "Будущее время - пройдёт"
+      pt: "Futuro simples - passará"
+    forms:
+      je: passerai
+      tu: passeras
+      il/elle: passera
+      nous: passerons
+      vous: passerez
+      ils/elles: passeront
+
+phrases:
+  en:
+    - en: "Time passes quickly."
+      fr: "Le temps passe vite."
+      tense: "Présent"
+    - en: "I spent the day at home."
+      fr: "J'ai passé la journée à la maison."
+      tense: "Passé Composé"
+    - en: "Pass me the salt."
+      fr: "Passe-moi le sel."
+      tense: "Présent"
+    - en: "She passed the exam."
+      fr: "Elle a passé l'examen."
+      tense: "Passé Composé"
+    - en: "I will stop by tomorrow."
+      fr: "Je passerai demain."
+      tense: "Futur Simple"
+    - en: "What happened?"
+      fr: "Qu'est-ce qui s'est passé ?"
+      tense: "Passé Composé"
+    - en: "We used to spend vacations there."
+      fr: "Nous passions les vacances là-bas."
+      tense: "Imparfait"
+    - en: "He passes by every morning."
+      fr: "Il passe tous les matins."
+      tense: "Présent"
+    - en: "I spent a good evening."
+      fr: "J'ai passé une bonne soirée."
+      tense: "Passé Composé"
+    - en: "She will pass the test."
+      fr: "Elle passera le test."
+      tense: "Futur Simple"
+    - en: "It will pass."
+      fr: "Ça passera."
+      tense: "Futur Simple"
+    - en: "I was passing through."
+      fr: "Je passais par là."
+      tense: "Imparfait"
+    - en: "Pass me the phone."
+      fr: "Passe-moi le téléphone."
+      tense: "Présent"
+    - en: "They spent the night here."
+      fr: "Ils ont passé la nuit ici."
+      tense: "Passé Composé"
+    - en: "How did it go?"
+      fr: "Comment ça s'est passé ?"
+      tense: "Passé Composé"
+    - en: "Everything is going well."
+      fr: "Tout se passe bien."
+      tense: "Présent"
+    - en: "I will spend a week in Paris."
+      fr: "Je passerai une semaine à Paris."
+      tense: "Futur Simple"
+    - en: "He passed in front of me."
+      fr: "Il est passé devant moi."
+      tense: "Passé Composé"
+    - en: "We spent hours talking."
+      fr: "Nous avons passé des heures à parler."
+      tense: "Passé Composé"
+    - en: "Let it go."
+      fr: "Laisse passer."
+      tense: "Présent"
+  ru:
+    - ru: "Время летит быстро."
+      fr: "Le temps passe vite."
+      tense: "Présent"
+    - ru: "Я провёл день дома."
+      fr: "J'ai passé la journée à la maison."
+      tense: "Passé Composé"
+    - ru: "Передай соль."
+      fr: "Passe-moi le sel."
+      tense: "Présent"
+    - ru: "Она сдала экзамен."
+      fr: "Elle a passé l'examen."
+      tense: "Passé Composé"
+    - ru: "Я зайду завтра."
+      fr: "Je passerai demain."
+      tense: "Futur Simple"
+    - ru: "Что случилось?"
+      fr: "Qu'est-ce qui s'est passé ?"
+      tense: "Passé Composé"
+    - ru: "Мы проводили отпуск там."
+      fr: "Nous passions les vacances là-bas."
+      tense: "Imparfait"
+    - ru: "Он проходит каждое утро."
+      fr: "Il passe tous les matins."
+      tense: "Présent"
+    - ru: "Я хорошо провёл вечер."
+      fr: "J'ai passé une bonne soirée."
+      tense: "Passé Composé"
+    - ru: "Она сдаст тест."
+      fr: "Elle passera le test."
+      tense: "Futur Simple"
+    - ru: "Это пройдёт."
+      fr: "Ça passera."
+      tense: "Futur Simple"
+    - ru: "Я проходил мимо."
+      fr: "Je passais par là."
+      tense: "Imparfait"
+    - ru: "Передай телефон."
+      fr: "Passe-moi le téléphone."
+      tense: "Présent"
+    - ru: "Они провели ночь здесь."
+      fr: "Ils ont passé la nuit ici."
+      tense: "Passé Composé"
+    - ru: "Как прошло?"
+      fr: "Comment ça s'est passé ?"
+      tense: "Passé Composé"
+    - ru: "Всё идёт хорошо."
+      fr: "Tout se passe bien."
+      tense: "Présent"
+    - ru: "Я проведу неделю в Париже."
+      fr: "Je passerai une semaine à Paris."
+      tense: "Futur Simple"
+    - ru: "Он прошёл мимо меня."
+      fr: "Il est passé devant moi."
+      tense: "Passé Composé"
+    - ru: "Мы часами разговаривали."
+      fr: "Nous avons passé des heures à parler."
+      tense: "Passé Composé"
+    - ru: "Забудь."
+      fr: "Laisse passer."
+      tense: "Présent"
+  pt:
+    - pt: "O tempo passa depressa."
+      fr: "Le temps passe vite."
+      tense: "Présent"
+    - pt: "Passei o dia em casa."
+      fr: "J'ai passé la journée à la maison."
+      tense: "Passé Composé"
+    - pt: "Passa-me o sal."
+      fr: "Passe-moi le sel."
+      tense: "Présent"
+    - pt: "Ela fez o exame."
+      fr: "Elle a passé l'examen."
+      tense: "Passé Composé"
+    - pt: "Passo lá amanhã."
+      fr: "Je passerai demain."
+      tense: "Futur Simple"
+    - pt: "O que aconteceu?"
+      fr: "Qu'est-ce qui s'est passé ?"
+      tense: "Passé Composé"
+    - pt: "Passávamos férias lá."
+      fr: "Nous passions les vacances là-bas."
+      tense: "Imparfait"
+    - pt: "Ele passa todas as manhãs."
+      fr: "Il passe tous les matins."
+      tense: "Présent"
+    - pt: "Passei uma boa noite."
+      fr: "J'ai passé une bonne soirée."
+      tense: "Passé Composé"
+    - pt: "Ela passará no teste."
+      fr: "Elle passera le test."
+      tense: "Futur Simple"
+    - pt: "Vai passar."
+      fr: "Ça passera."
+      tense: "Futur Simple"
+    - pt: "Estava de passagem."
+      fr: "Je passais par là."
+      tense: "Imparfait"
+    - pt: "Passa-me o telefone."
+      fr: "Passe-moi le téléphone."
+      tense: "Présent"
+    - pt: "Passaram a noite aqui."
+      fr: "Ils ont passé la nuit ici."
+      tense: "Passé Composé"
+    - pt: "Como correu?"
+      fr: "Comment ça s'est passé ?"
+      tense: "Passé Composé"
+    - pt: "Tudo corre bem."
+      fr: "Tout se passe bien."
+      tense: "Présent"
+    - pt: "Passarei uma semana em Paris."
+      fr: "Je passerai une semaine à Paris."
+      tense: "Futur Simple"
+    - pt: "Ele passou à minha frente."
+      fr: "Il est passé devant moi."
+      tense: "Passé Composé"
+    - pt: "Passámos horas a falar."
+      fr: "Nous avons passé des heures à parler."
+      tense: "Passé Composé"
+    - pt: "Deixa passar."
+      fr: "Laisse passer."
+      tense: "Présent"

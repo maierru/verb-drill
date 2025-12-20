@@ -1,0 +1,256 @@
+slug: dire
+name: "🇫🇷 Verb DIRE"
+meaning: to say
+verb_forms:
+  - dis
+  - dit
+  - disons
+  - dites
+  - disent
+  - disais
+  - disait
+  - disions
+  - disiez
+  - disaient
+  - dit
+  - dirai
+  - diras
+  - dira
+  - dirons
+  - direz
+  - diront
+
+conjugation:
+  - tense: Présent
+    explanation:
+      en: "Present tense - saying, telling"
+      ru: "Настоящее время - говорить, сказать"
+      pt: "Presente - dizer"
+    forms:
+      je: dis
+      tu: dis
+      il/elle: dit
+      nous: disons
+      vous: dites
+      ils/elles: disent
+  - tense: Passé Composé
+    explanation:
+      en: "Past tense - said"
+      ru: "Прошедшее время - сказал"
+      pt: "Pretérito perfeito - disse"
+    forms:
+      je: ai dit
+      tu: as dit
+      il/elle: a dit
+      nous: avons dit
+      vous: avez dit
+      ils/elles: ont dit
+  - tense: Imparfait
+    explanation:
+      en: "Imperfect - was saying, used to say"
+      ru: "Имперфект - говорил"
+      pt: "Imperfeito - dizia"
+    forms:
+      je: disais
+      tu: disais
+      il/elle: disait
+      nous: disions
+      vous: disiez
+      ils/elles: disaient
+  - tense: Futur Simple
+    explanation:
+      en: "Future - will say"
+      ru: "Будущее время - скажет"
+      pt: "Futuro simples - dirá"
+    forms:
+      je: dirai
+      tu: diras
+      il/elle: dira
+      nous: dirons
+      vous: direz
+      ils/elles: diront
+
+phrases:
+  en:
+    - en: "What did you say?"
+      fr: "Qu'est-ce que tu as dit ?"
+      tense: "Passé Composé"
+    - en: "I say yes."
+      fr: "Je dis oui."
+      tense: "Présent"
+    - en: "She said nothing."
+      fr: "Elle n'a rien dit."
+      tense: "Passé Composé"
+    - en: "They say it's true."
+      fr: "On dit que c'est vrai."
+      tense: "Présent"
+    - en: "He told me the truth."
+      fr: "Il m'a dit la vérité."
+      tense: "Passé Composé"
+    - en: "What does that mean?"
+      fr: "Qu'est-ce que ça veut dire ?"
+      tense: "Présent"
+    - en: "I will tell you later."
+      fr: "Je te dirai plus tard."
+      tense: "Futur Simple"
+    - en: "She always says the same thing."
+      fr: "Elle dit toujours la même chose."
+      tense: "Présent"
+    - en: "I said goodbye."
+      fr: "J'ai dit au revoir."
+      tense: "Passé Composé"
+    - en: "Tell me more."
+      fr: "Dis-moi plus."
+      tense: "Présent"
+    - en: "He said he was busy."
+      fr: "Il a dit qu'il était occupé."
+      tense: "Passé Composé"
+    - en: "I have nothing to say."
+      fr: "Je n'ai rien à dire."
+      tense: "Présent"
+    - en: "She never says thank you."
+      fr: "Elle ne dit jamais merci."
+      tense: "Présent"
+    - en: "They said it was impossible."
+      fr: "Ils ont dit que c'était impossible."
+      tense: "Passé Composé"
+    - en: "I will say a few words."
+      fr: "Je dirai quelques mots."
+      tense: "Futur Simple"
+    - en: "What does that word mean?"
+      fr: "Que veut dire ce mot ?"
+      tense: "Présent"
+    - en: "She told me a secret."
+      fr: "Elle m'a dit un secret."
+      tense: "Passé Composé"
+    - en: "I can't say for sure."
+      fr: "Je ne peux pas dire avec certitude."
+      tense: "Présent"
+    - en: "He said hello."
+      fr: "Il a dit bonjour."
+      tense: "Passé Composé"
+    - en: "That is to say..."
+      fr: "C'est-à-dire..."
+      tense: "Présent"
+  ru:
+    - ru: "Что ты сказал?"
+      fr: "Qu'est-ce que tu as dit ?"
+      tense: "Passé Composé"
+    - ru: "Я говорю да."
+      fr: "Je dis oui."
+      tense: "Présent"
+    - ru: "Она ничего не сказала."
+      fr: "Elle n'a rien dit."
+      tense: "Passé Composé"
+    - ru: "Говорят, это правда."
+      fr: "On dit que c'est vrai."
+      tense: "Présent"
+    - ru: "Он сказал мне правду."
+      fr: "Il m'a dit la vérité."
+      tense: "Passé Composé"
+    - ru: "Что это значит?"
+      fr: "Qu'est-ce que ça veut dire ?"
+      tense: "Présent"
+    - ru: "Я скажу тебе позже."
+      fr: "Je te dirai plus tard."
+      tense: "Futur Simple"
+    - ru: "Она всегда говорит одно и то же."
+      fr: "Elle dit toujours la même chose."
+      tense: "Présent"
+    - ru: "Я попрощался."
+      fr: "J'ai dit au revoir."
+      tense: "Passé Composé"
+    - ru: "Расскажи мне больше."
+      fr: "Dis-moi plus."
+      tense: "Présent"
+    - ru: "Он сказал, что занят."
+      fr: "Il a dit qu'il était occupé."
+      tense: "Passé Composé"
+    - ru: "Мне нечего сказать."
+      fr: "Je n'ai rien à dire."
+      tense: "Présent"
+    - ru: "Она никогда не говорит спасибо."
+      fr: "Elle ne dit jamais merci."
+      tense: "Présent"
+    - ru: "Они сказали, что это невозможно."
+      fr: "Ils ont dit que c'était impossible."
+      tense: "Passé Composé"
+    - ru: "Я скажу несколько слов."
+      fr: "Je dirai quelques mots."
+      tense: "Futur Simple"
+    - ru: "Что значит это слово?"
+      fr: "Que veut dire ce mot ?"
+      tense: "Présent"
+    - ru: "Она рассказала мне секрет."
+      fr: "Elle m'a dit un secret."
+      tense: "Passé Composé"
+    - ru: "Я не могу сказать точно."
+      fr: "Je ne peux pas dire avec certitude."
+      tense: "Présent"
+    - ru: "Он поздоровался."
+      fr: "Il a dit bonjour."
+      tense: "Passé Composé"
+    - ru: "То есть..."
+      fr: "C'est-à-dire..."
+      tense: "Présent"
+  pt:
+    - pt: "O que disseste?"
+      fr: "Qu'est-ce que tu as dit ?"
+      tense: "Passé Composé"
+    - pt: "Eu digo sim."
+      fr: "Je dis oui."
+      tense: "Présent"
+    - pt: "Ela não disse nada."
+      fr: "Elle n'a rien dit."
+      tense: "Passé Composé"
+    - pt: "Dizem que é verdade."
+      fr: "On dit que c'est vrai."
+      tense: "Présent"
+    - pt: "Ele disse-me a verdade."
+      fr: "Il m'a dit la vérité."
+      tense: "Passé Composé"
+    - pt: "O que significa isso?"
+      fr: "Qu'est-ce que ça veut dire ?"
+      tense: "Présent"
+    - pt: "Dir-te-ei mais tarde."
+      fr: "Je te dirai plus tard."
+      tense: "Futur Simple"
+    - pt: "Ela diz sempre a mesma coisa."
+      fr: "Elle dit toujours la même chose."
+      tense: "Présent"
+    - pt: "Despedi-me."
+      fr: "J'ai dit au revoir."
+      tense: "Passé Composé"
+    - pt: "Diz-me mais."
+      fr: "Dis-moi plus."
+      tense: "Présent"
+    - pt: "Ele disse que estava ocupado."
+      fr: "Il a dit qu'il était occupé."
+      tense: "Passé Composé"
+    - pt: "Não tenho nada a dizer."
+      fr: "Je n'ai rien à dire."
+      tense: "Présent"
+    - pt: "Ela nunca diz obrigado."
+      fr: "Elle ne dit jamais merci."
+      tense: "Présent"
+    - pt: "Disseram que era impossível."
+      fr: "Ils ont dit que c'était impossible."
+      tense: "Passé Composé"
+    - pt: "Direi algumas palavras."
+      fr: "Je dirai quelques mots."
+      tense: "Futur Simple"
+    - pt: "O que significa esta palavra?"
+      fr: "Que veut dire ce mot ?"
+      tense: "Présent"
+    - pt: "Ela contou-me um segredo."
+      fr: "Elle m'a dit un secret."
+      tense: "Passé Composé"
+    - pt: "Não posso dizer ao certo."
+      fr: "Je ne peux pas dire avec certitude."
+      tense: "Présent"
+    - pt: "Ele disse olá."
+      fr: "Il a dit bonjour."
+      tense: "Passé Composé"
+    - pt: "Ou seja..."
+      fr: "C'est-à-dire..."
+      tense: "Présent"

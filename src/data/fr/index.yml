@@ -1,0 +1,64 @@
+title: "French — Verb Drill"
+h1: "🇫🇷 French"
+subtitle: "Select a verb to practice"
+verbs:
+  - name: être
+    meaning: to be
+    slug: etre
+  - name: avoir
+    meaning: to have
+    slug: avoir
+  - name: faire
+    meaning: to do, to make
+    slug: faire
+  - name: aller
+    meaning: to go
+    slug: aller
+  - name: pouvoir
+    meaning: can, to be able to
+    slug: pouvoir
+  - name: dire
+    meaning: to say
+    slug: dire
+  - name: vouloir
+    meaning: to want
+    slug: vouloir
+  - name: voir
+    meaning: to see
+    slug: voir
+  - name: savoir
+    meaning: to know
+    slug: savoir
+  - name: devoir
+    meaning: must, to have to
+    slug: devoir
+  - name: venir
+    meaning: to come
+    slug: venir
+  - name: falloir
+    meaning: must (impersonal)
+    slug: falloir
+  - name: prendre
+    meaning: to take
+    slug: prendre
+  - name: mettre
+    meaning: to put
+    slug: mettre
+  - name: croire
+    meaning: to believe
+    slug: croire
+  - name: parler
+    meaning: to speak
+    slug: parler
+  - name: trouver
+    meaning: to find
+    slug: trouver
+  - name: aimer
+    meaning: to like, to love
+    slug: aimer
+  - name: donner
+    meaning: to give
+    slug: donner
+  - name: passer
+    meaning: to pass, to spend
+    slug: passer

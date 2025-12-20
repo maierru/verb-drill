@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇫🇷 VERB PRENDRE — 20 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇫🇷 Verb PRENDRE</h1>
+            <p class="subtitle">to take — 20 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 20 de 20 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Prática de francês — PRENDRE · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇫🇷 Verb PRENDRE</h2>
+            <div class="tense-explanation">
+                <h4>Présent</h4>
+                <p>Presente - tomar, levar</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>prends</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>prends</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>prend</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>prenons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>prenez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>prennent</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Passé Composé</h4>
+                <p>Pretérito perfeito - tomou</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>ai pris</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>as pris</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>a pris</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>avons pris</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>avez pris</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>ont pris</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imparfait</h4>
+                <p>Imperfeito - tomava</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>prenais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>prenais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>prenait</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>prenions</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>preniez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>prenaient</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur Simple</h4>
+                <p>Futuro simples - tomará</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>prendrai</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>prendras</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>prendra</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>prendrons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>prendrez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>prendront</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'fr',
+            labels: { target: 'Français', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["prends","prend","prenons","prenez","prennent","prenais","prenait","prenions","preniez","prenaient","pris","prendrai","prendras","prendra","prendrons","prendrez","prendront"],
+            phrases: [
+                { pt: "Levo este.", fr: "Je prends celui-ci.", tense: "Présent" },
+                { pt: "Não te apresses.", fr: "Prends ton temps.", tense: "Présent" },
+                { pt: "Ela apanha o autocarro.", fr: "Elle prend le bus.", tense: "Présent" },
+                { pt: "Tirei uma fotografia.", fr: "J'ai pris une photo.", tense: "Passé Composé" },
+                { pt: "Ele foi pelo caminho errado.", fr: "Il a pris la mauvaise route.", tense: "Passé Composé" },
+                { pt: "Apanharemos o comboio.", fr: "Nous prendrons le train.", tense: "Futur Simple" },
+                { pt: "O que vais tomar?", fr: "Qu'est-ce que tu prends ?", tense: "Présent" },
+                { pt: "Eu tomava café.", fr: "Je prenais du café.", tense: "Imparfait" },
+                { pt: "Levaram tudo.", fr: "Ils ont tout pris.", tense: "Passé Composé" },
+                { pt: "Sente-se.", fr: "Prenez place.", tense: "Présent" },
+                { pt: "Eu trato disso.", fr: "Je m'en occuperai.", tense: "Futur Simple" },
+                { pt: "Ela fez uma pausa.", fr: "Elle a pris une pause.", tense: "Passé Composé" },
+                { pt: "Tomamos o pequeno-almoço às 8h.", fr: "Nous prenons le petit-déjeuner à 8h.", tense: "Présent" },
+                { pt: "Ele tirava notas.", fr: "Il prenait des notes.", tense: "Imparfait" },
+                { pt: "Tomei um duche.", fr: "J'ai pris une douche.", tense: "Passé Composé" },
+                { pt: "Tem calma.", fr: "Prends-le doucement.", tense: "Présent" },
+                { pt: "Aproveitarão a oportunidade.", fr: "Ils prendront l'occasion.", tense: "Futur Simple" },
+                { pt: "Levo isto a sério.", fr: "Je le prends au sérieux.", tense: "Présent" },
+                { pt: "Tomámos a decisão.", fr: "Nous avons pris la décision.", tense: "Passé Composé" },
+                { pt: "Ele arrisca.", fr: "Il prend des risques.", tense: "Présent" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

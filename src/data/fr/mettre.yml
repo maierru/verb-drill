@@ -1,0 +1,256 @@
+slug: mettre
+name: "🇫🇷 Verb METTRE"
+meaning: to put
+verb_forms:
+  - mets
+  - met
+  - mettons
+  - mettez
+  - mettent
+  - mettais
+  - mettait
+  - mettions
+  - mettiez
+  - mettaient
+  - mis
+  - mettrai
+  - mettras
+  - mettra
+  - mettrons
+  - mettrez
+  - mettront
+
+conjugation:
+  - tense: Présent
+    explanation:
+      en: "Present tense - putting, wearing"
+      ru: "Настоящее время - класть, надевать"
+      pt: "Presente - pôr, meter"
+    forms:
+      je: mets
+      tu: mets
+      il/elle: met
+      nous: mettons
+      vous: mettez
+      ils/elles: mettent
+  - tense: Passé Composé
+    explanation:
+      en: "Past tense - put, wore"
+      ru: "Прошедшее время - положил, надел"
+      pt: "Pretérito perfeito - pôs"
+    forms:
+      je: ai mis
+      tu: as mis
+      il/elle: a mis
+      nous: avons mis
+      vous: avez mis
+      ils/elles: ont mis
+  - tense: Imparfait
+    explanation:
+      en: "Imperfect - was putting, used to put"
+      ru: "Имперфект - клал"
+      pt: "Imperfeito - punha"
+    forms:
+      je: mettais
+      tu: mettais
+      il/elle: mettait
+      nous: mettions
+      vous: mettiez
+      ils/elles: mettaient
+  - tense: Futur Simple
+    explanation:
+      en: "Future - will put"
+      ru: "Будущее время - положит"
+      pt: "Futuro simples - porá"
+    forms:
+      je: mettrai
+      tu: mettras
+      il/elle: mettra
+      nous: mettrons
+      vous: mettrez
+      ils/elles: mettront
+
+phrases:
+  en:
+    - en: "I put it on the table."
+      fr: "Je le mets sur la table."
+      tense: "Présent"
+    - en: "Put on your coat."
+      fr: "Mets ton manteau."
+      tense: "Présent"
+    - en: "She puts on makeup."
+      fr: "Elle se maquille."
+      tense: "Présent"
+    - en: "I put the keys here."
+      fr: "J'ai mis les clés ici."
+      tense: "Passé Composé"
+    - en: "He put on a suit."
+      fr: "Il a mis un costume."
+      tense: "Passé Composé"
+    - en: "We will put it away."
+      fr: "Nous le rangerons."
+      tense: "Futur Simple"
+    - en: "Where did you put it?"
+      fr: "Où l'as-tu mis ?"
+      tense: "Passé Composé"
+    - en: "She was putting things in order."
+      fr: "Elle mettait de l'ordre."
+      tense: "Imparfait"
+    - en: "I put on music."
+      fr: "Je mets de la musique."
+      tense: "Présent"
+    - en: "They put everything inside."
+      fr: "Ils ont tout mis à l'intérieur."
+      tense: "Passé Composé"
+    - en: "Put it there."
+      fr: "Mets-le là."
+      tense: "Présent"
+    - en: "It takes an hour."
+      fr: "Ça met une heure."
+      tense: "Présent"
+    - en: "I used to wear jeans."
+      fr: "Je mettais des jeans."
+      tense: "Imparfait"
+    - en: "He put the book down."
+      fr: "Il a posé le livre."
+      tense: "Passé Composé"
+    - en: "We put money aside."
+      fr: "Nous mettons de l'argent de côté."
+      tense: "Présent"
+    - en: "She will put on a dress."
+      fr: "Elle mettra une robe."
+      tense: "Futur Simple"
+    - en: "I put sugar in my coffee."
+      fr: "Je mets du sucre dans mon café."
+      tense: "Présent"
+    - en: "They put up decorations."
+      fr: "Ils ont mis des décorations."
+      tense: "Passé Composé"
+    - en: "Put yourself in my place."
+      fr: "Mets-toi à ma place."
+      tense: "Présent"
+    - en: "I will put on something warm."
+      fr: "Je mettrai quelque chose de chaud."
+      tense: "Futur Simple"
+  ru:
+    - ru: "Я кладу на стол."
+      fr: "Je le mets sur la table."
+      tense: "Présent"
+    - ru: "Надень пальто."
+      fr: "Mets ton manteau."
+      tense: "Présent"
+    - ru: "Она красится."
+      fr: "Elle se maquille."
+      tense: "Présent"
+    - ru: "Я положил ключи сюда."
+      fr: "J'ai mis les clés ici."
+      tense: "Passé Composé"
+    - ru: "Он надел костюм."
+      fr: "Il a mis un costume."
+      tense: "Passé Composé"
+    - ru: "Мы это уберём."
+      fr: "Nous le rangerons."
+      tense: "Futur Simple"
+    - ru: "Куда ты это положил?"
+      fr: "Où l'as-tu mis ?"
+      tense: "Passé Composé"
+    - ru: "Она наводила порядок."
+      fr: "Elle mettait de l'ordre."
+      tense: "Imparfait"
+    - ru: "Я включаю музыку."
+      fr: "Je mets de la musique."
+      tense: "Présent"
+    - ru: "Они всё положили внутрь."
+      fr: "Ils ont tout mis à l'intérieur."
+      tense: "Passé Composé"
+    - ru: "Положи туда."
+      fr: "Mets-le là."
+      tense: "Présent"
+    - ru: "Это занимает час."
+      fr: "Ça met une heure."
+      tense: "Présent"
+    - ru: "Я носил джинсы."
+      fr: "Je mettais des jeans."
+      tense: "Imparfait"
+    - ru: "Он положил книгу."
+      fr: "Il a posé le livre."
+      tense: "Passé Composé"
+    - ru: "Мы откладываем деньги."
+      fr: "Nous mettons de l'argent de côté."
+      tense: "Présent"
+    - ru: "Она наденет платье."
+      fr: "Elle mettra une robe."
+      tense: "Futur Simple"
+    - ru: "Я кладу сахар в кофе."
+      fr: "Je mets du sucre dans mon café."
+      tense: "Présent"
+    - ru: "Они повесили украшения."
+      fr: "Ils ont mis des décorations."
+      tense: "Passé Composé"
+    - ru: "Поставь себя на моё место."
+      fr: "Mets-toi à ma place."
+      tense: "Présent"
+    - ru: "Я надену что-то тёплое."
+      fr: "Je mettrai quelque chose de chaud."
+      tense: "Futur Simple"
+  pt:
+    - pt: "Ponho na mesa."
+      fr: "Je le mets sur la table."
+      tense: "Présent"
+    - pt: "Veste o casaco."
+      fr: "Mets ton manteau."
+      tense: "Présent"
+    - pt: "Ela maquilha-se."
+      fr: "Elle se maquille."
+      tense: "Présent"
+    - pt: "Pus as chaves aqui."
+      fr: "J'ai mis les clés ici."
+      tense: "Passé Composé"
+    - pt: "Ele vestiu um fato."
+      fr: "Il a mis un costume."
+      tense: "Passé Composé"
+    - pt: "Vamos arrumá-lo."
+      fr: "Nous le rangerons."
+      tense: "Futur Simple"
+    - pt: "Onde puseste?"
+      fr: "Où l'as-tu mis ?"
+      tense: "Passé Composé"
+    - pt: "Ela estava a arrumar."
+      fr: "Elle mettait de l'ordre."
+      tense: "Imparfait"
+    - pt: "Ponho música."
+      fr: "Je mets de la musique."
+      tense: "Présent"
+    - pt: "Puseram tudo lá dentro."
+      fr: "Ils ont tout mis à l'intérieur."
+      tense: "Passé Composé"
+    - pt: "Põe-no ali."
+      fr: "Mets-le là."
+      tense: "Présent"
+    - pt: "Demora uma hora."
+      fr: "Ça met une heure."
+      tense: "Présent"
+    - pt: "Eu usava calças de ganga."
+      fr: "Je mettais des jeans."
+      tense: "Imparfait"
+    - pt: "Ele pousou o livro."
+      fr: "Il a posé le livre."
+      tense: "Passé Composé"
+    - pt: "Pomos dinheiro de lado."
+      fr: "Nous mettons de l'argent de côté."
+      tense: "Présent"
+    - pt: "Ela vestirá um vestido."
+      fr: "Elle mettra une robe."
+      tense: "Futur Simple"
+    - pt: "Ponho açúcar no café."
+      fr: "Je mets du sucre dans mon café."
+      tense: "Présent"
+    - pt: "Puseram decorações."
+      fr: "Ils ont mis des décorations."
+      tense: "Passé Composé"
+    - pt: "Põe-te no meu lugar."
+      fr: "Mets-toi à ma place."
+      tense: "Présent"
+    - pt: "Vou vestir algo quente."
+      fr: "Je mettrai quelque chose de chaud."
+      tense: "Futur Simple"

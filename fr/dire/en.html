@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇫🇷 VERB DIRE — 20 Phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Back to verb list</a>
+            <h1>🇫🇷 Verb DIRE</h1>
+            <p class="subtitle">to say — 20 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Show all translations</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
+        </div>
+
+        <div class="stats" id="stats">Showing: 20 of 20 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            French Practice — DIRE · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇫🇷 Verb DIRE</h2>
+            <div class="tense-explanation">
+                <h4>Présent</h4>
+                <p>Present tense - saying, telling</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>dis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>dis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>dit</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>disons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>dites</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>disent</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Passé Composé</h4>
+                <p>Past tense - said</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>ai dit</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>as dit</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>a dit</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>avons dit</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>avez dit</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>ont dit</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imparfait</h4>
+                <p>Imperfect - was saying, used to say</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>disais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>disais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>disait</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>disions</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>disiez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>disaient</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur Simple</h4>
+                <p>Future - will say</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>dirai</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>diras</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>dira</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>dirons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>direz</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>diront</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'en',
+            targetKey: 'fr',
+            labels: { target: 'French', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["dis","dit","disons","dites","disent","disais","disait","disions","disiez","disaient","dit","dirai","diras","dira","dirons","direz","diront"],
+            phrases: [
+                { en: "What did you say?", fr: "Qu'est-ce que tu as dit ?", tense: "Passé Composé" },
+                { en: "I say yes.", fr: "Je dis oui.", tense: "Présent" },
+                { en: "She said nothing.", fr: "Elle n'a rien dit.", tense: "Passé Composé" },
+                { en: "They say it's true.", fr: "On dit que c'est vrai.", tense: "Présent" },
+                { en: "He told me the truth.", fr: "Il m'a dit la vérité.", tense: "Passé Composé" },
+                { en: "What does that mean?", fr: "Qu'est-ce que ça veut dire ?", tense: "Présent" },
+                { en: "I will tell you later.", fr: "Je te dirai plus tard.", tense: "Futur Simple" },
+                { en: "She always says the same thing.", fr: "Elle dit toujours la même chose.", tense: "Présent" },
+                { en: "I said goodbye.", fr: "J'ai dit au revoir.", tense: "Passé Composé" },
+                { en: "Tell me more.", fr: "Dis-moi plus.", tense: "Présent" },
+                { en: "He said he was busy.", fr: "Il a dit qu'il était occupé.", tense: "Passé Composé" },
+                { en: "I have nothing to say.", fr: "Je n'ai rien à dire.", tense: "Présent" },
+                { en: "She never says thank you.", fr: "Elle ne dit jamais merci.", tense: "Présent" },
+                { en: "They said it was impossible.", fr: "Ils ont dit que c'était impossible.", tense: "Passé Composé" },
+                { en: "I will say a few words.", fr: "Je dirai quelques mots.", tense: "Futur Simple" },
+                { en: "What does that word mean?", fr: "Que veut dire ce mot ?", tense: "Présent" },
+                { en: "She told me a secret.", fr: "Elle m'a dit un secret.", tense: "Passé Composé" },
+                { en: "I can't say for sure.", fr: "Je ne peux pas dire avec certitude.", tense: "Présent" },
+                { en: "He said hello.", fr: "Il a dit bonjour.", tense: "Passé Composé" },
+                { en: "That is to say...", fr: "C'est-à-dire...", tense: "Présent" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

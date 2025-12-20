@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇫🇷 VERB AIMER — 20 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇫🇷 Verb AIMER</h1>
+            <p class="subtitle">to love, to like — 20 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 20 de 20 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Prática de francês — AIMER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇫🇷 Verb AIMER</h2>
+            <div class="tense-explanation">
+                <h4>Présent</h4>
+                <p>Presente - amar, gostar</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>aime</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>aimes</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>aime</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>aimons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>aimez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>aiment</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Passé Composé</h4>
+                <p>Pretérito perfeito - amou, gostou</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>ai aimé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>as aimé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>a aimé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>avons aimé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>avez aimé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>ont aimé</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imparfait</h4>
+                <p>Imperfeito - amava, gostava</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>aimais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>aimais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>aimait</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>aimions</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>aimiez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>aimaient</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur Simple</h4>
+                <p>Futuro simples - amará</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>aimerai</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>aimeras</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>aimera</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>aimerons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>aimerez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>aimeront</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'fr',
+            labels: { target: 'Français', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["aime","aimes","aimons","aimez","aiment","aimais","aimait","aimions","aimiez","aimaient","aimé","aimerai","aimeras","aimera","aimerons","aimerez","aimeront"],
+            phrases: [
+                { pt: "Amo-te.", fr: "Je t'aime.", tense: "Présent" },
+                { pt: "Gosto de café.", fr: "J'aime le café.", tense: "Présent" },
+                { pt: "Ela adora música.", fr: "Elle aime la musique.", tense: "Présent" },
+                { pt: "Gostas?", fr: "Tu aimes ?", tense: "Présent" },
+                { pt: "Gostei desse filme.", fr: "J'ai aimé ce film.", tense: "Passé Composé" },
+                { pt: "Ele amava-a.", fr: "Il l'aimait.", tense: "Imparfait" },
+                { pt: "Gostamos de viajar.", fr: "Nous aimons voyager.", tense: "Présent" },
+                { pt: "Queria um chá.", fr: "J'aimerais un thé.", tense: "Présent" },
+                { pt: "Eles amam-se.", fr: "Ils s'aiment.", tense: "Présent" },
+                { pt: "Não gostei disso.", fr: "Je n'ai pas aimé ça.", tense: "Passé Composé" },
+                { pt: "Ela adora dançar.", fr: "Elle aime danser.", tense: "Présent" },
+                { pt: "Eu gostava disso.", fr: "J'aimais ça.", tense: "Imparfait" },
+                { pt: "Vais adorar Paris.", fr: "Tu aimeras Paris.", tense: "Futur Simple" },
+                { pt: "Adoro este lugar.", fr: "J'adore cet endroit.", tense: "Présent" },
+                { pt: "Gostas de chocolate?", fr: "Tu aimes le chocolat ?", tense: "Présent" },
+                { pt: "Ele gostava do trabalho.", fr: "Il aimait son travail.", tense: "Imparfait" },
+                { pt: "Gostámos do espetáculo.", fr: "Nous avons aimé le spectacle.", tense: "Passé Composé" },
+                { pt: "Amarei-te para sempre.", fr: "Je t'aimerai toujours.", tense: "Futur Simple" },
+                { pt: "Ela gosta de ler.", fr: "Elle aime lire.", tense: "Présent" },
+                { pt: "Não gosto de segundas.", fr: "Je n'aime pas les lundis.", tense: "Présent" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>
