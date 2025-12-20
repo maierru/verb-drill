@@ -4,7 +4,9 @@ name: "\U0001F1F5\U0001F1F9 Verb PÔR"
 meaning: to put
 conjugation:
   - tense: Presente
-    explanation: "Current actions of putting/placing"
+    explanation:
+      en: "Current actions of putting/placing"
+      ru: "Класть, ставить"
     forms:
       eu: ponho
       tu: pões
@@ -12,7 +14,9 @@ conjugation:
       nós: pomos
       eles/elas: põem
   - tense: Pretérito Imperfeito
-    explanation: "Past habitual or ongoing putting"
+    explanation:
+      en: "Past habitual or ongoing putting"
+      ru: "Клал, ставил"
     forms:
       eu: punha
       tu: punhas
@@ -20,7 +24,9 @@ conjugation:
       nós: púnhamos
       eles/elas: punham
   - tense: Pretérito Perfeito
-    explanation: "Completed past actions of putting"
+    explanation:
+      en: "Completed past actions of putting"
+      ru: "Положил (завершённое)"
     forms:
       eu: pus
       tu: puseste
@@ -28,7 +34,9 @@ conjugation:
       nós: pusemos
       eles/elas: puseram
   - tense: Futuro
-    explanation: "Future actions of putting"
+    explanation:
+      en: "Future actions of putting"
+      ru: "Положу"
     forms:
       eu: porei
       tu: porás
@@ -36,7 +44,9 @@ conjugation:
       nós: poremos
       eles/elas: porão
   - tense: Condicional
-    explanation: "Hypothetical putting"
+    explanation:
+      en: "Hypothetical putting"
+      ru: "Положил бы"
     forms:
       eu: poria
       tu: porias
@@ -44,7 +54,9 @@ conjugation:
       nós: poríamos
       eles/elas: poriam
   - tense: Conjuntivo Presente
-    explanation: "Subjunctive for wishes/doubts about putting"
+    explanation:
+      en: "Subjunctive for wishes/doubts about putting"
+      ru: "Сослагательное (чтобы положил)"
     forms:
       eu: ponha
       tu: ponhas
@@ -52,7 +64,9 @@ conjugation:
       nós: ponhamos
       eles/elas: ponham
   - tense: Conjuntivo Imperfeito
-    explanation: "Past subjunctive for hypothetical putting"
+    explanation:
+      en: "Past subjunctive for hypothetical putting"
+      ru: "Прошедшее сослагательное (если бы положил...)"
     forms:
       eu: pusesse
       tu: pusesses

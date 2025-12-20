@@ -41,7 +41,9 @@ verb_forms:
 - devido
 conjugation:
   - tense: Presente
-    explanation: "Must, should, ought to"
+    explanation:
+      en: "Must, should, ought to"
+      ru: "Должен, следует"
     forms:
       eu: devo
       tu: deves
@@ -49,7 +51,9 @@ conjugation:
       nós: devemos
       eles/elas: devem
   - tense: Pretérito Imperfeito
-    explanation: "Should have (ongoing obligation)"
+    explanation:
+      en: "Should have (ongoing obligation)"
+      ru: "Должен был (продолжающаяся обязанность)"
     forms:
       eu: devia
       tu: devias
@@ -57,7 +61,9 @@ conjugation:
       nós: devíamos
       eles/elas: deviam
   - tense: Pretérito Perfeito
-    explanation: "Had to, owed (completed)"
+    explanation:
+      en: "Had to, owed (completed)"
+      ru: "Пришлось, задолжал (завершённое)"
     forms:
       eu: devi
       tu: deveste
@@ -65,7 +71,9 @@ conjugation:
       nós: devemos
       eles/elas: deveram
   - tense: Futuro
-    explanation: "Will have to"
+    explanation:
+      en: "Will have to"
+      ru: "Буду должен"
     forms:
       eu: deverei
       tu: deverás
@@ -73,7 +81,9 @@ conjugation:
       nós: deveremos
       eles/elas: deverão
   - tense: Condicional
-    explanation: "Should (advice, politeness)"
+    explanation:
+      en: "Should (advice, politeness)"
+      ru: "Следовало бы (совет, вежливость)"
     forms:
       eu: deveria
       tu: deverias
@@ -81,7 +91,9 @@ conjugation:
       nós: deveríamos
       eles/elas: deveriam
   - tense: Presente do Conjuntivo
-    explanation: "Subjunctive for obligation"
+    explanation:
+      en: "Subjunctive for obligation"
+      ru: "Сослагательное для обязательства"
     forms:
       eu: deva
       tu: devas
@@ -89,7 +101,9 @@ conjugation:
       nós: devamos
       eles/elas: devam
   - tense: Imperfeito do Conjuntivo
-    explanation: "Past subjunctive (if I should...)"
+    explanation:
+      en: "Past subjunctive (if I should...)"
+      ru: "Прошедшее сослагательное (если бы я должен был...)"
     forms:
       eu: devesse
       tu: devesses

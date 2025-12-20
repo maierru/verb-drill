@@ -37,7 +37,9 @@ verb_forms:
 - ido
 conjugation:
   - tense: Presente
-    explanation: "Movement, going somewhere, future (ir + infinitive)"
+    explanation:
+      en: "Movement, going somewhere, future (ir + infinitive)"
+      ru: "Движение, куда-то идти, будущее (ir + инфинитив)"
     forms:
       eu: vou
       tu: vais
@@ -45,7 +47,9 @@ conjugation:
       nós: vamos
       eles/elas: vão
   - tense: Pretérito Imperfeito
-    explanation: "Used to go, was going"
+    explanation:
+      en: "Used to go, was going"
+      ru: "Раньше ходил, шёл"
     forms:
       eu: ia
       tu: ias
@@ -53,7 +57,9 @@ conjugation:
       nós: íamos
       eles/elas: iam
   - tense: Pretérito Perfeito
-    explanation: "Went (completed action)"
+    explanation:
+      en: "Went (completed action)"
+      ru: "Пошёл (завершённое действие)"
     forms:
       eu: fui
       tu: foste
@@ -61,7 +67,9 @@ conjugation:
       nós: fomos
       eles/elas: foram
   - tense: Futuro
-    explanation: "Will go (formal)"
+    explanation:
+      en: "Will go (formal)"
+      ru: "Пойду (формально)"
     forms:
       eu: irei
       tu: irás
@@ -69,7 +77,9 @@ conjugation:
       nós: iremos
       eles/elas: irão
   - tense: Condicional
-    explanation: "Would go"
+    explanation:
+      en: "Would go"
+      ru: "Пошёл бы"
     forms:
       eu: iria
       tu: irias
@@ -77,7 +87,9 @@ conjugation:
       nós: iríamos
       eles/elas: iriam
   - tense: Presente do Conjuntivo
-    explanation: "Subjunctive for wishes about going"
+    explanation:
+      en: "Subjunctive for wishes about going"
+      ru: "Сослагательное для желаний о походе"
     forms:
       eu: vá
       tu: vás
@@ -85,7 +97,9 @@ conjugation:
       nós: vamos
       eles/elas: vão
   - tense: Imperfeito do Conjuntivo
-    explanation: "Past subjunctive (if I went...)"
+    explanation:
+      en: "Past subjunctive (if I went...)"
+      ru: "Прошедшее сослагательное (если бы я пошёл...)"
     forms:
       eu: fosse
       tu: fosses

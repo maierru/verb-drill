@@ -42,7 +42,9 @@ verb_forms:
 - dado
 conjugation:
   - tense: Presente
-    explanation: "Giving"
+    explanation:
+      en: "Giving"
+      ru: "Давать"
     forms:
       eu: dou
       tu: dás
@@ -50,7 +52,9 @@ conjugation:
       nós: damos
       eles/elas: dão
   - tense: Pretérito Imperfeito
-    explanation: "Was giving, used to give"
+    explanation:
+      en: "Was giving, used to give"
+      ru: "Давал, раньше давал"
     forms:
       eu: dava
       tu: davas
@@ -58,7 +62,9 @@ conjugation:
       nós: dávamos
       eles/elas: davam
   - tense: Pretérito Perfeito
-    explanation: "Gave (completed)"
+    explanation:
+      en: "Gave (completed)"
+      ru: "Дал (завершённое)"
     forms:
       eu: dei
       tu: deste
@@ -66,7 +72,9 @@ conjugation:
       nós: demos
       eles/elas: deram
   - tense: Futuro
-    explanation: "Will give"
+    explanation:
+      en: "Will give"
+      ru: "Дам"
     forms:
       eu: darei
       tu: darás
@@ -74,7 +82,9 @@ conjugation:
       nós: daremos
       eles/elas: darão
   - tense: Condicional
-    explanation: "Would give"
+    explanation:
+      en: "Would give"
+      ru: "Дал бы"
     forms:
       eu: daria
       tu: darias
@@ -82,7 +92,9 @@ conjugation:
       nós: daríamos
       eles/elas: dariam
   - tense: Presente do Conjuntivo
-    explanation: "Subjunctive for giving"
+    explanation:
+      en: "Subjunctive for giving"
+      ru: "Сослагательное для давания"
     forms:
       eu: dê
       tu: dês
@@ -90,7 +102,9 @@ conjugation:
       nós: demos
       eles/elas: deem
   - tense: Imperfeito do Conjuntivo
-    explanation: "Past subjunctive (if I gave...)"
+    explanation:
+      en: "Past subjunctive (if I gave...)"
+      ru: "Прошедшее сослагательное (если бы я дал...)"
     forms:
       eu: desse
       tu: desses

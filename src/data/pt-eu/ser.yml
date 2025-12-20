@@ -39,7 +39,9 @@ verb_forms:
 - sido
 conjugation:
   - tense: Presente
-    explanation: "Current state or permanent characteristics"
+    explanation:
+      en: "Current state or permanent characteristics"
+      ru: "Текущее состояние или постоянные характеристики"
     forms:
       eu: sou
       tu: és
@@ -47,7 +49,9 @@ conjugation:
       nós: somos
       eles/elas: são
   - tense: Pretérito Imperfeito
-    explanation: "Past state or ongoing condition in the past"
+    explanation:
+      en: "Past state or ongoing condition in the past"
+      ru: "Прошлое состояние или продолжающееся действие в прошлом"
     forms:
       eu: era
       tu: eras
@@ -55,7 +59,9 @@ conjugation:
       nós: éramos
       eles/elas: eram
   - tense: Pretérito Perfeito
-    explanation: "Completed action or state in the past"
+    explanation:
+      en: "Completed action or state in the past"
+      ru: "Завершённое действие или состояние в прошлом"
     forms:
       eu: fui
       tu: foste
@@ -63,7 +69,9 @@ conjugation:
       nós: fomos
       eles/elas: foram
   - tense: Futuro
-    explanation: "Future state or prediction"
+    explanation:
+      en: "Future state or prediction"
+      ru: "Будущее состояние или предсказание"
     forms:
       eu: serei
       tu: serás
@@ -71,7 +79,9 @@ conjugation:
       nós: seremos
       eles/elas: serão
   - tense: Condicional
-    explanation: "Hypothetical or polite expressions"
+    explanation:
+      en: "Hypothetical or polite expressions"
+      ru: "Гипотетические или вежливые выражения"
     forms:
       eu: seria
       tu: serias
@@ -79,7 +89,9 @@ conjugation:
       nós: seríamos
       eles/elas: seriam
   - tense: Presente do Conjuntivo
-    explanation: "Subjunctive for wishes, doubts, emotions"
+    explanation:
+      en: "Subjunctive for wishes, doubts, emotions"
+      ru: "Сослагательное для желаний, сомнений, эмоций"
     forms:
       eu: seja
       tu: sejas
@@ -87,7 +99,9 @@ conjugation:
       nós: sejamos
       eles/elas: sejam
   - tense: Imperfeito do Conjuntivo
-    explanation: "Past subjunctive for hypotheticals (if I were...)"
+    explanation:
+      en: "Past subjunctive for hypotheticals (if I were...)"
+      ru: "Прошедшее сослагательное для гипотез (если бы я был...)"
     forms:
       eu: fosse
       tu: fosses

@@ -39,7 +39,9 @@ verb_forms:
 - quiseres
 conjugation:
   - tense: Presente
-    explanation: "Wanting, desiring"
+    explanation:
+      en: "Wanting, desiring"
+      ru: "Желание, хотение"
     forms:
       eu: quero
       tu: queres
@@ -47,7 +49,9 @@ conjugation:
       nós: queremos
       eles/elas: querem
   - tense: Pretérito Imperfeito
-    explanation: "Wanted (ongoing desire in past)"
+    explanation:
+      en: "Wanted (ongoing desire in past)"
+      ru: "Хотел (продолжающееся желание в прошлом)"
     forms:
       eu: queria
       tu: querias
@@ -55,7 +59,9 @@ conjugation:
       nós: queríamos
       eles/elas: queriam
   - tense: Pretérito Perfeito
-    explanation: "Wanted (specific decision)"
+    explanation:
+      en: "Wanted (specific decision)"
+      ru: "Захотел (конкретное решение)"
     forms:
       eu: quis
       tu: quiseste
@@ -63,7 +69,9 @@ conjugation:
       nós: quisemos
       eles/elas: quiseram
   - tense: Futuro
-    explanation: "Will want"
+    explanation:
+      en: "Will want"
+      ru: "Захочу"
     forms:
       eu: quererei
       tu: quererás
@@ -71,7 +79,9 @@ conjugation:
       nós: quereremos
       eles/elas: quererão
   - tense: Condicional
-    explanation: "Would like (polite requests)"
+    explanation:
+      en: "Would like (polite requests)"
+      ru: "Хотел бы (вежливые просьбы)"
     forms:
       eu: quereria
       tu: quererias
@@ -79,7 +89,9 @@ conjugation:
       nós: quereríamos
       eles/elas: quereriam
   - tense: Presente do Conjuntivo
-    explanation: "Subjunctive for wishes"
+    explanation:
+      en: "Subjunctive for wishes"
+      ru: "Сослагательное для желаний"
     forms:
       eu: queira
       tu: queiras
@@ -87,7 +99,9 @@ conjugation:
       nós: queiramos
       eles/elas: queiram
   - tense: Imperfeito do Conjuntivo
-    explanation: "Past subjunctive (if I wanted...)"
+    explanation:
+      en: "Past subjunctive (if I wanted...)"
+      ru: "Прошедшее сослагательное (если бы я хотел...)"
     forms:
       eu: quisesse
       tu: quisesses

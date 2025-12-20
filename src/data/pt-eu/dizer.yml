@@ -38,7 +38,9 @@ verb_forms:
 - dito
 conjugation:
   - tense: Presente
-    explanation: "Saying, telling"
+    explanation:
+      en: "Saying, telling"
+      ru: "Говорить, сказать"
     forms:
       eu: digo
       tu: dizes
@@ -46,7 +48,9 @@ conjugation:
       nós: dizemos
       eles/elas: dizem
   - tense: Pretérito Imperfeito
-    explanation: "Was saying, used to say"
+    explanation:
+      en: "Was saying, used to say"
+      ru: "Говорил, раньше говорил"
     forms:
       eu: dizia
       tu: dizias
@@ -54,7 +58,9 @@ conjugation:
       nós: dizíamos
       eles/elas: diziam
   - tense: Pretérito Perfeito
-    explanation: "Said (completed)"
+    explanation:
+      en: "Said (completed)"
+      ru: "Сказал (завершённое)"
     forms:
       eu: disse
       tu: disseste
@@ -62,7 +68,9 @@ conjugation:
       nós: dissemos
       eles/elas: disseram
   - tense: Futuro
-    explanation: "Will say"
+    explanation:
+      en: "Will say"
+      ru: "Скажу"
     forms:
       eu: direi
       tu: dirás
@@ -70,7 +78,9 @@ conjugation:
       nós: diremos
       eles/elas: dirão
   - tense: Condicional
-    explanation: "Would say"
+    explanation:
+      en: "Would say"
+      ru: "Сказал бы"
     forms:
       eu: diria
       tu: dirias
@@ -78,7 +88,9 @@ conjugation:
       nós: diríamos
       eles/elas: diriam
   - tense: Presente do Conjuntivo
-    explanation: "Subjunctive for indirect speech"
+    explanation:
+      en: "Subjunctive for indirect speech"
+      ru: "Сослагательное для косвенной речи"
     forms:
       eu: diga
       tu: digas
@@ -86,7 +98,9 @@ conjugation:
       nós: digamos
       eles/elas: digam
   - tense: Imperfeito do Conjuntivo
-    explanation: "Past subjunctive (if I said...)"
+    explanation:
+      en: "Past subjunctive (if I said...)"
+      ru: "Прошедшее сослагательное (если бы я сказал...)"
     forms:
       eu: dissesse
       tu: dissesses

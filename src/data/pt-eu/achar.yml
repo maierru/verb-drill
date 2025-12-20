@@ -40,7 +40,9 @@ verb_forms:
 - acharem
 conjugation:
   - tense: Presente
-    explanation: "Thinking, finding"
+    explanation:
+      en: "Thinking, finding"
+      ru: "Думать, находить"
     forms:
       eu: acho
       tu: achas
@@ -48,7 +50,9 @@ conjugation:
       nós: achamos
       eles/elas: acham
   - tense: Pretérito Imperfeito
-    explanation: "Was thinking, used to think"
+    explanation:
+      en: "Was thinking, used to think"
+      ru: "Думал, раньше думал"
     forms:
       eu: achava
       tu: achavas
@@ -56,7 +60,9 @@ conjugation:
       nós: achávamos
       eles/elas: achavam
   - tense: Pretérito Perfeito
-    explanation: "Thought, found (completed)"
+    explanation:
+      en: "Thought, found (completed)"
+      ru: "Подумал, нашёл (завершённое)"
     forms:
       eu: achei
       tu: achaste
@@ -64,7 +70,9 @@ conjugation:
       nós: achámos
       eles/elas: acharam
   - tense: Futuro
-    explanation: "Will think"
+    explanation:
+      en: "Will think"
+      ru: "Подумаю"
     forms:
       eu: acharei
       tu: acharás
@@ -72,7 +80,9 @@ conjugation:
       nós: acharemos
       eles/elas: acharão
   - tense: Condicional
-    explanation: "Would think"
+    explanation:
+      en: "Would think"
+      ru: "Подумал бы"
     forms:
       eu: acharia
       tu: acharias
@@ -80,7 +90,9 @@ conjugation:
       nós: acharíamos
       eles/elas: achariam
   - tense: Presente do Conjuntivo
-    explanation: "Subjunctive for thinking"
+    explanation:
+      en: "Subjunctive for thinking"
+      ru: "Сослагательное для мышления"
     forms:
       eu: ache
       tu: aches
@@ -88,7 +100,9 @@ conjugation:
       nós: achemos
       eles/elas: achem
   - tense: Imperfeito do Conjuntivo
-    explanation: "Past subjunctive (if I thought...)"
+    explanation:
+      en: "Past subjunctive (if I thought...)"
+      ru: "Прошедшее сослагательное (если бы я думал...)"
     forms:
       eu: achasse
       tu: achasses

@@ -40,7 +40,9 @@ verb_forms:
 - precisarem
 conjugation:
   - tense: Presente
-    explanation: "Needing (precisar de)"
+    explanation:
+      en: "Needing (precisar de)"
+      ru: "Нуждаться (precisar de)"
     forms:
       eu: preciso
       tu: precisas
@@ -48,7 +50,9 @@ conjugation:
       nós: precisamos
       eles/elas: precisam
   - tense: Pretérito Imperfeito
-    explanation: "Was needing, used to need"
+    explanation:
+      en: "Was needing, used to need"
+      ru: "Нуждался, было нужно"
     forms:
       eu: precisava
       tu: precisavas
@@ -56,7 +60,9 @@ conjugation:
       nós: precisávamos
       eles/elas: precisavam
   - tense: Pretérito Perfeito
-    explanation: "Needed (completed)"
+    explanation:
+      en: "Needed (completed)"
+      ru: "Понадобилось (завершённое)"
     forms:
       eu: precisei
       tu: precisaste
@@ -64,7 +70,9 @@ conjugation:
       nós: precisámos
       eles/elas: precisaram
   - tense: Futuro
-    explanation: "Will need"
+    explanation:
+      en: "Will need"
+      ru: "Понадобится"
     forms:
       eu: precisarei
       tu: precisarás
@@ -72,7 +80,9 @@ conjugation:
       nós: precisaremos
       eles/elas: precisarão
   - tense: Condicional
-    explanation: "Would need"
+    explanation:
+      en: "Would need"
+      ru: "Понадобилось бы"
     forms:
       eu: precisaria
       tu: precisarias
@@ -80,7 +90,9 @@ conjugation:
       nós: precisaríamos
       eles/elas: precisariam
   - tense: Presente do Conjuntivo
-    explanation: "Subjunctive for needing"
+    explanation:
+      en: "Subjunctive for needing"
+      ru: "Сослагательное (чтобы понадобилось)"
     forms:
       eu: precise
       tu: precises
@@ -88,7 +100,9 @@ conjugation:
       nós: precisemos
       eles/elas: precisem
   - tense: Imperfeito do Conjuntivo
-    explanation: "Past subjunctive (if I needed...)"
+    explanation:
+      en: "Past subjunctive (if I needed...)"
+      ru: "Прошедшее сослагательное (если бы понадобилось...)"
     forms:
       eu: precisasse
       tu: precisasses

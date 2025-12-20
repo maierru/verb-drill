@@ -4,7 +4,9 @@ name: "\U0001F1F5\U0001F1F9 Trazer"
 meaning: to bring
 conjugation:
   - tense: Presente
-    explanation: "Current actions of bringing"
+    explanation:
+      en: "Current actions of bringing"
+      ru: "Приносить, привозить"
     forms:
       eu: trago
       tu: trazes
@@ -12,7 +14,9 @@ conjugation:
       nós: trazemos
       eles/elas: trazem
   - tense: Pretérito Imperfeito
-    explanation: "Past habitual or ongoing bringing"
+    explanation:
+      en: "Past habitual or ongoing bringing"
+      ru: "Приносил, привозил"
     forms:
       eu: trazia
       tu: trazias
@@ -20,7 +24,9 @@ conjugation:
       nós: trazíamos
       eles/elas: traziam
   - tense: Pretérito Perfeito
-    explanation: "Completed past bringing"
+    explanation:
+      en: "Completed past bringing"
+      ru: "Принёс (завершённое)"
     forms:
       eu: trouxe
       tu: trouxeste
@@ -28,7 +34,9 @@ conjugation:
       nós: trouxemos
       eles/elas: trouxeram
   - tense: Futuro
-    explanation: "Future bringing"
+    explanation:
+      en: "Future bringing"
+      ru: "Принесу"
     forms:
       eu: trarei
       tu: trarás
@@ -36,7 +44,9 @@ conjugation:
       nós: traremos
       eles/elas: trarão
   - tense: Condicional
-    explanation: "Hypothetical bringing"
+    explanation:
+      en: "Hypothetical bringing"
+      ru: "Принёс бы"
     forms:
       eu: traria
       tu: trarias
@@ -44,7 +54,9 @@ conjugation:
       nós: traríamos
       eles/elas: trariam
   - tense: Conjuntivo Presente
-    explanation: "Subjunctive for wishes/doubts about bringing"
+    explanation:
+      en: "Subjunctive for wishes/doubts about bringing"
+      ru: "Сослагательное (чтобы принёс)"
     forms:
       eu: traga
       tu: tragas
@@ -52,7 +64,9 @@ conjugation:
       nós: tragamos
       eles/elas: tragam
   - tense: Conjuntivo Imperfeito
-    explanation: "Past subjunctive for hypothetical bringing"
+    explanation:
+      en: "Past subjunctive for hypothetical bringing"
+      ru: "Прошедшее сослагательное (если бы принёс...)"
     forms:
       eu: trouxesse
       tu: trouxesses

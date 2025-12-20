@@ -45,7 +45,7 @@
 <% conjugation.each do |tense_data| -%>
             <div class="tense-explanation">
                 <h4><%= tense_data['tense'] %></h4>
-                <p><%= tense_data['explanation'] %></p>
+                <p><%= tense_data['explanation'][origin_key] %></p>
             </div>
             <table class="conjugation-table">
                 <thead>

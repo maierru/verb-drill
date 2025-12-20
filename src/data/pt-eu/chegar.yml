@@ -40,7 +40,9 @@ verb_forms:
 - chegarem
 conjugation:
   - tense: Presente
-    explanation: "Arriving, reaching"
+    explanation:
+      en: "Arriving, reaching"
+      ru: "Приезжать, достигать"
     forms:
       eu: chego
       tu: chegas
@@ -48,7 +50,9 @@ conjugation:
       nós: chegamos
       eles/elas: chegam
   - tense: Pretérito Imperfeito
-    explanation: "Was arriving"
+    explanation:
+      en: "Was arriving"
+      ru: "Приезжал"
     forms:
       eu: chegava
       tu: chegavas
@@ -56,7 +60,9 @@ conjugation:
       nós: chegávamos
       eles/elas: chegavam
   - tense: Pretérito Perfeito
-    explanation: "Arrived (completed)"
+    explanation:
+      en: "Arrived (completed)"
+      ru: "Приехал (завершённое)"
     forms:
       eu: cheguei
       tu: chegaste
@@ -64,7 +70,9 @@ conjugation:
       nós: chegámos
       eles/elas: chegaram
   - tense: Futuro
-    explanation: "Will arrive"
+    explanation:
+      en: "Will arrive"
+      ru: "Приеду"
     forms:
       eu: chegarei
       tu: chegarás
@@ -72,7 +80,9 @@ conjugation:
       nós: chegaremos
       eles/elas: chegarão
   - tense: Condicional
-    explanation: "Would arrive"
+    explanation:
+      en: "Would arrive"
+      ru: "Приехал бы"
     forms:
       eu: chegaria
       tu: chegarias
@@ -80,7 +90,9 @@ conjugation:
       nós: chegaríamos
       eles/elas: chegariam
   - tense: Presente do Conjuntivo
-    explanation: "Subjunctive for arriving"
+    explanation:
+      en: "Subjunctive for arriving"
+      ru: "Сослагательное для прибытия"
     forms:
       eu: chegue
       tu: chegues
@@ -88,7 +100,9 @@ conjugation:
       nós: cheguemos
       eles/elas: cheguem
   - tense: Imperfeito do Conjuntivo
-    explanation: "Past subjunctive (if I arrived...)"
+    explanation:
+      en: "Past subjunctive (if I arrived...)"
+      ru: "Прошедшее сослагательное (если бы я приехал...)"
     forms:
       eu: chegasse
       tu: chegasses

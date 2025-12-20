@@ -39,7 +39,9 @@ verb_forms:
 - pedirem
 conjugation:
   - tense: Presente
-    explanation: "Asking, requesting"
+    explanation:
+      en: "Asking, requesting"
+      ru: "Просить, заказывать"
     forms:
       eu: peço
       tu: pedes
@@ -47,7 +49,9 @@ conjugation:
       nós: pedimos
       eles/elas: pedem
   - tense: Pretérito Imperfeito
-    explanation: "Was asking"
+    explanation:
+      en: "Was asking"
+      ru: "Просил, заказывал"
     forms:
       eu: pedia
       tu: pedias
@@ -55,7 +59,9 @@ conjugation:
       nós: pedíamos
       eles/elas: pediam
   - tense: Pretérito Perfeito
-    explanation: "Asked (completed)"
+    explanation:
+      en: "Asked (completed)"
+      ru: "Попросил (завершённое)"
     forms:
       eu: pedi
       tu: pediste
@@ -63,7 +69,9 @@ conjugation:
       nós: pedimos
       eles/elas: pediram
   - tense: Futuro
-    explanation: "Will ask"
+    explanation:
+      en: "Will ask"
+      ru: "Попрошу"
     forms:
       eu: pedirei
       tu: pedirás
@@ -71,7 +79,9 @@ conjugation:
       nós: pediremos
       eles/elas: pedirão
   - tense: Condicional
-    explanation: "Would ask"
+    explanation:
+      en: "Would ask"
+      ru: "Попросил бы"
     forms:
       eu: pediria
       tu: pedirias
@@ -79,7 +89,9 @@ conjugation:
       nós: pediríamos
       eles/elas: pediriam
   - tense: Presente do Conjuntivo
-    explanation: "Subjunctive for asking"
+    explanation:
+      en: "Subjunctive for asking"
+      ru: "Сослагательное (чтобы попросил)"
     forms:
       eu: peça
       tu: peças
@@ -87,7 +99,9 @@ conjugation:
       nós: peçamos
       eles/elas: peçam
   - tense: Imperfeito do Conjuntivo
-    explanation: "Past subjunctive (if I asked...)"
+    explanation:
+      en: "Past subjunctive (if I asked...)"
+      ru: "Прошедшее сослагательное (если бы попросил...)"
     forms:
       eu: pedisse
       tu: pedisses

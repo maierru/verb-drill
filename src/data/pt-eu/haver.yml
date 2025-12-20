@@ -42,7 +42,9 @@ verb_forms:
 - havido
 conjugation:
   - tense: Presente
-    explanation: "There is/are (há), to have (auxiliary)"
+    explanation:
+      en: "There is/are (há), to have (auxiliary)"
+      ru: "Есть, имеется (há), вспомогательный глагол"
     forms:
       eu: hei
       tu: hás
@@ -50,7 +52,9 @@ conjugation:
       nós: havemos
       eles/elas: hão
   - tense: Pretérito Imperfeito
-    explanation: "There was/were (havia)"
+    explanation:
+      en: "There was/were (havia)"
+      ru: "Был, было, были (havia)"
     forms:
       eu: havia
       tu: havias
@@ -58,7 +62,9 @@ conjugation:
       nós: havíamos
       eles/elas: haviam
   - tense: Pretérito Perfeito
-    explanation: "There was (houve) - specific event"
+    explanation:
+      en: "There was (houve) - specific event"
+      ru: "Было (houve) - конкретное событие"
     forms:
       eu: houve
       tu: houveste
@@ -66,7 +72,9 @@ conjugation:
       nós: houvemos
       eles/elas: houveram
   - tense: Futuro
-    explanation: "There will be (haverá)"
+    explanation:
+      en: "There will be (haverá)"
+      ru: "Будет (haverá)"
     forms:
       eu: haverei
       tu: haverás
@@ -74,7 +82,9 @@ conjugation:
       nós: haveremos
       eles/elas: haverão
   - tense: Condicional
-    explanation: "There would be (haveria)"
+    explanation:
+      en: "There would be (haveria)"
+      ru: "Было бы (haveria)"
     forms:
       eu: haveria
       tu: haverias
@@ -82,7 +92,9 @@ conjugation:
       nós: haveríamos
       eles/elas: haveriam
   - tense: Presente do Conjuntivo
-    explanation: "Subjunctive (haja)"
+    explanation:
+      en: "Subjunctive (haja)"
+      ru: "Сослагательное (haja)"
     forms:
       eu: haja
       tu: hajas
@@ -90,7 +102,9 @@ conjugation:
       nós: hajamos
       eles/elas: hajam
   - tense: Imperfeito do Conjuntivo
-    explanation: "Past subjunctive (if there were...)"
+    explanation:
+      en: "Past subjunctive (if there were...)"
+      ru: "Прошедшее сослагательное (если бы было...)"
     forms:
       eu: houvesse
       tu: houvesses

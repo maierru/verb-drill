@@ -1,7 +1,7 @@
 ---
 slug: comecar
 name: "\U0001F1F5\U0001F1F9 Começar"
-meaning: to go out, to leave
+meaning: to start, to begin
 verb_forms:
 - começo
 - começas
@@ -40,7 +40,9 @@ verb_forms:
 - começarem
 conjugation:
   - tense: Presente
-    explanation: "Starting, beginning"
+    explanation:
+      en: "Starting, beginning"
+      ru: "Начинать"
     forms:
       eu: começo
       tu: começas
@@ -48,7 +50,9 @@ conjugation:
       nós: começamos
       eles/elas: começam
   - tense: Pretérito Imperfeito
-    explanation: "Was starting"
+    explanation:
+      en: "Was starting"
+      ru: "Начинал"
     forms:
       eu: começava
       tu: começavas
@@ -56,7 +60,9 @@ conjugation:
       nós: começávamos
       eles/elas: começavam
   - tense: Pretérito Perfeito
-    explanation: "Started (completed)"
+    explanation:
+      en: "Started (completed)"
+      ru: "Начал (завершённое)"
     forms:
       eu: comecei
       tu: começaste
@@ -64,7 +70,9 @@ conjugation:
       nós: começámos
       eles/elas: começaram
   - tense: Futuro
-    explanation: "Will start"
+    explanation:
+      en: "Will start"
+      ru: "Начну"
     forms:
       eu: começarei
       tu: começarás
@@ -72,7 +80,9 @@ conjugation:
       nós: começaremos
       eles/elas: começarão
   - tense: Condicional
-    explanation: "Would start"
+    explanation:
+      en: "Would start"
+      ru: "Начал бы"
     forms:
       eu: começaria
       tu: começarias
@@ -80,7 +90,9 @@ conjugation:
       nós: começaríamos
       eles/elas: começariam
   - tense: Presente do Conjuntivo
-    explanation: "Subjunctive for starting"
+    explanation:
+      en: "Subjunctive for starting"
+      ru: "Сослагательное для начала"
     forms:
       eu: comece
       tu: comeces
@@ -88,7 +100,9 @@ conjugation:
       nós: comecemos
       eles/elas: comecem
   - tense: Imperfeito do Conjuntivo
-    explanation: "Past subjunctive (if I started...)"
+    explanation:
+      en: "Past subjunctive (if I started...)"
+      ru: "Прошедшее сослагательное (если бы я начал...)"
     forms:
       eu: começasse
       tu: começasses

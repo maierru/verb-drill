@@ -39,7 +39,9 @@ verb_forms:
 - ouvirem
 conjugation:
   - tense: Presente
-    explanation: "Hearing, listening"
+    explanation:
+      en: "Hearing, listening"
+      ru: "Слышать, слушать"
     forms:
       eu: ouço
       tu: ouves
@@ -47,7 +49,9 @@ conjugation:
       nós: ouvimos
       eles/elas: ouvem
   - tense: Pretérito Imperfeito
-    explanation: "Was hearing"
+    explanation:
+      en: "Was hearing"
+      ru: "Слышал, слушал"
     forms:
       eu: ouvia
       tu: ouvias
@@ -55,7 +59,9 @@ conjugation:
       nós: ouvíamos
       eles/elas: ouviam
   - tense: Pretérito Perfeito
-    explanation: "Heard (completed)"
+    explanation:
+      en: "Heard (completed)"
+      ru: "Услышал (завершённое)"
     forms:
       eu: ouvi
       tu: ouviste
@@ -63,7 +69,9 @@ conjugation:
       nós: ouvimos
       eles/elas: ouviram
   - tense: Futuro
-    explanation: "Will hear"
+    explanation:
+      en: "Will hear"
+      ru: "Услышу"
     forms:
       eu: ouvirei
       tu: ouvirás
@@ -71,7 +79,9 @@ conjugation:
       nós: ouviremos
       eles/elas: ouvirão
   - tense: Condicional
-    explanation: "Would hear"
+    explanation:
+      en: "Would hear"
+      ru: "Услышал бы"
     forms:
       eu: ouviria
       tu: ouvirias
@@ -79,7 +89,9 @@ conjugation:
       nós: ouviríamos
       eles/elas: ouviriam
   - tense: Presente do Conjuntivo
-    explanation: "Subjunctive for hearing"
+    explanation:
+      en: "Subjunctive for hearing"
+      ru: "Сослагательное (чтобы услышал)"
     forms:
       eu: ouça
       tu: ouças
@@ -87,7 +99,9 @@ conjugation:
       nós: ouçamos
       eles/elas: ouçam
   - tense: Imperfeito do Conjuntivo
-    explanation: "Past subjunctive (if I heard...)"
+    explanation:
+      en: "Past subjunctive (if I heard...)"
+      ru: "Прошедшее сослагательное (если бы услышал...)"
     forms:
       eu: ouvisse
       tu: ouvisses

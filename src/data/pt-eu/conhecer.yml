@@ -41,7 +41,9 @@ verb_forms:
 - conhecemo
 conjugation:
   - tense: Presente
-    explanation: "Knowing (people/places), meeting"
+    explanation:
+      en: "Knowing (people/places), meeting"
+      ru: "Знать (людей/места), знакомиться"
     forms:
       eu: conheço
       tu: conheces
@@ -49,7 +51,9 @@ conjugation:
       nós: conhecemos
       eles/elas: conhecem
   - tense: Pretérito Imperfeito
-    explanation: "Knew, used to know"
+    explanation:
+      en: "Knew, used to know"
+      ru: "Знал, раньше знал"
     forms:
       eu: conhecia
       tu: conhecias
@@ -57,7 +61,9 @@ conjugation:
       nós: conhecíamos
       eles/elas: conheciam
   - tense: Pretérito Perfeito
-    explanation: "Met, got to know (completed)"
+    explanation:
+      en: "Met, got to know (completed)"
+      ru: "Познакомился, узнал (завершённое)"
     forms:
       eu: conheci
       tu: conheceste
@@ -65,7 +71,9 @@ conjugation:
       nós: conhecemos
       eles/elas: conheceram
   - tense: Futuro
-    explanation: "Will meet/know"
+    explanation:
+      en: "Will meet/know"
+      ru: "Познакомлюсь/узнаю"
     forms:
       eu: conhecerei
       tu: conhecerás
@@ -73,7 +81,9 @@ conjugation:
       nós: conheceremos
       eles/elas: conhecerão
   - tense: Condicional
-    explanation: "Would know/meet"
+    explanation:
+      en: "Would know/meet"
+      ru: "Познакомился бы/знал бы"
     forms:
       eu: conheceria
       tu: conhecerias
@@ -81,7 +91,9 @@ conjugation:
       nós: conheceríamos
       eles/elas: conheceriam
   - tense: Presente do Conjuntivo
-    explanation: "Subjunctive for knowing"
+    explanation:
+      en: "Subjunctive for knowing"
+      ru: "Сослагательное для знакомства"
     forms:
       eu: conheça
       tu: conheças
@@ -89,7 +101,9 @@ conjugation:
       nós: conheçamos
       eles/elas: conheçam
   - tense: Imperfeito do Conjuntivo
-    explanation: "Past subjunctive (if I knew...)"
+    explanation:
+      en: "Past subjunctive (if I knew...)"
+      ru: "Прошедшее сослагательное (если бы я знал...)"
     forms:
       eu: conhecesse
       tu: conhecesses

@@ -1,7 +1,7 @@
 ---
 slug: ver
 name: "\U0001F1F5\U0001F1F9 Verb VER"
-meaning: to be (permanent)
+meaning: to see
 verb_forms:
 - vejo
 - vês
@@ -43,7 +43,9 @@ verb_forms:
 - visto
 conjugation:
   - tense: Presente
-    explanation: "Seeing, watching"
+    explanation:
+      en: "Seeing, watching"
+      ru: "Видеть, смотреть"
     forms:
       eu: vejo
       tu: vês
@@ -51,7 +53,9 @@ conjugation:
       nós: vemos
       eles/elas: veem
   - tense: Pretérito Imperfeito
-    explanation: "Was seeing, used to see"
+    explanation:
+      en: "Was seeing, used to see"
+      ru: "Видел, раньше видел"
     forms:
       eu: via
       tu: vias
@@ -59,7 +63,9 @@ conjugation:
       nós: víamos
       eles/elas: viam
   - tense: Pretérito Perfeito
-    explanation: "Saw (completed)"
+    explanation:
+      en: "Saw (completed)"
+      ru: "Увидел (завершённое)"
     forms:
       eu: vi
       tu: viste
@@ -67,7 +73,9 @@ conjugation:
       nós: vimos
       eles/elas: viram
   - tense: Futuro
-    explanation: "Will see"
+    explanation:
+      en: "Will see"
+      ru: "Увижу"
     forms:
       eu: verei
       tu: verás
@@ -75,7 +83,9 @@ conjugation:
       nós: veremos
       eles/elas: verão
   - tense: Condicional
-    explanation: "Would see"
+    explanation:
+      en: "Would see"
+      ru: "Увидел бы"
     forms:
       eu: veria
       tu: verias
@@ -83,7 +93,9 @@ conjugation:
       nós: veríamos
       eles/elas: veriam
   - tense: Presente do Conjuntivo
-    explanation: "Subjunctive for seeing"
+    explanation:
+      en: "Subjunctive for seeing"
+      ru: "Сослагательное для видения"
     forms:
       eu: veja
       tu: vejas
@@ -91,7 +103,9 @@ conjugation:
       nós: vejamos
       eles/elas: vejam
   - tense: Imperfeito do Conjuntivo
-    explanation: "Past subjunctive (if I saw...)"
+    explanation:
+      en: "Past subjunctive (if I saw...)"
+      ru: "Прошедшее сослагательное (если бы я увидел...)"
     forms:
       eu: visse
       tu: visses

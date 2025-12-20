@@ -39,7 +39,9 @@ verb_forms:
 - vier
 conjugation:
   - tense: Presente
-    explanation: "Coming, arriving"
+    explanation:
+      en: "Coming, arriving"
+      ru: "Приходить, прибывать"
     forms:
       eu: venho
       tu: vens
@@ -47,7 +49,9 @@ conjugation:
       nós: vimos
       eles/elas: vêm
   - tense: Pretérito Imperfeito
-    explanation: "Was coming, used to come"
+    explanation:
+      en: "Was coming, used to come"
+      ru: "Приходил, раньше приходил"
     forms:
       eu: vinha
       tu: vinhas
@@ -55,7 +59,9 @@ conjugation:
       nós: vínhamos
       eles/elas: vinham
   - tense: Pretérito Perfeito
-    explanation: "Came (completed)"
+    explanation:
+      en: "Came (completed)"
+      ru: "Пришёл (завершённое)"
     forms:
       eu: vim
       tu: vieste
@@ -63,7 +69,9 @@ conjugation:
       nós: viemos
       eles/elas: vieram
   - tense: Futuro
-    explanation: "Will come"
+    explanation:
+      en: "Will come"
+      ru: "Приду"
     forms:
       eu: virei
       tu: virás
@@ -71,7 +79,9 @@ conjugation:
       nós: viremos
       eles/elas: virão
   - tense: Condicional
-    explanation: "Would come"
+    explanation:
+      en: "Would come"
+      ru: "Пришёл бы"
     forms:
       eu: viria
       tu: virias
@@ -79,7 +89,9 @@ conjugation:
       nós: viríamos
       eles/elas: viriam
   - tense: Presente do Conjuntivo
-    explanation: "Subjunctive for coming"
+    explanation:
+      en: "Subjunctive for coming"
+      ru: "Сослагательное для прихода"
     forms:
       eu: venha
       tu: venhas
@@ -87,7 +99,9 @@ conjugation:
       nós: venhamos
       eles/elas: venham
   - tense: Imperfeito do Conjuntivo
-    explanation: "Past subjunctive (if I came...)"
+    explanation:
+      en: "Past subjunctive (if I came...)"
+      ru: "Прошедшее сослагательное (если бы я пришёл...)"
     forms:
       eu: viesse
       tu: viesses

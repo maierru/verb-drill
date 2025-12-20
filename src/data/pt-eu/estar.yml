@@ -39,7 +39,9 @@ verb_forms:
 - estado
 conjugation:
   - tense: Presente
-    explanation: "Temporary states, locations, emotions"
+    explanation:
+      en: "Temporary states, locations, emotions"
+      ru: "Временные состояния, местоположение, эмоции"
     forms:
       eu: estou
       tu: estás
@@ -47,7 +49,9 @@ conjugation:
       nós: estamos
       eles/elas: estão
   - tense: Pretérito Imperfeito
-    explanation: "Ongoing temporary state in the past"
+    explanation:
+      en: "Ongoing temporary state in the past"
+      ru: "Продолжающееся временное состояние в прошлом"
     forms:
       eu: estava
       tu: estavas
@@ -55,7 +59,9 @@ conjugation:
       nós: estávamos
       eles/elas: estavam
   - tense: Pretérito Perfeito
-    explanation: "Completed temporary state"
+    explanation:
+      en: "Completed temporary state"
+      ru: "Завершённое временное состояние"
     forms:
       eu: estive
       tu: estiveste
@@ -63,7 +69,9 @@ conjugation:
       nós: estivemos
       eles/elas: estiveram
   - tense: Futuro
-    explanation: "Future temporary state"
+    explanation:
+      en: "Future temporary state"
+      ru: "Будущее временное состояние"
     forms:
       eu: estarei
       tu: estarás
@@ -71,7 +79,9 @@ conjugation:
       nós: estaremos
       eles/elas: estarão
   - tense: Condicional
-    explanation: "Hypothetical temporary state"
+    explanation:
+      en: "Hypothetical temporary state"
+      ru: "Гипотетическое временное состояние"
     forms:
       eu: estaria
       tu: estarias
@@ -79,7 +89,9 @@ conjugation:
       nós: estaríamos
       eles/elas: estariam
   - tense: Presente do Conjuntivo
-    explanation: "Subjunctive for wishes, doubts about state"
+    explanation:
+      en: "Subjunctive for wishes, doubts about state"
+      ru: "Сослагательное для желаний, сомнений о состоянии"
     forms:
       eu: esteja
       tu: estejas
@@ -87,7 +99,9 @@ conjugation:
       nós: estejamos
       eles/elas: estejam
   - tense: Imperfeito do Conjuntivo
-    explanation: "Past subjunctive (if I were there...)"
+    explanation:
+      en: "Past subjunctive (if I were there...)"
+      ru: "Прошедшее сослагательное (если бы я был там...)"
     forms:
       eu: estivesse
       tu: estivesses

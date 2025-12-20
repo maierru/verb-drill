@@ -41,7 +41,9 @@ verb_forms:
 - conseguido
 conjugation:
   - tense: Presente
-    explanation: "Managing to, being able to"
+    explanation:
+      en: "Managing to, being able to"
+      ru: "Удаваться, мочь"
     forms:
       eu: consigo
       tu: consegues
@@ -49,7 +51,9 @@ conjugation:
       nós: conseguimos
       eles/elas: conseguem
   - tense: Pretérito Imperfeito
-    explanation: "Was managing to"
+    explanation:
+      en: "Was managing to"
+      ru: "Удавалось"
     forms:
       eu: conseguia
       tu: conseguias
@@ -57,7 +61,9 @@ conjugation:
       nós: conseguíamos
       eles/elas: conseguiam
   - tense: Pretérito Perfeito
-    explanation: "Managed to (completed)"
+    explanation:
+      en: "Managed to (completed)"
+      ru: "Удалось (завершённое)"
     forms:
       eu: consegui
       tu: conseguiste
@@ -65,7 +71,9 @@ conjugation:
       nós: conseguimos
       eles/elas: conseguiram
   - tense: Futuro
-    explanation: "Will manage to"
+    explanation:
+      en: "Will manage to"
+      ru: "Удастся"
     forms:
       eu: conseguirei
       tu: conseguirás
@@ -73,7 +81,9 @@ conjugation:
       nós: conseguiremos
       eles/elas: conseguirão
   - tense: Condicional
-    explanation: "Would manage to"
+    explanation:
+      en: "Would manage to"
+      ru: "Удалось бы"
     forms:
       eu: conseguiria
       tu: conseguirias
@@ -81,7 +91,9 @@ conjugation:
       nós: conseguiríamos
       eles/elas: conseguiriam
   - tense: Presente do Conjuntivo
-    explanation: "Subjunctive for managing"
+    explanation:
+      en: "Subjunctive for managing"
+      ru: "Сослагательное для достижения"
     forms:
       eu: consiga
       tu: consigas
@@ -89,7 +101,9 @@ conjugation:
       nós: consigamos
       eles/elas: consigam
   - tense: Imperfeito do Conjuntivo
-    explanation: "Past subjunctive (if I managed...)"
+    explanation:
+      en: "Past subjunctive (if I managed...)"
+      ru: "Прошедшее сослагательное (если бы мне удалось...)"
     forms:
       eu: conseguisse
       tu: conseguisses

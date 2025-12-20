@@ -39,7 +39,9 @@ verb_forms:
 - podido
 conjugation:
   - tense: Presente
-    explanation: "Ability, permission, possibility"
+    explanation:
+      en: "Ability, permission, possibility"
+      ru: "Способность, разрешение, возможность"
     forms:
       eu: posso
       tu: podes
@@ -47,7 +49,9 @@ conjugation:
       nós: podemos
       eles/elas: podem
   - tense: Pretérito Imperfeito
-    explanation: "Could (ongoing ability in past)"
+    explanation:
+      en: "Could (ongoing ability in past)"
+      ru: "Мог (способность в прошлом)"
     forms:
       eu: podia
       tu: podias
@@ -55,7 +59,9 @@ conjugation:
       nós: podíamos
       eles/elas: podiam
   - tense: Pretérito Perfeito
-    explanation: "Was able to (specific occasion)"
+    explanation:
+      en: "Was able to (specific occasion)"
+      ru: "Смог (конкретный случай)"
     forms:
       eu: pude
       tu: pudeste
@@ -63,7 +69,9 @@ conjugation:
       nós: pudemos
       eles/elas: puderam
   - tense: Futuro
-    explanation: "Will be able to"
+    explanation:
+      en: "Will be able to"
+      ru: "Смогу"
     forms:
       eu: poderei
       tu: poderás
@@ -71,7 +79,9 @@ conjugation:
       nós: poderemos
       eles/elas: poderão
   - tense: Condicional
-    explanation: "Could (polite requests, hypotheticals)"
+    explanation:
+      en: "Could (polite requests, hypotheticals)"
+      ru: "Мог бы (вежливые просьбы, гипотезы)"
     forms:
       eu: poderia
       tu: poderias
@@ -79,7 +89,9 @@ conjugation:
       nós: poderíamos
       eles/elas: poderiam
   - tense: Presente do Conjuntivo
-    explanation: "Subjunctive for possibility"
+    explanation:
+      en: "Subjunctive for possibility"
+      ru: "Сослагательное для возможности"
     forms:
       eu: possa
       tu: possas
@@ -87,7 +99,9 @@ conjugation:
       nós: possamos
       eles/elas: possam
   - tense: Imperfeito do Conjuntivo
-    explanation: "Past subjunctive (if I could...)"
+    explanation:
+      en: "Past subjunctive (if I could...)"
+      ru: "Прошедшее сослагательное (если бы я мог...)"
     forms:
       eu: pudesse
       tu: pudesses

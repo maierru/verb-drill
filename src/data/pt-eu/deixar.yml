@@ -40,7 +40,9 @@ verb_forms:
 - deixarem
 conjugation:
   - tense: Presente
-    explanation: "Leaving, letting, allowing"
+    explanation:
+      en: "Leaving, letting, allowing"
+      ru: "Оставлять, позволять"
     forms:
       eu: deixo
       tu: deixas
@@ -48,7 +50,9 @@ conjugation:
       nós: deixamos
       eles/elas: deixam
   - tense: Pretérito Imperfeito
-    explanation: "Was leaving, used to leave"
+    explanation:
+      en: "Was leaving, used to leave"
+      ru: "Оставлял, раньше оставлял"
     forms:
       eu: deixava
       tu: deixavas
@@ -56,7 +60,9 @@ conjugation:
       nós: deixávamos
       eles/elas: deixavam
   - tense: Pretérito Perfeito
-    explanation: "Left, let (completed)"
+    explanation:
+      en: "Left, let (completed)"
+      ru: "Оставил (завершённое)"
     forms:
       eu: deixei
       tu: deixaste
@@ -64,7 +70,9 @@ conjugation:
       nós: deixámos
       eles/elas: deixaram
   - tense: Futuro
-    explanation: "Will leave"
+    explanation:
+      en: "Will leave"
+      ru: "Оставлю"
     forms:
       eu: deixarei
       tu: deixarás
@@ -72,7 +80,9 @@ conjugation:
       nós: deixaremos
       eles/elas: deixarão
   - tense: Condicional
-    explanation: "Would leave"
+    explanation:
+      en: "Would leave"
+      ru: "Оставил бы"
     forms:
       eu: deixaria
       tu: deixarias
@@ -80,7 +90,9 @@ conjugation:
       nós: deixaríamos
       eles/elas: deixariam
   - tense: Presente do Conjuntivo
-    explanation: "Subjunctive for leaving"
+    explanation:
+      en: "Subjunctive for leaving"
+      ru: "Сослагательное для оставления"
     forms:
       eu: deixe
       tu: deixes
@@ -88,7 +100,9 @@ conjugation:
       nós: deixemos
       eles/elas: deixem
   - tense: Imperfeito do Conjuntivo
-    explanation: "Past subjunctive (if I left...)"
+    explanation:
+      en: "Past subjunctive (if I left...)"
+      ru: "Прошедшее сослагательное (если бы я оставил...)"
     forms:
       eu: deixasse
       tu: deixasses

@@ -4,7 +4,9 @@ name: "\U0001F1F5\U0001F1F9 Sair"
 meaning: to go out, to leave
 conjugation:
   - tense: Presente
-    explanation: "Current actions of leaving/going out"
+    explanation:
+      en: "Current actions of leaving/going out"
+      ru: "Выходить, уходить"
     forms:
       eu: saio
       tu: sais
@@ -12,7 +14,9 @@ conjugation:
       nós: saímos
       eles/elas: saem
   - tense: Pretérito Imperfeito
-    explanation: "Past habitual or ongoing leaving"
+    explanation:
+      en: "Past habitual or ongoing leaving"
+      ru: "Выходил, уходил"
     forms:
       eu: saía
       tu: saías
@@ -20,7 +24,9 @@ conjugation:
       nós: saíamos
       eles/elas: saíam
   - tense: Pretérito Perfeito
-    explanation: "Completed past departures"
+    explanation:
+      en: "Completed past departures"
+      ru: "Вышел (завершённое)"
     forms:
       eu: saí
       tu: saíste
@@ -28,7 +34,9 @@ conjugation:
       nós: saímos
       eles/elas: saíram
   - tense: Futuro
-    explanation: "Future departures"
+    explanation:
+      en: "Future departures"
+      ru: "Выйду"
     forms:
       eu: sairei
       tu: sairás
@@ -36,7 +44,9 @@ conjugation:
       nós: sairemos
       eles/elas: sairão
   - tense: Condicional
-    explanation: "Hypothetical leaving"
+    explanation:
+      en: "Hypothetical leaving"
+      ru: "Вышел бы"
     forms:
       eu: sairia
       tu: sairias
@@ -44,7 +54,9 @@ conjugation:
       nós: sairíamos
       eles/elas: sairiam
   - tense: Conjuntivo Presente
-    explanation: "Subjunctive for wishes/doubts about leaving"
+    explanation:
+      en: "Subjunctive for wishes/doubts about leaving"
+      ru: "Сослагательное (чтобы вышел)"
     forms:
       eu: saia
       tu: saias
@@ -52,7 +64,9 @@ conjugation:
       nós: saiamos
       eles/elas: saiam
   - tense: Conjuntivo Imperfeito
-    explanation: "Past subjunctive for hypothetical leaving"
+    explanation:
+      en: "Past subjunctive for hypothetical leaving"
+      ru: "Прошедшее сослагательное (если бы вышел...)"
     forms:
       eu: saísse
       tu: saísses

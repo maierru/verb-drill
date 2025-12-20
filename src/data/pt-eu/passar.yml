@@ -40,7 +40,9 @@ verb_forms:
 - passarem
 conjugation:
   - tense: Presente
-    explanation: "Passing, spending time"
+    explanation:
+      en: "Passing, spending time"
+      ru: "Проходить, проводить время"
     forms:
       eu: passo
       tu: passas
@@ -48,7 +50,9 @@ conjugation:
       nós: passamos
       eles/elas: passam
   - tense: Pretérito Imperfeito
-    explanation: "Was passing"
+    explanation:
+      en: "Was passing"
+      ru: "Проходил, проводил"
     forms:
       eu: passava
       tu: passavas
@@ -56,7 +60,9 @@ conjugation:
       nós: passávamos
       eles/elas: passavam
   - tense: Pretérito Perfeito
-    explanation: "Passed (completed)"
+    explanation:
+      en: "Passed (completed)"
+      ru: "Прошёл, провёл (завершённое)"
     forms:
       eu: passei
       tu: passaste
@@ -64,7 +70,9 @@ conjugation:
       nós: passámos
       eles/elas: passaram
   - tense: Futuro
-    explanation: "Will pass"
+    explanation:
+      en: "Will pass"
+      ru: "Пройду, проведу"
     forms:
       eu: passarei
       tu: passarás
@@ -72,7 +80,9 @@ conjugation:
       nós: passaremos
       eles/elas: passarão
   - tense: Condicional
-    explanation: "Would pass"
+    explanation:
+      en: "Would pass"
+      ru: "Прошёл бы, провёл бы"
     forms:
       eu: passaria
       tu: passarias
@@ -80,7 +90,9 @@ conjugation:
       nós: passaríamos
       eles/elas: passariam
   - tense: Presente do Conjuntivo
-    explanation: "Subjunctive for passing"
+    explanation:
+      en: "Subjunctive for passing"
+      ru: "Сослагательное (чтобы прошёл)"
     forms:
       eu: passe
       tu: passes
@@ -88,7 +100,9 @@ conjugation:
       nós: passemos
       eles/elas: passem
   - tense: Imperfeito do Conjuntivo
-    explanation: "Past subjunctive (if I passed...)"
+    explanation:
+      en: "Past subjunctive (if I passed...)"
+      ru: "Прошедшее сослагательное (если бы прошёл...)"
     forms:
       eu: passasse
       tu: passasses

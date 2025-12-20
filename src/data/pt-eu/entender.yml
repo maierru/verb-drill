@@ -39,7 +39,9 @@ verb_forms:
 - entenderem
 conjugation:
   - tense: Presente
-    explanation: "Understanding"
+    explanation:
+      en: "Understanding"
+      ru: "Понимать"
     forms:
       eu: entendo
       tu: entendes
@@ -47,7 +49,9 @@ conjugation:
       nós: entendemos
       eles/elas: entendem
   - tense: Pretérito Imperfeito
-    explanation: "Was understanding"
+    explanation:
+      en: "Was understanding"
+      ru: "Понимал"
     forms:
       eu: entendia
       tu: entendias
@@ -55,7 +59,9 @@ conjugation:
       nós: entendíamos
       eles/elas: entendiam
   - tense: Pretérito Perfeito
-    explanation: "Understood (completed)"
+    explanation:
+      en: "Understood (completed)"
+      ru: "Понял (завершённое)"
     forms:
       eu: entendi
       tu: entendeste
@@ -63,7 +69,9 @@ conjugation:
       nós: entendemos
       eles/elas: entenderam
   - tense: Futuro
-    explanation: "Will understand"
+    explanation:
+      en: "Will understand"
+      ru: "Пойму"
     forms:
       eu: entenderei
       tu: entenderás
@@ -71,7 +79,9 @@ conjugation:
       nós: entenderemos
       eles/elas: entenderão
   - tense: Condicional
-    explanation: "Would understand"
+    explanation:
+      en: "Would understand"
+      ru: "Понял бы"
     forms:
       eu: entenderia
       tu: entenderias
@@ -79,7 +89,9 @@ conjugation:
       nós: entenderíamos
       eles/elas: entenderiam
   - tense: Presente do Conjuntivo
-    explanation: "Subjunctive for understanding"
+    explanation:
+      en: "Subjunctive for understanding"
+      ru: "Сослагательное для понимания"
     forms:
       eu: entenda
       tu: entendas
@@ -87,7 +99,9 @@ conjugation:
       nós: entendamos
       eles/elas: entendam
   - tense: Imperfeito do Conjuntivo
-    explanation: "Past subjunctive (if I understood...)"
+    explanation:
+      en: "Past subjunctive (if I understood...)"
+      ru: "Прошедшее сослагательное (если бы я понял...)"
     forms:
       eu: entendesse
       tu: entendesses

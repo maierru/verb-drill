@@ -40,7 +40,9 @@ verb_forms:
 - falarem
 conjugation:
   - tense: Presente
-    explanation: "Speaking, talking now"
+    explanation:
+      en: "Speaking, talking now"
+      ru: "Говорить, разговаривать"
     forms:
       eu: falo
       tu: falas
@@ -48,7 +50,9 @@ conjugation:
       nós: falamos
       eles/elas: falam
   - tense: Pretérito Imperfeito
-    explanation: "Was speaking, used to speak"
+    explanation:
+      en: "Was speaking, used to speak"
+      ru: "Говорил, раньше говорил"
     forms:
       eu: falava
       tu: falavas
@@ -56,7 +60,9 @@ conjugation:
       nós: falávamos
       eles/elas: falavam
   - tense: Pretérito Perfeito
-    explanation: "Spoke (completed)"
+    explanation:
+      en: "Spoke (completed)"
+      ru: "Поговорил (завершённое)"
     forms:
       eu: falei
       tu: falaste
@@ -64,7 +70,9 @@ conjugation:
       nós: falámos
       eles/elas: falaram
   - tense: Futuro
-    explanation: "Will speak"
+    explanation:
+      en: "Will speak"
+      ru: "Поговорю"
     forms:
       eu: falarei
       tu: falarás
@@ -72,7 +80,9 @@ conjugation:
       nós: falaremos
       eles/elas: falarão
   - tense: Condicional
-    explanation: "Would speak"
+    explanation:
+      en: "Would speak"
+      ru: "Поговорил бы"
     forms:
       eu: falaria
       tu: falarias
@@ -80,7 +90,9 @@ conjugation:
       nós: falaríamos
       eles/elas: falariam
   - tense: Presente do Conjuntivo
-    explanation: "Subjunctive for speaking"
+    explanation:
+      en: "Subjunctive for speaking"
+      ru: "Сослагательное для разговора"
     forms:
       eu: fale
       tu: fales
@@ -88,7 +100,9 @@ conjugation:
       nós: falemos
       eles/elas: falem
   - tense: Imperfeito do Conjuntivo
-    explanation: "Past subjunctive (if I spoke...)"
+    explanation:
+      en: "Past subjunctive (if I spoke...)"
+      ru: "Прошедшее сослагательное (если бы я говорил...)"
     forms:
       eu: falasse
       tu: falasses
