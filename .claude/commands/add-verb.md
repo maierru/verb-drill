@@ -1,38 +1,65 @@
 # Add new verb
 
-Add a new verb practice page for all supported origin languages.
+Add a new verb to the practice system.
 
 ## Input
 
-$ARGUMENTS - format: "{language} {verb}" (e.g., "portuguese fazer", "pt-eu ser")
+$ARGUMENTS - format: "{target} {verb}" (e.g., "pt-eu fazer", "en can")
 
 ## Steps
 
-1. Parse input to get target language and verb
-2. Map language name to code if needed (portuguese → pt-eu)
-3. Create folder: `{lang-code}/{verb}/`
-4. Generate `en.html` with 100 English→Portuguese phrases
-5. Generate `ru.html` with 100 Russian→Portuguese phrases
-6. Update `{lang-code}/index.html` to add verb card with badges
+1. Parse target language and verb from input
+2. Create `src/data/{target}/{verb}.yml` with:
+   - slug, name, meaning, verb_forms
+   - phrases for each origin language (100 each)
+3. Add verb to `src/data/{target}/index.yml`
+4. Run `ruby build.rb`
 
-## Generation prompt for each page
+## YAML structure
 
-Create 100 popular phrases using the verb "{verb}" in European Portuguese, sorted by frequency.
+For pt-eu (learning Portuguese):
+```yaml
+slug: verb-name
+name: "🇵🇹 Verb NAME"
+meaning: to do something
+verb_forms: [conjugated, forms, here]
+phrases:
+  en:
+    - en: "English phrase"
+      pt: "Portuguese phrase"
+      tense: "Presente"
+  ru:
+    - ru: "Russian phrase"
+      pt: "Portuguese phrase"
+      tense: "Presente"
+```
 
-Requirements:
-- Cover all tenses: Presente, Pretérito Imperfeito, Pretérito Perfeito, Futuro, Condicional, Presente do Conjuntivo, Imperfeito do Conjuntivo
-- Include: statements, negations, questions, polite requests, common expressions
-- Phrases should be practical, everyday usage
-- Highlight all verb conjugation forms
+For en (learning English):
+```yaml
+slug: verb-name
+name: "🇬🇧 Verb NAME"
+meaning: to do something
+verb_forms: [verb, forms, here]
+phrases:
+  ru:
+    - ru: "Russian phrase"
+      en: "English phrase"
+      tense: "Present"
+  pt:
+    - pt: "Portuguese phrase"
+      en: "English phrase"
+      tense: "Present"
+```
 
-Use the existing `pt-eu/poder/en.html` and `pt-eu/poder/ru.html` as templates - copy structure exactly, only change:
-- Title and header (verb name)
-- Phrases array (new verb conjugations)
-- highlightVerb function (new verb forms)
-- Footer text
+## Phrase requirements
 
-## Language mapping
+- 100 phrases per origin language, sorted by frequency
+- Cover all tenses for target language
+- Include: statements, negations, questions, polite requests, expressions
+- Practical, everyday usage
 
-- portuguese, pt-eu → pt-eu (European Portuguese)
-- brazilian, pt-br → pt-br (Brazilian Portuguese)
-- spanish, es-es → es-es (Castilian Spanish)
+## Tenses
+
+Portuguese: Presente, Pretérito Imperfeito, Pretérito Perfeito, Futuro, Condicional, Presente do Conjuntivo, Imperfeito do Conjuntivo
+
+English: Present, Past, Future, Conditional, Polite, Permission, Expression
