@@ -1,0 +1,637 @@
+---
+slug: gostar
+name: "\U0001F1F5\U0001F1F9 Gostar"
+meaning: to like
+verb_forms:
+- gosto
+- gostas
+- gosta
+- gostamos
+- gostam
+- gostava
+- gostavas
+- gostávamos
+- gostavam
+- gostei
+- gostaste
+- gostou
+- gostámos
+- gostaram
+- gostarei
+- gostarás
+- gostará
+- gostaremos
+- gostarão
+- gostaria
+- gostarias
+- gostaríamos
+- gostariam
+- goste
+- gostes
+- gostemos
+- gostem
+- gostasse
+- gostasses
+- gostássemos
+- gostassem
+- gostar
+- gostares
+- gostarmos
+- gostarem
+phrases:
+  en:
+  - en: I like it.
+    pt: Gosto.
+    tense: Presente
+  - en: You like coffee.
+    pt: Gostas de café.
+    tense: Presente
+  - en: He likes music.
+    pt: Ele gosta de música.
+    tense: Presente
+  - en: We like the beach.
+    pt: Gostamos da praia.
+    tense: Presente
+  - en: They like to travel.
+    pt: Eles gostam de viajar.
+    tense: Presente
+  - en: I like this.
+    pt: Gosto disto.
+    tense: Presente
+  - en: You like reading.
+    pt: Gostas de ler.
+    tense: Presente
+  - en: She likes to dance.
+    pt: Ela gosta de dançar.
+    tense: Presente
+  - en: We like Portuguese food.
+    pt: Gostamos de comida portuguesa.
+    tense: Presente
+  - en: They like the city.
+    pt: Eles gostam da cidade.
+    tense: Presente
+  - en: I used to like it.
+    pt: Gostava.
+    tense: Imperfeito
+  - en: You used to like sweets.
+    pt: Gostavas de doces.
+    tense: Imperfeito
+  - en: He used to like football.
+    pt: Ele gostava de futebol.
+    tense: Imperfeito
+  - en: We used to like the old house.
+    pt: Gostávamos da casa antiga.
+    tense: Imperfeito
+  - en: They used to like that place.
+    pt: Eles gostavam daquele lugar.
+    tense: Imperfeito
+  - en: I was liking it.
+    pt: Estava a gostar.
+    tense: Imperfeito
+  - en: You were liking the movie.
+    pt: Estavas a gostar do filme.
+    tense: Imperfeito
+  - en: She was liking the book.
+    pt: Ela estava a gostar do livro.
+    tense: Imperfeito
+  - en: We were liking the trip.
+    pt: Estávamos a gostar da viagem.
+    tense: Imperfeito
+  - en: They were liking the food.
+    pt: Eles estavam a gostar da comida.
+    tense: Imperfeito
+  - en: I liked it.
+    pt: Gostei.
+    tense: Perfeito
+  - en: You liked the film.
+    pt: Gostaste do filme.
+    tense: Perfeito
+  - en: He liked the gift.
+    pt: Ele gostou do presente.
+    tense: Perfeito
+  - en: We liked the concert.
+    pt: Gostámos do concerto.
+    tense: Perfeito
+  - en: They liked the idea.
+    pt: Eles gostaram da ideia.
+    tense: Perfeito
+  - en: I liked meeting you.
+    pt: Gostei de te conhecer.
+    tense: Perfeito
+  - en: You liked the dinner.
+    pt: Gostaste do jantar.
+    tense: Perfeito
+  - en: She liked the surprise.
+    pt: Ela gostou da surpresa.
+    tense: Perfeito
+  - en: We liked the hotel.
+    pt: Gostámos do hotel.
+    tense: Perfeito
+  - en: They liked everything.
+    pt: Eles gostaram de tudo.
+    tense: Perfeito
+  - en: I will like it.
+    pt: Gostarei.
+    tense: Futuro
+  - en: You will like this place.
+    pt: Gostarás deste lugar.
+    tense: Futuro
+  - en: He will like the news.
+    pt: Ele gostará das notícias.
+    tense: Futuro
+  - en: We will like living here.
+    pt: Gostaremos de viver aqui.
+    tense: Futuro
+  - en: They will like the result.
+    pt: Eles gostarão do resultado.
+    tense: Futuro
+  - en: I will like the change.
+    pt: Gostarei da mudança.
+    tense: Futuro
+  - en: You will like Portugal.
+    pt: Gostarás de Portugal.
+    tense: Futuro
+  - en: She will like the apartment.
+    pt: Ela gostará do apartamento.
+    tense: Futuro
+  - en: We will like the new job.
+    pt: Gostaremos do novo trabalho.
+    tense: Futuro
+  - en: They will like each other.
+    pt: Eles gostarão um do outro.
+    tense: Futuro
+  - en: I would like.
+    pt: Gostaria.
+    tense: Condicional
+  - en: You would like to come.
+    pt: Gostarias de vir.
+    tense: Condicional
+  - en: He would like to help.
+    pt: Ele gostaria de ajudar.
+    tense: Condicional
+  - en: We would like to know.
+    pt: Gostaríamos de saber.
+    tense: Condicional
+  - en: They would like to stay.
+    pt: Eles gostariam de ficar.
+    tense: Condicional
+  - en: I would like a coffee.
+    pt: Gostaria de um café.
+    tense: Condicional
+  - en: You would like to see.
+    pt: Gostarias de ver.
+    tense: Condicional
+  - en: She would like to try.
+    pt: Ela gostaria de experimentar.
+    tense: Condicional
+  - en: We would like to go.
+    pt: Gostaríamos de ir.
+    tense: Condicional
+  - en: They would like to visit.
+    pt: Eles gostariam de visitar.
+    tense: Condicional
+  - en: I want you to like it.
+    pt: Quero que gostes.
+    tense: Conjuntivo
+  - en: I hope he likes it.
+    pt: Espero que ele goste.
+    tense: Conjuntivo
+  - en: It's important that we like it.
+    pt: É importante que gostemos.
+    tense: Conjuntivo
+  - en: I doubt they like it.
+    pt: Duvido que eles gostem.
+    tense: Conjuntivo
+  - en: Although I like it.
+    pt: Embora eu goste.
+    tense: Conjuntivo
+  - en: So that you like it.
+    pt: Para que tu gostes.
+    tense: Conjuntivo
+  - en: Unless she likes it.
+    pt: A menos que ela goste.
+    tense: Conjuntivo
+  - en: Before they like it.
+    pt: Antes que eles gostem.
+    tense: Conjuntivo
+  - en: It's possible we like it.
+    pt: É possível que gostemos.
+    tense: Conjuntivo
+  - en: I prefer that you like it.
+    pt: Prefiro que tu gostes.
+    tense: Conjuntivo
+  - en: If I liked it.
+    pt: Se eu gostasse.
+    tense: Imperfeito Conj.
+  - en: If you liked it.
+    pt: Se tu gostasses.
+    tense: Imperfeito Conj.
+  - en: If he liked it.
+    pt: Se ele gostasse.
+    tense: Imperfeito Conj.
+  - en: If we liked it.
+    pt: Se nós gostássemos.
+    tense: Imperfeito Conj.
+  - en: If they liked it.
+    pt: Se eles gostassem.
+    tense: Imperfeito Conj.
+  - en: I wish I liked it.
+    pt: Quem me dera gostar.
+    tense: Imperfeito Conj.
+  - en: As if she liked it.
+    pt: Como se ela gostasse.
+    tense: Imperfeito Conj.
+  - en: If only you liked it.
+    pt: Se tu gostasses.
+    tense: Imperfeito Conj.
+  - en: I wanted you to like it.
+    pt: Queria que tu gostasses.
+    tense: Imperfeito Conj.
+  - en: It would be good if they liked it.
+    pt: Seria bom se eles gostassem.
+    tense: Imperfeito Conj.
+  - en: When I like it.
+    pt: Quando eu gostar.
+    tense: Futuro Conj.
+  - en: As soon as you like it.
+    pt: Assim que gostares.
+    tense: Futuro Conj.
+  - en: If he likes it.
+    pt: Se ele gostar.
+    tense: Futuro Conj.
+  - en: When we like it.
+    pt: Quando gostarmos.
+    tense: Futuro Conj.
+  - en: As they like it.
+    pt: Conforme eles gostarem.
+    tense: Futuro Conj.
+  - en: Do you like it?
+    pt: Gostas?
+    tense: Presente
+  - en: Do you like the food?
+    pt: Gostas da comida?
+    tense: Presente
+  - en: Does he like her?
+    pt: Ele gosta dela?
+    tense: Presente
+  - en: Do they like it here?
+    pt: Eles gostam daqui?
+    tense: Presente
+  - en: Did you like it?
+    pt: Gostaste?
+    tense: Perfeito
+  - en: I don't like it.
+    pt: Não gosto.
+    tense: Presente
+  - en: You don't like vegetables.
+    pt: Não gostas de legumes.
+    tense: Presente
+  - en: He doesn't like the cold.
+    pt: Ele não gosta do frio.
+    tense: Presente
+  - en: We don't like waiting.
+    pt: Não gostamos de esperar.
+    tense: Presente
+  - en: They don't like noise.
+    pt: Eles não gostam de barulho.
+    tense: Presente
+  - en: I didn't like it.
+    pt: Não gostei.
+    tense: Perfeito
+  - en: I really like it.
+    pt: Gosto muito.
+    tense: Presente
+  - en: I like it a lot.
+    pt: Gosto bastante.
+    tense: Presente
+  - en: I like you.
+    pt: Gosto de ti.
+    tense: Presente
+  - en: Do you like me?
+    pt: Gostas de mim?
+    tense: Presente
+  - en: I'm starting to like it.
+    pt: Estou a começar a gostar.
+    tense: Presente
+  - en: I would really like to.
+    pt: Gostaria muito.
+    tense: Condicional
+  - en: You would like to know.
+    pt: Gostarias de saber.
+    tense: Condicional
+  - en: I like the way you think.
+    pt: Gosto da forma como pensas.
+    tense: Presente
+  - en: She likes what she does.
+    pt: Ela gosta do que faz.
+    tense: Presente
+  - en: We like being together.
+    pt: Gostamos de estar juntos.
+    tense: Presente
+  - en: He likes to cook.
+    pt: Ele gosta de cozinhar.
+    tense: Presente
+  - en: I would like to speak Portuguese.
+    pt: Gostaria de falar português.
+    tense: Condicional
+  - en: Would you like something?
+    pt: Gostarias de alguma coisa?
+    tense: Condicional
+  ru:
+  - ru: Мне нравится.
+    pt: Gosto.
+    tense: Presente
+  - ru: Тебе нравится кофе.
+    pt: Gostas de café.
+    tense: Presente
+  - ru: Ему нравится музыка.
+    pt: Ele gosta de música.
+    tense: Presente
+  - ru: Нам нравится пляж.
+    pt: Gostamos da praia.
+    tense: Presente
+  - ru: Им нравится путешествовать.
+    pt: Eles gostam de viajar.
+    tense: Presente
+  - ru: Мне это нравится.
+    pt: Gosto disto.
+    tense: Presente
+  - ru: Тебе нравится читать.
+    pt: Gostas de ler.
+    tense: Presente
+  - ru: Ей нравится танцевать.
+    pt: Ela gosta de dançar.
+    tense: Presente
+  - ru: Нам нравится португальская еда.
+    pt: Gostamos de comida portuguesa.
+    tense: Presente
+  - ru: Им нравится город.
+    pt: Eles gostam da cidade.
+    tense: Presente
+  - ru: Мне раньше нравилось.
+    pt: Gostava.
+    tense: Imperfeito
+  - ru: Тебе раньше нравились сладости.
+    pt: Gostavas de doces.
+    tense: Imperfeito
+  - ru: Ему раньше нравился футбол.
+    pt: Ele gostava de futebol.
+    tense: Imperfeito
+  - ru: Нам раньше нравился старый дом.
+    pt: Gostávamos da casa antiga.
+    tense: Imperfeito
+  - ru: Им раньше нравилось то место.
+    pt: Eles gostavam daquele lugar.
+    tense: Imperfeito
+  - ru: Мне начинало нравиться.
+    pt: Estava a gostar.
+    tense: Imperfeito
+  - ru: Тебе нравился фильм.
+    pt: Estavas a gostar do filme.
+    tense: Imperfeito
+  - ru: Ей нравилась книга.
+    pt: Ela estava a gostar do livro.
+    tense: Imperfeito
+  - ru: Нам нравилась поездка.
+    pt: Estávamos a gostar da viagem.
+    tense: Imperfeito
+  - ru: Им нравилась еда.
+    pt: Eles estavam a gostar da comida.
+    tense: Imperfeito
+  - ru: Мне понравилось.
+    pt: Gostei.
+    tense: Perfeito
+  - ru: Тебе понравился фильм.
+    pt: Gostaste do filme.
+    tense: Perfeito
+  - ru: Ему понравился подарок.
+    pt: Ele gostou do presente.
+    tense: Perfeito
+  - ru: Нам понравился концерт.
+    pt: Gostámos do concerto.
+    tense: Perfeito
+  - ru: Им понравилась идея.
+    pt: Eles gostaram da ideia.
+    tense: Perfeito
+  - ru: Мне понравилось познакомиться с тобой.
+    pt: Gostei de te conhecer.
+    tense: Perfeito
+  - ru: Тебе понравился ужин.
+    pt: Gostaste do jantar.
+    tense: Perfeito
+  - ru: Ей понравился сюрприз.
+    pt: Ela gostou da surpresa.
+    tense: Perfeito
+  - ru: Нам понравился отель.
+    pt: Gostámos do hotel.
+    tense: Perfeito
+  - ru: Им понравилось всё.
+    pt: Eles gostaram de tudo.
+    tense: Perfeito
+  - ru: Мне понравится.
+    pt: Gostarei.
+    tense: Futuro
+  - ru: Тебе понравится это место.
+    pt: Gostarás deste lugar.
+    tense: Futuro
+  - ru: Ему понравятся новости.
+    pt: Ele gostará das notícias.
+    tense: Futuro
+  - ru: Нам понравится жить здесь.
+    pt: Gostaremos de viver aqui.
+    tense: Futuro
+  - ru: Им понравится результат.
+    pt: Eles gostarão do resultado.
+    tense: Futuro
+  - ru: Мне понравится перемена.
+    pt: Gostarei da mudança.
+    tense: Futuro
+  - ru: Тебе понравится Португалия.
+    pt: Gostarás de Portugal.
+    tense: Futuro
+  - ru: Ей понравится квартира.
+    pt: Ela gostará do apartamento.
+    tense: Futuro
+  - ru: Нам понравится новая работа.
+    pt: Gostaremos do novo trabalho.
+    tense: Futuro
+  - ru: Они понравятся друг другу.
+    pt: Eles gostarão um do outro.
+    tense: Futuro
+  - ru: Мне бы хотелось.
+    pt: Gostaria.
+    tense: Condicional
+  - ru: Тебе бы хотелось прийти.
+    pt: Gostarias de vir.
+    tense: Condicional
+  - ru: Ему бы хотелось помочь.
+    pt: Ele gostaria de ajudar.
+    tense: Condicional
+  - ru: Нам бы хотелось знать.
+    pt: Gostaríamos de saber.
+    tense: Condicional
+  - ru: Им бы хотелось остаться.
+    pt: Eles gostariam de ficar.
+    tense: Condicional
+  - ru: Я бы хотел кофе.
+    pt: Gostaria de um café.
+    tense: Condicional
+  - ru: Тебе бы хотелось увидеть.
+    pt: Gostarias de ver.
+    tense: Condicional
+  - ru: Ей бы хотелось попробовать.
+    pt: Ela gostaria de experimentar.
+    tense: Condicional
+  - ru: Нам бы хотелось пойти.
+    pt: Gostaríamos de ir.
+    tense: Condicional
+  - ru: Им бы хотелось посетить.
+    pt: Eles gostariam de visitar.
+    tense: Condicional
+  - ru: Хочу, чтобы тебе понравилось.
+    pt: Quero que gostes.
+    tense: Conjuntivo
+  - ru: Надеюсь, ему понравится.
+    pt: Espero que ele goste.
+    tense: Conjuntivo
+  - ru: Важно, чтобы нам понравилось.
+    pt: É importante que gostemos.
+    tense: Conjuntivo
+  - ru: Сомневаюсь, что им понравится.
+    pt: Duvido que eles gostem.
+    tense: Conjuntivo
+  - ru: Хотя мне нравится.
+    pt: Embora eu goste.
+    tense: Conjuntivo
+  - ru: Чтобы тебе понравилось.
+    pt: Para que tu gostes.
+    tense: Conjuntivo
+  - ru: Если только ей не понравится.
+    pt: A menos que ela goste.
+    tense: Conjuntivo
+  - ru: До того как им понравится.
+    pt: Antes que eles gostem.
+    tense: Conjuntivo
+  - ru: Возможно, нам понравится.
+    pt: É possível que gostemos.
+    tense: Conjuntivo
+  - ru: Предпочитаю, чтобы тебе понравилось.
+    pt: Prefiro que tu gostes.
+    tense: Conjuntivo
+  - ru: Если бы мне понравилось.
+    pt: Se eu gostasse.
+    tense: Imperfeito Conj.
+  - ru: Если бы тебе понравилось.
+    pt: Se tu gostasses.
+    tense: Imperfeito Conj.
+  - ru: Если бы ему понравилось.
+    pt: Se ele gostasse.
+    tense: Imperfeito Conj.
+  - ru: Если бы нам понравилось.
+    pt: Se nós gostássemos.
+    tense: Imperfeito Conj.
+  - ru: Если бы им понравилось.
+    pt: Se eles gostassem.
+    tense: Imperfeito Conj.
+  - ru: Хотел бы я, чтобы нравилось.
+    pt: Quem me dera gostar.
+    tense: Imperfeito Conj.
+  - ru: Как будто ей нравилось.
+    pt: Como se ela gostasse.
+    tense: Imperfeito Conj.
+  - ru: Если бы только тебе нравилось.
+    pt: Se tu gostasses.
+    tense: Imperfeito Conj.
+  - ru: Хотел, чтобы тебе нравилось.
+    pt: Queria que tu gostasses.
+    tense: Imperfeito Conj.
+  - ru: Было бы хорошо, если бы им понравилось.
+    pt: Seria bom se eles gostassem.
+    tense: Imperfeito Conj.
+  - ru: Когда мне понравится.
+    pt: Quando eu gostar.
+    tense: Futuro Conj.
+  - ru: Как только тебе понравится.
+    pt: Assim que gostares.
+    tense: Futuro Conj.
+  - ru: Если ему понравится.
+    pt: Se ele gostar.
+    tense: Futuro Conj.
+  - ru: Когда нам понравится.
+    pt: Quando gostarmos.
+    tense: Futuro Conj.
+  - ru: По мере того как им понравится.
+    pt: Conforme eles gostarem.
+    tense: Futuro Conj.
+  - ru: Тебе нравится?
+    pt: Gostas?
+    tense: Presente
+  - ru: Тебе нравится еда?
+    pt: Gostas da comida?
+    tense: Presente
+  - ru: Она ему нравится?
+    pt: Ele gosta dela?
+    tense: Presente
+  - ru: Им здесь нравится?
+    pt: Eles gostam daqui?
+    tense: Presente
+  - ru: Тебе понравилось?
+    pt: Gostaste?
+    tense: Perfeito
+  - ru: Мне не нравится.
+    pt: Não gosto.
+    tense: Presente
+  - ru: Тебе не нравятся овощи.
+    pt: Não gostas de legumes.
+    tense: Presente
+  - ru: Ему не нравится холод.
+    pt: Ele não gosta do frio.
+    tense: Presente
+  - ru: Нам не нравится ждать.
+    pt: Não gostamos de esperar.
+    tense: Presente
+  - ru: Им не нравится шум.
+    pt: Eles não gostam de barulho.
+    tense: Presente
+  - ru: Мне не понравилось.
+    pt: Não gostei.
+    tense: Perfeito
+  - ru: Мне очень нравится.
+    pt: Gosto muito.
+    tense: Presente
+  - ru: Мне это очень нравится.
+    pt: Gosto bastante.
+    tense: Presente
+  - ru: Ты мне нравишься.
+    pt: Gosto de ti.
+    tense: Presente
+  - ru: Я тебе нравлюсь?
+    pt: Gostas de mim?
+    tense: Presente
+  - ru: Мне начинает нравиться.
+    pt: Estou a começar a gostar.
+    tense: Presente
+  - ru: Мне бы очень хотелось.
+    pt: Gostaria muito.
+    tense: Condicional
+  - ru: Тебе бы хотелось узнать.
+    pt: Gostarias de saber.
+    tense: Condicional
+  - ru: Мне нравится, как ты думаешь.
+    pt: Gosto da forma como pensas.
+    tense: Presente
+  - ru: Ей нравится то, что она делает.
+    pt: Ela gosta do que faz.
+    tense: Presente
+  - ru: Нам нравится быть вместе.
+    pt: Gostamos de estar juntos.
+    tense: Presente
+  - ru: Ему нравится готовить.
+    pt: Ele gosta de cozinhar.
+    tense: Presente
+  - ru: Я бы хотел говорить по-португальски.
+    pt: Gostaria de falar português.
+    tense: Condicional
+  - ru: Хочешь чего-нибудь?
+    pt: Gostarias de alguma coisa?
+    tense: Condicional

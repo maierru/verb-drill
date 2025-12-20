@@ -1,0 +1,672 @@
+---
+slug: poder
+name: "\U0001F1F5\U0001F1F9 Verb PODER"
+meaning: can, to be able to
+verb_forms:
+- posso
+- podes
+- pode
+- podemos
+- podem
+- podia
+- podias
+- podíamos
+- podiam
+- pude
+- pudeste
+- pôde
+- pudemos
+- puderam
+- poderei
+- poderás
+- poderá
+- poderemos
+- poderão
+- poderia
+- poderias
+- poderíamos
+- poderiam
+- possa
+- possas
+- possamos
+- possam
+- pudesse
+- pudesses
+- pudéssemos
+- pudessem
+- poder
+- podendo
+- podido
+phrases:
+  en:
+  - en: I can help you.
+    pt: Posso ajudar-te.
+    tense: Presente
+  - en: You can come in.
+    pt: Podes entrar.
+    tense: Presente
+  - en: He can come tomorrow.
+    pt: Ele pode vir amanhã.
+    tense: Presente
+  - en: We can start.
+    pt: Podemos começar.
+    tense: Presente
+  - en: You (plural) can wait here.
+    pt: Podem esperar aqui.
+    tense: Presente
+  - en: They can speak Portuguese.
+    pt: Eles podem falar português.
+    tense: Presente
+  - en: I can't understand.
+    pt: Não posso compreender.
+    tense: Presente
+  - en: You can't leave now.
+    pt: Não podes sair agora.
+    tense: Presente
+  - en: She can't work today.
+    pt: Ela não pode trabalhar hoje.
+    tense: Presente
+  - en: We can't wait any longer.
+    pt: Não podemos esperar mais.
+    tense: Presente
+  - en: Can I ask?
+    pt: Posso perguntar?
+    tense: Presente
+  - en: Can you help me?
+    pt: Podes ajudar-me?
+    tense: Presente
+  - en: Can we talk?
+    pt: Podemos conversar?
+    tense: Presente
+  - en: Can I sit here?
+    pt: Posso sentar-me aqui?
+    tense: Presente
+  - en: Can you repeat?
+    pt: Podes repetir?
+    tense: Presente
+  - en: Can you speak slower?
+    pt: Podem falar mais devagar?
+    tense: Presente
+  - en: Can I try?
+    pt: Posso experimentar?
+    tense: Presente
+  - en: Can you wait a minute?
+    pt: Podes esperar um minuto?
+    tense: Presente
+  - en: Can we go together?
+    pt: Podemos ir juntos?
+    tense: Presente
+  - en: Can I take this?
+    pt: Posso levar isto?
+    tense: Presente
+  - en: I could run faster before.
+    pt: Eu podia correr mais rápido antes.
+    tense: Imperfeito
+  - en: You could see the sea from the window.
+    pt: Podias ver o mar da janela.
+    tense: Imperfeito
+  - en: He could work many hours.
+    pt: Ele podia trabalhar muitas horas.
+    tense: Imperfeito
+  - en: We could walk every day.
+    pt: Podíamos passear todos os dias.
+    tense: Imperfeito
+  - en: They could come whenever they wanted.
+    pt: Eles podiam vir quando queriam.
+    tense: Imperfeito
+  - en: Before, I could eat everything.
+    pt: Antes eu podia comer tudo.
+    tense: Imperfeito
+  - en: You could speak freely.
+    pt: Podias falar livremente.
+    tense: Imperfeito
+  - en: She could dance all night.
+    pt: Ela podia dançar a noite toda.
+    tense: Imperfeito
+  - en: We could travel more often.
+    pt: Podíamos viajar mais vezes.
+    tense: Imperfeito
+  - en: They couldn't understand the reason.
+    pt: Eles não podiam perceber a razão.
+    tense: Imperfeito
+  - en: I was able to finish the work.
+    pt: Pude terminar o trabalho.
+    tense: Perfeito
+  - en: You managed to find the answer.
+    pt: Pudeste encontrar a resposta.
+    tense: Perfeito
+  - en: He was able to solve the problem.
+    pt: Ele pôde resolver o problema.
+    tense: Perfeito
+  - en: We managed to reach an agreement.
+    pt: Pudemos chegar a um acordo.
+    tense: Perfeito
+  - en: They were able to arrive on time.
+    pt: Eles puderam chegar a tempo.
+    tense: Perfeito
+  - en: I couldn't call you.
+    pt: Não pude ligar-te.
+    tense: Perfeito
+  - en: You couldn't come.
+    pt: Não pudeste vir.
+    tense: Perfeito
+  - en: She couldn't answer.
+    pt: Ela não pôde responder.
+    tense: Perfeito
+  - en: We couldn't buy the tickets.
+    pt: Não pudemos comprar os bilhetes.
+    tense: Perfeito
+  - en: They couldn't understand.
+    pt: Eles não puderam compreender.
+    tense: Perfeito
+  - en: I will be able to help tomorrow.
+    pt: Poderei ajudar amanhã.
+    tense: Futuro
+  - en: You will understand later.
+    pt: Poderás compreender mais tarde.
+    tense: Futuro
+  - en: He will be able to come next week.
+    pt: Ele poderá vir na próxima semana.
+    tense: Futuro
+  - en: We will be able to meet on Friday.
+    pt: Poderemos encontrar-nos na sexta-feira.
+    tense: Futuro
+  - en: They will be able to finish the project.
+    pt: Eles poderão terminar o projeto.
+    tense: Futuro
+  - en: I won't be able to come.
+    pt: Não poderei vir.
+    tense: Futuro
+  - en: You won't be able to do it alone.
+    pt: Não poderás fazer isso sozinho.
+    tense: Futuro
+  - en: She won't be able to work on Saturday.
+    pt: Ela não poderá trabalhar no sábado.
+    tense: Futuro
+  - en: We won't be able to go on vacation.
+    pt: Não poderemos ir de férias.
+    tense: Futuro
+  - en: They won't be able to attend.
+    pt: Eles não poderão estar presentes.
+    tense: Futuro
+  - en: I could help if I knew.
+    pt: Poderia ajudar se soubesse.
+    tense: Condicional
+  - en: You could try again.
+    pt: Poderias tentar outra vez.
+    tense: Condicional
+  - en: He could be more attentive.
+    pt: Ele poderia ser mais atento.
+    tense: Condicional
+  - en: We could go to the cinema.
+    pt: Poderíamos ir ao cinema.
+    tense: Condicional
+  - en: They could call in advance.
+    pt: Eles poderiam ligar com antecedência.
+    tense: Condicional
+  - en: You could have told me earlier.
+    pt: Poderias ter-me dito antes.
+    tense: Condicional
+  - en: She could be here.
+    pt: Ela poderia estar aqui.
+    tense: Condicional
+  - en: We could do better.
+    pt: Poderíamos fazer melhor.
+    tense: Condicional
+  - en: Could you explain?
+    pt: Poderiam explicar?
+    tense: Condicional
+  - en: I could stay longer.
+    pt: Poderia ficar mais tempo.
+    tense: Condicional
+  - en: I hope you can come.
+    pt: Espero que possas vir.
+    tense: Conjuntivo
+  - en: It's important that he can participate.
+    pt: É importante que ele possa participar.
+    tense: Conjuntivo
+  - en: I want us to be able to talk.
+    pt: Quero que possamos conversar.
+    tense: Conjuntivo
+  - en: I doubt they can help.
+    pt: Duvido que eles possam ajudar.
+    tense: Conjuntivo
+  - en: It's necessary that you understand.
+    pt: É preciso que possas compreender.
+    tense: Conjuntivo
+  - en: I'm sorry I can't stay.
+    pt: Lamento que não possa ficar.
+    tense: Conjuntivo
+  - en: It would be good if we could.
+    pt: Seria bom que pudéssemos.
+    tense: Conjuntivo
+  - en: I don't think he can come.
+    pt: Não acho que ele possa vir.
+    tense: Conjuntivo
+  - en: Even though you can, don't do it.
+    pt: Embora possas, não faças isso.
+    tense: Conjuntivo
+  - en: Until I can...
+    pt: Até que eu possa...
+    tense: Conjuntivo
+  - en: Could you help me?
+    pt: Poderia ajudar-me?
+    tense: Condicional
+  - en: Could you repeat?
+    pt: Poderia repetir?
+    tense: Condicional
+  - en: Could you speak slower?
+    pt: Poderia falar mais devagar?
+    tense: Condicional
+  - en: Could you open the window?
+    pt: Poderia abrir a janela?
+    tense: Condicional
+  - en: Could you wait?
+    pt: Poderia esperar?
+    tense: Condicional
+  - en: Could you show me?
+    pt: Poderia mostrar-me?
+    tense: Condicional
+  - en: Could you explain again?
+    pt: Poderia explicar outra vez?
+    tense: Condicional
+  - en: Could you bring the bill?
+    pt: Poderia trazer a conta?
+    tense: Condicional
+  - en: Could you call me?
+    pt: Poderia ligar-me?
+    tense: Condicional
+  - en: Could you send the information?
+    pt: Poderia enviar a informação?
+    tense: Condicional
+  - en: Maybe.
+    pt: Pode ser.
+    tense: Expressão
+  - en: It's possible.
+    pt: É possível. / Pode acontecer.
+    tense: Expressão
+  - en: As far as I can tell...
+    pt: Pelo que posso ver...
+    tense: Expressão
+  - en: I can't do anything about it.
+    pt: Não posso fazer nada.
+    tense: Expressão
+  - en: What can I do for you?
+    pt: O que posso fazer por ti?
+    tense: Expressão
+  - en: It can wait.
+    pt: Isso pode esperar.
+    tense: Expressão
+  - en: I can't anymore.
+    pt: Não posso mais.
+    tense: Expressão
+  - en: You can count on me.
+    pt: Podes contar comigo.
+    tense: Expressão
+  - en: It can happen.
+    pt: Isso pode acontecer.
+    tense: Expressão
+  - en: I can't believe it!
+    pt: Não posso acreditar!
+    tense: Expressão
+  - en: Can I help with anything?
+    pt: Posso ajudar em alguma coisa?
+    tense: Presente
+  - en: You can go.
+    pt: Podes ir.
+    tense: Presente
+  - en: We can start over.
+    pt: Podemos recomeçar.
+    tense: Presente
+  - en: She can prepare dinner.
+    pt: Ela pode preparar o jantar.
+    tense: Presente
+  - en: I can't guarantee.
+    pt: Não posso garantir.
+    tense: Presente
+  - en: You can trust me.
+    pt: Podes confiar em mim.
+    tense: Presente
+  - en: We can arrange it.
+    pt: Podemos combinar.
+    tense: Presente
+  - en: They can come anytime.
+    pt: Eles podem vir a qualquer hora.
+    tense: Presente
+  - en: I can explain.
+    pt: Posso explicar.
+    tense: Presente
+  - en: You can stay.
+    pt: Podes ficar.
+    tense: Presente
+  - en: If I could, I would do it.
+    pt: Se pudesse, fazia.
+    tense: Imperfeito Conj.
+  - en: I wish you could understand.
+    pt: Gostava que pudesses compreender.
+    tense: Imperfeito Conj.
+  - en: If he could come...
+    pt: Se ele pudesse vir...
+    tense: Imperfeito Conj.
+  - en: If we could start over...
+    pt: Se pudéssemos recomeçar...
+    tense: Imperfeito Conj.
+  - en: It would be good if they could.
+    pt: Seria bom se eles pudessem.
+    tense: Imperfeito Conj.
+  ru:
+  - ru: Я могу тебе помочь.
+    pt: Posso ajudar-te.
+    tense: Presente
+  - ru: Ты можешь войти.
+    pt: Podes entrar.
+    tense: Presente
+  - ru: Он может прийти завтра.
+    pt: Ele pode vir amanhã.
+    tense: Presente
+  - ru: Мы можем начать.
+    pt: Podemos começar.
+    tense: Presente
+  - ru: Вы можете подождать здесь.
+    pt: Podem esperar aqui.
+    tense: Presente
+  - ru: Они могут говорить по-португальски.
+    pt: Eles podem falar português.
+    tense: Presente
+  - ru: Я не могу понять.
+    pt: Não posso compreender.
+    tense: Presente
+  - ru: Ты не можешь уйти сейчас.
+    pt: Não podes sair agora.
+    tense: Presente
+  - ru: Она не может работать сегодня.
+    pt: Ela não pode trabalhar hoje.
+    tense: Presente
+  - ru: Мы не можем ждать больше.
+    pt: Não podemos esperar mais.
+    tense: Presente
+  - ru: Я могу спросить?
+    pt: Posso perguntar?
+    tense: Presente
+  - ru: Ты можешь мне помочь?
+    pt: Podes ajudar-me?
+    tense: Presente
+  - ru: Мы можем поговорить?
+    pt: Podemos conversar?
+    tense: Presente
+  - ru: Я могу сесть здесь?
+    pt: Posso sentar-me aqui?
+    tense: Presente
+  - ru: Ты можешь повторить?
+    pt: Podes repetir?
+    tense: Presente
+  - ru: Вы можете говорить медленнее?
+    pt: Podem falar mais devagar?
+    tense: Presente
+  - ru: Я могу попробовать?
+    pt: Posso experimentar?
+    tense: Presente
+  - ru: Ты можешь подождать минуту?
+    pt: Podes esperar um minuto?
+    tense: Presente
+  - ru: Мы можем пойти вместе?
+    pt: Podemos ir juntos?
+    tense: Presente
+  - ru: Я могу взять это?
+    pt: Posso levar isto?
+    tense: Presente
+  - ru: Я мог бегать быстрее раньше.
+    pt: Eu podia correr mais rápido antes.
+    tense: Imperfeito
+  - ru: Ты мог видеть море из окна.
+    pt: Podias ver o mar da janela.
+    tense: Imperfeito
+  - ru: Он мог работать много часов.
+    pt: Ele podia trabalhar muitas horas.
+    tense: Imperfeito
+  - ru: Мы могли гулять каждый день.
+    pt: Podíamos passear todos os dias.
+    tense: Imperfeito
+  - ru: Они могли приходить когда хотели.
+    pt: Eles podiam vir quando queriam.
+    tense: Imperfeito
+  - ru: Раньше я мог есть всё.
+    pt: Antes eu podia comer tudo.
+    tense: Imperfeito
+  - ru: Ты мог говорить свободно.
+    pt: Podias falar livremente.
+    tense: Imperfeito
+  - ru: Она могла танцевать всю ночь.
+    pt: Ela podia dançar a noite toda.
+    tense: Imperfeito
+  - ru: Мы могли путешествовать чаще.
+    pt: Podíamos viajar mais vezes.
+    tense: Imperfeito
+  - ru: Они не могли понять причину.
+    pt: Eles não podiam perceber a razão.
+    tense: Imperfeito
+  - ru: Я смог закончить работу.
+    pt: Pude terminar o trabalho.
+    tense: Perfeito
+  - ru: Ты смог найти ответ.
+    pt: Pudeste encontrar a resposta.
+    tense: Perfeito
+  - ru: Он смог решить проблему.
+    pt: Ele pôde resolver o problema.
+    tense: Perfeito
+  - ru: Мы смогли договориться.
+    pt: Pudemos chegar a um acordo.
+    tense: Perfeito
+  - ru: Они смогли приехать вовремя.
+    pt: Eles puderam chegar a tempo.
+    tense: Perfeito
+  - ru: Я не смог позвонить тебе.
+    pt: Não pude ligar-te.
+    tense: Perfeito
+  - ru: Ты не смог прийти.
+    pt: Não pudeste vir.
+    tense: Perfeito
+  - ru: Она не смогла ответить.
+    pt: Ela não pôde responder.
+    tense: Perfeito
+  - ru: Мы не смогли купить билеты.
+    pt: Não pudemos comprar os bilhetes.
+    tense: Perfeito
+  - ru: Они не смогли понять.
+    pt: Eles não puderam compreender.
+    tense: Perfeito
+  - ru: Я смогу помочь завтра.
+    pt: Poderei ajudar amanhã.
+    tense: Futuro
+  - ru: Ты сможешь понять позже.
+    pt: Poderás compreender mais tarde.
+    tense: Futuro
+  - ru: Он сможет прийти на следующей неделе.
+    pt: Ele poderá vir na próxima semana.
+    tense: Futuro
+  - ru: Мы сможем встретиться в пятницу.
+    pt: Poderemos encontrar-nos na sexta-feira.
+    tense: Futuro
+  - ru: Они смогут закончить проект.
+    pt: Eles poderão terminar o projeto.
+    tense: Futuro
+  - ru: Я не смогу прийти.
+    pt: Não poderei vir.
+    tense: Futuro
+  - ru: Ты не сможешь сделать это один.
+    pt: Não poderás fazer isso sozinho.
+    tense: Futuro
+  - ru: Она не сможет работать в субботу.
+    pt: Ela não poderá trabalhar no sábado.
+    tense: Futuro
+  - ru: Мы не сможем поехать в отпуск.
+    pt: Não poderemos ir de férias.
+    tense: Futuro
+  - ru: Они не смогут присутствовать.
+    pt: Eles não poderão estar presentes.
+    tense: Futuro
+  - ru: Я мог бы помочь, если бы знал.
+    pt: Poderia ajudar se soubesse.
+    tense: Condicional
+  - ru: Ты мог бы попробовать ещё раз.
+    pt: Poderias tentar outra vez.
+    tense: Condicional
+  - ru: Он мог бы быть более внимательным.
+    pt: Ele poderia ser mais atento.
+    tense: Condicional
+  - ru: Мы могли бы пойти в кино.
+    pt: Poderíamos ir ao cinema.
+    tense: Condicional
+  - ru: Они могли бы позвонить заранее.
+    pt: Eles poderiam ligar com antecedência.
+    tense: Condicional
+  - ru: Ты мог бы сказать мне раньше.
+    pt: Poderias ter-me dito antes.
+    tense: Condicional
+  - ru: Она могла бы быть здесь.
+    pt: Ela poderia estar aqui.
+    tense: Condicional
+  - ru: Мы могли бы сделать лучше.
+    pt: Poderíamos fazer melhor.
+    tense: Condicional
+  - ru: Вы могли бы объяснить?
+    pt: Poderiam explicar?
+    tense: Condicional
+  - ru: Я мог бы остаться дольше.
+    pt: Poderia ficar mais tempo.
+    tense: Condicional
+  - ru: Надеюсь, что ты можешь прийти.
+    pt: Espero que possas vir.
+    tense: Conjuntivo
+  - ru: Важно, чтобы он мог участвовать.
+    pt: É importante que ele possa participar.
+    tense: Conjuntivo
+  - ru: Хочу, чтобы мы могли поговорить.
+    pt: Quero que possamos conversar.
+    tense: Conjuntivo
+  - ru: Сомневаюсь, что они могут помочь.
+    pt: Duvido que eles possam ajudar.
+    tense: Conjuntivo
+  - ru: Нужно, чтобы ты мог понять.
+    pt: É preciso que possas compreender.
+    tense: Conjuntivo
+  - ru: Жаль, что я не могу остаться.
+    pt: Lamento que não possa ficar.
+    tense: Conjuntivo
+  - ru: Хорошо бы, чтобы мы могли.
+    pt: Seria bom que pudéssemos.
+    tense: Conjuntivo
+  - ru: Не думаю, что он может прийти.
+    pt: Não acho que ele possa vir.
+    tense: Conjuntivo
+  - ru: Хотя ты и можешь, не делай этого.
+    pt: Embora possas, não faças isso.
+    tense: Conjuntivo
+  - ru: Пока я не смогу...
+    pt: Até que eu possa...
+    tense: Conjuntivo
+  - ru: Не могли бы вы помочь мне?
+    pt: Poderia ajudar-me?
+    tense: Condicional
+  - ru: Не могли бы вы повторить?
+    pt: Poderia repetir?
+    tense: Condicional
+  - ru: Не могли бы вы говорить медленнее?
+    pt: Poderia falar mais devagar?
+    tense: Condicional
+  - ru: Не могли бы вы открыть окно?
+    pt: Poderia abrir a janela?
+    tense: Condicional
+  - ru: Не могли бы вы подождать?
+    pt: Poderia esperar?
+    tense: Condicional
+  - ru: Не могли бы вы показать мне?
+    pt: Poderia mostrar-me?
+    tense: Condicional
+  - ru: Не могли бы вы объяснить ещё раз?
+    pt: Poderia explicar outra vez?
+    tense: Condicional
+  - ru: Не могли бы вы принести счёт?
+    pt: Poderia trazer a conta?
+    tense: Condicional
+  - ru: Не могли бы вы мне позвонить?
+    pt: Poderia ligar-me?
+    tense: Condicional
+  - ru: Не могли бы вы прислать информацию?
+    pt: Poderia enviar a informação?
+    tense: Condicional
+  - ru: Может быть.
+    pt: Pode ser.
+    tense: Expressão
+  - ru: Это возможно.
+    pt: É possível. / Pode acontecer.
+    tense: Expressão
+  - ru: Насколько я могу судить...
+    pt: Pelo que posso ver...
+    tense: Expressão
+  - ru: Я ничего не могу с этим поделать.
+    pt: Não posso fazer nada.
+    tense: Expressão
+  - ru: Что я могу сделать для тебя?
+    pt: O que posso fazer por ti?
+    tense: Expressão
+  - ru: Это может подождать.
+    pt: Isso pode esperar.
+    tense: Expressão
+  - ru: Не могу больше.
+    pt: Não posso mais.
+    tense: Expressão
+  - ru: Можешь на меня рассчитывать.
+    pt: Podes contar comigo.
+    tense: Expressão
+  - ru: Это может случиться.
+    pt: Isso pode acontecer.
+    tense: Expressão
+  - ru: Не могу поверить!
+    pt: Não posso acreditar!
+    tense: Expressão
+  - ru: Я могу чем-нибудь помочь?
+    pt: Posso ajudar em alguma coisa?
+    tense: Presente
+  - ru: Ты можешь идти.
+    pt: Podes ir.
+    tense: Presente
+  - ru: Мы можем начать заново.
+    pt: Podemos recomeçar.
+    tense: Presente
+  - ru: Она может приготовить ужин.
+    pt: Ela pode preparar o jantar.
+    tense: Presente
+  - ru: Я не могу гарантировать.
+    pt: Não posso garantir.
+    tense: Presente
+  - ru: Ты можешь доверять мне.
+    pt: Podes confiar em mim.
+    tense: Presente
+  - ru: Мы можем договориться.
+    pt: Podemos combinar.
+    tense: Presente
+  - ru: Они могут приходить в любое время.
+    pt: Eles podem vir a qualquer hora.
+    tense: Presente
+  - ru: Я могу объяснить.
+    pt: Posso explicar.
+    tense: Presente
+  - ru: Ты можешь остаться.
+    pt: Podes ficar.
+    tense: Presente
+  - ru: Если бы я мог, я бы сделал.
+    pt: Se pudesse, fazia.
+    tense: Imperfeito Conj.
+  - ru: Хотел бы, чтобы ты мог понять.
+    pt: Gostava que pudesses compreender.
+    tense: Imperfeito Conj.
+  - ru: Если бы он мог прийти...
+    pt: Se ele pudesse vir...
+    tense: Imperfeito Conj.
+  - ru: Если бы мы могли начать заново...
+    pt: Se pudéssemos recomeçar...
+    tense: Imperfeito Conj.
+  - ru: Было бы хорошо, если бы они могли.
+    pt: Seria bom se eles pudessem.
+    tense: Imperfeito Conj.

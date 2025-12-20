@@ -1,0 +1,641 @@
+---
+slug: dizer
+name: "\U0001F1F5\U0001F1F9 Verb DIZER"
+meaning: to say, to tell
+verb_forms:
+- digo
+- dizes
+- diz
+- dizemos
+- dizem
+- dizia
+- dizias
+- dizíamos
+- diziam
+- disse
+- disseste
+- dissemos
+- disseram
+- direi
+- dirás
+- dirá
+- diremos
+- dirão
+- diria
+- dirias
+- diríamos
+- diriam
+- diga
+- digas
+- digamos
+- digam
+- dissesse
+- dissesses
+- disséssemos
+- dissessem
+- dizer
+- dizendo
+- dito
+phrases:
+  en:
+  - en: I say the truth.
+    pt: Digo a verdade.
+    tense: Presente
+  - en: What do you say?
+    pt: O que dizes?
+    tense: Presente
+  - en: He says yes.
+    pt: Ele diz que sim.
+    tense: Presente
+  - en: She says nothing.
+    pt: Ela não diz nada.
+    tense: Presente
+  - en: We say goodbye.
+    pt: Dizemos adeus.
+    tense: Presente
+  - en: You (plural) say it's easy.
+    pt: Vocês dizem que é fácil.
+    tense: Presente
+  - en: They say it's true.
+    pt: Eles dizem que é verdade.
+    tense: Presente
+  - en: I don't say that.
+    pt: Não digo isso.
+    tense: Presente
+  - en: What does this word say?
+    pt: O que diz esta palavra?
+    tense: Presente
+  - en: People say many things.
+    pt: As pessoas dizem muitas coisas.
+    tense: Presente
+  - en: What are you saying?
+    pt: O que estás a dizer?
+    tense: Presente
+  - en: How do you say this?
+    pt: Como se diz isto?
+    tense: Presente
+  - en: What does he say?
+    pt: O que é que ele diz?
+    tense: Presente
+  - en: Do you say so?
+    pt: Tu dizes?
+    tense: Presente
+  - en: What do they say about it?
+    pt: O que dizem sobre isso?
+    tense: Presente
+  - en: How do you say 'hello' in Portuguese?
+    pt: Como se diz 'hello' em português?
+    tense: Presente
+  - en: What does the sign say?
+    pt: O que diz o sinal?
+    tense: Presente
+  - en: Why do you say that?
+    pt: Porque dizes isso?
+    tense: Presente
+  - en: What does the law say?
+    pt: O que diz a lei?
+    tense: Presente
+  - en: Do you mean what you say?
+    pt: Dizes a sério?
+    tense: Presente
+  - en: I used to say that.
+    pt: Eu dizia isso.
+    tense: Imperfeito
+  - en: You always said the truth.
+    pt: Tu dizias sempre a verdade.
+    tense: Imperfeito
+  - en: He said he was busy.
+    pt: Ele dizia que estava ocupado.
+    tense: Imperfeito
+  - en: She said nothing.
+    pt: Ela não dizia nada.
+    tense: Imperfeito
+  - en: We used to say goodbye every day.
+    pt: Dizíamos adeus todos os dias.
+    tense: Imperfeito
+  - en: They said it was impossible.
+    pt: Eles diziam que era impossível.
+    tense: Imperfeito
+  - en: What were you saying?
+    pt: O que dizias?
+    tense: Imperfeito
+  - en: My grandmother used to say...
+    pt: A minha avó dizia...
+    tense: Imperfeito
+  - en: People said he was crazy.
+    pt: As pessoas diziam que ele era louco.
+    tense: Imperfeito
+  - en: I was saying the same thing.
+    pt: Eu dizia a mesma coisa.
+    tense: Imperfeito
+  - en: I said it clearly.
+    pt: Disse claramente.
+    tense: Perfeito
+  - en: You said yes.
+    pt: Tu disseste que sim.
+    tense: Perfeito
+  - en: He said goodbye.
+    pt: Ele disse adeus.
+    tense: Perfeito
+  - en: She said she would come.
+    pt: Ela disse que viria.
+    tense: Perfeito
+  - en: We said everything.
+    pt: Dissemos tudo.
+    tense: Perfeito
+  - en: They said nothing.
+    pt: Eles não disseram nada.
+    tense: Perfeito
+  - en: What did you say?
+    pt: O que disseste?
+    tense: Perfeito
+  - en: I didn't say that.
+    pt: Não disse isso.
+    tense: Perfeito
+  - en: Who said that?
+    pt: Quem disse isso?
+    tense: Perfeito
+  - en: I already said it.
+    pt: Já disse.
+    tense: Perfeito
+  - en: I will say the truth.
+    pt: Direi a verdade.
+    tense: Futuro
+  - en: You will say nothing.
+    pt: Tu não dirás nada.
+    tense: Futuro
+  - en: He will say yes.
+    pt: Ele dirá que sim.
+    tense: Futuro
+  - en: We will say goodbye.
+    pt: Diremos adeus.
+    tense: Futuro
+  - en: They will say it's impossible.
+    pt: Eles dirão que é impossível.
+    tense: Futuro
+  - en: What will you say?
+    pt: O que dirás?
+    tense: Futuro
+  - en: I won't say anything.
+    pt: Não direi nada.
+    tense: Futuro
+  - en: Time will tell.
+    pt: O tempo dirá.
+    tense: Futuro
+  - en: History will say...
+    pt: A história dirá...
+    tense: Futuro
+  - en: She will say the same.
+    pt: Ela dirá o mesmo.
+    tense: Futuro
+  - en: I would say yes.
+    pt: Diria que sim.
+    tense: Condicional
+  - en: You would say the same.
+    pt: Tu dirias o mesmo.
+    tense: Condicional
+  - en: He would say it differently.
+    pt: Ele diria de forma diferente.
+    tense: Condicional
+  - en: We would say nothing.
+    pt: Não diríamos nada.
+    tense: Condicional
+  - en: They would say it's wrong.
+    pt: Eles diriam que está errado.
+    tense: Condicional
+  - en: What would you say?
+    pt: O que dirias?
+    tense: Condicional
+  - en: I wouldn't say that.
+    pt: Não diria isso.
+    tense: Condicional
+  - en: One would say...
+    pt: Dir-se-ia...
+    tense: Condicional
+  - en: I would say it's possible.
+    pt: Diria que é possível.
+    tense: Condicional
+  - en: She would say the truth.
+    pt: Ela diria a verdade.
+    tense: Condicional
+  - en: I hope you say yes.
+    pt: Espero que digas que sim.
+    tense: Conjuntivo
+  - en: It's important that he says the truth.
+    pt: É importante que ele diga a verdade.
+    tense: Conjuntivo
+  - en: I want us to say goodbye.
+    pt: Quero que digamos adeus.
+    tense: Conjuntivo
+  - en: I doubt that she says anything.
+    pt: Duvido que ela diga alguma coisa.
+    tense: Conjuntivo
+  - en: Even though you say it...
+    pt: Embora digas isso...
+    tense: Conjuntivo
+  - en: Whatever you say...
+    pt: Digas o que disseres...
+    tense: Conjuntivo
+  - en: It's necessary that they say it.
+    pt: É preciso que eles digam isso.
+    tense: Conjuntivo
+  - en: I don't think he says the truth.
+    pt: Não acho que ele diga a verdade.
+    tense: Conjuntivo
+  - en: Unless you say something...
+    pt: A menos que digas alguma coisa...
+    tense: Conjuntivo
+  - en: I want you to say it.
+    pt: Quero que digas.
+    tense: Conjuntivo
+  - en: If I said that...
+    pt: Se eu dissesse isso...
+    tense: Imperfeito Conj.
+  - en: I wish you said the truth.
+    pt: Quem me dera que dissesses a verdade.
+    tense: Imperfeito Conj.
+  - en: If he said yes...
+    pt: Se ele dissesse que sim...
+    tense: Imperfeito Conj.
+  - en: If we said nothing...
+    pt: Se não disséssemos nada...
+    tense: Imperfeito Conj.
+  - en: If they said it was possible...
+    pt: Se eles dissessem que era possível...
+    tense: Imperfeito Conj.
+  - en: I would believe if you said it.
+    pt: Acreditaria se dissesses.
+    tense: Imperfeito Conj.
+  - en: Even if I said everything...
+    pt: Mesmo que dissesse tudo...
+    tense: Imperfeito Conj.
+  - en: If she said the truth...
+    pt: Se ela dissesse a verdade...
+    tense: Imperfeito Conj.
+  - en: As if I said something wrong...
+    pt: Como se dissesse algo errado...
+    tense: Imperfeito Conj.
+  - en: I wish someone said something.
+    pt: Quem me dera que alguém dissesse alguma coisa.
+    tense: Imperfeito Conj.
+  - en: He said that he was tired.
+    pt: Ele disse que estava cansado.
+    tense: Discurso
+  - en: She said she would help.
+    pt: Ela disse que ajudaria.
+    tense: Discurso
+  - en: They said they didn't know.
+    pt: Eles disseram que não sabiam.
+    tense: Discurso
+  - en: He said he had finished.
+    pt: Ele disse que tinha acabado.
+    tense: Discurso
+  - en: She said she was coming.
+    pt: Ela disse que vinha.
+    tense: Discurso
+  - en: That is to say...
+    pt: Quer dizer...
+    tense: Expressão
+  - en: As they say...
+    pt: Como se costuma dizer...
+    tense: Expressão
+  - en: So to speak.
+    pt: Por assim dizer.
+    tense: Expressão
+  - en: It goes without saying.
+    pt: Nem é preciso dizer.
+    tense: Expressão
+  - en: Don't say!
+    pt: Não me digas!
+    tense: Expressão
+  - en: Say it again.
+    pt: Diz outra vez.
+    tense: Expressão
+  - en: What can I say?
+    pt: O que posso dizer?
+    tense: Expressão
+  - en: I must say...
+    pt: Devo dizer...
+    tense: Expressão
+  - en: To tell the truth...
+    pt: Para dizer a verdade...
+    tense: Expressão
+  - en: You don't say!
+    pt: Não digas!
+    tense: Expressão
+  - en: Say hello for me.
+    pt: Dá cumprimentos meus.
+    tense: Expressão
+  - en: Easier said than done.
+    pt: É mais fácil dizer do que fazer.
+    tense: Expressão
+  - en: What does this mean?
+    pt: O que quer dizer isto?
+    tense: Expressão
+  - en: I mean...
+    pt: Quero dizer...
+    tense: Expressão
+  - en: Legend says...
+    pt: Diz a lenda...
+    tense: Expressão
+  ru:
+  - ru: Я говорю правду.
+    pt: Digo a verdade.
+    tense: Presente
+  - ru: Что ты говоришь?
+    pt: O que dizes?
+    tense: Presente
+  - ru: Он говорит да.
+    pt: Ele diz que sim.
+    tense: Presente
+  - ru: Она ничего не говорит.
+    pt: Ela não diz nada.
+    tense: Presente
+  - ru: Мы прощаемся.
+    pt: Dizemos adeus.
+    tense: Presente
+  - ru: Вы говорите, что это легко.
+    pt: Vocês dizem que é fácil.
+    tense: Presente
+  - ru: Они говорят, что это правда.
+    pt: Eles dizem que é verdade.
+    tense: Presente
+  - ru: Я этого не говорю.
+    pt: Não digo isso.
+    tense: Presente
+  - ru: Что означает это слово?
+    pt: O que diz esta palavra?
+    tense: Presente
+  - ru: Люди говорят много чего.
+    pt: As pessoas dizem muitas coisas.
+    tense: Presente
+  - ru: Что ты говоришь?
+    pt: O que estás a dizer?
+    tense: Presente
+  - ru: Как это сказать?
+    pt: Como se diz isto?
+    tense: Presente
+  - ru: Что он говорит?
+    pt: O que é que ele diz?
+    tense: Presente
+  - ru: Ты так говоришь?
+    pt: Tu dizes?
+    tense: Presente
+  - ru: Что они об этом говорят?
+    pt: O que dizem sobre isso?
+    tense: Presente
+  - ru: Как сказать 'привет' по-португальски?
+    pt: Como se diz 'hello' em português?
+    tense: Presente
+  - ru: Что написано на знаке?
+    pt: O que diz o sinal?
+    tense: Presente
+  - ru: Почему ты это говоришь?
+    pt: Porque dizes isso?
+    tense: Presente
+  - ru: Что говорит закон?
+    pt: O que diz a lei?
+    tense: Presente
+  - ru: Ты серьёзно?
+    pt: Dizes a sério?
+    tense: Presente
+  - ru: Я раньше так говорил.
+    pt: Eu dizia isso.
+    tense: Imperfeito
+  - ru: Ты всегда говорил правду.
+    pt: Tu dizias sempre a verdade.
+    tense: Imperfeito
+  - ru: Он говорил, что был занят.
+    pt: Ele dizia que estava ocupado.
+    tense: Imperfeito
+  - ru: Она ничего не говорила.
+    pt: Ela não dizia nada.
+    tense: Imperfeito
+  - ru: Мы прощались каждый день.
+    pt: Dizíamos adeus todos os dias.
+    tense: Imperfeito
+  - ru: Они говорили, что это невозможно.
+    pt: Eles diziam que era impossível.
+    tense: Imperfeito
+  - ru: Что ты говорил?
+    pt: O que dizias?
+    tense: Imperfeito
+  - ru: Моя бабушка говорила...
+    pt: A minha avó dizia...
+    tense: Imperfeito
+  - ru: Люди говорили, что он сумасшедший.
+    pt: As pessoas diziam que ele era louco.
+    tense: Imperfeito
+  - ru: Я говорил то же самое.
+    pt: Eu dizia a mesma coisa.
+    tense: Imperfeito
+  - ru: Я сказал это чётко.
+    pt: Disse claramente.
+    tense: Perfeito
+  - ru: Ты сказал да.
+    pt: Tu disseste que sim.
+    tense: Perfeito
+  - ru: Он попрощался.
+    pt: Ele disse adeus.
+    tense: Perfeito
+  - ru: Она сказала, что придёт.
+    pt: Ela disse que viria.
+    tense: Perfeito
+  - ru: Мы сказали всё.
+    pt: Dissemos tudo.
+    tense: Perfeito
+  - ru: Они ничего не сказали.
+    pt: Eles não disseram nada.
+    tense: Perfeito
+  - ru: Что ты сказал?
+    pt: O que disseste?
+    tense: Perfeito
+  - ru: Я этого не говорил.
+    pt: Não disse isso.
+    tense: Perfeito
+  - ru: Кто это сказал?
+    pt: Quem disse isso?
+    tense: Perfeito
+  - ru: Я уже сказал.
+    pt: Já disse.
+    tense: Perfeito
+  - ru: Я скажу правду.
+    pt: Direi a verdade.
+    tense: Futuro
+  - ru: Ты ничего не скажешь.
+    pt: Tu não dirás nada.
+    tense: Futuro
+  - ru: Он скажет да.
+    pt: Ele dirá que sim.
+    tense: Futuro
+  - ru: Мы попрощаемся.
+    pt: Diremos adeus.
+    tense: Futuro
+  - ru: Они скажут, что это невозможно.
+    pt: Eles dirão que é impossível.
+    tense: Futuro
+  - ru: Что ты скажешь?
+    pt: O que dirás?
+    tense: Futuro
+  - ru: Я ничего не скажу.
+    pt: Não direi nada.
+    tense: Futuro
+  - ru: Время покажет.
+    pt: O tempo dirá.
+    tense: Futuro
+  - ru: История скажет...
+    pt: A história dirá...
+    tense: Futuro
+  - ru: Она скажет то же самое.
+    pt: Ela dirá o mesmo.
+    tense: Futuro
+  - ru: Я бы сказал да.
+    pt: Diria que sim.
+    tense: Condicional
+  - ru: Ты бы сказал то же самое.
+    pt: Tu dirias o mesmo.
+    tense: Condicional
+  - ru: Он бы сказал по-другому.
+    pt: Ele diria de forma diferente.
+    tense: Condicional
+  - ru: Мы бы ничего не сказали.
+    pt: Não diríamos nada.
+    tense: Condicional
+  - ru: Они бы сказали, что это неправильно.
+    pt: Eles diriam que está errado.
+    tense: Condicional
+  - ru: Что бы ты сказал?
+    pt: O que dirias?
+    tense: Condicional
+  - ru: Я бы этого не сказал.
+    pt: Não diria isso.
+    tense: Condicional
+  - ru: Можно было бы сказать...
+    pt: Dir-se-ia...
+    tense: Condicional
+  - ru: Я бы сказал, что это возможно.
+    pt: Diria que é possível.
+    tense: Condicional
+  - ru: Она бы сказала правду.
+    pt: Ela diria a verdade.
+    tense: Condicional
+  - ru: Надеюсь, что ты скажешь да.
+    pt: Espero que digas que sim.
+    tense: Conjuntivo
+  - ru: Важно, чтобы он сказал правду.
+    pt: É importante que ele diga a verdade.
+    tense: Conjuntivo
+  - ru: Хочу, чтобы мы попрощались.
+    pt: Quero que digamos adeus.
+    tense: Conjuntivo
+  - ru: Сомневаюсь, что она что-то скажет.
+    pt: Duvido que ela diga alguma coisa.
+    tense: Conjuntivo
+  - ru: Хотя ты это и говоришь...
+    pt: Embora digas isso...
+    tense: Conjuntivo
+  - ru: Что бы ты ни говорил...
+    pt: Digas o que disseres...
+    tense: Conjuntivo
+  - ru: Нужно, чтобы они это сказали.
+    pt: É preciso que eles digam isso.
+    tense: Conjuntivo
+  - ru: Не думаю, что он говорит правду.
+    pt: Não acho que ele diga a verdade.
+    tense: Conjuntivo
+  - ru: Если ты не скажешь что-нибудь...
+    pt: A menos que digas alguma coisa...
+    tense: Conjuntivo
+  - ru: Хочу, чтобы ты сказал.
+    pt: Quero que digas.
+    tense: Conjuntivo
+  - ru: Если бы я это сказал...
+    pt: Se eu dissesse isso...
+    tense: Imperfeito Conj.
+  - ru: Хотел бы, чтобы ты сказал правду.
+    pt: Quem me dera que dissesses a verdade.
+    tense: Imperfeito Conj.
+  - ru: Если бы он сказал да...
+    pt: Se ele dissesse que sim...
+    tense: Imperfeito Conj.
+  - ru: Если бы мы ничего не сказали...
+    pt: Se não disséssemos nada...
+    tense: Imperfeito Conj.
+  - ru: Если бы они сказали, что это возможно...
+    pt: Se eles dissessem que era possível...
+    tense: Imperfeito Conj.
+  - ru: Я бы поверил, если бы ты сказал.
+    pt: Acreditaria se dissesses.
+    tense: Imperfeito Conj.
+  - ru: Даже если бы я сказал всё...
+    pt: Mesmo que dissesse tudo...
+    tense: Imperfeito Conj.
+  - ru: Если бы она сказала правду...
+    pt: Se ela dissesse a verdade...
+    tense: Imperfeito Conj.
+  - ru: Как будто я сказал что-то не то...
+    pt: Como se dissesse algo errado...
+    tense: Imperfeito Conj.
+  - ru: Хотел бы, чтобы кто-нибудь что-то сказал.
+    pt: Quem me dera que alguém dissesse alguma coisa.
+    tense: Imperfeito Conj.
+  - ru: Он сказал, что устал.
+    pt: Ele disse que estava cansado.
+    tense: Discurso
+  - ru: Она сказала, что поможет.
+    pt: Ela disse que ajudaria.
+    tense: Discurso
+  - ru: Они сказали, что не знали.
+    pt: Eles disseram que não sabiam.
+    tense: Discurso
+  - ru: Он сказал, что закончил.
+    pt: Ele disse que tinha acabado.
+    tense: Discurso
+  - ru: Она сказала, что придёт.
+    pt: Ela disse que vinha.
+    tense: Discurso
+  - ru: То есть...
+    pt: Quer dizer...
+    tense: Expressão
+  - ru: Как говорится...
+    pt: Como se costuma dizer...
+    tense: Expressão
+  - ru: Так сказать.
+    pt: Por assim dizer.
+    tense: Expressão
+  - ru: Само собой разумеется.
+    pt: Nem é preciso dizer.
+    tense: Expressão
+  - ru: Да ты что!
+    pt: Não me digas!
+    tense: Expressão
+  - ru: Скажи ещё раз.
+    pt: Diz outra vez.
+    tense: Expressão
+  - ru: Что я могу сказать?
+    pt: O que posso dizer?
+    tense: Expressão
+  - ru: Должен сказать...
+    pt: Devo dizer...
+    tense: Expressão
+  - ru: По правде говоря...
+    pt: Para dizer a verdade...
+    tense: Expressão
+  - ru: Не может быть!
+    pt: Não digas!
+    tense: Expressão
+  - ru: Передавай привет.
+    pt: Dá cumprimentos meus.
+    tense: Expressão
+  - ru: Легче сказать, чем сделать.
+    pt: É mais fácil dizer do que fazer.
+    tense: Expressão
+  - ru: Что это значит?
+    pt: O que quer dizer isto?
+    tense: Expressão
+  - ru: Я имею в виду...
+    pt: Quero dizer...
+    tense: Expressão
+  - ru: Легенда гласит...
+    pt: Diz a lenda...
+    tense: Expressão

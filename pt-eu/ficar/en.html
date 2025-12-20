@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verb FICAR — 100 Phrases</title>
+    <title>Verb 🇵🇹 VERB FICAR — 100 Phrases</title>
     <link rel="stylesheet" href="../../assets/css/verb.css">
-    
 </head>
 <body>
     <div class="container">
         <header>
             <a href="../" class="back-link">← Back to verb list</a>
             <h1>🇵🇹 Verb FICAR</h1>
-            <p class="subtitle">100 popular phrases — European Portuguese</p>
+            <p class="subtitle">to stay, to become — 105 phrases</p>
         </header>
 
         <div class="controls">
@@ -24,150 +23,129 @@
             <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
         </div>
 
-        <div class="stats" id="stats">Showing: 100 of 100 phrases</div>
+        <div class="stats" id="stats">Showing: 105 of 105 phrases</div>
 
         <div class="phrase-list" id="phraseList">
         </div>
 
         <footer>
-            European Portuguese Practice — Verb FICAR
+            European Portuguese Practice — FICAR
         </footer>
     </div>
 
     <script>
-    const VERB_CONFIG = {
-        originKey: 'en',
-        labels: { target: 'European Portuguese', showing: 'Showing', of: 'of', phrases: 'phrases' },
-        verbForms: ['fico', 'ficas', 'fica', 'ficamos', 'ficam', 'ficava', 'ficavas', 'ficávamos', 'ficavam', 'fiquei', 'ficaste', 'ficou', 'ficámos', 'ficaram', 'ficarei', 'ficarás', 'ficará', 'ficaremos', 'ficarão', 'ficaria', 'ficarias', 'ficaríamos', 'ficariam', 'fique', 'fiques', 'fiquemos', 'fiquem', 'ficasse', 'ficasses', 'ficássemos', 'ficassem', 'ficar', 'ficares', 'ficarmos', 'ficarem', 'ficando', 'ficado'],
-        phrases: [
-            // Presente do Indicativo - to stay/remain
-            { en: "I stay here.", pt: "Fico aqui.", tense: "Presente" },
-            { en: "Do you stay at home?", pt: "Ficas em casa?", tense: "Presente" },
-            { en: "He stays quiet.", pt: "Ele fica calado.", tense: "Presente" },
-            { en: "She stays with me.", pt: "Ela fica comigo.", tense: "Presente" },
-            { en: "We stay together.", pt: "Ficamos juntos.", tense: "Presente" },
-            { en: "They stay late.", pt: "Eles ficam até tarde.", tense: "Presente" },
-            { en: "I don't stay long.", pt: "Não fico muito tempo.", tense: "Presente" },
-            { en: "Where do you stay?", pt: "Onde ficas?", tense: "Presente" },
-            { en: "I stay calm.", pt: "Fico calmo.", tense: "Presente" },
-            { en: "It stays here.", pt: "Fica aqui.", tense: "Presente" },
-
-            // Presente - to become
-            { en: "I get happy.", pt: "Fico feliz.", tense: "Presente" },
-            { en: "You get angry.", pt: "Ficas zangado.", tense: "Presente" },
-            { en: "He gets tired.", pt: "Ele fica cansado.", tense: "Presente" },
-            { en: "She gets nervous.", pt: "Ela fica nervosa.", tense: "Presente" },
-            { en: "We get surprised.", pt: "Ficamos surpreendidos.", tense: "Presente" },
-            { en: "They get sad.", pt: "Eles ficam tristes.", tense: "Presente" },
-            { en: "I get worried.", pt: "Fico preocupado.", tense: "Presente" },
-            { en: "You get better.", pt: "Ficas melhor.", tense: "Presente" },
-            { en: "He gets sick.", pt: "Ele fica doente.", tense: "Presente" },
-            { en: "She gets excited.", pt: "Ela fica entusiasmada.", tense: "Presente" },
-
-            // Presente - location
-            { en: "Where is the bank?", pt: "Onde fica o banco?", tense: "Presente" },
-            { en: "The hotel is nearby.", pt: "O hotel fica perto.", tense: "Presente" },
-            { en: "It's on the right.", pt: "Fica à direita.", tense: "Presente" },
-            { en: "The station is far.", pt: "A estação fica longe.", tense: "Presente" },
-            { en: "My house is here.", pt: "A minha casa fica aqui.", tense: "Presente" },
-
-            // Pretérito Imperfeito (Imperfect Past)
-            { en: "I used to stay late.", pt: "Ficava até tarde.", tense: "Imperfeito" },
-            { en: "You stayed at home.", pt: "Ficavas em casa.", tense: "Imperfeito" },
-            { en: "He got nervous.", pt: "Ele ficava nervoso.", tense: "Imperfeito" },
-            { en: "She stayed with us.", pt: "Ela ficava connosco.", tense: "Imperfeito" },
-            { en: "We stayed quiet.", pt: "Ficávamos calados.", tense: "Imperfeito" },
-            { en: "They got sad.", pt: "Eles ficavam tristes.", tense: "Imperfeito" },
-            { en: "I didn't stay long.", pt: "Não ficava muito tempo.", tense: "Imperfeito" },
-            { en: "Where did you stay?", pt: "Onde ficavas?", tense: "Imperfeito" },
-            { en: "I used to get worried.", pt: "Ficava preocupado.", tense: "Imperfeito" },
-            { en: "We got tired easily.", pt: "Ficávamos cansados facilmente.", tense: "Imperfeito" },
-
-            // Pretérito Perfeito Simples (Simple Past)
-            { en: "I stayed at home.", pt: "Fiquei em casa.", tense: "Perfeito" },
-            { en: "You stayed quiet.", pt: "Ficaste calado.", tense: "Perfeito" },
-            { en: "He got angry.", pt: "Ele ficou zangado.", tense: "Perfeito" },
-            { en: "She got happy.", pt: "Ela ficou feliz.", tense: "Perfeito" },
-            { en: "We stayed together.", pt: "Ficámos juntos.", tense: "Perfeito" },
-            { en: "They stayed late.", pt: "Eles ficaram até tarde.", tense: "Perfeito" },
-            { en: "I got surprised.", pt: "Fiquei surpreendido.", tense: "Perfeito" },
-            { en: "How did you get so tired?", pt: "Como ficaste tão cansado?", tense: "Perfeito" },
-            { en: "She got sick.", pt: "Ela ficou doente.", tense: "Perfeito" },
-            { en: "We got lost.", pt: "Ficámos perdidos.", tense: "Perfeito" },
-
-            // Futuro do Indicativo (Future)
-            { en: "I will stay here.", pt: "Ficarei aqui.", tense: "Futuro" },
-            { en: "You will stay at home.", pt: "Ficarás em casa.", tense: "Futuro" },
-            { en: "He will get better.", pt: "Ele ficará melhor.", tense: "Futuro" },
-            { en: "We will stay together.", pt: "Ficaremos juntos.", tense: "Futuro" },
-            { en: "They will stay late.", pt: "Eles ficarão até tarde.", tense: "Futuro" },
-            { en: "I won't stay long.", pt: "Não ficarei muito tempo.", tense: "Futuro" },
-            { en: "Will you stay?", pt: "Ficarás?", tense: "Futuro" },
-            { en: "She will get happy.", pt: "Ela ficará feliz.", tense: "Futuro" },
-            { en: "Everything will be fine.", pt: "Tudo ficará bem.", tense: "Futuro" },
-            { en: "I will get tired.", pt: "Ficarei cansado.", tense: "Futuro" },
-
-            // Condicional (Conditional)
-            { en: "I would stay longer.", pt: "Ficaria mais tempo.", tense: "Condicional" },
-            { en: "You would get happy.", pt: "Ficarias feliz.", tense: "Condicional" },
-            { en: "He would stay quiet.", pt: "Ele ficaria calado.", tense: "Condicional" },
-            { en: "We would stay together.", pt: "Ficaríamos juntos.", tense: "Condicional" },
-            { en: "They would get tired.", pt: "Eles ficariam cansados.", tense: "Condicional" },
-            { en: "I wouldn't stay here.", pt: "Não ficaria aqui.", tense: "Condicional" },
-            { en: "Would you stay?", pt: "Ficarias?", tense: "Condicional" },
-            { en: "She would get worried.", pt: "Ela ficaria preocupada.", tense: "Condicional" },
-            { en: "It would be better.", pt: "Ficaria melhor.", tense: "Condicional" },
-            { en: "I would get surprised.", pt: "Ficaria surpreendido.", tense: "Condicional" },
-
-            // Presente do Conjuntivo (Present Subjunctive)
-            { en: "I hope you stay.", pt: "Espero que fiques.", tense: "Conjuntivo" },
-            { en: "It's important that he stays.", pt: "É importante que ele fique.", tense: "Conjuntivo" },
-            { en: "I doubt she stays.", pt: "Duvido que ela fique.", tense: "Conjuntivo" },
-            { en: "Even if you stay...", pt: "Mesmo que fiques...", tense: "Conjuntivo" },
-            { en: "Whoever stays...", pt: "Quem fique...", tense: "Conjuntivo" },
-            { en: "It's necessary that we stay.", pt: "É preciso que fiquemos.", tense: "Conjuntivo" },
-            { en: "I don't think he stays.", pt: "Não acho que ele fique.", tense: "Conjuntivo" },
-            { en: "Unless you stay...", pt: "A menos que fiques...", tense: "Conjuntivo" },
-            { en: "So that they stay...", pt: "Para que fiquem...", tense: "Conjuntivo" },
-            { en: "I hope everything turns out well.", pt: "Espero que tudo fique bem.", tense: "Conjuntivo" },
-
-            // Imperfeito do Conjuntivo (Imperfect Subjunctive)
-            { en: "If I stayed...", pt: "Se eu ficasse...", tense: "Imperfeito Conj." },
-            { en: "I wish you stayed.", pt: "Quem me dera que ficasses.", tense: "Imperfeito Conj." },
-            { en: "If he stayed quiet...", pt: "Se ele ficasse calado...", tense: "Imperfeito Conj." },
-            { en: "If we stayed together...", pt: "Se ficássemos juntos...", tense: "Imperfeito Conj." },
-            { en: "If they stayed...", pt: "Se eles ficassem...", tense: "Imperfeito Conj." },
-            { en: "I would be happy if you stayed.", pt: "Ficaria feliz se ficasses.", tense: "Imperfeito Conj." },
-            { en: "Even if I stayed...", pt: "Mesmo que ficasse...", tense: "Imperfeito Conj." },
-            { en: "If she got better...", pt: "Se ela ficasse melhor...", tense: "Imperfeito Conj." },
-            { en: "As if nothing happened.", pt: "Como se nada ficasse.", tense: "Imperfeito Conj." },
-            { en: "If only I could stay.", pt: "Se ao menos ficasse.", tense: "Imperfeito Conj." },
-
-            // Futuro do Conjuntivo (Future Subjunctive)
-            { en: "When I stay...", pt: "Quando ficar...", tense: "Futuro Conj." },
-            { en: "If you stay...", pt: "Se ficares...", tense: "Futuro Conj." },
-            { en: "When he stays...", pt: "Quando ele ficar...", tense: "Futuro Conj." },
-            { en: "If we stay...", pt: "Se ficarmos...", tense: "Futuro Conj." },
-            { en: "When they stay...", pt: "Quando eles ficarem...", tense: "Futuro Conj." },
-            { en: "As soon as I stay...", pt: "Assim que ficar...", tense: "Futuro Conj." },
-            { en: "Whoever stays...", pt: "Quem ficar...", tense: "Futuro Conj." },
-            { en: "If you ever stay...", pt: "Se alguma vez ficares...", tense: "Futuro Conj." },
-            { en: "When we stay together...", pt: "Quando ficarmos juntos...", tense: "Futuro Conj." },
-            { en: "Call me if you stay.", pt: "Liga-me se ficares.", tense: "Futuro Conj." },
-
-            // Common expressions with ficar
-            { en: "It looks good on you.", pt: "Fica-te bem.", tense: "Expressão" },
-            { en: "Keep it.", pt: "Fica com isso.", tense: "Expressão" },
-            { en: "It's agreed.", pt: "Fica combinado.", tense: "Expressão" },
-            { en: "Stay calm.", pt: "Fica calmo.", tense: "Expressão" },
-            { en: "To be located.", pt: "Ficar situado.", tense: "Expressão" },
-            { en: "To be left over.", pt: "Ficar a sobrar.", tense: "Expressão" },
-            { en: "To get to know.", pt: "Ficar a conhecer.", tense: "Expressão" },
-            { en: "To keep something.", pt: "Ficar com algo.", tense: "Expressão" },
-            { en: "Stay well.", pt: "Fica bem.", tense: "Expressão" },
-            { en: "It suits you.", pt: "Fica-te bem.", tense: "Expressão" }
-        ]
-    };
+        const VERB_CONFIG = {
+            originKey: 'en',
+            labels: { target: 'European Portuguese', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["fico","ficas","fica","ficamos","ficam","ficava","ficavas","ficávamos","ficavam","fiquei","ficaste","ficou","ficámos","ficaram","ficarei","ficarás","ficará","ficaremos","ficarão","ficaria","ficarias","ficaríamos","ficariam","fique","fiques","fiquemos","fiquem","ficasse","ficasses","ficássemos","ficassem","ficar","ficares","ficarmos","ficarem","ficando","ficado"],
+            phrases: [
+                { en: "I stay here.", pt: "Fico aqui.", tense: "Presente" },
+                { en: "Do you stay at home?", pt: "Ficas em casa?", tense: "Presente" },
+                { en: "He stays quiet.", pt: "Ele fica calado.", tense: "Presente" },
+                { en: "She stays with me.", pt: "Ela fica comigo.", tense: "Presente" },
+                { en: "We stay together.", pt: "Ficamos juntos.", tense: "Presente" },
+                { en: "They stay late.", pt: "Eles ficam até tarde.", tense: "Presente" },
+                { en: "I don't stay long.", pt: "Não fico muito tempo.", tense: "Presente" },
+                { en: "Where do you stay?", pt: "Onde ficas?", tense: "Presente" },
+                { en: "I stay calm.", pt: "Fico calmo.", tense: "Presente" },
+                { en: "It stays here.", pt: "Fica aqui.", tense: "Presente" },
+                { en: "I get happy.", pt: "Fico feliz.", tense: "Presente" },
+                { en: "You get angry.", pt: "Ficas zangado.", tense: "Presente" },
+                { en: "He gets tired.", pt: "Ele fica cansado.", tense: "Presente" },
+                { en: "She gets nervous.", pt: "Ela fica nervosa.", tense: "Presente" },
+                { en: "We get surprised.", pt: "Ficamos surpreendidos.", tense: "Presente" },
+                { en: "They get sad.", pt: "Eles ficam tristes.", tense: "Presente" },
+                { en: "I get worried.", pt: "Fico preocupado.", tense: "Presente" },
+                { en: "You get better.", pt: "Ficas melhor.", tense: "Presente" },
+                { en: "He gets sick.", pt: "Ele fica doente.", tense: "Presente" },
+                { en: "She gets excited.", pt: "Ela fica entusiasmada.", tense: "Presente" },
+                { en: "Where is the bank?", pt: "Onde fica o banco?", tense: "Presente" },
+                { en: "The hotel is nearby.", pt: "O hotel fica perto.", tense: "Presente" },
+                { en: "It's on the right.", pt: "Fica à direita.", tense: "Presente" },
+                { en: "The station is far.", pt: "A estação fica longe.", tense: "Presente" },
+                { en: "My house is here.", pt: "A minha casa fica aqui.", tense: "Presente" },
+                { en: "I used to stay late.", pt: "Ficava até tarde.", tense: "Imperfeito" },
+                { en: "You stayed at home.", pt: "Ficavas em casa.", tense: "Imperfeito" },
+                { en: "He got nervous.", pt: "Ele ficava nervoso.", tense: "Imperfeito" },
+                { en: "She stayed with us.", pt: "Ela ficava connosco.", tense: "Imperfeito" },
+                { en: "We stayed quiet.", pt: "Ficávamos calados.", tense: "Imperfeito" },
+                { en: "They got sad.", pt: "Eles ficavam tristes.", tense: "Imperfeito" },
+                { en: "I didn't stay long.", pt: "Não ficava muito tempo.", tense: "Imperfeito" },
+                { en: "Where did you stay?", pt: "Onde ficavas?", tense: "Imperfeito" },
+                { en: "I used to get worried.", pt: "Ficava preocupado.", tense: "Imperfeito" },
+                { en: "We got tired easily.", pt: "Ficávamos cansados facilmente.", tense: "Imperfeito" },
+                { en: "I stayed at home.", pt: "Fiquei em casa.", tense: "Perfeito" },
+                { en: "You stayed quiet.", pt: "Ficaste calado.", tense: "Perfeito" },
+                { en: "He got angry.", pt: "Ele ficou zangado.", tense: "Perfeito" },
+                { en: "She got happy.", pt: "Ela ficou feliz.", tense: "Perfeito" },
+                { en: "We stayed together.", pt: "Ficámos juntos.", tense: "Perfeito" },
+                { en: "They stayed late.", pt: "Eles ficaram até tarde.", tense: "Perfeito" },
+                { en: "I got surprised.", pt: "Fiquei surpreendido.", tense: "Perfeito" },
+                { en: "How did you get so tired?", pt: "Como ficaste tão cansado?", tense: "Perfeito" },
+                { en: "She got sick.", pt: "Ela ficou doente.", tense: "Perfeito" },
+                { en: "We got lost.", pt: "Ficámos perdidos.", tense: "Perfeito" },
+                { en: "I will stay here.", pt: "Ficarei aqui.", tense: "Futuro" },
+                { en: "You will stay at home.", pt: "Ficarás em casa.", tense: "Futuro" },
+                { en: "He will get better.", pt: "Ele ficará melhor.", tense: "Futuro" },
+                { en: "We will stay together.", pt: "Ficaremos juntos.", tense: "Futuro" },
+                { en: "They will stay late.", pt: "Eles ficarão até tarde.", tense: "Futuro" },
+                { en: "I won't stay long.", pt: "Não ficarei muito tempo.", tense: "Futuro" },
+                { en: "Will you stay?", pt: "Ficarás?", tense: "Futuro" },
+                { en: "She will get happy.", pt: "Ela ficará feliz.", tense: "Futuro" },
+                { en: "Everything will be fine.", pt: "Tudo ficará bem.", tense: "Futuro" },
+                { en: "I will get tired.", pt: "Ficarei cansado.", tense: "Futuro" },
+                { en: "I would stay longer.", pt: "Ficaria mais tempo.", tense: "Condicional" },
+                { en: "You would get happy.", pt: "Ficarias feliz.", tense: "Condicional" },
+                { en: "He would stay quiet.", pt: "Ele ficaria calado.", tense: "Condicional" },
+                { en: "We would stay together.", pt: "Ficaríamos juntos.", tense: "Condicional" },
+                { en: "They would get tired.", pt: "Eles ficariam cansados.", tense: "Condicional" },
+                { en: "I wouldn't stay here.", pt: "Não ficaria aqui.", tense: "Condicional" },
+                { en: "Would you stay?", pt: "Ficarias?", tense: "Condicional" },
+                { en: "She would get worried.", pt: "Ela ficaria preocupada.", tense: "Condicional" },
+                { en: "It would be better.", pt: "Ficaria melhor.", tense: "Condicional" },
+                { en: "I would get surprised.", pt: "Ficaria surpreendido.", tense: "Condicional" },
+                { en: "I hope you stay.", pt: "Espero que fiques.", tense: "Conjuntivo" },
+                { en: "It's important that he stays.", pt: "É importante que ele fique.", tense: "Conjuntivo" },
+                { en: "I doubt she stays.", pt: "Duvido que ela fique.", tense: "Conjuntivo" },
+                { en: "Even if you stay...", pt: "Mesmo que fiques...", tense: "Conjuntivo" },
+                { en: "Whoever stays...", pt: "Quem fique...", tense: "Conjuntivo" },
+                { en: "It's necessary that we stay.", pt: "É preciso que fiquemos.", tense: "Conjuntivo" },
+                { en: "I don't think he stays.", pt: "Não acho que ele fique.", tense: "Conjuntivo" },
+                { en: "Unless you stay...", pt: "A menos que fiques...", tense: "Conjuntivo" },
+                { en: "So that they stay...", pt: "Para que fiquem...", tense: "Conjuntivo" },
+                { en: "I hope everything turns out well.", pt: "Espero que tudo fique bem.", tense: "Conjuntivo" },
+                { en: "If I stayed...", pt: "Se eu ficasse...", tense: "Imperfeito Conj." },
+                { en: "I wish you stayed.", pt: "Quem me dera que ficasses.", tense: "Imperfeito Conj." },
+                { en: "If he stayed quiet...", pt: "Se ele ficasse calado...", tense: "Imperfeito Conj." },
+                { en: "If we stayed together...", pt: "Se ficássemos juntos...", tense: "Imperfeito Conj." },
+                { en: "If they stayed...", pt: "Se eles ficassem...", tense: "Imperfeito Conj." },
+                { en: "I would be happy if you stayed.", pt: "Ficaria feliz se ficasses.", tense: "Imperfeito Conj." },
+                { en: "Even if I stayed...", pt: "Mesmo que ficasse...", tense: "Imperfeito Conj." },
+                { en: "If she got better...", pt: "Se ela ficasse melhor...", tense: "Imperfeito Conj." },
+                { en: "As if nothing happened.", pt: "Como se nada ficasse.", tense: "Imperfeito Conj." },
+                { en: "If only I could stay.", pt: "Se ao menos ficasse.", tense: "Imperfeito Conj." },
+                { en: "When I stay...", pt: "Quando ficar...", tense: "Futuro Conj." },
+                { en: "If you stay...", pt: "Se ficares...", tense: "Futuro Conj." },
+                { en: "When he stays...", pt: "Quando ele ficar...", tense: "Futuro Conj." },
+                { en: "If we stay...", pt: "Se ficarmos...", tense: "Futuro Conj." },
+                { en: "When they stay...", pt: "Quando eles ficarem...", tense: "Futuro Conj." },
+                { en: "As soon as I stay...", pt: "Assim que ficar...", tense: "Futuro Conj." },
+                { en: "Whoever stays...", pt: "Quem ficar...", tense: "Futuro Conj." },
+                { en: "If you ever stay...", pt: "Se alguma vez ficares...", tense: "Futuro Conj." },
+                { en: "When we stay together...", pt: "Quando ficarmos juntos...", tense: "Futuro Conj." },
+                { en: "Call me if you stay.", pt: "Liga-me se ficares.", tense: "Futuro Conj." },
+                { en: "It looks good on you.", pt: "Fica-te bem.", tense: "Expressão" },
+                { en: "Keep it.", pt: "Fica com isso.", tense: "Expressão" },
+                { en: "It's agreed.", pt: "Fica combinado.", tense: "Expressão" },
+                { en: "Stay calm.", pt: "Fica calmo.", tense: "Expressão" },
+                { en: "To be located.", pt: "Ficar situado.", tense: "Expressão" },
+                { en: "To be left over.", pt: "Ficar a sobrar.", tense: "Expressão" },
+                { en: "To get to know.", pt: "Ficar a conhecer.", tense: "Expressão" },
+                { en: "To keep something.", pt: "Ficar com algo.", tense: "Expressão" },
+                { en: "Stay well.", pt: "Fica bem.", tense: "Expressão" },
+                { en: "It suits you.", pt: "Fica-te bem.", tense: "Expressão" },
+            ]
+        };
     </script>
     <script src="../../assets/js/verb.js"></script>
 </body>

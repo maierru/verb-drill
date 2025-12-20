@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Глагол VIR — 100 фраз</title>
+    <title>Глагол 🇵🇹 VERB VIR — 100 фраз</title>
     <link rel="stylesheet" href="../../assets/css/verb.css">
-    
 </head>
 <body>
     <div class="container">
         <header>
             <a href="../" class="back-link">← Назад к списку глаголов</a>
-            <h1>🇵🇹 Глагол VIR</h1>
-            <p class="subtitle">100 популярных фраз — Европейский португальский</p>
+            <h1>🇵🇹 Verb VIR</h1>
+            <p class="subtitle">to come — 105 фраз</p>
         </header>
 
         <div class="controls">
@@ -24,150 +23,129 @@
             <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
         </div>
 
-        <div class="stats" id="stats">Показано: 100 из 100 фраз</div>
+        <div class="stats" id="stats">Показано: 105 из 105 фраз</div>
 
         <div class="phrase-list" id="phraseList">
         </div>
 
         <footer>
-            Практика европейского португальского — Глагол VIR
+            Практика европейского португальского — VIR
         </footer>
     </div>
 
     <script>
-    const VERB_CONFIG = {
-        originKey: 'ru',
-        labels: { target: 'Português Europeu', showing: 'Показано', of: 'из', phrases: 'фраз' },
-        verbForms: ['venho', 'vens', 'vem', 'vimos', 'vêm', 'vinha', 'vinhas', 'vínhamos', 'vinham', 'vim', 'vieste', 'veio', 'viemos', 'vieram', 'virei', 'virás', 'virá', 'viremos', 'virão', 'viria', 'virias', 'viríamos', 'viriam', 'venha', 'venhas', 'venhamos', 'venham', 'viesse', 'viesses', 'viéssemos', 'viessem', 'vir', 'vindo', 'vier'],
-        phrases: [
-            // Presente do Indicativo (Настоящее время)
-            { ru: "Я приехал из Португалии.", pt: "Venho de Portugal.", tense: "Presente" },
-            { ru: "Откуда ты?", pt: "De onde vens?", tense: "Presente" },
-            { ru: "Он приходит каждый день.", pt: "Ele vem todos os dias.", tense: "Presente" },
-            { ru: "Она идёт с нами.", pt: "Ela vem connosco.", tense: "Presente" },
-            { ru: "Мы идём вместе.", pt: "Vimos juntos.", tense: "Presente" },
-            { ru: "Вы приходите поздно.", pt: "Vocês vêm tarde.", tense: "Presente" },
-            { ru: "Они приезжают издалека.", pt: "Eles vêm de longe.", tense: "Presente" },
-            { ru: "Я не часто сюда прихожу.", pt: "Não venho aqui muitas vezes.", tense: "Presente" },
-            { ru: "Ты идёшь?", pt: "Vens?", tense: "Presente" },
-            { ru: "Вот идёт автобус.", pt: "Aí vem o autocarro.", tense: "Presente" },
-
-            // Вопросы в настоящем времени
-            { ru: "Кто идёт?", pt: "Quem vem?", tense: "Presente" },
-            { ru: "Когда ты придёшь?", pt: "Quando vens?", tense: "Presente" },
-            { ru: "Он придёт на вечеринку?", pt: "Ele vem à festa?", tense: "Presente" },
-            { ru: "Они тоже придут?", pt: "Eles também vêm?", tense: "Presente" },
-            { ru: "Почему ты не приходишь?", pt: "Porque não vens?", tense: "Presente" },
-            { ru: "Как часто ты сюда приходишь?", pt: "Com que frequência vens aqui?", tense: "Presente" },
-            { ru: "Во сколько она приходит?", pt: "A que horas ela vem?", tense: "Presente" },
-            { ru: "Этот автобус часто ходит?", pt: "Este autocarro vem muitas vezes?", tense: "Presente" },
-            { ru: "Кто-нибудь придёт?", pt: "Vem alguém?", tense: "Presente" },
-            { ru: "Ты идёшь со мной?", pt: "Vens comigo?", tense: "Presente" },
-
-            // Pretérito Imperfeito (Прошедшее несовершенное)
-            { ru: "Я раньше сюда приходил.", pt: "Eu vinha aqui.", tense: "Imperfeito" },
-            { ru: "Ты приходил каждую неделю.", pt: "Tu vinhas todas as semanas.", tense: "Imperfeito" },
-            { ru: "Он шёл помогать.", pt: "Ele vinha ajudar.", tense: "Imperfeito" },
-            { ru: "Она приходила с мамой.", pt: "Ela vinha com a mãe.", tense: "Imperfeito" },
-            { ru: "Мы приезжали летом.", pt: "Vínhamos no verão.", tense: "Imperfeito" },
-            { ru: "Они шли домой.", pt: "Eles vinham para casa.", tense: "Imperfeito" },
-            { ru: "Откуда ты шёл?", pt: "De onde vinhas?", tense: "Imperfeito" },
-            { ru: "Я шёл тебя повидать.", pt: "Vinha ver-te.", tense: "Imperfeito" },
-            { ru: "Мы шли вместе.", pt: "Vínhamos juntos.", tense: "Imperfeito" },
-            { ru: "Я шёл не один.", pt: "Não vinha sozinho.", tense: "Imperfeito" },
-
-            // Pretérito Perfeito Simples (Прошедшее совершенное)
-            { ru: "Я пришёл вчера.", pt: "Vim ontem.", tense: "Perfeito" },
-            { ru: "Ты пришёл рано.", pt: "Tu vieste cedo.", tense: "Perfeito" },
-            { ru: "Он пришёл на встречу.", pt: "Ele veio à reunião.", tense: "Perfeito" },
-            { ru: "Она приехала из Бразилии.", pt: "Ela veio do Brasil.", tense: "Perfeito" },
-            { ru: "Мы пришли вместе.", pt: "Viemos juntos.", tense: "Perfeito" },
-            { ru: "Они пришли помочь.", pt: "Eles vieram ajudar.", tense: "Perfeito" },
-            { ru: "Когда ты пришёл?", pt: "Quando vieste?", tense: "Perfeito" },
-            { ru: "Я не приходил на прошлой неделе.", pt: "Não vim na semana passada.", tense: "Perfeito" },
-            { ru: "Ты приехал на машине?", pt: "Vieste de carro?", tense: "Perfeito" },
-            { ru: "Никто не пришёл.", pt: "Ninguém veio.", tense: "Perfeito" },
-
-            // Futuro do Indicativo (Будущее время)
-            { ru: "Я приду завтра.", pt: "Virei amanhã.", tense: "Futuro" },
-            { ru: "Ты вернёшься.", pt: "Tu virás de volta.", tense: "Futuro" },
-            { ru: "Он скоро придёт.", pt: "Ele virá em breve.", tense: "Futuro" },
-            { ru: "Мы придём вместе.", pt: "Viremos juntos.", tense: "Futuro" },
-            { ru: "Они придут позже.", pt: "Eles virão mais tarde.", tense: "Futuro" },
-            { ru: "Я не приду один.", pt: "Não virei sozinho.", tense: "Futuro" },
-            { ru: "Ты придёшь?", pt: "Virás?", tense: "Futuro" },
-            { ru: "Она придёт, если сможет.", pt: "Ela virá se for possível.", tense: "Futuro" },
-            { ru: "Лучшие времена придут.", pt: "Tempos melhores virão.", tense: "Futuro" },
-            { ru: "День придёт.", pt: "O dia virá.", tense: "Futuro" },
-
-            // Condicional (Условное наклонение)
-            { ru: "Я бы пришёл с тобой.", pt: "Viria contigo.", tense: "Condicional" },
-            { ru: "Ты бы пришёл, если бы позвали.", pt: "Tu virias se fosses convidado.", tense: "Condicional" },
-            { ru: "Он бы пришёл, если бы мог.", pt: "Ele viria se pudesse.", tense: "Condicional" },
-            { ru: "Мы бы пришли вместе.", pt: "Viríamos juntos.", tense: "Condicional" },
-            { ru: "Они бы всё равно пришли.", pt: "Eles viriam de qualquer forma.", tense: "Condicional" },
-            { ru: "Я бы не пришёл один.", pt: "Não viria sozinho.", tense: "Condicional" },
-            { ru: "Ты бы пришёл?", pt: "Virias?", tense: "Condicional" },
-            { ru: "Она бы пришла, но не может.", pt: "Ela viria, mas não pode.", tense: "Condicional" },
-            { ru: "Кто бы пришёл?", pt: "Quem viria?", tense: "Condicional" },
-            { ru: "Я бы пришёл, если бы было время.", pt: "Viria se tivesse tempo.", tense: "Condicional" },
-
-            // Presente do Conjuntivo (Настоящее сослагательное)
-            { ru: "Надеюсь, что ты придёшь.", pt: "Espero que venhas.", tense: "Conjuntivo" },
-            { ru: "Важно, чтобы он пришёл.", pt: "É importante que ele venha.", tense: "Conjuntivo" },
-            { ru: "Хочу, чтобы мы пришли вместе.", pt: "Quero que venhamos juntos.", tense: "Conjuntivo" },
-            { ru: "Сомневаюсь, что она придёт.", pt: "Duvido que ela venha.", tense: "Conjuntivo" },
-            { ru: "Хотя ты и придёшь...", pt: "Embora venhas...", tense: "Conjuntivo" },
-            { ru: "Откуда бы ты ни приехал...", pt: "De onde quer que venhas...", tense: "Conjuntivo" },
-            { ru: "Нужно, чтобы они пришли.", pt: "É preciso que eles venham.", tense: "Conjuntivo" },
-            { ru: "Не думаю, что он придёт.", pt: "Não acho que ele venha.", tense: "Conjuntivo" },
-            { ru: "Если ты не придёшь...", pt: "A menos que venhas...", tense: "Conjuntivo" },
-            { ru: "Хочу, чтобы ты пришёл.", pt: "Quero que venhas.", tense: "Conjuntivo" },
-
-            // Imperfeito do Conjuntivo (Прошедшее сослагательное)
-            { ru: "Если бы я пришёл раньше...", pt: "Se eu viesse mais cedo...", tense: "Imperfeito Conj." },
-            { ru: "Хотел бы, чтобы ты пришёл.", pt: "Quem me dera que viesses.", tense: "Imperfeito Conj." },
-            { ru: "Если бы он пришёл с нами...", pt: "Se ele viesse connosco...", tense: "Imperfeito Conj." },
-            { ru: "Если бы мы пришли вместе...", pt: "Se viéssemos juntos...", tense: "Imperfeito Conj." },
-            { ru: "Если бы они пришли помочь...", pt: "Se eles viessem ajudar...", tense: "Imperfeito Conj." },
-            { ru: "Я был бы рад, если бы ты пришёл.", pt: "Ficaria feliz se viesses.", tense: "Imperfeito Conj." },
-            { ru: "Даже если бы я пришёл...", pt: "Mesmo que viesse...", tense: "Imperfeito Conj." },
-            { ru: "Если бы она пришла на вечеринку...", pt: "Se ela viesse à festa...", tense: "Imperfeito Conj." },
-            { ru: "Как будто я прихожу...", pt: "Como se viesse...", tense: "Imperfeito Conj." },
-            { ru: "Хотел бы, чтобы все пришли.", pt: "Quem me dera que todos viessem.", tense: "Imperfeito Conj." },
-
-            // Imperativo (Повелительное наклонение)
-            { ru: "Иди сюда!", pt: "Vem cá!", tense: "Imperativo" },
-            { ru: "Пойдём со мной.", pt: "Vem comigo.", tense: "Imperativo" },
-            { ru: "Заходи!", pt: "Entra! / Vem!", tense: "Imperativo" },
-            { ru: "Возвращайся!", pt: "Volta!", tense: "Imperativo" },
-            { ru: "Приходи быстрее!", pt: "Vem depressa!", tense: "Imperativo" },
-
-            // Происхождение
-            { ru: "Откуда это?", pt: "De onde vem isto?", tense: "Presente" },
-            { ru: "Это вино из Португалии.", pt: "Este vinho vem de Portugal.", tense: "Presente" },
-            { ru: "Идея от неё.", pt: "A ideia vem dela.", tense: "Presente" },
-            { ru: "Откуда это слово?", pt: "De onde vem esta palavra?", tense: "Presente" },
-            { ru: "Поезд идёт из Лиссабона.", pt: "O comboio vem de Lisboa.", tense: "Presente" },
-
-            // Распространённые выражения
-            { ru: "Будь что будет.", pt: "Venha o que vier.", tense: "Expressão" },
-            { ru: "Вот оно!", pt: "Aí vem!", tense: "Expressão" },
-            { ru: "Это приходит естественно.", pt: "Vem naturalmente.", tense: "Expressão" },
-            { ru: "Легко пришло, легко ушло.", pt: "O que vem fácil, vai fácil.", tense: "Expressão" },
-            { ru: "Давай!", pt: "Vá lá! / Anda lá!", tense: "Expressão" },
-            { ru: "Иду!", pt: "Já vou!", tense: "Expressão" },
-            { ru: "Лучшее ещё впереди.", pt: "O melhor ainda está para vir.", tense: "Expressão" },
-            { ru: "То, что будет.", pt: "O que está para vir.", tense: "Expressão" },
-            { ru: "Кто первый пришёл, того первым обслужат.", pt: "Quem vier primeiro, será servido primeiro.", tense: "Expressão" },
-            { ru: "Мечты сбываются.", pt: "Os sonhos tornam-se realidade.", tense: "Expressão" },
-            { ru: "Это приходит с практикой.", pt: "Vem com a prática.", tense: "Expressão" },
-            { ru: "Весна идёт.", pt: "Vem aí a primavera.", tense: "Expressão" },
-            { ru: "Хорошее приходит к тем, кто ждёт.", pt: "Boas coisas vêm para quem sabe esperar.", tense: "Expressão" },
-            { ru: "Всё сводится к этому.", pt: "Tudo se resume a isto.", tense: "Expressão" },
-            { ru: "Добро пожаловать!", pt: "Bem-vindo!", tense: "Expressão" }
-        ]
-    };
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            labels: { target: 'Português Europeu', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["venho","vens","vem","vimos","vêm","vinha","vinhas","vínhamos","vinham","vim","vieste","veio","viemos","vieram","virei","virás","virá","viremos","virão","viria","virias","viríamos","viriam","venha","venhas","venhamos","venham","viesse","viesses","viéssemos","viessem","vir","vindo","vier"],
+            phrases: [
+                { ru: "Я приехал из Португалии.", pt: "Venho de Portugal.", tense: "Presente" },
+                { ru: "Откуда ты?", pt: "De onde vens?", tense: "Presente" },
+                { ru: "Он приходит каждый день.", pt: "Ele vem todos os dias.", tense: "Presente" },
+                { ru: "Она идёт с нами.", pt: "Ela vem connosco.", tense: "Presente" },
+                { ru: "Мы идём вместе.", pt: "Vimos juntos.", tense: "Presente" },
+                { ru: "Вы приходите поздно.", pt: "Vocês vêm tarde.", tense: "Presente" },
+                { ru: "Они приезжают издалека.", pt: "Eles vêm de longe.", tense: "Presente" },
+                { ru: "Я не часто сюда прихожу.", pt: "Não venho aqui muitas vezes.", tense: "Presente" },
+                { ru: "Ты идёшь?", pt: "Vens?", tense: "Presente" },
+                { ru: "Вот идёт автобус.", pt: "Aí vem o autocarro.", tense: "Presente" },
+                { ru: "Кто идёт?", pt: "Quem vem?", tense: "Presente" },
+                { ru: "Когда ты придёшь?", pt: "Quando vens?", tense: "Presente" },
+                { ru: "Он придёт на вечеринку?", pt: "Ele vem à festa?", tense: "Presente" },
+                { ru: "Они тоже придут?", pt: "Eles também vêm?", tense: "Presente" },
+                { ru: "Почему ты не приходишь?", pt: "Porque não vens?", tense: "Presente" },
+                { ru: "Как часто ты сюда приходишь?", pt: "Com que frequência vens aqui?", tense: "Presente" },
+                { ru: "Во сколько она приходит?", pt: "A que horas ela vem?", tense: "Presente" },
+                { ru: "Этот автобус часто ходит?", pt: "Este autocarro vem muitas vezes?", tense: "Presente" },
+                { ru: "Кто-нибудь придёт?", pt: "Vem alguém?", tense: "Presente" },
+                { ru: "Ты идёшь со мной?", pt: "Vens comigo?", tense: "Presente" },
+                { ru: "Я раньше сюда приходил.", pt: "Eu vinha aqui.", tense: "Imperfeito" },
+                { ru: "Ты приходил каждую неделю.", pt: "Tu vinhas todas as semanas.", tense: "Imperfeito" },
+                { ru: "Он шёл помогать.", pt: "Ele vinha ajudar.", tense: "Imperfeito" },
+                { ru: "Она приходила с мамой.", pt: "Ela vinha com a mãe.", tense: "Imperfeito" },
+                { ru: "Мы приезжали летом.", pt: "Vínhamos no verão.", tense: "Imperfeito" },
+                { ru: "Они шли домой.", pt: "Eles vinham para casa.", tense: "Imperfeito" },
+                { ru: "Откуда ты шёл?", pt: "De onde vinhas?", tense: "Imperfeito" },
+                { ru: "Я шёл тебя повидать.", pt: "Vinha ver-te.", tense: "Imperfeito" },
+                { ru: "Мы шли вместе.", pt: "Vínhamos juntos.", tense: "Imperfeito" },
+                { ru: "Я шёл не один.", pt: "Não vinha sozinho.", tense: "Imperfeito" },
+                { ru: "Я пришёл вчера.", pt: "Vim ontem.", tense: "Perfeito" },
+                { ru: "Ты пришёл рано.", pt: "Tu vieste cedo.", tense: "Perfeito" },
+                { ru: "Он пришёл на встречу.", pt: "Ele veio à reunião.", tense: "Perfeito" },
+                { ru: "Она приехала из Бразилии.", pt: "Ela veio do Brasil.", tense: "Perfeito" },
+                { ru: "Мы пришли вместе.", pt: "Viemos juntos.", tense: "Perfeito" },
+                { ru: "Они пришли помочь.", pt: "Eles vieram ajudar.", tense: "Perfeito" },
+                { ru: "Когда ты пришёл?", pt: "Quando vieste?", tense: "Perfeito" },
+                { ru: "Я не приходил на прошлой неделе.", pt: "Não vim na semana passada.", tense: "Perfeito" },
+                { ru: "Ты приехал на машине?", pt: "Vieste de carro?", tense: "Perfeito" },
+                { ru: "Никто не пришёл.", pt: "Ninguém veio.", tense: "Perfeito" },
+                { ru: "Я приду завтра.", pt: "Virei amanhã.", tense: "Futuro" },
+                { ru: "Ты вернёшься.", pt: "Tu virás de volta.", tense: "Futuro" },
+                { ru: "Он скоро придёт.", pt: "Ele virá em breve.", tense: "Futuro" },
+                { ru: "Мы придём вместе.", pt: "Viremos juntos.", tense: "Futuro" },
+                { ru: "Они придут позже.", pt: "Eles virão mais tarde.", tense: "Futuro" },
+                { ru: "Я не приду один.", pt: "Não virei sozinho.", tense: "Futuro" },
+                { ru: "Ты придёшь?", pt: "Virás?", tense: "Futuro" },
+                { ru: "Она придёт, если сможет.", pt: "Ela virá se for possível.", tense: "Futuro" },
+                { ru: "Лучшие времена придут.", pt: "Tempos melhores virão.", tense: "Futuro" },
+                { ru: "День придёт.", pt: "O dia virá.", tense: "Futuro" },
+                { ru: "Я бы пришёл с тобой.", pt: "Viria contigo.", tense: "Condicional" },
+                { ru: "Ты бы пришёл, если бы позвали.", pt: "Tu virias se fosses convidado.", tense: "Condicional" },
+                { ru: "Он бы пришёл, если бы мог.", pt: "Ele viria se pudesse.", tense: "Condicional" },
+                { ru: "Мы бы пришли вместе.", pt: "Viríamos juntos.", tense: "Condicional" },
+                { ru: "Они бы всё равно пришли.", pt: "Eles viriam de qualquer forma.", tense: "Condicional" },
+                { ru: "Я бы не пришёл один.", pt: "Não viria sozinho.", tense: "Condicional" },
+                { ru: "Ты бы пришёл?", pt: "Virias?", tense: "Condicional" },
+                { ru: "Она бы пришла, но не может.", pt: "Ela viria, mas não pode.", tense: "Condicional" },
+                { ru: "Кто бы пришёл?", pt: "Quem viria?", tense: "Condicional" },
+                { ru: "Я бы пришёл, если бы было время.", pt: "Viria se tivesse tempo.", tense: "Condicional" },
+                { ru: "Надеюсь, что ты придёшь.", pt: "Espero que venhas.", tense: "Conjuntivo" },
+                { ru: "Важно, чтобы он пришёл.", pt: "É importante que ele venha.", tense: "Conjuntivo" },
+                { ru: "Хочу, чтобы мы пришли вместе.", pt: "Quero que venhamos juntos.", tense: "Conjuntivo" },
+                { ru: "Сомневаюсь, что она придёт.", pt: "Duvido que ela venha.", tense: "Conjuntivo" },
+                { ru: "Хотя ты и придёшь...", pt: "Embora venhas...", tense: "Conjuntivo" },
+                { ru: "Откуда бы ты ни приехал...", pt: "De onde quer que venhas...", tense: "Conjuntivo" },
+                { ru: "Нужно, чтобы они пришли.", pt: "É preciso que eles venham.", tense: "Conjuntivo" },
+                { ru: "Не думаю, что он придёт.", pt: "Não acho que ele venha.", tense: "Conjuntivo" },
+                { ru: "Если ты не придёшь...", pt: "A menos que venhas...", tense: "Conjuntivo" },
+                { ru: "Хочу, чтобы ты пришёл.", pt: "Quero que venhas.", tense: "Conjuntivo" },
+                { ru: "Если бы я пришёл раньше...", pt: "Se eu viesse mais cedo...", tense: "Imperfeito Conj." },
+                { ru: "Хотел бы, чтобы ты пришёл.", pt: "Quem me dera que viesses.", tense: "Imperfeito Conj." },
+                { ru: "Если бы он пришёл с нами...", pt: "Se ele viesse connosco...", tense: "Imperfeito Conj." },
+                { ru: "Если бы мы пришли вместе...", pt: "Se viéssemos juntos...", tense: "Imperfeito Conj." },
+                { ru: "Если бы они пришли помочь...", pt: "Se eles viessem ajudar...", tense: "Imperfeito Conj." },
+                { ru: "Я был бы рад, если бы ты пришёл.", pt: "Ficaria feliz se viesses.", tense: "Imperfeito Conj." },
+                { ru: "Даже если бы я пришёл...", pt: "Mesmo que viesse...", tense: "Imperfeito Conj." },
+                { ru: "Если бы она пришла на вечеринку...", pt: "Se ela viesse à festa...", tense: "Imperfeito Conj." },
+                { ru: "Как будто я прихожу...", pt: "Como se viesse...", tense: "Imperfeito Conj." },
+                { ru: "Хотел бы, чтобы все пришли.", pt: "Quem me dera que todos viessem.", tense: "Imperfeito Conj." },
+                { ru: "Иди сюда!", pt: "Vem cá!", tense: "Imperativo" },
+                { ru: "Пойдём со мной.", pt: "Vem comigo.", tense: "Imperativo" },
+                { ru: "Заходи!", pt: "Entra! / Vem!", tense: "Imperativo" },
+                { ru: "Возвращайся!", pt: "Volta!", tense: "Imperativo" },
+                { ru: "Приходи быстрее!", pt: "Vem depressa!", tense: "Imperativo" },
+                { ru: "Откуда это?", pt: "De onde vem isto?", tense: "Presente" },
+                { ru: "Это вино из Португалии.", pt: "Este vinho vem de Portugal.", tense: "Presente" },
+                { ru: "Идея от неё.", pt: "A ideia vem dela.", tense: "Presente" },
+                { ru: "Откуда это слово?", pt: "De onde vem esta palavra?", tense: "Presente" },
+                { ru: "Поезд идёт из Лиссабона.", pt: "O comboio vem de Lisboa.", tense: "Presente" },
+                { ru: "Будь что будет.", pt: "Venha o que vier.", tense: "Expressão" },
+                { ru: "Вот оно!", pt: "Aí vem!", tense: "Expressão" },
+                { ru: "Это приходит естественно.", pt: "Vem naturalmente.", tense: "Expressão" },
+                { ru: "Легко пришло, легко ушло.", pt: "O que vem fácil, vai fácil.", tense: "Expressão" },
+                { ru: "Давай!", pt: "Vá lá! / Anda lá!", tense: "Expressão" },
+                { ru: "Иду!", pt: "Já vou!", tense: "Expressão" },
+                { ru: "Лучшее ещё впереди.", pt: "O melhor ainda está para vir.", tense: "Expressão" },
+                { ru: "То, что будет.", pt: "O que está para vir.", tense: "Expressão" },
+                { ru: "Кто первый пришёл, того первым обслужат.", pt: "Quem vier primeiro, será servido primeiro.", tense: "Expressão" },
+                { ru: "Мечты сбываются.", pt: "Os sonhos tornam-se realidade.", tense: "Expressão" },
+                { ru: "Это приходит с практикой.", pt: "Vem com a prática.", tense: "Expressão" },
+                { ru: "Весна идёт.", pt: "Vem aí a primavera.", tense: "Expressão" },
+                { ru: "Хорошее приходит к тем, кто ждёт.", pt: "Boas coisas vêm para quem sabe esperar.", tense: "Expressão" },
+                { ru: "Всё сводится к этому.", pt: "Tudo se resume a isto.", tense: "Expressão" },
+                { ru: "Добро пожаловать!", pt: "Bem-vindo!", tense: "Expressão" },
+            ]
+        };
     </script>
     <script src="../../assets/js/verb.js"></script>
 </body>

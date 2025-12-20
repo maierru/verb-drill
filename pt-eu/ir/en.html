@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verb IR — 100 Phrases</title>
+    <title>Verb 🇵🇹 VERB IR — 100 Phrases</title>
     <link rel="stylesheet" href="../../assets/css/verb.css">
-    
 </head>
 <body>
     <div class="container">
         <header>
             <a href="../" class="back-link">← Back to verb list</a>
             <h1>🇵🇹 Verb IR</h1>
-            <p class="subtitle">100 popular phrases — European Portuguese</p>
+            <p class="subtitle">to go — 105 phrases</p>
         </header>
 
         <div class="controls">
@@ -24,150 +23,129 @@
             <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
         </div>
 
-        <div class="stats" id="stats">Showing: 100 of 100 phrases</div>
+        <div class="stats" id="stats">Showing: 105 of 105 phrases</div>
 
         <div class="phrase-list" id="phraseList">
         </div>
 
         <footer>
-            European Portuguese Practice — Verb IR
+            European Portuguese Practice — IR
         </footer>
     </div>
 
     <script>
-    const VERB_CONFIG = {
-        originKey: 'en',
-        labels: { target: 'European Portuguese', showing: 'Showing', of: 'of', phrases: 'phrases' },
-        verbForms: ['vou', 'vais', 'vai', 'vamos', 'vão', 'ia', 'ias', 'íamos', 'iam', 'fui', 'foste', 'foi', 'fomos', 'foram', 'irei', 'irás', 'irá', 'iremos', 'irão', 'iria', 'irias', 'iríamos', 'iriam', 'vá', 'vás', 'fosse', 'fosses', 'fôssemos', 'fossem', 'ir', 'indo', 'ido'],
-        phrases: [
-            // Presente do Indicativo (Present)
-            { en: "I go to work.", pt: "Vou ao trabalho.", tense: "Presente" },
-            { en: "Where are you going?", pt: "Onde vais?", tense: "Presente" },
-            { en: "He goes to school.", pt: "Ele vai à escola.", tense: "Presente" },
-            { en: "She goes home.", pt: "Ela vai para casa.", tense: "Presente" },
-            { en: "We go together.", pt: "Vamos juntos.", tense: "Presente" },
-            { en: "You (plural) go first.", pt: "Vocês vão primeiro.", tense: "Presente" },
-            { en: "They go every day.", pt: "Eles vão todos os dias.", tense: "Presente" },
-            { en: "I don't go there.", pt: "Não vou lá.", tense: "Presente" },
-            { en: "Are you going?", pt: "Vais?", tense: "Presente" },
-            { en: "Let's go!", pt: "Vamos!", tense: "Presente" },
-
-            // Near future (ir + infinitive)
-            { en: "I'm going to eat.", pt: "Vou comer.", tense: "Futuro Próximo" },
-            { en: "You're going to like it.", pt: "Vais gostar.", tense: "Futuro Próximo" },
-            { en: "He's going to arrive soon.", pt: "Ele vai chegar em breve.", tense: "Futuro Próximo" },
-            { en: "She's going to study.", pt: "Ela vai estudar.", tense: "Futuro Próximo" },
-            { en: "We're going to travel.", pt: "Vamos viajar.", tense: "Futuro Próximo" },
-            { en: "They're going to help.", pt: "Eles vão ajudar.", tense: "Futuro Próximo" },
-            { en: "It's going to rain.", pt: "Vai chover.", tense: "Futuro Próximo" },
-            { en: "I'm not going to do that.", pt: "Não vou fazer isso.", tense: "Futuro Próximo" },
-            { en: "Are you going to come?", pt: "Vais vir?", tense: "Futuro Próximo" },
-            { en: "Everything is going to be fine.", pt: "Vai correr tudo bem.", tense: "Futuro Próximo" },
-
-            // Questions in present
-            { en: "Where are we going?", pt: "Onde vamos?", tense: "Presente" },
-            { en: "How is it going?", pt: "Como vai?", tense: "Presente" },
-            { en: "Are you going to the party?", pt: "Vais à festa?", tense: "Presente" },
-            { en: "Who is going?", pt: "Quem vai?", tense: "Presente" },
-            { en: "When are you going?", pt: "Quando vais?", tense: "Presente" },
-
-            // Pretérito Imperfeito (Imperfect Past)
-            { en: "I used to go there.", pt: "Eu ia lá.", tense: "Imperfeito" },
-            { en: "You used to go every week.", pt: "Tu ias todas as semanas.", tense: "Imperfeito" },
-            { en: "He was going to the office.", pt: "Ele ia ao escritório.", tense: "Imperfeito" },
-            { en: "She was going to help.", pt: "Ela ia ajudar.", tense: "Imperfeito" },
-            { en: "We used to go to the beach.", pt: "Íamos à praia.", tense: "Imperfeito" },
-            { en: "They were going home.", pt: "Eles iam para casa.", tense: "Imperfeito" },
-            { en: "Where were you going?", pt: "Onde ias?", tense: "Imperfeito" },
-            { en: "I was going to call you.", pt: "Ia ligar-te.", tense: "Imperfeito" },
-            { en: "We were going to eat.", pt: "Íamos comer.", tense: "Imperfeito" },
-            { en: "I wasn't going to say anything.", pt: "Não ia dizer nada.", tense: "Imperfeito" },
-
-            // Pretérito Perfeito Simples (Simple Past)
-            { en: "I went to Lisbon.", pt: "Fui a Lisboa.", tense: "Perfeito" },
-            { en: "You went early.", pt: "Tu foste cedo.", tense: "Perfeito" },
-            { en: "He went to the doctor.", pt: "Ele foi ao médico.", tense: "Perfeito" },
-            { en: "She went shopping.", pt: "Ela foi às compras.", tense: "Perfeito" },
-            { en: "We went to the cinema.", pt: "Fomos ao cinema.", tense: "Perfeito" },
-            { en: "They went home.", pt: "Eles foram para casa.", tense: "Perfeito" },
-            { en: "Where did you go?", pt: "Onde foste?", tense: "Perfeito" },
-            { en: "I didn't go.", pt: "Não fui.", tense: "Perfeito" },
-            { en: "Did you go to the meeting?", pt: "Foste à reunião?", tense: "Perfeito" },
-            { en: "How did it go?", pt: "Como foi?", tense: "Perfeito" },
-
-            // Futuro do Indicativo (Future)
-            { en: "I will go tomorrow.", pt: "Irei amanhã.", tense: "Futuro" },
-            { en: "You will go far.", pt: "Tu irás longe.", tense: "Futuro" },
-            { en: "He will go with us.", pt: "Ele irá connosco.", tense: "Futuro" },
-            { en: "We will go together.", pt: "Iremos juntos.", tense: "Futuro" },
-            { en: "They will go anyway.", pt: "Eles irão de qualquer forma.", tense: "Futuro" },
-            { en: "I won't go alone.", pt: "Não irei sozinho.", tense: "Futuro" },
-            { en: "Will you go?", pt: "Irás?", tense: "Futuro" },
-            { en: "She will go later.", pt: "Ela irá mais tarde.", tense: "Futuro" },
-            { en: "We will go if possible.", pt: "Iremos se for possível.", tense: "Futuro" },
-            { en: "Everything will go well.", pt: "Tudo irá bem.", tense: "Futuro" },
-
-            // Condicional (Conditional)
-            { en: "I would go with you.", pt: "Iria contigo.", tense: "Condicional" },
-            { en: "You would go far.", pt: "Tu irias longe.", tense: "Condicional" },
-            { en: "He would go if he could.", pt: "Ele iria se pudesse.", tense: "Condicional" },
-            { en: "We would go together.", pt: "Iríamos juntos.", tense: "Condicional" },
-            { en: "They would go anyway.", pt: "Eles iriam de qualquer forma.", tense: "Condicional" },
-            { en: "I wouldn't go there.", pt: "Não iria lá.", tense: "Condicional" },
-            { en: "Would you go?", pt: "Irias?", tense: "Condicional" },
-            { en: "She would go if invited.", pt: "Ela iria se fosse convidada.", tense: "Condicional" },
-            { en: "I would go, but I can't.", pt: "Iria, mas não posso.", tense: "Condicional" },
-            { en: "Who would go?", pt: "Quem iria?", tense: "Condicional" },
-
-            // Presente do Conjuntivo (Present Subjunctive)
-            { en: "I hope you go.", pt: "Espero que vás.", tense: "Conjuntivo" },
-            { en: "It's important that he goes.", pt: "É importante que ele vá.", tense: "Conjuntivo" },
-            { en: "I want us to go together.", pt: "Quero que vamos juntos.", tense: "Conjuntivo" },
-            { en: "I doubt that she goes.", pt: "Duvido que ela vá.", tense: "Conjuntivo" },
-            { en: "Even though you go...", pt: "Embora vás...", tense: "Conjuntivo" },
-            { en: "Wherever you go...", pt: "Onde quer que vás...", tense: "Conjuntivo" },
-            { en: "It's necessary that they go.", pt: "É preciso que eles vão.", tense: "Conjuntivo" },
-            { en: "I don't think he's going.", pt: "Não acho que ele vá.", tense: "Conjuntivo" },
-            { en: "Unless you go...", pt: "A menos que vás...", tense: "Conjuntivo" },
-            { en: "I want you to go.", pt: "Quero que vás.", tense: "Conjuntivo" },
-
-            // Imperfeito do Conjuntivo (Imperfect Subjunctive)
-            { en: "If I went there...", pt: "Se eu fosse lá...", tense: "Imperfeito Conj." },
-            { en: "I wish you went.", pt: "Quem me dera que fosses.", tense: "Imperfeito Conj." },
-            { en: "If he went with us...", pt: "Se ele fosse connosco...", tense: "Imperfeito Conj." },
-            { en: "If we went together...", pt: "Se fôssemos juntos...", tense: "Imperfeito Conj." },
-            { en: "If they went early...", pt: "Se eles fossem cedo...", tense: "Imperfeito Conj." },
-            { en: "I would be happy if you went.", pt: "Ficaria feliz se fosses.", tense: "Imperfeito Conj." },
-            { en: "Even if I went...", pt: "Mesmo que fosse...", tense: "Imperfeito Conj." },
-            { en: "If she went to the party...", pt: "Se ela fosse à festa...", tense: "Imperfeito Conj." },
-            { en: "As if I were going...", pt: "Como se fosse...", tense: "Imperfeito Conj." },
-            { en: "I wish we went.", pt: "Quem me dera que fôssemos.", tense: "Imperfeito Conj." },
-
-            // Directions and movement
-            { en: "Go straight.", pt: "Vai em frente.", tense: "Imperativo" },
-            { en: "Go left.", pt: "Vai à esquerda.", tense: "Imperativo" },
-            { en: "Go right.", pt: "Vai à direita.", tense: "Imperativo" },
-            { en: "Go back.", pt: "Volta para trás.", tense: "Imperativo" },
-            { en: "Go away!", pt: "Vai-te embora!", tense: "Imperativo" },
-
-            // Common expressions
-            { en: "How's it going?", pt: "Como vai isso?", tense: "Expressão" },
-            { en: "Let's go!", pt: "Vamos lá!", tense: "Expressão" },
-            { en: "Here we go!", pt: "Lá vamos nós!", tense: "Expressão" },
-            { en: "Go ahead.", pt: "Vai em frente.", tense: "Expressão" },
-            { en: "It's going well.", pt: "Está a correr bem.", tense: "Expressão" },
-            { en: "It's not going well.", pt: "Não está a correr bem.", tense: "Expressão" },
-            { en: "Time flies.", pt: "O tempo voa.", tense: "Expressão" },
-            { en: "Go for it!", pt: "Vai em frente!", tense: "Expressão" },
-            { en: "I'm going out.", pt: "Vou sair.", tense: "Expressão" },
-            { en: "I have to go.", pt: "Tenho de ir.", tense: "Expressão" },
-            { en: "Come and go.", pt: "Ir e vir.", tense: "Expressão" },
-            { en: "Ready to go?", pt: "Pronto para ir?", tense: "Expressão" },
-            { en: "Off we go!", pt: "E lá vamos!", tense: "Expressão" },
-            { en: "Where does this road go?", pt: "Onde vai dar esta estrada?", tense: "Expressão" },
-            { en: "Things are going smoothly.", pt: "As coisas vão bem.", tense: "Expressão" }
-        ]
-    };
+        const VERB_CONFIG = {
+            originKey: 'en',
+            labels: { target: 'European Portuguese', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["vou","vais","vai","vamos","vão","ia","ias","íamos","iam","fui","foste","foi","fomos","foram","irei","irás","irá","iremos","irão","iria","irias","iríamos","iriam","vá","vás","fosse","fosses","fôssemos","fossem","ir","indo","ido"],
+            phrases: [
+                { en: "I go to work.", pt: "Vou ao trabalho.", tense: "Presente" },
+                { en: "Where are you going?", pt: "Onde vais?", tense: "Presente" },
+                { en: "He goes to school.", pt: "Ele vai à escola.", tense: "Presente" },
+                { en: "She goes home.", pt: "Ela vai para casa.", tense: "Presente" },
+                { en: "We go together.", pt: "Vamos juntos.", tense: "Presente" },
+                { en: "You (plural) go first.", pt: "Vocês vão primeiro.", tense: "Presente" },
+                { en: "They go every day.", pt: "Eles vão todos os dias.", tense: "Presente" },
+                { en: "I don't go there.", pt: "Não vou lá.", tense: "Presente" },
+                { en: "Are you going?", pt: "Vais?", tense: "Presente" },
+                { en: "Let's go!", pt: "Vamos!", tense: "Presente" },
+                { en: "I'm going to eat.", pt: "Vou comer.", tense: "Futuro Próximo" },
+                { en: "You're going to like it.", pt: "Vais gostar.", tense: "Futuro Próximo" },
+                { en: "He's going to arrive soon.", pt: "Ele vai chegar em breve.", tense: "Futuro Próximo" },
+                { en: "She's going to study.", pt: "Ela vai estudar.", tense: "Futuro Próximo" },
+                { en: "We're going to travel.", pt: "Vamos viajar.", tense: "Futuro Próximo" },
+                { en: "They're going to help.", pt: "Eles vão ajudar.", tense: "Futuro Próximo" },
+                { en: "It's going to rain.", pt: "Vai chover.", tense: "Futuro Próximo" },
+                { en: "I'm not going to do that.", pt: "Não vou fazer isso.", tense: "Futuro Próximo" },
+                { en: "Are you going to come?", pt: "Vais vir?", tense: "Futuro Próximo" },
+                { en: "Everything is going to be fine.", pt: "Vai correr tudo bem.", tense: "Futuro Próximo" },
+                { en: "Where are we going?", pt: "Onde vamos?", tense: "Presente" },
+                { en: "How is it going?", pt: "Como vai?", tense: "Presente" },
+                { en: "Are you going to the party?", pt: "Vais à festa?", tense: "Presente" },
+                { en: "Who is going?", pt: "Quem vai?", tense: "Presente" },
+                { en: "When are you going?", pt: "Quando vais?", tense: "Presente" },
+                { en: "I used to go there.", pt: "Eu ia lá.", tense: "Imperfeito" },
+                { en: "You used to go every week.", pt: "Tu ias todas as semanas.", tense: "Imperfeito" },
+                { en: "He was going to the office.", pt: "Ele ia ao escritório.", tense: "Imperfeito" },
+                { en: "She was going to help.", pt: "Ela ia ajudar.", tense: "Imperfeito" },
+                { en: "We used to go to the beach.", pt: "Íamos à praia.", tense: "Imperfeito" },
+                { en: "They were going home.", pt: "Eles iam para casa.", tense: "Imperfeito" },
+                { en: "Where were you going?", pt: "Onde ias?", tense: "Imperfeito" },
+                { en: "I was going to call you.", pt: "Ia ligar-te.", tense: "Imperfeito" },
+                { en: "We were going to eat.", pt: "Íamos comer.", tense: "Imperfeito" },
+                { en: "I wasn't going to say anything.", pt: "Não ia dizer nada.", tense: "Imperfeito" },
+                { en: "I went to Lisbon.", pt: "Fui a Lisboa.", tense: "Perfeito" },
+                { en: "You went early.", pt: "Tu foste cedo.", tense: "Perfeito" },
+                { en: "He went to the doctor.", pt: "Ele foi ao médico.", tense: "Perfeito" },
+                { en: "She went shopping.", pt: "Ela foi às compras.", tense: "Perfeito" },
+                { en: "We went to the cinema.", pt: "Fomos ao cinema.", tense: "Perfeito" },
+                { en: "They went home.", pt: "Eles foram para casa.", tense: "Perfeito" },
+                { en: "Where did you go?", pt: "Onde foste?", tense: "Perfeito" },
+                { en: "I didn't go.", pt: "Não fui.", tense: "Perfeito" },
+                { en: "Did you go to the meeting?", pt: "Foste à reunião?", tense: "Perfeito" },
+                { en: "How did it go?", pt: "Como foi?", tense: "Perfeito" },
+                { en: "I will go tomorrow.", pt: "Irei amanhã.", tense: "Futuro" },
+                { en: "You will go far.", pt: "Tu irás longe.", tense: "Futuro" },
+                { en: "He will go with us.", pt: "Ele irá connosco.", tense: "Futuro" },
+                { en: "We will go together.", pt: "Iremos juntos.", tense: "Futuro" },
+                { en: "They will go anyway.", pt: "Eles irão de qualquer forma.", tense: "Futuro" },
+                { en: "I won't go alone.", pt: "Não irei sozinho.", tense: "Futuro" },
+                { en: "Will you go?", pt: "Irás?", tense: "Futuro" },
+                { en: "She will go later.", pt: "Ela irá mais tarde.", tense: "Futuro" },
+                { en: "We will go if possible.", pt: "Iremos se for possível.", tense: "Futuro" },
+                { en: "Everything will go well.", pt: "Tudo irá bem.", tense: "Futuro" },
+                { en: "I would go with you.", pt: "Iria contigo.", tense: "Condicional" },
+                { en: "You would go far.", pt: "Tu irias longe.", tense: "Condicional" },
+                { en: "He would go if he could.", pt: "Ele iria se pudesse.", tense: "Condicional" },
+                { en: "We would go together.", pt: "Iríamos juntos.", tense: "Condicional" },
+                { en: "They would go anyway.", pt: "Eles iriam de qualquer forma.", tense: "Condicional" },
+                { en: "I wouldn't go there.", pt: "Não iria lá.", tense: "Condicional" },
+                { en: "Would you go?", pt: "Irias?", tense: "Condicional" },
+                { en: "She would go if invited.", pt: "Ela iria se fosse convidada.", tense: "Condicional" },
+                { en: "I would go, but I can't.", pt: "Iria, mas não posso.", tense: "Condicional" },
+                { en: "Who would go?", pt: "Quem iria?", tense: "Condicional" },
+                { en: "I hope you go.", pt: "Espero que vás.", tense: "Conjuntivo" },
+                { en: "It's important that he goes.", pt: "É importante que ele vá.", tense: "Conjuntivo" },
+                { en: "I want us to go together.", pt: "Quero que vamos juntos.", tense: "Conjuntivo" },
+                { en: "I doubt that she goes.", pt: "Duvido que ela vá.", tense: "Conjuntivo" },
+                { en: "Even though you go...", pt: "Embora vás...", tense: "Conjuntivo" },
+                { en: "Wherever you go...", pt: "Onde quer que vás...", tense: "Conjuntivo" },
+                { en: "It's necessary that they go.", pt: "É preciso que eles vão.", tense: "Conjuntivo" },
+                { en: "I don't think he's going.", pt: "Não acho que ele vá.", tense: "Conjuntivo" },
+                { en: "Unless you go...", pt: "A menos que vás...", tense: "Conjuntivo" },
+                { en: "I want you to go.", pt: "Quero que vás.", tense: "Conjuntivo" },
+                { en: "If I went there...", pt: "Se eu fosse lá...", tense: "Imperfeito Conj." },
+                { en: "I wish you went.", pt: "Quem me dera que fosses.", tense: "Imperfeito Conj." },
+                { en: "If he went with us...", pt: "Se ele fosse connosco...", tense: "Imperfeito Conj." },
+                { en: "If we went together...", pt: "Se fôssemos juntos...", tense: "Imperfeito Conj." },
+                { en: "If they went early...", pt: "Se eles fossem cedo...", tense: "Imperfeito Conj." },
+                { en: "I would be happy if you went.", pt: "Ficaria feliz se fosses.", tense: "Imperfeito Conj." },
+                { en: "Even if I went...", pt: "Mesmo que fosse...", tense: "Imperfeito Conj." },
+                { en: "If she went to the party...", pt: "Se ela fosse à festa...", tense: "Imperfeito Conj." },
+                { en: "As if I were going...", pt: "Como se fosse...", tense: "Imperfeito Conj." },
+                { en: "I wish we went.", pt: "Quem me dera que fôssemos.", tense: "Imperfeito Conj." },
+                { en: "Go straight.", pt: "Vai em frente.", tense: "Imperativo" },
+                { en: "Go left.", pt: "Vai à esquerda.", tense: "Imperativo" },
+                { en: "Go right.", pt: "Vai à direita.", tense: "Imperativo" },
+                { en: "Go back.", pt: "Volta para trás.", tense: "Imperativo" },
+                { en: "Go away!", pt: "Vai-te embora!", tense: "Imperativo" },
+                { en: "How's it going?", pt: "Como vai isso?", tense: "Expressão" },
+                { en: "Let's go!", pt: "Vamos lá!", tense: "Expressão" },
+                { en: "Here we go!", pt: "Lá vamos nós!", tense: "Expressão" },
+                { en: "Go ahead.", pt: "Vai em frente.", tense: "Expressão" },
+                { en: "It's going well.", pt: "Está a correr bem.", tense: "Expressão" },
+                { en: "It's not going well.", pt: "Não está a correr bem.", tense: "Expressão" },
+                { en: "Time flies.", pt: "O tempo voa.", tense: "Expressão" },
+                { en: "Go for it!", pt: "Vai em frente!", tense: "Expressão" },
+                { en: "I'm going out.", pt: "Vou sair.", tense: "Expressão" },
+                { en: "I have to go.", pt: "Tenho de ir.", tense: "Expressão" },
+                { en: "Come and go.", pt: "Ir e vir.", tense: "Expressão" },
+                { en: "Ready to go?", pt: "Pronto para ir?", tense: "Expressão" },
+                { en: "Off we go!", pt: "E lá vamos!", tense: "Expressão" },
+                { en: "Where does this road go?", pt: "Onde vai dar esta estrada?", tense: "Expressão" },
+                { en: "Things are going smoothly.", pt: "As coisas vão bem.", tense: "Expressão" },
+            ]
+        };
     </script>
     <script src="../../assets/js/verb.js"></script>
 </body>

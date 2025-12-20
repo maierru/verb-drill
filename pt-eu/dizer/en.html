@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verb DIZER — 100 Phrases</title>
+    <title>Verb 🇵🇹 VERB DIZER — 100 Phrases</title>
     <link rel="stylesheet" href="../../assets/css/verb.css">
-    
 </head>
 <body>
     <div class="container">
         <header>
             <a href="../" class="back-link">← Back to verb list</a>
             <h1>🇵🇹 Verb DIZER</h1>
-            <p class="subtitle">100 popular phrases — European Portuguese</p>
+            <p class="subtitle">to say, to tell — 100 phrases</p>
         </header>
 
         <div class="controls">
@@ -30,137 +29,118 @@
         </div>
 
         <footer>
-            European Portuguese Practice — Verb DIZER
+            European Portuguese Practice — DIZER
         </footer>
     </div>
 
     <script>
-    const VERB_CONFIG = {
-        originKey: 'en',
-        labels: { target: 'European Portuguese', showing: 'Showing', of: 'of', phrases: 'phrases' },
-        verbForms: ['digo', 'dizes', 'diz', 'dizemos', 'dizem', 'dizia', 'dizias', 'dizíamos', 'diziam', 'disse', 'disseste', 'dissemos', 'disseram', 'direi', 'dirás', 'dirá', 'diremos', 'dirão', 'diria', 'dirias', 'diríamos', 'diriam', 'diga', 'digas', 'digamos', 'digam', 'dissesse', 'dissesses', 'disséssemos', 'dissessem', 'dizer', 'dizendo', 'dito'],
-        phrases: [
-            // Presente do Indicativo (Present)
-            { en: "I say the truth.", pt: "Digo a verdade.", tense: "Presente" },
-            { en: "What do you say?", pt: "O que dizes?", tense: "Presente" },
-            { en: "He says yes.", pt: "Ele diz que sim.", tense: "Presente" },
-            { en: "She says nothing.", pt: "Ela não diz nada.", tense: "Presente" },
-            { en: "We say goodbye.", pt: "Dizemos adeus.", tense: "Presente" },
-            { en: "You (plural) say it's easy.", pt: "Vocês dizem que é fácil.", tense: "Presente" },
-            { en: "They say it's true.", pt: "Eles dizem que é verdade.", tense: "Presente" },
-            { en: "I don't say that.", pt: "Não digo isso.", tense: "Presente" },
-            { en: "What does this word say?", pt: "O que diz esta palavra?", tense: "Presente" },
-            { en: "People say many things.", pt: "As pessoas dizem muitas coisas.", tense: "Presente" },
-
-            // Questions in present
-            { en: "What are you saying?", pt: "O que estás a dizer?", tense: "Presente" },
-            { en: "How do you say this?", pt: "Como se diz isto?", tense: "Presente" },
-            { en: "What does he say?", pt: "O que é que ele diz?", tense: "Presente" },
-            { en: "Do you say so?", pt: "Tu dizes?", tense: "Presente" },
-            { en: "What do they say about it?", pt: "O que dizem sobre isso?", tense: "Presente" },
-            { en: "How do you say 'hello' in Portuguese?", pt: "Como se diz 'hello' em português?", tense: "Presente" },
-            { en: "What does the sign say?", pt: "O que diz o sinal?", tense: "Presente" },
-            { en: "Why do you say that?", pt: "Porque dizes isso?", tense: "Presente" },
-            { en: "What does the law say?", pt: "O que diz a lei?", tense: "Presente" },
-            { en: "Do you mean what you say?", pt: "Dizes a sério?", tense: "Presente" },
-
-            // Pretérito Imperfeito (Imperfect Past)
-            { en: "I used to say that.", pt: "Eu dizia isso.", tense: "Imperfeito" },
-            { en: "You always said the truth.", pt: "Tu dizias sempre a verdade.", tense: "Imperfeito" },
-            { en: "He said he was busy.", pt: "Ele dizia que estava ocupado.", tense: "Imperfeito" },
-            { en: "She said nothing.", pt: "Ela não dizia nada.", tense: "Imperfeito" },
-            { en: "We used to say goodbye every day.", pt: "Dizíamos adeus todos os dias.", tense: "Imperfeito" },
-            { en: "They said it was impossible.", pt: "Eles diziam que era impossível.", tense: "Imperfeito" },
-            { en: "What were you saying?", pt: "O que dizias?", tense: "Imperfeito" },
-            { en: "My grandmother used to say...", pt: "A minha avó dizia...", tense: "Imperfeito" },
-            { en: "People said he was crazy.", pt: "As pessoas diziam que ele era louco.", tense: "Imperfeito" },
-            { en: "I was saying the same thing.", pt: "Eu dizia a mesma coisa.", tense: "Imperfeito" },
-
-            // Pretérito Perfeito Simples (Simple Past)
-            { en: "I said it clearly.", pt: "Disse claramente.", tense: "Perfeito" },
-            { en: "You said yes.", pt: "Tu disseste que sim.", tense: "Perfeito" },
-            { en: "He said goodbye.", pt: "Ele disse adeus.", tense: "Perfeito" },
-            { en: "She said she would come.", pt: "Ela disse que viria.", tense: "Perfeito" },
-            { en: "We said everything.", pt: "Dissemos tudo.", tense: "Perfeito" },
-            { en: "They said nothing.", pt: "Eles não disseram nada.", tense: "Perfeito" },
-            { en: "What did you say?", pt: "O que disseste?", tense: "Perfeito" },
-            { en: "I didn't say that.", pt: "Não disse isso.", tense: "Perfeito" },
-            { en: "Who said that?", pt: "Quem disse isso?", tense: "Perfeito" },
-            { en: "I already said it.", pt: "Já disse.", tense: "Perfeito" },
-
-            // Futuro do Indicativo (Future)
-            { en: "I will say the truth.", pt: "Direi a verdade.", tense: "Futuro" },
-            { en: "You will say nothing.", pt: "Tu não dirás nada.", tense: "Futuro" },
-            { en: "He will say yes.", pt: "Ele dirá que sim.", tense: "Futuro" },
-            { en: "We will say goodbye.", pt: "Diremos adeus.", tense: "Futuro" },
-            { en: "They will say it's impossible.", pt: "Eles dirão que é impossível.", tense: "Futuro" },
-            { en: "What will you say?", pt: "O que dirás?", tense: "Futuro" },
-            { en: "I won't say anything.", pt: "Não direi nada.", tense: "Futuro" },
-            { en: "Time will tell.", pt: "O tempo dirá.", tense: "Futuro" },
-            { en: "History will say...", pt: "A história dirá...", tense: "Futuro" },
-            { en: "She will say the same.", pt: "Ela dirá o mesmo.", tense: "Futuro" },
-
-            // Condicional (Conditional)
-            { en: "I would say yes.", pt: "Diria que sim.", tense: "Condicional" },
-            { en: "You would say the same.", pt: "Tu dirias o mesmo.", tense: "Condicional" },
-            { en: "He would say it differently.", pt: "Ele diria de forma diferente.", tense: "Condicional" },
-            { en: "We would say nothing.", pt: "Não diríamos nada.", tense: "Condicional" },
-            { en: "They would say it's wrong.", pt: "Eles diriam que está errado.", tense: "Condicional" },
-            { en: "What would you say?", pt: "O que dirias?", tense: "Condicional" },
-            { en: "I wouldn't say that.", pt: "Não diria isso.", tense: "Condicional" },
-            { en: "One would say...", pt: "Dir-se-ia...", tense: "Condicional" },
-            { en: "I would say it's possible.", pt: "Diria que é possível.", tense: "Condicional" },
-            { en: "She would say the truth.", pt: "Ela diria a verdade.", tense: "Condicional" },
-
-            // Presente do Conjuntivo (Present Subjunctive)
-            { en: "I hope you say yes.", pt: "Espero que digas que sim.", tense: "Conjuntivo" },
-            { en: "It's important that he says the truth.", pt: "É importante que ele diga a verdade.", tense: "Conjuntivo" },
-            { en: "I want us to say goodbye.", pt: "Quero que digamos adeus.", tense: "Conjuntivo" },
-            { en: "I doubt that she says anything.", pt: "Duvido que ela diga alguma coisa.", tense: "Conjuntivo" },
-            { en: "Even though you say it...", pt: "Embora digas isso...", tense: "Conjuntivo" },
-            { en: "Whatever you say...", pt: "Digas o que disseres...", tense: "Conjuntivo" },
-            { en: "It's necessary that they say it.", pt: "É preciso que eles digam isso.", tense: "Conjuntivo" },
-            { en: "I don't think he says the truth.", pt: "Não acho que ele diga a verdade.", tense: "Conjuntivo" },
-            { en: "Unless you say something...", pt: "A menos que digas alguma coisa...", tense: "Conjuntivo" },
-            { en: "I want you to say it.", pt: "Quero que digas.", tense: "Conjuntivo" },
-
-            // Imperfeito do Conjuntivo (Imperfect Subjunctive)
-            { en: "If I said that...", pt: "Se eu dissesse isso...", tense: "Imperfeito Conj." },
-            { en: "I wish you said the truth.", pt: "Quem me dera que dissesses a verdade.", tense: "Imperfeito Conj." },
-            { en: "If he said yes...", pt: "Se ele dissesse que sim...", tense: "Imperfeito Conj." },
-            { en: "If we said nothing...", pt: "Se não disséssemos nada...", tense: "Imperfeito Conj." },
-            { en: "If they said it was possible...", pt: "Se eles dissessem que era possível...", tense: "Imperfeito Conj." },
-            { en: "I would believe if you said it.", pt: "Acreditaria se dissesses.", tense: "Imperfeito Conj." },
-            { en: "Even if I said everything...", pt: "Mesmo que dissesse tudo...", tense: "Imperfeito Conj." },
-            { en: "If she said the truth...", pt: "Se ela dissesse a verdade...", tense: "Imperfeito Conj." },
-            { en: "As if I said something wrong...", pt: "Como se dissesse algo errado...", tense: "Imperfeito Conj." },
-            { en: "I wish someone said something.", pt: "Quem me dera que alguém dissesse alguma coisa.", tense: "Imperfeito Conj." },
-
-            // Reported speech
-            { en: "He said that he was tired.", pt: "Ele disse que estava cansado.", tense: "Discurso" },
-            { en: "She said she would help.", pt: "Ela disse que ajudaria.", tense: "Discurso" },
-            { en: "They said they didn't know.", pt: "Eles disseram que não sabiam.", tense: "Discurso" },
-            { en: "He said he had finished.", pt: "Ele disse que tinha acabado.", tense: "Discurso" },
-            { en: "She said she was coming.", pt: "Ela disse que vinha.", tense: "Discurso" },
-
-            // Common expressions
-            { en: "That is to say...", pt: "Quer dizer...", tense: "Expressão" },
-            { en: "As they say...", pt: "Como se costuma dizer...", tense: "Expressão" },
-            { en: "So to speak.", pt: "Por assim dizer.", tense: "Expressão" },
-            { en: "It goes without saying.", pt: "Nem é preciso dizer.", tense: "Expressão" },
-            { en: "Don't say!", pt: "Não me digas!", tense: "Expressão" },
-            { en: "Say it again.", pt: "Diz outra vez.", tense: "Expressão" },
-            { en: "What can I say?", pt: "O que posso dizer?", tense: "Expressão" },
-            { en: "I must say...", pt: "Devo dizer...", tense: "Expressão" },
-            { en: "To tell the truth...", pt: "Para dizer a verdade...", tense: "Expressão" },
-            { en: "You don't say!", pt: "Não digas!", tense: "Expressão" },
-            { en: "Say hello for me.", pt: "Dá cumprimentos meus.", tense: "Expressão" },
-            { en: "Easier said than done.", pt: "É mais fácil dizer do que fazer.", tense: "Expressão" },
-            { en: "What does this mean?", pt: "O que quer dizer isto?", tense: "Expressão" },
-            { en: "I mean...", pt: "Quero dizer...", tense: "Expressão" },
-            { en: "Legend says...", pt: "Diz a lenda...", tense: "Expressão" }
-        ]
-    };
+        const VERB_CONFIG = {
+            originKey: 'en',
+            labels: { target: 'European Portuguese', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["digo","dizes","diz","dizemos","dizem","dizia","dizias","dizíamos","diziam","disse","disseste","dissemos","disseram","direi","dirás","dirá","diremos","dirão","diria","dirias","diríamos","diriam","diga","digas","digamos","digam","dissesse","dissesses","disséssemos","dissessem","dizer","dizendo","dito"],
+            phrases: [
+                { en: "I say the truth.", pt: "Digo a verdade.", tense: "Presente" },
+                { en: "What do you say?", pt: "O que dizes?", tense: "Presente" },
+                { en: "He says yes.", pt: "Ele diz que sim.", tense: "Presente" },
+                { en: "She says nothing.", pt: "Ela não diz nada.", tense: "Presente" },
+                { en: "We say goodbye.", pt: "Dizemos adeus.", tense: "Presente" },
+                { en: "You (plural) say it's easy.", pt: "Vocês dizem que é fácil.", tense: "Presente" },
+                { en: "They say it's true.", pt: "Eles dizem que é verdade.", tense: "Presente" },
+                { en: "I don't say that.", pt: "Não digo isso.", tense: "Presente" },
+                { en: "What does this word say?", pt: "O que diz esta palavra?", tense: "Presente" },
+                { en: "People say many things.", pt: "As pessoas dizem muitas coisas.", tense: "Presente" },
+                { en: "What are you saying?", pt: "O que estás a dizer?", tense: "Presente" },
+                { en: "How do you say this?", pt: "Como se diz isto?", tense: "Presente" },
+                { en: "What does he say?", pt: "O que é que ele diz?", tense: "Presente" },
+                { en: "Do you say so?", pt: "Tu dizes?", tense: "Presente" },
+                { en: "What do they say about it?", pt: "O que dizem sobre isso?", tense: "Presente" },
+                { en: "How do you say 'hello' in Portuguese?", pt: "Como se diz 'hello' em português?", tense: "Presente" },
+                { en: "What does the sign say?", pt: "O que diz o sinal?", tense: "Presente" },
+                { en: "Why do you say that?", pt: "Porque dizes isso?", tense: "Presente" },
+                { en: "What does the law say?", pt: "O que diz a lei?", tense: "Presente" },
+                { en: "Do you mean what you say?", pt: "Dizes a sério?", tense: "Presente" },
+                { en: "I used to say that.", pt: "Eu dizia isso.", tense: "Imperfeito" },
+                { en: "You always said the truth.", pt: "Tu dizias sempre a verdade.", tense: "Imperfeito" },
+                { en: "He said he was busy.", pt: "Ele dizia que estava ocupado.", tense: "Imperfeito" },
+                { en: "She said nothing.", pt: "Ela não dizia nada.", tense: "Imperfeito" },
+                { en: "We used to say goodbye every day.", pt: "Dizíamos adeus todos os dias.", tense: "Imperfeito" },
+                { en: "They said it was impossible.", pt: "Eles diziam que era impossível.", tense: "Imperfeito" },
+                { en: "What were you saying?", pt: "O que dizias?", tense: "Imperfeito" },
+                { en: "My grandmother used to say...", pt: "A minha avó dizia...", tense: "Imperfeito" },
+                { en: "People said he was crazy.", pt: "As pessoas diziam que ele era louco.", tense: "Imperfeito" },
+                { en: "I was saying the same thing.", pt: "Eu dizia a mesma coisa.", tense: "Imperfeito" },
+                { en: "I said it clearly.", pt: "Disse claramente.", tense: "Perfeito" },
+                { en: "You said yes.", pt: "Tu disseste que sim.", tense: "Perfeito" },
+                { en: "He said goodbye.", pt: "Ele disse adeus.", tense: "Perfeito" },
+                { en: "She said she would come.", pt: "Ela disse que viria.", tense: "Perfeito" },
+                { en: "We said everything.", pt: "Dissemos tudo.", tense: "Perfeito" },
+                { en: "They said nothing.", pt: "Eles não disseram nada.", tense: "Perfeito" },
+                { en: "What did you say?", pt: "O que disseste?", tense: "Perfeito" },
+                { en: "I didn't say that.", pt: "Não disse isso.", tense: "Perfeito" },
+                { en: "Who said that?", pt: "Quem disse isso?", tense: "Perfeito" },
+                { en: "I already said it.", pt: "Já disse.", tense: "Perfeito" },
+                { en: "I will say the truth.", pt: "Direi a verdade.", tense: "Futuro" },
+                { en: "You will say nothing.", pt: "Tu não dirás nada.", tense: "Futuro" },
+                { en: "He will say yes.", pt: "Ele dirá que sim.", tense: "Futuro" },
+                { en: "We will say goodbye.", pt: "Diremos adeus.", tense: "Futuro" },
+                { en: "They will say it's impossible.", pt: "Eles dirão que é impossível.", tense: "Futuro" },
+                { en: "What will you say?", pt: "O que dirás?", tense: "Futuro" },
+                { en: "I won't say anything.", pt: "Não direi nada.", tense: "Futuro" },
+                { en: "Time will tell.", pt: "O tempo dirá.", tense: "Futuro" },
+                { en: "History will say...", pt: "A história dirá...", tense: "Futuro" },
+                { en: "She will say the same.", pt: "Ela dirá o mesmo.", tense: "Futuro" },
+                { en: "I would say yes.", pt: "Diria que sim.", tense: "Condicional" },
+                { en: "You would say the same.", pt: "Tu dirias o mesmo.", tense: "Condicional" },
+                { en: "He would say it differently.", pt: "Ele diria de forma diferente.", tense: "Condicional" },
+                { en: "We would say nothing.", pt: "Não diríamos nada.", tense: "Condicional" },
+                { en: "They would say it's wrong.", pt: "Eles diriam que está errado.", tense: "Condicional" },
+                { en: "What would you say?", pt: "O que dirias?", tense: "Condicional" },
+                { en: "I wouldn't say that.", pt: "Não diria isso.", tense: "Condicional" },
+                { en: "One would say...", pt: "Dir-se-ia...", tense: "Condicional" },
+                { en: "I would say it's possible.", pt: "Diria que é possível.", tense: "Condicional" },
+                { en: "She would say the truth.", pt: "Ela diria a verdade.", tense: "Condicional" },
+                { en: "I hope you say yes.", pt: "Espero que digas que sim.", tense: "Conjuntivo" },
+                { en: "It's important that he says the truth.", pt: "É importante que ele diga a verdade.", tense: "Conjuntivo" },
+                { en: "I want us to say goodbye.", pt: "Quero que digamos adeus.", tense: "Conjuntivo" },
+                { en: "I doubt that she says anything.", pt: "Duvido que ela diga alguma coisa.", tense: "Conjuntivo" },
+                { en: "Even though you say it...", pt: "Embora digas isso...", tense: "Conjuntivo" },
+                { en: "Whatever you say...", pt: "Digas o que disseres...", tense: "Conjuntivo" },
+                { en: "It's necessary that they say it.", pt: "É preciso que eles digam isso.", tense: "Conjuntivo" },
+                { en: "I don't think he says the truth.", pt: "Não acho que ele diga a verdade.", tense: "Conjuntivo" },
+                { en: "Unless you say something...", pt: "A menos que digas alguma coisa...", tense: "Conjuntivo" },
+                { en: "I want you to say it.", pt: "Quero que digas.", tense: "Conjuntivo" },
+                { en: "If I said that...", pt: "Se eu dissesse isso...", tense: "Imperfeito Conj." },
+                { en: "I wish you said the truth.", pt: "Quem me dera que dissesses a verdade.", tense: "Imperfeito Conj." },
+                { en: "If he said yes...", pt: "Se ele dissesse que sim...", tense: "Imperfeito Conj." },
+                { en: "If we said nothing...", pt: "Se não disséssemos nada...", tense: "Imperfeito Conj." },
+                { en: "If they said it was possible...", pt: "Se eles dissessem que era possível...", tense: "Imperfeito Conj." },
+                { en: "I would believe if you said it.", pt: "Acreditaria se dissesses.", tense: "Imperfeito Conj." },
+                { en: "Even if I said everything...", pt: "Mesmo que dissesse tudo...", tense: "Imperfeito Conj." },
+                { en: "If she said the truth...", pt: "Se ela dissesse a verdade...", tense: "Imperfeito Conj." },
+                { en: "As if I said something wrong...", pt: "Como se dissesse algo errado...", tense: "Imperfeito Conj." },
+                { en: "I wish someone said something.", pt: "Quem me dera que alguém dissesse alguma coisa.", tense: "Imperfeito Conj." },
+                { en: "He said that he was tired.", pt: "Ele disse que estava cansado.", tense: "Discurso" },
+                { en: "She said she would help.", pt: "Ela disse que ajudaria.", tense: "Discurso" },
+                { en: "They said they didn't know.", pt: "Eles disseram que não sabiam.", tense: "Discurso" },
+                { en: "He said he had finished.", pt: "Ele disse que tinha acabado.", tense: "Discurso" },
+                { en: "She said she was coming.", pt: "Ela disse que vinha.", tense: "Discurso" },
+                { en: "That is to say...", pt: "Quer dizer...", tense: "Expressão" },
+                { en: "As they say...", pt: "Como se costuma dizer...", tense: "Expressão" },
+                { en: "So to speak.", pt: "Por assim dizer.", tense: "Expressão" },
+                { en: "It goes without saying.", pt: "Nem é preciso dizer.", tense: "Expressão" },
+                { en: "Don't say!", pt: "Não me digas!", tense: "Expressão" },
+                { en: "Say it again.", pt: "Diz outra vez.", tense: "Expressão" },
+                { en: "What can I say?", pt: "O que posso dizer?", tense: "Expressão" },
+                { en: "I must say...", pt: "Devo dizer...", tense: "Expressão" },
+                { en: "To tell the truth...", pt: "Para dizer a verdade...", tense: "Expressão" },
+                { en: "You don't say!", pt: "Não digas!", tense: "Expressão" },
+                { en: "Say hello for me.", pt: "Dá cumprimentos meus.", tense: "Expressão" },
+                { en: "Easier said than done.", pt: "É mais fácil dizer do que fazer.", tense: "Expressão" },
+                { en: "What does this mean?", pt: "O que quer dizer isto?", tense: "Expressão" },
+                { en: "I mean...", pt: "Quero dizer...", tense: "Expressão" },
+                { en: "Legend says...", pt: "Diz a lenda...", tense: "Expressão" },
+            ]
+        };
     </script>
     <script src="../../assets/js/verb.js"></script>
 </body>

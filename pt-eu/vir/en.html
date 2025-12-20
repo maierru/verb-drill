@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verb VIR — 100 Phrases</title>
+    <title>Verb 🇵🇹 VERB VIR — 100 Phrases</title>
     <link rel="stylesheet" href="../../assets/css/verb.css">
-    
 </head>
 <body>
     <div class="container">
         <header>
             <a href="../" class="back-link">← Back to verb list</a>
             <h1>🇵🇹 Verb VIR</h1>
-            <p class="subtitle">100 popular phrases — European Portuguese</p>
+            <p class="subtitle">to come — 105 phrases</p>
         </header>
 
         <div class="controls">
@@ -24,150 +23,129 @@
             <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
         </div>
 
-        <div class="stats" id="stats">Showing: 100 of 100 phrases</div>
+        <div class="stats" id="stats">Showing: 105 of 105 phrases</div>
 
         <div class="phrase-list" id="phraseList">
         </div>
 
         <footer>
-            European Portuguese Practice — Verb VIR
+            European Portuguese Practice — VIR
         </footer>
     </div>
 
     <script>
-    const VERB_CONFIG = {
-        originKey: 'en',
-        labels: { target: 'European Portuguese', showing: 'Showing', of: 'of', phrases: 'phrases' },
-        verbForms: ['venho', 'vens', 'vem', 'vimos', 'vêm', 'vinha', 'vinhas', 'vínhamos', 'vinham', 'vim', 'vieste', 'veio', 'viemos', 'vieram', 'virei', 'virás', 'virá', 'viremos', 'virão', 'viria', 'virias', 'viríamos', 'viriam', 'venha', 'venhas', 'venhamos', 'venham', 'viesse', 'viesses', 'viéssemos', 'viessem', 'vir', 'vindo', 'vier'],
-        phrases: [
-            // Presente do Indicativo (Present)
-            { en: "I come from Portugal.", pt: "Venho de Portugal.", tense: "Presente" },
-            { en: "Where do you come from?", pt: "De onde vens?", tense: "Presente" },
-            { en: "He comes every day.", pt: "Ele vem todos os dias.", tense: "Presente" },
-            { en: "She comes with us.", pt: "Ela vem connosco.", tense: "Presente" },
-            { en: "We come together.", pt: "Vimos juntos.", tense: "Presente" },
-            { en: "You (plural) come late.", pt: "Vocês vêm tarde.", tense: "Presente" },
-            { en: "They come from far away.", pt: "Eles vêm de longe.", tense: "Presente" },
-            { en: "I don't come here often.", pt: "Não venho aqui muitas vezes.", tense: "Presente" },
-            { en: "Are you coming?", pt: "Vens?", tense: "Presente" },
-            { en: "Here comes the bus.", pt: "Aí vem o autocarro.", tense: "Presente" },
-
-            // Questions in present
-            { en: "Who is coming?", pt: "Quem vem?", tense: "Presente" },
-            { en: "When are you coming?", pt: "Quando vens?", tense: "Presente" },
-            { en: "Is he coming to the party?", pt: "Ele vem à festa?", tense: "Presente" },
-            { en: "Are they coming too?", pt: "Eles também vêm?", tense: "Presente" },
-            { en: "Why don't you come?", pt: "Porque não vens?", tense: "Presente" },
-            { en: "How often do you come here?", pt: "Com que frequência vens aqui?", tense: "Presente" },
-            { en: "What time does she come?", pt: "A que horas ela vem?", tense: "Presente" },
-            { en: "Does this bus come often?", pt: "Este autocarro vem muitas vezes?", tense: "Presente" },
-            { en: "Is anyone coming?", pt: "Vem alguém?", tense: "Presente" },
-            { en: "Are you coming with me?", pt: "Vens comigo?", tense: "Presente" },
-
-            // Pretérito Imperfeito (Imperfect Past)
-            { en: "I used to come here.", pt: "Eu vinha aqui.", tense: "Imperfeito" },
-            { en: "You used to come every week.", pt: "Tu vinhas todas as semanas.", tense: "Imperfeito" },
-            { en: "He was coming to help.", pt: "Ele vinha ajudar.", tense: "Imperfeito" },
-            { en: "She used to come with her mother.", pt: "Ela vinha com a mãe.", tense: "Imperfeito" },
-            { en: "We used to come in summer.", pt: "Vínhamos no verão.", tense: "Imperfeito" },
-            { en: "They were coming home.", pt: "Eles vinham para casa.", tense: "Imperfeito" },
-            { en: "Where were you coming from?", pt: "De onde vinhas?", tense: "Imperfeito" },
-            { en: "I was coming to see you.", pt: "Vinha ver-te.", tense: "Imperfeito" },
-            { en: "We were coming together.", pt: "Vínhamos juntos.", tense: "Imperfeito" },
-            { en: "I wasn't coming alone.", pt: "Não vinha sozinho.", tense: "Imperfeito" },
-
-            // Pretérito Perfeito Simples (Simple Past)
-            { en: "I came yesterday.", pt: "Vim ontem.", tense: "Perfeito" },
-            { en: "You came early.", pt: "Tu vieste cedo.", tense: "Perfeito" },
-            { en: "He came to the meeting.", pt: "Ele veio à reunião.", tense: "Perfeito" },
-            { en: "She came from Brazil.", pt: "Ela veio do Brasil.", tense: "Perfeito" },
-            { en: "We came together.", pt: "Viemos juntos.", tense: "Perfeito" },
-            { en: "They came to help.", pt: "Eles vieram ajudar.", tense: "Perfeito" },
-            { en: "When did you come?", pt: "Quando vieste?", tense: "Perfeito" },
-            { en: "I didn't come last week.", pt: "Não vim na semana passada.", tense: "Perfeito" },
-            { en: "Did you come by car?", pt: "Vieste de carro?", tense: "Perfeito" },
-            { en: "Nobody came.", pt: "Ninguém veio.", tense: "Perfeito" },
-
-            // Futuro do Indicativo (Future)
-            { en: "I will come tomorrow.", pt: "Virei amanhã.", tense: "Futuro" },
-            { en: "You will come back.", pt: "Tu virás de volta.", tense: "Futuro" },
-            { en: "He will come soon.", pt: "Ele virá em breve.", tense: "Futuro" },
-            { en: "We will come together.", pt: "Viremos juntos.", tense: "Futuro" },
-            { en: "They will come later.", pt: "Eles virão mais tarde.", tense: "Futuro" },
-            { en: "I won't come alone.", pt: "Não virei sozinho.", tense: "Futuro" },
-            { en: "Will you come?", pt: "Virás?", tense: "Futuro" },
-            { en: "She will come if possible.", pt: "Ela virá se for possível.", tense: "Futuro" },
-            { en: "Better times will come.", pt: "Tempos melhores virão.", tense: "Futuro" },
-            { en: "The day will come.", pt: "O dia virá.", tense: "Futuro" },
-
-            // Condicional (Conditional)
-            { en: "I would come with you.", pt: "Viria contigo.", tense: "Condicional" },
-            { en: "You would come if invited.", pt: "Tu virias se fosses convidado.", tense: "Condicional" },
-            { en: "He would come if he could.", pt: "Ele viria se pudesse.", tense: "Condicional" },
-            { en: "We would come together.", pt: "Viríamos juntos.", tense: "Condicional" },
-            { en: "They would come anyway.", pt: "Eles viriam de qualquer forma.", tense: "Condicional" },
-            { en: "I wouldn't come alone.", pt: "Não viria sozinho.", tense: "Condicional" },
-            { en: "Would you come?", pt: "Virias?", tense: "Condicional" },
-            { en: "She would come, but she can't.", pt: "Ela viria, mas não pode.", tense: "Condicional" },
-            { en: "Who would come?", pt: "Quem viria?", tense: "Condicional" },
-            { en: "I would come if I had time.", pt: "Viria se tivesse tempo.", tense: "Condicional" },
-
-            // Presente do Conjuntivo (Present Subjunctive)
-            { en: "I hope you come.", pt: "Espero que venhas.", tense: "Conjuntivo" },
-            { en: "It's important that he comes.", pt: "É importante que ele venha.", tense: "Conjuntivo" },
-            { en: "I want us to come together.", pt: "Quero que venhamos juntos.", tense: "Conjuntivo" },
-            { en: "I doubt that she comes.", pt: "Duvido que ela venha.", tense: "Conjuntivo" },
-            { en: "Even though you come...", pt: "Embora venhas...", tense: "Conjuntivo" },
-            { en: "Wherever you come from...", pt: "De onde quer que venhas...", tense: "Conjuntivo" },
-            { en: "It's necessary that they come.", pt: "É preciso que eles venham.", tense: "Conjuntivo" },
-            { en: "I don't think he's coming.", pt: "Não acho que ele venha.", tense: "Conjuntivo" },
-            { en: "Unless you come...", pt: "A menos que venhas...", tense: "Conjuntivo" },
-            { en: "I want you to come.", pt: "Quero que venhas.", tense: "Conjuntivo" },
-
-            // Imperfeito do Conjuntivo (Imperfect Subjunctive)
-            { en: "If I came earlier...", pt: "Se eu viesse mais cedo...", tense: "Imperfeito Conj." },
-            { en: "I wish you came.", pt: "Quem me dera que viesses.", tense: "Imperfeito Conj." },
-            { en: "If he came with us...", pt: "Se ele viesse connosco...", tense: "Imperfeito Conj." },
-            { en: "If we came together...", pt: "Se viéssemos juntos...", tense: "Imperfeito Conj." },
-            { en: "If they came to help...", pt: "Se eles viessem ajudar...", tense: "Imperfeito Conj." },
-            { en: "I would be happy if you came.", pt: "Ficaria feliz se viesses.", tense: "Imperfeito Conj." },
-            { en: "Even if I came...", pt: "Mesmo que viesse...", tense: "Imperfeito Conj." },
-            { en: "If she came to the party...", pt: "Se ela viesse à festa...", tense: "Imperfeito Conj." },
-            { en: "As if I were coming...", pt: "Como se viesse...", tense: "Imperfeito Conj." },
-            { en: "I wish everyone came.", pt: "Quem me dera que todos viessem.", tense: "Imperfeito Conj." },
-
-            // Imperativo (Imperative)
-            { en: "Come here!", pt: "Vem cá!", tense: "Imperativo" },
-            { en: "Come with me.", pt: "Vem comigo.", tense: "Imperativo" },
-            { en: "Come in!", pt: "Entra! / Vem!", tense: "Imperativo" },
-            { en: "Come back!", pt: "Volta!", tense: "Imperativo" },
-            { en: "Come quickly!", pt: "Vem depressa!", tense: "Imperativo" },
-
-            // Origin and provenance
-            { en: "Where does this come from?", pt: "De onde vem isto?", tense: "Presente" },
-            { en: "This wine comes from Portugal.", pt: "Este vinho vem de Portugal.", tense: "Presente" },
-            { en: "The idea comes from her.", pt: "A ideia vem dela.", tense: "Presente" },
-            { en: "Where does this word come from?", pt: "De onde vem esta palavra?", tense: "Presente" },
-            { en: "The train comes from Lisbon.", pt: "O comboio vem de Lisboa.", tense: "Presente" },
-
-            // Common expressions
-            { en: "Come what may.", pt: "Venha o que vier.", tense: "Expressão" },
-            { en: "Here it comes!", pt: "Aí vem!", tense: "Expressão" },
-            { en: "It comes naturally.", pt: "Vem naturalmente.", tense: "Expressão" },
-            { en: "Easy come, easy go.", pt: "O que vem fácil, vai fácil.", tense: "Expressão" },
-            { en: "Come on!", pt: "Vá lá! / Anda lá!", tense: "Expressão" },
-            { en: "Coming!", pt: "Já vou!", tense: "Expressão" },
-            { en: "The best is yet to come.", pt: "O melhor ainda está para vir.", tense: "Expressão" },
-            { en: "What's to come.", pt: "O que está para vir.", tense: "Expressão" },
-            { en: "First come, first served.", pt: "Quem vier primeiro, será servido primeiro.", tense: "Expressão" },
-            { en: "Dreams come true.", pt: "Os sonhos tornam-se realidade.", tense: "Expressão" },
-            { en: "It comes with practice.", pt: "Vem com a prática.", tense: "Expressão" },
-            { en: "Spring is coming.", pt: "Vem aí a primavera.", tense: "Expressão" },
-            { en: "Good things come to those who wait.", pt: "Boas coisas vêm para quem sabe esperar.", tense: "Expressão" },
-            { en: "It all comes down to this.", pt: "Tudo se resume a isto.", tense: "Expressão" },
-            { en: "Welcome!", pt: "Bem-vindo!", tense: "Expressão" }
-        ]
-    };
+        const VERB_CONFIG = {
+            originKey: 'en',
+            labels: { target: 'European Portuguese', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["venho","vens","vem","vimos","vêm","vinha","vinhas","vínhamos","vinham","vim","vieste","veio","viemos","vieram","virei","virás","virá","viremos","virão","viria","virias","viríamos","viriam","venha","venhas","venhamos","venham","viesse","viesses","viéssemos","viessem","vir","vindo","vier"],
+            phrases: [
+                { en: "I come from Portugal.", pt: "Venho de Portugal.", tense: "Presente" },
+                { en: "Where do you come from?", pt: "De onde vens?", tense: "Presente" },
+                { en: "He comes every day.", pt: "Ele vem todos os dias.", tense: "Presente" },
+                { en: "She comes with us.", pt: "Ela vem connosco.", tense: "Presente" },
+                { en: "We come together.", pt: "Vimos juntos.", tense: "Presente" },
+                { en: "You (plural) come late.", pt: "Vocês vêm tarde.", tense: "Presente" },
+                { en: "They come from far away.", pt: "Eles vêm de longe.", tense: "Presente" },
+                { en: "I don't come here often.", pt: "Não venho aqui muitas vezes.", tense: "Presente" },
+                { en: "Are you coming?", pt: "Vens?", tense: "Presente" },
+                { en: "Here comes the bus.", pt: "Aí vem o autocarro.", tense: "Presente" },
+                { en: "Who is coming?", pt: "Quem vem?", tense: "Presente" },
+                { en: "When are you coming?", pt: "Quando vens?", tense: "Presente" },
+                { en: "Is he coming to the party?", pt: "Ele vem à festa?", tense: "Presente" },
+                { en: "Are they coming too?", pt: "Eles também vêm?", tense: "Presente" },
+                { en: "Why don't you come?", pt: "Porque não vens?", tense: "Presente" },
+                { en: "How often do you come here?", pt: "Com que frequência vens aqui?", tense: "Presente" },
+                { en: "What time does she come?", pt: "A que horas ela vem?", tense: "Presente" },
+                { en: "Does this bus come often?", pt: "Este autocarro vem muitas vezes?", tense: "Presente" },
+                { en: "Is anyone coming?", pt: "Vem alguém?", tense: "Presente" },
+                { en: "Are you coming with me?", pt: "Vens comigo?", tense: "Presente" },
+                { en: "I used to come here.", pt: "Eu vinha aqui.", tense: "Imperfeito" },
+                { en: "You used to come every week.", pt: "Tu vinhas todas as semanas.", tense: "Imperfeito" },
+                { en: "He was coming to help.", pt: "Ele vinha ajudar.", tense: "Imperfeito" },
+                { en: "She used to come with her mother.", pt: "Ela vinha com a mãe.", tense: "Imperfeito" },
+                { en: "We used to come in summer.", pt: "Vínhamos no verão.", tense: "Imperfeito" },
+                { en: "They were coming home.", pt: "Eles vinham para casa.", tense: "Imperfeito" },
+                { en: "Where were you coming from?", pt: "De onde vinhas?", tense: "Imperfeito" },
+                { en: "I was coming to see you.", pt: "Vinha ver-te.", tense: "Imperfeito" },
+                { en: "We were coming together.", pt: "Vínhamos juntos.", tense: "Imperfeito" },
+                { en: "I wasn't coming alone.", pt: "Não vinha sozinho.", tense: "Imperfeito" },
+                { en: "I came yesterday.", pt: "Vim ontem.", tense: "Perfeito" },
+                { en: "You came early.", pt: "Tu vieste cedo.", tense: "Perfeito" },
+                { en: "He came to the meeting.", pt: "Ele veio à reunião.", tense: "Perfeito" },
+                { en: "She came from Brazil.", pt: "Ela veio do Brasil.", tense: "Perfeito" },
+                { en: "We came together.", pt: "Viemos juntos.", tense: "Perfeito" },
+                { en: "They came to help.", pt: "Eles vieram ajudar.", tense: "Perfeito" },
+                { en: "When did you come?", pt: "Quando vieste?", tense: "Perfeito" },
+                { en: "I didn't come last week.", pt: "Não vim na semana passada.", tense: "Perfeito" },
+                { en: "Did you come by car?", pt: "Vieste de carro?", tense: "Perfeito" },
+                { en: "Nobody came.", pt: "Ninguém veio.", tense: "Perfeito" },
+                { en: "I will come tomorrow.", pt: "Virei amanhã.", tense: "Futuro" },
+                { en: "You will come back.", pt: "Tu virás de volta.", tense: "Futuro" },
+                { en: "He will come soon.", pt: "Ele virá em breve.", tense: "Futuro" },
+                { en: "We will come together.", pt: "Viremos juntos.", tense: "Futuro" },
+                { en: "They will come later.", pt: "Eles virão mais tarde.", tense: "Futuro" },
+                { en: "I won't come alone.", pt: "Não virei sozinho.", tense: "Futuro" },
+                { en: "Will you come?", pt: "Virás?", tense: "Futuro" },
+                { en: "She will come if possible.", pt: "Ela virá se for possível.", tense: "Futuro" },
+                { en: "Better times will come.", pt: "Tempos melhores virão.", tense: "Futuro" },
+                { en: "The day will come.", pt: "O dia virá.", tense: "Futuro" },
+                { en: "I would come with you.", pt: "Viria contigo.", tense: "Condicional" },
+                { en: "You would come if invited.", pt: "Tu virias se fosses convidado.", tense: "Condicional" },
+                { en: "He would come if he could.", pt: "Ele viria se pudesse.", tense: "Condicional" },
+                { en: "We would come together.", pt: "Viríamos juntos.", tense: "Condicional" },
+                { en: "They would come anyway.", pt: "Eles viriam de qualquer forma.", tense: "Condicional" },
+                { en: "I wouldn't come alone.", pt: "Não viria sozinho.", tense: "Condicional" },
+                { en: "Would you come?", pt: "Virias?", tense: "Condicional" },
+                { en: "She would come, but she can't.", pt: "Ela viria, mas não pode.", tense: "Condicional" },
+                { en: "Who would come?", pt: "Quem viria?", tense: "Condicional" },
+                { en: "I would come if I had time.", pt: "Viria se tivesse tempo.", tense: "Condicional" },
+                { en: "I hope you come.", pt: "Espero que venhas.", tense: "Conjuntivo" },
+                { en: "It's important that he comes.", pt: "É importante que ele venha.", tense: "Conjuntivo" },
+                { en: "I want us to come together.", pt: "Quero que venhamos juntos.", tense: "Conjuntivo" },
+                { en: "I doubt that she comes.", pt: "Duvido que ela venha.", tense: "Conjuntivo" },
+                { en: "Even though you come...", pt: "Embora venhas...", tense: "Conjuntivo" },
+                { en: "Wherever you come from...", pt: "De onde quer que venhas...", tense: "Conjuntivo" },
+                { en: "It's necessary that they come.", pt: "É preciso que eles venham.", tense: "Conjuntivo" },
+                { en: "I don't think he's coming.", pt: "Não acho que ele venha.", tense: "Conjuntivo" },
+                { en: "Unless you come...", pt: "A menos que venhas...", tense: "Conjuntivo" },
+                { en: "I want you to come.", pt: "Quero que venhas.", tense: "Conjuntivo" },
+                { en: "If I came earlier...", pt: "Se eu viesse mais cedo...", tense: "Imperfeito Conj." },
+                { en: "I wish you came.", pt: "Quem me dera que viesses.", tense: "Imperfeito Conj." },
+                { en: "If he came with us...", pt: "Se ele viesse connosco...", tense: "Imperfeito Conj." },
+                { en: "If we came together...", pt: "Se viéssemos juntos...", tense: "Imperfeito Conj." },
+                { en: "If they came to help...", pt: "Se eles viessem ajudar...", tense: "Imperfeito Conj." },
+                { en: "I would be happy if you came.", pt: "Ficaria feliz se viesses.", tense: "Imperfeito Conj." },
+                { en: "Even if I came...", pt: "Mesmo que viesse...", tense: "Imperfeito Conj." },
+                { en: "If she came to the party...", pt: "Se ela viesse à festa...", tense: "Imperfeito Conj." },
+                { en: "As if I were coming...", pt: "Como se viesse...", tense: "Imperfeito Conj." },
+                { en: "I wish everyone came.", pt: "Quem me dera que todos viessem.", tense: "Imperfeito Conj." },
+                { en: "Come here!", pt: "Vem cá!", tense: "Imperativo" },
+                { en: "Come with me.", pt: "Vem comigo.", tense: "Imperativo" },
+                { en: "Come in!", pt: "Entra! / Vem!", tense: "Imperativo" },
+                { en: "Come back!", pt: "Volta!", tense: "Imperativo" },
+                { en: "Come quickly!", pt: "Vem depressa!", tense: "Imperativo" },
+                { en: "Where does this come from?", pt: "De onde vem isto?", tense: "Presente" },
+                { en: "This wine comes from Portugal.", pt: "Este vinho vem de Portugal.", tense: "Presente" },
+                { en: "The idea comes from her.", pt: "A ideia vem dela.", tense: "Presente" },
+                { en: "Where does this word come from?", pt: "De onde vem esta palavra?", tense: "Presente" },
+                { en: "The train comes from Lisbon.", pt: "O comboio vem de Lisboa.", tense: "Presente" },
+                { en: "Come what may.", pt: "Venha o que vier.", tense: "Expressão" },
+                { en: "Here it comes!", pt: "Aí vem!", tense: "Expressão" },
+                { en: "It comes naturally.", pt: "Vem naturalmente.", tense: "Expressão" },
+                { en: "Easy come, easy go.", pt: "O que vem fácil, vai fácil.", tense: "Expressão" },
+                { en: "Come on!", pt: "Vá lá! / Anda lá!", tense: "Expressão" },
+                { en: "Coming!", pt: "Já vou!", tense: "Expressão" },
+                { en: "The best is yet to come.", pt: "O melhor ainda está para vir.", tense: "Expressão" },
+                { en: "What's to come.", pt: "O que está para vir.", tense: "Expressão" },
+                { en: "First come, first served.", pt: "Quem vier primeiro, será servido primeiro.", tense: "Expressão" },
+                { en: "Dreams come true.", pt: "Os sonhos tornam-se realidade.", tense: "Expressão" },
+                { en: "It comes with practice.", pt: "Vem com a prática.", tense: "Expressão" },
+                { en: "Spring is coming.", pt: "Vem aí a primavera.", tense: "Expressão" },
+                { en: "Good things come to those who wait.", pt: "Boas coisas vêm para quem sabe esperar.", tense: "Expressão" },
+                { en: "It all comes down to this.", pt: "Tudo se resume a isto.", tense: "Expressão" },
+                { en: "Welcome!", pt: "Bem-vindo!", tense: "Expressão" },
+            ]
+        };
     </script>
     <script src="../../assets/js/verb.js"></script>
 </body>

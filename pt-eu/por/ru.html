@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Глагол PÔR — 100 Фраз</title>
+    <title>Глагол 🇵🇹 VERB PÔR — 100 фраз</title>
     <link rel="stylesheet" href="../../assets/css/verb.css">
-    
 </head>
 <body>
     <div class="container">
         <header>
             <a href="../" class="back-link">← Назад к списку глаголов</a>
-            <h1>🇵🇹 Глагол PÔR</h1>
-            <p class="subtitle">100 популярных фраз — Европейский португальский</p>
+            <h1>🇵🇹 Verb PÔR</h1>
+            <p class="subtitle">to be (permanent) — 100 фраз</p>
         </header>
 
         <div class="controls">
-            <input type="text" class="search-box" placeholder="Поиск фраз..." id="searchInput">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
         </div>
 
         <div class="controls">
@@ -30,137 +29,118 @@
         </div>
 
         <footer>
-            Практика европейского португальского — Глагол PÔR
+            Практика европейского португальского — POR
         </footer>
     </div>
 
     <script>
-    const VERB_CONFIG = {
-        originKey: 'ru',
-        labels: { target: 'Português Europeu', showing: 'Показано', of: 'из', phrases: 'фраз' },
-        verbForms: ['ponho', 'pões', 'põe', 'pomos', 'põem', 'punha', 'punhas', 'púnhamos', 'punham', 'pus', 'puseste', 'pôs', 'pusemos', 'puseram', 'porei', 'porás', 'porá', 'poremos', 'porão', 'poria', 'porias', 'poríamos', 'poriam', 'ponha', 'ponhas', 'ponhamos', 'ponham', 'pusesse', 'pusesses', 'puséssemos', 'pusessem', 'puser', 'puseres', 'pusermos', 'puserem', 'pôr', 'pondo', 'posto'],
-        phrases: [
-            // Presente do Indicativo (Present)
-            { ru: "Я кладу это здесь.", pt: "Ponho aqui.", tense: "Presente" },
-            { ru: "Куда ты кладёшь?", pt: "Onde pões?", tense: "Presente" },
-            { ru: "Он надевает очки.", pt: "Ele põe os óculos.", tense: "Presente" },
-            { ru: "Она кладёт книги на стол.", pt: "Ela põe os livros na mesa.", tense: "Presente" },
-            { ru: "Мы всё приводим в порядок.", pt: "Pomos tudo em ordem.", tense: "Presente" },
-            { ru: "Они оказывают давление.", pt: "Eles põem pressão.", tense: "Presente" },
-            { ru: "Я не кладу сахар.", pt: "Não ponho açúcar.", tense: "Presente" },
-            { ru: "Ты добавляешь молоко в кофе?", pt: "Pões leite no café?", tense: "Presente" },
-            { ru: "Он включает музыку.", pt: "Ele põe música.", tense: "Presente" },
-            { ru: "Она наносит макияж.", pt: "Ela põe maquilhagem.", tense: "Presente" },
-
-            // More present tense
-            { ru: "Я доверяю тебе.", pt: "Ponho a minha confiança em ti.", tense: "Presente" },
-            { ru: "Куда ты кладёшь ключи?", pt: "Onde pões as chaves?", tense: "Presente" },
-            { ru: "Он подвергает себя опасности.", pt: "Ele põe-se em perigo.", tense: "Presente" },
-            { ru: "Она прилагает усилия.", pt: "Ela põe esforço.", tense: "Presente" },
-            { ru: "Мы укладываем детей спать.", pt: "Pomos as crianças na cama.", tense: "Presente" },
-            { ru: "Они ставят свои имена.", pt: "Eles põem os nomes.", tense: "Presente" },
-            { ru: "Я надеваю куртку.", pt: "Ponho o casaco.", tense: "Presente" },
-            { ru: "Солнце садится в семь.", pt: "O sol põe-se às sete.", tense: "Presente" },
-            { ru: "Он вызывает сомнения.", pt: "Ele põe dúvidas.", tense: "Presente" },
-            { ru: "Она ставит условия.", pt: "Ela põe condições.", tense: "Presente" },
-
-            // Pretérito Imperfeito (Imperfect Past)
-            { ru: "Я клал это там.", pt: "Punha ali.", tense: "Imperfeito" },
-            { ru: "Ты клал сахар.", pt: "Punhas açúcar.", tense: "Imperfeito" },
-            { ru: "Он включал музыку.", pt: "Ele punha música.", tense: "Imperfeito" },
-            { ru: "Она ставила цветы.", pt: "Ela punha flores.", tense: "Imperfeito" },
-            { ru: "Мы всё убирали.", pt: "Púnhamos tudo guardado.", tense: "Imperfeito" },
-            { ru: "Они оказывали давление.", pt: "Eles punham pressão.", tense: "Imperfeito" },
-            { ru: "Я не клал соль.", pt: "Não punha sal.", tense: "Imperfeito" },
-            { ru: "Куда ты клал?", pt: "Onde punhas?", tense: "Imperfeito" },
-            { ru: "Он прилагал усилия.", pt: "Ele punha esforço.", tense: "Imperfeito" },
-            { ru: "Она вкладывала душу.", pt: "Ela punha o coração.", tense: "Imperfeito" },
-
-            // Pretérito Perfeito Simples (Simple Past)
-            { ru: "Я положил на стол.", pt: "Pus na mesa.", tense: "Perfeito" },
-            { ru: "Ты убрал.", pt: "Puseste guardado.", tense: "Perfeito" },
-            { ru: "Он надел галстук.", pt: "Ele pôs gravata.", tense: "Perfeito" },
-            { ru: "Она положила телефон.", pt: "Ela pôs o telefone.", tense: "Perfeito" },
-            { ru: "Мы всё расставили по местам.", pt: "Pusemos tudo no lugar.", tense: "Perfeito" },
-            { ru: "Они поставили подписи.", pt: "Eles puseram as assinaturas.", tense: "Perfeito" },
-            { ru: "Я ничего не положил.", pt: "Não pus nada.", tense: "Perfeito" },
-            { ru: "Куда ты положил мои ключи?", pt: "Onde puseste as minhas chaves?", tense: "Perfeito" },
-            { ru: "Солнце село рано.", pt: "O sol pôs-se cedo.", tense: "Perfeito" },
-            { ru: "Она надела платье.", pt: "Ela pôs um vestido.", tense: "Perfeito" },
-
-            // Futuro do Indicativo (Future)
-            { ru: "Я положу это здесь.", pt: "Porei aqui.", tense: "Futuro" },
-            { ru: "Ты уберёшь.", pt: "Porás guardado.", tense: "Futuro" },
-            { ru: "Он наденет костюм.", pt: "Ele porá um fato.", tense: "Futuro" },
-            { ru: "Мы всё приведём в порядок.", pt: "Poremos tudo em ordem.", tense: "Futuro" },
-            { ru: "Они поставят знаки.", pt: "Eles porão os sinais.", tense: "Futuro" },
-            { ru: "Я не буду давить.", pt: "Não porei pressão.", tense: "Futuro" },
-            { ru: "Ты положишь туда?", pt: "Porás ali?", tense: "Futuro" },
-            { ru: "Она поставит цветы.", pt: "Ela porá flores.", tense: "Futuro" },
-            { ru: "Солнце сядет позже.", pt: "O sol pôr-se-á mais tarde.", tense: "Futuro" },
-            { ru: "Я приложу все усилия.", pt: "Porei o meu melhor esforço.", tense: "Futuro" },
-
-            // Condicional (Conditional)
-            { ru: "Я бы положил туда.", pt: "Poria ali.", tense: "Condicional" },
-            { ru: "Ты бы добавил больше.", pt: "Porias mais.", tense: "Condicional" },
-            { ru: "Он бы включил музыку.", pt: "Ele poria música.", tense: "Condicional" },
-            { ru: "Мы бы привели в порядок.", pt: "Poríamos em ordem.", tense: "Condicional" },
-            { ru: "Они бы поставили условия.", pt: "Eles poriam condições.", tense: "Condicional" },
-            { ru: "Я бы не добавлял соль.", pt: "Não poria sal.", tense: "Condicional" },
-            { ru: "Ты бы добавил сахар?", pt: "Porias açúcar?", tense: "Condicional" },
-            { ru: "Она бы поставила цветы.", pt: "Ela poria flores.", tense: "Condicional" },
-            { ru: "Я бы приложил больше усилий.", pt: "Poria mais esforço.", tense: "Condicional" },
-            { ru: "Он бы подверг себя риску.", pt: "Ele pôr-se-ia em risco.", tense: "Condicional" },
-
-            // Presente do Conjuntivo (Present Subjunctive)
-            { ru: "Надеюсь, ты положишь сюда.", pt: "Espero que ponhas aqui.", tense: "Conjuntivo" },
-            { ru: "Важно, чтобы он положил.", pt: "É importante que ele ponha.", tense: "Conjuntivo" },
-            { ru: "Сомневаюсь, что она положит.", pt: "Duvido que ela ponha.", tense: "Conjuntivo" },
-            { ru: "Даже если ты положишь...", pt: "Mesmo que ponhas...", tense: "Conjuntivo" },
-            { ru: "Кто положит...", pt: "Quem ponha...", tense: "Conjuntivo" },
-            { ru: "Нужно, чтобы мы положили.", pt: "É preciso que ponhamos.", tense: "Conjuntivo" },
-            { ru: "Не думаю, что он положит.", pt: "Não acho que ele ponha.", tense: "Conjuntivo" },
-            { ru: "Если только ты не положишь...", pt: "A menos que ponhas...", tense: "Conjuntivo" },
-            { ru: "Чтобы они положили...", pt: "Para que ponham...", tense: "Conjuntivo" },
-            { ru: "Что бы ты ни положил...", pt: "O que quer que ponhas...", tense: "Conjuntivo" },
-
-            // Imperfeito do Conjuntivo (Imperfect Subjunctive)
-            { ru: "Если бы я положил...", pt: "Se eu pusesse...", tense: "Imperfeito Conj." },
-            { ru: "Хотел бы я, чтобы ты положил.", pt: "Quem me dera que pusesses.", tense: "Imperfeito Conj." },
-            { ru: "Если бы он приложил больше усилий...", pt: "Se ele pusesse mais esforço...", tense: "Imperfeito Conj." },
-            { ru: "Если бы мы привели в порядок...", pt: "Se puséssemos em ordem...", tense: "Imperfeito Conj." },
-            { ru: "Если бы они поставили условия...", pt: "Se eles pusessem condições...", tense: "Imperfeito Conj." },
-            { ru: "Я бы принял, если бы ты положил.", pt: "Aceitaria se pusesses.", tense: "Imperfeito Conj." },
-            { ru: "Даже если бы я положил...", pt: "Mesmo que pusesse...", tense: "Imperfeito Conj." },
-            { ru: "Если бы она поставила цветы...", pt: "Se ela pusesse flores...", tense: "Imperfeito Conj." },
-            { ru: "Как будто он положил...", pt: "Como se pusesse...", tense: "Imperfeito Conj." },
-            { ru: "Если бы только я приложил больше усилий.", pt: "Se ao menos pusesse mais esforço.", tense: "Imperfeito Conj." },
-
-            // Futuro do Conjuntivo (Future Subjunctive)
-            { ru: "Когда я положу...", pt: "Quando puser...", tense: "Futuro Conj." },
-            { ru: "Если ты положишь...", pt: "Se puseres...", tense: "Futuro Conj." },
-            { ru: "Когда он положит...", pt: "Quando ele puser...", tense: "Futuro Conj." },
-            { ru: "Если мы положим...", pt: "Se pusermos...", tense: "Futuro Conj." },
-            { ru: "Когда они положат...", pt: "Quando eles puserem...", tense: "Futuro Conj." },
-            { ru: "Как только я положу...", pt: "Assim que puser...", tense: "Futuro Conj." },
-            { ru: "Кто положит...", pt: "Quem puser...", tense: "Futuro Conj." },
-            { ru: "Если ты когда-нибудь положишь...", pt: "Se alguma vez puseres...", tense: "Futuro Conj." },
-            { ru: "Когда мы всё положим...", pt: "Quando pusermos tudo...", tense: "Futuro Conj." },
-            { ru: "Скажи мне, если положишь.", pt: "Diz-me se puseres.", tense: "Futuro Conj." },
-
-            // Common expressions with pôr
-            { ru: "Накрыть на стол.", pt: "Pôr a mesa.", tense: "Expressão" },
-            { ru: "Нести яйца.", pt: "Pôr ovos.", tense: "Expressão" },
-            { ru: "Закат.", pt: "Pôr-do-sol.", tense: "Expressão" },
-            { ru: "Поставить под сомнение.", pt: "Pôr em causa.", tense: "Expressão" },
-            { ru: "Привести в порядок.", pt: "Pôr em ordem.", tense: "Expressão" },
-            { ru: "Стать, расположиться.", pt: "Pôr-se.", tense: "Expressão" },
-            { ru: "Начать что-то делать.", pt: "Pôr-se a.", tense: "Expressão" },
-            { ru: "Положить конец.", pt: "Pôr fim.", tense: "Expressão" },
-            { ru: "Набрать вес.", pt: "Pôr peso.", tense: "Expressão" },
-            { ru: "Сделать ставку.", pt: "Pôr a aposta.", tense: "Expressão" }
-        ]
-    };
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            labels: { target: 'Português Europeu', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["ponho","pões","põe","pomos","põem","punha","punhas","púnhamos","punham","pus","puseste","pôs","pusemos","puseram","porei","porás","porá","poremos","porão","poria","porias","poríamos","poriam","ponha","ponhas","ponhamos","ponham","pusesse","pusesses","puséssemos","pusessem","puser","puseres","pusermos","puserem","pôr","pondo","posto"],
+            phrases: [
+                { ru: "Я кладу это здесь.", pt: "Ponho aqui.", tense: "Presente" },
+                { ru: "Куда ты кладёшь?", pt: "Onde pões?", tense: "Presente" },
+                { ru: "Он надевает очки.", pt: "Ele põe os óculos.", tense: "Presente" },
+                { ru: "Она кладёт книги на стол.", pt: "Ela põe os livros na mesa.", tense: "Presente" },
+                { ru: "Мы всё приводим в порядок.", pt: "Pomos tudo em ordem.", tense: "Presente" },
+                { ru: "Они оказывают давление.", pt: "Eles põem pressão.", tense: "Presente" },
+                { ru: "Я не кладу сахар.", pt: "Não ponho açúcar.", tense: "Presente" },
+                { ru: "Ты добавляешь молоко в кофе?", pt: "Pões leite no café?", tense: "Presente" },
+                { ru: "Он включает музыку.", pt: "Ele põe música.", tense: "Presente" },
+                { ru: "Она наносит макияж.", pt: "Ela põe maquilhagem.", tense: "Presente" },
+                { ru: "Я доверяю тебе.", pt: "Ponho a minha confiança em ti.", tense: "Presente" },
+                { ru: "Куда ты кладёшь ключи?", pt: "Onde pões as chaves?", tense: "Presente" },
+                { ru: "Он подвергает себя опасности.", pt: "Ele põe-se em perigo.", tense: "Presente" },
+                { ru: "Она прилагает усилия.", pt: "Ela põe esforço.", tense: "Presente" },
+                { ru: "Мы укладываем детей спать.", pt: "Pomos as crianças na cama.", tense: "Presente" },
+                { ru: "Они ставят свои имена.", pt: "Eles põem os nomes.", tense: "Presente" },
+                { ru: "Я надеваю куртку.", pt: "Ponho o casaco.", tense: "Presente" },
+                { ru: "Солнце садится в семь.", pt: "O sol põe-se às sete.", tense: "Presente" },
+                { ru: "Он вызывает сомнения.", pt: "Ele põe dúvidas.", tense: "Presente" },
+                { ru: "Она ставит условия.", pt: "Ela põe condições.", tense: "Presente" },
+                { ru: "Я клал это там.", pt: "Punha ali.", tense: "Imperfeito" },
+                { ru: "Ты клал сахар.", pt: "Punhas açúcar.", tense: "Imperfeito" },
+                { ru: "Он включал музыку.", pt: "Ele punha música.", tense: "Imperfeito" },
+                { ru: "Она ставила цветы.", pt: "Ela punha flores.", tense: "Imperfeito" },
+                { ru: "Мы всё убирали.", pt: "Púnhamos tudo guardado.", tense: "Imperfeito" },
+                { ru: "Они оказывали давление.", pt: "Eles punham pressão.", tense: "Imperfeito" },
+                { ru: "Я не клал соль.", pt: "Não punha sal.", tense: "Imperfeito" },
+                { ru: "Куда ты клал?", pt: "Onde punhas?", tense: "Imperfeito" },
+                { ru: "Он прилагал усилия.", pt: "Ele punha esforço.", tense: "Imperfeito" },
+                { ru: "Она вкладывала душу.", pt: "Ela punha o coração.", tense: "Imperfeito" },
+                { ru: "Я положил на стол.", pt: "Pus na mesa.", tense: "Perfeito" },
+                { ru: "Ты убрал.", pt: "Puseste guardado.", tense: "Perfeito" },
+                { ru: "Он надел галстук.", pt: "Ele pôs gravata.", tense: "Perfeito" },
+                { ru: "Она положила телефон.", pt: "Ela pôs o telefone.", tense: "Perfeito" },
+                { ru: "Мы всё расставили по местам.", pt: "Pusemos tudo no lugar.", tense: "Perfeito" },
+                { ru: "Они поставили подписи.", pt: "Eles puseram as assinaturas.", tense: "Perfeito" },
+                { ru: "Я ничего не положил.", pt: "Não pus nada.", tense: "Perfeito" },
+                { ru: "Куда ты положил мои ключи?", pt: "Onde puseste as minhas chaves?", tense: "Perfeito" },
+                { ru: "Солнце село рано.", pt: "O sol pôs-se cedo.", tense: "Perfeito" },
+                { ru: "Она надела платье.", pt: "Ela pôs um vestido.", tense: "Perfeito" },
+                { ru: "Я положу это здесь.", pt: "Porei aqui.", tense: "Futuro" },
+                { ru: "Ты уберёшь.", pt: "Porás guardado.", tense: "Futuro" },
+                { ru: "Он наденет костюм.", pt: "Ele porá um fato.", tense: "Futuro" },
+                { ru: "Мы всё приведём в порядок.", pt: "Poremos tudo em ordem.", tense: "Futuro" },
+                { ru: "Они поставят знаки.", pt: "Eles porão os sinais.", tense: "Futuro" },
+                { ru: "Я не буду давить.", pt: "Não porei pressão.", tense: "Futuro" },
+                { ru: "Ты положишь туда?", pt: "Porás ali?", tense: "Futuro" },
+                { ru: "Она поставит цветы.", pt: "Ela porá flores.", tense: "Futuro" },
+                { ru: "Солнце сядет позже.", pt: "O sol pôr-se-á mais tarde.", tense: "Futuro" },
+                { ru: "Я приложу все усилия.", pt: "Porei o meu melhor esforço.", tense: "Futuro" },
+                { ru: "Я бы положил туда.", pt: "Poria ali.", tense: "Condicional" },
+                { ru: "Ты бы добавил больше.", pt: "Porias mais.", tense: "Condicional" },
+                { ru: "Он бы включил музыку.", pt: "Ele poria música.", tense: "Condicional" },
+                { ru: "Мы бы привели в порядок.", pt: "Poríamos em ordem.", tense: "Condicional" },
+                { ru: "Они бы поставили условия.", pt: "Eles poriam condições.", tense: "Condicional" },
+                { ru: "Я бы не добавлял соль.", pt: "Não poria sal.", tense: "Condicional" },
+                { ru: "Ты бы добавил сахар?", pt: "Porias açúcar?", tense: "Condicional" },
+                { ru: "Она бы поставила цветы.", pt: "Ela poria flores.", tense: "Condicional" },
+                { ru: "Я бы приложил больше усилий.", pt: "Poria mais esforço.", tense: "Condicional" },
+                { ru: "Он бы подверг себя риску.", pt: "Ele pôr-se-ia em risco.", tense: "Condicional" },
+                { ru: "Надеюсь, ты положишь сюда.", pt: "Espero que ponhas aqui.", tense: "Conjuntivo" },
+                { ru: "Важно, чтобы он положил.", pt: "É importante que ele ponha.", tense: "Conjuntivo" },
+                { ru: "Сомневаюсь, что она положит.", pt: "Duvido que ela ponha.", tense: "Conjuntivo" },
+                { ru: "Даже если ты положишь...", pt: "Mesmo que ponhas...", tense: "Conjuntivo" },
+                { ru: "Кто положит...", pt: "Quem ponha...", tense: "Conjuntivo" },
+                { ru: "Нужно, чтобы мы положили.", pt: "É preciso que ponhamos.", tense: "Conjuntivo" },
+                { ru: "Не думаю, что он положит.", pt: "Não acho que ele ponha.", tense: "Conjuntivo" },
+                { ru: "Если только ты не положишь...", pt: "A menos que ponhas...", tense: "Conjuntivo" },
+                { ru: "Чтобы они положили...", pt: "Para que ponham...", tense: "Conjuntivo" },
+                { ru: "Что бы ты ни положил...", pt: "O que quer que ponhas...", tense: "Conjuntivo" },
+                { ru: "Если бы я положил...", pt: "Se eu pusesse...", tense: "Imperfeito Conj." },
+                { ru: "Хотел бы я, чтобы ты положил.", pt: "Quem me dera que pusesses.", tense: "Imperfeito Conj." },
+                { ru: "Если бы он приложил больше усилий...", pt: "Se ele pusesse mais esforço...", tense: "Imperfeito Conj." },
+                { ru: "Если бы мы привели в порядок...", pt: "Se puséssemos em ordem...", tense: "Imperfeito Conj." },
+                { ru: "Если бы они поставили условия...", pt: "Se eles pusessem condições...", tense: "Imperfeito Conj." },
+                { ru: "Я бы принял, если бы ты положил.", pt: "Aceitaria se pusesses.", tense: "Imperfeito Conj." },
+                { ru: "Даже если бы я положил...", pt: "Mesmo que pusesse...", tense: "Imperfeito Conj." },
+                { ru: "Если бы она поставила цветы...", pt: "Se ela pusesse flores...", tense: "Imperfeito Conj." },
+                { ru: "Как будто он положил...", pt: "Como se pusesse...", tense: "Imperfeito Conj." },
+                { ru: "Если бы только я приложил больше усилий.", pt: "Se ao menos pusesse mais esforço.", tense: "Imperfeito Conj." },
+                { ru: "Когда я положу...", pt: "Quando puser...", tense: "Futuro Conj." },
+                { ru: "Если ты положишь...", pt: "Se puseres...", tense: "Futuro Conj." },
+                { ru: "Когда он положит...", pt: "Quando ele puser...", tense: "Futuro Conj." },
+                { ru: "Если мы положим...", pt: "Se pusermos...", tense: "Futuro Conj." },
+                { ru: "Когда они положат...", pt: "Quando eles puserem...", tense: "Futuro Conj." },
+                { ru: "Как только я положу...", pt: "Assim que puser...", tense: "Futuro Conj." },
+                { ru: "Кто положит...", pt: "Quem puser...", tense: "Futuro Conj." },
+                { ru: "Если ты когда-нибудь положишь...", pt: "Se alguma vez puseres...", tense: "Futuro Conj." },
+                { ru: "Когда мы всё положим...", pt: "Quando pusermos tudo...", tense: "Futuro Conj." },
+                { ru: "Скажи мне, если положишь.", pt: "Diz-me se puseres.", tense: "Futuro Conj." },
+                { ru: "Накрыть на стол.", pt: "Pôr a mesa.", tense: "Expressão" },
+                { ru: "Нести яйца.", pt: "Pôr ovos.", tense: "Expressão" },
+                { ru: "Закат.", pt: "Pôr-do-sol.", tense: "Expressão" },
+                { ru: "Поставить под сомнение.", pt: "Pôr em causa.", tense: "Expressão" },
+                { ru: "Привести в порядок.", pt: "Pôr em ordem.", tense: "Expressão" },
+                { ru: "Стать, расположиться.", pt: "Pôr-se.", tense: "Expressão" },
+                { ru: "Начать что-то делать.", pt: "Pôr-se a.", tense: "Expressão" },
+                { ru: "Положить конец.", pt: "Pôr fim.", tense: "Expressão" },
+                { ru: "Набрать вес.", pt: "Pôr peso.", tense: "Expressão" },
+                { ru: "Сделать ставку.", pt: "Pôr a aposta.", tense: "Expressão" },
+            ]
+        };
     </script>
     <script src="../../assets/js/verb.js"></script>
 </body>

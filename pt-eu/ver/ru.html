@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Глагол VER — 100 Фраз</title>
+    <title>Глагол 🇵🇹 VERB VER — 100 фраз</title>
     <link rel="stylesheet" href="../../assets/css/verb.css">
-    
 </head>
 <body>
     <div class="container">
         <header>
             <a href="../" class="back-link">← Назад к списку глаголов</a>
-            <h1>🇵🇹 Глагол VER</h1>
-            <p class="subtitle">100 популярных фраз — Европейский португальский</p>
+            <h1>🇵🇹 Verb VER</h1>
+            <p class="subtitle">to be (permanent) — 100 фраз</p>
         </header>
 
         <div class="controls">
-            <input type="text" class="search-box" placeholder="Поиск фраз..." id="searchInput">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
         </div>
 
         <div class="controls">
@@ -30,137 +29,118 @@
         </div>
 
         <footer>
-            Практика европейского португальского — Глагол VER
+            Практика европейского португальского — VER
         </footer>
     </div>
 
     <script>
-    const VERB_CONFIG = {
-        originKey: 'ru',
-        labels: { target: 'Português Europeu', showing: 'Показано', of: 'из', phrases: 'фраз' },
-        verbForms: ['vejo', 'vês', 'vê', 'vemos', 'veem', 'via', 'vias', 'víamos', 'viam', 'vi', 'viste', 'viu', 'vimos', 'viram', 'verei', 'verás', 'verá', 'veremos', 'verão', 'veria', 'verias', 'veríamos', 'veriam', 'veja', 'vejas', 'vejamos', 'vejam', 'visse', 'visses', 'víssemos', 'vissem', 'vir', 'vires', 'virmos', 'virem', 'ver', 'vendo', 'visto'],
-        phrases: [
-            // Presente do Indicativo (Present)
-            { ru: "Я тебя вижу.", pt: "Vejo-te.", tense: "Presente" },
-            { ru: "Ты это видишь?", pt: "Vês aquilo?", tense: "Presente" },
-            { ru: "Он видит всё.", pt: "Ele vê tudo.", tense: "Presente" },
-            { ru: "Она видит проблему.", pt: "Ela vê o problema.", tense: "Presente" },
-            { ru: "Мы видим море.", pt: "Vemos o mar.", tense: "Presente" },
-            { ru: "Они нас видят.", pt: "Eles veem-nos.", tense: "Presente" },
-            { ru: "Я ничего не вижу.", pt: "Não vejo nada.", tense: "Presente" },
-            { ru: "Ты можешь видеть?", pt: "Consegues ver?", tense: "Presente" },
-            { ru: "Я понимаю, что ты имеешь в виду.", pt: "Vejo o que queres dizer.", tense: "Presente" },
-            { ru: "Кого ты видишь?", pt: "Quem vês?", tense: "Presente" },
-
-            // More present tense
-            { ru: "Я вижу его каждый день.", pt: "Vejo-o todos os dias.", tense: "Presente" },
-            { ru: "Ты видишь разницу?", pt: "Vês a diferença?", tense: "Presente" },
-            { ru: "Он видит вещи по-другому.", pt: "Ele vê as coisas de forma diferente.", tense: "Presente" },
-            { ru: "Она плохо видит.", pt: "Ela não vê bem.", tense: "Presente" },
-            { ru: "Мы часто видимся.", pt: "Vemo-nos frequentemente.", tense: "Presente" },
-            { ru: "Они видят правду.", pt: "Eles veem a verdade.", tense: "Presente" },
-            { ru: "Теперь я вижу ясно.", pt: "Agora vejo claramente.", tense: "Presente" },
-            { ru: "Ты видишь то, что вижу я?", pt: "Vês o que eu vejo?", tense: "Presente" },
-            { ru: "Он видит будущее.", pt: "Ele vê o futuro.", tense: "Presente" },
-            { ru: "Я вижу свет.", pt: "Vejo a luz.", tense: "Presente" },
-
-            // Pretérito Imperfeito (Imperfect Past)
-            { ru: "Я часто его видел.", pt: "Via-o frequentemente.", tense: "Imperfeito" },
-            { ru: "Ты мог видеть горы.", pt: "Vias as montanhas.", tense: "Imperfeito" },
-            { ru: "Он всё ясно видел.", pt: "Ele via tudo claramente.", tense: "Imperfeito" },
-            { ru: "Она видела его каждый день.", pt: "Ela via-o todos os dias.", tense: "Imperfeito" },
-            { ru: "Мы раньше виделись.", pt: "Víamo-nos.", tense: "Imperfeito" },
-            { ru: "Они видели знаки.", pt: "Eles viam os sinais.", tense: "Imperfeito" },
-            { ru: "Я ничего не видел.", pt: "Não via nada.", tense: "Imperfeito" },
-            { ru: "Ты видел оттуда?", pt: "Vias dali?", tense: "Imperfeito" },
-            { ru: "Никто нас не видел.", pt: "Ninguém nos via.", tense: "Imperfeito" },
-            { ru: "Я видел, что происходит.", pt: "Via o que estava a acontecer.", tense: "Imperfeito" },
-
-            // Pretérito Perfeito Simples (Simple Past)
-            { ru: "Я видел его вчера.", pt: "Vi-o ontem.", tense: "Perfeito" },
-            { ru: "Ты это видел?", pt: "Viste aquilo?", tense: "Perfeito" },
-            { ru: "Он видел аварию.", pt: "Ele viu o acidente.", tense: "Perfeito" },
-            { ru: "Она посмотрела фильм.", pt: "Ela viu o filme.", tense: "Perfeito" },
-            { ru: "Мы всё видели.", pt: "Vimos tudo.", tense: "Perfeito" },
-            { ru: "Они видели, как мы уходили.", pt: "Eles viram-nos a sair.", tense: "Perfeito" },
-            { ru: "Я никогда этого не видел.", pt: "Nunca vi isso.", tense: "Perfeito" },
-            { ru: "Когда ты её видел?", pt: "Quando a viste?", tense: "Perfeito" },
-            { ru: "Я видел это своими глазами.", pt: "Vi com os meus próprios olhos.", tense: "Perfeito" },
-            { ru: "Ты видел новости?", pt: "Viste as notícias?", tense: "Perfeito" },
-
-            // Futuro do Indicativo (Future)
-            { ru: "Я увижу тебя завтра.", pt: "Ver-te-ei amanhã.", tense: "Futuro" },
-            { ru: "Ты увидишь результаты.", pt: "Verás os resultados.", tense: "Futuro" },
-            { ru: "Он пойдёт к врачу.", pt: "Ele verá o médico.", tense: "Futuro" },
-            { ru: "Мы увидим, что будет.", pt: "Veremos o que acontece.", tense: "Futuro" },
-            { ru: "Они увидят разницу.", pt: "Eles verão a diferença.", tense: "Futuro" },
-            { ru: "Я больше его не увижу.", pt: "Não o verei outra vez.", tense: "Futuro" },
-            { ru: "Ты её увидишь?", pt: "Vê-la-ás?", tense: "Futuro" },
-            { ru: "Время покажет.", pt: "O tempo verá.", tense: "Futuro" },
-            { ru: "Посмотрим.", pt: "Veremos isso.", tense: "Futuro" },
-            { ru: "Ты сам увидишь.", pt: "Verás por ti mesmo.", tense: "Futuro" },
-
-            // Condicional (Conditional)
-            { ru: "Я бы увидел его, если бы...", pt: "Vê-lo-ia se...", tense: "Condicional" },
-            { ru: "Ты бы лучше видел.", pt: "Verias melhor.", tense: "Condicional" },
-            { ru: "Он бы увидел проблему.", pt: "Ele veria o problema.", tense: "Condicional" },
-            { ru: "Мы бы виделись.", pt: "Ver-nos-íamos.", tense: "Condicional" },
-            { ru: "Они бы увидели правду.", pt: "Eles veriam a verdade.", tense: "Condicional" },
-            { ru: "Я бы не видел смысла.", pt: "Não veria o sentido.", tense: "Condicional" },
-            { ru: "Ты бы её увидел?", pt: "Vê-la-ias?", tense: "Condicional" },
-            { ru: "Она бы увидела по-другому.", pt: "Ela veria de forma diferente.", tense: "Condicional" },
-            { ru: "Я хотел бы увидеть.", pt: "Gostaria de ver.", tense: "Condicional" },
-            { ru: "Кто бы это предвидел?", pt: "Quem veria isso a chegar?", tense: "Condicional" },
-
-            // Presente do Conjuntivo (Present Subjunctive)
-            { ru: "Надеюсь, ты увидишь.", pt: "Espero que vejas.", tense: "Conjuntivo" },
-            { ru: "Важно, чтобы он увидел.", pt: "É importante que ele veja.", tense: "Conjuntivo" },
-            { ru: "Сомневаюсь, что она видит.", pt: "Duvido que ela veja.", tense: "Conjuntivo" },
-            { ru: "Хотя ты и видишь...", pt: "Embora vejas...", tense: "Conjuntivo" },
-            { ru: "Кто это увидит...", pt: "Quem veja isto...", tense: "Conjuntivo" },
-            { ru: "Нужно, чтобы мы увидели.", pt: "É preciso que vejamos.", tense: "Conjuntivo" },
-            { ru: "Не думаю, что он видит.", pt: "Não acho que ele veja.", tense: "Conjuntivo" },
-            { ru: "Если только ты не увидишь...", pt: "A menos que vejas...", tense: "Conjuntivo" },
-            { ru: "Чтобы они увидели...", pt: "Para que vejam...", tense: "Conjuntivo" },
-            { ru: "Что бы ты ни видел...", pt: "O que quer que vejas...", tense: "Conjuntivo" },
-
-            // Imperfeito do Conjuntivo (Imperfect Subjunctive)
-            { ru: "Если бы я видел...", pt: "Se eu visse...", tense: "Imperfeito Conj." },
-            { ru: "Хотел бы я, чтобы ты видел.", pt: "Quem me dera que visses.", tense: "Imperfeito Conj." },
-            { ru: "Если бы он видел правду...", pt: "Se ele visse a verdade...", tense: "Imperfeito Conj." },
-            { ru: "Если бы мы видели раньше...", pt: "Se víssemos antes...", tense: "Imperfeito Conj." },
-            { ru: "Если бы они видели...", pt: "Se eles vissem...", tense: "Imperfeito Conj." },
-            { ru: "Я бы сказал тебе, если бы видел.", pt: "Dizia-te se visse.", tense: "Imperfeito Conj." },
-            { ru: "Даже если бы я видел...", pt: "Mesmo que visse...", tense: "Imperfeito Conj." },
-            { ru: "Если бы она это видела...", pt: "Se ela visse isto...", tense: "Imperfeito Conj." },
-            { ru: "Как будто он всё видит...", pt: "Como se visse tudo...", tense: "Imperfeito Conj." },
-            { ru: "Если бы только я видел.", pt: "Se ao menos visse.", tense: "Imperfeito Conj." },
-
-            // Futuro do Conjuntivo (Future Subjunctive)
-            { ru: "Когда я увижу...", pt: "Quando vir...", tense: "Futuro Conj." },
-            { ru: "Если ты его увидишь...", pt: "Se o vires...", tense: "Futuro Conj." },
-            { ru: "Когда он увидит...", pt: "Quando ele vir...", tense: "Futuro Conj." },
-            { ru: "Если мы увидим...", pt: "Se virmos...", tense: "Futuro Conj." },
-            { ru: "Когда они увидят...", pt: "Quando eles virem...", tense: "Futuro Conj." },
-            { ru: "Как только я увижу...", pt: "Assim que vir...", tense: "Futuro Conj." },
-            { ru: "Кто увидит...", pt: "Quem vir...", tense: "Futuro Conj." },
-            { ru: "Если ты когда-нибудь увидишь...", pt: "Se alguma vez vires...", tense: "Futuro Conj." },
-            { ru: "Когда мы увидимся...", pt: "Quando nos virmos...", tense: "Futuro Conj." },
-            { ru: "Скажи мне, если увидишь.", pt: "Diz-me se vires.", tense: "Futuro Conj." },
-
-            // Common expressions
-            { ru: "Посмотрим.", pt: "Vamos ver.", tense: "Expressão" },
-            { ru: "До скорого.", pt: "Até logo.", tense: "Expressão" },
-            { ru: "До завтра.", pt: "Até amanhã.", tense: "Expressão" },
-            { ru: "Как видишь.", pt: "Como podes ver.", tense: "Expressão" },
-            { ru: "Не могу дождаться, чтобы увидеть.", pt: "Mal posso esperar para ver.", tense: "Expressão" },
-            { ru: "Рад тебя видеть.", pt: "Bom ver-te.", tense: "Expressão" },
-            { ru: "Я никогда такого не видел.", pt: "Nunca vi isso.", tense: "Expressão" },
-            { ru: "Посмотрим.", pt: "Veremos.", tense: "Expressão" },
-            { ru: "Увидеть — значит поверить.", pt: "Ver para crer.", tense: "Expressão" },
-            { ru: "Дай-ка посмотрю.", pt: "Deixa-me ver.", tense: "Expressão" }
-        ]
-    };
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            labels: { target: 'Português Europeu', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["vejo","vês","vê","vemos","veem","via","vias","víamos","viam","vi","viste","viu","vimos","viram","verei","verás","verá","veremos","verão","veria","verias","veríamos","veriam","veja","vejas","vejamos","vejam","visse","visses","víssemos","vissem","vir","vires","virmos","virem","ver","vendo","visto"],
+            phrases: [
+                { ru: "Я тебя вижу.", pt: "Vejo-te.", tense: "Presente" },
+                { ru: "Ты это видишь?", pt: "Vês aquilo?", tense: "Presente" },
+                { ru: "Он видит всё.", pt: "Ele vê tudo.", tense: "Presente" },
+                { ru: "Она видит проблему.", pt: "Ela vê o problema.", tense: "Presente" },
+                { ru: "Мы видим море.", pt: "Vemos o mar.", tense: "Presente" },
+                { ru: "Они нас видят.", pt: "Eles veem-nos.", tense: "Presente" },
+                { ru: "Я ничего не вижу.", pt: "Não vejo nada.", tense: "Presente" },
+                { ru: "Ты можешь видеть?", pt: "Consegues ver?", tense: "Presente" },
+                { ru: "Я понимаю, что ты имеешь в виду.", pt: "Vejo o que queres dizer.", tense: "Presente" },
+                { ru: "Кого ты видишь?", pt: "Quem vês?", tense: "Presente" },
+                { ru: "Я вижу его каждый день.", pt: "Vejo-o todos os dias.", tense: "Presente" },
+                { ru: "Ты видишь разницу?", pt: "Vês a diferença?", tense: "Presente" },
+                { ru: "Он видит вещи по-другому.", pt: "Ele vê as coisas de forma diferente.", tense: "Presente" },
+                { ru: "Она плохо видит.", pt: "Ela não vê bem.", tense: "Presente" },
+                { ru: "Мы часто видимся.", pt: "Vemo-nos frequentemente.", tense: "Presente" },
+                { ru: "Они видят правду.", pt: "Eles veem a verdade.", tense: "Presente" },
+                { ru: "Теперь я вижу ясно.", pt: "Agora vejo claramente.", tense: "Presente" },
+                { ru: "Ты видишь то, что вижу я?", pt: "Vês o que eu vejo?", tense: "Presente" },
+                { ru: "Он видит будущее.", pt: "Ele vê o futuro.", tense: "Presente" },
+                { ru: "Я вижу свет.", pt: "Vejo a luz.", tense: "Presente" },
+                { ru: "Я часто его видел.", pt: "Via-o frequentemente.", tense: "Imperfeito" },
+                { ru: "Ты мог видеть горы.", pt: "Vias as montanhas.", tense: "Imperfeito" },
+                { ru: "Он всё ясно видел.", pt: "Ele via tudo claramente.", tense: "Imperfeito" },
+                { ru: "Она видела его каждый день.", pt: "Ela via-o todos os dias.", tense: "Imperfeito" },
+                { ru: "Мы раньше виделись.", pt: "Víamo-nos.", tense: "Imperfeito" },
+                { ru: "Они видели знаки.", pt: "Eles viam os sinais.", tense: "Imperfeito" },
+                { ru: "Я ничего не видел.", pt: "Não via nada.", tense: "Imperfeito" },
+                { ru: "Ты видел оттуда?", pt: "Vias dali?", tense: "Imperfeito" },
+                { ru: "Никто нас не видел.", pt: "Ninguém nos via.", tense: "Imperfeito" },
+                { ru: "Я видел, что происходит.", pt: "Via o que estava a acontecer.", tense: "Imperfeito" },
+                { ru: "Я видел его вчера.", pt: "Vi-o ontem.", tense: "Perfeito" },
+                { ru: "Ты это видел?", pt: "Viste aquilo?", tense: "Perfeito" },
+                { ru: "Он видел аварию.", pt: "Ele viu o acidente.", tense: "Perfeito" },
+                { ru: "Она посмотрела фильм.", pt: "Ela viu o filme.", tense: "Perfeito" },
+                { ru: "Мы всё видели.", pt: "Vimos tudo.", tense: "Perfeito" },
+                { ru: "Они видели, как мы уходили.", pt: "Eles viram-nos a sair.", tense: "Perfeito" },
+                { ru: "Я никогда этого не видел.", pt: "Nunca vi isso.", tense: "Perfeito" },
+                { ru: "Когда ты её видел?", pt: "Quando a viste?", tense: "Perfeito" },
+                { ru: "Я видел это своими глазами.", pt: "Vi com os meus próprios olhos.", tense: "Perfeito" },
+                { ru: "Ты видел новости?", pt: "Viste as notícias?", tense: "Perfeito" },
+                { ru: "Я увижу тебя завтра.", pt: "Ver-te-ei amanhã.", tense: "Futuro" },
+                { ru: "Ты увидишь результаты.", pt: "Verás os resultados.", tense: "Futuro" },
+                { ru: "Он пойдёт к врачу.", pt: "Ele verá o médico.", tense: "Futuro" },
+                { ru: "Мы увидим, что будет.", pt: "Veremos o que acontece.", tense: "Futuro" },
+                { ru: "Они увидят разницу.", pt: "Eles verão a diferença.", tense: "Futuro" },
+                { ru: "Я больше его не увижу.", pt: "Não o verei outra vez.", tense: "Futuro" },
+                { ru: "Ты её увидишь?", pt: "Vê-la-ás?", tense: "Futuro" },
+                { ru: "Время покажет.", pt: "O tempo verá.", tense: "Futuro" },
+                { ru: "Посмотрим.", pt: "Veremos isso.", tense: "Futuro" },
+                { ru: "Ты сам увидишь.", pt: "Verás por ti mesmo.", tense: "Futuro" },
+                { ru: "Я бы увидел его, если бы...", pt: "Vê-lo-ia se...", tense: "Condicional" },
+                { ru: "Ты бы лучше видел.", pt: "Verias melhor.", tense: "Condicional" },
+                { ru: "Он бы увидел проблему.", pt: "Ele veria o problema.", tense: "Condicional" },
+                { ru: "Мы бы виделись.", pt: "Ver-nos-íamos.", tense: "Condicional" },
+                { ru: "Они бы увидели правду.", pt: "Eles veriam a verdade.", tense: "Condicional" },
+                { ru: "Я бы не видел смысла.", pt: "Não veria o sentido.", tense: "Condicional" },
+                { ru: "Ты бы её увидел?", pt: "Vê-la-ias?", tense: "Condicional" },
+                { ru: "Она бы увидела по-другому.", pt: "Ela veria de forma diferente.", tense: "Condicional" },
+                { ru: "Я хотел бы увидеть.", pt: "Gostaria de ver.", tense: "Condicional" },
+                { ru: "Кто бы это предвидел?", pt: "Quem veria isso a chegar?", tense: "Condicional" },
+                { ru: "Надеюсь, ты увидишь.", pt: "Espero que vejas.", tense: "Conjuntivo" },
+                { ru: "Важно, чтобы он увидел.", pt: "É importante que ele veja.", tense: "Conjuntivo" },
+                { ru: "Сомневаюсь, что она видит.", pt: "Duvido que ela veja.", tense: "Conjuntivo" },
+                { ru: "Хотя ты и видишь...", pt: "Embora vejas...", tense: "Conjuntivo" },
+                { ru: "Кто это увидит...", pt: "Quem veja isto...", tense: "Conjuntivo" },
+                { ru: "Нужно, чтобы мы увидели.", pt: "É preciso que vejamos.", tense: "Conjuntivo" },
+                { ru: "Не думаю, что он видит.", pt: "Não acho que ele veja.", tense: "Conjuntivo" },
+                { ru: "Если только ты не увидишь...", pt: "A menos que vejas...", tense: "Conjuntivo" },
+                { ru: "Чтобы они увидели...", pt: "Para que vejam...", tense: "Conjuntivo" },
+                { ru: "Что бы ты ни видел...", pt: "O que quer que vejas...", tense: "Conjuntivo" },
+                { ru: "Если бы я видел...", pt: "Se eu visse...", tense: "Imperfeito Conj." },
+                { ru: "Хотел бы я, чтобы ты видел.", pt: "Quem me dera que visses.", tense: "Imperfeito Conj." },
+                { ru: "Если бы он видел правду...", pt: "Se ele visse a verdade...", tense: "Imperfeito Conj." },
+                { ru: "Если бы мы видели раньше...", pt: "Se víssemos antes...", tense: "Imperfeito Conj." },
+                { ru: "Если бы они видели...", pt: "Se eles vissem...", tense: "Imperfeito Conj." },
+                { ru: "Я бы сказал тебе, если бы видел.", pt: "Dizia-te se visse.", tense: "Imperfeito Conj." },
+                { ru: "Даже если бы я видел...", pt: "Mesmo que visse...", tense: "Imperfeito Conj." },
+                { ru: "Если бы она это видела...", pt: "Se ela visse isto...", tense: "Imperfeito Conj." },
+                { ru: "Как будто он всё видит...", pt: "Como se visse tudo...", tense: "Imperfeito Conj." },
+                { ru: "Если бы только я видел.", pt: "Se ao menos visse.", tense: "Imperfeito Conj." },
+                { ru: "Когда я увижу...", pt: "Quando vir...", tense: "Futuro Conj." },
+                { ru: "Если ты его увидишь...", pt: "Se o vires...", tense: "Futuro Conj." },
+                { ru: "Когда он увидит...", pt: "Quando ele vir...", tense: "Futuro Conj." },
+                { ru: "Если мы увидим...", pt: "Se virmos...", tense: "Futuro Conj." },
+                { ru: "Когда они увидят...", pt: "Quando eles virem...", tense: "Futuro Conj." },
+                { ru: "Как только я увижу...", pt: "Assim que vir...", tense: "Futuro Conj." },
+                { ru: "Кто увидит...", pt: "Quem vir...", tense: "Futuro Conj." },
+                { ru: "Если ты когда-нибудь увидишь...", pt: "Se alguma vez vires...", tense: "Futuro Conj." },
+                { ru: "Когда мы увидимся...", pt: "Quando nos virmos...", tense: "Futuro Conj." },
+                { ru: "Скажи мне, если увидишь.", pt: "Diz-me se vires.", tense: "Futuro Conj." },
+                { ru: "Посмотрим.", pt: "Vamos ver.", tense: "Expressão" },
+                { ru: "До скорого.", pt: "Até logo.", tense: "Expressão" },
+                { ru: "До завтра.", pt: "Até amanhã.", tense: "Expressão" },
+                { ru: "Как видишь.", pt: "Como podes ver.", tense: "Expressão" },
+                { ru: "Не могу дождаться, чтобы увидеть.", pt: "Mal posso esperar para ver.", tense: "Expressão" },
+                { ru: "Рад тебя видеть.", pt: "Bom ver-te.", tense: "Expressão" },
+                { ru: "Я никогда такого не видел.", pt: "Nunca vi isso.", tense: "Expressão" },
+                { ru: "Посмотрим.", pt: "Veremos.", tense: "Expressão" },
+                { ru: "Увидеть — значит поверить.", pt: "Ver para crer.", tense: "Expressão" },
+                { ru: "Дай-ка посмотрю.", pt: "Deixa-me ver.", tense: "Expressão" },
+            ]
+        };
     </script>
     <script src="../../assets/js/verb.js"></script>
 </body>

@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Глагол SER — 100 фраз</title>
+    <title>Глагол 🇵🇹 VERB SER — 100 фраз</title>
     <link rel="stylesheet" href="../../assets/css/verb.css">
-    
 </head>
 <body>
     <div class="container">
         <header>
             <a href="../" class="back-link">← Назад к списку глаголов</a>
-            <h1>🇵🇹 Глагол SER</h1>
-            <p class="subtitle">100 популярных фраз — Европейский португальский</p>
+            <h1>🇵🇹 Verb SER</h1>
+            <p class="subtitle">to be (permanent) — 110 фраз</p>
         </header>
 
         <div class="controls">
@@ -24,155 +23,134 @@
             <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
         </div>
 
-        <div class="stats" id="stats">Показано: 100 из 100 фраз</div>
+        <div class="stats" id="stats">Показано: 110 из 110 фраз</div>
 
         <div class="phrase-list" id="phraseList">
         </div>
 
         <footer>
-            Практика европейского португальского — Глагол SER
+            Практика европейского португальского — SER
         </footer>
     </div>
 
     <script>
-    const VERB_CONFIG = {
-        originKey: 'ru',
-        labels: { target: 'Português Europeu', showing: 'Показано', of: 'из', phrases: 'фраз' },
-        verbForms: ['sou', 'és', 'é', 'somos', 'são', 'era', 'eras', 'éramos', 'eram', 'fui', 'foste', 'foi', 'fomos', 'foram', 'serei', 'serás', 'será', 'seremos', 'serão', 'seria', 'serias', 'seríamos', 'seriam', 'seja', 'sejas', 'sejamos', 'sejam', 'fosse', 'fosses', 'fôssemos', 'fossem', 'ser', 'sendo', 'sido'],
-        phrases: [
-            // Presente do Indicativo (Настоящее время)
-            { ru: "Я студент.", pt: "Sou estudante.", tense: "Presente" },
-            { ru: "Ты мой друг.", pt: "Tu és meu amigo.", tense: "Presente" },
-            { ru: "Он врач.", pt: "Ele é médico.", tense: "Presente" },
-            { ru: "Она красивая.", pt: "Ela é bonita.", tense: "Presente" },
-            { ru: "Мы португальцы.", pt: "Somos portugueses.", tense: "Presente" },
-            { ru: "Вы желанные гости.", pt: "Vocês são bem-vindos.", tense: "Presente" },
-            { ru: "Они братья.", pt: "Eles são irmãos.", tense: "Presente" },
-            { ru: "Это важно.", pt: "É importante.", tense: "Presente" },
-            { ru: "Я не усталый.", pt: "Não sou cansado.", tense: "Presente" },
-            { ru: "Ты не один.", pt: "Tu não és sozinho.", tense: "Presente" },
-
-            // Вопросы в настоящем времени
-            { ru: "Ты готов?", pt: "Estás pronto? / És pronto?", tense: "Presente" },
-            { ru: "Кто это?", pt: "Quem é?", tense: "Presente" },
-            { ru: "Что это?", pt: "O que é isto?", tense: "Presente" },
-            { ru: "Откуда ты?", pt: "De onde és?", tense: "Presente" },
-            { ru: "Это правда?", pt: "É verdade?", tense: "Presente" },
-            { ru: "Она твоя сестра?", pt: "Ela é a tua irmã?", tense: "Presente" },
-            { ru: "Мы опоздали?", pt: "Estamos atrasados? / Somos atrasados?", tense: "Presente" },
-            { ru: "Это далеко?", pt: "É longe?", tense: "Presente" },
-            { ru: "Они женаты?", pt: "Eles são casados?", tense: "Presente" },
-            { ru: "Как тебя зовут?", pt: "Qual é o teu nome?", tense: "Presente" },
-
-            // Pretérito Imperfeito (Прошедшее несовершенное)
-            { ru: "Я был молодым.", pt: "Eu era jovem.", tense: "Imperfeito" },
-            { ru: "Ты был очень добрым.", pt: "Tu eras muito simpático.", tense: "Imperfeito" },
-            { ru: "Он был учителем.", pt: "Ele era professor.", tense: "Imperfeito" },
-            { ru: "Она всегда была счастлива.", pt: "Ela era sempre feliz.", tense: "Imperfeito" },
-            { ru: "Мы были соседями.", pt: "Éramos vizinhos.", tense: "Imperfeito" },
-            { ru: "Они были лучшими друзьями.", pt: "Eles eram melhores amigos.", tense: "Imperfeito" },
-            { ru: "Раньше всё было по-другому.", pt: "Era diferente antes.", tense: "Imperfeito" },
-            { ru: "Жизнь была проще.", pt: "A vida era mais simples.", tense: "Imperfeito" },
-            { ru: "Дом был старым.", pt: "A casa era velha.", tense: "Imperfeito" },
-            { ru: "Я не был счастлив там.", pt: "Eu não era feliz lá.", tense: "Imperfeito" },
-
-            // Pretérito Perfeito Simples (Прошедшее совершенное)
-            { ru: "Я был там вчера.", pt: "Fui lá ontem.", tense: "Perfeito" },
-            { ru: "Ты был лучшим.", pt: "Tu foste o melhor.", tense: "Perfeito" },
-            { ru: "Он был президентом.", pt: "Ele foi presidente.", tense: "Perfeito" },
-            { ru: "Это был хороший день.", pt: "Foi um bom dia.", tense: "Perfeito" },
-            { ru: "Мы были чемпионами.", pt: "Fomos campeões.", tense: "Perfeito" },
-            { ru: "Они очень помогли.", pt: "Eles foram muito prestáveis.", tense: "Perfeito" },
-            { ru: "Поездка была удивительной.", pt: "A viagem foi incrível.", tense: "Perfeito" },
-            { ru: "Это не моя вина.", pt: "Não foi culpa minha.", tense: "Perfeito" },
-            { ru: "Ты был прав.", pt: "Tu tiveste razão. / Foste certeiro.", tense: "Perfeito" },
-            { ru: "Фильм был скучным.", pt: "O filme foi aborrecido.", tense: "Perfeito" },
-
-            // Futuro do Indicativo (Будущее время)
-            { ru: "Я буду там.", pt: "Serei lá. / Estarei lá.", tense: "Futuro" },
-            { ru: "Ты будешь счастлив.", pt: "Tu serás feliz.", tense: "Futuro" },
-            { ru: "Он будет отличным врачом.", pt: "Ele será um grande médico.", tense: "Futuro" },
-            { ru: "Это будет легко.", pt: "Será fácil.", tense: "Futuro" },
-            { ru: "Мы будем вместе.", pt: "Seremos juntos. / Estaremos juntos.", tense: "Futuro" },
-            { ru: "Они будут знаменитыми.", pt: "Eles serão famosos.", tense: "Futuro" },
-            { ru: "Вечеринка будет весёлой.", pt: "A festa será divertida.", tense: "Futuro" },
-            { ru: "Я не опоздаю.", pt: "Não serei atrasado. / Não chegarei atrasado.", tense: "Futuro" },
-            { ru: "Это того стоит.", pt: "Valerá a pena. / Será válido.", tense: "Futuro" },
-            { ru: "Завтра будет лучше.", pt: "Amanhã será melhor.", tense: "Futuro" },
-
-            // Condicional (Условное наклонение)
-            { ru: "Я был бы благодарен.", pt: "Seria grato.", tense: "Condicional" },
-            { ru: "Это было бы хорошо.", pt: "Seria bom.", tense: "Condicional" },
-            { ru: "Ты был бы хорошим лидером.", pt: "Tu serias um bom líder.", tense: "Condicional" },
-            { ru: "Он бы гордился.", pt: "Ele seria orgulhoso.", tense: "Condicional" },
-            { ru: "Нам было бы честью.", pt: "Seríamos honrados.", tense: "Condicional" },
-            { ru: "Они были бы удивлены.", pt: "Eles seriam surpreendidos.", tense: "Condicional" },
-            { ru: "Это было бы невозможно.", pt: "Seria impossível.", tense: "Condicional" },
-            { ru: "Это было бы идеально.", pt: "Isso seria perfeito.", tense: "Condicional" },
-            { ru: "Я бы не был так уверен.", pt: "Não seria tão certo.", tense: "Condicional" },
-            { ru: "Лучше было бы подождать.", pt: "Seria melhor esperar.", tense: "Condicional" },
-
-            // Presente do Conjuntivo (Настоящее сослагательное)
-            { ru: "Надеюсь, что у тебя всё хорошо.", pt: "Espero que sejas bem. / Espero que estejas bem.", tense: "Conjuntivo" },
-            { ru: "Важно, чтобы он был осторожен.", pt: "É importante que ele seja cuidadoso.", tense: "Conjuntivo" },
-            { ru: "Хочу, чтобы мы были друзьями.", pt: "Quero que sejamos amigos.", tense: "Conjuntivo" },
-            { ru: "Сомневаюсь, что это правда.", pt: "Duvido que seja verdade.", tense: "Conjuntivo" },
-            { ru: "Не думаю, что она права.", pt: "Não acho que ela tenha razão. / Não acho que seja certo.", tense: "Conjuntivo" },
-            { ru: "Хотя это трудно...", pt: "Embora seja difícil...", tense: "Conjuntivo" },
-            { ru: "Нужно, чтобы мы были едины.", pt: "É preciso que sejamos unidos.", tense: "Conjuntivo" },
-            { ru: "Что бы это ни было...", pt: "Seja o que for...", tense: "Conjuntivo" },
-            { ru: "Кем бы ты ни был...", pt: "Sejas quem fores...", tense: "Conjuntivo" },
-            { ru: "Пусть будет так.", pt: "Que seja.", tense: "Conjuntivo" },
-
-            // Imperfeito do Conjuntivo (Прошедшее сослагательное)
-            { ru: "Если бы я был богатым...", pt: "Se eu fosse rico...", tense: "Imperfeito Conj." },
-            { ru: "Хотел бы, чтобы ты был здесь.", pt: "Quem me dera que estivesses aqui. / Se fosses aqui...", tense: "Imperfeito Conj." },
-            { ru: "Если бы он был моложе...", pt: "Se ele fosse mais novo...", tense: "Imperfeito Conj." },
-            { ru: "Если бы мы были вместе...", pt: "Se fôssemos juntos...", tense: "Imperfeito Conj." },
-            { ru: "Если бы они были здесь...", pt: "Se eles fossem aqui... / Se estivessem aqui...", tense: "Imperfeito Conj." },
-            { ru: "Я бы пошёл, если бы это было возможно.", pt: "Iria se fosse possível.", tense: "Imperfeito Conj." },
-            { ru: "Даже если бы это была правда...", pt: "Mesmo que fosse verdade...", tense: "Imperfeito Conj." },
-            { ru: "Если бы я был на твоём месте...", pt: "Se eu fosse a ti...", tense: "Imperfeito Conj." },
-            { ru: "Как будто ничего не было...", pt: "Como se não fosse nada...", tense: "Imperfeito Conj." },
-            { ru: "Хотел бы, чтобы было иначе.", pt: "Quem me dera que fosse diferente.", tense: "Imperfeito Conj." },
-
-            // Личность и характеристики
-            { ru: "Я португалец.", pt: "Sou português.", tense: "Presente" },
-            { ru: "Она бразильянка.", pt: "Ela é brasileira.", tense: "Presente" },
-            { ru: "Он высокий.", pt: "Ele é alto.", tense: "Presente" },
-            { ru: "Они умные.", pt: "Eles são inteligentes.", tense: "Presente" },
-            { ru: "Мы команда.", pt: "Somos uma equipa.", tense: "Presente" },
-            { ru: "Это естественно.", pt: "É natural.", tense: "Presente" },
-            { ru: "Ты особенный.", pt: "Tu és especial.", tense: "Presente" },
-            { ru: "Это моё.", pt: "Isto é meu.", tense: "Presente" },
-            { ru: "Это твоё.", pt: "Isso é teu.", tense: "Presente" },
-            { ru: "Книга интересная.", pt: "O livro é interessante.", tense: "Presente" },
-
-            // Распространённые выражения
-            { ru: "Вот и всё!", pt: "É isso!", tense: "Expressão" },
-            { ru: "Всё хорошо.", pt: "Está bem. / Tudo bem.", tense: "Expressão" },
-            { ru: "Это ничего.", pt: "Não é nada.", tense: "Expressão" },
-            { ru: "Очень приятно.", pt: "É um prazer.", tense: "Expressão" },
-            { ru: "Такова жизнь.", pt: "É a vida.", tense: "Expressão" },
-            { ru: "Пора.", pt: "É hora. / Está na hora.", tense: "Expressão" },
-            { ru: "Это несправедливо.", pt: "Não é justo.", tense: "Expressão" },
-            { ru: "Это того стоит.", pt: "Vale a pena.", tense: "Expressão" },
-            { ru: "Это зависит от тебя.", pt: "Depende de ti. / É contigo.", tense: "Expressão" },
-            { ru: "В этом и проблема.", pt: "É esse o problema.", tense: "Expressão" },
-
-            // Дополнительные полезные фразы
-            { ru: "Сегодня понедельник.", pt: "Hoje é segunda-feira.", tense: "Presente" },
-            { ru: "Который час?", pt: "Que horas são?", tense: "Presente" },
-            { ru: "Сейчас два часа.", pt: "São duas horas.", tense: "Presente" },
-            { ru: "Где находится вокзал?", pt: "Onde é a estação?", tense: "Presente" },
-            { ru: "Кто ответственный?", pt: "Quem é o responsável?", tense: "Presente" },
-            { ru: "Какая погода?", pt: "Como é o tempo?", tense: "Presente" },
-            { ru: "Встреча завтра.", pt: "A reunião é amanhã.", tense: "Presente" },
-            { ru: "Мой день рождения в мае.", pt: "O meu aniversário é em maio.", tense: "Presente" },
-            { ru: "Быть счастливым — это важно.", pt: "Ser feliz é importante.", tense: "Presente" },
-            { ru: "Быть или не быть.", pt: "Ser ou não ser.", tense: "Expressão" }
-        ]
-    };
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            labels: { target: 'Português Europeu', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["sou","és","é","somos","são","era","eras","éramos","eram","fui","foste","foi","fomos","foram","serei","serás","será","seremos","serão","seria","serias","seríamos","seriam","seja","sejas","sejamos","sejam","fosse","fosses","fôssemos","fossem","ser","sendo","sido"],
+            phrases: [
+                { ru: "Я студент.", pt: "Sou estudante.", tense: "Presente" },
+                { ru: "Ты мой друг.", pt: "Tu és meu amigo.", tense: "Presente" },
+                { ru: "Он врач.", pt: "Ele é médico.", tense: "Presente" },
+                { ru: "Она красивая.", pt: "Ela é bonita.", tense: "Presente" },
+                { ru: "Мы португальцы.", pt: "Somos portugueses.", tense: "Presente" },
+                { ru: "Вы желанные гости.", pt: "Vocês são bem-vindos.", tense: "Presente" },
+                { ru: "Они братья.", pt: "Eles são irmãos.", tense: "Presente" },
+                { ru: "Это важно.", pt: "É importante.", tense: "Presente" },
+                { ru: "Я не усталый.", pt: "Não sou cansado.", tense: "Presente" },
+                { ru: "Ты не один.", pt: "Tu não és sozinho.", tense: "Presente" },
+                { ru: "Ты готов?", pt: "Estás pronto? / És pronto?", tense: "Presente" },
+                { ru: "Кто это?", pt: "Quem é?", tense: "Presente" },
+                { ru: "Что это?", pt: "O que é isto?", tense: "Presente" },
+                { ru: "Откуда ты?", pt: "De onde és?", tense: "Presente" },
+                { ru: "Это правда?", pt: "É verdade?", tense: "Presente" },
+                { ru: "Она твоя сестра?", pt: "Ela é a tua irmã?", tense: "Presente" },
+                { ru: "Мы опоздали?", pt: "Estamos atrasados? / Somos atrasados?", tense: "Presente" },
+                { ru: "Это далеко?", pt: "É longe?", tense: "Presente" },
+                { ru: "Они женаты?", pt: "Eles são casados?", tense: "Presente" },
+                { ru: "Как тебя зовут?", pt: "Qual é o teu nome?", tense: "Presente" },
+                { ru: "Я был молодым.", pt: "Eu era jovem.", tense: "Imperfeito" },
+                { ru: "Ты был очень добрым.", pt: "Tu eras muito simpático.", tense: "Imperfeito" },
+                { ru: "Он был учителем.", pt: "Ele era professor.", tense: "Imperfeito" },
+                { ru: "Она всегда была счастлива.", pt: "Ela era sempre feliz.", tense: "Imperfeito" },
+                { ru: "Мы были соседями.", pt: "Éramos vizinhos.", tense: "Imperfeito" },
+                { ru: "Они были лучшими друзьями.", pt: "Eles eram melhores amigos.", tense: "Imperfeito" },
+                { ru: "Раньше всё было по-другому.", pt: "Era diferente antes.", tense: "Imperfeito" },
+                { ru: "Жизнь была проще.", pt: "A vida era mais simples.", tense: "Imperfeito" },
+                { ru: "Дом был старым.", pt: "A casa era velha.", tense: "Imperfeito" },
+                { ru: "Я не был счастлив там.", pt: "Eu não era feliz lá.", tense: "Imperfeito" },
+                { ru: "Я был там вчера.", pt: "Fui lá ontem.", tense: "Perfeito" },
+                { ru: "Ты был лучшим.", pt: "Tu foste o melhor.", tense: "Perfeito" },
+                { ru: "Он был президентом.", pt: "Ele foi presidente.", tense: "Perfeito" },
+                { ru: "Это был хороший день.", pt: "Foi um bom dia.", tense: "Perfeito" },
+                { ru: "Мы были чемпионами.", pt: "Fomos campeões.", tense: "Perfeito" },
+                { ru: "Они очень помогли.", pt: "Eles foram muito prestáveis.", tense: "Perfeito" },
+                { ru: "Поездка была удивительной.", pt: "A viagem foi incrível.", tense: "Perfeito" },
+                { ru: "Это не моя вина.", pt: "Não foi culpa minha.", tense: "Perfeito" },
+                { ru: "Ты был прав.", pt: "Tu tiveste razão. / Foste certeiro.", tense: "Perfeito" },
+                { ru: "Фильм был скучным.", pt: "O filme foi aborrecido.", tense: "Perfeito" },
+                { ru: "Я буду там.", pt: "Serei lá. / Estarei lá.", tense: "Futuro" },
+                { ru: "Ты будешь счастлив.", pt: "Tu serás feliz.", tense: "Futuro" },
+                { ru: "Он будет отличным врачом.", pt: "Ele será um grande médico.", tense: "Futuro" },
+                { ru: "Это будет легко.", pt: "Será fácil.", tense: "Futuro" },
+                { ru: "Мы будем вместе.", pt: "Seremos juntos. / Estaremos juntos.", tense: "Futuro" },
+                { ru: "Они будут знаменитыми.", pt: "Eles serão famosos.", tense: "Futuro" },
+                { ru: "Вечеринка будет весёлой.", pt: "A festa será divertida.", tense: "Futuro" },
+                { ru: "Я не опоздаю.", pt: "Não serei atrasado. / Não chegarei atrasado.", tense: "Futuro" },
+                { ru: "Это того стоит.", pt: "Valerá a pena. / Será válido.", tense: "Futuro" },
+                { ru: "Завтра будет лучше.", pt: "Amanhã será melhor.", tense: "Futuro" },
+                { ru: "Я был бы благодарен.", pt: "Seria grato.", tense: "Condicional" },
+                { ru: "Это было бы хорошо.", pt: "Seria bom.", tense: "Condicional" },
+                { ru: "Ты был бы хорошим лидером.", pt: "Tu serias um bom líder.", tense: "Condicional" },
+                { ru: "Он бы гордился.", pt: "Ele seria orgulhoso.", tense: "Condicional" },
+                { ru: "Нам было бы честью.", pt: "Seríamos honrados.", tense: "Condicional" },
+                { ru: "Они были бы удивлены.", pt: "Eles seriam surpreendidos.", tense: "Condicional" },
+                { ru: "Это было бы невозможно.", pt: "Seria impossível.", tense: "Condicional" },
+                { ru: "Это было бы идеально.", pt: "Isso seria perfeito.", tense: "Condicional" },
+                { ru: "Я бы не был так уверен.", pt: "Não seria tão certo.", tense: "Condicional" },
+                { ru: "Лучше было бы подождать.", pt: "Seria melhor esperar.", tense: "Condicional" },
+                { ru: "Надеюсь, что у тебя всё хорошо.", pt: "Espero que sejas bem. / Espero que estejas bem.", tense: "Conjuntivo" },
+                { ru: "Важно, чтобы он был осторожен.", pt: "É importante que ele seja cuidadoso.", tense: "Conjuntivo" },
+                { ru: "Хочу, чтобы мы были друзьями.", pt: "Quero que sejamos amigos.", tense: "Conjuntivo" },
+                { ru: "Сомневаюсь, что это правда.", pt: "Duvido que seja verdade.", tense: "Conjuntivo" },
+                { ru: "Не думаю, что она права.", pt: "Não acho que ela tenha razão. / Não acho que seja certo.", tense: "Conjuntivo" },
+                { ru: "Хотя это трудно...", pt: "Embora seja difícil...", tense: "Conjuntivo" },
+                { ru: "Нужно, чтобы мы были едины.", pt: "É preciso que sejamos unidos.", tense: "Conjuntivo" },
+                { ru: "Что бы это ни было...", pt: "Seja o que for...", tense: "Conjuntivo" },
+                { ru: "Кем бы ты ни был...", pt: "Sejas quem fores...", tense: "Conjuntivo" },
+                { ru: "Пусть будет так.", pt: "Que seja.", tense: "Conjuntivo" },
+                { ru: "Если бы я был богатым...", pt: "Se eu fosse rico...", tense: "Imperfeito Conj." },
+                { ru: "Хотел бы, чтобы ты был здесь.", pt: "Quem me dera que estivesses aqui. / Se fosses aqui...", tense: "Imperfeito Conj." },
+                { ru: "Если бы он был моложе...", pt: "Se ele fosse mais novo...", tense: "Imperfeito Conj." },
+                { ru: "Если бы мы были вместе...", pt: "Se fôssemos juntos...", tense: "Imperfeito Conj." },
+                { ru: "Если бы они были здесь...", pt: "Se eles fossem aqui... / Se estivessem aqui...", tense: "Imperfeito Conj." },
+                { ru: "Я бы пошёл, если бы это было возможно.", pt: "Iria se fosse possível.", tense: "Imperfeito Conj." },
+                { ru: "Даже если бы это была правда...", pt: "Mesmo que fosse verdade...", tense: "Imperfeito Conj." },
+                { ru: "Если бы я был на твоём месте...", pt: "Se eu fosse a ti...", tense: "Imperfeito Conj." },
+                { ru: "Как будто ничего не было...", pt: "Como se não fosse nada...", tense: "Imperfeito Conj." },
+                { ru: "Хотел бы, чтобы было иначе.", pt: "Quem me dera que fosse diferente.", tense: "Imperfeito Conj." },
+                { ru: "Я португалец.", pt: "Sou português.", tense: "Presente" },
+                { ru: "Она бразильянка.", pt: "Ela é brasileira.", tense: "Presente" },
+                { ru: "Он высокий.", pt: "Ele é alto.", tense: "Presente" },
+                { ru: "Они умные.", pt: "Eles são inteligentes.", tense: "Presente" },
+                { ru: "Мы команда.", pt: "Somos uma equipa.", tense: "Presente" },
+                { ru: "Это естественно.", pt: "É natural.", tense: "Presente" },
+                { ru: "Ты особенный.", pt: "Tu és especial.", tense: "Presente" },
+                { ru: "Это моё.", pt: "Isto é meu.", tense: "Presente" },
+                { ru: "Это твоё.", pt: "Isso é teu.", tense: "Presente" },
+                { ru: "Книга интересная.", pt: "O livro é interessante.", tense: "Presente" },
+                { ru: "Вот и всё!", pt: "É isso!", tense: "Expressão" },
+                { ru: "Всё хорошо.", pt: "Está bem. / Tudo bem.", tense: "Expressão" },
+                { ru: "Это ничего.", pt: "Não é nada.", tense: "Expressão" },
+                { ru: "Очень приятно.", pt: "É um prazer.", tense: "Expressão" },
+                { ru: "Такова жизнь.", pt: "É a vida.", tense: "Expressão" },
+                { ru: "Пора.", pt: "É hora. / Está na hora.", tense: "Expressão" },
+                { ru: "Это несправедливо.", pt: "Não é justo.", tense: "Expressão" },
+                { ru: "Это того стоит.", pt: "Vale a pena.", tense: "Expressão" },
+                { ru: "Это зависит от тебя.", pt: "Depende de ti. / É contigo.", tense: "Expressão" },
+                { ru: "В этом и проблема.", pt: "É esse o problema.", tense: "Expressão" },
+                { ru: "Сегодня понедельник.", pt: "Hoje é segunda-feira.", tense: "Presente" },
+                { ru: "Который час?", pt: "Que horas são?", tense: "Presente" },
+                { ru: "Сейчас два часа.", pt: "São duas horas.", tense: "Presente" },
+                { ru: "Где находится вокзал?", pt: "Onde é a estação?", tense: "Presente" },
+                { ru: "Кто ответственный?", pt: "Quem é o responsável?", tense: "Presente" },
+                { ru: "Какая погода?", pt: "Como é o tempo?", tense: "Presente" },
+                { ru: "Встреча завтра.", pt: "A reunião é amanhã.", tense: "Presente" },
+                { ru: "Мой день рождения в мае.", pt: "O meu aniversário é em maio.", tense: "Presente" },
+                { ru: "Быть счастливым — это важно.", pt: "Ser feliz é importante.", tense: "Presente" },
+                { ru: "Быть или не быть.", pt: "Ser ou não ser.", tense: "Expressão" },
+            ]
+        };
     </script>
     <script src="../../assets/js/verb.js"></script>
 </body>

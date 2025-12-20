@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Глагол HAVER — 100 Фраз</title>
+    <title>Глагол 🇵🇹 VERB HAVER — 100 фраз</title>
     <link rel="stylesheet" href="../../assets/css/verb.css">
-    
 </head>
 <body>
     <div class="container">
         <header>
             <a href="../" class="back-link">← Назад к списку глаголов</a>
-            <h1>🇵🇹 Глагол HAVER</h1>
-            <p class="subtitle">100 популярных фраз — Европейский португальский</p>
+            <h1>🇵🇹 Verb HAVER</h1>
+            <p class="subtitle">there is/are, to exist — 110 фраз</p>
         </header>
 
         <div class="controls">
-            <input type="text" class="search-box" placeholder="Поиск фраз..." id="searchInput">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
         </div>
 
         <div class="controls">
@@ -24,155 +23,134 @@
             <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
         </div>
 
-        <div class="stats" id="stats">Показано: 100 из 100 фраз</div>
+        <div class="stats" id="stats">Показано: 110 из 110 фраз</div>
 
         <div class="phrase-list" id="phraseList">
         </div>
 
         <footer>
-            Практика европейского португальского — Глагол HAVER
+            Практика европейского португальского — HAVER
         </footer>
     </div>
 
     <script>
-    const VERB_CONFIG = {
-        originKey: 'ru',
-        labels: { target: 'Português Europeu', showing: 'Показано', of: 'из', phrases: 'фраз' },
-        verbForms: ['hei', 'hás', 'há', 'havemos', 'hão', 'havia', 'havias', 'havíamos', 'haviam', 'houve', 'houveste', 'houvemos', 'houveram', 'haverei', 'haverás', 'haverá', 'haveremos', 'haverão', 'haveria', 'haverias', 'haveríamos', 'haveriam', 'haja', 'hajas', 'hajamos', 'hajam', 'houvesse', 'houvesses', 'houvéssemos', 'houvessem', 'houver', 'houveres', 'houvermos', 'houverem', 'haver', 'havendo', 'havido'],
-        phrases: [
-            // Presente - Impersonal "há" (there is/are)
-            { ru: "Есть проблема.", pt: "Há um problema.", tense: "Presente" },
-            { ru: "Много людей.", pt: "Há muitas pessoas.", tense: "Presente" },
-            { ru: "Есть вода?", pt: "Há água?", tense: "Presente" },
-            { ru: "Нет времени.", pt: "Não há tempo.", tense: "Presente" },
-            { ru: "Есть два варианта.", pt: "Há duas opções.", tense: "Presente" },
-            { ru: "Здесь кто-нибудь есть?", pt: "Há alguém aqui?", tense: "Presente" },
-            { ru: "Делать нечего.", pt: "Não há nada para fazer.", tense: "Presente" },
-            { ru: "Есть вопросы для обсуждения.", pt: "Há coisas para discutir.", tense: "Presente" },
-            { ru: "Есть надежда.", pt: "Há esperança.", tense: "Presente" },
-            { ru: "Нет секретов.", pt: "Não há segredos.", tense: "Presente" },
-
-            // More presente
-            { ru: "Много работы.", pt: "Há muito trabalho.", tense: "Presente" },
-            { ru: "Есть несколько причин.", pt: "Há várias razões.", tense: "Presente" },
-            { ru: "Есть какая-то проблема?", pt: "Há algum problema?", tense: "Presente" },
-            { ru: "Нет сомнений.", pt: "Não há dúvida.", tense: "Presente" },
-            { ru: "Бывают такие дни.", pt: "Há dias assim.", tense: "Presente" },
-            { ru: "Ещё есть время.", pt: "Ainda há tempo.", tense: "Presente" },
-            { ru: "Что-то странное.", pt: "Há algo estranho.", tense: "Presente" },
-            { ru: "Нет слов.", pt: "Não há palavras.", tense: "Presente" },
-            { ru: "Есть новости?", pt: "Há novidades?", tense: "Presente" },
-            { ru: "Есть способ.", pt: "Há uma maneira.", tense: "Presente" },
-
-            // Há + time (ago)
-            { ru: "Два года назад.", pt: "Há dois anos.", tense: "Tempo" },
-            { ru: "Давно.", pt: "Há muito tempo.", tense: "Tempo" },
-            { ru: "Неделю назад.", pt: "Há uma semana.", tense: "Tempo" },
-            { ru: "Три дня назад.", pt: "Há três dias.", tense: "Tempo" },
-            { ru: "Час назад.", pt: "Há uma hora.", tense: "Tempo" },
-            { ru: "Несколько минут назад.", pt: "Há alguns minutos.", tense: "Tempo" },
-            { ru: "Как давно?", pt: "Há quanto tempo?", tense: "Tempo" },
-            { ru: "Недавно.", pt: "Há pouco tempo.", tense: "Tempo" },
-            { ru: "Много лет назад.", pt: "Há muitos anos.", tense: "Tempo" },
-            { ru: "Месяц назад.", pt: "Há um mês.", tense: "Tempo" },
-
-            // Pretérito Imperfeito (Imperfect Past)
-            { ru: "Здесь был дом.", pt: "Havia uma casa aqui.", tense: "Imperfeito" },
-            { ru: "Было много деревьев.", pt: "Havia muitas árvores.", tense: "Imperfeito" },
-            { ru: "Не было интернета.", pt: "Não havia internet.", tense: "Imperfeito" },
-            { ru: "Были проблемы.", pt: "Havia problemas.", tense: "Imperfeito" },
-            { ru: "Всегда была надежда.", pt: "Havia sempre esperança.", tense: "Imperfeito" },
-            { ru: "Было мало вариантов.", pt: "Havia poucas opções.", tense: "Imperfeito" },
-            { ru: "Было время, когда...", pt: "Havia um tempo em que...", tense: "Imperfeito" },
-            { ru: "Не было машин.", pt: "Não havia carros.", tense: "Imperfeito" },
-            { ru: "Что-то было не так.", pt: "Havia algo errado.", tense: "Imperfeito" },
-            { ru: "Было больше людей.", pt: "Havia mais pessoas.", tense: "Imperfeito" },
-
-            // Pretérito Perfeito (Simple Past)
-            { ru: "Произошла авария.", pt: "Houve um acidente.", tense: "Perfeito" },
-            { ru: "Были изменения.", pt: "Houve mudanças.", tense: "Perfeito" },
-            { ru: "Была вечеринка.", pt: "Houve uma festa.", tense: "Perfeito" },
-            { ru: "Была проблема.", pt: "Houve um problema.", tense: "Perfeito" },
-            { ru: "Были жалобы.", pt: "Houve queixas.", tense: "Perfeito" },
-            { ru: "Была встреча.", pt: "Houve uma reunião.", tense: "Perfeito" },
-            { ru: "Была ошибка.", pt: "Houve um engano.", tense: "Perfeito" },
-            { ru: "Были последствия.", pt: "Houve consequências.", tense: "Perfeito" },
-            { ru: "Что случилось?", pt: "O que houve?", tense: "Perfeito" },
-            { ru: "Была задержка.", pt: "Houve um atraso.", tense: "Perfeito" },
-
-            // Futuro do Indicativo (Future)
-            { ru: "Будет вечеринка.", pt: "Haverá uma festa.", tense: "Futuro" },
-            { ru: "Будут изменения.", pt: "Haverá mudanças.", tense: "Futuro" },
-            { ru: "Проблем не будет.", pt: "Não haverá problemas.", tense: "Futuro" },
-            { ru: "Будет время.", pt: "Haverá tempo.", tense: "Futuro" },
-            { ru: "Будут последствия.", pt: "Haverá consequências.", tense: "Futuro" },
-            { ru: "Будет еда?", pt: "Haverá comida?", tense: "Futuro" },
-            { ru: "Будет решение.", pt: "Haverá uma solução.", tense: "Futuro" },
-            { ru: "Будет больше возможностей.", pt: "Haverá mais oportunidades.", tense: "Futuro" },
-            { ru: "Надежда будет всегда.", pt: "Haverá sempre esperança.", tense: "Futuro" },
-            { ru: "Будут новости.", pt: "Haverá notícias.", tense: "Futuro" },
-
-            // Condicional (Conditional)
-            { ru: "Была бы проблема.", pt: "Haveria um problema.", tense: "Condicional" },
-            { ru: "Не было бы необходимости.", pt: "Não haveria necessidade.", tense: "Condicional" },
-            { ru: "Были бы последствия.", pt: "Haveria consequências.", tense: "Condicional" },
-            { ru: "Было бы время.", pt: "Haveria tempo.", tense: "Condicional" },
-            { ru: "Был бы шанс?", pt: "Haveria uma hipótese?", tense: "Condicional" },
-            { ru: "Было бы решение.", pt: "Haveria uma solução.", tense: "Condicional" },
-            { ru: "Проблем бы не было.", pt: "Não haveria problemas.", tense: "Condicional" },
-            { ru: "Было бы больше вариантов.", pt: "Haveria mais opções.", tense: "Condicional" },
-            { ru: "Был бы способ.", pt: "Haveria uma maneira.", tense: "Condicional" },
-            { ru: "Была бы надежда.", pt: "Haveria esperança.", tense: "Condicional" },
-
-            // Presente do Conjuntivo (Present Subjunctive)
-            { ru: "Надеюсь, есть время.", pt: "Espero que haja tempo.", tense: "Conjuntivo" },
-            { ru: "Даже если есть проблема...", pt: "Mesmo que haja um problema...", tense: "Conjuntivo" },
-            { ru: "Если нет причины...", pt: "A menos que haja uma razão...", tense: "Conjuntivo" },
-            { ru: "Сомневаюсь, что есть решение.", pt: "Duvido que haja solução.", tense: "Conjuntivo" },
-            { ru: "Важно, чтобы было доверие.", pt: "É importante que haja confiança.", tense: "Conjuntivo" },
-            { ru: "Чтобы был мир.", pt: "Para que haja paz.", tense: "Conjuntivo" },
-            { ru: "Что бы ни было...", pt: "O que quer que haja...", tense: "Conjuntivo" },
-            { ru: "Не думаю, что есть время.", pt: "Não acho que haja tempo.", tense: "Conjuntivo" },
-            { ru: "Нужно, чтобы были перемены.", pt: "É preciso que haja mudança.", tense: "Conjuntivo" },
-            { ru: "Хотя надежда есть...", pt: "Embora haja esperança...", tense: "Conjuntivo" },
-
-            // Imperfeito do Conjuntivo (Imperfect Subjunctive)
-            { ru: "Если бы было время...", pt: "Se houvesse tempo...", tense: "Imperfeito Conj." },
-            { ru: "Хотел бы я, чтобы было больше.", pt: "Quem me dera que houvesse mais.", tense: "Imperfeito Conj." },
-            { ru: "Если бы было решение...", pt: "Se houvesse uma solução...", tense: "Imperfeito Conj." },
-            { ru: "Даже если бы были проблемы...", pt: "Mesmo que houvesse problemas...", tense: "Imperfeito Conj." },
-            { ru: "Если бы только был способ...", pt: "Se ao menos houvesse uma maneira...", tense: "Imperfeito Conj." },
-            { ru: "Как будто нет завтра.", pt: "Como se não houvesse amanhã.", tense: "Imperfeito Conj." },
-            { ru: "Если бы не было препятствий...", pt: "Se não houvesse obstáculos...", tense: "Imperfeito Conj." },
-            { ru: "Я бы помог, если бы была нужда.", pt: "Ajudaria se houvesse necessidade.", tense: "Imperfeito Conj." },
-            { ru: "Если бы было больше вариантов...", pt: "Se houvesse mais opções...", tense: "Imperfeito Conj." },
-            { ru: "Если бы была справедливость...", pt: "Se houvesse justiça...", tense: "Imperfeito Conj." },
-
-            // Futuro do Conjuntivo (Future Subjunctive)
-            { ru: "Если будет проблема...", pt: "Se houver um problema...", tense: "Futuro Conj." },
-            { ru: "Когда будет время...", pt: "Quando houver tempo...", tense: "Futuro Conj." },
-            { ru: "Если будет необходимость...", pt: "Se houver necessidade...", tense: "Futuro Conj." },
-            { ru: "Когда будет возможность...", pt: "Sempre que houver oportunidade...", tense: "Futuro Conj." },
-            { ru: "Если будут изменения...", pt: "Se houver mudanças...", tense: "Futuro Conj." },
-            { ru: "Когда будет решение...", pt: "Quando houver solução...", tense: "Futuro Conj." },
-            { ru: "Если будут сомнения...", pt: "Se houver alguma dúvida...", tense: "Futuro Conj." },
-            { ru: "Позвони, если будут новости.", pt: "Liga-me se houver novidades.", tense: "Futuro Conj." },
-            { ru: "Если не будет другого способа...", pt: "Se não houver outra maneira...", tense: "Futuro Conj." },
-            { ru: "Когда будет мир...", pt: "Quando houver paz...", tense: "Futuro Conj." },
-
-            // Common expressions
-            { ru: "В чём дело?", pt: "O que é que há?", tense: "Expressão" },
-            { ru: "Что происходит?", pt: "O que há?", tense: "Expressão" },
-            { ru: "Вот так!", pt: "Olha lá!", tense: "Expressão" },
-            { ru: "Невозможно.", pt: "Não há maneira.", tense: "Expressão" },
-            { ru: "Что бы ни случилось.", pt: "Haja o que houver.", tense: "Expressão" },
-            { ru: "Будь что будет.", pt: "Aconteça o que acontecer.", tense: "Expressão" },
-            { ru: "Что случилось?", pt: "O que houve?", tense: "Expressão" },
-            { ru: "Ничего не поделаешь.", pt: "Não há remédio.", tense: "Expressão" },
-            { ru: "Что-то не так?", pt: "Há algum problema?", tense: "Expressão" },
-            { ru: "Вот так обстоят дела.", pt: "É o que há.", tense: "Expressão" }
-        ]
-    };
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            labels: { target: 'Português Europeu', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["hei","hás","há","havemos","hão","havia","havias","havíamos","haviam","houve","houveste","houvemos","houveram","haverei","haverás","haverá","haveremos","haverão","haveria","haverias","haveríamos","haveriam","haja","hajas","hajamos","hajam","houvesse","houvesses","houvéssemos","houvessem","houver","houveres","houvermos","houverem","haver","havendo","havido"],
+            phrases: [
+                { ru: "Есть проблема.", pt: "Há um problema.", tense: "Presente" },
+                { ru: "Много людей.", pt: "Há muitas pessoas.", tense: "Presente" },
+                { ru: "Есть вода?", pt: "Há água?", tense: "Presente" },
+                { ru: "Нет времени.", pt: "Não há tempo.", tense: "Presente" },
+                { ru: "Есть два варианта.", pt: "Há duas opções.", tense: "Presente" },
+                { ru: "Здесь кто-нибудь есть?", pt: "Há alguém aqui?", tense: "Presente" },
+                { ru: "Делать нечего.", pt: "Não há nada para fazer.", tense: "Presente" },
+                { ru: "Есть вопросы для обсуждения.", pt: "Há coisas para discutir.", tense: "Presente" },
+                { ru: "Есть надежда.", pt: "Há esperança.", tense: "Presente" },
+                { ru: "Нет секретов.", pt: "Não há segredos.", tense: "Presente" },
+                { ru: "Много работы.", pt: "Há muito trabalho.", tense: "Presente" },
+                { ru: "Есть несколько причин.", pt: "Há várias razões.", tense: "Presente" },
+                { ru: "Есть какая-то проблема?", pt: "Há algum problema?", tense: "Presente" },
+                { ru: "Нет сомнений.", pt: "Não há dúvida.", tense: "Presente" },
+                { ru: "Бывают такие дни.", pt: "Há dias assim.", tense: "Presente" },
+                { ru: "Ещё есть время.", pt: "Ainda há tempo.", tense: "Presente" },
+                { ru: "Что-то странное.", pt: "Há algo estranho.", tense: "Presente" },
+                { ru: "Нет слов.", pt: "Não há palavras.", tense: "Presente" },
+                { ru: "Есть новости?", pt: "Há novidades?", tense: "Presente" },
+                { ru: "Есть способ.", pt: "Há uma maneira.", tense: "Presente" },
+                { ru: "Два года назад.", pt: "Há dois anos.", tense: "Tempo" },
+                { ru: "Давно.", pt: "Há muito tempo.", tense: "Tempo" },
+                { ru: "Неделю назад.", pt: "Há uma semana.", tense: "Tempo" },
+                { ru: "Три дня назад.", pt: "Há três dias.", tense: "Tempo" },
+                { ru: "Час назад.", pt: "Há uma hora.", tense: "Tempo" },
+                { ru: "Несколько минут назад.", pt: "Há alguns minutos.", tense: "Tempo" },
+                { ru: "Как давно?", pt: "Há quanto tempo?", tense: "Tempo" },
+                { ru: "Недавно.", pt: "Há pouco tempo.", tense: "Tempo" },
+                { ru: "Много лет назад.", pt: "Há muitos anos.", tense: "Tempo" },
+                { ru: "Месяц назад.", pt: "Há um mês.", tense: "Tempo" },
+                { ru: "Здесь был дом.", pt: "Havia uma casa aqui.", tense: "Imperfeito" },
+                { ru: "Было много деревьев.", pt: "Havia muitas árvores.", tense: "Imperfeito" },
+                { ru: "Не было интернета.", pt: "Não havia internet.", tense: "Imperfeito" },
+                { ru: "Были проблемы.", pt: "Havia problemas.", tense: "Imperfeito" },
+                { ru: "Всегда была надежда.", pt: "Havia sempre esperança.", tense: "Imperfeito" },
+                { ru: "Было мало вариантов.", pt: "Havia poucas opções.", tense: "Imperfeito" },
+                { ru: "Было время, когда...", pt: "Havia um tempo em que...", tense: "Imperfeito" },
+                { ru: "Не было машин.", pt: "Não havia carros.", tense: "Imperfeito" },
+                { ru: "Что-то было не так.", pt: "Havia algo errado.", tense: "Imperfeito" },
+                { ru: "Было больше людей.", pt: "Havia mais pessoas.", tense: "Imperfeito" },
+                { ru: "Произошла авария.", pt: "Houve um acidente.", tense: "Perfeito" },
+                { ru: "Были изменения.", pt: "Houve mudanças.", tense: "Perfeito" },
+                { ru: "Была вечеринка.", pt: "Houve uma festa.", tense: "Perfeito" },
+                { ru: "Была проблема.", pt: "Houve um problema.", tense: "Perfeito" },
+                { ru: "Были жалобы.", pt: "Houve queixas.", tense: "Perfeito" },
+                { ru: "Была встреча.", pt: "Houve uma reunião.", tense: "Perfeito" },
+                { ru: "Была ошибка.", pt: "Houve um engano.", tense: "Perfeito" },
+                { ru: "Были последствия.", pt: "Houve consequências.", tense: "Perfeito" },
+                { ru: "Что случилось?", pt: "O que houve?", tense: "Perfeito" },
+                { ru: "Была задержка.", pt: "Houve um atraso.", tense: "Perfeito" },
+                { ru: "Будет вечеринка.", pt: "Haverá uma festa.", tense: "Futuro" },
+                { ru: "Будут изменения.", pt: "Haverá mudanças.", tense: "Futuro" },
+                { ru: "Проблем не будет.", pt: "Não haverá problemas.", tense: "Futuro" },
+                { ru: "Будет время.", pt: "Haverá tempo.", tense: "Futuro" },
+                { ru: "Будут последствия.", pt: "Haverá consequências.", tense: "Futuro" },
+                { ru: "Будет еда?", pt: "Haverá comida?", tense: "Futuro" },
+                { ru: "Будет решение.", pt: "Haverá uma solução.", tense: "Futuro" },
+                { ru: "Будет больше возможностей.", pt: "Haverá mais oportunidades.", tense: "Futuro" },
+                { ru: "Надежда будет всегда.", pt: "Haverá sempre esperança.", tense: "Futuro" },
+                { ru: "Будут новости.", pt: "Haverá notícias.", tense: "Futuro" },
+                { ru: "Была бы проблема.", pt: "Haveria um problema.", tense: "Condicional" },
+                { ru: "Не было бы необходимости.", pt: "Não haveria necessidade.", tense: "Condicional" },
+                { ru: "Были бы последствия.", pt: "Haveria consequências.", tense: "Condicional" },
+                { ru: "Было бы время.", pt: "Haveria tempo.", tense: "Condicional" },
+                { ru: "Был бы шанс?", pt: "Haveria uma hipótese?", tense: "Condicional" },
+                { ru: "Было бы решение.", pt: "Haveria uma solução.", tense: "Condicional" },
+                { ru: "Проблем бы не было.", pt: "Não haveria problemas.", tense: "Condicional" },
+                { ru: "Было бы больше вариантов.", pt: "Haveria mais opções.", tense: "Condicional" },
+                { ru: "Был бы способ.", pt: "Haveria uma maneira.", tense: "Condicional" },
+                { ru: "Была бы надежда.", pt: "Haveria esperança.", tense: "Condicional" },
+                { ru: "Надеюсь, есть время.", pt: "Espero que haja tempo.", tense: "Conjuntivo" },
+                { ru: "Даже если есть проблема...", pt: "Mesmo que haja um problema...", tense: "Conjuntivo" },
+                { ru: "Если нет причины...", pt: "A menos que haja uma razão...", tense: "Conjuntivo" },
+                { ru: "Сомневаюсь, что есть решение.", pt: "Duvido que haja solução.", tense: "Conjuntivo" },
+                { ru: "Важно, чтобы было доверие.", pt: "É importante que haja confiança.", tense: "Conjuntivo" },
+                { ru: "Чтобы был мир.", pt: "Para que haja paz.", tense: "Conjuntivo" },
+                { ru: "Что бы ни было...", pt: "O que quer que haja...", tense: "Conjuntivo" },
+                { ru: "Не думаю, что есть время.", pt: "Não acho que haja tempo.", tense: "Conjuntivo" },
+                { ru: "Нужно, чтобы были перемены.", pt: "É preciso que haja mudança.", tense: "Conjuntivo" },
+                { ru: "Хотя надежда есть...", pt: "Embora haja esperança...", tense: "Conjuntivo" },
+                { ru: "Если бы было время...", pt: "Se houvesse tempo...", tense: "Imperfeito Conj." },
+                { ru: "Хотел бы я, чтобы было больше.", pt: "Quem me dera que houvesse mais.", tense: "Imperfeito Conj." },
+                { ru: "Если бы было решение...", pt: "Se houvesse uma solução...", tense: "Imperfeito Conj." },
+                { ru: "Даже если бы были проблемы...", pt: "Mesmo que houvesse problemas...", tense: "Imperfeito Conj." },
+                { ru: "Если бы только был способ...", pt: "Se ao menos houvesse uma maneira...", tense: "Imperfeito Conj." },
+                { ru: "Как будто нет завтра.", pt: "Como se não houvesse amanhã.", tense: "Imperfeito Conj." },
+                { ru: "Если бы не было препятствий...", pt: "Se não houvesse obstáculos...", tense: "Imperfeito Conj." },
+                { ru: "Я бы помог, если бы была нужда.", pt: "Ajudaria se houvesse necessidade.", tense: "Imperfeito Conj." },
+                { ru: "Если бы было больше вариантов...", pt: "Se houvesse mais opções...", tense: "Imperfeito Conj." },
+                { ru: "Если бы была справедливость...", pt: "Se houvesse justiça...", tense: "Imperfeito Conj." },
+                { ru: "Если будет проблема...", pt: "Se houver um problema...", tense: "Futuro Conj." },
+                { ru: "Когда будет время...", pt: "Quando houver tempo...", tense: "Futuro Conj." },
+                { ru: "Если будет необходимость...", pt: "Se houver necessidade...", tense: "Futuro Conj." },
+                { ru: "Когда будет возможность...", pt: "Sempre que houver oportunidade...", tense: "Futuro Conj." },
+                { ru: "Если будут изменения...", pt: "Se houver mudanças...", tense: "Futuro Conj." },
+                { ru: "Когда будет решение...", pt: "Quando houver solução...", tense: "Futuro Conj." },
+                { ru: "Если будут сомнения...", pt: "Se houver alguma dúvida...", tense: "Futuro Conj." },
+                { ru: "Позвони, если будут новости.", pt: "Liga-me se houver novidades.", tense: "Futuro Conj." },
+                { ru: "Если не будет другого способа...", pt: "Se não houver outra maneira...", tense: "Futuro Conj." },
+                { ru: "Когда будет мир...", pt: "Quando houver paz...", tense: "Futuro Conj." },
+                { ru: "В чём дело?", pt: "O que é que há?", tense: "Expressão" },
+                { ru: "Что происходит?", pt: "O que há?", tense: "Expressão" },
+                { ru: "Вот так!", pt: "Olha lá!", tense: "Expressão" },
+                { ru: "Невозможно.", pt: "Não há maneira.", tense: "Expressão" },
+                { ru: "Что бы ни случилось.", pt: "Haja o que houver.", tense: "Expressão" },
+                { ru: "Будь что будет.", pt: "Aconteça o que acontecer.", tense: "Expressão" },
+                { ru: "Что случилось?", pt: "O que houve?", tense: "Expressão" },
+                { ru: "Ничего не поделаешь.", pt: "Não há remédio.", tense: "Expressão" },
+                { ru: "Что-то не так?", pt: "Há algum problema?", tense: "Expressão" },
+                { ru: "Вот так обстоят дела.", pt: "É o que há.", tense: "Expressão" },
+            ]
+        };
     </script>
     <script src="../../assets/js/verb.js"></script>
 </body>

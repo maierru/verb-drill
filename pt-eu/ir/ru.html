@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Глагол IR — 100 фраз</title>
+    <title>Глагол 🇵🇹 VERB IR — 100 фраз</title>
     <link rel="stylesheet" href="../../assets/css/verb.css">
-    
 </head>
 <body>
     <div class="container">
         <header>
             <a href="../" class="back-link">← Назад к списку глаголов</a>
-            <h1>🇵🇹 Глагол IR</h1>
-            <p class="subtitle">100 популярных фраз — Европейский португальский</p>
+            <h1>🇵🇹 Verb IR</h1>
+            <p class="subtitle">to go — 105 фраз</p>
         </header>
 
         <div class="controls">
@@ -24,150 +23,129 @@
             <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
         </div>
 
-        <div class="stats" id="stats">Показано: 100 из 100 фраз</div>
+        <div class="stats" id="stats">Показано: 105 из 105 фраз</div>
 
         <div class="phrase-list" id="phraseList">
         </div>
 
         <footer>
-            Практика европейского португальского — Глагол IR
+            Практика европейского португальского — IR
         </footer>
     </div>
 
     <script>
-    const VERB_CONFIG = {
-        originKey: 'ru',
-        labels: { target: 'Português Europeu', showing: 'Показано', of: 'из', phrases: 'фраз' },
-        verbForms: ['vou', 'vais', 'vai', 'vamos', 'vão', 'ia', 'ias', 'íamos', 'iam', 'fui', 'foste', 'foi', 'fomos', 'foram', 'irei', 'irás', 'irá', 'iremos', 'irão', 'iria', 'irias', 'iríamos', 'iriam', 'vá', 'vás', 'fosse', 'fosses', 'fôssemos', 'fossem', 'ir', 'indo', 'ido'],
-        phrases: [
-            // Presente do Indicativo (Настоящее время)
-            { ru: "Я иду на работу.", pt: "Vou ao trabalho.", tense: "Presente" },
-            { ru: "Куда ты идёшь?", pt: "Onde vais?", tense: "Presente" },
-            { ru: "Он идёт в школу.", pt: "Ele vai à escola.", tense: "Presente" },
-            { ru: "Она идёт домой.", pt: "Ela vai para casa.", tense: "Presente" },
-            { ru: "Мы идём вместе.", pt: "Vamos juntos.", tense: "Presente" },
-            { ru: "Вы идёте первыми.", pt: "Vocês vão primeiro.", tense: "Presente" },
-            { ru: "Они ходят каждый день.", pt: "Eles vão todos os dias.", tense: "Presente" },
-            { ru: "Я туда не хожу.", pt: "Não vou lá.", tense: "Presente" },
-            { ru: "Ты идёшь?", pt: "Vais?", tense: "Presente" },
-            { ru: "Пойдём!", pt: "Vamos!", tense: "Presente" },
-
-            // Ближайшее будущее (ir + инфинитив)
-            { ru: "Я собираюсь есть.", pt: "Vou comer.", tense: "Futuro Próximo" },
-            { ru: "Тебе понравится.", pt: "Vais gostar.", tense: "Futuro Próximo" },
-            { ru: "Он скоро придёт.", pt: "Ele vai chegar em breve.", tense: "Futuro Próximo" },
-            { ru: "Она собирается учиться.", pt: "Ela vai estudar.", tense: "Futuro Próximo" },
-            { ru: "Мы собираемся путешествовать.", pt: "Vamos viajar.", tense: "Futuro Próximo" },
-            { ru: "Они помогут.", pt: "Eles vão ajudar.", tense: "Futuro Próximo" },
-            { ru: "Будет дождь.", pt: "Vai chover.", tense: "Futuro Próximo" },
-            { ru: "Я не собираюсь этого делать.", pt: "Não vou fazer isso.", tense: "Futuro Próximo" },
-            { ru: "Ты придёшь?", pt: "Vais vir?", tense: "Futuro Próximo" },
-            { ru: "Всё будет хорошо.", pt: "Vai correr tudo bem.", tense: "Futuro Próximo" },
-
-            // Вопросы в настоящем времени
-            { ru: "Куда мы идём?", pt: "Onde vamos?", tense: "Presente" },
-            { ru: "Как дела?", pt: "Como vai?", tense: "Presente" },
-            { ru: "Ты идёшь на вечеринку?", pt: "Vais à festa?", tense: "Presente" },
-            { ru: "Кто идёт?", pt: "Quem vai?", tense: "Presente" },
-            { ru: "Когда ты идёшь?", pt: "Quando vais?", tense: "Presente" },
-
-            // Pretérito Imperfeito (Прошедшее несовершенное)
-            { ru: "Я раньше туда ходил.", pt: "Eu ia lá.", tense: "Imperfeito" },
-            { ru: "Ты ходил каждую неделю.", pt: "Tu ias todas as semanas.", tense: "Imperfeito" },
-            { ru: "Он шёл в офис.", pt: "Ele ia ao escritório.", tense: "Imperfeito" },
-            { ru: "Она собиралась помочь.", pt: "Ela ia ajudar.", tense: "Imperfeito" },
-            { ru: "Мы ходили на пляж.", pt: "Íamos à praia.", tense: "Imperfeito" },
-            { ru: "Они шли домой.", pt: "Eles iam para casa.", tense: "Imperfeito" },
-            { ru: "Куда ты шёл?", pt: "Onde ias?", tense: "Imperfeito" },
-            { ru: "Я собирался тебе позвонить.", pt: "Ia ligar-te.", tense: "Imperfeito" },
-            { ru: "Мы собирались поесть.", pt: "Íamos comer.", tense: "Imperfeito" },
-            { ru: "Я не собирался ничего говорить.", pt: "Não ia dizer nada.", tense: "Imperfeito" },
-
-            // Pretérito Perfeito Simples (Прошедшее совершенное)
-            { ru: "Я ездил в Лиссабон.", pt: "Fui a Lisboa.", tense: "Perfeito" },
-            { ru: "Ты ушёл рано.", pt: "Tu foste cedo.", tense: "Perfeito" },
-            { ru: "Он ходил к врачу.", pt: "Ele foi ao médico.", tense: "Perfeito" },
-            { ru: "Она ходила за покупками.", pt: "Ela foi às compras.", tense: "Perfeito" },
-            { ru: "Мы ходили в кино.", pt: "Fomos ao cinema.", tense: "Perfeito" },
-            { ru: "Они ушли домой.", pt: "Eles foram para casa.", tense: "Perfeito" },
-            { ru: "Куда ты ходил?", pt: "Onde foste?", tense: "Perfeito" },
-            { ru: "Я не ходил.", pt: "Não fui.", tense: "Perfeito" },
-            { ru: "Ты был на встрече?", pt: "Foste à reunião?", tense: "Perfeito" },
-            { ru: "Как прошло?", pt: "Como foi?", tense: "Perfeito" },
-
-            // Futuro do Indicativo (Будущее время)
-            { ru: "Я пойду завтра.", pt: "Irei amanhã.", tense: "Futuro" },
-            { ru: "Ты далеко пойдёшь.", pt: "Tu irás longe.", tense: "Futuro" },
-            { ru: "Он пойдёт с нами.", pt: "Ele irá connosco.", tense: "Futuro" },
-            { ru: "Мы пойдём вместе.", pt: "Iremos juntos.", tense: "Futuro" },
-            { ru: "Они всё равно пойдут.", pt: "Eles irão de qualquer forma.", tense: "Futuro" },
-            { ru: "Я не пойду один.", pt: "Não irei sozinho.", tense: "Futuro" },
-            { ru: "Ты пойдёшь?", pt: "Irás?", tense: "Futuro" },
-            { ru: "Она пойдёт позже.", pt: "Ela irá mais tarde.", tense: "Futuro" },
-            { ru: "Мы пойдём, если возможно.", pt: "Iremos se for possível.", tense: "Futuro" },
-            { ru: "Всё пройдёт хорошо.", pt: "Tudo irá bem.", tense: "Futuro" },
-
-            // Condicional (Условное наклонение)
-            { ru: "Я бы пошёл с тобой.", pt: "Iria contigo.", tense: "Condicional" },
-            { ru: "Ты бы далеко пошёл.", pt: "Tu irias longe.", tense: "Condicional" },
-            { ru: "Он бы пошёл, если бы мог.", pt: "Ele iria se pudesse.", tense: "Condicional" },
-            { ru: "Мы бы пошли вместе.", pt: "Iríamos juntos.", tense: "Condicional" },
-            { ru: "Они бы всё равно пошли.", pt: "Eles iriam de qualquer forma.", tense: "Condicional" },
-            { ru: "Я бы туда не пошёл.", pt: "Não iria lá.", tense: "Condicional" },
-            { ru: "Ты бы пошёл?", pt: "Irias?", tense: "Condicional" },
-            { ru: "Она бы пошла, если бы позвали.", pt: "Ela iria se fosse convidada.", tense: "Condicional" },
-            { ru: "Я бы пошёл, но не могу.", pt: "Iria, mas não posso.", tense: "Condicional" },
-            { ru: "Кто бы пошёл?", pt: "Quem iria?", tense: "Condicional" },
-
-            // Presente do Conjuntivo (Настоящее сослагательное)
-            { ru: "Надеюсь, что ты пойдёшь.", pt: "Espero que vás.", tense: "Conjuntivo" },
-            { ru: "Важно, чтобы он пошёл.", pt: "É importante que ele vá.", tense: "Conjuntivo" },
-            { ru: "Хочу, чтобы мы пошли вместе.", pt: "Quero que vamos juntos.", tense: "Conjuntivo" },
-            { ru: "Сомневаюсь, что она пойдёт.", pt: "Duvido que ela vá.", tense: "Conjuntivo" },
-            { ru: "Хотя ты и идёшь...", pt: "Embora vás...", tense: "Conjuntivo" },
-            { ru: "Куда бы ты ни пошёл...", pt: "Onde quer que vás...", tense: "Conjuntivo" },
-            { ru: "Нужно, чтобы они пошли.", pt: "É preciso que eles vão.", tense: "Conjuntivo" },
-            { ru: "Не думаю, что он пойдёт.", pt: "Não acho que ele vá.", tense: "Conjuntivo" },
-            { ru: "Если ты не пойдёшь...", pt: "A menos que vás...", tense: "Conjuntivo" },
-            { ru: "Хочу, чтобы ты пошёл.", pt: "Quero que vás.", tense: "Conjuntivo" },
-
-            // Imperfeito do Conjuntivo (Прошедшее сослагательное)
-            { ru: "Если бы я туда пошёл...", pt: "Se eu fosse lá...", tense: "Imperfeito Conj." },
-            { ru: "Хотел бы, чтобы ты пошёл.", pt: "Quem me dera que fosses.", tense: "Imperfeito Conj." },
-            { ru: "Если бы он пошёл с нами...", pt: "Se ele fosse connosco...", tense: "Imperfeito Conj." },
-            { ru: "Если бы мы пошли вместе...", pt: "Se fôssemos juntos...", tense: "Imperfeito Conj." },
-            { ru: "Если бы они пошли рано...", pt: "Se eles fossem cedo...", tense: "Imperfeito Conj." },
-            { ru: "Я был бы рад, если бы ты пошёл.", pt: "Ficaria feliz se fosses.", tense: "Imperfeito Conj." },
-            { ru: "Даже если бы я пошёл...", pt: "Mesmo que fosse...", tense: "Imperfeito Conj." },
-            { ru: "Если бы она пошла на вечеринку...", pt: "Se ela fosse à festa...", tense: "Imperfeito Conj." },
-            { ru: "Как будто я иду...", pt: "Como se fosse...", tense: "Imperfeito Conj." },
-            { ru: "Хотел бы, чтобы мы пошли.", pt: "Quem me dera que fôssemos.", tense: "Imperfeito Conj." },
-
-            // Направления и движение
-            { ru: "Иди прямо.", pt: "Vai em frente.", tense: "Imperativo" },
-            { ru: "Поверни налево.", pt: "Vai à esquerda.", tense: "Imperativo" },
-            { ru: "Поверни направо.", pt: "Vai à direita.", tense: "Imperativo" },
-            { ru: "Вернись назад.", pt: "Volta para trás.", tense: "Imperativo" },
-            { ru: "Уходи!", pt: "Vai-te embora!", tense: "Imperativo" },
-
-            // Распространённые выражения
-            { ru: "Как дела?", pt: "Como vai isso?", tense: "Expressão" },
-            { ru: "Пойдём!", pt: "Vamos lá!", tense: "Expressão" },
-            { ru: "Ну, поехали!", pt: "Lá vamos nós!", tense: "Expressão" },
-            { ru: "Давай, вперёд.", pt: "Vai em frente.", tense: "Expressão" },
-            { ru: "Всё идёт хорошо.", pt: "Está a correr bem.", tense: "Expressão" },
-            { ru: "Дела идут плохо.", pt: "Não está a correr bem.", tense: "Expressão" },
-            { ru: "Время летит.", pt: "O tempo voa.", tense: "Expressão" },
-            { ru: "Давай, действуй!", pt: "Vai em frente!", tense: "Expressão" },
-            { ru: "Я выхожу.", pt: "Vou sair.", tense: "Expressão" },
-            { ru: "Мне нужно идти.", pt: "Tenho de ir.", tense: "Expressão" },
-            { ru: "Приходить и уходить.", pt: "Ir e vir.", tense: "Expressão" },
-            { ru: "Готов идти?", pt: "Pronto para ir?", tense: "Expressão" },
-            { ru: "Ну, пошли!", pt: "E lá vamos!", tense: "Expressão" },
-            { ru: "Куда ведёт эта дорога?", pt: "Onde vai dar esta estrada?", tense: "Expressão" },
-            { ru: "Всё идёт гладко.", pt: "As coisas vão bem.", tense: "Expressão" }
-        ]
-    };
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            labels: { target: 'Português Europeu', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["vou","vais","vai","vamos","vão","ia","ias","íamos","iam","fui","foste","foi","fomos","foram","irei","irás","irá","iremos","irão","iria","irias","iríamos","iriam","vá","vás","fosse","fosses","fôssemos","fossem","ir","indo","ido"],
+            phrases: [
+                { ru: "Я иду на работу.", pt: "Vou ao trabalho.", tense: "Presente" },
+                { ru: "Куда ты идёшь?", pt: "Onde vais?", tense: "Presente" },
+                { ru: "Он идёт в школу.", pt: "Ele vai à escola.", tense: "Presente" },
+                { ru: "Она идёт домой.", pt: "Ela vai para casa.", tense: "Presente" },
+                { ru: "Мы идём вместе.", pt: "Vamos juntos.", tense: "Presente" },
+                { ru: "Вы идёте первыми.", pt: "Vocês vão primeiro.", tense: "Presente" },
+                { ru: "Они ходят каждый день.", pt: "Eles vão todos os dias.", tense: "Presente" },
+                { ru: "Я туда не хожу.", pt: "Não vou lá.", tense: "Presente" },
+                { ru: "Ты идёшь?", pt: "Vais?", tense: "Presente" },
+                { ru: "Пойдём!", pt: "Vamos!", tense: "Presente" },
+                { ru: "Я собираюсь есть.", pt: "Vou comer.", tense: "Futuro Próximo" },
+                { ru: "Тебе понравится.", pt: "Vais gostar.", tense: "Futuro Próximo" },
+                { ru: "Он скоро придёт.", pt: "Ele vai chegar em breve.", tense: "Futuro Próximo" },
+                { ru: "Она собирается учиться.", pt: "Ela vai estudar.", tense: "Futuro Próximo" },
+                { ru: "Мы собираемся путешествовать.", pt: "Vamos viajar.", tense: "Futuro Próximo" },
+                { ru: "Они помогут.", pt: "Eles vão ajudar.", tense: "Futuro Próximo" },
+                { ru: "Будет дождь.", pt: "Vai chover.", tense: "Futuro Próximo" },
+                { ru: "Я не собираюсь этого делать.", pt: "Não vou fazer isso.", tense: "Futuro Próximo" },
+                { ru: "Ты придёшь?", pt: "Vais vir?", tense: "Futuro Próximo" },
+                { ru: "Всё будет хорошо.", pt: "Vai correr tudo bem.", tense: "Futuro Próximo" },
+                { ru: "Куда мы идём?", pt: "Onde vamos?", tense: "Presente" },
+                { ru: "Как дела?", pt: "Como vai?", tense: "Presente" },
+                { ru: "Ты идёшь на вечеринку?", pt: "Vais à festa?", tense: "Presente" },
+                { ru: "Кто идёт?", pt: "Quem vai?", tense: "Presente" },
+                { ru: "Когда ты идёшь?", pt: "Quando vais?", tense: "Presente" },
+                { ru: "Я раньше туда ходил.", pt: "Eu ia lá.", tense: "Imperfeito" },
+                { ru: "Ты ходил каждую неделю.", pt: "Tu ias todas as semanas.", tense: "Imperfeito" },
+                { ru: "Он шёл в офис.", pt: "Ele ia ao escritório.", tense: "Imperfeito" },
+                { ru: "Она собиралась помочь.", pt: "Ela ia ajudar.", tense: "Imperfeito" },
+                { ru: "Мы ходили на пляж.", pt: "Íamos à praia.", tense: "Imperfeito" },
+                { ru: "Они шли домой.", pt: "Eles iam para casa.", tense: "Imperfeito" },
+                { ru: "Куда ты шёл?", pt: "Onde ias?", tense: "Imperfeito" },
+                { ru: "Я собирался тебе позвонить.", pt: "Ia ligar-te.", tense: "Imperfeito" },
+                { ru: "Мы собирались поесть.", pt: "Íamos comer.", tense: "Imperfeito" },
+                { ru: "Я не собирался ничего говорить.", pt: "Não ia dizer nada.", tense: "Imperfeito" },
+                { ru: "Я ездил в Лиссабон.", pt: "Fui a Lisboa.", tense: "Perfeito" },
+                { ru: "Ты ушёл рано.", pt: "Tu foste cedo.", tense: "Perfeito" },
+                { ru: "Он ходил к врачу.", pt: "Ele foi ao médico.", tense: "Perfeito" },
+                { ru: "Она ходила за покупками.", pt: "Ela foi às compras.", tense: "Perfeito" },
+                { ru: "Мы ходили в кино.", pt: "Fomos ao cinema.", tense: "Perfeito" },
+                { ru: "Они ушли домой.", pt: "Eles foram para casa.", tense: "Perfeito" },
+                { ru: "Куда ты ходил?", pt: "Onde foste?", tense: "Perfeito" },
+                { ru: "Я не ходил.", pt: "Não fui.", tense: "Perfeito" },
+                { ru: "Ты был на встрече?", pt: "Foste à reunião?", tense: "Perfeito" },
+                { ru: "Как прошло?", pt: "Como foi?", tense: "Perfeito" },
+                { ru: "Я пойду завтра.", pt: "Irei amanhã.", tense: "Futuro" },
+                { ru: "Ты далеко пойдёшь.", pt: "Tu irás longe.", tense: "Futuro" },
+                { ru: "Он пойдёт с нами.", pt: "Ele irá connosco.", tense: "Futuro" },
+                { ru: "Мы пойдём вместе.", pt: "Iremos juntos.", tense: "Futuro" },
+                { ru: "Они всё равно пойдут.", pt: "Eles irão de qualquer forma.", tense: "Futuro" },
+                { ru: "Я не пойду один.", pt: "Não irei sozinho.", tense: "Futuro" },
+                { ru: "Ты пойдёшь?", pt: "Irás?", tense: "Futuro" },
+                { ru: "Она пойдёт позже.", pt: "Ela irá mais tarde.", tense: "Futuro" },
+                { ru: "Мы пойдём, если возможно.", pt: "Iremos se for possível.", tense: "Futuro" },
+                { ru: "Всё пройдёт хорошо.", pt: "Tudo irá bem.", tense: "Futuro" },
+                { ru: "Я бы пошёл с тобой.", pt: "Iria contigo.", tense: "Condicional" },
+                { ru: "Ты бы далеко пошёл.", pt: "Tu irias longe.", tense: "Condicional" },
+                { ru: "Он бы пошёл, если бы мог.", pt: "Ele iria se pudesse.", tense: "Condicional" },
+                { ru: "Мы бы пошли вместе.", pt: "Iríamos juntos.", tense: "Condicional" },
+                { ru: "Они бы всё равно пошли.", pt: "Eles iriam de qualquer forma.", tense: "Condicional" },
+                { ru: "Я бы туда не пошёл.", pt: "Não iria lá.", tense: "Condicional" },
+                { ru: "Ты бы пошёл?", pt: "Irias?", tense: "Condicional" },
+                { ru: "Она бы пошла, если бы позвали.", pt: "Ela iria se fosse convidada.", tense: "Condicional" },
+                { ru: "Я бы пошёл, но не могу.", pt: "Iria, mas não posso.", tense: "Condicional" },
+                { ru: "Кто бы пошёл?", pt: "Quem iria?", tense: "Condicional" },
+                { ru: "Надеюсь, что ты пойдёшь.", pt: "Espero que vás.", tense: "Conjuntivo" },
+                { ru: "Важно, чтобы он пошёл.", pt: "É importante que ele vá.", tense: "Conjuntivo" },
+                { ru: "Хочу, чтобы мы пошли вместе.", pt: "Quero que vamos juntos.", tense: "Conjuntivo" },
+                { ru: "Сомневаюсь, что она пойдёт.", pt: "Duvido que ela vá.", tense: "Conjuntivo" },
+                { ru: "Хотя ты и идёшь...", pt: "Embora vás...", tense: "Conjuntivo" },
+                { ru: "Куда бы ты ни пошёл...", pt: "Onde quer que vás...", tense: "Conjuntivo" },
+                { ru: "Нужно, чтобы они пошли.", pt: "É preciso que eles vão.", tense: "Conjuntivo" },
+                { ru: "Не думаю, что он пойдёт.", pt: "Não acho que ele vá.", tense: "Conjuntivo" },
+                { ru: "Если ты не пойдёшь...", pt: "A menos que vás...", tense: "Conjuntivo" },
+                { ru: "Хочу, чтобы ты пошёл.", pt: "Quero que vás.", tense: "Conjuntivo" },
+                { ru: "Если бы я туда пошёл...", pt: "Se eu fosse lá...", tense: "Imperfeito Conj." },
+                { ru: "Хотел бы, чтобы ты пошёл.", pt: "Quem me dera que fosses.", tense: "Imperfeito Conj." },
+                { ru: "Если бы он пошёл с нами...", pt: "Se ele fosse connosco...", tense: "Imperfeito Conj." },
+                { ru: "Если бы мы пошли вместе...", pt: "Se fôssemos juntos...", tense: "Imperfeito Conj." },
+                { ru: "Если бы они пошли рано...", pt: "Se eles fossem cedo...", tense: "Imperfeito Conj." },
+                { ru: "Я был бы рад, если бы ты пошёл.", pt: "Ficaria feliz se fosses.", tense: "Imperfeito Conj." },
+                { ru: "Даже если бы я пошёл...", pt: "Mesmo que fosse...", tense: "Imperfeito Conj." },
+                { ru: "Если бы она пошла на вечеринку...", pt: "Se ela fosse à festa...", tense: "Imperfeito Conj." },
+                { ru: "Как будто я иду...", pt: "Como se fosse...", tense: "Imperfeito Conj." },
+                { ru: "Хотел бы, чтобы мы пошли.", pt: "Quem me dera que fôssemos.", tense: "Imperfeito Conj." },
+                { ru: "Иди прямо.", pt: "Vai em frente.", tense: "Imperativo" },
+                { ru: "Поверни налево.", pt: "Vai à esquerda.", tense: "Imperativo" },
+                { ru: "Поверни направо.", pt: "Vai à direita.", tense: "Imperativo" },
+                { ru: "Вернись назад.", pt: "Volta para trás.", tense: "Imperativo" },
+                { ru: "Уходи!", pt: "Vai-te embora!", tense: "Imperativo" },
+                { ru: "Как дела?", pt: "Como vai isso?", tense: "Expressão" },
+                { ru: "Пойдём!", pt: "Vamos lá!", tense: "Expressão" },
+                { ru: "Ну, поехали!", pt: "Lá vamos nós!", tense: "Expressão" },
+                { ru: "Давай, вперёд.", pt: "Vai em frente.", tense: "Expressão" },
+                { ru: "Всё идёт хорошо.", pt: "Está a correr bem.", tense: "Expressão" },
+                { ru: "Дела идут плохо.", pt: "Não está a correr bem.", tense: "Expressão" },
+                { ru: "Время летит.", pt: "O tempo voa.", tense: "Expressão" },
+                { ru: "Давай, действуй!", pt: "Vai em frente!", tense: "Expressão" },
+                { ru: "Я выхожу.", pt: "Vou sair.", tense: "Expressão" },
+                { ru: "Мне нужно идти.", pt: "Tenho de ir.", tense: "Expressão" },
+                { ru: "Приходить и уходить.", pt: "Ir e vir.", tense: "Expressão" },
+                { ru: "Готов идти?", pt: "Pronto para ir?", tense: "Expressão" },
+                { ru: "Ну, пошли!", pt: "E lá vamos!", tense: "Expressão" },
+                { ru: "Куда ведёт эта дорога?", pt: "Onde vai dar esta estrada?", tense: "Expressão" },
+                { ru: "Всё идёт гладко.", pt: "As coisas vão bem.", tense: "Expressão" },
+            ]
+        };
     </script>
     <script src="../../assets/js/verb.js"></script>
 </body>

@@ -1,0 +1,644 @@
+---
+slug: conseguir
+name: "\U0001F1F5\U0001F1F9 Verb CONSEGUIR"
+meaning: to manage, to be able to
+verb_forms:
+- consigo
+- consegues
+- consegue
+- conseguimos
+- conseguem
+- conseguia
+- conseguias
+- conseguíamos
+- conseguiam
+- consegui
+- conseguiste
+- conseguiu
+- conseguiram
+- conseguirei
+- conseguirás
+- conseguirá
+- conseguiremos
+- conseguirão
+- conseguiria
+- conseguirias
+- conseguiríamos
+- conseguiriam
+- consiga
+- consigas
+- consigamos
+- consigam
+- conseguisse
+- conseguisses
+- conseguíssemos
+- conseguissem
+- conseguir
+- conseguires
+- conseguirmos
+- conseguirem
+- conseguindo
+- conseguido
+phrases:
+  en:
+  - en: I can do it.
+    pt: Consigo fazer.
+    tense: Presente
+  - en: Can you see?
+    pt: Consegues ver?
+    tense: Presente
+  - en: He manages to arrive on time.
+    pt: Ele consegue chegar a tempo.
+    tense: Presente
+  - en: She can't sleep.
+    pt: Ela não consegue dormir.
+    tense: Presente
+  - en: We can help.
+    pt: Conseguimos ajudar.
+    tense: Presente
+  - en: They can't understand.
+    pt: Eles não conseguem perceber.
+    tense: Presente
+  - en: I can't find it.
+    pt: Não consigo encontrar.
+    tense: Presente
+  - en: Can you hear me?
+    pt: Consegues ouvir-me?
+    tense: Presente
+  - en: He can speak Portuguese.
+    pt: Ele consegue falar português.
+    tense: Presente
+  - en: She manages everything.
+    pt: Ela consegue tudo.
+    tense: Presente
+  - en: I can't believe it.
+    pt: Não consigo acreditar.
+    tense: Presente
+  - en: Can you explain?
+    pt: Consegues explicar?
+    tense: Presente
+  - en: He can't concentrate.
+    pt: Ele não consegue concentrar-se.
+    tense: Presente
+  - en: She can solve it.
+    pt: Ela consegue resolver.
+    tense: Presente
+  - en: We can finish today.
+    pt: Conseguimos acabar hoje.
+    tense: Presente
+  - en: They manage to survive.
+    pt: Eles conseguem sobreviver.
+    tense: Presente
+  - en: I can imagine.
+    pt: Consigo imaginar.
+    tense: Presente
+  - en: Can you remember?
+    pt: Consegues lembrar-te?
+    tense: Presente
+  - en: He can read fast.
+    pt: Ele consegue ler rápido.
+    tense: Presente
+  - en: She can't stop.
+    pt: Ela não consegue parar.
+    tense: Presente
+  - en: I used to manage.
+    pt: Conseguia.
+    tense: Imperfeito
+  - en: You could do it before.
+    pt: Conseguias fazer antes.
+    tense: Imperfeito
+  - en: He could run faster.
+    pt: Ele conseguia correr mais rápido.
+    tense: Imperfeito
+  - en: She couldn't sleep.
+    pt: Ela não conseguia dormir.
+    tense: Imperfeito
+  - en: We could understand.
+    pt: Conseguíamos perceber.
+    tense: Imperfeito
+  - en: They couldn't find it.
+    pt: Eles não conseguiam encontrar.
+    tense: Imperfeito
+  - en: I couldn't believe.
+    pt: Não conseguia acreditar.
+    tense: Imperfeito
+  - en: Could you hear?
+    pt: Conseguias ouvir?
+    tense: Imperfeito
+  - en: He could work more.
+    pt: Ele conseguia trabalhar mais.
+    tense: Imperfeito
+  - en: She could always help.
+    pt: Ela conseguia sempre ajudar.
+    tense: Imperfeito
+  - en: I managed to finish.
+    pt: Consegui acabar.
+    tense: Perfeito
+  - en: Did you manage to see?
+    pt: Conseguiste ver?
+    tense: Perfeito
+  - en: He managed to escape.
+    pt: Ele conseguiu escapar.
+    tense: Perfeito
+  - en: She got the job.
+    pt: Ela conseguiu o emprego.
+    tense: Perfeito
+  - en: We managed to arrive.
+    pt: Conseguimos chegar.
+    tense: Perfeito
+  - en: They managed to win.
+    pt: Eles conseguiram ganhar.
+    tense: Perfeito
+  - en: I couldn't do it.
+    pt: Não consegui fazer.
+    tense: Perfeito
+  - en: Did you manage to sleep?
+    pt: Conseguiste dormir?
+    tense: Perfeito
+  - en: He finally managed.
+    pt: Ele finalmente conseguiu.
+    tense: Perfeito
+  - en: She couldn't find it.
+    pt: Ela não conseguiu encontrar.
+    tense: Perfeito
+  - en: I will manage.
+    pt: Conseguirei.
+    tense: Futuro
+  - en: You will be able to.
+    pt: Conseguirás.
+    tense: Futuro
+  - en: He will manage to finish.
+    pt: Ele conseguirá acabar.
+    tense: Futuro
+  - en: We will manage somehow.
+    pt: Conseguiremos de alguma forma.
+    tense: Futuro
+  - en: They will manage to come.
+    pt: Eles conseguirão vir.
+    tense: Futuro
+  - en: I won't be able to.
+    pt: Não conseguirei.
+    tense: Futuro
+  - en: Will you manage?
+    pt: Conseguirás?
+    tense: Futuro
+  - en: She will manage everything.
+    pt: Ela conseguirá tudo.
+    tense: Futuro
+  - en: We will manage to solve.
+    pt: Conseguiremos resolver.
+    tense: Futuro
+  - en: They will manage to arrive.
+    pt: Eles conseguirão chegar.
+    tense: Futuro
+  - en: I would manage.
+    pt: Conseguiria.
+    tense: Condicional
+  - en: You would be able to.
+    pt: Conseguirias.
+    tense: Condicional
+  - en: He would manage if...
+    pt: Ele conseguiria se...
+    tense: Condicional
+  - en: We would manage together.
+    pt: Conseguiríamos juntos.
+    tense: Condicional
+  - en: They would manage to help.
+    pt: Eles conseguiriam ajudar.
+    tense: Condicional
+  - en: I wouldn't be able to.
+    pt: Não conseguiria.
+    tense: Condicional
+  - en: Would you manage?
+    pt: Conseguirias?
+    tense: Condicional
+  - en: She would manage alone.
+    pt: Ela conseguiria sozinha.
+    tense: Condicional
+  - en: We would manage to finish.
+    pt: Conseguiríamos acabar.
+    tense: Condicional
+  - en: He would manage better.
+    pt: Ele conseguiria melhor.
+    tense: Condicional
+  - en: I hope you manage.
+    pt: Espero que consigas.
+    tense: Conjuntivo
+  - en: It's important that he manages.
+    pt: É importante que ele consiga.
+    tense: Conjuntivo
+  - en: I doubt she manages.
+    pt: Duvido que ela consiga.
+    tense: Conjuntivo
+  - en: Even if you manage...
+    pt: Mesmo que consigas...
+    tense: Conjuntivo
+  - en: Whoever manages...
+    pt: Quem consiga...
+    tense: Conjuntivo
+  - en: It's necessary that we manage.
+    pt: É preciso que consigamos.
+    tense: Conjuntivo
+  - en: I don't think he manages.
+    pt: Não acho que ele consiga.
+    tense: Conjuntivo
+  - en: Unless you manage...
+    pt: A menos que consigas...
+    tense: Conjuntivo
+  - en: So that they manage...
+    pt: Para que consigam...
+    tense: Conjuntivo
+  - en: I hope we manage.
+    pt: Espero que consigamos.
+    tense: Conjuntivo
+  - en: If I managed...
+    pt: Se eu conseguisse...
+    tense: Imperfeito Conj.
+  - en: I wish you managed.
+    pt: Quem me dera que conseguisses.
+    tense: Imperfeito Conj.
+  - en: If he managed...
+    pt: Se ele conseguisse...
+    tense: Imperfeito Conj.
+  - en: If we managed...
+    pt: Se conseguíssemos...
+    tense: Imperfeito Conj.
+  - en: If they managed...
+    pt: Se eles conseguissem...
+    tense: Imperfeito Conj.
+  - en: I would help if you managed.
+    pt: Ajudaria se conseguisses.
+    tense: Imperfeito Conj.
+  - en: Even if I managed...
+    pt: Mesmo que conseguisse...
+    tense: Imperfeito Conj.
+  - en: If she managed to come...
+    pt: Se ela conseguisse vir...
+    tense: Imperfeito Conj.
+  - en: As if he managed...
+    pt: Como se conseguisse...
+    tense: Imperfeito Conj.
+  - en: If only I managed.
+    pt: Se ao menos conseguisse.
+    tense: Imperfeito Conj.
+  - en: When I manage...
+    pt: Quando conseguir...
+    tense: Futuro Conj.
+  - en: If you manage...
+    pt: Se conseguires...
+    tense: Futuro Conj.
+  - en: When he manages...
+    pt: Quando ele conseguir...
+    tense: Futuro Conj.
+  - en: If we manage...
+    pt: Se conseguirmos...
+    tense: Futuro Conj.
+  - en: When they manage...
+    pt: Quando eles conseguirem...
+    tense: Futuro Conj.
+  - en: As soon as I manage...
+    pt: Assim que conseguir...
+    tense: Futuro Conj.
+  - en: Whoever manages...
+    pt: Quem conseguir...
+    tense: Futuro Conj.
+  - en: If you ever manage...
+    pt: Se alguma vez conseguires...
+    tense: Futuro Conj.
+  - en: When we manage to finish...
+    pt: Quando conseguirmos acabar...
+    tense: Futuro Conj.
+  - en: Tell me if you manage.
+    pt: Diz-me se conseguires.
+    tense: Futuro Conj.
+  - en: To be able to.
+    pt: Conseguir fazer.
+    tense: Expressão
+  - en: I can't take it anymore.
+    pt: Não consigo mais.
+    tense: Expressão
+  - en: Can you manage?
+    pt: Consegues?
+    tense: Expressão
+  - en: To get a job.
+    pt: Conseguir emprego.
+    tense: Expressão
+  - en: To achieve success.
+    pt: Conseguir sucesso.
+    tense: Expressão
+  - en: To manage to understand.
+    pt: Conseguir perceber.
+    tense: Expressão
+  - en: Can you handle it?
+    pt: Consegues aguentar?
+    tense: Expressão
+  - en: I finally got it.
+    pt: Finalmente consegui.
+    tense: Expressão
+  - en: To obtain permission.
+    pt: Conseguir permissão.
+    tense: Expressão
+  - en: Mission accomplished.
+    pt: Conseguido.
+    tense: Expressão
+  ru:
+  - ru: Я могу это сделать.
+    pt: Consigo fazer.
+    tense: Presente
+  - ru: Ты видишь?
+    pt: Consegues ver?
+    tense: Presente
+  - ru: Он успевает вовремя.
+    pt: Ele consegue chegar a tempo.
+    tense: Presente
+  - ru: Она не может уснуть.
+    pt: Ela não consegue dormir.
+    tense: Presente
+  - ru: Мы можем помочь.
+    pt: Conseguimos ajudar.
+    tense: Presente
+  - ru: Они не могут понять.
+    pt: Eles não conseguem perceber.
+    tense: Presente
+  - ru: Я не могу найти.
+    pt: Não consigo encontrar.
+    tense: Presente
+  - ru: Ты меня слышишь?
+    pt: Consegues ouvir-me?
+    tense: Presente
+  - ru: Он может говорить по-португальски.
+    pt: Ele consegue falar português.
+    tense: Presente
+  - ru: Она справляется со всем.
+    pt: Ela consegue tudo.
+    tense: Presente
+  - ru: Я не могу поверить.
+    pt: Não consigo acreditar.
+    tense: Presente
+  - ru: Ты можешь объяснить?
+    pt: Consegues explicar?
+    tense: Presente
+  - ru: Он не может сосредоточиться.
+    pt: Ele não consegue concentrar-se.
+    tense: Presente
+  - ru: Она может решить.
+    pt: Ela consegue resolver.
+    tense: Presente
+  - ru: Мы можем закончить сегодня.
+    pt: Conseguimos acabar hoje.
+    tense: Presente
+  - ru: Им удаётся выжить.
+    pt: Eles conseguem sobreviver.
+    tense: Presente
+  - ru: Я могу представить.
+    pt: Consigo imaginar.
+    tense: Presente
+  - ru: Ты можешь вспомнить?
+    pt: Consegues lembrar-te?
+    tense: Presente
+  - ru: Он может читать быстро.
+    pt: Ele consegue ler rápido.
+    tense: Presente
+  - ru: Она не может остановиться.
+    pt: Ela não consegue parar.
+    tense: Presente
+  - ru: Я мог раньше.
+    pt: Conseguia.
+    tense: Imperfeito
+  - ru: Ты мог делать это раньше.
+    pt: Conseguias fazer antes.
+    tense: Imperfeito
+  - ru: Он мог бегать быстрее.
+    pt: Ele conseguia correr mais rápido.
+    tense: Imperfeito
+  - ru: Она не могла спать.
+    pt: Ela não conseguia dormir.
+    tense: Imperfeito
+  - ru: Мы могли понять.
+    pt: Conseguíamos perceber.
+    tense: Imperfeito
+  - ru: Они не могли найти.
+    pt: Eles não conseguiam encontrar.
+    tense: Imperfeito
+  - ru: Я не мог поверить.
+    pt: Não conseguia acreditar.
+    tense: Imperfeito
+  - ru: Ты мог слышать?
+    pt: Conseguias ouvir?
+    tense: Imperfeito
+  - ru: Он мог работать больше.
+    pt: Ele conseguia trabalhar mais.
+    tense: Imperfeito
+  - ru: Она всегда могла помочь.
+    pt: Ela conseguia sempre ajudar.
+    tense: Imperfeito
+  - ru: Мне удалось закончить.
+    pt: Consegui acabar.
+    tense: Perfeito
+  - ru: Тебе удалось увидеть?
+    pt: Conseguiste ver?
+    tense: Perfeito
+  - ru: Ему удалось сбежать.
+    pt: Ele conseguiu escapar.
+    tense: Perfeito
+  - ru: Она получила работу.
+    pt: Ela conseguiu o emprego.
+    tense: Perfeito
+  - ru: Мы смогли приехать.
+    pt: Conseguimos chegar.
+    tense: Perfeito
+  - ru: Они смогли выиграть.
+    pt: Eles conseguiram ganhar.
+    tense: Perfeito
+  - ru: Я не смог сделать.
+    pt: Não consegui fazer.
+    tense: Perfeito
+  - ru: Тебе удалось поспать?
+    pt: Conseguiste dormir?
+    tense: Perfeito
+  - ru: Наконец ему удалось.
+    pt: Ele finalmente conseguiu.
+    tense: Perfeito
+  - ru: Она не смогла найти.
+    pt: Ela não conseguiu encontrar.
+    tense: Perfeito
+  - ru: Я смогу.
+    pt: Conseguirei.
+    tense: Futuro
+  - ru: Ты сможешь.
+    pt: Conseguirás.
+    tense: Futuro
+  - ru: Он сможет закончить.
+    pt: Ele conseguirá acabar.
+    tense: Futuro
+  - ru: Мы как-нибудь справимся.
+    pt: Conseguiremos de alguma forma.
+    tense: Futuro
+  - ru: Они смогут приехать.
+    pt: Eles conseguirão vir.
+    tense: Futuro
+  - ru: Я не смогу.
+    pt: Não conseguirei.
+    tense: Futuro
+  - ru: Ты справишься?
+    pt: Conseguirás?
+    tense: Futuro
+  - ru: Она справится со всем.
+    pt: Ela conseguirá tudo.
+    tense: Futuro
+  - ru: Мы сможем решить.
+    pt: Conseguiremos resolver.
+    tense: Futuro
+  - ru: Они смогут приехать.
+    pt: Eles conseguirão chegar.
+    tense: Futuro
+  - ru: Я бы смог.
+    pt: Conseguiria.
+    tense: Condicional
+  - ru: Ты бы смог.
+    pt: Conseguirias.
+    tense: Condicional
+  - ru: Он бы смог, если бы...
+    pt: Ele conseguiria se...
+    tense: Condicional
+  - ru: Мы бы справились вместе.
+    pt: Conseguiríamos juntos.
+    tense: Condicional
+  - ru: Они бы смогли помочь.
+    pt: Eles conseguiriam ajudar.
+    tense: Condicional
+  - ru: Я бы не смог.
+    pt: Não conseguiria.
+    tense: Condicional
+  - ru: Ты бы справился?
+    pt: Conseguirias?
+    tense: Condicional
+  - ru: Она бы справилась одна.
+    pt: Ela conseguiria sozinha.
+    tense: Condicional
+  - ru: Мы бы смогли закончить.
+    pt: Conseguiríamos acabar.
+    tense: Condicional
+  - ru: Он бы справился лучше.
+    pt: Ele conseguiria melhor.
+    tense: Condicional
+  - ru: Надеюсь, ты справишься.
+    pt: Espero que consigas.
+    tense: Conjuntivo
+  - ru: Важно, чтобы он смог.
+    pt: É importante que ele consiga.
+    tense: Conjuntivo
+  - ru: Сомневаюсь, что она справится.
+    pt: Duvido que ela consiga.
+    tense: Conjuntivo
+  - ru: Даже если ты справишься...
+    pt: Mesmo que consigas...
+    tense: Conjuntivo
+  - ru: Кто справится...
+    pt: Quem consiga...
+    tense: Conjuntivo
+  - ru: Нужно, чтобы мы справились.
+    pt: É preciso que consigamos.
+    tense: Conjuntivo
+  - ru: Не думаю, что он справится.
+    pt: Não acho que ele consiga.
+    tense: Conjuntivo
+  - ru: Если только ты не справишься...
+    pt: A menos que consigas...
+    tense: Conjuntivo
+  - ru: Чтобы они справились...
+    pt: Para que consigam...
+    tense: Conjuntivo
+  - ru: Надеюсь, мы справимся.
+    pt: Espero que consigamos.
+    tense: Conjuntivo
+  - ru: Если бы я смог...
+    pt: Se eu conseguisse...
+    tense: Imperfeito Conj.
+  - ru: Хотел бы я, чтобы ты смог.
+    pt: Quem me dera que conseguisses.
+    tense: Imperfeito Conj.
+  - ru: Если бы он смог...
+    pt: Se ele conseguisse...
+    tense: Imperfeito Conj.
+  - ru: Если бы мы смогли...
+    pt: Se conseguíssemos...
+    tense: Imperfeito Conj.
+  - ru: Если бы они смогли...
+    pt: Se eles conseguissem...
+    tense: Imperfeito Conj.
+  - ru: Я бы помог, если бы ты смог.
+    pt: Ajudaria se conseguisses.
+    tense: Imperfeito Conj.
+  - ru: Даже если бы я смог...
+    pt: Mesmo que conseguisse...
+    tense: Imperfeito Conj.
+  - ru: Если бы она смогла приехать...
+    pt: Se ela conseguisse vir...
+    tense: Imperfeito Conj.
+  - ru: Как будто он смог...
+    pt: Como se conseguisse...
+    tense: Imperfeito Conj.
+  - ru: Если бы только я смог.
+    pt: Se ao menos conseguisse.
+    tense: Imperfeito Conj.
+  - ru: Когда я смогу...
+    pt: Quando conseguir...
+    tense: Futuro Conj.
+  - ru: Если ты справишься...
+    pt: Se conseguires...
+    tense: Futuro Conj.
+  - ru: Когда он справится...
+    pt: Quando ele conseguir...
+    tense: Futuro Conj.
+  - ru: Если мы справимся...
+    pt: Se conseguirmos...
+    tense: Futuro Conj.
+  - ru: Когда они справятся...
+    pt: Quando eles conseguirem...
+    tense: Futuro Conj.
+  - ru: Как только я смогу...
+    pt: Assim que conseguir...
+    tense: Futuro Conj.
+  - ru: Кто справится...
+    pt: Quem conseguir...
+    tense: Futuro Conj.
+  - ru: Если ты когда-нибудь справишься...
+    pt: Se alguma vez conseguires...
+    tense: Futuro Conj.
+  - ru: Когда мы сможем закончить...
+    pt: Quando conseguirmos acabar...
+    tense: Futuro Conj.
+  - ru: Скажи мне, если справишься.
+    pt: Diz-me se conseguires.
+    tense: Futuro Conj.
+  - ru: Быть в состоянии.
+    pt: Conseguir fazer.
+    tense: Expressão
+  - ru: Я больше не могу.
+    pt: Não consigo mais.
+    tense: Expressão
+  - ru: Ты справляешься?
+    pt: Consegues?
+    tense: Expressão
+  - ru: Получить работу.
+    pt: Conseguir emprego.
+    tense: Expressão
+  - ru: Добиться успеха.
+    pt: Conseguir sucesso.
+    tense: Expressão
+  - ru: Суметь понять.
+    pt: Conseguir perceber.
+    tense: Expressão
+  - ru: Ты выдержишь?
+    pt: Consegues aguentar?
+    tense: Expressão
+  - ru: Наконец получилось.
+    pt: Finalmente consegui.
+    tense: Expressão
+  - ru: Получить разрешение.
+    pt: Conseguir permissão.
+    tense: Expressão
+  - ru: Готово.
+    pt: Conseguido.
+    tense: Expressão

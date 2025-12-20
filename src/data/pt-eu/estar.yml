@@ -1,0 +1,642 @@
+---
+slug: estar
+name: "\U0001F1F5\U0001F1F9 Verb ESTAR"
+meaning: to be (temporary)
+verb_forms:
+- estou
+- estás
+- está
+- estamos
+- estão
+- estava
+- estavas
+- estávamos
+- estavam
+- estive
+- estiveste
+- esteve
+- estivemos
+- estiveram
+- estarei
+- estarás
+- estará
+- estaremos
+- estarão
+- estaria
+- estarias
+- estaríamos
+- estariam
+- esteja
+- estejas
+- estejamos
+- estejam
+- estivesse
+- estivesses
+- estivéssemos
+- estivessem
+- estar
+- estando
+- estado
+phrases:
+  en:
+  - en: I am at home.
+    pt: Estou em casa.
+    tense: Presente
+  - en: You are tired.
+    pt: Tu estás cansado.
+    tense: Presente
+  - en: He is sick.
+    pt: Ele está doente.
+    tense: Presente
+  - en: She is happy today.
+    pt: Ela está feliz hoje.
+    tense: Presente
+  - en: We are ready.
+    pt: Estamos prontos.
+    tense: Presente
+  - en: You (plural) are busy.
+    pt: Vocês estão ocupados.
+    tense: Presente
+  - en: They are at work.
+    pt: Eles estão no trabalho.
+    tense: Presente
+  - en: It is cold.
+    pt: Está frio.
+    tense: Presente
+  - en: I am not well.
+    pt: Não estou bem.
+    tense: Presente
+  - en: You are not alone.
+    pt: Tu não estás sozinho.
+    tense: Presente
+  - en: How are you?
+    pt: Como estás?
+    tense: Presente
+  - en: Where are you?
+    pt: Onde estás?
+    tense: Presente
+  - en: Are you okay?
+    pt: Estás bem?
+    tense: Presente
+  - en: Is everything alright?
+    pt: Está tudo bem?
+    tense: Presente
+  - en: Are they at home?
+    pt: Eles estão em casa?
+    tense: Presente
+  - en: Is she awake?
+    pt: Ela está acordada?
+    tense: Presente
+  - en: Are we late?
+    pt: Estamos atrasados?
+    tense: Presente
+  - en: Is it open?
+    pt: Está aberto?
+    tense: Presente
+  - en: Is the food ready?
+    pt: A comida está pronta?
+    tense: Presente
+  - en: Why are you angry?
+    pt: Porque estás zangado?
+    tense: Presente
+  - en: I was waiting for you.
+    pt: Eu estava à tua espera.
+    tense: Imperfeito
+  - en: You were sleeping.
+    pt: Tu estavas a dormir.
+    tense: Imperfeito
+  - en: He was working.
+    pt: Ele estava a trabalhar.
+    tense: Imperfeito
+  - en: She was always tired.
+    pt: Ela estava sempre cansada.
+    tense: Imperfeito
+  - en: We were at the beach.
+    pt: Estávamos na praia.
+    tense: Imperfeito
+  - en: They were studying.
+    pt: Eles estavam a estudar.
+    tense: Imperfeito
+  - en: It was raining.
+    pt: Estava a chover.
+    tense: Imperfeito
+  - en: The door was open.
+    pt: A porta estava aberta.
+    tense: Imperfeito
+  - en: I wasn't feeling well.
+    pt: Eu não estava a sentir-me bem.
+    tense: Imperfeito
+  - en: Where were you?
+    pt: Onde estavas?
+    tense: Imperfeito
+  - en: I was there yesterday.
+    pt: Estive lá ontem.
+    tense: Perfeito
+  - en: You were at the party.
+    pt: Tu estiveste na festa.
+    tense: Perfeito
+  - en: He was sick last week.
+    pt: Ele esteve doente na semana passada.
+    tense: Perfeito
+  - en: We were in Lisbon.
+    pt: Estivemos em Lisboa.
+    tense: Perfeito
+  - en: They were here earlier.
+    pt: Eles estiveram aqui mais cedo.
+    tense: Perfeito
+  - en: The weather was good.
+    pt: O tempo esteve bom.
+    tense: Perfeito
+  - en: I wasn't home.
+    pt: Não estive em casa.
+    tense: Perfeito
+  - en: Were you at the meeting?
+    pt: Estiveste na reunião?
+    tense: Perfeito
+  - en: She was very quiet.
+    pt: Ela esteve muito calada.
+    tense: Perfeito
+  - en: It was a difficult time.
+    pt: Esteve difícil.
+    tense: Perfeito
+  - en: I will be there.
+    pt: Estarei lá.
+    tense: Futuro
+  - en: You will be fine.
+    pt: Tu estarás bem.
+    tense: Futuro
+  - en: He will be waiting.
+    pt: Ele estará à espera.
+    tense: Futuro
+  - en: It will be hot tomorrow.
+    pt: Estará calor amanhã.
+    tense: Futuro
+  - en: We will be ready.
+    pt: Estaremos prontos.
+    tense: Futuro
+  - en: They will be at the airport.
+    pt: Eles estarão no aeroporto.
+    tense: Futuro
+  - en: The store will be open.
+    pt: A loja estará aberta.
+    tense: Futuro
+  - en: I won't be late.
+    pt: Não estarei atrasado.
+    tense: Futuro
+  - en: Will you be available?
+    pt: Estarás disponível?
+    tense: Futuro
+  - en: Everything will be okay.
+    pt: Tudo estará bem.
+    tense: Futuro
+  - en: I would be grateful.
+    pt: Estaria grato.
+    tense: Condicional
+  - en: It would be better.
+    pt: Estaria melhor.
+    tense: Condicional
+  - en: You would be happier there.
+    pt: Tu estarias mais feliz lá.
+    tense: Condicional
+  - en: He would be working now.
+    pt: Ele estaria a trabalhar agora.
+    tense: Condicional
+  - en: We would be together.
+    pt: Estaríamos juntos.
+    tense: Condicional
+  - en: They would be surprised.
+    pt: Eles estariam surpreendidos.
+    tense: Condicional
+  - en: I wouldn't be here.
+    pt: Não estaria aqui.
+    tense: Condicional
+  - en: Would you be interested?
+    pt: Estarias interessado?
+    tense: Condicional
+  - en: The coffee would be cold.
+    pt: O café estaria frio.
+    tense: Condicional
+  - en: I would be lying.
+    pt: Estaria a mentir.
+    tense: Condicional
+  - en: I hope you are well.
+    pt: Espero que estejas bem.
+    tense: Conjuntivo
+  - en: It's important that he is present.
+    pt: É importante que ele esteja presente.
+    tense: Conjuntivo
+  - en: I want us to be together.
+    pt: Quero que estejamos juntos.
+    tense: Conjuntivo
+  - en: I doubt that she is at home.
+    pt: Duvido que ela esteja em casa.
+    tense: Conjuntivo
+  - en: Even though it is cold...
+    pt: Embora esteja frio...
+    tense: Conjuntivo
+  - en: Wherever you are...
+    pt: Onde quer que estejas...
+    tense: Conjuntivo
+  - en: It's necessary that we be ready.
+    pt: É preciso que estejamos prontos.
+    tense: Conjuntivo
+  - en: I don't think they are here.
+    pt: Não acho que eles estejam aqui.
+    tense: Conjuntivo
+  - en: Unless you are busy...
+    pt: A menos que estejas ocupado...
+    tense: Conjuntivo
+  - en: I want you to be happy.
+    pt: Quero que estejas feliz.
+    tense: Conjuntivo
+  - en: If I were there...
+    pt: Se eu estivesse lá...
+    tense: Imperfeito Conj.
+  - en: I wish you were here.
+    pt: Quem me dera que estivesses aqui.
+    tense: Imperfeito Conj.
+  - en: If he were awake...
+    pt: Se ele estivesse acordado...
+    tense: Imperfeito Conj.
+  - en: If we were together...
+    pt: Se estivéssemos juntos...
+    tense: Imperfeito Conj.
+  - en: If they were at home...
+    pt: Se eles estivessem em casa...
+    tense: Imperfeito Conj.
+  - en: I would go if it were sunny.
+    pt: Iria se estivesse sol.
+    tense: Imperfeito Conj.
+  - en: Even if I were tired...
+    pt: Mesmo que estivesse cansado...
+    tense: Imperfeito Conj.
+  - en: If it were open...
+    pt: Se estivesse aberto...
+    tense: Imperfeito Conj.
+  - en: As if nothing were wrong...
+    pt: Como se nada estivesse mal...
+    tense: Imperfeito Conj.
+  - en: I wish it were warmer.
+    pt: Quem me dera que estivesse mais quente.
+    tense: Imperfeito Conj.
+  - en: The keys are on the table.
+    pt: As chaves estão na mesa.
+    tense: Presente
+  - en: The car is in the garage.
+    pt: O carro está na garagem.
+    tense: Presente
+  - en: We are in Portugal.
+    pt: Estamos em Portugal.
+    tense: Presente
+  - en: The restaurant is nearby.
+    pt: O restaurante está perto.
+    tense: Presente
+  - en: Where is the bathroom?
+    pt: Onde está a casa de banho?
+    tense: Presente
+  - en: The book is on the shelf.
+    pt: O livro está na prateleira.
+    tense: Presente
+  - en: I am at the office.
+    pt: Estou no escritório.
+    tense: Presente
+  - en: The children are at school.
+    pt: As crianças estão na escola.
+    tense: Presente
+  - en: She is upstairs.
+    pt: Ela está lá em cima.
+    tense: Presente
+  - en: The train is at the station.
+    pt: O comboio está na estação.
+    tense: Presente
+  - en: I'm fine, thanks.
+    pt: Estou bem, obrigado.
+    tense: Expressão
+  - en: I'm hungry.
+    pt: Estou com fome.
+    tense: Expressão
+  - en: I'm thirsty.
+    pt: Estou com sede.
+    tense: Expressão
+  - en: I'm in a hurry.
+    pt: Estou com pressa.
+    tense: Expressão
+  - en: I'm afraid.
+    pt: Estou com medo.
+    tense: Expressão
+  - en: I'm hot.
+    pt: Estou com calor.
+    tense: Expressão
+  - en: I'm cold.
+    pt: Estou com frio.
+    tense: Expressão
+  - en: I'm sleepy.
+    pt: Estou com sono.
+    tense: Expressão
+  - en: I'm joking.
+    pt: Estou a brincar.
+    tense: Expressão
+  - en: I'm listening.
+    pt: Estou a ouvir.
+    tense: Expressão
+  ru:
+  - ru: Я дома.
+    pt: Estou em casa.
+    tense: Presente
+  - ru: Ты устал.
+    pt: Tu estás cansado.
+    tense: Presente
+  - ru: Он болен.
+    pt: Ele está doente.
+    tense: Presente
+  - ru: Она сегодня счастлива.
+    pt: Ela está feliz hoje.
+    tense: Presente
+  - ru: Мы готовы.
+    pt: Estamos prontos.
+    tense: Presente
+  - ru: Вы заняты.
+    pt: Vocês estão ocupados.
+    tense: Presente
+  - ru: Они на работе.
+    pt: Eles estão no trabalho.
+    tense: Presente
+  - ru: Холодно.
+    pt: Está frio.
+    tense: Presente
+  - ru: Мне нехорошо.
+    pt: Não estou bem.
+    tense: Presente
+  - ru: Ты не один.
+    pt: Tu não estás sozinho.
+    tense: Presente
+  - ru: Как ты?
+    pt: Como estás?
+    tense: Presente
+  - ru: Где ты?
+    pt: Onde estás?
+    tense: Presente
+  - ru: Ты в порядке?
+    pt: Estás bem?
+    tense: Presente
+  - ru: Всё хорошо?
+    pt: Está tudo bem?
+    tense: Presente
+  - ru: Они дома?
+    pt: Eles estão em casa?
+    tense: Presente
+  - ru: Она проснулась?
+    pt: Ela está acordada?
+    tense: Presente
+  - ru: Мы опоздали?
+    pt: Estamos atrasados?
+    tense: Presente
+  - ru: Открыто?
+    pt: Está aberto?
+    tense: Presente
+  - ru: Еда готова?
+    pt: A comida está pronta?
+    tense: Presente
+  - ru: Почему ты злишься?
+    pt: Porque estás zangado?
+    tense: Presente
+  - ru: Я тебя ждал.
+    pt: Eu estava à tua espera.
+    tense: Imperfeito
+  - ru: Ты спал.
+    pt: Tu estavas a dormir.
+    tense: Imperfeito
+  - ru: Он работал.
+    pt: Ele estava a trabalhar.
+    tense: Imperfeito
+  - ru: Она всегда уставала.
+    pt: Ela estava sempre cansada.
+    tense: Imperfeito
+  - ru: Мы были на пляже.
+    pt: Estávamos na praia.
+    tense: Imperfeito
+  - ru: Они учились.
+    pt: Eles estavam a estudar.
+    tense: Imperfeito
+  - ru: Шёл дождь.
+    pt: Estava a chover.
+    tense: Imperfeito
+  - ru: Дверь была открыта.
+    pt: A porta estava aberta.
+    tense: Imperfeito
+  - ru: Мне было плохо.
+    pt: Eu não estava a sentir-me bem.
+    tense: Imperfeito
+  - ru: Где ты был?
+    pt: Onde estavas?
+    tense: Imperfeito
+  - ru: Я был там вчера.
+    pt: Estive lá ontem.
+    tense: Perfeito
+  - ru: Ты был на вечеринке.
+    pt: Tu estiveste na festa.
+    tense: Perfeito
+  - ru: Он болел на прошлой неделе.
+    pt: Ele esteve doente na semana passada.
+    tense: Perfeito
+  - ru: Мы были в Лиссабоне.
+    pt: Estivemos em Lisboa.
+    tense: Perfeito
+  - ru: Они были здесь раньше.
+    pt: Eles estiveram aqui mais cedo.
+    tense: Perfeito
+  - ru: Погода была хорошая.
+    pt: O tempo esteve bom.
+    tense: Perfeito
+  - ru: Меня не было дома.
+    pt: Não estive em casa.
+    tense: Perfeito
+  - ru: Ты был на встрече?
+    pt: Estiveste na reunião?
+    tense: Perfeito
+  - ru: Она была очень тихой.
+    pt: Ela esteve muito calada.
+    tense: Perfeito
+  - ru: Было тяжело.
+    pt: Esteve difícil.
+    tense: Perfeito
+  - ru: Я буду там.
+    pt: Estarei lá.
+    tense: Futuro
+  - ru: Ты будешь в порядке.
+    pt: Tu estarás bem.
+    tense: Futuro
+  - ru: Он будет ждать.
+    pt: Ele estará à espera.
+    tense: Futuro
+  - ru: Завтра будет жарко.
+    pt: Estará calor amanhã.
+    tense: Futuro
+  - ru: Мы будем готовы.
+    pt: Estaremos prontos.
+    tense: Futuro
+  - ru: Они будут в аэропорту.
+    pt: Eles estarão no aeroporto.
+    tense: Futuro
+  - ru: Магазин будет открыт.
+    pt: A loja estará aberta.
+    tense: Futuro
+  - ru: Я не опоздаю.
+    pt: Não estarei atrasado.
+    tense: Futuro
+  - ru: Ты будешь свободен?
+    pt: Estarás disponível?
+    tense: Futuro
+  - ru: Всё будет хорошо.
+    pt: Tudo estará bem.
+    tense: Futuro
+  - ru: Я был бы благодарен.
+    pt: Estaria grato.
+    tense: Condicional
+  - ru: Было бы лучше.
+    pt: Estaria melhor.
+    tense: Condicional
+  - ru: Ты был бы счастливее там.
+    pt: Tu estarias mais feliz lá.
+    tense: Condicional
+  - ru: Он бы сейчас работал.
+    pt: Ele estaria a trabalhar agora.
+    tense: Condicional
+  - ru: Мы были бы вместе.
+    pt: Estaríamos juntos.
+    tense: Condicional
+  - ru: Они были бы удивлены.
+    pt: Eles estariam surpreendidos.
+    tense: Condicional
+  - ru: Меня бы здесь не было.
+    pt: Não estaria aqui.
+    tense: Condicional
+  - ru: Тебе было бы интересно?
+    pt: Estarias interessado?
+    tense: Condicional
+  - ru: Кофе был бы холодным.
+    pt: O café estaria frio.
+    tense: Condicional
+  - ru: Я бы врал.
+    pt: Estaria a mentir.
+    tense: Condicional
+  - ru: Надеюсь, что у тебя всё хорошо.
+    pt: Espero que estejas bem.
+    tense: Conjuntivo
+  - ru: Важно, чтобы он присутствовал.
+    pt: É importante que ele esteja presente.
+    tense: Conjuntivo
+  - ru: Хочу, чтобы мы были вместе.
+    pt: Quero que estejamos juntos.
+    tense: Conjuntivo
+  - ru: Сомневаюсь, что она дома.
+    pt: Duvido que ela esteja em casa.
+    tense: Conjuntivo
+  - ru: Хотя и холодно...
+    pt: Embora esteja frio...
+    tense: Conjuntivo
+  - ru: Где бы ты ни был...
+    pt: Onde quer que estejas...
+    tense: Conjuntivo
+  - ru: Нужно, чтобы мы были готовы.
+    pt: É preciso que estejamos prontos.
+    tense: Conjuntivo
+  - ru: Не думаю, что они здесь.
+    pt: Não acho que eles estejam aqui.
+    tense: Conjuntivo
+  - ru: Если ты не занят...
+    pt: A menos que estejas ocupado...
+    tense: Conjuntivo
+  - ru: Хочу, чтобы ты был счастлив.
+    pt: Quero que estejas feliz.
+    tense: Conjuntivo
+  - ru: Если бы я был там...
+    pt: Se eu estivesse lá...
+    tense: Imperfeito Conj.
+  - ru: Хотел бы, чтобы ты был здесь.
+    pt: Quem me dera que estivesses aqui.
+    tense: Imperfeito Conj.
+  - ru: Если бы он был не спал...
+    pt: Se ele estivesse acordado...
+    tense: Imperfeito Conj.
+  - ru: Если бы мы были вместе...
+    pt: Se estivéssemos juntos...
+    tense: Imperfeito Conj.
+  - ru: Если бы они были дома...
+    pt: Se eles estivessem em casa...
+    tense: Imperfeito Conj.
+  - ru: Я бы пошёл, если бы было солнечно.
+    pt: Iria se estivesse sol.
+    tense: Imperfeito Conj.
+  - ru: Даже если бы я устал...
+    pt: Mesmo que estivesse cansado...
+    tense: Imperfeito Conj.
+  - ru: Если бы было открыто...
+    pt: Se estivesse aberto...
+    tense: Imperfeito Conj.
+  - ru: Как будто ничего не случилось...
+    pt: Como se nada estivesse mal...
+    tense: Imperfeito Conj.
+  - ru: Хотел бы, чтобы было теплее.
+    pt: Quem me dera que estivesse mais quente.
+    tense: Imperfeito Conj.
+  - ru: Ключи на столе.
+    pt: As chaves estão na mesa.
+    tense: Presente
+  - ru: Машина в гараже.
+    pt: O carro está na garagem.
+    tense: Presente
+  - ru: Мы в Португалии.
+    pt: Estamos em Portugal.
+    tense: Presente
+  - ru: Ресторан рядом.
+    pt: O restaurante está perto.
+    tense: Presente
+  - ru: Где туалет?
+    pt: Onde está a casa de banho?
+    tense: Presente
+  - ru: Книга на полке.
+    pt: O livro está na prateleira.
+    tense: Presente
+  - ru: Я в офисе.
+    pt: Estou no escritório.
+    tense: Presente
+  - ru: Дети в школе.
+    pt: As crianças estão na escola.
+    tense: Presente
+  - ru: Она наверху.
+    pt: Ela está lá em cima.
+    tense: Presente
+  - ru: Поезд на станции.
+    pt: O comboio está na estação.
+    tense: Presente
+  - ru: Я в порядке, спасибо.
+    pt: Estou bem, obrigado.
+    tense: Expressão
+  - ru: Я голоден.
+    pt: Estou com fome.
+    tense: Expressão
+  - ru: Я хочу пить.
+    pt: Estou com sede.
+    tense: Expressão
+  - ru: Я спешу.
+    pt: Estou com pressa.
+    tense: Expressão
+  - ru: Мне страшно.
+    pt: Estou com medo.
+    tense: Expressão
+  - ru: Мне жарко.
+    pt: Estou com calor.
+    tense: Expressão
+  - ru: Мне холодно.
+    pt: Estou com frio.
+    tense: Expressão
+  - ru: Я хочу спать.
+    pt: Estou com sono.
+    tense: Expressão
+  - ru: Я шучу.
+    pt: Estou a brincar.
+    tense: Expressão
+  - ru: Я слушаю.
+    pt: Estou a ouvir.
+    tense: Expressão

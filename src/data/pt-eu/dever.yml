@@ -1,0 +1,644 @@
+---
+slug: dever
+name: "\U0001F1F5\U0001F1F9 Verb DEVER"
+meaning: should, must, to owe
+verb_forms:
+- devo
+- deves
+- deve
+- devemos
+- devem
+- devia
+- devias
+- devíamos
+- deviam
+- devi
+- deveste
+- deveu
+- deveram
+- deverei
+- deverás
+- deverá
+- deveremos
+- deverão
+- deveria
+- deverias
+- deveríamos
+- deveriam
+- deva
+- devas
+- devamos
+- devam
+- devesse
+- devesses
+- devêssemos
+- devessem
+- dever
+- deveres
+- devermos
+- deverem
+- devendo
+- devido
+phrases:
+  en:
+  - en: I should go.
+    pt: Devo ir.
+    tense: Presente
+  - en: You should study.
+    pt: Deves estudar.
+    tense: Presente
+  - en: He must work.
+    pt: Ele deve trabalhar.
+    tense: Presente
+  - en: She should rest.
+    pt: Ela deve descansar.
+    tense: Presente
+  - en: We must help.
+    pt: Devemos ajudar.
+    tense: Presente
+  - en: They should wait.
+    pt: Eles devem esperar.
+    tense: Presente
+  - en: I shouldn't eat this.
+    pt: Não devo comer isto.
+    tense: Presente
+  - en: Must I do it?
+    pt: Devo fazer?
+    tense: Presente
+  - en: He owes me money.
+    pt: Ele deve-me dinheiro.
+    tense: Presente
+  - en: She must be tired.
+    pt: Ela deve estar cansada.
+    tense: Presente
+  - en: I should call.
+    pt: Devo ligar.
+    tense: Presente
+  - en: You should know.
+    pt: Deves saber.
+    tense: Presente
+  - en: He must be right.
+    pt: Ele deve ter razão.
+    tense: Presente
+  - en: She should come.
+    pt: Ela deve vir.
+    tense: Presente
+  - en: We should leave.
+    pt: Devemos sair.
+    tense: Presente
+  - en: They owe a lot.
+    pt: Eles devem muito.
+    tense: Presente
+  - en: I should apologize.
+    pt: Devo pedir desculpa.
+    tense: Presente
+  - en: You must be careful.
+    pt: Deves ter cuidado.
+    tense: Presente
+  - en: He should try.
+    pt: Ele deve tentar.
+    tense: Presente
+  - en: What should I do?
+    pt: O que devo fazer?
+    tense: Presente
+  - en: I should have studied.
+    pt: Devia ter estudado.
+    tense: Imperfeito
+  - en: You should have called.
+    pt: Devias ter ligado.
+    tense: Imperfeito
+  - en: He should have waited.
+    pt: Ele devia ter esperado.
+    tense: Imperfeito
+  - en: She should have come.
+    pt: Ela devia ter vindo.
+    tense: Imperfeito
+  - en: We should have helped.
+    pt: Devíamos ter ajudado.
+    tense: Imperfeito
+  - en: They should have known.
+    pt: Eles deviam ter sabido.
+    tense: Imperfeito
+  - en: I was supposed to go.
+    pt: Devia ir.
+    tense: Imperfeito
+  - en: You were supposed to call.
+    pt: Devias ligar.
+    tense: Imperfeito
+  - en: He owed money.
+    pt: Ele devia dinheiro.
+    tense: Imperfeito
+  - en: We were supposed to wait.
+    pt: Devíamos esperar.
+    tense: Imperfeito
+  - en: I had to leave.
+    pt: Devi sair.
+    tense: Perfeito
+  - en: You had to work.
+    pt: Deveste trabalhar.
+    tense: Perfeito
+  - en: He had to help.
+    pt: Ele deveu ajudar.
+    tense: Perfeito
+  - en: We had to decide.
+    pt: Devemos decidir.
+    tense: Perfeito
+  - en: They had to pay.
+    pt: Eles deveram pagar.
+    tense: Perfeito
+  - en: I had to apologize.
+    pt: Devi pedir desculpa.
+    tense: Perfeito
+  - en: You had to explain.
+    pt: Deveste explicar.
+    tense: Perfeito
+  - en: He had to accept.
+    pt: Ele deveu aceitar.
+    tense: Perfeito
+  - en: We had to understand.
+    pt: Devemos perceber.
+    tense: Perfeito
+  - en: They had to go.
+    pt: Eles deveram ir.
+    tense: Perfeito
+  - en: I will have to go.
+    pt: Deverei ir.
+    tense: Futuro
+  - en: You will have to study.
+    pt: Deverás estudar.
+    tense: Futuro
+  - en: He will have to work.
+    pt: Ele deverá trabalhar.
+    tense: Futuro
+  - en: We will have to decide.
+    pt: Deveremos decidir.
+    tense: Futuro
+  - en: They will have to pay.
+    pt: Eles deverão pagar.
+    tense: Futuro
+  - en: I won't have to do it.
+    pt: Não deverei fazer.
+    tense: Futuro
+  - en: Will you have to leave?
+    pt: Deverás sair?
+    tense: Futuro
+  - en: She will have to wait.
+    pt: Ela deverá esperar.
+    tense: Futuro
+  - en: We will have to help.
+    pt: Deveremos ajudar.
+    tense: Futuro
+  - en: They will have to understand.
+    pt: Eles deverão perceber.
+    tense: Futuro
+  - en: I should go.
+    pt: Deveria ir.
+    tense: Condicional
+  - en: You should study more.
+    pt: Deverias estudar mais.
+    tense: Condicional
+  - en: He should help.
+    pt: Ele deveria ajudar.
+    tense: Condicional
+  - en: We should wait.
+    pt: Deveríamos esperar.
+    tense: Condicional
+  - en: They should understand.
+    pt: Eles deveriam perceber.
+    tense: Condicional
+  - en: I shouldn't say.
+    pt: Não deveria dizer.
+    tense: Condicional
+  - en: Should you do it?
+    pt: Deverias fazer?
+    tense: Condicional
+  - en: She should come.
+    pt: Ela deveria vir.
+    tense: Condicional
+  - en: We should try.
+    pt: Deveríamos tentar.
+    tense: Condicional
+  - en: He should have known.
+    pt: Ele deveria ter sabido.
+    tense: Condicional
+  - en: I hope you should go.
+    pt: Espero que devas ir.
+    tense: Conjuntivo
+  - en: It's important that he must.
+    pt: É importante que ele deva.
+    tense: Conjuntivo
+  - en: I doubt she should.
+    pt: Duvido que ela deva.
+    tense: Conjuntivo
+  - en: Even if you should...
+    pt: Mesmo que devas...
+    tense: Conjuntivo
+  - en: Whoever should...
+    pt: Quem deva...
+    tense: Conjuntivo
+  - en: It's necessary that we must.
+    pt: É preciso que devamos.
+    tense: Conjuntivo
+  - en: I don't think he should.
+    pt: Não acho que ele deva.
+    tense: Conjuntivo
+  - en: Unless you should...
+    pt: A menos que devas...
+    tense: Conjuntivo
+  - en: So that they should...
+    pt: Para que devam...
+    tense: Conjuntivo
+  - en: Whatever you should...
+    pt: O que quer que devas...
+    tense: Conjuntivo
+  - en: If I should...
+    pt: Se eu devesse...
+    tense: Imperfeito Conj.
+  - en: I wish you should.
+    pt: Quem me dera que devesses.
+    tense: Imperfeito Conj.
+  - en: If he should...
+    pt: Se ele devesse...
+    tense: Imperfeito Conj.
+  - en: If we should...
+    pt: Se devêssemos...
+    tense: Imperfeito Conj.
+  - en: If they should...
+    pt: Se eles devessem...
+    tense: Imperfeito Conj.
+  - en: Even if I should...
+    pt: Mesmo que devesse...
+    tense: Imperfeito Conj.
+  - en: If she should go...
+    pt: Se ela devesse ir...
+    tense: Imperfeito Conj.
+  - en: As if he should...
+    pt: Como se devesse...
+    tense: Imperfeito Conj.
+  - en: If only I should.
+    pt: Se ao menos devesse.
+    tense: Imperfeito Conj.
+  - en: If we should pay...
+    pt: Se devêssemos pagar...
+    tense: Imperfeito Conj.
+  - en: When I should...
+    pt: Quando dever...
+    tense: Futuro Conj.
+  - en: If you should...
+    pt: Se deveres...
+    tense: Futuro Conj.
+  - en: When he should...
+    pt: Quando ele dever...
+    tense: Futuro Conj.
+  - en: If we should...
+    pt: Se devermos...
+    tense: Futuro Conj.
+  - en: When they should...
+    pt: Quando eles deverem...
+    tense: Futuro Conj.
+  - en: As soon as I should...
+    pt: Assim que dever...
+    tense: Futuro Conj.
+  - en: Whoever should...
+    pt: Quem dever...
+    tense: Futuro Conj.
+  - en: If you ever should...
+    pt: Se alguma vez deveres...
+    tense: Futuro Conj.
+  - en: When we should pay...
+    pt: Quando devermos pagar...
+    tense: Futuro Conj.
+  - en: Tell me if you should.
+    pt: Diz-me se deveres.
+    tense: Futuro Conj.
+  - en: To owe money.
+    pt: Dever dinheiro.
+    tense: Expressão
+  - en: As it should be.
+    pt: Como deve ser.
+    tense: Expressão
+  - en: You should know.
+    pt: Deves saber.
+    tense: Expressão
+  - en: It must be.
+    pt: Deve ser.
+    tense: Expressão
+  - en: Duty calls.
+    pt: O dever chama.
+    tense: Expressão
+  - en: To do one's duty.
+    pt: Cumprir o dever.
+    tense: Expressão
+  - en: You shouldn't.
+    pt: Não deves.
+    tense: Expressão
+  - en: Must I?
+    pt: Devo?
+    tense: Expressão
+  - en: Probably.
+    pt: Deve ser.
+    tense: Expressão
+  - en: To be obliged to.
+    pt: Dever fazer.
+    tense: Expressão
+  ru:
+  - ru: Я должен идти.
+    pt: Devo ir.
+    tense: Presente
+  - ru: Ты должен учиться.
+    pt: Deves estudar.
+    tense: Presente
+  - ru: Он должен работать.
+    pt: Ele deve trabalhar.
+    tense: Presente
+  - ru: Мы должны помочь.
+    pt: Devemos ajudar.
+    tense: Presente
+  - ru: Они должны заплатить.
+    pt: Eles devem pagar.
+    tense: Presente
+  - ru: Я должен тебе деньги.
+    pt: Devo-te dinheiro.
+    tense: Presente
+  - ru: Это должно быть здесь.
+    pt: Deve estar aqui.
+    tense: Presente
+  - ru: Ты должен быть осторожен.
+    pt: Deves ter cuidado.
+    tense: Presente
+  - ru: Она должна прийти сегодня.
+    pt: Ela deve chegar hoje.
+    tense: Presente
+  - ru: Мы должны уважать других.
+    pt: Devemos respeitar os outros.
+    tense: Presente
+  - ru: Я должен был идти.
+    pt: Devia ir.
+    tense: Imperfeito
+  - ru: Ты должен был сказать.
+    pt: Devias dizer.
+    tense: Imperfeito
+  - ru: Он должен был знать.
+    pt: Ele devia saber.
+    tense: Imperfeito
+  - ru: Мы должны были подождать.
+    pt: Devíamos esperar.
+    tense: Imperfeito
+  - ru: Они должны были прийти.
+    pt: Eles deviam vir.
+    tense: Imperfeito
+  - ru: Я должен был позвонить.
+    pt: Devia telefonar.
+    tense: Imperfeito
+  - ru: Ты должен был учиться больше.
+    pt: Devias estudar mais.
+    tense: Imperfeito
+  - ru: Она должна была остаться.
+    pt: Ela devia ficar.
+    tense: Imperfeito
+  - ru: Мы должны были быть там.
+    pt: Devíamos estar lá.
+    tense: Imperfeito
+  - ru: Они должны были заплатить.
+    pt: Eles deviam pagar.
+    tense: Imperfeito
+  - ru: Я должен буду вернуться.
+    pt: Deverei voltar.
+    tense: Futuro
+  - ru: Ты должен будешь решить.
+    pt: Deverás decidir.
+    tense: Futuro
+  - ru: Он должен будет объяснить.
+    pt: Ele deverá explicar.
+    tense: Futuro
+  - ru: Мы должны будем подождать.
+    pt: Deveremos esperar.
+    tense: Futuro
+  - ru: Они должны будут согласиться.
+    pt: Eles deverão concordar.
+    tense: Futuro
+  - ru: Документ должен быть готов.
+    pt: O documento deverá estar pronto.
+    tense: Futuro
+  - ru: Результаты должны появиться завтра.
+    pt: Os resultados deverão sair amanhã.
+    tense: Futuro
+  - ru: Мы должны будем принять меры.
+    pt: Deveremos tomar medidas.
+    tense: Futuro
+  - ru: Ты должен будешь сказать правду.
+    pt: Deverás dizer a verdade.
+    tense: Futuro
+  - ru: Они должны будут изменить план.
+    pt: Eles deverão mudar o plano.
+    tense: Futuro
+  - ru: Я должен был бы идти.
+    pt: Deveria ir.
+    tense: Condicional
+  - ru: Ты должен был бы помочь.
+    pt: Deverias ajudar.
+    tense: Condicional
+  - ru: Он должен был бы извиниться.
+    pt: Ele deveria pedir desculpa.
+    tense: Condicional
+  - ru: Мы должны были бы согласиться.
+    pt: Deveríamos concordar.
+    tense: Condicional
+  - ru: Они должны были бы подождать.
+    pt: Eles deveriam esperar.
+    tense: Condicional
+  - ru: Тебе следовало бы отдохнуть.
+    pt: Deverias descansar.
+    tense: Condicional
+  - ru: Ей следовало бы попробовать.
+    pt: Ela deveria tentar.
+    tense: Condicional
+  - ru: Нам следовало бы поговорить.
+    pt: Deveríamos falar.
+    tense: Condicional
+  - ru: Им следовало бы понять.
+    pt: Eles deveriam compreender.
+    tense: Condicional
+  - ru: Мне следовало бы быть там.
+    pt: Deveria estar lá.
+    tense: Condicional
+  - ru: Нужно, чтобы я должен был.
+    pt: É preciso que eu deva.
+    tense: Conjuntivo
+  - ru: Хочу, чтобы ты должен был.
+    pt: Quero que tu devas.
+    tense: Conjuntivo
+  - ru: Важно, чтобы он должен был.
+    pt: É importante que ele deva.
+    tense: Conjuntivo
+  - ru: Надеюсь, что мы должны.
+    pt: Espero que devamos.
+    tense: Conjuntivo
+  - ru: Сомневаюсь, что они должны.
+    pt: Duvido que eles devam.
+    tense: Conjuntivo
+  - ru: Чтобы ты был обязан.
+    pt: Para que tu devas.
+    tense: Conjuntivo
+  - ru: Хотя я должен.
+    pt: Embora eu deva.
+    tense: Conjuntivo
+  - ru: Пока она должна.
+    pt: Até que ela deva.
+    tense: Conjuntivo
+  - ru: Если мы должны.
+    pt: Caso devamos.
+    tense: Conjuntivo
+  - ru: Боюсь, что они должны.
+    pt: Receio que eles devam.
+    tense: Conjuntivo
+  - ru: Если бы я должен был.
+    pt: Se eu devesse.
+    tense: Imperfeito Conj.
+  - ru: Если бы ты должен был.
+    pt: Se tu devesses.
+    tense: Imperfeito Conj.
+  - ru: Если бы он должен был.
+    pt: Se ele devesse.
+    tense: Imperfeito Conj.
+  - ru: Если бы мы должны были.
+    pt: Se nós devêssemos.
+    tense: Imperfeito Conj.
+  - ru: Если бы они должны были.
+    pt: Se eles devessem.
+    tense: Imperfeito Conj.
+  - ru: Хотел бы, чтобы я должен был.
+    pt: Gostaria que eu devesse.
+    tense: Imperfeito Conj.
+  - ru: Было бы лучше, если бы ты должен был.
+    pt: Seria melhor se tu devesses.
+    tense: Imperfeito Conj.
+  - ru: Как будто он должен был.
+    pt: Como se ele devesse.
+    tense: Imperfeito Conj.
+  - ru: Чтобы мы были обязаны.
+    pt: Para que nós devêssemos.
+    tense: Imperfeito Conj.
+  - ru: Если бы они были обязаны.
+    pt: Se eles devessem.
+    tense: Imperfeito Conj.
+  - ru: Сколько я тебе должен?
+    pt: Quanto te devo?
+    tense: Presente
+  - ru: Ты мне ничего не должен.
+    pt: Não me deves nada.
+    tense: Presente
+  - ru: Он должен мне извинение.
+    pt: Ele deve-me um pedido de desculpa.
+    tense: Presente
+  - ru: Они мне должны много денег.
+    pt: Eles devem-me muito dinheiro.
+    tense: Presente
+  - ru: Я никому ничего не должен.
+    pt: Não devo nada a ninguém.
+    tense: Presente
+  - ru: Это должно быть правда.
+    pt: Deve ser verdade.
+    tense: Presente
+  - ru: Он должно быть устал.
+    pt: Ele deve estar cansado.
+    tense: Presente
+  - ru: Они должно быть заблудились.
+    pt: Eles devem estar perdidos.
+    tense: Presente
+  - ru: Это должно быть сложно.
+    pt: Deve ser difícil.
+    tense: Presente
+  - ru: Она должно быть дома.
+    pt: Ela deve estar em casa.
+    tense: Presente
+  - ru: Мы должны сделать это вместе.
+    pt: Devemos fazer isto juntos.
+    tense: Presente
+  - ru: Ты должен слушать внимательно.
+    pt: Deves ouvir com atenção.
+    tense: Presente
+  - ru: Они должны принять решение.
+    pt: Eles devem tomar uma decisão.
+    tense: Presente
+  - ru: Я должен признать ошибку.
+    pt: Devo admitir o erro.
+    tense: Presente
+  - ru: Она должна сказать правду.
+    pt: Ela deve dizer a verdade.
+    tense: Presente
+  - ru: Ты не должен делать это.
+    pt: Não deves fazer isso.
+    tense: Presente
+  - ru: Мы не должны опаздывать.
+    pt: Não devemos chegar atrasados.
+    tense: Presente
+  - ru: Они не должны знать.
+    pt: Eles não devem saber.
+    tense: Presente
+  - ru: Я не должен забывать.
+    pt: Não devo esquecer.
+    tense: Presente
+  - ru: Она не должна беспокоиться.
+    pt: Ela não deve preocupar-se.
+    tense: Presente
+  - ru: Я задолжал ему услугу.
+    pt: Devi-lhe um favor.
+    tense: Perfeito
+  - ru: Ты задолжал объяснение.
+    pt: Deveste uma explicação.
+    tense: Perfeito
+  - ru: Он задолжал мне ответ.
+    pt: Ele deveu-me uma resposta.
+    tense: Perfeito
+  - ru: Мы задолжали им помощь.
+    pt: Devemos-lhes ajuda.
+    tense: Perfeito
+  - ru: Они задолжали много денег.
+    pt: Eles deveram muito dinheiro.
+    tense: Perfeito
+  - ru: Тебе следует идти сейчас.
+    pt: Deves ir agora.
+    tense: Presente
+  - ru: Нам следует поговорить.
+    pt: Devemos conversar.
+    tense: Presente
+  - ru: Ей следует подумать.
+    pt: Ela deve pensar.
+    tense: Presente
+  - ru: Им следует быть здесь.
+    pt: Eles devem estar aqui.
+    tense: Presente
+  - ru: Мне следует позвонить.
+    pt: Devo telefonar.
+    tense: Presente
+  - ru: Ты должен мне пиво.
+    pt: Deves-me uma cerveja.
+    tense: Presente
+  - ru: Она должна объяснение.
+    pt: Ela deve uma explicação.
+    tense: Presente
+  - ru: Мы должны благодарность.
+    pt: Devemos gratidão.
+    tense: Presente
+  - ru: Я должен ему жизнь.
+    pt: Devo-lhe a vida.
+    tense: Presente
+  - ru: Они должны уважение.
+    pt: Eles devem respeito.
+    tense: Presente
+  - ru: Как я должен это делать?
+    pt: Como devo fazer isto?
+    tense: Presente
+  - ru: Что я должен сказать?
+    pt: O que devo dizer?
+    tense: Presente
+  - ru: Когда мы должны прийти?
+    pt: Quando devemos chegar?
+    tense: Presente
+  - ru: Почему я должен согласиться?
+    pt: Porque devo concordar?
+    tense: Presente
+  - ru: Куда мы должны идти?
+    pt: Para onde devemos ir?
+    tense: Presente

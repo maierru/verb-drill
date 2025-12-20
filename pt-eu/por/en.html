@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verb PÔR — 100 Phrases</title>
+    <title>Verb 🇵🇹 VERB PÔR — 100 Phrases</title>
     <link rel="stylesheet" href="../../assets/css/verb.css">
-    
 </head>
 <body>
     <div class="container">
         <header>
             <a href="../" class="back-link">← Back to verb list</a>
             <h1>🇵🇹 Verb PÔR</h1>
-            <p class="subtitle">100 popular phrases — European Portuguese</p>
+            <p class="subtitle">to be (permanent) — 100 phrases</p>
         </header>
 
         <div class="controls">
@@ -30,137 +29,118 @@
         </div>
 
         <footer>
-            European Portuguese Practice — Verb PÔR
+            European Portuguese Practice — POR
         </footer>
     </div>
 
     <script>
-    const VERB_CONFIG = {
-        originKey: 'en',
-        labels: { target: 'European Portuguese', showing: 'Showing', of: 'of', phrases: 'phrases' },
-        verbForms: ['ponho', 'pões', 'põe', 'pomos', 'põem', 'punha', 'punhas', 'púnhamos', 'punham', 'pus', 'puseste', 'pôs', 'pusemos', 'puseram', 'porei', 'porás', 'porá', 'poremos', 'porão', 'poria', 'porias', 'poríamos', 'poriam', 'ponha', 'ponhas', 'ponhamos', 'ponham', 'pusesse', 'pusesses', 'puséssemos', 'pusessem', 'puser', 'puseres', 'pusermos', 'puserem', 'pôr', 'pondo', 'posto'],
-        phrases: [
-            // Presente do Indicativo (Present)
-            { en: "I put it here.", pt: "Ponho aqui.", tense: "Presente" },
-            { en: "Where do you put it?", pt: "Onde pões?", tense: "Presente" },
-            { en: "He puts on his glasses.", pt: "Ele põe os óculos.", tense: "Presente" },
-            { en: "She puts the books on the table.", pt: "Ela põe os livros na mesa.", tense: "Presente" },
-            { en: "We put everything in order.", pt: "Pomos tudo em ordem.", tense: "Presente" },
-            { en: "They put pressure.", pt: "Eles põem pressão.", tense: "Presente" },
-            { en: "I don't put sugar.", pt: "Não ponho açúcar.", tense: "Presente" },
-            { en: "Do you put milk in coffee?", pt: "Pões leite no café?", tense: "Presente" },
-            { en: "He puts on music.", pt: "Ele põe música.", tense: "Presente" },
-            { en: "She puts on makeup.", pt: "Ela põe maquilhagem.", tense: "Presente" },
-
-            // More present tense
-            { en: "I put my trust in you.", pt: "Ponho a minha confiança em ti.", tense: "Presente" },
-            { en: "Where do you put your keys?", pt: "Onde pões as chaves?", tense: "Presente" },
-            { en: "He puts himself in danger.", pt: "Ele põe-se em perigo.", tense: "Presente" },
-            { en: "She puts effort into it.", pt: "Ela põe esforço.", tense: "Presente" },
-            { en: "We put the children to bed.", pt: "Pomos as crianças na cama.", tense: "Presente" },
-            { en: "They put their names.", pt: "Eles põem os nomes.", tense: "Presente" },
-            { en: "I put on my jacket.", pt: "Ponho o casaco.", tense: "Presente" },
-            { en: "The sun sets at seven.", pt: "O sol põe-se às sete.", tense: "Presente" },
-            { en: "He puts doubts.", pt: "Ele põe dúvidas.", tense: "Presente" },
-            { en: "She puts conditions.", pt: "Ela põe condições.", tense: "Presente" },
-
-            // Pretérito Imperfeito (Imperfect Past)
-            { en: "I used to put it there.", pt: "Punha ali.", tense: "Imperfeito" },
-            { en: "You used to put sugar.", pt: "Punhas açúcar.", tense: "Imperfeito" },
-            { en: "He used to put on music.", pt: "Ele punha música.", tense: "Imperfeito" },
-            { en: "She used to put flowers.", pt: "Ela punha flores.", tense: "Imperfeito" },
-            { en: "We used to put everything away.", pt: "Púnhamos tudo guardado.", tense: "Imperfeito" },
-            { en: "They used to put pressure.", pt: "Eles punham pressão.", tense: "Imperfeito" },
-            { en: "I didn't put salt.", pt: "Não punha sal.", tense: "Imperfeito" },
-            { en: "Where did you put it?", pt: "Onde punhas?", tense: "Imperfeito" },
-            { en: "He used to put effort.", pt: "Ele punha esforço.", tense: "Imperfeito" },
-            { en: "She used to put her heart into it.", pt: "Ela punha o coração.", tense: "Imperfeito" },
-
-            // Pretérito Perfeito Simples (Simple Past)
-            { en: "I put it on the table.", pt: "Pus na mesa.", tense: "Perfeito" },
-            { en: "You put it away.", pt: "Puseste guardado.", tense: "Perfeito" },
-            { en: "He put on a tie.", pt: "Ele pôs gravata.", tense: "Perfeito" },
-            { en: "She put the phone down.", pt: "Ela pôs o telefone.", tense: "Perfeito" },
-            { en: "We put everything in place.", pt: "Pusemos tudo no lugar.", tense: "Perfeito" },
-            { en: "They put their signatures.", pt: "Eles puseram as assinaturas.", tense: "Perfeito" },
-            { en: "I didn't put anything.", pt: "Não pus nada.", tense: "Perfeito" },
-            { en: "Where did you put my keys?", pt: "Onde puseste as minhas chaves?", tense: "Perfeito" },
-            { en: "The sun set early.", pt: "O sol pôs-se cedo.", tense: "Perfeito" },
-            { en: "She put on a dress.", pt: "Ela pôs um vestido.", tense: "Perfeito" },
-
-            // Futuro do Indicativo (Future)
-            { en: "I will put it here.", pt: "Porei aqui.", tense: "Futuro" },
-            { en: "You will put it away.", pt: "Porás guardado.", tense: "Futuro" },
-            { en: "He will put on a suit.", pt: "Ele porá um fato.", tense: "Futuro" },
-            { en: "We will put everything in order.", pt: "Poremos tudo em ordem.", tense: "Futuro" },
-            { en: "They will put the signs.", pt: "Eles porão os sinais.", tense: "Futuro" },
-            { en: "I won't put pressure.", pt: "Não porei pressão.", tense: "Futuro" },
-            { en: "Will you put it there?", pt: "Porás ali?", tense: "Futuro" },
-            { en: "She will put flowers.", pt: "Ela porá flores.", tense: "Futuro" },
-            { en: "The sun will set later.", pt: "O sol pôr-se-á mais tarde.", tense: "Futuro" },
-            { en: "I will put my best effort.", pt: "Porei o meu melhor esforço.", tense: "Futuro" },
-
-            // Condicional (Conditional)
-            { en: "I would put it there.", pt: "Poria ali.", tense: "Condicional" },
-            { en: "You would put more.", pt: "Porias mais.", tense: "Condicional" },
-            { en: "He would put on music.", pt: "Ele poria música.", tense: "Condicional" },
-            { en: "We would put it in order.", pt: "Poríamos em ordem.", tense: "Condicional" },
-            { en: "They would put conditions.", pt: "Eles poriam condições.", tense: "Condicional" },
-            { en: "I wouldn't put salt.", pt: "Não poria sal.", tense: "Condicional" },
-            { en: "Would you put sugar?", pt: "Porias açúcar?", tense: "Condicional" },
-            { en: "She would put flowers.", pt: "Ela poria flores.", tense: "Condicional" },
-            { en: "I would put more effort.", pt: "Poria mais esforço.", tense: "Condicional" },
-            { en: "He would put himself at risk.", pt: "Ele pôr-se-ia em risco.", tense: "Condicional" },
-
-            // Presente do Conjuntivo (Present Subjunctive)
-            { en: "I hope you put it here.", pt: "Espero que ponhas aqui.", tense: "Conjuntivo" },
-            { en: "It's important that he puts.", pt: "É importante que ele ponha.", tense: "Conjuntivo" },
-            { en: "I doubt she puts.", pt: "Duvido que ela ponha.", tense: "Conjuntivo" },
-            { en: "Even if you put...", pt: "Mesmo que ponhas...", tense: "Conjuntivo" },
-            { en: "Whoever puts...", pt: "Quem ponha...", tense: "Conjuntivo" },
-            { en: "It's necessary that we put.", pt: "É preciso que ponhamos.", tense: "Conjuntivo" },
-            { en: "I don't think he puts.", pt: "Não acho que ele ponha.", tense: "Conjuntivo" },
-            { en: "Unless you put...", pt: "A menos que ponhas...", tense: "Conjuntivo" },
-            { en: "So that they put...", pt: "Para que ponham...", tense: "Conjuntivo" },
-            { en: "Whatever you put...", pt: "O que quer que ponhas...", tense: "Conjuntivo" },
-
-            // Imperfeito do Conjuntivo (Imperfect Subjunctive)
-            { en: "If I put...", pt: "Se eu pusesse...", tense: "Imperfeito Conj." },
-            { en: "I wish you put.", pt: "Quem me dera que pusesses.", tense: "Imperfeito Conj." },
-            { en: "If he put more effort...", pt: "Se ele pusesse mais esforço...", tense: "Imperfeito Conj." },
-            { en: "If we put it in order...", pt: "Se puséssemos em ordem...", tense: "Imperfeito Conj." },
-            { en: "If they put conditions...", pt: "Se eles pusessem condições...", tense: "Imperfeito Conj." },
-            { en: "I would accept if you put.", pt: "Aceitaria se pusesses.", tense: "Imperfeito Conj." },
-            { en: "Even if I put...", pt: "Mesmo que pusesse...", tense: "Imperfeito Conj." },
-            { en: "If she put flowers...", pt: "Se ela pusesse flores...", tense: "Imperfeito Conj." },
-            { en: "As if he put...", pt: "Como se pusesse...", tense: "Imperfeito Conj." },
-            { en: "If only I put more effort.", pt: "Se ao menos pusesse mais esforço.", tense: "Imperfeito Conj." },
-
-            // Futuro do Conjuntivo (Future Subjunctive)
-            { en: "When I put...", pt: "Quando puser...", tense: "Futuro Conj." },
-            { en: "If you put...", pt: "Se puseres...", tense: "Futuro Conj." },
-            { en: "When he puts...", pt: "Quando ele puser...", tense: "Futuro Conj." },
-            { en: "If we put...", pt: "Se pusermos...", tense: "Futuro Conj." },
-            { en: "When they put...", pt: "Quando eles puserem...", tense: "Futuro Conj." },
-            { en: "As soon as I put...", pt: "Assim que puser...", tense: "Futuro Conj." },
-            { en: "Whoever puts...", pt: "Quem puser...", tense: "Futuro Conj." },
-            { en: "If you ever put...", pt: "Se alguma vez puseres...", tense: "Futuro Conj." },
-            { en: "When we put everything...", pt: "Quando pusermos tudo...", tense: "Futuro Conj." },
-            { en: "Tell me if you put.", pt: "Diz-me se puseres.", tense: "Futuro Conj." },
-
-            // Common expressions with pôr
-            { en: "To set the table.", pt: "Pôr a mesa.", tense: "Expressão" },
-            { en: "To lay eggs.", pt: "Pôr ovos.", tense: "Expressão" },
-            { en: "To sunset.", pt: "Pôr-do-sol.", tense: "Expressão" },
-            { en: "To put in doubt.", pt: "Pôr em causa.", tense: "Expressão" },
-            { en: "To put in order.", pt: "Pôr em ordem.", tense: "Expressão" },
-            { en: "To put oneself.", pt: "Pôr-se.", tense: "Expressão" },
-            { en: "To start to.", pt: "Pôr-se a.", tense: "Expressão" },
-            { en: "To put an end.", pt: "Pôr fim.", tense: "Expressão" },
-            { en: "To put on weight.", pt: "Pôr peso.", tense: "Expressão" },
-            { en: "To bet.", pt: "Pôr a aposta.", tense: "Expressão" }
-        ]
-    };
+        const VERB_CONFIG = {
+            originKey: 'en',
+            labels: { target: 'European Portuguese', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["ponho","pões","põe","pomos","põem","punha","punhas","púnhamos","punham","pus","puseste","pôs","pusemos","puseram","porei","porás","porá","poremos","porão","poria","porias","poríamos","poriam","ponha","ponhas","ponhamos","ponham","pusesse","pusesses","puséssemos","pusessem","puser","puseres","pusermos","puserem","pôr","pondo","posto"],
+            phrases: [
+                { en: "I put it here.", pt: "Ponho aqui.", tense: "Presente" },
+                { en: "Where do you put it?", pt: "Onde pões?", tense: "Presente" },
+                { en: "He puts on his glasses.", pt: "Ele põe os óculos.", tense: "Presente" },
+                { en: "She puts the books on the table.", pt: "Ela põe os livros na mesa.", tense: "Presente" },
+                { en: "We put everything in order.", pt: "Pomos tudo em ordem.", tense: "Presente" },
+                { en: "They put pressure.", pt: "Eles põem pressão.", tense: "Presente" },
+                { en: "I don't put sugar.", pt: "Não ponho açúcar.", tense: "Presente" },
+                { en: "Do you put milk in coffee?", pt: "Pões leite no café?", tense: "Presente" },
+                { en: "He puts on music.", pt: "Ele põe música.", tense: "Presente" },
+                { en: "She puts on makeup.", pt: "Ela põe maquilhagem.", tense: "Presente" },
+                { en: "I put my trust in you.", pt: "Ponho a minha confiança em ti.", tense: "Presente" },
+                { en: "Where do you put your keys?", pt: "Onde pões as chaves?", tense: "Presente" },
+                { en: "He puts himself in danger.", pt: "Ele põe-se em perigo.", tense: "Presente" },
+                { en: "She puts effort into it.", pt: "Ela põe esforço.", tense: "Presente" },
+                { en: "We put the children to bed.", pt: "Pomos as crianças na cama.", tense: "Presente" },
+                { en: "They put their names.", pt: "Eles põem os nomes.", tense: "Presente" },
+                { en: "I put on my jacket.", pt: "Ponho o casaco.", tense: "Presente" },
+                { en: "The sun sets at seven.", pt: "O sol põe-se às sete.", tense: "Presente" },
+                { en: "He puts doubts.", pt: "Ele põe dúvidas.", tense: "Presente" },
+                { en: "She puts conditions.", pt: "Ela põe condições.", tense: "Presente" },
+                { en: "I used to put it there.", pt: "Punha ali.", tense: "Imperfeito" },
+                { en: "You used to put sugar.", pt: "Punhas açúcar.", tense: "Imperfeito" },
+                { en: "He used to put on music.", pt: "Ele punha música.", tense: "Imperfeito" },
+                { en: "She used to put flowers.", pt: "Ela punha flores.", tense: "Imperfeito" },
+                { en: "We used to put everything away.", pt: "Púnhamos tudo guardado.", tense: "Imperfeito" },
+                { en: "They used to put pressure.", pt: "Eles punham pressão.", tense: "Imperfeito" },
+                { en: "I didn't put salt.", pt: "Não punha sal.", tense: "Imperfeito" },
+                { en: "Where did you put it?", pt: "Onde punhas?", tense: "Imperfeito" },
+                { en: "He used to put effort.", pt: "Ele punha esforço.", tense: "Imperfeito" },
+                { en: "She used to put her heart into it.", pt: "Ela punha o coração.", tense: "Imperfeito" },
+                { en: "I put it on the table.", pt: "Pus na mesa.", tense: "Perfeito" },
+                { en: "You put it away.", pt: "Puseste guardado.", tense: "Perfeito" },
+                { en: "He put on a tie.", pt: "Ele pôs gravata.", tense: "Perfeito" },
+                { en: "She put the phone down.", pt: "Ela pôs o telefone.", tense: "Perfeito" },
+                { en: "We put everything in place.", pt: "Pusemos tudo no lugar.", tense: "Perfeito" },
+                { en: "They put their signatures.", pt: "Eles puseram as assinaturas.", tense: "Perfeito" },
+                { en: "I didn't put anything.", pt: "Não pus nada.", tense: "Perfeito" },
+                { en: "Where did you put my keys?", pt: "Onde puseste as minhas chaves?", tense: "Perfeito" },
+                { en: "The sun set early.", pt: "O sol pôs-se cedo.", tense: "Perfeito" },
+                { en: "She put on a dress.", pt: "Ela pôs um vestido.", tense: "Perfeito" },
+                { en: "I will put it here.", pt: "Porei aqui.", tense: "Futuro" },
+                { en: "You will put it away.", pt: "Porás guardado.", tense: "Futuro" },
+                { en: "He will put on a suit.", pt: "Ele porá um fato.", tense: "Futuro" },
+                { en: "We will put everything in order.", pt: "Poremos tudo em ordem.", tense: "Futuro" },
+                { en: "They will put the signs.", pt: "Eles porão os sinais.", tense: "Futuro" },
+                { en: "I won't put pressure.", pt: "Não porei pressão.", tense: "Futuro" },
+                { en: "Will you put it there?", pt: "Porás ali?", tense: "Futuro" },
+                { en: "She will put flowers.", pt: "Ela porá flores.", tense: "Futuro" },
+                { en: "The sun will set later.", pt: "O sol pôr-se-á mais tarde.", tense: "Futuro" },
+                { en: "I will put my best effort.", pt: "Porei o meu melhor esforço.", tense: "Futuro" },
+                { en: "I would put it there.", pt: "Poria ali.", tense: "Condicional" },
+                { en: "You would put more.", pt: "Porias mais.", tense: "Condicional" },
+                { en: "He would put on music.", pt: "Ele poria música.", tense: "Condicional" },
+                { en: "We would put it in order.", pt: "Poríamos em ordem.", tense: "Condicional" },
+                { en: "They would put conditions.", pt: "Eles poriam condições.", tense: "Condicional" },
+                { en: "I wouldn't put salt.", pt: "Não poria sal.", tense: "Condicional" },
+                { en: "Would you put sugar?", pt: "Porias açúcar?", tense: "Condicional" },
+                { en: "She would put flowers.", pt: "Ela poria flores.", tense: "Condicional" },
+                { en: "I would put more effort.", pt: "Poria mais esforço.", tense: "Condicional" },
+                { en: "He would put himself at risk.", pt: "Ele pôr-se-ia em risco.", tense: "Condicional" },
+                { en: "I hope you put it here.", pt: "Espero que ponhas aqui.", tense: "Conjuntivo" },
+                { en: "It's important that he puts.", pt: "É importante que ele ponha.", tense: "Conjuntivo" },
+                { en: "I doubt she puts.", pt: "Duvido que ela ponha.", tense: "Conjuntivo" },
+                { en: "Even if you put...", pt: "Mesmo que ponhas...", tense: "Conjuntivo" },
+                { en: "Whoever puts...", pt: "Quem ponha...", tense: "Conjuntivo" },
+                { en: "It's necessary that we put.", pt: "É preciso que ponhamos.", tense: "Conjuntivo" },
+                { en: "I don't think he puts.", pt: "Não acho que ele ponha.", tense: "Conjuntivo" },
+                { en: "Unless you put...", pt: "A menos que ponhas...", tense: "Conjuntivo" },
+                { en: "So that they put...", pt: "Para que ponham...", tense: "Conjuntivo" },
+                { en: "Whatever you put...", pt: "O que quer que ponhas...", tense: "Conjuntivo" },
+                { en: "If I put...", pt: "Se eu pusesse...", tense: "Imperfeito Conj." },
+                { en: "I wish you put.", pt: "Quem me dera que pusesses.", tense: "Imperfeito Conj." },
+                { en: "If he put more effort...", pt: "Se ele pusesse mais esforço...", tense: "Imperfeito Conj." },
+                { en: "If we put it in order...", pt: "Se puséssemos em ordem...", tense: "Imperfeito Conj." },
+                { en: "If they put conditions...", pt: "Se eles pusessem condições...", tense: "Imperfeito Conj." },
+                { en: "I would accept if you put.", pt: "Aceitaria se pusesses.", tense: "Imperfeito Conj." },
+                { en: "Even if I put...", pt: "Mesmo que pusesse...", tense: "Imperfeito Conj." },
+                { en: "If she put flowers...", pt: "Se ela pusesse flores...", tense: "Imperfeito Conj." },
+                { en: "As if he put...", pt: "Como se pusesse...", tense: "Imperfeito Conj." },
+                { en: "If only I put more effort.", pt: "Se ao menos pusesse mais esforço.", tense: "Imperfeito Conj." },
+                { en: "When I put...", pt: "Quando puser...", tense: "Futuro Conj." },
+                { en: "If you put...", pt: "Se puseres...", tense: "Futuro Conj." },
+                { en: "When he puts...", pt: "Quando ele puser...", tense: "Futuro Conj." },
+                { en: "If we put...", pt: "Se pusermos...", tense: "Futuro Conj." },
+                { en: "When they put...", pt: "Quando eles puserem...", tense: "Futuro Conj." },
+                { en: "As soon as I put...", pt: "Assim que puser...", tense: "Futuro Conj." },
+                { en: "Whoever puts...", pt: "Quem puser...", tense: "Futuro Conj." },
+                { en: "If you ever put...", pt: "Se alguma vez puseres...", tense: "Futuro Conj." },
+                { en: "When we put everything...", pt: "Quando pusermos tudo...", tense: "Futuro Conj." },
+                { en: "Tell me if you put.", pt: "Diz-me se puseres.", tense: "Futuro Conj." },
+                { en: "To set the table.", pt: "Pôr a mesa.", tense: "Expressão" },
+                { en: "To lay eggs.", pt: "Pôr ovos.", tense: "Expressão" },
+                { en: "To sunset.", pt: "Pôr-do-sol.", tense: "Expressão" },
+                { en: "To put in doubt.", pt: "Pôr em causa.", tense: "Expressão" },
+                { en: "To put in order.", pt: "Pôr em ordem.", tense: "Expressão" },
+                { en: "To put oneself.", pt: "Pôr-se.", tense: "Expressão" },
+                { en: "To start to.", pt: "Pôr-se a.", tense: "Expressão" },
+                { en: "To put an end.", pt: "Pôr fim.", tense: "Expressão" },
+                { en: "To put on weight.", pt: "Pôr peso.", tense: "Expressão" },
+                { en: "To bet.", pt: "Pôr a aposta.", tense: "Expressão" },
+            ]
+        };
     </script>
     <script src="../../assets/js/verb.js"></script>
 </body>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../" class="back-link"><%= labels[:back] %></a>
+            <h1><%= h1 %></h1>
+            <p class="subtitle"><%= subtitle %></p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="<%= labels[:search] %>" id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()"><%= labels[:show_all] %></button>
+            <button class="btn btn-secondary" onclick="hideAll()"><%= labels[:hide_all] %></button>
+        </div>
+
+        <div class="stats" id="stats"><%= labels[:showing] %>: <%= phrases.length %> <%= labels[:of] %> <%= phrases.length %> <%= labels[:phrases] %></div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            <%= footer %>
+        </footer>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: '<%= origin_key %>',
+            labels: { target: '<%= labels[:target] %>', showing: '<%= labels[:showing] %>', of: '<%= labels[:of] %>', phrases: '<%= labels[:phrases] %>' },
+            verbForms: <%= verb_forms.to_json %>,
+            phrases: [
+<% phrases.each do |p| -%>
+                { <%= origin_key %>: <%= p[origin_key].to_json %>, pt: <%= p['pt'].to_json %>, tense: <%= p['tense'].to_json %> },
+<% end -%>
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

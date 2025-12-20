@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verb HAVER — 100 Phrases</title>
+    <title>Verb 🇵🇹 VERB HAVER — 100 Phrases</title>
     <link rel="stylesheet" href="../../assets/css/verb.css">
-    
 </head>
 <body>
     <div class="container">
         <header>
             <a href="../" class="back-link">← Back to verb list</a>
             <h1>🇵🇹 Verb HAVER</h1>
-            <p class="subtitle">100 popular phrases — European Portuguese</p>
+            <p class="subtitle">there is/are, to exist — 110 phrases</p>
         </header>
 
         <div class="controls">
@@ -24,155 +23,134 @@
             <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
         </div>
 
-        <div class="stats" id="stats">Showing: 100 of 100 phrases</div>
+        <div class="stats" id="stats">Showing: 110 of 110 phrases</div>
 
         <div class="phrase-list" id="phraseList">
         </div>
 
         <footer>
-            European Portuguese Practice — Verb HAVER
+            European Portuguese Practice — HAVER
         </footer>
     </div>
 
     <script>
-    const VERB_CONFIG = {
-        originKey: 'en',
-        labels: { target: 'European Portuguese', showing: 'Showing', of: 'of', phrases: 'phrases' },
-        verbForms: ['hei', 'hás', 'há', 'havemos', 'hão', 'havia', 'havias', 'havíamos', 'haviam', 'houve', 'houveste', 'houvemos', 'houveram', 'haverei', 'haverás', 'haverá', 'haveremos', 'haverão', 'haveria', 'haverias', 'haveríamos', 'haveriam', 'haja', 'hajas', 'hajamos', 'hajam', 'houvesse', 'houvesses', 'houvéssemos', 'houvessem', 'houver', 'houveres', 'houvermos', 'houverem', 'haver', 'havendo', 'havido'],
-        phrases: [
-            // Presente - Impersonal "há" (there is/are)
-            { en: "There is a problem.", pt: "Há um problema.", tense: "Presente" },
-            { en: "There are many people.", pt: "Há muitas pessoas.", tense: "Presente" },
-            { en: "Is there water?", pt: "Há água?", tense: "Presente" },
-            { en: "There is no time.", pt: "Não há tempo.", tense: "Presente" },
-            { en: "There are two options.", pt: "Há duas opções.", tense: "Presente" },
-            { en: "Is there anyone here?", pt: "Há alguém aqui?", tense: "Presente" },
-            { en: "There is nothing to do.", pt: "Não há nada para fazer.", tense: "Presente" },
-            { en: "There are things to discuss.", pt: "Há coisas para discutir.", tense: "Presente" },
-            { en: "There is hope.", pt: "Há esperança.", tense: "Presente" },
-            { en: "There are no secrets.", pt: "Não há segredos.", tense: "Presente" },
-
-            // More presente
-            { en: "There is a lot of work.", pt: "Há muito trabalho.", tense: "Presente" },
-            { en: "There are several reasons.", pt: "Há várias razões.", tense: "Presente" },
-            { en: "Is there a problem?", pt: "Há algum problema?", tense: "Presente" },
-            { en: "There is no doubt.", pt: "Não há dúvida.", tense: "Presente" },
-            { en: "There are days like this.", pt: "Há dias assim.", tense: "Presente" },
-            { en: "There is still time.", pt: "Ainda há tempo.", tense: "Presente" },
-            { en: "There is something strange.", pt: "Há algo estranho.", tense: "Presente" },
-            { en: "There are no words.", pt: "Não há palavras.", tense: "Presente" },
-            { en: "Is there any news?", pt: "Há novidades?", tense: "Presente" },
-            { en: "There is a way.", pt: "Há uma maneira.", tense: "Presente" },
-
-            // Há + time (ago)
-            { en: "Two years ago.", pt: "Há dois anos.", tense: "Tempo" },
-            { en: "A long time ago.", pt: "Há muito tempo.", tense: "Tempo" },
-            { en: "A week ago.", pt: "Há uma semana.", tense: "Tempo" },
-            { en: "Three days ago.", pt: "Há três dias.", tense: "Tempo" },
-            { en: "An hour ago.", pt: "Há uma hora.", tense: "Tempo" },
-            { en: "A few minutes ago.", pt: "Há alguns minutos.", tense: "Tempo" },
-            { en: "How long ago?", pt: "Há quanto tempo?", tense: "Tempo" },
-            { en: "Not long ago.", pt: "Há pouco tempo.", tense: "Tempo" },
-            { en: "Many years ago.", pt: "Há muitos anos.", tense: "Tempo" },
-            { en: "A month ago.", pt: "Há um mês.", tense: "Tempo" },
-
-            // Pretérito Imperfeito (Imperfect Past)
-            { en: "There was a house here.", pt: "Havia uma casa aqui.", tense: "Imperfeito" },
-            { en: "There were many trees.", pt: "Havia muitas árvores.", tense: "Imperfeito" },
-            { en: "There was no internet.", pt: "Não havia internet.", tense: "Imperfeito" },
-            { en: "There were problems.", pt: "Havia problemas.", tense: "Imperfeito" },
-            { en: "There was always hope.", pt: "Havia sempre esperança.", tense: "Imperfeito" },
-            { en: "There were few options.", pt: "Havia poucas opções.", tense: "Imperfeito" },
-            { en: "There was a time when...", pt: "Havia um tempo em que...", tense: "Imperfeito" },
-            { en: "There were no cars.", pt: "Não havia carros.", tense: "Imperfeito" },
-            { en: "There was something wrong.", pt: "Havia algo errado.", tense: "Imperfeito" },
-            { en: "There were more people.", pt: "Havia mais pessoas.", tense: "Imperfeito" },
-
-            // Pretérito Perfeito (Simple Past)
-            { en: "There was an accident.", pt: "Houve um acidente.", tense: "Perfeito" },
-            { en: "There were changes.", pt: "Houve mudanças.", tense: "Perfeito" },
-            { en: "There was a party.", pt: "Houve uma festa.", tense: "Perfeito" },
-            { en: "There was a problem.", pt: "Houve um problema.", tense: "Perfeito" },
-            { en: "There were complaints.", pt: "Houve queixas.", tense: "Perfeito" },
-            { en: "There was a meeting.", pt: "Houve uma reunião.", tense: "Perfeito" },
-            { en: "There was a mistake.", pt: "Houve um engano.", tense: "Perfeito" },
-            { en: "There were consequences.", pt: "Houve consequências.", tense: "Perfeito" },
-            { en: "What happened?", pt: "O que houve?", tense: "Perfeito" },
-            { en: "There was a delay.", pt: "Houve um atraso.", tense: "Perfeito" },
-
-            // Futuro do Indicativo (Future)
-            { en: "There will be a party.", pt: "Haverá uma festa.", tense: "Futuro" },
-            { en: "There will be changes.", pt: "Haverá mudanças.", tense: "Futuro" },
-            { en: "There will be no problems.", pt: "Não haverá problemas.", tense: "Futuro" },
-            { en: "There will be time.", pt: "Haverá tempo.", tense: "Futuro" },
-            { en: "There will be consequences.", pt: "Haverá consequências.", tense: "Futuro" },
-            { en: "Will there be food?", pt: "Haverá comida?", tense: "Futuro" },
-            { en: "There will be a solution.", pt: "Haverá uma solução.", tense: "Futuro" },
-            { en: "There will be more opportunities.", pt: "Haverá mais oportunidades.", tense: "Futuro" },
-            { en: "There will always be hope.", pt: "Haverá sempre esperança.", tense: "Futuro" },
-            { en: "There will be news.", pt: "Haverá notícias.", tense: "Futuro" },
-
-            // Condicional (Conditional)
-            { en: "There would be a problem.", pt: "Haveria um problema.", tense: "Condicional" },
-            { en: "There would be no need.", pt: "Não haveria necessidade.", tense: "Condicional" },
-            { en: "There would be consequences.", pt: "Haveria consequências.", tense: "Condicional" },
-            { en: "There would be time.", pt: "Haveria tempo.", tense: "Condicional" },
-            { en: "Would there be a chance?", pt: "Haveria uma hipótese?", tense: "Condicional" },
-            { en: "There would be a solution.", pt: "Haveria uma solução.", tense: "Condicional" },
-            { en: "There would be no problems.", pt: "Não haveria problemas.", tense: "Condicional" },
-            { en: "There would be more options.", pt: "Haveria mais opções.", tense: "Condicional" },
-            { en: "There would be a way.", pt: "Haveria uma maneira.", tense: "Condicional" },
-            { en: "There would be hope.", pt: "Haveria esperança.", tense: "Condicional" },
-
-            // Presente do Conjuntivo (Present Subjunctive)
-            { en: "I hope there is time.", pt: "Espero que haja tempo.", tense: "Conjuntivo" },
-            { en: "Even if there is a problem...", pt: "Mesmo que haja um problema...", tense: "Conjuntivo" },
-            { en: "Unless there is a reason...", pt: "A menos que haja uma razão...", tense: "Conjuntivo" },
-            { en: "I doubt there is a solution.", pt: "Duvido que haja solução.", tense: "Conjuntivo" },
-            { en: "It's important that there is trust.", pt: "É importante que haja confiança.", tense: "Conjuntivo" },
-            { en: "So that there is peace.", pt: "Para que haja paz.", tense: "Conjuntivo" },
-            { en: "Whatever there is...", pt: "O que quer que haja...", tense: "Conjuntivo" },
-            { en: "I don't think there is time.", pt: "Não acho que haja tempo.", tense: "Conjuntivo" },
-            { en: "It's necessary that there is change.", pt: "É preciso que haja mudança.", tense: "Conjuntivo" },
-            { en: "Although there is hope...", pt: "Embora haja esperança...", tense: "Conjuntivo" },
-
-            // Imperfeito do Conjuntivo (Imperfect Subjunctive)
-            { en: "If there were time...", pt: "Se houvesse tempo...", tense: "Imperfeito Conj." },
-            { en: "I wish there were more.", pt: "Quem me dera que houvesse mais.", tense: "Imperfeito Conj." },
-            { en: "If there were a solution...", pt: "Se houvesse uma solução...", tense: "Imperfeito Conj." },
-            { en: "Even if there were problems...", pt: "Mesmo que houvesse problemas...", tense: "Imperfeito Conj." },
-            { en: "If only there were a way...", pt: "Se ao menos houvesse uma maneira...", tense: "Imperfeito Conj." },
-            { en: "As if there were no tomorrow.", pt: "Como se não houvesse amanhã.", tense: "Imperfeito Conj." },
-            { en: "If there were no obstacles...", pt: "Se não houvesse obstáculos...", tense: "Imperfeito Conj." },
-            { en: "I would help if there were need.", pt: "Ajudaria se houvesse necessidade.", tense: "Imperfeito Conj." },
-            { en: "If there were more options...", pt: "Se houvesse mais opções...", tense: "Imperfeito Conj." },
-            { en: "If there were justice...", pt: "Se houvesse justiça...", tense: "Imperfeito Conj." },
-
-            // Futuro do Conjuntivo (Future Subjunctive)
-            { en: "If there is a problem...", pt: "Se houver um problema...", tense: "Futuro Conj." },
-            { en: "When there is time...", pt: "Quando houver tempo...", tense: "Futuro Conj." },
-            { en: "If there is a need...", pt: "Se houver necessidade...", tense: "Futuro Conj." },
-            { en: "Whenever there is an opportunity...", pt: "Sempre que houver oportunidade...", tense: "Futuro Conj." },
-            { en: "If there are changes...", pt: "Se houver mudanças...", tense: "Futuro Conj." },
-            { en: "When there is a solution...", pt: "Quando houver solução...", tense: "Futuro Conj." },
-            { en: "If there is any doubt...", pt: "Se houver alguma dúvida...", tense: "Futuro Conj." },
-            { en: "Call me if there is news.", pt: "Liga-me se houver novidades.", tense: "Futuro Conj." },
-            { en: "If there is no other way...", pt: "Se não houver outra maneira...", tense: "Futuro Conj." },
-            { en: "When there is peace...", pt: "Quando houver paz...", tense: "Futuro Conj." },
-
-            // Common expressions
-            { en: "What's the matter?", pt: "O que é que há?", tense: "Expressão" },
-            { en: "What's going on?", pt: "O que há?", tense: "Expressão" },
-            { en: "There you go!", pt: "Olha lá!", tense: "Expressão" },
-            { en: "There's no way.", pt: "Não há maneira.", tense: "Expressão" },
-            { en: "Whatever happens.", pt: "Haja o que houver.", tense: "Expressão" },
-            { en: "Come what may.", pt: "Aconteça o que acontecer.", tense: "Expressão" },
-            { en: "What happened?", pt: "O que houve?", tense: "Expressão" },
-            { en: "There's no use.", pt: "Não há remédio.", tense: "Expressão" },
-            { en: "Is something wrong?", pt: "Há algum problema?", tense: "Expressão" },
-            { en: "That's all there is.", pt: "É o que há.", tense: "Expressão" }
-        ]
-    };
+        const VERB_CONFIG = {
+            originKey: 'en',
+            labels: { target: 'European Portuguese', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["hei","hás","há","havemos","hão","havia","havias","havíamos","haviam","houve","houveste","houvemos","houveram","haverei","haverás","haverá","haveremos","haverão","haveria","haverias","haveríamos","haveriam","haja","hajas","hajamos","hajam","houvesse","houvesses","houvéssemos","houvessem","houver","houveres","houvermos","houverem","haver","havendo","havido"],
+            phrases: [
+                { en: "There is a problem.", pt: "Há um problema.", tense: "Presente" },
+                { en: "There are many people.", pt: "Há muitas pessoas.", tense: "Presente" },
+                { en: "Is there water?", pt: "Há água?", tense: "Presente" },
+                { en: "There is no time.", pt: "Não há tempo.", tense: "Presente" },
+                { en: "There are two options.", pt: "Há duas opções.", tense: "Presente" },
+                { en: "Is there anyone here?", pt: "Há alguém aqui?", tense: "Presente" },
+                { en: "There is nothing to do.", pt: "Não há nada para fazer.", tense: "Presente" },
+                { en: "There are things to discuss.", pt: "Há coisas para discutir.", tense: "Presente" },
+                { en: "There is hope.", pt: "Há esperança.", tense: "Presente" },
+                { en: "There are no secrets.", pt: "Não há segredos.", tense: "Presente" },
+                { en: "There is a lot of work.", pt: "Há muito trabalho.", tense: "Presente" },
+                { en: "There are several reasons.", pt: "Há várias razões.", tense: "Presente" },
+                { en: "Is there a problem?", pt: "Há algum problema?", tense: "Presente" },
+                { en: "There is no doubt.", pt: "Não há dúvida.", tense: "Presente" },
+                { en: "There are days like this.", pt: "Há dias assim.", tense: "Presente" },
+                { en: "There is still time.", pt: "Ainda há tempo.", tense: "Presente" },
+                { en: "There is something strange.", pt: "Há algo estranho.", tense: "Presente" },
+                { en: "There are no words.", pt: "Não há palavras.", tense: "Presente" },
+                { en: "Is there any news?", pt: "Há novidades?", tense: "Presente" },
+                { en: "There is a way.", pt: "Há uma maneira.", tense: "Presente" },
+                { en: "Two years ago.", pt: "Há dois anos.", tense: "Tempo" },
+                { en: "A long time ago.", pt: "Há muito tempo.", tense: "Tempo" },
+                { en: "A week ago.", pt: "Há uma semana.", tense: "Tempo" },
+                { en: "Three days ago.", pt: "Há três dias.", tense: "Tempo" },
+                { en: "An hour ago.", pt: "Há uma hora.", tense: "Tempo" },
+                { en: "A few minutes ago.", pt: "Há alguns minutos.", tense: "Tempo" },
+                { en: "How long ago?", pt: "Há quanto tempo?", tense: "Tempo" },
+                { en: "Not long ago.", pt: "Há pouco tempo.", tense: "Tempo" },
+                { en: "Many years ago.", pt: "Há muitos anos.", tense: "Tempo" },
+                { en: "A month ago.", pt: "Há um mês.", tense: "Tempo" },
+                { en: "There was a house here.", pt: "Havia uma casa aqui.", tense: "Imperfeito" },
+                { en: "There were many trees.", pt: "Havia muitas árvores.", tense: "Imperfeito" },
+                { en: "There was no internet.", pt: "Não havia internet.", tense: "Imperfeito" },
+                { en: "There were problems.", pt: "Havia problemas.", tense: "Imperfeito" },
+                { en: "There was always hope.", pt: "Havia sempre esperança.", tense: "Imperfeito" },
+                { en: "There were few options.", pt: "Havia poucas opções.", tense: "Imperfeito" },
+                { en: "There was a time when...", pt: "Havia um tempo em que...", tense: "Imperfeito" },
+                { en: "There were no cars.", pt: "Não havia carros.", tense: "Imperfeito" },
+                { en: "There was something wrong.", pt: "Havia algo errado.", tense: "Imperfeito" },
+                { en: "There were more people.", pt: "Havia mais pessoas.", tense: "Imperfeito" },
+                { en: "There was an accident.", pt: "Houve um acidente.", tense: "Perfeito" },
+                { en: "There were changes.", pt: "Houve mudanças.", tense: "Perfeito" },
+                { en: "There was a party.", pt: "Houve uma festa.", tense: "Perfeito" },
+                { en: "There was a problem.", pt: "Houve um problema.", tense: "Perfeito" },
+                { en: "There were complaints.", pt: "Houve queixas.", tense: "Perfeito" },
+                { en: "There was a meeting.", pt: "Houve uma reunião.", tense: "Perfeito" },
+                { en: "There was a mistake.", pt: "Houve um engano.", tense: "Perfeito" },
+                { en: "There were consequences.", pt: "Houve consequências.", tense: "Perfeito" },
+                { en: "What happened?", pt: "O que houve?", tense: "Perfeito" },
+                { en: "There was a delay.", pt: "Houve um atraso.", tense: "Perfeito" },
+                { en: "There will be a party.", pt: "Haverá uma festa.", tense: "Futuro" },
+                { en: "There will be changes.", pt: "Haverá mudanças.", tense: "Futuro" },
+                { en: "There will be no problems.", pt: "Não haverá problemas.", tense: "Futuro" },
+                { en: "There will be time.", pt: "Haverá tempo.", tense: "Futuro" },
+                { en: "There will be consequences.", pt: "Haverá consequências.", tense: "Futuro" },
+                { en: "Will there be food?", pt: "Haverá comida?", tense: "Futuro" },
+                { en: "There will be a solution.", pt: "Haverá uma solução.", tense: "Futuro" },
+                { en: "There will be more opportunities.", pt: "Haverá mais oportunidades.", tense: "Futuro" },
+                { en: "There will always be hope.", pt: "Haverá sempre esperança.", tense: "Futuro" },
+                { en: "There will be news.", pt: "Haverá notícias.", tense: "Futuro" },
+                { en: "There would be a problem.", pt: "Haveria um problema.", tense: "Condicional" },
+                { en: "There would be no need.", pt: "Não haveria necessidade.", tense: "Condicional" },
+                { en: "There would be consequences.", pt: "Haveria consequências.", tense: "Condicional" },
+                { en: "There would be time.", pt: "Haveria tempo.", tense: "Condicional" },
+                { en: "Would there be a chance?", pt: "Haveria uma hipótese?", tense: "Condicional" },
+                { en: "There would be a solution.", pt: "Haveria uma solução.", tense: "Condicional" },
+                { en: "There would be no problems.", pt: "Não haveria problemas.", tense: "Condicional" },
+                { en: "There would be more options.", pt: "Haveria mais opções.", tense: "Condicional" },
+                { en: "There would be a way.", pt: "Haveria uma maneira.", tense: "Condicional" },
+                { en: "There would be hope.", pt: "Haveria esperança.", tense: "Condicional" },
+                { en: "I hope there is time.", pt: "Espero que haja tempo.", tense: "Conjuntivo" },
+                { en: "Even if there is a problem...", pt: "Mesmo que haja um problema...", tense: "Conjuntivo" },
+                { en: "Unless there is a reason...", pt: "A menos que haja uma razão...", tense: "Conjuntivo" },
+                { en: "I doubt there is a solution.", pt: "Duvido que haja solução.", tense: "Conjuntivo" },
+                { en: "It's important that there is trust.", pt: "É importante que haja confiança.", tense: "Conjuntivo" },
+                { en: "So that there is peace.", pt: "Para que haja paz.", tense: "Conjuntivo" },
+                { en: "Whatever there is...", pt: "O que quer que haja...", tense: "Conjuntivo" },
+                { en: "I don't think there is time.", pt: "Não acho que haja tempo.", tense: "Conjuntivo" },
+                { en: "It's necessary that there is change.", pt: "É preciso que haja mudança.", tense: "Conjuntivo" },
+                { en: "Although there is hope...", pt: "Embora haja esperança...", tense: "Conjuntivo" },
+                { en: "If there were time...", pt: "Se houvesse tempo...", tense: "Imperfeito Conj." },
+                { en: "I wish there were more.", pt: "Quem me dera que houvesse mais.", tense: "Imperfeito Conj." },
+                { en: "If there were a solution...", pt: "Se houvesse uma solução...", tense: "Imperfeito Conj." },
+                { en: "Even if there were problems...", pt: "Mesmo que houvesse problemas...", tense: "Imperfeito Conj." },
+                { en: "If only there were a way...", pt: "Se ao menos houvesse uma maneira...", tense: "Imperfeito Conj." },
+                { en: "As if there were no tomorrow.", pt: "Como se não houvesse amanhã.", tense: "Imperfeito Conj." },
+                { en: "If there were no obstacles...", pt: "Se não houvesse obstáculos...", tense: "Imperfeito Conj." },
+                { en: "I would help if there were need.", pt: "Ajudaria se houvesse necessidade.", tense: "Imperfeito Conj." },
+                { en: "If there were more options...", pt: "Se houvesse mais opções...", tense: "Imperfeito Conj." },
+                { en: "If there were justice...", pt: "Se houvesse justiça...", tense: "Imperfeito Conj." },
+                { en: "If there is a problem...", pt: "Se houver um problema...", tense: "Futuro Conj." },
+                { en: "When there is time...", pt: "Quando houver tempo...", tense: "Futuro Conj." },
+                { en: "If there is a need...", pt: "Se houver necessidade...", tense: "Futuro Conj." },
+                { en: "Whenever there is an opportunity...", pt: "Sempre que houver oportunidade...", tense: "Futuro Conj." },
+                { en: "If there are changes...", pt: "Se houver mudanças...", tense: "Futuro Conj." },
+                { en: "When there is a solution...", pt: "Quando houver solução...", tense: "Futuro Conj." },
+                { en: "If there is any doubt...", pt: "Se houver alguma dúvida...", tense: "Futuro Conj." },
+                { en: "Call me if there is news.", pt: "Liga-me se houver novidades.", tense: "Futuro Conj." },
+                { en: "If there is no other way...", pt: "Se não houver outra maneira...", tense: "Futuro Conj." },
+                { en: "When there is peace...", pt: "Quando houver paz...", tense: "Futuro Conj." },
+                { en: "What's the matter?", pt: "O que é que há?", tense: "Expressão" },
+                { en: "What's going on?", pt: "O que há?", tense: "Expressão" },
+                { en: "There you go!", pt: "Olha lá!", tense: "Expressão" },
+                { en: "There's no way.", pt: "Não há maneira.", tense: "Expressão" },
+                { en: "Whatever happens.", pt: "Haja o que houver.", tense: "Expressão" },
+                { en: "Come what may.", pt: "Aconteça o que acontecer.", tense: "Expressão" },
+                { en: "What happened?", pt: "O que houve?", tense: "Expressão" },
+                { en: "There's no use.", pt: "Não há remédio.", tense: "Expressão" },
+                { en: "Is something wrong?", pt: "Há algum problema?", tense: "Expressão" },
+                { en: "That's all there is.", pt: "É o que há.", tense: "Expressão" },
+            ]
+        };
     </script>
     <script src="../../assets/js/verb.js"></script>
 </body>

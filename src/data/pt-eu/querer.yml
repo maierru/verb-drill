@@ -1,0 +1,642 @@
+---
+slug: querer
+name: "\U0001F1F5\U0001F1F9 Verb QUERER"
+meaning: to want
+verb_forms:
+- quero
+- queres
+- quer
+- queremos
+- querem
+- queria
+- querias
+- queríamos
+- queriam
+- quis
+- quiseste
+- quisemos
+- quiseram
+- quererei
+- quererás
+- quererá
+- quereremos
+- quererão
+- quereria
+- quererias
+- quereríamos
+- quereriam
+- queira
+- queiras
+- queiramos
+- queiram
+- quisesse
+- quisesses
+- quiséssemos
+- quisessem
+- querer
+- querendo
+- querido
+- quiseres
+phrases:
+  en:
+  - en: I want water.
+    pt: Quero água.
+    tense: Presente
+  - en: What do you want?
+    pt: O que queres?
+    tense: Presente
+  - en: He wants to go.
+    pt: Ele quer ir.
+    tense: Presente
+  - en: She wants to help.
+    pt: Ela quer ajudar.
+    tense: Presente
+  - en: We want peace.
+    pt: Queremos paz.
+    tense: Presente
+  - en: You (plural) want more.
+    pt: Vocês querem mais.
+    tense: Presente
+  - en: They want to know.
+    pt: Eles querem saber.
+    tense: Presente
+  - en: I don't want that.
+    pt: Não quero isso.
+    tense: Presente
+  - en: Do you want coffee?
+    pt: Queres café?
+    tense: Presente
+  - en: I want to learn Portuguese.
+    pt: Quero aprender português.
+    tense: Presente
+  - en: What do you want to eat?
+    pt: O que queres comer?
+    tense: Presente
+  - en: Do you want to come?
+    pt: Queres vir?
+    tense: Presente
+  - en: Does he want to stay?
+    pt: Ele quer ficar?
+    tense: Presente
+  - en: Who wants to go?
+    pt: Quem quer ir?
+    tense: Presente
+  - en: Why do you want that?
+    pt: Porque queres isso?
+    tense: Presente
+  - en: Do you want me to help?
+    pt: Queres que eu ajude?
+    tense: Presente
+  - en: What does she want?
+    pt: O que é que ela quer?
+    tense: Presente
+  - en: Do they want to play?
+    pt: Eles querem jogar?
+    tense: Presente
+  - en: How much do you want?
+    pt: Quanto queres?
+    tense: Presente
+  - en: Do you want anything else?
+    pt: Queres mais alguma coisa?
+    tense: Presente
+  - en: I wanted to go.
+    pt: Eu queria ir.
+    tense: Imperfeito
+  - en: You wanted to help.
+    pt: Tu querias ajudar.
+    tense: Imperfeito
+  - en: He wanted to stay.
+    pt: Ele queria ficar.
+    tense: Imperfeito
+  - en: She wanted a new job.
+    pt: Ela queria um emprego novo.
+    tense: Imperfeito
+  - en: We wanted to travel.
+    pt: Queríamos viajar.
+    tense: Imperfeito
+  - en: They wanted more time.
+    pt: Eles queriam mais tempo.
+    tense: Imperfeito
+  - en: What did you want?
+    pt: O que querias?
+    tense: Imperfeito
+  - en: I didn't want to bother.
+    pt: Não queria incomodar.
+    tense: Imperfeito
+  - en: I wanted to tell you.
+    pt: Queria dizer-te.
+    tense: Imperfeito
+  - en: We wanted to see you.
+    pt: Queríamos ver-te.
+    tense: Imperfeito
+  - en: I wanted it so much.
+    pt: Quis tanto.
+    tense: Perfeito
+  - en: You wanted to leave.
+    pt: Tu quiseste sair.
+    tense: Perfeito
+  - en: He wanted to try.
+    pt: Ele quis tentar.
+    tense: Perfeito
+  - en: She didn't want to come.
+    pt: Ela não quis vir.
+    tense: Perfeito
+  - en: We wanted to help.
+    pt: Quisemos ajudar.
+    tense: Perfeito
+  - en: They wanted to know.
+    pt: Eles quiseram saber.
+    tense: Perfeito
+  - en: I never wanted that.
+    pt: Nunca quis isso.
+    tense: Perfeito
+  - en: Did you want to go?
+    pt: Quiseste ir?
+    tense: Perfeito
+  - en: Who wanted this?
+    pt: Quem quis isto?
+    tense: Perfeito
+  - en: I just wanted to help.
+    pt: Só quis ajudar.
+    tense: Perfeito
+  - en: I will want more.
+    pt: Quererei mais.
+    tense: Futuro
+  - en: You will want to know.
+    pt: Tu quererás saber.
+    tense: Futuro
+  - en: He will want to stay.
+    pt: Ele quererá ficar.
+    tense: Futuro
+  - en: We will want to see.
+    pt: Quereremos ver.
+    tense: Futuro
+  - en: They will want answers.
+    pt: Eles quererão respostas.
+    tense: Futuro
+  - en: I won't want to leave.
+    pt: Não quererei sair.
+    tense: Futuro
+  - en: Will you want to come?
+    pt: Quererás vir?
+    tense: Futuro
+  - en: She will want to help.
+    pt: Ela quererá ajudar.
+    tense: Futuro
+  - en: Everyone will want it.
+    pt: Todos quererão.
+    tense: Futuro
+  - en: You will want it later.
+    pt: Quererás mais tarde.
+    tense: Futuro
+  - en: I would want to go.
+    pt: Quereria ir.
+    tense: Condicional
+  - en: You would want more.
+    pt: Tu quererias mais.
+    tense: Condicional
+  - en: He would want to know.
+    pt: Ele quereria saber.
+    tense: Condicional
+  - en: We would want to help.
+    pt: Quereríamos ajudar.
+    tense: Condicional
+  - en: They would want to stay.
+    pt: Eles quereriam ficar.
+    tense: Condicional
+  - en: I wouldn't want that.
+    pt: Não quereria isso.
+    tense: Condicional
+  - en: Would you want to come?
+    pt: Quererias vir?
+    tense: Condicional
+  - en: She would want the best.
+    pt: Ela quereria o melhor.
+    tense: Condicional
+  - en: Who would want that?
+    pt: Quem quereria isso?
+    tense: Condicional
+  - en: I would want to try.
+    pt: Quereria tentar.
+    tense: Condicional
+  - en: I hope you want to come.
+    pt: Espero que queiras vir.
+    tense: Conjuntivo
+  - en: It's important that he wants to learn.
+    pt: É importante que ele queira aprender.
+    tense: Conjuntivo
+  - en: I doubt that she wants to stay.
+    pt: Duvido que ela queira ficar.
+    tense: Conjuntivo
+  - en: Even though you want it...
+    pt: Embora queiras...
+    tense: Conjuntivo
+  - en: Whatever you want...
+    pt: O que quer que queiras...
+    tense: Conjuntivo
+  - en: It's necessary that we want it.
+    pt: É preciso que queiramos.
+    tense: Conjuntivo
+  - en: I don't think he wants to go.
+    pt: Não acho que ele queira ir.
+    tense: Conjuntivo
+  - en: Unless you want to...
+    pt: A menos que queiras...
+    tense: Conjuntivo
+  - en: Whoever wants to join...
+    pt: Quem queira participar...
+    tense: Conjuntivo
+  - en: If you want...
+    pt: Se quiseres...
+    tense: Conjuntivo
+  - en: If I wanted to...
+    pt: Se eu quisesse...
+    tense: Imperfeito Conj.
+  - en: I wish you wanted to come.
+    pt: Quem me dera que quisesses vir.
+    tense: Imperfeito Conj.
+  - en: If he wanted to help...
+    pt: Se ele quisesse ajudar...
+    tense: Imperfeito Conj.
+  - en: If we wanted to leave...
+    pt: Se quiséssemos sair...
+    tense: Imperfeito Conj.
+  - en: If they wanted to know...
+    pt: Se eles quisessem saber...
+    tense: Imperfeito Conj.
+  - en: I would help if you wanted.
+    pt: Ajudaria se quisesses.
+    tense: Imperfeito Conj.
+  - en: Even if I wanted to...
+    pt: Mesmo que quisesse...
+    tense: Imperfeito Conj.
+  - en: If she wanted to stay...
+    pt: Se ela quisesse ficar...
+    tense: Imperfeito Conj.
+  - en: As if I wanted that...
+    pt: Como se quisesse isso...
+    tense: Imperfeito Conj.
+  - en: I wish everyone wanted peace.
+    pt: Quem me dera que todos quisessem paz.
+    tense: Imperfeito Conj.
+  - en: I want to eat.
+    pt: Quero comer.
+    tense: Infinitivo
+  - en: I want to sleep.
+    pt: Quero dormir.
+    tense: Infinitivo
+  - en: I want to see.
+    pt: Quero ver.
+    tense: Infinitivo
+  - en: I want to talk.
+    pt: Quero falar.
+    tense: Infinitivo
+  - en: I want to understand.
+    pt: Quero perceber.
+    tense: Infinitivo
+  - en: I want to try.
+    pt: Quero tentar.
+    tense: Infinitivo
+  - en: I want to stay.
+    pt: Quero ficar.
+    tense: Infinitivo
+  - en: I want to leave.
+    pt: Quero sair.
+    tense: Infinitivo
+  - en: I want to buy.
+    pt: Quero comprar.
+    tense: Infinitivo
+  - en: I want to know.
+    pt: Quero saber.
+    tense: Infinitivo
+  - en: What do you mean?
+    pt: O que queres dizer?
+    tense: Expressão
+  - en: I mean...
+    pt: Quero dizer...
+    tense: Expressão
+  - en: Do you want to?
+    pt: Queres?
+    tense: Expressão
+  - en: I don't want to know.
+    pt: Não quero saber.
+    tense: Expressão
+  - en: Whatever you want.
+    pt: O que quiseres.
+    tense: Expressão
+  - en: If you want.
+    pt: Se quiseres.
+    tense: Expressão
+  - en: I just want to say...
+    pt: Só quero dizer...
+    tense: Expressão
+  - en: I wish I could.
+    pt: Quem me dera.
+    tense: Expressão
+  - en: Where there's a will, there's a way.
+    pt: Querer é poder.
+    tense: Expressão
+  - en: As you wish.
+    pt: Como quiseres.
+    tense: Expressão
+  ru:
+  - ru: Я хочу воды.
+    pt: Quero água.
+    tense: Presente
+  - ru: Что ты хочешь?
+    pt: O que queres?
+    tense: Presente
+  - ru: Он хочет уйти.
+    pt: Ele quer ir.
+    tense: Presente
+  - ru: Она хочет помочь.
+    pt: Ela quer ajudar.
+    tense: Presente
+  - ru: Мы хотим мира.
+    pt: Queremos paz.
+    tense: Presente
+  - ru: Вы хотите больше.
+    pt: Vocês querem mais.
+    tense: Presente
+  - ru: Они хотят знать.
+    pt: Eles querem saber.
+    tense: Presente
+  - ru: Я этого не хочу.
+    pt: Não quero isso.
+    tense: Presente
+  - ru: Хочешь кофе?
+    pt: Queres café?
+    tense: Presente
+  - ru: Хочу выучить португальский.
+    pt: Quero aprender português.
+    tense: Presente
+  - ru: Что ты хочешь поесть?
+    pt: O que queres comer?
+    tense: Presente
+  - ru: Хочешь прийти?
+    pt: Queres vir?
+    tense: Presente
+  - ru: Он хочет остаться?
+    pt: Ele quer ficar?
+    tense: Presente
+  - ru: Кто хочет пойти?
+    pt: Quem quer ir?
+    tense: Presente
+  - ru: Почему ты этого хочешь?
+    pt: Porque queres isso?
+    tense: Presente
+  - ru: Хочешь, чтобы я помог?
+    pt: Queres que eu ajude?
+    tense: Presente
+  - ru: Чего она хочет?
+    pt: O que é que ela quer?
+    tense: Presente
+  - ru: Они хотят играть?
+    pt: Eles querem jogar?
+    tense: Presente
+  - ru: Сколько ты хочешь?
+    pt: Quanto queres?
+    tense: Presente
+  - ru: Хочешь ещё что-нибудь?
+    pt: Queres mais alguma coisa?
+    tense: Presente
+  - ru: Я хотел пойти.
+    pt: Eu queria ir.
+    tense: Imperfeito
+  - ru: Ты хотел помочь.
+    pt: Tu querias ajudar.
+    tense: Imperfeito
+  - ru: Он хотел остаться.
+    pt: Ele queria ficar.
+    tense: Imperfeito
+  - ru: Она хотела новую работу.
+    pt: Ela queria um emprego novo.
+    tense: Imperfeito
+  - ru: Мы хотели путешествовать.
+    pt: Queríamos viajar.
+    tense: Imperfeito
+  - ru: Они хотели больше времени.
+    pt: Eles queriam mais tempo.
+    tense: Imperfeito
+  - ru: Чего ты хотел?
+    pt: O que querias?
+    tense: Imperfeito
+  - ru: Я не хотел беспокоить.
+    pt: Não queria incomodar.
+    tense: Imperfeito
+  - ru: Я хотел тебе сказать.
+    pt: Queria dizer-te.
+    tense: Imperfeito
+  - ru: Мы хотели тебя увидеть.
+    pt: Queríamos ver-te.
+    tense: Imperfeito
+  - ru: Я так этого хотел.
+    pt: Quis tanto.
+    tense: Perfeito
+  - ru: Ты захотел уйти.
+    pt: Tu quiseste sair.
+    tense: Perfeito
+  - ru: Он захотел попробовать.
+    pt: Ele quis tentar.
+    tense: Perfeito
+  - ru: Она не захотела прийти.
+    pt: Ela não quis vir.
+    tense: Perfeito
+  - ru: Мы захотели помочь.
+    pt: Quisemos ajudar.
+    tense: Perfeito
+  - ru: Они захотели узнать.
+    pt: Eles quiseram saber.
+    tense: Perfeito
+  - ru: Я никогда этого не хотел.
+    pt: Nunca quis isso.
+    tense: Perfeito
+  - ru: Ты хотел пойти?
+    pt: Quiseste ir?
+    tense: Perfeito
+  - ru: Кто этого хотел?
+    pt: Quem quis isto?
+    tense: Perfeito
+  - ru: Я просто хотел помочь.
+    pt: Só quis ajudar.
+    tense: Perfeito
+  - ru: Я захочу больше.
+    pt: Quererei mais.
+    tense: Futuro
+  - ru: Ты захочешь узнать.
+    pt: Tu quererás saber.
+    tense: Futuro
+  - ru: Он захочет остаться.
+    pt: Ele quererá ficar.
+    tense: Futuro
+  - ru: Мы захотим увидеть.
+    pt: Quereremos ver.
+    tense: Futuro
+  - ru: Они захотят ответов.
+    pt: Eles quererão respostas.
+    tense: Futuro
+  - ru: Я не захочу уходить.
+    pt: Não quererei sair.
+    tense: Futuro
+  - ru: Ты захочешь прийти?
+    pt: Quererás vir?
+    tense: Futuro
+  - ru: Она захочет помочь.
+    pt: Ela quererá ajudar.
+    tense: Futuro
+  - ru: Все захотят.
+    pt: Todos quererão.
+    tense: Futuro
+  - ru: Ты захочешь потом.
+    pt: Quererás mais tarde.
+    tense: Futuro
+  - ru: Я бы хотел пойти.
+    pt: Quereria ir.
+    tense: Condicional
+  - ru: Ты бы хотел больше.
+    pt: Tu quererias mais.
+    tense: Condicional
+  - ru: Он бы хотел узнать.
+    pt: Ele quereria saber.
+    tense: Condicional
+  - ru: Мы бы хотели помочь.
+    pt: Quereríamos ajudar.
+    tense: Condicional
+  - ru: Они бы хотели остаться.
+    pt: Eles quereriam ficar.
+    tense: Condicional
+  - ru: Я бы этого не хотел.
+    pt: Não quereria isso.
+    tense: Condicional
+  - ru: Ты бы хотел прийти?
+    pt: Quererias vir?
+    tense: Condicional
+  - ru: Она бы хотела лучшего.
+    pt: Ela quereria o melhor.
+    tense: Condicional
+  - ru: Кто бы этого хотел?
+    pt: Quem quereria isso?
+    tense: Condicional
+  - ru: Я бы хотел попробовать.
+    pt: Quereria tentar.
+    tense: Condicional
+  - ru: Надеюсь, что ты захочешь прийти.
+    pt: Espero que queiras vir.
+    tense: Conjuntivo
+  - ru: Важно, чтобы он хотел учиться.
+    pt: É importante que ele queira aprender.
+    tense: Conjuntivo
+  - ru: Сомневаюсь, что она захочет остаться.
+    pt: Duvido que ela queira ficar.
+    tense: Conjuntivo
+  - ru: Хотя ты и хочешь...
+    pt: Embora queiras...
+    tense: Conjuntivo
+  - ru: Чего бы ты ни хотел...
+    pt: O que quer que queiras...
+    tense: Conjuntivo
+  - ru: Нужно, чтобы мы хотели.
+    pt: É preciso que queiramos.
+    tense: Conjuntivo
+  - ru: Не думаю, что он хочет идти.
+    pt: Não acho que ele queira ir.
+    tense: Conjuntivo
+  - ru: Если ты не хочешь...
+    pt: A menos que queiras...
+    tense: Conjuntivo
+  - ru: Кто хочет участвовать...
+    pt: Quem queira participar...
+    tense: Conjuntivo
+  - ru: Если хочешь...
+    pt: Se quiseres...
+    tense: Conjuntivo
+  - ru: Если бы я хотел...
+    pt: Se eu quisesse...
+    tense: Imperfeito Conj.
+  - ru: Хотел бы, чтобы ты захотел прийти.
+    pt: Quem me dera que quisesses vir.
+    tense: Imperfeito Conj.
+  - ru: Если бы он хотел помочь...
+    pt: Se ele quisesse ajudar...
+    tense: Imperfeito Conj.
+  - ru: Если бы мы хотели уйти...
+    pt: Se quiséssemos sair...
+    tense: Imperfeito Conj.
+  - ru: Если бы они хотели узнать...
+    pt: Se eles quisessem saber...
+    tense: Imperfeito Conj.
+  - ru: Я бы помог, если бы ты хотел.
+    pt: Ajudaria se quisesses.
+    tense: Imperfeito Conj.
+  - ru: Даже если бы я хотел...
+    pt: Mesmo que quisesse...
+    tense: Imperfeito Conj.
+  - ru: Если бы она хотела остаться...
+    pt: Se ela quisesse ficar...
+    tense: Imperfeito Conj.
+  - ru: Как будто я этого хотел...
+    pt: Como se quisesse isso...
+    tense: Imperfeito Conj.
+  - ru: Хотел бы, чтобы все хотели мира.
+    pt: Quem me dera que todos quisessem paz.
+    tense: Imperfeito Conj.
+  - ru: Я хочу есть.
+    pt: Quero comer.
+    tense: Infinitivo
+  - ru: Я хочу спать.
+    pt: Quero dormir.
+    tense: Infinitivo
+  - ru: Я хочу видеть.
+    pt: Quero ver.
+    tense: Infinitivo
+  - ru: Я хочу поговорить.
+    pt: Quero falar.
+    tense: Infinitivo
+  - ru: Я хочу понять.
+    pt: Quero perceber.
+    tense: Infinitivo
+  - ru: Я хочу попробовать.
+    pt: Quero tentar.
+    tense: Infinitivo
+  - ru: Я хочу остаться.
+    pt: Quero ficar.
+    tense: Infinitivo
+  - ru: Я хочу уйти.
+    pt: Quero sair.
+    tense: Infinitivo
+  - ru: Я хочу купить.
+    pt: Quero comprar.
+    tense: Infinitivo
+  - ru: Я хочу знать.
+    pt: Quero saber.
+    tense: Infinitivo
+  - ru: Что ты имеешь в виду?
+    pt: O que queres dizer?
+    tense: Expressão
+  - ru: Я имею в виду...
+    pt: Quero dizer...
+    tense: Expressão
+  - ru: Хочешь?
+    pt: Queres?
+    tense: Expressão
+  - ru: Не хочу знать.
+    pt: Não quero saber.
+    tense: Expressão
+  - ru: Как хочешь.
+    pt: O que quiseres.
+    tense: Expressão
+  - ru: Если хочешь.
+    pt: Se quiseres.
+    tense: Expressão
+  - ru: Просто хочу сказать...
+    pt: Só quero dizer...
+    tense: Expressão
+  - ru: Хотел бы я.
+    pt: Quem me dera.
+    tense: Expressão
+  - ru: Было бы желание.
+    pt: Querer é poder.
+    tense: Expressão
+  - ru: Как пожелаешь.
+    pt: Como quiseres.
+    tense: Expressão

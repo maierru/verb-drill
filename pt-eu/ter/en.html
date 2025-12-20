@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verb TER — 100 Phrases</title>
+    <title>Verb 🇵🇹 VERB TER — 100 Phrases</title>
     <link rel="stylesheet" href="../../assets/css/verb.css">
-    
 </head>
 <body>
     <div class="container">
         <header>
             <a href="../" class="back-link">← Back to verb list</a>
             <h1>🇵🇹 Verb TER</h1>
-            <p class="subtitle">100 popular phrases — European Portuguese</p>
+            <p class="subtitle">to have — 100 phrases</p>
         </header>
 
         <div class="controls">
@@ -30,139 +29,118 @@
         </div>
 
         <footer>
-            European Portuguese Practice — Verb TER
+            European Portuguese Practice — TER
         </footer>
     </div>
 
     <script>
-    const VERB_CONFIG = {
-        originKey: 'en',
-        labels: { target: 'European Portuguese', showing: 'Showing', of: 'of', phrases: 'phrases' },
-        verbForms: ['tenho', 'tens', 'tem', 'temos', 'têm', 'tinha', 'tinhas', 'tínhamos', 'tinham', 'tive', 'tiveste', 'teve', 'tivemos', 'tiveram', 'terei', 'terás', 'terá', 'teremos', 'terão', 'teria', 'terias', 'teríamos', 'teriam', 'tenha', 'tenhas', 'tenhamos', 'tenham', 'tivesse', 'tivesses', 'tivéssemos', 'tivessem', 'ter', 'tendo', 'tido'],
-        phrases: [
-            // Presente do Indicativo (Present) - possession, age, obligations
-            { en: "I have a car.", pt: "Tenho um carro.", tense: "Presente" },
-            { en: "You have time.", pt: "Tu tens tempo.", tense: "Presente" },
-            { en: "He has a brother.", pt: "Ele tem um irmão.", tense: "Presente" },
-            { en: "She has blue eyes.", pt: "Ela tem olhos azuis.", tense: "Presente" },
-            { en: "We have a meeting.", pt: "Temos uma reunião.", tense: "Presente" },
-            { en: "You (plural) have good ideas.", pt: "Vocês têm boas ideias.", tense: "Presente" },
-            { en: "They have children.", pt: "Eles têm filhos.", tense: "Presente" },
-            { en: "I don't have money.", pt: "Não tenho dinheiro.", tense: "Presente" },
-            { en: "Do you have a pen?", pt: "Tens uma caneta?", tense: "Presente" },
-            { en: "I have to go.", pt: "Tenho de ir.", tense: "Presente" },
-
-            // Age expressions
-            { en: "I am 30 years old.", pt: "Tenho trinta anos.", tense: "Presente" },
-            { en: "How old are you?", pt: "Quantos anos tens?", tense: "Presente" },
-            { en: "She is 25 years old.", pt: "Ela tem vinte e cinco anos.", tense: "Presente" },
-            { en: "The building is 100 years old.", pt: "O edifício tem cem anos.", tense: "Presente" },
-            { en: "My son is 5 years old.", pt: "O meu filho tem cinco anos.", tense: "Presente" },
-
-            // Questions in present
-            { en: "Do you have a moment?", pt: "Tens um momento?", tense: "Presente" },
-            { en: "Does he have experience?", pt: "Ele tem experiência?", tense: "Presente" },
-            { en: "Do we have enough?", pt: "Temos o suficiente?", tense: "Presente" },
-            { en: "What do you have?", pt: "O que tens?", tense: "Presente" },
-            { en: "Do they have the keys?", pt: "Eles têm as chaves?", tense: "Presente" },
-
-            // Pretérito Imperfeito (Imperfect Past)
-            { en: "I had a dog when I was young.", pt: "Eu tinha um cão quando era novo.", tense: "Imperfeito" },
-            { en: "You had more patience before.", pt: "Tu tinhas mais paciência antes.", tense: "Imperfeito" },
-            { en: "He had a good job.", pt: "Ele tinha um bom emprego.", tense: "Imperfeito" },
-            { en: "She had long hair.", pt: "Ela tinha cabelo comprido.", tense: "Imperfeito" },
-            { en: "We had a house by the sea.", pt: "Tínhamos uma casa junto ao mar.", tense: "Imperfeito" },
-            { en: "They had many friends.", pt: "Eles tinham muitos amigos.", tense: "Imperfeito" },
-            { en: "I didn't have time.", pt: "Eu não tinha tempo.", tense: "Imperfeito" },
-            { en: "Did you have a car?", pt: "Tinhas carro?", tense: "Imperfeito" },
-            { en: "There was a problem.", pt: "Havia um problema.", tense: "Imperfeito" },
-            { en: "I used to have doubts.", pt: "Eu tinha dúvidas.", tense: "Imperfeito" },
-
-            // Pretérito Perfeito Simples (Simple Past)
-            { en: "I had a great day.", pt: "Tive um ótimo dia.", tense: "Perfeito" },
-            { en: "You had luck.", pt: "Tu tiveste sorte.", tense: "Perfeito" },
-            { en: "He had an accident.", pt: "Ele teve um acidente.", tense: "Perfeito" },
-            { en: "We had a party.", pt: "Tivemos uma festa.", tense: "Perfeito" },
-            { en: "They had problems.", pt: "Eles tiveram problemas.", tense: "Perfeito" },
-            { en: "I had to leave early.", pt: "Tive de sair cedo.", tense: "Perfeito" },
-            { en: "Did you have fun?", pt: "Tiveste divertimento?", tense: "Perfeito" },
-            { en: "She had a baby.", pt: "Ela teve um bebé.", tense: "Perfeito" },
-            { en: "We had no choice.", pt: "Não tivemos escolha.", tense: "Perfeito" },
-            { en: "I had an idea.", pt: "Tive uma ideia.", tense: "Perfeito" },
-
-            // Futuro do Indicativo (Future)
-            { en: "I will have time tomorrow.", pt: "Terei tempo amanhã.", tense: "Futuro" },
-            { en: "You will have success.", pt: "Tu terás sucesso.", tense: "Futuro" },
-            { en: "He will have to decide.", pt: "Ele terá de decidir.", tense: "Futuro" },
-            { en: "We will have a solution.", pt: "Teremos uma solução.", tense: "Futuro" },
-            { en: "They will have everything ready.", pt: "Eles terão tudo pronto.", tense: "Futuro" },
-            { en: "You will have many opportunities.", pt: "Terás muitas oportunidades.", tense: "Futuro" },
-            { en: "I won't have problems.", pt: "Não terei problemas.", tense: "Futuro" },
-            { en: "Will you have time?", pt: "Terás tempo?", tense: "Futuro" },
-            { en: "She will have to work.", pt: "Ela terá de trabalhar.", tense: "Futuro" },
-            { en: "We will have news soon.", pt: "Teremos notícias em breve.", tense: "Futuro" },
-
-            // Condicional (Conditional)
-            { en: "I would have more time.", pt: "Teria mais tempo.", tense: "Condicional" },
-            { en: "You would have a better life.", pt: "Tu terias uma vida melhor.", tense: "Condicional" },
-            { en: "He would have to agree.", pt: "Ele teria de concordar.", tense: "Condicional" },
-            { en: "We would have enough money.", pt: "Teríamos dinheiro suficiente.", tense: "Condicional" },
-            { en: "They would have no reason.", pt: "Eles não teriam razão.", tense: "Condicional" },
-            { en: "I wouldn't have done that.", pt: "Não teria feito isso.", tense: "Condicional" },
-            { en: "Would you have time?", pt: "Terias tempo?", tense: "Condicional" },
-            { en: "She would have to choose.", pt: "Ela teria de escolher.", tense: "Condicional" },
-            { en: "It would have been better.", pt: "Teria sido melhor.", tense: "Condicional" },
-            { en: "I would have preferred.", pt: "Teria preferido.", tense: "Condicional" },
-
-            // Presente do Conjuntivo (Present Subjunctive)
-            { en: "I hope you have luck.", pt: "Espero que tenhas sorte.", tense: "Conjuntivo" },
-            { en: "It's important that he has support.", pt: "É importante que ele tenha apoio.", tense: "Conjuntivo" },
-            { en: "I want us to have peace.", pt: "Quero que tenhamos paz.", tense: "Conjuntivo" },
-            { en: "I doubt that she has time.", pt: "Duvido que ela tenha tempo.", tense: "Conjuntivo" },
-            { en: "Even though you have money...", pt: "Embora tenhas dinheiro...", tense: "Conjuntivo" },
-            { en: "Whatever you have...", pt: "O que quer que tenhas...", tense: "Conjuntivo" },
-            { en: "It's necessary that they have patience.", pt: "É preciso que eles tenham paciência.", tense: "Conjuntivo" },
-            { en: "I don't think he has reason.", pt: "Não acho que ele tenha razão.", tense: "Conjuntivo" },
-            { en: "Unless you have proof...", pt: "A menos que tenhas provas...", tense: "Conjuntivo" },
-            { en: "I want you to have success.", pt: "Quero que tenhas sucesso.", tense: "Conjuntivo" },
-
-            // Imperfeito do Conjuntivo (Imperfect Subjunctive)
-            { en: "If I had money...", pt: "Se eu tivesse dinheiro...", tense: "Imperfeito Conj." },
-            { en: "I wish you had time.", pt: "Quem me dera que tivesses tempo.", tense: "Imperfeito Conj." },
-            { en: "If he had known...", pt: "Se ele tivesse sabido...", tense: "Imperfeito Conj." },
-            { en: "If we had a car...", pt: "Se tivéssemos um carro...", tense: "Imperfeito Conj." },
-            { en: "If they had helped...", pt: "Se eles tivessem ajudado...", tense: "Imperfeito Conj." },
-            { en: "I would go if I had time.", pt: "Iria se tivesse tempo.", tense: "Imperfeito Conj." },
-            { en: "Even if I had money...", pt: "Mesmo que tivesse dinheiro...", tense: "Imperfeito Conj." },
-            { en: "If it had value...", pt: "Se tivesse valor...", tense: "Imperfeito Conj." },
-            { en: "As if you had seen...", pt: "Como se tivesses visto...", tense: "Imperfeito Conj." },
-            { en: "I wish I had more time.", pt: "Quem me dera que tivesse mais tempo.", tense: "Imperfeito Conj." },
-
-            // Ter que/de (obligation)
-            { en: "I have to study.", pt: "Tenho de estudar.", tense: "Obrigação" },
-            { en: "You have to eat.", pt: "Tens de comer.", tense: "Obrigação" },
-            { en: "We have to leave.", pt: "Temos de sair.", tense: "Obrigação" },
-            { en: "She has to work.", pt: "Ela tem de trabalhar.", tense: "Obrigação" },
-            { en: "I had to wait.", pt: "Tive de esperar.", tense: "Obrigação" },
-            { en: "You will have to pay.", pt: "Terás de pagar.", tense: "Obrigação" },
-            { en: "Do I have to go?", pt: "Tenho de ir?", tense: "Obrigação" },
-            { en: "We don't have to stay.", pt: "Não temos de ficar.", tense: "Obrigação" },
-            { en: "They had to decide.", pt: "Eles tiveram de decidir.", tense: "Obrigação" },
-            { en: "I would have to think.", pt: "Teria de pensar.", tense: "Obrigação" },
-
-            // Common expressions with ter
-            { en: "I'm hungry.", pt: "Tenho fome.", tense: "Expressão" },
-            { en: "I'm thirsty.", pt: "Tenho sede.", tense: "Expressão" },
-            { en: "I'm sleepy.", pt: "Tenho sono.", tense: "Expressão" },
-            { en: "I'm cold.", pt: "Tenho frio.", tense: "Expressão" },
-            { en: "I'm hot.", pt: "Tenho calor.", tense: "Expressão" },
-            { en: "I'm afraid.", pt: "Tenho medo.", tense: "Expressão" },
-            { en: "I'm in a hurry.", pt: "Tenho pressa.", tense: "Expressão" },
-            { en: "I'm right.", pt: "Tenho razão.", tense: "Expressão" },
-            { en: "I'm lucky.", pt: "Tenho sorte.", tense: "Expressão" },
-            { en: "Be careful!", pt: "Tem cuidado!", tense: "Expressão" }
-        ]
-    };
+        const VERB_CONFIG = {
+            originKey: 'en',
+            labels: { target: 'European Portuguese', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["tenho","tens","tem","temos","têm","tinha","tinhas","tínhamos","tinham","tive","tiveste","teve","tivemos","tiveram","terei","terás","terá","teremos","terão","teria","terias","teríamos","teriam","tenha","tenhas","tenhamos","tenham","tivesse","tivesses","tivéssemos","tivessem","ter","tendo","tido"],
+            phrases: [
+                { en: "I have a car.", pt: "Tenho um carro.", tense: "Presente" },
+                { en: "You have time.", pt: "Tu tens tempo.", tense: "Presente" },
+                { en: "He has a brother.", pt: "Ele tem um irmão.", tense: "Presente" },
+                { en: "She has blue eyes.", pt: "Ela tem olhos azuis.", tense: "Presente" },
+                { en: "We have a meeting.", pt: "Temos uma reunião.", tense: "Presente" },
+                { en: "You (plural) have good ideas.", pt: "Vocês têm boas ideias.", tense: "Presente" },
+                { en: "They have children.", pt: "Eles têm filhos.", tense: "Presente" },
+                { en: "I don't have money.", pt: "Não tenho dinheiro.", tense: "Presente" },
+                { en: "Do you have a pen?", pt: "Tens uma caneta?", tense: "Presente" },
+                { en: "I have to go.", pt: "Tenho de ir.", tense: "Presente" },
+                { en: "I am 30 years old.", pt: "Tenho trinta anos.", tense: "Presente" },
+                { en: "How old are you?", pt: "Quantos anos tens?", tense: "Presente" },
+                { en: "She is 25 years old.", pt: "Ela tem vinte e cinco anos.", tense: "Presente" },
+                { en: "The building is 100 years old.", pt: "O edifício tem cem anos.", tense: "Presente" },
+                { en: "My son is 5 years old.", pt: "O meu filho tem cinco anos.", tense: "Presente" },
+                { en: "Do you have a moment?", pt: "Tens um momento?", tense: "Presente" },
+                { en: "Does he have experience?", pt: "Ele tem experiência?", tense: "Presente" },
+                { en: "Do we have enough?", pt: "Temos o suficiente?", tense: "Presente" },
+                { en: "What do you have?", pt: "O que tens?", tense: "Presente" },
+                { en: "Do they have the keys?", pt: "Eles têm as chaves?", tense: "Presente" },
+                { en: "I had a dog when I was young.", pt: "Eu tinha um cão quando era novo.", tense: "Imperfeito" },
+                { en: "You had more patience before.", pt: "Tu tinhas mais paciência antes.", tense: "Imperfeito" },
+                { en: "He had a good job.", pt: "Ele tinha um bom emprego.", tense: "Imperfeito" },
+                { en: "She had long hair.", pt: "Ela tinha cabelo comprido.", tense: "Imperfeito" },
+                { en: "We had a house by the sea.", pt: "Tínhamos uma casa junto ao mar.", tense: "Imperfeito" },
+                { en: "They had many friends.", pt: "Eles tinham muitos amigos.", tense: "Imperfeito" },
+                { en: "I didn't have time.", pt: "Eu não tinha tempo.", tense: "Imperfeito" },
+                { en: "Did you have a car?", pt: "Tinhas carro?", tense: "Imperfeito" },
+                { en: "There was a problem.", pt: "Havia um problema.", tense: "Imperfeito" },
+                { en: "I used to have doubts.", pt: "Eu tinha dúvidas.", tense: "Imperfeito" },
+                { en: "I had a great day.", pt: "Tive um ótimo dia.", tense: "Perfeito" },
+                { en: "You had luck.", pt: "Tu tiveste sorte.", tense: "Perfeito" },
+                { en: "He had an accident.", pt: "Ele teve um acidente.", tense: "Perfeito" },
+                { en: "We had a party.", pt: "Tivemos uma festa.", tense: "Perfeito" },
+                { en: "They had problems.", pt: "Eles tiveram problemas.", tense: "Perfeito" },
+                { en: "I had to leave early.", pt: "Tive de sair cedo.", tense: "Perfeito" },
+                { en: "Did you have fun?", pt: "Tiveste divertimento?", tense: "Perfeito" },
+                { en: "She had a baby.", pt: "Ela teve um bebé.", tense: "Perfeito" },
+                { en: "We had no choice.", pt: "Não tivemos escolha.", tense: "Perfeito" },
+                { en: "I had an idea.", pt: "Tive uma ideia.", tense: "Perfeito" },
+                { en: "I will have time tomorrow.", pt: "Terei tempo amanhã.", tense: "Futuro" },
+                { en: "You will have success.", pt: "Tu terás sucesso.", tense: "Futuro" },
+                { en: "He will have to decide.", pt: "Ele terá de decidir.", tense: "Futuro" },
+                { en: "We will have a solution.", pt: "Teremos uma solução.", tense: "Futuro" },
+                { en: "They will have everything ready.", pt: "Eles terão tudo pronto.", tense: "Futuro" },
+                { en: "You will have many opportunities.", pt: "Terás muitas oportunidades.", tense: "Futuro" },
+                { en: "I won't have problems.", pt: "Não terei problemas.", tense: "Futuro" },
+                { en: "Will you have time?", pt: "Terás tempo?", tense: "Futuro" },
+                { en: "She will have to work.", pt: "Ela terá de trabalhar.", tense: "Futuro" },
+                { en: "We will have news soon.", pt: "Teremos notícias em breve.", tense: "Futuro" },
+                { en: "I would have more time.", pt: "Teria mais tempo.", tense: "Condicional" },
+                { en: "You would have a better life.", pt: "Tu terias uma vida melhor.", tense: "Condicional" },
+                { en: "He would have to agree.", pt: "Ele teria de concordar.", tense: "Condicional" },
+                { en: "We would have enough money.", pt: "Teríamos dinheiro suficiente.", tense: "Condicional" },
+                { en: "They would have no reason.", pt: "Eles não teriam razão.", tense: "Condicional" },
+                { en: "I wouldn't have done that.", pt: "Não teria feito isso.", tense: "Condicional" },
+                { en: "Would you have time?", pt: "Terias tempo?", tense: "Condicional" },
+                { en: "She would have to choose.", pt: "Ela teria de escolher.", tense: "Condicional" },
+                { en: "It would have been better.", pt: "Teria sido melhor.", tense: "Condicional" },
+                { en: "I would have preferred.", pt: "Teria preferido.", tense: "Condicional" },
+                { en: "I hope you have luck.", pt: "Espero que tenhas sorte.", tense: "Conjuntivo" },
+                { en: "It's important that he has support.", pt: "É importante que ele tenha apoio.", tense: "Conjuntivo" },
+                { en: "I want us to have peace.", pt: "Quero que tenhamos paz.", tense: "Conjuntivo" },
+                { en: "I doubt that she has time.", pt: "Duvido que ela tenha tempo.", tense: "Conjuntivo" },
+                { en: "Even though you have money...", pt: "Embora tenhas dinheiro...", tense: "Conjuntivo" },
+                { en: "Whatever you have...", pt: "O que quer que tenhas...", tense: "Conjuntivo" },
+                { en: "It's necessary that they have patience.", pt: "É preciso que eles tenham paciência.", tense: "Conjuntivo" },
+                { en: "I don't think he has reason.", pt: "Não acho que ele tenha razão.", tense: "Conjuntivo" },
+                { en: "Unless you have proof...", pt: "A menos que tenhas provas...", tense: "Conjuntivo" },
+                { en: "I want you to have success.", pt: "Quero que tenhas sucesso.", tense: "Conjuntivo" },
+                { en: "If I had money...", pt: "Se eu tivesse dinheiro...", tense: "Imperfeito Conj." },
+                { en: "I wish you had time.", pt: "Quem me dera que tivesses tempo.", tense: "Imperfeito Conj." },
+                { en: "If he had known...", pt: "Se ele tivesse sabido...", tense: "Imperfeito Conj." },
+                { en: "If we had a car...", pt: "Se tivéssemos um carro...", tense: "Imperfeito Conj." },
+                { en: "If they had helped...", pt: "Se eles tivessem ajudado...", tense: "Imperfeito Conj." },
+                { en: "I would go if I had time.", pt: "Iria se tivesse tempo.", tense: "Imperfeito Conj." },
+                { en: "Even if I had money...", pt: "Mesmo que tivesse dinheiro...", tense: "Imperfeito Conj." },
+                { en: "If it had value...", pt: "Se tivesse valor...", tense: "Imperfeito Conj." },
+                { en: "As if you had seen...", pt: "Como se tivesses visto...", tense: "Imperfeito Conj." },
+                { en: "I wish I had more time.", pt: "Quem me dera que tivesse mais tempo.", tense: "Imperfeito Conj." },
+                { en: "I have to study.", pt: "Tenho de estudar.", tense: "Obrigação" },
+                { en: "You have to eat.", pt: "Tens de comer.", tense: "Obrigação" },
+                { en: "We have to leave.", pt: "Temos de sair.", tense: "Obrigação" },
+                { en: "She has to work.", pt: "Ela tem de trabalhar.", tense: "Obrigação" },
+                { en: "I had to wait.", pt: "Tive de esperar.", tense: "Obrigação" },
+                { en: "You will have to pay.", pt: "Terás de pagar.", tense: "Obrigação" },
+                { en: "Do I have to go?", pt: "Tenho de ir?", tense: "Obrigação" },
+                { en: "We don't have to stay.", pt: "Não temos de ficar.", tense: "Obrigação" },
+                { en: "They had to decide.", pt: "Eles tiveram de decidir.", tense: "Obrigação" },
+                { en: "I would have to think.", pt: "Teria de pensar.", tense: "Obrigação" },
+                { en: "I'm hungry.", pt: "Tenho fome.", tense: "Expressão" },
+                { en: "I'm thirsty.", pt: "Tenho sede.", tense: "Expressão" },
+                { en: "I'm sleepy.", pt: "Tenho sono.", tense: "Expressão" },
+                { en: "I'm cold.", pt: "Tenho frio.", tense: "Expressão" },
+                { en: "I'm hot.", pt: "Tenho calor.", tense: "Expressão" },
+                { en: "I'm afraid.", pt: "Tenho medo.", tense: "Expressão" },
+                { en: "I'm in a hurry.", pt: "Tenho pressa.", tense: "Expressão" },
+                { en: "I'm right.", pt: "Tenho razão.", tense: "Expressão" },
+                { en: "I'm lucky.", pt: "Tenho sorte.", tense: "Expressão" },
+                { en: "Be careful!", pt: "Tem cuidado!", tense: "Expressão" },
+            ]
+        };
     </script>
     <script src="../../assets/js/verb.js"></script>
 </body>

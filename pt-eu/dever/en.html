@@ -3,136 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verb DEVER — 100 Phrases</title>
+    <title>Verb 🇵🇹 VERB DEVER — 100 Phrases</title>
     <link rel="stylesheet" href="../../assets/css/verb.css">
-    
 </head>
 <body>
     <div class="container">
         <header>
             <a href="../" class="back-link">← Back to verb list</a>
             <h1>🇵🇹 Verb DEVER</h1>
-            <p class="subtitle">100 popular phrases — European Portuguese</p>
+            <p class="subtitle">should, must, to owe — 100 phrases</p>
         </header>
+
         <div class="controls">
             <input type="text" class="search-box" placeholder="Search phrases..." id="searchInput">
         </div>
+
         <div class="controls">
             <button class="btn btn-primary" onclick="showAll()">Show all translations</button>
             <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
         </div>
+
         <div class="stats" id="stats">Showing: 100 of 100 phrases</div>
-        <div class="phrase-list" id="phraseList"></div>
-        <footer>European Portuguese Practice — Verb DEVER</footer>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            European Portuguese Practice — DEVER
+        </footer>
     </div>
+
     <script>
-    const VERB_CONFIG = {
-        originKey: 'en',
-        labels: { target: 'European Portuguese', showing: 'Showing', of: 'of', phrases: 'phrases' },
-        verbForms: ['devo', 'deves', 'deve', 'devemos', 'devem', 'devia', 'devias', 'devíamos', 'deviam', 'devi', 'deveste', 'deveu', 'deveram', 'deverei', 'deverás', 'deverá', 'deveremos', 'deverão', 'deveria', 'deverias', 'deveríamos', 'deveriam', 'deva', 'devas', 'devamos', 'devam', 'devesse', 'devesses', 'devêssemos', 'devessem', 'dever', 'deveres', 'devermos', 'deverem', 'devendo', 'devido'],
-        phrases: [
-            { en: "I should go.", pt: "Devo ir.", tense: "Presente" },
-            { en: "You should study.", pt: "Deves estudar.", tense: "Presente" },
-            { en: "He must work.", pt: "Ele deve trabalhar.", tense: "Presente" },
-            { en: "She should rest.", pt: "Ela deve descansar.", tense: "Presente" },
-            { en: "We must help.", pt: "Devemos ajudar.", tense: "Presente" },
-            { en: "They should wait.", pt: "Eles devem esperar.", tense: "Presente" },
-            { en: "I shouldn't eat this.", pt: "Não devo comer isto.", tense: "Presente" },
-            { en: "Must I do it?", pt: "Devo fazer?", tense: "Presente" },
-            { en: "He owes me money.", pt: "Ele deve-me dinheiro.", tense: "Presente" },
-            { en: "She must be tired.", pt: "Ela deve estar cansada.", tense: "Presente" },
-            { en: "I should call.", pt: "Devo ligar.", tense: "Presente" },
-            { en: "You should know.", pt: "Deves saber.", tense: "Presente" },
-            { en: "He must be right.", pt: "Ele deve ter razão.", tense: "Presente" },
-            { en: "She should come.", pt: "Ela deve vir.", tense: "Presente" },
-            { en: "We should leave.", pt: "Devemos sair.", tense: "Presente" },
-            { en: "They owe a lot.", pt: "Eles devem muito.", tense: "Presente" },
-            { en: "I should apologize.", pt: "Devo pedir desculpa.", tense: "Presente" },
-            { en: "You must be careful.", pt: "Deves ter cuidado.", tense: "Presente" },
-            { en: "He should try.", pt: "Ele deve tentar.", tense: "Presente" },
-            { en: "What should I do?", pt: "O que devo fazer?", tense: "Presente" },
-            { en: "I should have studied.", pt: "Devia ter estudado.", tense: "Imperfeito" },
-            { en: "You should have called.", pt: "Devias ter ligado.", tense: "Imperfeito" },
-            { en: "He should have waited.", pt: "Ele devia ter esperado.", tense: "Imperfeito" },
-            { en: "She should have come.", pt: "Ela devia ter vindo.", tense: "Imperfeito" },
-            { en: "We should have helped.", pt: "Devíamos ter ajudado.", tense: "Imperfeito" },
-            { en: "They should have known.", pt: "Eles deviam ter sabido.", tense: "Imperfeito" },
-            { en: "I was supposed to go.", pt: "Devia ir.", tense: "Imperfeito" },
-            { en: "You were supposed to call.", pt: "Devias ligar.", tense: "Imperfeito" },
-            { en: "He owed money.", pt: "Ele devia dinheiro.", tense: "Imperfeito" },
-            { en: "We were supposed to wait.", pt: "Devíamos esperar.", tense: "Imperfeito" },
-            { en: "I had to leave.", pt: "Devi sair.", tense: "Perfeito" },
-            { en: "You had to work.", pt: "Deveste trabalhar.", tense: "Perfeito" },
-            { en: "He had to help.", pt: "Ele deveu ajudar.", tense: "Perfeito" },
-            { en: "We had to decide.", pt: "Devemos decidir.", tense: "Perfeito" },
-            { en: "They had to pay.", pt: "Eles deveram pagar.", tense: "Perfeito" },
-            { en: "I had to apologize.", pt: "Devi pedir desculpa.", tense: "Perfeito" },
-            { en: "You had to explain.", pt: "Deveste explicar.", tense: "Perfeito" },
-            { en: "He had to accept.", pt: "Ele deveu aceitar.", tense: "Perfeito" },
-            { en: "We had to understand.", pt: "Devemos perceber.", tense: "Perfeito" },
-            { en: "They had to go.", pt: "Eles deveram ir.", tense: "Perfeito" },
-            { en: "I will have to go.", pt: "Deverei ir.", tense: "Futuro" },
-            { en: "You will have to study.", pt: "Deverás estudar.", tense: "Futuro" },
-            { en: "He will have to work.", pt: "Ele deverá trabalhar.", tense: "Futuro" },
-            { en: "We will have to decide.", pt: "Deveremos decidir.", tense: "Futuro" },
-            { en: "They will have to pay.", pt: "Eles deverão pagar.", tense: "Futuro" },
-            { en: "I won't have to do it.", pt: "Não deverei fazer.", tense: "Futuro" },
-            { en: "Will you have to leave?", pt: "Deverás sair?", tense: "Futuro" },
-            { en: "She will have to wait.", pt: "Ela deverá esperar.", tense: "Futuro" },
-            { en: "We will have to help.", pt: "Deveremos ajudar.", tense: "Futuro" },
-            { en: "They will have to understand.", pt: "Eles deverão perceber.", tense: "Futuro" },
-            { en: "I should go.", pt: "Deveria ir.", tense: "Condicional" },
-            { en: "You should study more.", pt: "Deverias estudar mais.", tense: "Condicional" },
-            { en: "He should help.", pt: "Ele deveria ajudar.", tense: "Condicional" },
-            { en: "We should wait.", pt: "Deveríamos esperar.", tense: "Condicional" },
-            { en: "They should understand.", pt: "Eles deveriam perceber.", tense: "Condicional" },
-            { en: "I shouldn't say.", pt: "Não deveria dizer.", tense: "Condicional" },
-            { en: "Should you do it?", pt: "Deverias fazer?", tense: "Condicional" },
-            { en: "She should come.", pt: "Ela deveria vir.", tense: "Condicional" },
-            { en: "We should try.", pt: "Deveríamos tentar.", tense: "Condicional" },
-            { en: "He should have known.", pt: "Ele deveria ter sabido.", tense: "Condicional" },
-            { en: "I hope you should go.", pt: "Espero que devas ir.", tense: "Conjuntivo" },
-            { en: "It's important that he must.", pt: "É importante que ele deva.", tense: "Conjuntivo" },
-            { en: "I doubt she should.", pt: "Duvido que ela deva.", tense: "Conjuntivo" },
-            { en: "Even if you should...", pt: "Mesmo que devas...", tense: "Conjuntivo" },
-            { en: "Whoever should...", pt: "Quem deva...", tense: "Conjuntivo" },
-            { en: "It's necessary that we must.", pt: "É preciso que devamos.", tense: "Conjuntivo" },
-            { en: "I don't think he should.", pt: "Não acho que ele deva.", tense: "Conjuntivo" },
-            { en: "Unless you should...", pt: "A menos que devas...", tense: "Conjuntivo" },
-            { en: "So that they should...", pt: "Para que devam...", tense: "Conjuntivo" },
-            { en: "Whatever you should...", pt: "O que quer que devas...", tense: "Conjuntivo" },
-            { en: "If I should...", pt: "Se eu devesse...", tense: "Imperfeito Conj." },
-            { en: "I wish you should.", pt: "Quem me dera que devesses.", tense: "Imperfeito Conj." },
-            { en: "If he should...", pt: "Se ele devesse...", tense: "Imperfeito Conj." },
-            { en: "If we should...", pt: "Se devêssemos...", tense: "Imperfeito Conj." },
-            { en: "If they should...", pt: "Se eles devessem...", tense: "Imperfeito Conj." },
-            { en: "Even if I should...", pt: "Mesmo que devesse...", tense: "Imperfeito Conj." },
-            { en: "If she should go...", pt: "Se ela devesse ir...", tense: "Imperfeito Conj." },
-            { en: "As if he should...", pt: "Como se devesse...", tense: "Imperfeito Conj." },
-            { en: "If only I should.", pt: "Se ao menos devesse.", tense: "Imperfeito Conj." },
-            { en: "If we should pay...", pt: "Se devêssemos pagar...", tense: "Imperfeito Conj." },
-            { en: "When I should...", pt: "Quando dever...", tense: "Futuro Conj." },
-            { en: "If you should...", pt: "Se deveres...", tense: "Futuro Conj." },
-            { en: "When he should...", pt: "Quando ele dever...", tense: "Futuro Conj." },
-            { en: "If we should...", pt: "Se devermos...", tense: "Futuro Conj." },
-            { en: "When they should...", pt: "Quando eles deverem...", tense: "Futuro Conj." },
-            { en: "As soon as I should...", pt: "Assim que dever...", tense: "Futuro Conj." },
-            { en: "Whoever should...", pt: "Quem dever...", tense: "Futuro Conj." },
-            { en: "If you ever should...", pt: "Se alguma vez deveres...", tense: "Futuro Conj." },
-            { en: "When we should pay...", pt: "Quando devermos pagar...", tense: "Futuro Conj." },
-            { en: "Tell me if you should.", pt: "Diz-me se deveres.", tense: "Futuro Conj." },
-            { en: "To owe money.", pt: "Dever dinheiro.", tense: "Expressão" },
-            { en: "As it should be.", pt: "Como deve ser.", tense: "Expressão" },
-            { en: "You should know.", pt: "Deves saber.", tense: "Expressão" },
-            { en: "It must be.", pt: "Deve ser.", tense: "Expressão" },
-            { en: "Duty calls.", pt: "O dever chama.", tense: "Expressão" },
-            { en: "To do one's duty.", pt: "Cumprir o dever.", tense: "Expressão" },
-            { en: "You shouldn't.", pt: "Não deves.", tense: "Expressão" },
-            { en: "Must I?", pt: "Devo?", tense: "Expressão" },
-            { en: "Probably.", pt: "Deve ser.", tense: "Expressão" },
-            { en: "To be obliged to.", pt: "Dever fazer.", tense: "Expressão" }
-        ]
-    };
+        const VERB_CONFIG = {
+            originKey: 'en',
+            labels: { target: 'European Portuguese', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["devo","deves","deve","devemos","devem","devia","devias","devíamos","deviam","devi","deveste","deveu","deveram","deverei","deverás","deverá","deveremos","deverão","deveria","deverias","deveríamos","deveriam","deva","devas","devamos","devam","devesse","devesses","devêssemos","devessem","dever","deveres","devermos","deverem","devendo","devido"],
+            phrases: [
+                { en: "I should go.", pt: "Devo ir.", tense: "Presente" },
+                { en: "You should study.", pt: "Deves estudar.", tense: "Presente" },
+                { en: "He must work.", pt: "Ele deve trabalhar.", tense: "Presente" },
+                { en: "She should rest.", pt: "Ela deve descansar.", tense: "Presente" },
+                { en: "We must help.", pt: "Devemos ajudar.", tense: "Presente" },
+                { en: "They should wait.", pt: "Eles devem esperar.", tense: "Presente" },
+                { en: "I shouldn't eat this.", pt: "Não devo comer isto.", tense: "Presente" },
+                { en: "Must I do it?", pt: "Devo fazer?", tense: "Presente" },
+                { en: "He owes me money.", pt: "Ele deve-me dinheiro.", tense: "Presente" },
+                { en: "She must be tired.", pt: "Ela deve estar cansada.", tense: "Presente" },
+                { en: "I should call.", pt: "Devo ligar.", tense: "Presente" },
+                { en: "You should know.", pt: "Deves saber.", tense: "Presente" },
+                { en: "He must be right.", pt: "Ele deve ter razão.", tense: "Presente" },
+                { en: "She should come.", pt: "Ela deve vir.", tense: "Presente" },
+                { en: "We should leave.", pt: "Devemos sair.", tense: "Presente" },
+                { en: "They owe a lot.", pt: "Eles devem muito.", tense: "Presente" },
+                { en: "I should apologize.", pt: "Devo pedir desculpa.", tense: "Presente" },
+                { en: "You must be careful.", pt: "Deves ter cuidado.", tense: "Presente" },
+                { en: "He should try.", pt: "Ele deve tentar.", tense: "Presente" },
+                { en: "What should I do?", pt: "O que devo fazer?", tense: "Presente" },
+                { en: "I should have studied.", pt: "Devia ter estudado.", tense: "Imperfeito" },
+                { en: "You should have called.", pt: "Devias ter ligado.", tense: "Imperfeito" },
+                { en: "He should have waited.", pt: "Ele devia ter esperado.", tense: "Imperfeito" },
+                { en: "She should have come.", pt: "Ela devia ter vindo.", tense: "Imperfeito" },
+                { en: "We should have helped.", pt: "Devíamos ter ajudado.", tense: "Imperfeito" },
+                { en: "They should have known.", pt: "Eles deviam ter sabido.", tense: "Imperfeito" },
+                { en: "I was supposed to go.", pt: "Devia ir.", tense: "Imperfeito" },
+                { en: "You were supposed to call.", pt: "Devias ligar.", tense: "Imperfeito" },
+                { en: "He owed money.", pt: "Ele devia dinheiro.", tense: "Imperfeito" },
+                { en: "We were supposed to wait.", pt: "Devíamos esperar.", tense: "Imperfeito" },
+                { en: "I had to leave.", pt: "Devi sair.", tense: "Perfeito" },
+                { en: "You had to work.", pt: "Deveste trabalhar.", tense: "Perfeito" },
+                { en: "He had to help.", pt: "Ele deveu ajudar.", tense: "Perfeito" },
+                { en: "We had to decide.", pt: "Devemos decidir.", tense: "Perfeito" },
+                { en: "They had to pay.", pt: "Eles deveram pagar.", tense: "Perfeito" },
+                { en: "I had to apologize.", pt: "Devi pedir desculpa.", tense: "Perfeito" },
+                { en: "You had to explain.", pt: "Deveste explicar.", tense: "Perfeito" },
+                { en: "He had to accept.", pt: "Ele deveu aceitar.", tense: "Perfeito" },
+                { en: "We had to understand.", pt: "Devemos perceber.", tense: "Perfeito" },
+                { en: "They had to go.", pt: "Eles deveram ir.", tense: "Perfeito" },
+                { en: "I will have to go.", pt: "Deverei ir.", tense: "Futuro" },
+                { en: "You will have to study.", pt: "Deverás estudar.", tense: "Futuro" },
+                { en: "He will have to work.", pt: "Ele deverá trabalhar.", tense: "Futuro" },
+                { en: "We will have to decide.", pt: "Deveremos decidir.", tense: "Futuro" },
+                { en: "They will have to pay.", pt: "Eles deverão pagar.", tense: "Futuro" },
+                { en: "I won't have to do it.", pt: "Não deverei fazer.", tense: "Futuro" },
+                { en: "Will you have to leave?", pt: "Deverás sair?", tense: "Futuro" },
+                { en: "She will have to wait.", pt: "Ela deverá esperar.", tense: "Futuro" },
+                { en: "We will have to help.", pt: "Deveremos ajudar.", tense: "Futuro" },
+                { en: "They will have to understand.", pt: "Eles deverão perceber.", tense: "Futuro" },
+                { en: "I should go.", pt: "Deveria ir.", tense: "Condicional" },
+                { en: "You should study more.", pt: "Deverias estudar mais.", tense: "Condicional" },
+                { en: "He should help.", pt: "Ele deveria ajudar.", tense: "Condicional" },
+                { en: "We should wait.", pt: "Deveríamos esperar.", tense: "Condicional" },
+                { en: "They should understand.", pt: "Eles deveriam perceber.", tense: "Condicional" },
+                { en: "I shouldn't say.", pt: "Não deveria dizer.", tense: "Condicional" },
+                { en: "Should you do it?", pt: "Deverias fazer?", tense: "Condicional" },
+                { en: "She should come.", pt: "Ela deveria vir.", tense: "Condicional" },
+                { en: "We should try.", pt: "Deveríamos tentar.", tense: "Condicional" },
+                { en: "He should have known.", pt: "Ele deveria ter sabido.", tense: "Condicional" },
+                { en: "I hope you should go.", pt: "Espero que devas ir.", tense: "Conjuntivo" },
+                { en: "It's important that he must.", pt: "É importante que ele deva.", tense: "Conjuntivo" },
+                { en: "I doubt she should.", pt: "Duvido que ela deva.", tense: "Conjuntivo" },
+                { en: "Even if you should...", pt: "Mesmo que devas...", tense: "Conjuntivo" },
+                { en: "Whoever should...", pt: "Quem deva...", tense: "Conjuntivo" },
+                { en: "It's necessary that we must.", pt: "É preciso que devamos.", tense: "Conjuntivo" },
+                { en: "I don't think he should.", pt: "Não acho que ele deva.", tense: "Conjuntivo" },
+                { en: "Unless you should...", pt: "A menos que devas...", tense: "Conjuntivo" },
+                { en: "So that they should...", pt: "Para que devam...", tense: "Conjuntivo" },
+                { en: "Whatever you should...", pt: "O que quer que devas...", tense: "Conjuntivo" },
+                { en: "If I should...", pt: "Se eu devesse...", tense: "Imperfeito Conj." },
+                { en: "I wish you should.", pt: "Quem me dera que devesses.", tense: "Imperfeito Conj." },
+                { en: "If he should...", pt: "Se ele devesse...", tense: "Imperfeito Conj." },
+                { en: "If we should...", pt: "Se devêssemos...", tense: "Imperfeito Conj." },
+                { en: "If they should...", pt: "Se eles devessem...", tense: "Imperfeito Conj." },
+                { en: "Even if I should...", pt: "Mesmo que devesse...", tense: "Imperfeito Conj." },
+                { en: "If she should go...", pt: "Se ela devesse ir...", tense: "Imperfeito Conj." },
+                { en: "As if he should...", pt: "Como se devesse...", tense: "Imperfeito Conj." },
+                { en: "If only I should.", pt: "Se ao menos devesse.", tense: "Imperfeito Conj." },
+                { en: "If we should pay...", pt: "Se devêssemos pagar...", tense: "Imperfeito Conj." },
+                { en: "When I should...", pt: "Quando dever...", tense: "Futuro Conj." },
+                { en: "If you should...", pt: "Se deveres...", tense: "Futuro Conj." },
+                { en: "When he should...", pt: "Quando ele dever...", tense: "Futuro Conj." },
+                { en: "If we should...", pt: "Se devermos...", tense: "Futuro Conj." },
+                { en: "When they should...", pt: "Quando eles deverem...", tense: "Futuro Conj." },
+                { en: "As soon as I should...", pt: "Assim que dever...", tense: "Futuro Conj." },
+                { en: "Whoever should...", pt: "Quem dever...", tense: "Futuro Conj." },
+                { en: "If you ever should...", pt: "Se alguma vez deveres...", tense: "Futuro Conj." },
+                { en: "When we should pay...", pt: "Quando devermos pagar...", tense: "Futuro Conj." },
+                { en: "Tell me if you should.", pt: "Diz-me se deveres.", tense: "Futuro Conj." },
+                { en: "To owe money.", pt: "Dever dinheiro.", tense: "Expressão" },
+                { en: "As it should be.", pt: "Como deve ser.", tense: "Expressão" },
+                { en: "You should know.", pt: "Deves saber.", tense: "Expressão" },
+                { en: "It must be.", pt: "Deve ser.", tense: "Expressão" },
+                { en: "Duty calls.", pt: "O dever chama.", tense: "Expressão" },
+                { en: "To do one's duty.", pt: "Cumprir o dever.", tense: "Expressão" },
+                { en: "You shouldn't.", pt: "Não deves.", tense: "Expressão" },
+                { en: "Must I?", pt: "Devo?", tense: "Expressão" },
+                { en: "Probably.", pt: "Deve ser.", tense: "Expressão" },
+                { en: "To be obliged to.", pt: "Dever fazer.", tense: "Expressão" },
+            ]
+        };
     </script>
     <script src="../../assets/js/verb.js"></script>
 </body>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verb SER — 100 Phrases</title>
+    <title>Verb 🇵🇹 VERB SER — 100 Phrases</title>
     <link rel="stylesheet" href="../../assets/css/verb.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
         <header>
             <a href="../" class="back-link">← Back to verb list</a>
             <h1>🇵🇹 Verb SER</h1>
-            <p class="subtitle">100 popular phrases — European Portuguese</p>
+            <p class="subtitle">to be (permanent) — 110 phrases</p>
         </header>
 
         <div class="controls">
@@ -23,155 +23,134 @@
             <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
         </div>
 
-        <div class="stats" id="stats">Showing: 100 of 100 phrases</div>
+        <div class="stats" id="stats">Showing: 110 of 110 phrases</div>
 
         <div class="phrase-list" id="phraseList">
         </div>
 
         <footer>
-            European Portuguese Practice — Verb SER
+            European Portuguese Practice — SER
         </footer>
     </div>
 
     <script>
-    const VERB_CONFIG = {
-        originKey: 'en',
-        labels: { target: 'European Portuguese', showing: 'Showing', of: 'of', phrases: 'phrases' },
-        verbForms: ['sou', 'és', 'é', 'somos', 'são', 'era', 'eras', 'éramos', 'eram', 'fui', 'foste', 'foi', 'fomos', 'foram', 'serei', 'serás', 'será', 'seremos', 'serão', 'seria', 'serias', 'seríamos', 'seriam', 'seja', 'sejas', 'sejamos', 'sejam', 'fosse', 'fosses', 'fôssemos', 'fossem', 'ser', 'sendo', 'sido'],
-        phrases: [
-            // Presente do Indicativo (Present)
-            { en: "I am a student.", pt: "Sou estudante.", tense: "Presente" },
-            { en: "You are my friend.", pt: "Tu és meu amigo.", tense: "Presente" },
-            { en: "He is a doctor.", pt: "Ele é médico.", tense: "Presente" },
-            { en: "She is beautiful.", pt: "Ela é bonita.", tense: "Presente" },
-            { en: "We are Portuguese.", pt: "Somos portugueses.", tense: "Presente" },
-            { en: "You (plural) are welcome.", pt: "Vocês são bem-vindos.", tense: "Presente" },
-            { en: "They are brothers.", pt: "Eles são irmãos.", tense: "Presente" },
-            { en: "It is important.", pt: "É importante.", tense: "Presente" },
-            { en: "I am not tired.", pt: "Não sou cansado.", tense: "Presente" },
-            { en: "You are not alone.", pt: "Tu não és sozinho.", tense: "Presente" },
-
-            // Questions in present
-            { en: "Are you ready?", pt: "Estás pronto? / És pronto?", tense: "Presente" },
-            { en: "Who is it?", pt: "Quem é?", tense: "Presente" },
-            { en: "What is this?", pt: "O que é isto?", tense: "Presente" },
-            { en: "Where are you from?", pt: "De onde és?", tense: "Presente" },
-            { en: "Is it true?", pt: "É verdade?", tense: "Presente" },
-            { en: "Is she your sister?", pt: "Ela é a tua irmã?", tense: "Presente" },
-            { en: "Are we late?", pt: "Estamos atrasados? / Somos atrasados?", tense: "Presente" },
-            { en: "Is it far?", pt: "É longe?", tense: "Presente" },
-            { en: "Are they married?", pt: "Eles são casados?", tense: "Presente" },
-            { en: "What is your name?", pt: "Qual é o teu nome?", tense: "Presente" },
-
-            // Pretérito Imperfeito (Imperfect Past)
-            { en: "I was young.", pt: "Eu era jovem.", tense: "Imperfeito" },
-            { en: "You were very kind.", pt: "Tu eras muito simpático.", tense: "Imperfeito" },
-            { en: "He was a teacher.", pt: "Ele era professor.", tense: "Imperfeito" },
-            { en: "She was always happy.", pt: "Ela era sempre feliz.", tense: "Imperfeito" },
-            { en: "We were neighbors.", pt: "Éramos vizinhos.", tense: "Imperfeito" },
-            { en: "They were best friends.", pt: "Eles eram melhores amigos.", tense: "Imperfeito" },
-            { en: "It was different before.", pt: "Era diferente antes.", tense: "Imperfeito" },
-            { en: "Life was simpler.", pt: "A vida era mais simples.", tense: "Imperfeito" },
-            { en: "The house was old.", pt: "A casa era velha.", tense: "Imperfeito" },
-            { en: "I wasn't happy there.", pt: "Eu não era feliz lá.", tense: "Imperfeito" },
-
-            // Pretérito Perfeito Simples (Simple Past)
-            { en: "I was there yesterday.", pt: "Fui lá ontem.", tense: "Perfeito" },
-            { en: "You were the best.", pt: "Tu foste o melhor.", tense: "Perfeito" },
-            { en: "He was president.", pt: "Ele foi presidente.", tense: "Perfeito" },
-            { en: "It was a good day.", pt: "Foi um bom dia.", tense: "Perfeito" },
-            { en: "We were champions.", pt: "Fomos campeões.", tense: "Perfeito" },
-            { en: "They were very helpful.", pt: "Eles foram muito prestáveis.", tense: "Perfeito" },
-            { en: "The trip was amazing.", pt: "A viagem foi incrível.", tense: "Perfeito" },
-            { en: "It wasn't my fault.", pt: "Não foi culpa minha.", tense: "Perfeito" },
-            { en: "You were right.", pt: "Tu tiveste razão. / Foste certeiro.", tense: "Perfeito" },
-            { en: "The movie was boring.", pt: "O filme foi aborrecido.", tense: "Perfeito" },
-
-            // Futuro do Indicativo (Future)
-            { en: "I will be there.", pt: "Serei lá. / Estarei lá.", tense: "Futuro" },
-            { en: "You will be happy.", pt: "Tu serás feliz.", tense: "Futuro" },
-            { en: "He will be a great doctor.", pt: "Ele será um grande médico.", tense: "Futuro" },
-            { en: "It will be easy.", pt: "Será fácil.", tense: "Futuro" },
-            { en: "We will be together.", pt: "Seremos juntos. / Estaremos juntos.", tense: "Futuro" },
-            { en: "They will be famous.", pt: "Eles serão famosos.", tense: "Futuro" },
-            { en: "The party will be fun.", pt: "A festa será divertida.", tense: "Futuro" },
-            { en: "I won't be late.", pt: "Não serei atrasado. / Não chegarei atrasado.", tense: "Futuro" },
-            { en: "It will be worth it.", pt: "Valerá a pena. / Será válido.", tense: "Futuro" },
-            { en: "Tomorrow will be better.", pt: "Amanhã será melhor.", tense: "Futuro" },
-
-            // Condicional (Conditional)
-            { en: "I would be grateful.", pt: "Seria grato.", tense: "Condicional" },
-            { en: "It would be nice.", pt: "Seria bom.", tense: "Condicional" },
-            { en: "You would be a good leader.", pt: "Tu serias um bom líder.", tense: "Condicional" },
-            { en: "He would be proud.", pt: "Ele seria orgulhoso.", tense: "Condicional" },
-            { en: "We would be honored.", pt: "Seríamos honrados.", tense: "Condicional" },
-            { en: "They would be surprised.", pt: "Eles seriam surpreendidos.", tense: "Condicional" },
-            { en: "It would be impossible.", pt: "Seria impossível.", tense: "Condicional" },
-            { en: "That would be perfect.", pt: "Isso seria perfeito.", tense: "Condicional" },
-            { en: "I wouldn't be so sure.", pt: "Não seria tão certo.", tense: "Condicional" },
-            { en: "It would be better to wait.", pt: "Seria melhor esperar.", tense: "Condicional" },
-
-            // Presente do Conjuntivo (Present Subjunctive)
-            { en: "I hope you are well.", pt: "Espero que sejas bem. / Espero que estejas bem.", tense: "Conjuntivo" },
-            { en: "It's important that he is careful.", pt: "É importante que ele seja cuidadoso.", tense: "Conjuntivo" },
-            { en: "I want us to be friends.", pt: "Quero que sejamos amigos.", tense: "Conjuntivo" },
-            { en: "I doubt that it is true.", pt: "Duvido que seja verdade.", tense: "Conjuntivo" },
-            { en: "I don't think she is right.", pt: "Não acho que ela tenha razão. / Não acho que seja certo.", tense: "Conjuntivo" },
-            { en: "Even though it is difficult...", pt: "Embora seja difícil...", tense: "Conjuntivo" },
-            { en: "It's necessary that we be united.", pt: "É preciso que sejamos unidos.", tense: "Conjuntivo" },
-            { en: "Whatever it is...", pt: "Seja o que for...", tense: "Conjuntivo" },
-            { en: "Whoever you are...", pt: "Sejas quem fores...", tense: "Conjuntivo" },
-            { en: "Let it be.", pt: "Que seja.", tense: "Conjuntivo" },
-
-            // Imperfeito do Conjuntivo (Imperfect Subjunctive)
-            { en: "If I were rich...", pt: "Se eu fosse rico...", tense: "Imperfeito Conj." },
-            { en: "I wish you were here.", pt: "Quem me dera que estivesses aqui. / Se fosses aqui...", tense: "Imperfeito Conj." },
-            { en: "If he were younger...", pt: "Se ele fosse mais novo...", tense: "Imperfeito Conj." },
-            { en: "If we were together...", pt: "Se fôssemos juntos...", tense: "Imperfeito Conj." },
-            { en: "If they were here...", pt: "Se eles fossem aqui... / Se estivessem aqui...", tense: "Imperfeito Conj." },
-            { en: "I would go if it were possible.", pt: "Iria se fosse possível.", tense: "Imperfeito Conj." },
-            { en: "Even if it were true...", pt: "Mesmo que fosse verdade...", tense: "Imperfeito Conj." },
-            { en: "If I were you...", pt: "Se eu fosse a ti...", tense: "Imperfeito Conj." },
-            { en: "As if it were nothing...", pt: "Como se não fosse nada...", tense: "Imperfeito Conj." },
-            { en: "I wish it were different.", pt: "Quem me dera que fosse diferente.", tense: "Imperfeito Conj." },
-
-            // Identity and characteristics
-            { en: "I am Portuguese.", pt: "Sou português.", tense: "Presente" },
-            { en: "She is Brazilian.", pt: "Ela é brasileira.", tense: "Presente" },
-            { en: "He is tall.", pt: "Ele é alto.", tense: "Presente" },
-            { en: "They are intelligent.", pt: "Eles são inteligentes.", tense: "Presente" },
-            { en: "We are a team.", pt: "Somos uma equipa.", tense: "Presente" },
-            { en: "It is natural.", pt: "É natural.", tense: "Presente" },
-            { en: "You are special.", pt: "Tu és especial.", tense: "Presente" },
-            { en: "This is mine.", pt: "Isto é meu.", tense: "Presente" },
-            { en: "That is yours.", pt: "Isso é teu.", tense: "Presente" },
-            { en: "The book is interesting.", pt: "O livro é interessante.", tense: "Presente" },
-
-            // Common expressions
-            { en: "That's it!", pt: "É isso!", tense: "Expressão" },
-            { en: "It's okay.", pt: "Está bem. / Tudo bem.", tense: "Expressão" },
-            { en: "It's nothing.", pt: "Não é nada.", tense: "Expressão" },
-            { en: "It's a pleasure.", pt: "É um prazer.", tense: "Expressão" },
-            { en: "That's life.", pt: "É a vida.", tense: "Expressão" },
-            { en: "It's time.", pt: "É hora. / Está na hora.", tense: "Expressão" },
-            { en: "It's not fair.", pt: "Não é justo.", tense: "Expressão" },
-            { en: "It's worth it.", pt: "Vale a pena.", tense: "Expressão" },
-            { en: "It's up to you.", pt: "Depende de ti. / É contigo.", tense: "Expressão" },
-            { en: "That's the problem.", pt: "É esse o problema.", tense: "Expressão" },
-
-            // Additional useful phrases
-            { en: "Today is Monday.", pt: "Hoje é segunda-feira.", tense: "Presente" },
-            { en: "What time is it?", pt: "Que horas são?", tense: "Presente" },
-            { en: "It's two o'clock.", pt: "São duas horas.", tense: "Presente" },
-            { en: "Where is the station?", pt: "Onde é a estação?", tense: "Presente" },
-            { en: "Who is responsible?", pt: "Quem é o responsável?", tense: "Presente" },
-            { en: "How is the weather?", pt: "Como é o tempo?", tense: "Presente" },
-            { en: "The meeting is tomorrow.", pt: "A reunião é amanhã.", tense: "Presente" },
-            { en: "My birthday is in May.", pt: "O meu aniversário é em maio.", tense: "Presente" },
-            { en: "Being happy is important.", pt: "Ser feliz é importante.", tense: "Presente" },
-            { en: "To be or not to be.", pt: "Ser ou não ser.", tense: "Expressão" }
-        ]
-    };
+        const VERB_CONFIG = {
+            originKey: 'en',
+            labels: { target: 'European Portuguese', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["sou","és","é","somos","são","era","eras","éramos","eram","fui","foste","foi","fomos","foram","serei","serás","será","seremos","serão","seria","serias","seríamos","seriam","seja","sejas","sejamos","sejam","fosse","fosses","fôssemos","fossem","ser","sendo","sido"],
+            phrases: [
+                { en: "I am a student.", pt: "Sou estudante.", tense: "Presente" },
+                { en: "You are my friend.", pt: "Tu és meu amigo.", tense: "Presente" },
+                { en: "He is a doctor.", pt: "Ele é médico.", tense: "Presente" },
+                { en: "She is beautiful.", pt: "Ela é bonita.", tense: "Presente" },
+                { en: "We are Portuguese.", pt: "Somos portugueses.", tense: "Presente" },
+                { en: "You (plural) are welcome.", pt: "Vocês são bem-vindos.", tense: "Presente" },
+                { en: "They are brothers.", pt: "Eles são irmãos.", tense: "Presente" },
+                { en: "It is important.", pt: "É importante.", tense: "Presente" },
+                { en: "I am not tired.", pt: "Não sou cansado.", tense: "Presente" },
+                { en: "You are not alone.", pt: "Tu não és sozinho.", tense: "Presente" },
+                { en: "Are you ready?", pt: "Estás pronto? / És pronto?", tense: "Presente" },
+                { en: "Who is it?", pt: "Quem é?", tense: "Presente" },
+                { en: "What is this?", pt: "O que é isto?", tense: "Presente" },
+                { en: "Where are you from?", pt: "De onde és?", tense: "Presente" },
+                { en: "Is it true?", pt: "É verdade?", tense: "Presente" },
+                { en: "Is she your sister?", pt: "Ela é a tua irmã?", tense: "Presente" },
+                { en: "Are we late?", pt: "Estamos atrasados? / Somos atrasados?", tense: "Presente" },
+                { en: "Is it far?", pt: "É longe?", tense: "Presente" },
+                { en: "Are they married?", pt: "Eles são casados?", tense: "Presente" },
+                { en: "What is your name?", pt: "Qual é o teu nome?", tense: "Presente" },
+                { en: "I was young.", pt: "Eu era jovem.", tense: "Imperfeito" },
+                { en: "You were very kind.", pt: "Tu eras muito simpático.", tense: "Imperfeito" },
+                { en: "He was a teacher.", pt: "Ele era professor.", tense: "Imperfeito" },
+                { en: "She was always happy.", pt: "Ela era sempre feliz.", tense: "Imperfeito" },
+                { en: "We were neighbors.", pt: "Éramos vizinhos.", tense: "Imperfeito" },
+                { en: "They were best friends.", pt: "Eles eram melhores amigos.", tense: "Imperfeito" },
+                { en: "It was different before.", pt: "Era diferente antes.", tense: "Imperfeito" },
+                { en: "Life was simpler.", pt: "A vida era mais simples.", tense: "Imperfeito" },
+                { en: "The house was old.", pt: "A casa era velha.", tense: "Imperfeito" },
+                { en: "I wasn't happy there.", pt: "Eu não era feliz lá.", tense: "Imperfeito" },
+                { en: "I was there yesterday.", pt: "Fui lá ontem.", tense: "Perfeito" },
+                { en: "You were the best.", pt: "Tu foste o melhor.", tense: "Perfeito" },
+                { en: "He was president.", pt: "Ele foi presidente.", tense: "Perfeito" },
+                { en: "It was a good day.", pt: "Foi um bom dia.", tense: "Perfeito" },
+                { en: "We were champions.", pt: "Fomos campeões.", tense: "Perfeito" },
+                { en: "They were very helpful.", pt: "Eles foram muito prestáveis.", tense: "Perfeito" },
+                { en: "The trip was amazing.", pt: "A viagem foi incrível.", tense: "Perfeito" },
+                { en: "It wasn't my fault.", pt: "Não foi culpa minha.", tense: "Perfeito" },
+                { en: "You were right.", pt: "Tu tiveste razão. / Foste certeiro.", tense: "Perfeito" },
+                { en: "The movie was boring.", pt: "O filme foi aborrecido.", tense: "Perfeito" },
+                { en: "I will be there.", pt: "Serei lá. / Estarei lá.", tense: "Futuro" },
+                { en: "You will be happy.", pt: "Tu serás feliz.", tense: "Futuro" },
+                { en: "He will be a great doctor.", pt: "Ele será um grande médico.", tense: "Futuro" },
+                { en: "It will be easy.", pt: "Será fácil.", tense: "Futuro" },
+                { en: "We will be together.", pt: "Seremos juntos. / Estaremos juntos.", tense: "Futuro" },
+                { en: "They will be famous.", pt: "Eles serão famosos.", tense: "Futuro" },
+                { en: "The party will be fun.", pt: "A festa será divertida.", tense: "Futuro" },
+                { en: "I won't be late.", pt: "Não serei atrasado. / Não chegarei atrasado.", tense: "Futuro" },
+                { en: "It will be worth it.", pt: "Valerá a pena. / Será válido.", tense: "Futuro" },
+                { en: "Tomorrow will be better.", pt: "Amanhã será melhor.", tense: "Futuro" },
+                { en: "I would be grateful.", pt: "Seria grato.", tense: "Condicional" },
+                { en: "It would be nice.", pt: "Seria bom.", tense: "Condicional" },
+                { en: "You would be a good leader.", pt: "Tu serias um bom líder.", tense: "Condicional" },
+                { en: "He would be proud.", pt: "Ele seria orgulhoso.", tense: "Condicional" },
+                { en: "We would be honored.", pt: "Seríamos honrados.", tense: "Condicional" },
+                { en: "They would be surprised.", pt: "Eles seriam surpreendidos.", tense: "Condicional" },
+                { en: "It would be impossible.", pt: "Seria impossível.", tense: "Condicional" },
+                { en: "That would be perfect.", pt: "Isso seria perfeito.", tense: "Condicional" },
+                { en: "I wouldn't be so sure.", pt: "Não seria tão certo.", tense: "Condicional" },
+                { en: "It would be better to wait.", pt: "Seria melhor esperar.", tense: "Condicional" },
+                { en: "I hope you are well.", pt: "Espero que sejas bem. / Espero que estejas bem.", tense: "Conjuntivo" },
+                { en: "It's important that he is careful.", pt: "É importante que ele seja cuidadoso.", tense: "Conjuntivo" },
+                { en: "I want us to be friends.", pt: "Quero que sejamos amigos.", tense: "Conjuntivo" },
+                { en: "I doubt that it is true.", pt: "Duvido que seja verdade.", tense: "Conjuntivo" },
+                { en: "I don't think she is right.", pt: "Não acho que ela tenha razão. / Não acho que seja certo.", tense: "Conjuntivo" },
+                { en: "Even though it is difficult...", pt: "Embora seja difícil...", tense: "Conjuntivo" },
+                { en: "It's necessary that we be united.", pt: "É preciso que sejamos unidos.", tense: "Conjuntivo" },
+                { en: "Whatever it is...", pt: "Seja o que for...", tense: "Conjuntivo" },
+                { en: "Whoever you are...", pt: "Sejas quem fores...", tense: "Conjuntivo" },
+                { en: "Let it be.", pt: "Que seja.", tense: "Conjuntivo" },
+                { en: "If I were rich...", pt: "Se eu fosse rico...", tense: "Imperfeito Conj." },
+                { en: "I wish you were here.", pt: "Quem me dera que estivesses aqui. / Se fosses aqui...", tense: "Imperfeito Conj." },
+                { en: "If he were younger...", pt: "Se ele fosse mais novo...", tense: "Imperfeito Conj." },
+                { en: "If we were together...", pt: "Se fôssemos juntos...", tense: "Imperfeito Conj." },
+                { en: "If they were here...", pt: "Se eles fossem aqui... / Se estivessem aqui...", tense: "Imperfeito Conj." },
+                { en: "I would go if it were possible.", pt: "Iria se fosse possível.", tense: "Imperfeito Conj." },
+                { en: "Even if it were true...", pt: "Mesmo que fosse verdade...", tense: "Imperfeito Conj." },
+                { en: "If I were you...", pt: "Se eu fosse a ti...", tense: "Imperfeito Conj." },
+                { en: "As if it were nothing...", pt: "Como se não fosse nada...", tense: "Imperfeito Conj." },
+                { en: "I wish it were different.", pt: "Quem me dera que fosse diferente.", tense: "Imperfeito Conj." },
+                { en: "I am Portuguese.", pt: "Sou português.", tense: "Presente" },
+                { en: "She is Brazilian.", pt: "Ela é brasileira.", tense: "Presente" },
+                { en: "He is tall.", pt: "Ele é alto.", tense: "Presente" },
+                { en: "They are intelligent.", pt: "Eles são inteligentes.", tense: "Presente" },
+                { en: "We are a team.", pt: "Somos uma equipa.", tense: "Presente" },
+                { en: "It is natural.", pt: "É natural.", tense: "Presente" },
+                { en: "You are special.", pt: "Tu és especial.", tense: "Presente" },
+                { en: "This is mine.", pt: "Isto é meu.", tense: "Presente" },
+                { en: "That is yours.", pt: "Isso é teu.", tense: "Presente" },
+                { en: "The book is interesting.", pt: "O livro é interessante.", tense: "Presente" },
+                { en: "That's it!", pt: "É isso!", tense: "Expressão" },
+                { en: "It's okay.", pt: "Está bem. / Tudo bem.", tense: "Expressão" },
+                { en: "It's nothing.", pt: "Não é nada.", tense: "Expressão" },
+                { en: "It's a pleasure.", pt: "É um prazer.", tense: "Expressão" },
+                { en: "That's life.", pt: "É a vida.", tense: "Expressão" },
+                { en: "It's time.", pt: "É hora. / Está na hora.", tense: "Expressão" },
+                { en: "It's not fair.", pt: "Não é justo.", tense: "Expressão" },
+                { en: "It's worth it.", pt: "Vale a pena.", tense: "Expressão" },
+                { en: "It's up to you.", pt: "Depende de ti. / É contigo.", tense: "Expressão" },
+                { en: "That's the problem.", pt: "É esse o problema.", tense: "Expressão" },
+                { en: "Today is Monday.", pt: "Hoje é segunda-feira.", tense: "Presente" },
+                { en: "What time is it?", pt: "Que horas são?", tense: "Presente" },
+                { en: "It's two o'clock.", pt: "São duas horas.", tense: "Presente" },
+                { en: "Where is the station?", pt: "Onde é a estação?", tense: "Presente" },
+                { en: "Who is responsible?", pt: "Quem é o responsável?", tense: "Presente" },
+                { en: "How is the weather?", pt: "Como é o tempo?", tense: "Presente" },
+                { en: "The meeting is tomorrow.", pt: "A reunião é amanhã.", tense: "Presente" },
+                { en: "My birthday is in May.", pt: "O meu aniversário é em maio.", tense: "Presente" },
+                { en: "Being happy is important.", pt: "Ser feliz é importante.", tense: "Presente" },
+                { en: "To be or not to be.", pt: "Ser ou não ser.", tense: "Expressão" },
+            ]
+        };
     </script>
     <script src="../../assets/js/verb.js"></script>
 </body>

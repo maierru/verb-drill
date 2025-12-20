@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verb DAR — 100 Phrases</title>
+    <title>Verb 🇵🇹 VERB DAR — 100 Phrases</title>
     <link rel="stylesheet" href="../../assets/css/verb.css">
-    
 </head>
 <body>
     <div class="container">
         <header>
             <a href="../" class="back-link">← Back to verb list</a>
             <h1>🇵🇹 Verb DAR</h1>
-            <p class="subtitle">100 popular phrases — European Portuguese</p>
+            <p class="subtitle">to give — 100 phrases</p>
         </header>
 
         <div class="controls">
@@ -30,137 +29,118 @@
         </div>
 
         <footer>
-            European Portuguese Practice — Verb DAR
+            European Portuguese Practice — DAR
         </footer>
     </div>
 
     <script>
-    const VERB_CONFIG = {
-        originKey: 'en',
-        labels: { target: 'European Portuguese', showing: 'Showing', of: 'of', phrases: 'phrases' },
-        verbForms: ['dou', 'dás', 'dá', 'damos', 'dão', 'dava', 'davas', 'dávamos', 'davam', 'dei', 'deste', 'deu', 'demos', 'deram', 'darei', 'darás', 'dará', 'daremos', 'darão', 'daria', 'darias', 'daríamos', 'dariam', 'dê', 'dês', 'deem', 'desse', 'desses', 'déssemos', 'dessem', 'der', 'deres', 'dermos', 'derem', 'dar', 'dando', 'dado'],
-        phrases: [
-            // Presente do Indicativo (Present)
-            { en: "I give you my word.", pt: "Dou-te a minha palavra.", tense: "Presente" },
-            { en: "Do you give permission?", pt: "Dás permissão?", tense: "Presente" },
-            { en: "He gives good advice.", pt: "Ele dá bons conselhos.", tense: "Presente" },
-            { en: "She gives classes.", pt: "Ela dá aulas.", tense: "Presente" },
-            { en: "We give our best.", pt: "Damos o nosso melhor.", tense: "Presente" },
-            { en: "They give gifts.", pt: "Eles dão presentes.", tense: "Presente" },
-            { en: "I don't give up.", pt: "Não dou desisto.", tense: "Presente" },
-            { en: "Can you give me a hand?", pt: "Podes dar-me uma ajuda?", tense: "Presente" },
-            { en: "It gives me pleasure.", pt: "Dá-me prazer.", tense: "Presente" },
-            { en: "I give you a hug.", pt: "Dou-te um abraço.", tense: "Presente" },
-
-            // More present tense
-            { en: "What does that give us?", pt: "O que é que isso nos dá?", tense: "Presente" },
-            { en: "He gives his opinion.", pt: "Ele dá a sua opinião.", tense: "Presente" },
-            { en: "She gives a lot of work.", pt: "Ela dá muito trabalho.", tense: "Presente" },
-            { en: "We give thanks.", pt: "Damos graças.", tense: "Presente" },
-            { en: "They give money.", pt: "Eles dão dinheiro.", tense: "Presente" },
-            { en: "I give you an example.", pt: "Dou-te um exemplo.", tense: "Presente" },
-            { en: "This gives me hope.", pt: "Isto dá-me esperança.", tense: "Presente" },
-            { en: "He gives priority.", pt: "Ele dá prioridade.", tense: "Presente" },
-            { en: "She gives attention.", pt: "Ela dá atenção.", tense: "Presente" },
-            { en: "We give our support.", pt: "Damos o nosso apoio.", tense: "Presente" },
-
-            // Pretérito Imperfeito (Imperfect Past)
-            { en: "I used to give lessons.", pt: "Eu dava aulas.", tense: "Imperfeito" },
-            { en: "You gave me strength.", pt: "Tu davas-me força.", tense: "Imperfeito" },
-            { en: "He gave good tips.", pt: "Ele dava boas dicas.", tense: "Imperfeito" },
-            { en: "She gave her all.", pt: "Ela dava tudo de si.", tense: "Imperfeito" },
-            { en: "We gave our time.", pt: "Dávamos o nosso tempo.", tense: "Imperfeito" },
-            { en: "They gave opportunities.", pt: "Eles davam oportunidades.", tense: "Imperfeito" },
-            { en: "I didn't give importance.", pt: "Não dava importância.", tense: "Imperfeito" },
-            { en: "Did you give permission?", pt: "Davas permissão?", tense: "Imperfeito" },
-            { en: "Nobody gave answers.", pt: "Ninguém dava respostas.", tense: "Imperfeito" },
-            { en: "I always gave my best.", pt: "Dava sempre o meu melhor.", tense: "Imperfeito" },
-
-            // Pretérito Perfeito Simples (Simple Past)
-            { en: "I gave him a gift.", pt: "Dei-lhe um presente.", tense: "Perfeito" },
-            { en: "You gave a good answer.", pt: "Deste uma boa resposta.", tense: "Perfeito" },
-            { en: "He gave his life.", pt: "Ele deu a vida.", tense: "Perfeito" },
-            { en: "She gave birth.", pt: "Ela deu à luz.", tense: "Perfeito" },
-            { en: "We gave everything.", pt: "Demos tudo.", tense: "Perfeito" },
-            { en: "They gave up.", pt: "Eles deram desistência.", tense: "Perfeito" },
-            { en: "I didn't give an answer.", pt: "Não dei resposta.", tense: "Perfeito" },
-            { en: "What did you give?", pt: "O que deste?", tense: "Perfeito" },
-            { en: "Who gave you that?", pt: "Quem te deu isso?", tense: "Perfeito" },
-            { en: "I gave my word.", pt: "Dei a minha palavra.", tense: "Perfeito" },
-
-            // Futuro do Indicativo (Future)
-            { en: "I will give you a call.", pt: "Dar-te-ei uma chamada.", tense: "Futuro" },
-            { en: "You will give me news.", pt: "Darás notícias.", tense: "Futuro" },
-            { en: "He will give a speech.", pt: "Ele dará um discurso.", tense: "Futuro" },
-            { en: "We will give our answer.", pt: "Daremos a nossa resposta.", tense: "Futuro" },
-            { en: "They will give support.", pt: "Eles darão apoio.", tense: "Futuro" },
-            { en: "I won't give up.", pt: "Não darei desistência.", tense: "Futuro" },
-            { en: "Will you give permission?", pt: "Darás permissão?", tense: "Futuro" },
-            { en: "Time will give answers.", pt: "O tempo dará respostas.", tense: "Futuro" },
-            { en: "I will give you my opinion.", pt: "Dar-te-ei a minha opinião.", tense: "Futuro" },
-            { en: "She will give a party.", pt: "Ela dará uma festa.", tense: "Futuro" },
-
-            // Condicional (Conditional)
-            { en: "I would give anything.", pt: "Daria qualquer coisa.", tense: "Condicional" },
-            { en: "You would give a good impression.", pt: "Darias uma boa impressão.", tense: "Condicional" },
-            { en: "He would give his opinion.", pt: "Ele daria a opinião dele.", tense: "Condicional" },
-            { en: "We would give our support.", pt: "Daríamos o nosso apoio.", tense: "Condicional" },
-            { en: "They would give more.", pt: "Eles dariam mais.", tense: "Condicional" },
-            { en: "I wouldn't give permission.", pt: "Não daria permissão.", tense: "Condicional" },
-            { en: "Would you give a hand?", pt: "Darias uma ajuda?", tense: "Condicional" },
-            { en: "What would that give us?", pt: "O que nos daria isso?", tense: "Condicional" },
-            { en: "I would give my life.", pt: "Daria a minha vida.", tense: "Condicional" },
-            { en: "She would give everything.", pt: "Ela daria tudo.", tense: "Condicional" },
-
-            // Presente do Conjuntivo (Present Subjunctive)
-            { en: "I hope you give me a chance.", pt: "Espero que me dês uma oportunidade.", tense: "Conjuntivo" },
-            { en: "It's important that he gives.", pt: "É importante que ele dê.", tense: "Conjuntivo" },
-            { en: "I doubt she gives permission.", pt: "Duvido que ela dê permissão.", tense: "Conjuntivo" },
-            { en: "Even if you give...", pt: "Mesmo que dês...", tense: "Conjuntivo" },
-            { en: "Whoever gives more...", pt: "Quem dê mais...", tense: "Conjuntivo" },
-            { en: "It's necessary that we give.", pt: "É preciso que demos.", tense: "Conjuntivo" },
-            { en: "I don't think he gives priority.", pt: "Não acho que ele dê prioridade.", tense: "Conjuntivo" },
-            { en: "Unless you give an answer...", pt: "A menos que dês uma resposta...", tense: "Conjuntivo" },
-            { en: "So that they give support...", pt: "Para que deem apoio...", tense: "Conjuntivo" },
-            { en: "Whatever you give...", pt: "O que quer que dês...", tense: "Conjuntivo" },
-
-            // Imperfeito do Conjuntivo (Imperfect Subjunctive)
-            { en: "If I gave more time...", pt: "Se eu desse mais tempo...", tense: "Imperfeito Conj." },
-            { en: "I wish you gave me a chance.", pt: "Quem me dera que me desses uma oportunidade.", tense: "Imperfeito Conj." },
-            { en: "If he gave his opinion...", pt: "Se ele desse a opinião...", tense: "Imperfeito Conj." },
-            { en: "If we gave more effort...", pt: "Se déssemos mais esforço...", tense: "Imperfeito Conj." },
-            { en: "If they gave support...", pt: "Se eles dessem apoio...", tense: "Imperfeito Conj." },
-            { en: "I would accept if you gave.", pt: "Aceitaria se desses.", tense: "Imperfeito Conj." },
-            { en: "Even if I gave everything...", pt: "Mesmo que desse tudo...", tense: "Imperfeito Conj." },
-            { en: "If she gave permission...", pt: "Se ela desse permissão...", tense: "Imperfeito Conj." },
-            { en: "As if he gave importance...", pt: "Como se desse importância...", tense: "Imperfeito Conj." },
-            { en: "If only I gave more attention.", pt: "Se ao menos desse mais atenção.", tense: "Imperfeito Conj." },
-
-            // Futuro do Conjuntivo (Future Subjunctive)
-            { en: "When I give the signal...", pt: "Quando der o sinal...", tense: "Futuro Conj." },
-            { en: "If you give permission...", pt: "Se deres permissão...", tense: "Futuro Conj." },
-            { en: "When he gives an answer...", pt: "Quando ele der uma resposta...", tense: "Futuro Conj." },
-            { en: "If we give our best...", pt: "Se dermos o nosso melhor...", tense: "Futuro Conj." },
-            { en: "When they give news...", pt: "Quando eles derem notícias...", tense: "Futuro Conj." },
-            { en: "As soon as I give the order...", pt: "Assim que der a ordem...", tense: "Futuro Conj." },
-            { en: "Whoever gives the most...", pt: "Quem der mais...", tense: "Futuro Conj." },
-            { en: "If you ever give up...", pt: "Se alguma vez deres desistência...", tense: "Futuro Conj." },
-            { en: "When we give feedback...", pt: "Quando dermos feedback...", tense: "Futuro Conj." },
-            { en: "Call me if you give news.", pt: "Liga-me se deres notícias.", tense: "Futuro Conj." },
-
-            // Common expressions with dar
-            { en: "It works out.", pt: "Dá certo.", tense: "Expressão" },
-            { en: "It doesn't matter.", pt: "Não dá.", tense: "Expressão" },
-            { en: "It's possible.", pt: "Dá para fazer.", tense: "Expressão" },
-            { en: "To realize.", pt: "Dar conta.", tense: "Expressão" },
-            { en: "To go for a walk.", pt: "Dar um passeio.", tense: "Expressão" },
-            { en: "To give a hand.", pt: "Dar uma mão.", tense: "Expressão" },
-            { en: "To give up.", pt: "Dar desistência.", tense: "Expressão" },
-            { en: "To give birth.", pt: "Dar à luz.", tense: "Expressão" },
-            { en: "To take a look.", pt: "Dar uma olhada.", tense: "Expressão" },
-            { en: "To give thanks.", pt: "Dar graças.", tense: "Expressão" }
-        ]
-    };
+        const VERB_CONFIG = {
+            originKey: 'en',
+            labels: { target: 'European Portuguese', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["dou","dás","dá","damos","dão","dava","davas","dávamos","davam","dei","deste","deu","demos","deram","darei","darás","dará","daremos","darão","daria","darias","daríamos","dariam","dê","dês","deem","desse","desses","déssemos","dessem","der","deres","dermos","derem","dar","dando","dado"],
+            phrases: [
+                { en: "I give you my word.", pt: "Dou-te a minha palavra.", tense: "Presente" },
+                { en: "Do you give permission?", pt: "Dás permissão?", tense: "Presente" },
+                { en: "He gives good advice.", pt: "Ele dá bons conselhos.", tense: "Presente" },
+                { en: "She gives classes.", pt: "Ela dá aulas.", tense: "Presente" },
+                { en: "We give our best.", pt: "Damos o nosso melhor.", tense: "Presente" },
+                { en: "They give gifts.", pt: "Eles dão presentes.", tense: "Presente" },
+                { en: "I don't give up.", pt: "Não dou desisto.", tense: "Presente" },
+                { en: "Can you give me a hand?", pt: "Podes dar-me uma ajuda?", tense: "Presente" },
+                { en: "It gives me pleasure.", pt: "Dá-me prazer.", tense: "Presente" },
+                { en: "I give you a hug.", pt: "Dou-te um abraço.", tense: "Presente" },
+                { en: "What does that give us?", pt: "O que é que isso nos dá?", tense: "Presente" },
+                { en: "He gives his opinion.", pt: "Ele dá a sua opinião.", tense: "Presente" },
+                { en: "She gives a lot of work.", pt: "Ela dá muito trabalho.", tense: "Presente" },
+                { en: "We give thanks.", pt: "Damos graças.", tense: "Presente" },
+                { en: "They give money.", pt: "Eles dão dinheiro.", tense: "Presente" },
+                { en: "I give you an example.", pt: "Dou-te um exemplo.", tense: "Presente" },
+                { en: "This gives me hope.", pt: "Isto dá-me esperança.", tense: "Presente" },
+                { en: "He gives priority.", pt: "Ele dá prioridade.", tense: "Presente" },
+                { en: "She gives attention.", pt: "Ela dá atenção.", tense: "Presente" },
+                { en: "We give our support.", pt: "Damos o nosso apoio.", tense: "Presente" },
+                { en: "I used to give lessons.", pt: "Eu dava aulas.", tense: "Imperfeito" },
+                { en: "You gave me strength.", pt: "Tu davas-me força.", tense: "Imperfeito" },
+                { en: "He gave good tips.", pt: "Ele dava boas dicas.", tense: "Imperfeito" },
+                { en: "She gave her all.", pt: "Ela dava tudo de si.", tense: "Imperfeito" },
+                { en: "We gave our time.", pt: "Dávamos o nosso tempo.", tense: "Imperfeito" },
+                { en: "They gave opportunities.", pt: "Eles davam oportunidades.", tense: "Imperfeito" },
+                { en: "I didn't give importance.", pt: "Não dava importância.", tense: "Imperfeito" },
+                { en: "Did you give permission?", pt: "Davas permissão?", tense: "Imperfeito" },
+                { en: "Nobody gave answers.", pt: "Ninguém dava respostas.", tense: "Imperfeito" },
+                { en: "I always gave my best.", pt: "Dava sempre o meu melhor.", tense: "Imperfeito" },
+                { en: "I gave him a gift.", pt: "Dei-lhe um presente.", tense: "Perfeito" },
+                { en: "You gave a good answer.", pt: "Deste uma boa resposta.", tense: "Perfeito" },
+                { en: "He gave his life.", pt: "Ele deu a vida.", tense: "Perfeito" },
+                { en: "She gave birth.", pt: "Ela deu à luz.", tense: "Perfeito" },
+                { en: "We gave everything.", pt: "Demos tudo.", tense: "Perfeito" },
+                { en: "They gave up.", pt: "Eles deram desistência.", tense: "Perfeito" },
+                { en: "I didn't give an answer.", pt: "Não dei resposta.", tense: "Perfeito" },
+                { en: "What did you give?", pt: "O que deste?", tense: "Perfeito" },
+                { en: "Who gave you that?", pt: "Quem te deu isso?", tense: "Perfeito" },
+                { en: "I gave my word.", pt: "Dei a minha palavra.", tense: "Perfeito" },
+                { en: "I will give you a call.", pt: "Dar-te-ei uma chamada.", tense: "Futuro" },
+                { en: "You will give me news.", pt: "Darás notícias.", tense: "Futuro" },
+                { en: "He will give a speech.", pt: "Ele dará um discurso.", tense: "Futuro" },
+                { en: "We will give our answer.", pt: "Daremos a nossa resposta.", tense: "Futuro" },
+                { en: "They will give support.", pt: "Eles darão apoio.", tense: "Futuro" },
+                { en: "I won't give up.", pt: "Não darei desistência.", tense: "Futuro" },
+                { en: "Will you give permission?", pt: "Darás permissão?", tense: "Futuro" },
+                { en: "Time will give answers.", pt: "O tempo dará respostas.", tense: "Futuro" },
+                { en: "I will give you my opinion.", pt: "Dar-te-ei a minha opinião.", tense: "Futuro" },
+                { en: "She will give a party.", pt: "Ela dará uma festa.", tense: "Futuro" },
+                { en: "I would give anything.", pt: "Daria qualquer coisa.", tense: "Condicional" },
+                { en: "You would give a good impression.", pt: "Darias uma boa impressão.", tense: "Condicional" },
+                { en: "He would give his opinion.", pt: "Ele daria a opinião dele.", tense: "Condicional" },
+                { en: "We would give our support.", pt: "Daríamos o nosso apoio.", tense: "Condicional" },
+                { en: "They would give more.", pt: "Eles dariam mais.", tense: "Condicional" },
+                { en: "I wouldn't give permission.", pt: "Não daria permissão.", tense: "Condicional" },
+                { en: "Would you give a hand?", pt: "Darias uma ajuda?", tense: "Condicional" },
+                { en: "What would that give us?", pt: "O que nos daria isso?", tense: "Condicional" },
+                { en: "I would give my life.", pt: "Daria a minha vida.", tense: "Condicional" },
+                { en: "She would give everything.", pt: "Ela daria tudo.", tense: "Condicional" },
+                { en: "I hope you give me a chance.", pt: "Espero que me dês uma oportunidade.", tense: "Conjuntivo" },
+                { en: "It's important that he gives.", pt: "É importante que ele dê.", tense: "Conjuntivo" },
+                { en: "I doubt she gives permission.", pt: "Duvido que ela dê permissão.", tense: "Conjuntivo" },
+                { en: "Even if you give...", pt: "Mesmo que dês...", tense: "Conjuntivo" },
+                { en: "Whoever gives more...", pt: "Quem dê mais...", tense: "Conjuntivo" },
+                { en: "It's necessary that we give.", pt: "É preciso que demos.", tense: "Conjuntivo" },
+                { en: "I don't think he gives priority.", pt: "Não acho que ele dê prioridade.", tense: "Conjuntivo" },
+                { en: "Unless you give an answer...", pt: "A menos que dês uma resposta...", tense: "Conjuntivo" },
+                { en: "So that they give support...", pt: "Para que deem apoio...", tense: "Conjuntivo" },
+                { en: "Whatever you give...", pt: "O que quer que dês...", tense: "Conjuntivo" },
+                { en: "If I gave more time...", pt: "Se eu desse mais tempo...", tense: "Imperfeito Conj." },
+                { en: "I wish you gave me a chance.", pt: "Quem me dera que me desses uma oportunidade.", tense: "Imperfeito Conj." },
+                { en: "If he gave his opinion...", pt: "Se ele desse a opinião...", tense: "Imperfeito Conj." },
+                { en: "If we gave more effort...", pt: "Se déssemos mais esforço...", tense: "Imperfeito Conj." },
+                { en: "If they gave support...", pt: "Se eles dessem apoio...", tense: "Imperfeito Conj." },
+                { en: "I would accept if you gave.", pt: "Aceitaria se desses.", tense: "Imperfeito Conj." },
+                { en: "Even if I gave everything...", pt: "Mesmo que desse tudo...", tense: "Imperfeito Conj." },
+                { en: "If she gave permission...", pt: "Se ela desse permissão...", tense: "Imperfeito Conj." },
+                { en: "As if he gave importance...", pt: "Como se desse importância...", tense: "Imperfeito Conj." },
+                { en: "If only I gave more attention.", pt: "Se ao menos desse mais atenção.", tense: "Imperfeito Conj." },
+                { en: "When I give the signal...", pt: "Quando der o sinal...", tense: "Futuro Conj." },
+                { en: "If you give permission...", pt: "Se deres permissão...", tense: "Futuro Conj." },
+                { en: "When he gives an answer...", pt: "Quando ele der uma resposta...", tense: "Futuro Conj." },
+                { en: "If we give our best...", pt: "Se dermos o nosso melhor...", tense: "Futuro Conj." },
+                { en: "When they give news...", pt: "Quando eles derem notícias...", tense: "Futuro Conj." },
+                { en: "As soon as I give the order...", pt: "Assim que der a ordem...", tense: "Futuro Conj." },
+                { en: "Whoever gives the most...", pt: "Quem der mais...", tense: "Futuro Conj." },
+                { en: "If you ever give up...", pt: "Se alguma vez deres desistência...", tense: "Futuro Conj." },
+                { en: "When we give feedback...", pt: "Quando dermos feedback...", tense: "Futuro Conj." },
+                { en: "Call me if you give news.", pt: "Liga-me se deres notícias.", tense: "Futuro Conj." },
+                { en: "It works out.", pt: "Dá certo.", tense: "Expressão" },
+                { en: "It doesn't matter.", pt: "Não dá.", tense: "Expressão" },
+                { en: "It's possible.", pt: "Dá para fazer.", tense: "Expressão" },
+                { en: "To realize.", pt: "Dar conta.", tense: "Expressão" },
+                { en: "To go for a walk.", pt: "Dar um passeio.", tense: "Expressão" },
+                { en: "To give a hand.", pt: "Dar uma mão.", tense: "Expressão" },
+                { en: "To give up.", pt: "Dar desistência.", tense: "Expressão" },
+                { en: "To give birth.", pt: "Dar à luz.", tense: "Expressão" },
+                { en: "To take a look.", pt: "Dar uma olhada.", tense: "Expressão" },
+                { en: "To give thanks.", pt: "Dar graças.", tense: "Expressão" },
+            ]
+        };
     </script>
     <script src="../../assets/js/verb.js"></script>
 </body>

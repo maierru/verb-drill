@@ -3,136 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Глагол CONSEGUIR — 100 Фраз</title>
+    <title>Глагол 🇵🇹 VERB CONSEGUIR — 100 фраз</title>
     <link rel="stylesheet" href="../../assets/css/verb.css">
-    
 </head>
 <body>
     <div class="container">
         <header>
             <a href="../" class="back-link">← Назад к списку глаголов</a>
-            <h1>🇵🇹 Глагол CONSEGUIR</h1>
-            <p class="subtitle">100 популярных фраз — Европейский португальский</p>
+            <h1>🇵🇹 Verb CONSEGUIR</h1>
+            <p class="subtitle">to manage, to be able to — 100 фраз</p>
         </header>
+
         <div class="controls">
-            <input type="text" class="search-box" placeholder="Поиск фраз..." id="searchInput">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
         </div>
+
         <div class="controls">
             <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
             <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
         </div>
+
         <div class="stats" id="stats">Показано: 100 из 100 фраз</div>
-        <div class="phrase-list" id="phraseList"></div>
-        <footer>Практика европейского португальского — Глагол CONSEGUIR</footer>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика европейского португальского — CONSEGUIR
+        </footer>
     </div>
+
     <script>
-    const VERB_CONFIG = {
-        originKey: 'ru',
-        labels: { target: 'Português Europeu', showing: 'Показано', of: 'из', phrases: 'фраз' },
-        verbForms: ['consigo', 'consegues', 'consegue', 'conseguimos', 'conseguem', 'conseguia', 'conseguias', 'conseguíamos', 'conseguiam', 'consegui', 'conseguiste', 'conseguiu', 'conseguiram', 'conseguirei', 'conseguirás', 'conseguirá', 'conseguiremos', 'conseguirão', 'conseguiria', 'conseguirias', 'conseguiríamos', 'conseguiriam', 'consiga', 'consigas', 'consigamos', 'consigam', 'conseguisse', 'conseguisses', 'conseguíssemos', 'conseguissem', 'conseguir', 'conseguires', 'conseguirmos', 'conseguirem', 'conseguindo', 'conseguido'],
-        phrases: [
-            { ru: "Я могу это сделать.", pt: "Consigo fazer.", tense: "Presente" },
-            { ru: "Ты видишь?", pt: "Consegues ver?", tense: "Presente" },
-            { ru: "Он успевает вовремя.", pt: "Ele consegue chegar a tempo.", tense: "Presente" },
-            { ru: "Она не может уснуть.", pt: "Ela não consegue dormir.", tense: "Presente" },
-            { ru: "Мы можем помочь.", pt: "Conseguimos ajudar.", tense: "Presente" },
-            { ru: "Они не могут понять.", pt: "Eles não conseguem perceber.", tense: "Presente" },
-            { ru: "Я не могу найти.", pt: "Não consigo encontrar.", tense: "Presente" },
-            { ru: "Ты меня слышишь?", pt: "Consegues ouvir-me?", tense: "Presente" },
-            { ru: "Он может говорить по-португальски.", pt: "Ele consegue falar português.", tense: "Presente" },
-            { ru: "Она справляется со всем.", pt: "Ela consegue tudo.", tense: "Presente" },
-            { ru: "Я не могу поверить.", pt: "Não consigo acreditar.", tense: "Presente" },
-            { ru: "Ты можешь объяснить?", pt: "Consegues explicar?", tense: "Presente" },
-            { ru: "Он не может сосредоточиться.", pt: "Ele não consegue concentrar-se.", tense: "Presente" },
-            { ru: "Она может решить.", pt: "Ela consegue resolver.", tense: "Presente" },
-            { ru: "Мы можем закончить сегодня.", pt: "Conseguimos acabar hoje.", tense: "Presente" },
-            { ru: "Им удаётся выжить.", pt: "Eles conseguem sobreviver.", tense: "Presente" },
-            { ru: "Я могу представить.", pt: "Consigo imaginar.", tense: "Presente" },
-            { ru: "Ты можешь вспомнить?", pt: "Consegues lembrar-te?", tense: "Presente" },
-            { ru: "Он может читать быстро.", pt: "Ele consegue ler rápido.", tense: "Presente" },
-            { ru: "Она не может остановиться.", pt: "Ela não consegue parar.", tense: "Presente" },
-            { ru: "Я мог раньше.", pt: "Conseguia.", tense: "Imperfeito" },
-            { ru: "Ты мог делать это раньше.", pt: "Conseguias fazer antes.", tense: "Imperfeito" },
-            { ru: "Он мог бегать быстрее.", pt: "Ele conseguia correr mais rápido.", tense: "Imperfeito" },
-            { ru: "Она не могла спать.", pt: "Ela não conseguia dormir.", tense: "Imperfeito" },
-            { ru: "Мы могли понять.", pt: "Conseguíamos perceber.", tense: "Imperfeito" },
-            { ru: "Они не могли найти.", pt: "Eles não conseguiam encontrar.", tense: "Imperfeito" },
-            { ru: "Я не мог поверить.", pt: "Não conseguia acreditar.", tense: "Imperfeito" },
-            { ru: "Ты мог слышать?", pt: "Conseguias ouvir?", tense: "Imperfeito" },
-            { ru: "Он мог работать больше.", pt: "Ele conseguia trabalhar mais.", tense: "Imperfeito" },
-            { ru: "Она всегда могла помочь.", pt: "Ela conseguia sempre ajudar.", tense: "Imperfeito" },
-            { ru: "Мне удалось закончить.", pt: "Consegui acabar.", tense: "Perfeito" },
-            { ru: "Тебе удалось увидеть?", pt: "Conseguiste ver?", tense: "Perfeito" },
-            { ru: "Ему удалось сбежать.", pt: "Ele conseguiu escapar.", tense: "Perfeito" },
-            { ru: "Она получила работу.", pt: "Ela conseguiu o emprego.", tense: "Perfeito" },
-            { ru: "Мы смогли приехать.", pt: "Conseguimos chegar.", tense: "Perfeito" },
-            { ru: "Они смогли выиграть.", pt: "Eles conseguiram ganhar.", tense: "Perfeito" },
-            { ru: "Я не смог сделать.", pt: "Não consegui fazer.", tense: "Perfeito" },
-            { ru: "Тебе удалось поспать?", pt: "Conseguiste dormir?", tense: "Perfeito" },
-            { ru: "Наконец ему удалось.", pt: "Ele finalmente conseguiu.", tense: "Perfeito" },
-            { ru: "Она не смогла найти.", pt: "Ela não conseguiu encontrar.", tense: "Perfeito" },
-            { ru: "Я смогу.", pt: "Conseguirei.", tense: "Futuro" },
-            { ru: "Ты сможешь.", pt: "Conseguirás.", tense: "Futuro" },
-            { ru: "Он сможет закончить.", pt: "Ele conseguirá acabar.", tense: "Futuro" },
-            { ru: "Мы как-нибудь справимся.", pt: "Conseguiremos de alguma forma.", tense: "Futuro" },
-            { ru: "Они смогут приехать.", pt: "Eles conseguirão vir.", tense: "Futuro" },
-            { ru: "Я не смогу.", pt: "Não conseguirei.", tense: "Futuro" },
-            { ru: "Ты справишься?", pt: "Conseguirás?", tense: "Futuro" },
-            { ru: "Она справится со всем.", pt: "Ela conseguirá tudo.", tense: "Futuro" },
-            { ru: "Мы сможем решить.", pt: "Conseguiremos resolver.", tense: "Futuro" },
-            { ru: "Они смогут приехать.", pt: "Eles conseguirão chegar.", tense: "Futuro" },
-            { ru: "Я бы смог.", pt: "Conseguiria.", tense: "Condicional" },
-            { ru: "Ты бы смог.", pt: "Conseguirias.", tense: "Condicional" },
-            { ru: "Он бы смог, если бы...", pt: "Ele conseguiria se...", tense: "Condicional" },
-            { ru: "Мы бы справились вместе.", pt: "Conseguiríamos juntos.", tense: "Condicional" },
-            { ru: "Они бы смогли помочь.", pt: "Eles conseguiriam ajudar.", tense: "Condicional" },
-            { ru: "Я бы не смог.", pt: "Não conseguiria.", tense: "Condicional" },
-            { ru: "Ты бы справился?", pt: "Conseguirias?", tense: "Condicional" },
-            { ru: "Она бы справилась одна.", pt: "Ela conseguiria sozinha.", tense: "Condicional" },
-            { ru: "Мы бы смогли закончить.", pt: "Conseguiríamos acabar.", tense: "Condicional" },
-            { ru: "Он бы справился лучше.", pt: "Ele conseguiria melhor.", tense: "Condicional" },
-            { ru: "Надеюсь, ты справишься.", pt: "Espero que consigas.", tense: "Conjuntivo" },
-            { ru: "Важно, чтобы он смог.", pt: "É importante que ele consiga.", tense: "Conjuntivo" },
-            { ru: "Сомневаюсь, что она справится.", pt: "Duvido que ela consiga.", tense: "Conjuntivo" },
-            { ru: "Даже если ты справишься...", pt: "Mesmo que consigas...", tense: "Conjuntivo" },
-            { ru: "Кто справится...", pt: "Quem consiga...", tense: "Conjuntivo" },
-            { ru: "Нужно, чтобы мы справились.", pt: "É preciso que consigamos.", tense: "Conjuntivo" },
-            { ru: "Не думаю, что он справится.", pt: "Não acho que ele consiga.", tense: "Conjuntivo" },
-            { ru: "Если только ты не справишься...", pt: "A menos que consigas...", tense: "Conjuntivo" },
-            { ru: "Чтобы они справились...", pt: "Para que consigam...", tense: "Conjuntivo" },
-            { ru: "Надеюсь, мы справимся.", pt: "Espero que consigamos.", tense: "Conjuntivo" },
-            { ru: "Если бы я смог...", pt: "Se eu conseguisse...", tense: "Imperfeito Conj." },
-            { ru: "Хотел бы я, чтобы ты смог.", pt: "Quem me dera que conseguisses.", tense: "Imperfeito Conj." },
-            { ru: "Если бы он смог...", pt: "Se ele conseguisse...", tense: "Imperfeito Conj." },
-            { ru: "Если бы мы смогли...", pt: "Se conseguíssemos...", tense: "Imperfeito Conj." },
-            { ru: "Если бы они смогли...", pt: "Se eles conseguissem...", tense: "Imperfeito Conj." },
-            { ru: "Я бы помог, если бы ты смог.", pt: "Ajudaria se conseguisses.", tense: "Imperfeito Conj." },
-            { ru: "Даже если бы я смог...", pt: "Mesmo que conseguisse...", tense: "Imperfeito Conj." },
-            { ru: "Если бы она смогла приехать...", pt: "Se ela conseguisse vir...", tense: "Imperfeito Conj." },
-            { ru: "Как будто он смог...", pt: "Como se conseguisse...", tense: "Imperfeito Conj." },
-            { ru: "Если бы только я смог.", pt: "Se ao menos conseguisse.", tense: "Imperfeito Conj." },
-            { ru: "Когда я смогу...", pt: "Quando conseguir...", tense: "Futuro Conj." },
-            { ru: "Если ты справишься...", pt: "Se conseguires...", tense: "Futuro Conj." },
-            { ru: "Когда он справится...", pt: "Quando ele conseguir...", tense: "Futuro Conj." },
-            { ru: "Если мы справимся...", pt: "Se conseguirmos...", tense: "Futuro Conj." },
-            { ru: "Когда они справятся...", pt: "Quando eles conseguirem...", tense: "Futuro Conj." },
-            { ru: "Как только я смогу...", pt: "Assim que conseguir...", tense: "Futuro Conj." },
-            { ru: "Кто справится...", pt: "Quem conseguir...", tense: "Futuro Conj." },
-            { ru: "Если ты когда-нибудь справишься...", pt: "Se alguma vez conseguires...", tense: "Futuro Conj." },
-            { ru: "Когда мы сможем закончить...", pt: "Quando conseguirmos acabar...", tense: "Futuro Conj." },
-            { ru: "Скажи мне, если справишься.", pt: "Diz-me se conseguires.", tense: "Futuro Conj." },
-            { ru: "Быть в состоянии.", pt: "Conseguir fazer.", tense: "Expressão" },
-            { ru: "Я больше не могу.", pt: "Não consigo mais.", tense: "Expressão" },
-            { ru: "Ты справляешься?", pt: "Consegues?", tense: "Expressão" },
-            { ru: "Получить работу.", pt: "Conseguir emprego.", tense: "Expressão" },
-            { ru: "Добиться успеха.", pt: "Conseguir sucesso.", tense: "Expressão" },
-            { ru: "Суметь понять.", pt: "Conseguir perceber.", tense: "Expressão" },
-            { ru: "Ты выдержишь?", pt: "Consegues aguentar?", tense: "Expressão" },
-            { ru: "Наконец получилось.", pt: "Finalmente consegui.", tense: "Expressão" },
-            { ru: "Получить разрешение.", pt: "Conseguir permissão.", tense: "Expressão" },
-            { ru: "Готово.", pt: "Conseguido.", tense: "Expressão" }
-        ]
-    };
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            labels: { target: 'Português Europeu', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["consigo","consegues","consegue","conseguimos","conseguem","conseguia","conseguias","conseguíamos","conseguiam","consegui","conseguiste","conseguiu","conseguiram","conseguirei","conseguirás","conseguirá","conseguiremos","conseguirão","conseguiria","conseguirias","conseguiríamos","conseguiriam","consiga","consigas","consigamos","consigam","conseguisse","conseguisses","conseguíssemos","conseguissem","conseguir","conseguires","conseguirmos","conseguirem","conseguindo","conseguido"],
+            phrases: [
+                { ru: "Я могу это сделать.", pt: "Consigo fazer.", tense: "Presente" },
+                { ru: "Ты видишь?", pt: "Consegues ver?", tense: "Presente" },
+                { ru: "Он успевает вовремя.", pt: "Ele consegue chegar a tempo.", tense: "Presente" },
+                { ru: "Она не может уснуть.", pt: "Ela não consegue dormir.", tense: "Presente" },
+                { ru: "Мы можем помочь.", pt: "Conseguimos ajudar.", tense: "Presente" },
+                { ru: "Они не могут понять.", pt: "Eles não conseguem perceber.", tense: "Presente" },
+                { ru: "Я не могу найти.", pt: "Não consigo encontrar.", tense: "Presente" },
+                { ru: "Ты меня слышишь?", pt: "Consegues ouvir-me?", tense: "Presente" },
+                { ru: "Он может говорить по-португальски.", pt: "Ele consegue falar português.", tense: "Presente" },
+                { ru: "Она справляется со всем.", pt: "Ela consegue tudo.", tense: "Presente" },
+                { ru: "Я не могу поверить.", pt: "Não consigo acreditar.", tense: "Presente" },
+                { ru: "Ты можешь объяснить?", pt: "Consegues explicar?", tense: "Presente" },
+                { ru: "Он не может сосредоточиться.", pt: "Ele não consegue concentrar-se.", tense: "Presente" },
+                { ru: "Она может решить.", pt: "Ela consegue resolver.", tense: "Presente" },
+                { ru: "Мы можем закончить сегодня.", pt: "Conseguimos acabar hoje.", tense: "Presente" },
+                { ru: "Им удаётся выжить.", pt: "Eles conseguem sobreviver.", tense: "Presente" },
+                { ru: "Я могу представить.", pt: "Consigo imaginar.", tense: "Presente" },
+                { ru: "Ты можешь вспомнить?", pt: "Consegues lembrar-te?", tense: "Presente" },
+                { ru: "Он может читать быстро.", pt: "Ele consegue ler rápido.", tense: "Presente" },
+                { ru: "Она не может остановиться.", pt: "Ela não consegue parar.", tense: "Presente" },
+                { ru: "Я мог раньше.", pt: "Conseguia.", tense: "Imperfeito" },
+                { ru: "Ты мог делать это раньше.", pt: "Conseguias fazer antes.", tense: "Imperfeito" },
+                { ru: "Он мог бегать быстрее.", pt: "Ele conseguia correr mais rápido.", tense: "Imperfeito" },
+                { ru: "Она не могла спать.", pt: "Ela não conseguia dormir.", tense: "Imperfeito" },
+                { ru: "Мы могли понять.", pt: "Conseguíamos perceber.", tense: "Imperfeito" },
+                { ru: "Они не могли найти.", pt: "Eles não conseguiam encontrar.", tense: "Imperfeito" },
+                { ru: "Я не мог поверить.", pt: "Não conseguia acreditar.", tense: "Imperfeito" },
+                { ru: "Ты мог слышать?", pt: "Conseguias ouvir?", tense: "Imperfeito" },
+                { ru: "Он мог работать больше.", pt: "Ele conseguia trabalhar mais.", tense: "Imperfeito" },
+                { ru: "Она всегда могла помочь.", pt: "Ela conseguia sempre ajudar.", tense: "Imperfeito" },
+                { ru: "Мне удалось закончить.", pt: "Consegui acabar.", tense: "Perfeito" },
+                { ru: "Тебе удалось увидеть?", pt: "Conseguiste ver?", tense: "Perfeito" },
+                { ru: "Ему удалось сбежать.", pt: "Ele conseguiu escapar.", tense: "Perfeito" },
+                { ru: "Она получила работу.", pt: "Ela conseguiu o emprego.", tense: "Perfeito" },
+                { ru: "Мы смогли приехать.", pt: "Conseguimos chegar.", tense: "Perfeito" },
+                { ru: "Они смогли выиграть.", pt: "Eles conseguiram ganhar.", tense: "Perfeito" },
+                { ru: "Я не смог сделать.", pt: "Não consegui fazer.", tense: "Perfeito" },
+                { ru: "Тебе удалось поспать?", pt: "Conseguiste dormir?", tense: "Perfeito" },
+                { ru: "Наконец ему удалось.", pt: "Ele finalmente conseguiu.", tense: "Perfeito" },
+                { ru: "Она не смогла найти.", pt: "Ela não conseguiu encontrar.", tense: "Perfeito" },
+                { ru: "Я смогу.", pt: "Conseguirei.", tense: "Futuro" },
+                { ru: "Ты сможешь.", pt: "Conseguirás.", tense: "Futuro" },
+                { ru: "Он сможет закончить.", pt: "Ele conseguirá acabar.", tense: "Futuro" },
+                { ru: "Мы как-нибудь справимся.", pt: "Conseguiremos de alguma forma.", tense: "Futuro" },
+                { ru: "Они смогут приехать.", pt: "Eles conseguirão vir.", tense: "Futuro" },
+                { ru: "Я не смогу.", pt: "Não conseguirei.", tense: "Futuro" },
+                { ru: "Ты справишься?", pt: "Conseguirás?", tense: "Futuro" },
+                { ru: "Она справится со всем.", pt: "Ela conseguirá tudo.", tense: "Futuro" },
+                { ru: "Мы сможем решить.", pt: "Conseguiremos resolver.", tense: "Futuro" },
+                { ru: "Они смогут приехать.", pt: "Eles conseguirão chegar.", tense: "Futuro" },
+                { ru: "Я бы смог.", pt: "Conseguiria.", tense: "Condicional" },
+                { ru: "Ты бы смог.", pt: "Conseguirias.", tense: "Condicional" },
+                { ru: "Он бы смог, если бы...", pt: "Ele conseguiria se...", tense: "Condicional" },
+                { ru: "Мы бы справились вместе.", pt: "Conseguiríamos juntos.", tense: "Condicional" },
+                { ru: "Они бы смогли помочь.", pt: "Eles conseguiriam ajudar.", tense: "Condicional" },
+                { ru: "Я бы не смог.", pt: "Não conseguiria.", tense: "Condicional" },
+                { ru: "Ты бы справился?", pt: "Conseguirias?", tense: "Condicional" },
+                { ru: "Она бы справилась одна.", pt: "Ela conseguiria sozinha.", tense: "Condicional" },
+                { ru: "Мы бы смогли закончить.", pt: "Conseguiríamos acabar.", tense: "Condicional" },
+                { ru: "Он бы справился лучше.", pt: "Ele conseguiria melhor.", tense: "Condicional" },
+                { ru: "Надеюсь, ты справишься.", pt: "Espero que consigas.", tense: "Conjuntivo" },
+                { ru: "Важно, чтобы он смог.", pt: "É importante que ele consiga.", tense: "Conjuntivo" },
+                { ru: "Сомневаюсь, что она справится.", pt: "Duvido que ela consiga.", tense: "Conjuntivo" },
+                { ru: "Даже если ты справишься...", pt: "Mesmo que consigas...", tense: "Conjuntivo" },
+                { ru: "Кто справится...", pt: "Quem consiga...", tense: "Conjuntivo" },
+                { ru: "Нужно, чтобы мы справились.", pt: "É preciso que consigamos.", tense: "Conjuntivo" },
+                { ru: "Не думаю, что он справится.", pt: "Não acho que ele consiga.", tense: "Conjuntivo" },
+                { ru: "Если только ты не справишься...", pt: "A menos que consigas...", tense: "Conjuntivo" },
+                { ru: "Чтобы они справились...", pt: "Para que consigam...", tense: "Conjuntivo" },
+                { ru: "Надеюсь, мы справимся.", pt: "Espero que consigamos.", tense: "Conjuntivo" },
+                { ru: "Если бы я смог...", pt: "Se eu conseguisse...", tense: "Imperfeito Conj." },
+                { ru: "Хотел бы я, чтобы ты смог.", pt: "Quem me dera que conseguisses.", tense: "Imperfeito Conj." },
+                { ru: "Если бы он смог...", pt: "Se ele conseguisse...", tense: "Imperfeito Conj." },
+                { ru: "Если бы мы смогли...", pt: "Se conseguíssemos...", tense: "Imperfeito Conj." },
+                { ru: "Если бы они смогли...", pt: "Se eles conseguissem...", tense: "Imperfeito Conj." },
+                { ru: "Я бы помог, если бы ты смог.", pt: "Ajudaria se conseguisses.", tense: "Imperfeito Conj." },
+                { ru: "Даже если бы я смог...", pt: "Mesmo que conseguisse...", tense: "Imperfeito Conj." },
+                { ru: "Если бы она смогла приехать...", pt: "Se ela conseguisse vir...", tense: "Imperfeito Conj." },
+                { ru: "Как будто он смог...", pt: "Como se conseguisse...", tense: "Imperfeito Conj." },
+                { ru: "Если бы только я смог.", pt: "Se ao menos conseguisse.", tense: "Imperfeito Conj." },
+                { ru: "Когда я смогу...", pt: "Quando conseguir...", tense: "Futuro Conj." },
+                { ru: "Если ты справишься...", pt: "Se conseguires...", tense: "Futuro Conj." },
+                { ru: "Когда он справится...", pt: "Quando ele conseguir...", tense: "Futuro Conj." },
+                { ru: "Если мы справимся...", pt: "Se conseguirmos...", tense: "Futuro Conj." },
+                { ru: "Когда они справятся...", pt: "Quando eles conseguirem...", tense: "Futuro Conj." },
+                { ru: "Как только я смогу...", pt: "Assim que conseguir...", tense: "Futuro Conj." },
+                { ru: "Кто справится...", pt: "Quem conseguir...", tense: "Futuro Conj." },
+                { ru: "Если ты когда-нибудь справишься...", pt: "Se alguma vez conseguires...", tense: "Futuro Conj." },
+                { ru: "Когда мы сможем закончить...", pt: "Quando conseguirmos acabar...", tense: "Futuro Conj." },
+                { ru: "Скажи мне, если справишься.", pt: "Diz-me se conseguires.", tense: "Futuro Conj." },
+                { ru: "Быть в состоянии.", pt: "Conseguir fazer.", tense: "Expressão" },
+                { ru: "Я больше не могу.", pt: "Não consigo mais.", tense: "Expressão" },
+                { ru: "Ты справляешься?", pt: "Consegues?", tense: "Expressão" },
+                { ru: "Получить работу.", pt: "Conseguir emprego.", tense: "Expressão" },
+                { ru: "Добиться успеха.", pt: "Conseguir sucesso.", tense: "Expressão" },
+                { ru: "Суметь понять.", pt: "Conseguir perceber.", tense: "Expressão" },
+                { ru: "Ты выдержишь?", pt: "Consegues aguentar?", tense: "Expressão" },
+                { ru: "Наконец получилось.", pt: "Finalmente consegui.", tense: "Expressão" },
+                { ru: "Получить разрешение.", pt: "Conseguir permissão.", tense: "Expressão" },
+                { ru: "Готово.", pt: "Conseguido.", tense: "Expressão" },
+            ]
+        };
     </script>
     <script src="../../assets/js/verb.js"></script>
 </body>

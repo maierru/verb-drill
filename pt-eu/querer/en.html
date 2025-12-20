@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verb QUERER — 100 Phrases</title>
+    <title>Verb 🇵🇹 VERB QUERER — 100 Phrases</title>
     <link rel="stylesheet" href="../../assets/css/verb.css">
-    
 </head>
 <body>
     <div class="container">
         <header>
             <a href="../" class="back-link">← Back to verb list</a>
             <h1>🇵🇹 Verb QUERER</h1>
-            <p class="subtitle">100 popular phrases — European Portuguese</p>
+            <p class="subtitle">to want — 100 phrases</p>
         </header>
 
         <div class="controls">
@@ -30,137 +29,118 @@
         </div>
 
         <footer>
-            European Portuguese Practice — Verb QUERER
+            European Portuguese Practice — QUERER
         </footer>
     </div>
 
     <script>
-    const VERB_CONFIG = {
-        originKey: 'en',
-        labels: { target: 'European Portuguese', showing: 'Showing', of: 'of', phrases: 'phrases' },
-        verbForms: ['quero', 'queres', 'quer', 'queremos', 'querem', 'queria', 'querias', 'queríamos', 'queriam', 'quis', 'quiseste', 'quisemos', 'quiseram', 'quererei', 'quererás', 'quererá', 'quereremos', 'quererão', 'quereria', 'quererias', 'quereríamos', 'quereriam', 'queira', 'queiras', 'queiramos', 'queiram', 'quisesse', 'quisesses', 'quiséssemos', 'quisessem', 'querer', 'querendo', 'querido', 'quiseres'],
-        phrases: [
-            // Presente do Indicativo (Present)
-            { en: "I want water.", pt: "Quero água.", tense: "Presente" },
-            { en: "What do you want?", pt: "O que queres?", tense: "Presente" },
-            { en: "He wants to go.", pt: "Ele quer ir.", tense: "Presente" },
-            { en: "She wants to help.", pt: "Ela quer ajudar.", tense: "Presente" },
-            { en: "We want peace.", pt: "Queremos paz.", tense: "Presente" },
-            { en: "You (plural) want more.", pt: "Vocês querem mais.", tense: "Presente" },
-            { en: "They want to know.", pt: "Eles querem saber.", tense: "Presente" },
-            { en: "I don't want that.", pt: "Não quero isso.", tense: "Presente" },
-            { en: "Do you want coffee?", pt: "Queres café?", tense: "Presente" },
-            { en: "I want to learn Portuguese.", pt: "Quero aprender português.", tense: "Presente" },
-
-            // Questions in present
-            { en: "What do you want to eat?", pt: "O que queres comer?", tense: "Presente" },
-            { en: "Do you want to come?", pt: "Queres vir?", tense: "Presente" },
-            { en: "Does he want to stay?", pt: "Ele quer ficar?", tense: "Presente" },
-            { en: "Who wants to go?", pt: "Quem quer ir?", tense: "Presente" },
-            { en: "Why do you want that?", pt: "Porque queres isso?", tense: "Presente" },
-            { en: "Do you want me to help?", pt: "Queres que eu ajude?", tense: "Presente" },
-            { en: "What does she want?", pt: "O que é que ela quer?", tense: "Presente" },
-            { en: "Do they want to play?", pt: "Eles querem jogar?", tense: "Presente" },
-            { en: "How much do you want?", pt: "Quanto queres?", tense: "Presente" },
-            { en: "Do you want anything else?", pt: "Queres mais alguma coisa?", tense: "Presente" },
-
-            // Pretérito Imperfeito (Imperfect Past)
-            { en: "I wanted to go.", pt: "Eu queria ir.", tense: "Imperfeito" },
-            { en: "You wanted to help.", pt: "Tu querias ajudar.", tense: "Imperfeito" },
-            { en: "He wanted to stay.", pt: "Ele queria ficar.", tense: "Imperfeito" },
-            { en: "She wanted a new job.", pt: "Ela queria um emprego novo.", tense: "Imperfeito" },
-            { en: "We wanted to travel.", pt: "Queríamos viajar.", tense: "Imperfeito" },
-            { en: "They wanted more time.", pt: "Eles queriam mais tempo.", tense: "Imperfeito" },
-            { en: "What did you want?", pt: "O que querias?", tense: "Imperfeito" },
-            { en: "I didn't want to bother.", pt: "Não queria incomodar.", tense: "Imperfeito" },
-            { en: "I wanted to tell you.", pt: "Queria dizer-te.", tense: "Imperfeito" },
-            { en: "We wanted to see you.", pt: "Queríamos ver-te.", tense: "Imperfeito" },
-
-            // Pretérito Perfeito Simples (Simple Past)
-            { en: "I wanted it so much.", pt: "Quis tanto.", tense: "Perfeito" },
-            { en: "You wanted to leave.", pt: "Tu quiseste sair.", tense: "Perfeito" },
-            { en: "He wanted to try.", pt: "Ele quis tentar.", tense: "Perfeito" },
-            { en: "She didn't want to come.", pt: "Ela não quis vir.", tense: "Perfeito" },
-            { en: "We wanted to help.", pt: "Quisemos ajudar.", tense: "Perfeito" },
-            { en: "They wanted to know.", pt: "Eles quiseram saber.", tense: "Perfeito" },
-            { en: "I never wanted that.", pt: "Nunca quis isso.", tense: "Perfeito" },
-            { en: "Did you want to go?", pt: "Quiseste ir?", tense: "Perfeito" },
-            { en: "Who wanted this?", pt: "Quem quis isto?", tense: "Perfeito" },
-            { en: "I just wanted to help.", pt: "Só quis ajudar.", tense: "Perfeito" },
-
-            // Futuro do Indicativo (Future)
-            { en: "I will want more.", pt: "Quererei mais.", tense: "Futuro" },
-            { en: "You will want to know.", pt: "Tu quererás saber.", tense: "Futuro" },
-            { en: "He will want to stay.", pt: "Ele quererá ficar.", tense: "Futuro" },
-            { en: "We will want to see.", pt: "Quereremos ver.", tense: "Futuro" },
-            { en: "They will want answers.", pt: "Eles quererão respostas.", tense: "Futuro" },
-            { en: "I won't want to leave.", pt: "Não quererei sair.", tense: "Futuro" },
-            { en: "Will you want to come?", pt: "Quererás vir?", tense: "Futuro" },
-            { en: "She will want to help.", pt: "Ela quererá ajudar.", tense: "Futuro" },
-            { en: "Everyone will want it.", pt: "Todos quererão.", tense: "Futuro" },
-            { en: "You will want it later.", pt: "Quererás mais tarde.", tense: "Futuro" },
-
-            // Condicional (Conditional)
-            { en: "I would want to go.", pt: "Quereria ir.", tense: "Condicional" },
-            { en: "You would want more.", pt: "Tu quererias mais.", tense: "Condicional" },
-            { en: "He would want to know.", pt: "Ele quereria saber.", tense: "Condicional" },
-            { en: "We would want to help.", pt: "Quereríamos ajudar.", tense: "Condicional" },
-            { en: "They would want to stay.", pt: "Eles quereriam ficar.", tense: "Condicional" },
-            { en: "I wouldn't want that.", pt: "Não quereria isso.", tense: "Condicional" },
-            { en: "Would you want to come?", pt: "Quererias vir?", tense: "Condicional" },
-            { en: "She would want the best.", pt: "Ela quereria o melhor.", tense: "Condicional" },
-            { en: "Who would want that?", pt: "Quem quereria isso?", tense: "Condicional" },
-            { en: "I would want to try.", pt: "Quereria tentar.", tense: "Condicional" },
-
-            // Presente do Conjuntivo (Present Subjunctive)
-            { en: "I hope you want to come.", pt: "Espero que queiras vir.", tense: "Conjuntivo" },
-            { en: "It's important that he wants to learn.", pt: "É importante que ele queira aprender.", tense: "Conjuntivo" },
-            { en: "I doubt that she wants to stay.", pt: "Duvido que ela queira ficar.", tense: "Conjuntivo" },
-            { en: "Even though you want it...", pt: "Embora queiras...", tense: "Conjuntivo" },
-            { en: "Whatever you want...", pt: "O que quer que queiras...", tense: "Conjuntivo" },
-            { en: "It's necessary that we want it.", pt: "É preciso que queiramos.", tense: "Conjuntivo" },
-            { en: "I don't think he wants to go.", pt: "Não acho que ele queira ir.", tense: "Conjuntivo" },
-            { en: "Unless you want to...", pt: "A menos que queiras...", tense: "Conjuntivo" },
-            { en: "Whoever wants to join...", pt: "Quem queira participar...", tense: "Conjuntivo" },
-            { en: "If you want...", pt: "Se quiseres...", tense: "Conjuntivo" },
-
-            // Imperfeito do Conjuntivo (Imperfect Subjunctive)
-            { en: "If I wanted to...", pt: "Se eu quisesse...", tense: "Imperfeito Conj." },
-            { en: "I wish you wanted to come.", pt: "Quem me dera que quisesses vir.", tense: "Imperfeito Conj." },
-            { en: "If he wanted to help...", pt: "Se ele quisesse ajudar...", tense: "Imperfeito Conj." },
-            { en: "If we wanted to leave...", pt: "Se quiséssemos sair...", tense: "Imperfeito Conj." },
-            { en: "If they wanted to know...", pt: "Se eles quisessem saber...", tense: "Imperfeito Conj." },
-            { en: "I would help if you wanted.", pt: "Ajudaria se quisesses.", tense: "Imperfeito Conj." },
-            { en: "Even if I wanted to...", pt: "Mesmo que quisesse...", tense: "Imperfeito Conj." },
-            { en: "If she wanted to stay...", pt: "Se ela quisesse ficar...", tense: "Imperfeito Conj." },
-            { en: "As if I wanted that...", pt: "Como se quisesse isso...", tense: "Imperfeito Conj." },
-            { en: "I wish everyone wanted peace.", pt: "Quem me dera que todos quisessem paz.", tense: "Imperfeito Conj." },
-
-            // Querer + infinitive
-            { en: "I want to eat.", pt: "Quero comer.", tense: "Infinitivo" },
-            { en: "I want to sleep.", pt: "Quero dormir.", tense: "Infinitivo" },
-            { en: "I want to see.", pt: "Quero ver.", tense: "Infinitivo" },
-            { en: "I want to talk.", pt: "Quero falar.", tense: "Infinitivo" },
-            { en: "I want to understand.", pt: "Quero perceber.", tense: "Infinitivo" },
-            { en: "I want to try.", pt: "Quero tentar.", tense: "Infinitivo" },
-            { en: "I want to stay.", pt: "Quero ficar.", tense: "Infinitivo" },
-            { en: "I want to leave.", pt: "Quero sair.", tense: "Infinitivo" },
-            { en: "I want to buy.", pt: "Quero comprar.", tense: "Infinitivo" },
-            { en: "I want to know.", pt: "Quero saber.", tense: "Infinitivo" },
-
-            // Common expressions
-            { en: "What do you mean?", pt: "O que queres dizer?", tense: "Expressão" },
-            { en: "I mean...", pt: "Quero dizer...", tense: "Expressão" },
-            { en: "Do you want to?", pt: "Queres?", tense: "Expressão" },
-            { en: "I don't want to know.", pt: "Não quero saber.", tense: "Expressão" },
-            { en: "Whatever you want.", pt: "O que quiseres.", tense: "Expressão" },
-            { en: "If you want.", pt: "Se quiseres.", tense: "Expressão" },
-            { en: "I just want to say...", pt: "Só quero dizer...", tense: "Expressão" },
-            { en: "I wish I could.", pt: "Quem me dera.", tense: "Expressão" },
-            { en: "Where there's a will, there's a way.", pt: "Querer é poder.", tense: "Expressão" },
-            { en: "As you wish.", pt: "Como quiseres.", tense: "Expressão" }
-        ]
-    };
+        const VERB_CONFIG = {
+            originKey: 'en',
+            labels: { target: 'European Portuguese', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["quero","queres","quer","queremos","querem","queria","querias","queríamos","queriam","quis","quiseste","quisemos","quiseram","quererei","quererás","quererá","quereremos","quererão","quereria","quererias","quereríamos","quereriam","queira","queiras","queiramos","queiram","quisesse","quisesses","quiséssemos","quisessem","querer","querendo","querido","quiseres"],
+            phrases: [
+                { en: "I want water.", pt: "Quero água.", tense: "Presente" },
+                { en: "What do you want?", pt: "O que queres?", tense: "Presente" },
+                { en: "He wants to go.", pt: "Ele quer ir.", tense: "Presente" },
+                { en: "She wants to help.", pt: "Ela quer ajudar.", tense: "Presente" },
+                { en: "We want peace.", pt: "Queremos paz.", tense: "Presente" },
+                { en: "You (plural) want more.", pt: "Vocês querem mais.", tense: "Presente" },
+                { en: "They want to know.", pt: "Eles querem saber.", tense: "Presente" },
+                { en: "I don't want that.", pt: "Não quero isso.", tense: "Presente" },
+                { en: "Do you want coffee?", pt: "Queres café?", tense: "Presente" },
+                { en: "I want to learn Portuguese.", pt: "Quero aprender português.", tense: "Presente" },
+                { en: "What do you want to eat?", pt: "O que queres comer?", tense: "Presente" },
+                { en: "Do you want to come?", pt: "Queres vir?", tense: "Presente" },
+                { en: "Does he want to stay?", pt: "Ele quer ficar?", tense: "Presente" },
+                { en: "Who wants to go?", pt: "Quem quer ir?", tense: "Presente" },
+                { en: "Why do you want that?", pt: "Porque queres isso?", tense: "Presente" },
+                { en: "Do you want me to help?", pt: "Queres que eu ajude?", tense: "Presente" },
+                { en: "What does she want?", pt: "O que é que ela quer?", tense: "Presente" },
+                { en: "Do they want to play?", pt: "Eles querem jogar?", tense: "Presente" },
+                { en: "How much do you want?", pt: "Quanto queres?", tense: "Presente" },
+                { en: "Do you want anything else?", pt: "Queres mais alguma coisa?", tense: "Presente" },
+                { en: "I wanted to go.", pt: "Eu queria ir.", tense: "Imperfeito" },
+                { en: "You wanted to help.", pt: "Tu querias ajudar.", tense: "Imperfeito" },
+                { en: "He wanted to stay.", pt: "Ele queria ficar.", tense: "Imperfeito" },
+                { en: "She wanted a new job.", pt: "Ela queria um emprego novo.", tense: "Imperfeito" },
+                { en: "We wanted to travel.", pt: "Queríamos viajar.", tense: "Imperfeito" },
+                { en: "They wanted more time.", pt: "Eles queriam mais tempo.", tense: "Imperfeito" },
+                { en: "What did you want?", pt: "O que querias?", tense: "Imperfeito" },
+                { en: "I didn't want to bother.", pt: "Não queria incomodar.", tense: "Imperfeito" },
+                { en: "I wanted to tell you.", pt: "Queria dizer-te.", tense: "Imperfeito" },
+                { en: "We wanted to see you.", pt: "Queríamos ver-te.", tense: "Imperfeito" },
+                { en: "I wanted it so much.", pt: "Quis tanto.", tense: "Perfeito" },
+                { en: "You wanted to leave.", pt: "Tu quiseste sair.", tense: "Perfeito" },
+                { en: "He wanted to try.", pt: "Ele quis tentar.", tense: "Perfeito" },
+                { en: "She didn't want to come.", pt: "Ela não quis vir.", tense: "Perfeito" },
+                { en: "We wanted to help.", pt: "Quisemos ajudar.", tense: "Perfeito" },
+                { en: "They wanted to know.", pt: "Eles quiseram saber.", tense: "Perfeito" },
+                { en: "I never wanted that.", pt: "Nunca quis isso.", tense: "Perfeito" },
+                { en: "Did you want to go?", pt: "Quiseste ir?", tense: "Perfeito" },
+                { en: "Who wanted this?", pt: "Quem quis isto?", tense: "Perfeito" },
+                { en: "I just wanted to help.", pt: "Só quis ajudar.", tense: "Perfeito" },
+                { en: "I will want more.", pt: "Quererei mais.", tense: "Futuro" },
+                { en: "You will want to know.", pt: "Tu quererás saber.", tense: "Futuro" },
+                { en: "He will want to stay.", pt: "Ele quererá ficar.", tense: "Futuro" },
+                { en: "We will want to see.", pt: "Quereremos ver.", tense: "Futuro" },
+                { en: "They will want answers.", pt: "Eles quererão respostas.", tense: "Futuro" },
+                { en: "I won't want to leave.", pt: "Não quererei sair.", tense: "Futuro" },
+                { en: "Will you want to come?", pt: "Quererás vir?", tense: "Futuro" },
+                { en: "She will want to help.", pt: "Ela quererá ajudar.", tense: "Futuro" },
+                { en: "Everyone will want it.", pt: "Todos quererão.", tense: "Futuro" },
+                { en: "You will want it later.", pt: "Quererás mais tarde.", tense: "Futuro" },
+                { en: "I would want to go.", pt: "Quereria ir.", tense: "Condicional" },
+                { en: "You would want more.", pt: "Tu quererias mais.", tense: "Condicional" },
+                { en: "He would want to know.", pt: "Ele quereria saber.", tense: "Condicional" },
+                { en: "We would want to help.", pt: "Quereríamos ajudar.", tense: "Condicional" },
+                { en: "They would want to stay.", pt: "Eles quereriam ficar.", tense: "Condicional" },
+                { en: "I wouldn't want that.", pt: "Não quereria isso.", tense: "Condicional" },
+                { en: "Would you want to come?", pt: "Quererias vir?", tense: "Condicional" },
+                { en: "She would want the best.", pt: "Ela quereria o melhor.", tense: "Condicional" },
+                { en: "Who would want that?", pt: "Quem quereria isso?", tense: "Condicional" },
+                { en: "I would want to try.", pt: "Quereria tentar.", tense: "Condicional" },
+                { en: "I hope you want to come.", pt: "Espero que queiras vir.", tense: "Conjuntivo" },
+                { en: "It's important that he wants to learn.", pt: "É importante que ele queira aprender.", tense: "Conjuntivo" },
+                { en: "I doubt that she wants to stay.", pt: "Duvido que ela queira ficar.", tense: "Conjuntivo" },
+                { en: "Even though you want it...", pt: "Embora queiras...", tense: "Conjuntivo" },
+                { en: "Whatever you want...", pt: "O que quer que queiras...", tense: "Conjuntivo" },
+                { en: "It's necessary that we want it.", pt: "É preciso que queiramos.", tense: "Conjuntivo" },
+                { en: "I don't think he wants to go.", pt: "Não acho que ele queira ir.", tense: "Conjuntivo" },
+                { en: "Unless you want to...", pt: "A menos que queiras...", tense: "Conjuntivo" },
+                { en: "Whoever wants to join...", pt: "Quem queira participar...", tense: "Conjuntivo" },
+                { en: "If you want...", pt: "Se quiseres...", tense: "Conjuntivo" },
+                { en: "If I wanted to...", pt: "Se eu quisesse...", tense: "Imperfeito Conj." },
+                { en: "I wish you wanted to come.", pt: "Quem me dera que quisesses vir.", tense: "Imperfeito Conj." },
+                { en: "If he wanted to help...", pt: "Se ele quisesse ajudar...", tense: "Imperfeito Conj." },
+                { en: "If we wanted to leave...", pt: "Se quiséssemos sair...", tense: "Imperfeito Conj." },
+                { en: "If they wanted to know...", pt: "Se eles quisessem saber...", tense: "Imperfeito Conj." },
+                { en: "I would help if you wanted.", pt: "Ajudaria se quisesses.", tense: "Imperfeito Conj." },
+                { en: "Even if I wanted to...", pt: "Mesmo que quisesse...", tense: "Imperfeito Conj." },
+                { en: "If she wanted to stay...", pt: "Se ela quisesse ficar...", tense: "Imperfeito Conj." },
+                { en: "As if I wanted that...", pt: "Como se quisesse isso...", tense: "Imperfeito Conj." },
+                { en: "I wish everyone wanted peace.", pt: "Quem me dera que todos quisessem paz.", tense: "Imperfeito Conj." },
+                { en: "I want to eat.", pt: "Quero comer.", tense: "Infinitivo" },
+                { en: "I want to sleep.", pt: "Quero dormir.", tense: "Infinitivo" },
+                { en: "I want to see.", pt: "Quero ver.", tense: "Infinitivo" },
+                { en: "I want to talk.", pt: "Quero falar.", tense: "Infinitivo" },
+                { en: "I want to understand.", pt: "Quero perceber.", tense: "Infinitivo" },
+                { en: "I want to try.", pt: "Quero tentar.", tense: "Infinitivo" },
+                { en: "I want to stay.", pt: "Quero ficar.", tense: "Infinitivo" },
+                { en: "I want to leave.", pt: "Quero sair.", tense: "Infinitivo" },
+                { en: "I want to buy.", pt: "Quero comprar.", tense: "Infinitivo" },
+                { en: "I want to know.", pt: "Quero saber.", tense: "Infinitivo" },
+                { en: "What do you mean?", pt: "O que queres dizer?", tense: "Expressão" },
+                { en: "I mean...", pt: "Quero dizer...", tense: "Expressão" },
+                { en: "Do you want to?", pt: "Queres?", tense: "Expressão" },
+                { en: "I don't want to know.", pt: "Não quero saber.", tense: "Expressão" },
+                { en: "Whatever you want.", pt: "O que quiseres.", tense: "Expressão" },
+                { en: "If you want.", pt: "Se quiseres.", tense: "Expressão" },
+                { en: "I just want to say...", pt: "Só quero dizer...", tense: "Expressão" },
+                { en: "I wish I could.", pt: "Quem me dera.", tense: "Expressão" },
+                { en: "Where there's a will, there's a way.", pt: "Querer é poder.", tense: "Expressão" },
+                { en: "As you wish.", pt: "Como quiseres.", tense: "Expressão" },
+            ]
+        };
     </script>
     <script src="../../assets/js/verb.js"></script>
 </body>

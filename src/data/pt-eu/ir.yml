@@ -1,0 +1,670 @@
+---
+slug: ir
+name: "\U0001F1F5\U0001F1F9 Verb IR"
+meaning: to go
+verb_forms:
+- vou
+- vais
+- vai
+- vamos
+- vão
+- ia
+- ias
+- íamos
+- iam
+- fui
+- foste
+- foi
+- fomos
+- foram
+- irei
+- irás
+- irá
+- iremos
+- irão
+- iria
+- irias
+- iríamos
+- iriam
+- vá
+- vás
+- fosse
+- fosses
+- fôssemos
+- fossem
+- ir
+- indo
+- ido
+phrases:
+  en:
+  - en: I go to work.
+    pt: Vou ao trabalho.
+    tense: Presente
+  - en: Where are you going?
+    pt: Onde vais?
+    tense: Presente
+  - en: He goes to school.
+    pt: Ele vai à escola.
+    tense: Presente
+  - en: She goes home.
+    pt: Ela vai para casa.
+    tense: Presente
+  - en: We go together.
+    pt: Vamos juntos.
+    tense: Presente
+  - en: You (plural) go first.
+    pt: Vocês vão primeiro.
+    tense: Presente
+  - en: They go every day.
+    pt: Eles vão todos os dias.
+    tense: Presente
+  - en: I don't go there.
+    pt: Não vou lá.
+    tense: Presente
+  - en: Are you going?
+    pt: Vais?
+    tense: Presente
+  - en: Let's go!
+    pt: Vamos!
+    tense: Presente
+  - en: I'm going to eat.
+    pt: Vou comer.
+    tense: Futuro Próximo
+  - en: You're going to like it.
+    pt: Vais gostar.
+    tense: Futuro Próximo
+  - en: He's going to arrive soon.
+    pt: Ele vai chegar em breve.
+    tense: Futuro Próximo
+  - en: She's going to study.
+    pt: Ela vai estudar.
+    tense: Futuro Próximo
+  - en: We're going to travel.
+    pt: Vamos viajar.
+    tense: Futuro Próximo
+  - en: They're going to help.
+    pt: Eles vão ajudar.
+    tense: Futuro Próximo
+  - en: It's going to rain.
+    pt: Vai chover.
+    tense: Futuro Próximo
+  - en: I'm not going to do that.
+    pt: Não vou fazer isso.
+    tense: Futuro Próximo
+  - en: Are you going to come?
+    pt: Vais vir?
+    tense: Futuro Próximo
+  - en: Everything is going to be fine.
+    pt: Vai correr tudo bem.
+    tense: Futuro Próximo
+  - en: Where are we going?
+    pt: Onde vamos?
+    tense: Presente
+  - en: How is it going?
+    pt: Como vai?
+    tense: Presente
+  - en: Are you going to the party?
+    pt: Vais à festa?
+    tense: Presente
+  - en: Who is going?
+    pt: Quem vai?
+    tense: Presente
+  - en: When are you going?
+    pt: Quando vais?
+    tense: Presente
+  - en: I used to go there.
+    pt: Eu ia lá.
+    tense: Imperfeito
+  - en: You used to go every week.
+    pt: Tu ias todas as semanas.
+    tense: Imperfeito
+  - en: He was going to the office.
+    pt: Ele ia ao escritório.
+    tense: Imperfeito
+  - en: She was going to help.
+    pt: Ela ia ajudar.
+    tense: Imperfeito
+  - en: We used to go to the beach.
+    pt: Íamos à praia.
+    tense: Imperfeito
+  - en: They were going home.
+    pt: Eles iam para casa.
+    tense: Imperfeito
+  - en: Where were you going?
+    pt: Onde ias?
+    tense: Imperfeito
+  - en: I was going to call you.
+    pt: Ia ligar-te.
+    tense: Imperfeito
+  - en: We were going to eat.
+    pt: Íamos comer.
+    tense: Imperfeito
+  - en: I wasn't going to say anything.
+    pt: Não ia dizer nada.
+    tense: Imperfeito
+  - en: I went to Lisbon.
+    pt: Fui a Lisboa.
+    tense: Perfeito
+  - en: You went early.
+    pt: Tu foste cedo.
+    tense: Perfeito
+  - en: He went to the doctor.
+    pt: Ele foi ao médico.
+    tense: Perfeito
+  - en: She went shopping.
+    pt: Ela foi às compras.
+    tense: Perfeito
+  - en: We went to the cinema.
+    pt: Fomos ao cinema.
+    tense: Perfeito
+  - en: They went home.
+    pt: Eles foram para casa.
+    tense: Perfeito
+  - en: Where did you go?
+    pt: Onde foste?
+    tense: Perfeito
+  - en: I didn't go.
+    pt: Não fui.
+    tense: Perfeito
+  - en: Did you go to the meeting?
+    pt: Foste à reunião?
+    tense: Perfeito
+  - en: How did it go?
+    pt: Como foi?
+    tense: Perfeito
+  - en: I will go tomorrow.
+    pt: Irei amanhã.
+    tense: Futuro
+  - en: You will go far.
+    pt: Tu irás longe.
+    tense: Futuro
+  - en: He will go with us.
+    pt: Ele irá connosco.
+    tense: Futuro
+  - en: We will go together.
+    pt: Iremos juntos.
+    tense: Futuro
+  - en: They will go anyway.
+    pt: Eles irão de qualquer forma.
+    tense: Futuro
+  - en: I won't go alone.
+    pt: Não irei sozinho.
+    tense: Futuro
+  - en: Will you go?
+    pt: Irás?
+    tense: Futuro
+  - en: She will go later.
+    pt: Ela irá mais tarde.
+    tense: Futuro
+  - en: We will go if possible.
+    pt: Iremos se for possível.
+    tense: Futuro
+  - en: Everything will go well.
+    pt: Tudo irá bem.
+    tense: Futuro
+  - en: I would go with you.
+    pt: Iria contigo.
+    tense: Condicional
+  - en: You would go far.
+    pt: Tu irias longe.
+    tense: Condicional
+  - en: He would go if he could.
+    pt: Ele iria se pudesse.
+    tense: Condicional
+  - en: We would go together.
+    pt: Iríamos juntos.
+    tense: Condicional
+  - en: They would go anyway.
+    pt: Eles iriam de qualquer forma.
+    tense: Condicional
+  - en: I wouldn't go there.
+    pt: Não iria lá.
+    tense: Condicional
+  - en: Would you go?
+    pt: Irias?
+    tense: Condicional
+  - en: She would go if invited.
+    pt: Ela iria se fosse convidada.
+    tense: Condicional
+  - en: I would go, but I can't.
+    pt: Iria, mas não posso.
+    tense: Condicional
+  - en: Who would go?
+    pt: Quem iria?
+    tense: Condicional
+  - en: I hope you go.
+    pt: Espero que vás.
+    tense: Conjuntivo
+  - en: It's important that he goes.
+    pt: É importante que ele vá.
+    tense: Conjuntivo
+  - en: I want us to go together.
+    pt: Quero que vamos juntos.
+    tense: Conjuntivo
+  - en: I doubt that she goes.
+    pt: Duvido que ela vá.
+    tense: Conjuntivo
+  - en: Even though you go...
+    pt: Embora vás...
+    tense: Conjuntivo
+  - en: Wherever you go...
+    pt: Onde quer que vás...
+    tense: Conjuntivo
+  - en: It's necessary that they go.
+    pt: É preciso que eles vão.
+    tense: Conjuntivo
+  - en: I don't think he's going.
+    pt: Não acho que ele vá.
+    tense: Conjuntivo
+  - en: Unless you go...
+    pt: A menos que vás...
+    tense: Conjuntivo
+  - en: I want you to go.
+    pt: Quero que vás.
+    tense: Conjuntivo
+  - en: If I went there...
+    pt: Se eu fosse lá...
+    tense: Imperfeito Conj.
+  - en: I wish you went.
+    pt: Quem me dera que fosses.
+    tense: Imperfeito Conj.
+  - en: If he went with us...
+    pt: Se ele fosse connosco...
+    tense: Imperfeito Conj.
+  - en: If we went together...
+    pt: Se fôssemos juntos...
+    tense: Imperfeito Conj.
+  - en: If they went early...
+    pt: Se eles fossem cedo...
+    tense: Imperfeito Conj.
+  - en: I would be happy if you went.
+    pt: Ficaria feliz se fosses.
+    tense: Imperfeito Conj.
+  - en: Even if I went...
+    pt: Mesmo que fosse...
+    tense: Imperfeito Conj.
+  - en: If she went to the party...
+    pt: Se ela fosse à festa...
+    tense: Imperfeito Conj.
+  - en: As if I were going...
+    pt: Como se fosse...
+    tense: Imperfeito Conj.
+  - en: I wish we went.
+    pt: Quem me dera que fôssemos.
+    tense: Imperfeito Conj.
+  - en: Go straight.
+    pt: Vai em frente.
+    tense: Imperativo
+  - en: Go left.
+    pt: Vai à esquerda.
+    tense: Imperativo
+  - en: Go right.
+    pt: Vai à direita.
+    tense: Imperativo
+  - en: Go back.
+    pt: Volta para trás.
+    tense: Imperativo
+  - en: Go away!
+    pt: Vai-te embora!
+    tense: Imperativo
+  - en: How's it going?
+    pt: Como vai isso?
+    tense: Expressão
+  - en: Let's go!
+    pt: Vamos lá!
+    tense: Expressão
+  - en: Here we go!
+    pt: Lá vamos nós!
+    tense: Expressão
+  - en: Go ahead.
+    pt: Vai em frente.
+    tense: Expressão
+  - en: It's going well.
+    pt: Está a correr bem.
+    tense: Expressão
+  - en: It's not going well.
+    pt: Não está a correr bem.
+    tense: Expressão
+  - en: Time flies.
+    pt: O tempo voa.
+    tense: Expressão
+  - en: Go for it!
+    pt: Vai em frente!
+    tense: Expressão
+  - en: I'm going out.
+    pt: Vou sair.
+    tense: Expressão
+  - en: I have to go.
+    pt: Tenho de ir.
+    tense: Expressão
+  - en: Come and go.
+    pt: Ir e vir.
+    tense: Expressão
+  - en: Ready to go?
+    pt: Pronto para ir?
+    tense: Expressão
+  - en: Off we go!
+    pt: E lá vamos!
+    tense: Expressão
+  - en: Where does this road go?
+    pt: Onde vai dar esta estrada?
+    tense: Expressão
+  - en: Things are going smoothly.
+    pt: As coisas vão bem.
+    tense: Expressão
+  ru:
+  - ru: Я иду на работу.
+    pt: Vou ao trabalho.
+    tense: Presente
+  - ru: Куда ты идёшь?
+    pt: Onde vais?
+    tense: Presente
+  - ru: Он идёт в школу.
+    pt: Ele vai à escola.
+    tense: Presente
+  - ru: Она идёт домой.
+    pt: Ela vai para casa.
+    tense: Presente
+  - ru: Мы идём вместе.
+    pt: Vamos juntos.
+    tense: Presente
+  - ru: Вы идёте первыми.
+    pt: Vocês vão primeiro.
+    tense: Presente
+  - ru: Они ходят каждый день.
+    pt: Eles vão todos os dias.
+    tense: Presente
+  - ru: Я туда не хожу.
+    pt: Não vou lá.
+    tense: Presente
+  - ru: Ты идёшь?
+    pt: Vais?
+    tense: Presente
+  - ru: Пойдём!
+    pt: Vamos!
+    tense: Presente
+  - ru: Я собираюсь есть.
+    pt: Vou comer.
+    tense: Futuro Próximo
+  - ru: Тебе понравится.
+    pt: Vais gostar.
+    tense: Futuro Próximo
+  - ru: Он скоро придёт.
+    pt: Ele vai chegar em breve.
+    tense: Futuro Próximo
+  - ru: Она собирается учиться.
+    pt: Ela vai estudar.
+    tense: Futuro Próximo
+  - ru: Мы собираемся путешествовать.
+    pt: Vamos viajar.
+    tense: Futuro Próximo
+  - ru: Они помогут.
+    pt: Eles vão ajudar.
+    tense: Futuro Próximo
+  - ru: Будет дождь.
+    pt: Vai chover.
+    tense: Futuro Próximo
+  - ru: Я не собираюсь этого делать.
+    pt: Não vou fazer isso.
+    tense: Futuro Próximo
+  - ru: Ты придёшь?
+    pt: Vais vir?
+    tense: Futuro Próximo
+  - ru: Всё будет хорошо.
+    pt: Vai correr tudo bem.
+    tense: Futuro Próximo
+  - ru: Куда мы идём?
+    pt: Onde vamos?
+    tense: Presente
+  - ru: Как дела?
+    pt: Como vai?
+    tense: Presente
+  - ru: Ты идёшь на вечеринку?
+    pt: Vais à festa?
+    tense: Presente
+  - ru: Кто идёт?
+    pt: Quem vai?
+    tense: Presente
+  - ru: Когда ты идёшь?
+    pt: Quando vais?
+    tense: Presente
+  - ru: Я раньше туда ходил.
+    pt: Eu ia lá.
+    tense: Imperfeito
+  - ru: Ты ходил каждую неделю.
+    pt: Tu ias todas as semanas.
+    tense: Imperfeito
+  - ru: Он шёл в офис.
+    pt: Ele ia ao escritório.
+    tense: Imperfeito
+  - ru: Она собиралась помочь.
+    pt: Ela ia ajudar.
+    tense: Imperfeito
+  - ru: Мы ходили на пляж.
+    pt: Íamos à praia.
+    tense: Imperfeito
+  - ru: Они шли домой.
+    pt: Eles iam para casa.
+    tense: Imperfeito
+  - ru: Куда ты шёл?
+    pt: Onde ias?
+    tense: Imperfeito
+  - ru: Я собирался тебе позвонить.
+    pt: Ia ligar-te.
+    tense: Imperfeito
+  - ru: Мы собирались поесть.
+    pt: Íamos comer.
+    tense: Imperfeito
+  - ru: Я не собирался ничего говорить.
+    pt: Não ia dizer nada.
+    tense: Imperfeito
+  - ru: Я ездил в Лиссабон.
+    pt: Fui a Lisboa.
+    tense: Perfeito
+  - ru: Ты ушёл рано.
+    pt: Tu foste cedo.
+    tense: Perfeito
+  - ru: Он ходил к врачу.
+    pt: Ele foi ao médico.
+    tense: Perfeito
+  - ru: Она ходила за покупками.
+    pt: Ela foi às compras.
+    tense: Perfeito
+  - ru: Мы ходили в кино.
+    pt: Fomos ao cinema.
+    tense: Perfeito
+  - ru: Они ушли домой.
+    pt: Eles foram para casa.
+    tense: Perfeito
+  - ru: Куда ты ходил?
+    pt: Onde foste?
+    tense: Perfeito
+  - ru: Я не ходил.
+    pt: Não fui.
+    tense: Perfeito
+  - ru: Ты был на встрече?
+    pt: Foste à reunião?
+    tense: Perfeito
+  - ru: Как прошло?
+    pt: Como foi?
+    tense: Perfeito
+  - ru: Я пойду завтра.
+    pt: Irei amanhã.
+    tense: Futuro
+  - ru: Ты далеко пойдёшь.
+    pt: Tu irás longe.
+    tense: Futuro
+  - ru: Он пойдёт с нами.
+    pt: Ele irá connosco.
+    tense: Futuro
+  - ru: Мы пойдём вместе.
+    pt: Iremos juntos.
+    tense: Futuro
+  - ru: Они всё равно пойдут.
+    pt: Eles irão de qualquer forma.
+    tense: Futuro
+  - ru: Я не пойду один.
+    pt: Não irei sozinho.
+    tense: Futuro
+  - ru: Ты пойдёшь?
+    pt: Irás?
+    tense: Futuro
+  - ru: Она пойдёт позже.
+    pt: Ela irá mais tarde.
+    tense: Futuro
+  - ru: Мы пойдём, если возможно.
+    pt: Iremos se for possível.
+    tense: Futuro
+  - ru: Всё пройдёт хорошо.
+    pt: Tudo irá bem.
+    tense: Futuro
+  - ru: Я бы пошёл с тобой.
+    pt: Iria contigo.
+    tense: Condicional
+  - ru: Ты бы далеко пошёл.
+    pt: Tu irias longe.
+    tense: Condicional
+  - ru: Он бы пошёл, если бы мог.
+    pt: Ele iria se pudesse.
+    tense: Condicional
+  - ru: Мы бы пошли вместе.
+    pt: Iríamos juntos.
+    tense: Condicional
+  - ru: Они бы всё равно пошли.
+    pt: Eles iriam de qualquer forma.
+    tense: Condicional
+  - ru: Я бы туда не пошёл.
+    pt: Não iria lá.
+    tense: Condicional
+  - ru: Ты бы пошёл?
+    pt: Irias?
+    tense: Condicional
+  - ru: Она бы пошла, если бы позвали.
+    pt: Ela iria se fosse convidada.
+    tense: Condicional
+  - ru: Я бы пошёл, но не могу.
+    pt: Iria, mas não posso.
+    tense: Condicional
+  - ru: Кто бы пошёл?
+    pt: Quem iria?
+    tense: Condicional
+  - ru: Надеюсь, что ты пойдёшь.
+    pt: Espero que vás.
+    tense: Conjuntivo
+  - ru: Важно, чтобы он пошёл.
+    pt: É importante que ele vá.
+    tense: Conjuntivo
+  - ru: Хочу, чтобы мы пошли вместе.
+    pt: Quero que vamos juntos.
+    tense: Conjuntivo
+  - ru: Сомневаюсь, что она пойдёт.
+    pt: Duvido que ela vá.
+    tense: Conjuntivo
+  - ru: Хотя ты и идёшь...
+    pt: Embora vás...
+    tense: Conjuntivo
+  - ru: Куда бы ты ни пошёл...
+    pt: Onde quer que vás...
+    tense: Conjuntivo
+  - ru: Нужно, чтобы они пошли.
+    pt: É preciso que eles vão.
+    tense: Conjuntivo
+  - ru: Не думаю, что он пойдёт.
+    pt: Não acho que ele vá.
+    tense: Conjuntivo
+  - ru: Если ты не пойдёшь...
+    pt: A menos que vás...
+    tense: Conjuntivo
+  - ru: Хочу, чтобы ты пошёл.
+    pt: Quero que vás.
+    tense: Conjuntivo
+  - ru: Если бы я туда пошёл...
+    pt: Se eu fosse lá...
+    tense: Imperfeito Conj.
+  - ru: Хотел бы, чтобы ты пошёл.
+    pt: Quem me dera que fosses.
+    tense: Imperfeito Conj.
+  - ru: Если бы он пошёл с нами...
+    pt: Se ele fosse connosco...
+    tense: Imperfeito Conj.
+  - ru: Если бы мы пошли вместе...
+    pt: Se fôssemos juntos...
+    tense: Imperfeito Conj.
+  - ru: Если бы они пошли рано...
+    pt: Se eles fossem cedo...
+    tense: Imperfeito Conj.
+  - ru: Я был бы рад, если бы ты пошёл.
+    pt: Ficaria feliz se fosses.
+    tense: Imperfeito Conj.
+  - ru: Даже если бы я пошёл...
+    pt: Mesmo que fosse...
+    tense: Imperfeito Conj.
+  - ru: Если бы она пошла на вечеринку...
+    pt: Se ela fosse à festa...
+    tense: Imperfeito Conj.
+  - ru: Как будто я иду...
+    pt: Como se fosse...
+    tense: Imperfeito Conj.
+  - ru: Хотел бы, чтобы мы пошли.
+    pt: Quem me dera que fôssemos.
+    tense: Imperfeito Conj.
+  - ru: Иди прямо.
+    pt: Vai em frente.
+    tense: Imperativo
+  - ru: Поверни налево.
+    pt: Vai à esquerda.
+    tense: Imperativo
+  - ru: Поверни направо.
+    pt: Vai à direita.
+    tense: Imperativo
+  - ru: Вернись назад.
+    pt: Volta para trás.
+    tense: Imperativo
+  - ru: Уходи!
+    pt: Vai-te embora!
+    tense: Imperativo
+  - ru: Как дела?
+    pt: Como vai isso?
+    tense: Expressão
+  - ru: Пойдём!
+    pt: Vamos lá!
+    tense: Expressão
+  - ru: Ну, поехали!
+    pt: Lá vamos nós!
+    tense: Expressão
+  - ru: Давай, вперёд.
+    pt: Vai em frente.
+    tense: Expressão
+  - ru: Всё идёт хорошо.
+    pt: Está a correr bem.
+    tense: Expressão
+  - ru: Дела идут плохо.
+    pt: Não está a correr bem.
+    tense: Expressão
+  - ru: Время летит.
+    pt: O tempo voa.
+    tense: Expressão
+  - ru: Давай, действуй!
+    pt: Vai em frente!
+    tense: Expressão
+  - ru: Я выхожу.
+    pt: Vou sair.
+    tense: Expressão
+  - ru: Мне нужно идти.
+    pt: Tenho de ir.
+    tense: Expressão
+  - ru: Приходить и уходить.
+    pt: Ir e vir.
+    tense: Expressão
+  - ru: Готов идти?
+    pt: Pronto para ir?
+    tense: Expressão
+  - ru: Ну, пошли!
+    pt: E lá vamos!
+    tense: Expressão
+  - ru: Куда ведёт эта дорога?
+    pt: Onde vai dar esta estrada?
+    tense: Expressão
+  - ru: Всё идёт гладко.
+    pt: As coisas vão bem.
+    tense: Expressão

@@ -6,56 +6,63 @@ Interactive flashcards for verb conjugation practice.
 
 ```
 verb-drill/
-├── README.md               # Landing page with links
-├── {lang}-{variant}/       # pt-eu, pt-br, es-es
-│   ├── index.html          # Verb list with language badges
+├── src/
+│   ├── templates/
+│   │   ├── verb.html.erb       # Verb page template
+│   │   └── index.html.erb      # Index page template
+│   └── data/
+│       └── pt-eu/
+│           ├── index.yml       # Verb list metadata
+│           └── {verb}.yml      # Verb data (phrases, forms)
+├── assets/
+│   ├── css/
+│   │   ├── index.css           # Index page styles
+│   │   └── verb.css            # Verb page styles
+│   └── js/
+│       └── verb.js             # Shared verb page logic
+├── pt-eu/                      # Generated HTML (don't edit directly)
+│   ├── index.html
 │   └── {verb}/
-│       ├── en.html         # English origin
-│       └── ru.html         # Russian origin
-└── en/                     # English (no variant needed)
-    ├── index.html
-    └── {verb}/
-        ├── pt.html         # Portuguese origin
-        └── ru.html         # Russian origin
+│       ├── en.html
+│       └── ru.html
+├── build.rb                    # Build script
+└── README.md
 ```
+
+## Build
+
+```bash
+ruby build.rb
+```
+
+Generates HTML from `src/templates/` + `src/data/` → outputs to `pt-eu/`, `en/`
+
+## Adding new verb
+
+1. Create `src/data/pt-eu/{verb}.yml`:
+   ```yaml
+   slug: verb-name
+   name: "🇵🇹 Verb NAME"
+   meaning: to do something
+   verb_forms: [form1, form2, ...]
+   phrases:
+     en:
+       - en: "English phrase"
+         pt: "Portuguese phrase"
+         tense: "Presente"
+     ru:
+       - ru: "Russian phrase"
+         pt: "Portuguese phrase"
+         tense: "Presente"
+   ```
+2. Add verb to `src/data/pt-eu/index.yml`
+3. Run `ruby build.rb`
 
 ## Supported languages
 
-Target languages (what users learn):
-- `en` — English 🇬🇧
-- `pt-eu` — Portuguese (European) 🇵🇹
-
-Origin languages (user's native language):
-- `en` — English 🇬🇧
-- `pt` — Portuguese 🇵🇹
-- `ru` — Russian 🇷🇺
-
-## Page requirements
-
-Each verb page must have:
-- 100 phrases sorted by frequency (most common first)
-- All tenses (language-specific)
-- Questions, negations, polite requests, common expressions
-- Verb forms highlighted in target language
-- Tense tags for each phrase
-- Search functionality
-- Show/hide all buttons
-- Dark theme, mobile-friendly
-- Back link to verb list
-
-### English tenses
-Present, Past (could/was able to), Future (will be able to), Conditional, Polite, Permission, Expression
-
-### Portuguese tenses
-Presente, Pretérito Imperfeito, Pretérito Perfeito, Futuro, Condicional, Presente do Conjuntivo, Imperfeito do Conjuntivo
-
-## When adding new verb
-
-1. Create `{lang}/{verb}/{origin}.html` for each origin language
-2. Update `{lang}/index.html` to add verb card with language badges
-3. Follow existing file structure (copy from existing verb as template)
-4. Update README.md if adding new language
+Target: `en` 🇬🇧, `pt-eu` 🇵🇹
+Origin: `en` 🇬🇧, `ru` 🇷🇺
 
 ## Commits
 
-Focus on why, not what. Keep it concise. No Claude/AI mentions or co-author tags.
+Focus on why, not what. Keep concise. No AI mentions.

@@ -1,0 +1,642 @@
+---
+slug: entender
+name: "\U0001F1F5\U0001F1F9 Entender"
+meaning: to understand
+verb_forms:
+- entendo
+- entendes
+- entende
+- entendemos
+- entendem
+- entendia
+- entendias
+- entendíamos
+- entendiam
+- entendi
+- entendeste
+- entendeu
+- entenderam
+- entenderei
+- entenderás
+- entenderá
+- entenderemos
+- entenderão
+- entenderia
+- entenderias
+- entenderíamos
+- entenderiam
+- entenda
+- entendas
+- entendamos
+- entendam
+- entendesse
+- entendesses
+- entendêssemos
+- entendessem
+- entender
+- entenderes
+- entendermos
+- entenderem
+phrases:
+  en:
+  - en: I understand.
+    pt: Entendo.
+    tense: Presente
+  - en: You understand Portuguese.
+    pt: Entendes português.
+    tense: Presente
+  - en: He understands the problem.
+    pt: Ele entende o problema.
+    tense: Presente
+  - en: We understand everything.
+    pt: Entendemos tudo.
+    tense: Presente
+  - en: They understand the situation.
+    pt: Eles entendem a situação.
+    tense: Presente
+  - en: I understand you.
+    pt: Entendo-te.
+    tense: Presente
+  - en: You understand well.
+    pt: Entendes bem.
+    tense: Presente
+  - en: She understands the language.
+    pt: Ela entende a língua.
+    tense: Presente
+  - en: We understand each other.
+    pt: Entendemo-nos.
+    tense: Presente
+  - en: They understand the rules.
+    pt: Eles entendem as regras.
+    tense: Presente
+  - en: I used to understand.
+    pt: Entendia.
+    tense: Imperfeito
+  - en: You used to understand more.
+    pt: Entendias mais.
+    tense: Imperfeito
+  - en: He used to understand everything.
+    pt: Ele entendia tudo.
+    tense: Imperfeito
+  - en: We used to understand them.
+    pt: Entendíamos-los.
+    tense: Imperfeito
+  - en: They used to understand us.
+    pt: Eles entendiam-nos.
+    tense: Imperfeito
+  - en: I was understanding.
+    pt: Estava a entender.
+    tense: Imperfeito
+  - en: You were understanding better.
+    pt: Estavas a entender melhor.
+    tense: Imperfeito
+  - en: She was understanding now.
+    pt: Ela estava a entender agora.
+    tense: Imperfeito
+  - en: We were understanding everything.
+    pt: Estávamos a entender tudo.
+    tense: Imperfeito
+  - en: They were starting to understand.
+    pt: Eles estavam a começar a entender.
+    tense: Imperfeito
+  - en: I understood.
+    pt: Entendi.
+    tense: Perfeito
+  - en: You understood the message.
+    pt: Entendeste a mensagem.
+    tense: Perfeito
+  - en: He understood the joke.
+    pt: Ele entendeu a piada.
+    tense: Perfeito
+  - en: We understood clearly.
+    pt: Entendemos claramente.
+    tense: Perfeito
+  - en: They understood everything.
+    pt: Eles entenderam tudo.
+    tense: Perfeito
+  - en: I understood the problem.
+    pt: Entendi o problema.
+    tense: Perfeito
+  - en: You understood wrong.
+    pt: Entendeste mal.
+    tense: Perfeito
+  - en: She understood finally.
+    pt: Ela entendeu finalmente.
+    tense: Perfeito
+  - en: We understood the situation.
+    pt: Entendemos a situação.
+    tense: Perfeito
+  - en: They understood the lesson.
+    pt: Eles entenderam a lição.
+    tense: Perfeito
+  - en: I will understand.
+    pt: Entenderei.
+    tense: Futuro
+  - en: You will understand soon.
+    pt: Entenderás em breve.
+    tense: Futuro
+  - en: He will understand later.
+    pt: Ele entenderá mais tarde.
+    tense: Futuro
+  - en: We will understand everything.
+    pt: Entenderemos tudo.
+    tense: Futuro
+  - en: They will understand one day.
+    pt: Eles entenderão um dia.
+    tense: Futuro
+  - en: I will understand better.
+    pt: Entenderei melhor.
+    tense: Futuro
+  - en: You will understand with time.
+    pt: Entenderás com o tempo.
+    tense: Futuro
+  - en: She will understand the reason.
+    pt: Ela entenderá a razão.
+    tense: Futuro
+  - en: We will understand each other.
+    pt: Entender-nos-emos.
+    tense: Futuro
+  - en: They will understand the truth.
+    pt: Eles entenderão a verdade.
+    tense: Futuro
+  - en: I would understand.
+    pt: Entenderia.
+    tense: Condicional
+  - en: You would understand better.
+    pt: Entenderias melhor.
+    tense: Condicional
+  - en: He would understand.
+    pt: Ele entenderia.
+    tense: Condicional
+  - en: We would understand everything.
+    pt: Entenderíamos tudo.
+    tense: Condicional
+  - en: They would understand the problem.
+    pt: Eles entenderiam o problema.
+    tense: Condicional
+  - en: I would understand if I could.
+    pt: Entenderia se pudesse.
+    tense: Condicional
+  - en: You would understand me.
+    pt: Entenderias-me.
+    tense: Condicional
+  - en: She would understand the situation.
+    pt: Ela entenderia a situação.
+    tense: Condicional
+  - en: We would understand each other.
+    pt: Entender-nos-íamos.
+    tense: Condicional
+  - en: They would understand more.
+    pt: Eles entenderiam mais.
+    tense: Condicional
+  - en: I want you to understand.
+    pt: Quero que entendas.
+    tense: Conjuntivo
+  - en: I hope he understands.
+    pt: Espero que ele entenda.
+    tense: Conjuntivo
+  - en: It's important that we understand.
+    pt: É importante que entendamos.
+    tense: Conjuntivo
+  - en: I doubt they understand.
+    pt: Duvido que eles entendam.
+    tense: Conjuntivo
+  - en: Although I understand.
+    pt: Embora eu entenda.
+    tense: Conjuntivo
+  - en: So that you understand.
+    pt: Para que tu entendas.
+    tense: Conjuntivo
+  - en: Unless she understands.
+    pt: A menos que ela entenda.
+    tense: Conjuntivo
+  - en: Before they understand.
+    pt: Antes que eles entendam.
+    tense: Conjuntivo
+  - en: It's possible we understand.
+    pt: É possível que entendamos.
+    tense: Conjuntivo
+  - en: I prefer that you understand.
+    pt: Prefiro que tu entendas.
+    tense: Conjuntivo
+  - en: If I understood.
+    pt: Se eu entendesse.
+    tense: Imperfeito Conj.
+  - en: If you understood.
+    pt: Se tu entendesses.
+    tense: Imperfeito Conj.
+  - en: If he understood.
+    pt: Se ele entendesse.
+    tense: Imperfeito Conj.
+  - en: If we understood.
+    pt: Se nós entendêssemos.
+    tense: Imperfeito Conj.
+  - en: If they understood.
+    pt: Se eles entendessem.
+    tense: Imperfeito Conj.
+  - en: I wish I could understand.
+    pt: Quem me dera entender.
+    tense: Imperfeito Conj.
+  - en: As if she understood.
+    pt: Como se ela entendesse.
+    tense: Imperfeito Conj.
+  - en: If only you understood.
+    pt: Se tu entendesses.
+    tense: Imperfeito Conj.
+  - en: I wanted you to understand.
+    pt: Queria que tu entendesses.
+    tense: Imperfeito Conj.
+  - en: It would be good if they understood.
+    pt: Seria bom se eles entendessem.
+    tense: Imperfeito Conj.
+  - en: When I understand.
+    pt: Quando eu entender.
+    tense: Futuro Conj.
+  - en: As soon as you understand.
+    pt: Assim que entenderes.
+    tense: Futuro Conj.
+  - en: If he understands.
+    pt: Se ele entender.
+    tense: Futuro Conj.
+  - en: When we understand.
+    pt: Quando entendermos.
+    tense: Futuro Conj.
+  - en: As they understand.
+    pt: Conforme eles entenderem.
+    tense: Futuro Conj.
+  - en: Understand!
+    pt: Entende!
+    tense: Imperativo
+  - en: Let's understand!
+    pt: Entendamos!
+    tense: Imperativo
+  - en: Understand this!
+    pt: Entende isto!
+    tense: Imperativo
+  - en: Try to understand!
+    pt: Tenta entender!
+    tense: Imperativo
+  - en: Understand me!
+    pt: Entende-me!
+    tense: Imperativo
+  - en: Do you understand?
+    pt: Entendes?
+    tense: Presente
+  - en: Did you understand?
+    pt: Entendeste?
+    tense: Perfeito
+  - en: I'm starting to understand.
+    pt: Estou a começar a entender.
+    tense: Presente
+  - en: You're understanding better.
+    pt: Estás a entender melhor.
+    tense: Presente
+  - en: He's not understanding.
+    pt: Ele não está a entender.
+    tense: Presente
+  - en: We're understanding now.
+    pt: Estamos a entender agora.
+    tense: Presente
+  - en: They're finally understanding.
+    pt: Eles estão finalmente a entender.
+    tense: Presente
+  - en: I don't understand.
+    pt: Não entendo.
+    tense: Presente
+  - en: I didn't understand.
+    pt: Não entendi.
+    tense: Perfeito
+  - en: I can't understand.
+    pt: Não consigo entender.
+    tense: Presente
+  - en: I want to understand.
+    pt: Quero entender.
+    tense: Presente
+  - en: I need to understand.
+    pt: Preciso de entender.
+    tense: Presente
+  - en: I'm trying to understand.
+    pt: Estou a tentar entender.
+    tense: Presente
+  - en: Do you understand me?
+    pt: Entendes-me?
+    tense: Presente
+  - en: I understand perfectly.
+    pt: Entendo perfeitamente.
+    tense: Presente
+  - en: I understand now.
+    pt: Agora entendo.
+    tense: Presente
+  - en: It's hard to understand.
+    pt: É difícil de entender.
+    tense: Presente
+  - en: Easy to understand.
+    pt: Fácil de entender.
+    tense: Presente
+  - en: I understand everything.
+    pt: Entendo tudo.
+    tense: Presente
+  - en: He understands Portuguese well.
+    pt: Ele entende bem português.
+    tense: Presente
+  ru:
+  - ru: Я понимаю.
+    pt: Entendo.
+    tense: Presente
+  - ru: Ты понимаешь португальский.
+    pt: Entendes português.
+    tense: Presente
+  - ru: Он понимает проблему.
+    pt: Ele entende o problema.
+    tense: Presente
+  - ru: Мы понимаем всё.
+    pt: Entendemos tudo.
+    tense: Presente
+  - ru: Они понимают ситуацию.
+    pt: Eles entendem a situação.
+    tense: Presente
+  - ru: Я тебя понимаю.
+    pt: Entendo-te.
+    tense: Presente
+  - ru: Ты хорошо понимаешь.
+    pt: Entendes bem.
+    tense: Presente
+  - ru: Она понимает язык.
+    pt: Ela entende a língua.
+    tense: Presente
+  - ru: Мы понимаем друг друга.
+    pt: Entendemo-nos.
+    tense: Presente
+  - ru: Они понимают правила.
+    pt: Eles entendem as regras.
+    tense: Presente
+  - ru: Я раньше понимал.
+    pt: Entendia.
+    tense: Imperfeito
+  - ru: Ты раньше понимал больше.
+    pt: Entendias mais.
+    tense: Imperfeito
+  - ru: Он раньше понимал всё.
+    pt: Ele entendia tudo.
+    tense: Imperfeito
+  - ru: Мы раньше их понимали.
+    pt: Entendíamos-los.
+    tense: Imperfeito
+  - ru: Они раньше нас понимали.
+    pt: Eles entendiam-nos.
+    tense: Imperfeito
+  - ru: Я понимал.
+    pt: Estava a entender.
+    tense: Imperfeito
+  - ru: Ты понимал лучше.
+    pt: Estavas a entender melhor.
+    tense: Imperfeito
+  - ru: Она понимала теперь.
+    pt: Ela estava a entender agora.
+    tense: Imperfeito
+  - ru: Мы понимали всё.
+    pt: Estávamos a entender tudo.
+    tense: Imperfeito
+  - ru: Они начинали понимать.
+    pt: Eles estavam a começar a entender.
+    tense: Imperfeito
+  - ru: Я понял.
+    pt: Entendi.
+    tense: Perfeito
+  - ru: Ты понял сообщение.
+    pt: Entendeste a mensagem.
+    tense: Perfeito
+  - ru: Он понял шутку.
+    pt: Ele entendeu a piada.
+    tense: Perfeito
+  - ru: Мы чётко поняли.
+    pt: Entendemos claramente.
+    tense: Perfeito
+  - ru: Они поняли всё.
+    pt: Eles entenderam tudo.
+    tense: Perfeito
+  - ru: Я понял проблему.
+    pt: Entendi o problema.
+    tense: Perfeito
+  - ru: Ты неправильно понял.
+    pt: Entendeste mal.
+    tense: Perfeito
+  - ru: Она наконец поняла.
+    pt: Ela entendeu finalmente.
+    tense: Perfeito
+  - ru: Мы поняли ситуацию.
+    pt: Entendemos a situação.
+    tense: Perfeito
+  - ru: Они поняли урок.
+    pt: Eles entenderam a lição.
+    tense: Perfeito
+  - ru: Я пойму.
+    pt: Entenderei.
+    tense: Futuro
+  - ru: Ты скоро поймёшь.
+    pt: Entenderás em breve.
+    tense: Futuro
+  - ru: Он поймёт позже.
+    pt: Ele entenderá mais tarde.
+    tense: Futuro
+  - ru: Мы поймём всё.
+    pt: Entenderemos tudo.
+    tense: Futuro
+  - ru: Они когда-нибудь поймут.
+    pt: Eles entenderão um dia.
+    tense: Futuro
+  - ru: Я пойму лучше.
+    pt: Entenderei melhor.
+    tense: Futuro
+  - ru: Ты поймёшь со временем.
+    pt: Entenderás com o tempo.
+    tense: Futuro
+  - ru: Она поймёт причину.
+    pt: Ela entenderá a razão.
+    tense: Futuro
+  - ru: Мы поймём друг друга.
+    pt: Entender-nos-emos.
+    tense: Futuro
+  - ru: Они поймут правду.
+    pt: Eles entenderão a verdade.
+    tense: Futuro
+  - ru: Я бы понял.
+    pt: Entenderia.
+    tense: Condicional
+  - ru: Ты бы лучше понял.
+    pt: Entenderias melhor.
+    tense: Condicional
+  - ru: Он бы понял.
+    pt: Ele entenderia.
+    tense: Condicional
+  - ru: Мы бы поняли всё.
+    pt: Entenderíamos tudo.
+    tense: Condicional
+  - ru: Они бы поняли проблему.
+    pt: Eles entenderiam o problema.
+    tense: Condicional
+  - ru: Я бы понял, если бы мог.
+    pt: Entenderia se pudesse.
+    tense: Condicional
+  - ru: Ты бы меня понял.
+    pt: Entenderias-me.
+    tense: Condicional
+  - ru: Она бы поняла ситуацию.
+    pt: Ela entenderia a situação.
+    tense: Condicional
+  - ru: Мы бы поняли друг друга.
+    pt: Entender-nos-íamos.
+    tense: Condicional
+  - ru: Они бы поняли больше.
+    pt: Eles entenderiam mais.
+    tense: Condicional
+  - ru: Хочу, чтобы ты понял.
+    pt: Quero que entendas.
+    tense: Conjuntivo
+  - ru: Надеюсь, что он поймёт.
+    pt: Espero que ele entenda.
+    tense: Conjuntivo
+  - ru: Важно, чтобы мы поняли.
+    pt: É importante que entendamos.
+    tense: Conjuntivo
+  - ru: Сомневаюсь, что они поймут.
+    pt: Duvido que eles entendam.
+    tense: Conjuntivo
+  - ru: Хотя я понимаю.
+    pt: Embora eu entenda.
+    tense: Conjuntivo
+  - ru: Чтобы ты понял.
+    pt: Para que tu entendas.
+    tense: Conjuntivo
+  - ru: Если только она не поймёт.
+    pt: A menos que ela entenda.
+    tense: Conjuntivo
+  - ru: До того как они поймут.
+    pt: Antes que eles entendam.
+    tense: Conjuntivo
+  - ru: Возможно, мы поймём.
+    pt: É possível que entendamos.
+    tense: Conjuntivo
+  - ru: Предпочитаю, чтобы ты понял.
+    pt: Prefiro que tu entendas.
+    tense: Conjuntivo
+  - ru: Если бы я понял.
+    pt: Se eu entendesse.
+    tense: Imperfeito Conj.
+  - ru: Если бы ты понял.
+    pt: Se tu entendesses.
+    tense: Imperfeito Conj.
+  - ru: Если бы он понял.
+    pt: Se ele entendesse.
+    tense: Imperfeito Conj.
+  - ru: Если бы мы поняли.
+    pt: Se nós entendêssemos.
+    tense: Imperfeito Conj.
+  - ru: Если бы они поняли.
+    pt: Se eles entendessem.
+    tense: Imperfeito Conj.
+  - ru: Хотел бы я понять.
+    pt: Quem me dera entender.
+    tense: Imperfeito Conj.
+  - ru: Как будто она поняла.
+    pt: Como se ela entendesse.
+    tense: Imperfeito Conj.
+  - ru: Если бы только ты понял.
+    pt: Se tu entendesses.
+    tense: Imperfeito Conj.
+  - ru: Хотел, чтобы ты понял.
+    pt: Queria que tu entendesses.
+    tense: Imperfeito Conj.
+  - ru: Было бы хорошо, если бы они поняли.
+    pt: Seria bom se eles entendessem.
+    tense: Imperfeito Conj.
+  - ru: Когда я пойму.
+    pt: Quando eu entender.
+    tense: Futuro Conj.
+  - ru: Как только ты поймёшь.
+    pt: Assim que entenderes.
+    tense: Futuro Conj.
+  - ru: Если он поймёт.
+    pt: Se ele entender.
+    tense: Futuro Conj.
+  - ru: Когда мы поймём.
+    pt: Quando entendermos.
+    tense: Futuro Conj.
+  - ru: По мере того как они поймут.
+    pt: Conforme eles entenderem.
+    tense: Futuro Conj.
+  - ru: Пойми!
+    pt: Entende!
+    tense: Imperativo
+  - ru: Давайте поймём!
+    pt: Entendamos!
+    tense: Imperativo
+  - ru: Пойми это!
+    pt: Entende isto!
+    tense: Imperativo
+  - ru: Постарайся понять!
+    pt: Tenta entender!
+    tense: Imperativo
+  - ru: Пойми меня!
+    pt: Entende-me!
+    tense: Imperativo
+  - ru: Ты понимаешь?
+    pt: Entendes?
+    tense: Presente
+  - ru: Ты понял?
+    pt: Entendeste?
+    tense: Perfeito
+  - ru: Я начинаю понимать.
+    pt: Estou a começar a entender.
+    tense: Presente
+  - ru: Ты понимаешь лучше.
+    pt: Estás a entender melhor.
+    tense: Presente
+  - ru: Он не понимает.
+    pt: Ele não está a entender.
+    tense: Presente
+  - ru: Мы теперь понимаем.
+    pt: Estamos a entender agora.
+    tense: Presente
+  - ru: Они наконец понимают.
+    pt: Eles estão finalmente a entender.
+    tense: Presente
+  - ru: Я не понимаю.
+    pt: Não entendo.
+    tense: Presente
+  - ru: Я не понял.
+    pt: Não entendi.
+    tense: Perfeito
+  - ru: Я не могу понять.
+    pt: Não consigo entender.
+    tense: Presente
+  - ru: Я хочу понять.
+    pt: Quero entender.
+    tense: Presente
+  - ru: Мне нужно понять.
+    pt: Preciso de entender.
+    tense: Presente
+  - ru: Я пытаюсь понять.
+    pt: Estou a tentar entender.
+    tense: Presente
+  - ru: Ты меня понимаешь?
+    pt: Entendes-me?
+    tense: Presente
+  - ru: Я прекрасно понимаю.
+    pt: Entendo perfeitamente.
+    tense: Presente
+  - ru: Теперь я понимаю.
+    pt: Agora entendo.
+    tense: Presente
+  - ru: Это трудно понять.
+    pt: É difícil de entender.
+    tense: Presente
+  - ru: Легко понять.
+    pt: Fácil de entender.
+    tense: Presente
+  - ru: Я понимаю всё.
+    pt: Entendo tudo.
+    tense: Presente
+  - ru: Он хорошо понимает португальский.
+    pt: Ele entende bem português.
+    tense: Presente

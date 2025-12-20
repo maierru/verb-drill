@@ -1,0 +1,702 @@
+---
+slug: ser
+name: "\U0001F1F5\U0001F1F9 Verb SER"
+meaning: to be (permanent)
+verb_forms:
+- sou
+- és
+- é
+- somos
+- são
+- era
+- eras
+- éramos
+- eram
+- fui
+- foste
+- foi
+- fomos
+- foram
+- serei
+- serás
+- será
+- seremos
+- serão
+- seria
+- serias
+- seríamos
+- seriam
+- seja
+- sejas
+- sejamos
+- sejam
+- fosse
+- fosses
+- fôssemos
+- fossem
+- ser
+- sendo
+- sido
+phrases:
+  en:
+  - en: I am a student.
+    pt: Sou estudante.
+    tense: Presente
+  - en: You are my friend.
+    pt: Tu és meu amigo.
+    tense: Presente
+  - en: He is a doctor.
+    pt: Ele é médico.
+    tense: Presente
+  - en: She is beautiful.
+    pt: Ela é bonita.
+    tense: Presente
+  - en: We are Portuguese.
+    pt: Somos portugueses.
+    tense: Presente
+  - en: You (plural) are welcome.
+    pt: Vocês são bem-vindos.
+    tense: Presente
+  - en: They are brothers.
+    pt: Eles são irmãos.
+    tense: Presente
+  - en: It is important.
+    pt: É importante.
+    tense: Presente
+  - en: I am not tired.
+    pt: Não sou cansado.
+    tense: Presente
+  - en: You are not alone.
+    pt: Tu não és sozinho.
+    tense: Presente
+  - en: Are you ready?
+    pt: Estás pronto? / És pronto?
+    tense: Presente
+  - en: Who is it?
+    pt: Quem é?
+    tense: Presente
+  - en: What is this?
+    pt: O que é isto?
+    tense: Presente
+  - en: Where are you from?
+    pt: De onde és?
+    tense: Presente
+  - en: Is it true?
+    pt: É verdade?
+    tense: Presente
+  - en: Is she your sister?
+    pt: Ela é a tua irmã?
+    tense: Presente
+  - en: Are we late?
+    pt: Estamos atrasados? / Somos atrasados?
+    tense: Presente
+  - en: Is it far?
+    pt: É longe?
+    tense: Presente
+  - en: Are they married?
+    pt: Eles são casados?
+    tense: Presente
+  - en: What is your name?
+    pt: Qual é o teu nome?
+    tense: Presente
+  - en: I was young.
+    pt: Eu era jovem.
+    tense: Imperfeito
+  - en: You were very kind.
+    pt: Tu eras muito simpático.
+    tense: Imperfeito
+  - en: He was a teacher.
+    pt: Ele era professor.
+    tense: Imperfeito
+  - en: She was always happy.
+    pt: Ela era sempre feliz.
+    tense: Imperfeito
+  - en: We were neighbors.
+    pt: Éramos vizinhos.
+    tense: Imperfeito
+  - en: They were best friends.
+    pt: Eles eram melhores amigos.
+    tense: Imperfeito
+  - en: It was different before.
+    pt: Era diferente antes.
+    tense: Imperfeito
+  - en: Life was simpler.
+    pt: A vida era mais simples.
+    tense: Imperfeito
+  - en: The house was old.
+    pt: A casa era velha.
+    tense: Imperfeito
+  - en: I wasn't happy there.
+    pt: Eu não era feliz lá.
+    tense: Imperfeito
+  - en: I was there yesterday.
+    pt: Fui lá ontem.
+    tense: Perfeito
+  - en: You were the best.
+    pt: Tu foste o melhor.
+    tense: Perfeito
+  - en: He was president.
+    pt: Ele foi presidente.
+    tense: Perfeito
+  - en: It was a good day.
+    pt: Foi um bom dia.
+    tense: Perfeito
+  - en: We were champions.
+    pt: Fomos campeões.
+    tense: Perfeito
+  - en: They were very helpful.
+    pt: Eles foram muito prestáveis.
+    tense: Perfeito
+  - en: The trip was amazing.
+    pt: A viagem foi incrível.
+    tense: Perfeito
+  - en: It wasn't my fault.
+    pt: Não foi culpa minha.
+    tense: Perfeito
+  - en: You were right.
+    pt: Tu tiveste razão. / Foste certeiro.
+    tense: Perfeito
+  - en: The movie was boring.
+    pt: O filme foi aborrecido.
+    tense: Perfeito
+  - en: I will be there.
+    pt: Serei lá. / Estarei lá.
+    tense: Futuro
+  - en: You will be happy.
+    pt: Tu serás feliz.
+    tense: Futuro
+  - en: He will be a great doctor.
+    pt: Ele será um grande médico.
+    tense: Futuro
+  - en: It will be easy.
+    pt: Será fácil.
+    tense: Futuro
+  - en: We will be together.
+    pt: Seremos juntos. / Estaremos juntos.
+    tense: Futuro
+  - en: They will be famous.
+    pt: Eles serão famosos.
+    tense: Futuro
+  - en: The party will be fun.
+    pt: A festa será divertida.
+    tense: Futuro
+  - en: I won't be late.
+    pt: Não serei atrasado. / Não chegarei atrasado.
+    tense: Futuro
+  - en: It will be worth it.
+    pt: Valerá a pena. / Será válido.
+    tense: Futuro
+  - en: Tomorrow will be better.
+    pt: Amanhã será melhor.
+    tense: Futuro
+  - en: I would be grateful.
+    pt: Seria grato.
+    tense: Condicional
+  - en: It would be nice.
+    pt: Seria bom.
+    tense: Condicional
+  - en: You would be a good leader.
+    pt: Tu serias um bom líder.
+    tense: Condicional
+  - en: He would be proud.
+    pt: Ele seria orgulhoso.
+    tense: Condicional
+  - en: We would be honored.
+    pt: Seríamos honrados.
+    tense: Condicional
+  - en: They would be surprised.
+    pt: Eles seriam surpreendidos.
+    tense: Condicional
+  - en: It would be impossible.
+    pt: Seria impossível.
+    tense: Condicional
+  - en: That would be perfect.
+    pt: Isso seria perfeito.
+    tense: Condicional
+  - en: I wouldn't be so sure.
+    pt: Não seria tão certo.
+    tense: Condicional
+  - en: It would be better to wait.
+    pt: Seria melhor esperar.
+    tense: Condicional
+  - en: I hope you are well.
+    pt: Espero que sejas bem. / Espero que estejas bem.
+    tense: Conjuntivo
+  - en: It's important that he is careful.
+    pt: É importante que ele seja cuidadoso.
+    tense: Conjuntivo
+  - en: I want us to be friends.
+    pt: Quero que sejamos amigos.
+    tense: Conjuntivo
+  - en: I doubt that it is true.
+    pt: Duvido que seja verdade.
+    tense: Conjuntivo
+  - en: I don't think she is right.
+    pt: Não acho que ela tenha razão. / Não acho que seja certo.
+    tense: Conjuntivo
+  - en: Even though it is difficult...
+    pt: Embora seja difícil...
+    tense: Conjuntivo
+  - en: It's necessary that we be united.
+    pt: É preciso que sejamos unidos.
+    tense: Conjuntivo
+  - en: Whatever it is...
+    pt: Seja o que for...
+    tense: Conjuntivo
+  - en: Whoever you are...
+    pt: Sejas quem fores...
+    tense: Conjuntivo
+  - en: Let it be.
+    pt: Que seja.
+    tense: Conjuntivo
+  - en: If I were rich...
+    pt: Se eu fosse rico...
+    tense: Imperfeito Conj.
+  - en: I wish you were here.
+    pt: Quem me dera que estivesses aqui. / Se fosses aqui...
+    tense: Imperfeito Conj.
+  - en: If he were younger...
+    pt: Se ele fosse mais novo...
+    tense: Imperfeito Conj.
+  - en: If we were together...
+    pt: Se fôssemos juntos...
+    tense: Imperfeito Conj.
+  - en: If they were here...
+    pt: Se eles fossem aqui... / Se estivessem aqui...
+    tense: Imperfeito Conj.
+  - en: I would go if it were possible.
+    pt: Iria se fosse possível.
+    tense: Imperfeito Conj.
+  - en: Even if it were true...
+    pt: Mesmo que fosse verdade...
+    tense: Imperfeito Conj.
+  - en: If I were you...
+    pt: Se eu fosse a ti...
+    tense: Imperfeito Conj.
+  - en: As if it were nothing...
+    pt: Como se não fosse nada...
+    tense: Imperfeito Conj.
+  - en: I wish it were different.
+    pt: Quem me dera que fosse diferente.
+    tense: Imperfeito Conj.
+  - en: I am Portuguese.
+    pt: Sou português.
+    tense: Presente
+  - en: She is Brazilian.
+    pt: Ela é brasileira.
+    tense: Presente
+  - en: He is tall.
+    pt: Ele é alto.
+    tense: Presente
+  - en: They are intelligent.
+    pt: Eles são inteligentes.
+    tense: Presente
+  - en: We are a team.
+    pt: Somos uma equipa.
+    tense: Presente
+  - en: It is natural.
+    pt: É natural.
+    tense: Presente
+  - en: You are special.
+    pt: Tu és especial.
+    tense: Presente
+  - en: This is mine.
+    pt: Isto é meu.
+    tense: Presente
+  - en: That is yours.
+    pt: Isso é teu.
+    tense: Presente
+  - en: The book is interesting.
+    pt: O livro é interessante.
+    tense: Presente
+  - en: That's it!
+    pt: É isso!
+    tense: Expressão
+  - en: It's okay.
+    pt: Está bem. / Tudo bem.
+    tense: Expressão
+  - en: It's nothing.
+    pt: Não é nada.
+    tense: Expressão
+  - en: It's a pleasure.
+    pt: É um prazer.
+    tense: Expressão
+  - en: That's life.
+    pt: É a vida.
+    tense: Expressão
+  - en: It's time.
+    pt: É hora. / Está na hora.
+    tense: Expressão
+  - en: It's not fair.
+    pt: Não é justo.
+    tense: Expressão
+  - en: It's worth it.
+    pt: Vale a pena.
+    tense: Expressão
+  - en: It's up to you.
+    pt: Depende de ti. / É contigo.
+    tense: Expressão
+  - en: That's the problem.
+    pt: É esse o problema.
+    tense: Expressão
+  - en: Today is Monday.
+    pt: Hoje é segunda-feira.
+    tense: Presente
+  - en: What time is it?
+    pt: Que horas são?
+    tense: Presente
+  - en: It's two o'clock.
+    pt: São duas horas.
+    tense: Presente
+  - en: Where is the station?
+    pt: Onde é a estação?
+    tense: Presente
+  - en: Who is responsible?
+    pt: Quem é o responsável?
+    tense: Presente
+  - en: How is the weather?
+    pt: Como é o tempo?
+    tense: Presente
+  - en: The meeting is tomorrow.
+    pt: A reunião é amanhã.
+    tense: Presente
+  - en: My birthday is in May.
+    pt: O meu aniversário é em maio.
+    tense: Presente
+  - en: Being happy is important.
+    pt: Ser feliz é importante.
+    tense: Presente
+  - en: To be or not to be.
+    pt: Ser ou não ser.
+    tense: Expressão
+  ru:
+  - ru: Я студент.
+    pt: Sou estudante.
+    tense: Presente
+  - ru: Ты мой друг.
+    pt: Tu és meu amigo.
+    tense: Presente
+  - ru: Он врач.
+    pt: Ele é médico.
+    tense: Presente
+  - ru: Она красивая.
+    pt: Ela é bonita.
+    tense: Presente
+  - ru: Мы португальцы.
+    pt: Somos portugueses.
+    tense: Presente
+  - ru: Вы желанные гости.
+    pt: Vocês são bem-vindos.
+    tense: Presente
+  - ru: Они братья.
+    pt: Eles são irmãos.
+    tense: Presente
+  - ru: Это важно.
+    pt: É importante.
+    tense: Presente
+  - ru: Я не усталый.
+    pt: Não sou cansado.
+    tense: Presente
+  - ru: Ты не один.
+    pt: Tu não és sozinho.
+    tense: Presente
+  - ru: Ты готов?
+    pt: Estás pronto? / És pronto?
+    tense: Presente
+  - ru: Кто это?
+    pt: Quem é?
+    tense: Presente
+  - ru: Что это?
+    pt: O que é isto?
+    tense: Presente
+  - ru: Откуда ты?
+    pt: De onde és?
+    tense: Presente
+  - ru: Это правда?
+    pt: É verdade?
+    tense: Presente
+  - ru: Она твоя сестра?
+    pt: Ela é a tua irmã?
+    tense: Presente
+  - ru: Мы опоздали?
+    pt: Estamos atrasados? / Somos atrasados?
+    tense: Presente
+  - ru: Это далеко?
+    pt: É longe?
+    tense: Presente
+  - ru: Они женаты?
+    pt: Eles são casados?
+    tense: Presente
+  - ru: Как тебя зовут?
+    pt: Qual é o teu nome?
+    tense: Presente
+  - ru: Я был молодым.
+    pt: Eu era jovem.
+    tense: Imperfeito
+  - ru: Ты был очень добрым.
+    pt: Tu eras muito simpático.
+    tense: Imperfeito
+  - ru: Он был учителем.
+    pt: Ele era professor.
+    tense: Imperfeito
+  - ru: Она всегда была счастлива.
+    pt: Ela era sempre feliz.
+    tense: Imperfeito
+  - ru: Мы были соседями.
+    pt: Éramos vizinhos.
+    tense: Imperfeito
+  - ru: Они были лучшими друзьями.
+    pt: Eles eram melhores amigos.
+    tense: Imperfeito
+  - ru: Раньше всё было по-другому.
+    pt: Era diferente antes.
+    tense: Imperfeito
+  - ru: Жизнь была проще.
+    pt: A vida era mais simples.
+    tense: Imperfeito
+  - ru: Дом был старым.
+    pt: A casa era velha.
+    tense: Imperfeito
+  - ru: Я не был счастлив там.
+    pt: Eu não era feliz lá.
+    tense: Imperfeito
+  - ru: Я был там вчера.
+    pt: Fui lá ontem.
+    tense: Perfeito
+  - ru: Ты был лучшим.
+    pt: Tu foste o melhor.
+    tense: Perfeito
+  - ru: Он был президентом.
+    pt: Ele foi presidente.
+    tense: Perfeito
+  - ru: Это был хороший день.
+    pt: Foi um bom dia.
+    tense: Perfeito
+  - ru: Мы были чемпионами.
+    pt: Fomos campeões.
+    tense: Perfeito
+  - ru: Они очень помогли.
+    pt: Eles foram muito prestáveis.
+    tense: Perfeito
+  - ru: Поездка была удивительной.
+    pt: A viagem foi incrível.
+    tense: Perfeito
+  - ru: Это не моя вина.
+    pt: Não foi culpa minha.
+    tense: Perfeito
+  - ru: Ты был прав.
+    pt: Tu tiveste razão. / Foste certeiro.
+    tense: Perfeito
+  - ru: Фильм был скучным.
+    pt: O filme foi aborrecido.
+    tense: Perfeito
+  - ru: Я буду там.
+    pt: Serei lá. / Estarei lá.
+    tense: Futuro
+  - ru: Ты будешь счастлив.
+    pt: Tu serás feliz.
+    tense: Futuro
+  - ru: Он будет отличным врачом.
+    pt: Ele será um grande médico.
+    tense: Futuro
+  - ru: Это будет легко.
+    pt: Será fácil.
+    tense: Futuro
+  - ru: Мы будем вместе.
+    pt: Seremos juntos. / Estaremos juntos.
+    tense: Futuro
+  - ru: Они будут знаменитыми.
+    pt: Eles serão famosos.
+    tense: Futuro
+  - ru: Вечеринка будет весёлой.
+    pt: A festa será divertida.
+    tense: Futuro
+  - ru: Я не опоздаю.
+    pt: Não serei atrasado. / Não chegarei atrasado.
+    tense: Futuro
+  - ru: Это того стоит.
+    pt: Valerá a pena. / Será válido.
+    tense: Futuro
+  - ru: Завтра будет лучше.
+    pt: Amanhã será melhor.
+    tense: Futuro
+  - ru: Я был бы благодарен.
+    pt: Seria grato.
+    tense: Condicional
+  - ru: Это было бы хорошо.
+    pt: Seria bom.
+    tense: Condicional
+  - ru: Ты был бы хорошим лидером.
+    pt: Tu serias um bom líder.
+    tense: Condicional
+  - ru: Он бы гордился.
+    pt: Ele seria orgulhoso.
+    tense: Condicional
+  - ru: Нам было бы честью.
+    pt: Seríamos honrados.
+    tense: Condicional
+  - ru: Они были бы удивлены.
+    pt: Eles seriam surpreendidos.
+    tense: Condicional
+  - ru: Это было бы невозможно.
+    pt: Seria impossível.
+    tense: Condicional
+  - ru: Это было бы идеально.
+    pt: Isso seria perfeito.
+    tense: Condicional
+  - ru: Я бы не был так уверен.
+    pt: Não seria tão certo.
+    tense: Condicional
+  - ru: Лучше было бы подождать.
+    pt: Seria melhor esperar.
+    tense: Condicional
+  - ru: Надеюсь, что у тебя всё хорошо.
+    pt: Espero que sejas bem. / Espero que estejas bem.
+    tense: Conjuntivo
+  - ru: Важно, чтобы он был осторожен.
+    pt: É importante que ele seja cuidadoso.
+    tense: Conjuntivo
+  - ru: Хочу, чтобы мы были друзьями.
+    pt: Quero que sejamos amigos.
+    tense: Conjuntivo
+  - ru: Сомневаюсь, что это правда.
+    pt: Duvido que seja verdade.
+    tense: Conjuntivo
+  - ru: Не думаю, что она права.
+    pt: Não acho que ela tenha razão. / Não acho que seja certo.
+    tense: Conjuntivo
+  - ru: Хотя это трудно...
+    pt: Embora seja difícil...
+    tense: Conjuntivo
+  - ru: Нужно, чтобы мы были едины.
+    pt: É preciso que sejamos unidos.
+    tense: Conjuntivo
+  - ru: Что бы это ни было...
+    pt: Seja o que for...
+    tense: Conjuntivo
+  - ru: Кем бы ты ни был...
+    pt: Sejas quem fores...
+    tense: Conjuntivo
+  - ru: Пусть будет так.
+    pt: Que seja.
+    tense: Conjuntivo
+  - ru: Если бы я был богатым...
+    pt: Se eu fosse rico...
+    tense: Imperfeito Conj.
+  - ru: Хотел бы, чтобы ты был здесь.
+    pt: Quem me dera que estivesses aqui. / Se fosses aqui...
+    tense: Imperfeito Conj.
+  - ru: Если бы он был моложе...
+    pt: Se ele fosse mais novo...
+    tense: Imperfeito Conj.
+  - ru: Если бы мы были вместе...
+    pt: Se fôssemos juntos...
+    tense: Imperfeito Conj.
+  - ru: Если бы они были здесь...
+    pt: Se eles fossem aqui... / Se estivessem aqui...
+    tense: Imperfeito Conj.
+  - ru: Я бы пошёл, если бы это было возможно.
+    pt: Iria se fosse possível.
+    tense: Imperfeito Conj.
+  - ru: Даже если бы это была правда...
+    pt: Mesmo que fosse verdade...
+    tense: Imperfeito Conj.
+  - ru: Если бы я был на твоём месте...
+    pt: Se eu fosse a ti...
+    tense: Imperfeito Conj.
+  - ru: Как будто ничего не было...
+    pt: Como se não fosse nada...
+    tense: Imperfeito Conj.
+  - ru: Хотел бы, чтобы было иначе.
+    pt: Quem me dera que fosse diferente.
+    tense: Imperfeito Conj.
+  - ru: Я португалец.
+    pt: Sou português.
+    tense: Presente
+  - ru: Она бразильянка.
+    pt: Ela é brasileira.
+    tense: Presente
+  - ru: Он высокий.
+    pt: Ele é alto.
+    tense: Presente
+  - ru: Они умные.
+    pt: Eles são inteligentes.
+    tense: Presente
+  - ru: Мы команда.
+    pt: Somos uma equipa.
+    tense: Presente
+  - ru: Это естественно.
+    pt: É natural.
+    tense: Presente
+  - ru: Ты особенный.
+    pt: Tu és especial.
+    tense: Presente
+  - ru: Это моё.
+    pt: Isto é meu.
+    tense: Presente
+  - ru: Это твоё.
+    pt: Isso é teu.
+    tense: Presente
+  - ru: Книга интересная.
+    pt: O livro é interessante.
+    tense: Presente
+  - ru: Вот и всё!
+    pt: É isso!
+    tense: Expressão
+  - ru: Всё хорошо.
+    pt: Está bem. / Tudo bem.
+    tense: Expressão
+  - ru: Это ничего.
+    pt: Não é nada.
+    tense: Expressão
+  - ru: Очень приятно.
+    pt: É um prazer.
+    tense: Expressão
+  - ru: Такова жизнь.
+    pt: É a vida.
+    tense: Expressão
+  - ru: Пора.
+    pt: É hora. / Está na hora.
+    tense: Expressão
+  - ru: Это несправедливо.
+    pt: Não é justo.
+    tense: Expressão
+  - ru: Это того стоит.
+    pt: Vale a pena.
+    tense: Expressão
+  - ru: Это зависит от тебя.
+    pt: Depende de ti. / É contigo.
+    tense: Expressão
+  - ru: В этом и проблема.
+    pt: É esse o problema.
+    tense: Expressão
+  - ru: Сегодня понедельник.
+    pt: Hoje é segunda-feira.
+    tense: Presente
+  - ru: Который час?
+    pt: Que horas são?
+    tense: Presente
+  - ru: Сейчас два часа.
+    pt: São duas horas.
+    tense: Presente
+  - ru: Где находится вокзал?
+    pt: Onde é a estação?
+    tense: Presente
+  - ru: Кто ответственный?
+    pt: Quem é o responsável?
+    tense: Presente
+  - ru: Какая погода?
+    pt: Como é o tempo?
+    tense: Presente
+  - ru: Встреча завтра.
+    pt: A reunião é amanhã.
+    tense: Presente
+  - ru: Мой день рождения в мае.
+    pt: O meu aniversário é em maio.
+    tense: Presente
+  - ru: Быть счастливым — это важно.
+    pt: Ser feliz é importante.
+    tense: Presente
+  - ru: Быть или не быть.
+    pt: Ser ou não ser.
+    tense: Expressão

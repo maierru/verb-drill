@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verb FAZER — 100 Phrases</title>
+    <title>Verb 🇵🇹 VERB FAZER — 100 Phrases</title>
     <link rel="stylesheet" href="../../assets/css/verb.css">
-    
 </head>
 <body>
     <div class="container">
         <header>
             <a href="../" class="back-link">← Back to verb list</a>
             <h1>🇵🇹 Verb FAZER</h1>
-            <p class="subtitle">100 popular phrases — European Portuguese</p>
+            <p class="subtitle">to do, to make — 100 phrases</p>
         </header>
 
         <div class="controls">
@@ -30,139 +29,118 @@
         </div>
 
         <footer>
-            European Portuguese Practice — Verb FAZER
+            European Portuguese Practice — FAZER
         </footer>
     </div>
 
     <script>
-    const VERB_CONFIG = {
-        originKey: 'en',
-        labels: { target: 'European Portuguese', showing: 'Showing', of: 'of', phrases: 'phrases' },
-        verbForms: ['faço', 'fazes', 'faz', 'fazemos', 'fazem', 'fazia', 'fazias', 'fazíamos', 'faziam', 'fiz', 'fizeste', 'fez', 'fizemos', 'fizeram', 'farei', 'farás', 'fará', 'faremos', 'farão', 'faria', 'farias', 'faríamos', 'fariam', 'faça', 'faças', 'façamos', 'façam', 'fizesse', 'fizesses', 'fizéssemos', 'fizessem', 'fazer', 'fazendo', 'feito'],
-        phrases: [
-            // Presente do Indicativo (Present) - to do, to make
-            { en: "I do my homework.", pt: "Faço os meus trabalhos de casa.", tense: "Presente" },
-            { en: "What are you doing?", pt: "O que fazes?", tense: "Presente" },
-            { en: "He makes coffee.", pt: "Ele faz café.", tense: "Presente" },
-            { en: "She makes dinner.", pt: "Ela faz o jantar.", tense: "Presente" },
-            { en: "We do exercise.", pt: "Fazemos exercício.", tense: "Presente" },
-            { en: "You (plural) make noise.", pt: "Vocês fazem barulho.", tense: "Presente" },
-            { en: "They do business.", pt: "Eles fazem negócios.", tense: "Presente" },
-            { en: "I don't do that.", pt: "Não faço isso.", tense: "Presente" },
-            { en: "Do you make mistakes?", pt: "Fazes erros?", tense: "Presente" },
-            { en: "What does this do?", pt: "O que é que isto faz?", tense: "Presente" },
-
-            // Weather expressions
-            { en: "It's hot.", pt: "Faz calor.", tense: "Presente" },
-            { en: "It's cold.", pt: "Faz frio.", tense: "Presente" },
-            { en: "It's nice weather.", pt: "Faz bom tempo.", tense: "Presente" },
-            { en: "It's bad weather.", pt: "Faz mau tempo.", tense: "Presente" },
-            { en: "It's sunny.", pt: "Faz sol.", tense: "Presente" },
-
-            // Questions in present
-            { en: "What do you do for a living?", pt: "O que fazes na vida?", tense: "Presente" },
-            { en: "How do you do this?", pt: "Como fazes isto?", tense: "Presente" },
-            { en: "Does it make sense?", pt: "Faz sentido?", tense: "Presente" },
-            { en: "What should I do?", pt: "O que faço?", tense: "Presente" },
-            { en: "Do you do sports?", pt: "Fazes desporto?", tense: "Presente" },
-
-            // Pretérito Imperfeito (Imperfect Past)
-            { en: "I used to do yoga.", pt: "Eu fazia yoga.", tense: "Imperfeito" },
-            { en: "You used to make bread.", pt: "Tu fazias pão.", tense: "Imperfeito" },
-            { en: "He used to do everything.", pt: "Ele fazia tudo.", tense: "Imperfeito" },
-            { en: "She was making lunch.", pt: "Ela fazia o almoço.", tense: "Imperfeito" },
-            { en: "We used to do this together.", pt: "Fazíamos isto juntos.", tense: "Imperfeito" },
-            { en: "They were doing homework.", pt: "Eles faziam os trabalhos de casa.", tense: "Imperfeito" },
-            { en: "It was cold.", pt: "Fazia frio.", tense: "Imperfeito" },
-            { en: "What were you doing?", pt: "O que fazias?", tense: "Imperfeito" },
-            { en: "I wasn't doing anything.", pt: "Não fazia nada.", tense: "Imperfeito" },
-            { en: "It was hot in summer.", pt: "Fazia calor no verão.", tense: "Imperfeito" },
-
-            // Pretérito Perfeito Simples (Simple Past)
-            { en: "I did it.", pt: "Fiz isso.", tense: "Perfeito" },
-            { en: "You made a mistake.", pt: "Tu fizeste um erro.", tense: "Perfeito" },
-            { en: "He did his best.", pt: "Ele fez o seu melhor.", tense: "Perfeito" },
-            { en: "She made a cake.", pt: "Ela fez um bolo.", tense: "Perfeito" },
-            { en: "We did everything.", pt: "Fizemos tudo.", tense: "Perfeito" },
-            { en: "They made plans.", pt: "Eles fizeram planos.", tense: "Perfeito" },
-            { en: "What did you do?", pt: "O que fizeste?", tense: "Perfeito" },
-            { en: "I didn't do anything.", pt: "Não fiz nada.", tense: "Perfeito" },
-            { en: "Who did this?", pt: "Quem fez isto?", tense: "Perfeito" },
-            { en: "I made a decision.", pt: "Fiz uma decisão.", tense: "Perfeito" },
-
-            // Futuro do Indicativo (Future)
-            { en: "I will do it tomorrow.", pt: "Farei isso amanhã.", tense: "Futuro" },
-            { en: "You will make friends.", pt: "Tu farás amigos.", tense: "Futuro" },
-            { en: "He will do the work.", pt: "Ele fará o trabalho.", tense: "Futuro" },
-            { en: "We will make it happen.", pt: "Faremos com que aconteça.", tense: "Futuro" },
-            { en: "They will do their part.", pt: "Eles farão a sua parte.", tense: "Futuro" },
-            { en: "What will you do?", pt: "O que farás?", tense: "Futuro" },
-            { en: "I won't do that again.", pt: "Não farei isso outra vez.", tense: "Futuro" },
-            { en: "It will be hot tomorrow.", pt: "Fará calor amanhã.", tense: "Futuro" },
-            { en: "She will make dinner.", pt: "Ela fará o jantar.", tense: "Futuro" },
-            { en: "We will do our best.", pt: "Faremos o nosso melhor.", tense: "Futuro" },
-
-            // Condicional (Conditional)
-            { en: "I would do it differently.", pt: "Faria de forma diferente.", tense: "Condicional" },
-            { en: "You would make a good teacher.", pt: "Tu farias um bom professor.", tense: "Condicional" },
-            { en: "He would do anything.", pt: "Ele faria qualquer coisa.", tense: "Condicional" },
-            { en: "We would make time.", pt: "Faríamos tempo.", tense: "Condicional" },
-            { en: "They would do it for free.", pt: "Eles fariam de graça.", tense: "Condicional" },
-            { en: "What would you do?", pt: "O que farias?", tense: "Condicional" },
-            { en: "I wouldn't do that.", pt: "Não faria isso.", tense: "Condicional" },
-            { en: "It would make sense.", pt: "Faria sentido.", tense: "Condicional" },
-            { en: "She would make a great leader.", pt: "Ela faria uma grande líder.", tense: "Condicional" },
-            { en: "It would be better to do it now.", pt: "Seria melhor fazer agora.", tense: "Condicional" },
-
-            // Presente do Conjuntivo (Present Subjunctive)
-            { en: "I hope you do well.", pt: "Espero que faças bem.", tense: "Conjuntivo" },
-            { en: "It's important that he does this.", pt: "É importante que ele faça isto.", tense: "Conjuntivo" },
-            { en: "I want us to make peace.", pt: "Quero que façamos as pazes.", tense: "Conjuntivo" },
-            { en: "I doubt that she does it.", pt: "Duvido que ela faça isso.", tense: "Conjuntivo" },
-            { en: "Even though you do everything...", pt: "Embora faças tudo...", tense: "Conjuntivo" },
-            { en: "Whatever you do...", pt: "Faças o que fizeres...", tense: "Conjuntivo" },
-            { en: "It's necessary that they do it.", pt: "É preciso que eles façam isso.", tense: "Conjuntivo" },
-            { en: "I don't think it makes sense.", pt: "Não acho que faça sentido.", tense: "Conjuntivo" },
-            { en: "Unless you do something...", pt: "A menos que faças alguma coisa...", tense: "Conjuntivo" },
-            { en: "I want you to do your best.", pt: "Quero que faças o teu melhor.", tense: "Conjuntivo" },
-
-            // Imperfeito do Conjuntivo (Imperfect Subjunctive)
-            { en: "If I did that...", pt: "Se eu fizesse isso...", tense: "Imperfeito Conj." },
-            { en: "I wish you did more.", pt: "Quem me dera que fizesses mais.", tense: "Imperfeito Conj." },
-            { en: "If he did the work...", pt: "Se ele fizesse o trabalho...", tense: "Imperfeito Conj." },
-            { en: "If we did it together...", pt: "Se fizéssemos juntos...", tense: "Imperfeito Conj." },
-            { en: "If they did their job...", pt: "Se eles fizessem o trabalho deles...", tense: "Imperfeito Conj." },
-            { en: "I would go if you did too.", pt: "Iria se tu também fizesses.", tense: "Imperfeito Conj." },
-            { en: "Even if I did everything...", pt: "Mesmo que fizesse tudo...", tense: "Imperfeito Conj." },
-            { en: "If it made sense...", pt: "Se fizesse sentido...", tense: "Imperfeito Conj." },
-            { en: "As if nothing happened...", pt: "Como se nada se fizesse...", tense: "Imperfeito Conj." },
-            { en: "I wish it made a difference.", pt: "Quem me dera que fizesse diferença.", tense: "Imperfeito Conj." },
-
-            // Time expressions with fazer
-            { en: "It's been two years.", pt: "Faz dois anos.", tense: "Tempo" },
-            { en: "It's been a long time.", pt: "Faz muito tempo.", tense: "Tempo" },
-            { en: "How long has it been?", pt: "Há quanto tempo faz?", tense: "Tempo" },
-            { en: "It's been a week.", pt: "Faz uma semana.", tense: "Tempo" },
-            { en: "It was three months ago.", pt: "Faz três meses.", tense: "Tempo" },
-
-            // Common expressions with fazer
-            { en: "It doesn't matter.", pt: "Não faz mal.", tense: "Expressão" },
-            { en: "Do me a favor.", pt: "Faz-me um favor.", tense: "Expressão" },
-            { en: "Make an effort.", pt: "Faz um esforço.", tense: "Expressão" },
-            { en: "It makes a difference.", pt: "Faz diferença.", tense: "Expressão" },
-            { en: "To make plans.", pt: "Fazer planos.", tense: "Expressão" },
-            { en: "To go shopping.", pt: "Fazer compras.", tense: "Expressão" },
-            { en: "To ask a question.", pt: "Fazer uma pergunta.", tense: "Expressão" },
-            { en: "To take a trip.", pt: "Fazer uma viagem.", tense: "Expressão" },
-            { en: "To turn years old.", pt: "Fazer anos.", tense: "Expressão" },
-            { en: "To pretend.", pt: "Fazer de conta.", tense: "Expressão" },
-            { en: "To queue.", pt: "Fazer fila.", tense: "Expressão" },
-            { en: "To make friends.", pt: "Fazer amigos.", tense: "Expressão" },
-            { en: "What can you do?", pt: "O que se há de fazer?", tense: "Expressão" },
-            { en: "Well done!", pt: "Bem feito!", tense: "Expressão" },
-            { en: "It's doable.", pt: "É fazível.", tense: "Expressão" }
-        ]
-    };
+        const VERB_CONFIG = {
+            originKey: 'en',
+            labels: { target: 'European Portuguese', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["faço","fazes","faz","fazemos","fazem","fazia","fazias","fazíamos","faziam","fiz","fizeste","fez","fizemos","fizeram","farei","farás","fará","faremos","farão","faria","farias","faríamos","fariam","faça","faças","façamos","façam","fizesse","fizesses","fizéssemos","fizessem","fazer","fazendo","feito"],
+            phrases: [
+                { en: "I do my homework.", pt: "Faço os meus trabalhos de casa.", tense: "Presente" },
+                { en: "What are you doing?", pt: "O que fazes?", tense: "Presente" },
+                { en: "He makes coffee.", pt: "Ele faz café.", tense: "Presente" },
+                { en: "She makes dinner.", pt: "Ela faz o jantar.", tense: "Presente" },
+                { en: "We do exercise.", pt: "Fazemos exercício.", tense: "Presente" },
+                { en: "You (plural) make noise.", pt: "Vocês fazem barulho.", tense: "Presente" },
+                { en: "They do business.", pt: "Eles fazem negócios.", tense: "Presente" },
+                { en: "I don't do that.", pt: "Não faço isso.", tense: "Presente" },
+                { en: "Do you make mistakes?", pt: "Fazes erros?", tense: "Presente" },
+                { en: "What does this do?", pt: "O que é que isto faz?", tense: "Presente" },
+                { en: "It's hot.", pt: "Faz calor.", tense: "Presente" },
+                { en: "It's cold.", pt: "Faz frio.", tense: "Presente" },
+                { en: "It's nice weather.", pt: "Faz bom tempo.", tense: "Presente" },
+                { en: "It's bad weather.", pt: "Faz mau tempo.", tense: "Presente" },
+                { en: "It's sunny.", pt: "Faz sol.", tense: "Presente" },
+                { en: "What do you do for a living?", pt: "O que fazes na vida?", tense: "Presente" },
+                { en: "How do you do this?", pt: "Como fazes isto?", tense: "Presente" },
+                { en: "Does it make sense?", pt: "Faz sentido?", tense: "Presente" },
+                { en: "What should I do?", pt: "O que faço?", tense: "Presente" },
+                { en: "Do you do sports?", pt: "Fazes desporto?", tense: "Presente" },
+                { en: "I used to do yoga.", pt: "Eu fazia yoga.", tense: "Imperfeito" },
+                { en: "You used to make bread.", pt: "Tu fazias pão.", tense: "Imperfeito" },
+                { en: "He used to do everything.", pt: "Ele fazia tudo.", tense: "Imperfeito" },
+                { en: "She was making lunch.", pt: "Ela fazia o almoço.", tense: "Imperfeito" },
+                { en: "We used to do this together.", pt: "Fazíamos isto juntos.", tense: "Imperfeito" },
+                { en: "They were doing homework.", pt: "Eles faziam os trabalhos de casa.", tense: "Imperfeito" },
+                { en: "It was cold.", pt: "Fazia frio.", tense: "Imperfeito" },
+                { en: "What were you doing?", pt: "O que fazias?", tense: "Imperfeito" },
+                { en: "I wasn't doing anything.", pt: "Não fazia nada.", tense: "Imperfeito" },
+                { en: "It was hot in summer.", pt: "Fazia calor no verão.", tense: "Imperfeito" },
+                { en: "I did it.", pt: "Fiz isso.", tense: "Perfeito" },
+                { en: "You made a mistake.", pt: "Tu fizeste um erro.", tense: "Perfeito" },
+                { en: "He did his best.", pt: "Ele fez o seu melhor.", tense: "Perfeito" },
+                { en: "She made a cake.", pt: "Ela fez um bolo.", tense: "Perfeito" },
+                { en: "We did everything.", pt: "Fizemos tudo.", tense: "Perfeito" },
+                { en: "They made plans.", pt: "Eles fizeram planos.", tense: "Perfeito" },
+                { en: "What did you do?", pt: "O que fizeste?", tense: "Perfeito" },
+                { en: "I didn't do anything.", pt: "Não fiz nada.", tense: "Perfeito" },
+                { en: "Who did this?", pt: "Quem fez isto?", tense: "Perfeito" },
+                { en: "I made a decision.", pt: "Fiz uma decisão.", tense: "Perfeito" },
+                { en: "I will do it tomorrow.", pt: "Farei isso amanhã.", tense: "Futuro" },
+                { en: "You will make friends.", pt: "Tu farás amigos.", tense: "Futuro" },
+                { en: "He will do the work.", pt: "Ele fará o trabalho.", tense: "Futuro" },
+                { en: "We will make it happen.", pt: "Faremos com que aconteça.", tense: "Futuro" },
+                { en: "They will do their part.", pt: "Eles farão a sua parte.", tense: "Futuro" },
+                { en: "What will you do?", pt: "O que farás?", tense: "Futuro" },
+                { en: "I won't do that again.", pt: "Não farei isso outra vez.", tense: "Futuro" },
+                { en: "It will be hot tomorrow.", pt: "Fará calor amanhã.", tense: "Futuro" },
+                { en: "She will make dinner.", pt: "Ela fará o jantar.", tense: "Futuro" },
+                { en: "We will do our best.", pt: "Faremos o nosso melhor.", tense: "Futuro" },
+                { en: "I would do it differently.", pt: "Faria de forma diferente.", tense: "Condicional" },
+                { en: "You would make a good teacher.", pt: "Tu farias um bom professor.", tense: "Condicional" },
+                { en: "He would do anything.", pt: "Ele faria qualquer coisa.", tense: "Condicional" },
+                { en: "We would make time.", pt: "Faríamos tempo.", tense: "Condicional" },
+                { en: "They would do it for free.", pt: "Eles fariam de graça.", tense: "Condicional" },
+                { en: "What would you do?", pt: "O que farias?", tense: "Condicional" },
+                { en: "I wouldn't do that.", pt: "Não faria isso.", tense: "Condicional" },
+                { en: "It would make sense.", pt: "Faria sentido.", tense: "Condicional" },
+                { en: "She would make a great leader.", pt: "Ela faria uma grande líder.", tense: "Condicional" },
+                { en: "It would be better to do it now.", pt: "Seria melhor fazer agora.", tense: "Condicional" },
+                { en: "I hope you do well.", pt: "Espero que faças bem.", tense: "Conjuntivo" },
+                { en: "It's important that he does this.", pt: "É importante que ele faça isto.", tense: "Conjuntivo" },
+                { en: "I want us to make peace.", pt: "Quero que façamos as pazes.", tense: "Conjuntivo" },
+                { en: "I doubt that she does it.", pt: "Duvido que ela faça isso.", tense: "Conjuntivo" },
+                { en: "Even though you do everything...", pt: "Embora faças tudo...", tense: "Conjuntivo" },
+                { en: "Whatever you do...", pt: "Faças o que fizeres...", tense: "Conjuntivo" },
+                { en: "It's necessary that they do it.", pt: "É preciso que eles façam isso.", tense: "Conjuntivo" },
+                { en: "I don't think it makes sense.", pt: "Não acho que faça sentido.", tense: "Conjuntivo" },
+                { en: "Unless you do something...", pt: "A menos que faças alguma coisa...", tense: "Conjuntivo" },
+                { en: "I want you to do your best.", pt: "Quero que faças o teu melhor.", tense: "Conjuntivo" },
+                { en: "If I did that...", pt: "Se eu fizesse isso...", tense: "Imperfeito Conj." },
+                { en: "I wish you did more.", pt: "Quem me dera que fizesses mais.", tense: "Imperfeito Conj." },
+                { en: "If he did the work...", pt: "Se ele fizesse o trabalho...", tense: "Imperfeito Conj." },
+                { en: "If we did it together...", pt: "Se fizéssemos juntos...", tense: "Imperfeito Conj." },
+                { en: "If they did their job...", pt: "Se eles fizessem o trabalho deles...", tense: "Imperfeito Conj." },
+                { en: "I would go if you did too.", pt: "Iria se tu também fizesses.", tense: "Imperfeito Conj." },
+                { en: "Even if I did everything...", pt: "Mesmo que fizesse tudo...", tense: "Imperfeito Conj." },
+                { en: "If it made sense...", pt: "Se fizesse sentido...", tense: "Imperfeito Conj." },
+                { en: "As if nothing happened...", pt: "Como se nada se fizesse...", tense: "Imperfeito Conj." },
+                { en: "I wish it made a difference.", pt: "Quem me dera que fizesse diferença.", tense: "Imperfeito Conj." },
+                { en: "It's been two years.", pt: "Faz dois anos.", tense: "Tempo" },
+                { en: "It's been a long time.", pt: "Faz muito tempo.", tense: "Tempo" },
+                { en: "How long has it been?", pt: "Há quanto tempo faz?", tense: "Tempo" },
+                { en: "It's been a week.", pt: "Faz uma semana.", tense: "Tempo" },
+                { en: "It was three months ago.", pt: "Faz três meses.", tense: "Tempo" },
+                { en: "It doesn't matter.", pt: "Não faz mal.", tense: "Expressão" },
+                { en: "Do me a favor.", pt: "Faz-me um favor.", tense: "Expressão" },
+                { en: "Make an effort.", pt: "Faz um esforço.", tense: "Expressão" },
+                { en: "It makes a difference.", pt: "Faz diferença.", tense: "Expressão" },
+                { en: "To make plans.", pt: "Fazer planos.", tense: "Expressão" },
+                { en: "To go shopping.", pt: "Fazer compras.", tense: "Expressão" },
+                { en: "To ask a question.", pt: "Fazer uma pergunta.", tense: "Expressão" },
+                { en: "To take a trip.", pt: "Fazer uma viagem.", tense: "Expressão" },
+                { en: "To turn years old.", pt: "Fazer anos.", tense: "Expressão" },
+                { en: "To pretend.", pt: "Fazer de conta.", tense: "Expressão" },
+                { en: "To queue.", pt: "Fazer fila.", tense: "Expressão" },
+                { en: "To make friends.", pt: "Fazer amigos.", tense: "Expressão" },
+                { en: "What can you do?", pt: "O que se há de fazer?", tense: "Expressão" },
+                { en: "Well done!", pt: "Bem feito!", tense: "Expressão" },
+                { en: "It's doable.", pt: "É fazível.", tense: "Expressão" },
+            ]
+        };
     </script>
     <script src="../../assets/js/verb.js"></script>
 </body>

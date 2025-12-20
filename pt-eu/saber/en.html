@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verb SABER — 100 Phrases</title>
+    <title>Verb 🇵🇹 VERB SABER — 100 Phrases</title>
     <link rel="stylesheet" href="../../assets/css/verb.css">
-    
 </head>
 <body>
     <div class="container">
         <header>
             <a href="../" class="back-link">← Back to verb list</a>
             <h1>🇵🇹 Verb SABER</h1>
-            <p class="subtitle">100 popular phrases — European Portuguese</p>
+            <p class="subtitle">to know — 100 phrases</p>
         </header>
 
         <div class="controls">
@@ -30,137 +29,118 @@
         </div>
 
         <footer>
-            European Portuguese Practice — Verb SABER
+            European Portuguese Practice — SABER
         </footer>
     </div>
 
     <script>
-    const VERB_CONFIG = {
-        originKey: 'en',
-        labels: { target: 'European Portuguese', showing: 'Showing', of: 'of', phrases: 'phrases' },
-        verbForms: ['sei', 'sabes', 'sabe', 'sabemos', 'sabem', 'sabia', 'sabias', 'sabíamos', 'sabiam', 'soube', 'soubeste', 'soubemos', 'souberam', 'saberei', 'saberás', 'saberá', 'saberemos', 'saberão', 'saberia', 'saberias', 'saberíamos', 'saberiam', 'saiba', 'saibas', 'saibamos', 'saibam', 'soubesse', 'soubesses', 'soubéssemos', 'soubessem', 'souber', 'souberes', 'soubermos', 'souberem', 'saber', 'sabendo', 'sabido'],
-        phrases: [
-            // Presente do Indicativo (Present)
-            { en: "I know the answer.", pt: "Sei a resposta.", tense: "Presente" },
-            { en: "Do you know where it is?", pt: "Sabes onde está?", tense: "Presente" },
-            { en: "He knows how to swim.", pt: "Ele sabe nadar.", tense: "Presente" },
-            { en: "She knows the truth.", pt: "Ela sabe a verdade.", tense: "Presente" },
-            { en: "We know each other.", pt: "Nós sabemos.", tense: "Presente" },
-            { en: "They know everything.", pt: "Eles sabem tudo.", tense: "Presente" },
-            { en: "I don't know.", pt: "Não sei.", tense: "Presente" },
-            { en: "Do you know him?", pt: "Sabes quem ele é?", tense: "Presente" },
-            { en: "Who knows?", pt: "Quem sabe?", tense: "Presente" },
-            { en: "I know Portuguese.", pt: "Sei português.", tense: "Presente" },
-
-            // More present tense
-            { en: "Do you know how to cook?", pt: "Sabes cozinhar?", tense: "Presente" },
-            { en: "He knows the city well.", pt: "Ele sabe bem a cidade.", tense: "Presente" },
-            { en: "She knows what to do.", pt: "Ela sabe o que fazer.", tense: "Presente" },
-            { en: "We know the way.", pt: "Sabemos o caminho.", tense: "Presente" },
-            { en: "They don't know anything.", pt: "Eles não sabem nada.", tense: "Presente" },
-            { en: "I know that already.", pt: "Já sei isso.", tense: "Presente" },
-            { en: "Do you know the password?", pt: "Sabes a palavra-passe?", tense: "Presente" },
-            { en: "He doesn't know how to drive.", pt: "Ele não sabe conduzir.", tense: "Presente" },
-            { en: "She knows five languages.", pt: "Ela sabe cinco línguas.", tense: "Presente" },
-            { en: "I know what you mean.", pt: "Sei o que queres dizer.", tense: "Presente" },
-
-            // Pretérito Imperfeito (Imperfect Past)
-            { en: "I knew the answer.", pt: "Eu sabia a resposta.", tense: "Imperfeito" },
-            { en: "You knew him well.", pt: "Tu sabias bem.", tense: "Imperfeito" },
-            { en: "He knew everything.", pt: "Ele sabia tudo.", tense: "Imperfeito" },
-            { en: "She knew the secret.", pt: "Ela sabia o segredo.", tense: "Imperfeito" },
-            { en: "We knew the truth.", pt: "Sabíamos a verdade.", tense: "Imperfeito" },
-            { en: "They knew the risk.", pt: "Eles sabiam o risco.", tense: "Imperfeito" },
-            { en: "I didn't know that.", pt: "Não sabia isso.", tense: "Imperfeito" },
-            { en: "Did you know about it?", pt: "Sabias disso?", tense: "Imperfeito" },
-            { en: "Nobody knew.", pt: "Ninguém sabia.", tense: "Imperfeito" },
-            { en: "I knew it would happen.", pt: "Sabia que ia acontecer.", tense: "Imperfeito" },
-
-            // Pretérito Perfeito Simples (Simple Past)
-            { en: "I found out yesterday.", pt: "Soube ontem.", tense: "Perfeito" },
-            { en: "You found out the truth.", pt: "Tu soubeste a verdade.", tense: "Perfeito" },
-            { en: "He found out later.", pt: "Ele soube depois.", tense: "Perfeito" },
-            { en: "She never found out.", pt: "Ela nunca soube.", tense: "Perfeito" },
-            { en: "We found out through them.", pt: "Soubemos por eles.", tense: "Perfeito" },
-            { en: "They found out everything.", pt: "Eles souberam tudo.", tense: "Perfeito" },
-            { en: "I just found out.", pt: "Acabei de saber.", tense: "Perfeito" },
-            { en: "When did you find out?", pt: "Quando soubeste?", tense: "Perfeito" },
-            { en: "How did he find out?", pt: "Como é que ele soube?", tense: "Perfeito" },
-            { en: "I found out right away.", pt: "Soube logo.", tense: "Perfeito" },
-
-            // Futuro do Indicativo (Future)
-            { en: "I will know tomorrow.", pt: "Saberei amanhã.", tense: "Futuro" },
-            { en: "You will know soon.", pt: "Tu saberás em breve.", tense: "Futuro" },
-            { en: "He will know the result.", pt: "Ele saberá o resultado.", tense: "Futuro" },
-            { en: "We will know later.", pt: "Saberemos mais tarde.", tense: "Futuro" },
-            { en: "They will know everything.", pt: "Eles saberão tudo.", tense: "Futuro" },
-            { en: "I won't know until then.", pt: "Não saberei até lá.", tense: "Futuro" },
-            { en: "Will you know how to do it?", pt: "Saberás fazer?", tense: "Futuro" },
-            { en: "She will know what to say.", pt: "Ela saberá o que dizer.", tense: "Futuro" },
-            { en: "Everyone will know.", pt: "Todos saberão.", tense: "Futuro" },
-            { en: "Time will tell.", pt: "O tempo saberá.", tense: "Futuro" },
-
-            // Condicional (Conditional)
-            { en: "I would know if...", pt: "Saberia se...", tense: "Condicional" },
-            { en: "You would know better.", pt: "Tu saberias melhor.", tense: "Condicional" },
-            { en: "He would know what to do.", pt: "Ele saberia o que fazer.", tense: "Condicional" },
-            { en: "We would know by now.", pt: "Saberíamos agora.", tense: "Condicional" },
-            { en: "They would know the answer.", pt: "Eles saberiam a resposta.", tense: "Condicional" },
-            { en: "I wouldn't know.", pt: "Não saberia.", tense: "Condicional" },
-            { en: "Would you know how?", pt: "Saberias como?", tense: "Condicional" },
-            { en: "She would know the difference.", pt: "Ela saberia a diferença.", tense: "Condicional" },
-            { en: "Who would know?", pt: "Quem saberia?", tense: "Condicional" },
-            { en: "I would like to know.", pt: "Gostaria de saber.", tense: "Condicional" },
-
-            // Presente do Conjuntivo (Present Subjunctive)
-            { en: "I hope you know.", pt: "Espero que saibas.", tense: "Conjuntivo" },
-            { en: "It's important that he knows.", pt: "É importante que ele saiba.", tense: "Conjuntivo" },
-            { en: "I doubt she knows.", pt: "Duvido que ela saiba.", tense: "Conjuntivo" },
-            { en: "Even though you know...", pt: "Embora saibas...", tense: "Conjuntivo" },
-            { en: "Whoever knows the answer...", pt: "Quem saiba a resposta...", tense: "Conjuntivo" },
-            { en: "It's necessary that we know.", pt: "É preciso que saibamos.", tense: "Conjuntivo" },
-            { en: "I don't think he knows.", pt: "Não acho que ele saiba.", tense: "Conjuntivo" },
-            { en: "Unless you know...", pt: "A menos que saibas...", tense: "Conjuntivo" },
-            { en: "So that they know...", pt: "Para que saibam...", tense: "Conjuntivo" },
-            { en: "Whatever you know...", pt: "O que quer que saibas...", tense: "Conjuntivo" },
-
-            // Imperfeito do Conjuntivo (Imperfect Subjunctive)
-            { en: "If I knew...", pt: "Se eu soubesse...", tense: "Imperfeito Conj." },
-            { en: "I wish you knew.", pt: "Quem me dera que soubesses.", tense: "Imperfeito Conj." },
-            { en: "If he knew the truth...", pt: "Se ele soubesse a verdade...", tense: "Imperfeito Conj." },
-            { en: "If we knew earlier...", pt: "Se soubéssemos antes...", tense: "Imperfeito Conj." },
-            { en: "If they knew...", pt: "Se eles soubessem...", tense: "Imperfeito Conj." },
-            { en: "I would tell you if I knew.", pt: "Dizia-te se soubesse.", tense: "Imperfeito Conj." },
-            { en: "Even if I knew...", pt: "Mesmo que soubesse...", tense: "Imperfeito Conj." },
-            { en: "If she knew about this...", pt: "Se ela soubesse disto...", tense: "Imperfeito Conj." },
-            { en: "As if he knew everything...", pt: "Como se soubesse tudo...", tense: "Imperfeito Conj." },
-            { en: "If only I knew.", pt: "Se ao menos soubesse.", tense: "Imperfeito Conj." },
-
-            // Futuro do Conjuntivo (Future Subjunctive)
-            { en: "When I find out...", pt: "Quando souber...", tense: "Futuro Conj." },
-            { en: "If you find out...", pt: "Se souberes...", tense: "Futuro Conj." },
-            { en: "When he knows...", pt: "Quando ele souber...", tense: "Futuro Conj." },
-            { en: "If we find out...", pt: "Se soubermos...", tense: "Futuro Conj." },
-            { en: "When they find out...", pt: "Quando eles souberem...", tense: "Futuro Conj." },
-            { en: "As soon as I know...", pt: "Assim que souber...", tense: "Futuro Conj." },
-            { en: "Whoever knows...", pt: "Quem souber...", tense: "Futuro Conj." },
-            { en: "If you ever find out...", pt: "Se alguma vez souberes...", tense: "Futuro Conj." },
-            { en: "When we know more...", pt: "Quando soubermos mais...", tense: "Futuro Conj." },
-            { en: "Tell me if you find out.", pt: "Diz-me se souberes.", tense: "Futuro Conj." },
-
-            // Common expressions
-            { en: "I don't know.", pt: "Não sei.", tense: "Expressão" },
-            { en: "Who knows?", pt: "Quem sabe?", tense: "Expressão" },
-            { en: "You never know.", pt: "Nunca se sabe.", tense: "Expressão" },
-            { en: "God knows.", pt: "Deus sabe.", tense: "Expressão" },
-            { en: "As far as I know.", pt: "Que eu saiba.", tense: "Expressão" },
-            { en: "Let me know.", pt: "Faz-me saber.", tense: "Expressão" },
-            { en: "I want to know.", pt: "Quero saber.", tense: "Expressão" },
-            { en: "How should I know?", pt: "Como é que eu hei de saber?", tense: "Expressão" },
-            { en: "It tastes good.", pt: "Sabe bem.", tense: "Expressão" },
-            { en: "Knowledge is power.", pt: "Saber é poder.", tense: "Expressão" }
-        ]
-    };
+        const VERB_CONFIG = {
+            originKey: 'en',
+            labels: { target: 'European Portuguese', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["sei","sabes","sabe","sabemos","sabem","sabia","sabias","sabíamos","sabiam","soube","soubeste","soubemos","souberam","saberei","saberás","saberá","saberemos","saberão","saberia","saberias","saberíamos","saberiam","saiba","saibas","saibamos","saibam","soubesse","soubesses","soubéssemos","soubessem","souber","souberes","soubermos","souberem","saber","sabendo","sabido"],
+            phrases: [
+                { en: "I know the answer.", pt: "Sei a resposta.", tense: "Presente" },
+                { en: "Do you know where it is?", pt: "Sabes onde está?", tense: "Presente" },
+                { en: "He knows how to swim.", pt: "Ele sabe nadar.", tense: "Presente" },
+                { en: "She knows the truth.", pt: "Ela sabe a verdade.", tense: "Presente" },
+                { en: "We know each other.", pt: "Nós sabemos.", tense: "Presente" },
+                { en: "They know everything.", pt: "Eles sabem tudo.", tense: "Presente" },
+                { en: "I don't know.", pt: "Não sei.", tense: "Presente" },
+                { en: "Do you know him?", pt: "Sabes quem ele é?", tense: "Presente" },
+                { en: "Who knows?", pt: "Quem sabe?", tense: "Presente" },
+                { en: "I know Portuguese.", pt: "Sei português.", tense: "Presente" },
+                { en: "Do you know how to cook?", pt: "Sabes cozinhar?", tense: "Presente" },
+                { en: "He knows the city well.", pt: "Ele sabe bem a cidade.", tense: "Presente" },
+                { en: "She knows what to do.", pt: "Ela sabe o que fazer.", tense: "Presente" },
+                { en: "We know the way.", pt: "Sabemos o caminho.", tense: "Presente" },
+                { en: "They don't know anything.", pt: "Eles não sabem nada.", tense: "Presente" },
+                { en: "I know that already.", pt: "Já sei isso.", tense: "Presente" },
+                { en: "Do you know the password?", pt: "Sabes a palavra-passe?", tense: "Presente" },
+                { en: "He doesn't know how to drive.", pt: "Ele não sabe conduzir.", tense: "Presente" },
+                { en: "She knows five languages.", pt: "Ela sabe cinco línguas.", tense: "Presente" },
+                { en: "I know what you mean.", pt: "Sei o que queres dizer.", tense: "Presente" },
+                { en: "I knew the answer.", pt: "Eu sabia a resposta.", tense: "Imperfeito" },
+                { en: "You knew him well.", pt: "Tu sabias bem.", tense: "Imperfeito" },
+                { en: "He knew everything.", pt: "Ele sabia tudo.", tense: "Imperfeito" },
+                { en: "She knew the secret.", pt: "Ela sabia o segredo.", tense: "Imperfeito" },
+                { en: "We knew the truth.", pt: "Sabíamos a verdade.", tense: "Imperfeito" },
+                { en: "They knew the risk.", pt: "Eles sabiam o risco.", tense: "Imperfeito" },
+                { en: "I didn't know that.", pt: "Não sabia isso.", tense: "Imperfeito" },
+                { en: "Did you know about it?", pt: "Sabias disso?", tense: "Imperfeito" },
+                { en: "Nobody knew.", pt: "Ninguém sabia.", tense: "Imperfeito" },
+                { en: "I knew it would happen.", pt: "Sabia que ia acontecer.", tense: "Imperfeito" },
+                { en: "I found out yesterday.", pt: "Soube ontem.", tense: "Perfeito" },
+                { en: "You found out the truth.", pt: "Tu soubeste a verdade.", tense: "Perfeito" },
+                { en: "He found out later.", pt: "Ele soube depois.", tense: "Perfeito" },
+                { en: "She never found out.", pt: "Ela nunca soube.", tense: "Perfeito" },
+                { en: "We found out through them.", pt: "Soubemos por eles.", tense: "Perfeito" },
+                { en: "They found out everything.", pt: "Eles souberam tudo.", tense: "Perfeito" },
+                { en: "I just found out.", pt: "Acabei de saber.", tense: "Perfeito" },
+                { en: "When did you find out?", pt: "Quando soubeste?", tense: "Perfeito" },
+                { en: "How did he find out?", pt: "Como é que ele soube?", tense: "Perfeito" },
+                { en: "I found out right away.", pt: "Soube logo.", tense: "Perfeito" },
+                { en: "I will know tomorrow.", pt: "Saberei amanhã.", tense: "Futuro" },
+                { en: "You will know soon.", pt: "Tu saberás em breve.", tense: "Futuro" },
+                { en: "He will know the result.", pt: "Ele saberá o resultado.", tense: "Futuro" },
+                { en: "We will know later.", pt: "Saberemos mais tarde.", tense: "Futuro" },
+                { en: "They will know everything.", pt: "Eles saberão tudo.", tense: "Futuro" },
+                { en: "I won't know until then.", pt: "Não saberei até lá.", tense: "Futuro" },
+                { en: "Will you know how to do it?", pt: "Saberás fazer?", tense: "Futuro" },
+                { en: "She will know what to say.", pt: "Ela saberá o que dizer.", tense: "Futuro" },
+                { en: "Everyone will know.", pt: "Todos saberão.", tense: "Futuro" },
+                { en: "Time will tell.", pt: "O tempo saberá.", tense: "Futuro" },
+                { en: "I would know if...", pt: "Saberia se...", tense: "Condicional" },
+                { en: "You would know better.", pt: "Tu saberias melhor.", tense: "Condicional" },
+                { en: "He would know what to do.", pt: "Ele saberia o que fazer.", tense: "Condicional" },
+                { en: "We would know by now.", pt: "Saberíamos agora.", tense: "Condicional" },
+                { en: "They would know the answer.", pt: "Eles saberiam a resposta.", tense: "Condicional" },
+                { en: "I wouldn't know.", pt: "Não saberia.", tense: "Condicional" },
+                { en: "Would you know how?", pt: "Saberias como?", tense: "Condicional" },
+                { en: "She would know the difference.", pt: "Ela saberia a diferença.", tense: "Condicional" },
+                { en: "Who would know?", pt: "Quem saberia?", tense: "Condicional" },
+                { en: "I would like to know.", pt: "Gostaria de saber.", tense: "Condicional" },
+                { en: "I hope you know.", pt: "Espero que saibas.", tense: "Conjuntivo" },
+                { en: "It's important that he knows.", pt: "É importante que ele saiba.", tense: "Conjuntivo" },
+                { en: "I doubt she knows.", pt: "Duvido que ela saiba.", tense: "Conjuntivo" },
+                { en: "Even though you know...", pt: "Embora saibas...", tense: "Conjuntivo" },
+                { en: "Whoever knows the answer...", pt: "Quem saiba a resposta...", tense: "Conjuntivo" },
+                { en: "It's necessary that we know.", pt: "É preciso que saibamos.", tense: "Conjuntivo" },
+                { en: "I don't think he knows.", pt: "Não acho que ele saiba.", tense: "Conjuntivo" },
+                { en: "Unless you know...", pt: "A menos que saibas...", tense: "Conjuntivo" },
+                { en: "So that they know...", pt: "Para que saibam...", tense: "Conjuntivo" },
+                { en: "Whatever you know...", pt: "O que quer que saibas...", tense: "Conjuntivo" },
+                { en: "If I knew...", pt: "Se eu soubesse...", tense: "Imperfeito Conj." },
+                { en: "I wish you knew.", pt: "Quem me dera que soubesses.", tense: "Imperfeito Conj." },
+                { en: "If he knew the truth...", pt: "Se ele soubesse a verdade...", tense: "Imperfeito Conj." },
+                { en: "If we knew earlier...", pt: "Se soubéssemos antes...", tense: "Imperfeito Conj." },
+                { en: "If they knew...", pt: "Se eles soubessem...", tense: "Imperfeito Conj." },
+                { en: "I would tell you if I knew.", pt: "Dizia-te se soubesse.", tense: "Imperfeito Conj." },
+                { en: "Even if I knew...", pt: "Mesmo que soubesse...", tense: "Imperfeito Conj." },
+                { en: "If she knew about this...", pt: "Se ela soubesse disto...", tense: "Imperfeito Conj." },
+                { en: "As if he knew everything...", pt: "Como se soubesse tudo...", tense: "Imperfeito Conj." },
+                { en: "If only I knew.", pt: "Se ao menos soubesse.", tense: "Imperfeito Conj." },
+                { en: "When I find out...", pt: "Quando souber...", tense: "Futuro Conj." },
+                { en: "If you find out...", pt: "Se souberes...", tense: "Futuro Conj." },
+                { en: "When he knows...", pt: "Quando ele souber...", tense: "Futuro Conj." },
+                { en: "If we find out...", pt: "Se soubermos...", tense: "Futuro Conj." },
+                { en: "When they find out...", pt: "Quando eles souberem...", tense: "Futuro Conj." },
+                { en: "As soon as I know...", pt: "Assim que souber...", tense: "Futuro Conj." },
+                { en: "Whoever knows...", pt: "Quem souber...", tense: "Futuro Conj." },
+                { en: "If you ever find out...", pt: "Se alguma vez souberes...", tense: "Futuro Conj." },
+                { en: "When we know more...", pt: "Quando soubermos mais...", tense: "Futuro Conj." },
+                { en: "Tell me if you find out.", pt: "Diz-me se souberes.", tense: "Futuro Conj." },
+                { en: "I don't know.", pt: "Não sei.", tense: "Expressão" },
+                { en: "Who knows?", pt: "Quem sabe?", tense: "Expressão" },
+                { en: "You never know.", pt: "Nunca se sabe.", tense: "Expressão" },
+                { en: "God knows.", pt: "Deus sabe.", tense: "Expressão" },
+                { en: "As far as I know.", pt: "Que eu saiba.", tense: "Expressão" },
+                { en: "Let me know.", pt: "Faz-me saber.", tense: "Expressão" },
+                { en: "I want to know.", pt: "Quero saber.", tense: "Expressão" },
+                { en: "How should I know?", pt: "Como é que eu hei de saber?", tense: "Expressão" },
+                { en: "It tastes good.", pt: "Sabe bem.", tense: "Expressão" },
+                { en: "Knowledge is power.", pt: "Saber é poder.", tense: "Expressão" },
+            ]
+        };
     </script>
     <script src="../../assets/js/verb.js"></script>
 </body>
