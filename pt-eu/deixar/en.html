@@ -34,7 +34,11 @@
     </div>
 
     <script>
-        const phrases = [
+    const VERB_CONFIG = {
+        originKey: 'en',
+        labels: { target: 'European Portuguese', showing: 'Showing', of: 'of', phrases: 'phrases' },
+        verbForms: ['deixo', 'deixas', 'deixa', 'deixamos', 'deixam', 'deixava', 'deixavas', 'deixávamos', 'deixavam', 'deixei', 'deixaste', 'deixou', 'deixámos', 'deixaram', 'deixarei', 'deixarás', 'deixará', 'deixaremos', 'deixarão', 'deixaria', 'deixarias', 'deixaríamos', 'deixariam', 'deixe', 'deixes', 'deixemos', 'deixem', 'deixasse', 'deixasses', 'deixássemos', 'deixassem', 'deixar', 'deixares', 'deixarmos', 'deixarem'],
+        phrases: [
 {en: "I leave it here.", pt: "Deixo aqui.", tense: "Presente"},
 {en: "You let me go.", pt: "Deixas-me ir.", tense: "Presente"},
 {en: "He leaves everything.", pt: "Ele deixa tudo.", tense: "Presente"},
@@ -135,76 +139,9 @@
 {en: "Leave it to me.", pt: "Deixa comigo.", tense: "Imperativo"},
 {en: "I stopped smoking.", pt: "Deixei de fumar.", tense: "Perfeito"},
 {en: "Don't let me down.", pt: "Não me deixes ficar mal.", tense: "Imperativo"}
-        ];
-
-        function renderPhrases(filteredPhrases = phrases) {
-            const container = document.getElementById('phraseList');
-            container.innerHTML = '';
-
-            filteredPhrases.forEach((phrase, index) => {
-                const card = document.createElement('div');
-                card.className = 'phrase-card';
-                card.innerHTML = `
-                    <div class="phrase-header" onclick="toggleCard(this.parentElement)">
-                        <span class="phrase-number">${index + 1}</span>
-                        <span class="origin-text">${phrase.en}</span>
-                        <span class="toggle-icon">▼</span>
-                    </div>
-                    <div class="portuguese-text">
-                        <div class="pt-content">
-                            <div class="pt-label">European Portuguese</div>
-                            <div class="pt-phrase">${highlightVerb(phrase.pt)}</div>
-                            <span class="tense-tag">${phrase.tense}</span>
-                        </div>
-                    </div>
-                `;
-                container.appendChild(card);
-            });
-
-            document.getElementById('stats').textContent =
-                `Showing: ${filteredPhrases.length} of ${phrases.length} phrases`;
-        }
-
-        function highlightVerb(text) {
-            const forms = [
-                'deixo', 'deixas', 'deixa', 'deixamos', 'deixam', 'deixava', 'deixavas', 'deixávamos', 'deixavam', 'deixei', 'deixaste', 'deixou', 'deixámos', 'deixaram', 'deixarei', 'deixarás', 'deixará', 'deixaremos', 'deixarão', 'deixaria', 'deixarias', 'deixaríamos', 'deixariam', 'deixe', 'deixes', 'deixemos', 'deixem', 'deixasse', 'deixasses', 'deixássemos', 'deixassem', 'deixar', 'deixares', 'deixarmos', 'deixarem'
-            ];
-
-            let result = text;
-            forms.forEach(form => {
-                const regex = new RegExp(`\\b(${form})\\b`, 'gi');
-                result = result.replace(regex, '<span class="verb-highlight">$1</span>');
-            });
-            return result;
-        }
-
-        function toggleCard(card) {
-            card.classList.toggle('open');
-        }
-
-        function showAll() {
-            document.querySelectorAll('.phrase-card').forEach(card => {
-                card.classList.add('open');
-            });
-        }
-
-        function hideAll() {
-            document.querySelectorAll('.phrase-card').forEach(card => {
-                card.classList.remove('open');
-            });
-        }
-
-        document.getElementById('searchInput').addEventListener('input', (e) => {
-            const query = e.target.value.toLowerCase();
-            const filtered = phrases.filter(p =>
-                p.en.toLowerCase().includes(query) ||
-                p.pt.toLowerCase().includes(query) ||
-                p.tense.toLowerCase().includes(query)
-            );
-            renderPhrases(filtered);
-        });
-
-        renderPhrases();
+        ]
+    };
     </script>
+    <script src="../../js/verb.js"></script>
 </body>
 </html>

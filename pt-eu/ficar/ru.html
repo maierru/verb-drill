@@ -35,7 +35,11 @@
     </div>
 
     <script>
-        const phrases = [
+    const VERB_CONFIG = {
+        originKey: 'ru',
+        labels: { target: 'Português Europeu', showing: 'Показано', of: 'из', phrases: 'фраз' },
+        verbForms: ['fico', 'ficas', 'fica', 'ficamos', 'ficam', 'ficava', 'ficavas', 'ficávamos', 'ficavam', 'fiquei', 'ficaste', 'ficou', 'ficámos', 'ficaram', 'ficarei', 'ficarás', 'ficará', 'ficaremos', 'ficarão', 'ficaria', 'ficarias', 'ficaríamos', 'ficariam', 'fique', 'fiques', 'fiquemos', 'fiquem', 'ficasse', 'ficasses', 'ficássemos', 'ficassem', 'ficar', 'ficares', 'ficarmos', 'ficarem', 'ficando', 'ficado'],
+        phrases: [
             // Presente do Indicativo - to stay/remain
             { ru: "Я остаюсь здесь.", pt: "Fico aqui.", tense: "Presente" },
             { ru: "Ты остаёшься дома?", pt: "Ficas em casa?", tense: "Presente" },
@@ -162,85 +166,9 @@
             { ru: "Оставить себе что-то.", pt: "Ficar com algo.", tense: "Expressão" },
             { ru: "Будь здоров.", pt: "Fica bem.", tense: "Expressão" },
             { ru: "Тебе подходит.", pt: "Fica-te bem.", tense: "Expressão" }
-        ];
-
-        function renderPhrases(filteredPhrases = phrases) {
-            const container = document.getElementById('phraseList');
-            container.innerHTML = '';
-
-            filteredPhrases.forEach((phrase, index) => {
-                const card = document.createElement('div');
-                card.className = 'phrase-card';
-                card.innerHTML = `
-                    <div class="phrase-header" onclick="toggleCard(this.parentElement)">
-                        <span class="phrase-number">${index + 1}</span>
-                        <span class="origin-text">${phrase.ru}</span>
-                        <span class="toggle-icon">▼</span>
-                    </div>
-                    <div class="portuguese-text">
-                        <div class="pt-content">
-                            <div class="pt-label">Европейский португальский</div>
-                            <div class="pt-phrase">${highlightVerb(phrase.pt)}</div>
-                            <span class="tense-tag">${phrase.tense}</span>
-                        </div>
-                    </div>
-                `;
-                container.appendChild(card);
-            });
-
-            document.getElementById('stats').textContent =
-                `Показано: ${filteredPhrases.length} из ${phrases.length} фраз`;
-        }
-
-        function highlightVerb(text) {
-            const forms = [
-                'fico', 'ficas', 'fica', 'ficamos', 'ficam',
-                'ficava', 'ficavas', 'ficávamos', 'ficavam',
-                'fiquei', 'ficaste', 'ficou', 'ficámos', 'ficaram',
-                'ficarei', 'ficarás', 'ficará', 'ficaremos', 'ficarão',
-                'ficaria', 'ficarias', 'ficaríamos', 'ficariam',
-                'fique', 'fiques', 'fiquemos', 'fiquem',
-                'ficasse', 'ficasses', 'ficássemos', 'ficassem',
-                'ficar', 'ficares', 'ficarmos', 'ficarem',
-                'ficando', 'ficado'
-            ];
-
-            let result = text;
-            forms.forEach(form => {
-                const regex = new RegExp(`\\b(${form})\\b`, 'gi');
-                result = result.replace(regex, '<span class="verb-highlight">$1</span>');
-            });
-            return result;
-        }
-
-        function toggleCard(card) {
-            card.classList.toggle('open');
-        }
-
-        function showAll() {
-            document.querySelectorAll('.phrase-card').forEach(card => {
-                card.classList.add('open');
-            });
-        }
-
-        function hideAll() {
-            document.querySelectorAll('.phrase-card').forEach(card => {
-                card.classList.remove('open');
-            });
-        }
-
-        document.getElementById('searchInput').addEventListener('input', (e) => {
-            const query = e.target.value.toLowerCase();
-            const filtered = phrases.filter(p =>
-                p.ru.toLowerCase().includes(query) ||
-                p.pt.toLowerCase().includes(query) ||
-                p.tense.toLowerCase().includes(query)
-            );
-            renderPhrases(filtered);
-        });
-
-        // Initialize
-        renderPhrases();
+        ]
+    };
     </script>
+    <script src="../../js/verb.js"></script>
 </body>
 </html>

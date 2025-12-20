@@ -26,7 +26,11 @@
         <footer>Практика европейского португальского — Глагол CONSEGUIR</footer>
     </div>
     <script>
-        const phrases = [
+    const VERB_CONFIG = {
+        originKey: 'ru',
+        labels: { target: 'Português Europeu', showing: 'Показано', of: 'из', phrases: 'фраз' },
+        verbForms: ['consigo', 'consegues', 'consegue', 'conseguimos', 'conseguem', 'conseguia', 'conseguias', 'conseguíamos', 'conseguiam', 'consegui', 'conseguiste', 'conseguiu', 'conseguiram', 'conseguirei', 'conseguirás', 'conseguirá', 'conseguiremos', 'conseguirão', 'conseguiria', 'conseguirias', 'conseguiríamos', 'conseguiriam', 'consiga', 'consigas', 'consigamos', 'consigam', 'conseguisse', 'conseguisses', 'conseguíssemos', 'conseguissem', 'conseguir', 'conseguires', 'conseguirmos', 'conseguirem', 'conseguindo', 'conseguido'],
+        phrases: [
             { ru: "Я могу это сделать.", pt: "Consigo fazer.", tense: "Presente" },
             { ru: "Ты видишь?", pt: "Consegues ver?", tense: "Presente" },
             { ru: "Он успевает вовремя.", pt: "Ele consegue chegar a tempo.", tense: "Presente" },
@@ -127,52 +131,9 @@
             { ru: "Наконец получилось.", pt: "Finalmente consegui.", tense: "Expressão" },
             { ru: "Получить разрешение.", pt: "Conseguir permissão.", tense: "Expressão" },
             { ru: "Готово.", pt: "Conseguido.", tense: "Expressão" }
-        ];
-
-        function renderPhrases(filteredPhrases = phrases) {
-            const container = document.getElementById('phraseList');
-            container.innerHTML = '';
-            filteredPhrases.forEach((phrase, index) => {
-                const card = document.createElement('div');
-                card.className = 'phrase-card';
-                card.innerHTML = `
-                    <div class="phrase-header" onclick="toggleCard(this.parentElement)">
-                        <span class="phrase-number">${index + 1}</span>
-                        <span class="origin-text">${phrase.ru}</span>
-                        <span class="toggle-icon">▼</span>
-                    </div>
-                    <div class="portuguese-text">
-                        <div class="pt-content">
-                            <div class="pt-label">Европейский португальский</div>
-                            <div class="pt-phrase">${highlightVerb(phrase.pt)}</div>
-                            <span class="tense-tag">${phrase.tense}</span>
-                        </div>
-                    </div>
-                `;
-                container.appendChild(card);
-            });
-            document.getElementById('stats').textContent = `Показано: ${filteredPhrases.length} из ${phrases.length} фраз`;
-        }
-
-        function highlightVerb(text) {
-            const forms = ['consigo', 'consegues', 'consegue', 'conseguimos', 'conseguem', 'conseguia', 'conseguias', 'conseguíamos', 'conseguiam', 'consegui', 'conseguiste', 'conseguiu', 'conseguiram', 'conseguirei', 'conseguirás', 'conseguirá', 'conseguiremos', 'conseguirão', 'conseguiria', 'conseguirias', 'conseguiríamos', 'conseguiriam', 'consiga', 'consigas', 'consigamos', 'consigam', 'conseguisse', 'conseguisses', 'conseguíssemos', 'conseguissem', 'conseguir', 'conseguires', 'conseguirmos', 'conseguirem', 'conseguindo', 'conseguido'];
-            let result = text;
-            forms.forEach(form => {
-                const regex = new RegExp(`\\b(${form})\\b`, 'gi');
-                result = result.replace(regex, '<span class="verb-highlight">$1</span>');
-            });
-            return result;
-        }
-
-        function toggleCard(card) { card.classList.toggle('open'); }
-        function showAll() { document.querySelectorAll('.phrase-card').forEach(card => card.classList.add('open')); }
-        function hideAll() { document.querySelectorAll('.phrase-card').forEach(card => card.classList.remove('open')); }
-        document.getElementById('searchInput').addEventListener('input', (e) => {
-            const query = e.target.value.toLowerCase();
-            const filtered = phrases.filter(p => p.ru.toLowerCase().includes(query) || p.pt.toLowerCase().includes(query) || p.tense.toLowerCase().includes(query));
-            renderPhrases(filtered);
-        });
-        renderPhrases();
+        ]
+    };
     </script>
+    <script src="../../js/verb.js"></script>
 </body>
 </html>

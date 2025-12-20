@@ -34,7 +34,11 @@
     </div>
 
     <script>
-        const phrases = [
+    const VERB_CONFIG = {
+        originKey: 'en',
+        labels: { target: 'European Portuguese', showing: 'Showing', of: 'of', phrases: 'phrases' },
+        verbForms: ['ando', 'andas', 'anda', 'andamos', 'andam', 'andava', 'andavas', 'andávamos', 'andavam', 'andei', 'andaste', 'andou', 'andámos', 'andaram', 'andarei', 'andarás', 'andará', 'andaremos', 'andarão', 'andaria', 'andarias', 'andaríamos', 'andariam', 'ande', 'andes', 'andemos', 'andem', 'andasse', 'andasses', 'andássemos', 'andassem', 'andar', 'andares', 'andarmos', 'andarem'],
+        phrases: [
 {en: "I walk every day.", pt: "Ando todos os dias.", tense: "Presente"},
 {en: "You walk fast.", pt: "Andas depressa.", tense: "Presente"},
 {en: "He walks slowly.", pt: "Ele anda devagar.", tense: "Presente"},
@@ -135,76 +139,9 @@
 {en: "He walks to work.", pt: "Ele anda para o trabalho.", tense: "Presente"},
 {en: "We walk together.", pt: "Andamos juntos.", tense: "Presente"},
 {en: "They walk in the morning.", pt: "Eles andam de manhã.", tense: "Presente"}
-        ];
-
-        function renderPhrases(filteredPhrases = phrases) {
-            const container = document.getElementById('phraseList');
-            container.innerHTML = '';
-
-            filteredPhrases.forEach((phrase, index) => {
-                const card = document.createElement('div');
-                card.className = 'phrase-card';
-                card.innerHTML = `
-                    <div class="phrase-header" onclick="toggleCard(this.parentElement)">
-                        <span class="phrase-number">${index + 1}</span>
-                        <span class="origin-text">${phrase.en}</span>
-                        <span class="toggle-icon">▼</span>
-                    </div>
-                    <div class="portuguese-text">
-                        <div class="pt-content">
-                            <div class="pt-label">European Portuguese</div>
-                            <div class="pt-phrase">${highlightVerb(phrase.pt)}</div>
-                            <span class="tense-tag">${phrase.tense}</span>
-                        </div>
-                    </div>
-                `;
-                container.appendChild(card);
-            });
-
-            document.getElementById('stats').textContent =
-                `Showing: ${filteredPhrases.length} of ${phrases.length} phrases`;
-        }
-
-        function highlightVerb(text) {
-            const forms = [
-                'ando', 'andas', 'anda', 'andamos', 'andam', 'andava', 'andavas', 'andávamos', 'andavam', 'andei', 'andaste', 'andou', 'andámos', 'andaram', 'andarei', 'andarás', 'andará', 'andaremos', 'andarão', 'andaria', 'andarias', 'andaríamos', 'andariam', 'ande', 'andes', 'andemos', 'andem', 'andasse', 'andasses', 'andássemos', 'andassem', 'andar', 'andares', 'andarmos', 'andarem'
-            ];
-
-            let result = text;
-            forms.forEach(form => {
-                const regex = new RegExp(`\\b(${form})\\b`, 'gi');
-                result = result.replace(regex, '<span class="verb-highlight">$1</span>');
-            });
-            return result;
-        }
-
-        function toggleCard(card) {
-            card.classList.toggle('open');
-        }
-
-        function showAll() {
-            document.querySelectorAll('.phrase-card').forEach(card => {
-                card.classList.add('open');
-            });
-        }
-
-        function hideAll() {
-            document.querySelectorAll('.phrase-card').forEach(card => {
-                card.classList.remove('open');
-            });
-        }
-
-        document.getElementById('searchInput').addEventListener('input', (e) => {
-            const query = e.target.value.toLowerCase();
-            const filtered = phrases.filter(p =>
-                p.en.toLowerCase().includes(query) ||
-                p.pt.toLowerCase().includes(query) ||
-                p.tense.toLowerCase().includes(query)
-            );
-            renderPhrases(filtered);
-        });
-
-        renderPhrases();
+        ]
+    };
     </script>
+    <script src="../../js/verb.js"></script>
 </body>
 </html>

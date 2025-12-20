@@ -34,7 +34,11 @@
     </div>
 
     <script>
-        const phrases = [
+    const VERB_CONFIG = {
+        originKey: 'en',
+        labels: { target: 'European Portuguese', showing: 'Showing', of: 'of', phrases: 'phrases' },
+        verbForms: ['saio', 'sais', 'sai', 'saímos', 'saem', 'saía', 'saías', 'saíamos', 'saíam', 'saí', 'saíste', 'saiu', 'saíram', 'sairei', 'sairás', 'sairá', 'sairemos', 'sairão', 'sairia', 'sairias', 'sairíamos', 'sairiam', 'saia', 'saias', 'saiamos', 'saiam', 'saísse', 'saísses', 'saíssemos', 'saíssem', 'sair', 'saíres', 'sairmos', 'saírem'],
+        phrases: [
 {en: "I go out today.", pt: "Saio hoje.", tense: "Presente"},
 {en: "You leave early.", pt: "Sais cedo.", tense: "Presente"},
 {en: "He goes out at night.", pt: "Ele sai à noite.", tense: "Presente"},
@@ -135,76 +139,9 @@
 {en: "The book came out yesterday.", pt: "O livro saiu ontem.", tense: "Perfeito"},
 {en: "It didn't work out.", pt: "Não saiu bem.", tense: "Perfeito"},
 {en: "Everything worked out.", pt: "Tudo saiu bem.", tense: "Perfeito"}
-        ];
-
-        function renderPhrases(filteredPhrases = phrases) {
-            const container = document.getElementById('phraseList');
-            container.innerHTML = '';
-
-            filteredPhrases.forEach((phrase, index) => {
-                const card = document.createElement('div');
-                card.className = 'phrase-card';
-                card.innerHTML = `
-                    <div class="phrase-header" onclick="toggleCard(this.parentElement)">
-                        <span class="phrase-number">${index + 1}</span>
-                        <span class="origin-text">${phrase.en}</span>
-                        <span class="toggle-icon">▼</span>
-                    </div>
-                    <div class="portuguese-text">
-                        <div class="pt-content">
-                            <div class="pt-label">European Portuguese</div>
-                            <div class="pt-phrase">${highlightVerb(phrase.pt)}</div>
-                            <span class="tense-tag">${phrase.tense}</span>
-                        </div>
-                    </div>
-                `;
-                container.appendChild(card);
-            });
-
-            document.getElementById('stats').textContent =
-                `Showing: ${filteredPhrases.length} of ${phrases.length} phrases`;
-        }
-
-        function highlightVerb(text) {
-            const forms = [
-                'saio', 'sais', 'sai', 'saímos', 'saem', 'saía', 'saías', 'saíamos', 'saíam', 'saí', 'saíste', 'saiu', 'saíram', 'sairei', 'sairás', 'sairá', 'sairemos', 'sairão', 'sairia', 'sairias', 'sairíamos', 'sairiam', 'saia', 'saias', 'saiamos', 'saiam', 'saísse', 'saísses', 'saíssemos', 'saíssem', 'sair', 'saíres', 'sairmos', 'saírem'
-            ];
-
-            let result = text;
-            forms.forEach(form => {
-                const regex = new RegExp(`\\b(${form})\\b`, 'gi');
-                result = result.replace(regex, '<span class="verb-highlight">$1</span>');
-            });
-            return result;
-        }
-
-        function toggleCard(card) {
-            card.classList.toggle('open');
-        }
-
-        function showAll() {
-            document.querySelectorAll('.phrase-card').forEach(card => {
-                card.classList.add('open');
-            });
-        }
-
-        function hideAll() {
-            document.querySelectorAll('.phrase-card').forEach(card => {
-                card.classList.remove('open');
-            });
-        }
-
-        document.getElementById('searchInput').addEventListener('input', (e) => {
-            const query = e.target.value.toLowerCase();
-            const filtered = phrases.filter(p =>
-                p.en.toLowerCase().includes(query) ||
-                p.pt.toLowerCase().includes(query) ||
-                p.tense.toLowerCase().includes(query)
-            );
-            renderPhrases(filtered);
-        });
-
-        renderPhrases();
+        ]
+    };
     </script>
+    <script src="../../js/verb.js"></script>
 </body>
 </html>

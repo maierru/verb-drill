@@ -34,7 +34,11 @@
     </div>
 
     <script>
-        const phrases = [
+    const VERB_CONFIG = {
+        originKey: 'ru',
+        labels: { target: 'Português Europeu', showing: 'Показано', of: 'из', phrases: 'фраз' },
+        verbForms: ['ouço', 'ouves', 'ouve', 'ouvimos', 'ouvem', 'ouvia', 'ouvias', 'ouvíamos', 'ouviam', 'ouvi', 'ouviste', 'ouviu', 'ouviram', 'ouvirei', 'ouvirás', 'ouvirá', 'ouviremos', 'ouvirão', 'ouviria', 'ouvirias', 'ouviríamos', 'ouviriam', 'ouça', 'ouças', 'ouçamos', 'ouçam', 'ouvisse', 'ouvisses', 'ouvíssemos', 'ouvissem', 'ouvir', 'ouvires', 'ouvirmos', 'ouvirem'],
+        phrases: [
 {ru: "Я слышу.", pt: "Ouço.", tense: "Presente"},
 {ru: "Ты слышишь музыку.", pt: "Ouves a música.", tense: "Presente"},
 {ru: "Он слышит шум.", pt: "Ele ouve o barulho.", tense: "Presente"},
@@ -135,76 +139,9 @@
 {ru: "Я услышал по радио.", pt: "Ouvi na rádio.", tense: "Perfeito"},
 {ru: "Я обожаю слушать подкасты.", pt: "Adoro ouvir podcasts.", tense: "Presente"},
 {ru: "Мы слышали, как он поёт.", pt: "Ouvimo-lo cantar.", tense: "Perfeito"}
-        ];
-
-        function renderPhrases(filteredPhrases = phrases) {
-            const container = document.getElementById('phraseList');
-            container.innerHTML = '';
-
-            filteredPhrases.forEach((phrase, index) => {
-                const card = document.createElement('div');
-                card.className = 'phrase-card';
-                card.innerHTML = `
-                    <div class="phrase-header" onclick="toggleCard(this.parentElement)">
-                        <span class="phrase-number">${index + 1}</span>
-                        <span class="russian-text">${phrase.ru}</span>
-                        <span class="toggle-icon">▼</span>
-                    </div>
-                    <div class="portuguese-text">
-                        <div class="pt-content">
-                            <div class="pt-label">Português Europeu</div>
-                            <div class="pt-phrase">${highlightVerb(phrase.pt)}</div>
-                            <span class="tense-tag">${phrase.tense}</span>
-                        </div>
-                    </div>
-                `;
-                container.appendChild(card);
-            });
-
-            document.getElementById('stats').textContent =
-                `Показано: ${filteredPhrases.length} из ${phrases.length} фраз`;
-        }
-
-        function highlightVerb(text) {
-            const forms = [
-                'ouço', 'ouves', 'ouve', 'ouvimos', 'ouvem', 'ouvia', 'ouvias', 'ouvíamos', 'ouviam', 'ouvi', 'ouviste', 'ouviu', 'ouviram', 'ouvirei', 'ouvirás', 'ouvirá', 'ouviremos', 'ouvirão', 'ouviria', 'ouvirias', 'ouviríamos', 'ouviriam', 'ouça', 'ouças', 'ouçamos', 'ouçam', 'ouvisse', 'ouvisses', 'ouvíssemos', 'ouvissem', 'ouvir', 'ouvires', 'ouvirmos', 'ouvirem'
-            ];
-
-            let result = text;
-            forms.forEach(form => {
-                const regex = new RegExp(`\\b(${form})\\b`, 'gi');
-                result = result.replace(regex, '<span class="verb-highlight">$1</span>');
-            });
-            return result;
-        }
-
-        function toggleCard(card) {
-            card.classList.toggle('open');
-        }
-
-        function showAll() {
-            document.querySelectorAll('.phrase-card').forEach(card => {
-                card.classList.add('open');
-            });
-        }
-
-        function hideAll() {
-            document.querySelectorAll('.phrase-card').forEach(card => {
-                card.classList.remove('open');
-            });
-        }
-
-        document.getElementById('searchInput').addEventListener('input', (e) => {
-            const query = e.target.value.toLowerCase();
-            const filtered = phrases.filter(p =>
-                p.ru.toLowerCase().includes(query) ||
-                p.pt.toLowerCase().includes(query) ||
-                p.tense.toLowerCase().includes(query)
-            );
-            renderPhrases(filtered);
-        });
-
-        renderPhrases();
+        ]
+    };
     </script>
+    <script src="../../js/verb.js"></script>
 </body>
 </html>

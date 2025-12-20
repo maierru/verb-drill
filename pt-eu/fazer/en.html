@@ -35,7 +35,11 @@
     </div>
 
     <script>
-        const phrases = [
+    const VERB_CONFIG = {
+        originKey: 'en',
+        labels: { target: 'European Portuguese', showing: 'Showing', of: 'of', phrases: 'phrases' },
+        verbForms: ['faço', 'fazes', 'faz', 'fazemos', 'fazem', 'fazia', 'fazias', 'fazíamos', 'faziam', 'fiz', 'fizeste', 'fez', 'fizemos', 'fizeram', 'farei', 'farás', 'fará', 'faremos', 'farão', 'faria', 'farias', 'faríamos', 'fariam', 'faça', 'faças', 'façamos', 'façam', 'fizesse', 'fizesses', 'fizéssemos', 'fizessem', 'fazer', 'fazendo', 'feito'],
+        phrases: [
             // Presente do Indicativo (Present) - to do, to make
             { en: "I do my homework.", pt: "Faço os meus trabalhos de casa.", tense: "Presente" },
             { en: "What are you doing?", pt: "O que fazes?", tense: "Presente" },
@@ -157,84 +161,9 @@
             { en: "What can you do?", pt: "O que se há de fazer?", tense: "Expressão" },
             { en: "Well done!", pt: "Bem feito!", tense: "Expressão" },
             { en: "It's doable.", pt: "É fazível.", tense: "Expressão" }
-        ];
-
-        function renderPhrases(filteredPhrases = phrases) {
-            const container = document.getElementById('phraseList');
-            container.innerHTML = '';
-
-            filteredPhrases.forEach((phrase, index) => {
-                const card = document.createElement('div');
-                card.className = 'phrase-card';
-                card.innerHTML = `
-                    <div class="phrase-header" onclick="toggleCard(this.parentElement)">
-                        <span class="phrase-number">${index + 1}</span>
-                        <span class="origin-text">${phrase.en}</span>
-                        <span class="toggle-icon">▼</span>
-                    </div>
-                    <div class="portuguese-text">
-                        <div class="pt-content">
-                            <div class="pt-label">European Portuguese</div>
-                            <div class="pt-phrase">${highlightVerb(phrase.pt)}</div>
-                            <span class="tense-tag">${phrase.tense}</span>
-                        </div>
-                    </div>
-                `;
-                container.appendChild(card);
-            });
-
-            document.getElementById('stats').textContent =
-                `Showing: ${filteredPhrases.length} of ${phrases.length} phrases`;
-        }
-
-        function highlightVerb(text) {
-            const forms = [
-                'faço', 'fazes', 'faz', 'fazemos', 'fazem',
-                'fazia', 'fazias', 'fazíamos', 'faziam',
-                'fiz', 'fizeste', 'fez', 'fizemos', 'fizeram',
-                'farei', 'farás', 'fará', 'faremos', 'farão',
-                'faria', 'farias', 'faríamos', 'fariam',
-                'faça', 'faças', 'façamos', 'façam',
-                'fizesse', 'fizesses', 'fizéssemos', 'fizessem',
-                'fazer', 'fazendo', 'feito'
-            ];
-
-            let result = text;
-            forms.forEach(form => {
-                const regex = new RegExp(`\\b(${form})\\b`, 'gi');
-                result = result.replace(regex, '<span class="verb-highlight">$1</span>');
-            });
-            return result;
-        }
-
-        function toggleCard(card) {
-            card.classList.toggle('open');
-        }
-
-        function showAll() {
-            document.querySelectorAll('.phrase-card').forEach(card => {
-                card.classList.add('open');
-            });
-        }
-
-        function hideAll() {
-            document.querySelectorAll('.phrase-card').forEach(card => {
-                card.classList.remove('open');
-            });
-        }
-
-        document.getElementById('searchInput').addEventListener('input', (e) => {
-            const query = e.target.value.toLowerCase();
-            const filtered = phrases.filter(p =>
-                p.en.toLowerCase().includes(query) ||
-                p.pt.toLowerCase().includes(query) ||
-                p.tense.toLowerCase().includes(query)
-            );
-            renderPhrases(filtered);
-        });
-
-        // Initialize
-        renderPhrases();
+        ]
+    };
     </script>
+    <script src="../../js/verb.js"></script>
 </body>
 </html>

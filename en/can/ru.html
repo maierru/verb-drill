@@ -35,7 +35,14 @@
     </div>
 
     <script>
-        const phrases = [
+    const VERB_CONFIG = {
+        originKey: 'ru',
+        labels: { target: 'Português Europeu', showing: 'Показано', of: 'из', phrases: 'фраз' },
+        verbForms: ['can', 't", ', ',
+                ', ', "couldn', 'could not', 'be able to', 'able to', 'was able to', 'were able to', 't able to", "weren', 'will be able to', 't be able to",
+                ', ', ', ', ', ',
+                "isn'],
+        phrases: [
             // Present - can
             { ru: "Я могу тебе помочь.", en: "I can help you.", tense: "Present" },
             { ru: "Ты можешь войти.", en: "You can come in.", tense: "Present" },
@@ -164,85 +171,9 @@
             { ru: "Если бы мы могли начать заново...", en: "If we could start over...", tense: "Conditional" },
             { ru: "Было бы хорошо, если бы они могли.", en: "It would be good if they could.", tense: "Conditional" },
             { ru: "Что бы ты сделал, если бы мог?", en: "What would you do if you could?", tense: "Conditional" }
-        ];
-
-        function renderPhrases(filteredPhrases = phrases) {
-            const container = document.getElementById('phraseList');
-            container.innerHTML = '';
-
-            filteredPhrases.forEach((phrase, index) => {
-                const card = document.createElement('div');
-                card.className = 'phrase-card';
-                card.innerHTML = `
-                    <div class="phrase-header" onclick="toggleCard(this.parentElement)">
-                        <span class="phrase-number">${index + 1}</span>
-                        <span class="origin-text">${phrase.ru}</span>
-                        <span class="toggle-icon">▼</span>
-                    </div>
-                    <div class="english-text">
-                        <div class="en-content">
-                            <div class="en-label">English</div>
-                            <div class="en-phrase">${highlightVerb(phrase.en)}</div>
-                            <span class="tense-tag">${phrase.tense}</span>
-                        </div>
-                    </div>
-                `;
-                container.appendChild(card);
-            });
-
-            document.getElementById('stats').textContent =
-                `Показано: ${filteredPhrases.length} из ${phrases.length} фраз`;
-        }
-
-        function highlightVerb(text) {
-            const forms = [
-                'can', "can't", 'cannot',
-                'could', "couldn't", 'could not',
-                'be able to', 'able to',
-                'was able to', 'were able to',
-                "wasn't able to", "weren't able to",
-                'will be able to', "won't be able to",
-                'am able to', 'is able to', 'are able to',
-                "isn't able to", "aren't able to", "am not able to"
-            ];
-
-            let result = text;
-            forms.sort((a, b) => b.length - a.length);
-            forms.forEach(form => {
-                const regex = new RegExp(`\\b(${form.replace(/'/g, "['']")})\\b`, 'gi');
-                result = result.replace(regex, '<span class="verb-highlight">$1</span>');
-            });
-            return result;
-        }
-
-        function toggleCard(card) {
-            card.classList.toggle('open');
-        }
-
-        function showAll() {
-            document.querySelectorAll('.phrase-card').forEach(card => {
-                card.classList.add('open');
-            });
-        }
-
-        function hideAll() {
-            document.querySelectorAll('.phrase-card').forEach(card => {
-                card.classList.remove('open');
-            });
-        }
-
-        document.getElementById('searchInput').addEventListener('input', (e) => {
-            const query = e.target.value.toLowerCase();
-            const filtered = phrases.filter(p =>
-                p.ru.toLowerCase().includes(query) ||
-                p.en.toLowerCase().includes(query) ||
-                p.tense.toLowerCase().includes(query)
-            );
-            renderPhrases(filtered);
-        });
-
-        // Initialize
-        renderPhrases();
+        ]
+    };
     </script>
+    <script src="../../js/verb.js"></script>
 </body>
 </html>

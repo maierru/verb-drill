@@ -34,7 +34,11 @@
     </div>
 
     <script>
-        const phrases = [
+    const VERB_CONFIG = {
+        originKey: 'en',
+        labels: { target: 'European Portuguese', showing: 'Showing', of: 'of', phrases: 'phrases' },
+        verbForms: ['chego', 'chegas', 'chega', 'chegamos', 'chegam', 'chegava', 'chegavas', 'chegávamos', 'chegavam', 'cheguei', 'chegaste', 'chegou', 'chegámos', 'chegaram', 'chegarei', 'chegarás', 'chegará', 'chegaremos', 'chegarão', 'chegaria', 'chegarias', 'chegaríamos', 'chegariam', 'chegue', 'chegues', 'cheguemos', 'cheguem', 'chegasse', 'chegasses', 'chegássemos', 'chegassem', 'chegar', 'chegares', 'chegarmos', 'chegarem'],
+        phrases: [
 {en: "I arrive at 8.", pt: "Chego às 8.", tense: "Presente"},
 {en: "You arrive late.", pt: "Chegas atrasado.", tense: "Presente"},
 {en: "He arrives early.", pt: "Ele chega cedo.", tense: "Presente"},
@@ -135,76 +139,9 @@
 {en: "We must arrive before noon.", pt: "Temos de chegar antes do meio-dia.", tense: "Presente"},
 {en: "I want to arrive first.", pt: "Quero chegar primeiro.", tense: "Presente"},
 {en: "She decided to arrive later.", pt: "Ela decidiu chegar mais tarde.", tense: "Perfeito"}
-        ];
-
-        function renderPhrases(filteredPhrases = phrases) {
-            const container = document.getElementById('phraseList');
-            container.innerHTML = '';
-
-            filteredPhrases.forEach((phrase, index) => {
-                const card = document.createElement('div');
-                card.className = 'phrase-card';
-                card.innerHTML = `
-                    <div class="phrase-header" onclick="toggleCard(this.parentElement)">
-                        <span class="phrase-number">${index + 1}</span>
-                        <span class="origin-text">${phrase.en}</span>
-                        <span class="toggle-icon">▼</span>
-                    </div>
-                    <div class="portuguese-text">
-                        <div class="pt-content">
-                            <div class="pt-label">European Portuguese</div>
-                            <div class="pt-phrase">${highlightVerb(phrase.pt)}</div>
-                            <span class="tense-tag">${phrase.tense}</span>
-                        </div>
-                    </div>
-                `;
-                container.appendChild(card);
-            });
-
-            document.getElementById('stats').textContent =
-                `Showing: ${filteredPhrases.length} of ${phrases.length} phrases`;
-        }
-
-        function highlightVerb(text) {
-            const forms = [
-                'chego', 'chegas', 'chega', 'chegamos', 'chegam', 'chegava', 'chegavas', 'chegávamos', 'chegavam', 'cheguei', 'chegaste', 'chegou', 'chegámos', 'chegaram', 'chegarei', 'chegarás', 'chegará', 'chegaremos', 'chegarão', 'chegaria', 'chegarias', 'chegaríamos', 'chegariam', 'chegue', 'chegues', 'cheguemos', 'cheguem', 'chegasse', 'chegasses', 'chegássemos', 'chegassem', 'chegar', 'chegares', 'chegarmos', 'chegarem'
-            ];
-
-            let result = text;
-            forms.forEach(form => {
-                const regex = new RegExp(`\\b(${form})\\b`, 'gi');
-                result = result.replace(regex, '<span class="verb-highlight">$1</span>');
-            });
-            return result;
-        }
-
-        function toggleCard(card) {
-            card.classList.toggle('open');
-        }
-
-        function showAll() {
-            document.querySelectorAll('.phrase-card').forEach(card => {
-                card.classList.add('open');
-            });
-        }
-
-        function hideAll() {
-            document.querySelectorAll('.phrase-card').forEach(card => {
-                card.classList.remove('open');
-            });
-        }
-
-        document.getElementById('searchInput').addEventListener('input', (e) => {
-            const query = e.target.value.toLowerCase();
-            const filtered = phrases.filter(p =>
-                p.en.toLowerCase().includes(query) ||
-                p.pt.toLowerCase().includes(query) ||
-                p.tense.toLowerCase().includes(query)
-            );
-            renderPhrases(filtered);
-        });
-
-        renderPhrases();
+        ]
+    };
     </script>
+    <script src="../../js/verb.js"></script>
 </body>
 </html>

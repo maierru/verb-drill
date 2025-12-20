@@ -34,7 +34,11 @@
     </div>
 
     <script>
-        const phrases = [
+    const VERB_CONFIG = {
+        originKey: 'ru',
+        labels: { target: 'Português Europeu', showing: 'Показано', of: 'из', phrases: 'фраз' },
+        verbForms: ['começo', 'começas', 'começa', 'começamos', 'começam', 'começava', 'começavas', 'começávamos', 'começavam', 'comecei', 'começaste', 'começou', 'começámos', 'começaram', 'começarei', 'começarás', 'começará', 'começaremos', 'começarão', 'começaria', 'começarias', 'começaríamos', 'começariam', 'comece', 'comeces', 'comecemos', 'comecem', 'começasse', 'começasses', 'começássemos', 'começassem', 'começar', 'começares', 'começarmos', 'começarem'],
+        phrases: [
 {ru: "Я начинаю сейчас.", pt: "Começo agora.", tense: "Presente"},
 {ru: "Ты начинаешь рано.", pt: "Começas cedo.", tense: "Presente"},
 {ru: "Он начинает работу.", pt: "Ele começa o trabalho.", tense: "Presente"},
@@ -135,76 +139,9 @@
 {ru: "Всё началось здесь.", pt: "Tudo começou aqui.", tense: "Perfeito"},
 {ru: "Мы начали с нуля.", pt: "Começámos do zero.", tense: "Perfeito"},
 {ru: "Они начали бизнес.", pt: "Eles começaram um negócio.", tense: "Perfeito"}
-        ];
-
-        function renderPhrases(filteredPhrases = phrases) {
-            const container = document.getElementById('phraseList');
-            container.innerHTML = '';
-
-            filteredPhrases.forEach((phrase, index) => {
-                const card = document.createElement('div');
-                card.className = 'phrase-card';
-                card.innerHTML = `
-                    <div class="phrase-header" onclick="toggleCard(this.parentElement)">
-                        <span class="phrase-number">${index + 1}</span>
-                        <span class="russian-text">${phrase.ru}</span>
-                        <span class="toggle-icon">▼</span>
-                    </div>
-                    <div class="portuguese-text">
-                        <div class="pt-content">
-                            <div class="pt-label">Português Europeu</div>
-                            <div class="pt-phrase">${highlightVerb(phrase.pt)}</div>
-                            <span class="tense-tag">${phrase.tense}</span>
-                        </div>
-                    </div>
-                `;
-                container.appendChild(card);
-            });
-
-            document.getElementById('stats').textContent =
-                `Показано: ${filteredPhrases.length} из ${phrases.length} фраз`;
-        }
-
-        function highlightVerb(text) {
-            const forms = [
-                'começo', 'começas', 'começa', 'começamos', 'começam', 'começava', 'começavas', 'começávamos', 'começavam', 'comecei', 'começaste', 'começou', 'começámos', 'começaram', 'começarei', 'começarás', 'começará', 'começaremos', 'começarão', 'começaria', 'começarias', 'começaríamos', 'começariam', 'comece', 'comeces', 'comecemos', 'comecem', 'começasse', 'começasses', 'começássemos', 'começassem', 'começar', 'começares', 'começarmos', 'começarem'
-            ];
-
-            let result = text;
-            forms.forEach(form => {
-                const regex = new RegExp(`\\b(${form})\\b`, 'gi');
-                result = result.replace(regex, '<span class="verb-highlight">$1</span>');
-            });
-            return result;
-        }
-
-        function toggleCard(card) {
-            card.classList.toggle('open');
-        }
-
-        function showAll() {
-            document.querySelectorAll('.phrase-card').forEach(card => {
-                card.classList.add('open');
-            });
-        }
-
-        function hideAll() {
-            document.querySelectorAll('.phrase-card').forEach(card => {
-                card.classList.remove('open');
-            });
-        }
-
-        document.getElementById('searchInput').addEventListener('input', (e) => {
-            const query = e.target.value.toLowerCase();
-            const filtered = phrases.filter(p =>
-                p.ru.toLowerCase().includes(query) ||
-                p.pt.toLowerCase().includes(query) ||
-                p.tense.toLowerCase().includes(query)
-            );
-            renderPhrases(filtered);
-        });
-
-        renderPhrases();
+        ]
+    };
     </script>
+    <script src="../../js/verb.js"></script>
 </body>
 </html>

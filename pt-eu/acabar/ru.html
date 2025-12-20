@@ -34,7 +34,11 @@
     </div>
 
     <script>
-        const phrases = [
+    const VERB_CONFIG = {
+        originKey: 'ru',
+        labels: { target: 'Português Europeu', showing: 'Показано', of: 'из', phrases: 'фраз' },
+        verbForms: ['acabo', 'acabas', 'acaba', 'acabamos', 'acabam', 'acabava', 'acabavas', 'acabávamos', 'acabavam', 'acabei', 'acabaste', 'acabou', 'acabámos', 'acabaram', 'acabarei', 'acabarás', 'acabará', 'acabaremos', 'acabarão', 'acabaria', 'acabarias', 'acabaríamos', 'acabariam', 'acabe', 'acabes', 'acabemos', 'acabem', 'acabasse', 'acabasses', 'acabássemos', 'acabassem', 'acabar', 'acabares', 'acabarmos', 'acabarem'],
+        phrases: [
 {ru: "Я заканчиваю сейчас.", pt: "Acabo agora.", tense: "Presente"},
 {ru: "Ты заканчиваешь рано.", pt: "Acabas cedo.", tense: "Presente"},
 {ru: "Он заканчивает работу.", pt: "Ele acaba o trabalho.", tense: "Presente"},
@@ -135,76 +139,9 @@
 {ru: "Всё заканчивается.", pt: "Tudo acaba.", tense: "Presente"},
 {ru: "Мне нужно закончить.", pt: "Preciso de acabar.", tense: "Presente"},
 {ru: "Я хочу закончить.", pt: "Quero acabar.", tense: "Presente"}
-        ];
-
-        function renderPhrases(filteredPhrases = phrases) {
-            const container = document.getElementById('phraseList');
-            container.innerHTML = '';
-
-            filteredPhrases.forEach((phrase, index) => {
-                const card = document.createElement('div');
-                card.className = 'phrase-card';
-                card.innerHTML = `
-                    <div class="phrase-header" onclick="toggleCard(this.parentElement)">
-                        <span class="phrase-number">${index + 1}</span>
-                        <span class="russian-text">${phrase.ru}</span>
-                        <span class="toggle-icon">▼</span>
-                    </div>
-                    <div class="portuguese-text">
-                        <div class="pt-content">
-                            <div class="pt-label">Português Europeu</div>
-                            <div class="pt-phrase">${highlightVerb(phrase.pt)}</div>
-                            <span class="tense-tag">${phrase.tense}</span>
-                        </div>
-                    </div>
-                `;
-                container.appendChild(card);
-            });
-
-            document.getElementById('stats').textContent =
-                `Показано: ${filteredPhrases.length} из ${phrases.length} фраз`;
-        }
-
-        function highlightVerb(text) {
-            const forms = [
-                'acabo', 'acabas', 'acaba', 'acabamos', 'acabam', 'acabava', 'acabavas', 'acabávamos', 'acabavam', 'acabei', 'acabaste', 'acabou', 'acabámos', 'acabaram', 'acabarei', 'acabarás', 'acabará', 'acabaremos', 'acabarão', 'acabaria', 'acabarias', 'acabaríamos', 'acabariam', 'acabe', 'acabes', 'acabemos', 'acabem', 'acabasse', 'acabasses', 'acabássemos', 'acabassem', 'acabar', 'acabares', 'acabarmos', 'acabarem'
-            ];
-
-            let result = text;
-            forms.forEach(form => {
-                const regex = new RegExp(`\\b(${form})\\b`, 'gi');
-                result = result.replace(regex, '<span class="verb-highlight">$1</span>');
-            });
-            return result;
-        }
-
-        function toggleCard(card) {
-            card.classList.toggle('open');
-        }
-
-        function showAll() {
-            document.querySelectorAll('.phrase-card').forEach(card => {
-                card.classList.add('open');
-            });
-        }
-
-        function hideAll() {
-            document.querySelectorAll('.phrase-card').forEach(card => {
-                card.classList.remove('open');
-            });
-        }
-
-        document.getElementById('searchInput').addEventListener('input', (e) => {
-            const query = e.target.value.toLowerCase();
-            const filtered = phrases.filter(p =>
-                p.ru.toLowerCase().includes(query) ||
-                p.pt.toLowerCase().includes(query) ||
-                p.tense.toLowerCase().includes(query)
-            );
-            renderPhrases(filtered);
-        });
-
-        renderPhrases();
+        ]
+    };
     </script>
+    <script src="../../js/verb.js"></script>
 </body>
 </html>

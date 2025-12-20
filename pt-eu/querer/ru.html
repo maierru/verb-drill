@@ -35,7 +35,11 @@
     </div>
 
     <script>
-        const phrases = [
+    const VERB_CONFIG = {
+        originKey: 'ru',
+        labels: { target: 'Português Europeu', showing: 'Показано', of: 'из', phrases: 'фраз' },
+        verbForms: ['quero', 'queres', 'quer', 'queremos', 'querem', 'queria', 'querias', 'queríamos', 'queriam', 'quis', 'quiseste', 'quisemos', 'quiseram', 'quererei', 'quererás', 'quererá', 'quereremos', 'quererão', 'quereria', 'quererias', 'quereríamos', 'quereriam', 'queira', 'queiras', 'queiramos', 'queiram', 'quisesse', 'quisesses', 'quiséssemos', 'quisessem', 'querer', 'querendo', 'querido', 'quiseres'],
+        phrases: [
             // Presente do Indicativo (Настоящее время)
             { ru: "Я хочу воды.", pt: "Quero água.", tense: "Presente" },
             { ru: "Что ты хочешь?", pt: "O que queres?", tense: "Presente" },
@@ -155,84 +159,9 @@
             { ru: "Хотел бы я.", pt: "Quem me dera.", tense: "Expressão" },
             { ru: "Было бы желание.", pt: "Querer é poder.", tense: "Expressão" },
             { ru: "Как пожелаешь.", pt: "Como quiseres.", tense: "Expressão" }
-        ];
-
-        function renderPhrases(filteredPhrases = phrases) {
-            const container = document.getElementById('phraseList');
-            container.innerHTML = '';
-
-            filteredPhrases.forEach((phrase, index) => {
-                const card = document.createElement('div');
-                card.className = 'phrase-card';
-                card.innerHTML = `
-                    <div class="phrase-header" onclick="toggleCard(this.parentElement)">
-                        <span class="phrase-number">${index + 1}</span>
-                        <span class="russian-text">${phrase.ru}</span>
-                        <span class="toggle-icon">▼</span>
-                    </div>
-                    <div class="portuguese-text">
-                        <div class="pt-content">
-                            <div class="pt-label">Português Europeu</div>
-                            <div class="pt-phrase">${highlightVerb(phrase.pt)}</div>
-                            <span class="tense-tag">${phrase.tense}</span>
-                        </div>
-                    </div>
-                `;
-                container.appendChild(card);
-            });
-
-            document.getElementById('stats').textContent =
-                `Показано: ${filteredPhrases.length} из ${phrases.length} фраз`;
-        }
-
-        function highlightVerb(text) {
-            const forms = [
-                'quero', 'queres', 'quer', 'queremos', 'querem',
-                'queria', 'querias', 'queríamos', 'queriam',
-                'quis', 'quiseste', 'quisemos', 'quiseram',
-                'quererei', 'quererás', 'quererá', 'quereremos', 'quererão',
-                'quereria', 'quererias', 'quereríamos', 'quereriam',
-                'queira', 'queiras', 'queiramos', 'queiram',
-                'quisesse', 'quisesses', 'quiséssemos', 'quisessem',
-                'querer', 'querendo', 'querido', 'quiseres'
-            ];
-
-            let result = text;
-            forms.forEach(form => {
-                const regex = new RegExp(`\\b(${form})\\b`, 'gi');
-                result = result.replace(regex, '<span class="verb-highlight">$1</span>');
-            });
-            return result;
-        }
-
-        function toggleCard(card) {
-            card.classList.toggle('open');
-        }
-
-        function showAll() {
-            document.querySelectorAll('.phrase-card').forEach(card => {
-                card.classList.add('open');
-            });
-        }
-
-        function hideAll() {
-            document.querySelectorAll('.phrase-card').forEach(card => {
-                card.classList.remove('open');
-            });
-        }
-
-        document.getElementById('searchInput').addEventListener('input', (e) => {
-            const query = e.target.value.toLowerCase();
-            const filtered = phrases.filter(p =>
-                p.ru.toLowerCase().includes(query) ||
-                p.pt.toLowerCase().includes(query) ||
-                p.tense.toLowerCase().includes(query)
-            );
-            renderPhrases(filtered);
-        });
-
-        // Инициализация
-        renderPhrases();
+        ]
+    };
     </script>
+    <script src="../../js/verb.js"></script>
 </body>
 </html>

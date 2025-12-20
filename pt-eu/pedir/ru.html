@@ -34,7 +34,11 @@
     </div>
 
     <script>
-        const phrases = [
+    const VERB_CONFIG = {
+        originKey: 'ru',
+        labels: { target: 'Português Europeu', showing: 'Показано', of: 'из', phrases: 'фраз' },
+        verbForms: ['peço', 'pedes', 'pede', 'pedimos', 'pedem', 'pedia', 'pedias', 'pedíamos', 'pediam', 'pedi', 'pediste', 'pediu', 'pediram', 'pedirei', 'pedirás', 'pedirá', 'pediremos', 'pedirão', 'pediria', 'pedirias', 'pediríamos', 'pediriam', 'peça', 'peças', 'peçamos', 'peçam', 'pedisse', 'pedisses', 'pedíssemos', 'pedissem', 'pedir', 'pedires', 'pedirmos', 'pedirem'],
+        phrases: [
 {ru: "Я прошу.", pt: "Peço.", tense: "Presente"},
 {ru: "Ты просишь помощи.", pt: "Pedes ajuda.", tense: "Presente"},
 {ru: "Он просит денег.", pt: "Ele pede dinheiro.", tense: "Presente"},
@@ -135,76 +139,9 @@
 {ru: "Извините, прошу прощения.", pt: "Peço desculpa.", tense: "Presente"},
 {ru: "Можно задать вопрос?", pt: "Posso fazer uma pergunta?", tense: "Presente"},
 {ru: "Прошу тебя.", pt: "Peço-te.", tense: "Presente"}
-        ];
-
-        function renderPhrases(filteredPhrases = phrases) {
-            const container = document.getElementById('phraseList');
-            container.innerHTML = '';
-
-            filteredPhrases.forEach((phrase, index) => {
-                const card = document.createElement('div');
-                card.className = 'phrase-card';
-                card.innerHTML = `
-                    <div class="phrase-header" onclick="toggleCard(this.parentElement)">
-                        <span class="phrase-number">${index + 1}</span>
-                        <span class="russian-text">${phrase.ru}</span>
-                        <span class="toggle-icon">▼</span>
-                    </div>
-                    <div class="portuguese-text">
-                        <div class="pt-content">
-                            <div class="pt-label">Português Europeu</div>
-                            <div class="pt-phrase">${highlightVerb(phrase.pt)}</div>
-                            <span class="tense-tag">${phrase.tense}</span>
-                        </div>
-                    </div>
-                `;
-                container.appendChild(card);
-            });
-
-            document.getElementById('stats').textContent =
-                `Показано: ${filteredPhrases.length} из ${phrases.length} фраз`;
-        }
-
-        function highlightVerb(text) {
-            const forms = [
-                'peço', 'pedes', 'pede', 'pedimos', 'pedem', 'pedia', 'pedias', 'pedíamos', 'pediam', 'pedi', 'pediste', 'pediu', 'pediram', 'pedirei', 'pedirás', 'pedirá', 'pediremos', 'pedirão', 'pediria', 'pedirias', 'pediríamos', 'pediriam', 'peça', 'peças', 'peçamos', 'peçam', 'pedisse', 'pedisses', 'pedíssemos', 'pedissem', 'pedir', 'pedires', 'pedirmos', 'pedirem'
-            ];
-
-            let result = text;
-            forms.forEach(form => {
-                const regex = new RegExp(`\\b(${form})\\b`, 'gi');
-                result = result.replace(regex, '<span class="verb-highlight">$1</span>');
-            });
-            return result;
-        }
-
-        function toggleCard(card) {
-            card.classList.toggle('open');
-        }
-
-        function showAll() {
-            document.querySelectorAll('.phrase-card').forEach(card => {
-                card.classList.add('open');
-            });
-        }
-
-        function hideAll() {
-            document.querySelectorAll('.phrase-card').forEach(card => {
-                card.classList.remove('open');
-            });
-        }
-
-        document.getElementById('searchInput').addEventListener('input', (e) => {
-            const query = e.target.value.toLowerCase();
-            const filtered = phrases.filter(p =>
-                p.ru.toLowerCase().includes(query) ||
-                p.pt.toLowerCase().includes(query) ||
-                p.tense.toLowerCase().includes(query)
-            );
-            renderPhrases(filtered);
-        });
-
-        renderPhrases();
+        ]
+    };
     </script>
+    <script src="../../js/verb.js"></script>
 </body>
 </html>

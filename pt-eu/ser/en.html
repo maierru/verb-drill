@@ -34,7 +34,11 @@
     </div>
 
     <script>
-        const phrases = [
+    const VERB_CONFIG = {
+        originKey: 'en',
+        labels: { target: 'European Portuguese', showing: 'Showing', of: 'of', phrases: 'phrases' },
+        verbForms: ['sou', 'és', 'é', 'somos', 'são', 'era', 'eras', 'éramos', 'eram', 'fui', 'foste', 'foi', 'fomos', 'foram', 'serei', 'serás', 'será', 'seremos', 'serão', 'seria', 'serias', 'seríamos', 'seriam', 'seja', 'sejas', 'sejamos', 'sejam', 'fosse', 'fosses', 'fôssemos', 'fossem', 'ser', 'sendo', 'sido'],
+        phrases: [
             // Presente do Indicativo (Present)
             { en: "I am a student.", pt: "Sou estudante.", tense: "Presente" },
             { en: "You are my friend.", pt: "Tu és meu amigo.", tense: "Presente" },
@@ -166,84 +170,9 @@
             { en: "My birthday is in May.", pt: "O meu aniversário é em maio.", tense: "Presente" },
             { en: "Being happy is important.", pt: "Ser feliz é importante.", tense: "Presente" },
             { en: "To be or not to be.", pt: "Ser ou não ser.", tense: "Expressão" }
-        ];
-
-        function renderPhrases(filteredPhrases = phrases) {
-            const container = document.getElementById('phraseList');
-            container.innerHTML = '';
-
-            filteredPhrases.forEach((phrase, index) => {
-                const card = document.createElement('div');
-                card.className = 'phrase-card';
-                card.innerHTML = `
-                    <div class="phrase-header" onclick="toggleCard(this.parentElement)">
-                        <span class="phrase-number">${index + 1}</span>
-                        <span class="origin-text">${phrase.en}</span>
-                        <span class="toggle-icon">▼</span>
-                    </div>
-                    <div class="portuguese-text">
-                        <div class="pt-content">
-                            <div class="pt-label">European Portuguese</div>
-                            <div class="pt-phrase">${highlightVerb(phrase.pt)}</div>
-                            <span class="tense-tag">${phrase.tense}</span>
-                        </div>
-                    </div>
-                `;
-                container.appendChild(card);
-            });
-
-            document.getElementById('stats').textContent =
-                `Showing: ${filteredPhrases.length} of ${phrases.length} phrases`;
-        }
-
-        function highlightVerb(text) {
-            const forms = [
-                'sou', 'és', 'é', 'somos', 'são',
-                'era', 'eras', 'éramos', 'eram',
-                'fui', 'foste', 'foi', 'fomos', 'foram',
-                'serei', 'serás', 'será', 'seremos', 'serão',
-                'seria', 'serias', 'seríamos', 'seriam',
-                'seja', 'sejas', 'sejamos', 'sejam',
-                'fosse', 'fosses', 'fôssemos', 'fossem',
-                'ser', 'sendo', 'sido'
-            ];
-
-            let result = text;
-            forms.forEach(form => {
-                const regex = new RegExp(`\\b(${form})\\b`, 'gi');
-                result = result.replace(regex, '<span class="verb-highlight">$1</span>');
-            });
-            return result;
-        }
-
-        function toggleCard(card) {
-            card.classList.toggle('open');
-        }
-
-        function showAll() {
-            document.querySelectorAll('.phrase-card').forEach(card => {
-                card.classList.add('open');
-            });
-        }
-
-        function hideAll() {
-            document.querySelectorAll('.phrase-card').forEach(card => {
-                card.classList.remove('open');
-            });
-        }
-
-        document.getElementById('searchInput').addEventListener('input', (e) => {
-            const query = e.target.value.toLowerCase();
-            const filtered = phrases.filter(p =>
-                p.en.toLowerCase().includes(query) ||
-                p.pt.toLowerCase().includes(query) ||
-                p.tense.toLowerCase().includes(query)
-            );
-            renderPhrases(filtered);
-        });
-
-        // Initialize
-        renderPhrases();
+        ]
+    };
     </script>
+    <script src="../../js/verb.js"></script>
 </body>
 </html>
