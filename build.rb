@@ -373,14 +373,14 @@ end
 # Build pt-eu verb pages (learning Portuguese from en/ru/de/fr/es)
 build_verb_pages('pt-eu', 'pt', %w[en ru de fr es], verb_template, site_url, sitemap_urls)
 
-# Build en verb pages (learning English from ru/pt/de/fr/es)
-build_verb_pages('en', 'en', %w[ru pt de fr es], verb_template, site_url, sitemap_urls)
+# Build en verb pages (learning English from ru/pt/de/fr)
+build_verb_pages('en', 'en', %w[ru pt de fr], verb_template, site_url, sitemap_urls)
 
-# Build de verb pages (learning German from en/ru/pt/fr/es)
-build_verb_pages('de', 'de', %w[en ru pt fr es], verb_template, site_url, sitemap_urls)
+# Build de verb pages (learning German from en/ru/pt/fr)
+build_verb_pages('de', 'de', %w[en ru pt fr], verb_template, site_url, sitemap_urls)
 
-# Build fr verb pages (learning French from en/ru/pt/de/es)
-build_verb_pages('fr', 'fr', %w[en ru pt de es], verb_template, site_url, sitemap_urls)
+# Build fr verb pages (learning French from en/ru/pt/de)
+build_verb_pages('fr', 'fr', %w[en ru pt de], verb_template, site_url, sitemap_urls)
 
 # Build es verb pages (learning Spanish from en/ru/pt/de/fr)
 build_verb_pages('es', 'es', %w[en ru pt de fr], verb_template, site_url, sitemap_urls)
@@ -441,8 +441,7 @@ if File.exist?('src/data/en/index.yml')
         { code: 'ru', label: '🇷🇺 RU' },
         { code: 'pt', label: '🇵🇹 PT' },
         { code: 'de', label: '🇩🇪 DE' },
-        { code: 'fr', label: '🇫🇷 FR' },
-        { code: 'es', label: '🇪🇸 ES' }
+        { code: 'fr', label: '🇫🇷 FR' }
       ]
     }
   end
@@ -475,8 +474,7 @@ if File.exist?('src/data/de/index.yml')
         { code: 'en', label: '🇬🇧 EN' },
         { code: 'ru', label: '🇷🇺 RU' },
         { code: 'pt', label: '🇵🇹 PT' },
-        { code: 'fr', label: '🇫🇷 FR' },
-        { code: 'es', label: '🇪🇸 ES' }
+        { code: 'fr', label: '🇫🇷 FR' }
       ]
     }
   end
@@ -509,8 +507,7 @@ if File.exist?('src/data/fr/index.yml')
         { code: 'en', label: '🇬🇧 EN' },
         { code: 'ru', label: '🇷🇺 RU' },
         { code: 'pt', label: '🇵🇹 PT' },
-        { code: 'de', label: '🇩🇪 DE' },
-        { code: 'es', label: '🇪🇸 ES' }
+        { code: 'de', label: '🇩🇪 DE' }
       ]
     }
   end
