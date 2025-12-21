@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇪🇸 VERB VER — 102 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇪🇸 Verb VER</h1>
+            <p class="subtitle">to see — 102 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 102 из 102 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика испанского — VER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb VER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Настоящее время - действия происходящие сейчас или регулярные действия</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">veo</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ves</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ve</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vemos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">veis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ven</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Простое прошедшее время - завершенные действия в прошлом</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">vi</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">viste</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vio</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vimos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">visteis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vieron</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Имперфект - продолжавшиеся или привычные действия в прошлом</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">veía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">veías</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">veía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">veíamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">veíais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">veían</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Будущее время - действия которые произойдут</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">veré</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">verás</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">verá</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">veremos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">veréis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">verán</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'es',
+            labels: { target: 'Español', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["veo","ves","ve","vemos","veis","ven","vi","viste","vio","vimos","visteis","vieron","veía","verá","vería","he visto"],
+            phrases: [
+                { ru: "Я вижу птицу на дереве", es: "Veo un pájaro en el árbol", tense: "Presente" },
+                { ru: "Ты видишь это здание?", es: "¿Ves ese edificio?", tense: "Presente" },
+                { ru: "Он видит своих друзей каждый день", es: "Ve a sus amigos todos los días", tense: "Presente" },
+                { ru: "Мы видим горы отсюда", es: "Vemos las montañas desde aquí", tense: "Presente" },
+                { ru: "Они видят звезды ночью", es: "Ven las estrellas por la noche", tense: "Presente" },
+                { ru: "Я видел этот фильм вчера", es: "Vi esa película ayer", tense: "Pretérito Indefinido" },
+                { ru: "Ты видел аварию", es: "Viste el accidente", tense: "Pretérito Indefinido" },
+                { ru: "Она видела свою мать на прошлой неделе", es: "Vio a su madre la semana pasada", tense: "Pretérito Indefinido" },
+                { ru: "Мы видели закат вместе", es: "Vimos el atardecer juntos", tense: "Pretérito Indefinido" },
+                { ru: "Они видели выставку", es: "Vieron la exposición", tense: "Pretérito Indefinido" },
+                { ru: "Я видел его в парке", es: "Lo veía en el parque", tense: "Pretérito Imperfecto" },
+                { ru: "Ты смотрел телевизор каждый вечер", es: "Veías la tele todas las tardes", tense: "Pretérito Imperfecto" },
+                { ru: "Он наблюдал восход каждое утро", es: "Veía el amanecer todas las mañanas", tense: "Pretérito Imperfecto" },
+                { ru: "Мы часто виделись", es: "Nos veíamos a menudo", tense: "Pretérito Imperfecto" },
+                { ru: "Я увижу тебя завтра", es: "Te veré mañana", tense: "Futuro Simple" },
+                { ru: "Ты увидишь разницу", es: "Verás la diferencia", tense: "Futuro Simple" },
+                { ru: "Она посмотрит документальный фильм", es: "Verá el documental", tense: "Futuro Simple" },
+                { ru: "Мы посмотрим что будет", es: "Veremos qué pasa", tense: "Futuro Simple" },
+                { ru: "Я ничего не вижу", es: "No veo nada", tense: "Presente" },
+                { ru: "Посмотрим что у нас здесь", es: "A ver qué tenemos aquí", tense: "Presente" },
+                { ru: "Я вижу себя в зеркале", es: "Me veo en el espejo", tense: "Presente" },
+                { ru: "Ты видишь себя делающим это?", es: "¿Te ves haciendo esto?", tense: "Presente" },
+                { ru: "Она видит себя лидером", es: "Se ve como una líder", tense: "Presente" },
+                { ru: "Посмотрим еще", es: "Ya veremos", tense: "Futuro Simple" },
+                { ru: "Я понимаю что ты имеешь в виду", es: "Veo lo que quieres decir", tense: "Presente" },
+                { ru: "Ты меня сейчас видишь?", es: "¿Me ves ahora?", tense: "Presente" },
+                { ru: "Я не вижу проблемы", es: "No veo el problema", tense: "Presente" },
+                { ru: "Мы видели это приближающимся", es: "Lo vimos venir", tense: "Pretérito Indefinido" },
+                { ru: "Они не могут видеть нас оттуда", es: "No nos pueden ver desde allí", tense: "Presente" },
+                { ru: "Я видел ее в супермаркете", es: "La vi en el supermercado", tense: "Pretérito Indefinido" },
+                { ru: "Ты скоро увидишь результаты", es: "Verás resultados pronto", tense: "Futuro Simple" },
+                { ru: "Он видит вещи по-другому", es: "Ve las cosas de manera diferente", tense: "Presente" },
+                { ru: "Мы сходимся во мнениях по этому вопросу", es: "Estamos de acuerdo en esto", tense: "Presente" },
+                { ru: "Я увидел свет в конце", es: "Vi la luz al final", tense: "Pretérito Indefinido" },
+                { ru: "Ты видишь какое-нибудь решение?", es: "¿Ves alguna solución?", tense: "Presente" },
+                { ru: "Они видели все", es: "Vieron todo", tense: "Pretérito Indefinido" },
+                { ru: "Я увижу ее в следующем месяце", es: "La veré el próximo mes", tense: "Futuro Simple" },
+                { ru: "Мы смотрели фильмы вместе", es: "Veíamos películas juntos", tense: "Pretérito Imperfecto" },
+                { ru: "Она регулярно посещает врача", es: "Ve a un médico regularmente", tense: "Presente" },
+                { ru: "Теперь я вижу ясно", es: "Ahora veo claramente", tense: "Presente" },
+                { ru: "Ты видел это своими глазами", es: "Lo viste con tus propios ojos", tense: "Pretérito Indefinido" },
+                { ru: "Он увидит правду", es: "Verá la verdad", tense: "Futuro Simple" },
+                { ru: "Мы видимся каждую неделю", es: "Nos vemos cada semana", tense: "Presente" },
+                { ru: "Я видел красивый закат", es: "Vi un atardecer hermoso", tense: "Pretérito Indefinido" },
+                { ru: "Они видят возможности везде", es: "Ven oportunidades en todas partes", tense: "Presente" },
+                { ru: "Ты увидишь улучшения", es: "Verás mejoras", tense: "Futuro Simple" },
+                { ru: "Она видела его вчера", es: "Lo vio ayer", tense: "Pretérito Indefinido" },
+                { ru: "Я не вижу причин для беспокойства", es: "No veo razón para preocuparse", tense: "Presente" },
+                { ru: "Мы видели концерт прошлой ночью", es: "Vimos el concierto anoche", tense: "Pretérito Indefinido" },
+                { ru: "Ты видишь экран?", es: "¿Puedes ver la pantalla?", tense: "Presente" },
+                { ru: "Я видел ее каждый день", es: "La veía todos los días", tense: "Pretérito Imperfecto" },
+                { ru: "Он часто видит свою семью", es: "Ve a su familia a menudo", tense: "Presente" },
+                { ru: "Они увидят тебя на вечеринке", es: "Te verán en la fiesta", tense: "Futuro Simple" },
+                { ru: "Я видел знак", es: "Vi la señal", tense: "Pretérito Indefinido" },
+                { ru: "Ты видишь то, чего я не вижу", es: "Ves cosas que yo no veo", tense: "Presente" },
+                { ru: "Мы увидим результаты", es: "Veremos los resultados", tense: "Futuro Simple" },
+                { ru: "Она смотрела это шоу", es: "Veía ese programa", tense: "Pretérito Imperfecto" },
+                { ru: "Я понимаю твою точку зрения", es: "Veo tu punto", tense: "Presente" },
+                { ru: "Они видели новости", es: "Vieron las noticias", tense: "Pretérito Indefinido" },
+                { ru: "Ты увидишь меня позже", es: "Me verás más tarde", tense: "Futuro Simple" },
+                { ru: "Он видит в тебе потенциал", es: "Ve potencial en ti", tense: "Presente" },
+                { ru: "Я видел странный свет", es: "Vi una luz extraña", tense: "Pretérito Indefinido" },
+                { ru: "Мы видим одно и то же", es: "Vemos lo mismo", tense: "Presente" },
+                { ru: "Они смотрели пьесы", es: "Veían obras de teatro", tense: "Pretérito Imperfecto" },
+                { ru: "Ты увидишь изменения", es: "Verás cambios", tense: "Futuro Simple" },
+                { ru: "Она видит красоту везде", es: "Ve belleza en todas partes", tense: "Presente" },
+                { ru: "Я видел как он бежал", es: "Lo vi corriendo", tense: "Pretérito Indefinido" },
+                { ru: "Ты видишь луну?", es: "¿Ves la luna?", tense: "Presente" },
+                { ru: "Мы увидимся скоро", es: "Te veremos pronto", tense: "Futuro Simple" },
+                { ru: "Он увидел возможность", es: "Vio la oportunidad", tense: "Pretérito Indefinido" },
+                { ru: "Я вижу общую картину", es: "Veo el panorama general", tense: "Presente" },
+                { ru: "Они видят свои ошибки", es: "Ven sus errores", tense: "Presente" },
+                { ru: "Ты видел письмо", es: "Viste el correo", tense: "Pretérito Indefinido" },
+                { ru: "Она пойдет к врачу", es: "Verá al médico", tense: "Futuro Simple" },
+                { ru: "Мы ходили на концерты", es: "Veíamos conciertos", tense: "Pretérito Imperfecto" },
+                { ru: "Я плохо вижу без очков", es: "No veo bien sin gafas", tense: "Presente" },
+                { ru: "Они видели много стран", es: "Vieron muchos países", tense: "Pretérito Indefinido" },
+                { ru: "Ты увидишь город", es: "Verás la ciudad", tense: "Futuro Simple" },
+                { ru: "Он видит в этом ценность", es: "Ve el valor en ello", tense: "Presente" },
+                { ru: "Я видел твое сообщение", es: "Vi tu mensaje", tense: "Pretérito Indefinido" },
+                { ru: "Мы видим вещи ясно", es: "Vemos las cosas claramente", tense: "Presente" },
+                { ru: "Она смотрела новости", es: "Veía las noticias", tense: "Pretérito Imperfecto" },
+                { ru: "Они увидят океан", es: "Verán el océano", tense: "Futuro Simple" },
+                { ru: "Я вижу в этом надежду", es: "Veo esperanza en esto", tense: "Presente" },
+                { ru: "Ты смотрел игру", es: "Viste el partido", tense: "Pretérito Indefinido" },
+                { ru: "Он увидит прогресс", es: "Verá progreso", tense: "Futuro Simple" },
+                { ru: "Мы видим связь", es: "Vemos la conexión", tense: "Presente" },
+                { ru: "Я видел звезды прошлой ночью", es: "Vi estrellas anoche", tense: "Pretérito Indefinido" },
+                { ru: "Они видятся каждый день", es: "Se ven a diario", tense: "Presente" },
+                { ru: "Ты увидишь новые места", es: "Verás lugares nuevos", tense: "Futuro Simple" },
+                { ru: "Она видела парад", es: "Vio el desfile", tense: "Pretérito Indefinido" },
+                { ru: "Я вижу что ты там сделал", es: "Veo lo que hiciste ahí", tense: "Presente" },
+                { ru: "Мы смотрели спектакли вместе", es: "Veíamos obras juntos", tense: "Pretérito Imperfecto" },
+                { ru: "Он видит свое отражение", es: "Ve su reflejo", tense: "Presente" },
+                { ru: "Увидимся", es: "Te veré por ahí", tense: "Futuro Simple" },
+                { ru: "Посмотрим работает ли это", es: "A ver si funciona", tense: "Presente" },
+                { ru: "Посмотрим как пойдет", es: "Ya veremos cómo va", tense: "Futuro Simple" },
+                { ru: "Я вижу машину на улице", es: "Veo un coche en la calle", tense: "Presente" },
+                { ru: "Ты видел этот сериал?", es: "¿Viste esa serie?", tense: "Pretérito Indefinido" },
+                { ru: "Она видит своего босса редко", es: "Ve a su jefe rara vez", tense: "Presente" },
+                { ru: "Мы смотрели сериалы по выходным", es: "Veíamos series los fines de semana", tense: "Pretérito Imperfecto" },
+                { ru: "Я увижу тебя в понедельник", es: "Te veré el lunes", tense: "Futuro Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbe 🇪🇸 VERB QUEDAR — 100 phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Retour à la liste des verbes</a>
+            <h1>🇪🇸 Verb QUEDAR</h1>
+            <p class="subtitle">to stay, to remain, to meet up — 100 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Rechercher des phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Afficher toutes les traductions</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Masquer toutes les traductions</button>
+        </div>
+
+        <div class="stats" id="stats">Affichage: 100 sur 100 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Pratique de l'espagnol — QUEDAR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb QUEDAR</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Présent - rester, demeurer, donner rendez-vous</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>quedo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>quedas</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>queda</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>quedamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>quedáis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>quedan</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Passé simple - est resté, a donné rendez-vous</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>quedé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>quedaste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>quedó</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>quedamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>quedasteis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>quedaron</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Imparfait - restait, avait l'habitude de rester</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>quedaba</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>quedabas</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>quedaba</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>quedábamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>quedabais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>quedaban</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Futur simple - restera, donnera rendez-vous</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>quedaré</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>quedarás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>quedará</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>quedaremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>quedaréis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>quedarán</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'fr',
+            targetKey: 'es',
+            labels: { target: 'Espagnol', showing: 'Affichage', of: 'sur', phrases: 'phrases' },
+            verbForms: ["quedo","quedas","queda","quedamos","quedáis","quedan","quedé","quedaba","quedaré","quedado"],
+            phrases: [
+                { fr: "Je reste à la maison aujourd'hui.", es: "Me quedo en casa hoy.", tense: "Presente" },
+                { fr: "On se retrouve à huit heures.", es: "Quedamos a las ocho.", tense: "Presente" },
+                { fr: "Où est-ce qu'on se retrouve?", es: "¿Dónde quedamos?", tense: "Presente" },
+                { fr: "Combien reste-t-il?", es: "¿Cuánto queda?", tense: "Presente" },
+                { fr: "Il ne reste rien.", es: "No queda nada.", tense: "Presente" },
+                { fr: "On se voit demain.", es: "Quedamos mañana.", tense: "Presente" },
+                { fr: "Je reste ici.", es: "Me quedo aquí.", tense: "Presente" },
+                { fr: "Cette robe te va bien.", es: "Te queda bien ese vestido.", tense: "Presente" },
+                { fr: "Cette veste te va parfaitement.", es: "Esa chaqueta te queda perfecta.", tense: "Presente" },
+                { fr: "Cette chemise est trop petite pour moi.", es: "Esta camisa me queda pequeña.", tense: "Presente" },
+                { fr: "C'est encore loin?", es: "¿Cuánto queda?", tense: "Presente" },
+                { fr: "C'est encore loin.", es: "Todavía queda lejos.", tense: "Presente" },
+                { fr: "L'hôtel est à proximité.", es: "El hotel queda cerca.", tense: "Presente" },
+                { fr: "On s'est donné rendez-vous au café.", es: "Quedamos en el café.", tense: "Pretérito Indefinido" },
+                { fr: "Je suis resté à la maison toute la journée.", es: "Me quedé en casa todo el día.", tense: "Pretérito Indefinido" },
+                { fr: "Elle est restée à Madrid.", es: "Se quedó en Madrid.", tense: "Pretérito Indefinido" },
+                { fr: "Ils sont restés chez moi.", es: "Se quedaron en mi casa.", tense: "Pretérito Indefinido" },
+                { fr: "On s'est donné rendez-vous mais il n'est pas venu.", es: "Quedamos pero no vino.", tense: "Pretérito Indefinido" },
+                { fr: "Il ne restait rien.", es: "No quedó nada.", tense: "Pretérito Indefinido" },
+                { fr: "Je suis resté sans voix.", es: "Me quedé sin palabras.", tense: "Pretérito Indefinido" },
+                { fr: "Il est resté silencieux.", es: "Se quedó callado.", tense: "Pretérito Indefinido" },
+                { fr: "Le magasin se trouve dans la rue principale.", es: "La tienda queda en la calle principal.", tense: "Presente" },
+                { fr: "Où se trouve le musée?", es: "¿Dónde queda el museo?", tense: "Presente" },
+                { fr: "Le restaurant est au centre-ville.", es: "El restaurante queda en el centro.", tense: "Presente" },
+                { fr: "Je resterai jusqu'à lundi.", es: "Me quedaré hasta el lunes.", tense: "Futuro Simple" },
+                { fr: "On se retrouvera à la gare.", es: "Quedaremos en la estación.", tense: "Futuro Simple" },
+                { fr: "Ils resteront pour dîner.", es: "Se quedarán a cenar.", tense: "Futuro Simple" },
+                { fr: "Il ne restera rien.", es: "No quedará nada.", tense: "Futuro Simple" },
+                { fr: "On verra ce que ça donne.", es: "Veremos cómo queda.", tense: "Futuro Simple" },
+                { fr: "Je restais chez ma grand-mère.", es: "Me quedaba en casa de mi abuela.", tense: "Pretérito Imperfecto" },
+                { fr: "On se retrouvait toujours le vendredi.", es: "Siempre quedábamos los viernes.", tense: "Pretérito Imperfecto" },
+                { fr: "Il restait toujours de la nourriture.", es: "Siempre quedaba comida.", tense: "Pretérito Imperfecto" },
+                { fr: "Il restait tard au travail.", es: "Se quedaba tarde en el trabajo.", tense: "Pretérito Imperfecto" },
+                { fr: "Ils se retrouvaient au parc.", es: "Quedaban en el parque.", tense: "Pretérito Imperfecto" },
+                { fr: "Ça te va super bien.", es: "Te queda genial.", tense: "Presente" },
+                { fr: "Ce pantalon ne me va pas.", es: "Estos pantalones no me quedan.", tense: "Presente" },
+                { fr: "Cette couleur ne lui va pas.", es: "Ese color le queda mal.", tense: "Presente" },
+                { fr: "Les chaussures lui vont bien.", es: "Los zapatos le quedan bien.", tense: "Presente" },
+                { fr: "Cette taille est trop grande pour moi.", es: "Esta talla me queda grande.", tense: "Presente" },
+                { fr: "J'ai rendez-vous avec elle à six heures.", es: "Quedé con ella a las seis.", tense: "Pretérito Indefinido" },
+                { fr: "On a fixé une heure?", es: "¿Quedamos en una hora?", tense: "Pretérito Indefinido" },
+                { fr: "On a décidé d'aller au cinéma.", es: "Quedamos en ir al cine.", tense: "Pretérito Indefinido" },
+                { fr: "Ils se sont donné rendez-vous pour plus tard.", es: "Quedaron para más tarde.", tense: "Pretérito Indefinido" },
+                { fr: "Je reste avec des amis.", es: "Me quedo con amigos.", tense: "Presente" },
+                { fr: "Reste ici, ne bouge pas.", es: "Quédate aquí, no te muevas.", tense: "Imperativo" },
+                { fr: "Restons calmes.", es: "Quedémonos tranquilos.", tense: "Imperativo" },
+                { fr: "Ne reste pas trop tard.", es: "No te quedes hasta muy tarde.", tense: "Imperativo" },
+                { fr: "Je suis devenu aveugle.", es: "Me quedé ciego.", tense: "Pretérito Indefinido" },
+                { fr: "Elle est devenue sourde.", es: "Se quedó sorda.", tense: "Pretérito Indefinido" },
+                { fr: "Il s'est endormi.", es: "Se quedó dormido.", tense: "Pretérito Indefinido" },
+                { fr: "Je suis resté seul.", es: "Me quedé solo.", tense: "Pretérito Indefinido" },
+                { fr: "On s'est retrouvés sans argent.", es: "Nos quedamos sin dinero.", tense: "Pretérito Indefinido" },
+                { fr: "Ils se sont retrouvés sans temps.", es: "Se quedaron sin tiempo.", tense: "Pretérito Indefinido" },
+                { fr: "Je n'ai pas d'autre choix.", es: "No me queda otra opción.", tense: "Presente" },
+                { fr: "Il reste beaucoup à faire.", es: "Queda mucho por hacer.", tense: "Presente" },
+                { fr: "Combien de temps reste-t-il?", es: "¿Cuánto tiempo queda?", tense: "Presente" },
+                { fr: "Il ne reste que deux jours.", es: "Solo quedan dos días.", tense: "Presente" },
+                { fr: "Il nous reste une heure.", es: "Nos queda una hora.", tense: "Presente" },
+                { fr: "Je vois mes amis.", es: "Quedo con mis amigos.", tense: "Presente" },
+                { fr: "On se voit?", es: "¿Quedamos?", tense: "Presente" },
+                { fr: "On peut se voir la semaine prochaine?", es: "¿Podemos quedar la semana que viene?", tense: "Presente" },
+                { fr: "Je ne peux pas aujourd'hui.", es: "No puedo quedar hoy.", tense: "Presente" },
+                { fr: "On se retrouve pour un café.", es: "Quedamos para un café.", tense: "Presente" },
+                { fr: "L'accord tient toujours.", es: "El acuerdo queda en pie.", tense: "Presente" },
+                { fr: "Tout est clair maintenant.", es: "Todo queda claro ahora.", tense: "Presente" },
+                { fr: "C'est resté inachevé.", es: "Quedó sin terminar.", tense: "Pretérito Indefinido" },
+                { fr: "L'affaire est réglée.", es: "El asunto queda resuelto.", tense: "Presente" },
+                { fr: "C'est bien passé.", es: "Quedó bien.", tense: "Pretérito Indefinido" },
+                { fr: "C'est mal passé.", es: "Quedó mal.", tense: "Pretérito Indefinido" },
+                { fr: "La photo est bien sortie.", es: "La foto quedó bonita.", tense: "Pretérito Indefinido" },
+                { fr: "Le gâteau était sec.", es: "El pastel quedó seco.", tense: "Pretérito Indefinido" },
+                { fr: "Je garde ce livre.", es: "Me quedo con este libro.", tense: "Presente" },
+                { fr: "Elle a pris le meilleur.", es: "Se quedó con el mejor.", tense: "Pretérito Indefinido" },
+                { fr: "Gardez la monnaie.", es: "Quédese con el cambio.", tense: "Imperativo" },
+                { fr: "Je prendrai le rouge.", es: "Me quedaré con el rojo.", tense: "Futuro Simple" },
+                { fr: "Tu restes déjeuner?", es: "¿Te quedas a comer?", tense: "Presente" },
+                { fr: "Je suis resté dormir.", es: "Me quedé a dormir.", tense: "Pretérito Indefinido" },
+                { fr: "Tu resteras dormir?", es: "¿Te quedarás a dormir?", tense: "Futuro Simple" },
+                { fr: "Ils restent le week-end.", es: "Se quedan el fin de semana.", tense: "Presente" },
+                { fr: "Je me suis figé en le voyant.", es: "Me quedé helado al verlo.", tense: "Pretérito Indefinido" },
+                { fr: "Elle est restée stupéfaite.", es: "Se quedó pasmada.", tense: "Pretérito Indefinido" },
+                { fr: "On est restés stupéfaits.", es: "Nos quedamos asombrados.", tense: "Pretérito Indefinido" },
+                { fr: "Il est resté immobile.", es: "Se quedó quieto.", tense: "Pretérito Indefinido" },
+                { fr: "Je manque de patience.", es: "Me quedo sin paciencia.", tense: "Presente" },
+                { fr: "On manque d'idées.", es: "Nos quedamos sin ideas.", tense: "Presente" },
+                { fr: "Ils sont tombés en panne d'essence.", es: "Se quedaron sin gasolina.", tense: "Pretérito Indefinido" },
+                { fr: "Ne te retrouve pas sans piles.", es: "No te quedes sin pilas.", tense: "Imperativo" },
+                { fr: "Le magasin est à deux pâtés de maisons.", es: "La tienda queda a dos cuadras.", tense: "Presente" },
+                { fr: "La plage est à quelle distance?", es: "¿A cuánto queda la playa?", tense: "Presente" },
+                { fr: "Le bureau est à proximité.", es: "La oficina queda cerca.", tense: "Presente" },
+                { fr: "C'est loin d'ici?", es: "¿Queda lejos de aquí?", tense: "Presente" },
+                { fr: "Je te retrouve à sept heures.", es: "Quedo contigo a las siete.", tense: "Presente" },
+                { fr: "On s'est donné rendez-vous mardi.", es: "Quedamos el martes.", tense: "Pretérito Indefinido" },
+                { fr: "On se retrouve à l'entrée.", es: "Quedamos en la entrada.", tense: "Presente" },
+                { fr: "La robe te va parfaitement.", es: "El vestido te queda perfecto.", tense: "Presente" },
+                { fr: "Je suis impressionné.", es: "Me quedo impresionado.", tense: "Presente" },
+                { fr: "L'appartement est au centre-ville.", es: "El apartamento queda en el centro.", tense: "Presente" },
+                { fr: "On est restés là à regarder.", es: "Nos quedamos ahí mirando.", tense: "Pretérito Indefinido" },
+                { fr: "Je garderai ton secret.", es: "Me quedaré con tu secreto.", tense: "Futuro Simple" },
+                { fr: "Comment se présente le plan?", es: "¿Cómo queda el plan?", tense: "Presente" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

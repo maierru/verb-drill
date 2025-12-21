@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇪🇸 VERB ENCONTRAR — 97 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇪🇸 Verb ENCONTRAR</h1>
+            <p class="subtitle">to find — 97 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 97 von 97 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Spanisch-Übung — ENCONTRAR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb ENCONTRAR</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Präsens - Handlungen, die jetzt oder gewohnheitsmäßig stattfinden</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">{"person" => "yo", "form" => "encuentro"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "tú", "form" => "encuentras"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "él/ella/usted", "form" => "encuentra"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "nosotros/nosotras", "form" => "encontramos"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "vosotros/vosotras", "form" => "encontráis"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "ellos/ellas/ustedes", "form" => "encuentran"}</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Indefinido - abgeschlossene Handlungen in der Vergangenheit</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">{"person" => "yo", "form" => "encontré"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "tú", "form" => "encontraste"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "él/ella/usted", "form" => "encontró"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "nosotros/nosotras", "form" => "encontramos"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "vosotros/vosotras", "form" => "encontrasteis"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "ellos/ellas/ustedes", "form" => "encontraron"}</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Imperfekt - andauernde oder gewohnheitsmäßige Handlungen in der Vergangenheit</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">{"person" => "yo", "form" => "encontraba"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "tú", "form" => "encontrabas"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "él/ella/usted", "form" => "encontraba"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "nosotros/nosotras", "form" => "encontrábamos"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "vosotros/vosotras", "form" => "encontrabais"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "ellos/ellas/ustedes", "form" => "encontraban"}</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Futur I - Handlungen, die stattfinden werden</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">{"person" => "yo", "form" => "encontraré"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "tú", "form" => "encontrarás"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "él/ella/usted", "form" => "encontrará"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "nosotros/nosotras", "form" => "encontraremos"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "vosotros/vosotras", "form" => "encontraréis"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "ellos/ellas/ustedes", "form" => "encontrarán"}</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'es',
+            labels: { target: 'Spanisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["encuentro","encuentras","encuentra","encontramos","encontráis","encuentran","encontré","encontraba","encontraré"],
+            phrases: [
+                { de: "Ich finde jeden Morgen meine Schlüssel", es: "Encuentro mis llaves cada mañana", tense: "Presente" },
+                { de: "Du findest hier gute Restaurants", es: "Encuentras buenos restaurantes aquí", tense: "Presente" },
+                { de: "Sie findet die Lösung leicht", es: "Ella encuentra la solución fácilmente", tense: "Presente" },
+                { de: "Wir finden Zeit zum Reden", es: "Encontramos tiempo para hablar", tense: "Presente" },
+                { de: "Sie finden schnell Arbeit", es: "Encuentran trabajo rápidamente", tense: "Presente" },
+                { de: "Ich fand gestern mein Handy", es: "Encontré mi teléfono ayer", tense: "Pretérito Indefinido" },
+                { de: "Du hast einen neuen Job gefunden", es: "Encontraste un nuevo trabajo", tense: "Pretérito Indefinido" },
+                { de: "Er fand die Antwort", es: "Él encontró la respuesta", tense: "Pretérito Indefinido" },
+                { de: "Wir fanden einen tollen Ort", es: "Encontramos un lugar genial", tense: "Pretérito Indefinido" },
+                { de: "Sie trafen sich wieder", es: "Se encontraron otra vez", tense: "Pretérito Indefinido" },
+                { de: "Ich fand immer, was ich brauchte", es: "Siempre encontraba lo que necesitaba", tense: "Pretérito Imperfecto" },
+                { de: "Du fandest Schätze", es: "Encontrabas tesoros", tense: "Pretérito Imperfecto" },
+                { de: "Sie fand Frieden in der Natur", es: "Ella encontraba paz en la naturaleza", tense: "Pretérito Imperfecto" },
+                { de: "Wir fanden Freude in einfachen Dingen", es: "Encontrábamos alegría en cosas simples", tense: "Pretérito Imperfecto" },
+                { de: "Ich werde eine Lösung finden", es: "Encontraré una solución", tense: "Futuro Simple" },
+                { de: "Du wirst deinen Weg finden", es: "Encontrarás tu camino", tense: "Futuro Simple" },
+                { de: "Er wird Erfolg finden", es: "Él encontrará el éxito", tense: "Futuro Simple" },
+                { de: "Wir werden die Wahrheit finden", es: "Encontraremos la verdad", tense: "Futuro Simple" },
+                { de: "Sie werden das Glück finden", es: "Encontrarán la felicidad", tense: "Futuro Simple" },
+                { de: "Ich kann meine Brieftasche nicht finden", es: "No encuentro mi cartera", tense: "Presente" },
+                { de: "Findest du die Adresse?", es: "¿Encuentras la dirección?", tense: "Presente" },
+                { de: "Wo finde ich den Bahnhof?", es: "¿Dónde encuentro la estación?", tense: "Presente" },
+                { de: "Ich finde es schwierig zu schlafen", es: "Encuentro difícil dormir", tense: "Presente" },
+                { de: "Sie findet Trost in der Musik", es: "Ella encuentra consuelo en la música", tense: "Presente" },
+                { de: "Wir treffen uns jeden Dienstag", es: "Nos encontramos cada martes", tense: "Presente" },
+                { de: "Ich fühle mich heute glücklich", es: "Me encuentro feliz hoy", tense: "Presente" },
+                { de: "Wie fühlst du dich?", es: "¿Cómo te encuentras?", tense: "Presente" },
+                { de: "Sie fühlt sich wohl", es: "Ella se encuentra bien", tense: "Presente" },
+                { de: "Wir trafen uns im Park", es: "Nos encontramos en el parque", tense: "Pretérito Indefinido" },
+                { de: "Ich fühlte mich gestern krank", es: "Me encontraba enfermo ayer", tense: "Pretérito Imperfecto" },
+                { de: "Ich finde dieses Buch interessant", es: "Encuentro este libro interesante", tense: "Presente" },
+                { de: "Du findest überall Probleme", es: "Encuentras problemas en todas partes", tense: "Presente" },
+                { de: "Er findet keine Entschuldigung", es: "Él no encuentra excusa", tense: "Presente" },
+                { de: "Wir finden täglich Gelegenheiten", es: "Encontramos oportunidades a diario", tense: "Presente" },
+                { de: "Sie finden nichts Verdächtiges", es: "No encuentran nada sospechoso", tense: "Presente" },
+                { de: "Ich fand unerwartet die Liebe", es: "Encontré el amor inesperadamente", tense: "Pretérito Indefinido" },
+                { de: "Du hast den richtigen Weg gefunden", es: "Encontraste el camino correcto", tense: "Pretérito Indefinido" },
+                { de: "Sie fand ihre Leidenschaft", es: "Ella encontró su pasión", tense: "Pretérito Indefinido" },
+                { de: "Wir fanden einen besseren Weg", es: "Encontramos una mejor manera", tense: "Pretérito Indefinido" },
+                { de: "Sie fanden die vermissten Dokumente", es: "Encontraron los documentos perdidos", tense: "Pretérito Indefinido" },
+                { de: "Ich fand Münzen auf der Straße", es: "Encontraba monedas en la calle", tense: "Pretérito Imperfecto" },
+                { de: "Du fandest immer Ausreden", es: "Siempre encontrabas excusas", tense: "Pretérito Imperfecto" },
+                { de: "Er fand Trost beim Lesen", es: "Él encontraba consuelo leyendo", tense: "Pretérito Imperfecto" },
+                { de: "Wir trafen uns jedes Wochenende", es: "Nos encontrábamos cada fin de semana", tense: "Pretérito Imperfecto" },
+                { de: "Sie fanden Inspiration in der Kunst", es: "Encontraban inspiración en el arte", tense: "Pretérito Imperfecto" },
+                { de: "Ich werde morgen die Antwort finden", es: "Encontraré la respuesta mañana", tense: "Futuro Simple" },
+                { de: "Du wirst neue Freunde finden", es: "Encontrarás nuevos amigos", tense: "Futuro Simple" },
+                { de: "Sie wird ihr Schicksal finden", es: "Ella encontrará su destino", tense: "Futuro Simple" },
+                { de: "Wir werden einen Kompromiss finden", es: "Encontraremos un compromiso", tense: "Futuro Simple" },
+                { de: "Sie werden den Schatz finden", es: "Encontrarán el tesoro", tense: "Futuro Simple" },
+                { de: "Ich kann den Ausgang nicht finden", es: "No encuentro la salida", tense: "Presente" },
+                { de: "Findest du das seltsam?", es: "¿Lo encuentras extraño?", tense: "Presente" },
+                { de: "Sie findet es nicht lustig", es: "Ella no lo encuentra gracioso", tense: "Presente" },
+                { de: "Wir finden diese Situation absurd", es: "Encontramos esta situación absurda", tense: "Presente" },
+                { de: "Sie finden keine Beweise", es: "No encuentran evidencia", tense: "Presente" },
+                { de: "Ich fand einen Fehler im Bericht", es: "Encontré un error en el informe", tense: "Pretérito Indefinido" },
+                { de: "Du hast eine Abkürzung gefunden", es: "Encontraste un atajo", tense: "Pretérito Indefinido" },
+                { de: "Er fand hier Zuflucht", es: "Él encontró refugio aquí", tense: "Pretérito Indefinido" },
+                { de: "Wir fanden Gemeinsamkeiten", es: "Encontramos puntos en común", tense: "Pretérito Indefinido" },
+                { de: "Sie fanden den Schuldigen", es: "Encontraron al culpable", tense: "Pretérito Indefinido" },
+                { de: "Ich fand immer Hilfe, wenn ich sie brauchte", es: "Siempre encontraba ayuda cuando la necesitaba", tense: "Pretérito Imperfecto" },
+                { de: "Du fandest Schönheit in allem", es: "Encontrabas belleza en todo", tense: "Pretérito Imperfecto" },
+                { de: "Sie fand Sinn in ihrer Arbeit", es: "Ella encontraba sentido en su trabajo", tense: "Pretérito Imperfecto" },
+                { de: "Wir fanden Frieden in der Stille", es: "Encontrábamos paz en el silencio", tense: "Pretérito Imperfecto" },
+                { de: "Ich werde Zeit für dich finden", es: "Encontraré tiempo para ti", tense: "Futuro Simple" },
+                { de: "Du wirst den Mut finden", es: "Encontrarás el valor", tense: "Futuro Simple" },
+                { de: "Er wird seinen Zweck finden", es: "Él encontrará su propósito", tense: "Futuro Simple" },
+                { de: "Wir werden die Ressourcen finden", es: "Encontraremos los recursos", tense: "Futuro Simple" },
+                { de: "Sie werden gemeinsam eine Lösung finden", es: "Encontrarán una solución juntos", tense: "Futuro Simple" },
+                { de: "Ich muss Arbeit finden", es: "Necesito encontrar trabajo", tense: "Presente" },
+                { de: "Kannst du die Datei finden?", es: "¿Puedes encontrar el archivo?", tense: "Presente" },
+                { de: "Sie will Frieden finden", es: "Ella quiere encontrar paz", tense: "Presente" },
+                { de: "Wir hoffen Antworten zu finden", es: "Esperamos encontrar respuestas", tense: "Presente" },
+                { de: "Ich fand einen Parkplatz", es: "Encontré un lugar para aparcar", tense: "Pretérito Indefinido" },
+                { de: "Du hast ein Schnäppchen gefunden", es: "Encontraste una ganga", tense: "Pretérito Indefinido" },
+                { de: "Er fand das perfekte Geschenk", es: "Él encontró el regalo perfecto", tense: "Pretérito Indefinido" },
+                { de: "Wir fanden ein nettes Hotel", es: "Encontramos un hotel agradable", tense: "Pretérito Indefinido" },
+                { de: "Sie fanden das Restaurant geschlossen", es: "Encontraron el restaurante cerrado", tense: "Pretérito Indefinido" },
+                { de: "Ich fand Motivation in Herausforderungen", es: "Encontraba motivación en los desafíos", tense: "Pretérito Imperfecto" },
+                { de: "Du fandest Freude in kleinen Dingen", es: "Encontrabas alegría en las pequeñas cosas", tense: "Pretérito Imperfecto" },
+                { de: "Sie fand innere Stärke", es: "Ella encontraba fuerza interior", tense: "Pretérito Imperfecto" },
+                { de: "Wir fanden Hoffnung in dunklen Zeiten", es: "Encontrábamos esperanza en tiempos oscuros", tense: "Pretérito Imperfecto" },
+                { de: "Ich werde meinen Traumjob finden", es: "Encontraré el trabajo de mis sueños", tense: "Futuro Simple" },
+                { de: "Du wirst finden, was du suchst", es: "Encontrarás lo que buscas", tense: "Futuro Simple" },
+                { de: "Sie wird ihre Stimme finden", es: "Ella encontrará su voz", tense: "Futuro Simple" },
+                { de: "Wir werden die Balance finden", es: "Encontraremos el equilibrio", tense: "Futuro Simple" },
+                { de: "Sie werden neue Möglichkeiten finden", es: "Encontrarán nuevas oportunidades", tense: "Futuro Simple" },
+                { de: "Ich kann meine Brille nicht finden", es: "No encuentro mis gafas", tense: "Presente" },
+                { de: "Wo hast du das gefunden?", es: "¿Dónde encontraste esto?", tense: "Pretérito Indefinido" },
+                { de: "Ich fand mich allein wieder", es: "Me encontré solo", tense: "Pretérito Indefinido" },
+                { de: "Wir treffen uns im Café", es: "Nos encontramos en el café", tense: "Presente" },
+                { de: "Wie fühlst du dich?", es: "¿Cómo te encuentras?", tense: "Presente" },
+                { de: "Ich fühle mich jetzt besser", es: "Me encuentro mejor ahora", tense: "Presente" },
+                { de: "Ich fand es durch Zufall", es: "Lo encontré por casualidad", tense: "Pretérito Indefinido" },
+                { de: "Du wirst es nützlich finden", es: "Lo encontrarás útil", tense: "Futuro Simple" },
+                { de: "Sie fand keinen Grund zu bleiben", es: "Ella no encontró razón para quedarse", tense: "Pretérito Indefinido" },
+                { de: "Wir befinden uns in Schwierigkeiten", es: "Nos encontramos en problemas", tense: "Presente" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

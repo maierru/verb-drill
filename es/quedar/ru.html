@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇪🇸 VERB QUEDAR — 100 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇪🇸 Verb QUEDAR</h1>
+            <p class="subtitle">to stay, to remain, to meet up — 100 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 100 из 100 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика испанского — QUEDAR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb QUEDAR</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Настоящее время - оставаться, остаться, договариваться о встрече</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>quedo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>quedas</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>queda</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>quedamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>quedáis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>quedan</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Простое прошедшее - остался, договорился встретиться</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>quedé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>quedaste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>quedó</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>quedamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>quedasteis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>quedaron</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Имперфект - оставался, обычно оставался</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>quedaba</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>quedabas</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>quedaba</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>quedábamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>quedabais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>quedaban</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Простое будущее - останусь, договорюсь встретиться</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>quedaré</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>quedarás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>quedará</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>quedaremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>quedaréis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>quedarán</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'es',
+            labels: { target: 'Español', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["quedo","quedas","queda","quedamos","quedáis","quedan","quedé","quedaba","quedaré","quedado"],
+            phrases: [
+                { ru: "Я остаюсь дома сегодня.", es: "Me quedo en casa hoy.", tense: "Presente" },
+                { ru: "Мы встречаемся в восемь.", es: "Quedamos a las ocho.", tense: "Presente" },
+                { ru: "Где мы встретимся?", es: "¿Dónde quedamos?", tense: "Presente" },
+                { ru: "Сколько осталось?", es: "¿Cuánto queda?", tense: "Presente" },
+                { ru: "Ничего не осталось.", es: "No queda nada.", tense: "Presente" },
+                { ru: "Давай встретимся завтра.", es: "Quedamos mañana.", tense: "Presente" },
+                { ru: "Я остаюсь здесь.", es: "Me quedo aquí.", tense: "Presente" },
+                { ru: "Тебе хорошо идёт это платье.", es: "Te queda bien ese vestido.", tense: "Presente" },
+                { ru: "Эта куртка сидит на тебе идеально.", es: "Esa chaqueta te queda perfecta.", tense: "Presente" },
+                { ru: "Эта рубашка мне мала.", es: "Esta camisa me queda pequeña.", tense: "Presente" },
+                { ru: "Как далеко?", es: "¿Cuánto queda?", tense: "Presente" },
+                { ru: "Ещё далеко.", es: "Todavía queda lejos.", tense: "Presente" },
+                { ru: "Отель находится рядом.", es: "El hotel queda cerca.", tense: "Presente" },
+                { ru: "Мы договорились встретиться в кафе.", es: "Quedamos en el café.", tense: "Pretérito Indefinido" },
+                { ru: "Я остался дома весь день.", es: "Me quedé en casa todo el día.", tense: "Pretérito Indefinido" },
+                { ru: "Она осталась в Мадриде.", es: "Se quedó en Madrid.", tense: "Pretérito Indefinido" },
+                { ru: "Они остались у меня.", es: "Se quedaron en mi casa.", tense: "Pretérito Indefinido" },
+                { ru: "Мы договорились, но он не пришёл.", es: "Quedamos pero no vino.", tense: "Pretérito Indefinido" },
+                { ru: "Ничего не осталось.", es: "No quedó nada.", tense: "Pretérito Indefinido" },
+                { ru: "Я остался без слов.", es: "Me quedé sin palabras.", tense: "Pretérito Indefinido" },
+                { ru: "Он замолчал.", es: "Se quedó callado.", tense: "Pretérito Indefinido" },
+                { ru: "Магазин находится на главной улице.", es: "La tienda queda en la calle principal.", tense: "Presente" },
+                { ru: "Где находится музей?", es: "¿Dónde queda el museo?", tense: "Presente" },
+                { ru: "Ресторан находится в центре.", es: "El restaurante queda en el centro.", tense: "Presente" },
+                { ru: "Я останусь до понедельника.", es: "Me quedaré hasta el lunes.", tense: "Futuro Simple" },
+                { ru: "Мы встретимся на вокзале.", es: "Quedaremos en la estación.", tense: "Futuro Simple" },
+                { ru: "Они останутся на ужин.", es: "Se quedarán a cenar.", tense: "Futuro Simple" },
+                { ru: "Ничего не останется.", es: "No quedará nada.", tense: "Futuro Simple" },
+                { ru: "Посмотрим, что получится.", es: "Veremos cómo queda.", tense: "Futuro Simple" },
+                { ru: "Я обычно останавливался у бабушки.", es: "Me quedaba en casa de mi abuela.", tense: "Pretérito Imperfecto" },
+                { ru: "Мы всегда встречались по пятницам.", es: "Siempre quedábamos los viernes.", tense: "Pretérito Imperfecto" },
+                { ru: "Всегда оставалась еда.", es: "Siempre quedaba comida.", tense: "Pretérito Imperfecto" },
+                { ru: "Он задерживался на работе.", es: "Se quedaba tarde en el trabajo.", tense: "Pretérito Imperfecto" },
+                { ru: "Они встречались в парке.", es: "Quedaban en el parque.", tense: "Pretérito Imperfecto" },
+                { ru: "Тебе отлично идёт.", es: "Te queda genial.", tense: "Presente" },
+                { ru: "Эти штаны мне не подходят.", es: "Estos pantalones no me quedan.", tense: "Presente" },
+                { ru: "Этот цвет ей не идёт.", es: "Ese color le queda mal.", tense: "Presente" },
+                { ru: "Туфли ему хорошо сидят.", es: "Los zapatos le quedan bien.", tense: "Presente" },
+                { ru: "Этот размер мне велик.", es: "Esta talla me queda grande.", tense: "Presente" },
+                { ru: "Я договорился встретиться с ней в шесть.", es: "Quedé con ella a las seis.", tense: "Pretérito Indefinido" },
+                { ru: "Мы договорились о времени?", es: "¿Quedamos en una hora?", tense: "Pretérito Indefinido" },
+                { ru: "Мы решили пойти в кино.", es: "Quedamos en ir al cine.", tense: "Pretérito Indefinido" },
+                { ru: "Они договорились встретиться позже.", es: "Quedaron para más tarde.", tense: "Pretérito Indefinido" },
+                { ru: "Я остаюсь с друзьями.", es: "Me quedo con amigos.", tense: "Presente" },
+                { ru: "Оставайся здесь, не двигайся.", es: "Quédate aquí, no te muevas.", tense: "Imperativo" },
+                { ru: "Давайте сохраним спокойствие.", es: "Quedémonos tranquilos.", tense: "Imperativo" },
+                { ru: "Не задерживайся слишком поздно.", es: "No te quedes hasta muy tarde.", tense: "Imperativo" },
+                { ru: "Я ослеп.", es: "Me quedé ciego.", tense: "Pretérito Indefinido" },
+                { ru: "Она оглохла.", es: "Se quedó sorda.", tense: "Pretérito Indefinido" },
+                { ru: "Он заснул.", es: "Se quedó dormido.", tense: "Pretérito Indefinido" },
+                { ru: "Я остался один.", es: "Me quedé solo.", tense: "Pretérito Indefinido" },
+                { ru: "У нас кончились деньги.", es: "Nos quedamos sin dinero.", tense: "Pretérito Indefinido" },
+                { ru: "У них не осталось времени.", es: "Se quedaron sin tiempo.", tense: "Pretérito Indefinido" },
+                { ru: "У меня нет выбора.", es: "No me queda otra opción.", tense: "Presente" },
+                { ru: "Ещё много нужно сделать.", es: "Queda mucho por hacer.", tense: "Presente" },
+                { ru: "Сколько времени осталось?", es: "¿Cuánto tiempo queda?", tense: "Presente" },
+                { ru: "Осталось только два дня.", es: "Solo quedan dos días.", tense: "Presente" },
+                { ru: "У нас остался один час.", es: "Nos queda una hora.", tense: "Presente" },
+                { ru: "Я встречаюсь с друзьями.", es: "Quedo con mis amigos.", tense: "Presente" },
+                { ru: "Встретимся?", es: "¿Quedamos?", tense: "Presente" },
+                { ru: "Можем встретиться на следующей неделе?", es: "¿Podemos quedar la semana que viene?", tense: "Presente" },
+                { ru: "Я не могу встретиться сегодня.", es: "No puedo quedar hoy.", tense: "Presente" },
+                { ru: "Встретимся на кофе.", es: "Quedamos para un café.", tense: "Presente" },
+                { ru: "Соглашение остаётся в силе.", es: "El acuerdo queda en pie.", tense: "Presente" },
+                { ru: "Теперь всё ясно.", es: "Todo queda claro ahora.", tense: "Presente" },
+                { ru: "Это осталось незавершённым.", es: "Quedó sin terminar.", tense: "Pretérito Indefinido" },
+                { ru: "Вопрос решён.", es: "El asunto queda resuelto.", tense: "Presente" },
+                { ru: "Получилось хорошо.", es: "Quedó bien.", tense: "Pretérito Indefinido" },
+                { ru: "Получилось плохо.", es: "Quedó mal.", tense: "Pretérito Indefinido" },
+                { ru: "Фото получилось красивым.", es: "La foto quedó bonita.", tense: "Pretérito Indefinido" },
+                { ru: "Пирог получился сухим.", es: "El pastel quedó seco.", tense: "Pretérito Indefinido" },
+                { ru: "Я беру эту книгу.", es: "Me quedo con este libro.", tense: "Presente" },
+                { ru: "Она взяла лучший.", es: "Se quedó con el mejor.", tense: "Pretérito Indefinido" },
+                { ru: "Оставьте сдачу себе.", es: "Quédese con el cambio.", tense: "Imperativo" },
+                { ru: "Я возьму красный.", es: "Me quedaré con el rojo.", tense: "Futuro Simple" },
+                { ru: "Ты останешься на обед?", es: "¿Te quedas a comer?", tense: "Presente" },
+                { ru: "Я остался ночевать.", es: "Me quedé a dormir.", tense: "Pretérito Indefinido" },
+                { ru: "Ты останешься на ночь?", es: "¿Te quedarás a dormir?", tense: "Futuro Simple" },
+                { ru: "Они остаются на выходные.", es: "Se quedan el fin de semana.", tense: "Presente" },
+                { ru: "Я замер, когда увидел его.", es: "Me quedé helado al verlo.", tense: "Pretérito Indefinido" },
+                { ru: "Она была ошарашена.", es: "Se quedó pasmada.", tense: "Pretérito Indefinido" },
+                { ru: "Мы были поражены.", es: "Nos quedamos asombrados.", tense: "Pretérito Indefinido" },
+                { ru: "Он стоял неподвижно.", es: "Se quedó quieto.", tense: "Pretérito Indefinido" },
+                { ru: "У меня заканчивается терпение.", es: "Me quedo sin paciencia.", tense: "Presente" },
+                { ru: "У нас кончаются идеи.", es: "Nos quedamos sin ideas.", tense: "Presente" },
+                { ru: "У них кончился бензин.", es: "Se quedaron sin gasolina.", tense: "Pretérito Indefinido" },
+                { ru: "Не оставайся без батареек.", es: "No te quedes sin pilas.", tense: "Imperativo" },
+                { ru: "Магазин в двух кварталах.", es: "La tienda queda a dos cuadras.", tense: "Presente" },
+                { ru: "Как далеко до пляжа?", es: "¿A cuánto queda la playa?", tense: "Presente" },
+                { ru: "Офис находится рядом.", es: "La oficina queda cerca.", tense: "Presente" },
+                { ru: "Это далеко отсюда?", es: "¿Queda lejos de aquí?", tense: "Presente" },
+                { ru: "Я встречусь с тобой в семь.", es: "Quedo contigo a las siete.", tense: "Presente" },
+                { ru: "Мы договорились на вторник.", es: "Quedamos el martes.", tense: "Pretérito Indefinido" },
+                { ru: "Встретимся у входа.", es: "Quedamos en la entrada.", tense: "Presente" },
+                { ru: "Платье сидит на тебе идеально.", es: "El vestido te queda perfecto.", tense: "Presente" },
+                { ru: "Я впечатлён.", es: "Me quedo impresionado.", tense: "Presente" },
+                { ru: "Квартира находится в центре.", es: "El apartamento queda en el centro.", tense: "Presente" },
+                { ru: "Мы стояли там и смотрели.", es: "Nos quedamos ahí mirando.", tense: "Pretérito Indefinido" },
+                { ru: "Я сохраню твой секрет.", es: "Me quedaré con tu secreto.", tense: "Futuro Simple" },
+                { ru: "Как выглядит план?", es: "¿Cómo queda el plan?", tense: "Presente" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

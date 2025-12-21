@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇪🇸 VERB IR — 95 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇪🇸 Verb IR</h1>
+            <p class="subtitle">to go — 95 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 95 из 95 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика испанского — IR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb IR</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Настоящее время - неправильный глагол, используется для текущих и привычных действий</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">voy</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vas</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">va</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">van</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Простое прошедшее время - завершённые действия в прошлом, неправильные формы</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">fui</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">fuiste</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">fue</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">fuimos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">fuisteis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">fueron</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Имперфект - продолжающиеся или привычные действия в прошлом</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">iba</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ibas</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">iba</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">íbamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ibais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">iban</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Простое будущее время - действия, которые произойдут</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">iré</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">irás</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">irá</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">iremos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">iréis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">irán</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'es',
+            labels: { target: 'Español', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["voy","vas","va","vamos","vais","van","fui","iba","iré"],
+            phrases: [
+                { ru: "Я хожу на работу каждый день", es: "Voy al trabajo todos los días", tense: "Presente" },
+                { ru: "Ты идёшь в школу на автобусе", es: "Vas al colegio en autobús", tense: "Presente" },
+                { ru: "Она ходит в спортзал утром", es: "Ella va al gimnasio por la mañana", tense: "Presente" },
+                { ru: "Мы ездим на пляж по выходным", es: "Vamos a la playa los fines de semana", tense: "Presente" },
+                { ru: "Они ходят по магазинам каждую субботу", es: "Ellos van de compras todos los sábados", tense: "Presente" },
+                { ru: "Я буду учиться сегодня вечером", es: "Voy a estudiar esta noche", tense: "Presente" },
+                { ru: "Тебе понравится этот фильм", es: "Vas a amar esta película", tense: "Presente" },
+                { ru: "Он позвонит тебе позже", es: "Él va a llamarte más tarde", tense: "Presente" },
+                { ru: "Мы поедем в Испанию", es: "Vamos a viajar a España", tense: "Presente" },
+                { ru: "Они купят новую машину", es: "Ellos van a comprar un coche nuevo", tense: "Presente" },
+                { ru: "Я иду в супермаркет", es: "Voy al supermercado", tense: "Presente" },
+                { ru: "Куда ты идёшь?", es: "¿Adónde vas?", tense: "Presente" },
+                { ru: "Она часто ездит в Париж", es: "Ella va a París a menudo", tense: "Presente" },
+                { ru: "Мы едем в отпуск в июле", es: "Vamos de vacaciones en julio", tense: "Presente" },
+                { ru: "Ты едешь на машине или на поезде?", es: "¿Vas en coche o en tren?", tense: "Presente" },
+                { ru: "Я буду врачом", es: "Voy a ser médico", tense: "Presente" },
+                { ru: "Завтра будет дождь", es: "Va a llover mañana", tense: "Presente" },
+                { ru: "Мы будем есть в восемь", es: "Vamos a comer a las ocho", tense: "Presente" },
+                { ru: "Они выиграют матч", es: "Ellos van a ganar el partido", tense: "Presente" },
+                { ru: "Я иду на вечеринку сегодня вечером", es: "Voy a la fiesta esta noche", tense: "Presente" },
+                { ru: "Я ездил в Мадрид вчера", es: "Fui a Madrid ayer", tense: "Pretérito Indefinido" },
+                { ru: "Ты ходил на концерт на прошлой неделе", es: "Fuiste al concierto la semana pasada", tense: "Pretérito Indefinido" },
+                { ru: "Он ездил в больницу", es: "Él fue al hospital", tense: "Pretérito Indefinido" },
+                { ru: "Мы ходили в ресторан", es: "Fuimos al restaurante", tense: "Pretérito Indefinido" },
+                { ru: "Они ездили в отпуск в августе", es: "Ellos fueron de vacaciones en agosto", tense: "Pretérito Indefinido" },
+                { ru: "Я ходил по магазинам сегодня утром", es: "Fui de compras esta mañana", tense: "Pretérito Indefinido" },
+                { ru: "Ты ходил на встречу?", es: "¿Fuiste a la reunión?", tense: "Pretérito Indefinido" },
+                { ru: "Она ездила в Лондон в прошлом году", es: "Ella fue a Londres el año pasado", tense: "Pretérito Indefinido" },
+                { ru: "Мы ходили в кино", es: "Fuimos al cine", tense: "Pretérito Indefinido" },
+                { ru: "Они ходили в парк", es: "Ellos fueron al parque", tense: "Pretérito Indefinido" },
+                { ru: "Я ходил в ту школу", es: "Yo iba a ese colegio", tense: "Pretérito Imperfecto" },
+                { ru: "Ты ходил каждый день", es: "Tú ibas todos los días", tense: "Pretérito Imperfecto" },
+                { ru: "Она ездила на велосипеде", es: "Ella iba en bicicleta", tense: "Pretérito Imperfecto" },
+                { ru: "Мы ездили на пляж", es: "Nosotros íbamos a la playa", tense: "Pretérito Imperfecto" },
+                { ru: "Они шли на станцию", es: "Ellos iban a la estación", tense: "Pretérito Imperfecto" },
+                { ru: "Я собирался тебе сказать", es: "Iba a decirte", tense: "Pretérito Imperfecto" },
+                { ru: "Куда ты шёл?", es: "¿Adónde ibas?", tense: "Pretérito Imperfecto" },
+                { ru: "Он шёл в офис", es: "Él iba a la oficina", tense: "Pretérito Imperfecto" },
+                { ru: "Мы шли домой", es: "Íbamos a casa", tense: "Pretérito Imperfecto" },
+                { ru: "Они шли пешком", es: "Ellos iban a pie", tense: "Pretérito Imperfecto" },
+                { ru: "Я пойду завтра", es: "Iré mañana", tense: "Futuro Simple" },
+                { ru: "Ты пойдёшь на следующей неделе", es: "Irás la próxima semana", tense: "Futuro Simple" },
+                { ru: "Она пойдёт к врачу", es: "Ella irá al médico", tense: "Futuro Simple" },
+                { ru: "Мы пойдём вместе", es: "Iremos juntos", tense: "Futuro Simple" },
+                { ru: "Они полетят на самолёте", es: "Ellos irán en avión", tense: "Futuro Simple" },
+                { ru: "Я пойду в университет", es: "Iré a la universidad", tense: "Futuro Simple" },
+                { ru: "Ты пойдёшь со мной?", es: "¿Irás conmigo?", tense: "Futuro Simple" },
+                { ru: "Он пойдёт один", es: "Él irá solo", tense: "Futuro Simple" },
+                { ru: "Мы поедем в следующем месяце", es: "Iremos el próximo mes", tense: "Futuro Simple" },
+                { ru: "Они поедут в Бразилию", es: "Ellos irán a Brasil", tense: "Futuro Simple" },
+                { ru: "Я ухожу сейчас", es: "Me voy ahora", tense: "Presente" },
+                { ru: "Ты уже уходишь?", es: "¿Ya te vas?", tense: "Presente" },
+                { ru: "Он уезжает завтра", es: "Él se va mañana", tense: "Presente" },
+                { ru: "Мы уходим рано", es: "Nos vamos temprano", tense: "Presente" },
+                { ru: "Они уезжают из страны", es: "Ellos se van del país", tense: "Presente" },
+                { ru: "Я ушёл в полдень", es: "Me fui al mediodía", tense: "Pretérito Indefinido" },
+                { ru: "Ты ушёл не попрощавшись", es: "Te fuiste sin despedirte", tense: "Pretérito Indefinido" },
+                { ru: "Она ушла из компании", es: "Ella se fue de la empresa", tense: "Pretérito Indefinido" },
+                { ru: "Мы ушли с вечеринки рано", es: "Nos fuimos de la fiesta temprano", tense: "Pretérito Indefinido" },
+                { ru: "Они ушли в спешке", es: "Ellos se fueron con prisa", tense: "Pretérito Indefinido" },
+                { ru: "Я езжу в офис на метро", es: "Voy a la oficina en metro", tense: "Presente" },
+                { ru: "Ты едешь слишком быстро", es: "Vas muy rápido", tense: "Presente" },
+                { ru: "Всё идёт хорошо", es: "Todo va bien", tense: "Presente" },
+                { ru: "Мы ходим в церковь по воскресеньям", es: "Vamos a la iglesia los domingos", tense: "Presente" },
+                { ru: "Они ходят бегать в парк", es: "Ellos van a correr al parque", tense: "Presente" },
+                { ru: "Я опоздаю", es: "Voy a llegar tarde", tense: "Presente" },
+                { ru: "Тебе понадобится помощь", es: "Vas a necesitar ayuda", tense: "Presente" },
+                { ru: "Это будет сложно", es: "Va a ser difícil", tense: "Presente" },
+                { ru: "Мы будем праздновать", es: "Vamos a celebrar", tense: "Presente" },
+                { ru: "Они переедут в другой дом", es: "Ellos van a mudarse de casa", tense: "Presente" },
+                { ru: "Я ехал на такси", es: "Fui en taxi", tense: "Pretérito Indefinido" },
+                { ru: "Ты зашёл слишком далеко", es: "Fuiste demasiado lejos", tense: "Pretérito Indefinido" },
+                { ru: "Он ездил навестить свою семью", es: "Él fue a ver a su familia", tense: "Pretérito Indefinido" },
+                { ru: "Мы ходили на прогулку", es: "Fuimos a dar un paseo", tense: "Pretérito Indefinido" },
+                { ru: "Они ходили в музей", es: "Ellos fueron al museo", tense: "Pretérito Indefinido" },
+                { ru: "Я ходил по магазинам в центре", es: "Fui de compras al centro", tense: "Pretérito Indefinido" },
+                { ru: "Ты пошёл не туда", es: "Fuiste al lugar equivocado", tense: "Pretérito Indefinido" },
+                { ru: "Она ездила в путешествие", es: "Ella fue de viaje", tense: "Pretérito Indefinido" },
+                { ru: "Мы ходили в театр", es: "Fuimos al teatro", tense: "Pretérito Indefinido" },
+                { ru: "Они ходили на свадьбу", es: "Ellos fueron a una boda", tense: "Pretérito Indefinido" },
+                { ru: "Я ездил туда каждое лето", es: "Yo iba allí todos los veranos", tense: "Pretérito Imperfecto" },
+                { ru: "Ты шёл не в ту сторону", es: "Tú ibas en la dirección equivocada", tense: "Pretérito Imperfecto" },
+                { ru: "Она шла в библиотеку", es: "Ella iba a la biblioteca", tense: "Pretérito Imperfecto" },
+                { ru: "Мы ехали в центр", es: "Nosotros íbamos al centro", tense: "Pretérito Imperfecto" },
+                { ru: "Они шли слишком медленно", es: "Ellos iban muy despacio", tense: "Pretérito Imperfecto" },
+                { ru: "Я пойду, если ты пойдёшь со мной", es: "Iré si vienes conmigo", tense: "Futuro Simple" },
+                { ru: "Ты далеко пойдёшь в жизни", es: "Irás muy lejos en la vida", tense: "Futuro Simple" },
+                { ru: "Он пойдёт на конференцию", es: "Él irá a la conferencia", tense: "Futuro Simple" },
+                { ru: "Мы пойдём, когда дождь прекратится", es: "Iremos cuando pare de llover", tense: "Futuro Simple" },
+                { ru: "Они поедут в отпуск", es: "Ellos irán de vacaciones", tense: "Futuro Simple" },
+                { ru: "Я хожу к стоматологу дважды в год", es: "Voy al dentista dos veces al año", tense: "Presente" },
+                { ru: "Как дела?", es: "¿Cómo te van las cosas?", tense: "Presente" },
+                { ru: "Это не сюда идёт", es: "Esto no va aquí", tense: "Presente" },
+                { ru: "Давай пойдём в кино", es: "Vamos al cine", tense: "Presente" },
+                { ru: "Они ходят в поход каждый месяц", es: "Ellos van de excursión cada mes", tense: "Presente" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

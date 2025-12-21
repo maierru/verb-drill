@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇪🇸 VERB SER — 94 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇪🇸 Verb SER</h1>
+            <p class="subtitle">to be (permanent) — 94 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 94 из 94 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика испанского — SER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb SER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Настоящее время - постоянные состояния, идентичность, характеристики, происхождение</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>soy</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>eres</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>es</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>somos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>sois</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>son</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Простое прошедшее - завершенные действия в прошлом</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>fui</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>fuiste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>fue</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>fuimos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>fuisteis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>fueron</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Имперфект - продолжительные или привычные состояния в прошлом</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>era</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>eras</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>era</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>éramos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>erais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>eran</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Простое будущее - буду</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>seré</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>serás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>será</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>seremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>seréis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>serán</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'es',
+            labels: { target: 'Español', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["soy","eres","es","somos","sois","son","fui","fuiste","fue","fuimos","fuisteis","fueron","era","eras","éramos","erais","eran","seré","serás","será","seremos","seréis","serán"],
+            phrases: [
+                { ru: "Я врач.", es: "Soy médico.", tense: "Presente" },
+                { ru: "Ты очень умный.", es: "Eres muy inteligente.", tense: "Presente" },
+                { ru: "Она из Испании.", es: "Ella es de España.", tense: "Presente" },
+                { ru: "Мы счастливы.", es: "Somos felices.", tense: "Presente" },
+                { ru: "Они студенты.", es: "Son estudiantes.", tense: "Presente" },
+                { ru: "Вы добрые.", es: "Sois amables.", tense: "Presente" },
+                { ru: "Это важно.", es: "Es importante.", tense: "Presente" },
+                { ru: "Я мексиканец.", es: "Soy mexicano.", tense: "Presente" },
+                { ru: "Ты прав.", es: "Eres correcto.", tense: "Presente" },
+                { ru: "Он мой брат.", es: "Es mi hermano.", tense: "Presente" },
+                { ru: "Мы коллеги.", es: "Somos colegas.", tense: "Presente" },
+                { ru: "Они художники.", es: "Son artistas.", tense: "Presente" },
+                { ru: "Это правда.", es: "Esta es la verdad.", tense: "Presente" },
+                { ru: "Я католик.", es: "Soy católico.", tense: "Presente" },
+                { ru: "Ты красивая.", es: "Eres hermosa.", tense: "Presente" },
+                { ru: "Она щедрая.", es: "Ella es generosa.", tense: "Presente" },
+                { ru: "Мы люди.", es: "Somos humanos.", tense: "Presente" },
+                { ru: "Вы ответственные.", es: "Sois responsables.", tense: "Presente" },
+                { ru: "Они профессионалы.", es: "Son profesionales.", tense: "Presente" },
+                { ru: "Я инженер.", es: "Soy ingeniero.", tense: "Presente" },
+                { ru: "Это необходимо.", es: "Es necesario.", tense: "Presente" },
+                { ru: "Ты честный.", es: "Eres honesto.", tense: "Presente" },
+                { ru: "Он мой учитель.", es: "Es mi profesor.", tense: "Presente" },
+                { ru: "Мы друзья.", es: "Somos amigos.", tense: "Presente" },
+                { ru: "Они адвокаты.", es: "Son abogados.", tense: "Presente" },
+                { ru: "Я был молодым.", es: "Fui joven.", tense: "Pretérito Indefinido" },
+                { ru: "Ты был чемпионом.", es: "Fuiste el campeón.", tense: "Pretérito Indefinido" },
+                { ru: "Она была директором.", es: "Ella fue la directora.", tense: "Pretérito Indefinido" },
+                { ru: "Мы были в Мадриде.", es: "Fuimos a Madrid.", tense: "Pretérito Indefinido" },
+                { ru: "Они были храбрыми.", es: "Fueron valientes.", tense: "Pretérito Indefinido" },
+                { ru: "Вы ошибались.", es: "Fuisteis incorrectos.", tense: "Pretérito Indefinido" },
+                { ru: "Это было невероятно.", es: "Fue increíble.", tense: "Pretérito Indefinido" },
+                { ru: "Я был лидером.", es: "Fui el líder.", tense: "Pretérito Indefinido" },
+                { ru: "Тебе повезло.", es: "Fuiste afortunado.", tense: "Pretérito Indefinido" },
+                { ru: "Он был президентом.", es: "Fue presidente.", tense: "Pretérito Indefinido" },
+                { ru: "Мы были партнерами.", es: "Fuimos socios.", tense: "Pretérito Indefinido" },
+                { ru: "Они были свидетелями.", es: "Fueron testigos.", tense: "Pretérito Indefinido" },
+                { ru: "Это был сюрприз.", es: "Fue una sorpresa.", tense: "Pretérito Indefinido" },
+                { ru: "Я был победителем.", es: "Fui el ganador.", tense: "Pretérito Indefinido" },
+                { ru: "Ты был потрясающим.", es: "Fuiste increíble.", tense: "Pretérito Indefinido" },
+                { ru: "Она была замечательным человеком.", es: "Ella fue una gran persona.", tense: "Pretérito Indefinido" },
+                { ru: "Мы были волонтерами.", es: "Fuimos voluntarios.", tense: "Pretérito Indefinido" },
+                { ru: "Вы были лучшими.", es: "Fuisteis los mejores.", tense: "Pretérito Indefinido" },
+                { ru: "Они были владельцами.", es: "Fueron los dueños.", tense: "Pretérito Indefinido" },
+                { ru: "Я всегда был оптимистом.", es: "Era siempre optimista.", tense: "Pretérito Imperfecto" },
+                { ru: "Ты был очень терпеливым.", es: "Eras muy paciente.", tense: "Pretérito Imperfecto" },
+                { ru: "Она была хорошим другом.", es: "Ella era una buena amiga.", tense: "Pretérito Imperfecto" },
+                { ru: "Мы были соседями.", es: "Éramos vecinos.", tense: "Pretérito Imperfecto" },
+                { ru: "Они были одноклассниками.", es: "Eran compañeros de clase.", tense: "Pretérito Imperfecto" },
+                { ru: "Вы были пунктуальными.", es: "Erais puntuales.", tense: "Pretérito Imperfecto" },
+                { ru: "Это было обычно.", es: "Era común.", tense: "Pretérito Imperfecto" },
+                { ru: "Я был застенчивым в детстве.", es: "Era tímido de niño.", tense: "Pretérito Imperfecto" },
+                { ru: "Ты был творческим.", es: "Eras creativo.", tense: "Pretérito Imperfecto" },
+                { ru: "Он был очень высоким.", es: "Era muy alto.", tense: "Pretérito Imperfecto" },
+                { ru: "Мы были молодыми.", es: "Éramos jóvenes.", tense: "Pretérito Imperfecto" },
+                { ru: "Они были знаменитыми.", es: "Eran famosos.", tense: "Pretérito Imperfecto" },
+                { ru: "Это было нормально.", es: "Era normal.", tense: "Pretérito Imperfecto" },
+                { ru: "Я был идеалистом.", es: "Era idealista.", tense: "Pretérito Imperfecto" },
+                { ru: "Ты был романтичным.", es: "Eras romántico.", tense: "Pretérito Imperfecto" },
+                { ru: "Она была преданной.", es: "Ella era dedicada.", tense: "Pretérito Imperfecto" },
+                { ru: "Мы были амбициозными.", es: "Éramos ambiciosos.", tense: "Pretérito Imperfecto" },
+                { ru: "Вы были энтузиастами.", es: "Erais entusiastas.", tense: "Pretérito Imperfecto" },
+                { ru: "Они были организованными.", es: "Eran organizados.", tense: "Pretérito Imperfecto" },
+                { ru: "Я буду пилотом.", es: "Seré piloto.", tense: "Futuro Simple" },
+                { ru: "Ты будешь успешным.", es: "Serás exitoso.", tense: "Futuro Simple" },
+                { ru: "Она будет директором.", es: "Ella será la directora.", tense: "Futuro Simple" },
+                { ru: "Мы будем готовы.", es: "Seremos listos.", tense: "Futuro Simple" },
+                { ru: "Они будут счастливы.", es: "Serán felices.", tense: "Futuro Simple" },
+                { ru: "Вы будете чемпионами.", es: "Seréis campeones.", tense: "Futuro Simple" },
+                { ru: "Это будет сложно.", es: "Será difícil.", tense: "Futuro Simple" },
+                { ru: "Я буду там.", es: "Seré allí.", tense: "Futuro Simple" },
+                { ru: "Ты будешь знаменитым.", es: "Serás famoso.", tense: "Futuro Simple" },
+                { ru: "Он будет боссом.", es: "Será el jefe.", tense: "Futuro Simple" },
+                { ru: "Мы будем волонтерами.", es: "Seremos voluntarios.", tense: "Futuro Simple" },
+                { ru: "Они будут благодарны.", es: "Serán agradecidos.", tense: "Futuro Simple" },
+                { ru: "Это будет чудесно.", es: "Será maravilloso.", tense: "Futuro Simple" },
+                { ru: "Я буду честным.", es: "Seré honesto.", tense: "Futuro Simple" },
+                { ru: "Ты будешь идеальным.", es: "Serás perfecto.", tense: "Futuro Simple" },
+                { ru: "Она будет капитаном.", es: "Ella será la capitana.", tense: "Futuro Simple" },
+                { ru: "Мы будем в безопасности.", es: "Seremos seguros.", tense: "Futuro Simple" },
+                { ru: "Вы будете важными.", es: "Seréis importantes.", tense: "Futuro Simple" },
+                { ru: "Они будут пионерами.", es: "Serán pioneros.", tense: "Futuro Simple" },
+                { ru: "Я архитектор.", es: "Soy arquitecto.", tense: "Presente" },
+                { ru: "Ты особенный.", es: "Eres especial.", tense: "Presente" },
+                { ru: "Он аргентинец.", es: "Es argentino.", tense: "Presente" },
+                { ru: "Мы команда.", es: "Somos un equipo.", tense: "Presente" },
+                { ru: "Они певцы.", es: "Son cantantes.", tense: "Presente" },
+                { ru: "Я был уверенным.", es: "Fui confiado.", tense: "Pretérito Indefinido" },
+                { ru: "Это было идеально.", es: "Fue perfecto.", tense: "Pretérito Indefinido" },
+                { ru: "Ты был добрым.", es: "Fuiste amable.", tense: "Pretérito Indefinido" },
+                { ru: "Она была спокойной.", es: "Ella era tranquila.", tense: "Pretérito Imperfecto" },
+                { ru: "Мы были любопытными.", es: "Éramos curiosos.", tense: "Pretérito Imperfecto" },
+                { ru: "Я буду лучше.", es: "Seré mejor.", tense: "Futuro Simple" },
+                { ru: "Это будет легко.", es: "Será fácil.", tense: "Futuro Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

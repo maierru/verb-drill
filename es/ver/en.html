@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇪🇸 VERB VER — 97 Phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Back to verb list</a>
+            <h1>🇪🇸 Verb VER</h1>
+            <p class="subtitle">to see — 97 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Show all translations</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
+        </div>
+
+        <div class="stats" id="stats">Showing: 97 of 97 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Spanish Practice — VER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb VER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Present tense - actions happening now or habitual actions</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">veo</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ves</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ve</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vemos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">veis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ven</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Preterite - completed actions in the past</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">vi</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">viste</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vio</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vimos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">visteis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vieron</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Imperfect - ongoing or habitual past actions</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">veía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">veías</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">veía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">veíamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">veíais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">veían</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Future tense - actions that will happen</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">veré</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">verás</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">verá</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">veremos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">veréis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">verán</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'en',
+            targetKey: 'es',
+            labels: { target: 'Spanish', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["veo","ves","ve","vemos","veis","ven","vi","viste","vio","vimos","visteis","vieron","veía","verá","vería","he visto"],
+            phrases: [
+                { en: "I see a bird in the tree", es: "Veo un pájaro en el árbol", tense: "Presente" },
+                { en: "Do you see that building?", es: "¿Ves ese edificio?", tense: "Presente" },
+                { en: "He sees his friends every day", es: "Ve a sus amigos todos los días", tense: "Presente" },
+                { en: "We see the mountains from here", es: "Vemos las montañas desde aquí", tense: "Presente" },
+                { en: "They see the stars at night", es: "Ven las estrellas por la noche", tense: "Presente" },
+                { en: "I saw that movie yesterday", es: "Vi esa película ayer", tense: "Pretérito Indefinido" },
+                { en: "You saw the accident", es: "Viste el accidente", tense: "Pretérito Indefinido" },
+                { en: "She saw her mother last week", es: "Vio a su madre la semana pasada", tense: "Pretérito Indefinido" },
+                { en: "We saw the sunset together", es: "Vimos el atardecer juntos", tense: "Pretérito Indefinido" },
+                { en: "They saw the exhibition", es: "Vieron la exposición", tense: "Pretérito Indefinido" },
+                { en: "I used to see him at the park", es: "Lo veía en el parque", tense: "Pretérito Imperfecto" },
+                { en: "You used to watch TV every evening", es: "Veías la tele todas las tardes", tense: "Pretérito Imperfecto" },
+                { en: "He watched the sunrise every morning", es: "Veía el amanecer todas las mañanas", tense: "Pretérito Imperfecto" },
+                { en: "We used to see each other often", es: "Nos veíamos a menudo", tense: "Pretérito Imperfecto" },
+                { en: "I will see you tomorrow", es: "Te veré mañana", tense: "Futuro Simple" },
+                { en: "You will see the difference", es: "Verás la diferencia", tense: "Futuro Simple" },
+                { en: "She will watch the documentary", es: "Verá el documental", tense: "Futuro Simple" },
+                { en: "We will see what happens", es: "Veremos qué pasa", tense: "Futuro Simple" },
+                { en: "I can't see anything", es: "No veo nada", tense: "Presente" },
+                { en: "Let's see what we have here", es: "A ver qué tenemos aquí", tense: "Presente" },
+                { en: "I see myself in the mirror", es: "Me veo en el espejo", tense: "Presente" },
+                { en: "Do you see yourself doing this?", es: "¿Te ves haciendo esto?", tense: "Presente" },
+                { en: "She sees herself as a leader", es: "Se ve como una líder", tense: "Presente" },
+                { en: "We'll see about that", es: "Ya veremos", tense: "Futuro Simple" },
+                { en: "I see what you mean", es: "Veo lo que quieres decir", tense: "Presente" },
+                { en: "Can you see me now?", es: "¿Me ves ahora?", tense: "Presente" },
+                { en: "I don't see the problem", es: "No veo el problema", tense: "Presente" },
+                { en: "We saw it coming", es: "Lo vimos venir", tense: "Pretérito Indefinido" },
+                { en: "They can't see us from there", es: "No nos pueden ver desde allí", tense: "Presente" },
+                { en: "I saw her at the supermarket", es: "La vi en el supermercado", tense: "Pretérito Indefinido" },
+                { en: "You will see results soon", es: "Verás resultados pronto", tense: "Futuro Simple" },
+                { en: "He sees things differently", es: "Ve las cosas de manera diferente", tense: "Presente" },
+                { en: "We see eye to eye on this", es: "Estamos de acuerdo en esto", tense: "Presente" },
+                { en: "I saw the light at the end", es: "Vi la luz al final", tense: "Pretérito Indefinido" },
+                { en: "Do you see any solution?", es: "¿Ves alguna solución?", tense: "Presente" },
+                { en: "They saw the whole thing", es: "Vieron todo", tense: "Pretérito Indefinido" },
+                { en: "I will see her next month", es: "La veré el próximo mes", tense: "Futuro Simple" },
+                { en: "We used to see movies together", es: "Veíamos películas juntos", tense: "Pretérito Imperfecto" },
+                { en: "She sees a doctor regularly", es: "Ve a un médico regularmente", tense: "Presente" },
+                { en: "I can see clearly now", es: "Ahora veo claramente", tense: "Presente" },
+                { en: "You saw it with your own eyes", es: "Lo viste con tus propios ojos", tense: "Pretérito Indefinido" },
+                { en: "He will see the truth", es: "Verá la verdad", tense: "Futuro Simple" },
+                { en: "We see each other every week", es: "Nos vemos cada semana", tense: "Presente" },
+                { en: "I saw a beautiful sunset", es: "Vi un atardecer hermoso", tense: "Pretérito Indefinido" },
+                { en: "They see opportunities everywhere", es: "Ven oportunidades en todas partes", tense: "Presente" },
+                { en: "You will see improvements", es: "Verás mejoras", tense: "Futuro Simple" },
+                { en: "She saw him yesterday", es: "Lo vio ayer", tense: "Pretérito Indefinido" },
+                { en: "I see no reason to worry", es: "No veo razón para preocuparse", tense: "Presente" },
+                { en: "We saw the concert last night", es: "Vimos el concierto anoche", tense: "Pretérito Indefinido" },
+                { en: "Can you see the screen?", es: "¿Puedes ver la pantalla?", tense: "Presente" },
+                { en: "I used to see her every day", es: "La veía todos los días", tense: "Pretérito Imperfecto" },
+                { en: "He sees his family often", es: "Ve a su familia a menudo", tense: "Presente" },
+                { en: "They will see you at the party", es: "Te verán en la fiesta", tense: "Futuro Simple" },
+                { en: "I saw the sign", es: "Vi la señal", tense: "Pretérito Indefinido" },
+                { en: "You see things I don't", es: "Ves cosas que yo no veo", tense: "Presente" },
+                { en: "We will see the results", es: "Veremos los resultados", tense: "Futuro Simple" },
+                { en: "She used to watch that show", es: "Veía ese programa", tense: "Pretérito Imperfecto" },
+                { en: "I see your point", es: "Veo tu punto", tense: "Presente" },
+                { en: "They saw the news", es: "Vieron las noticias", tense: "Pretérito Indefinido" },
+                { en: "You will see me later", es: "Me verás más tarde", tense: "Futuro Simple" },
+                { en: "He sees potential in you", es: "Ve potencial en ti", tense: "Presente" },
+                { en: "I saw a strange light", es: "Vi una luz extraña", tense: "Pretérito Indefinido" },
+                { en: "We see the same thing", es: "Vemos lo mismo", tense: "Presente" },
+                { en: "They used to see plays", es: "Veían obras de teatro", tense: "Pretérito Imperfecto" },
+                { en: "You will see changes", es: "Verás cambios", tense: "Futuro Simple" },
+                { en: "She sees beauty everywhere", es: "Ve belleza en todas partes", tense: "Presente" },
+                { en: "I saw him running", es: "Lo vi corriendo", tense: "Pretérito Indefinido" },
+                { en: "Do you see the moon?", es: "¿Ves la luna?", tense: "Presente" },
+                { en: "We will see you soon", es: "Te veremos pronto", tense: "Futuro Simple" },
+                { en: "He saw the opportunity", es: "Vio la oportunidad", tense: "Pretérito Indefinido" },
+                { en: "I see the big picture", es: "Veo el panorama general", tense: "Presente" },
+                { en: "They see their mistakes", es: "Ven sus errores", tense: "Presente" },
+                { en: "You saw the email", es: "Viste el correo", tense: "Pretérito Indefinido" },
+                { en: "She will see the doctor", es: "Verá al médico", tense: "Futuro Simple" },
+                { en: "We used to see concerts", es: "Veíamos conciertos", tense: "Pretérito Imperfecto" },
+                { en: "I can't see well without glasses", es: "No veo bien sin gafas", tense: "Presente" },
+                { en: "They saw many countries", es: "Vieron muchos países", tense: "Pretérito Indefinido" },
+                { en: "You will see the city", es: "Verás la ciudad", tense: "Futuro Simple" },
+                { en: "He sees the value in it", es: "Ve el valor en ello", tense: "Presente" },
+                { en: "I saw your message", es: "Vi tu mensaje", tense: "Pretérito Indefinido" },
+                { en: "We see things clearly", es: "Vemos las cosas claramente", tense: "Presente" },
+                { en: "She used to watch the news", es: "Veía las noticias", tense: "Pretérito Imperfecto" },
+                { en: "They will see the ocean", es: "Verán el océano", tense: "Futuro Simple" },
+                { en: "I see hope in this", es: "Veo esperanza en esto", tense: "Presente" },
+                { en: "You saw the game", es: "Viste el partido", tense: "Pretérito Indefinido" },
+                { en: "He will see progress", es: "Verá progreso", tense: "Futuro Simple" },
+                { en: "We see the connection", es: "Vemos la conexión", tense: "Presente" },
+                { en: "I saw stars last night", es: "Vi estrellas anoche", tense: "Pretérito Indefinido" },
+                { en: "They see each other daily", es: "Se ven a diario", tense: "Presente" },
+                { en: "You will see new places", es: "Verás lugares nuevos", tense: "Futuro Simple" },
+                { en: "She saw the parade", es: "Vio el desfile", tense: "Pretérito Indefinido" },
+                { en: "I see what you did there", es: "Veo lo que hiciste ahí", tense: "Presente" },
+                { en: "We used to see plays together", es: "Veíamos obras juntos", tense: "Pretérito Imperfecto" },
+                { en: "He sees his reflection", es: "Ve su reflejo", tense: "Presente" },
+                { en: "I will see you around", es: "Te veré por ahí", tense: "Futuro Simple" },
+                { en: "Let's see if it works", es: "A ver si funciona", tense: "Presente" },
+                { en: "We'll see how it goes", es: "Ya veremos cómo va", tense: "Futuro Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

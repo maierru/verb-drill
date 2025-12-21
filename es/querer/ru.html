@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇪🇸 VERB QUERER — 98 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇪🇸 Verb QUERER</h1>
+            <p class="subtitle">to want — 98 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 98 из 98 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика испанского — QUERER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb QUERER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Настоящее время - используется для текущих желаний</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo quiero</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú quieres</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted quiere</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros queremos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros queréis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes quieren</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Простое прошедшее - используется для завершенных желаний в прошлом</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo quise</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú quisiste</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted quiso</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros quisimos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros quisisteis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes quisieron</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Имперфект - используется для продолжающихся или привычных желаний в прошлом</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo quería</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú querías</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted quería</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros queríamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros queríais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes querían</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Простое будущее - используется для будущих желаний</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo querré</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú querrás</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted querrá</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros querremos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros querréis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes querrán</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'es',
+            labels: { target: 'Español', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["quiero","quieres","quiere","queremos","queréis","quieren","quise","quisiera","querré"],
+            phrases: [
+                { ru: "Я хочу учить испанский", es: "Quiero aprender español", tense: "Presente" },
+                { ru: "Ты хочешь кофе?", es: "¿Quieres café?", tense: "Presente" },
+                { ru: "Она хочет путешествовать", es: "Ella quiere viajar", tense: "Presente" },
+                { ru: "Мы хотим есть", es: "Queremos comer", tense: "Presente" },
+                { ru: "Они хотят больше времени", es: "Quieren más tiempo", tense: "Presente" },
+                { ru: "Я люблю тебя", es: "Te quiero", tense: "Presente" },
+                { ru: "Я хотел пойти", es: "Quise ir", tense: "Pretérito Indefinido" },
+                { ru: "Она хотела говорить", es: "Ella quiso hablar", tense: "Pretérito Indefinido" },
+                { ru: "Я хотел бы воды", es: "Quisiera agua", tense: "Pretérito Imperfecto Subjuntivo" },
+                { ru: "Мы хотели дом", es: "Queríamos una casa", tense: "Pretérito Imperfecto" },
+                { ru: "Я хочу спать", es: "Quiero dormir", tense: "Presente" },
+                { ru: "Хочешь танцевать?", es: "¿Quieres bailar?", tense: "Presente" },
+                { ru: "Он хочет помощи", es: "Él quiere ayuda", tense: "Presente" },
+                { ru: "Я хочу эту книгу", es: "Quiero este libro", tense: "Presente" },
+                { ru: "Они хотят мира", es: "Quieren paz", tense: "Presente" },
+                { ru: "Я буду хотеть тебя видеть", es: "Querré verte", tense: "Futuro Simple" },
+                { ru: "Я хотел тебе сказать", es: "Quería decirte", tense: "Pretérito Imperfecto" },
+                { ru: "Она хочет собаку", es: "Ella quiere un perro", tense: "Presente" },
+                { ru: "Мы хотим работать", es: "Queremos trabajar", tense: "Presente" },
+                { ru: "Я люблю свою семью", es: "Quiero a mi familia", tense: "Presente" },
+                { ru: "Ты хочешь что-нибудь?", es: "¿Quieres algo?", tense: "Presente" },
+                { ru: "Я хочу отдохнуть", es: "Quiero descansar", tense: "Presente" },
+                { ru: "Они хотели уйти", es: "Quisieron salir", tense: "Pretérito Indefinido" },
+                { ru: "Я хотел бы спросить", es: "Quisiera preguntar", tense: "Pretérito Imperfecto Subjuntivo" },
+                { ru: "Она хочет ответов", es: "Ella quiere respuestas", tense: "Presente" },
+                { ru: "Мы хотим справедливости", es: "Queremos justicia", tense: "Presente" },
+                { ru: "Я хочу понять", es: "Quiero entender", tense: "Presente" },
+                { ru: "Он хотел денег", es: "Él quería dinero", tense: "Pretérito Imperfecto" },
+                { ru: "Я хочу жить здесь", es: "Quiero vivir aquí", tense: "Presente" },
+                { ru: "Хочешь прийти?", es: "¿Quieres venir?", tense: "Presente" },
+                { ru: "Они хотят свободы", es: "Quieren libertad", tense: "Presente" },
+                { ru: "Я хотел знать", es: "Quería saber", tense: "Pretérito Imperfecto" },
+                { ru: "Она хочет учиться", es: "Ella quiere estudiar", tense: "Presente" },
+                { ru: "Мы любим друг друга", es: "Nos queremos", tense: "Presente" },
+                { ru: "Я хочу правду", es: "Quiero la verdad", tense: "Presente" },
+                { ru: "Я хотел бы попробовать", es: "Quisiera intentar", tense: "Pretérito Imperfecto Subjuntivo" },
+                { ru: "Он хочет победить", es: "Él quiere ganar", tense: "Presente" },
+                { ru: "Я хотел помочь", es: "Quise ayudar", tense: "Pretérito Indefinido" },
+                { ru: "Они хотят еды", es: "Quieren comida", tense: "Presente" },
+                { ru: "Я хочу быть счастливым", es: "Quiero ser feliz", tense: "Presente" },
+                { ru: "Хочешь чаю?", es: "¿Quieres té?", tense: "Presente" },
+                { ru: "Она хотела плакать", es: "Ella quería llorar", tense: "Pretérito Imperfecto" },
+                { ru: "Мы хотим перемен", es: "Queremos un cambio", tense: "Presente" },
+                { ru: "Я хочу верить", es: "Quiero creer", tense: "Presente" },
+                { ru: "Я очень люблю тебя", es: "Te quiero mucho", tense: "Presente" },
+                { ru: "Он хочет власти", es: "Él quiere poder", tense: "Presente" },
+                { ru: "Я хотел забыть", es: "Quería olvidar", tense: "Pretérito Imperfecto" },
+                { ru: "Они хотят мести", es: "Quieren venganza", tense: "Presente" },
+                { ru: "Я хочу писать", es: "Quiero escribir", tense: "Presente" },
+                { ru: "Вы хотите вина?", es: "¿Quisiera vino?", tense: "Pretérito Imperfecto Subjuntivo" },
+                { ru: "Она хочет внимания", es: "Ella quiere atención", tense: "Presente" },
+                { ru: "Мы хотели сбежать", es: "Queríamos escapar", tense: "Pretérito Imperfecto" },
+                { ru: "Я хочу петь", es: "Quiero cantar", tense: "Presente" },
+                { ru: "Я хотел остаться", es: "Quise quedarme", tense: "Pretérito Indefinido" },
+                { ru: "Хочешь ещё?", es: "¿Quieres más?", tense: "Presente" },
+                { ru: "Он хочет уважения", es: "Él quiere respeto", tense: "Presente" },
+                { ru: "Я хочу помнить", es: "Quiero recordar", tense: "Presente" },
+                { ru: "Они хотели драться", es: "Quisieron pelear", tense: "Pretérito Indefinido" },
+                { ru: "Я хотел бы прокомментировать", es: "Quisiera comentar", tense: "Pretérito Imperfecto Subjuntivo" },
+                { ru: "Она хочет любви", es: "Ella quiere amor", tense: "Presente" },
+                { ru: "Мы хотим слушать", es: "Queremos escuchar", tense: "Presente" },
+                { ru: "Я хочу бегать", es: "Quiero correr", tense: "Presente" },
+                { ru: "Я хотел читать", es: "Quería leer", tense: "Pretérito Imperfecto" },
+                { ru: "Он хотел уйти", es: "Él quería irse", tense: "Pretérito Imperfecto" },
+                { ru: "Я хочу играть", es: "Quiero jugar", tense: "Presente" },
+                { ru: "Хочешь десерт?", es: "¿Quieres postre?", tense: "Presente" },
+                { ru: "Они хотят результатов", es: "Quieren resultados", tense: "Presente" },
+                { ru: "Я хочу готовить", es: "Quiero cocinar", tense: "Presente" },
+                { ru: "Она хотела смеяться", es: "Ella quería reír", tense: "Pretérito Imperfecto" },
+                { ru: "Мы любим наших детей", es: "Queremos a nuestros hijos", tense: "Presente" },
+                { ru: "Я хочу рисовать", es: "Quiero pintar", tense: "Presente" },
+                { ru: "Я хотел бы объяснить", es: "Quisiera explicar", tense: "Pretérito Imperfecto Subjuntivo" },
+                { ru: "Он хочет успеха", es: "Él quiere éxito", tense: "Presente" },
+                { ru: "Я хотел мечтать", es: "Quería soñar", tense: "Pretérito Imperfecto" },
+                { ru: "Они хотят праздновать", es: "Quieren celebrar", tense: "Presente" },
+                { ru: "Я хочу плавать", es: "Quiero nadar", tense: "Presente" },
+                { ru: "Хочешь поговорить?", es: "¿Quieres hablar?", tense: "Presente" },
+                { ru: "Она хочет ответы сейчас", es: "Ella quiere respuestas ahora", tense: "Presente" },
+                { ru: "Мы хотели чуда", es: "Queríamos un milagro", tense: "Pretérito Imperfecto" },
+                { ru: "Я хочу летать", es: "Quiero volar", tense: "Presente" },
+                { ru: "Я хотел верить тебе", es: "Quise creerte", tense: "Pretérito Indefinido" },
+                { ru: "Он хочет шоколада", es: "Él quiere chocolate", tense: "Presente" },
+                { ru: "Я хочу расти", es: "Quiero crecer", tense: "Presente" },
+                { ru: "Они хотели спрятаться", es: "Quisieron esconderse", tense: "Pretérito Indefinido" },
+                { ru: "Я хотел бы присоединиться", es: "Quisiera unirme", tense: "Pretérito Imperfecto Subjuntivo" },
+                { ru: "Она хочет цветов", es: "Ella quiere flores", tense: "Presente" },
+                { ru: "Мы хотим делиться", es: "Queremos compartir", tense: "Presente" },
+                { ru: "Я хочу исследовать", es: "Quiero explorar", tense: "Presente" },
+                { ru: "Я хотел кричать", es: "Quería gritar", tense: "Pretérito Imperfecto" },
+                { ru: "Хочешь пиццу?", es: "¿Quieres pizza?", tense: "Presente" },
+                { ru: "Он хочет приключений", es: "Él quiere aventura", tense: "Presente" },
+                { ru: "Я хочу создавать", es: "Quiero crear", tense: "Presente" },
+                { ru: "Они хотели тишины", es: "Querían silencio", tense: "Pretérito Imperfecto" },
+                { ru: "Я люблю его", es: "Lo quiero", tense: "Presente" },
+                { ru: "Она хочет поцеловать тебя", es: "Ella quiere besarte", tense: "Presente" },
+                { ru: "Мы хотим молиться", es: "Queremos rezar", tense: "Presente" },
+                { ru: "Я хочу строить", es: "Quiero construir", tense: "Presente" },
+                { ru: "Я хотел бы предложить", es: "Quisiera sugerir", tense: "Pretérito Imperfecto Subjuntivo" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

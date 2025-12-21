@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇪🇸 VERB HABER — 99 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇪🇸 Verb HABER</h1>
+            <p class="subtitle">to have (auxiliary) — 99 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 99 из 99 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика испанского — HABER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb HABER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Настоящее время - вспомогательный для перфектных времён, 'hay' для есть/существует</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>he</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>has</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>ha</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>hemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>habéis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>han</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Простое прошедшее - было/были (завершённое действие)</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>hube</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>hubiste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>hubo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>hubimos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>hubisteis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>hubieron</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Имперфект - было/были (продолжающееся или привычное)</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>había</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>habías</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>había</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>habíamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>habíais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>habían</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Простое будущее - будет</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>habré</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>habrás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>habrá</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>habremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>habréis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>habrán</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'es',
+            labels: { target: 'Español', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["he","has","ha","hay","hemos","habéis","han","había","hubo","habido"],
+            phrases: [
+                { ru: "На столе есть книга.", es: "Hay un libro en la mesa.", tense: "Presente" },
+                { ru: "Здесь много людей.", es: "Hay mucha gente aquí.", tense: "Presente" },
+                { ru: "Я поел.", es: "He comido.", tense: "Presente Perfecto" },
+                { ru: "Ты это видел.", es: "Has visto eso.", tense: "Presente Perfecto" },
+                { ru: "Она приехала.", es: "Ella ha llegado.", tense: "Presente Perfecto" },
+                { ru: "Мы закончили.", es: "Hemos terminado.", tense: "Presente Perfecto" },
+                { ru: "Они ушли.", es: "Han salido.", tense: "Presente Perfecto" },
+                { ru: "Была проблема.", es: "Había un problema.", tense: "Pretérito Imperfecto" },
+                { ru: "Было три варианта.", es: "Había tres opciones.", tense: "Pretérito Imperfecto" },
+                { ru: "Я уже это сделал.", es: "Ya lo había hecho.", tense: "Pluscuamperfecto" },
+                { ru: "Он это сказал.", es: "Él había dicho eso.", tense: "Pluscuamperfecto" },
+                { ru: "Будет вечеринка.", es: "Habrá una fiesta.", tense: "Futuro Simple" },
+                { ru: "Будут проблемы.", es: "Habrá problemas.", tense: "Futuro Simple" },
+                { ru: "Я к тому времени закончу.", es: "Habré terminado para entonces.", tense: "Futuro Perfecto" },
+                { ru: "Есть кофе?", es: "¿Hay café?", tense: "Presente" },
+                { ru: "Есть вопросы?", es: "¿Hay preguntas?", tense: "Presente" },
+                { ru: "Нет времени.", es: "No hay tiempo.", tense: "Presente" },
+                { ru: "Недостаточно места.", es: "No hay suficiente espacio.", tense: "Presente" },
+                { ru: "Что есть поесть?", es: "¿Qué hay de comer?", tense: "Presente" },
+                { ru: "Сколько их?", es: "¿Cuántos hay?", tense: "Presente" },
+                { ru: "Никого не было.", es: "No había nadie.", tense: "Pretérito Imperfecto" },
+                { ru: "Было много машин.", es: "Había muchos coches.", tense: "Pretérito Imperfecto" },
+                { ru: "Я никогда там не был.", es: "Nunca he estado allí.", tense: "Presente Perfecto" },
+                { ru: "Ты когда-нибудь это пробовал?", es: "¿Alguna vez lo has probado?", tense: "Presente Perfecto" },
+                { ru: "Она никогда этого не говорила.", es: "Ella nunca ha dicho eso.", tense: "Presente Perfecto" },
+                { ru: "Мы только что приехали.", es: "Acabamos de llegar.", tense: "Presente Perfecto" },
+                { ru: "Они уже ушли.", es: "Ya se han ido.", tense: "Presente Perfecto" },
+                { ru: "Я его не видел.", es: "No lo he visto.", tense: "Presente Perfecto" },
+                { ru: "Ты мне не сказал.", es: "No me has dicho.", tense: "Presente Perfecto" },
+                { ru: "Он ещё не закончил.", es: "Él no ha terminado todavía.", tense: "Presente Perfecto" },
+                { ru: "Мы жили здесь годами.", es: "Hemos vivido aquí durante años.", tense: "Presente Perfecto" },
+                { ru: "Они много работали.", es: "Han trabajado duro.", tense: "Presente Perfecto" },
+                { ru: "Произошла авария.", es: "Había habido un accidente.", tense: "Pluscuamperfecto" },
+                { ru: "Она это забыла.", es: "Ella lo había olvidado.", tense: "Pluscuamperfecto" },
+                { ru: "Мы уже заплатили.", es: "Ya habíamos pagado.", tense: "Pluscuamperfecto" },
+                { ru: "Они пришли рано.", es: "Habían venido temprano.", tense: "Pluscuamperfecto" },
+                { ru: "Я никогда этого не слышал.", es: "Nunca había oído eso.", tense: "Pluscuamperfecto" },
+                { ru: "Ты обещал.", es: "Habías prometido.", tense: "Pluscuamperfecto" },
+                { ru: "Он уже ушёл.", es: "Él ya se había ido.", tense: "Pluscuamperfecto" },
+                { ru: "Есть решение.", es: "Hay una solución.", tense: "Presente" },
+                { ru: "Есть варианты.", es: "Hay opciones.", tense: "Presente" },
+                { ru: "Есть врач?", es: "¿Hay un médico?", tense: "Presente" },
+                { ru: "Нет хлеба.", es: "No hay pan.", tense: "Presente" },
+                { ru: "Пять студентов.", es: "Hay cinco estudiantes.", tense: "Presente" },
+                { ru: "Что-то не так.", es: "Hay algo mal.", tense: "Presente" },
+                { ru: "Много дел.", es: "Hay mucho que hacer.", tense: "Presente" },
+                { ru: "Был пожар.", es: "Hubo un incendio.", tense: "Pretérito Indefinido" },
+                { ru: "Были осложнения.", es: "Hubo complicaciones.", tense: "Pretérito Indefinido" },
+                { ru: "Я это сломал.", es: "Lo he roto.", tense: "Presente Perfecto" },
+                { ru: "Ты много выучил.", es: "Has aprendido mucho.", tense: "Presente Perfecto" },
+                { ru: "Она написала книгу.", es: "Ella ha escrito un libro.", tense: "Presente Perfecto" },
+                { ru: "Мы решили.", es: "Hemos decidido.", tense: "Presente Perfecto" },
+                { ru: "Они победили.", es: "Han ganado.", tense: "Presente Perfecto" },
+                { ru: "Я совершил ошибку.", es: "He cometido un error.", tense: "Presente Perfecto" },
+                { ru: "Ты изменился.", es: "Has cambiado.", tense: "Presente Perfecto" },
+                { ru: "Он потерял ключи.", es: "Él ha perdido sus llaves.", tense: "Presente Perfecto" },
+                { ru: "Мы это нашли.", es: "Lo hemos encontrado.", tense: "Presente Perfecto" },
+                { ru: "Они открыли магазин.", es: "Han abierto una tienda.", tense: "Presente Perfecto" },
+                { ru: "Будут последствия.", es: "Habrá consecuencias.", tense: "Futuro Simple" },
+                { ru: "Будут изменения.", es: "Habrá cambios.", tense: "Futuro Simple" },
+                { ru: "Я к тому времени выучу.", es: "Habré aprendido para entonces.", tense: "Futuro Perfecto" },
+                { ru: "Ты закончишь.", es: "Habrás terminado.", tense: "Futuro Perfecto" },
+                { ru: "Она уйдёт.", es: "Ella se habrá ido.", tense: "Futuro Perfecto" },
+                { ru: "Мы приедем.", es: "Habremos llegado.", tense: "Futuro Perfecto" },
+                { ru: "Они это увидят.", es: "Lo habrán visto.", tense: "Futuro Perfecto" },
+                { ru: "Есть надежда.", es: "Hay esperanza.", tense: "Presente" },
+                { ru: "Много способов.", es: "Hay muchas maneras.", tense: "Presente" },
+                { ru: "Есть проблема?", es: "¿Hay algún problema?", tense: "Presente" },
+                { ru: "Осталось немного.", es: "No hay muchos que queden.", tense: "Presente" },
+                { ru: "Была музыка.", es: "Había música.", tense: "Pretérito Imperfecto" },
+                { ru: "Играли дети.", es: "Había niños jugando.", tense: "Pretérito Imperfecto" },
+                { ru: "Я забыл.", es: "He olvidado.", tense: "Presente Perfecto" },
+                { ru: "Ты понял.", es: "Has entendido.", tense: "Presente Perfecto" },
+                { ru: "Он вернулся.", es: "Él ha vuelto.", tense: "Presente Perfecto" },
+                { ru: "Мы выбрали.", es: "Hemos elegido.", tense: "Presente Perfecto" },
+                { ru: "Они поверили.", es: "Han creído.", tense: "Presente Perfecto" },
+                { ru: "Я там жил.", es: "Había vivido allí.", tense: "Pluscuamperfecto" },
+                { ru: "Ты здесь работал.", es: "Habías trabajado aquí.", tense: "Pluscuamperfecto" },
+                { ru: "Он изучал медицину.", es: "Él había estudiado medicina.", tense: "Pluscuamperfecto" },
+                { ru: "Мы встречались раньше.", es: "Nos habíamos conocido antes.", tense: "Pluscuamperfecto" },
+                { ru: "Они всё приготовили.", es: "Habían preparado todo.", tense: "Pluscuamperfecto" },
+                { ru: "Есть шанс.", es: "Hay una oportunidad.", tense: "Presente" },
+                { ru: "Есть возможности.", es: "Hay posibilidades.", tense: "Presente" },
+                { ru: "Здесь ничего нет.", es: "No hay nada aquí.", tense: "Presente" },
+                { ru: "Слишком много.", es: "Hay demasiados.", tense: "Presente" },
+                { ru: "Я это прочитал.", es: "Lo he leído.", tense: "Presente Perfecto" },
+                { ru: "Ты слышал новости.", es: "Has oído las noticias.", tense: "Presente Perfecto" },
+                { ru: "Она много путешествовала.", es: "Ella ha viajado mucho.", tense: "Presente Perfecto" },
+                { ru: "Мы об этом говорили.", es: "Hemos hablado de ello.", tense: "Presente Perfecto" },
+                { ru: "Они согласились.", es: "Han estado de acuerdo.", tense: "Presente Perfecto" },
+                { ru: "Я ждал.", es: "He estado esperando.", tense: "Presente Perfecto" },
+                { ru: "Ты работал.", es: "Has estado trabajando.", tense: "Presente Perfecto" },
+                { ru: "Он учился.", es: "Él ha estado estudiando.", tense: "Presente Perfecto" },
+                { ru: "Мы здесь живём.", es: "Hemos estado viviendo aquí.", tense: "Presente Perfecto" },
+                { ru: "Они пытались.", es: "Han estado intentando.", tense: "Presente Perfecto" },
+                { ru: "Была ошибка.", es: "Hubo un error.", tense: "Pretérito Indefinido" },
+                { ru: "Были свидетели.", es: "Hubo testigos.", tense: "Pretérito Indefinido" },
+                { ru: "Будут возможности.", es: "Habrá oportunidades.", tense: "Futuro Simple" },
+                { ru: "Будет время.", es: "Habrá tiempo.", tense: "Futuro Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

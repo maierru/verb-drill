@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇪🇸 VERB DECIR — 100 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇪🇸 Verb DECIR</h1>
+            <p class="subtitle">to say, to tell — 100 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 100 von 100 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Spanisch-Übung — DECIR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb DECIR</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Präsens - sagen</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>digo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>dices</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>dice</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>decimos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>decís</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>dicen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Präteritum - sagte</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>dije</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>dijiste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>dijo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>dijimos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>dijisteis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>dijeron</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Imperfekt - sagte</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>decía</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>decías</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>decía</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>decíamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>decíais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>decían</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Futur - wird sagen</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>diré</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>dirás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>dirá</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>diremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>diréis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>dirán</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'es',
+            labels: { target: 'Spanisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["digo","dices","dice","decimos","decís","dicen","dije","dijiste","dijo","dijimos","dijeron","decía","dirá","diría"],
+            phrases: [
+                { de: "Ich sage ja.", es: "Digo que sí.", tense: "Presente" },
+                { de: "Du sagst die Wahrheit.", es: "Dices la verdad.", tense: "Presente" },
+                { de: "Er sagt nein.", es: "Dice que no.", tense: "Presente" },
+                { de: "Sie sagt hallo.", es: "Ella dice hola.", tense: "Presente" },
+                { de: "Wir sagen auf Wiedersehen.", es: "Decimos adiós.", tense: "Presente" },
+                { de: "Sie sagen, dass es wahr ist.", es: "Dicen que es verdad.", tense: "Presente" },
+                { de: "Was sagst du?", es: "¿Qué dices?", tense: "Presente" },
+                { de: "Ich sage immer die Wahrheit.", es: "Siempre digo la verdad.", tense: "Presente" },
+                { de: "Sie sagen, dass sie kommt.", es: "Dicen que ella viene.", tense: "Presente" },
+                { de: "Wie sagt man das?", es: "¿Cómo se dice eso?", tense: "Presente" },
+                { de: "Er sagt nie etwas.", es: "Él nunca dice nada.", tense: "Presente" },
+                { de: "Ich sage das nicht.", es: "No digo eso.", tense: "Presente" },
+                { de: "Was bedeutet das?", es: "¿Qué quiere decir?", tense: "Presente" },
+                { de: "Sie sagt, dass sie müde ist.", es: "Ella dice que está cansada.", tense: "Presente" },
+                { de: "Die Leute sagen, dass es schwierig ist.", es: "La gente dice que es difícil.", tense: "Presente" },
+                { de: "Ich sage nur, was ich denke.", es: "Solo digo lo que pienso.", tense: "Presente" },
+                { de: "Du sagst es auf Spanisch.", es: "Lo dices en español.", tense: "Presente" },
+                { de: "Er sagt danke.", es: "Dice gracias.", tense: "Presente" },
+                { de: "Wir sagen nichts.", es: "No decimos nada.", tense: "Presente" },
+                { de: "Sie sagen immer dasselbe.", es: "Siempre dicen lo mismo.", tense: "Presente" },
+                { de: "Ich sagte ja.", es: "Dije que sí.", tense: "Pretérito Indefinido" },
+                { de: "Du hast mir die Wahrheit gesagt.", es: "Me dijiste la verdad.", tense: "Pretérito Indefinido" },
+                { de: "Er sagte nein.", es: "Dijo que no.", tense: "Pretérito Indefinido" },
+                { de: "Sie hat mir ein Geheimnis gesagt.", es: "Me dijo un secreto.", tense: "Pretérito Indefinido" },
+                { de: "Wir sagten auf Wiedersehen.", es: "Dijimos adiós.", tense: "Pretérito Indefinido" },
+                { de: "Sie sagten nichts.", es: "No dijeron nada.", tense: "Pretérito Indefinido" },
+                { de: "Was hast du gesagt?", es: "¿Qué dijiste?", tense: "Pretérito Indefinido" },
+                { de: "Ich hab's dir gesagt!", es: "¡Te lo dije!", tense: "Pretérito Indefinido" },
+                { de: "Sie sagte, sie würde kommen.", es: "Dijo que venía.", tense: "Pretérito Indefinido" },
+                { de: "Er hat ihr alles gesagt.", es: "Le dijo todo.", tense: "Pretérito Indefinido" },
+                { de: "Wir haben nichts gesagt.", es: "No dijimos nada.", tense: "Pretérito Indefinido" },
+                { de: "Sie haben es mir gestern gesagt.", es: "Me lo dijeron ayer.", tense: "Pretérito Indefinido" },
+                { de: "Wer hat das gesagt?", es: "¿Quién dijo eso?", tense: "Pretérito Indefinido" },
+                { de: "Du hast gesagt, du würdest helfen.", es: "Dijiste que ayudarías.", tense: "Pretérito Indefinido" },
+                { de: "Ich sagte hallo.", es: "Dije hola.", tense: "Pretérito Indefinido" },
+                { de: "Sie sagte nichts.", es: "Ella no dijo nada.", tense: "Pretérito Indefinido" },
+                { de: "Er sagte, es sei unmöglich.", es: "Dijo que era imposible.", tense: "Pretérito Indefinido" },
+                { de: "Wir haben ihnen die Neuigkeiten gesagt.", es: "Les dijimos las noticias.", tense: "Pretérito Indefinido" },
+                { de: "Du hast es falsch gesagt.", es: "Lo dijiste mal.", tense: "Pretérito Indefinido" },
+                { de: "Ich sagte immer die Wahrheit.", es: "Siempre decía la verdad.", tense: "Pretérito Imperfecto" },
+                { de: "Du sagtest das.", es: "Tú decías eso.", tense: "Pretérito Imperfecto" },
+                { de: "Er sagte auf Wiedersehen.", es: "Él decía adiós.", tense: "Pretérito Imperfecto" },
+                { de: "Sie erzählte mir Geschichten.", es: "Ella me decía cuentos.", tense: "Pretérito Imperfecto" },
+                { de: "Wir sagten es.", es: "Lo decíamos.", tense: "Pretérito Imperfecto" },
+                { de: "Sie sagten es jeden Tag.", es: "Lo decían cada día.", tense: "Pretérito Imperfecto" },
+                { de: "Was sagtest du?", es: "¿Qué decías?", tense: "Pretérito Imperfecto" },
+                { de: "Ich sagte die Wahrheit.", es: "Decía la verdad.", tense: "Pretérito Imperfecto" },
+                { de: "Er sagte immer nein.", es: "Siempre decía que no.", tense: "Pretérito Imperfecto" },
+                { de: "Sie sagten es falsch.", es: "Lo decían mal.", tense: "Pretérito Imperfecto" },
+                { de: "Ich werde es morgen sagen.", es: "Lo diré mañana.", tense: "Futuro Simple" },
+                { de: "Du wirst die Wahrheit sagen.", es: "Dirás la verdad.", tense: "Futuro Simple" },
+                { de: "Er wird ja sagen.", es: "Dirá que sí.", tense: "Futuro Simple" },
+                { de: "Sie wird es dir später sagen.", es: "Te lo dirá más tarde.", tense: "Futuro Simple" },
+                { de: "Wir werden auf Wiedersehen sagen.", es: "Diremos adiós.", tense: "Futuro Simple" },
+                { de: "Sie werden es uns sagen.", es: "Nos lo dirán.", tense: "Futuro Simple" },
+                { de: "Was wirst du sagen?", es: "¿Qué dirás?", tense: "Futuro Simple" },
+                { de: "Ich werde nichts sagen.", es: "No diré nada.", tense: "Futuro Simple" },
+                { de: "Er wird die Geschichte erzählen.", es: "Dirá la historia.", tense: "Futuro Simple" },
+                { de: "Sie werden danke sagen.", es: "Dirán gracias.", tense: "Futuro Simple" },
+                { de: "Sag mir die Wahrheit.", es: "Dime la verdad.", tense: "Imperativo" },
+                { de: "Sag das nicht.", es: "No digas eso.", tense: "Imperativo" },
+                { de: "Sag mir mehr.", es: "Dime más.", tense: "Imperativo" },
+                { de: "Sag ihr hallo.", es: "Dile hola.", tense: "Imperativo" },
+                { de: "Sag es niemandem.", es: "No se lo digas a nadie.", tense: "Imperativo" },
+                { de: "Das heißt...", es: "Es decir...", tense: "Expresión" },
+                { de: "Man kann sagen.", es: "Se puede decir.", tense: "Expresión" },
+                { de: "Wie man sagt...", es: "Como se dice...", tense: "Expresión" },
+                { de: "Ich meine...", es: "Quiero decir...", tense: "Expresión" },
+                { de: "Wie sagt man das auf Spanisch?", es: "¿Cómo se dice en español?", tense: "Expresión" },
+                { de: "Was willst du damit sagen?", es: "¿Qué quieres decir?", tense: "Expresión" },
+                { de: "Man sagt, es wird regnen.", es: "Se dice que va a llover.", tense: "Expresión" },
+                { de: "Das muss nicht gesagt werden.", es: "No hace falta decir.", tense: "Expresión" },
+                { de: "Sagen wir...", es: "Digamos...", tense: "Expresión" },
+                { de: "Ich kann es nicht mit Sicherheit sagen.", es: "No puedo decir con seguridad.", tense: "Expresión" },
+                { de: "Ich würde ja sagen.", es: "Diría que sí.", tense: "Condicional" },
+                { de: "Du würdest die Wahrheit sagen.", es: "Dirías la verdad.", tense: "Condicional" },
+                { de: "Er würde nein sagen.", es: "Diría que no.", tense: "Condicional" },
+                { de: "Sie würde das nie sagen.", es: "Ella nunca diría eso.", tense: "Condicional" },
+                { de: "Wir würden es ihnen sagen.", es: "Se lo diríamos.", tense: "Condicional" },
+                { de: "Was würdest du sagen?", es: "¿Qué dirías?", tense: "Condicional" },
+                { de: "Ich habe es oft gesagt.", es: "Lo he dicho muchas veces.", tense: "Pretérito Perfecto" },
+                { de: "Du hast es mir schon gesagt.", es: "Me lo has dicho antes.", tense: "Pretérito Perfecto" },
+                { de: "Er hat das nie gesagt.", es: "Nunca ha dicho eso.", tense: "Pretérito Perfecto" },
+                { de: "Sie hat es ihm schon gesagt.", es: "Ya se lo ha dicho.", tense: "Pretérito Perfecto" },
+                { de: "Wir haben alles gesagt.", es: "Hemos dicho todo.", tense: "Pretérito Perfecto" },
+                { de: "Ich sage es dir jetzt.", es: "Te lo digo ahora.", tense: "Presente" },
+                { de: "Hör auf, das zu sagen.", es: "Deja de decir eso.", tense: "Imperativo" },
+                { de: "Sie sagt das immer wieder.", es: "Ella sigue diciendo eso.", tense: "Presente" },
+                { de: "Ohne ein Wort zu sagen.", es: "Sin decir una palabra.", tense: "Expresión" },
+                { de: "Sag ihm, dass ich hier bin.", es: "Dile que estoy aquí.", tense: "Imperativo" },
+                { de: "Habe ich etwas Falsches gesagt?", es: "¿Dije algo malo?", tense: "Pretérito Indefinido" },
+                { de: "Ich hätte nein sagen sollen.", es: "Debería haber dicho que no.", tense: "Condicional Perfecto" },
+                { de: "Sie werden es nie sagen.", es: "Nunca lo dirán.", tense: "Futuro Simple" },
+                { de: "Sag es nochmal, bitte.", es: "Dilo otra vez, por favor.", tense: "Imperativo" },
+                { de: "Ich habe dich es sagen hören.", es: "Te oí decirlo.", tense: "Pretérito Indefinido" },
+                { de: "Er sagte es mit einem Lächeln.", es: "Dijo con una sonrisa.", tense: "Pretérito Indefinido" },
+                { de: "Niemand hat gesagt, es wäre einfach.", es: "Nadie dijo que sería fácil.", tense: "Pretérito Indefinido" },
+                { de: "Sie sagt, dass sie dich liebt.", es: "Ella dice que te ama.", tense: "Presente" },
+                { de: "Ich werde niemals nie sagen.", es: "Nunca diré nunca.", tense: "Futuro Simple" },
+                { de: "Wie ich schon sagte...", es: "Como decía...", tense: "Pretérito Imperfecto" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

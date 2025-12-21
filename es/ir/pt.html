@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇪🇸 VERB IR — 95 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇪🇸 Verb IR</h1>
+            <p class="subtitle">to go — 95 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 95 de 95 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Prática de espanhol — IR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb IR</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Presente - verbo irregular, usado para ações atuais e atividades habituais</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">voy</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vas</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">va</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">van</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Pretérito Perfeito - ações completas no passado, formas irregulares</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">fui</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">fuiste</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">fue</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">fuimos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">fuisteis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">fueron</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Pretérito Imperfeito - ações contínuas ou habituais no passado</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">iba</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ibas</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">iba</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">íbamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ibais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">iban</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Futuro Simples - ações que acontecerão</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">iré</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">irás</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">irá</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">iremos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">iréis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">irán</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'es',
+            labels: { target: 'Español', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["voy","vas","va","vamos","vais","van","fui","iba","iré"],
+            phrases: [
+                { pt: "Eu vou ao trabalho todos os dias", es: "Voy al trabajo todos los días", tense: "Presente" },
+                { pt: "Tu vais à escola de autocarro", es: "Vas al colegio en autobús", tense: "Presente" },
+                { pt: "Ela vai ao ginásio de manhã", es: "Ella va al gimnasio por la mañana", tense: "Presente" },
+                { pt: "Nós vamos à praia aos fins de semana", es: "Vamos a la playa los fines de semana", tense: "Presente" },
+                { pt: "Eles vão às compras todos os sábados", es: "Ellos van de compras todos los sábados", tense: "Presente" },
+                { pt: "Eu vou estudar esta noite", es: "Voy a estudiar esta noche", tense: "Presente" },
+                { pt: "Tu vais amar este filme", es: "Vas a amar esta película", tense: "Presente" },
+                { pt: "Ele vai ligar-te mais tarde", es: "Él va a llamarte más tarde", tense: "Presente" },
+                { pt: "Nós vamos viajar para Espanha", es: "Vamos a viajar a España", tense: "Presente" },
+                { pt: "Eles vão comprar um carro novo", es: "Ellos van a comprar un coche nuevo", tense: "Presente" },
+                { pt: "Eu vou ao supermercado", es: "Voy al supermercado", tense: "Presente" },
+                { pt: "Para onde vais?", es: "¿Adónde vas?", tense: "Presente" },
+                { pt: "Ela vai a Paris muitas vezes", es: "Ella va a París a menudo", tense: "Presente" },
+                { pt: "Nós vamos de férias em julho", es: "Vamos de vacaciones en julio", tense: "Presente" },
+                { pt: "Vais de carro ou de comboio?", es: "¿Vas en coche o en tren?", tense: "Presente" },
+                { pt: "Eu vou ser médico", es: "Voy a ser médico", tense: "Presente" },
+                { pt: "Vai chover amanhã", es: "Va a llover mañana", tense: "Presente" },
+                { pt: "Nós vamos comer às oito", es: "Vamos a comer a las ocho", tense: "Presente" },
+                { pt: "Eles vão ganhar o jogo", es: "Ellos van a ganar el partido", tense: "Presente" },
+                { pt: "Eu vou à festa esta noite", es: "Voy a la fiesta esta noche", tense: "Presente" },
+                { pt: "Eu fui a Madrid ontem", es: "Fui a Madrid ayer", tense: "Pretérito Indefinido" },
+                { pt: "Tu foste ao concerto na semana passada", es: "Fuiste al concierto la semana pasada", tense: "Pretérito Indefinido" },
+                { pt: "Ele foi ao hospital", es: "Él fue al hospital", tense: "Pretérito Indefinido" },
+                { pt: "Nós fomos ao restaurante", es: "Fuimos al restaurante", tense: "Pretérito Indefinido" },
+                { pt: "Eles foram de férias em agosto", es: "Ellos fueron de vacaciones en agosto", tense: "Pretérito Indefinido" },
+                { pt: "Eu fui às compras esta manhã", es: "Fui de compras esta mañana", tense: "Pretérito Indefinido" },
+                { pt: "Foste à reunião?", es: "¿Fuiste a la reunión?", tense: "Pretérito Indefinido" },
+                { pt: "Ela foi a Londres no ano passado", es: "Ella fue a Londres el año pasado", tense: "Pretérito Indefinido" },
+                { pt: "Nós fomos ao cinema", es: "Fuimos al cine", tense: "Pretérito Indefinido" },
+                { pt: "Eles foram ao parque", es: "Ellos fueron al parque", tense: "Pretérito Indefinido" },
+                { pt: "Eu ia àquela escola", es: "Yo iba a ese colegio", tense: "Pretérito Imperfecto" },
+                { pt: "Tu ias todos os dias", es: "Tú ibas todos los días", tense: "Pretérito Imperfecto" },
+                { pt: "Ela ia de bicicleta", es: "Ella iba en bicicleta", tense: "Pretérito Imperfecto" },
+                { pt: "Nós íamos à praia", es: "Nosotros íbamos a la playa", tense: "Pretérito Imperfecto" },
+                { pt: "Eles iam para a estação", es: "Ellos iban a la estación", tense: "Pretérito Imperfecto" },
+                { pt: "Eu ia dizer-te", es: "Iba a decirte", tense: "Pretérito Imperfecto" },
+                { pt: "Para onde ias?", es: "¿Adónde ibas?", tense: "Pretérito Imperfecto" },
+                { pt: "Ele ia para o escritório", es: "Él iba a la oficina", tense: "Pretérito Imperfecto" },
+                { pt: "Nós íamos para casa", es: "Íbamos a casa", tense: "Pretérito Imperfecto" },
+                { pt: "Eles iam a pé", es: "Ellos iban a pie", tense: "Pretérito Imperfecto" },
+                { pt: "Eu irei amanhã", es: "Iré mañana", tense: "Futuro Simple" },
+                { pt: "Tu irás na próxima semana", es: "Irás la próxima semana", tense: "Futuro Simple" },
+                { pt: "Ela irá ao médico", es: "Ella irá al médico", tense: "Futuro Simple" },
+                { pt: "Nós iremos juntos", es: "Iremos juntos", tense: "Futuro Simple" },
+                { pt: "Eles irão de avião", es: "Ellos irán en avión", tense: "Futuro Simple" },
+                { pt: "Eu irei à universidade", es: "Iré a la universidad", tense: "Futuro Simple" },
+                { pt: "Irás comigo?", es: "¿Irás conmigo?", tense: "Futuro Simple" },
+                { pt: "Ele irá sozinho", es: "Él irá solo", tense: "Futuro Simple" },
+                { pt: "Nós iremos no próximo mês", es: "Iremos el próximo mes", tense: "Futuro Simple" },
+                { pt: "Eles irão ao Brasil", es: "Ellos irán a Brasil", tense: "Futuro Simple" },
+                { pt: "Eu vou-me embora agora", es: "Me voy ahora", tense: "Presente" },
+                { pt: "Já te vais embora?", es: "¿Ya te vas?", tense: "Presente" },
+                { pt: "Ele vai-se embora amanhã", es: "Él se va mañana", tense: "Presente" },
+                { pt: "Nós vamo-nos embora cedo", es: "Nos vamos temprano", tense: "Presente" },
+                { pt: "Eles vão-se embora do país", es: "Ellos se van del país", tense: "Presente" },
+                { pt: "Eu fui-me embora ao meio-dia", es: "Me fui al mediodía", tense: "Pretérito Indefinido" },
+                { pt: "Tu foste-te embora sem te despedires", es: "Te fuiste sin despedirte", tense: "Pretérito Indefinido" },
+                { pt: "Ela foi-se embora da empresa", es: "Ella se fue de la empresa", tense: "Pretérito Indefinido" },
+                { pt: "Nós fomos-nos embora da festa cedo", es: "Nos fuimos de la fiesta temprano", tense: "Pretérito Indefinido" },
+                { pt: "Eles foram-se embora com pressa", es: "Ellos se fueron con prisa", tense: "Pretérito Indefinido" },
+                { pt: "Eu vou ao escritório de metro", es: "Voy a la oficina en metro", tense: "Presente" },
+                { pt: "Tu vais muito rápido", es: "Vas muy rápido", tense: "Presente" },
+                { pt: "Tudo vai bem", es: "Todo va bien", tense: "Presente" },
+                { pt: "Nós vamos à igreja aos domingos", es: "Vamos a la iglesia los domingos", tense: "Presente" },
+                { pt: "Eles vão correr ao parque", es: "Ellos van a correr al parque", tense: "Presente" },
+                { pt: "Eu vou chegar atrasado", es: "Voy a llegar tarde", tense: "Presente" },
+                { pt: "Tu vais precisar de ajuda", es: "Vas a necesitar ayuda", tense: "Presente" },
+                { pt: "Vai ser difícil", es: "Va a ser difícil", tense: "Presente" },
+                { pt: "Nós vamos celebrar", es: "Vamos a celebrar", tense: "Presente" },
+                { pt: "Eles vão mudar de casa", es: "Ellos van a mudarse de casa", tense: "Presente" },
+                { pt: "Eu fui de táxi", es: "Fui en taxi", tense: "Pretérito Indefinido" },
+                { pt: "Tu foste longe demais", es: "Fuiste demasiado lejos", tense: "Pretérito Indefinido" },
+                { pt: "Ele foi ver a família", es: "Él fue a ver a su familia", tense: "Pretérito Indefinido" },
+                { pt: "Nós fomos dar um passeio", es: "Fuimos a dar un paseo", tense: "Pretérito Indefinido" },
+                { pt: "Eles foram ao museu", es: "Ellos fueron al museo", tense: "Pretérito Indefinido" },
+                { pt: "Eu fui às compras ao centro", es: "Fui de compras al centro", tense: "Pretérito Indefinido" },
+                { pt: "Tu foste ao lugar errado", es: "Fuiste al lugar equivocado", tense: "Pretérito Indefinido" },
+                { pt: "Ela foi de viagem", es: "Ella fue de viaje", tense: "Pretérito Indefinido" },
+                { pt: "Nós fomos ao teatro", es: "Fuimos al teatro", tense: "Pretérito Indefinido" },
+                { pt: "Eles foram a um casamento", es: "Ellos fueron a una boda", tense: "Pretérito Indefinido" },
+                { pt: "Eu ia lá todos os verões", es: "Yo iba allí todos los veranos", tense: "Pretérito Imperfecto" },
+                { pt: "Tu ias na direção errada", es: "Tú ibas en la dirección equivocada", tense: "Pretérito Imperfecto" },
+                { pt: "Ela ia para a biblioteca", es: "Ella iba a la biblioteca", tense: "Pretérito Imperfecto" },
+                { pt: "Nós íamos para o centro", es: "Nosotros íbamos al centro", tense: "Pretérito Imperfecto" },
+                { pt: "Eles iam muito devagar", es: "Ellos iban muy despacio", tense: "Pretérito Imperfecto" },
+                { pt: "Eu irei se vieres comigo", es: "Iré si vienes conmigo", tense: "Futuro Simple" },
+                { pt: "Tu irás longe na vida", es: "Irás muy lejos en la vida", tense: "Futuro Simple" },
+                { pt: "Ele irá à conferência", es: "Él irá a la conferencia", tense: "Futuro Simple" },
+                { pt: "Nós iremos quando parar de chover", es: "Iremos cuando pare de llover", tense: "Futuro Simple" },
+                { pt: "Eles irão de férias", es: "Ellos irán de vacaciones", tense: "Futuro Simple" },
+                { pt: "Eu vou ao dentista duas vezes por ano", es: "Voy al dentista dos veces al año", tense: "Presente" },
+                { pt: "Como te vão as coisas?", es: "¿Cómo te van las cosas?", tense: "Presente" },
+                { pt: "Isto não vai aqui", es: "Esto no va aquí", tense: "Presente" },
+                { pt: "Vamos ao cinema", es: "Vamos al cine", tense: "Presente" },
+                { pt: "Eles vão fazer uma caminhada todos os meses", es: "Ellos van de excursión cada mes", tense: "Presente" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

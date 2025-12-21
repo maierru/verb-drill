@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇪🇸 VERB DEBER — 95 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇪🇸 Verb DEBER</h1>
+            <p class="subtitle">must, should — 95 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 95 de 95 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Prática de espanhol — DEBER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb DEBER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Presente - obrigação, dever, probabilidade, recomendação no presente</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>debo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>debes</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>debe</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>debemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>debéis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>deben</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Pretérito perfeito simples - obrigação ou dívida no passado</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>debí</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>debiste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>debió</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>debimos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>debisteis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>debieron</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Pretérito imperfeito - obrigação contínua ou dever habitual no passado</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>debía</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>debías</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>debía</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>debíamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>debíais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>debían</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Futuro simples - obrigação ou dever no futuro</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>deberé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>deberás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>deberá</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>deberemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>deberéis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>deberán</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'es',
+            labels: { target: 'Español', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["debo","debes","debe","debemos","debéis","deben","debí","debiste","debió","debimos","debisteis","debieron","debía","debías","debíamos","debíais","debían","deberé","deberás","deberá","deberemos","deberéis","deberán"],
+            phrases: [
+                { pt: "Devo estudar para o exame.", es: "Debo estudiar para el examen.", tense: "Presente" },
+                { pt: "Deves comer mais legumes.", es: "Debes comer más verduras.", tense: "Presente" },
+                { pt: "Ela deve chegar a tempo.", es: "Ella debe llegar a tiempo.", tense: "Presente" },
+                { pt: "Devemos terminar o projeto.", es: "Debemos terminar el proyecto.", tense: "Presente" },
+                { pt: "Devem-me dinheiro.", es: "Me deben dinero.", tense: "Presente" },
+                { pt: "Deveis ter cuidado.", es: "Debéis tener cuidado.", tense: "Presente" },
+                { pt: "Devo ligar para a minha mãe.", es: "Debo llamar a mi madre.", tense: "Presente" },
+                { pt: "Deves respeitar as regras.", es: "Debes respetar las reglas.", tense: "Presente" },
+                { pt: "Deve estar em casa.", es: "Debe estar en casa.", tense: "Presente" },
+                { pt: "Devemos-lhes um pedido de desculpas.", es: "Les debemos una disculpa.", tense: "Presente" },
+                { pt: "Devem trabalhar mais.", es: "Deben trabajar más duro.", tense: "Presente" },
+                { pt: "Devo pagar as contas.", es: "Debo pagar las facturas.", tense: "Presente" },
+                { pt: "Deves descansar mais.", es: "Debes descansar más.", tense: "Presente" },
+                { pt: "Ela deve dinheiro ao banco.", es: "Ella debe dinero al banco.", tense: "Presente" },
+                { pt: "Devemos ser honestos.", es: "Debemos ser honestos.", tense: "Presente" },
+                { pt: "Deveis ouvir.", es: "Debéis escuchar.", tense: "Presente" },
+                { pt: "Devem entender isto.", es: "Deben entender esto.", tense: "Presente" },
+                { pt: "Devo fazer exercício diariamente.", es: "Debo hacer ejercicio diariamente.", tense: "Presente" },
+                { pt: "Deves dizer a verdade.", es: "Debes decir la verdad.", tense: "Presente" },
+                { pt: "Deve pedir ajuda.", es: "Debe pedir ayuda.", tense: "Presente" },
+                { pt: "Devemos proteger o meio ambiente.", es: "Debemos proteger el medio ambiente.", tense: "Presente" },
+                { pt: "Devem impostos.", es: "Deben impuestos.", tense: "Presente" },
+                { pt: "Devo melhorar as minhas habilidades.", es: "Debo mejorar mis habilidades.", tense: "Presente" },
+                { pt: "Deves ser paciente.", es: "Debes ser paciente.", tense: "Presente" },
+                { pt: "Deve estar cansada.", es: "Debe estar cansada.", tense: "Presente" },
+                { pt: "Devi sair cedo.", es: "Debí salir temprano.", tense: "Pretérito Indefinido" },
+                { pt: "Deveste-lhe dinheiro.", es: "Le debiste dinero.", tense: "Pretérito Indefinido" },
+                { pt: "Ela deveu trabalhar ontem.", es: "Ella debió trabajar ayer.", tense: "Pretérito Indefinido" },
+                { pt: "Devemos cancelar a viagem.", es: "Debimos cancelar el viaje.", tense: "Pretérito Indefinido" },
+                { pt: "Deveram muito dinheiro.", es: "Debieron mucho dinero.", tense: "Pretérito Indefinido" },
+                { pt: "Devestes esperar.", es: "Debisteis esperar.", tense: "Pretérito Indefinido" },
+                { pt: "Devi desculpar-me.", es: "Debí disculparme.", tense: "Pretérito Indefinido" },
+                { pt: "Deveste estudar mais.", es: "Debiste estudiar más.", tense: "Pretérito Indefinido" },
+                { pt: "Deveu-me um favor.", es: "Me debió un favor.", tense: "Pretérito Indefinido" },
+                { pt: "Devemos aceitar.", es: "Debimos aceptarlo.", tense: "Pretérito Indefinido" },
+                { pt: "Deveram renunciar.", es: "Debieron renunciar.", tense: "Pretérito Indefinido" },
+                { pt: "Devi escolher.", es: "Debí elegir.", tense: "Pretérito Indefinido" },
+                { pt: "Deveste uma explicação.", es: "Debiste una explicación.", tense: "Pretérito Indefinido" },
+                { pt: "Ela deveu decidir rapidamente.", es: "Ella debió decidir rápido.", tense: "Pretérito Indefinido" },
+                { pt: "Devemos resolver o problema.", es: "Debimos resolver el problema.", tense: "Pretérito Indefinido" },
+                { pt: "Devestes participar.", es: "Debisteis participar.", tense: "Pretérito Indefinido" },
+                { pt: "Deveram pagar imediatamente.", es: "Debieron pagar inmediatamente.", tense: "Pretérito Indefinido" },
+                { pt: "Devi confessar.", es: "Debí confesar.", tense: "Pretérito Indefinido" },
+                { pt: "Deveste estar lá.", es: "Debiste estar allí.", tense: "Pretérito Indefinido" },
+                { pt: "Deveu responder.", es: "Debió responder.", tense: "Pretérito Indefinido" },
+                { pt: "Devemos cooperar.", es: "Debimos cooperar.", tense: "Pretérito Indefinido" },
+                { pt: "Deveram gratidão.", es: "Debieron gratitud.", tense: "Pretérito Indefinido" },
+                { pt: "Devia reportar diariamente.", es: "Debía reportar diariamente.", tense: "Pretérito Imperfecto" },
+                { pt: "Devias saber melhor.", es: "Debías saberlo mejor.", tense: "Pretérito Imperfecto" },
+                { pt: "Ela devia trabalhar aos fins de semana.", es: "Ella debía trabajar los fines de semana.", tense: "Pretérito Imperfecto" },
+                { pt: "Devíamos a renda todos os meses.", es: "Debíamos la renta cada mes.", tense: "Pretérito Imperfecto" },
+                { pt: "Deviam assistir a reuniões.", es: "Debían asistir a reuniones.", tense: "Pretérito Imperfecto" },
+                { pt: "Devíeis ouvir.", es: "Debíais escuchar.", tense: "Pretérito Imperfecto" },
+                { pt: "Devia acordar cedo.", es: "Debía despertarme temprano.", tense: "Pretérito Imperfecto" },
+                { pt: "Devias lealdade.", es: "Debías lealtad.", tense: "Pretérito Imperfecto" },
+                { pt: "Devia viajar frequentemente.", es: "Debía viajar a menudo.", tense: "Pretérito Imperfecto" },
+                { pt: "Devíamos preparar-nos.", es: "Debíamos prepararnos.", tense: "Pretérito Imperfecto" },
+                { pt: "Deviam respeito.", es: "Debían respeto.", tense: "Pretérito Imperfecto" },
+                { pt: "Devia praticar diariamente.", es: "Debía practicar diariamente.", tense: "Pretérito Imperfecto" },
+                { pt: "Devias estar lá.", es: "Debías estar allí.", tense: "Pretérito Imperfecto" },
+                { pt: "Ela devia estudar constantemente.", es: "Ella debía estudiar constantemente.", tense: "Pretérito Imperfecto" },
+                { pt: "Devíamos uma resposta.", es: "Debíamos una respuesta.", tense: "Pretérito Imperfecto" },
+                { pt: "Devíeis ser pontuais.", es: "Debíais ser puntuales.", tense: "Pretérito Imperfecto" },
+                { pt: "Deviam entender.", es: "Debían entender.", tense: "Pretérito Imperfecto" },
+                { pt: "Devia obedecer às regras.", es: "Debía obedecer las reglas.", tense: "Pretérito Imperfecto" },
+                { pt: "Devias dedicação.", es: "Debías dedicación.", tense: "Pretérito Imperfecto" },
+                { pt: "Devia ser responsável.", es: "Debía ser responsable.", tense: "Pretérito Imperfecto" },
+                { pt: "Devíamos agir.", es: "Debíamos actuar.", tense: "Pretérito Imperfecto" },
+                { pt: "Deviam adaptar-se.", es: "Debían adaptarse.", tense: "Pretérito Imperfecto" },
+                { pt: "Deverei trabalhar amanhã.", es: "Deberé trabajar mañana.", tense: "Futuro Simple" },
+                { pt: "Deverás uma explicação.", es: "Deberás una explicación.", tense: "Futuro Simple" },
+                { pt: "Ela deverá decidir.", es: "Ella deberá decidir.", tense: "Futuro Simple" },
+                { pt: "Deveremos mudar-nos.", es: "Deberemos mudarnos.", tense: "Futuro Simple" },
+                { pt: "Deverão impostos.", es: "Deberán impuestos.", tense: "Futuro Simple" },
+                { pt: "Devereis escolher.", es: "Deberéis elegir.", tense: "Futuro Simple" },
+                { pt: "Deverei viajar.", es: "Deberé viajar.", tense: "Futuro Simple" },
+                { pt: "Dever-me-ás.", es: "Me deberás.", tense: "Futuro Simple" },
+                { pt: "Deverá renunciar.", es: "Deberá renunciar.", tense: "Futuro Simple" },
+                { pt: "Deveremos negociar.", es: "Deberemos negociar.", tense: "Futuro Simple" },
+                { pt: "Deverão pagar.", es: "Deberán pagar.", tense: "Futuro Simple" },
+                { pt: "Deverei preparar-me.", es: "Deberé prepararme.", tense: "Futuro Simple" },
+                { pt: "Deverás gratidão.", es: "Deberás gratitud.", tense: "Futuro Simple" },
+                { pt: "Ela deverá estudar.", es: "Ella deberá estudiar.", tense: "Futuro Simple" },
+                { pt: "Deveremos esperar.", es: "Deberemos esperar.", tense: "Futuro Simple" },
+                { pt: "Devereis ajudar.", es: "Deberéis ayudar.", tense: "Futuro Simple" },
+                { pt: "Deverão respeito.", es: "Deberán respeto.", tense: "Futuro Simple" },
+                { pt: "Deverei aceitar.", es: "Deberé aceptar.", tense: "Futuro Simple" },
+                { pt: "Deverás aprender.", es: "Deberás aprender.", tense: "Futuro Simple" },
+                { pt: "Deverá dinheiro.", es: "Deberá dinero.", tense: "Futuro Simple" },
+                { pt: "Deveremos adaptar-nos.", es: "Deberemos adaptarnos.", tense: "Futuro Simple" },
+                { pt: "Deverão mudar.", es: "Deberán cambiar.", tense: "Futuro Simple" },
+                { pt: "Devemos ser responsáveis.", es: "Debemos ser responsables.", tense: "Presente" },
+                { pt: "Devo ir-me agora.", es: "Debo irme ahora.", tense: "Presente" },
+                { pt: "Deves entender.", es: "Debes entender.", tense: "Presente" },
+                { pt: "Deve estar doente.", es: "Debe estar enfermo.", tense: "Presente" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇪🇸 VERB DAR — 105 Phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Back to verb list</a>
+            <h1>🇪🇸 Verb DAR</h1>
+            <p class="subtitle">to give — 105 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Show all translations</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
+        </div>
+
+        <div class="stats" id="stats">Showing: 105 of 105 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Spanish Practice — DAR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb DAR</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Present tense - actions happening now or habitual actions</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo doy</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú das</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted da</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros damos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros dais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes dan</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Simple past - completed actions in the past</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo di</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú diste</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted dio</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros dimos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros disteis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes dieron</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Imperfect past - ongoing or habitual past actions</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo daba</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú dabas</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted daba</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros dábamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros dabais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes daban</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Simple future - actions that will happen</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo daré</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú darás</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted dará</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros daremos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros daréis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes darán</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'en',
+            targetKey: 'es',
+            labels: { target: 'Spanish', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["doy","das","da","damos","dais","dan","di","dio","daba","daré"],
+            phrases: [
+                { en: "I give you my word", es: "Te doy mi palabra", tense: "Presente" },
+                { en: "She gives me a present", es: "Ella me da un regalo", tense: "Presente" },
+                { en: "They give classes every day", es: "Dan clases todos los días", tense: "Presente" },
+                { en: "I give thanks for everything", es: "Doy gracias por todo", tense: "Presente" },
+                { en: "He gives me good advice", es: "Él me da buenos consejos", tense: "Presente" },
+                { en: "We give our support", es: "Damos nuestro apoyo", tense: "Presente" },
+                { en: "I realize the problem", es: "Me doy cuenta del problema", tense: "Presente" },
+                { en: "You give me hope", es: "Me das esperanza", tense: "Presente" },
+                { en: "They give concerts on weekends", es: "Dan conciertos los fines de semana", tense: "Presente" },
+                { en: "She gives private lessons", es: "Ella da clases particulares", tense: "Presente" },
+                { en: "I give permission to leave", es: "Doy permiso para salir", tense: "Presente" },
+                { en: "He gives me the keys", es: "Él me da las llaves", tense: "Presente" },
+                { en: "We give money to charity", es: "Damos dinero a la caridad", tense: "Presente" },
+                { en: "I don't care what they say", es: "Me da igual lo que digan", tense: "Presente" },
+                { en: "You give too many excuses", es: "Das demasiadas excusas", tense: "Presente" },
+                { en: "They give out free samples", es: "Dan muestras gratis", tense: "Presente" },
+                { en: "She gives me a kiss goodbye", es: "Ella me da un beso de despedida", tense: "Presente" },
+                { en: "I give my opinion honestly", es: "Doy mi opinión honestamente", tense: "Presente" },
+                { en: "He gives presentations at work", es: "Él da presentaciones en el trabajo", tense: "Presente" },
+                { en: "We take a walk in the park", es: "Damos un paseo por el parque", tense: "Presente" },
+                { en: "I gave him the book yesterday", es: "Le di el libro ayer", tense: "Pretérito Indefinido" },
+                { en: "She gave an excellent speech", es: "Ella dio un discurso excelente", tense: "Pretérito Indefinido" },
+                { en: "They gave us their answer", es: "Nos dieron su respuesta", tense: "Pretérito Indefinido" },
+                { en: "I gave up my seat for her", es: "Le di mi asiento", tense: "Pretérito Indefinido" },
+                { en: "You gave me good news", es: "Me diste buenas noticias", tense: "Pretérito Indefinido" },
+                { en: "He gave a party last night", es: "Él dio una fiesta anoche", tense: "Pretérito Indefinido" },
+                { en: "We gave our best effort", es: "Dimos nuestro mejor esfuerzo", tense: "Pretérito Indefinido" },
+                { en: "I realized what happened", es: "Me di cuenta de lo que pasó", tense: "Pretérito Indefinido" },
+                { en: "She gave birth to twins", es: "Ella dio a luz gemelos", tense: "Pretérito Indefinido" },
+                { en: "They gave permission to proceed", es: "Dieron permiso para proceder", tense: "Pretérito Indefinido" },
+                { en: "I gave thanks at dinner", es: "Di gracias en la cena", tense: "Pretérito Indefinido" },
+                { en: "You gave the wrong address", es: "Diste la dirección equivocada", tense: "Pretérito Indefinido" },
+                { en: "He gave me his phone number", es: "Él me dio su número de teléfono", tense: "Pretérito Indefinido" },
+                { en: "We gave them a warm welcome", es: "Les dimos una cálida bienvenida", tense: "Pretérito Indefinido" },
+                { en: "I gave her flowers", es: "Le di flores", tense: "Pretérito Indefinido" },
+                { en: "She gave me a hug", es: "Ella me dio un abrazo", tense: "Pretérito Indefinido" },
+                { en: "They gave a great performance", es: "Dieron una gran actuación", tense: "Pretérito Indefinido" },
+                { en: "I gave blood at the hospital", es: "Di sangre en el hospital", tense: "Pretérito Indefinido" },
+                { en: "You gave your consent", es: "Diste tu consentimiento", tense: "Pretérito Indefinido" },
+                { en: "He gave me directions", es: "Él me dio indicaciones", tense: "Pretérito Indefinido" },
+                { en: "I used to give advice to everyone", es: "Daba consejos a todos", tense: "Pretérito Imperfecto" },
+                { en: "She used to teach math", es: "Ella daba clases de matemáticas", tense: "Pretérito Imperfecto" },
+                { en: "They used to give money to beggars", es: "Daban dinero a los mendigos", tense: "Pretérito Imperfecto" },
+                { en: "I used to take walks daily", es: "Daba paseos diariamente", tense: "Pretérito Imperfecto" },
+                { en: "You always gave me problems", es: "Siempre me dabas problemas", tense: "Pretérito Imperfecto" },
+                { en: "He used to give concerts here", es: "Él daba conciertos aquí", tense: "Pretérito Imperfecto" },
+                { en: "We used to give parties every month", es: "Dábamos fiestas cada mes", tense: "Pretérito Imperfecto" },
+                { en: "I didn't care about that before", es: "Antes eso me daba igual", tense: "Pretérito Imperfecto" },
+                { en: "She used to give me gifts", es: "Ella me daba regalos", tense: "Pretérito Imperfecto" },
+                { en: "They used to give exams on Fridays", es: "Daban exámenes los viernes", tense: "Pretérito Imperfecto" },
+                { en: "I will give you the answer tomorrow", es: "Te daré la respuesta mañana", tense: "Futuro Simple" },
+                { en: "She will give a presentation", es: "Ella dará una presentación", tense: "Futuro Simple" },
+                { en: "They will give us instructions", es: "Nos darán instrucciones", tense: "Futuro Simple" },
+                { en: "I will give my best", es: "Daré lo mejor de mí", tense: "Futuro Simple" },
+                { en: "You will give me your opinion", es: "Me darás tu opinión", tense: "Futuro Simple" },
+                { en: "He will give a lecture", es: "Él dará una conferencia", tense: "Futuro Simple" },
+                { en: "We will give them our support", es: "Les daremos nuestro apoyo", tense: "Futuro Simple" },
+                { en: "I will realize later", es: "Me daré cuenta más tarde", tense: "Futuro Simple" },
+                { en: "She will give birth in March", es: "Ella dará a luz en marzo", tense: "Futuro Simple" },
+                { en: "They will give prizes", es: "Darán premios", tense: "Futuro Simple" },
+                { en: "The sun gives light and heat", es: "El sol da luz y calor", tense: "Presente" },
+                { en: "This tree gives fruit in summer", es: "Este árbol da frutos en verano", tense: "Presente" },
+                { en: "I give you my blessing", es: "Te doy mi bendición", tense: "Presente" },
+                { en: "She gives guitar lessons", es: "Ella da clases de guitarra", tense: "Presente" },
+                { en: "They give interviews to the press", es: "Dan entrevistas a la prensa", tense: "Presente" },
+                { en: "I give him the benefit of the doubt", es: "Le doy el beneficio de la duda", tense: "Presente" },
+                { en: "The clock strikes twelve", es: "El reloj da las doce", tense: "Presente" },
+                { en: "You give me chills", es: "Me das escalofríos", tense: "Presente" },
+                { en: "He gives his approval", es: "Él da su aprobación", tense: "Presente" },
+                { en: "We give our word of honor", es: "Damos nuestra palabra de honor", tense: "Presente" },
+                { en: "I turn on the light", es: "Doy la luz", tense: "Presente" },
+                { en: "She gives a good impression", es: "Ella da buena impresión", tense: "Presente" },
+                { en: "They give the alarm", es: "Dan la alarma", tense: "Presente" },
+                { en: "I congratulate you", es: "Te doy la enhorabuena", tense: "Presente" },
+                { en: "You give me your hand", es: "Me das la mano", tense: "Presente" },
+                { en: "He gives signs of life", es: "Él da señales de vida", tense: "Presente" },
+                { en: "We shout with joy", es: "Damos gritos de alegría", tense: "Presente" },
+                { en: "I give you my condolences", es: "Te doy el pésame", tense: "Presente" },
+                { en: "She gives me butterflies", es: "Me da mariposas", tense: "Presente" },
+                { en: "They give priority to customers", es: "Dan prioridad a los clientes", tense: "Presente" },
+                { en: "I gave a jump from fright", es: "Di un salto del susto", tense: "Pretérito Indefinido" },
+                { en: "You gave the final blow", es: "Diste el golpe final", tense: "Pretérito Indefinido" },
+                { en: "He gave his resignation", es: "Él dio su renuncia", tense: "Pretérito Indefinido" },
+                { en: "We gave a round of applause", es: "Dimos un aplauso", tense: "Pretérito Indefinido" },
+                { en: "I gave my arm", es: "Di el brazo", tense: "Pretérito Indefinido" },
+                { en: "She gave a scream", es: "Ella dio un grito", tense: "Pretérito Indefinido" },
+                { en: "They gave the green light", es: "Dieron luz verde", tense: "Pretérito Indefinido" },
+                { en: "I gave a turn around the block", es: "Di una vuelta a la manzana", tense: "Pretérito Indefinido" },
+                { en: "You gave the order", es: "Diste la orden", tense: "Pretérito Indefinido" },
+                { en: "He gave me goosebumps", es: "Me dio piel de gallina", tense: "Pretérito Indefinido" },
+                { en: "The window faces the street", es: "La ventana da a la calle", tense: "Presente" },
+                { en: "My room faces the garden", es: "Mi habitación da al jardín", tense: "Presente" },
+                { en: "This door leads to the patio", es: "Esta puerta da al patio", tense: "Presente" },
+                { en: "I feed the animals", es: "Doy de comer a los animales", tense: "Presente" },
+                { en: "She nurses the baby", es: "Ella da de mamar al bebé", tense: "Presente" },
+                { en: "I consider the matter closed", es: "Doy el asunto por cerrado", tense: "Presente" },
+                { en: "They make me laugh", es: "Me dan risa", tense: "Presente" },
+                { en: "You make me ashamed", es: "Me das vergüenza", tense: "Presente" },
+                { en: "It makes me sad", es: "Me da tristeza", tense: "Presente" },
+                { en: "He makes me angry", es: "Me da rabia", tense: "Presente" },
+                { en: "They make me envious", es: "Me dan envidia", tense: "Presente" },
+                { en: "I will give you a ride", es: "Te daré un aventón", tense: "Futuro Simple" },
+                { en: "She will give her testimony", es: "Ella dará su testimonio", tense: "Futuro Simple" },
+                { en: "They will give a discount", es: "Darán un descuento", tense: "Futuro Simple" },
+                { en: "I will give you credit", es: "Te daré crédito", tense: "Futuro Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

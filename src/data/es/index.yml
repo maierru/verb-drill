@@ -1,0 +1,64 @@
+title: "Spanish — Verb Drill"
+h1: "🇪🇸 Spanish"
+subtitle: "Select a verb to practice"
+verbs:
+  - name: ser
+    meaning: to be (permanent)
+    slug: ser
+  - name: estar
+    meaning: to be (temporary)
+    slug: estar
+  - name: haber
+    meaning: to have (auxiliary)
+    slug: haber
+  - name: tener
+    meaning: to have
+    slug: tener
+  - name: hacer
+    meaning: to do, to make
+    slug: hacer
+  - name: ir
+    meaning: to go
+    slug: ir
+  - name: poder
+    meaning: can, to be able to
+    slug: poder
+  - name: decir
+    meaning: to say, to tell
+    slug: decir
+  - name: dar
+    meaning: to give
+    slug: dar
+  - name: saber
+    meaning: to know (facts)
+    slug: saber
+  - name: querer
+    meaning: to want
+    slug: querer
+  - name: ver
+    meaning: to see
+    slug: ver
+  - name: poner
+    meaning: to put
+    slug: poner
+  - name: deber
+    meaning: must, should
+    slug: deber
+  - name: venir
+    meaning: to come
+    slug: venir
+  - name: seguir
+    meaning: to follow, to continue
+    slug: seguir
+  - name: hablar
+    meaning: to speak
+    slug: hablar
+  - name: llevar
+    meaning: to carry, to wear
+    slug: llevar
+  - name: encontrar
+    meaning: to find
+    slug: encontrar
+  - name: quedar
+    meaning: to stay
+    slug: quedar

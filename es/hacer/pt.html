@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇪🇸 VERB HACER — 97 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇪🇸 Verb HACER</h1>
+            <p class="subtitle">to do, to make — 97 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 97 de 97 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Prática de espanhol — HACER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb HACER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Presente - ações que acontecem agora ou ações habituais</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo hago</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú haces</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted hace</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros hacemos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros hacéis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes hacen</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Pretérito Perfeito - ações completas no passado</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo hice</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú hiciste</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted hizo</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros hicimos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros hicisteis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes hicieron</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Pretérito Imperfeito - ações contínuas ou habituais no passado</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo hacía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú hacías</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted hacía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros hacíamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros hacíais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes hacían</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Futuro - ações que vão acontecer</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo haré</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú harás</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted hará</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros haremos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros haréis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes harán</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'es',
+            labels: { target: 'Español', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["hago","haces","hace","hacemos","hacéis","hacen","hice","hizo","haré","haría"],
+            phrases: [
+                { pt: "O que estás a fazer?", es: "¿Qué haces?", tense: "Presente" },
+                { pt: "Faço os meus trabalhos de casa", es: "Hago mi tarea", tense: "Presente" },
+                { pt: "Está frio lá fora", es: "Hace frío afuera", tense: "Presente" },
+                { pt: "Está calor hoje", es: "Hace calor hoy", tense: "Presente" },
+                { pt: "Precisamos de leite", es: "Nos hace falta leche", tense: "Presente" },
+                { pt: "Ela faz o jantar todas as noites", es: "Ella hace la cena cada noche", tense: "Presente" },
+                { pt: "Cometi um erro", es: "Hice un error", tense: "Pretérito Indefinido" },
+                { pt: "Fizeram o melhor que puderam", es: "Hicieron lo mejor que pudieron", tense: "Pretérito Indefinido" },
+                { pt: "O que fizeste ontem?", es: "¿Qué hiciste ayer?", tense: "Pretérito Indefinido" },
+                { pt: "Ele fez um bolo", es: "Él hizo un pastel", tense: "Pretérito Indefinido" },
+                { pt: "Fazia exercício todas as manhãs", es: "Hacía ejercicio cada mañana", tense: "Pretérito Imperfecto" },
+                { pt: "Estava sempre sol", es: "Siempre hacía sol", tense: "Pretérito Imperfecto" },
+                { pt: "Vamos fazê-lo amanhã", es: "Lo haremos mañana", tense: "Futuro Simple" },
+                { pt: "Vou tomar uma decisão", es: "Haré una decisión", tense: "Futuro Simple" },
+                { pt: "Precisas de descansar", es: "Te hace falta descansar", tense: "Presente" },
+                { pt: "Estou a fazer a roupa", es: "Hago la ropa", tense: "Presente" },
+                { pt: "Ele faz as compras aos sábados", es: "Él hace las compras los sábados", tense: "Presente" },
+                { pt: "Fizemos um plano", es: "Hicimos un plan", tense: "Pretérito Indefinido" },
+                { pt: "Está vento", es: "Hace viento", tense: "Presente" },
+                { pt: "Está bom tempo", es: "Hace buen tiempo", tense: "Presente" },
+                { pt: "Ela fez amigos rapidamente", es: "Ella hizo amigos rápidamente", tense: "Pretérito Indefinido" },
+                { pt: "O que fazes de trabalho?", es: "¿Qué haces de trabajo?", tense: "Presente" },
+                { pt: "Faço yoga", es: "Hago yoga", tense: "Presente" },
+                { pt: "Fazem barulho", es: "Hacen ruido", tense: "Presente" },
+                { pt: "Estava muito frio", es: "Hacía mucho frío", tense: "Pretérito Imperfecto" },
+                { pt: "Vais causar uma grande impressão", es: "Harás una gran impresión", tense: "Futuro Simple" },
+                { pt: "Estou a fazer café", es: "Hago café", tense: "Presente" },
+                { pt: "Ele fez uma promessa", es: "Él hizo una promesa", tense: "Pretérito Indefinido" },
+                { pt: "Fazíamos o jantar juntos", es: "Hacíamos la cena juntos", tense: "Pretérito Imperfecto" },
+                { pt: "Vão fazer o projeto", es: "Harán el proyecto", tense: "Futuro Simple" },
+                { pt: "Preciso de mais tempo", es: "Me hace falta más tiempo", tense: "Presente" },
+                { pt: "Há dois anos", es: "Hace dos años", tense: "Presente" },
+                { pt: "Ela faz bem o seu trabalho", es: "Ella hace bien su trabajo", tense: "Presente" },
+                { pt: "Fiz uma reserva", es: "Hice una reserva", tense: "Pretérito Indefinido" },
+                { pt: "O que estás a fazer?", es: "¿Qué haces?", tense: "Presente" },
+                { pt: "Ele faz muito dinheiro", es: "Él hace mucho dinero", tense: "Presente" },
+                { pt: "Fizemos tudo o possível", es: "Hicimos todo lo posible", tense: "Pretérito Indefinido" },
+                { pt: "Está mau tempo", es: "Hace mal tiempo", tense: "Presente" },
+                { pt: "Fazia desportos", es: "Hacía deportes", tense: "Pretérito Imperfecto" },
+                { pt: "Vão fazer história", es: "Harán historia", tense: "Futuro Simple" },
+                { pt: "Fazes-me feliz", es: "Me haces feliz", tense: "Presente" },
+                { pt: "Estou a fazer bem", es: "Lo hago bien", tense: "Presente" },
+                { pt: "Ela fez um esforço", es: "Ella hizo un esfuerzo", tense: "Pretérito Indefinido" },
+                { pt: "Estava calor ontem", es: "Hacía calor ayer", tense: "Pretérito Imperfecto" },
+                { pt: "Vamos torná-lo realidade", es: "Lo haremos realidad", tense: "Futuro Simple" },
+                { pt: "Preciso de ajuda", es: "Me hace falta ayuda", tense: "Presente" },
+                { pt: "Ele está a fazer os pratos", es: "Él hace los platos", tense: "Presente" },
+                { pt: "Fizeram um vídeo", es: "Hicieron un video", tense: "Pretérito Indefinido" },
+                { pt: "O que ela fez?", es: "¿Qué hizo ella?", tense: "Pretérito Indefinido" },
+                { pt: "Faço o meu melhor esforço", es: "Hago mi mejor esfuerzo", tense: "Presente" },
+                { pt: "Está sol", es: "Hace sol", tense: "Presente" },
+                { pt: "Fizeste uma boa escolha", es: "Hiciste una buena elección", tense: "Pretérito Indefinido" },
+                { pt: "Ela fazia pão", es: "Ella hacía pan", tense: "Pretérito Imperfecto" },
+                { pt: "Vamos cumprir o nosso dever", es: "Haremos nuestro deber", tense: "Futuro Simple" },
+                { pt: "Estou a fazer o almoço", es: "Hago el almuerzo", tense: "Presente" },
+                { pt: "Ele faz truques de magia", es: "Él hace trucos de magia", tense: "Presente" },
+                { pt: "Fizeram um filme", es: "Hicieron una película", tense: "Pretérito Indefinido" },
+                { pt: "Está nevoeiro", es: "Hace niebla", tense: "Presente" },
+                { pt: "Fazia brinquedos", es: "Hacía juguetes", tense: "Pretérito Imperfecto" },
+                { pt: "Vais fazer bem", es: "Lo harás bien", tense: "Futuro Simple" },
+                { pt: "Precisamos de dinheiro", es: "Nos hace falta dinero", tense: "Presente" },
+                { pt: "Ela faz joias", es: "Ella hace joyería", tense: "Presente" },
+                { pt: "Fiz uma lista", es: "Hice una lista", tense: "Pretérito Indefinido" },
+                { pt: "O que é que eles fazem?", es: "¿Qué hacen ellos?", tense: "Presente" },
+                { pt: "Ele fez um desenho", es: "Él hizo un dibujo", tense: "Pretérito Indefinido" },
+                { pt: "Estava nublado", es: "Hacía nublado", tense: "Pretérito Imperfecto" },
+                { pt: "Vamos fazer progresso", es: "Haremos progreso", tense: "Futuro Simple" },
+                { pt: "Estou a fazer a limpeza", es: "Hago la limpieza", tense: "Presente" },
+                { pt: "Fazem negócios", es: "Hacen negocios", tense: "Presente" },
+                { pt: "Fizeste-me rir", es: "Me hiciste reír", tense: "Pretérito Indefinido" },
+                { pt: "Ela fazia trabalhos manuais", es: "Ella hacía manualidades", tense: "Pretérito Imperfecto" },
+                { pt: "Vou arranjar tempo", es: "Haré tiempo", tense: "Futuro Simple" },
+                { pt: "Ele está a fazer uma chamada", es: "Él hace una llamada", tense: "Presente" },
+                { pt: "Fizemos sopa", es: "Hicimos sopa", tense: "Pretérito Indefinido" },
+                { pt: "Há três meses", es: "Hace tres meses", tense: "Presente" },
+                { pt: "Preciso de coragem", es: "Me hace falta valor", tense: "Presente" },
+                { pt: "Fazem arte", es: "Hacen arte", tense: "Presente" },
+                { pt: "Fizeste um favor", es: "Hiciste un favor", tense: "Pretérito Indefinido" },
+                { pt: "Ela vai fazer um discurso", es: "Ella hará un discurso", tense: "Futuro Simple" },
+                { pt: "Estou a fazer planos", es: "Hago planes", tense: "Presente" },
+                { pt: "Ele fez uma sandes", es: "Él hizo un sándwich", tense: "Pretérito Indefinido" },
+                { pt: "Estava bom tempo", es: "Hacía buen tiempo", tense: "Pretérito Imperfecto" },
+                { pt: "Vamos fazer exercícios", es: "Haremos ejercicios", tense: "Futuro Simple" },
+                { pt: "Faço a passagem a ferro", es: "Hago la plancha", tense: "Presente" },
+                { pt: "Fizeram um negócio", es: "Hicieron un trato", tense: "Pretérito Indefinido" },
+                { pt: "Fazes-me nervoso", es: "Me haces nervioso", tense: "Presente" },
+                { pt: "Ela fazia desculpas", es: "Ella hacía excusas", tense: "Pretérito Imperfecto" },
+                { pt: "Vou marcar uma consulta", es: "Haré una cita", tense: "Futuro Simple" },
+                { pt: "Ele faz trabalho voluntário", es: "Él hace trabajo voluntario", tense: "Presente" },
+                { pt: "Fizemos memórias", es: "Hicimos recuerdos", tense: "Pretérito Indefinido" },
+                { pt: "Está fresco", es: "Hace fresco", tense: "Presente" },
+                { pt: "Preciso de paciência", es: "Me hace falta paciencia", tense: "Presente" },
+                { pt: "Vão fazer investigação", es: "Harán investigación", tense: "Futuro Simple" },
+                { pt: "Faz sentido", es: "Tienes razón", tense: "Presente" },
+                { pt: "Ela fez mudanças", es: "Ella hizo cambios", tense: "Pretérito Indefinido" },
+                { pt: "Fazia os trabalhos de casa à noite", es: "Hacía la tarea de noche", tense: "Pretérito Imperfecto" },
+                { pt: "Ele vai fazer preparativos", es: "Él hará arreglos", tense: "Futuro Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇪🇸 VERB TENER — 94 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇪🇸 Verb TENER</h1>
+            <p class="subtitle">to have — 94 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 94 из 94 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика испанского — TENER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb TENER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Настоящее время - владение, возраст, выражения (tener hambre, tener que...)</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>tengo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>tienes</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>tiene</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>tenemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>tenéis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>tienen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Претерит - завершённые действия в прошлом</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>tuve</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>tuviste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>tuvo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>tuvimos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>tuvisteis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>tuvieron</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Имперфект - продолжительные или повторяющиеся действия в прошлом</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>tenía</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>tenías</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>tenía</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>teníamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>teníais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>tenían</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Будущее время - буду иметь</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>tendré</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>tendrás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>tendrá</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>tendremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>tendréis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>tendrán</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'es',
+            labels: { target: 'Español', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["tengo","tienes","tiene","tenemos","tenéis","tienen","tuve","tuviste","tuvo","tuvimos","tuvisteis","tuvieron","tenía","tendrá","tendré"],
+            phrases: [
+                { ru: "У меня есть машина", es: "Tengo un coche", tense: "Presente" },
+                { ru: "У неё есть собака", es: "Ella tiene un perro", tense: "Presente" },
+                { ru: "У нас есть время", es: "Tenemos tiempo", tense: "Presente" },
+                { ru: "У них есть дом", es: "Tienen una casa", tense: "Presente" },
+                { ru: "У тебя есть деньги?", es: "¿Tienes dinero?", tense: "Presente" },
+                { ru: "У меня есть идея", es: "Tengo una idea", tense: "Presente" },
+                { ru: "У него трое детей", es: "Él tiene tres hijos", tense: "Presente" },
+                { ru: "У тебя есть вопрос", es: "Tienes una pregunta", tense: "Presente" },
+                { ru: "У меня нет выбора", es: "No tengo opción", tense: "Presente" },
+                { ru: "У нас проблема", es: "Tenemos un problema", tense: "Presente" },
+                { ru: "Мне 25 лет", es: "Tengo 25 años", tense: "Presente" },
+                { ru: "Сколько тебе лет?", es: "¿Cuántos años tienes?", tense: "Presente" },
+                { ru: "Ей 30 лет", es: "Ella tiene 30 años", tense: "Presente" },
+                { ru: "Моему сыну 5 лет", es: "Mi hijo tiene 5 años", tense: "Presente" },
+                { ru: "Они очень молоды", es: "Tienen muy pocos años", tense: "Presente" },
+                { ru: "Я голоден", es: "Tengo hambre", tense: "Presente" },
+                { ru: "Я хочу пить", es: "Tengo sed", tense: "Presente" },
+                { ru: "Мне холодно", es: "Tengo frío", tense: "Presente" },
+                { ru: "Мне жарко", es: "Tengo calor", tense: "Presente" },
+                { ru: "Я хочу спать", es: "Tengo sueño", tense: "Presente" },
+                { ru: "Я боюсь", es: "Tengo miedo", tense: "Presente" },
+                { ru: "Мне повезло", es: "Tengo suerte", tense: "Presente" },
+                { ru: "Я спешу", es: "Tengo prisa", tense: "Presente" },
+                { ru: "Я прав", es: "Tengo razón", tense: "Presente" },
+                { ru: "Ты не прав", es: "No tienes razón", tense: "Presente" },
+                { ru: "Мне нужно идти", es: "Tengo que ir", tense: "Presente" },
+                { ru: "Мне нужно учиться", es: "Tengo que estudiar", tense: "Presente" },
+                { ru: "Мне нужно работать", es: "Tengo que trabajar", tense: "Presente" },
+                { ru: "Ты должен это увидеть", es: "Tienes que ver esto", tense: "Presente" },
+                { ru: "Нам нужно поговорить", es: "Tenemos que hablar", tense: "Presente" },
+                { ru: "Им нужно подождать", es: "Tienen que esperar", tense: "Presente" },
+                { ru: "Мне нужно закончить это", es: "Tengo que terminar esto", tense: "Presente" },
+                { ru: "Ей нужно уйти рано", es: "Ella tiene que salir temprano", tense: "Presente" },
+                { ru: "Тебе нужно идти сейчас?", es: "¿Tienes que irte ahora?", tense: "Presente" },
+                { ru: "Нам не нужно спешить", es: "No tenemos que apresurarnos", tense: "Presente" },
+                { ru: "У меня болит голова", es: "Tengo dolor de cabeza", tense: "Presente" },
+                { ru: "У неё температура", es: "Ella tiene fiebre", tense: "Presente" },
+                { ru: "У меня голубые глаза", es: "Tengo ojos azules", tense: "Presente" },
+                { ru: "У него каштановые волосы", es: "Él tiene pelo castaño", tense: "Presente" },
+                { ru: "У меня много друзей", es: "Tengo muchos amigos", tense: "Presente" },
+                { ru: "У меня был шанс", es: "Tuve una oportunidad", tense: "Pretérito Indefinido" },
+                { ru: "У нас была встреча", es: "Tuvimos una reunión", tense: "Pretérito Indefinido" },
+                { ru: "У неё родился ребёнок", es: "Ella tuvo un bebé", tense: "Pretérito Indefinido" },
+                { ru: "У них были проблемы", es: "Tuvieron problemas", tense: "Pretérito Indefinido" },
+                { ru: "У меня был хороший день", es: "Tuve un buen día", tense: "Pretérito Indefinido" },
+                { ru: "У тебя было время?", es: "¿Tuviste tiempo?", tense: "Pretérito Indefinido" },
+                { ru: "У него была авария", es: "Él tuvo un accidente", tense: "Pretérito Indefinido" },
+                { ru: "Мы повеселились", es: "Nos divertimos", tense: "Pretérito Indefinido" },
+                { ru: "У них была вечеринка", es: "Tuvieron una fiesta", tense: "Pretérito Indefinido" },
+                { ru: "Мне пришлось уйти", es: "Tuve que irme", tense: "Pretérito Indefinido" },
+                { ru: "У меня была машина, когда я был молодым", es: "Tenía un coche cuando era joven", tense: "Pretérito Imperfecto" },
+                { ru: "У неё были длинные волосы", es: "Ella tenía el pelo largo", tense: "Pretérito Imperfecto" },
+                { ru: "У нас раньше была собака", es: "Teníamos un perro antes", tense: "Pretérito Imperfecto" },
+                { ru: "У них было много друзей", es: "Tenían muchos amigos", tense: "Pretérito Imperfecto" },
+                { ru: "Раньше у меня было больше времени", es: "Antes tenía más tiempo", tense: "Pretérito Imperfecto" },
+                { ru: "Он всегда был голоден", es: "Siempre tenía hambre", tense: "Pretérito Imperfecto" },
+                { ru: "Тогда мне было 10 лет", es: "Entonces tenía 10 años", tense: "Pretérito Imperfecto" },
+                { ru: "Мы боялись", es: "Teníamos miedo", tense: "Pretérito Imperfecto" },
+                { ru: "Им приходилось работать каждый день", es: "Tenían que trabajar todos los días", tense: "Pretérito Imperfecto" },
+                { ru: "У меня тогда не было денег", es: "No tenía dinero en aquel entonces", tense: "Pretérito Imperfecto" },
+                { ru: "У меня будет время завтра", es: "Tendré tiempo mañana", tense: "Futuro Simple" },
+                { ru: "У нас будет вечеринка", es: "Tendremos una fiesta", tense: "Futuro Simple" },
+                { ru: "У неё будет ребёнок", es: "Ella tendrá un bebé", tense: "Futuro Simple" },
+                { ru: "У них будет новый дом", es: "Tendrán una casa nueva", tense: "Futuro Simple" },
+                { ru: "У тебя будет успех", es: "Tendrás éxito", tense: "Futuro Simple" },
+                { ru: "Мне придётся работать допоздна", es: "Tendré que trabajar hasta tarde", tense: "Futuro Simple" },
+                { ru: "У нас будет экзамен на следующей неделе", es: "Tendremos un examen la semana que viene", tense: "Futuro Simple" },
+                { ru: "У него будет больше возможностей", es: "Él tendrá más oportunidades", tense: "Futuro Simple" },
+                { ru: "Им придётся подождать", es: "Tendrán que esperar", tense: "Futuro Simple" },
+                { ru: "У тебя будет достаточно денег?", es: "¿Tendrás suficiente dinero?", tense: "Futuro Simple" },
+                { ru: "У меня хорошие новости", es: "Tengo buenas noticias", tense: "Presente" },
+                { ru: "У тебя есть ручка?", es: "¿Tienes un bolígrafo?", tense: "Presente" },
+                { ru: "У неё большой опыт", es: "Ella tiene mucha experiencia", tense: "Presente" },
+                { ru: "Мы понятия не имеем", es: "No tenemos ni idea", tense: "Presente" },
+                { ru: "У них есть ответ", es: "Tienen la respuesta", tense: "Presente" },
+                { ru: "У меня встреча в 3", es: "Tengo una reunión a las 3", tense: "Presente" },
+                { ru: "У него новая работа", es: "Él tiene un trabajo nuevo", tense: "Presente" },
+                { ru: "У тебя есть планы на вечер?", es: "¿Tienes planes para esta noche?", tense: "Presente" },
+                { ru: "Мне нужно тебе кое-что сказать", es: "Tengo algo que decirte", tense: "Presente" },
+                { ru: "У неё красивый голос", es: "Ella tiene una voz hermosa", tense: "Presente" },
+                { ru: "У нас есть бронь", es: "Tenemos una reserva", tense: "Presente" },
+                { ru: "У них достаточно еды", es: "Tienen suficiente comida", tense: "Presente" },
+                { ru: "Я верю в тебя", es: "Tengo confianza en ti", tense: "Presente" },
+                { ru: "Даю тебе слово", es: "Tienes mi palabra", tense: "Presente" },
+                { ru: "Я жду уже несколько часов", es: "Llevo horas esperando", tense: "Presente" },
+                { ru: "У неё есть талант", es: "Ella tiene talento", tense: "Presente" },
+                { ru: "У нас одна и та же проблема", es: "Tenemos el mismo problema", tense: "Presente" },
+                { ru: "Должен признать, что ты прав", es: "Tengo que admitir que tienes razón", tense: "Presente" },
+                { ru: "У них много общего", es: "Tienen mucho en común", tense: "Presente" },
+                { ru: "У меня есть сомнения", es: "Tengo dudas", tense: "Presente" },
+                { ru: "У тебя есть минутка?", es: "¿Tienes un minuto?", tense: "Presente" },
+                { ru: "В чём-то он прав", es: "Él tiene razón en algo", tense: "Presente" },
+                { ru: "У меня есть свои причины", es: "Tengo mis razones", tense: "Presente" },
+                { ru: "Нам нужно быть осторожными", es: "Tenemos que tener cuidado", tense: "Presente" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

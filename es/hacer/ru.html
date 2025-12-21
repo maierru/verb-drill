@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇪🇸 VERB HACER — 97 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇪🇸 Verb HACER</h1>
+            <p class="subtitle">to do, to make — 97 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 97 из 97 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика испанского — HACER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb HACER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Настоящее время - действия происходящие сейчас или обычные действия</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo hago</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú haces</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted hace</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros hacemos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros hacéis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes hacen</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Простое прошедшее время - завершенные действия в прошлом</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo hice</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú hiciste</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted hizo</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros hicimos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros hicisteis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes hicieron</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Несовершенное прошедшее - продолжающиеся или привычные действия в прошлом</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo hacía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú hacías</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted hacía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros hacíamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros hacíais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes hacían</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Будущее время - действия которые произойдут</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo haré</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú harás</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted hará</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros haremos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros haréis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes harán</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'es',
+            labels: { target: 'Español', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["hago","haces","hace","hacemos","hacéis","hacen","hice","hizo","haré","haría"],
+            phrases: [
+                { ru: "Что ты делаешь?", es: "¿Qué haces?", tense: "Presente" },
+                { ru: "Я делаю домашнюю работу", es: "Hago mi tarea", tense: "Presente" },
+                { ru: "На улице холодно", es: "Hace frío afuera", tense: "Presente" },
+                { ru: "Сегодня жарко", es: "Hace calor hoy", tense: "Presente" },
+                { ru: "Нам нужно молоко", es: "Nos hace falta leche", tense: "Presente" },
+                { ru: "Она готовит ужин каждый вечер", es: "Ella hace la cena cada noche", tense: "Presente" },
+                { ru: "Я сделал ошибку", es: "Hice un error", tense: "Pretérito Indefinido" },
+                { ru: "Они сделали все возможное", es: "Hicieron lo mejor que pudieron", tense: "Pretérito Indefinido" },
+                { ru: "Что ты делал вчера?", es: "¿Qué hiciste ayer?", tense: "Pretérito Indefinido" },
+                { ru: "Он испек торт", es: "Él hizo un pastel", tense: "Pretérito Indefinido" },
+                { ru: "Я делал упражнения каждое утро", es: "Hacía ejercicio cada mañana", tense: "Pretérito Imperfecto" },
+                { ru: "Всегда было солнечно", es: "Siempre hacía sol", tense: "Pretérito Imperfecto" },
+                { ru: "Мы сделаем это завтра", es: "Lo haremos mañana", tense: "Futuro Simple" },
+                { ru: "Я приму решение", es: "Haré una decisión", tense: "Futuro Simple" },
+                { ru: "Тебе нужно отдохнуть", es: "Te hace falta descansar", tense: "Presente" },
+                { ru: "Я стираю одежду", es: "Hago la ropa", tense: "Presente" },
+                { ru: "Он делает покупки по субботам", es: "Él hace las compras los sábados", tense: "Presente" },
+                { ru: "Мы составили план", es: "Hicimos un plan", tense: "Pretérito Indefinido" },
+                { ru: "Ветрено", es: "Hace viento", tense: "Presente" },
+                { ru: "Хорошая погода", es: "Hace buen tiempo", tense: "Presente" },
+                { ru: "Она быстро подружилась", es: "Ella hizo amigos rápidamente", tense: "Pretérito Indefinido" },
+                { ru: "Чем ты занимаешься?", es: "¿Qué haces de trabajo?", tense: "Presente" },
+                { ru: "Я занимаюсь йогой", es: "Hago yoga", tense: "Presente" },
+                { ru: "Они шумят", es: "Hacen ruido", tense: "Presente" },
+                { ru: "Было очень холодно", es: "Hacía mucho frío", tense: "Pretérito Imperfecto" },
+                { ru: "Ты произведешь отличное впечатление", es: "Harás una gran impresión", tense: "Futuro Simple" },
+                { ru: "Я готовлю кофе", es: "Hago café", tense: "Presente" },
+                { ru: "Он дал обещание", es: "Él hizo una promesa", tense: "Pretérito Indefinido" },
+                { ru: "Мы готовили ужин вместе", es: "Hacíamos la cena juntos", tense: "Pretérito Imperfecto" },
+                { ru: "Они сделают проект", es: "Harán el proyecto", tense: "Futuro Simple" },
+                { ru: "Мне нужно больше времени", es: "Me hace falta más tiempo", tense: "Presente" },
+                { ru: "Прошло два года", es: "Hace dos años", tense: "Presente" },
+                { ru: "Она хорошо делает свою работу", es: "Ella hace bien su trabajo", tense: "Presente" },
+                { ru: "Я сделал бронирование", es: "Hice una reserva", tense: "Pretérito Indefinido" },
+                { ru: "Что ты готовишь?", es: "¿Qué haces?", tense: "Presente" },
+                { ru: "Он зарабатывает много денег", es: "Él hace mucho dinero", tense: "Presente" },
+                { ru: "Мы сделали все возможное", es: "Hicimos todo lo posible", tense: "Pretérito Indefinido" },
+                { ru: "Плохая погода", es: "Hace mal tiempo", tense: "Presente" },
+                { ru: "Я занимался спортом", es: "Hacía deportes", tense: "Pretérito Imperfecto" },
+                { ru: "Они войдут в историю", es: "Harán historia", tense: "Futuro Simple" },
+                { ru: "Ты делаешь меня счастливым", es: "Me haces feliz", tense: "Presente" },
+                { ru: "У меня все отлично", es: "Lo hago bien", tense: "Presente" },
+                { ru: "Она приложила усилие", es: "Ella hizo un esfuerzo", tense: "Pretérito Indefinido" },
+                { ru: "Вчера было тепло", es: "Hacía calor ayer", tense: "Pretérito Imperfecto" },
+                { ru: "Мы воплотим это в жизнь", es: "Lo haremos realidad", tense: "Futuro Simple" },
+                { ru: "Мне нужна помощь", es: "Me hace falta ayuda", tense: "Presente" },
+                { ru: "Он моет посуду", es: "Él hace los platos", tense: "Presente" },
+                { ru: "Они сняли видео", es: "Hicieron un video", tense: "Pretérito Indefinido" },
+                { ru: "Что она сделала?", es: "¿Qué hizo ella?", tense: "Pretérito Indefinido" },
+                { ru: "Я делаю все возможное", es: "Hago mi mejor esfuerzo", tense: "Presente" },
+                { ru: "Солнечно", es: "Hace sol", tense: "Presente" },
+                { ru: "Ты сделал хороший выбор", es: "Hiciste una buena elección", tense: "Pretérito Indefinido" },
+                { ru: "Она пекла хлеб", es: "Ella hacía pan", tense: "Pretérito Imperfecto" },
+                { ru: "Мы исполним наш долг", es: "Haremos nuestro deber", tense: "Futuro Simple" },
+                { ru: "Я готовлю обед", es: "Hago el almuerzo", tense: "Presente" },
+                { ru: "Он показывает фокусы", es: "Él hace trucos de magia", tense: "Presente" },
+                { ru: "Они сняли фильм", es: "Hicieron una película", tense: "Pretérito Indefinido" },
+                { ru: "Туманно", es: "Hace niebla", tense: "Presente" },
+                { ru: "Я делал игрушки", es: "Hacía juguetes", tense: "Pretérito Imperfecto" },
+                { ru: "Ты справишься", es: "Lo harás bien", tense: "Futuro Simple" },
+                { ru: "Нам нужны деньги", es: "Nos hace falta dinero", tense: "Presente" },
+                { ru: "Она делает украшения", es: "Ella hace joyería", tense: "Presente" },
+                { ru: "Я составил список", es: "Hice una lista", tense: "Pretérito Indefinido" },
+                { ru: "Что они делают?", es: "¿Qué hacen ellos?", tense: "Presente" },
+                { ru: "Он сделал рисунок", es: "Él hizo un dibujo", tense: "Pretérito Indefinido" },
+                { ru: "Было облачно", es: "Hacía nublado", tense: "Pretérito Imperfecto" },
+                { ru: "Мы добьемся прогресса", es: "Haremos progreso", tense: "Futuro Simple" },
+                { ru: "Я делаю уборку", es: "Hago la limpieza", tense: "Presente" },
+                { ru: "Они занимаются бизнесом", es: "Hacen negocios", tense: "Presente" },
+                { ru: "Ты рассмешил меня", es: "Me hiciste reír", tense: "Pretérito Indefinido" },
+                { ru: "Она занималась рукоделием", es: "Ella hacía manualidades", tense: "Pretérito Imperfecto" },
+                { ru: "Я найду время", es: "Haré tiempo", tense: "Futuro Simple" },
+                { ru: "Он звонит", es: "Él hace una llamada", tense: "Presente" },
+                { ru: "Мы сварили суп", es: "Hicimos sopa", tense: "Pretérito Indefinido" },
+                { ru: "Прошло три месяца", es: "Hace tres meses", tense: "Presente" },
+                { ru: "Мне нужна смелость", es: "Me hace falta valor", tense: "Presente" },
+                { ru: "Они создают искусство", es: "Hacen arte", tense: "Presente" },
+                { ru: "Ты оказал услугу", es: "Hiciste un favor", tense: "Pretérito Indefinido" },
+                { ru: "Она произнесет речь", es: "Ella hará un discurso", tense: "Futuro Simple" },
+                { ru: "Я строю планы", es: "Hago planes", tense: "Presente" },
+                { ru: "Он сделал бутерброд", es: "Él hizo un sándwich", tense: "Pretérito Indefinido" },
+                { ru: "Была хорошая погода", es: "Hacía buen tiempo", tense: "Pretérito Imperfecto" },
+                { ru: "Мы будем делать упражнения", es: "Haremos ejercicios", tense: "Futuro Simple" },
+                { ru: "Я глажу белье", es: "Hago la plancha", tense: "Presente" },
+                { ru: "Они заключили сделку", es: "Hicieron un trato", tense: "Pretérito Indefinido" },
+                { ru: "Ты заставляешь меня нервничать", es: "Me haces nervioso", tense: "Presente" },
+                { ru: "Она придумывала оправдания", es: "Ella hacía excusas", tense: "Pretérito Imperfecto" },
+                { ru: "Я запишусь на прием", es: "Haré una cita", tense: "Futuro Simple" },
+                { ru: "Он занимается волонтерской работой", es: "Él hace trabajo voluntario", tense: "Presente" },
+                { ru: "Мы создали воспоминания", es: "Hicimos recuerdos", tense: "Pretérito Indefinido" },
+                { ru: "Прохладно", es: "Hace fresco", tense: "Presente" },
+                { ru: "Мне нужно терпение", es: "Me hace falta paciencia", tense: "Presente" },
+                { ru: "Они проведут исследование", es: "Harán investigación", tense: "Futuro Simple" },
+                { ru: "Это имеет смысл", es: "Tienes razón", tense: "Presente" },
+                { ru: "Она внесла изменения", es: "Ella hizo cambios", tense: "Pretérito Indefinido" },
+                { ru: "Я делал домашнюю работу ночью", es: "Hacía la tarea de noche", tense: "Pretérito Imperfecto" },
+                { ru: "Он сделает приготовления", es: "Él hará arreglos", tense: "Futuro Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇪🇸 VERB SEGUIR — 100 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇪🇸 Verb SEGUIR</h1>
+            <p class="subtitle">to follow, to continue — 100 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 100 de 100 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Prática de espanhol — SEGUIR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb SEGUIR</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Tempo presente para ações que acontecem agora ou ações habituais</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">sigo</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sigues</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sigue</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguimos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguís</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">siguen</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Pretérito perfeito para ações completas no passado</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">seguí</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguiste</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">siguió</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguimos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguisteis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">siguieron</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Pretérito imperfeito para ações contínuas ou habituais no passado</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">seguía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguías</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguíamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguíais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguían</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Futuro simples para ações que vão acontecer</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">seguiré</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguirás</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguirá</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguiremos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguiréis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguirán</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'es',
+            labels: { target: 'Español', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["sigo","sigues","sigue","seguimos","seguís","siguen","seguí","seguiste","siguió","seguimos","seguisteis","siguieron","seguía","seguías","seguía","seguíamos","seguíais","seguían","seguiré","seguirás","seguirá","seguiremos","seguiréis","seguirán"],
+            phrases: [
+                { pt: "Sigo-te nas redes sociais", es: "Te sigo en las redes sociales", tense: "Presente" },
+                { pt: "Segues as instruções cuidadosamente", es: "Sigues las instrucciones cuidadosamente", tense: "Presente" },
+                { pt: "Ele continua a trabalhar até tarde", es: "Él sigue trabajando hasta tarde", tense: "Presente" },
+                { pt: "Continuamos a tentar", es: "Seguimos intentando", tense: "Presente" },
+                { pt: "Eles seguem o líder", es: "Ellos siguen al líder", tense: "Presente" },
+                { pt: "Segui-o até casa", es: "Lo seguí hasta casa", tense: "Pretérito Indefinido" },
+                { pt: "Continuaste a estudar a noite toda", es: "Seguiste estudiando toda la noche", tense: "Pretérito Indefinido" },
+                { pt: "Ela seguiu o mapa", es: "Ella siguió el mapa", tense: "Pretérito Indefinido" },
+                { pt: "Continuámos a andar", es: "Seguimos caminando", tense: "Pretérito Indefinido" },
+                { pt: "Eles seguiram as regras", es: "Siguieron las reglas", tense: "Pretérito Indefinido" },
+                { pt: "Eu costumava seguir esse caminho", es: "Yo seguía ese camino", tense: "Pretérito Imperfecto" },
+                { pt: "Continuavas a queixar-te", es: "Seguías quejándote", tense: "Pretérito Imperfecto" },
+                { pt: "Ele continuava a ler todos os dias", es: "Él seguía leyendo cada día", tense: "Pretérito Imperfecto" },
+                { pt: "Seguíamos o seu conselho", es: "Seguíamos su consejo", tense: "Pretérito Imperfecto" },
+                { pt: "Eles continuavam a rir", es: "Seguían riendo", tense: "Pretérito Imperfecto" },
+                { pt: "Seguirei o teu exemplo", es: "Seguiré tu ejemplo", tense: "Futuro Simple" },
+                { pt: "Continuarás amanhã", es: "Seguirás mañana", tense: "Futuro Simple" },
+                { pt: "Ela seguir-nos-á", es: "Ella nos seguirá", tense: "Futuro Simple" },
+                { pt: "Continuaremos a lutar", es: "Seguiremos luchando", tense: "Futuro Simple" },
+                { pt: "Eles seguirão o plano", es: "Seguirán el plan", tense: "Futuro Simple" },
+                { pt: "Sigo as notícias diariamente", es: "Sigo las noticias diariamente", tense: "Presente" },
+                { pt: "Continuas a fazer perguntas", es: "Sigues haciendo preguntas", tense: "Presente" },
+                { pt: "Ele segue o seu coração", es: "Él sigue su corazón", tense: "Presente" },
+                { pt: "Seguimos em frente", es: "Seguimos adelante", tense: "Presente" },
+                { pt: "Eles seguem os sinais de trânsito", es: "Siguen las señales de tráfico", tense: "Presente" },
+                { pt: "Segui a receita exatamente", es: "Seguí la receta exactamente", tense: "Pretérito Indefinido" },
+                { pt: "Continuaste sem mim", es: "Seguiste sin mí", tense: "Pretérito Indefinido" },
+                { pt: "Ela seguiu os seus sonhos", es: "Ella siguió sus sueños", tense: "Pretérito Indefinido" },
+                { pt: "Cumprimos a nossa promessa", es: "Seguimos con nuestra promesa", tense: "Pretérito Indefinido" },
+                { pt: "Eles seguiram o rio", es: "Siguieron el río", tense: "Pretérito Indefinido" },
+                { pt: "Continuava a pensar nisso", es: "Seguía pensando en ello", tense: "Pretérito Imperfecto" },
+                { pt: "Seguias-me para todo o lado", es: "Me seguías a todas partes", tense: "Pretérito Imperfecto" },
+                { pt: "Ele continuava a praticar", es: "Él seguía practicando", tense: "Pretérito Imperfecto" },
+                { pt: "Seguíamos essa tradição", es: "Seguíamos esa tradición", tense: "Pretérito Imperfecto" },
+                { pt: "Eles continuavam a falar", es: "Seguían hablando", tense: "Pretérito Imperfecto" },
+                { pt: "Seguirei o procedimento", es: "Seguiré el procedimiento", tense: "Futuro Simple" },
+                { pt: "Continuarás a aprender", es: "Seguirás aprendiendo", tense: "Futuro Simple" },
+                { pt: "Ela seguirá as diretrizes", es: "Ella seguirá las pautas", tense: "Futuro Simple" },
+                { pt: "Continuaremos mais tarde", es: "Seguiremos más tarde", tense: "Futuro Simple" },
+                { pt: "Eles seguirão o horário", es: "Seguirán el horario", tense: "Futuro Simple" },
+                { pt: "Sigo o teu blogue", es: "Sigo tu blog", tense: "Presente" },
+                { pt: "Continuas a ser teimoso", es: "Sigues siendo terco", tense: "Presente" },
+                { pt: "Ele segue as tendências", es: "Él sigue las tendencias", tense: "Presente" },
+                { pt: "Mantemos o contacto", es: "Seguimos en contacto", tense: "Presente" },
+                { pt: "Eles seguem a moda", es: "Siguen la moda", tense: "Presente" },
+                { pt: "Segui a história de perto", es: "Seguí la historia de cerca", tense: "Pretérito Indefinido" },
+                { pt: "Continuaste a correr", es: "Seguiste corriendo", tense: "Pretérito Indefinido" },
+                { pt: "Ela seguiu o rasto", es: "Ella siguió el rastro", tense: "Pretérito Indefinido" },
+                { pt: "Continuámos a conversa", es: "Seguimos la conversación", tense: "Pretérito Indefinido" },
+                { pt: "Eles seguiram o guia", es: "Siguieron al guía", tense: "Pretérito Indefinido" },
+                { pt: "Eu costumava seguir desportos", es: "Seguía los deportes", tense: "Pretérito Imperfecto" },
+                { pt: "Continuavas a cantar", es: "Seguías cantando", tense: "Pretérito Imperfecto" },
+                { pt: "Ele continuava os seus estudos", es: "Él seguía sus estudios", tense: "Pretérito Imperfecto" },
+                { pt: "Seguíamos a série", es: "Seguíamos la serie", tense: "Pretérito Imperfecto" },
+                { pt: "Eles continuavam a dançar", es: "Seguían bailando", tense: "Pretérito Imperfecto" },
+                { pt: "Seguirei a minha intuição", es: "Seguiré mi intuición", tense: "Futuro Simple" },
+                { pt: "Continuarás a tentar", es: "Seguirás intentando", tense: "Futuro Simple" },
+                { pt: "Ela seguirá as ordens do médico", es: "Ella seguirá las órdenes del médico", tense: "Futuro Simple" },
+                { pt: "Continuaremos o projeto", es: "Seguiremos el proyecto", tense: "Futuro Simple" },
+                { pt: "Eles seguirão até ao fim", es: "Seguirán hasta el final", tense: "Futuro Simple" },
+                { pt: "Sigo uma dieta rigorosa", es: "Sigo una dieta estricta", tense: "Presente" },
+                { pt: "Continuas a interromper", es: "Sigues interrumpiendo", tense: "Presente" },
+                { pt: "Ele segue a mesma rotina", es: "Él sigue la misma rutina", tense: "Presente" },
+                { pt: "Continuamos a crescer", es: "Seguimos creciendo", tense: "Presente" },
+                { pt: "Eles seguem práticas religiosas", es: "Siguen prácticas religiosas", tense: "Presente" },
+                { pt: "Segui o teu conselho", es: "Seguí tu consejo", tense: "Pretérito Indefinido" },
+                { pt: "Continuaste apesar das dificuldades", es: "Seguiste a pesar de las dificultades", tense: "Pretérito Indefinido" },
+                { pt: "Ela seguiu a multidão", es: "Ella siguió a la multitud", tense: "Pretérito Indefinido" },
+                { pt: "Seguimos em frente", es: "Seguimos adelante", tense: "Pretérito Indefinido" },
+                { pt: "Eles seguiram o guião", es: "Siguieron el guion", tense: "Pretérito Indefinido" },
+                { pt: "Continuava a esperar", es: "Seguía esperando", tense: "Pretérito Imperfecto" },
+                { pt: "Seguias aquela banda", es: "Seguías a esa banda", tense: "Pretérito Imperfecto" },
+                { pt: "Ele continuava apesar dos avisos", es: "Él seguía a pesar de las advertencias", tense: "Pretérito Imperfecto" },
+                { pt: "Seguíamos a política", es: "Seguíamos la política", tense: "Pretérito Imperfecto" },
+                { pt: "Eles continuavam a insistir", es: "Seguían insistiendo", tense: "Pretérito Imperfecto" },
+                { pt: "Seguirei o caminho", es: "Seguiré el camino", tense: "Futuro Simple" },
+                { pt: "Continuarás a tua carreira", es: "Seguirás tu carrera", tense: "Futuro Simple" },
+                { pt: "Ela seguirá a sua paixão", es: "Ella seguirá su pasión", tense: "Futuro Simple" },
+                { pt: "Continuaremos a procurar", es: "Seguiremos buscando", tense: "Futuro Simple" },
+                { pt: "Eles seguirão o nosso exemplo", es: "Seguirán nuestro ejemplo", tense: "Futuro Simple" },
+                { pt: "Sigo a mesma rota", es: "Sigo la misma ruta", tense: "Presente" },
+                { pt: "Continuas a melhorar", es: "Sigues mejorando", tense: "Presente" },
+                { pt: "Ele segue ordens", es: "Él sigue órdenes", tense: "Presente" },
+                { pt: "Continuamos a acreditar", es: "Seguimos creyendo", tense: "Presente" },
+                { pt: "Eles seguem a corrente", es: "Siguen la corriente", tense: "Presente" },
+                { pt: "Segui as instruções passo a passo", es: "Seguí las instrucciones paso a paso", tense: "Pretérito Indefinido" },
+                { pt: "Continuaste a escrever", es: "Seguiste escribiendo", tense: "Pretérito Indefinido" },
+                { pt: "Ela seguiu os sinais", es: "Ella siguió las señales", tense: "Pretérito Indefinido" },
+                { pt: "Continuámos a nossa viagem", es: "Seguimos nuestro viaje", tense: "Pretérito Indefinido" },
+                { pt: "Eles seguiram a tradição", es: "Siguieron la tradición", tense: "Pretérito Indefinido" },
+                { pt: "Eu costumava seguir esse canal", es: "Seguía ese canal", tense: "Pretérito Imperfecto" },
+                { pt: "Continuavas a chorar", es: "Seguías llorando", tense: "Pretérito Imperfecto" },
+                { pt: "Ele continuava a trabalhar lá", es: "Él seguía trabajando allí", tense: "Pretérito Imperfecto" },
+                { pt: "Seguíamos as regras", es: "Seguíamos las reglas", tense: "Pretérito Imperfecto" },
+                { pt: "Eles continuavam a sorrir", es: "Seguían sonriendo", tense: "Pretérito Imperfecto" },
+                { pt: "Seguirei o exemplo", es: "Seguiré el ejemplo", tense: "Futuro Simple" },
+                { pt: "Continuarás a avançar", es: "Seguirás avanzando", tense: "Futuro Simple" },
+                { pt: "Ela seguirá o protocolo", es: "Ella seguirá el protocolo", tense: "Futuro Simple" },
+                { pt: "Continuaremos unidos", es: "Seguiremos unidos", tense: "Futuro Simple" },
+                { pt: "Eles seguirão os regulamentos", es: "Seguirán las regulaciones", tense: "Futuro Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

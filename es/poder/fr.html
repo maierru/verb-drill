@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbe 🇪🇸 VERB PODER — 99 phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Retour à la liste des verbes</a>
+            <h1>🇪🇸 Verb PODER</h1>
+            <p class="subtitle">can, to be able to — 99 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Rechercher des phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Afficher toutes les traductions</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Masquer toutes les traductions</button>
+        </div>
+
+        <div class="stats" id="stats">Affichage: 99 sur 99 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Pratique de l'espagnol — PODER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb PODER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Présent - exprime la capacité ou la permission actuelle</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo puedo</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú puedes</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted puede</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros/nosotras podemos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros/vosotras podéis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes pueden</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Passé simple - exprime la capacité achevée dans le passé</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo pude</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú pudiste</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted pudo</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros/nosotras pudimos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros/vosotras pudisteis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes pudieron</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Imparfait - exprime la capacité habituelle dans le passé</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo podía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú podías</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted podía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros/nosotras podíamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros/vosotras podíais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes podían</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Futur simple - exprime la capacité ou la permission future</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo podré</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú podrás</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted podrá</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros/nosotras podremos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros/vosotras podréis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes podrán</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'fr',
+            targetKey: 'es',
+            labels: { target: 'Espagnol', showing: 'Affichage', of: 'sur', phrases: 'phrases' },
+            verbForms: ["puedo","puedes","puede","podemos","podéis","pueden","pude","podía","podré"],
+            phrases: [
+                { fr: "Je peux parler espagnol", es: "Puedo hablar español", tense: "Presente" },
+                { fr: "Peux-tu m'aider ?", es: "¿Puedes ayudarme?", tense: "Presente" },
+                { fr: "Elle ne peut pas venir aujourd'hui", es: "No puede venir hoy", tense: "Presente" },
+                { fr: "Nous pouvons le faire ensemble", es: "Podemos hacerlo juntos", tense: "Presente" },
+                { fr: "Je pouvais courir plus vite avant", es: "Podía correr más rápido antes", tense: "Pretérito Imperfecto" },
+                { fr: "Ils n'ont pas pu trouver les clés", es: "No pudieron encontrar las llaves", tense: "Pretérito Indefinido" },
+                { fr: "Je pourrai finir demain", es: "Podré terminar mañana", tense: "Futuro Simple" },
+                { fr: "Puis-je te demander quelque chose ?", es: "¿Puedo preguntarte algo?", tense: "Presente" },
+                { fr: "Tu peux t'asseoir ici", es: "Puedes sentarte aquí", tense: "Presente" },
+                { fr: "Il peut jouer de la guitare très bien", es: "Puede tocar la guitarra muy bien", tense: "Presente" },
+                { fr: "Nous n'avons pas pu dormir la nuit dernière", es: "No pudimos dormir anoche", tense: "Pretérito Indefinido" },
+                { fr: "Je peux voir les montagnes", es: "Puedo ver las montañas", tense: "Presente" },
+                { fr: "Peux-tu ouvrir la fenêtre ?", es: "¿Puedes abrir la ventana?", tense: "Presente" },
+                { fr: "Elle pouvait parler trois langues", es: "Podía hablar tres idiomas", tense: "Pretérito Imperfecto" },
+                { fr: "Ils ne peuvent pas nous entendre", es: "No pueden oírnos", tense: "Presente" },
+                { fr: "Je n'ai pas pu y croire", es: "No pude creerlo", tense: "Pretérito Indefinido" },
+                { fr: "Pourras-tu venir ?", es: "¿Podrás venir?", tense: "Futuro Simple" },
+                { fr: "Nous pouvons y aller maintenant", es: "Podemos ir ahora", tense: "Presente" },
+                { fr: "Je ne peux pas trouver mon téléphone", es: "No puedo encontrar mi teléfono", tense: "Presente" },
+                { fr: "Peux-tu me passer le sel ?", es: "¿Puedes pasarme la sal?", tense: "Presente" },
+                { fr: "Il pouvait nager quand il avait cinq ans", es: "Podía nadar cuando tenía cinco años", tense: "Pretérito Imperfecto" },
+                { fr: "Ils pourront nous aider", es: "Podrán ayudarnos", tense: "Futuro Simple" },
+                { fr: "Je ne peux pas manger épicé", es: "No puedo comer comida picante", tense: "Presente" },
+                { fr: "Pouvons-nous parler plus tard ?", es: "¿Podemos hablar luego?", tense: "Presente" },
+                { fr: "Elle n'a pas pu répondre à la question", es: "No pudo responder la pregunta", tense: "Pretérito Indefinido" },
+                { fr: "Je peux entendre de la musique", es: "Puedo oír música", tense: "Presente" },
+                { fr: "Peux-tu répéter ça ?", es: "¿Puedes repetir eso?", tense: "Presente" },
+                { fr: "Nous pouvions aller à la plage", es: "Podíamos ir a la playa", tense: "Pretérito Imperfecto" },
+                { fr: "Je pourrai te voir demain", es: "Podré verte mañana", tense: "Futuro Simple" },
+                { fr: "Sais-tu conduire ?", es: "¿Puedes conducir?", tense: "Presente" },
+                { fr: "Il ne peut pas comprendre l'espagnol", es: "No puede entender español", tense: "Presente" },
+                { fr: "Je n'ai pas pu ouvrir la porte", es: "No pude abrir la puerta", tense: "Pretérito Indefinido" },
+                { fr: "Nous pouvons commencer maintenant", es: "Podemos empezar ahora", tense: "Presente" },
+                { fr: "Puis-je prendre de l'eau ?", es: "¿Puedo tomar un poco de agua?", tense: "Presente" },
+                { fr: "Elle pouvait lire quand elle avait quatre ans", es: "Podía leer cuando tenía cuatro años", tense: "Pretérito Imperfecto" },
+                { fr: "Ils ne peuvent pas venir ce soir", es: "No pueden venir esta noche", tense: "Presente" },
+                { fr: "Je pourrai t'appeler plus tard", es: "Podré llamarte más tarde", tense: "Futuro Simple" },
+                { fr: "Peux-tu voir ça ?", es: "¿Puedes ver eso?", tense: "Presente" },
+                { fr: "Nous n'avons pas pu trouver de taxi", es: "No pudimos encontrar un taxi", tense: "Pretérito Indefinido" },
+                { fr: "Je peux cuisiner italien", es: "Puedo cocinar comida italiana", tense: "Presente" },
+                { fr: "Pouvons-nous partir tôt ?", es: "¿Podemos irnos temprano?", tense: "Presente" },
+                { fr: "Il pouvait jouer aux échecs très bien", es: "Podía jugar ajedrez muy bien", tense: "Pretérito Imperfecto" },
+                { fr: "Je ne peux pas me rappeler son nom", es: "No puedo recordar su nombre", tense: "Presente" },
+                { fr: "Peux-tu attendre un moment ?", es: "¿Puedes esperar un momento?", tense: "Presente" },
+                { fr: "Elle n'a pas pu venir à la fête", es: "No pudo venir a la fiesta", tense: "Pretérito Indefinido" },
+                { fr: "Nous pourrons finir aujourd'hui", es: "Podremos terminar hoy", tense: "Futuro Simple" },
+                { fr: "Je peux sentir le café", es: "Puedo oler café", tense: "Presente" },
+                { fr: "Peux-tu expliquer ça ?", es: "¿Puedes explicar esto?", tense: "Presente" },
+                { fr: "Ils pouvaient travailler de chez eux", es: "Podían trabajar desde casa", tense: "Pretérito Imperfecto" },
+                { fr: "Je ne peux pas y aller aujourd'hui", es: "No puedo ir hoy", tense: "Presente" },
+                { fr: "Puis-je utiliser ton téléphone ?", es: "¿Puedo usar tu teléfono?", tense: "Presente" },
+                { fr: "Il n'a pas pu résoudre le problème", es: "No pudo resolver el problema", tense: "Pretérito Indefinido" },
+                { fr: "Nous pouvons nous rencontrer à cinq heures", es: "Podemos encontrarnos a las cinco", tense: "Presente" },
+                { fr: "Peux-tu éteindre la lumière ?", es: "¿Puedes apagar la luz?", tense: "Presente" },
+                { fr: "Je pouvais la voir d'ici", es: "Podía verla desde aquí", tense: "Pretérito Imperfecto" },
+                { fr: "Ils ne peuvent pas payer maintenant", es: "No pueden pagar ahora", tense: "Presente" },
+                { fr: "Je pourrai voyager le mois prochain", es: "Podré viajar el mes que viene", tense: "Futuro Simple" },
+                { fr: "Pouvons-nous changer la date ?", es: "¿Podemos cambiar la fecha?", tense: "Presente" },
+                { fr: "Elle ne sait pas nager", es: "No puede nadar", tense: "Presente" },
+                { fr: "Je n'ai pas pu t'entendre", es: "No pude oírte", tense: "Pretérito Indefinido" },
+                { fr: "Peux-tu lire ça ?", es: "¿Puedes leer esto?", tense: "Presente" },
+                { fr: "Nous pouvions danser toute la nuit", es: "Podíamos bailar toda la noche", tense: "Pretérito Imperfecto" },
+                { fr: "Je ne peux pas le croire", es: "No puedo creer esto", tense: "Presente" },
+                { fr: "Puis-je venir avec toi ?", es: "¿Puedo ir contigo?", tense: "Presente" },
+                { fr: "Il n'a pas pu trouver son portefeuille", es: "No pudo encontrar su cartera", tense: "Pretérito Indefinido" },
+                { fr: "Nous pouvons manger ici", es: "Podemos comer aquí", tense: "Presente" },
+                { fr: "Peux-tu réparer ça ?", es: "¿Puedes arreglar esto?", tense: "Presente" },
+                { fr: "Je pouvais courir cinq kilomètres", es: "Podía correr cinco kilómetros", tense: "Pretérito Imperfecto" },
+                { fr: "Ils ne peuvent pas me comprendre", es: "No pueden entenderme", tense: "Presente" },
+                { fr: "Je pourrai étudier plus", es: "Podré estudiar más", tense: "Futuro Simple" },
+                { fr: "Pouvons-nous nous garer ici ?", es: "¿Podemos aparcar aquí?", tense: "Presente" },
+                { fr: "Elle ne peut pas travailler demain", es: "No puede trabajar mañana", tense: "Presente" },
+                { fr: "Je n'ai pas pu me concentrer", es: "No pude concentrarme", tense: "Pretérito Indefinido" },
+                { fr: "Peux-tu prendre une photo ?", es: "¿Puedes tomar una foto?", tense: "Presente" },
+                { fr: "Nous pouvions manger ce que nous voulions", es: "Podíamos comer lo que queríamos", tense: "Pretérito Imperfecto" },
+                { fr: "Je ne peux pas arrêter d'y penser", es: "No puedo dejar de pensar en ello", tense: "Presente" },
+                { fr: "Puis-je emprunter ton stylo ?", es: "¿Puedo tomar prestado tu bolígrafo?", tense: "Presente" },
+                { fr: "Il n'a pas pu courir davantage", es: "No pudo correr más", tense: "Pretérito Indefinido" },
+                { fr: "Nous pouvons réessayer", es: "Podemos intentarlo de nuevo", tense: "Presente" },
+                { fr: "Peux-tu me montrer ?", es: "¿Puedes mostrarme?", tense: "Presente" },
+                { fr: "Je pouvais tout entendre", es: "Podía oír todo", tense: "Pretérito Imperfecto" },
+                { fr: "Ils ne peuvent pas décider", es: "No pueden decidir", tense: "Presente" },
+                { fr: "Je pourrai me reposer bientôt", es: "Podré descansar pronto", tense: "Futuro Simple" },
+                { fr: "Pouvons-nous continuer ?", es: "¿Podemos continuar?", tense: "Presente" },
+                { fr: "Elle ne peut pas accepter ça", es: "No puede aceptar esto", tense: "Presente" },
+                { fr: "Je n'ai pas pu rester plus longtemps", es: "No pude quedarme más tiempo", tense: "Pretérito Indefinido" },
+                { fr: "Peux-tu m'envoyer le fichier ?", es: "¿Puedes enviarme el archivo?", tense: "Presente" },
+                { fr: "Nous pouvions visiter des musées chaque weekend", es: "Podíamos visitar museos cada fin de semana", tense: "Pretérito Imperfecto" },
+                { fr: "Je ne peux pas attendre", es: "No puedo esperar", tense: "Presente" },
+                { fr: "Puis-je t'aider ?", es: "¿Puedo ayudarte?", tense: "Presente" },
+                { fr: "Il n'a pas pu se souvenir", es: "No pudo recordar", tense: "Pretérito Indefinido" },
+                { fr: "Nous pouvons commander une pizza", es: "Podemos pedir pizza", tense: "Presente" },
+                { fr: "Peux-tu fermer la porte ?", es: "¿Puedes cerrar la puerta?", tense: "Presente" },
+                { fr: "Je pouvais sentir le froid", es: "Podía sentir el frío", tense: "Pretérito Imperfecto" },
+                { fr: "Ils ne peuvent pas se mettre d'accord", es: "No pueden ponerse de acuerdo", tense: "Presente" },
+                { fr: "Je pourrai l'apprendre", es: "Podré aprenderlo", tense: "Futuro Simple" },
+                { fr: "Pouvons-nous rester plus longtemps ?", es: "¿Podemos quedarnos más tiempo?", tense: "Presente" },
+                { fr: "Elle ne peut pas lui pardonner", es: "No puede perdonarlo", tense: "Presente" },
+                { fr: "Je n'ai pas pu refuser", es: "No pude rechazar", tense: "Pretérito Indefinido" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

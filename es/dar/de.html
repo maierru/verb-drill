@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇪🇸 VERB DAR — 105 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇪🇸 Verb DAR</h1>
+            <p class="subtitle">to give — 105 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 105 von 105 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Spanisch-Übung — DAR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb DAR</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Präsens - Handlungen die jetzt oder gewöhnlich passieren</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo doy</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú das</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted da</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros damos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros dais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes dan</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Indefinido - abgeschlossene Handlungen in der Vergangenheit</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo di</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú diste</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted dio</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros dimos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros disteis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes dieron</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Imperfekt - andauernde oder gewöhnliche Handlungen in der Vergangenheit</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo daba</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú dabas</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted daba</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros dábamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros dabais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes daban</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Futur - Handlungen die passieren werden</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo daré</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú darás</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted dará</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros daremos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros daréis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes darán</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'es',
+            labels: { target: 'Spanisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["doy","das","da","damos","dais","dan","di","dio","daba","daré"],
+            phrases: [
+                { de: "Ich gebe dir mein Wort", es: "Te doy mi palabra", tense: "Presente" },
+                { de: "Sie gibt mir ein Geschenk", es: "Ella me da un regalo", tense: "Presente" },
+                { de: "Sie geben jeden Tag Unterricht", es: "Dan clases todos los días", tense: "Presente" },
+                { de: "Ich danke für alles", es: "Doy gracias por todo", tense: "Presente" },
+                { de: "Er gibt mir gute Ratschläge", es: "Él me da buenos consejos", tense: "Presente" },
+                { de: "Wir geben unsere Unterstützung", es: "Damos nuestro apoyo", tense: "Presente" },
+                { de: "Ich bemerke das Problem", es: "Me doy cuenta del problema", tense: "Presente" },
+                { de: "Du gibst mir Hoffnung", es: "Me das esperanza", tense: "Presente" },
+                { de: "Sie geben am Wochenende Konzerte", es: "Dan conciertos los fines de semana", tense: "Presente" },
+                { de: "Sie gibt Privatunterricht", es: "Ella da clases particulares", tense: "Presente" },
+                { de: "Ich gebe die Erlaubnis zu gehen", es: "Doy permiso para salir", tense: "Presente" },
+                { de: "Er gibt mir die Schlüssel", es: "Él me da las llaves", tense: "Presente" },
+                { de: "Wir spenden Geld für wohltätige Zwecke", es: "Damos dinero a la caridad", tense: "Presente" },
+                { de: "Es ist mir egal was sie sagen", es: "Me da igual lo que digan", tense: "Presente" },
+                { de: "Du gibst zu viele Ausreden", es: "Das demasiadas excusas", tense: "Presente" },
+                { de: "Sie geben kostenlose Proben aus", es: "Dan muestras gratis", tense: "Presente" },
+                { de: "Sie gibt mir einen Abschiedskuss", es: "Ella me da un beso de despedida", tense: "Presente" },
+                { de: "Ich gebe meine Meinung ehrlich ab", es: "Doy mi opinión honestamente", tense: "Presente" },
+                { de: "Er hält Präsentationen bei der Arbeit", es: "Él da presentaciones en el trabajo", tense: "Presente" },
+                { de: "Wir machen einen Spaziergang im Park", es: "Damos un paseo por el parque", tense: "Presente" },
+                { de: "Ich gab ihm gestern das Buch", es: "Le di el libro ayer", tense: "Pretérito Indefinido" },
+                { de: "Sie hielt eine ausgezeichnete Rede", es: "Ella dio un discurso excelente", tense: "Pretérito Indefinido" },
+                { de: "Sie gaben uns ihre Antwort", es: "Nos dieron su respuesta", tense: "Pretérito Indefinido" },
+                { de: "Ich gab ihr meinen Platz", es: "Le di mi asiento", tense: "Pretérito Indefinido" },
+                { de: "Du gabst mir gute Nachrichten", es: "Me diste buenas noticias", tense: "Pretérito Indefinido" },
+                { de: "Er gab gestern Abend eine Party", es: "Él dio una fiesta anoche", tense: "Pretérito Indefinido" },
+                { de: "Wir gaben unser Bestes", es: "Dimos nuestro mejor esfuerzo", tense: "Pretérito Indefinido" },
+                { de: "Ich bemerkte was passiert ist", es: "Me di cuenta de lo que pasó", tense: "Pretérito Indefinido" },
+                { de: "Sie brachte Zwillinge zur Welt", es: "Ella dio a luz gemelos", tense: "Pretérito Indefinido" },
+                { de: "Sie gaben die Erlaubnis fortzufahren", es: "Dieron permiso para proceder", tense: "Pretérito Indefinido" },
+                { de: "Ich dankte beim Abendessen", es: "Di gracias en la cena", tense: "Pretérito Indefinido" },
+                { de: "Du gabst die falsche Adresse", es: "Diste la dirección equivocada", tense: "Pretérito Indefinido" },
+                { de: "Er gab mir seine Telefonnummer", es: "Él me dio su número de teléfono", tense: "Pretérito Indefinido" },
+                { de: "Wir gaben ihnen einen herzlichen Empfang", es: "Les dimos una cálida bienvenida", tense: "Pretérito Indefinido" },
+                { de: "Ich gab ihr Blumen", es: "Le di flores", tense: "Pretérito Indefinido" },
+                { de: "Sie gab mir eine Umarmung", es: "Ella me dio un abrazo", tense: "Pretérito Indefinido" },
+                { de: "Sie gaben eine großartige Vorstellung", es: "Dieron una gran actuación", tense: "Pretérito Indefinido" },
+                { de: "Ich spendete Blut im Krankenhaus", es: "Di sangre en el hospital", tense: "Pretérito Indefinido" },
+                { de: "Du gabst deine Zustimmung", es: "Diste tu consentimiento", tense: "Pretérito Indefinido" },
+                { de: "Er gab mir Anweisungen", es: "Él me dio indicaciones", tense: "Pretérito Indefinido" },
+                { de: "Ich gab allen Ratschläge", es: "Daba consejos a todos", tense: "Pretérito Imperfecto" },
+                { de: "Sie gab Mathematikunterricht", es: "Ella daba clases de matemáticas", tense: "Pretérito Imperfecto" },
+                { de: "Sie gaben Bettlern Geld", es: "Daban dinero a los mendigos", tense: "Pretérito Imperfecto" },
+                { de: "Ich machte täglich Spaziergänge", es: "Daba paseos diariamente", tense: "Pretérito Imperfecto" },
+                { de: "Du gabst mir immer Probleme", es: "Siempre me dabas problemas", tense: "Pretérito Imperfecto" },
+                { de: "Er gab hier Konzerte", es: "Él daba conciertos aquí", tense: "Pretérito Imperfecto" },
+                { de: "Wir gaben jeden Monat Partys", es: "Dábamos fiestas cada mes", tense: "Pretérito Imperfecto" },
+                { de: "Früher war mir das egal", es: "Antes eso me daba igual", tense: "Pretérito Imperfecto" },
+                { de: "Sie gab mir Geschenke", es: "Ella me daba regalos", tense: "Pretérito Imperfecto" },
+                { de: "Sie gaben freitags Prüfungen", es: "Daban exámenes los viernes", tense: "Pretérito Imperfecto" },
+                { de: "Ich werde dir morgen die Antwort geben", es: "Te daré la respuesta mañana", tense: "Futuro Simple" },
+                { de: "Sie wird eine Präsentation halten", es: "Ella dará una presentación", tense: "Futuro Simple" },
+                { de: "Sie werden uns Anweisungen geben", es: "Nos darán instrucciones", tense: "Futuro Simple" },
+                { de: "Ich werde mein Bestes geben", es: "Daré lo mejor de mí", tense: "Futuro Simple" },
+                { de: "Du wirst mir deine Meinung geben", es: "Me darás tu opinión", tense: "Futuro Simple" },
+                { de: "Er wird einen Vortrag halten", es: "Él dará una conferencia", tense: "Futuro Simple" },
+                { de: "Wir werden ihnen unsere Unterstützung geben", es: "Les daremos nuestro apoyo", tense: "Futuro Simple" },
+                { de: "Ich werde es später bemerken", es: "Me daré cuenta más tarde", tense: "Futuro Simple" },
+                { de: "Sie wird im März gebären", es: "Ella dará a luz en marzo", tense: "Futuro Simple" },
+                { de: "Sie werden Preise vergeben", es: "Darán premios", tense: "Futuro Simple" },
+                { de: "Die Sonne gibt Licht und Wärme", es: "El sol da luz y calor", tense: "Presente" },
+                { de: "Dieser Baum trägt im Sommer Früchte", es: "Este árbol da frutos en verano", tense: "Presente" },
+                { de: "Ich gebe dir meinen Segen", es: "Te doy mi bendición", tense: "Presente" },
+                { de: "Sie gibt Gitarrenunterricht", es: "Ella da clases de guitarra", tense: "Presente" },
+                { de: "Sie geben der Presse Interviews", es: "Dan entrevistas a la prensa", tense: "Presente" },
+                { de: "Ich gebe ihm den Vorteil des Zweifels", es: "Le doy el beneficio de la duda", tense: "Presente" },
+                { de: "Die Uhr schlägt zwölf", es: "El reloj da las doce", tense: "Presente" },
+                { de: "Du gibst mir Gänsehaut", es: "Me das escalofríos", tense: "Presente" },
+                { de: "Er gibt seine Zustimmung", es: "Él da su aprobación", tense: "Presente" },
+                { de: "Wir geben unser Ehrenwort", es: "Damos nuestra palabra de honor", tense: "Presente" },
+                { de: "Ich schalte das Licht an", es: "Doy la luz", tense: "Presente" },
+                { de: "Sie macht einen guten Eindruck", es: "Ella da buena impresión", tense: "Presente" },
+                { de: "Sie geben Alarm", es: "Dan la alarma", tense: "Presente" },
+                { de: "Ich gratuliere dir", es: "Te doy la enhorabuena", tense: "Presente" },
+                { de: "Du gibst mir die Hand", es: "Me das la mano", tense: "Presente" },
+                { de: "Er gibt Lebenszeichen", es: "Él da señales de vida", tense: "Presente" },
+                { de: "Wir schreien vor Freude", es: "Damos gritos de alegría", tense: "Presente" },
+                { de: "Ich spreche dir mein Beileid aus", es: "Te doy el pésame", tense: "Presente" },
+                { de: "Sie gibt mir Schmetterlinge", es: "Me da mariposas", tense: "Presente" },
+                { de: "Sie geben Kunden Vorrang", es: "Dan prioridad a los clientes", tense: "Presente" },
+                { de: "Ich machte einen Sprung vor Schreck", es: "Di un salto del susto", tense: "Pretérito Indefinido" },
+                { de: "Du gabst den letzten Schlag", es: "Diste el golpe final", tense: "Pretérito Indefinido" },
+                { de: "Er reichte seinen Rücktritt ein", es: "Él dio su renuncia", tense: "Pretérito Indefinido" },
+                { de: "Wir applaudierten", es: "Dimos un aplauso", tense: "Pretérito Indefinido" },
+                { de: "Ich gab den Arm", es: "Di el brazo", tense: "Pretérito Indefinido" },
+                { de: "Sie stieß einen Schrei aus", es: "Ella dio un grito", tense: "Pretérito Indefinido" },
+                { de: "Sie gaben grünes Licht", es: "Dieron luz verde", tense: "Pretérito Indefinido" },
+                { de: "Ich ging um den Block", es: "Di una vuelta a la manzana", tense: "Pretérito Indefinido" },
+                { de: "Du gabst den Befehl", es: "Diste la orden", tense: "Pretérito Indefinido" },
+                { de: "Es gab mir Gänsehaut", es: "Me dio piel de gallina", tense: "Pretérito Indefinido" },
+                { de: "Das Fenster geht zur Straße", es: "La ventana da a la calle", tense: "Presente" },
+                { de: "Mein Zimmer geht zum Garten", es: "Mi habitación da al jardín", tense: "Presente" },
+                { de: "Diese Tür führt zum Innenhof", es: "Esta puerta da al patio", tense: "Presente" },
+                { de: "Ich füttere die Tiere", es: "Doy de comer a los animales", tense: "Presente" },
+                { de: "Sie stillt das Baby", es: "Ella da de mamar al bebé", tense: "Presente" },
+                { de: "Ich betrachte die Angelegenheit als abgeschlossen", es: "Doy el asunto por cerrado", tense: "Presente" },
+                { de: "Sie bringen mich zum Lachen", es: "Me dan risa", tense: "Presente" },
+                { de: "Du machst mir Schande", es: "Me das vergüenza", tense: "Presente" },
+                { de: "Es macht mich traurig", es: "Me da tristeza", tense: "Presente" },
+                { de: "Er macht mich wütend", es: "Me da rabia", tense: "Presente" },
+                { de: "Sie machen mich neidisch", es: "Me dan envidia", tense: "Presente" },
+                { de: "Ich werde dich mitnehmen", es: "Te daré un aventón", tense: "Futuro Simple" },
+                { de: "Sie wird ihre Aussage machen", es: "Ella dará su testimonio", tense: "Futuro Simple" },
+                { de: "Sie werden einen Rabatt geben", es: "Darán un descuento", tense: "Futuro Simple" },
+                { de: "Ich werde dir Kredit geben", es: "Te daré crédito", tense: "Futuro Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

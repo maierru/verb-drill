@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇪🇸 VERB DECIR — 100 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇪🇸 Verb DECIR</h1>
+            <p class="subtitle">to say, to tell — 100 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 100 из 100 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика испанского — DECIR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb DECIR</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Настоящее время - говорить</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>digo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>dices</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>dice</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>decimos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>decís</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>dicen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Прошедшее время - сказал</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>dije</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>dijiste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>dijo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>dijimos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>dijisteis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>dijeron</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Имперфект - говорил</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>decía</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>decías</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>decía</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>decíamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>decíais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>decían</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Будущее время - скажет</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>diré</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>dirás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>dirá</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>diremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>diréis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>dirán</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'es',
+            labels: { target: 'Español', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["digo","dices","dice","decimos","decís","dicen","dije","dijiste","dijo","dijimos","dijeron","decía","dirá","diría"],
+            phrases: [
+                { ru: "Я говорю да.", es: "Digo que sí.", tense: "Presente" },
+                { ru: "Ты говоришь правду.", es: "Dices la verdad.", tense: "Presente" },
+                { ru: "Он говорит нет.", es: "Dice que no.", tense: "Presente" },
+                { ru: "Она говорит привет.", es: "Ella dice hola.", tense: "Presente" },
+                { ru: "Мы говорим до свидания.", es: "Decimos adiós.", tense: "Presente" },
+                { ru: "Они говорят, что это правда.", es: "Dicen que es verdad.", tense: "Presente" },
+                { ru: "Что ты говоришь?", es: "¿Qué dices?", tense: "Presente" },
+                { ru: "Я всегда говорю правду.", es: "Siempre digo la verdad.", tense: "Presente" },
+                { ru: "Они говорят, что она придёт.", es: "Dicen que ella viene.", tense: "Presente" },
+                { ru: "Как это сказать?", es: "¿Cómo se dice eso?", tense: "Presente" },
+                { ru: "Он никогда ничего не говорит.", es: "Él nunca dice nada.", tense: "Presente" },
+                { ru: "Я не говорю этого.", es: "No digo eso.", tense: "Presente" },
+                { ru: "Что это значит?", es: "¿Qué quiere decir?", tense: "Presente" },
+                { ru: "Она говорит, что устала.", es: "Ella dice que está cansada.", tense: "Presente" },
+                { ru: "Люди говорят, что это трудно.", es: "La gente dice que es difícil.", tense: "Presente" },
+                { ru: "Я просто говорю то, что думаю.", es: "Solo digo lo que pienso.", tense: "Presente" },
+                { ru: "Ты говоришь это по-испански.", es: "Lo dices en español.", tense: "Presente" },
+                { ru: "Он говорит спасибо.", es: "Dice gracias.", tense: "Presente" },
+                { ru: "Мы ничего не говорим.", es: "No decimos nada.", tense: "Presente" },
+                { ru: "Они всегда говорят одно и то же.", es: "Siempre dicen lo mismo.", tense: "Presente" },
+                { ru: "Я сказал да.", es: "Dije que sí.", tense: "Pretérito Indefinido" },
+                { ru: "Ты сказал мне правду.", es: "Me dijiste la verdad.", tense: "Pretérito Indefinido" },
+                { ru: "Он сказал нет.", es: "Dijo que no.", tense: "Pretérito Indefinido" },
+                { ru: "Она сказала мне секрет.", es: "Me dijo un secreto.", tense: "Pretérito Indefinido" },
+                { ru: "Мы попрощались.", es: "Dijimos adiós.", tense: "Pretérito Indefinido" },
+                { ru: "Они ничего не сказали.", es: "No dijeron nada.", tense: "Pretérito Indefinido" },
+                { ru: "Что ты сказал?", es: "¿Qué dijiste?", tense: "Pretérito Indefinido" },
+                { ru: "Я же тебе говорил!", es: "¡Te lo dije!", tense: "Pretérito Indefinido" },
+                { ru: "Она сказала, что придёт.", es: "Dijo que venía.", tense: "Pretérito Indefinido" },
+                { ru: "Он сказал ей всё.", es: "Le dijo todo.", tense: "Pretérito Indefinido" },
+                { ru: "Мы ничего не сказали.", es: "No dijimos nada.", tense: "Pretérito Indefinido" },
+                { ru: "Они сказали мне вчера.", es: "Me lo dijeron ayer.", tense: "Pretérito Indefinido" },
+                { ru: "Кто это сказал?", es: "¿Quién dijo eso?", tense: "Pretérito Indefinido" },
+                { ru: "Ты сказал, что поможешь.", es: "Dijiste que ayudarías.", tense: "Pretérito Indefinido" },
+                { ru: "Я поздоровался.", es: "Dije hola.", tense: "Pretérito Indefinido" },
+                { ru: "Она ничего не сказала.", es: "Ella no dijo nada.", tense: "Pretérito Indefinido" },
+                { ru: "Он сказал, что это невозможно.", es: "Dijo que era imposible.", tense: "Pretérito Indefinido" },
+                { ru: "Мы сообщили им новости.", es: "Les dijimos las noticias.", tense: "Pretérito Indefinido" },
+                { ru: "Ты сказал неправильно.", es: "Lo dijiste mal.", tense: "Pretérito Indefinido" },
+                { ru: "Я всегда говорил правду.", es: "Siempre decía la verdad.", tense: "Pretérito Imperfecto" },
+                { ru: "Ты говорил это.", es: "Tú decías eso.", tense: "Pretérito Imperfecto" },
+                { ru: "Он прощался.", es: "Él decía adiós.", tense: "Pretérito Imperfecto" },
+                { ru: "Она рассказывала мне истории.", es: "Ella me decía cuentos.", tense: "Pretérito Imperfecto" },
+                { ru: "Мы говорили это.", es: "Lo decíamos.", tense: "Pretérito Imperfecto" },
+                { ru: "Они говорили это каждый день.", es: "Lo decían cada día.", tense: "Pretérito Imperfecto" },
+                { ru: "Что ты говорил?", es: "¿Qué decías?", tense: "Pretérito Imperfecto" },
+                { ru: "Я говорил правду.", es: "Decía la verdad.", tense: "Pretérito Imperfecto" },
+                { ru: "Он всегда говорил нет.", es: "Siempre decía que no.", tense: "Pretérito Imperfecto" },
+                { ru: "Они говорили неправильно.", es: "Lo decían mal.", tense: "Pretérito Imperfecto" },
+                { ru: "Я скажу завтра.", es: "Lo diré mañana.", tense: "Futuro Simple" },
+                { ru: "Ты скажешь правду.", es: "Dirás la verdad.", tense: "Futuro Simple" },
+                { ru: "Он скажет да.", es: "Dirá que sí.", tense: "Futuro Simple" },
+                { ru: "Она скажет тебе позже.", es: "Te lo dirá más tarde.", tense: "Futuro Simple" },
+                { ru: "Мы попрощаемся.", es: "Diremos adiós.", tense: "Futuro Simple" },
+                { ru: "Они нам скажут.", es: "Nos lo dirán.", tense: "Futuro Simple" },
+                { ru: "Что ты скажешь?", es: "¿Qué dirás?", tense: "Futuro Simple" },
+                { ru: "Я ничего не скажу.", es: "No diré nada.", tense: "Futuro Simple" },
+                { ru: "Он расскажет историю.", es: "Dirá la historia.", tense: "Futuro Simple" },
+                { ru: "Они скажут спасибо.", es: "Dirán gracias.", tense: "Futuro Simple" },
+                { ru: "Скажи мне правду.", es: "Dime la verdad.", tense: "Imperativo" },
+                { ru: "Не говори этого.", es: "No digas eso.", tense: "Imperativo" },
+                { ru: "Расскажи мне больше.", es: "Dime más.", tense: "Imperativo" },
+                { ru: "Передай ей привет.", es: "Dile hola.", tense: "Imperativo" },
+                { ru: "Никому не говори.", es: "No se lo digas a nadie.", tense: "Imperativo" },
+                { ru: "То есть...", es: "Es decir...", tense: "Expresión" },
+                { ru: "Можно так сказать.", es: "Se puede decir.", tense: "Expresión" },
+                { ru: "Как говорится...", es: "Como se dice...", tense: "Expresión" },
+                { ru: "Я имею в виду...", es: "Quiero decir...", tense: "Expresión" },
+                { ru: "Как это сказать по-испански?", es: "¿Cómo se dice en español?", tense: "Expresión" },
+                { ru: "Что ты хочешь сказать?", es: "¿Qué quieres decir?", tense: "Expresión" },
+                { ru: "Говорят, будет дождь.", es: "Se dice que va a llover.", tense: "Expresión" },
+                { ru: "Само собой разумеется.", es: "No hace falta decir.", tense: "Expresión" },
+                { ru: "Скажем...", es: "Digamos...", tense: "Expresión" },
+                { ru: "Не могу сказать точно.", es: "No puedo decir con seguridad.", tense: "Expresión" },
+                { ru: "Я бы сказал да.", es: "Diría que sí.", tense: "Condicional" },
+                { ru: "Ты бы сказал правду.", es: "Dirías la verdad.", tense: "Condicional" },
+                { ru: "Он бы сказал нет.", es: "Diría que no.", tense: "Condicional" },
+                { ru: "Она никогда бы этого не сказала.", es: "Ella nunca diría eso.", tense: "Condicional" },
+                { ru: "Мы бы им сказали.", es: "Se lo diríamos.", tense: "Condicional" },
+                { ru: "Что бы ты сказал?", es: "¿Qué dirías?", tense: "Condicional" },
+                { ru: "Я говорил это много раз.", es: "Lo he dicho muchas veces.", tense: "Pretérito Perfecto" },
+                { ru: "Ты говорил мне раньше.", es: "Me lo has dicho antes.", tense: "Pretérito Perfecto" },
+                { ru: "Он никогда этого не говорил.", es: "Nunca ha dicho eso.", tense: "Pretérito Perfecto" },
+                { ru: "Она уже сказала ему.", es: "Ya se lo ha dicho.", tense: "Pretérito Perfecto" },
+                { ru: "Мы сказали всё.", es: "Hemos dicho todo.", tense: "Pretérito Perfecto" },
+                { ru: "Говорю тебе сейчас.", es: "Te lo digo ahora.", tense: "Presente" },
+                { ru: "Перестань говорить это.", es: "Deja de decir eso.", tense: "Imperativo" },
+                { ru: "Она продолжает говорить это.", es: "Ella sigue diciendo eso.", tense: "Presente" },
+                { ru: "Не говоря ни слова.", es: "Sin decir una palabra.", tense: "Expresión" },
+                { ru: "Скажи ему, что я здесь.", es: "Dile que estoy aquí.", tense: "Imperativo" },
+                { ru: "Я сказал что-то не то?", es: "¿Dije algo malo?", tense: "Pretérito Indefinido" },
+                { ru: "Мне следовало сказать нет.", es: "Debería haber dicho que no.", tense: "Condicional Perfecto" },
+                { ru: "Они никогда этого не скажут.", es: "Nunca lo dirán.", tense: "Futuro Simple" },
+                { ru: "Скажи ещё раз, пожалуйста.", es: "Dilo otra vez, por favor.", tense: "Imperativo" },
+                { ru: "Я слышал, как ты это сказал.", es: "Te oí decirlo.", tense: "Pretérito Indefinido" },
+                { ru: "Он сказал с улыбкой.", es: "Dijo con una sonrisa.", tense: "Pretérito Indefinido" },
+                { ru: "Никто не говорил, что будет легко.", es: "Nadie dijo que sería fácil.", tense: "Pretérito Indefinido" },
+                { ru: "Она говорит, что любит тебя.", es: "Ella dice que te ama.", tense: "Presente" },
+                { ru: "Я никогда не скажу 'никогда'.", es: "Nunca diré nunca.", tense: "Futuro Simple" },
+                { ru: "Как я говорил...", es: "Como decía...", tense: "Pretérito Imperfecto" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

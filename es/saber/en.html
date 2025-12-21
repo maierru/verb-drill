@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇪🇸 VERB SABER — 98 Phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Back to verb list</a>
+            <h1>🇪🇸 Verb SABER</h1>
+            <p class="subtitle">to know (facts) — 98 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Show all translations</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
+        </div>
+
+        <div class="stats" id="stats">Showing: 98 of 98 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Spanish Practice — SABER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb SABER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Present tense - used for facts you know now</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo sé</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú sabes</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted sabe</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros sabemos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros sabéis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes saben</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Simple past - used for when you learned/found out something</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo supe</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú supiste</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted supo</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros supimos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros supisteis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes supieron</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Imperfect past - used for facts you used to know</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo sabía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú sabías</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted sabía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros sabíamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros sabíais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes sabían</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Future tense - used for facts you will know</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo sabré</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú sabrás</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted sabrá</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros sabremos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros sabréis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes sabrán</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'en',
+            targetKey: 'es',
+            labels: { target: 'Spanish', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["sé","sabes","sabe","sabemos","sabéis","saben","sabía","supe","sabré","sabría"],
+            phrases: [
+                { en: "I know your name", es: "Sé tu nombre", tense: "Presente" },
+                { en: "Do you know the answer?", es: "¿Sabes la respuesta?", tense: "Presente" },
+                { en: "She knows the truth", es: "Ella sabe la verdad", tense: "Presente" },
+                { en: "We know the way", es: "Sabemos el camino", tense: "Presente" },
+                { en: "They know the rules", es: "Ellos saben las reglas", tense: "Presente" },
+                { en: "I know how to swim", es: "Sé nadar", tense: "Presente" },
+                { en: "Do you know how to cook?", es: "¿Sabes cocinar?", tense: "Presente" },
+                { en: "He knows how to drive", es: "Él sabe conducir", tense: "Presente" },
+                { en: "We know how to dance", es: "Sabemos bailar", tense: "Presente" },
+                { en: "They know how to speak Spanish", es: "Ellos saben hablar español", tense: "Presente" },
+                { en: "I don't know", es: "No sé", tense: "Presente" },
+                { en: "I don't know what to do", es: "No sé qué hacer", tense: "Presente" },
+                { en: "I don't know where it is", es: "No sé dónde está", tense: "Presente" },
+                { en: "I don't know why", es: "No sé por qué", tense: "Presente" },
+                { en: "I don't know how", es: "No sé cómo", tense: "Presente" },
+                { en: "You know what?", es: "¿Sabes qué?", tense: "Presente" },
+                { en: "You know what I mean?", es: "¿Sabes lo que quiero decir?", tense: "Presente" },
+                { en: "Do you know what time it is?", es: "¿Sabes qué hora es?", tense: "Presente" },
+                { en: "Nobody knows", es: "Nadie sabe", tense: "Presente" },
+                { en: "Everyone knows", es: "Todo el mundo sabe", tense: "Presente" },
+                { en: "I know it by heart", es: "Lo sé de memoria", tense: "Presente" },
+                { en: "Who knows?", es: "¿Quién sabe?", tense: "Presente" },
+                { en: "As far as I know", es: "Que yo sepa", tense: "Presente" },
+                { en: "I want to know", es: "Quiero saber", tense: "Presente" },
+                { en: "I need to know", es: "Necesito saber", tense: "Presente" },
+                { en: "It tastes like chicken", es: "Sabe a pollo", tense: "Presente" },
+                { en: "It tastes good", es: "Sabe bien", tense: "Presente" },
+                { en: "It tastes bad", es: "Sabe mal", tense: "Presente" },
+                { en: "It tastes like nothing", es: "No sabe a nada", tense: "Presente" },
+                { en: "What does it taste like?", es: "¿A qué sabe?", tense: "Presente" },
+                { en: "I knew it!", es: "¡Lo sabía!", tense: "Pretérito Imperfecto" },
+                { en: "I knew you would come", es: "Sabía que vendrías", tense: "Pretérito Imperfecto" },
+                { en: "She knew the answer", es: "Ella sabía la respuesta", tense: "Pretérito Imperfecto" },
+                { en: "We knew the truth", es: "Sabíamos la verdad", tense: "Pretérito Imperfecto" },
+                { en: "They knew everything", es: "Ellos sabían todo", tense: "Pretérito Imperfecto" },
+                { en: "I didn't know", es: "No sabía", tense: "Pretérito Imperfecto" },
+                { en: "I didn't know that", es: "No sabía eso", tense: "Pretérito Imperfecto" },
+                { en: "Did you know?", es: "¿Sabías?", tense: "Pretérito Imperfecto" },
+                { en: "How did you know?", es: "¿Cómo lo sabías?", tense: "Pretérito Imperfecto" },
+                { en: "I already knew", es: "Ya lo sabía", tense: "Pretérito Imperfecto" },
+                { en: "I found out yesterday", es: "Lo supe ayer", tense: "Pretérito Indefinido" },
+                { en: "When did you find out?", es: "¿Cuándo lo supiste?", tense: "Pretérito Indefinido" },
+                { en: "She found out the truth", es: "Ella supo la verdad", tense: "Pretérito Indefinido" },
+                { en: "We found out too late", es: "Lo supimos demasiado tarde", tense: "Pretérito Indefinido" },
+                { en: "They never found out", es: "Ellos nunca lo supieron", tense: "Pretérito Indefinido" },
+                { en: "I just found out", es: "Acabo de saberlo", tense: "Presente" },
+                { en: "How did he find out?", es: "¿Cómo lo supo?", tense: "Pretérito Indefinido" },
+                { en: "I found out by accident", es: "Lo supe por casualidad", tense: "Pretérito Indefinido" },
+                { en: "We found out the hard way", es: "Lo supimos por las malas", tense: "Pretérito Indefinido" },
+                { en: "You will know soon", es: "Lo sabrás pronto", tense: "Futuro Simple" },
+                { en: "I will know tomorrow", es: "Lo sabré mañana", tense: "Futuro Simple" },
+                { en: "We will know the results", es: "Sabremos los resultados", tense: "Futuro Simple" },
+                { en: "They will know eventually", es: "Ellos lo sabrán eventualmente", tense: "Futuro Simple" },
+                { en: "You will never know", es: "Nunca lo sabrás", tense: "Futuro Simple" },
+                { en: "Time will tell", es: "El tiempo lo dirá", tense: "Futuro Simple" },
+                { en: "I know what you're thinking", es: "Sé lo que estás pensando", tense: "Presente" },
+                { en: "I know where you live", es: "Sé dónde vives", tense: "Presente" },
+                { en: "I know who you are", es: "Sé quién eres", tense: "Presente" },
+                { en: "I know when you left", es: "Sé cuándo te fuiste", tense: "Presente" },
+                { en: "Do you know my brother?", es: "¿Conoces a mi hermano?", tense: "Presente" },
+                { en: "I know Spanish", es: "Sé español", tense: "Presente" },
+                { en: "She knows three languages", es: "Ella sabe tres idiomas", tense: "Presente" },
+                { en: "I know the city well", es: "Conozco bien la ciudad", tense: "Presente" },
+                { en: "I know for sure", es: "Lo sé con certeza", tense: "Presente" },
+                { en: "I know for a fact", es: "Lo sé a ciencia cierta", tense: "Presente" },
+                { en: "As you know", es: "Como sabes", tense: "Presente" },
+                { en: "As we all know", es: "Como todos sabemos", tense: "Presente" },
+                { en: "Let me know", es: "Avísame", tense: "Imperativo" },
+                { en: "Please let me know", es: "Por favor, hazme saber", tense: "Imperativo" },
+                { en: "I wish I knew", es: "Ojalá lo supiera", tense: "Subjuntivo" },
+                { en: "If I knew", es: "Si lo supiera", tense: "Subjuntivo" },
+                { en: "I should have known", es: "Debería haberlo sabido", tense: "Condicional" },
+                { en: "How was I supposed to know?", es: "¿Cómo iba yo a saber?", tense: "Pretérito Imperfecto" },
+                { en: "You never know", es: "Nunca se sabe", tense: "Presente" },
+                { en: "God knows", es: "Dios sabe", tense: "Presente" },
+                { en: "Heaven knows", es: "Vaya usted a saber", tense: "Presente" },
+                { en: "I know better", es: "Sé mejor que eso", tense: "Presente" },
+                { en: "You should know better", es: "Deberías saberlo mejor", tense: "Condicional" },
+                { en: "I know nothing about it", es: "No sé nada de eso", tense: "Presente" },
+                { en: "I know everything about her", es: "Sé todo sobre ella", tense: "Presente" },
+                { en: "I know something you don't", es: "Sé algo que tú no sabes", tense: "Presente" },
+                { en: "Do you know something?", es: "¿Sabes algo?", tense: "Presente" },
+                { en: "I know enough", es: "Sé lo suficiente", tense: "Presente" },
+                { en: "I don't know enough", es: "No sé lo suficiente", tense: "Presente" },
+                { en: "I know too much", es: "Sé demasiado", tense: "Presente" },
+                { en: "The more you know", es: "Cuanto más sabes", tense: "Presente" },
+                { en: "I want you to know", es: "Quiero que sepas", tense: "Subjuntivo" },
+                { en: "I need you to know", es: "Necesito que sepas", tense: "Subjuntivo" },
+                { en: "You should know", es: "Deberías saber", tense: "Condicional" },
+                { en: "You must know", es: "Debes saber", tense: "Presente" },
+                { en: "Everyone should know", es: "Todo el mundo debería saber", tense: "Condicional" },
+                { en: "I'm glad to know", es: "Me alegra saber", tense: "Presente" },
+                { en: "It's good to know", es: "Es bueno saber", tense: "Presente" },
+                { en: "It's important to know", es: "Es importante saber", tense: "Presente" },
+                { en: "I hate to tell you, but I know", es: "Odio decírtelo, pero lo sé", tense: "Presente" },
+                { en: "I think I know", es: "Creo que sé", tense: "Presente" },
+                { en: "I thought I knew", es: "Pensé que sabía", tense: "Pretérito Imperfecto" },
+                { en: "I know what I saw", es: "Sé lo que vi", tense: "Presente" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇪🇸 VERB ENCONTRAR — 97 Phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Back to verb list</a>
+            <h1>🇪🇸 Verb ENCONTRAR</h1>
+            <p class="subtitle">to find — 97 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Show all translations</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
+        </div>
+
+        <div class="stats" id="stats">Showing: 97 of 97 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Spanish Practice — ENCONTRAR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb ENCONTRAR</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Present tense - actions happening now or habitual actions</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">{"person" => "yo", "form" => "encuentro"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "tú", "form" => "encuentras"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "él/ella/usted", "form" => "encuentra"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "nosotros/nosotras", "form" => "encontramos"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "vosotros/vosotras", "form" => "encontráis"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "ellos/ellas/ustedes", "form" => "encuentran"}</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Simple past - completed actions in the past</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">{"person" => "yo", "form" => "encontré"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "tú", "form" => "encontraste"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "él/ella/usted", "form" => "encontró"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "nosotros/nosotras", "form" => "encontramos"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "vosotros/vosotras", "form" => "encontrasteis"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "ellos/ellas/ustedes", "form" => "encontraron"}</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Imperfect past - ongoing or habitual actions in the past</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">{"person" => "yo", "form" => "encontraba"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "tú", "form" => "encontrabas"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "él/ella/usted", "form" => "encontraba"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "nosotros/nosotras", "form" => "encontrábamos"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "vosotros/vosotras", "form" => "encontrabais"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "ellos/ellas/ustedes", "form" => "encontraban"}</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Simple future - actions that will happen</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">{"person" => "yo", "form" => "encontraré"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "tú", "form" => "encontrarás"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "él/ella/usted", "form" => "encontrará"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "nosotros/nosotras", "form" => "encontraremos"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "vosotros/vosotras", "form" => "encontraréis"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "ellos/ellas/ustedes", "form" => "encontrarán"}</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'en',
+            targetKey: 'es',
+            labels: { target: 'Spanish', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["encuentro","encuentras","encuentra","encontramos","encontráis","encuentran","encontré","encontraba","encontraré"],
+            phrases: [
+                { en: "I find my keys every morning", es: "Encuentro mis llaves cada mañana", tense: "Presente" },
+                { en: "You find good restaurants here", es: "Encuentras buenos restaurantes aquí", tense: "Presente" },
+                { en: "She finds the solution easily", es: "Ella encuentra la solución fácilmente", tense: "Presente" },
+                { en: "We find time to talk", es: "Encontramos tiempo para hablar", tense: "Presente" },
+                { en: "They find work quickly", es: "Encuentran trabajo rápidamente", tense: "Presente" },
+                { en: "I found my phone yesterday", es: "Encontré mi teléfono ayer", tense: "Pretérito Indefinido" },
+                { en: "You found a new job", es: "Encontraste un nuevo trabajo", tense: "Pretérito Indefinido" },
+                { en: "He found the answer", es: "Él encontró la respuesta", tense: "Pretérito Indefinido" },
+                { en: "We found a great place", es: "Encontramos un lugar genial", tense: "Pretérito Indefinido" },
+                { en: "They found each other again", es: "Se encontraron otra vez", tense: "Pretérito Indefinido" },
+                { en: "I always found what I needed", es: "Siempre encontraba lo que necesitaba", tense: "Pretérito Imperfecto" },
+                { en: "You used to find treasures", es: "Encontrabas tesoros", tense: "Pretérito Imperfecto" },
+                { en: "She found peace in nature", es: "Ella encontraba paz en la naturaleza", tense: "Pretérito Imperfecto" },
+                { en: "We found joy in simple things", es: "Encontrábamos alegría en cosas simples", tense: "Pretérito Imperfecto" },
+                { en: "I will find a solution", es: "Encontraré una solución", tense: "Futuro Simple" },
+                { en: "You will find your way", es: "Encontrarás tu camino", tense: "Futuro Simple" },
+                { en: "He will find success", es: "Él encontrará el éxito", tense: "Futuro Simple" },
+                { en: "We will find the truth", es: "Encontraremos la verdad", tense: "Futuro Simple" },
+                { en: "They will find happiness", es: "Encontrarán la felicidad", tense: "Futuro Simple" },
+                { en: "I can't find my wallet", es: "No encuentro mi cartera", tense: "Presente" },
+                { en: "Can you find the address?", es: "¿Encuentras la dirección?", tense: "Presente" },
+                { en: "Where do I find the station?", es: "¿Dónde encuentro la estación?", tense: "Presente" },
+                { en: "I find it difficult to sleep", es: "Encuentro difícil dormir", tense: "Presente" },
+                { en: "She finds comfort in music", es: "Ella encuentra consuelo en la música", tense: "Presente" },
+                { en: "We meet every Tuesday", es: "Nos encontramos cada martes", tense: "Presente" },
+                { en: "I feel happy today", es: "Me encuentro feliz hoy", tense: "Presente" },
+                { en: "How do you feel?", es: "¿Cómo te encuentras?", tense: "Presente" },
+                { en: "She feels well", es: "Ella se encuentra bien", tense: "Presente" },
+                { en: "We met at the park", es: "Nos encontramos en el parque", tense: "Pretérito Indefinido" },
+                { en: "I felt sick yesterday", es: "Me encontraba enfermo ayer", tense: "Pretérito Imperfecto" },
+                { en: "I find this book interesting", es: "Encuentro este libro interesante", tense: "Presente" },
+                { en: "You find problems everywhere", es: "Encuentras problemas en todas partes", tense: "Presente" },
+                { en: "He finds no excuse", es: "Él no encuentra excusa", tense: "Presente" },
+                { en: "We find opportunities daily", es: "Encontramos oportunidades a diario", tense: "Presente" },
+                { en: "They find nothing suspicious", es: "No encuentran nada sospechoso", tense: "Presente" },
+                { en: "I found love unexpectedly", es: "Encontré el amor inesperadamente", tense: "Pretérito Indefinido" },
+                { en: "You found the right path", es: "Encontraste el camino correcto", tense: "Pretérito Indefinido" },
+                { en: "She found her passion", es: "Ella encontró su pasión", tense: "Pretérito Indefinido" },
+                { en: "We found a better way", es: "Encontramos una mejor manera", tense: "Pretérito Indefinido" },
+                { en: "They found the missing documents", es: "Encontraron los documentos perdidos", tense: "Pretérito Indefinido" },
+                { en: "I used to find coins on the street", es: "Encontraba monedas en la calle", tense: "Pretérito Imperfecto" },
+                { en: "You always found excuses", es: "Siempre encontrabas excusas", tense: "Pretérito Imperfecto" },
+                { en: "He found comfort in reading", es: "Él encontraba consuelo leyendo", tense: "Pretérito Imperfecto" },
+                { en: "We met every weekend", es: "Nos encontrábamos cada fin de semana", tense: "Pretérito Imperfecto" },
+                { en: "They found inspiration in art", es: "Encontraban inspiración en el arte", tense: "Pretérito Imperfecto" },
+                { en: "I will find the answer tomorrow", es: "Encontraré la respuesta mañana", tense: "Futuro Simple" },
+                { en: "You will find new friends", es: "Encontrarás nuevos amigos", tense: "Futuro Simple" },
+                { en: "She will find her destiny", es: "Ella encontrará su destino", tense: "Futuro Simple" },
+                { en: "We will find a compromise", es: "Encontraremos un compromiso", tense: "Futuro Simple" },
+                { en: "They will find the treasure", es: "Encontrarán el tesoro", tense: "Futuro Simple" },
+                { en: "I can't find the exit", es: "No encuentro la salida", tense: "Presente" },
+                { en: "Do you find it strange?", es: "¿Lo encuentras extraño?", tense: "Presente" },
+                { en: "She doesn't find it funny", es: "Ella no lo encuentra gracioso", tense: "Presente" },
+                { en: "We find this situation absurd", es: "Encontramos esta situación absurda", tense: "Presente" },
+                { en: "They find no evidence", es: "No encuentran evidencia", tense: "Presente" },
+                { en: "I found a mistake in the report", es: "Encontré un error en el informe", tense: "Pretérito Indefinido" },
+                { en: "You found a shortcut", es: "Encontraste un atajo", tense: "Pretérito Indefinido" },
+                { en: "He found refuge here", es: "Él encontró refugio aquí", tense: "Pretérito Indefinido" },
+                { en: "We found common ground", es: "Encontramos puntos en común", tense: "Pretérito Indefinido" },
+                { en: "They found the culprit", es: "Encontraron al culpable", tense: "Pretérito Indefinido" },
+                { en: "I always found help when needed", es: "Siempre encontraba ayuda cuando la necesitaba", tense: "Pretérito Imperfecto" },
+                { en: "You found beauty in everything", es: "Encontrabas belleza en todo", tense: "Pretérito Imperfecto" },
+                { en: "She found meaning in her work", es: "Ella encontraba sentido en su trabajo", tense: "Pretérito Imperfecto" },
+                { en: "We found peace in silence", es: "Encontrábamos paz en el silencio", tense: "Pretérito Imperfecto" },
+                { en: "I will find time for you", es: "Encontraré tiempo para ti", tense: "Futuro Simple" },
+                { en: "You will find the courage", es: "Encontrarás el valor", tense: "Futuro Simple" },
+                { en: "He will find his purpose", es: "Él encontrará su propósito", tense: "Futuro Simple" },
+                { en: "We will find the resources", es: "Encontraremos los recursos", tense: "Futuro Simple" },
+                { en: "They will find a solution together", es: "Encontrarán una solución juntos", tense: "Futuro Simple" },
+                { en: "I need to find work", es: "Necesito encontrar trabajo", tense: "Presente" },
+                { en: "Can you find the file?", es: "¿Puedes encontrar el archivo?", tense: "Presente" },
+                { en: "She wants to find peace", es: "Ella quiere encontrar paz", tense: "Presente" },
+                { en: "We hope to find answers", es: "Esperamos encontrar respuestas", tense: "Presente" },
+                { en: "I found a parking spot", es: "Encontré un lugar para aparcar", tense: "Pretérito Indefinido" },
+                { en: "You found a bargain", es: "Encontraste una ganga", tense: "Pretérito Indefinido" },
+                { en: "He found the perfect gift", es: "Él encontró el regalo perfecto", tense: "Pretérito Indefinido" },
+                { en: "We found a nice hotel", es: "Encontramos un hotel agradable", tense: "Pretérito Indefinido" },
+                { en: "They found the restaurant closed", es: "Encontraron el restaurante cerrado", tense: "Pretérito Indefinido" },
+                { en: "I found motivation in challenges", es: "Encontraba motivación en los desafíos", tense: "Pretérito Imperfecto" },
+                { en: "You found joy in small things", es: "Encontrabas alegría en las pequeñas cosas", tense: "Pretérito Imperfecto" },
+                { en: "She found strength within", es: "Ella encontraba fuerza interior", tense: "Pretérito Imperfecto" },
+                { en: "We found hope in dark times", es: "Encontrábamos esperanza en tiempos oscuros", tense: "Pretérito Imperfecto" },
+                { en: "I will find my dream job", es: "Encontraré el trabajo de mis sueños", tense: "Futuro Simple" },
+                { en: "You will find what you seek", es: "Encontrarás lo que buscas", tense: "Futuro Simple" },
+                { en: "She will find her voice", es: "Ella encontrará su voz", tense: "Futuro Simple" },
+                { en: "We will find balance", es: "Encontraremos el equilibrio", tense: "Futuro Simple" },
+                { en: "They will find new opportunities", es: "Encontrarán nuevas oportunidades", tense: "Futuro Simple" },
+                { en: "I can't find my glasses", es: "No encuentro mis gafas", tense: "Presente" },
+                { en: "Where did you find this?", es: "¿Dónde encontraste esto?", tense: "Pretérito Indefinido" },
+                { en: "I found myself alone", es: "Me encontré solo", tense: "Pretérito Indefinido" },
+                { en: "We meet at the café", es: "Nos encontramos en el café", tense: "Presente" },
+                { en: "How are you feeling?", es: "¿Cómo te encuentras?", tense: "Presente" },
+                { en: "I feel better now", es: "Me encuentro mejor ahora", tense: "Presente" },
+                { en: "I found it by accident", es: "Lo encontré por casualidad", tense: "Pretérito Indefinido" },
+                { en: "You'll find it useful", es: "Lo encontrarás útil", tense: "Futuro Simple" },
+                { en: "She found no reason to stay", es: "Ella no encontró razón para quedarse", tense: "Pretérito Indefinido" },
+                { en: "We find ourselves in trouble", es: "Nos encontramos en problemas", tense: "Presente" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

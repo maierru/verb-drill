@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbe 🇪🇸 VERB PONER — 99 phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Retour à la liste des verbes</a>
+            <h1>🇪🇸 Verb PONER</h1>
+            <p class="subtitle">to put — 99 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Rechercher des phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Afficher toutes les traductions</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Masquer toutes les traductions</button>
+        </div>
+
+        <div class="stats" id="stats">Affichage: 99 sur 99 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Pratique de l'espagnol — PONER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb PONER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Présent, irrégulier à la 1ère personne (yo pongo)</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">pongo</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">pones</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">pone</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ponemos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ponéis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ponen</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Passé simple, radical irrégulier 'pus-'</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">puse</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">pusiste</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">puso</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">pusimos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">pusisteis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">pusieron</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Imparfait, formation régulière</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ponía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ponías</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ponía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">poníamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">poníais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ponían</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Futur simple, radical irrégulier 'pondr-'</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">pondré</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">pondrás</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">pondrá</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">pondremos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">pondréis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">pondrán</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'fr',
+            targetKey: 'es',
+            labels: { target: 'Espagnol', showing: 'Affichage', of: 'sur', phrases: 'phrases' },
+            verbForms: ["pongo","pones","pone","ponemos","ponéis","ponen","puse","pondré","pondría","puesto"],
+            phrases: [
+                { fr: "Je mets le livre sur la table", es: "Pongo el libro en la mesa", tense: "Presente" },
+                { fr: "Elle met ses chaussures", es: "Ella se pone los zapatos", tense: "Presente" },
+                { fr: "Nous mettons la table", es: "Nosotros ponemos la mesa", tense: "Presente" },
+                { fr: "Il met la musique", es: "Él pone la música", tense: "Presente" },
+                { fr: "Je mets les clés dans ma poche", es: "Pongo las llaves en mi bolsillo", tense: "Presente" },
+                { fr: "Ils rangent les assiettes", es: "Ellos ponen los platos", tense: "Presente" },
+                { fr: "Tu mets du sel dans la nourriture", es: "Tú pones sal en la comida", tense: "Presente" },
+                { fr: "Je mets la télé", es: "Pongo la tele", tense: "Presente" },
+                { fr: "Elle devient nerveuse", es: "Ella se pone nerviosa", tense: "Presente" },
+                { fr: "Nous mettons les vêtements dans l'armoire", es: "Ponemos la ropa en el armario", tense: "Presente" },
+                { fr: "Il met sa veste", es: "Él se pone la chaqueta", tense: "Presente" },
+                { fr: "Je mets du sucre dans mon café", es: "Pongo azúcar en mi café", tense: "Presente" },
+                { fr: "Ils allument les lumières", es: "Ellos ponen las luces", tense: "Presente" },
+                { fr: "Tu deviens heureux quand tu me vois", es: "Te pones feliz cuando me ves", tense: "Presente" },
+                { fr: "Elle met le bébé au lit", es: "Ella pone al bebé en la cama", tense: "Presente" },
+                { fr: "Je me maquille tous les jours", es: "Me pongo maquillaje todos los días", tense: "Presente" },
+                { fr: "Nous mettons de la glace dans les boissons", es: "Ponemos hielo en las bebidas", tense: "Presente" },
+                { fr: "Il met sa main sur mon épaule", es: "Él pone su mano en mi hombro", tense: "Presente" },
+                { fr: "Je mets la lettre dans la boîte aux lettres", es: "Pongo la carta en el buzón", tense: "Presente" },
+                { fr: "Ils se fâchent facilement", es: "Ellos se ponen enfadados fácilmente", tense: "Presente" },
+                { fr: "Tu mets ton téléphone en charge", es: "Pones tu teléfono en el cargador", tense: "Presente" },
+                { fr: "Elle met des fleurs dans le vase", es: "Ella pone flores en el jarrón", tense: "Presente" },
+                { fr: "Je mets de la crème solaire", es: "Me pongo protector solar", tense: "Presente" },
+                { fr: "Nous rangeons les courses", es: "Ponemos las compras", tense: "Presente" },
+                { fr: "Il tombe malade en hiver", es: "Él se pone enfermo en invierno", tense: "Presente" },
+                { fr: "J'ai mis le livre d'hier sur l'étagère", es: "Puse el libro de ayer en el estante", tense: "Pretérito Indefinido" },
+                { fr: "Elle a mis une robe rouge", es: "Ella se puso un vestido rojo", tense: "Pretérito Indefinido" },
+                { fr: "Nous avons mis la table pour le dîner", es: "Pusimos la mesa para la cena", tense: "Pretérito Indefinido" },
+                { fr: "Il a mis la radio", es: "Él puso la radio", tense: "Pretérito Indefinido" },
+                { fr: "J'ai mis l'argent à la banque", es: "Puse el dinero en el banco", tense: "Pretérito Indefinido" },
+                { fr: "Ils ont mis un nouveau tableau", es: "Ellos pusieron un cuadro nuevo", tense: "Pretérito Indefinido" },
+                { fr: "Tu as mis ton sac par terre", es: "Pusiste tu bolsa en el suelo", tense: "Pretérito Indefinido" },
+                { fr: "Elle est devenue très triste", es: "Ella se puso muy triste", tense: "Pretérito Indefinido" },
+                { fr: "J'ai mis mon meilleur costume", es: "Me puse mi mejor traje", tense: "Pretérito Indefinido" },
+                { fr: "Nous avons mis les chaises en cercle", es: "Pusimos las sillas en círculo", tense: "Pretérito Indefinido" },
+                { fr: "Il a mis du sel au lieu du sucre", es: "Él puso sal en vez de azúcar", tense: "Pretérito Indefinido" },
+                { fr: "J'ai mis ma confiance en toi", es: "Puse mi confianza en ti", tense: "Pretérito Indefinido" },
+                { fr: "Ils m'ont mis la faute", es: "Ellos me pusieron la culpa", tense: "Pretérito Indefinido" },
+                { fr: "Tu es devenu très pâle", es: "Te pusiste muy pálido", tense: "Pretérito Indefinido" },
+                { fr: "Elle a mis les assiettes sur la table", es: "Ella puso los platos en la mesa", tense: "Pretérito Indefinido" },
+                { fr: "Je mettais le journal ici", es: "Ponía el periódico aquí", tense: "Pretérito Imperfecto" },
+                { fr: "Elle mettait la table tous les jours", es: "Ella ponía la mesa todos los días", tense: "Pretérito Imperfecto" },
+                { fr: "Nous mettions toujours des fleurs dans le salon", es: "Siempre poníamos flores en la sala", tense: "Pretérito Imperfecto" },
+                { fr: "Il mettait de l'eau de Cologne chaque matin", es: "Él se ponía colonia cada mañana", tense: "Pretérito Imperfecto" },
+                { fr: "Je devenais nerveux pendant les examens", es: "Me ponía nervioso durante los exámenes", tense: "Pretérito Imperfecto" },
+                { fr: "Ils mettaient de la musique aux fêtes", es: "Ellos ponían música en las fiestas", tense: "Pretérito Imperfecto" },
+                { fr: "Tu mettais trop de sel", es: "Tú ponías demasiada sal", tense: "Pretérito Imperfecto" },
+                { fr: "Elle devenait heureuse quand il pleuvait", es: "Ella se ponía feliz cuando llovía", tense: "Pretérito Imperfecto" },
+                { fr: "Je mettrai les documents dans le tiroir", es: "Pondré los documentos en el cajón", tense: "Futuro Simple" },
+                { fr: "Elle mettra sa robe de mariée", es: "Ella se pondrá su vestido de novia", tense: "Futuro Simple" },
+                { fr: "Nous mettrons la table à 8 heures", es: "Pondremos la mesa a las 8", tense: "Futuro Simple" },
+                { fr: "Il mettra le chauffage", es: "Él pondrá la calefacción", tense: "Futuro Simple" },
+                { fr: "Je mettrai mon effort dans ceci", es: "Pondré mi esfuerzo en esto", tense: "Futuro Simple" },
+                { fr: "Ils mettront les photos au mur", es: "Ellos pondrán las fotos en la pared", tense: "Futuro Simple" },
+                { fr: "Tu iras mieux bientôt", es: "Te pondrás mejor pronto", tense: "Futuro Simple" },
+                { fr: "Elle mettra la bouilloire", es: "Ella pondrá la tetera", tense: "Futuro Simple" },
+                { fr: "Je mets des œufs dans le panier", es: "Pongo huevos en la cesta", tense: "Presente" },
+                { fr: "Tu mets l'adresse dans le GPS", es: "Pones la dirección en el GPS", tense: "Presente" },
+                { fr: "Il met sa signature en bas", es: "Él pone su firma al final", tense: "Presente" },
+                { fr: "Nous mettons des bougies sur le gâteau", es: "Ponemos velas en el pastel", tense: "Presente" },
+                { fr: "Ils mettent des autocollants sur l'ordinateur", es: "Ellos ponen pegatinas en el portátil", tense: "Presente" },
+                { fr: "Je deviens fatigué après le travail", es: "Me pongo cansado después del trabajo", tense: "Presente" },
+                { fr: "Elle met du parfum sur ses poignets", es: "Ella se pone perfume en las muñecas", tense: "Presente" },
+                { fr: "Tu me mets la pression", es: "Tú me pones presión", tense: "Presente" },
+                { fr: "Il met les pieds en l'air", es: "Él pone los pies en alto", tense: "Presente" },
+                { fr: "Je mets l'alarme pour 7 heures", es: "Pongo la alarma para las 7", tense: "Presente" },
+                { fr: "Nous mettons nos noms sur la liste", es: "Ponemos nuestros nombres en la lista", tense: "Presente" },
+                { fr: "Ils me mettent des obstacles", es: "Ellos me ponen obstáculos", tense: "Presente" },
+                { fr: "Tu deviens rouge quand tu es gêné", es: "Te pones rojo cuando estás avergonzado", tense: "Presente" },
+                { fr: "Elle met de la crème dans son café", es: "Ella pone crema en su café", tense: "Presente" },
+                { fr: "Je mets mes lunettes pour lire", es: "Me pongo las gafas para leer", tense: "Presente" },
+                { fr: "Il met ses clés sur le crochet", es: "Él pone sus llaves en el gancho", tense: "Presente" },
+                { fr: "Nous mettons de l'argent de côté pour les vacances", es: "Ponemos dinero aparte para vacaciones", tense: "Presente" },
+                { fr: "Je mets la poubelle dehors", es: "Pongo la basura fuera", tense: "Presente" },
+                { fr: "Elle met ses cheveux en queue de cheval", es: "Ella se pone el pelo en una coleta", tense: "Presente" },
+                { fr: "Tu mets le volume trop fort", es: "Pones el volumen muy alto", tense: "Presente" },
+                { fr: "Il met du ketchup sur tout", es: "Él pone ketchup en todo", tense: "Presente" },
+                { fr: "Nous mettons une couverture sur le canapé", es: "Ponemos una manta en el sofá", tense: "Presente" },
+                { fr: "Ils mettent des décorations pour Noël", es: "Ellos ponen decoraciones para Navidad", tense: "Presente" },
+                { fr: "Je deviens sérieux quand c'est nécessaire", es: "Me pongo serio cuando es necesario", tense: "Presente" },
+                { fr: "Elle met l'addition sur la table", es: "Ella pone la cuenta en la mesa", tense: "Presente" },
+                { fr: "Tu te mets en danger", es: "Te pones en peligro", tense: "Presente" },
+                { fr: "Il fait le puzzle", es: "Él pone el rompecabezas", tense: "Presente" },
+                { fr: "J'ai mis le mot de passe Wi-Fi", es: "Puse la contraseña del Wi-Fi", tense: "Pretérito Indefinido" },
+                { fr: "Nous avons mis des décorations hier", es: "Pusimos decoraciones ayer", tense: "Pretérito Indefinido" },
+                { fr: "Elle a mis ses rêves de côté", es: "Ella puso sus sueños a un lado", tense: "Pretérito Indefinido" },
+                { fr: "Ils ont tout mis en ordre", es: "Ellos pusieron todo en orden", tense: "Pretérito Indefinido" },
+                { fr: "Tu as donné un bon exemple", es: "Pusiste un buen ejemplo", tense: "Pretérito Indefinido" },
+                { fr: "Je suis devenu très en colère", es: "Me puse muy enfadado", tense: "Pretérito Indefinido" },
+                { fr: "Il a mis un cadenas sur la porte", es: "Él puso un candado en la puerta", tense: "Pretérito Indefinido" },
+                { fr: "Nous avons mis le plan en action", es: "Pusimos el plan en acción", tense: "Pretérito Indefinido" },
+                { fr: "Elle a mis son manteau sur la chaise", es: "Ella puso su abrigo en la silla", tense: "Pretérito Indefinido" },
+                { fr: "J'ai mis les courses dans le frigo", es: "Puse las compras en la nevera", tense: "Pretérito Indefinido" },
+                { fr: "Ils ont mis leur foi en Dieu", es: "Ellos pusieron su fe en Dios", tense: "Pretérito Indefinido" },
+                { fr: "Tu m'as mis dans une position difficile", es: "Me pusiste en una posición difícil", tense: "Pretérito Indefinido" },
+                { fr: "Il a mis la voiture dans le garage", es: "Él puso el coche en el garaje", tense: "Pretérito Indefinido" },
+                { fr: "J'ai mis toutes mes cartes sur la table", es: "Puse todas mis cartas sobre la mesa", tense: "Pretérito Indefinido" },
+                { fr: "Nous avons mis notre espoir dans l'avenir", es: "Pusimos nuestra esperanza en el futuro", tense: "Pretérito Indefinido" },
+                { fr: "Elle est devenue très excitée par la nouvelle", es: "Ella se puso muy emocionada con la noticia", tense: "Pretérito Indefinido" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbe 🇪🇸 VERB TENER — 94 phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Retour à la liste des verbes</a>
+            <h1>🇪🇸 Verb TENER</h1>
+            <p class="subtitle">to have — 94 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Rechercher des phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Afficher toutes les traductions</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Masquer toutes les traductions</button>
+        </div>
+
+        <div class="stats" id="stats">Affichage: 94 sur 94 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Pratique de l'espagnol — TENER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb TENER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Présent - possession, âge, expressions (tener hambre, tener que...)</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>tengo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>tienes</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>tiene</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>tenemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>tenéis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>tienen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Passé simple - actions accomplies dans le passé</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>tuve</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>tuviste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>tuvo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>tuvimos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>tuvisteis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>tuvieron</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Imparfait - actions continues ou habituelles dans le passé</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>tenía</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>tenías</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>tenía</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>teníamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>teníais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>tenían</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Futur simple - aura</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>tendré</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>tendrás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>tendrá</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>tendremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>tendréis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>tendrán</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'fr',
+            targetKey: 'es',
+            labels: { target: 'Espagnol', showing: 'Affichage', of: 'sur', phrases: 'phrases' },
+            verbForms: ["tengo","tienes","tiene","tenemos","tenéis","tienen","tuve","tuviste","tuvo","tuvimos","tuvisteis","tuvieron","tenía","tendrá","tendré"],
+            phrases: [
+                { fr: "J'ai une voiture", es: "Tengo un coche", tense: "Presente" },
+                { fr: "Elle a un chien", es: "Ella tiene un perro", tense: "Presente" },
+                { fr: "Nous avons du temps", es: "Tenemos tiempo", tense: "Presente" },
+                { fr: "Ils ont une maison", es: "Tienen una casa", tense: "Presente" },
+                { fr: "Tu as de l'argent?", es: "¿Tienes dinero?", tense: "Presente" },
+                { fr: "J'ai une idée", es: "Tengo una idea", tense: "Presente" },
+                { fr: "Il a trois enfants", es: "Él tiene tres hijos", tense: "Presente" },
+                { fr: "Tu as une question", es: "Tienes una pregunta", tense: "Presente" },
+                { fr: "Je n'ai pas le choix", es: "No tengo opción", tense: "Presente" },
+                { fr: "Nous avons un problème", es: "Tenemos un problema", tense: "Presente" },
+                { fr: "J'ai 25 ans", es: "Tengo 25 años", tense: "Presente" },
+                { fr: "Quel âge as-tu?", es: "¿Cuántos años tienes?", tense: "Presente" },
+                { fr: "Elle a 30 ans", es: "Ella tiene 30 años", tense: "Presente" },
+                { fr: "Mon fils a 5 ans", es: "Mi hijo tiene 5 años", tense: "Presente" },
+                { fr: "Ils sont très jeunes", es: "Tienen muy pocos años", tense: "Presente" },
+                { fr: "J'ai faim", es: "Tengo hambre", tense: "Presente" },
+                { fr: "J'ai soif", es: "Tengo sed", tense: "Presente" },
+                { fr: "J'ai froid", es: "Tengo frío", tense: "Presente" },
+                { fr: "J'ai chaud", es: "Tengo calor", tense: "Presente" },
+                { fr: "J'ai sommeil", es: "Tengo sueño", tense: "Presente" },
+                { fr: "J'ai peur", es: "Tengo miedo", tense: "Presente" },
+                { fr: "J'ai de la chance", es: "Tengo suerte", tense: "Presente" },
+                { fr: "Je suis pressé", es: "Tengo prisa", tense: "Presente" },
+                { fr: "J'ai raison", es: "Tengo razón", tense: "Presente" },
+                { fr: "Tu n'as pas raison", es: "No tienes razón", tense: "Presente" },
+                { fr: "Je dois y aller", es: "Tengo que ir", tense: "Presente" },
+                { fr: "Je dois étudier", es: "Tengo que estudiar", tense: "Presente" },
+                { fr: "Je dois travailler", es: "Tengo que trabajar", tense: "Presente" },
+                { fr: "Tu dois voir ça", es: "Tienes que ver esto", tense: "Presente" },
+                { fr: "Nous devons parler", es: "Tenemos que hablar", tense: "Presente" },
+                { fr: "Ils doivent attendre", es: "Tienen que esperar", tense: "Presente" },
+                { fr: "Je dois finir ça", es: "Tengo que terminar esto", tense: "Presente" },
+                { fr: "Elle doit partir tôt", es: "Ella tiene que salir temprano", tense: "Presente" },
+                { fr: "Tu dois partir maintenant?", es: "¿Tienes que irte ahora?", tense: "Presente" },
+                { fr: "Nous n'avons pas besoin de nous presser", es: "No tenemos que apresurarnos", tense: "Presente" },
+                { fr: "J'ai mal à la tête", es: "Tengo dolor de cabeza", tense: "Presente" },
+                { fr: "Elle a de la fièvre", es: "Ella tiene fiebre", tense: "Presente" },
+                { fr: "J'ai les yeux bleus", es: "Tengo ojos azules", tense: "Presente" },
+                { fr: "Il a les cheveux châtains", es: "Él tiene pelo castaño", tense: "Presente" },
+                { fr: "J'ai beaucoup d'amis", es: "Tengo muchos amigos", tense: "Presente" },
+                { fr: "J'ai eu une opportunité", es: "Tuve una oportunidad", tense: "Pretérito Indefinido" },
+                { fr: "Nous avons eu une réunion", es: "Tuvimos una reunión", tense: "Pretérito Indefinido" },
+                { fr: "Elle a eu un bébé", es: "Ella tuvo un bebé", tense: "Pretérito Indefinido" },
+                { fr: "Ils ont eu des problèmes", es: "Tuvieron problemas", tense: "Pretérito Indefinido" },
+                { fr: "J'ai passé une bonne journée", es: "Tuve un buen día", tense: "Pretérito Indefinido" },
+                { fr: "Tu as eu le temps?", es: "¿Tuviste tiempo?", tense: "Pretérito Indefinido" },
+                { fr: "Il a eu un accident", es: "Él tuvo un accidente", tense: "Pretérito Indefinido" },
+                { fr: "Nous nous sommes amusés", es: "Nos divertimos", tense: "Pretérito Indefinido" },
+                { fr: "Ils ont fait une fête", es: "Tuvieron una fiesta", tense: "Pretérito Indefinido" },
+                { fr: "J'ai dû partir", es: "Tuve que irme", tense: "Pretérito Indefinido" },
+                { fr: "J'avais une voiture quand j'étais jeune", es: "Tenía un coche cuando era joven", tense: "Pretérito Imperfecto" },
+                { fr: "Elle avait les cheveux longs", es: "Ella tenía el pelo largo", tense: "Pretérito Imperfecto" },
+                { fr: "Nous avions un chien avant", es: "Teníamos un perro antes", tense: "Pretérito Imperfecto" },
+                { fr: "Ils avaient beaucoup d'amis", es: "Tenían muchos amigos", tense: "Pretérito Imperfecto" },
+                { fr: "Avant j'avais plus de temps", es: "Antes tenía más tiempo", tense: "Pretérito Imperfecto" },
+                { fr: "Il avait toujours faim", es: "Siempre tenía hambre", tense: "Pretérito Imperfecto" },
+                { fr: "J'avais 10 ans à l'époque", es: "Entonces tenía 10 años", tense: "Pretérito Imperfecto" },
+                { fr: "Nous avions peur", es: "Teníamos miedo", tense: "Pretérito Imperfecto" },
+                { fr: "Ils devaient travailler tous les jours", es: "Tenían que trabajar todos los días", tense: "Pretérito Imperfecto" },
+                { fr: "Je n'avais pas d'argent à cette époque", es: "No tenía dinero en aquel entonces", tense: "Pretérito Imperfecto" },
+                { fr: "J'aurai du temps demain", es: "Tendré tiempo mañana", tense: "Futuro Simple" },
+                { fr: "Nous aurons une fête", es: "Tendremos una fiesta", tense: "Futuro Simple" },
+                { fr: "Elle aura un bébé", es: "Ella tendrá un bebé", tense: "Futuro Simple" },
+                { fr: "Ils auront une nouvelle maison", es: "Tendrán una casa nueva", tense: "Futuro Simple" },
+                { fr: "Tu auras du succès", es: "Tendrás éxito", tense: "Futuro Simple" },
+                { fr: "Je devrai travailler tard", es: "Tendré que trabajar hasta tarde", tense: "Futuro Simple" },
+                { fr: "Nous aurons un examen la semaine prochaine", es: "Tendremos un examen la semana que viene", tense: "Futuro Simple" },
+                { fr: "Il aura plus d'opportunités", es: "Él tendrá más oportunidades", tense: "Futuro Simple" },
+                { fr: "Ils devront attendre", es: "Tendrán que esperar", tense: "Futuro Simple" },
+                { fr: "Tu auras assez d'argent?", es: "¿Tendrás suficiente dinero?", tense: "Futuro Simple" },
+                { fr: "J'ai de bonnes nouvelles", es: "Tengo buenas noticias", tense: "Presente" },
+                { fr: "Tu as un stylo?", es: "¿Tienes un bolígrafo?", tense: "Presente" },
+                { fr: "Elle a beaucoup d'expérience", es: "Ella tiene mucha experiencia", tense: "Presente" },
+                { fr: "Nous n'avons aucune idée", es: "No tenemos ni idea", tense: "Presente" },
+                { fr: "Ils ont la réponse", es: "Tienen la respuesta", tense: "Presente" },
+                { fr: "J'ai une réunion à 3 heures", es: "Tengo una reunión a las 3", tense: "Presente" },
+                { fr: "Il a un nouveau travail", es: "Él tiene un trabajo nuevo", tense: "Presente" },
+                { fr: "Tu as des projets pour ce soir?", es: "¿Tienes planes para esta noche?", tense: "Presente" },
+                { fr: "J'ai quelque chose à te dire", es: "Tengo algo que decirte", tense: "Presente" },
+                { fr: "Elle a une belle voix", es: "Ella tiene una voz hermosa", tense: "Presente" },
+                { fr: "Nous avons une réservation", es: "Tenemos una reserva", tense: "Presente" },
+                { fr: "Ils ont assez de nourriture", es: "Tienen suficiente comida", tense: "Presente" },
+                { fr: "J'ai confiance en toi", es: "Tengo confianza en ti", tense: "Presente" },
+                { fr: "Tu as ma parole", es: "Tienes mi palabra", tense: "Presente" },
+                { fr: "J'attends depuis des heures", es: "Llevo horas esperando", tense: "Presente" },
+                { fr: "Elle a du talent", es: "Ella tiene talento", tense: "Presente" },
+                { fr: "Nous avons le même problème", es: "Tenemos el mismo problema", tense: "Presente" },
+                { fr: "Je dois admettre que tu as raison", es: "Tengo que admitir que tienes razón", tense: "Presente" },
+                { fr: "Ils ont beaucoup en commun", es: "Tienen mucho en común", tense: "Presente" },
+                { fr: "J'ai des doutes", es: "Tengo dudas", tense: "Presente" },
+                { fr: "Tu as une minute?", es: "¿Tienes un minuto?", tense: "Presente" },
+                { fr: "Il a raison sur un point", es: "Él tiene razón en algo", tense: "Presente" },
+                { fr: "J'ai mes raisons", es: "Tengo mis razones", tense: "Presente" },
+                { fr: "Nous devons être prudents", es: "Tenemos que tener cuidado", tense: "Presente" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

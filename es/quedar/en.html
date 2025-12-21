@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇪🇸 VERB QUEDAR — 100 Phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Back to verb list</a>
+            <h1>🇪🇸 Verb QUEDAR</h1>
+            <p class="subtitle">to stay, to remain, to meet up — 100 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Show all translations</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
+        </div>
+
+        <div class="stats" id="stats">Showing: 100 of 100 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Spanish Practice — QUEDAR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb QUEDAR</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Present tense - staying, remaining, arranging to meet</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>quedo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>quedas</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>queda</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>quedamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>quedáis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>quedan</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Simple past - stayed, remained, agreed to meet</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>quedé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>quedaste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>quedó</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>quedamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>quedasteis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>quedaron</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Imperfect - was staying, used to remain, was meeting</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>quedaba</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>quedabas</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>quedaba</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>quedábamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>quedabais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>quedaban</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Simple future - will stay, will remain, will meet</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>quedaré</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>quedarás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>quedará</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>quedaremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>quedaréis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>quedarán</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'en',
+            targetKey: 'es',
+            labels: { target: 'Spanish', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["quedo","quedas","queda","quedamos","quedáis","quedan","quedé","quedaba","quedaré","quedado"],
+            phrases: [
+                { en: "I'm staying home today.", es: "Me quedo en casa hoy.", tense: "Presente" },
+                { en: "We're meeting at eight.", es: "Quedamos a las ocho.", tense: "Presente" },
+                { en: "Where shall we meet?", es: "¿Dónde quedamos?", tense: "Presente" },
+                { en: "How much is left?", es: "¿Cuánto queda?", tense: "Presente" },
+                { en: "There's nothing left.", es: "No queda nada.", tense: "Presente" },
+                { en: "Let's meet tomorrow.", es: "Quedamos mañana.", tense: "Presente" },
+                { en: "I'm staying here.", es: "Me quedo aquí.", tense: "Presente" },
+                { en: "You look good in that dress.", es: "Te queda bien ese vestido.", tense: "Presente" },
+                { en: "That jacket fits you perfectly.", es: "Esa chaqueta te queda perfecta.", tense: "Presente" },
+                { en: "This shirt is too small for me.", es: "Esta camisa me queda pequeña.", tense: "Presente" },
+                { en: "How far is it?", es: "¿Cuánto queda?", tense: "Presente" },
+                { en: "It's still far.", es: "Todavía queda lejos.", tense: "Presente" },
+                { en: "The hotel is nearby.", es: "El hotel queda cerca.", tense: "Presente" },
+                { en: "We agreed to meet at the café.", es: "Quedamos en el café.", tense: "Pretérito Indefinido" },
+                { en: "I stayed home all day.", es: "Me quedé en casa todo el día.", tense: "Pretérito Indefinido" },
+                { en: "She stayed in Madrid.", es: "Se quedó en Madrid.", tense: "Pretérito Indefinido" },
+                { en: "They stayed at my place.", es: "Se quedaron en mi casa.", tense: "Pretérito Indefinido" },
+                { en: "We arranged to meet but he didn't come.", es: "Quedamos pero no vino.", tense: "Pretérito Indefinido" },
+                { en: "Nothing was left.", es: "No quedó nada.", tense: "Pretérito Indefinido" },
+                { en: "I was left speechless.", es: "Me quedé sin palabras.", tense: "Pretérito Indefinido" },
+                { en: "He stayed silent.", es: "Se quedó callado.", tense: "Pretérito Indefinido" },
+                { en: "The store is on Main Street.", es: "La tienda queda en la calle principal.", tense: "Presente" },
+                { en: "Where is the museum located?", es: "¿Dónde queda el museo?", tense: "Presente" },
+                { en: "The restaurant is downtown.", es: "El restaurante queda en el centro.", tense: "Presente" },
+                { en: "I'll stay until Monday.", es: "Me quedaré hasta el lunes.", tense: "Futuro Simple" },
+                { en: "We'll meet at the station.", es: "Quedaremos en la estación.", tense: "Futuro Simple" },
+                { en: "They'll stay for dinner.", es: "Se quedarán a cenar.", tense: "Futuro Simple" },
+                { en: "Nothing will remain.", es: "No quedará nada.", tense: "Futuro Simple" },
+                { en: "We'll see how it turns out.", es: "Veremos cómo queda.", tense: "Futuro Simple" },
+                { en: "I used to stay at my grandmother's.", es: "Me quedaba en casa de mi abuela.", tense: "Pretérito Imperfecto" },
+                { en: "We would always meet on Fridays.", es: "Siempre quedábamos los viernes.", tense: "Pretérito Imperfecto" },
+                { en: "There was always food left over.", es: "Siempre quedaba comida.", tense: "Pretérito Imperfecto" },
+                { en: "He would stay late at work.", es: "Se quedaba tarde en el trabajo.", tense: "Pretérito Imperfecto" },
+                { en: "They used to meet at the park.", es: "Quedaban en el parque.", tense: "Pretérito Imperfecto" },
+                { en: "It looks great on you.", es: "Te queda genial.", tense: "Presente" },
+                { en: "These pants don't fit me.", es: "Estos pantalones no me quedan.", tense: "Presente" },
+                { en: "That color looks bad on her.", es: "Ese color le queda mal.", tense: "Presente" },
+                { en: "The shoes fit him well.", es: "Los zapatos le quedan bien.", tense: "Presente" },
+                { en: "This size is too big for me.", es: "Esta talla me queda grande.", tense: "Presente" },
+                { en: "I agreed to meet her at six.", es: "Quedé con ella a las seis.", tense: "Pretérito Indefinido" },
+                { en: "Did we agree on a time?", es: "¿Quedamos en una hora?", tense: "Pretérito Indefinido" },
+                { en: "We agreed to go to the movies.", es: "Quedamos en ir al cine.", tense: "Pretérito Indefinido" },
+                { en: "They arranged to meet later.", es: "Quedaron para más tarde.", tense: "Pretérito Indefinido" },
+                { en: "I'm staying with friends.", es: "Me quedo con amigos.", tense: "Presente" },
+                { en: "Stay here, don't move.", es: "Quédate aquí, no te muevas.", tense: "Imperativo" },
+                { en: "Let's stay calm.", es: "Quedémonos tranquilos.", tense: "Imperativo" },
+                { en: "Don't stay out too late.", es: "No te quedes hasta muy tarde.", tense: "Imperativo" },
+                { en: "I became blind.", es: "Me quedé ciego.", tense: "Pretérito Indefinido" },
+                { en: "She went deaf.", es: "Se quedó sorda.", tense: "Pretérito Indefinido" },
+                { en: "He fell asleep.", es: "Se quedó dormido.", tense: "Pretérito Indefinido" },
+                { en: "I was left alone.", es: "Me quedé solo.", tense: "Pretérito Indefinido" },
+                { en: "We ran out of money.", es: "Nos quedamos sin dinero.", tense: "Pretérito Indefinido" },
+                { en: "They ran out of time.", es: "Se quedaron sin tiempo.", tense: "Pretérito Indefinido" },
+                { en: "I have no choice left.", es: "No me queda otra opción.", tense: "Presente" },
+                { en: "There's a lot to do.", es: "Queda mucho por hacer.", tense: "Presente" },
+                { en: "How much time is left?", es: "¿Cuánto tiempo queda?", tense: "Presente" },
+                { en: "Only two days remain.", es: "Solo quedan dos días.", tense: "Presente" },
+                { en: "We have one hour left.", es: "Nos queda una hora.", tense: "Presente" },
+                { en: "I'm meeting my friends.", es: "Quedo con mis amigos.", tense: "Presente" },
+                { en: "Shall we meet up?", es: "¿Quedamos?", tense: "Presente" },
+                { en: "Can we meet next week?", es: "¿Podemos quedar la semana que viene?", tense: "Presente" },
+                { en: "I can't meet today.", es: "No puedo quedar hoy.", tense: "Presente" },
+                { en: "Let's meet for coffee.", es: "Quedamos para un café.", tense: "Presente" },
+                { en: "The agreement stands.", es: "El acuerdo queda en pie.", tense: "Presente" },
+                { en: "Everything is clear now.", es: "Todo queda claro ahora.", tense: "Presente" },
+                { en: "It was left unfinished.", es: "Quedó sin terminar.", tense: "Pretérito Indefinido" },
+                { en: "The matter is settled.", es: "El asunto queda resuelto.", tense: "Presente" },
+                { en: "It turned out well.", es: "Quedó bien.", tense: "Pretérito Indefinido" },
+                { en: "It turned out badly.", es: "Quedó mal.", tense: "Pretérito Indefinido" },
+                { en: "The photo came out nice.", es: "La foto quedó bonita.", tense: "Pretérito Indefinido" },
+                { en: "The cake turned out dry.", es: "El pastel quedó seco.", tense: "Pretérito Indefinido" },
+                { en: "I'm keeping this book.", es: "Me quedo con este libro.", tense: "Presente" },
+                { en: "She took the best one.", es: "Se quedó con el mejor.", tense: "Pretérito Indefinido" },
+                { en: "Keep the change.", es: "Quédese con el cambio.", tense: "Imperativo" },
+                { en: "I'll take the red one.", es: "Me quedaré con el rojo.", tense: "Futuro Simple" },
+                { en: "Are you staying for lunch?", es: "¿Te quedas a comer?", tense: "Presente" },
+                { en: "I stayed overnight.", es: "Me quedé a dormir.", tense: "Pretérito Indefinido" },
+                { en: "Will you stay the night?", es: "¿Te quedarás a dormir?", tense: "Futuro Simple" },
+                { en: "They're staying for the weekend.", es: "Se quedan el fin de semana.", tense: "Presente" },
+                { en: "I froze when I saw him.", es: "Me quedé helado al verlo.", tense: "Pretérito Indefinido" },
+                { en: "She was stunned.", es: "Se quedó pasmada.", tense: "Pretérito Indefinido" },
+                { en: "We were amazed.", es: "Nos quedamos asombrados.", tense: "Pretérito Indefinido" },
+                { en: "He stood still.", es: "Se quedó quieto.", tense: "Pretérito Indefinido" },
+                { en: "I'm running out of patience.", es: "Me quedo sin paciencia.", tense: "Presente" },
+                { en: "We're running out of ideas.", es: "Nos quedamos sin ideas.", tense: "Presente" },
+                { en: "They ran out of gas.", es: "Se quedaron sin gasolina.", tense: "Pretérito Indefinido" },
+                { en: "Don't run out of batteries.", es: "No te quedes sin pilas.", tense: "Imperativo" },
+                { en: "The store is two blocks away.", es: "La tienda queda a dos cuadras.", tense: "Presente" },
+                { en: "How far is the beach?", es: "¿A cuánto queda la playa?", tense: "Presente" },
+                { en: "The office is close by.", es: "La oficina queda cerca.", tense: "Presente" },
+                { en: "Is it far from here?", es: "¿Queda lejos de aquí?", tense: "Presente" },
+                { en: "I'll meet you at seven.", es: "Quedo contigo a las siete.", tense: "Presente" },
+                { en: "We agreed on Tuesday.", es: "Quedamos el martes.", tense: "Pretérito Indefinido" },
+                { en: "Let's meet at the entrance.", es: "Quedamos en la entrada.", tense: "Presente" },
+                { en: "The dress fits you perfectly.", es: "El vestido te queda perfecto.", tense: "Presente" },
+                { en: "I'm impressed.", es: "Me quedo impresionado.", tense: "Presente" },
+                { en: "The apartment is downtown.", es: "El apartamento queda en el centro.", tense: "Presente" },
+                { en: "We stood there watching.", es: "Nos quedamos ahí mirando.", tense: "Pretérito Indefinido" },
+                { en: "I'll keep your secret.", es: "Me quedaré con tu secreto.", tense: "Futuro Simple" },
+                { en: "How does the plan sound?", es: "¿Cómo queda el plan?", tense: "Presente" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

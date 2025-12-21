@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbe 🇪🇸 VERB LLEVAR — 94 phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Retour à la liste des verbes</a>
+            <h1>🇪🇸 Verb LLEVAR</h1>
+            <p class="subtitle">to carry, to wear, to take — 94 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Rechercher des phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Afficher toutes les traductions</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Masquer toutes les traductions</button>
+        </div>
+
+        <div class="stats" id="stats">Affichage: 94 sur 94 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Pratique de l'espagnol — LLEVAR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb LLEVAR</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Présent - porter, amener maintenant</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>llevo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>llevas</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>lleva</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>llevamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>lleváis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>llevan</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Passé simple - a porté, a amené</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>llevé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>llevaste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>llevó</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>llevamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>llevasteis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>llevaron</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Imparfait - portait, amenait</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>llevaba</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>llevabas</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>llevaba</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>llevábamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>llevabais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>llevaban</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Futur simple - portera, amènera</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>llevaré</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>llevarás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>llevará</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>llevaremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>llevaréis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>llevarán</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'fr',
+            targetKey: 'es',
+            labels: { target: 'Espagnol', showing: 'Affichage', of: 'sur', phrases: 'phrases' },
+            verbForms: ["llevo","llevas","lleva","llevamos","lleváis","llevan","llevé","llevaba","llevaré"],
+            phrases: [
+                { fr: "Je porte mon sac à dos.", es: "Llevo mi mochila.", tense: "Presente" },
+                { fr: "Elle porte une robe rouge.", es: "Ella lleva un vestido rojo.", tense: "Presente" },
+                { fr: "Nous portons les valises.", es: "Llevamos las maletas.", tense: "Presente" },
+                { fr: "Il porte des lunettes.", es: "Él lleva gafas.", tense: "Presente" },
+                { fr: "Ils emmènent les enfants à l'école.", es: "Ellos llevan los niños al colegio.", tense: "Presente" },
+                { fr: "Je porte un jean aujourd'hui.", es: "Llevo vaqueros hoy.", tense: "Presente" },
+                { fr: "Tu portes trop.", es: "Llevas demasiado.", tense: "Presente" },
+                { fr: "Elle promène son chien.", es: "Ella lleva a su perro de paseo.", tense: "Presente" },
+                { fr: "Nous sommes amis depuis des années.", es: "Llevamos años siendo amigos.", tense: "Presente" },
+                { fr: "Depuis combien de temps vis-tu ici ?", es: "¿Cuánto tiempo llevas viviendo aquí?", tense: "Presente" },
+                { fr: "Je porte mon téléphone partout.", es: "Llevo mi teléfono a todas partes.", tense: "Presente" },
+                { fr: "Il porte un costume au travail.", es: "Él lleva traje al trabajo.", tense: "Presente" },
+                { fr: "Ils montent les cartons.", es: "Llevan las cajas arriba.", tense: "Presente" },
+                { fr: "Elle se maquille tous les jours.", es: "Ella lleva maquillaje todos los días.", tense: "Presente" },
+                { fr: "J'emporte mon ordinateur portable.", es: "Llevo mi portátil conmigo.", tense: "Presente" },
+                { fr: "Tu portes de beaux vêtements.", es: "Llevas ropa bonita.", tense: "Presente" },
+                { fr: "Nous portons de l'argent liquide pour les urgences.", es: "Llevamos efectivo para emergencias.", tense: "Presente" },
+                { fr: "Il prend le bus pour aller au travail.", es: "Él lleva el autobús al trabajo.", tense: "Presente" },
+                { fr: "Ils portent des uniformes.", es: "Llevan uniformes.", tense: "Presente" },
+                { fr: "J'étudie depuis deux heures.", es: "Llevo dos horas estudiando.", tense: "Presente" },
+                { fr: "J'ai porté les courses à la maison.", es: "Llevé la compra a casa.", tense: "Pretérito Indefinido" },
+                { fr: "Elle a porté une belle robe.", es: "Ella llevó un vestido hermoso.", tense: "Pretérito Indefinido" },
+                { fr: "Nous avons emmené les enfants au parc.", es: "Llevamos los niños al parque.", tense: "Pretérito Indefinido" },
+                { fr: "Il a porté les lourdes boîtes.", es: "Él llevó las cajas pesadas.", tense: "Pretérito Indefinido" },
+                { fr: "Ils m'ont emmené à l'aéroport.", es: "Me llevaron al aeropuerto.", tense: "Pretérito Indefinido" },
+                { fr: "J'ai mis mes nouvelles chaussures.", es: "Llevé mis zapatos nuevos.", tense: "Pretérito Indefinido" },
+                { fr: "Tu as porté tous les sacs.", es: "Llevaste todas las bolsas.", tense: "Pretérito Indefinido" },
+                { fr: "Elle a emmené sa mère chez le médecin.", es: "Ella llevó a su madre al médico.", tense: "Pretérito Indefinido" },
+                { fr: "Nous avons porté des costumes à la fête.", es: "Llevamos disfraces a la fiesta.", tense: "Pretérito Indefinido" },
+                { fr: "Il a apporté les documents au bureau.", es: "Él llevó los documentos a la oficina.", tense: "Pretérito Indefinido" },
+                { fr: "Je portais mes livres.", es: "Yo llevaba mis libros.", tense: "Pretérito Imperfecto" },
+                { fr: "Elle portait toujours un chapeau.", es: "Ella siempre llevaba sombrero.", tense: "Pretérito Imperfecto" },
+                { fr: "Nous prenions le train.", es: "Llevábamos el tren.", tense: "Pretérito Imperfecto" },
+                { fr: "Il portait un manteau tous les jours.", es: "Él llevaba abrigo todos los días.", tense: "Pretérito Imperfecto" },
+                { fr: "Ils apportaient le déjeuner à l'école.", es: "Llevaban almuerzo al colegio.", tense: "Pretérito Imperfecto" },
+                { fr: "Je portais toujours du noir.", es: "Siempre llevaba negro.", tense: "Pretérito Imperfecto" },
+                { fr: "Tu portais un portefeuille.", es: "Tú llevabas una cartera.", tense: "Pretérito Imperfecto" },
+                { fr: "Elle emmenait sa sœur partout.", es: "Ella llevaba a su hermana a todas partes.", tense: "Pretérito Imperfecto" },
+                { fr: "Nous portions des baskets à l'époque.", es: "Llevábamos zapatillas en aquel entonces.", tense: "Pretérito Imperfecto" },
+                { fr: "Il portait un parapluie.", es: "Él llevaba paraguas.", tense: "Pretérito Imperfecto" },
+                { fr: "Je porterai les sacs.", es: "Llevaré las bolsas.", tense: "Futuro Simple" },
+                { fr: "Elle portera une couronne.", es: "Ella llevará una corona.", tense: "Futuro Simple" },
+                { fr: "Nous prendrons la voiture.", es: "Llevaremos el coche.", tense: "Futuro Simple" },
+                { fr: "Il portera le drapeau.", es: "Él llevará la bandera.", tense: "Futuro Simple" },
+                { fr: "Ils porteront des médailles.", es: "Llevarán medallas.", tense: "Futuro Simple" },
+                { fr: "Je te ramènerai à la maison.", es: "Te llevaré a casa.", tense: "Futuro Simple" },
+                { fr: "Tu porteras le message.", es: "Llevarás el mensaje.", tense: "Futuro Simple" },
+                { fr: "Elle prendra son temps.", es: "Ella llevará su tiempo.", tense: "Futuro Simple" },
+                { fr: "Nous continuerons.", es: "Llevaremos adelante.", tense: "Futuro Simple" },
+                { fr: "Il portera un smoking.", es: "Él llevará esmoquin.", tense: "Futuro Simple" },
+                { fr: "Ça prend du temps.", es: "Lleva tiempo.", tense: "Presente" },
+                { fr: "Je m'entends bien avec lui.", es: "Me llevo bien con él.", tense: "Presente" },
+                { fr: "Ils ne s'entendent pas.", es: "No se llevan bien.", tense: "Presente" },
+                { fr: "Elle est responsable.", es: "Ella lleva la responsabilidad.", tense: "Presente" },
+                { fr: "Je dirige le projet.", es: "Llevo el proyecto.", tense: "Presente" },
+                { fr: "Il porte une montre.", es: "Lleva reloj.", tense: "Presente" },
+                { fr: "Nous portons des provisions.", es: "Llevamos provisiones.", tense: "Presente" },
+                { fr: "Ils apportent de la nourriture.", es: "Llevan comida.", tense: "Presente" },
+                { fr: "Je porte un short.", es: "Llevo pantalones cortos.", tense: "Presente" },
+                { fr: "Tu portes beaucoup.", es: "Llevas mucho.", tense: "Presente" },
+                { fr: "Elle porte les clés.", es: "Ella lleva las llaves.", tense: "Presente" },
+                { fr: "Nous nous entendons bien.", es: "Nos llevamos bien.", tense: "Presente" },
+                { fr: "Il est fier de son travail.", es: "Él lleva orgullo en su trabajo.", tense: "Presente" },
+                { fr: "Ils prennent leur temps.", es: "Se lo llevan con calma.", tense: "Presente" },
+                { fr: "Je porte des responsabilités.", es: "Llevo responsabilidades.", tense: "Presente" },
+                { fr: "Tu portes du parfum.", es: "Llevas perfume.", tense: "Presente" },
+                { fr: "Elle prend des notes.", es: "Ella lleva apuntes.", tense: "Presente" },
+                { fr: "Nous portons l'espoir.", es: "Llevamos esperanza.", tense: "Presente" },
+                { fr: "Il porte une bague.", es: "Él lleva un anillo.", tense: "Presente" },
+                { fr: "Ils apportent de la joie.", es: "Llevan alegría.", tense: "Presente" },
+                { fr: "Je prends des précautions.", es: "Llevo precauciones.", tense: "Presente" },
+                { fr: "Tu portes la malchance.", es: "Llevas mala suerte.", tense: "Presente" },
+                { fr: "Elle porte un fardeau.", es: "Ella lleva una carga.", tense: "Presente" },
+                { fr: "Nous travaillons à tour de rôle.", es: "Llevamos turnos.", tense: "Presente" },
+                { fr: "Il gère le magasin.", es: "Él lleva la tienda.", tense: "Presente" },
+                { fr: "Ils tiennent des registres.", es: "Llevan registros.", tense: "Presente" },
+                { fr: "Je porte des boucles d'oreilles.", es: "Llevo pendientes.", tense: "Presente" },
+                { fr: "Tu as bon goût.", es: "Llevas buen gusto.", tense: "Presente" },
+                { fr: "Elle apporte le dessert.", es: "Ella lleva postre.", tense: "Presente" },
+                { fr: "Nous nous en occupons.", es: "Lo llevamos.", tense: "Presente" },
+                { fr: "Il porte une arme.", es: "Él lleva un arma.", tense: "Presente" },
+                { fr: "Ils portent des masques.", es: "Llevan mascarillas.", tense: "Presente" },
+                { fr: "Je prends mes vitamines.", es: "Llevo mis vitaminas.", tense: "Presente" },
+                { fr: "Tu portes le flambeau.", es: "Llevas la antorcha.", tense: "Presente" },
+                { fr: "Elle attend depuis une heure.", es: "Lleva una hora esperando.", tense: "Presente" },
+                { fr: "Nous sommes mariés depuis 10 ans.", es: "Llevamos 10 años casados.", tense: "Presente" },
+                { fr: "Il travaille ici depuis 5 ans.", es: "Lleva 5 años trabajando aquí.", tense: "Presente" },
+                { fr: "J'apprends l'espagnol depuis 6 mois.", es: "Llevo 6 meses aprendiendo español.", tense: "Presente" },
+                { fr: "Ils sortent ensemble depuis 2 ans.", es: "Llevan 2 años saliendo.", tense: "Presente" },
+                { fr: "Depuis combien de temps es-tu ici ?", es: "¿Cuánto tiempo llevas aquí?", tense: "Presente" },
+                { fr: "Je suis malade depuis 3 jours.", es: "Llevo 3 días enfermo.", tense: "Presente" },
+                { fr: "Elle est partie depuis une heure.", es: "Lleva una hora fuera.", tense: "Presente" },
+                { fr: "Nous conduisons depuis 4 heures.", es: "Llevamos 4 horas conduciendo.", tense: "Presente" },
+                { fr: "Il dort toute la journée.", es: "Lleva todo el día durmiendo.", tense: "Presente" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

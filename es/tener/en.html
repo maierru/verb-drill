@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇪🇸 VERB TENER — 94 Phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Back to verb list</a>
+            <h1>🇪🇸 Verb TENER</h1>
+            <p class="subtitle">to have — 94 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Show all translations</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
+        </div>
+
+        <div class="stats" id="stats">Showing: 94 of 94 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Spanish Practice — TENER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb TENER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Present tense - possession, age, expressions (tener hambre, tener que...)</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>tengo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>tienes</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>tiene</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>tenemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>tenéis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>tienen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Preterite - completed past actions</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>tuve</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>tuviste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>tuvo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>tuvimos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>tuvisteis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>tuvieron</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Imperfect - ongoing or habitual past actions</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>tenía</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>tenías</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>tenía</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>teníamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>teníais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>tenían</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Future - will have</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>tendré</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>tendrás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>tendrá</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>tendremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>tendréis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>tendrán</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'en',
+            targetKey: 'es',
+            labels: { target: 'Spanish', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["tengo","tienes","tiene","tenemos","tenéis","tienen","tuve","tuviste","tuvo","tuvimos","tuvisteis","tuvieron","tenía","tendrá","tendré"],
+            phrases: [
+                { en: "I have a car", es: "Tengo un coche", tense: "Presente" },
+                { en: "She has a dog", es: "Ella tiene un perro", tense: "Presente" },
+                { en: "We have time", es: "Tenemos tiempo", tense: "Presente" },
+                { en: "They have a house", es: "Tienen una casa", tense: "Presente" },
+                { en: "Do you have money?", es: "¿Tienes dinero?", tense: "Presente" },
+                { en: "I have an idea", es: "Tengo una idea", tense: "Presente" },
+                { en: "He has three children", es: "Él tiene tres hijos", tense: "Presente" },
+                { en: "You have a question", es: "Tienes una pregunta", tense: "Presente" },
+                { en: "I don't have a choice", es: "No tengo opción", tense: "Presente" },
+                { en: "We have a problem", es: "Tenemos un problema", tense: "Presente" },
+                { en: "I am 25 years old", es: "Tengo 25 años", tense: "Presente" },
+                { en: "How old are you?", es: "¿Cuántos años tienes?", tense: "Presente" },
+                { en: "She is 30 years old", es: "Ella tiene 30 años", tense: "Presente" },
+                { en: "My son is 5 years old", es: "Mi hijo tiene 5 años", tense: "Presente" },
+                { en: "They are very young", es: "Tienen muy pocos años", tense: "Presente" },
+                { en: "I am hungry", es: "Tengo hambre", tense: "Presente" },
+                { en: "I am thirsty", es: "Tengo sed", tense: "Presente" },
+                { en: "I am cold", es: "Tengo frío", tense: "Presente" },
+                { en: "I am hot", es: "Tengo calor", tense: "Presente" },
+                { en: "I am sleepy", es: "Tengo sueño", tense: "Presente" },
+                { en: "I am afraid", es: "Tengo miedo", tense: "Presente" },
+                { en: "I am lucky", es: "Tengo suerte", tense: "Presente" },
+                { en: "I am in a hurry", es: "Tengo prisa", tense: "Presente" },
+                { en: "I am right", es: "Tengo razón", tense: "Presente" },
+                { en: "You are wrong", es: "No tienes razón", tense: "Presente" },
+                { en: "I have to go", es: "Tengo que ir", tense: "Presente" },
+                { en: "I have to study", es: "Tengo que estudiar", tense: "Presente" },
+                { en: "I have to work", es: "Tengo que trabajar", tense: "Presente" },
+                { en: "You have to see this", es: "Tienes que ver esto", tense: "Presente" },
+                { en: "We have to talk", es: "Tenemos que hablar", tense: "Presente" },
+                { en: "They have to wait", es: "Tienen que esperar", tense: "Presente" },
+                { en: "I have to finish this", es: "Tengo que terminar esto", tense: "Presente" },
+                { en: "She has to leave early", es: "Ella tiene que salir temprano", tense: "Presente" },
+                { en: "Do you have to go now?", es: "¿Tienes que irte ahora?", tense: "Presente" },
+                { en: "We don't have to rush", es: "No tenemos que apresurarnos", tense: "Presente" },
+                { en: "I have a headache", es: "Tengo dolor de cabeza", tense: "Presente" },
+                { en: "She has a fever", es: "Ella tiene fiebre", tense: "Presente" },
+                { en: "I have blue eyes", es: "Tengo ojos azules", tense: "Presente" },
+                { en: "He has brown hair", es: "Él tiene pelo castaño", tense: "Presente" },
+                { en: "I have many friends", es: "Tengo muchos amigos", tense: "Presente" },
+                { en: "I had a chance", es: "Tuve una oportunidad", tense: "Pretérito Indefinido" },
+                { en: "We had a meeting", es: "Tuvimos una reunión", tense: "Pretérito Indefinido" },
+                { en: "She had a baby", es: "Ella tuvo un bebé", tense: "Pretérito Indefinido" },
+                { en: "They had problems", es: "Tuvieron problemas", tense: "Pretérito Indefinido" },
+                { en: "I had a good day", es: "Tuve un buen día", tense: "Pretérito Indefinido" },
+                { en: "Did you have time?", es: "¿Tuviste tiempo?", tense: "Pretérito Indefinido" },
+                { en: "He had an accident", es: "Él tuvo un accidente", tense: "Pretérito Indefinido" },
+                { en: "We had fun", es: "Nos divertimos", tense: "Pretérito Indefinido" },
+                { en: "They had a party", es: "Tuvieron una fiesta", tense: "Pretérito Indefinido" },
+                { en: "I had to leave", es: "Tuve que irme", tense: "Pretérito Indefinido" },
+                { en: "I had a car when I was young", es: "Tenía un coche cuando era joven", tense: "Pretérito Imperfecto" },
+                { en: "She had long hair", es: "Ella tenía el pelo largo", tense: "Pretérito Imperfecto" },
+                { en: "We had a dog before", es: "Teníamos un perro antes", tense: "Pretérito Imperfecto" },
+                { en: "They had many friends", es: "Tenían muchos amigos", tense: "Pretérito Imperfecto" },
+                { en: "I used to have more time", es: "Antes tenía más tiempo", tense: "Pretérito Imperfecto" },
+                { en: "He was always hungry", es: "Siempre tenía hambre", tense: "Pretérito Imperfecto" },
+                { en: "I was 10 years old then", es: "Entonces tenía 10 años", tense: "Pretérito Imperfecto" },
+                { en: "We were afraid", es: "Teníamos miedo", tense: "Pretérito Imperfecto" },
+                { en: "They had to work every day", es: "Tenían que trabajar todos los días", tense: "Pretérito Imperfecto" },
+                { en: "I had no money back then", es: "No tenía dinero en aquel entonces", tense: "Pretérito Imperfecto" },
+                { en: "I will have time tomorrow", es: "Tendré tiempo mañana", tense: "Futuro Simple" },
+                { en: "We will have a party", es: "Tendremos una fiesta", tense: "Futuro Simple" },
+                { en: "She will have a baby", es: "Ella tendrá un bebé", tense: "Futuro Simple" },
+                { en: "They will have a new house", es: "Tendrán una casa nueva", tense: "Futuro Simple" },
+                { en: "You will have success", es: "Tendrás éxito", tense: "Futuro Simple" },
+                { en: "I will have to work late", es: "Tendré que trabajar hasta tarde", tense: "Futuro Simple" },
+                { en: "We will have an exam next week", es: "Tendremos un examen la semana que viene", tense: "Futuro Simple" },
+                { en: "He will have more opportunities", es: "Él tendrá más oportunidades", tense: "Futuro Simple" },
+                { en: "They will have to wait", es: "Tendrán que esperar", tense: "Futuro Simple" },
+                { en: "Will you have enough money?", es: "¿Tendrás suficiente dinero?", tense: "Futuro Simple" },
+                { en: "I have good news", es: "Tengo buenas noticias", tense: "Presente" },
+                { en: "Do you have a pen?", es: "¿Tienes un bolígrafo?", tense: "Presente" },
+                { en: "She has a lot of experience", es: "Ella tiene mucha experiencia", tense: "Presente" },
+                { en: "We have no idea", es: "No tenemos ni idea", tense: "Presente" },
+                { en: "They have the answer", es: "Tienen la respuesta", tense: "Presente" },
+                { en: "I have a meeting at 3", es: "Tengo una reunión a las 3", tense: "Presente" },
+                { en: "He has a new job", es: "Él tiene un trabajo nuevo", tense: "Presente" },
+                { en: "Do you have plans for tonight?", es: "¿Tienes planes para esta noche?", tense: "Presente" },
+                { en: "I have something to tell you", es: "Tengo algo que decirte", tense: "Presente" },
+                { en: "She has a beautiful voice", es: "Ella tiene una voz hermosa", tense: "Presente" },
+                { en: "We have a reservation", es: "Tenemos una reserva", tense: "Presente" },
+                { en: "They have enough food", es: "Tienen suficiente comida", tense: "Presente" },
+                { en: "I have confidence in you", es: "Tengo confianza en ti", tense: "Presente" },
+                { en: "You have my word", es: "Tienes mi palabra", tense: "Presente" },
+                { en: "I have been waiting for hours", es: "Llevo horas esperando", tense: "Presente" },
+                { en: "She has talent", es: "Ella tiene talento", tense: "Presente" },
+                { en: "We have the same problem", es: "Tenemos el mismo problema", tense: "Presente" },
+                { en: "I have to admit you're right", es: "Tengo que admitir que tienes razón", tense: "Presente" },
+                { en: "They have a lot in common", es: "Tienen mucho en común", tense: "Presente" },
+                { en: "I have doubts", es: "Tengo dudas", tense: "Presente" },
+                { en: "Do you have a minute?", es: "¿Tienes un minuto?", tense: "Presente" },
+                { en: "He has a point", es: "Él tiene razón en algo", tense: "Presente" },
+                { en: "I have my reasons", es: "Tengo mis razones", tense: "Presente" },
+                { en: "We have to be careful", es: "Tenemos que tener cuidado", tense: "Presente" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

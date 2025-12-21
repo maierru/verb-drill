@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇪🇸 VERB ENCONTRAR — 97 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇪🇸 Verb ENCONTRAR</h1>
+            <p class="subtitle">to find — 97 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 97 de 97 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Prática de espanhol — ENCONTRAR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb ENCONTRAR</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Presente - ações que acontecem agora ou habitualmente</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">{"person" => "yo", "form" => "encuentro"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "tú", "form" => "encuentras"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "él/ella/usted", "form" => "encuentra"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "nosotros/nosotras", "form" => "encontramos"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "vosotros/vosotras", "form" => "encontráis"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "ellos/ellas/ustedes", "form" => "encuentran"}</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Pretérito perfeito - ações completadas no passado</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">{"person" => "yo", "form" => "encontré"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "tú", "form" => "encontraste"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "él/ella/usted", "form" => "encontró"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "nosotros/nosotras", "form" => "encontramos"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "vosotros/vosotras", "form" => "encontrasteis"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "ellos/ellas/ustedes", "form" => "encontraron"}</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Pretérito imperfeito - ações contínuas ou habituais no passado</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">{"person" => "yo", "form" => "encontraba"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "tú", "form" => "encontrabas"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "él/ella/usted", "form" => "encontraba"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "nosotros/nosotras", "form" => "encontrábamos"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "vosotros/vosotras", "form" => "encontrabais"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "ellos/ellas/ustedes", "form" => "encontraban"}</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Futuro simples - ações que acontecerão</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">{"person" => "yo", "form" => "encontraré"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "tú", "form" => "encontrarás"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "él/ella/usted", "form" => "encontrará"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "nosotros/nosotras", "form" => "encontraremos"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "vosotros/vosotras", "form" => "encontraréis"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "ellos/ellas/ustedes", "form" => "encontrarán"}</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'es',
+            labels: { target: 'Español', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["encuentro","encuentras","encuentra","encontramos","encontráis","encuentran","encontré","encontraba","encontraré"],
+            phrases: [
+                { pt: "Encontro as minhas chaves todas as manhãs", es: "Encuentro mis llaves cada mañana", tense: "Presente" },
+                { pt: "Encontras bons restaurantes aqui", es: "Encuentras buenos restaurantes aquí", tense: "Presente" },
+                { pt: "Ela encontra a solução facilmente", es: "Ella encuentra la solución fácilmente", tense: "Presente" },
+                { pt: "Encontramos tempo para falar", es: "Encontramos tiempo para hablar", tense: "Presente" },
+                { pt: "Eles encontram trabalho rapidamente", es: "Encuentran trabajo rápidamente", tense: "Presente" },
+                { pt: "Encontrei o meu telefone ontem", es: "Encontré mi teléfono ayer", tense: "Pretérito Indefinido" },
+                { pt: "Encontraste um novo emprego", es: "Encontraste un nuevo trabajo", tense: "Pretérito Indefinido" },
+                { pt: "Ele encontrou a resposta", es: "Él encontró la respuesta", tense: "Pretérito Indefinido" },
+                { pt: "Encontrámos um lugar fantástico", es: "Encontramos un lugar genial", tense: "Pretérito Indefinido" },
+                { pt: "Eles encontraram-se outra vez", es: "Se encontraron otra vez", tense: "Pretérito Indefinido" },
+                { pt: "Sempre encontrava o que precisava", es: "Siempre encontraba lo que necesitaba", tense: "Pretérito Imperfecto" },
+                { pt: "Encontravas tesouros", es: "Encontrabas tesoros", tense: "Pretérito Imperfecto" },
+                { pt: "Ela encontrava paz na natureza", es: "Ella encontraba paz en la naturaleza", tense: "Pretérito Imperfecto" },
+                { pt: "Encontrávamos alegria em coisas simples", es: "Encontrábamos alegría en cosas simples", tense: "Pretérito Imperfecto" },
+                { pt: "Encontrarei uma solução", es: "Encontraré una solución", tense: "Futuro Simple" },
+                { pt: "Encontrarás o teu caminho", es: "Encontrarás tu camino", tense: "Futuro Simple" },
+                { pt: "Ele encontrará o sucesso", es: "Él encontrará el éxito", tense: "Futuro Simple" },
+                { pt: "Encontraremos a verdade", es: "Encontraremos la verdad", tense: "Futuro Simple" },
+                { pt: "Eles encontrarão a felicidade", es: "Encontrarán la felicidad", tense: "Futuro Simple" },
+                { pt: "Não encontro a minha carteira", es: "No encuentro mi cartera", tense: "Presente" },
+                { pt: "Encontras a morada?", es: "¿Encuentras la dirección?", tense: "Presente" },
+                { pt: "Onde encontro a estação?", es: "¿Dónde encuentro la estación?", tense: "Presente" },
+                { pt: "Acho difícil dormir", es: "Encuentro difícil dormir", tense: "Presente" },
+                { pt: "Ela encontra consolo na música", es: "Ella encuentra consuelo en la música", tense: "Presente" },
+                { pt: "Encontramo-nos todas as terças-feiras", es: "Nos encontramos cada martes", tense: "Presente" },
+                { pt: "Sinto-me feliz hoje", es: "Me encuentro feliz hoy", tense: "Presente" },
+                { pt: "Como te sentes?", es: "¿Cómo te encuentras?", tense: "Presente" },
+                { pt: "Ela sente-se bem", es: "Ella se encuentra bien", tense: "Presente" },
+                { pt: "Encontrámo-nos no parque", es: "Nos encontramos en el parque", tense: "Pretérito Indefinido" },
+                { pt: "Sentia-me doente ontem", es: "Me encontraba enfermo ayer", tense: "Pretérito Imperfecto" },
+                { pt: "Acho este livro interessante", es: "Encuentro este libro interesante", tense: "Presente" },
+                { pt: "Encontras problemas em todo o lado", es: "Encuentras problemas en todas partes", tense: "Presente" },
+                { pt: "Ele não encontra desculpa", es: "Él no encuentra excusa", tense: "Presente" },
+                { pt: "Encontramos oportunidades diariamente", es: "Encontramos oportunidades a diario", tense: "Presente" },
+                { pt: "Não encontram nada suspeito", es: "No encuentran nada sospechoso", tense: "Presente" },
+                { pt: "Encontrei o amor inesperadamente", es: "Encontré el amor inesperadamente", tense: "Pretérito Indefinido" },
+                { pt: "Encontraste o caminho certo", es: "Encontraste el camino correcto", tense: "Pretérito Indefinido" },
+                { pt: "Ela encontrou a sua paixão", es: "Ella encontró su pasión", tense: "Pretérito Indefinido" },
+                { pt: "Encontrámos uma maneira melhor", es: "Encontramos una mejor manera", tense: "Pretérito Indefinido" },
+                { pt: "Encontraram os documentos perdidos", es: "Encontraron los documentos perdidos", tense: "Pretérito Indefinido" },
+                { pt: "Encontrava moedas na rua", es: "Encontraba monedas en la calle", tense: "Pretérito Imperfecto" },
+                { pt: "Sempre encontravas desculpas", es: "Siempre encontrabas excusas", tense: "Pretérito Imperfecto" },
+                { pt: "Ele encontrava consolo na leitura", es: "Él encontraba consuelo leyendo", tense: "Pretérito Imperfecto" },
+                { pt: "Encontrávamo-nos todos os fins de semana", es: "Nos encontrábamos cada fin de semana", tense: "Pretérito Imperfecto" },
+                { pt: "Encontravam inspiração na arte", es: "Encontraban inspiración en el arte", tense: "Pretérito Imperfecto" },
+                { pt: "Encontrarei a resposta amanhã", es: "Encontraré la respuesta mañana", tense: "Futuro Simple" },
+                { pt: "Encontrarás novos amigos", es: "Encontrarás nuevos amigos", tense: "Futuro Simple" },
+                { pt: "Ela encontrará o seu destino", es: "Ella encontrará su destino", tense: "Futuro Simple" },
+                { pt: "Encontraremos um compromisso", es: "Encontraremos un compromiso", tense: "Futuro Simple" },
+                { pt: "Eles encontrarão o tesouro", es: "Encontrarán el tesoro", tense: "Futuro Simple" },
+                { pt: "Não encontro a saída", es: "No encuentro la salida", tense: "Presente" },
+                { pt: "Achas isso estranho?", es: "¿Lo encuentras extraño?", tense: "Presente" },
+                { pt: "Ela não acha graça", es: "Ella no lo encuentra gracioso", tense: "Presente" },
+                { pt: "Achamos esta situação absurda", es: "Encontramos esta situación absurda", tense: "Presente" },
+                { pt: "Não encontram evidência", es: "No encuentran evidencia", tense: "Presente" },
+                { pt: "Encontrei um erro no relatório", es: "Encontré un error en el informe", tense: "Pretérito Indefinido" },
+                { pt: "Encontraste um atalho", es: "Encontraste un atajo", tense: "Pretérito Indefinido" },
+                { pt: "Ele encontrou refúgio aqui", es: "Él encontró refugio aquí", tense: "Pretérito Indefinido" },
+                { pt: "Encontrámos pontos em comum", es: "Encontramos puntos en común", tense: "Pretérito Indefinido" },
+                { pt: "Encontraram o culpado", es: "Encontraron al culpable", tense: "Pretérito Indefinido" },
+                { pt: "Sempre encontrava ajuda quando precisava", es: "Siempre encontraba ayuda cuando la necesitaba", tense: "Pretérito Imperfecto" },
+                { pt: "Encontravas beleza em tudo", es: "Encontrabas belleza en todo", tense: "Pretérito Imperfecto" },
+                { pt: "Ela encontrava sentido no seu trabalho", es: "Ella encontraba sentido en su trabajo", tense: "Pretérito Imperfecto" },
+                { pt: "Encontrávamos paz no silêncio", es: "Encontrábamos paz en el silencio", tense: "Pretérito Imperfecto" },
+                { pt: "Encontrarei tempo para ti", es: "Encontraré tiempo para ti", tense: "Futuro Simple" },
+                { pt: "Encontrarás a coragem", es: "Encontrarás el valor", tense: "Futuro Simple" },
+                { pt: "Ele encontrará o seu propósito", es: "Él encontrará su propósito", tense: "Futuro Simple" },
+                { pt: "Encontraremos os recursos", es: "Encontraremos los recursos", tense: "Futuro Simple" },
+                { pt: "Encontrarão uma solução juntos", es: "Encontrarán una solución juntos", tense: "Futuro Simple" },
+                { pt: "Preciso de encontrar trabalho", es: "Necesito encontrar trabajo", tense: "Presente" },
+                { pt: "Consegues encontrar o ficheiro?", es: "¿Puedes encontrar el archivo?", tense: "Presente" },
+                { pt: "Ela quer encontrar paz", es: "Ella quiere encontrar paz", tense: "Presente" },
+                { pt: "Esperamos encontrar respostas", es: "Esperamos encontrar respuestas", tense: "Presente" },
+                { pt: "Encontrei um lugar para estacionar", es: "Encontré un lugar para aparcar", tense: "Pretérito Indefinido" },
+                { pt: "Encontraste uma pechincha", es: "Encontraste una ganga", tense: "Pretérito Indefinido" },
+                { pt: "Ele encontrou a prenda perfeita", es: "Él encontró el regalo perfecto", tense: "Pretérito Indefinido" },
+                { pt: "Encontrámos um hotel agradável", es: "Encontramos un hotel agradable", tense: "Pretérito Indefinido" },
+                { pt: "Encontraram o restaurante fechado", es: "Encontraron el restaurante cerrado", tense: "Pretérito Indefinido" },
+                { pt: "Encontrava motivação nos desafios", es: "Encontraba motivación en los desafíos", tense: "Pretérito Imperfecto" },
+                { pt: "Encontravas alegria nas pequenas coisas", es: "Encontrabas alegría en las pequeñas cosas", tense: "Pretérito Imperfecto" },
+                { pt: "Ela encontrava força interior", es: "Ella encontraba fuerza interior", tense: "Pretérito Imperfecto" },
+                { pt: "Encontrávamos esperança em tempos escuros", es: "Encontrábamos esperanza en tiempos oscuros", tense: "Pretérito Imperfecto" },
+                { pt: "Encontrarei o emprego dos meus sonhos", es: "Encontraré el trabajo de mis sueños", tense: "Futuro Simple" },
+                { pt: "Encontrarás o que procuras", es: "Encontrarás lo que buscas", tense: "Futuro Simple" },
+                { pt: "Ela encontrará a sua voz", es: "Ella encontrará su voz", tense: "Futuro Simple" },
+                { pt: "Encontraremos o equilíbrio", es: "Encontraremos el equilibrio", tense: "Futuro Simple" },
+                { pt: "Encontrarão novas oportunidades", es: "Encontrarán nuevas oportunidades", tense: "Futuro Simple" },
+                { pt: "Não encontro os meus óculos", es: "No encuentro mis gafas", tense: "Presente" },
+                { pt: "Onde encontraste isto?", es: "¿Dónde encontraste esto?", tense: "Pretérito Indefinido" },
+                { pt: "Encontrei-me sozinho", es: "Me encontré solo", tense: "Pretérito Indefinido" },
+                { pt: "Encontramo-nos no café", es: "Nos encontramos en el café", tense: "Presente" },
+                { pt: "Como te sentes?", es: "¿Cómo te encuentras?", tense: "Presente" },
+                { pt: "Sinto-me melhor agora", es: "Me encuentro mejor ahora", tense: "Presente" },
+                { pt: "Encontrei-o por acaso", es: "Lo encontré por casualidad", tense: "Pretérito Indefinido" },
+                { pt: "Vais achar útil", es: "Lo encontrarás útil", tense: "Futuro Simple" },
+                { pt: "Ela não encontrou razão para ficar", es: "Ella no encontró razón para quedarse", tense: "Pretérito Indefinido" },
+                { pt: "Encontramo-nos em apuros", es: "Nos encontramos en problemas", tense: "Presente" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

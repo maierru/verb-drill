@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇪🇸 VERB SER — 94 Phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Back to verb list</a>
+            <h1>🇪🇸 Verb SER</h1>
+            <p class="subtitle">to be (permanent) — 94 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Show all translations</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
+        </div>
+
+        <div class="stats" id="stats">Showing: 94 of 94 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Spanish Practice — SER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb SER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Present tense - permanent states, identity, characteristics, origin</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>soy</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>eres</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>es</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>somos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>sois</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>son</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Simple past - completed actions in the past</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>fui</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>fuiste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>fue</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>fuimos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>fuisteis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>fueron</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Imperfect past - ongoing or habitual states in the past</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>era</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>eras</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>era</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>éramos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>erais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>eran</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Simple future - will be</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>seré</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>serás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>será</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>seremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>seréis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>serán</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'en',
+            targetKey: 'es',
+            labels: { target: 'Spanish', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["soy","eres","es","somos","sois","son","fui","fuiste","fue","fuimos","fuisteis","fueron","era","eras","éramos","erais","eran","seré","serás","será","seremos","seréis","serán"],
+            phrases: [
+                { en: "I am a doctor.", es: "Soy médico.", tense: "Presente" },
+                { en: "You are very intelligent.", es: "Eres muy inteligente.", tense: "Presente" },
+                { en: "She is from Spain.", es: "Ella es de España.", tense: "Presente" },
+                { en: "We are happy.", es: "Somos felices.", tense: "Presente" },
+                { en: "They are students.", es: "Son estudiantes.", tense: "Presente" },
+                { en: "You (plural) are kind.", es: "Sois amables.", tense: "Presente" },
+                { en: "It is important.", es: "Es importante.", tense: "Presente" },
+                { en: "I am Mexican.", es: "Soy mexicano.", tense: "Presente" },
+                { en: "You are right.", es: "Eres correcto.", tense: "Presente" },
+                { en: "He is my brother.", es: "Es mi hermano.", tense: "Presente" },
+                { en: "We are colleagues.", es: "Somos colegas.", tense: "Presente" },
+                { en: "They are artists.", es: "Son artistas.", tense: "Presente" },
+                { en: "This is the truth.", es: "Esta es la verdad.", tense: "Presente" },
+                { en: "I am Catholic.", es: "Soy católico.", tense: "Presente" },
+                { en: "You are beautiful.", es: "Eres hermosa.", tense: "Presente" },
+                { en: "She is generous.", es: "Ella es generosa.", tense: "Presente" },
+                { en: "We are human.", es: "Somos humanos.", tense: "Presente" },
+                { en: "You (plural) are responsible.", es: "Sois responsables.", tense: "Presente" },
+                { en: "They are professionals.", es: "Son profesionales.", tense: "Presente" },
+                { en: "I am an engineer.", es: "Soy ingeniero.", tense: "Presente" },
+                { en: "It is necessary.", es: "Es necesario.", tense: "Presente" },
+                { en: "You are honest.", es: "Eres honesto.", tense: "Presente" },
+                { en: "He is my teacher.", es: "Es mi profesor.", tense: "Presente" },
+                { en: "We are friends.", es: "Somos amigos.", tense: "Presente" },
+                { en: "They are lawyers.", es: "Son abogados.", tense: "Presente" },
+                { en: "I was young.", es: "Fui joven.", tense: "Pretérito Indefinido" },
+                { en: "You were the champion.", es: "Fuiste el campeón.", tense: "Pretérito Indefinido" },
+                { en: "She was the director.", es: "Ella fue la directora.", tense: "Pretérito Indefinido" },
+                { en: "We were in Madrid.", es: "Fuimos a Madrid.", tense: "Pretérito Indefinido" },
+                { en: "They were brave.", es: "Fueron valientes.", tense: "Pretérito Indefinido" },
+                { en: "You (plural) were wrong.", es: "Fuisteis incorrectos.", tense: "Pretérito Indefinido" },
+                { en: "It was incredible.", es: "Fue increíble.", tense: "Pretérito Indefinido" },
+                { en: "I was the leader.", es: "Fui el líder.", tense: "Pretérito Indefinido" },
+                { en: "You were lucky.", es: "Fuiste afortunado.", tense: "Pretérito Indefinido" },
+                { en: "He was president.", es: "Fue presidente.", tense: "Pretérito Indefinido" },
+                { en: "We were partners.", es: "Fuimos socios.", tense: "Pretérito Indefinido" },
+                { en: "They were witnesses.", es: "Fueron testigos.", tense: "Pretérito Indefinido" },
+                { en: "It was a surprise.", es: "Fue una sorpresa.", tense: "Pretérito Indefinido" },
+                { en: "I was the winner.", es: "Fui el ganador.", tense: "Pretérito Indefinido" },
+                { en: "You were amazing.", es: "Fuiste increíble.", tense: "Pretérito Indefinido" },
+                { en: "She was a great person.", es: "Ella fue una gran persona.", tense: "Pretérito Indefinido" },
+                { en: "We were volunteers.", es: "Fuimos voluntarios.", tense: "Pretérito Indefinido" },
+                { en: "You (plural) were the best.", es: "Fuisteis los mejores.", tense: "Pretérito Indefinido" },
+                { en: "They were the owners.", es: "Fueron los dueños.", tense: "Pretérito Indefinido" },
+                { en: "I was always optimistic.", es: "Era siempre optimista.", tense: "Pretérito Imperfecto" },
+                { en: "You were very patient.", es: "Eras muy paciente.", tense: "Pretérito Imperfecto" },
+                { en: "She was a good friend.", es: "Ella era una buena amiga.", tense: "Pretérito Imperfecto" },
+                { en: "We were neighbors.", es: "Éramos vecinos.", tense: "Pretérito Imperfecto" },
+                { en: "They were classmates.", es: "Eran compañeros de clase.", tense: "Pretérito Imperfecto" },
+                { en: "You (plural) were punctual.", es: "Erais puntuales.", tense: "Pretérito Imperfecto" },
+                { en: "It was common.", es: "Era común.", tense: "Pretérito Imperfecto" },
+                { en: "I was shy as a child.", es: "Era tímido de niño.", tense: "Pretérito Imperfecto" },
+                { en: "You were creative.", es: "Eras creativo.", tense: "Pretérito Imperfecto" },
+                { en: "He was very tall.", es: "Era muy alto.", tense: "Pretérito Imperfecto" },
+                { en: "We were young.", es: "Éramos jóvenes.", tense: "Pretérito Imperfecto" },
+                { en: "They were famous.", es: "Eran famosos.", tense: "Pretérito Imperfecto" },
+                { en: "It was normal.", es: "Era normal.", tense: "Pretérito Imperfecto" },
+                { en: "I was idealistic.", es: "Era idealista.", tense: "Pretérito Imperfecto" },
+                { en: "You were romantic.", es: "Eras romántico.", tense: "Pretérito Imperfecto" },
+                { en: "She was dedicated.", es: "Ella era dedicada.", tense: "Pretérito Imperfecto" },
+                { en: "We were ambitious.", es: "Éramos ambiciosos.", tense: "Pretérito Imperfecto" },
+                { en: "You (plural) were enthusiastic.", es: "Erais entusiastas.", tense: "Pretérito Imperfecto" },
+                { en: "They were organized.", es: "Eran organizados.", tense: "Pretérito Imperfecto" },
+                { en: "I will be a pilot.", es: "Seré piloto.", tense: "Futuro Simple" },
+                { en: "You will be successful.", es: "Serás exitoso.", tense: "Futuro Simple" },
+                { en: "She will be the director.", es: "Ella será la directora.", tense: "Futuro Simple" },
+                { en: "We will be ready.", es: "Seremos listos.", tense: "Futuro Simple" },
+                { en: "They will be happy.", es: "Serán felices.", tense: "Futuro Simple" },
+                { en: "You (plural) will be champions.", es: "Seréis campeones.", tense: "Futuro Simple" },
+                { en: "It will be difficult.", es: "Será difícil.", tense: "Futuro Simple" },
+                { en: "I will be there.", es: "Seré allí.", tense: "Futuro Simple" },
+                { en: "You will be famous.", es: "Serás famoso.", tense: "Futuro Simple" },
+                { en: "He will be the boss.", es: "Será el jefe.", tense: "Futuro Simple" },
+                { en: "We will be volunteers.", es: "Seremos voluntarios.", tense: "Futuro Simple" },
+                { en: "They will be grateful.", es: "Serán agradecidos.", tense: "Futuro Simple" },
+                { en: "It will be wonderful.", es: "Será maravilloso.", tense: "Futuro Simple" },
+                { en: "I will be honest.", es: "Seré honesto.", tense: "Futuro Simple" },
+                { en: "You will be perfect.", es: "Serás perfecto.", tense: "Futuro Simple" },
+                { en: "She will be the captain.", es: "Ella será la capitana.", tense: "Futuro Simple" },
+                { en: "We will be safe.", es: "Seremos seguros.", tense: "Futuro Simple" },
+                { en: "You (plural) will be important.", es: "Seréis importantes.", tense: "Futuro Simple" },
+                { en: "They will be pioneers.", es: "Serán pioneros.", tense: "Futuro Simple" },
+                { en: "I am an architect.", es: "Soy arquitecto.", tense: "Presente" },
+                { en: "You are special.", es: "Eres especial.", tense: "Presente" },
+                { en: "He is Argentinian.", es: "Es argentino.", tense: "Presente" },
+                { en: "We are a team.", es: "Somos un equipo.", tense: "Presente" },
+                { en: "They are singers.", es: "Son cantantes.", tense: "Presente" },
+                { en: "I was confident.", es: "Fui confiado.", tense: "Pretérito Indefinido" },
+                { en: "It was perfect.", es: "Fue perfecto.", tense: "Pretérito Indefinido" },
+                { en: "You were kind.", es: "Fuiste amable.", tense: "Pretérito Indefinido" },
+                { en: "She was calm.", es: "Ella era tranquila.", tense: "Pretérito Imperfecto" },
+                { en: "We were curious.", es: "Éramos curiosos.", tense: "Pretérito Imperfecto" },
+                { en: "I will be better.", es: "Seré mejor.", tense: "Futuro Simple" },
+                { en: "It will be easy.", es: "Será fácil.", tense: "Futuro Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

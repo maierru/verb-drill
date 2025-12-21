@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇪🇸 VERB LLEVAR — 94 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇪🇸 Verb LLEVAR</h1>
+            <p class="subtitle">to carry, to wear, to take — 94 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 94 из 94 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика испанского — LLEVAR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb LLEVAR</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Настоящее время - ношу, везу сейчас</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>llevo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>llevas</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>lleva</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>llevamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>lleváis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>llevan</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Простое прошедшее - нёс, носил, взял</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>llevé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>llevaste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>llevó</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>llevamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>llevasteis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>llevaron</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Имперфект - носил (регулярно), нёс (процесс)</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>llevaba</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>llevabas</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>llevaba</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>llevábamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>llevabais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>llevaban</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Простое будущее - понесу, буду носить</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>llevaré</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>llevarás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>llevará</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>llevaremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>llevaréis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>llevarán</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'es',
+            labels: { target: 'Español', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["llevo","llevas","lleva","llevamos","lleváis","llevan","llevé","llevaba","llevaré"],
+            phrases: [
+                { ru: "Я несу свой рюкзак.", es: "Llevo mi mochila.", tense: "Presente" },
+                { ru: "Она носит красное платье.", es: "Ella lleva un vestido rojo.", tense: "Presente" },
+                { ru: "Мы несём чемоданы.", es: "Llevamos las maletas.", tense: "Presente" },
+                { ru: "Он носит очки.", es: "Él lleva gafas.", tense: "Presente" },
+                { ru: "Они отвозят детей в школу.", es: "Ellos llevan los niños al colegio.", tense: "Presente" },
+                { ru: "Я ношу джинсы сегодня.", es: "Llevo vaqueros hoy.", tense: "Presente" },
+                { ru: "Ты несёшь слишком много.", es: "Llevas demasiado.", tense: "Presente" },
+                { ru: "Она выгуливает свою собаку.", es: "Ella lleva a su perro de paseo.", tense: "Presente" },
+                { ru: "Мы дружим уже много лет.", es: "Llevamos años siendo amigos.", tense: "Presente" },
+                { ru: "Как долго ты здесь живёшь?", es: "¿Cuánto tiempo llevas viviendo aquí?", tense: "Presente" },
+                { ru: "Я ношу телефон везде.", es: "Llevo mi teléfono a todas partes.", tense: "Presente" },
+                { ru: "Он носит костюм на работу.", es: "Él lleva traje al trabajo.", tense: "Presente" },
+                { ru: "Они несут коробки наверх.", es: "Llevan las cajas arriba.", tense: "Presente" },
+                { ru: "Она носит макияж каждый день.", es: "Ella lleva maquillaje todos los días.", tense: "Presente" },
+                { ru: "Я беру ноутбук с собой.", es: "Llevo mi portátil conmigo.", tense: "Presente" },
+                { ru: "Ты носишь красивую одежду.", es: "Llevas ropa bonita.", tense: "Presente" },
+                { ru: "Мы носим наличные на всякий случай.", es: "Llevamos efectivo para emergencias.", tense: "Presente" },
+                { ru: "Он едет на автобусе на работу.", es: "Él lleva el autobús al trabajo.", tense: "Presente" },
+                { ru: "Они носят униформу.", es: "Llevan uniformes.", tense: "Presente" },
+                { ru: "Я учусь уже два часа.", es: "Llevo dos horas estudiando.", tense: "Presente" },
+                { ru: "Я отнёс продукты домой.", es: "Llevé la compra a casa.", tense: "Pretérito Indefinido" },
+                { ru: "Она надела красивое платье.", es: "Ella llevó un vestido hermoso.", tense: "Pretérito Indefinido" },
+                { ru: "Мы отвели детей в парк.", es: "Llevamos los niños al parque.", tense: "Pretérito Indefinido" },
+                { ru: "Он нёс тяжёлые коробки.", es: "Él llevó las cajas pesadas.", tense: "Pretérito Indefinido" },
+                { ru: "Они отвезли меня в аэропорт.", es: "Me llevaron al aeropuerto.", tense: "Pretérito Indefinido" },
+                { ru: "Я надел новые туфли.", es: "Llevé mis zapatos nuevos.", tense: "Pretérito Indefinido" },
+                { ru: "Ты нёс все сумки.", es: "Llevaste todas las bolsas.", tense: "Pretérito Indefinido" },
+                { ru: "Она отвезла маму к врачу.", es: "Ella llevó a su madre al médico.", tense: "Pretérito Indefinido" },
+                { ru: "Мы надели костюмы на вечеринку.", es: "Llevamos disfraces a la fiesta.", tense: "Pretérito Indefinido" },
+                { ru: "Он отнёс документы в офис.", es: "Él llevó los documentos a la oficina.", tense: "Pretérito Indefinido" },
+                { ru: "Я носил свои книги.", es: "Yo llevaba mis libros.", tense: "Pretérito Imperfecto" },
+                { ru: "Она всегда носила шляпу.", es: "Ella siempre llevaba sombrero.", tense: "Pretérito Imperfecto" },
+                { ru: "Мы ездили на поезде.", es: "Llevábamos el tren.", tense: "Pretérito Imperfecto" },
+                { ru: "Он носил пальто каждый день.", es: "Él llevaba abrigo todos los días.", tense: "Pretérito Imperfecto" },
+                { ru: "Они носили обед в школу.", es: "Llevaban almuerzo al colegio.", tense: "Pretérito Imperfecto" },
+                { ru: "Я всегда носил чёрное.", es: "Siempre llevaba negro.", tense: "Pretérito Imperfecto" },
+                { ru: "Ты носил кошелёк.", es: "Tú llevabas una cartera.", tense: "Pretérito Imperfecto" },
+                { ru: "Она водила сестру везде.", es: "Ella llevaba a su hermana a todas partes.", tense: "Pretérito Imperfecto" },
+                { ru: "Мы носили кроссовки тогда.", es: "Llevábamos zapatillas en aquel entonces.", tense: "Pretérito Imperfecto" },
+                { ru: "Он носил зонт.", es: "Él llevaba paraguas.", tense: "Pretérito Imperfecto" },
+                { ru: "Я понесу сумки.", es: "Llevaré las bolsas.", tense: "Futuro Simple" },
+                { ru: "Она наденет корону.", es: "Ella llevará una corona.", tense: "Futuro Simple" },
+                { ru: "Мы возьмём машину.", es: "Llevaremos el coche.", tense: "Futuro Simple" },
+                { ru: "Он понесёт флаг.", es: "Él llevará la bandera.", tense: "Futuro Simple" },
+                { ru: "Они наденут медали.", es: "Llevarán medallas.", tense: "Futuro Simple" },
+                { ru: "Я отвезу тебя домой.", es: "Te llevaré a casa.", tense: "Futuro Simple" },
+                { ru: "Ты передашь сообщение.", es: "Llevarás el mensaje.", tense: "Futuro Simple" },
+                { ru: "Она не будет торопиться.", es: "Ella llevará su tiempo.", tense: "Futuro Simple" },
+                { ru: "Мы продолжим.", es: "Llevaremos adelante.", tense: "Futuro Simple" },
+                { ru: "Он наденет смокинг.", es: "Él llevará esmoquin.", tense: "Futuro Simple" },
+                { ru: "Это требует времени.", es: "Lleva tiempo.", tense: "Presente" },
+                { ru: "Я хорошо с ним лажу.", es: "Me llevo bien con él.", tense: "Presente" },
+                { ru: "Они не ладят.", es: "No se llevan bien.", tense: "Presente" },
+                { ru: "Она отвечает за это.", es: "Ella lleva la responsabilidad.", tense: "Presente" },
+                { ru: "Я веду проект.", es: "Llevo el proyecto.", tense: "Presente" },
+                { ru: "Он носит часы.", es: "Lleva reloj.", tense: "Presente" },
+                { ru: "Мы несём припасы.", es: "Llevamos provisiones.", tense: "Presente" },
+                { ru: "Они приносят еду.", es: "Llevan comida.", tense: "Presente" },
+                { ru: "Я ношу шорты.", es: "Llevo pantalones cortos.", tense: "Presente" },
+                { ru: "Ты несёшь много.", es: "Llevas mucho.", tense: "Presente" },
+                { ru: "Она носит ключи.", es: "Ella lleva las llaves.", tense: "Presente" },
+                { ru: "Мы хорошо ладим.", es: "Nos llevamos bien.", tense: "Presente" },
+                { ru: "Он гордится своей работой.", es: "Él lleva orgullo en su trabajo.", tense: "Presente" },
+                { ru: "Они не спешат.", es: "Se lo llevan con calma.", tense: "Presente" },
+                { ru: "Я несу ответственность.", es: "Llevo responsabilidades.", tense: "Presente" },
+                { ru: "Ты носишь духи.", es: "Llevas perfume.", tense: "Presente" },
+                { ru: "Она делает записи.", es: "Ella lleva apuntes.", tense: "Presente" },
+                { ru: "Мы несём надежду.", es: "Llevamos esperanza.", tense: "Presente" },
+                { ru: "Он носит кольцо.", es: "Él lleva un anillo.", tense: "Presente" },
+                { ru: "Они приносят радость.", es: "Llevan alegría.", tense: "Presente" },
+                { ru: "Я принимаю меры предосторожности.", es: "Llevo precauciones.", tense: "Presente" },
+                { ru: "Ты приносишь неудачу.", es: "Llevas mala suerte.", tense: "Presente" },
+                { ru: "Она несёт бремя.", es: "Ella lleva una carga.", tense: "Presente" },
+                { ru: "Мы работаем по очереди.", es: "Llevamos turnos.", tense: "Presente" },
+                { ru: "Он управляет магазином.", es: "Él lleva la tienda.", tense: "Presente" },
+                { ru: "Они ведут записи.", es: "Llevan registros.", tense: "Presente" },
+                { ru: "Я ношу серьги.", es: "Llevo pendientes.", tense: "Presente" },
+                { ru: "У тебя хороший вкус.", es: "Llevas buen gusto.", tense: "Presente" },
+                { ru: "Она приносит десерт.", es: "Ella lleva postre.", tense: "Presente" },
+                { ru: "Мы справляемся с этим.", es: "Lo llevamos.", tense: "Presente" },
+                { ru: "Он носит оружие.", es: "Él lleva un arma.", tense: "Presente" },
+                { ru: "Они носят маски.", es: "Llevan mascarillas.", tense: "Presente" },
+                { ru: "Я принимаю витамины.", es: "Llevo mis vitaminas.", tense: "Presente" },
+                { ru: "Ты несёшь факел.", es: "Llevas la antorcha.", tense: "Presente" },
+                { ru: "Она ждёт уже час.", es: "Lleva una hora esperando.", tense: "Presente" },
+                { ru: "Мы женаты 10 лет.", es: "Llevamos 10 años casados.", tense: "Presente" },
+                { ru: "Он работает здесь 5 лет.", es: "Lleva 5 años trabajando aquí.", tense: "Presente" },
+                { ru: "Я учу испанский 6 месяцев.", es: "Llevo 6 meses aprendiendo español.", tense: "Presente" },
+                { ru: "Они встречаются 2 года.", es: "Llevan 2 años saliendo.", tense: "Presente" },
+                { ru: "Сколько ты здесь?", es: "¿Cuánto tiempo llevas aquí?", tense: "Presente" },
+                { ru: "Я болею 3 дня.", es: "Llevo 3 días enfermo.", tense: "Presente" },
+                { ru: "Она ушла час назад.", es: "Lleva una hora fuera.", tense: "Presente" },
+                { ru: "Мы едем 4 часа.", es: "Llevamos 4 horas conduciendo.", tense: "Presente" },
+                { ru: "Он спит весь день.", es: "Lleva todo el día durmiendo.", tense: "Presente" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

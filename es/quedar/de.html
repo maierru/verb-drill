@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇪🇸 VERB QUEDAR — 100 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇪🇸 Verb QUEDAR</h1>
+            <p class="subtitle">to stay, to remain, to meet up — 100 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 100 von 100 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Spanisch-Übung — QUEDAR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb QUEDAR</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Präsens - bleiben, übrig bleiben, sich verabreden</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>quedo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>quedas</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>queda</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>quedamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>quedáis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>quedan</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Indefinido - blieb, verabredete sich</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>quedé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>quedaste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>quedó</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>quedamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>quedasteis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>quedaron</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Imperfekt - blieb gewöhnlich, pflegte zu bleiben</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>quedaba</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>quedabas</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>quedaba</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>quedábamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>quedabais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>quedaban</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Futur - wird bleiben, wird sich verabreden</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>quedaré</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>quedarás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>quedará</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>quedaremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>quedaréis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>quedarán</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'es',
+            labels: { target: 'Spanisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["quedo","quedas","queda","quedamos","quedáis","quedan","quedé","quedaba","quedaré","quedado"],
+            phrases: [
+                { de: "Ich bleibe heute zu Hause.", es: "Me quedo en casa hoy.", tense: "Presente" },
+                { de: "Wir treffen uns um acht.", es: "Quedamos a las ocho.", tense: "Presente" },
+                { de: "Wo treffen wir uns?", es: "¿Dónde quedamos?", tense: "Presente" },
+                { de: "Wie viel bleibt übrig?", es: "¿Cuánto queda?", tense: "Presente" },
+                { de: "Es bleibt nichts übrig.", es: "No queda nada.", tense: "Presente" },
+                { de: "Wir treffen uns morgen.", es: "Quedamos mañana.", tense: "Presente" },
+                { de: "Ich bleibe hier.", es: "Me quedo aquí.", tense: "Presente" },
+                { de: "Das Kleid steht dir gut.", es: "Te queda bien ese vestido.", tense: "Presente" },
+                { de: "Diese Jacke passt dir perfekt.", es: "Esa chaqueta te queda perfecta.", tense: "Presente" },
+                { de: "Dieses Hemd ist mir zu klein.", es: "Esta camisa me queda pequeña.", tense: "Presente" },
+                { de: "Wie weit ist es noch?", es: "¿Cuánto queda?", tense: "Presente" },
+                { de: "Es ist noch weit.", es: "Todavía queda lejos.", tense: "Presente" },
+                { de: "Das Hotel ist in der Nähe.", es: "El hotel queda cerca.", tense: "Presente" },
+                { de: "Wir haben uns im Café verabredet.", es: "Quedamos en el café.", tense: "Pretérito Indefinido" },
+                { de: "Ich bin den ganzen Tag zu Hause geblieben.", es: "Me quedé en casa todo el día.", tense: "Pretérito Indefinido" },
+                { de: "Sie blieb in Madrid.", es: "Se quedó en Madrid.", tense: "Pretérito Indefinido" },
+                { de: "Sie blieben bei mir.", es: "Se quedaron en mi casa.", tense: "Pretérito Indefinido" },
+                { de: "Wir haben uns verabredet, aber er kam nicht.", es: "Quedamos pero no vino.", tense: "Pretérito Indefinido" },
+                { de: "Es blieb nichts übrig.", es: "No quedó nada.", tense: "Pretérito Indefinido" },
+                { de: "Mir blieben die Worte weg.", es: "Me quedé sin palabras.", tense: "Pretérito Indefinido" },
+                { de: "Er schwieg.", es: "Se quedó callado.", tense: "Pretérito Indefinido" },
+                { de: "Das Geschäft liegt an der Hauptstraße.", es: "La tienda queda en la calle principal.", tense: "Presente" },
+                { de: "Wo befindet sich das Museum?", es: "¿Dónde queda el museo?", tense: "Presente" },
+                { de: "Das Restaurant ist im Zentrum.", es: "El restaurante queda en el centro.", tense: "Presente" },
+                { de: "Ich werde bis Montag bleiben.", es: "Me quedaré hasta el lunes.", tense: "Futuro Simple" },
+                { de: "Wir treffen uns am Bahnhof.", es: "Quedaremos en la estación.", tense: "Futuro Simple" },
+                { de: "Sie werden zum Abendessen bleiben.", es: "Se quedarán a cenar.", tense: "Futuro Simple" },
+                { de: "Es wird nichts übrig bleiben.", es: "No quedará nada.", tense: "Futuro Simple" },
+                { de: "Mal sehen, wie es wird.", es: "Veremos cómo queda.", tense: "Futuro Simple" },
+                { de: "Ich blieb immer bei meiner Großmutter.", es: "Me quedaba en casa de mi abuela.", tense: "Pretérito Imperfecto" },
+                { de: "Wir trafen uns immer freitags.", es: "Siempre quedábamos los viernes.", tense: "Pretérito Imperfecto" },
+                { de: "Es blieb immer Essen übrig.", es: "Siempre quedaba comida.", tense: "Pretérito Imperfecto" },
+                { de: "Er blieb spät bei der Arbeit.", es: "Se quedaba tarde en el trabajo.", tense: "Pretérito Imperfecto" },
+                { de: "Sie trafen sich im Park.", es: "Quedaban en el parque.", tense: "Pretérito Imperfecto" },
+                { de: "Es steht dir großartig.", es: "Te queda genial.", tense: "Presente" },
+                { de: "Diese Hose passt mir nicht.", es: "Estos pantalones no me quedan.", tense: "Presente" },
+                { de: "Diese Farbe steht ihr nicht.", es: "Ese color le queda mal.", tense: "Presente" },
+                { de: "Die Schuhe passen ihm gut.", es: "Los zapatos le quedan bien.", tense: "Presente" },
+                { de: "Diese Größe ist mir zu groß.", es: "Esta talla me queda grande.", tense: "Presente" },
+                { de: "Ich habe mich mit ihr um sechs verabredet.", es: "Quedé con ella a las seis.", tense: "Pretérito Indefinido" },
+                { de: "Haben wir eine Uhrzeit vereinbart?", es: "¿Quedamos en una hora?", tense: "Pretérito Indefinido" },
+                { de: "Wir haben uns verabredet ins Kino zu gehen.", es: "Quedamos en ir al cine.", tense: "Pretérito Indefinido" },
+                { de: "Sie haben sich für später verabredet.", es: "Quedaron para más tarde.", tense: "Pretérito Indefinido" },
+                { de: "Ich bleibe bei Freunden.", es: "Me quedo con amigos.", tense: "Presente" },
+                { de: "Bleib hier, beweg dich nicht.", es: "Quédate aquí, no te muevas.", tense: "Imperativo" },
+                { de: "Bleiben wir ruhig.", es: "Quedémonos tranquilos.", tense: "Imperativo" },
+                { de: "Bleib nicht zu spät draußen.", es: "No te quedes hasta muy tarde.", tense: "Imperativo" },
+                { de: "Ich bin blind geworden.", es: "Me quedé ciego.", tense: "Pretérito Indefinido" },
+                { de: "Sie wurde taub.", es: "Se quedó sorda.", tense: "Pretérito Indefinido" },
+                { de: "Er ist eingeschlafen.", es: "Se quedó dormido.", tense: "Pretérito Indefinido" },
+                { de: "Ich blieb allein.", es: "Me quedé solo.", tense: "Pretérito Indefinido" },
+                { de: "Uns ging das Geld aus.", es: "Nos quedamos sin dinero.", tense: "Pretérito Indefinido" },
+                { de: "Ihnen ging die Zeit aus.", es: "Se quedaron sin tiempo.", tense: "Pretérito Indefinido" },
+                { de: "Ich habe keine andere Wahl.", es: "No me queda otra opción.", tense: "Presente" },
+                { de: "Es bleibt viel zu tun.", es: "Queda mucho por hacer.", tense: "Presente" },
+                { de: "Wie viel Zeit bleibt noch?", es: "¿Cuánto tiempo queda?", tense: "Presente" },
+                { de: "Es bleiben nur noch zwei Tage.", es: "Solo quedan dos días.", tense: "Presente" },
+                { de: "Uns bleibt eine Stunde.", es: "Nos queda una hora.", tense: "Presente" },
+                { de: "Ich treffe mich mit meinen Freunden.", es: "Quedo con mis amigos.", tense: "Presente" },
+                { de: "Treffen wir uns?", es: "¿Quedamos?", tense: "Presente" },
+                { de: "Können wir uns nächste Woche treffen?", es: "¿Podemos quedar la semana que viene?", tense: "Presente" },
+                { de: "Ich kann mich heute nicht treffen.", es: "No puedo quedar hoy.", tense: "Presente" },
+                { de: "Wir treffen uns auf einen Kaffee.", es: "Quedamos para un café.", tense: "Presente" },
+                { de: "Die Vereinbarung steht.", es: "El acuerdo queda en pie.", tense: "Presente" },
+                { de: "Jetzt ist alles klar.", es: "Todo queda claro ahora.", tense: "Presente" },
+                { de: "Es blieb unvollendet.", es: "Quedó sin terminar.", tense: "Pretérito Indefinido" },
+                { de: "Die Angelegenheit ist geklärt.", es: "El asunto queda resuelto.", tense: "Presente" },
+                { de: "Es ist gut geworden.", es: "Quedó bien.", tense: "Pretérito Indefinido" },
+                { de: "Es ist schlecht geworden.", es: "Quedó mal.", tense: "Pretérito Indefinido" },
+                { de: "Das Foto ist schön geworden.", es: "La foto quedó bonita.", tense: "Pretérito Indefinido" },
+                { de: "Der Kuchen wurde trocken.", es: "El pastel quedó seco.", tense: "Pretérito Indefinido" },
+                { de: "Ich behalte dieses Buch.", es: "Me quedo con este libro.", tense: "Presente" },
+                { de: "Sie nahm das beste.", es: "Se quedó con el mejor.", tense: "Pretérito Indefinido" },
+                { de: "Behalten Sie das Wechselgeld.", es: "Quédese con el cambio.", tense: "Imperativo" },
+                { de: "Ich nehme das rote.", es: "Me quedaré con el rojo.", tense: "Futuro Simple" },
+                { de: "Bleibst du zum Essen?", es: "¿Te quedas a comer?", tense: "Presente" },
+                { de: "Ich übernachtete dort.", es: "Me quedé a dormir.", tense: "Pretérito Indefinido" },
+                { de: "Wirst du übernachten?", es: "¿Te quedarás a dormir?", tense: "Futuro Simple" },
+                { de: "Sie bleiben über das Wochenende.", es: "Se quedan el fin de semana.", tense: "Presente" },
+                { de: "Ich erstarrte, als ich ihn sah.", es: "Me quedé helado al verlo.", tense: "Pretérito Indefinido" },
+                { de: "Sie war fassungslos.", es: "Se quedó pasmada.", tense: "Pretérito Indefinido" },
+                { de: "Wir waren erstaunt.", es: "Nos quedamos asombrados.", tense: "Pretérito Indefinido" },
+                { de: "Er blieb still stehen.", es: "Se quedó quieto.", tense: "Pretérito Indefinido" },
+                { de: "Mir geht die Geduld aus.", es: "Me quedo sin paciencia.", tense: "Presente" },
+                { de: "Uns gehen die Ideen aus.", es: "Nos quedamos sin ideas.", tense: "Presente" },
+                { de: "Ihnen ging das Benzin aus.", es: "Se quedaron sin gasolina.", tense: "Pretérito Indefinido" },
+                { de: "Bleib nicht ohne Batterien.", es: "No te quedes sin pilas.", tense: "Imperativo" },
+                { de: "Das Geschäft ist zwei Blocks entfernt.", es: "La tienda queda a dos cuadras.", tense: "Presente" },
+                { de: "Wie weit ist der Strand?", es: "¿A cuánto queda la playa?", tense: "Presente" },
+                { de: "Das Büro ist ganz in der Nähe.", es: "La oficina queda cerca.", tense: "Presente" },
+                { de: "Ist es weit von hier?", es: "¿Queda lejos de aquí?", tense: "Presente" },
+                { de: "Ich treffe dich um sieben.", es: "Quedo contigo a las siete.", tense: "Presente" },
+                { de: "Wir haben uns auf Dienstag geeinigt.", es: "Quedamos el martes.", tense: "Pretérito Indefinido" },
+                { de: "Wir treffen uns am Eingang.", es: "Quedamos en la entrada.", tense: "Presente" },
+                { de: "Das Kleid passt dir perfekt.", es: "El vestido te queda perfecto.", tense: "Presente" },
+                { de: "Ich bin beeindruckt.", es: "Me quedo impresionado.", tense: "Presente" },
+                { de: "Die Wohnung ist im Zentrum.", es: "El apartamento queda en el centro.", tense: "Presente" },
+                { de: "Wir blieben dort stehen und schauten zu.", es: "Nos quedamos ahí mirando.", tense: "Pretérito Indefinido" },
+                { de: "Ich werde dein Geheimnis bewahren.", es: "Me quedaré con tu secreto.", tense: "Futuro Simple" },
+                { de: "Wie sieht der Plan aus?", es: "¿Cómo queda el plan?", tense: "Presente" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇪🇸 VERB IR — 95 Phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Back to verb list</a>
+            <h1>🇪🇸 Verb IR</h1>
+            <p class="subtitle">to go — 95 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Show all translations</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
+        </div>
+
+        <div class="stats" id="stats">Showing: 95 of 95 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Spanish Practice — IR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb IR</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Present tense - irregular verb, used for current actions and habitual activities</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">voy</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vas</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">va</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">van</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Preterite - completed actions in the past, irregular forms</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">fui</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">fuiste</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">fue</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">fuimos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">fuisteis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">fueron</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Imperfect - ongoing or habitual past actions</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">iba</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ibas</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">iba</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">íbamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ibais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">iban</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Simple future - actions that will happen</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">iré</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">irás</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">irá</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">iremos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">iréis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">irán</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'en',
+            targetKey: 'es',
+            labels: { target: 'Spanish', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["voy","vas","va","vamos","vais","van","fui","iba","iré"],
+            phrases: [
+                { en: "I go to work every day", es: "Voy al trabajo todos los días", tense: "Presente" },
+                { en: "You go to school by bus", es: "Vas al colegio en autobús", tense: "Presente" },
+                { en: "She goes to the gym in the morning", es: "Ella va al gimnasio por la mañana", tense: "Presente" },
+                { en: "We go to the beach on weekends", es: "Vamos a la playa los fines de semana", tense: "Presente" },
+                { en: "They go shopping every Saturday", es: "Ellos van de compras todos los sábados", tense: "Presente" },
+                { en: "I'm going to study tonight", es: "Voy a estudiar esta noche", tense: "Presente" },
+                { en: "You're going to love this movie", es: "Vas a amar esta película", tense: "Presente" },
+                { en: "He's going to call you later", es: "Él va a llamarte más tarde", tense: "Presente" },
+                { en: "We're going to travel to Spain", es: "Vamos a viajar a España", tense: "Presente" },
+                { en: "They're going to buy a new car", es: "Ellos van a comprar un coche nuevo", tense: "Presente" },
+                { en: "I go to the supermarket", es: "Voy al supermercado", tense: "Presente" },
+                { en: "Where are you going?", es: "¿Adónde vas?", tense: "Presente" },
+                { en: "She goes to Paris often", es: "Ella va a París a menudo", tense: "Presente" },
+                { en: "We go on vacation in July", es: "Vamos de vacaciones en julio", tense: "Presente" },
+                { en: "Do you go by car or train?", es: "¿Vas en coche o en tren?", tense: "Presente" },
+                { en: "I'm going to be a doctor", es: "Voy a ser médico", tense: "Presente" },
+                { en: "It's going to rain tomorrow", es: "Va a llover mañana", tense: "Presente" },
+                { en: "We're going to eat at eight", es: "Vamos a comer a las ocho", tense: "Presente" },
+                { en: "They're going to win the game", es: "Ellos van a ganar el partido", tense: "Presente" },
+                { en: "I'm going to the party tonight", es: "Voy a la fiesta esta noche", tense: "Presente" },
+                { en: "I went to Madrid yesterday", es: "Fui a Madrid ayer", tense: "Pretérito Indefinido" },
+                { en: "You went to the concert last week", es: "Fuiste al concierto la semana pasada", tense: "Pretérito Indefinido" },
+                { en: "He went to the hospital", es: "Él fue al hospital", tense: "Pretérito Indefinido" },
+                { en: "We went to the restaurant", es: "Fuimos al restaurante", tense: "Pretérito Indefinido" },
+                { en: "They went on vacation in August", es: "Ellos fueron de vacaciones en agosto", tense: "Pretérito Indefinido" },
+                { en: "I went shopping this morning", es: "Fui de compras esta mañana", tense: "Pretérito Indefinido" },
+                { en: "Did you go to the meeting?", es: "¿Fuiste a la reunión?", tense: "Pretérito Indefinido" },
+                { en: "She went to London last year", es: "Ella fue a Londres el año pasado", tense: "Pretérito Indefinido" },
+                { en: "We went to the cinema", es: "Fuimos al cine", tense: "Pretérito Indefinido" },
+                { en: "They went to the park", es: "Ellos fueron al parque", tense: "Pretérito Indefinido" },
+                { en: "I used to go to that school", es: "Yo iba a ese colegio", tense: "Pretérito Imperfecto" },
+                { en: "You used to go every day", es: "Tú ibas todos los días", tense: "Pretérito Imperfecto" },
+                { en: "She used to go by bike", es: "Ella iba en bicicleta", tense: "Pretérito Imperfecto" },
+                { en: "We used to go to the beach", es: "Nosotros íbamos a la playa", tense: "Pretérito Imperfecto" },
+                { en: "They were going to the station", es: "Ellos iban a la estación", tense: "Pretérito Imperfecto" },
+                { en: "I was going to tell you", es: "Iba a decirte", tense: "Pretérito Imperfecto" },
+                { en: "Where were you going?", es: "¿Adónde ibas?", tense: "Pretérito Imperfecto" },
+                { en: "He was going to the office", es: "Él iba a la oficina", tense: "Pretérito Imperfecto" },
+                { en: "We were going home", es: "Íbamos a casa", tense: "Pretérito Imperfecto" },
+                { en: "They were going on foot", es: "Ellos iban a pie", tense: "Pretérito Imperfecto" },
+                { en: "I will go tomorrow", es: "Iré mañana", tense: "Futuro Simple" },
+                { en: "You will go next week", es: "Irás la próxima semana", tense: "Futuro Simple" },
+                { en: "She will go to the doctor", es: "Ella irá al médico", tense: "Futuro Simple" },
+                { en: "We will go together", es: "Iremos juntos", tense: "Futuro Simple" },
+                { en: "They will go by plane", es: "Ellos irán en avión", tense: "Futuro Simple" },
+                { en: "I will go to university", es: "Iré a la universidad", tense: "Futuro Simple" },
+                { en: "Will you go with me?", es: "¿Irás conmigo?", tense: "Futuro Simple" },
+                { en: "He will go alone", es: "Él irá solo", tense: "Futuro Simple" },
+                { en: "We will go next month", es: "Iremos el próximo mes", tense: "Futuro Simple" },
+                { en: "They will go to Brazil", es: "Ellos irán a Brasil", tense: "Futuro Simple" },
+                { en: "I'm leaving now", es: "Me voy ahora", tense: "Presente" },
+                { en: "Are you leaving already?", es: "¿Ya te vas?", tense: "Presente" },
+                { en: "He's leaving tomorrow", es: "Él se va mañana", tense: "Presente" },
+                { en: "We're leaving early", es: "Nos vamos temprano", tense: "Presente" },
+                { en: "They're leaving the country", es: "Ellos se van del país", tense: "Presente" },
+                { en: "I left at noon", es: "Me fui al mediodía", tense: "Pretérito Indefinido" },
+                { en: "You left without saying goodbye", es: "Te fuiste sin despedirte", tense: "Pretérito Indefinido" },
+                { en: "She left the company", es: "Ella se fue de la empresa", tense: "Pretérito Indefinido" },
+                { en: "We left the party early", es: "Nos fuimos de la fiesta temprano", tense: "Pretérito Indefinido" },
+                { en: "They left in a hurry", es: "Ellos se fueron con prisa", tense: "Pretérito Indefinido" },
+                { en: "I go to the office by subway", es: "Voy a la oficina en metro", tense: "Presente" },
+                { en: "You go too fast", es: "Vas muy rápido", tense: "Presente" },
+                { en: "Everything is going well", es: "Todo va bien", tense: "Presente" },
+                { en: "We go to church on Sundays", es: "Vamos a la iglesia los domingos", tense: "Presente" },
+                { en: "They go running in the park", es: "Ellos van a correr al parque", tense: "Presente" },
+                { en: "I'm going to be late", es: "Voy a llegar tarde", tense: "Presente" },
+                { en: "You're going to need help", es: "Vas a necesitar ayuda", tense: "Presente" },
+                { en: "It's going to be difficult", es: "Va a ser difícil", tense: "Presente" },
+                { en: "We're going to celebrate", es: "Vamos a celebrar", tense: "Presente" },
+                { en: "They're going to move house", es: "Ellos van a mudarse de casa", tense: "Presente" },
+                { en: "I went by taxi", es: "Fui en taxi", tense: "Pretérito Indefinido" },
+                { en: "You went too far", es: "Fuiste demasiado lejos", tense: "Pretérito Indefinido" },
+                { en: "He went to see his family", es: "Él fue a ver a su familia", tense: "Pretérito Indefinido" },
+                { en: "We went for a walk", es: "Fuimos a dar un paseo", tense: "Pretérito Indefinido" },
+                { en: "They went to the museum", es: "Ellos fueron al museo", tense: "Pretérito Indefinido" },
+                { en: "I went shopping downtown", es: "Fui de compras al centro", tense: "Pretérito Indefinido" },
+                { en: "You went to the wrong place", es: "Fuiste al lugar equivocado", tense: "Pretérito Indefinido" },
+                { en: "She went on a trip", es: "Ella fue de viaje", tense: "Pretérito Indefinido" },
+                { en: "We went to the theater", es: "Fuimos al teatro", tense: "Pretérito Indefinido" },
+                { en: "They went to a wedding", es: "Ellos fueron a una boda", tense: "Pretérito Indefinido" },
+                { en: "I used to go there every summer", es: "Yo iba allí todos los veranos", tense: "Pretérito Imperfecto" },
+                { en: "You were going in the wrong direction", es: "Tú ibas en la dirección equivocada", tense: "Pretérito Imperfecto" },
+                { en: "She was going to the library", es: "Ella iba a la biblioteca", tense: "Pretérito Imperfecto" },
+                { en: "We were going downtown", es: "Nosotros íbamos al centro", tense: "Pretérito Imperfecto" },
+                { en: "They were going too slowly", es: "Ellos iban muy despacio", tense: "Pretérito Imperfecto" },
+                { en: "I will go if you come with me", es: "Iré si vienes conmigo", tense: "Futuro Simple" },
+                { en: "You will go far in life", es: "Irás muy lejos en la vida", tense: "Futuro Simple" },
+                { en: "He will go to the conference", es: "Él irá a la conferencia", tense: "Futuro Simple" },
+                { en: "We will go when it stops raining", es: "Iremos cuando pare de llover", tense: "Futuro Simple" },
+                { en: "They will go on vacation", es: "Ellos irán de vacaciones", tense: "Futuro Simple" },
+                { en: "I go to the dentist twice a year", es: "Voy al dentista dos veces al año", tense: "Presente" },
+                { en: "How are things going?", es: "¿Cómo te van las cosas?", tense: "Presente" },
+                { en: "This doesn't go here", es: "Esto no va aquí", tense: "Presente" },
+                { en: "Let's go to the movies", es: "Vamos al cine", tense: "Presente" },
+                { en: "They go hiking every month", es: "Ellos van de excursión cada mes", tense: "Presente" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

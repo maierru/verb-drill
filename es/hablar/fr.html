@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbe 🇪🇸 VERB HABLAR — 101 phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Retour à la liste des verbes</a>
+            <h1>🇪🇸 Verb HABLAR</h1>
+            <p class="subtitle">to speak — 101 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Rechercher des phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Afficher toutes les traductions</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Masquer toutes les traductions</button>
+        </div>
+
+        <div class="stats" id="stats">Affichage: 101 sur 101 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Pratique de l'espagnol — HABLAR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb HABLAR</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Présent - actions qui se passent maintenant ou actions habituelles</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">hablo</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablas</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">habla</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">habláis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablan</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Passé simple - actions achevées dans le passé</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">hablé</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablaste</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">habló</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablasteis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablaron</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Imparfait - actions continues ou habituelles dans le passé</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">hablaba</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablabas</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablaba</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablábamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablabais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablaban</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Futur simple - actions qui se passeront</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">hablaré</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablarás</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablará</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablaremos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablaréis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablarán</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'fr',
+            targetKey: 'es',
+            labels: { target: 'Espagnol', showing: 'Affichage', of: 'sur', phrases: 'phrases' },
+            verbForms: ["hablo","hablas","habla","hablamos","habláis","hablan","hablé","hablaba","hablaré"],
+            phrases: [
+                { fr: "Je parle espagnol tous les jours", es: "Hablo español todos los días", tense: "Presente" },
+                { fr: "Parles-tu anglais?", es: "¿Hablas inglés?", tense: "Presente" },
+                { fr: "Elle parle trois langues", es: "Ella habla tres idiomas", tense: "Presente" },
+                { fr: "Nous parlons avec nos voisins", es: "Hablamos con nuestros vecinos", tense: "Presente" },
+                { fr: "Ils parlent très vite", es: "Ellos hablan muy rápido", tense: "Presente" },
+                { fr: "J'ai parlé avec mon patron hier", es: "Hablé con mi jefe ayer", tense: "Pretérito Indefinido" },
+                { fr: "Tu as trop parlé à la réunion", es: "Hablaste demasiado en la reunión", tense: "Pretérito Indefinido" },
+                { fr: "Il a parlé du projet", es: "Él habló sobre el proyecto", tense: "Pretérito Indefinido" },
+                { fr: "Nous avons parlé pendant deux heures", es: "Hablamos durante dos horas", tense: "Pretérito Indefinido" },
+                { fr: "Ils ont parlé en français", es: "Ellos hablaron en francés", tense: "Pretérito Indefinido" },
+                { fr: "Je parlais allemand quand j'étais jeune", es: "Hablaba alemán cuando era joven", tense: "Pretérito Imperfecto" },
+                { fr: "Tu disais toujours la vérité", es: "Siempre hablabas la verdad", tense: "Pretérito Imperfecto" },
+                { fr: "Elle parlait avec sa mère tous les jours", es: "Ella hablaba con su madre todos los días", tense: "Pretérito Imperfecto" },
+                { fr: "Nous parlions de toi", es: "Hablábamos de ti", tense: "Pretérito Imperfecto" },
+                { fr: "Ils parlaient fort", es: "Ellos hablaban en voz alta", tense: "Pretérito Imperfecto" },
+                { fr: "Je parlerai avec le manager demain", es: "Hablaré con el gerente mañana", tense: "Futuro Simple" },
+                { fr: "Tu parleras à la conférence", es: "Hablarás en la conferencia", tense: "Futuro Simple" },
+                { fr: "Il parlera de son expérience", es: "Él hablará sobre su experiencia", tense: "Futuro Simple" },
+                { fr: "Nous parlerons plus tard", es: "Hablaremos más tarde", tense: "Futuro Simple" },
+                { fr: "Ils parleront avec les clients", es: "Ellos hablarán con los clientes", tense: "Futuro Simple" },
+                { fr: "Je parle au téléphone chaque matin", es: "Hablo por teléfono cada mañana", tense: "Presente" },
+                { fr: "Parles-tu portugais?", es: "¿Hablas portugués?", tense: "Presente" },
+                { fr: "Elle parle clairement", es: "Ella habla claramente", tense: "Presente" },
+                { fr: "Nous parlons de politique", es: "Hablamos de política", tense: "Presente" },
+                { fr: "Ils ne se parlent pas", es: "Ellos no se hablan", tense: "Presente" },
+                { fr: "J'ai parlé avec mon ami hier soir", es: "Hablé con mi amigo anoche", tense: "Pretérito Indefinido" },
+                { fr: "Tu as bien parlé à la présentation", es: "Hablaste bien en la presentación", tense: "Pretérito Indefinido" },
+                { fr: "Il a parlé au professeur", es: "Él habló con el profesor", tense: "Pretérito Indefinido" },
+                { fr: "Nous avons parlé en espagnol", es: "Hablamos en español", tense: "Pretérito Indefinido" },
+                { fr: "Ils ont parlé du temps", es: "Ellos hablaron del tiempo", tense: "Pretérito Indefinido" },
+                { fr: "Je parlais italien", es: "Hablaba italiano", tense: "Pretérito Imperfecto" },
+                { fr: "Tu parlais doucement", es: "Hablabas suavemente", tense: "Pretérito Imperfecto" },
+                { fr: "Elle parlait au téléphone toute la journée", es: "Ella hablaba por teléfono todo el día", tense: "Pretérito Imperfecto" },
+                { fr: "Nous parlions de nos rêves", es: "Hablábamos de nuestros sueños", tense: "Pretérito Imperfecto" },
+                { fr: "Ils parlaient sans réfléchir", es: "Ellos hablaban sin pensar", tense: "Pretérito Imperfecto" },
+                { fr: "Je parlerai chinois l'année prochaine", es: "Hablaré chino el año que viene", tense: "Futuro Simple" },
+                { fr: "Tu parleras avec confiance", es: "Hablarás con confianza", tense: "Futuro Simple" },
+                { fr: "Elle parlera à l'événement", es: "Ella hablará en el evento", tense: "Futuro Simple" },
+                { fr: "Nous parlerons de cela demain", es: "Hablaremos de esto mañana", tense: "Futuro Simple" },
+                { fr: "Ils parleront plusieurs langues", es: "Ellos hablarán varios idiomas", tense: "Futuro Simple" },
+                { fr: "En parlant de ça, où est Maria?", es: "Hablando de eso, ¿dónde está María?", tense: "Gerundio" },
+                { fr: "Je parle russe couramment", es: "Hablo ruso con fluidez", tense: "Presente" },
+                { fr: "Tu parles trop bas", es: "Hablas demasiado bajo", tense: "Presente" },
+                { fr: "Il parle avec un accent", es: "Él habla con acento", tense: "Presente" },
+                { fr: "Nous parlons la même langue", es: "Hablamos el mismo idioma", tense: "Presente" },
+                { fr: "Ils parlent dans mon dos", es: "Ellos hablan a mis espaldas", tense: "Presente" },
+                { fr: "J'ai parlé clairement", es: "Hablé claramente", tense: "Pretérito Indefinido" },
+                { fr: "Tu as parlé avec le directeur", es: "Hablaste con el director", tense: "Pretérito Indefinido" },
+                { fr: "Elle a parlé pendant une heure", es: "Ella habló durante una hora", tense: "Pretérito Indefinido" },
+                { fr: "Nous avons parlé en public", es: "Hablamos en público", tense: "Pretérito Indefinido" },
+                { fr: "Ils ont parlé honnêtement", es: "Ellos hablaron honestamente", tense: "Pretérito Indefinido" },
+                { fr: "Je parlais avec ma grand-mère", es: "Hablaba con mi abuela", tense: "Pretérito Imperfecto" },
+                { fr: "Tu parlais bien quand tu étais nerveux", es: "Hablabas bien cuando estabas nervioso", tense: "Pretérito Imperfecto" },
+                { fr: "Elle parlait de son enfance", es: "Ella hablaba de su infancia", tense: "Pretérito Imperfecto" },
+                { fr: "Nous parlions en code", es: "Hablábamos en clave", tense: "Pretérito Imperfecto" },
+                { fr: "Ils parlaient entre eux", es: "Ellos hablaban entre ellos", tense: "Pretérito Imperfecto" },
+                { fr: "Je parlerai plus lentement", es: "Hablaré más despacio", tense: "Futuro Simple" },
+                { fr: "Tu parleras au public", es: "Hablarás al público", tense: "Futuro Simple" },
+                { fr: "Il parlera au nom de l'entreprise", es: "Él hablará en nombre de la empresa", tense: "Futuro Simple" },
+                { fr: "Nous parlerons face à face", es: "Hablaremos cara a cara", tense: "Futuro Simple" },
+                { fr: "Ils parleront après la pause", es: "Ellos hablarán después del descanso", tense: "Futuro Simple" },
+                { fr: "Je parle japonais", es: "Hablo japonés", tense: "Presente" },
+                { fr: "Tu parles par expérience", es: "Hablas por experiencia", tense: "Presente" },
+                { fr: "Elle parle cinq langues", es: "Ella habla cinco idiomas", tense: "Presente" },
+                { fr: "Nous parlons ouvertement", es: "Hablamos abiertamente", tense: "Presente" },
+                { fr: "Ils disent n'importe quoi", es: "Ellos hablan tonterías", tense: "Presente" },
+                { fr: "J'ai parlé avec autorité", es: "Hablé con autoridad", tense: "Pretérito Indefinido" },
+                { fr: "Tu as parlé à la conférence", es: "Hablaste en la conferencia", tense: "Pretérito Indefinido" },
+                { fr: "Il a parlé à voix basse", es: "Él habló en voz baja", tense: "Pretérito Indefinido" },
+                { fr: "Nous avons parlé du futur", es: "Hablamos del futuro", tense: "Pretérito Indefinido" },
+                { fr: "Ils ont parlé toute la nuit", es: "Ellos hablaron toda la noche", tense: "Pretérito Indefinido" },
+                { fr: "Je parlais différemment", es: "Hablaba diferente", tense: "Pretérito Imperfecto" },
+                { fr: "Tu parlais avec passion", es: "Hablabas con pasión", tense: "Pretérito Imperfecto" },
+                { fr: "Elle parlait de ses voyages", es: "Ella hablaba de sus viajes", tense: "Pretérito Imperfecto" },
+                { fr: "Nous parlions chaque semaine", es: "Hablábamos cada semana", tense: "Pretérito Imperfecto" },
+                { fr: "Ils parlaient en chuchotant", es: "Ellos hablaban en susurros", tense: "Pretérito Imperfecto" },
+                { fr: "Je dirai la vérité", es: "Hablaré la verdad", tense: "Futuro Simple" },
+                { fr: "Tu parleras mieux avec la pratique", es: "Hablarás mejor con práctica", tense: "Futuro Simple" },
+                { fr: "Elle parlera à la presse", es: "Ella hablará con la prensa", tense: "Futuro Simple" },
+                { fr: "Nous parlerons quand tu seras prêt", es: "Hablaremos cuando estés listo", tense: "Futuro Simple" },
+                { fr: "Ils parleront à tour de rôle", es: "Ellos hablarán por turnos", tense: "Futuro Simple" },
+                { fr: "Je parle arabe", es: "Hablo árabe", tense: "Presente" },
+                { fr: "Tu parles franchement", es: "Hablas con franqueza", tense: "Presente" },
+                { fr: "Il parle pour tout le monde", es: "Él habla por todos", tense: "Presente" },
+                { fr: "Nous parlons par des actions", es: "Hablamos a través de acciones", tense: "Presente" },
+                { fr: "Ils parlent le dialecte local", es: "Ellos hablan el dialecto local", tense: "Presente" },
+                { fr: "J'ai parlé à la radio", es: "Hablé en la radio", tense: "Pretérito Indefinido" },
+                { fr: "Tu as parlé de façon convaincante", es: "Hablaste convincentemente", tense: "Pretérito Indefinido" },
+                { fr: "Elle a parlé de politique", es: "Ella habló de política", tense: "Pretérito Indefinido" },
+                { fr: "Nous avons parlé en privé", es: "Hablamos en privado", tense: "Pretérito Indefinido" },
+                { fr: "Ils ont parlé respectueusement", es: "Ellos hablaron respetuosamente", tense: "Pretérito Indefinido" },
+                { fr: "Je parlais sur scène", es: "Hablaba en el escenario", tense: "Pretérito Imperfecto" },
+                { fr: "Tu parlais avec éloquence", es: "Hablabas elocuentemente", tense: "Pretérito Imperfecto" },
+                { fr: "Elle se parlait à elle-même", es: "Ella hablaba sola", tense: "Pretérito Imperfecto" },
+                { fr: "Nous parlions de tout", es: "Hablábamos de todo", tense: "Pretérito Imperfecto" },
+                { fr: "Ils parlaient pendant le film", es: "Ellos hablaban durante la película", tense: "Pretérito Imperfecto" },
+                { fr: "Je parlerai publiquement", es: "Hablaré públicamente", tense: "Futuro Simple" },
+                { fr: "Tu parleras sans peur", es: "Hablarás sin miedo", tense: "Futuro Simple" },
+                { fr: "Il parlera en premier", es: "Él hablará primero", tense: "Futuro Simple" },
+                { fr: "Nous parlerons de ce sujet", es: "Hablaremos de este tema", tense: "Futuro Simple" },
+                { fr: "Ils parleront clairement", es: "Ellos hablarán claramente", tense: "Futuro Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

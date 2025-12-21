@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇪🇸 VERB VER — 97 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇪🇸 Verb VER</h1>
+            <p class="subtitle">to see — 97 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 97 von 97 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Spanisch-Übung — VER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb VER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Präsens - gegenwärtige oder gewohnheitsmäßige Handlungen</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">veo</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ves</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ve</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vemos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">veis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ven</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Indefinido - abgeschlossene Handlungen in der Vergangenheit</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">vi</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">viste</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vio</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vimos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">visteis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vieron</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Imperfekt - andauernde oder gewohnheitsmäßige Handlungen in der Vergangenheit</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">veía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">veías</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">veía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">veíamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">veíais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">veían</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Futur - Handlungen die geschehen werden</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">veré</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">verás</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">verá</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">veremos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">veréis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">verán</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'es',
+            labels: { target: 'Spanisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["veo","ves","ve","vemos","veis","ven","vi","viste","vio","vimos","visteis","vieron","veía","verá","vería","he visto"],
+            phrases: [
+                { de: "Ich sehe einen Vogel im Baum", es: "Veo un pájaro en el árbol", tense: "Presente" },
+                { de: "Siehst du dieses Gebäude?", es: "¿Ves ese edificio?", tense: "Presente" },
+                { de: "Er sieht seine Freunde jeden Tag", es: "Ve a sus amigos todos los días", tense: "Presente" },
+                { de: "Wir sehen die Berge von hier", es: "Vemos las montañas desde aquí", tense: "Presente" },
+                { de: "Sie sehen die Sterne nachts", es: "Ven las estrellas por la noche", tense: "Presente" },
+                { de: "Ich habe diesen Film gestern gesehen", es: "Vi esa película ayer", tense: "Pretérito Indefinido" },
+                { de: "Du hast den Unfall gesehen", es: "Viste el accidente", tense: "Pretérito Indefinido" },
+                { de: "Sie hat ihre Mutter letzte Woche gesehen", es: "Vio a su madre la semana pasada", tense: "Pretérito Indefinido" },
+                { de: "Wir haben den Sonnenuntergang zusammen gesehen", es: "Vimos el atardecer juntos", tense: "Pretérito Indefinido" },
+                { de: "Sie haben die Ausstellung gesehen", es: "Vieron la exposición", tense: "Pretérito Indefinido" },
+                { de: "Ich sah ihn im Park", es: "Lo veía en el parque", tense: "Pretérito Imperfecto" },
+                { de: "Du sahst jeden Abend fern", es: "Veías la tele todas las tardes", tense: "Pretérito Imperfecto" },
+                { de: "Er sah jeden Morgen den Sonnenaufgang", es: "Veía el amanecer todas las mañanas", tense: "Pretérito Imperfecto" },
+                { de: "Wir sahen uns oft", es: "Nos veíamos a menudo", tense: "Pretérito Imperfecto" },
+                { de: "Ich werde dich morgen sehen", es: "Te veré mañana", tense: "Futuro Simple" },
+                { de: "Du wirst den Unterschied sehen", es: "Verás la diferencia", tense: "Futuro Simple" },
+                { de: "Sie wird die Dokumentation sehen", es: "Verá el documental", tense: "Futuro Simple" },
+                { de: "Wir werden sehen, was passiert", es: "Veremos qué pasa", tense: "Futuro Simple" },
+                { de: "Ich sehe nichts", es: "No veo nada", tense: "Presente" },
+                { de: "Mal sehen, was wir hier haben", es: "A ver qué tenemos aquí", tense: "Presente" },
+                { de: "Ich sehe mich im Spiegel", es: "Me veo en el espejo", tense: "Presente" },
+                { de: "Siehst du dich das tun?", es: "¿Te ves haciendo esto?", tense: "Presente" },
+                { de: "Sie sieht sich als Führerin", es: "Se ve como una líder", tense: "Presente" },
+                { de: "Wir werden sehen", es: "Ya veremos", tense: "Futuro Simple" },
+                { de: "Ich verstehe, was du meinst", es: "Veo lo que quieres decir", tense: "Presente" },
+                { de: "Siehst du mich jetzt?", es: "¿Me ves ahora?", tense: "Presente" },
+                { de: "Ich sehe das Problem nicht", es: "No veo el problema", tense: "Presente" },
+                { de: "Wir haben es kommen sehen", es: "Lo vimos venir", tense: "Pretérito Indefinido" },
+                { de: "Sie können uns von dort nicht sehen", es: "No nos pueden ver desde allí", tense: "Presente" },
+                { de: "Ich habe sie im Supermarkt gesehen", es: "La vi en el supermercado", tense: "Pretérito Indefinido" },
+                { de: "Du wirst bald Ergebnisse sehen", es: "Verás resultados pronto", tense: "Futuro Simple" },
+                { de: "Er sieht die Dinge anders", es: "Ve las cosas de manera diferente", tense: "Presente" },
+                { de: "Wir sind uns darüber einig", es: "Estamos de acuerdo en esto", tense: "Presente" },
+                { de: "Ich habe das Licht am Ende gesehen", es: "Vi la luz al final", tense: "Pretérito Indefinido" },
+                { de: "Siehst du eine Lösung?", es: "¿Ves alguna solución?", tense: "Presente" },
+                { de: "Sie haben alles gesehen", es: "Vieron todo", tense: "Pretérito Indefinido" },
+                { de: "Ich werde sie nächsten Monat sehen", es: "La veré el próximo mes", tense: "Futuro Simple" },
+                { de: "Wir sahen zusammen Filme", es: "Veíamos películas juntos", tense: "Pretérito Imperfecto" },
+                { de: "Sie geht regelmäßig zum Arzt", es: "Ve a un médico regularmente", tense: "Presente" },
+                { de: "Jetzt sehe ich klar", es: "Ahora veo claramente", tense: "Presente" },
+                { de: "Du hast es mit eigenen Augen gesehen", es: "Lo viste con tus propios ojos", tense: "Pretérito Indefinido" },
+                { de: "Er wird die Wahrheit sehen", es: "Verá la verdad", tense: "Futuro Simple" },
+                { de: "Wir sehen uns jede Woche", es: "Nos vemos cada semana", tense: "Presente" },
+                { de: "Ich habe einen schönen Sonnenuntergang gesehen", es: "Vi un atardecer hermoso", tense: "Pretérito Indefinido" },
+                { de: "Sie sehen überall Möglichkeiten", es: "Ven oportunidades en todas partes", tense: "Presente" },
+                { de: "Du wirst Verbesserungen sehen", es: "Verás mejoras", tense: "Futuro Simple" },
+                { de: "Sie hat ihn gestern gesehen", es: "Lo vio ayer", tense: "Pretérito Indefinido" },
+                { de: "Ich sehe keinen Grund zur Sorge", es: "No veo razón para preocuparse", tense: "Presente" },
+                { de: "Wir haben das Konzert letzte Nacht gesehen", es: "Vimos el concierto anoche", tense: "Pretérito Indefinido" },
+                { de: "Kannst du den Bildschirm sehen?", es: "¿Puedes ver la pantalla?", tense: "Presente" },
+                { de: "Ich sah sie jeden Tag", es: "La veía todos los días", tense: "Pretérito Imperfecto" },
+                { de: "Er sieht seine Familie oft", es: "Ve a su familia a menudo", tense: "Presente" },
+                { de: "Sie werden dich auf der Party sehen", es: "Te verán en la fiesta", tense: "Futuro Simple" },
+                { de: "Ich habe das Schild gesehen", es: "Vi la señal", tense: "Pretérito Indefinido" },
+                { de: "Du siehst Dinge, die ich nicht sehe", es: "Ves cosas que yo no veo", tense: "Presente" },
+                { de: "Wir werden die Ergebnisse sehen", es: "Veremos los resultados", tense: "Futuro Simple" },
+                { de: "Sie sah diese Sendung", es: "Veía ese programa", tense: "Pretérito Imperfecto" },
+                { de: "Ich verstehe deinen Standpunkt", es: "Veo tu punto", tense: "Presente" },
+                { de: "Sie haben die Nachrichten gesehen", es: "Vieron las noticias", tense: "Pretérito Indefinido" },
+                { de: "Du wirst mich später sehen", es: "Me verás más tarde", tense: "Futuro Simple" },
+                { de: "Er sieht Potenzial in dir", es: "Ve potencial en ti", tense: "Presente" },
+                { de: "Ich habe ein seltsames Licht gesehen", es: "Vi una luz extraña", tense: "Pretérito Indefinido" },
+                { de: "Wir sehen dasselbe", es: "Vemos lo mismo", tense: "Presente" },
+                { de: "Sie sahen Theaterstücke", es: "Veían obras de teatro", tense: "Pretérito Imperfecto" },
+                { de: "Du wirst Veränderungen sehen", es: "Verás cambios", tense: "Futuro Simple" },
+                { de: "Sie sieht überall Schönheit", es: "Ve belleza en todas partes", tense: "Presente" },
+                { de: "Ich habe ihn rennen sehen", es: "Lo vi corriendo", tense: "Pretérito Indefinido" },
+                { de: "Siehst du den Mond?", es: "¿Ves la luna?", tense: "Presente" },
+                { de: "Wir werden dich bald sehen", es: "Te veremos pronto", tense: "Futuro Simple" },
+                { de: "Er hat die Gelegenheit gesehen", es: "Vio la oportunidad", tense: "Pretérito Indefinido" },
+                { de: "Ich sehe das große Ganze", es: "Veo el panorama general", tense: "Presente" },
+                { de: "Sie sehen ihre Fehler", es: "Ven sus errores", tense: "Presente" },
+                { de: "Du hast die E-Mail gesehen", es: "Viste el correo", tense: "Pretérito Indefinido" },
+                { de: "Sie wird zum Arzt gehen", es: "Verá al médico", tense: "Futuro Simple" },
+                { de: "Wir sahen Konzerte", es: "Veíamos conciertos", tense: "Pretérito Imperfecto" },
+                { de: "Ich sehe ohne Brille nicht gut", es: "No veo bien sin gafas", tense: "Presente" },
+                { de: "Sie haben viele Länder gesehen", es: "Vieron muchos países", tense: "Pretérito Indefinido" },
+                { de: "Du wirst die Stadt sehen", es: "Verás la ciudad", tense: "Futuro Simple" },
+                { de: "Er sieht den Wert darin", es: "Ve el valor en ello", tense: "Presente" },
+                { de: "Ich habe deine Nachricht gesehen", es: "Vi tu mensaje", tense: "Pretérito Indefinido" },
+                { de: "Wir sehen die Dinge klar", es: "Vemos las cosas claramente", tense: "Presente" },
+                { de: "Sie sah die Nachrichten", es: "Veía las noticias", tense: "Pretérito Imperfecto" },
+                { de: "Sie werden den Ozean sehen", es: "Verán el océano", tense: "Futuro Simple" },
+                { de: "Ich sehe Hoffnung darin", es: "Veo esperanza en esto", tense: "Presente" },
+                { de: "Du hast das Spiel gesehen", es: "Viste el partido", tense: "Pretérito Indefinido" },
+                { de: "Er wird Fortschritte sehen", es: "Verá progreso", tense: "Futuro Simple" },
+                { de: "Wir sehen die Verbindung", es: "Vemos la conexión", tense: "Presente" },
+                { de: "Ich habe letzte Nacht Sterne gesehen", es: "Vi estrellas anoche", tense: "Pretérito Indefinido" },
+                { de: "Sie sehen sich täglich", es: "Se ven a diario", tense: "Presente" },
+                { de: "Du wirst neue Orte sehen", es: "Verás lugares nuevos", tense: "Futuro Simple" },
+                { de: "Sie hat die Parade gesehen", es: "Vio el desfile", tense: "Pretérito Indefinido" },
+                { de: "Ich sehe, was du da gemacht hast", es: "Veo lo que hiciste ahí", tense: "Presente" },
+                { de: "Wir sahen zusammen Stücke", es: "Veíamos obras juntos", tense: "Pretérito Imperfecto" },
+                { de: "Er sieht sein Spiegelbild", es: "Ve su reflejo", tense: "Presente" },
+                { de: "Ich werde dich noch sehen", es: "Te veré por ahí", tense: "Futuro Simple" },
+                { de: "Mal sehen, ob es funktioniert", es: "A ver si funciona", tense: "Presente" },
+                { de: "Wir werden sehen, wie es läuft", es: "Ya veremos cómo va", tense: "Futuro Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

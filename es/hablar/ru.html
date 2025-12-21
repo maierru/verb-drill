@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇪🇸 VERB HABLAR — 101 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇪🇸 Verb HABLAR</h1>
+            <p class="subtitle">to speak — 101 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 101 из 101 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика испанского — HABLAR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb HABLAR</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Настоящее время - действия происходящие сейчас или обычные действия</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">hablo</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablas</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">habla</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">habláis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablan</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Простое прошедшее время - завершенные действия в прошлом</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">hablé</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablaste</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">habló</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablasteis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablaron</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Несовершенное прошедшее время - продолжающиеся или обычные действия в прошлом</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">hablaba</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablabas</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablaba</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablábamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablabais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablaban</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Простое будущее время - действия которые произойдут</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">hablaré</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablarás</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablará</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablaremos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablaréis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablarán</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'es',
+            labels: { target: 'Español', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["hablo","hablas","habla","hablamos","habláis","hablan","hablé","hablaba","hablaré"],
+            phrases: [
+                { ru: "Я говорю по-испански каждый день", es: "Hablo español todos los días", tense: "Presente" },
+                { ru: "Ты говоришь по-английски?", es: "¿Hablas inglés?", tense: "Presente" },
+                { ru: "Она говорит на трёх языках", es: "Ella habla tres idiomas", tense: "Presente" },
+                { ru: "Мы разговариваем с соседями", es: "Hablamos con nuestros vecinos", tense: "Presente" },
+                { ru: "Они говорят очень быстро", es: "Ellos hablan muy rápido", tense: "Presente" },
+                { ru: "Я говорил с начальником вчера", es: "Hablé con mi jefe ayer", tense: "Pretérito Indefinido" },
+                { ru: "Ты слишком много говорил на встрече", es: "Hablaste demasiado en la reunión", tense: "Pretérito Indefinido" },
+                { ru: "Он говорил о проекте", es: "Él habló sobre el proyecto", tense: "Pretérito Indefinido" },
+                { ru: "Мы разговаривали два часа", es: "Hablamos durante dos horas", tense: "Pretérito Indefinido" },
+                { ru: "Они говорили на французском", es: "Ellos hablaron en francés", tense: "Pretérito Indefinido" },
+                { ru: "Я говорил по-немецки когда был молодым", es: "Hablaba alemán cuando era joven", tense: "Pretérito Imperfecto" },
+                { ru: "Ты всегда говорил правду", es: "Siempre hablabas la verdad", tense: "Pretérito Imperfecto" },
+                { ru: "Она разговаривала с матерью каждый день", es: "Ella hablaba con su madre todos los días", tense: "Pretérito Imperfecto" },
+                { ru: "Мы говорили о тебе", es: "Hablábamos de ti", tense: "Pretérito Imperfecto" },
+                { ru: "Они говорили громко", es: "Ellos hablaban en voz alta", tense: "Pretérito Imperfecto" },
+                { ru: "Я поговорю с менеджером завтра", es: "Hablaré con el gerente mañana", tense: "Futuro Simple" },
+                { ru: "Ты будешь выступать на конференции", es: "Hablarás en la conferencia", tense: "Futuro Simple" },
+                { ru: "Он расскажет о своём опыте", es: "Él hablará sobre su experiencia", tense: "Futuro Simple" },
+                { ru: "Мы поговорим позже", es: "Hablaremos más tarde", tense: "Futuro Simple" },
+                { ru: "Они будут говорить с клиентами", es: "Ellos hablarán con los clientes", tense: "Futuro Simple" },
+                { ru: "Я говорю по телефону каждое утро", es: "Hablo por teléfono cada mañana", tense: "Presente" },
+                { ru: "Ты говоришь по-португальски?", es: "¿Hablas portugués?", tense: "Presente" },
+                { ru: "Она говорит чётко", es: "Ella habla claramente", tense: "Presente" },
+                { ru: "Мы говорим о политике", es: "Hablamos de política", tense: "Presente" },
+                { ru: "Они не разговаривают друг с другом", es: "Ellos no se hablan", tense: "Presente" },
+                { ru: "Я говорил с другом прошлой ночью", es: "Hablé con mi amigo anoche", tense: "Pretérito Indefinido" },
+                { ru: "Ты хорошо выступил на презентации", es: "Hablaste bien en la presentación", tense: "Pretérito Indefinido" },
+                { ru: "Он говорил с учителем", es: "Él habló con el profesor", tense: "Pretérito Indefinido" },
+                { ru: "Мы говорили по-испански", es: "Hablamos en español", tense: "Pretérito Indefinido" },
+                { ru: "Они говорили о погоде", es: "Ellos hablaron del tiempo", tense: "Pretérito Indefinido" },
+                { ru: "Я говорил по-итальянски", es: "Hablaba italiano", tense: "Pretérito Imperfecto" },
+                { ru: "Ты говорил тихо", es: "Hablabas suavemente", tense: "Pretérito Imperfecto" },
+                { ru: "Она говорила по телефону весь день", es: "Ella hablaba por teléfono todo el día", tense: "Pretérito Imperfecto" },
+                { ru: "Мы говорили о наших мечтах", es: "Hablábamos de nuestros sueños", tense: "Pretérito Imperfecto" },
+                { ru: "Они говорили не думая", es: "Ellos hablaban sin pensar", tense: "Pretérito Imperfecto" },
+                { ru: "Я буду говорить по-китайски в следующем году", es: "Hablaré chino el año que viene", tense: "Futuro Simple" },
+                { ru: "Ты будешь говорить уверенно", es: "Hablarás con confianza", tense: "Futuro Simple" },
+                { ru: "Она будет выступать на мероприятии", es: "Ella hablará en el evento", tense: "Futuro Simple" },
+                { ru: "Мы поговорим об этом завтра", es: "Hablaremos de esto mañana", tense: "Futuro Simple" },
+                { ru: "Они будут говорить на нескольких языках", es: "Ellos hablarán varios idiomas", tense: "Futuro Simple" },
+                { ru: "Кстати говоря, где Мария?", es: "Hablando de eso, ¿dónde está María?", tense: "Gerundio" },
+                { ru: "Я свободно говорю по-русски", es: "Hablo ruso con fluidez", tense: "Presente" },
+                { ru: "Ты говоришь слишком тихо", es: "Hablas demasiado bajo", tense: "Presente" },
+                { ru: "Он говорит с акцентом", es: "Él habla con acento", tense: "Presente" },
+                { ru: "Мы говорим на одном языке", es: "Hablamos el mismo idioma", tense: "Presente" },
+                { ru: "Они говорят за моей спиной", es: "Ellos hablan a mis espaldas", tense: "Presente" },
+                { ru: "Я говорил чётко", es: "Hablé claramente", tense: "Pretérito Indefinido" },
+                { ru: "Ты говорил с директором", es: "Hablaste con el director", tense: "Pretérito Indefinido" },
+                { ru: "Она говорила в течение часа", es: "Ella habló durante una hora", tense: "Pretérito Indefinido" },
+                { ru: "Мы говорили публично", es: "Hablamos en público", tense: "Pretérito Indefinido" },
+                { ru: "Они говорили честно", es: "Ellos hablaron honestamente", tense: "Pretérito Indefinido" },
+                { ru: "Я разговаривал с бабушкой", es: "Hablaba con mi abuela", tense: "Pretérito Imperfecto" },
+                { ru: "Ты хорошо говорил когда нервничал", es: "Hablabas bien cuando estabas nervioso", tense: "Pretérito Imperfecto" },
+                { ru: "Она говорила о своём детстве", es: "Ella hablaba de su infancia", tense: "Pretérito Imperfecto" },
+                { ru: "Мы говорили шифром", es: "Hablábamos en clave", tense: "Pretérito Imperfecto" },
+                { ru: "Они разговаривали между собой", es: "Ellos hablaban entre ellos", tense: "Pretérito Imperfecto" },
+                { ru: "Я буду говорить медленнее", es: "Hablaré más despacio", tense: "Futuro Simple" },
+                { ru: "Ты будешь говорить с аудиторией", es: "Hablarás al público", tense: "Futuro Simple" },
+                { ru: "Он будет говорить от имени компании", es: "Él hablará en nombre de la empresa", tense: "Futuro Simple" },
+                { ru: "Мы поговорим лицом к лицу", es: "Hablaremos cara a cara", tense: "Futuro Simple" },
+                { ru: "Они будут говорить после перерыва", es: "Ellos hablarán después del descanso", tense: "Futuro Simple" },
+                { ru: "Я говорю по-японски", es: "Hablo japonés", tense: "Presente" },
+                { ru: "Ты говоришь по опыту", es: "Hablas por experiencia", tense: "Presente" },
+                { ru: "Она говорит на пяти языках", es: "Ella habla cinco idiomas", tense: "Presente" },
+                { ru: "Мы говорим открыто", es: "Hablamos abiertamente", tense: "Presente" },
+                { ru: "Они говорят чепуху", es: "Ellos hablan tonterías", tense: "Presente" },
+                { ru: "Я говорил с властью", es: "Hablé con autoridad", tense: "Pretérito Indefinido" },
+                { ru: "Ты выступал на конференции", es: "Hablaste en la conferencia", tense: "Pretérito Indefinido" },
+                { ru: "Он говорил тихо", es: "Él habló en voz baja", tense: "Pretérito Indefinido" },
+                { ru: "Мы говорили о будущем", es: "Hablamos del futuro", tense: "Pretérito Indefinido" },
+                { ru: "Они говорили всю ночь", es: "Ellos hablaron toda la noche", tense: "Pretérito Indefinido" },
+                { ru: "Я говорил по-другому", es: "Hablaba diferente", tense: "Pretérito Imperfecto" },
+                { ru: "Ты говорил со страстью", es: "Hablabas con pasión", tense: "Pretérito Imperfecto" },
+                { ru: "Она говорила о своих путешествиях", es: "Ella hablaba de sus viajes", tense: "Pretérito Imperfecto" },
+                { ru: "Мы разговаривали каждую неделю", es: "Hablábamos cada semana", tense: "Pretérito Imperfecto" },
+                { ru: "Они говорили шёпотом", es: "Ellos hablaban en susurros", tense: "Pretérito Imperfecto" },
+                { ru: "Я скажу правду", es: "Hablaré la verdad", tense: "Futuro Simple" },
+                { ru: "Ты будешь говорить лучше с практикой", es: "Hablarás mejor con práctica", tense: "Futuro Simple" },
+                { ru: "Она будет говорить с прессой", es: "Ella hablará con la prensa", tense: "Futuro Simple" },
+                { ru: "Мы поговорим когда будешь готов", es: "Hablaremos cuando estés listo", tense: "Futuro Simple" },
+                { ru: "Они будут говорить по очереди", es: "Ellos hablarán por turnos", tense: "Futuro Simple" },
+                { ru: "Я говорю по-арабски", es: "Hablo árabe", tense: "Presente" },
+                { ru: "Ты высказываешь своё мнение", es: "Hablas con franqueza", tense: "Presente" },
+                { ru: "Он говорит за всех", es: "Él habla por todos", tense: "Presente" },
+                { ru: "Мы говорим действиями", es: "Hablamos a través de acciones", tense: "Presente" },
+                { ru: "Они говорят на местном диалекте", es: "Ellos hablan el dialecto local", tense: "Presente" },
+                { ru: "Я выступал на радио", es: "Hablé en la radio", tense: "Pretérito Indefinido" },
+                { ru: "Ты говорил убедительно", es: "Hablaste convincentemente", tense: "Pretérito Indefinido" },
+                { ru: "Она говорила о политике", es: "Ella habló de política", tense: "Pretérito Indefinido" },
+                { ru: "Мы говорили наедине", es: "Hablamos en privado", tense: "Pretérito Indefinido" },
+                { ru: "Они говорили уважительно", es: "Ellos hablaron respetuosamente", tense: "Pretérito Indefinido" },
+                { ru: "Я выступал на сцене", es: "Hablaba en el escenario", tense: "Pretérito Imperfecto" },
+                { ru: "Ты говорил красноречиво", es: "Hablabas elocuentemente", tense: "Pretérito Imperfecto" },
+                { ru: "Она разговаривала сама с собой", es: "Ella hablaba sola", tense: "Pretérito Imperfecto" },
+                { ru: "Мы говорили обо всём", es: "Hablábamos de todo", tense: "Pretérito Imperfecto" },
+                { ru: "Они разговаривали во время фильма", es: "Ellos hablaban durante la película", tense: "Pretérito Imperfecto" },
+                { ru: "Я буду выступать публично", es: "Hablaré públicamente", tense: "Futuro Simple" },
+                { ru: "Ты будешь говорить без страха", es: "Hablarás sin miedo", tense: "Futuro Simple" },
+                { ru: "Он будет говорить первым", es: "Él hablará primero", tense: "Futuro Simple" },
+                { ru: "Мы поговорим об этом вопросе", es: "Hablaremos de este tema", tense: "Futuro Simple" },
+                { ru: "Они будут говорить чётко", es: "Ellos hablarán claramente", tense: "Futuro Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

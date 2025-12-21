@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇪🇸 VERB SEGUIR — 100 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇪🇸 Verb SEGUIR</h1>
+            <p class="subtitle">to follow, to continue — 100 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 100 von 100 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Spanisch-Übung — SEGUIR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb SEGUIR</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Präsens für Handlungen die jetzt stattfinden oder gewohnheitsmäßige Handlungen</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">sigo</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sigues</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sigue</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguimos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguís</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">siguen</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Indefinido für abgeschlossene Handlungen in der Vergangenheit</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">seguí</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguiste</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">siguió</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguimos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguisteis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">siguieron</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Imperfekt für andauernde oder gewohnheitsmäßige Handlungen in der Vergangenheit</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">seguía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguías</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguíamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguíais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguían</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Futur für Handlungen die stattfinden werden</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">seguiré</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguirás</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguirá</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguiremos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguiréis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguirán</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'es',
+            labels: { target: 'Spanisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["sigo","sigues","sigue","seguimos","seguís","siguen","seguí","seguiste","siguió","seguimos","seguisteis","siguieron","seguía","seguías","seguía","seguíamos","seguíais","seguían","seguiré","seguirás","seguirá","seguiremos","seguiréis","seguirán"],
+            phrases: [
+                { de: "Ich folge dir in den sozialen Medien", es: "Te sigo en las redes sociales", tense: "Presente" },
+                { de: "Du befolgst die Anweisungen sorgfältig", es: "Sigues las instrucciones cuidadosamente", tense: "Presente" },
+                { de: "Er arbeitet weiterhin bis spät", es: "Él sigue trabajando hasta tarde", tense: "Presente" },
+                { de: "Wir versuchen es weiter", es: "Seguimos intentando", tense: "Presente" },
+                { de: "Sie folgen dem Anführer", es: "Ellos siguen al líder", tense: "Presente" },
+                { de: "Ich folgte ihm nach Hause", es: "Lo seguí hasta casa", tense: "Pretérito Indefinido" },
+                { de: "Du hast die ganze Nacht weiter gelernt", es: "Seguiste estudiando toda la noche", tense: "Pretérito Indefinido" },
+                { de: "Sie folgte der Karte", es: "Ella siguió el mapa", tense: "Pretérito Indefinido" },
+                { de: "Wir gingen weiter", es: "Seguimos caminando", tense: "Pretérito Indefinido" },
+                { de: "Sie befolgten die Regeln", es: "Siguieron las reglas", tense: "Pretérito Indefinido" },
+                { de: "Ich folgte diesem Weg", es: "Yo seguía ese camino", tense: "Pretérito Imperfecto" },
+                { de: "Du hast dich weiter beschwert", es: "Seguías quejándote", tense: "Pretérito Imperfecto" },
+                { de: "Er las jeden Tag weiter", es: "Él seguía leyendo cada día", tense: "Pretérito Imperfecto" },
+                { de: "Wir befolgten ihren Rat", es: "Seguíamos su consejo", tense: "Pretérito Imperfecto" },
+                { de: "Sie lachten weiter", es: "Seguían riendo", tense: "Pretérito Imperfecto" },
+                { de: "Ich werde deinem Beispiel folgen", es: "Seguiré tu ejemplo", tense: "Futuro Simple" },
+                { de: "Du wirst morgen weitermachen", es: "Seguirás mañana", tense: "Futuro Simple" },
+                { de: "Sie wird uns folgen", es: "Ella nos seguirá", tense: "Futuro Simple" },
+                { de: "Wir werden weiter kämpfen", es: "Seguiremos luchando", tense: "Futuro Simple" },
+                { de: "Sie werden dem Plan folgen", es: "Seguirán el plan", tense: "Futuro Simple" },
+                { de: "Ich verfolge die Nachrichten täglich", es: "Sigo las noticias diariamente", tense: "Presente" },
+                { de: "Du stellst weiter Fragen", es: "Sigues haciendo preguntas", tense: "Presente" },
+                { de: "Er folgt seinem Herzen", es: "Él sigue su corazón", tense: "Presente" },
+                { de: "Wir machen weiter", es: "Seguimos adelante", tense: "Presente" },
+                { de: "Sie folgen den Verkehrszeichen", es: "Siguen las señales de tráfico", tense: "Presente" },
+                { de: "Ich folgte dem Rezept genau", es: "Seguí la receta exactamente", tense: "Pretérito Indefinido" },
+                { de: "Du hast ohne mich weitergemacht", es: "Seguiste sin mí", tense: "Pretérito Indefinido" },
+                { de: "Sie folgte ihren Träumen", es: "Ella siguió sus sueños", tense: "Pretérito Indefinido" },
+                { de: "Wir hielten unser Versprechen", es: "Seguimos con nuestra promesa", tense: "Pretérito Indefinido" },
+                { de: "Sie folgten dem Fluss", es: "Siguieron el río", tense: "Pretérito Indefinido" },
+                { de: "Ich dachte weiter darüber nach", es: "Seguía pensando en ello", tense: "Pretérito Imperfecto" },
+                { de: "Du bist mir überallhin gefolgt", es: "Me seguías a todas partes", tense: "Pretérito Imperfecto" },
+                { de: "Er übte weiter", es: "Él seguía practicando", tense: "Pretérito Imperfecto" },
+                { de: "Wir folgten dieser Tradition", es: "Seguíamos esa tradición", tense: "Pretérito Imperfecto" },
+                { de: "Sie redeten weiter", es: "Seguían hablando", tense: "Pretérito Imperfecto" },
+                { de: "Ich werde dem Verfahren folgen", es: "Seguiré el procedimiento", tense: "Futuro Simple" },
+                { de: "Du wirst weiter lernen", es: "Seguirás aprendiendo", tense: "Futuro Simple" },
+                { de: "Sie wird den Richtlinien folgen", es: "Ella seguirá las pautas", tense: "Futuro Simple" },
+                { de: "Wir werden später weitermachen", es: "Seguiremos más tarde", tense: "Futuro Simple" },
+                { de: "Sie werden dem Zeitplan folgen", es: "Seguirán el horario", tense: "Futuro Simple" },
+                { de: "Ich folge deinem Blog", es: "Sigo tu blog", tense: "Presente" },
+                { de: "Du bist weiterhin stur", es: "Sigues siendo terco", tense: "Presente" },
+                { de: "Er folgt den Trends", es: "Él sigue las tendencias", tense: "Presente" },
+                { de: "Wir bleiben in Kontakt", es: "Seguimos en contacto", tense: "Presente" },
+                { de: "Sie folgen der Mode", es: "Siguen la moda", tense: "Presente" },
+                { de: "Ich verfolgte die Geschichte genau", es: "Seguí la historia de cerca", tense: "Pretérito Indefinido" },
+                { de: "Du bist weiter gelaufen", es: "Seguiste corriendo", tense: "Pretérito Indefinido" },
+                { de: "Sie folgte der Spur", es: "Ella siguió el rastro", tense: "Pretérito Indefinido" },
+                { de: "Wir setzten das Gespräch fort", es: "Seguimos la conversación", tense: "Pretérito Indefinido" },
+                { de: "Sie folgten dem Führer", es: "Siguieron al guía", tense: "Pretérito Indefinido" },
+                { de: "Ich verfolgte Sport", es: "Seguía los deportes", tense: "Pretérito Imperfecto" },
+                { de: "Du sangst weiter", es: "Seguías cantando", tense: "Pretérito Imperfecto" },
+                { de: "Er setzte sein Studium fort", es: "Él seguía sus estudios", tense: "Pretérito Imperfecto" },
+                { de: "Wir verfolgten die Serie", es: "Seguíamos la serie", tense: "Pretérito Imperfecto" },
+                { de: "Sie tanzten weiter", es: "Seguían bailando", tense: "Pretérito Imperfecto" },
+                { de: "Ich werde meiner Intuition folgen", es: "Seguiré mi intuición", tense: "Futuro Simple" },
+                { de: "Du wirst es weiter versuchen", es: "Seguirás intentando", tense: "Futuro Simple" },
+                { de: "Sie wird den Anweisungen des Arztes folgen", es: "Ella seguirá las órdenes del médico", tense: "Futuro Simple" },
+                { de: "Wir werden das Projekt fortsetzen", es: "Seguiremos el proyecto", tense: "Futuro Simple" },
+                { de: "Sie werden es durchziehen", es: "Seguirán hasta el final", tense: "Futuro Simple" },
+                { de: "Ich halte eine strenge Diät ein", es: "Sigo una dieta estricta", tense: "Presente" },
+                { de: "Du unterbrichst weiter", es: "Sigues interrumpiendo", tense: "Presente" },
+                { de: "Er folgt derselben Routine", es: "Él sigue la misma rutina", tense: "Presente" },
+                { de: "Wir wachsen weiter", es: "Seguimos creciendo", tense: "Presente" },
+                { de: "Sie folgen religiösen Praktiken", es: "Siguen prácticas religiosas", tense: "Presente" },
+                { de: "Ich folgte deinem Rat", es: "Seguí tu consejo", tense: "Pretérito Indefinido" },
+                { de: "Du hast trotz Schwierigkeiten weitergemacht", es: "Seguiste a pesar de las dificultades", tense: "Pretérito Indefinido" },
+                { de: "Sie folgte der Menge", es: "Ella siguió a la multitud", tense: "Pretérito Indefinido" },
+                { de: "Wir machten weiter", es: "Seguimos adelante", tense: "Pretérito Indefinido" },
+                { de: "Sie folgten dem Drehbuch", es: "Siguieron el guion", tense: "Pretérito Indefinido" },
+                { de: "Ich hoffte weiter", es: "Seguía esperando", tense: "Pretérito Imperfecto" },
+                { de: "Du bist dieser Band gefolgt", es: "Seguías a esa banda", tense: "Pretérito Imperfecto" },
+                { de: "Er machte trotz Warnungen weiter", es: "Él seguía a pesar de las advertencias", tense: "Pretérito Imperfecto" },
+                { de: "Wir verfolgten die Politik", es: "Seguíamos la política", tense: "Pretérito Imperfecto" },
+                { de: "Sie bestanden weiter darauf", es: "Seguían insistiendo", tense: "Pretérito Imperfecto" },
+                { de: "Ich werde dem Weg folgen", es: "Seguiré el camino", tense: "Futuro Simple" },
+                { de: "Du wirst deine Karriere fortsetzen", es: "Seguirás tu carrera", tense: "Futuro Simple" },
+                { de: "Sie wird ihrer Leidenschaft folgen", es: "Ella seguirá su pasión", tense: "Futuro Simple" },
+                { de: "Wir werden weiter suchen", es: "Seguiremos buscando", tense: "Futuro Simple" },
+                { de: "Sie werden unserem Beispiel folgen", es: "Seguirán nuestro ejemplo", tense: "Futuro Simple" },
+                { de: "Ich folge derselben Route", es: "Sigo la misma ruta", tense: "Presente" },
+                { de: "Du verbesserst dich weiter", es: "Sigues mejorando", tense: "Presente" },
+                { de: "Er befolgt Befehle", es: "Él sigue órdenes", tense: "Presente" },
+                { de: "Wir glauben weiter", es: "Seguimos creyendo", tense: "Presente" },
+                { de: "Sie schwimmen mit dem Strom", es: "Siguen la corriente", tense: "Presente" },
+                { de: "Ich folgte den Anweisungen Schritt für Schritt", es: "Seguí las instrucciones paso a paso", tense: "Pretérito Indefinido" },
+                { de: "Du hast weiter geschrieben", es: "Seguiste escribiendo", tense: "Pretérito Indefinido" },
+                { de: "Sie folgte den Schildern", es: "Ella siguió las señales", tense: "Pretérito Indefinido" },
+                { de: "Wir setzten unsere Reise fort", es: "Seguimos nuestro viaje", tense: "Pretérito Indefinido" },
+                { de: "Sie folgten der Tradition", es: "Siguieron la tradición", tense: "Pretérito Indefinido" },
+                { de: "Ich verfolgte diesen Kanal", es: "Seguía ese canal", tense: "Pretérito Imperfecto" },
+                { de: "Du weintest weiter", es: "Seguías llorando", tense: "Pretérito Imperfecto" },
+                { de: "Er arbeitete dort weiter", es: "Él seguía trabajando allí", tense: "Pretérito Imperfecto" },
+                { de: "Wir befolgten die Regeln", es: "Seguíamos las reglas", tense: "Pretérito Imperfecto" },
+                { de: "Sie lächelten weiter", es: "Seguían sonriendo", tense: "Pretérito Imperfecto" },
+                { de: "Ich werde dem Beispiel folgen", es: "Seguiré el ejemplo", tense: "Futuro Simple" },
+                { de: "Du wirst weiter vorankommen", es: "Seguirás avanzando", tense: "Futuro Simple" },
+                { de: "Sie wird dem Protokoll folgen", es: "Ella seguirá el protocolo", tense: "Futuro Simple" },
+                { de: "Wir werden vereint bleiben", es: "Seguiremos unidos", tense: "Futuro Simple" },
+                { de: "Sie werden den Vorschriften folgen", es: "Seguirán las regulaciones", tense: "Futuro Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

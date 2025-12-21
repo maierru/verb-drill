@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇪🇸 VERB ESTAR — 97 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇪🇸 Verb ESTAR</h1>
+            <p class="subtitle">to be (temporary) — 97 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 97 de 97 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Prática de espanhol — ESTAR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb ESTAR</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Presente - estados temporários, localização, emoções, condições</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>estoy</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>estás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>está</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>estamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>estáis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>están</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Pretérito perfeito simples - estados temporários ou permanências completas no passado</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>estuve</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>estuviste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>estuvo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>estuvimos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>estuvisteis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>estuvieron</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Pretérito imperfeito - estados temporários contínuos ou localizações habituais no passado</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>estaba</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>estabas</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>estaba</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>estábamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>estabais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>estaban</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Futuro simples - estará (temporário/localização)</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>estaré</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>estarás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>estará</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>estaremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>estaréis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>estarán</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'es',
+            labels: { target: 'Español', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["estoy","estás","está","estamos","estáis","están","estuve","estuviste","estuvo","estuvimos","estuvisteis","estuvieron","estaba","estabas","estábamos","estabais","estaban","estaré","estarás","estará","estaremos","estaréis","estarán"],
+            phrases: [
+                { pt: "Estou em casa.", es: "Estoy en casa.", tense: "Presente" },
+                { pt: "Estás cansado.", es: "Estás cansado.", tense: "Presente" },
+                { pt: "Ela está em Madrid.", es: "Ella está en Madrid.", tense: "Presente" },
+                { pt: "Estamos felizes hoje.", es: "Estamos felices hoy.", tense: "Presente" },
+                { pt: "Estão ocupados.", es: "Están ocupados.", tense: "Presente" },
+                { pt: "Estais prontos.", es: "Estáis listos.", tense: "Presente" },
+                { pt: "A porta está aberta.", es: "La puerta está abierta.", tense: "Presente" },
+                { pt: "Estou triste.", es: "Estoy triste.", tense: "Presente" },
+                { pt: "Estás doente.", es: "Estás enfermo.", tense: "Presente" },
+                { pt: "Está no trabalho.", es: "Está en el trabajo.", tense: "Presente" },
+                { pt: "Estamos na praia.", es: "Estamos en la playa.", tense: "Presente" },
+                { pt: "Estão zangados.", es: "Están enojados.", tense: "Presente" },
+                { pt: "O café está frio.", es: "El café está frío.", tense: "Presente" },
+                { pt: "Estou nervoso.", es: "Estoy nervioso.", tense: "Presente" },
+                { pt: "Estás confuso.", es: "Estás confundido.", tense: "Presente" },
+                { pt: "Ela está na cozinha.", es: "Ella está en la cocina.", tense: "Presente" },
+                { pt: "Estamos animados.", es: "Estamos emocionados.", tense: "Presente" },
+                { pt: "Estais no escritório.", es: "Estáis en la oficina.", tense: "Presente" },
+                { pt: "Estão preocupados.", es: "Están preocupados.", tense: "Presente" },
+                { pt: "Estou online.", es: "Estoy en línea.", tense: "Presente" },
+                { pt: "A janela está fechada.", es: "La ventana está cerrada.", tense: "Presente" },
+                { pt: "Estás aborrecido.", es: "Estás aburrido.", tense: "Presente" },
+                { pt: "Está confortável.", es: "Está cómodo.", tense: "Presente" },
+                { pt: "Estamos em Paris.", es: "Estamos en París.", tense: "Presente" },
+                { pt: "Estão vivos.", es: "Están vivos.", tense: "Presente" },
+                { pt: "Estive no cinema.", es: "Estuve en el cine.", tense: "Pretérito Indefinido" },
+                { pt: "Estiveste em Roma.", es: "Estuviste en Roma.", tense: "Pretérito Indefinido" },
+                { pt: "Ela esteve doente.", es: "Ella estuvo enferma.", tense: "Pretérito Indefinido" },
+                { pt: "Estivemos na festa.", es: "Estuvimos en la fiesta.", tense: "Pretérito Indefinido" },
+                { pt: "Estiveram ausentes.", es: "Estuvieron ausentes.", tense: "Pretérito Indefinido" },
+                { pt: "Estivestes em Barcelona.", es: "Estuvisteis en Barcelona.", tense: "Pretérito Indefinido" },
+                { pt: "Esteve delicioso.", es: "Estuvo delicioso.", tense: "Pretérito Indefinido" },
+                { pt: "Estive no hospital.", es: "Estuve en el hospital.", tense: "Pretérito Indefinido" },
+                { pt: "Estiveste ocupado ontem.", es: "Estuviste ocupado ayer.", tense: "Pretérito Indefinido" },
+                { pt: "Esteve em Londres.", es: "Estuvo en Londres.", tense: "Pretérito Indefinido" },
+                { pt: "Estivemos juntos.", es: "Estuvimos juntos.", tense: "Pretérito Indefinido" },
+                { pt: "Estiveram felizes.", es: "Estuvieron felices.", tense: "Pretérito Indefinido" },
+                { pt: "Esteve incrível.", es: "Estuvo increíble.", tense: "Pretérito Indefinido" },
+                { pt: "Estive lá.", es: "Estuve allí.", tense: "Pretérito Indefinido" },
+                { pt: "Estiveste correto.", es: "Estuviste en lo correcto.", tense: "Pretérito Indefinido" },
+                { pt: "Ela esteve sozinha.", es: "Ella estuvo sola.", tense: "Pretérito Indefinido" },
+                { pt: "Estivemos no concerto.", es: "Estuvimos en el concierto.", tense: "Pretérito Indefinido" },
+                { pt: "Estivestes atrasados.", es: "Estuvisteis tarde.", tense: "Pretérito Indefinido" },
+                { pt: "Estiveram presentes.", es: "Estuvieron presentes.", tense: "Pretérito Indefinido" },
+                { pt: "Estive com medo.", es: "Estuve con miedo.", tense: "Pretérito Indefinido" },
+                { pt: "Estiveste tranquilo.", es: "Estuviste tranquilo.", tense: "Pretérito Indefinido" },
+                { pt: "Esteve furioso.", es: "Estuvo furioso.", tense: "Pretérito Indefinido" },
+                { pt: "Estivemos nas montanhas.", es: "Estuvimos en las montañas.", tense: "Pretérito Indefinido" },
+                { pt: "Estiveram gratos.", es: "Estuvieron agradecidos.", tense: "Pretérito Indefinido" },
+                { pt: "Estava sempre na escola.", es: "Estaba siempre en la escuela.", tense: "Pretérito Imperfecto" },
+                { pt: "Estavas muito calado.", es: "Estabas muy callado.", tense: "Pretérito Imperfecto" },
+                { pt: "Ela estava na biblioteca.", es: "Ella estaba en la biblioteca.", tense: "Pretérito Imperfecto" },
+                { pt: "Estávamos no jardim.", es: "Estábamos en el jardín.", tense: "Pretérito Imperfecto" },
+                { pt: "Estavam no restaurante.", es: "Estaban en el restaurante.", tense: "Pretérito Imperfecto" },
+                { pt: "Estáveis em baixo.", es: "Estabais abajo.", tense: "Pretérito Imperfecto" },
+                { pt: "Estava quente.", es: "Estaba caliente.", tense: "Pretérito Imperfecto" },
+                { pt: "Estava deprimido.", es: "Estaba deprimido.", tense: "Pretérito Imperfecto" },
+                { pt: "Estavas relaxado.", es: "Estabas relajado.", tense: "Pretérito Imperfecto" },
+                { pt: "Estava no carro.", es: "Estaba en el coche.", tense: "Pretérito Imperfecto" },
+                { pt: "Estávamos lá fora.", es: "Estábamos afuera.", tense: "Pretérito Imperfecto" },
+                { pt: "Estavam perto.", es: "Estaban cerca.", tense: "Pretérito Imperfecto" },
+                { pt: "Estava sujo.", es: "Estaba sucio.", tense: "Pretérito Imperfecto" },
+                { pt: "Estava na cama.", es: "Estaba en la cama.", tense: "Pretérito Imperfecto" },
+                { pt: "Estavas desiludido.", es: "Estabas decepcionado.", tense: "Pretérito Imperfecto" },
+                { pt: "Ela estava apaixonada.", es: "Ella estaba enamorada.", tense: "Pretérito Imperfecto" },
+                { pt: "Estávamos no hotel.", es: "Estábamos en el hotel.", tense: "Pretérito Imperfecto" },
+                { pt: "Estáveis em cima.", es: "Estabais arriba.", tense: "Pretérito Imperfecto" },
+                { pt: "Estavam a dormir.", es: "Estaban dormidos.", tense: "Pretérito Imperfecto" },
+                { pt: "Estava acordado.", es: "Estaba despierto.", tense: "Pretérito Imperfecto" },
+                { pt: "Estavas confuso.", es: "Estabas confundido.", tense: "Pretérito Imperfecto" },
+                { pt: "Estava numa reunião.", es: "Estaba en una reunión.", tense: "Pretérito Imperfecto" },
+                { pt: "Estávamos em paz.", es: "Estábamos en paz.", tense: "Pretérito Imperfecto" },
+                { pt: "Estavam em perigo.", es: "Estaban en peligro.", tense: "Pretérito Imperfecto" },
+                { pt: "Estarei no aeroporto.", es: "Estaré en el aeropuerto.", tense: "Futuro Simple" },
+                { pt: "Estarás bem.", es: "Estarás bien.", tense: "Futuro Simple" },
+                { pt: "Ela estará em Nova Iorque.", es: "Ella estará en Nueva York.", tense: "Futuro Simple" },
+                { pt: "Estaremos prontos amanhã.", es: "Estaremos listos mañana.", tense: "Futuro Simple" },
+                { pt: "Estarão aqui.", es: "Estarán aquí.", tense: "Futuro Simple" },
+                { pt: "Estareis juntos.", es: "Estaréis juntos.", tense: "Futuro Simple" },
+                { pt: "Estará frio.", es: "Estará frío.", tense: "Futuro Simple" },
+                { pt: "Estarei em casa.", es: "Estaré en casa.", tense: "Futuro Simple" },
+                { pt: "Estarás feliz.", es: "Estarás feliz.", tense: "Futuro Simple" },
+                { pt: "Estará disponível.", es: "Estará disponible.", tense: "Futuro Simple" },
+                { pt: "Estaremos no México.", es: "Estaremos en México.", tense: "Futuro Simple" },
+                { pt: "Estarão zangados.", es: "Estarán enojados.", tense: "Futuro Simple" },
+                { pt: "Estará pronto.", es: "Estará listo.", tense: "Futuro Simple" },
+                { pt: "Estarei à espera.", es: "Estaré esperando.", tense: "Futuro Simple" },
+                { pt: "Estarás surpreendido.", es: "Estarás sorprendido.", tense: "Futuro Simple" },
+                { pt: "Ela estará lá em breve.", es: "Ella estará allí pronto.", tense: "Futuro Simple" },
+                { pt: "Estaremos de férias.", es: "Estaremos de vacaciones.", tense: "Futuro Simple" },
+                { pt: "Estareis na reunião.", es: "Estaréis en la reunión.", tense: "Futuro Simple" },
+                { pt: "Estarão seguros.", es: "Estarán seguros.", tense: "Futuro Simple" },
+                { pt: "Estarei calado.", es: "Estaré callado.", tense: "Futuro Simple" },
+                { pt: "Estarás orgulhoso.", es: "Estarás orgulloso.", tense: "Futuro Simple" },
+                { pt: "Estará em problemas.", es: "Estará en problemas.", tense: "Futuro Simple" },
+                { pt: "Estaremos desligados.", es: "Estaremos desconectados.", tense: "Futuro Simple" },
+                { pt: "Estarão gratos.", es: "Estarán agradecidos.", tense: "Futuro Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

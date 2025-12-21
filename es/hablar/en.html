@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇪🇸 VERB HABLAR — 101 Phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Back to verb list</a>
+            <h1>🇪🇸 Verb HABLAR</h1>
+            <p class="subtitle">to speak — 101 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Show all translations</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
+        </div>
+
+        <div class="stats" id="stats">Showing: 101 of 101 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Spanish Practice — HABLAR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb HABLAR</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Present tense - actions happening now or habitual actions</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">hablo</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablas</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">habla</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">habláis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablan</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Simple past - completed actions in the past</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">hablé</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablaste</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">habló</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablasteis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablaron</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Imperfect past - ongoing or habitual actions in the past</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">hablaba</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablabas</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablaba</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablábamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablabais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablaban</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Simple future - actions that will happen</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">hablaré</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablarás</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablará</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablaremos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablaréis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">hablarán</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'en',
+            targetKey: 'es',
+            labels: { target: 'Spanish', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["hablo","hablas","habla","hablamos","habláis","hablan","hablé","hablaba","hablaré"],
+            phrases: [
+                { en: "I speak Spanish every day", es: "Hablo español todos los días", tense: "Presente" },
+                { en: "Do you speak English?", es: "¿Hablas inglés?", tense: "Presente" },
+                { en: "She speaks three languages", es: "Ella habla tres idiomas", tense: "Presente" },
+                { en: "We speak with our neighbors", es: "Hablamos con nuestros vecinos", tense: "Presente" },
+                { en: "They speak very fast", es: "Ellos hablan muy rápido", tense: "Presente" },
+                { en: "I spoke with my boss yesterday", es: "Hablé con mi jefe ayer", tense: "Pretérito Indefinido" },
+                { en: "You spoke too much at the meeting", es: "Hablaste demasiado en la reunión", tense: "Pretérito Indefinido" },
+                { en: "He spoke about the project", es: "Él habló sobre el proyecto", tense: "Pretérito Indefinido" },
+                { en: "We spoke for two hours", es: "Hablamos durante dos horas", tense: "Pretérito Indefinido" },
+                { en: "They spoke in French", es: "Ellos hablaron en francés", tense: "Pretérito Indefinido" },
+                { en: "I used to speak German when I was young", es: "Hablaba alemán cuando era joven", tense: "Pretérito Imperfecto" },
+                { en: "You always spoke the truth", es: "Siempre hablabas la verdad", tense: "Pretérito Imperfecto" },
+                { en: "She spoke with her mother every day", es: "Ella hablaba con su madre todos los días", tense: "Pretérito Imperfecto" },
+                { en: "We spoke about you", es: "Hablábamos de ti", tense: "Pretérito Imperfecto" },
+                { en: "They spoke loudly", es: "Ellos hablaban en voz alta", tense: "Pretérito Imperfecto" },
+                { en: "I will speak with the manager tomorrow", es: "Hablaré con el gerente mañana", tense: "Futuro Simple" },
+                { en: "You will speak at the conference", es: "Hablarás en la conferencia", tense: "Futuro Simple" },
+                { en: "He will speak about his experience", es: "Él hablará sobre su experiencia", tense: "Futuro Simple" },
+                { en: "We will speak later", es: "Hablaremos más tarde", tense: "Futuro Simple" },
+                { en: "They will speak with the clients", es: "Ellos hablarán con los clientes", tense: "Futuro Simple" },
+                { en: "I speak on the phone every morning", es: "Hablo por teléfono cada mañana", tense: "Presente" },
+                { en: "Do you speak Portuguese?", es: "¿Hablas portugués?", tense: "Presente" },
+                { en: "She speaks clearly", es: "Ella habla claramente", tense: "Presente" },
+                { en: "We speak about politics", es: "Hablamos de política", tense: "Presente" },
+                { en: "They don't speak to each other", es: "Ellos no se hablan", tense: "Presente" },
+                { en: "I spoke with my friend last night", es: "Hablé con mi amigo anoche", tense: "Pretérito Indefinido" },
+                { en: "You spoke well in the presentation", es: "Hablaste bien en la presentación", tense: "Pretérito Indefinido" },
+                { en: "He spoke to the teacher", es: "Él habló con el profesor", tense: "Pretérito Indefinido" },
+                { en: "We spoke in Spanish", es: "Hablamos en español", tense: "Pretérito Indefinido" },
+                { en: "They spoke about the weather", es: "Ellos hablaron del tiempo", tense: "Pretérito Indefinido" },
+                { en: "I used to speak Italian", es: "Hablaba italiano", tense: "Pretérito Imperfecto" },
+                { en: "You spoke softly", es: "Hablabas suavemente", tense: "Pretérito Imperfecto" },
+                { en: "She spoke on the phone all day", es: "Ella hablaba por teléfono todo el día", tense: "Pretérito Imperfecto" },
+                { en: "We spoke about our dreams", es: "Hablábamos de nuestros sueños", tense: "Pretérito Imperfecto" },
+                { en: "They spoke without thinking", es: "Ellos hablaban sin pensar", tense: "Pretérito Imperfecto" },
+                { en: "I will speak Chinese next year", es: "Hablaré chino el año que viene", tense: "Futuro Simple" },
+                { en: "You will speak with confidence", es: "Hablarás con confianza", tense: "Futuro Simple" },
+                { en: "She will speak at the event", es: "Ella hablará en el evento", tense: "Futuro Simple" },
+                { en: "We will speak about this tomorrow", es: "Hablaremos de esto mañana", tense: "Futuro Simple" },
+                { en: "They will speak several languages", es: "Ellos hablarán varios idiomas", tense: "Futuro Simple" },
+                { en: "Speaking of which, where is Maria?", es: "Hablando de eso, ¿dónde está María?", tense: "Gerundio" },
+                { en: "I speak Russian fluently", es: "Hablo ruso con fluidez", tense: "Presente" },
+                { en: "You speak too quietly", es: "Hablas demasiado bajo", tense: "Presente" },
+                { en: "He speaks with an accent", es: "Él habla con acento", tense: "Presente" },
+                { en: "We speak the same language", es: "Hablamos el mismo idioma", tense: "Presente" },
+                { en: "They speak behind my back", es: "Ellos hablan a mis espaldas", tense: "Presente" },
+                { en: "I spoke clearly", es: "Hablé claramente", tense: "Pretérito Indefinido" },
+                { en: "You spoke with the director", es: "Hablaste con el director", tense: "Pretérito Indefinido" },
+                { en: "She spoke for an hour", es: "Ella habló durante una hora", tense: "Pretérito Indefinido" },
+                { en: "We spoke in public", es: "Hablamos en público", tense: "Pretérito Indefinido" },
+                { en: "They spoke honestly", es: "Ellos hablaron honestamente", tense: "Pretérito Indefinido" },
+                { en: "I used to speak with my grandmother", es: "Hablaba con mi abuela", tense: "Pretérito Imperfecto" },
+                { en: "You spoke well when you were nervous", es: "Hablabas bien cuando estabas nervioso", tense: "Pretérito Imperfecto" },
+                { en: "She spoke about her childhood", es: "Ella hablaba de su infancia", tense: "Pretérito Imperfecto" },
+                { en: "We spoke in code", es: "Hablábamos en clave", tense: "Pretérito Imperfecto" },
+                { en: "They spoke among themselves", es: "Ellos hablaban entre ellos", tense: "Pretérito Imperfecto" },
+                { en: "I will speak more slowly", es: "Hablaré más despacio", tense: "Futuro Simple" },
+                { en: "You will speak to the audience", es: "Hablarás al público", tense: "Futuro Simple" },
+                { en: "He will speak on behalf of the company", es: "Él hablará en nombre de la empresa", tense: "Futuro Simple" },
+                { en: "We will speak face to face", es: "Hablaremos cara a cara", tense: "Futuro Simple" },
+                { en: "They will speak after the break", es: "Ellos hablarán después del descanso", tense: "Futuro Simple" },
+                { en: "I speak Japanese", es: "Hablo japonés", tense: "Presente" },
+                { en: "You speak from experience", es: "Hablas por experiencia", tense: "Presente" },
+                { en: "She speaks five languages", es: "Ella habla cinco idiomas", tense: "Presente" },
+                { en: "We speak openly", es: "Hablamos abiertamente", tense: "Presente" },
+                { en: "They speak nonsense", es: "Ellos hablan tonterías", tense: "Presente" },
+                { en: "I spoke with authority", es: "Hablé con autoridad", tense: "Pretérito Indefinido" },
+                { en: "You spoke at the conference", es: "Hablaste en la conferencia", tense: "Pretérito Indefinido" },
+                { en: "He spoke quietly", es: "Él habló en voz baja", tense: "Pretérito Indefinido" },
+                { en: "We spoke about the future", es: "Hablamos del futuro", tense: "Pretérito Indefinido" },
+                { en: "They spoke all night", es: "Ellos hablaron toda la noche", tense: "Pretérito Indefinido" },
+                { en: "I used to speak differently", es: "Hablaba diferente", tense: "Pretérito Imperfecto" },
+                { en: "You spoke with passion", es: "Hablabas con pasión", tense: "Pretérito Imperfecto" },
+                { en: "She spoke about her travels", es: "Ella hablaba de sus viajes", tense: "Pretérito Imperfecto" },
+                { en: "We spoke every week", es: "Hablábamos cada semana", tense: "Pretérito Imperfecto" },
+                { en: "They spoke in whispers", es: "Ellos hablaban en susurros", tense: "Pretérito Imperfecto" },
+                { en: "I will speak the truth", es: "Hablaré la verdad", tense: "Futuro Simple" },
+                { en: "You will speak better with practice", es: "Hablarás mejor con práctica", tense: "Futuro Simple" },
+                { en: "She will speak to the press", es: "Ella hablará con la prensa", tense: "Futuro Simple" },
+                { en: "We will speak when you're ready", es: "Hablaremos cuando estés listo", tense: "Futuro Simple" },
+                { en: "They will speak in turns", es: "Ellos hablarán por turnos", tense: "Futuro Simple" },
+                { en: "I speak Arabic", es: "Hablo árabe", tense: "Presente" },
+                { en: "You speak your mind", es: "Hablas con franqueza", tense: "Presente" },
+                { en: "He speaks for everyone", es: "Él habla por todos", tense: "Presente" },
+                { en: "We speak through actions", es: "Hablamos a través de acciones", tense: "Presente" },
+                { en: "They speak the local dialect", es: "Ellos hablan el dialecto local", tense: "Presente" },
+                { en: "I spoke on the radio", es: "Hablé en la radio", tense: "Pretérito Indefinido" },
+                { en: "You spoke convincingly", es: "Hablaste convincentemente", tense: "Pretérito Indefinido" },
+                { en: "She spoke about politics", es: "Ella habló de política", tense: "Pretérito Indefinido" },
+                { en: "We spoke in private", es: "Hablamos en privado", tense: "Pretérito Indefinido" },
+                { en: "They spoke respectfully", es: "Ellos hablaron respetuosamente", tense: "Pretérito Indefinido" },
+                { en: "I used to speak on stage", es: "Hablaba en el escenario", tense: "Pretérito Imperfecto" },
+                { en: "You spoke eloquently", es: "Hablabas elocuentemente", tense: "Pretérito Imperfecto" },
+                { en: "She spoke to herself", es: "Ella hablaba sola", tense: "Pretérito Imperfecto" },
+                { en: "We spoke about everything", es: "Hablábamos de todo", tense: "Pretérito Imperfecto" },
+                { en: "They spoke during the movie", es: "Ellos hablaban durante la película", tense: "Pretérito Imperfecto" },
+                { en: "I will speak publicly", es: "Hablaré públicamente", tense: "Futuro Simple" },
+                { en: "You will speak without fear", es: "Hablarás sin miedo", tense: "Futuro Simple" },
+                { en: "He will speak first", es: "Él hablará primero", tense: "Futuro Simple" },
+                { en: "We will speak about this issue", es: "Hablaremos de este tema", tense: "Futuro Simple" },
+                { en: "They will speak clearly", es: "Ellos hablarán claramente", tense: "Futuro Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

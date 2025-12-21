@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇪🇸 VERB PONER — 99 Phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Back to verb list</a>
+            <h1>🇪🇸 Verb PONER</h1>
+            <p class="subtitle">to put — 99 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Show all translations</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
+        </div>
+
+        <div class="stats" id="stats">Showing: 99 of 99 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Spanish Practice — PONER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb PONER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Present tense, irregular in 1st person (yo pongo)</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">pongo</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">pones</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">pone</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ponemos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ponéis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ponen</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Simple past, irregular stem 'pus-'</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">puse</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">pusiste</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">puso</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">pusimos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">pusisteis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">pusieron</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Imperfect past, regular formation</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ponía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ponías</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ponía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">poníamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">poníais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ponían</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Future tense, irregular stem 'pondr-'</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">pondré</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">pondrás</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">pondrá</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">pondremos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">pondréis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">pondrán</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'en',
+            targetKey: 'es',
+            labels: { target: 'Spanish', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["pongo","pones","pone","ponemos","ponéis","ponen","puse","pondré","pondría","puesto"],
+            phrases: [
+                { en: "I put the book on the table", es: "Pongo el libro en la mesa", tense: "Presente" },
+                { en: "She puts on her shoes", es: "Ella se pone los zapatos", tense: "Presente" },
+                { en: "We set the table", es: "Nosotros ponemos la mesa", tense: "Presente" },
+                { en: "He turns on the music", es: "Él pone la música", tense: "Presente" },
+                { en: "I put the keys in my pocket", es: "Pongo las llaves en mi bolsillo", tense: "Presente" },
+                { en: "They put the dishes away", es: "Ellos ponen los platos", tense: "Presente" },
+                { en: "You put salt in the food", es: "Tú pones sal en la comida", tense: "Presente" },
+                { en: "I turn on the TV", es: "Pongo la tele", tense: "Presente" },
+                { en: "She gets nervous", es: "Ella se pone nerviosa", tense: "Presente" },
+                { en: "We put the clothes in the closet", es: "Ponemos la ropa en el armario", tense: "Presente" },
+                { en: "He puts on his jacket", es: "Él se pone la chaqueta", tense: "Presente" },
+                { en: "I put sugar in my coffee", es: "Pongo azúcar en mi café", tense: "Presente" },
+                { en: "They turn on the lights", es: "Ellos ponen las luces", tense: "Presente" },
+                { en: "You get happy when you see me", es: "Te pones feliz cuando me ves", tense: "Presente" },
+                { en: "She puts the baby to bed", es: "Ella pone al bebé en la cama", tense: "Presente" },
+                { en: "I put on makeup every day", es: "Me pongo maquillaje todos los días", tense: "Presente" },
+                { en: "We put ice in the drinks", es: "Ponemos hielo en las bebidas", tense: "Presente" },
+                { en: "He puts his hand on my shoulder", es: "Él pone su mano en mi hombro", tense: "Presente" },
+                { en: "I put the letter in the mailbox", es: "Pongo la carta en el buzón", tense: "Presente" },
+                { en: "They get angry easily", es: "Ellos se ponen enfadados fácilmente", tense: "Presente" },
+                { en: "You put your phone on the charger", es: "Pones tu teléfono en el cargador", tense: "Presente" },
+                { en: "She puts flowers in the vase", es: "Ella pone flores en el jarrón", tense: "Presente" },
+                { en: "I put on sunscreen", es: "Me pongo protector solar", tense: "Presente" },
+                { en: "We put the groceries away", es: "Ponemos las compras", tense: "Presente" },
+                { en: "He gets sick in winter", es: "Él se pone enfermo en invierno", tense: "Presente" },
+                { en: "I put yesterday's book on the shelf", es: "Puse el libro de ayer en el estante", tense: "Pretérito Indefinido" },
+                { en: "She put on a red dress", es: "Ella se puso un vestido rojo", tense: "Pretérito Indefinido" },
+                { en: "We set the table for dinner", es: "Pusimos la mesa para la cena", tense: "Pretérito Indefinido" },
+                { en: "He turned on the radio", es: "Él puso la radio", tense: "Pretérito Indefinido" },
+                { en: "I put the money in the bank", es: "Puse el dinero en el banco", tense: "Pretérito Indefinido" },
+                { en: "They put up a new painting", es: "Ellos pusieron un cuadro nuevo", tense: "Pretérito Indefinido" },
+                { en: "You put your bag on the floor", es: "Pusiste tu bolsa en el suelo", tense: "Pretérito Indefinido" },
+                { en: "She got very sad", es: "Ella se puso muy triste", tense: "Pretérito Indefinido" },
+                { en: "I put on my best suit", es: "Me puse mi mejor traje", tense: "Pretérito Indefinido" },
+                { en: "We put the chairs in a circle", es: "Pusimos las sillas en círculo", tense: "Pretérito Indefinido" },
+                { en: "He put salt instead of sugar", es: "Él puso sal en vez de azúcar", tense: "Pretérito Indefinido" },
+                { en: "I put my trust in you", es: "Puse mi confianza en ti", tense: "Pretérito Indefinido" },
+                { en: "They put the blame on me", es: "Ellos me pusieron la culpa", tense: "Pretérito Indefinido" },
+                { en: "You got very pale", es: "Te pusiste muy pálido", tense: "Pretérito Indefinido" },
+                { en: "She put the plates on the table", es: "Ella puso los platos en la mesa", tense: "Pretérito Indefinido" },
+                { en: "I used to put the newspaper here", es: "Ponía el periódico aquí", tense: "Pretérito Imperfecto" },
+                { en: "She used to set the table every day", es: "Ella ponía la mesa todos los días", tense: "Pretérito Imperfecto" },
+                { en: "We would always put flowers in the living room", es: "Siempre poníamos flores en la sala", tense: "Pretérito Imperfecto" },
+                { en: "He would put on cologne every morning", es: "Él se ponía colonia cada mañana", tense: "Pretérito Imperfecto" },
+                { en: "I used to get nervous during exams", es: "Me ponía nervioso durante los exámenes", tense: "Pretérito Imperfecto" },
+                { en: "They would put music at parties", es: "Ellos ponían música en las fiestas", tense: "Pretérito Imperfecto" },
+                { en: "You used to put too much salt", es: "Tú ponías demasiada sal", tense: "Pretérito Imperfecto" },
+                { en: "She would get happy when it rained", es: "Ella se ponía feliz cuando llovía", tense: "Pretérito Imperfecto" },
+                { en: "I will put the documents in the drawer", es: "Pondré los documentos en el cajón", tense: "Futuro Simple" },
+                { en: "She will put on her wedding dress", es: "Ella se pondrá su vestido de novia", tense: "Futuro Simple" },
+                { en: "We will set the table at 8", es: "Pondremos la mesa a las 8", tense: "Futuro Simple" },
+                { en: "He will turn on the heating", es: "Él pondrá la calefacción", tense: "Futuro Simple" },
+                { en: "I will put my effort into this", es: "Pondré mi esfuerzo en esto", tense: "Futuro Simple" },
+                { en: "They will put the pictures on the wall", es: "Ellos pondrán las fotos en la pared", tense: "Futuro Simple" },
+                { en: "You will get better soon", es: "Te pondrás mejor pronto", tense: "Futuro Simple" },
+                { en: "She will put the kettle on", es: "Ella pondrá la tetera", tense: "Futuro Simple" },
+                { en: "I put eggs in the basket", es: "Pongo huevos en la cesta", tense: "Presente" },
+                { en: "You put the address in the GPS", es: "Pones la dirección en el GPS", tense: "Presente" },
+                { en: "He puts his signature at the bottom", es: "Él pone su firma al final", tense: "Presente" },
+                { en: "We put candles on the cake", es: "Ponemos velas en el pastel", tense: "Presente" },
+                { en: "They put stickers on the laptop", es: "Ellos ponen pegatinas en el portátil", tense: "Presente" },
+                { en: "I get tired after work", es: "Me pongo cansado después del trabajo", tense: "Presente" },
+                { en: "She puts perfume on her wrists", es: "Ella se pone perfume en las muñecas", tense: "Presente" },
+                { en: "You put pressure on me", es: "Tú me pones presión", tense: "Presente" },
+                { en: "He puts his feet up", es: "Él pone los pies en alto", tense: "Presente" },
+                { en: "I put the alarm for 7 AM", es: "Pongo la alarma para las 7", tense: "Presente" },
+                { en: "We put our names on the list", es: "Ponemos nuestros nombres en la lista", tense: "Presente" },
+                { en: "They put obstacles in my way", es: "Ellos me ponen obstáculos", tense: "Presente" },
+                { en: "You get red when you're embarrassed", es: "Te pones rojo cuando estás avergonzado", tense: "Presente" },
+                { en: "She puts cream in her coffee", es: "Ella pone crema en su café", tense: "Presente" },
+                { en: "I put my glasses on to read", es: "Me pongo las gafas para leer", tense: "Presente" },
+                { en: "He puts his keys on the hook", es: "Él pone sus llaves en el gancho", tense: "Presente" },
+                { en: "We put money aside for vacation", es: "Ponemos dinero aparte para vacaciones", tense: "Presente" },
+                { en: "I put the trash out", es: "Pongo la basura fuera", tense: "Presente" },
+                { en: "She puts her hair in a ponytail", es: "Ella se pone el pelo en una coleta", tense: "Presente" },
+                { en: "You put the volume too high", es: "Pones el volumen muy alto", tense: "Presente" },
+                { en: "He puts ketchup on everything", es: "Él pone ketchup en todo", tense: "Presente" },
+                { en: "We put a blanket on the sofa", es: "Ponemos una manta en el sofá", tense: "Presente" },
+                { en: "They put decorations for Christmas", es: "Ellos ponen decoraciones para Navidad", tense: "Presente" },
+                { en: "I get serious when necessary", es: "Me pongo serio cuando es necesario", tense: "Presente" },
+                { en: "She puts the bill on the table", es: "Ella pone la cuenta en la mesa", tense: "Presente" },
+                { en: "You put yourself in danger", es: "Te pones en peligro", tense: "Presente" },
+                { en: "He puts the puzzle together", es: "Él pone el rompecabezas", tense: "Presente" },
+                { en: "I put the Wi-Fi password in", es: "Pongo la contraseña del Wi-Fi", tense: "Pretérito Indefinido" },
+                { en: "We put decorations up yesterday", es: "Pusimos decoraciones ayer", tense: "Pretérito Indefinido" },
+                { en: "She put her dreams aside", es: "Ella puso sus sueños a un lado", tense: "Pretérito Indefinido" },
+                { en: "They put everything in order", es: "Ellos pusieron todo en orden", tense: "Pretérito Indefinido" },
+                { en: "You put a good example", es: "Pusiste un buen ejemplo", tense: "Pretérito Indefinido" },
+                { en: "I got really angry", es: "Me puse muy enfadado", tense: "Pretérito Indefinido" },
+                { en: "He put a lock on the door", es: "Él puso un candado en la puerta", tense: "Pretérito Indefinido" },
+                { en: "We put the plan into action", es: "Pusimos el plan en acción", tense: "Pretérito Indefinido" },
+                { en: "She put her coat on the chair", es: "Ella puso su abrigo en la silla", tense: "Pretérito Indefinido" },
+                { en: "I put the groceries in the fridge", es: "Puse las compras en la nevera", tense: "Pretérito Indefinido" },
+                { en: "They put their faith in God", es: "Ellos pusieron su fe en Dios", tense: "Pretérito Indefinido" },
+                { en: "You put me in a difficult position", es: "Me pusiste en una posición difícil", tense: "Pretérito Indefinido" },
+                { en: "He put the car in the garage", es: "Él puso el coche en el garaje", tense: "Pretérito Indefinido" },
+                { en: "I put all my cards on the table", es: "Puse todas mis cartas sobre la mesa", tense: "Pretérito Indefinido" },
+                { en: "We put our hope in the future", es: "Pusimos nuestra esperanza en el futuro", tense: "Pretérito Indefinido" },
+                { en: "She got very excited about the news", es: "Ella se puso muy emocionada con la noticia", tense: "Pretérito Indefinido" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

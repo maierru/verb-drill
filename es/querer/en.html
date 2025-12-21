@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇪🇸 VERB QUERER — 98 Phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Back to verb list</a>
+            <h1>🇪🇸 Verb QUERER</h1>
+            <p class="subtitle">to want — 98 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Show all translations</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
+        </div>
+
+        <div class="stats" id="stats">Showing: 98 of 98 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Spanish Practice — QUERER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb QUERER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Present tense - used for current wants and desires</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo quiero</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú quieres</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted quiere</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros queremos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros queréis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes quieren</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Simple past - used for completed wants in the past</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo quise</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú quisiste</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted quiso</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros quisimos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros quisisteis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes quisieron</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Imperfect past - used for ongoing or habitual wants in the past</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo quería</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú querías</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted quería</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros queríamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros queríais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes querían</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Simple future - used for future wants</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo querré</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú querrás</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted querrá</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros querremos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros querréis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes querrán</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'en',
+            targetKey: 'es',
+            labels: { target: 'Spanish', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["quiero","quieres","quiere","queremos","queréis","quieren","quise","quisiera","querré"],
+            phrases: [
+                { en: "I want to learn Spanish", es: "Quiero aprender español", tense: "Presente" },
+                { en: "Do you want coffee?", es: "¿Quieres café?", tense: "Presente" },
+                { en: "She wants to travel", es: "Ella quiere viajar", tense: "Presente" },
+                { en: "We want to eat", es: "Queremos comer", tense: "Presente" },
+                { en: "They want more time", es: "Quieren más tiempo", tense: "Presente" },
+                { en: "I love you", es: "Te quiero", tense: "Presente" },
+                { en: "I wanted to go", es: "Quise ir", tense: "Pretérito Indefinido" },
+                { en: "She wanted to speak", es: "Ella quiso hablar", tense: "Pretérito Indefinido" },
+                { en: "I would like water", es: "Quisiera agua", tense: "Pretérito Imperfecto Subjuntivo" },
+                { en: "We wanted a house", es: "Queríamos una casa", tense: "Pretérito Imperfecto" },
+                { en: "I want to sleep", es: "Quiero dormir", tense: "Presente" },
+                { en: "Do you want to dance?", es: "¿Quieres bailar?", tense: "Presente" },
+                { en: "He wants help", es: "Él quiere ayuda", tense: "Presente" },
+                { en: "I want this book", es: "Quiero este libro", tense: "Presente" },
+                { en: "They want peace", es: "Quieren paz", tense: "Presente" },
+                { en: "I will want to see you", es: "Querré verte", tense: "Futuro Simple" },
+                { en: "I wanted to tell you", es: "Quería decirte", tense: "Pretérito Imperfecto" },
+                { en: "She wants a dog", es: "Ella quiere un perro", tense: "Presente" },
+                { en: "We want to work", es: "Queremos trabajar", tense: "Presente" },
+                { en: "I love my family", es: "Quiero a mi familia", tense: "Presente" },
+                { en: "Do you want something?", es: "¿Quieres algo?", tense: "Presente" },
+                { en: "I want to rest", es: "Quiero descansar", tense: "Presente" },
+                { en: "They wanted to leave", es: "Quisieron salir", tense: "Pretérito Indefinido" },
+                { en: "I would like to ask", es: "Quisiera preguntar", tense: "Pretérito Imperfecto Subjuntivo" },
+                { en: "She wants answers", es: "Ella quiere respuestas", tense: "Presente" },
+                { en: "We want justice", es: "Queremos justicia", tense: "Presente" },
+                { en: "I want to understand", es: "Quiero entender", tense: "Presente" },
+                { en: "He wanted money", es: "Él quería dinero", tense: "Pretérito Imperfecto" },
+                { en: "I want to live here", es: "Quiero vivir aquí", tense: "Presente" },
+                { en: "Do you want to come?", es: "¿Quieres venir?", tense: "Presente" },
+                { en: "They want freedom", es: "Quieren libertad", tense: "Presente" },
+                { en: "I wanted to know", es: "Quería saber", tense: "Pretérito Imperfecto" },
+                { en: "She wants to study", es: "Ella quiere estudiar", tense: "Presente" },
+                { en: "We love each other", es: "Nos queremos", tense: "Presente" },
+                { en: "I want the truth", es: "Quiero la verdad", tense: "Presente" },
+                { en: "I would like to try", es: "Quisiera intentar", tense: "Pretérito Imperfecto Subjuntivo" },
+                { en: "He wants to win", es: "Él quiere ganar", tense: "Presente" },
+                { en: "I wanted to help", es: "Quise ayudar", tense: "Pretérito Indefinido" },
+                { en: "They want food", es: "Quieren comida", tense: "Presente" },
+                { en: "I want to be happy", es: "Quiero ser feliz", tense: "Presente" },
+                { en: "Do you want tea?", es: "¿Quieres té?", tense: "Presente" },
+                { en: "She wanted to cry", es: "Ella quería llorar", tense: "Pretérito Imperfecto" },
+                { en: "We want a change", es: "Queremos un cambio", tense: "Presente" },
+                { en: "I want to believe", es: "Quiero creer", tense: "Presente" },
+                { en: "I love you so much", es: "Te quiero mucho", tense: "Presente" },
+                { en: "He wants power", es: "Él quiere poder", tense: "Presente" },
+                { en: "I wanted to forget", es: "Quería olvidar", tense: "Pretérito Imperfecto" },
+                { en: "They want revenge", es: "Quieren venganza", tense: "Presente" },
+                { en: "I want to write", es: "Quiero escribir", tense: "Presente" },
+                { en: "Would you like wine?", es: "¿Quisiera vino?", tense: "Pretérito Imperfecto Subjuntivo" },
+                { en: "She wants attention", es: "Ella quiere atención", tense: "Presente" },
+                { en: "We wanted to escape", es: "Queríamos escapar", tense: "Pretérito Imperfecto" },
+                { en: "I want to sing", es: "Quiero cantar", tense: "Presente" },
+                { en: "I wanted to stay", es: "Quise quedarme", tense: "Pretérito Indefinido" },
+                { en: "Do you want more?", es: "¿Quieres más?", tense: "Presente" },
+                { en: "He wants respect", es: "Él quiere respeto", tense: "Presente" },
+                { en: "I want to remember", es: "Quiero recordar", tense: "Presente" },
+                { en: "They wanted to fight", es: "Quisieron pelear", tense: "Pretérito Indefinido" },
+                { en: "I would like to comment", es: "Quisiera comentar", tense: "Pretérito Imperfecto Subjuntivo" },
+                { en: "She wants love", es: "Ella quiere amor", tense: "Presente" },
+                { en: "We want to listen", es: "Queremos escuchar", tense: "Presente" },
+                { en: "I want to run", es: "Quiero correr", tense: "Presente" },
+                { en: "I wanted to read", es: "Quería leer", tense: "Pretérito Imperfecto" },
+                { en: "He wanted to leave", es: "Él quería irse", tense: "Pretérito Imperfecto" },
+                { en: "I want to play", es: "Quiero jugar", tense: "Presente" },
+                { en: "Do you want dessert?", es: "¿Quieres postre?", tense: "Presente" },
+                { en: "They want results", es: "Quieren resultados", tense: "Presente" },
+                { en: "I want to cook", es: "Quiero cocinar", tense: "Presente" },
+                { en: "She wanted to laugh", es: "Ella quería reír", tense: "Pretérito Imperfecto" },
+                { en: "We love our children", es: "Queremos a nuestros hijos", tense: "Presente" },
+                { en: "I want to paint", es: "Quiero pintar", tense: "Presente" },
+                { en: "I would like to explain", es: "Quisiera explicar", tense: "Pretérito Imperfecto Subjuntivo" },
+                { en: "He wants success", es: "Él quiere éxito", tense: "Presente" },
+                { en: "I wanted to dream", es: "Quería soñar", tense: "Pretérito Imperfecto" },
+                { en: "They want to celebrate", es: "Quieren celebrar", tense: "Presente" },
+                { en: "I want to swim", es: "Quiero nadar", tense: "Presente" },
+                { en: "Do you want to talk?", es: "¿Quieres hablar?", tense: "Presente" },
+                { en: "She wants answers now", es: "Ella quiere respuestas ahora", tense: "Presente" },
+                { en: "We wanted a miracle", es: "Queríamos un milagro", tense: "Pretérito Imperfecto" },
+                { en: "I want to fly", es: "Quiero volar", tense: "Presente" },
+                { en: "I wanted to believe you", es: "Quise creerte", tense: "Pretérito Indefinido" },
+                { en: "He wants chocolate", es: "Él quiere chocolate", tense: "Presente" },
+                { en: "I want to grow", es: "Quiero crecer", tense: "Presente" },
+                { en: "They wanted to hide", es: "Quisieron esconderse", tense: "Pretérito Indefinido" },
+                { en: "I would like to join", es: "Quisiera unirme", tense: "Pretérito Imperfecto Subjuntivo" },
+                { en: "She wants flowers", es: "Ella quiere flores", tense: "Presente" },
+                { en: "We want to share", es: "Queremos compartir", tense: "Presente" },
+                { en: "I want to explore", es: "Quiero explorar", tense: "Presente" },
+                { en: "I wanted to scream", es: "Quería gritar", tense: "Pretérito Imperfecto" },
+                { en: "Do you want pizza?", es: "¿Quieres pizza?", tense: "Presente" },
+                { en: "He wants adventure", es: "Él quiere aventura", tense: "Presente" },
+                { en: "I want to create", es: "Quiero crear", tense: "Presente" },
+                { en: "They wanted silence", es: "Querían silencio", tense: "Pretérito Imperfecto" },
+                { en: "I love him", es: "Lo quiero", tense: "Presente" },
+                { en: "She wants to kiss you", es: "Ella quiere besarte", tense: "Presente" },
+                { en: "We want to pray", es: "Queremos rezar", tense: "Presente" },
+                { en: "I want to build", es: "Quiero construir", tense: "Presente" },
+                { en: "I would like to suggest", es: "Quisiera sugerir", tense: "Pretérito Imperfecto Subjuntivo" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

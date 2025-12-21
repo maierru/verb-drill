@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇪🇸 VERB PODER — 99 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇪🇸 Verb PODER</h1>
+            <p class="subtitle">can, to be able to — 99 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 99 de 99 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Prática de espanhol — PODER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb PODER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Presente - expressa habilidade ou permissão atual</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo puedo</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú puedes</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted puede</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros/nosotras podemos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros/vosotras podéis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes pueden</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Pretérito perfeito - expressa habilidade completada no passado</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo pude</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú pudiste</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted pudo</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros/nosotras pudimos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros/vosotras pudisteis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes pudieron</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Pretérito imperfeito - expressa habilidade habitual no passado</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo podía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú podías</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted podía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros/nosotras podíamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros/vosotras podíais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes podían</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Futuro simples - expressa habilidade ou permissão futura</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo podré</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú podrás</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted podrá</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros/nosotras podremos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros/vosotras podréis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes podrán</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'es',
+            labels: { target: 'Español', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["puedo","puedes","puede","podemos","podéis","pueden","pude","podía","podré"],
+            phrases: [
+                { pt: "Posso falar espanhol", es: "Puedo hablar español", tense: "Presente" },
+                { pt: "Podes ajudar-me?", es: "¿Puedes ayudarme?", tense: "Presente" },
+                { pt: "Ela não pode vir hoje", es: "No puede venir hoy", tense: "Presente" },
+                { pt: "Podemos fazê-lo juntos", es: "Podemos hacerlo juntos", tense: "Presente" },
+                { pt: "Podia correr mais rápido antes", es: "Podía correr más rápido antes", tense: "Pretérito Imperfecto" },
+                { pt: "Não conseguiram encontrar as chaves", es: "No pudieron encontrar las llaves", tense: "Pretérito Indefinido" },
+                { pt: "Poderei terminar amanhã", es: "Podré terminar mañana", tense: "Futuro Simple" },
+                { pt: "Posso perguntar-te algo?", es: "¿Puedo preguntarte algo?", tense: "Presente" },
+                { pt: "Podes sentar-te aqui", es: "Puedes sentarte aquí", tense: "Presente" },
+                { pt: "Ele pode tocar guitarra muito bem", es: "Puede tocar la guitarra muy bien", tense: "Presente" },
+                { pt: "Não conseguimos dormir ontem à noite", es: "No pudimos dormir anoche", tense: "Pretérito Indefinido" },
+                { pt: "Posso ver as montanhas", es: "Puedo ver las montañas", tense: "Presente" },
+                { pt: "Podes abrir a janela?", es: "¿Puedes abrir la ventana?", tense: "Presente" },
+                { pt: "Ela podia falar três idiomas", es: "Podía hablar tres idiomas", tense: "Pretérito Imperfecto" },
+                { pt: "Eles não nos podem ouvir", es: "No pueden oírnos", tense: "Presente" },
+                { pt: "Não consegui acreditar", es: "No pude creerlo", tense: "Pretérito Indefinido" },
+                { pt: "Poderás vir?", es: "¿Podrás venir?", tense: "Futuro Simple" },
+                { pt: "Podemos ir agora", es: "Podemos ir ahora", tense: "Presente" },
+                { pt: "Não consigo encontrar o meu telemóvel", es: "No puedo encontrar mi teléfono", tense: "Presente" },
+                { pt: "Podes passar-me o sal?", es: "¿Puedes pasarme la sal?", tense: "Presente" },
+                { pt: "Ele podia nadar quando tinha cinco anos", es: "Podía nadar cuando tenía cinco años", tense: "Pretérito Imperfecto" },
+                { pt: "Poderão ajudar-nos", es: "Podrán ayudarnos", tense: "Futuro Simple" },
+                { pt: "Não posso comer comida picante", es: "No puedo comer comida picante", tense: "Presente" },
+                { pt: "Podemos falar mais tarde?", es: "¿Podemos hablar luego?", tense: "Presente" },
+                { pt: "Ela não conseguiu responder à pergunta", es: "No pudo responder la pregunta", tense: "Pretérito Indefinido" },
+                { pt: "Posso ouvir música", es: "Puedo oír música", tense: "Presente" },
+                { pt: "Podes repetir isso?", es: "¿Puedes repetir eso?", tense: "Presente" },
+                { pt: "Podíamos ir à praia", es: "Podíamos ir a la playa", tense: "Pretérito Imperfecto" },
+                { pt: "Poderei ver-te amanhã", es: "Podré verte mañana", tense: "Futuro Simple" },
+                { pt: "Sabes conduzir?", es: "¿Puedes conducir?", tense: "Presente" },
+                { pt: "Ele não consegue entender espanhol", es: "No puede entender español", tense: "Presente" },
+                { pt: "Não consegui abrir a porta", es: "No pude abrir la puerta", tense: "Pretérito Indefinido" },
+                { pt: "Podemos começar agora", es: "Podemos empezar ahora", tense: "Presente" },
+                { pt: "Posso beber um pouco de água?", es: "¿Puedo tomar un poco de agua?", tense: "Presente" },
+                { pt: "Ela podia ler quando tinha quatro anos", es: "Podía leer cuando tenía cuatro años", tense: "Pretérito Imperfecto" },
+                { pt: "Eles não podem vir esta noite", es: "No pueden venir esta noche", tense: "Presente" },
+                { pt: "Poderei ligar-te mais tarde", es: "Podré llamarte más tarde", tense: "Futuro Simple" },
+                { pt: "Consegues ver isso?", es: "¿Puedes ver eso?", tense: "Presente" },
+                { pt: "Não conseguimos encontrar um táxi", es: "No pudimos encontrar un taxi", tense: "Pretérito Indefinido" },
+                { pt: "Posso cozinhar comida italiana", es: "Puedo cocinar comida italiana", tense: "Presente" },
+                { pt: "Podemos sair cedo?", es: "¿Podemos irnos temprano?", tense: "Presente" },
+                { pt: "Ele podia jogar xadrez muito bem", es: "Podía jugar ajedrez muy bien", tense: "Pretérito Imperfecto" },
+                { pt: "Não consigo lembrar-me do nome dele", es: "No puedo recordar su nombre", tense: "Presente" },
+                { pt: "Podes esperar um momento?", es: "¿Puedes esperar un momento?", tense: "Presente" },
+                { pt: "Ela não conseguiu vir à festa", es: "No pudo venir a la fiesta", tense: "Pretérito Indefinido" },
+                { pt: "Poderemos terminar hoje", es: "Podremos terminar hoy", tense: "Futuro Simple" },
+                { pt: "Posso cheirar café", es: "Puedo oler café", tense: "Presente" },
+                { pt: "Podes explicar isto?", es: "¿Puedes explicar esto?", tense: "Presente" },
+                { pt: "Podiam trabalhar a partir de casa", es: "Podían trabajar desde casa", tense: "Pretérito Imperfecto" },
+                { pt: "Não posso ir hoje", es: "No puedo ir hoy", tense: "Presente" },
+                { pt: "Posso usar o teu telemóvel?", es: "¿Puedo usar tu teléfono?", tense: "Presente" },
+                { pt: "Ele não conseguiu resolver o problema", es: "No pudo resolver el problema", tense: "Pretérito Indefinido" },
+                { pt: "Podemos encontrar-nos às cinco", es: "Podemos encontrarnos a las cinco", tense: "Presente" },
+                { pt: "Podes apagar a luz?", es: "¿Puedes apagar la luz?", tense: "Presente" },
+                { pt: "Podia vê-la daqui", es: "Podía verla desde aquí", tense: "Pretérito Imperfecto" },
+                { pt: "Eles não podem pagar agora", es: "No pueden pagar ahora", tense: "Presente" },
+                { pt: "Poderei viajar no próximo mês", es: "Podré viajar el mes que viene", tense: "Futuro Simple" },
+                { pt: "Podemos mudar a data?", es: "¿Podemos cambiar la fecha?", tense: "Presente" },
+                { pt: "Ela não sabe nadar", es: "No puede nadar", tense: "Presente" },
+                { pt: "Não consegui ouvir-te", es: "No pude oírte", tense: "Pretérito Indefinido" },
+                { pt: "Podes ler isto?", es: "¿Puedes leer esto?", tense: "Presente" },
+                { pt: "Podíamos dançar a noite toda", es: "Podíamos bailar toda la noche", tense: "Pretérito Imperfecto" },
+                { pt: "Não posso acreditar nisto", es: "No puedo creer esto", tense: "Presente" },
+                { pt: "Posso ir contigo?", es: "¿Puedo ir contigo?", tense: "Presente" },
+                { pt: "Ele não conseguiu encontrar a carteira", es: "No pudo encontrar su cartera", tense: "Pretérito Indefinido" },
+                { pt: "Podemos comer aqui", es: "Podemos comer aquí", tense: "Presente" },
+                { pt: "Podes arranjar isto?", es: "¿Puedes arreglar esto?", tense: "Presente" },
+                { pt: "Podia correr cinco quilómetros", es: "Podía correr cinco kilómetros", tense: "Pretérito Imperfecto" },
+                { pt: "Eles não me conseguem entender", es: "No pueden entenderme", tense: "Presente" },
+                { pt: "Poderei estudar mais", es: "Podré estudiar más", tense: "Futuro Simple" },
+                { pt: "Podemos estacionar aqui?", es: "¿Podemos aparcar aquí?", tense: "Presente" },
+                { pt: "Ela não pode trabalhar amanhã", es: "No puede trabajar mañana", tense: "Presente" },
+                { pt: "Não consegui concentrar-me", es: "No pude concentrarme", tense: "Pretérito Indefinido" },
+                { pt: "Podes tirar uma foto?", es: "¿Puedes tomar una foto?", tense: "Presente" },
+                { pt: "Podíamos comer o que quiséssemos", es: "Podíamos comer lo que queríamos", tense: "Pretérito Imperfecto" },
+                { pt: "Não consigo parar de pensar nisso", es: "No puedo dejar de pensar en ello", tense: "Presente" },
+                { pt: "Posso pedir emprestada a tua caneta?", es: "¿Puedo tomar prestado tu bolígrafo?", tense: "Presente" },
+                { pt: "Ele não conseguiu correr mais", es: "No pudo correr más", tense: "Pretérito Indefinido" },
+                { pt: "Podemos tentar de novo", es: "Podemos intentarlo de nuevo", tense: "Presente" },
+                { pt: "Podes mostrar-me?", es: "¿Puedes mostrarme?", tense: "Presente" },
+                { pt: "Podia ouvir tudo", es: "Podía oír todo", tense: "Pretérito Imperfecto" },
+                { pt: "Eles não conseguem decidir", es: "No pueden decidir", tense: "Presente" },
+                { pt: "Poderei descansar em breve", es: "Podré descansar pronto", tense: "Futuro Simple" },
+                { pt: "Podemos continuar?", es: "¿Podemos continuar?", tense: "Presente" },
+                { pt: "Ela não pode aceitar isto", es: "No puede aceptar esto", tense: "Presente" },
+                { pt: "Não consegui ficar mais tempo", es: "No pude quedarme más tiempo", tense: "Pretérito Indefinido" },
+                { pt: "Podes enviar-me o ficheiro?", es: "¿Puedes enviarme el archivo?", tense: "Presente" },
+                { pt: "Podíamos visitar museus todos os fins de semana", es: "Podíamos visitar museos cada fin de semana", tense: "Pretérito Imperfecto" },
+                { pt: "Não posso esperar", es: "No puedo esperar", tense: "Presente" },
+                { pt: "Posso ajudar-te?", es: "¿Puedo ayudarte?", tense: "Presente" },
+                { pt: "Ele não conseguiu lembrar-se", es: "No pudo recordar", tense: "Pretérito Indefinido" },
+                { pt: "Podemos pedir pizza", es: "Podemos pedir pizza", tense: "Presente" },
+                { pt: "Podes fechar a porta?", es: "¿Puedes cerrar la puerta?", tense: "Presente" },
+                { pt: "Podia sentir o frio", es: "Podía sentir el frío", tense: "Pretérito Imperfecto" },
+                { pt: "Eles não conseguem chegar a acordo", es: "No pueden ponerse de acuerdo", tense: "Presente" },
+                { pt: "Poderei aprendê-lo", es: "Podré aprenderlo", tense: "Futuro Simple" },
+                { pt: "Podemos ficar mais tempo?", es: "¿Podemos quedarnos más tiempo?", tense: "Presente" },
+                { pt: "Ela não o pode perdoar", es: "No puede perdonarlo", tense: "Presente" },
+                { pt: "Não pude recusar", es: "No pude rechazar", tense: "Pretérito Indefinido" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

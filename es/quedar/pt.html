@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇪🇸 VERB QUEDAR — 100 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇪🇸 Verb QUEDAR</h1>
+            <p class="subtitle">to stay, to remain, to meet up — 100 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 100 de 100 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Prática de espanhol — QUEDAR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb QUEDAR</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Presente - ficar, permanecer, combinar encontro</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>quedo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>quedas</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>queda</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>quedamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>quedáis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>quedan</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Pretérito perfeito - ficou, permaneceu, combinou encontro</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>quedé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>quedaste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>quedó</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>quedamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>quedasteis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>quedaron</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Pretérito imperfeito - ficava, costumava ficar</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>quedaba</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>quedabas</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>quedaba</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>quedábamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>quedabais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>quedaban</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Futuro simples - ficará, permanecerá, combinará encontro</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>quedaré</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>quedarás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>quedará</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>quedaremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>quedaréis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>quedarán</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'es',
+            labels: { target: 'Español', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["quedo","quedas","queda","quedamos","quedáis","quedan","quedé","quedaba","quedaré","quedado"],
+            phrases: [
+                { pt: "Fico em casa hoje.", es: "Me quedo en casa hoy.", tense: "Presente" },
+                { pt: "Encontramo-nos às oito.", es: "Quedamos a las ocho.", tense: "Presente" },
+                { pt: "Onde nos encontramos?", es: "¿Dónde quedamos?", tense: "Presente" },
+                { pt: "Quanto falta?", es: "¿Cuánto queda?", tense: "Presente" },
+                { pt: "Não sobra nada.", es: "No queda nada.", tense: "Presente" },
+                { pt: "Encontramo-nos amanhã.", es: "Quedamos mañana.", tense: "Presente" },
+                { pt: "Fico aqui.", es: "Me quedo aquí.", tense: "Presente" },
+                { pt: "Esse vestido fica-te bem.", es: "Te queda bien ese vestido.", tense: "Presente" },
+                { pt: "Essa jaqueta fica-te perfeita.", es: "Esa chaqueta te queda perfecta.", tense: "Presente" },
+                { pt: "Esta camisa fica-me pequena.", es: "Esta camisa me queda pequeña.", tense: "Presente" },
+                { pt: "Quão longe é?", es: "¿Cuánto queda?", tense: "Presente" },
+                { pt: "Ainda falta muito.", es: "Todavía queda lejos.", tense: "Presente" },
+                { pt: "O hotel fica perto.", es: "El hotel queda cerca.", tense: "Presente" },
+                { pt: "Combinámos encontrar-nos no café.", es: "Quedamos en el café.", tense: "Pretérito Indefinido" },
+                { pt: "Fiquei em casa o dia todo.", es: "Me quedé en casa todo el día.", tense: "Pretérito Indefinido" },
+                { pt: "Ela ficou em Madrid.", es: "Se quedó en Madrid.", tense: "Pretérito Indefinido" },
+                { pt: "Ficaram na minha casa.", es: "Se quedaron en mi casa.", tense: "Pretérito Indefinido" },
+                { pt: "Combinámos mas ele não veio.", es: "Quedamos pero no vino.", tense: "Pretérito Indefinido" },
+                { pt: "Não sobrou nada.", es: "No quedó nada.", tense: "Pretérito Indefinido" },
+                { pt: "Fiquei sem palavras.", es: "Me quedé sin palabras.", tense: "Pretérito Indefinido" },
+                { pt: "Ficou calado.", es: "Se quedó callado.", tense: "Pretérito Indefinido" },
+                { pt: "A loja fica na rua principal.", es: "La tienda queda en la calle principal.", tense: "Presente" },
+                { pt: "Onde fica o museu?", es: "¿Dónde queda el museo?", tense: "Presente" },
+                { pt: "O restaurante fica no centro.", es: "El restaurante queda en el centro.", tense: "Presente" },
+                { pt: "Ficarei até segunda-feira.", es: "Me quedaré hasta el lunes.", tense: "Futuro Simple" },
+                { pt: "Encontrar-nos-emos na estação.", es: "Quedaremos en la estación.", tense: "Futuro Simple" },
+                { pt: "Ficarão para jantar.", es: "Se quedarán a cenar.", tense: "Futuro Simple" },
+                { pt: "Não sobrará nada.", es: "No quedará nada.", tense: "Futuro Simple" },
+                { pt: "Veremos como fica.", es: "Veremos cómo queda.", tense: "Futuro Simple" },
+                { pt: "Ficava na casa da minha avó.", es: "Me quedaba en casa de mi abuela.", tense: "Pretérito Imperfecto" },
+                { pt: "Encontrávamo-nos sempre às sextas-feiras.", es: "Siempre quedábamos los viernes.", tense: "Pretérito Imperfecto" },
+                { pt: "Sempre sobrava comida.", es: "Siempre quedaba comida.", tense: "Pretérito Imperfecto" },
+                { pt: "Ficava até tarde no trabalho.", es: "Se quedaba tarde en el trabajo.", tense: "Pretérito Imperfecto" },
+                { pt: "Encontravam-se no parque.", es: "Quedaban en el parque.", tense: "Pretérito Imperfecto" },
+                { pt: "Fica-te genial.", es: "Te queda genial.", tense: "Presente" },
+                { pt: "Estas calças não me ficam.", es: "Estos pantalones no me quedan.", tense: "Presente" },
+                { pt: "Essa cor não lhe fica bem.", es: "Ese color le queda mal.", tense: "Presente" },
+                { pt: "Os sapatos ficam-lhe bem.", es: "Los zapatos le quedan bien.", tense: "Presente" },
+                { pt: "Este tamanho fica-me grande.", es: "Esta talla me queda grande.", tense: "Presente" },
+                { pt: "Combinei encontrar-me com ela às seis.", es: "Quedé con ella a las seis.", tense: "Pretérito Indefinido" },
+                { pt: "Combinámos uma hora?", es: "¿Quedamos en una hora?", tense: "Pretérito Indefinido" },
+                { pt: "Combinámos ir ao cinema.", es: "Quedamos en ir al cine.", tense: "Pretérito Indefinido" },
+                { pt: "Combinaram encontrar-se mais tarde.", es: "Quedaron para más tarde.", tense: "Pretérito Indefinido" },
+                { pt: "Fico com amigos.", es: "Me quedo con amigos.", tense: "Presente" },
+                { pt: "Fica aqui, não te mexas.", es: "Quédate aquí, no te muevas.", tense: "Imperativo" },
+                { pt: "Fiquemos calmos.", es: "Quedémonos tranquilos.", tense: "Imperativo" },
+                { pt: "Não fiques até muito tarde.", es: "No te quedes hasta muy tarde.", tense: "Imperativo" },
+                { pt: "Fiquei cego.", es: "Me quedé ciego.", tense: "Pretérito Indefinido" },
+                { pt: "Ficou surda.", es: "Se quedó sorda.", tense: "Pretérito Indefinido" },
+                { pt: "Adormeceu.", es: "Se quedó dormido.", tense: "Pretérito Indefinido" },
+                { pt: "Fiquei sozinho.", es: "Me quedé solo.", tense: "Pretérito Indefinido" },
+                { pt: "Ficámos sem dinheiro.", es: "Nos quedamos sin dinero.", tense: "Pretérito Indefinido" },
+                { pt: "Ficaram sem tempo.", es: "Se quedaron sin tiempo.", tense: "Pretérito Indefinido" },
+                { pt: "Não tenho outra opção.", es: "No me queda otra opción.", tense: "Presente" },
+                { pt: "Falta muito por fazer.", es: "Queda mucho por hacer.", tense: "Presente" },
+                { pt: "Quanto tempo falta?", es: "¿Cuánto tiempo queda?", tense: "Presente" },
+                { pt: "Só faltam dois dias.", es: "Solo quedan dos días.", tense: "Presente" },
+                { pt: "Falta-nos uma hora.", es: "Nos queda una hora.", tense: "Presente" },
+                { pt: "Encontro-me com os meus amigos.", es: "Quedo con mis amigos.", tense: "Presente" },
+                { pt: "Encontramo-nos?", es: "¿Quedamos?", tense: "Presente" },
+                { pt: "Podemos encontrar-nos na próxima semana?", es: "¿Podemos quedar la semana que viene?", tense: "Presente" },
+                { pt: "Não posso encontrar-me hoje.", es: "No puedo quedar hoy.", tense: "Presente" },
+                { pt: "Encontramo-nos para um café.", es: "Quedamos para un café.", tense: "Presente" },
+                { pt: "O acordo mantém-se.", es: "El acuerdo queda en pie.", tense: "Presente" },
+                { pt: "Tudo fica claro agora.", es: "Todo queda claro ahora.", tense: "Presente" },
+                { pt: "Ficou por terminar.", es: "Quedó sin terminar.", tense: "Pretérito Indefinido" },
+                { pt: "O assunto fica resolvido.", es: "El asunto queda resuelto.", tense: "Presente" },
+                { pt: "Ficou bem.", es: "Quedó bien.", tense: "Pretérito Indefinido" },
+                { pt: "Ficou mal.", es: "Quedó mal.", tense: "Pretérito Indefinido" },
+                { pt: "A foto ficou bonita.", es: "La foto quedó bonita.", tense: "Pretérito Indefinido" },
+                { pt: "O bolo ficou seco.", es: "El pastel quedó seco.", tense: "Pretérito Indefinido" },
+                { pt: "Fico com este livro.", es: "Me quedo con este libro.", tense: "Presente" },
+                { pt: "Ficou com o melhor.", es: "Se quedó con el mejor.", tense: "Pretérito Indefinido" },
+                { pt: "Fique com o troco.", es: "Quédese con el cambio.", tense: "Imperativo" },
+                { pt: "Ficarei com o vermelho.", es: "Me quedaré con el rojo.", tense: "Futuro Simple" },
+                { pt: "Ficas para almoçar?", es: "¿Te quedas a comer?", tense: "Presente" },
+                { pt: "Fiquei a dormir.", es: "Me quedé a dormir.", tense: "Pretérito Indefinido" },
+                { pt: "Ficarás a dormir?", es: "¿Te quedarás a dormir?", tense: "Futuro Simple" },
+                { pt: "Ficam o fim de semana.", es: "Se quedan el fin de semana.", tense: "Presente" },
+                { pt: "Gelei quando o vi.", es: "Me quedé helado al verlo.", tense: "Pretérito Indefinido" },
+                { pt: "Ficou pasmada.", es: "Se quedó pasmada.", tense: "Pretérito Indefinido" },
+                { pt: "Ficámos espantados.", es: "Nos quedamos asombrados.", tense: "Pretérito Indefinido" },
+                { pt: "Ficou quieto.", es: "Se quedó quieto.", tense: "Pretérito Indefinido" },
+                { pt: "Estou a ficar sem paciência.", es: "Me quedo sin paciencia.", tense: "Presente" },
+                { pt: "Estamos a ficar sem ideias.", es: "Nos quedamos sin ideas.", tense: "Presente" },
+                { pt: "Ficaram sem gasolina.", es: "Se quedaron sin gasolina.", tense: "Pretérito Indefinido" },
+                { pt: "Não fiques sem pilhas.", es: "No te quedes sin pilas.", tense: "Imperativo" },
+                { pt: "A loja fica a dois quarteirões.", es: "La tienda queda a dos cuadras.", tense: "Presente" },
+                { pt: "A que distância fica a praia?", es: "¿A cuánto queda la playa?", tense: "Presente" },
+                { pt: "O escritório fica perto.", es: "La oficina queda cerca.", tense: "Presente" },
+                { pt: "Fica longe daqui?", es: "¿Queda lejos de aquí?", tense: "Presente" },
+                { pt: "Encontro-me contigo às sete.", es: "Quedo contigo a las siete.", tense: "Presente" },
+                { pt: "Combinámos terça-feira.", es: "Quedamos el martes.", tense: "Pretérito Indefinido" },
+                { pt: "Encontramo-nos à entrada.", es: "Quedamos en la entrada.", tense: "Presente" },
+                { pt: "O vestido fica-te perfeito.", es: "El vestido te queda perfecto.", tense: "Presente" },
+                { pt: "Fico impressionado.", es: "Me quedo impresionado.", tense: "Presente" },
+                { pt: "O apartamento fica no centro.", es: "El apartamento queda en el centro.", tense: "Presente" },
+                { pt: "Ficámos ali a olhar.", es: "Nos quedamos ahí mirando.", tense: "Pretérito Indefinido" },
+                { pt: "Guardarei o teu segredo.", es: "Me quedaré con tu secreto.", tense: "Futuro Simple" },
+                { pt: "Como fica o plano?", es: "¿Cómo queda el plan?", tense: "Presente" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

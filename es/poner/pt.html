@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇪🇸 VERB PONER — 99 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇪🇸 Verb PONER</h1>
+            <p class="subtitle">to put — 99 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 99 de 99 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Prática de espanhol — PONER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb PONER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Presente, irregular na 1ª pessoa (yo pongo)</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">pongo</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">pones</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">pone</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ponemos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ponéis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ponen</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Pretérito perfeito simples, radical irregular 'pus-'</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">puse</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">pusiste</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">puso</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">pusimos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">pusisteis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">pusieron</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Pretérito imperfeito, formação regular</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ponía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ponías</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ponía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">poníamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">poníais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ponían</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Futuro simples, radical irregular 'pondr-'</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">pondré</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">pondrás</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">pondrá</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">pondremos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">pondréis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">pondrán</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'es',
+            labels: { target: 'Español', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["pongo","pones","pone","ponemos","ponéis","ponen","puse","pondré","pondría","puesto"],
+            phrases: [
+                { pt: "Eu ponho o livro na mesa", es: "Pongo el libro en la mesa", tense: "Presente" },
+                { pt: "Ela põe os sapatos", es: "Ella se pone los zapatos", tense: "Presente" },
+                { pt: "Nós pomos a mesa", es: "Nosotros ponemos la mesa", tense: "Presente" },
+                { pt: "Ele põe a música", es: "Él pone la música", tense: "Presente" },
+                { pt: "Eu ponho as chaves no bolso", es: "Pongo las llaves en mi bolsillo", tense: "Presente" },
+                { pt: "Eles põem os pratos", es: "Ellos ponen los platos", tense: "Presente" },
+                { pt: "Tu pões sal na comida", es: "Tú pones sal en la comida", tense: "Presente" },
+                { pt: "Eu ponho a televisão", es: "Pongo la tele", tense: "Presente" },
+                { pt: "Ela fica nervosa", es: "Ella se pone nerviosa", tense: "Presente" },
+                { pt: "Nós pomos a roupa no armário", es: "Ponemos la ropa en el armario", tense: "Presente" },
+                { pt: "Ele veste o casaco", es: "Él se pone la chaqueta", tense: "Presente" },
+                { pt: "Eu ponho açúcar no café", es: "Pongo azúcar en mi café", tense: "Presente" },
+                { pt: "Eles acendem as luzes", es: "Ellos ponen las luces", tense: "Presente" },
+                { pt: "Tu ficas feliz quando me vês", es: "Te pones feliz cuando me ves", tense: "Presente" },
+                { pt: "Ela põe o bebé na cama", es: "Ella pone al bebé en la cama", tense: "Presente" },
+                { pt: "Eu ponho maquilhagem todos os dias", es: "Me pongo maquillaje todos los días", tense: "Presente" },
+                { pt: "Nós pomos gelo nas bebidas", es: "Ponemos hielo en las bebidas", tense: "Presente" },
+                { pt: "Ele põe a mão no meu ombro", es: "Él pone su mano en mi hombro", tense: "Presente" },
+                { pt: "Eu ponho a carta na caixa do correio", es: "Pongo la carta en el buzón", tense: "Presente" },
+                { pt: "Eles ficam zangados facilmente", es: "Ellos se ponen enfadados fácilmente", tense: "Presente" },
+                { pt: "Tu pões o telemóvel a carregar", es: "Pones tu teléfono en el cargador", tense: "Presente" },
+                { pt: "Ela põe flores na jarra", es: "Ella pone flores en el jarrón", tense: "Presente" },
+                { pt: "Eu ponho protetor solar", es: "Me pongo protector solar", tense: "Presente" },
+                { pt: "Nós guardamos as compras", es: "Ponemos las compras", tense: "Presente" },
+                { pt: "Ele fica doente no inverno", es: "Él se pone enfermo en invierno", tense: "Presente" },
+                { pt: "Eu pus o livro de ontem na prateleira", es: "Puse el libro de ayer en el estante", tense: "Pretérito Indefinido" },
+                { pt: "Ela vestiu um vestido vermelho", es: "Ella se puso un vestido rojo", tense: "Pretérito Indefinido" },
+                { pt: "Nós pusemos a mesa para o jantar", es: "Pusimos la mesa para la cena", tense: "Pretérito Indefinido" },
+                { pt: "Ele ligou o rádio", es: "Él puso la radio", tense: "Pretérito Indefinido" },
+                { pt: "Eu pus o dinheiro no banco", es: "Puse el dinero en el banco", tense: "Pretérito Indefinido" },
+                { pt: "Eles puseram um quadro novo", es: "Ellos pusieron un cuadro nuevo", tense: "Pretérito Indefinido" },
+                { pt: "Tu puseste a tua mala no chão", es: "Pusiste tu bolsa en el suelo", tense: "Pretérito Indefinido" },
+                { pt: "Ela ficou muito triste", es: "Ella se puso muy triste", tense: "Pretérito Indefinido" },
+                { pt: "Eu vesti o meu melhor fato", es: "Me puse mi mejor traje", tense: "Pretérito Indefinido" },
+                { pt: "Nós pusemos as cadeiras em círculo", es: "Pusimos las sillas en círculo", tense: "Pretérito Indefinido" },
+                { pt: "Ele pôs sal em vez de açúcar", es: "Él puso sal en vez de azúcar", tense: "Pretérito Indefinido" },
+                { pt: "Eu pus a minha confiança em ti", es: "Puse mi confianza en ti", tense: "Pretérito Indefinido" },
+                { pt: "Eles puseram a culpa em mim", es: "Ellos me pusieron la culpa", tense: "Pretérito Indefinido" },
+                { pt: "Tu ficaste muito pálido", es: "Te pusiste muy pálido", tense: "Pretérito Indefinido" },
+                { pt: "Ela pôs os pratos na mesa", es: "Ella puso los platos en la mesa", tense: "Pretérito Indefinido" },
+                { pt: "Eu punha o jornal aqui", es: "Ponía el periódico aquí", tense: "Pretérito Imperfecto" },
+                { pt: "Ela punha a mesa todos os dias", es: "Ella ponía la mesa todos los días", tense: "Pretérito Imperfecto" },
+                { pt: "Nós púnhamos sempre flores na sala", es: "Siempre poníamos flores en la sala", tense: "Pretérito Imperfecto" },
+                { pt: "Ele punha colónia todas as manhãs", es: "Él se ponía colonia cada mañana", tense: "Pretérito Imperfecto" },
+                { pt: "Eu ficava nervoso durante os exames", es: "Me ponía nervioso durante los exámenes", tense: "Pretérito Imperfecto" },
+                { pt: "Eles punham música nas festas", es: "Ellos ponían música en las fiestas", tense: "Pretérito Imperfecto" },
+                { pt: "Tu punhas demasiado sal", es: "Tú ponías demasiada sal", tense: "Pretérito Imperfecto" },
+                { pt: "Ela ficava feliz quando chovia", es: "Ella se ponía feliz cuando llovía", tense: "Pretérito Imperfecto" },
+                { pt: "Eu porei os documentos na gaveta", es: "Pondré los documentos en el cajón", tense: "Futuro Simple" },
+                { pt: "Ela porá o seu vestido de noiva", es: "Ella se pondrá su vestido de novia", tense: "Futuro Simple" },
+                { pt: "Nós poremos a mesa às 8", es: "Pondremos la mesa a las 8", tense: "Futuro Simple" },
+                { pt: "Ele porá o aquecimento", es: "Él pondrá la calefacción", tense: "Futuro Simple" },
+                { pt: "Eu porei o meu esforço nisto", es: "Pondré mi esfuerzo en esto", tense: "Futuro Simple" },
+                { pt: "Eles porão as fotos na parede", es: "Ellos pondrán las fotos en la pared", tense: "Futuro Simple" },
+                { pt: "Tu ficarás melhor em breve", es: "Te pondrás mejor pronto", tense: "Futuro Simple" },
+                { pt: "Ela porá a chaleira", es: "Ella pondrá la tetera", tense: "Futuro Simple" },
+                { pt: "Eu ponho ovos na cesta", es: "Pongo huevos en la cesta", tense: "Presente" },
+                { pt: "Tu pões a morada no GPS", es: "Pones la dirección en el GPS", tense: "Presente" },
+                { pt: "Ele põe a assinatura no final", es: "Él pone su firma al final", tense: "Presente" },
+                { pt: "Nós pomos velas no bolo", es: "Ponemos velas en el pastel", tense: "Presente" },
+                { pt: "Eles põem autocolantes no portátil", es: "Ellos ponen pegatinas en el portátil", tense: "Presente" },
+                { pt: "Eu fico cansado depois do trabalho", es: "Me pongo cansado después del trabajo", tense: "Presente" },
+                { pt: "Ela põe perfume nos pulsos", es: "Ella se pone perfume en las muñecas", tense: "Presente" },
+                { pt: "Tu pões-me pressão", es: "Tú me pones presión", tense: "Presente" },
+                { pt: "Ele põe os pés para cima", es: "Él pone los pies en alto", tense: "Presente" },
+                { pt: "Eu ponho o alarme para as 7", es: "Pongo la alarma para las 7", tense: "Presente" },
+                { pt: "Nós pomos os nossos nomes na lista", es: "Ponemos nuestros nombres en la lista", tense: "Presente" },
+                { pt: "Eles põem-me obstáculos", es: "Ellos me ponen obstáculos", tense: "Presente" },
+                { pt: "Tu ficas vermelho quando estás envergonhado", es: "Te pones rojo cuando estás avergonzado", tense: "Presente" },
+                { pt: "Ela põe natas no café", es: "Ella pone crema en su café", tense: "Presente" },
+                { pt: "Eu ponho os óculos para ler", es: "Me pongo las gafas para leer", tense: "Presente" },
+                { pt: "Ele põe as chaves no gancho", es: "Él pone sus llaves en el gancho", tense: "Presente" },
+                { pt: "Nós guardamos dinheiro para as férias", es: "Ponemos dinero aparte para vacaciones", tense: "Presente" },
+                { pt: "Eu ponho o lixo fora", es: "Pongo la basura fuera", tense: "Presente" },
+                { pt: "Ela prende o cabelo num rabo de cavalo", es: "Ella se pone el pelo en una coleta", tense: "Presente" },
+                { pt: "Tu pões o volume muito alto", es: "Pones el volumen muy alto", tense: "Presente" },
+                { pt: "Ele põe ketchup em tudo", es: "Él pone ketchup en todo", tense: "Presente" },
+                { pt: "Nós pomos uma manta no sofá", es: "Ponemos una manta en el sofá", tense: "Presente" },
+                { pt: "Eles põem decorações para o Natal", es: "Ellos ponen decoraciones para Navidad", tense: "Presente" },
+                { pt: "Eu fico sério quando é necessário", es: "Me pongo serio cuando es necesario", tense: "Presente" },
+                { pt: "Ela põe a conta na mesa", es: "Ella pone la cuenta en la mesa", tense: "Presente" },
+                { pt: "Tu pões-te em perigo", es: "Te pones en peligro", tense: "Presente" },
+                { pt: "Ele monta o puzzle", es: "Él pone el rompecabezas", tense: "Presente" },
+                { pt: "Eu pus a palavra-passe do Wi-Fi", es: "Puse la contraseña del Wi-Fi", tense: "Pretérito Indefinido" },
+                { pt: "Nós pusemos decorações ontem", es: "Pusimos decoraciones ayer", tense: "Pretérito Indefinido" },
+                { pt: "Ela pôs os sonhos de lado", es: "Ella puso sus sueños a un lado", tense: "Pretérito Indefinido" },
+                { pt: "Eles puseram tudo em ordem", es: "Ellos pusieron todo en orden", tense: "Pretérito Indefinido" },
+                { pt: "Tu deste um bom exemplo", es: "Pusiste un buen ejemplo", tense: "Pretérito Indefinido" },
+                { pt: "Eu fiquei muito zangado", es: "Me puse muy enfadado", tense: "Pretérito Indefinido" },
+                { pt: "Ele pôs um cadeado na porta", es: "Él puso un candado en la puerta", tense: "Pretérito Indefinido" },
+                { pt: "Nós pusemos o plano em ação", es: "Pusimos el plan en acción", tense: "Pretérito Indefinido" },
+                { pt: "Ela pôs o casaco na cadeira", es: "Ella puso su abrigo en la silla", tense: "Pretérito Indefinido" },
+                { pt: "Eu pus as compras no frigorífico", es: "Puse las compras en la nevera", tense: "Pretérito Indefinido" },
+                { pt: "Eles puseram a fé em Deus", es: "Ellos pusieron su fe en Dios", tense: "Pretérito Indefinido" },
+                { pt: "Tu puseste-me numa posição difícil", es: "Me pusiste en una posición difícil", tense: "Pretérito Indefinido" },
+                { pt: "Ele pôs o carro na garagem", es: "Él puso el coche en el garaje", tense: "Pretérito Indefinido" },
+                { pt: "Eu pus todas as cartas na mesa", es: "Puse todas mis cartas sobre la mesa", tense: "Pretérito Indefinido" },
+                { pt: "Nós pusemos a nossa esperança no futuro", es: "Pusimos nuestra esperanza en el futuro", tense: "Pretérito Indefinido" },
+                { pt: "Ela ficou muito emocionada com a notícia", es: "Ella se puso muy emocionada con la noticia", tense: "Pretérito Indefinido" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

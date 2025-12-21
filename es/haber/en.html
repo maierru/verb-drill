@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇪🇸 VERB HABER — 99 Phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Back to verb list</a>
+            <h1>🇪🇸 Verb HABER</h1>
+            <p class="subtitle">to have (auxiliary) — 99 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Show all translations</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
+        </div>
+
+        <div class="stats" id="stats">Showing: 99 of 99 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Spanish Practice — HABER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb HABER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Present tense - auxiliary for perfect tenses, 'hay' for there is/are</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>he</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>has</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>ha</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>hemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>habéis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>han</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Simple past - there was/were (completed action)</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>hube</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>hubiste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>hubo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>hubimos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>hubisteis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>hubieron</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Imperfect - there was/were (ongoing or habitual)</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>había</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>habías</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>había</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>habíamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>habíais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>habían</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Simple future - there will be</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>habré</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>habrás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>habrá</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>habremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>habréis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>habrán</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'en',
+            targetKey: 'es',
+            labels: { target: 'Spanish', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["he","has","ha","hay","hemos","habéis","han","había","hubo","habido"],
+            phrases: [
+                { en: "There is a book on the table.", es: "Hay un libro en la mesa.", tense: "Presente" },
+                { en: "There are many people here.", es: "Hay mucha gente aquí.", tense: "Presente" },
+                { en: "I have eaten.", es: "He comido.", tense: "Presente Perfecto" },
+                { en: "You have seen it.", es: "Has visto eso.", tense: "Presente Perfecto" },
+                { en: "She has arrived.", es: "Ella ha llegado.", tense: "Presente Perfecto" },
+                { en: "We have finished.", es: "Hemos terminado.", tense: "Presente Perfecto" },
+                { en: "They have left.", es: "Han salido.", tense: "Presente Perfecto" },
+                { en: "There was a problem.", es: "Había un problema.", tense: "Pretérito Imperfecto" },
+                { en: "There were three options.", es: "Había tres opciones.", tense: "Pretérito Imperfecto" },
+                { en: "I had already done it.", es: "Ya lo había hecho.", tense: "Pluscuamperfecto" },
+                { en: "He had said that.", es: "Él había dicho eso.", tense: "Pluscuamperfecto" },
+                { en: "There will be a party.", es: "Habrá una fiesta.", tense: "Futuro Simple" },
+                { en: "There will be problems.", es: "Habrá problemas.", tense: "Futuro Simple" },
+                { en: "I will have finished by then.", es: "Habré terminado para entonces.", tense: "Futuro Perfecto" },
+                { en: "Is there coffee?", es: "¿Hay café?", tense: "Presente" },
+                { en: "Are there any questions?", es: "¿Hay preguntas?", tense: "Presente" },
+                { en: "There is no time.", es: "No hay tiempo.", tense: "Presente" },
+                { en: "There isn't enough space.", es: "No hay suficiente espacio.", tense: "Presente" },
+                { en: "What is there to eat?", es: "¿Qué hay de comer?", tense: "Presente" },
+                { en: "How many are there?", es: "¿Cuántos hay?", tense: "Presente" },
+                { en: "There was nobody.", es: "No había nadie.", tense: "Pretérito Imperfecto" },
+                { en: "There were many cars.", es: "Había muchos coches.", tense: "Pretérito Imperfecto" },
+                { en: "I have never been there.", es: "Nunca he estado allí.", tense: "Presente Perfecto" },
+                { en: "Have you ever tried it?", es: "¿Alguna vez lo has probado?", tense: "Presente Perfecto" },
+                { en: "She has never said that.", es: "Ella nunca ha dicho eso.", tense: "Presente Perfecto" },
+                { en: "We have just arrived.", es: "Acabamos de llegar.", tense: "Presente Perfecto" },
+                { en: "They have already left.", es: "Ya se han ido.", tense: "Presente Perfecto" },
+                { en: "I haven't seen him.", es: "No lo he visto.", tense: "Presente Perfecto" },
+                { en: "You haven't told me.", es: "No me has dicho.", tense: "Presente Perfecto" },
+                { en: "He hasn't finished yet.", es: "Él no ha terminado todavía.", tense: "Presente Perfecto" },
+                { en: "We have lived here for years.", es: "Hemos vivido aquí durante años.", tense: "Presente Perfecto" },
+                { en: "They have worked hard.", es: "Han trabajado duro.", tense: "Presente Perfecto" },
+                { en: "There had been an accident.", es: "Había habido un accidente.", tense: "Pluscuamperfecto" },
+                { en: "She had forgotten it.", es: "Ella lo había olvidado.", tense: "Pluscuamperfecto" },
+                { en: "We had already paid.", es: "Ya habíamos pagado.", tense: "Pluscuamperfecto" },
+                { en: "They had come early.", es: "Habían venido temprano.", tense: "Pluscuamperfecto" },
+                { en: "I had never heard that.", es: "Nunca había oído eso.", tense: "Pluscuamperfecto" },
+                { en: "You had promised.", es: "Habías prometido.", tense: "Pluscuamperfecto" },
+                { en: "He had already gone.", es: "Él ya se había ido.", tense: "Pluscuamperfecto" },
+                { en: "There is a solution.", es: "Hay una solución.", tense: "Presente" },
+                { en: "There are options.", es: "Hay opciones.", tense: "Presente" },
+                { en: "Is there a doctor?", es: "¿Hay un médico?", tense: "Presente" },
+                { en: "There isn't any bread.", es: "No hay pan.", tense: "Presente" },
+                { en: "There are five students.", es: "Hay cinco estudiantes.", tense: "Presente" },
+                { en: "There's something wrong.", es: "Hay algo mal.", tense: "Presente" },
+                { en: "There is a lot to do.", es: "Hay mucho que hacer.", tense: "Presente" },
+                { en: "There was a fire.", es: "Hubo un incendio.", tense: "Pretérito Indefinido" },
+                { en: "There were complications.", es: "Hubo complicaciones.", tense: "Pretérito Indefinido" },
+                { en: "I have broken it.", es: "Lo he roto.", tense: "Presente Perfecto" },
+                { en: "You have learned a lot.", es: "Has aprendido mucho.", tense: "Presente Perfecto" },
+                { en: "She has written a book.", es: "Ella ha escrito un libro.", tense: "Presente Perfecto" },
+                { en: "We have decided.", es: "Hemos decidido.", tense: "Presente Perfecto" },
+                { en: "They have won.", es: "Han ganado.", tense: "Presente Perfecto" },
+                { en: "I have made a mistake.", es: "He cometido un error.", tense: "Presente Perfecto" },
+                { en: "You have changed.", es: "Has cambiado.", tense: "Presente Perfecto" },
+                { en: "He has lost his keys.", es: "Él ha perdido sus llaves.", tense: "Presente Perfecto" },
+                { en: "We have found it.", es: "Lo hemos encontrado.", tense: "Presente Perfecto" },
+                { en: "They have opened a store.", es: "Han abierto una tienda.", tense: "Presente Perfecto" },
+                { en: "There will be consequences.", es: "Habrá consecuencias.", tense: "Futuro Simple" },
+                { en: "There will be changes.", es: "Habrá cambios.", tense: "Futuro Simple" },
+                { en: "I will have learned by then.", es: "Habré aprendido para entonces.", tense: "Futuro Perfecto" },
+                { en: "You will have finished.", es: "Habrás terminado.", tense: "Futuro Perfecto" },
+                { en: "She will have left.", es: "Ella se habrá ido.", tense: "Futuro Perfecto" },
+                { en: "We will have arrived.", es: "Habremos llegado.", tense: "Futuro Perfecto" },
+                { en: "They will have seen it.", es: "Lo habrán visto.", tense: "Futuro Perfecto" },
+                { en: "There is hope.", es: "Hay esperanza.", tense: "Presente" },
+                { en: "There are many ways.", es: "Hay muchas maneras.", tense: "Presente" },
+                { en: "Is there a problem?", es: "¿Hay algún problema?", tense: "Presente" },
+                { en: "There aren't many left.", es: "No hay muchos que queden.", tense: "Presente" },
+                { en: "There was music.", es: "Había música.", tense: "Pretérito Imperfecto" },
+                { en: "There were children playing.", es: "Había niños jugando.", tense: "Pretérito Imperfecto" },
+                { en: "I have forgotten.", es: "He olvidado.", tense: "Presente Perfecto" },
+                { en: "You have understood.", es: "Has entendido.", tense: "Presente Perfecto" },
+                { en: "He has returned.", es: "Él ha vuelto.", tense: "Presente Perfecto" },
+                { en: "We have chosen.", es: "Hemos elegido.", tense: "Presente Perfecto" },
+                { en: "They have believed.", es: "Han creído.", tense: "Presente Perfecto" },
+                { en: "I had lived there.", es: "Había vivido allí.", tense: "Pluscuamperfecto" },
+                { en: "You had worked here.", es: "Habías trabajado aquí.", tense: "Pluscuamperfecto" },
+                { en: "He had studied medicine.", es: "Él había estudiado medicina.", tense: "Pluscuamperfecto" },
+                { en: "We had met before.", es: "Nos habíamos conocido antes.", tense: "Pluscuamperfecto" },
+                { en: "They had prepared everything.", es: "Habían preparado todo.", tense: "Pluscuamperfecto" },
+                { en: "There is a chance.", es: "Hay una oportunidad.", tense: "Presente" },
+                { en: "There are possibilities.", es: "Hay posibilidades.", tense: "Presente" },
+                { en: "There is nothing here.", es: "No hay nada aquí.", tense: "Presente" },
+                { en: "There are too many.", es: "Hay demasiados.", tense: "Presente" },
+                { en: "I have read it.", es: "Lo he leído.", tense: "Presente Perfecto" },
+                { en: "You have heard the news.", es: "Has oído las noticias.", tense: "Presente Perfecto" },
+                { en: "She has traveled a lot.", es: "Ella ha viajado mucho.", tense: "Presente Perfecto" },
+                { en: "We have spoken about it.", es: "Hemos hablado de ello.", tense: "Presente Perfecto" },
+                { en: "They have agreed.", es: "Han estado de acuerdo.", tense: "Presente Perfecto" },
+                { en: "I have been waiting.", es: "He estado esperando.", tense: "Presente Perfecto" },
+                { en: "You have been working.", es: "Has estado trabajando.", tense: "Presente Perfecto" },
+                { en: "He has been studying.", es: "Él ha estado estudiando.", tense: "Presente Perfecto" },
+                { en: "We have been living here.", es: "Hemos estado viviendo aquí.", tense: "Presente Perfecto" },
+                { en: "They have been trying.", es: "Han estado intentando.", tense: "Presente Perfecto" },
+                { en: "There was an error.", es: "Hubo un error.", tense: "Pretérito Indefinido" },
+                { en: "There were witnesses.", es: "Hubo testigos.", tense: "Pretérito Indefinido" },
+                { en: "There will be opportunities.", es: "Habrá oportunidades.", tense: "Futuro Simple" },
+                { en: "There will be time.", es: "Habrá tiempo.", tense: "Futuro Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

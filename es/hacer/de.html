@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇪🇸 VERB HACER — 97 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇪🇸 Verb HACER</h1>
+            <p class="subtitle">to do, to make — 97 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 97 von 97 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Spanisch-Übung — HACER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb HACER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Präsens - Handlungen die jetzt passieren oder gewohnheitsmäßige Handlungen</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo hago</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú haces</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted hace</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros hacemos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros hacéis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes hacen</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Indefinido - abgeschlossene Handlungen in der Vergangenheit</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo hice</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú hiciste</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted hizo</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros hicimos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros hicisteis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes hicieron</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Imperfekt - andauernde oder gewohnheitsmäßige Handlungen in der Vergangenheit</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo hacía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú hacías</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted hacía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros hacíamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros hacíais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes hacían</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Futur - Handlungen die passieren werden</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo haré</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú harás</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted hará</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros haremos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros haréis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes harán</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'es',
+            labels: { target: 'Spanisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["hago","haces","hace","hacemos","hacéis","hacen","hice","hizo","haré","haría"],
+            phrases: [
+                { de: "Was machst du?", es: "¿Qué haces?", tense: "Presente" },
+                { de: "Ich mache meine Hausaufgaben", es: "Hago mi tarea", tense: "Presente" },
+                { de: "Es ist kalt draußen", es: "Hace frío afuera", tense: "Presente" },
+                { de: "Es ist heute heiß", es: "Hace calor hoy", tense: "Presente" },
+                { de: "Wir brauchen Milch", es: "Nos hace falta leche", tense: "Presente" },
+                { de: "Sie macht jeden Abend das Abendessen", es: "Ella hace la cena cada noche", tense: "Presente" },
+                { de: "Ich habe einen Fehler gemacht", es: "Hice un error", tense: "Pretérito Indefinido" },
+                { de: "Sie haben ihr Bestes getan", es: "Hicieron lo mejor que pudieron", tense: "Pretérito Indefinido" },
+                { de: "Was hast du gestern gemacht?", es: "¿Qué hiciste ayer?", tense: "Pretérito Indefinido" },
+                { de: "Er hat einen Kuchen gemacht", es: "Él hizo un pastel", tense: "Pretérito Indefinido" },
+                { de: "Ich machte jeden Morgen Sport", es: "Hacía ejercicio cada mañana", tense: "Pretérito Imperfecto" },
+                { de: "Es war immer sonnig", es: "Siempre hacía sol", tense: "Pretérito Imperfecto" },
+                { de: "Wir werden es morgen machen", es: "Lo haremos mañana", tense: "Futuro Simple" },
+                { de: "Ich werde eine Entscheidung treffen", es: "Haré una decisión", tense: "Futuro Simple" },
+                { de: "Du musst dich ausruhen", es: "Te hace falta descansar", tense: "Presente" },
+                { de: "Ich wasche die Wäsche", es: "Hago la ropa", tense: "Presente" },
+                { de: "Er macht samstags die Einkäufe", es: "Él hace las compras los sábados", tense: "Presente" },
+                { de: "Wir haben einen Plan gemacht", es: "Hicimos un plan", tense: "Pretérito Indefinido" },
+                { de: "Es ist windig", es: "Hace viento", tense: "Presente" },
+                { de: "Es ist schönes Wetter", es: "Hace buen tiempo", tense: "Presente" },
+                { de: "Sie hat schnell Freunde gefunden", es: "Ella hizo amigos rápidamente", tense: "Pretérito Indefinido" },
+                { de: "Was machst du beruflich?", es: "¿Qué haces de trabajo?", tense: "Presente" },
+                { de: "Ich mache Yoga", es: "Hago yoga", tense: "Presente" },
+                { de: "Sie machen Lärm", es: "Hacen ruido", tense: "Presente" },
+                { de: "Es war sehr kalt", es: "Hacía mucho frío", tense: "Pretérito Imperfecto" },
+                { de: "Du wirst einen großen Eindruck machen", es: "Harás una gran impresión", tense: "Futuro Simple" },
+                { de: "Ich mache Kaffee", es: "Hago café", tense: "Presente" },
+                { de: "Er hat ein Versprechen gemacht", es: "Él hizo una promesa", tense: "Pretérito Indefinido" },
+                { de: "Wir machten das Abendessen zusammen", es: "Hacíamos la cena juntos", tense: "Pretérito Imperfecto" },
+                { de: "Sie werden das Projekt machen", es: "Harán el proyecto", tense: "Futuro Simple" },
+                { de: "Ich brauche mehr Zeit", es: "Me hace falta más tiempo", tense: "Presente" },
+                { de: "Es ist zwei Jahre her", es: "Hace dos años", tense: "Presente" },
+                { de: "Sie macht ihre Arbeit gut", es: "Ella hace bien su trabajo", tense: "Presente" },
+                { de: "Ich habe eine Reservierung gemacht", es: "Hice una reserva", tense: "Pretérito Indefinido" },
+                { de: "Was machst du?", es: "¿Qué haces?", tense: "Presente" },
+                { de: "Er verdient viel Geld", es: "Él hace mucho dinero", tense: "Presente" },
+                { de: "Wir haben alles Mögliche getan", es: "Hicimos todo lo posible", tense: "Pretérito Indefinido" },
+                { de: "Es ist schlechtes Wetter", es: "Hace mal tiempo", tense: "Presente" },
+                { de: "Ich machte Sport", es: "Hacía deportes", tense: "Pretérito Imperfecto" },
+                { de: "Sie werden Geschichte schreiben", es: "Harán historia", tense: "Futuro Simple" },
+                { de: "Du machst mich glücklich", es: "Me haces feliz", tense: "Presente" },
+                { de: "Ich mache es gut", es: "Lo hago bien", tense: "Presente" },
+                { de: "Sie hat sich bemüht", es: "Ella hizo un esfuerzo", tense: "Pretérito Indefinido" },
+                { de: "Es war gestern warm", es: "Hacía calor ayer", tense: "Pretérito Imperfecto" },
+                { de: "Wir werden es Wirklichkeit werden lassen", es: "Lo haremos realidad", tense: "Futuro Simple" },
+                { de: "Ich brauche Hilfe", es: "Me hace falta ayuda", tense: "Presente" },
+                { de: "Er spült das Geschirr", es: "Él hace los platos", tense: "Presente" },
+                { de: "Sie haben ein Video gemacht", es: "Hicieron un video", tense: "Pretérito Indefinido" },
+                { de: "Was hat sie gemacht?", es: "¿Qué hizo ella?", tense: "Pretérito Indefinido" },
+                { de: "Ich gebe mein Bestes", es: "Hago mi mejor esfuerzo", tense: "Presente" },
+                { de: "Es ist sonnig", es: "Hace sol", tense: "Presente" },
+                { de: "Du hast eine gute Wahl getroffen", es: "Hiciste una buena elección", tense: "Pretérito Indefinido" },
+                { de: "Sie machte Brot", es: "Ella hacía pan", tense: "Pretérito Imperfecto" },
+                { de: "Wir werden unsere Pflicht erfüllen", es: "Haremos nuestro deber", tense: "Futuro Simple" },
+                { de: "Ich mache das Mittagessen", es: "Hago el almuerzo", tense: "Presente" },
+                { de: "Er macht Zaubertricks", es: "Él hace trucos de magia", tense: "Presente" },
+                { de: "Sie haben einen Film gemacht", es: "Hicieron una película", tense: "Pretérito Indefinido" },
+                { de: "Es ist neblig", es: "Hace niebla", tense: "Presente" },
+                { de: "Ich machte Spielzeug", es: "Hacía juguetes", tense: "Pretérito Imperfecto" },
+                { de: "Du wirst es gut machen", es: "Lo harás bien", tense: "Futuro Simple" },
+                { de: "Wir brauchen Geld", es: "Nos hace falta dinero", tense: "Presente" },
+                { de: "Sie macht Schmuck", es: "Ella hace joyería", tense: "Presente" },
+                { de: "Ich habe eine Liste gemacht", es: "Hice una lista", tense: "Pretérito Indefinido" },
+                { de: "Was machen sie?", es: "¿Qué hacen ellos?", tense: "Presente" },
+                { de: "Er hat eine Zeichnung gemacht", es: "Él hizo un dibujo", tense: "Pretérito Indefinido" },
+                { de: "Es war bewölkt", es: "Hacía nublado", tense: "Pretérito Imperfecto" },
+                { de: "Wir werden Fortschritte machen", es: "Haremos progreso", tense: "Futuro Simple" },
+                { de: "Ich mache sauber", es: "Hago la limpieza", tense: "Presente" },
+                { de: "Sie machen Geschäfte", es: "Hacen negocios", tense: "Presente" },
+                { de: "Du hast mich zum Lachen gebracht", es: "Me hiciste reír", tense: "Pretérito Indefinido" },
+                { de: "Sie machte Bastelarbeiten", es: "Ella hacía manualidades", tense: "Pretérito Imperfecto" },
+                { de: "Ich werde Zeit finden", es: "Haré tiempo", tense: "Futuro Simple" },
+                { de: "Er macht einen Anruf", es: "Él hace una llamada", tense: "Presente" },
+                { de: "Wir haben Suppe gemacht", es: "Hicimos sopa", tense: "Pretérito Indefinido" },
+                { de: "Es ist drei Monate her", es: "Hace tres meses", tense: "Presente" },
+                { de: "Ich brauche Mut", es: "Me hace falta valor", tense: "Presente" },
+                { de: "Sie machen Kunst", es: "Hacen arte", tense: "Presente" },
+                { de: "Du hast einen Gefallen getan", es: "Hiciste un favor", tense: "Pretérito Indefinido" },
+                { de: "Sie wird eine Rede halten", es: "Ella hará un discurso", tense: "Futuro Simple" },
+                { de: "Ich mache Pläne", es: "Hago planes", tense: "Presente" },
+                { de: "Er hat ein Sandwich gemacht", es: "Él hizo un sándwich", tense: "Pretérito Indefinido" },
+                { de: "Es war schönes Wetter", es: "Hacía buen tiempo", tense: "Pretérito Imperfecto" },
+                { de: "Wir werden Übungen machen", es: "Haremos ejercicios", tense: "Futuro Simple" },
+                { de: "Ich bügele", es: "Hago la plancha", tense: "Presente" },
+                { de: "Sie haben einen Deal gemacht", es: "Hicieron un trato", tense: "Pretérito Indefinido" },
+                { de: "Du machst mich nervös", es: "Me haces nervioso", tense: "Presente" },
+                { de: "Sie fand Ausreden", es: "Ella hacía excusas", tense: "Pretérito Imperfecto" },
+                { de: "Ich werde einen Termin vereinbaren", es: "Haré una cita", tense: "Futuro Simple" },
+                { de: "Er macht Freiwilligenarbeit", es: "Él hace trabajo voluntario", tense: "Presente" },
+                { de: "Wir haben Erinnerungen geschaffen", es: "Hicimos recuerdos", tense: "Pretérito Indefinido" },
+                { de: "Es ist kühl", es: "Hace fresco", tense: "Presente" },
+                { de: "Ich brauche Geduld", es: "Me hace falta paciencia", tense: "Presente" },
+                { de: "Sie werden Forschung betreiben", es: "Harán investigación", tense: "Futuro Simple" },
+                { de: "Das macht Sinn", es: "Tienes razón", tense: "Presente" },
+                { de: "Sie hat Änderungen vorgenommen", es: "Ella hizo cambios", tense: "Pretérito Indefinido" },
+                { de: "Ich machte nachts Hausaufgaben", es: "Hacía la tarea de noche", tense: "Pretérito Imperfecto" },
+                { de: "Er wird Vorkehrungen treffen", es: "Él hará arreglos", tense: "Futuro Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇪🇸 VERB VENIR — 94 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇪🇸 Verb VENIR</h1>
+            <p class="subtitle">to come — 94 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 94 von 94 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Spanisch-Übung — VENIR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb VENIR</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Präsens - Kommen, aktuelle Bewegung</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>vengo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>vienes</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>viene</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>venimos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>venís</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>vienen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Indefinido - kam, abgeschlossene Ankünfte</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>vine</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>viniste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>vino</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>vinimos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>vinisteis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>vinieron</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Imperfekt - kam (gewöhnlich), pflegte zu kommen</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>venía</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>venías</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>venía</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>veníamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>veníais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>venían</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Futur - wird kommen</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>vendré</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>vendrás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>vendrá</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>vendremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>vendréis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>vendrán</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'es',
+            labels: { target: 'Spanisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["vengo","vienes","viene","venimos","venís","vienen","vine","vino","venía","venido"],
+            phrases: [
+                { de: "Ich komme aus Spanien.", es: "Vengo de España.", tense: "Presente" },
+                { de: "Sie kommt jeden Tag hierher.", es: "Ella viene aquí todos los días.", tense: "Presente" },
+                { de: "Sie kommen zur Party.", es: "Ellos vienen a la fiesta.", tense: "Presente" },
+                { de: "Wir kommen aus der Stadt.", es: "Venimos de la ciudad.", tense: "Presente" },
+                { de: "Woher kommst du?", es: "¿De dónde vienes?", tense: "Presente" },
+                { de: "Er kommt spät von der Arbeit.", es: "Él viene del trabajo tarde.", tense: "Presente" },
+                { de: "Ich habe gerade gegessen.", es: "Vengo de comer.", tense: "Presente" },
+                { de: "Das kommt gelegen.", es: "Esto viene bien.", tense: "Presente" },
+                { de: "Das passt mir nicht.", es: "Eso no me viene bien.", tense: "Presente" },
+                { de: "Sie kommen rennend.", es: "Vienen corriendo.", tense: "Presente" },
+                { de: "Ich kam gestern.", es: "Vine ayer.", tense: "Pretérito Indefinido" },
+                { de: "Sie kam, um mich zu sehen.", es: "Ella vino a verme.", tense: "Pretérito Indefinido" },
+                { de: "Wir kamen mit dem Auto.", es: "Vinimos en coche.", tense: "Pretérito Indefinido" },
+                { de: "Sie kamen aus Madrid.", es: "Vinieron de Madrid.", tense: "Pretérito Indefinido" },
+                { de: "Er kam allein.", es: "Él vino solo.", tense: "Pretérito Indefinido" },
+                { de: "Wann kamst du?", es: "¿Cuándo viniste?", tense: "Pretérito Indefinido" },
+                { de: "Ich kam oft hierher.", es: "Yo venía aquí a menudo.", tense: "Pretérito Imperfecto" },
+                { de: "Sie kam, als ich anrief.", es: "Ella venía cuando llamé.", tense: "Pretérito Imperfecto" },
+                { de: "Wir kamen jeden Sommer.", es: "Veníamos cada verano.", tense: "Pretérito Imperfecto" },
+                { de: "Sie kamen von der Schule.", es: "Venían del colegio.", tense: "Pretérito Imperfecto" },
+                { de: "Ich werde morgen kommen.", es: "Vendré mañana.", tense: "Futuro Simple" },
+                { de: "Sie wird mit uns kommen.", es: "Ella vendrá con nosotros.", tense: "Futuro Simple" },
+                { de: "Wir werden zu Besuch kommen.", es: "Vendremos de visita.", tense: "Futuro Simple" },
+                { de: "Sie werden um acht kommen.", es: "Vendrán a las ocho.", tense: "Futuro Simple" },
+                { de: "Wirst du zum Abendessen kommen?", es: "¿Vendrás a cenar?", tense: "Futuro Simple" },
+                { de: "Ich komme aus einer kleinen Stadt.", es: "Vengo de un pueblo pequeño.", tense: "Presente" },
+                { de: "Der Bus kommt um sechs.", es: "El autobús viene a las seis.", tense: "Presente" },
+                { de: "Komm her!", es: "¡Ven aquí!", tense: "Imperativo" },
+                { de: "Komm mit mir.", es: "Ven conmigo.", tense: "Imperativo" },
+                { de: "Sie kommen aus verschiedenen Ländern.", es: "Vienen de diferentes países.", tense: "Presente" },
+                { de: "Ich komme!", es: "¡Ya voy!", tense: "Presente" },
+                { de: "Sie kommt aus einer reichen Familie.", es: "Ella viene de una familia rica.", tense: "Presente" },
+                { de: "Wir kamen, um zu helfen.", es: "Vinimos a ayudar.", tense: "Pretérito Indefinido" },
+                { de: "Er kam nach Hause.", es: "Él vino a casa.", tense: "Pretérito Indefinido" },
+                { de: "Ich komme vom Fitnessstudio.", es: "Vengo del gimnasio.", tense: "Presente" },
+                { de: "Diese Größe passt mir gut.", es: "Esta talla me viene bien.", tense: "Presente" },
+                { de: "Der Regen kommt aus dem Norden.", es: "La lluvia viene del norte.", tense: "Presente" },
+                { de: "Probleme kommen und gehen.", es: "Los problemas vienen y van.", tense: "Presente" },
+                { de: "Er kommt und geht, wie er will.", es: "Él viene y va como quiere.", tense: "Presente" },
+                { de: "Ich kam zum Studieren.", es: "Vine a estudiar.", tense: "Pretérito Indefinido" },
+                { de: "Sie kam rennend, um es mir zu sagen.", es: "Ella vino corriendo a decirme.", tense: "Pretérito Indefinido" },
+                { de: "Wir kamen vorbereitet.", es: "Vinimos preparados.", tense: "Pretérito Indefinido" },
+                { de: "Sie kamen unerwartet.", es: "Vinieron inesperadamente.", tense: "Pretérito Indefinido" },
+                { de: "Du kamst zum richtigen Zeitpunkt.", es: "Viniste en el momento justo.", tense: "Pretérito Indefinido" },
+                { de: "Ich kam, um dich zu sehen.", es: "Venía a verte.", tense: "Pretérito Imperfecto" },
+                { de: "Sie kam jeden Montag.", es: "Ella venía todos los lunes.", tense: "Pretérito Imperfecto" },
+                { de: "Wir kamen vom Strand.", es: "Veníamos de la playa.", tense: "Pretérito Imperfecto" },
+                { de: "Sie kamen öfter.", es: "Venían más a menudo.", tense: "Pretérito Imperfecto" },
+                { de: "Er kam mit dem Zug zur Arbeit.", es: "Él venía al trabajo en tren.", tense: "Pretérito Imperfecto" },
+                { de: "Ich werde so bald wie möglich kommen.", es: "Vendré lo antes posible.", tense: "Futuro Simple" },
+                { de: "Sie wird kommen, wenn sie kann.", es: "Ella vendrá si puede.", tense: "Futuro Simple" },
+                { de: "Wir werden bald zurückkommen.", es: "Volveremos pronto.", tense: "Futuro Simple" },
+                { de: "Sie werden dich abholen.", es: "Vendrán a recogerte.", tense: "Futuro Simple" },
+                { de: "Wann wirst du kommen?", es: "¿Cuándo vendrás?", tense: "Futuro Simple" },
+                { de: "Ich komme müde von der Arbeit.", es: "Vengo del trabajo cansado.", tense: "Presente" },
+                { de: "Gute Dinge kommen zu denen, die warten.", es: "Las cosas buenas vienen a los que esperan.", tense: "Presente" },
+                { de: "Sie kommt aus guter Familie.", es: "Ella viene de buena familia.", tense: "Presente" },
+                { de: "Wir kommen in Frieden.", es: "Venimos en paz.", tense: "Presente" },
+                { de: "Sie kommen mit Geschenken.", es: "Vienen trayendo regalos.", tense: "Presente" },
+                { de: "Ich traf einen alten Freund.", es: "Me encontré con un viejo amigo.", tense: "Pretérito Indefinido" },
+                { de: "Die Idee kam mir plötzlich.", es: "La idea se me vino de repente.", tense: "Pretérito Indefinido" },
+                { de: "Wir kamen zu einer Einigung.", es: "Llegamos a un acuerdo.", tense: "Pretérito Indefinido" },
+                { de: "Alles lief perfekt.", es: "Todo salió perfecto.", tense: "Pretérito Indefinido" },
+                { de: "Das Paket kam heute Morgen.", es: "El paquete vino esta mañana.", tense: "Pretérito Indefinido" },
+                { de: "Pech kam auf mich zu.", es: "La mala suerte me venía encima.", tense: "Pretérito Imperfecto" },
+                { de: "Erinnerungen kamen zurück.", es: "Los recuerdos venían de vuelta.", tense: "Pretérito Imperfecto" },
+                { de: "Ich kam zur gleichen Schlussfolgerung.", es: "Yo venía a la misma conclusión.", tense: "Pretérito Imperfecto" },
+                { de: "Veränderung kam.", es: "El cambio venía.", tense: "Pretérito Imperfecto" },
+                { de: "Sie kamen näher.", es: "Venían más cerca.", tense: "Pretérito Imperfecto" },
+                { de: "Ich werde kommen, was auch passiert.", es: "Vendré pase lo que pase.", tense: "Futuro Simple" },
+                { de: "Sie wird schließlich ihre Meinung ändern.", es: "Ella cambiará de opinión eventualmente.", tense: "Futuro Simple" },
+                { de: "Bessere Tage werden kommen.", es: "Vendrán días mejores.", tense: "Futuro Simple" },
+                { de: "Die Wahrheit wird ans Licht kommen.", es: "La verdad saldrá a la luz.", tense: "Futuro Simple" },
+                { de: "Ich werde mit Neuigkeiten kommen.", es: "Vendré con noticias.", tense: "Futuro Simple" },
+                { de: "Woher kommst du?", es: "¿De dónde vienes?", tense: "Presente" },
+                { de: "Ich komme aus dem Urlaub.", es: "Vengo de vacaciones.", tense: "Presente" },
+                { de: "Das passt mir überhaupt nicht.", es: "Esto no me viene nada bien.", tense: "Presente" },
+                { de: "Das Hemd passt mir perfekt.", es: "La camisa me viene perfecta.", tense: "Presente" },
+                { de: "Hilfe kommt, wenn man sie am wenigsten erwartet.", es: "La ayuda viene cuando menos lo esperas.", tense: "Presente" },
+                { de: "Wir kamen von weit her.", es: "Venimos de muy lejos.", tense: "Pretérito Indefinido" },
+                { de: "Eine großartige Gelegenheit ergab sich.", es: "Surgió una gran oportunidad.", tense: "Pretérito Indefinido" },
+                { de: "Der Sturm kam ohne Vorwarnung.", es: "La tormenta vino sin avisar.", tense: "Pretérito Indefinido" },
+                { de: "Die Inspiration kam um Mitternacht.", es: "La inspiración vino a medianoche.", tense: "Pretérito Indefinido" },
+                { de: "Wir kamen zum Feiern.", es: "Vinimos a celebrar.", tense: "Pretérito Indefinido" },
+                { de: "Gäste kamen den ganzen Abend.", es: "Los invitados venían toda la tarde.", tense: "Pretérito Imperfecto" },
+                { de: "Der Winter kam früh.", es: "El invierno venía temprano.", tense: "Pretérito Imperfecto" },
+                { de: "Die Antworten kamen zu mir.", es: "Las respuestas me venían.", tense: "Pretérito Imperfecto" },
+                { de: "Der Erfolg kam langsam.", es: "El éxito venía lentamente.", tense: "Pretérito Imperfecto" },
+                { de: "Wir fanden uns damit ab.", es: "Lo íbamos aceptando.", tense: "Pretérito Imperfecto" },
+                { de: "Deine Zeit wird kommen.", es: "Tu momento llegará.", tense: "Futuro Simple" },
+                { de: "Der Frühling wird wiederkommen.", es: "La primavera volverá.", tense: "Futuro Simple" },
+                { de: "Sie werden es bereuen.", es: "Se arrepentirán de esto.", tense: "Futuro Simple" },
+                { de: "Alles wird zum Ausgangspunkt zurückkehren.", es: "Todo volverá al punto inicial.", tense: "Futuro Simple" },
+                { de: "Der Moment wird kommen, an dem wir uns wiedersehen.", es: "Llegará el momento en que nos volvamos a ver.", tense: "Futuro Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇪🇸 VERB QUERER — 98 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇪🇸 Verb QUERER</h1>
+            <p class="subtitle">to want — 98 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 98 de 98 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Prática de espanhol — QUERER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb QUERER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Presente - usado para desejos atuais</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo quiero</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú quieres</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted quiere</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros queremos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros queréis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes quieren</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Pretérito perfeito - usado para desejos completos no passado</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo quise</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú quisiste</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted quiso</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros quisimos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros quisisteis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes quisieron</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Pretérito imperfeito - usado para desejos contínuos ou habituais no passado</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo quería</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú querías</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted quería</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros queríamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros queríais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes querían</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Futuro simples - usado para desejos futuros</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo querré</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú querrás</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted querrá</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros querremos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros querréis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes querrán</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'es',
+            labels: { target: 'Español', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["quiero","quieres","quiere","queremos","queréis","quieren","quise","quisiera","querré"],
+            phrases: [
+                { pt: "Eu quero aprender espanhol", es: "Quiero aprender español", tense: "Presente" },
+                { pt: "Queres café?", es: "¿Quieres café?", tense: "Presente" },
+                { pt: "Ela quer viajar", es: "Ella quiere viajar", tense: "Presente" },
+                { pt: "Queremos comer", es: "Queremos comer", tense: "Presente" },
+                { pt: "Eles querem mais tempo", es: "Quieren más tiempo", tense: "Presente" },
+                { pt: "Eu amo-te", es: "Te quiero", tense: "Presente" },
+                { pt: "Eu quis ir", es: "Quise ir", tense: "Pretérito Indefinido" },
+                { pt: "Ela quis falar", es: "Ella quiso hablar", tense: "Pretérito Indefinido" },
+                { pt: "Eu gostaria de água", es: "Quisiera agua", tense: "Pretérito Imperfecto Subjuntivo" },
+                { pt: "Queríamos uma casa", es: "Queríamos una casa", tense: "Pretérito Imperfecto" },
+                { pt: "Eu quero dormir", es: "Quiero dormir", tense: "Presente" },
+                { pt: "Queres dançar?", es: "¿Quieres bailar?", tense: "Presente" },
+                { pt: "Ele quer ajuda", es: "Él quiere ayuda", tense: "Presente" },
+                { pt: "Eu quero este livro", es: "Quiero este libro", tense: "Presente" },
+                { pt: "Eles querem paz", es: "Quieren paz", tense: "Presente" },
+                { pt: "Eu vou querer ver-te", es: "Querré verte", tense: "Futuro Simple" },
+                { pt: "Eu queria dizer-te", es: "Quería decirte", tense: "Pretérito Imperfecto" },
+                { pt: "Ela quer um cão", es: "Ella quiere un perro", tense: "Presente" },
+                { pt: "Queremos trabalhar", es: "Queremos trabajar", tense: "Presente" },
+                { pt: "Eu amo a minha família", es: "Quiero a mi familia", tense: "Presente" },
+                { pt: "Queres algo?", es: "¿Quieres algo?", tense: "Presente" },
+                { pt: "Eu quero descansar", es: "Quiero descansar", tense: "Presente" },
+                { pt: "Eles quiseram sair", es: "Quisieron salir", tense: "Pretérito Indefinido" },
+                { pt: "Eu gostaria de perguntar", es: "Quisiera preguntar", tense: "Pretérito Imperfecto Subjuntivo" },
+                { pt: "Ela quer respostas", es: "Ella quiere respuestas", tense: "Presente" },
+                { pt: "Queremos justiça", es: "Queremos justicia", tense: "Presente" },
+                { pt: "Eu quero entender", es: "Quiero entender", tense: "Presente" },
+                { pt: "Ele queria dinheiro", es: "Él quería dinero", tense: "Pretérito Imperfecto" },
+                { pt: "Eu quero viver aqui", es: "Quiero vivir aquí", tense: "Presente" },
+                { pt: "Queres vir?", es: "¿Quieres venir?", tense: "Presente" },
+                { pt: "Eles querem liberdade", es: "Quieren libertad", tense: "Presente" },
+                { pt: "Eu queria saber", es: "Quería saber", tense: "Pretérito Imperfecto" },
+                { pt: "Ela quer estudar", es: "Ella quiere estudiar", tense: "Presente" },
+                { pt: "Nós amamo-nos", es: "Nos queremos", tense: "Presente" },
+                { pt: "Eu quero a verdade", es: "Quiero la verdad", tense: "Presente" },
+                { pt: "Eu gostaria de tentar", es: "Quisiera intentar", tense: "Pretérito Imperfecto Subjuntivo" },
+                { pt: "Ele quer ganhar", es: "Él quiere ganar", tense: "Presente" },
+                { pt: "Eu quis ajudar", es: "Quise ayudar", tense: "Pretérito Indefinido" },
+                { pt: "Eles querem comida", es: "Quieren comida", tense: "Presente" },
+                { pt: "Eu quero ser feliz", es: "Quiero ser feliz", tense: "Presente" },
+                { pt: "Queres chá?", es: "¿Quieres té?", tense: "Presente" },
+                { pt: "Ela queria chorar", es: "Ella quería llorar", tense: "Pretérito Imperfecto" },
+                { pt: "Queremos uma mudança", es: "Queremos un cambio", tense: "Presente" },
+                { pt: "Eu quero acreditar", es: "Quiero creer", tense: "Presente" },
+                { pt: "Eu amo-te muito", es: "Te quiero mucho", tense: "Presente" },
+                { pt: "Ele quer poder", es: "Él quiere poder", tense: "Presente" },
+                { pt: "Eu queria esquecer", es: "Quería olvidar", tense: "Pretérito Imperfecto" },
+                { pt: "Eles querem vingança", es: "Quieren venganza", tense: "Presente" },
+                { pt: "Eu quero escrever", es: "Quiero escribir", tense: "Presente" },
+                { pt: "Gostaria de vinho?", es: "¿Quisiera vino?", tense: "Pretérito Imperfecto Subjuntivo" },
+                { pt: "Ela quer atenção", es: "Ella quiere atención", tense: "Presente" },
+                { pt: "Queríamos escapar", es: "Queríamos escapar", tense: "Pretérito Imperfecto" },
+                { pt: "Eu quero cantar", es: "Quiero cantar", tense: "Presente" },
+                { pt: "Eu quis ficar", es: "Quise quedarme", tense: "Pretérito Indefinido" },
+                { pt: "Queres mais?", es: "¿Quieres más?", tense: "Presente" },
+                { pt: "Ele quer respeito", es: "Él quiere respeto", tense: "Presente" },
+                { pt: "Eu quero lembrar", es: "Quiero recordar", tense: "Presente" },
+                { pt: "Eles quiseram brigar", es: "Quisieron pelear", tense: "Pretérito Indefinido" },
+                { pt: "Eu gostaria de comentar", es: "Quisiera comentar", tense: "Pretérito Imperfecto Subjuntivo" },
+                { pt: "Ela quer amor", es: "Ella quiere amor", tense: "Presente" },
+                { pt: "Queremos ouvir", es: "Queremos escuchar", tense: "Presente" },
+                { pt: "Eu quero correr", es: "Quiero correr", tense: "Presente" },
+                { pt: "Eu queria ler", es: "Quería leer", tense: "Pretérito Imperfecto" },
+                { pt: "Ele queria ir embora", es: "Él quería irse", tense: "Pretérito Imperfecto" },
+                { pt: "Eu quero jogar", es: "Quiero jugar", tense: "Presente" },
+                { pt: "Queres sobremesa?", es: "¿Quieres postre?", tense: "Presente" },
+                { pt: "Eles querem resultados", es: "Quieren resultados", tense: "Presente" },
+                { pt: "Eu quero cozinhar", es: "Quiero cocinar", tense: "Presente" },
+                { pt: "Ela queria rir", es: "Ella quería reír", tense: "Pretérito Imperfecto" },
+                { pt: "Amamos os nossos filhos", es: "Queremos a nuestros hijos", tense: "Presente" },
+                { pt: "Eu quero pintar", es: "Quiero pintar", tense: "Presente" },
+                { pt: "Eu gostaria de explicar", es: "Quisiera explicar", tense: "Pretérito Imperfecto Subjuntivo" },
+                { pt: "Ele quer sucesso", es: "Él quiere éxito", tense: "Presente" },
+                { pt: "Eu queria sonhar", es: "Quería soñar", tense: "Pretérito Imperfecto" },
+                { pt: "Eles querem celebrar", es: "Quieren celebrar", tense: "Presente" },
+                { pt: "Eu quero nadar", es: "Quiero nadar", tense: "Presente" },
+                { pt: "Queres falar?", es: "¿Quieres hablar?", tense: "Presente" },
+                { pt: "Ela quer respostas agora", es: "Ella quiere respuestas ahora", tense: "Presente" },
+                { pt: "Queríamos um milagre", es: "Queríamos un milagro", tense: "Pretérito Imperfecto" },
+                { pt: "Eu quero voar", es: "Quiero volar", tense: "Presente" },
+                { pt: "Eu quis acreditar em ti", es: "Quise creerte", tense: "Pretérito Indefinido" },
+                { pt: "Ele quer chocolate", es: "Él quiere chocolate", tense: "Presente" },
+                { pt: "Eu quero crescer", es: "Quiero crecer", tense: "Presente" },
+                { pt: "Eles quiseram esconder-se", es: "Quisieron esconderse", tense: "Pretérito Indefinido" },
+                { pt: "Eu gostaria de juntar-me", es: "Quisiera unirme", tense: "Pretérito Imperfecto Subjuntivo" },
+                { pt: "Ela quer flores", es: "Ella quiere flores", tense: "Presente" },
+                { pt: "Queremos partilhar", es: "Queremos compartir", tense: "Presente" },
+                { pt: "Eu quero explorar", es: "Quiero explorar", tense: "Presente" },
+                { pt: "Eu queria gritar", es: "Quería gritar", tense: "Pretérito Imperfecto" },
+                { pt: "Queres pizza?", es: "¿Quieres pizza?", tense: "Presente" },
+                { pt: "Ele quer aventura", es: "Él quiere aventura", tense: "Presente" },
+                { pt: "Eu quero criar", es: "Quiero crear", tense: "Presente" },
+                { pt: "Eles queriam silêncio", es: "Querían silencio", tense: "Pretérito Imperfecto" },
+                { pt: "Eu amo-o", es: "Lo quiero", tense: "Presente" },
+                { pt: "Ela quer beijar-te", es: "Ella quiere besarte", tense: "Presente" },
+                { pt: "Queremos rezar", es: "Queremos rezar", tense: "Presente" },
+                { pt: "Eu quero construir", es: "Quiero construir", tense: "Presente" },
+                { pt: "Eu gostaria de sugerir", es: "Quisiera sugerir", tense: "Pretérito Imperfecto Subjuntivo" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

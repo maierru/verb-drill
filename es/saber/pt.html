@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇪🇸 VERB SABER — 98 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇪🇸 Verb SABER</h1>
+            <p class="subtitle">to know (facts) — 98 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 98 de 98 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Prática de espanhol — SABER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb SABER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Presente - usado para fatos que você sabe agora</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo sé</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú sabes</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted sabe</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros sabemos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros sabéis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes saben</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Pretérito perfeito - usado para quando você soube/descobriu algo</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo supe</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú supiste</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted supo</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros supimos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros supisteis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes supieron</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Pretérito imperfeito - usado para fatos que você sabia antes</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo sabía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú sabías</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted sabía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros sabíamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros sabíais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes sabían</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Futuro simples - usado para fatos que você saberá</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo sabré</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú sabrás</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted sabrá</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros sabremos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros sabréis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes sabrán</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'es',
+            labels: { target: 'Español', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["sé","sabes","sabe","sabemos","sabéis","saben","sabía","supe","sabré","sabría"],
+            phrases: [
+                { pt: "Eu sei o teu nome", es: "Sé tu nombre", tense: "Presente" },
+                { pt: "Sabes a resposta?", es: "¿Sabes la respuesta?", tense: "Presente" },
+                { pt: "Ela sabe a verdade", es: "Ella sabe la verdad", tense: "Presente" },
+                { pt: "Sabemos o caminho", es: "Sabemos el camino", tense: "Presente" },
+                { pt: "Eles sabem as regras", es: "Ellos saben las reglas", tense: "Presente" },
+                { pt: "Eu sei nadar", es: "Sé nadar", tense: "Presente" },
+                { pt: "Sabes cozinhar?", es: "¿Sabes cocinar?", tense: "Presente" },
+                { pt: "Ele sabe conduzir", es: "Él sabe conducir", tense: "Presente" },
+                { pt: "Sabemos dançar", es: "Sabemos bailar", tense: "Presente" },
+                { pt: "Eles sabem falar espanhol", es: "Ellos saben hablar español", tense: "Presente" },
+                { pt: "Não sei", es: "No sé", tense: "Presente" },
+                { pt: "Não sei o que fazer", es: "No sé qué hacer", tense: "Presente" },
+                { pt: "Não sei onde está", es: "No sé dónde está", tense: "Presente" },
+                { pt: "Não sei porquê", es: "No sé por qué", tense: "Presente" },
+                { pt: "Não sei como", es: "No sé cómo", tense: "Presente" },
+                { pt: "Sabes o quê?", es: "¿Sabes qué?", tense: "Presente" },
+                { pt: "Sabes o que quero dizer?", es: "¿Sabes lo que quiero decir?", tense: "Presente" },
+                { pt: "Sabes que horas são?", es: "¿Sabes qué hora es?", tense: "Presente" },
+                { pt: "Ninguém sabe", es: "Nadie sabe", tense: "Presente" },
+                { pt: "Toda a gente sabe", es: "Todo el mundo sabe", tense: "Presente" },
+                { pt: "Sei de cor", es: "Lo sé de memoria", tense: "Presente" },
+                { pt: "Quem sabe?", es: "¿Quién sabe?", tense: "Presente" },
+                { pt: "Que eu saiba", es: "Que yo sepa", tense: "Presente" },
+                { pt: "Quero saber", es: "Quiero saber", tense: "Presente" },
+                { pt: "Preciso de saber", es: "Necesito saber", tense: "Presente" },
+                { pt: "Sabe a frango", es: "Sabe a pollo", tense: "Presente" },
+                { pt: "Sabe bem", es: "Sabe bien", tense: "Presente" },
+                { pt: "Sabe mal", es: "Sabe mal", tense: "Presente" },
+                { pt: "Não sabe a nada", es: "No sabe a nada", tense: "Presente" },
+                { pt: "A que sabe?", es: "¿A qué sabe?", tense: "Presente" },
+                { pt: "Eu sabia!", es: "¡Lo sabía!", tense: "Pretérito Imperfecto" },
+                { pt: "Eu sabia que virias", es: "Sabía que vendrías", tense: "Pretérito Imperfecto" },
+                { pt: "Ela sabia a resposta", es: "Ella sabía la respuesta", tense: "Pretérito Imperfecto" },
+                { pt: "Sabíamos a verdade", es: "Sabíamos la verdad", tense: "Pretérito Imperfecto" },
+                { pt: "Eles sabiam tudo", es: "Ellos sabían todo", tense: "Pretérito Imperfecto" },
+                { pt: "Não sabia", es: "No sabía", tense: "Pretérito Imperfecto" },
+                { pt: "Não sabia isso", es: "No sabía eso", tense: "Pretérito Imperfecto" },
+                { pt: "Sabias?", es: "¿Sabías?", tense: "Pretérito Imperfecto" },
+                { pt: "Como sabias?", es: "¿Cómo lo sabías?", tense: "Pretérito Imperfecto" },
+                { pt: "Já sabia", es: "Ya lo sabía", tense: "Pretérito Imperfecto" },
+                { pt: "Soube ontem", es: "Lo supe ayer", tense: "Pretérito Indefinido" },
+                { pt: "Quando soubeste?", es: "¿Cuándo lo supiste?", tense: "Pretérito Indefinido" },
+                { pt: "Ela soube a verdade", es: "Ella supo la verdad", tense: "Pretérito Indefinido" },
+                { pt: "Soubemos tarde demais", es: "Lo supimos demasiado tarde", tense: "Pretérito Indefinido" },
+                { pt: "Eles nunca souberam", es: "Ellos nunca lo supieron", tense: "Pretérito Indefinido" },
+                { pt: "Acabei de saber", es: "Acabo de saberlo", tense: "Presente" },
+                { pt: "Como é que ele soube?", es: "¿Cómo lo supo?", tense: "Pretérito Indefinido" },
+                { pt: "Soube por acaso", es: "Lo supe por casualidad", tense: "Pretérito Indefinido" },
+                { pt: "Soubemos da pior forma", es: "Lo supimos por las malas", tense: "Pretérito Indefinido" },
+                { pt: "Saberás em breve", es: "Lo sabrás pronto", tense: "Futuro Simple" },
+                { pt: "Saberei amanhã", es: "Lo sabré mañana", tense: "Futuro Simple" },
+                { pt: "Saberemos os resultados", es: "Sabremos los resultados", tense: "Futuro Simple" },
+                { pt: "Eles saberão eventualmente", es: "Ellos lo sabrán eventualmente", tense: "Futuro Simple" },
+                { pt: "Nunca saberás", es: "Nunca lo sabrás", tense: "Futuro Simple" },
+                { pt: "O tempo dirá", es: "El tiempo lo dirá", tense: "Futuro Simple" },
+                { pt: "Sei o que estás a pensar", es: "Sé lo que estás pensando", tense: "Presente" },
+                { pt: "Sei onde vives", es: "Sé dónde vives", tense: "Presente" },
+                { pt: "Sei quem és", es: "Sé quién eres", tense: "Presente" },
+                { pt: "Sei quando saíste", es: "Sé cuándo te fuiste", tense: "Presente" },
+                { pt: "Conheces o meu irmão?", es: "¿Conoces a mi hermano?", tense: "Presente" },
+                { pt: "Sei espanhol", es: "Sé español", tense: "Presente" },
+                { pt: "Ela sabe três idiomas", es: "Ella sabe tres idiomas", tense: "Presente" },
+                { pt: "Conheço bem a cidade", es: "Conozco bien la ciudad", tense: "Presente" },
+                { pt: "Sei com certeza", es: "Lo sé con certeza", tense: "Presente" },
+                { pt: "Sei ao certo", es: "Lo sé a ciencia cierta", tense: "Presente" },
+                { pt: "Como sabes", es: "Como sabes", tense: "Presente" },
+                { pt: "Como todos sabemos", es: "Como todos sabemos", tense: "Presente" },
+                { pt: "Avisa-me", es: "Avísame", tense: "Imperativo" },
+                { pt: "Por favor, diz-me", es: "Por favor, hazme saber", tense: "Imperativo" },
+                { pt: "Oxalá soubesse", es: "Ojalá lo supiera", tense: "Subjuntivo" },
+                { pt: "Se eu soubesse", es: "Si lo supiera", tense: "Subjuntivo" },
+                { pt: "Devia ter sabido", es: "Debería haberlo sabido", tense: "Condicional" },
+                { pt: "Como é que eu ia saber?", es: "¿Cómo iba yo a saber?", tense: "Pretérito Imperfecto" },
+                { pt: "Nunca se sabe", es: "Nunca se sabe", tense: "Presente" },
+                { pt: "Deus sabe", es: "Dios sabe", tense: "Presente" },
+                { pt: "Vai-se lá saber", es: "Vaya usted a saber", tense: "Presente" },
+                { pt: "Eu sei melhor", es: "Sé mejor que eso", tense: "Presente" },
+                { pt: "Devias saber melhor", es: "Deberías saberlo mejor", tense: "Condicional" },
+                { pt: "Não sei nada sobre isso", es: "No sé nada de eso", tense: "Presente" },
+                { pt: "Sei tudo sobre ela", es: "Sé todo sobre ella", tense: "Presente" },
+                { pt: "Sei algo que tu não sabes", es: "Sé algo que tú no sabes", tense: "Presente" },
+                { pt: "Sabes alguma coisa?", es: "¿Sabes algo?", tense: "Presente" },
+                { pt: "Sei o suficiente", es: "Sé lo suficiente", tense: "Presente" },
+                { pt: "Não sei o suficiente", es: "No sé lo suficiente", tense: "Presente" },
+                { pt: "Sei demasiado", es: "Sé demasiado", tense: "Presente" },
+                { pt: "Quanto mais sabes", es: "Cuanto más sabes", tense: "Presente" },
+                { pt: "Quero que saibas", es: "Quiero que sepas", tense: "Subjuntivo" },
+                { pt: "Preciso que saibas", es: "Necesito que sepas", tense: "Subjuntivo" },
+                { pt: "Devias saber", es: "Deberías saber", tense: "Condicional" },
+                { pt: "Deves saber", es: "Debes saber", tense: "Presente" },
+                { pt: "Toda a gente devia saber", es: "Todo el mundo debería saber", tense: "Condicional" },
+                { pt: "Fico contente por saber", es: "Me alegra saber", tense: "Presente" },
+                { pt: "É bom saber", es: "Es bueno saber", tense: "Presente" },
+                { pt: "É importante saber", es: "Es importante saber", tense: "Presente" },
+                { pt: "Odeio dizer-te, mas sei", es: "Odio decírtelo, pero lo sé", tense: "Presente" },
+                { pt: "Acho que sei", es: "Creo que sé", tense: "Presente" },
+                { pt: "Pensei que sabia", es: "Pensé que sabía", tense: "Pretérito Imperfecto" },
+                { pt: "Sei o que vi", es: "Sé lo que vi", tense: "Presente" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

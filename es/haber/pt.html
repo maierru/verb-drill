@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇪🇸 VERB HABER — 99 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇪🇸 Verb HABER</h1>
+            <p class="subtitle">to have (auxiliary) — 99 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 99 de 99 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Prática de espanhol — HABER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb HABER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Presente - auxiliar para tempos perfeitos, 'hay' para há/existe</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>he</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>has</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>ha</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>hemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>habéis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>han</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Pretérito perfeito - houve (ação concluída)</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>hube</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>hubiste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>hubo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>hubimos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>hubisteis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>hubieron</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Pretérito imperfeito - havia (contínuo ou habitual)</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>había</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>habías</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>había</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>habíamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>habíais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>habían</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Futuro simples - haverá</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>habré</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>habrás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>habrá</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>habremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>habréis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>habrán</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'es',
+            labels: { target: 'Español', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["he","has","ha","hay","hemos","habéis","han","había","hubo","habido"],
+            phrases: [
+                { pt: "Há um livro na mesa.", es: "Hay un libro en la mesa.", tense: "Presente" },
+                { pt: "Há muita gente aqui.", es: "Hay mucha gente aquí.", tense: "Presente" },
+                { pt: "Eu comi.", es: "He comido.", tense: "Presente Perfecto" },
+                { pt: "Tu viste isso.", es: "Has visto eso.", tense: "Presente Perfecto" },
+                { pt: "Ela chegou.", es: "Ella ha llegado.", tense: "Presente Perfecto" },
+                { pt: "Nós terminámos.", es: "Hemos terminado.", tense: "Presente Perfecto" },
+                { pt: "Eles saíram.", es: "Han salido.", tense: "Presente Perfecto" },
+                { pt: "Havia um problema.", es: "Había un problema.", tense: "Pretérito Imperfecto" },
+                { pt: "Havia três opções.", es: "Había tres opciones.", tense: "Pretérito Imperfecto" },
+                { pt: "Eu já o tinha feito.", es: "Ya lo había hecho.", tense: "Pluscuamperfecto" },
+                { pt: "Ele tinha dito isso.", es: "Él había dicho eso.", tense: "Pluscuamperfecto" },
+                { pt: "Haverá uma festa.", es: "Habrá una fiesta.", tense: "Futuro Simple" },
+                { pt: "Haverá problemas.", es: "Habrá problemas.", tense: "Futuro Simple" },
+                { pt: "Terei terminado até lá.", es: "Habré terminado para entonces.", tense: "Futuro Perfecto" },
+                { pt: "Há café?", es: "¿Hay café?", tense: "Presente" },
+                { pt: "Há perguntas?", es: "¿Hay preguntas?", tense: "Presente" },
+                { pt: "Não há tempo.", es: "No hay tiempo.", tense: "Presente" },
+                { pt: "Não há espaço suficiente.", es: "No hay suficiente espacio.", tense: "Presente" },
+                { pt: "O que há para comer?", es: "¿Qué hay de comer?", tense: "Presente" },
+                { pt: "Quantos há?", es: "¿Cuántos hay?", tense: "Presente" },
+                { pt: "Não havia ninguém.", es: "No había nadie.", tense: "Pretérito Imperfecto" },
+                { pt: "Havia muitos carros.", es: "Había muchos coches.", tense: "Pretérito Imperfecto" },
+                { pt: "Nunca estive lá.", es: "Nunca he estado allí.", tense: "Presente Perfecto" },
+                { pt: "Já provaste isso?", es: "¿Alguna vez lo has probado?", tense: "Presente Perfecto" },
+                { pt: "Ela nunca disse isso.", es: "Ella nunca ha dicho eso.", tense: "Presente Perfecto" },
+                { pt: "Acabámos de chegar.", es: "Acabamos de llegar.", tense: "Presente Perfecto" },
+                { pt: "Já se foram.", es: "Ya se han ido.", tense: "Presente Perfecto" },
+                { pt: "Não o vi.", es: "No lo he visto.", tense: "Presente Perfecto" },
+                { pt: "Não me disseste.", es: "No me has dicho.", tense: "Presente Perfecto" },
+                { pt: "Ele ainda não terminou.", es: "Él no ha terminado todavía.", tense: "Presente Perfecto" },
+                { pt: "Vivemos aqui há anos.", es: "Hemos vivido aquí durante años.", tense: "Presente Perfecto" },
+                { pt: "Trabalharam muito.", es: "Han trabajado duro.", tense: "Presente Perfecto" },
+                { pt: "Tinha havido um acidente.", es: "Había habido un accidente.", tense: "Pluscuamperfecto" },
+                { pt: "Ela tinha esquecido.", es: "Ella lo había olvidado.", tense: "Pluscuamperfecto" },
+                { pt: "Já tínhamos pagado.", es: "Ya habíamos pagado.", tense: "Pluscuamperfecto" },
+                { pt: "Tinham vindo cedo.", es: "Habían venido temprano.", tense: "Pluscuamperfecto" },
+                { pt: "Nunca tinha ouvido isso.", es: "Nunca había oído eso.", tense: "Pluscuamperfecto" },
+                { pt: "Tinhas prometido.", es: "Habías prometido.", tense: "Pluscuamperfecto" },
+                { pt: "Ele já tinha ido.", es: "Él ya se había ido.", tense: "Pluscuamperfecto" },
+                { pt: "Há uma solução.", es: "Hay una solución.", tense: "Presente" },
+                { pt: "Há opções.", es: "Hay opciones.", tense: "Presente" },
+                { pt: "Há um médico?", es: "¿Hay un médico?", tense: "Presente" },
+                { pt: "Não há pão.", es: "No hay pan.", tense: "Presente" },
+                { pt: "Há cinco estudantes.", es: "Hay cinco estudiantes.", tense: "Presente" },
+                { pt: "Há algo errado.", es: "Hay algo mal.", tense: "Presente" },
+                { pt: "Há muito para fazer.", es: "Hay mucho que hacer.", tense: "Presente" },
+                { pt: "Houve um incêndio.", es: "Hubo un incendio.", tense: "Pretérito Indefinido" },
+                { pt: "Houve complicações.", es: "Hubo complicaciones.", tense: "Pretérito Indefinido" },
+                { pt: "Parti-o.", es: "Lo he roto.", tense: "Presente Perfecto" },
+                { pt: "Aprendeste muito.", es: "Has aprendido mucho.", tense: "Presente Perfecto" },
+                { pt: "Ela escreveu um livro.", es: "Ella ha escrito un libro.", tense: "Presente Perfecto" },
+                { pt: "Decidimos.", es: "Hemos decidido.", tense: "Presente Perfecto" },
+                { pt: "Ganharam.", es: "Han ganado.", tense: "Presente Perfecto" },
+                { pt: "Cometi um erro.", es: "He cometido un error.", tense: "Presente Perfecto" },
+                { pt: "Mudaste.", es: "Has cambiado.", tense: "Presente Perfecto" },
+                { pt: "Ele perdeu as chaves.", es: "Él ha perdido sus llaves.", tense: "Presente Perfecto" },
+                { pt: "Encontrámo-lo.", es: "Lo hemos encontrado.", tense: "Presente Perfecto" },
+                { pt: "Abriram uma loja.", es: "Han abierto una tienda.", tense: "Presente Perfecto" },
+                { pt: "Haverá consequências.", es: "Habrá consecuencias.", tense: "Futuro Simple" },
+                { pt: "Haverá mudanças.", es: "Habrá cambios.", tense: "Futuro Simple" },
+                { pt: "Terei aprendido até lá.", es: "Habré aprendido para entonces.", tense: "Futuro Perfecto" },
+                { pt: "Terás terminado.", es: "Habrás terminado.", tense: "Futuro Perfecto" },
+                { pt: "Ela terá ido.", es: "Ella se habrá ido.", tense: "Futuro Perfecto" },
+                { pt: "Teremos chegado.", es: "Habremos llegado.", tense: "Futuro Perfecto" },
+                { pt: "Terão visto.", es: "Lo habrán visto.", tense: "Futuro Perfecto" },
+                { pt: "Há esperança.", es: "Hay esperanza.", tense: "Presente" },
+                { pt: "Há muitas maneiras.", es: "Hay muchas maneras.", tense: "Presente" },
+                { pt: "Há algum problema?", es: "¿Hay algún problema?", tense: "Presente" },
+                { pt: "Não há muitos que restem.", es: "No hay muchos que queden.", tense: "Presente" },
+                { pt: "Havia música.", es: "Había música.", tense: "Pretérito Imperfecto" },
+                { pt: "Havia crianças a brincar.", es: "Había niños jugando.", tense: "Pretérito Imperfecto" },
+                { pt: "Esqueci.", es: "He olvidado.", tense: "Presente Perfecto" },
+                { pt: "Entendeste.", es: "Has entendido.", tense: "Presente Perfecto" },
+                { pt: "Ele voltou.", es: "Él ha vuelto.", tense: "Presente Perfecto" },
+                { pt: "Escolhemos.", es: "Hemos elegido.", tense: "Presente Perfecto" },
+                { pt: "Acreditaram.", es: "Han creído.", tense: "Presente Perfecto" },
+                { pt: "Tinha vivido lá.", es: "Había vivido allí.", tense: "Pluscuamperfecto" },
+                { pt: "Tinhas trabalhado aqui.", es: "Habías trabajado aquí.", tense: "Pluscuamperfecto" },
+                { pt: "Ele tinha estudado medicina.", es: "Él había estudiado medicina.", tense: "Pluscuamperfecto" },
+                { pt: "Tínhamo-nos conhecido antes.", es: "Nos habíamos conocido antes.", tense: "Pluscuamperfecto" },
+                { pt: "Tinham preparado tudo.", es: "Habían preparado todo.", tense: "Pluscuamperfecto" },
+                { pt: "Há uma oportunidade.", es: "Hay una oportunidad.", tense: "Presente" },
+                { pt: "Há possibilidades.", es: "Hay posibilidades.", tense: "Presente" },
+                { pt: "Não há nada aqui.", es: "No hay nada aquí.", tense: "Presente" },
+                { pt: "Há demasiados.", es: "Hay demasiados.", tense: "Presente" },
+                { pt: "Li-o.", es: "Lo he leído.", tense: "Presente Perfecto" },
+                { pt: "Ouviste as notícias.", es: "Has oído las noticias.", tense: "Presente Perfecto" },
+                { pt: "Ela viajou muito.", es: "Ella ha viajado mucho.", tense: "Presente Perfecto" },
+                { pt: "Falámos sobre isso.", es: "Hemos hablado de ello.", tense: "Presente Perfecto" },
+                { pt: "Concordaram.", es: "Han estado de acuerdo.", tense: "Presente Perfecto" },
+                { pt: "Tenho estado à espera.", es: "He estado esperando.", tense: "Presente Perfecto" },
+                { pt: "Tens estado a trabalhar.", es: "Has estado trabajando.", tense: "Presente Perfecto" },
+                { pt: "Ele tem estado a estudar.", es: "Él ha estado estudiando.", tense: "Presente Perfecto" },
+                { pt: "Temos estado a viver aqui.", es: "Hemos estado viviendo aquí.", tense: "Presente Perfecto" },
+                { pt: "Têm estado a tentar.", es: "Han estado intentando.", tense: "Presente Perfecto" },
+                { pt: "Houve um erro.", es: "Hubo un error.", tense: "Pretérito Indefinido" },
+                { pt: "Houve testemunhas.", es: "Hubo testigos.", tense: "Pretérito Indefinido" },
+                { pt: "Haverá oportunidades.", es: "Habrá oportunidades.", tense: "Futuro Simple" },
+                { pt: "Haverá tempo.", es: "Habrá tiempo.", tense: "Futuro Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

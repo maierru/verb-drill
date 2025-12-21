@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇪🇸 VERB SER — 94 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇪🇸 Verb SER</h1>
+            <p class="subtitle">to be (permanent) — 94 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 94 de 94 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Prática de espanhol — SER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb SER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Presente - estados permanentes, identidade, características, origem</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>soy</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>eres</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>es</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>somos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>sois</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>son</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Pretérito perfeito simples - ações completas no passado</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>fui</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>fuiste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>fue</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>fuimos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>fuisteis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>fueron</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Pretérito imperfeito - estados contínuos ou habituais no passado</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>era</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>eras</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>era</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>éramos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>erais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>eran</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Futuro simples - será</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>seré</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>serás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>será</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>seremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>seréis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>serán</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'es',
+            labels: { target: 'Español', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["soy","eres","es","somos","sois","son","fui","fuiste","fue","fuimos","fuisteis","fueron","era","eras","éramos","erais","eran","seré","serás","será","seremos","seréis","serán"],
+            phrases: [
+                { pt: "Sou médico.", es: "Soy médico.", tense: "Presente" },
+                { pt: "És muito inteligente.", es: "Eres muy inteligente.", tense: "Presente" },
+                { pt: "Ela é de Espanha.", es: "Ella es de España.", tense: "Presente" },
+                { pt: "Somos felizes.", es: "Somos felices.", tense: "Presente" },
+                { pt: "São estudantes.", es: "Son estudiantes.", tense: "Presente" },
+                { pt: "Sois amáveis.", es: "Sois amables.", tense: "Presente" },
+                { pt: "É importante.", es: "Es importante.", tense: "Presente" },
+                { pt: "Sou mexicano.", es: "Soy mexicano.", tense: "Presente" },
+                { pt: "Tens razão.", es: "Eres correcto.", tense: "Presente" },
+                { pt: "É o meu irmão.", es: "Es mi hermano.", tense: "Presente" },
+                { pt: "Somos colegas.", es: "Somos colegas.", tense: "Presente" },
+                { pt: "São artistas.", es: "Son artistas.", tense: "Presente" },
+                { pt: "Esta é a verdade.", es: "Esta es la verdad.", tense: "Presente" },
+                { pt: "Sou católico.", es: "Soy católico.", tense: "Presente" },
+                { pt: "És linda.", es: "Eres hermosa.", tense: "Presente" },
+                { pt: "Ela é generosa.", es: "Ella es generosa.", tense: "Presente" },
+                { pt: "Somos humanos.", es: "Somos humanos.", tense: "Presente" },
+                { pt: "Sois responsáveis.", es: "Sois responsables.", tense: "Presente" },
+                { pt: "São profissionais.", es: "Son profesionales.", tense: "Presente" },
+                { pt: "Sou engenheiro.", es: "Soy ingeniero.", tense: "Presente" },
+                { pt: "É necessário.", es: "Es necesario.", tense: "Presente" },
+                { pt: "És honesto.", es: "Eres honesto.", tense: "Presente" },
+                { pt: "É o meu professor.", es: "Es mi profesor.", tense: "Presente" },
+                { pt: "Somos amigos.", es: "Somos amigos.", tense: "Presente" },
+                { pt: "São advogados.", es: "Son abogados.", tense: "Presente" },
+                { pt: "Fui jovem.", es: "Fui joven.", tense: "Pretérito Indefinido" },
+                { pt: "Foste o campeão.", es: "Fuiste el campeón.", tense: "Pretérito Indefinido" },
+                { pt: "Ela foi a diretora.", es: "Ella fue la directora.", tense: "Pretérito Indefinido" },
+                { pt: "Fomos a Madrid.", es: "Fuimos a Madrid.", tense: "Pretérito Indefinido" },
+                { pt: "Foram corajosos.", es: "Fueron valientes.", tense: "Pretérito Indefinido" },
+                { pt: "Fostes incorretos.", es: "Fuisteis incorrectos.", tense: "Pretérito Indefinido" },
+                { pt: "Foi incrível.", es: "Fue increíble.", tense: "Pretérito Indefinido" },
+                { pt: "Fui o líder.", es: "Fui el líder.", tense: "Pretérito Indefinido" },
+                { pt: "Foste sortudo.", es: "Fuiste afortunado.", tense: "Pretérito Indefinido" },
+                { pt: "Foi presidente.", es: "Fue presidente.", tense: "Pretérito Indefinido" },
+                { pt: "Fomos sócios.", es: "Fuimos socios.", tense: "Pretérito Indefinido" },
+                { pt: "Foram testemunhas.", es: "Fueron testigos.", tense: "Pretérito Indefinido" },
+                { pt: "Foi uma surpresa.", es: "Fue una sorpresa.", tense: "Pretérito Indefinido" },
+                { pt: "Fui o vencedor.", es: "Fui el ganador.", tense: "Pretérito Indefinido" },
+                { pt: "Foste incrível.", es: "Fuiste increíble.", tense: "Pretérito Indefinido" },
+                { pt: "Ela foi uma grande pessoa.", es: "Ella fue una gran persona.", tense: "Pretérito Indefinido" },
+                { pt: "Fomos voluntários.", es: "Fuimos voluntarios.", tense: "Pretérito Indefinido" },
+                { pt: "Fostes os melhores.", es: "Fuisteis los mejores.", tense: "Pretérito Indefinido" },
+                { pt: "Foram os donos.", es: "Fueron los dueños.", tense: "Pretérito Indefinido" },
+                { pt: "Era sempre otimista.", es: "Era siempre optimista.", tense: "Pretérito Imperfecto" },
+                { pt: "Eras muito paciente.", es: "Eras muy paciente.", tense: "Pretérito Imperfecto" },
+                { pt: "Ela era uma boa amiga.", es: "Ella era una buena amiga.", tense: "Pretérito Imperfecto" },
+                { pt: "Éramos vizinhos.", es: "Éramos vecinos.", tense: "Pretérito Imperfecto" },
+                { pt: "Eram colegas de turma.", es: "Eran compañeros de clase.", tense: "Pretérito Imperfecto" },
+                { pt: "Éreis pontuais.", es: "Erais puntuales.", tense: "Pretérito Imperfecto" },
+                { pt: "Era comum.", es: "Era común.", tense: "Pretérito Imperfecto" },
+                { pt: "Era tímido em criança.", es: "Era tímido de niño.", tense: "Pretérito Imperfecto" },
+                { pt: "Eras criativo.", es: "Eras creativo.", tense: "Pretérito Imperfecto" },
+                { pt: "Era muito alto.", es: "Era muy alto.", tense: "Pretérito Imperfecto" },
+                { pt: "Éramos jovens.", es: "Éramos jóvenes.", tense: "Pretérito Imperfecto" },
+                { pt: "Eram famosos.", es: "Eran famosos.", tense: "Pretérito Imperfecto" },
+                { pt: "Era normal.", es: "Era normal.", tense: "Pretérito Imperfecto" },
+                { pt: "Era idealista.", es: "Era idealista.", tense: "Pretérito Imperfecto" },
+                { pt: "Eras romântico.", es: "Eras romántico.", tense: "Pretérito Imperfecto" },
+                { pt: "Ela era dedicada.", es: "Ella era dedicada.", tense: "Pretérito Imperfecto" },
+                { pt: "Éramos ambiciosos.", es: "Éramos ambiciosos.", tense: "Pretérito Imperfecto" },
+                { pt: "Éreis entusiastas.", es: "Erais entusiastas.", tense: "Pretérito Imperfecto" },
+                { pt: "Eram organizados.", es: "Eran organizados.", tense: "Pretérito Imperfecto" },
+                { pt: "Serei piloto.", es: "Seré piloto.", tense: "Futuro Simple" },
+                { pt: "Serás bem-sucedido.", es: "Serás exitoso.", tense: "Futuro Simple" },
+                { pt: "Ela será a diretora.", es: "Ella será la directora.", tense: "Futuro Simple" },
+                { pt: "Seremos espertos.", es: "Seremos listos.", tense: "Futuro Simple" },
+                { pt: "Serão felizes.", es: "Serán felices.", tense: "Futuro Simple" },
+                { pt: "Sereis campeões.", es: "Seréis campeones.", tense: "Futuro Simple" },
+                { pt: "Será difícil.", es: "Será difícil.", tense: "Futuro Simple" },
+                { pt: "Estarei lá.", es: "Seré allí.", tense: "Futuro Simple" },
+                { pt: "Serás famoso.", es: "Serás famoso.", tense: "Futuro Simple" },
+                { pt: "Será o chefe.", es: "Será el jefe.", tense: "Futuro Simple" },
+                { pt: "Seremos voluntários.", es: "Seremos voluntarios.", tense: "Futuro Simple" },
+                { pt: "Serão gratos.", es: "Serán agradecidos.", tense: "Futuro Simple" },
+                { pt: "Será maravilhoso.", es: "Será maravilloso.", tense: "Futuro Simple" },
+                { pt: "Serei honesto.", es: "Seré honesto.", tense: "Futuro Simple" },
+                { pt: "Serás perfeito.", es: "Serás perfecto.", tense: "Futuro Simple" },
+                { pt: "Ela será a capitã.", es: "Ella será la capitana.", tense: "Futuro Simple" },
+                { pt: "Estaremos seguros.", es: "Seremos seguros.", tense: "Futuro Simple" },
+                { pt: "Sereis importantes.", es: "Seréis importantes.", tense: "Futuro Simple" },
+                { pt: "Serão pioneiros.", es: "Serán pioneros.", tense: "Futuro Simple" },
+                { pt: "Sou arquiteto.", es: "Soy arquitecto.", tense: "Presente" },
+                { pt: "És especial.", es: "Eres especial.", tense: "Presente" },
+                { pt: "É argentino.", es: "Es argentino.", tense: "Presente" },
+                { pt: "Somos uma equipa.", es: "Somos un equipo.", tense: "Presente" },
+                { pt: "São cantores.", es: "Son cantantes.", tense: "Presente" },
+                { pt: "Fui confiante.", es: "Fui confiado.", tense: "Pretérito Indefinido" },
+                { pt: "Foi perfeito.", es: "Fue perfecto.", tense: "Pretérito Indefinido" },
+                { pt: "Foste amável.", es: "Fuiste amable.", tense: "Pretérito Indefinido" },
+                { pt: "Ela era tranquila.", es: "Ella era tranquila.", tense: "Pretérito Imperfecto" },
+                { pt: "Éramos curiosos.", es: "Éramos curiosos.", tense: "Pretérito Imperfecto" },
+                { pt: "Serei melhor.", es: "Seré mejor.", tense: "Futuro Simple" },
+                { pt: "Será fácil.", es: "Será fácil.", tense: "Futuro Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

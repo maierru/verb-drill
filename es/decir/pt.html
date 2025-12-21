@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇪🇸 VERB DECIR — 100 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇪🇸 Verb DECIR</h1>
+            <p class="subtitle">to say, to tell — 100 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 100 de 100 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Prática de espanhol — DECIR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb DECIR</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Presente - dizer</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>digo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>dices</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>dice</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>decimos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>decís</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>dicen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Pretérito perfeito - disse</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>dije</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>dijiste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>dijo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>dijimos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>dijisteis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>dijeron</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Imperfeito - dizia</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>decía</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>decías</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>decía</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>decíamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>decíais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>decían</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Futuro simples - dirá</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>diré</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>dirás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>dirá</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>diremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>diréis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>dirán</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'es',
+            labels: { target: 'Español', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["digo","dices","dice","decimos","decís","dicen","dije","dijiste","dijo","dijimos","dijeron","decía","dirá","diría"],
+            phrases: [
+                { pt: "Eu digo que sim.", es: "Digo que sí.", tense: "Presente" },
+                { pt: "Dizes a verdade.", es: "Dices la verdad.", tense: "Presente" },
+                { pt: "Ele diz que não.", es: "Dice que no.", tense: "Presente" },
+                { pt: "Ela diz olá.", es: "Ella dice hola.", tense: "Presente" },
+                { pt: "Dizemos adeus.", es: "Decimos adiós.", tense: "Presente" },
+                { pt: "Dizem que é verdade.", es: "Dicen que es verdad.", tense: "Presente" },
+                { pt: "O que dizes?", es: "¿Qué dices?", tense: "Presente" },
+                { pt: "Sempre digo a verdade.", es: "Siempre digo la verdad.", tense: "Presente" },
+                { pt: "Dizem que ela vem.", es: "Dicen que ella viene.", tense: "Presente" },
+                { pt: "Como se diz isso?", es: "¿Cómo se dice eso?", tense: "Presente" },
+                { pt: "Ele nunca diz nada.", es: "Él nunca dice nada.", tense: "Presente" },
+                { pt: "Não digo isso.", es: "No digo eso.", tense: "Presente" },
+                { pt: "O que quer dizer?", es: "¿Qué quiere decir?", tense: "Presente" },
+                { pt: "Ela diz que está cansada.", es: "Ella dice que está cansada.", tense: "Presente" },
+                { pt: "As pessoas dizem que é difícil.", es: "La gente dice que es difícil.", tense: "Presente" },
+                { pt: "Só digo o que penso.", es: "Solo digo lo que pienso.", tense: "Presente" },
+                { pt: "Dizes em espanhol.", es: "Lo dices en español.", tense: "Presente" },
+                { pt: "Ele diz obrigado.", es: "Dice gracias.", tense: "Presente" },
+                { pt: "Não dizemos nada.", es: "No decimos nada.", tense: "Presente" },
+                { pt: "Dizem sempre o mesmo.", es: "Siempre dicen lo mismo.", tense: "Presente" },
+                { pt: "Disse que sim.", es: "Dije que sí.", tense: "Pretérito Indefinido" },
+                { pt: "Disseste-me a verdade.", es: "Me dijiste la verdad.", tense: "Pretérito Indefinido" },
+                { pt: "Disse que não.", es: "Dijo que no.", tense: "Pretérito Indefinido" },
+                { pt: "Ela disse-me um segredo.", es: "Me dijo un secreto.", tense: "Pretérito Indefinido" },
+                { pt: "Dissemos adeus.", es: "Dijimos adiós.", tense: "Pretérito Indefinido" },
+                { pt: "Não disseram nada.", es: "No dijeron nada.", tense: "Pretérito Indefinido" },
+                { pt: "O que disseste?", es: "¿Qué dijiste?", tense: "Pretérito Indefinido" },
+                { pt: "Eu disse-te!", es: "¡Te lo dije!", tense: "Pretérito Indefinido" },
+                { pt: "Ela disse que vinha.", es: "Dijo que venía.", tense: "Pretérito Indefinido" },
+                { pt: "Ele disse-lhe tudo.", es: "Le dijo todo.", tense: "Pretérito Indefinido" },
+                { pt: "Não dissemos nada.", es: "No dijimos nada.", tense: "Pretérito Indefinido" },
+                { pt: "Disseram-me ontem.", es: "Me lo dijeron ayer.", tense: "Pretérito Indefinido" },
+                { pt: "Quem disse isso?", es: "¿Quién dijo eso?", tense: "Pretérito Indefinido" },
+                { pt: "Disseste que ajudarias.", es: "Dijiste que ayudarías.", tense: "Pretérito Indefinido" },
+                { pt: "Disse olá.", es: "Dije hola.", tense: "Pretérito Indefinido" },
+                { pt: "Ela não disse nada.", es: "Ella no dijo nada.", tense: "Pretérito Indefinido" },
+                { pt: "Disse que era impossível.", es: "Dijo que era imposible.", tense: "Pretérito Indefinido" },
+                { pt: "Dissemos-lhes as notícias.", es: "Les dijimos las noticias.", tense: "Pretérito Indefinido" },
+                { pt: "Disseste mal.", es: "Lo dijiste mal.", tense: "Pretérito Indefinido" },
+                { pt: "Sempre dizia a verdade.", es: "Siempre decía la verdad.", tense: "Pretérito Imperfecto" },
+                { pt: "Tu dizias isso.", es: "Tú decías eso.", tense: "Pretérito Imperfecto" },
+                { pt: "Ele dizia adeus.", es: "Él decía adiós.", tense: "Pretérito Imperfecto" },
+                { pt: "Ela contava-me histórias.", es: "Ella me decía cuentos.", tense: "Pretérito Imperfecto" },
+                { pt: "Dizíamos isso.", es: "Lo decíamos.", tense: "Pretérito Imperfecto" },
+                { pt: "Diziam-no todos os dias.", es: "Lo decían cada día.", tense: "Pretérito Imperfecto" },
+                { pt: "O que dizias?", es: "¿Qué decías?", tense: "Pretérito Imperfecto" },
+                { pt: "Dizia a verdade.", es: "Decía la verdad.", tense: "Pretérito Imperfecto" },
+                { pt: "Ele dizia sempre que não.", es: "Siempre decía que no.", tense: "Pretérito Imperfecto" },
+                { pt: "Diziam mal.", es: "Lo decían mal.", tense: "Pretérito Imperfecto" },
+                { pt: "Direi amanhã.", es: "Lo diré mañana.", tense: "Futuro Simple" },
+                { pt: "Dirás a verdade.", es: "Dirás la verdad.", tense: "Futuro Simple" },
+                { pt: "Dirá que sim.", es: "Dirá que sí.", tense: "Futuro Simple" },
+                { pt: "Ela dir-te-á mais tarde.", es: "Te lo dirá más tarde.", tense: "Futuro Simple" },
+                { pt: "Diremos adeus.", es: "Diremos adiós.", tense: "Futuro Simple" },
+                { pt: "Eles dir-nos-ão.", es: "Nos lo dirán.", tense: "Futuro Simple" },
+                { pt: "O que dirás?", es: "¿Qué dirás?", tense: "Futuro Simple" },
+                { pt: "Não direi nada.", es: "No diré nada.", tense: "Futuro Simple" },
+                { pt: "Ele dirá a história.", es: "Dirá la historia.", tense: "Futuro Simple" },
+                { pt: "Dirão obrigado.", es: "Dirán gracias.", tense: "Futuro Simple" },
+                { pt: "Diz-me a verdade.", es: "Dime la verdad.", tense: "Imperativo" },
+                { pt: "Não digas isso.", es: "No digas eso.", tense: "Imperativo" },
+                { pt: "Diz-me mais.", es: "Dime más.", tense: "Imperativo" },
+                { pt: "Diz-lhe olá.", es: "Dile hola.", tense: "Imperativo" },
+                { pt: "Não digas a ninguém.", es: "No se lo digas a nadie.", tense: "Imperativo" },
+                { pt: "Isto é...", es: "Es decir...", tense: "Expresión" },
+                { pt: "Pode-se dizer.", es: "Se puede decir.", tense: "Expresión" },
+                { pt: "Como se diz...", es: "Como se dice...", tense: "Expresión" },
+                { pt: "Quero dizer...", es: "Quiero decir...", tense: "Expresión" },
+                { pt: "Como se diz em espanhol?", es: "¿Cómo se dice en español?", tense: "Expresión" },
+                { pt: "O que queres dizer?", es: "¿Qué quieres decir?", tense: "Expresión" },
+                { pt: "Diz-se que vai chover.", es: "Se dice que va a llover.", tense: "Expresión" },
+                { pt: "Nem é preciso dizer.", es: "No hace falta decir.", tense: "Expresión" },
+                { pt: "Digamos...", es: "Digamos...", tense: "Expresión" },
+                { pt: "Não posso dizer com certeza.", es: "No puedo decir con seguridad.", tense: "Expresión" },
+                { pt: "Diria que sim.", es: "Diría que sí.", tense: "Condicional" },
+                { pt: "Dirias a verdade.", es: "Dirías la verdad.", tense: "Condicional" },
+                { pt: "Diria que não.", es: "Diría que no.", tense: "Condicional" },
+                { pt: "Ela nunca diria isso.", es: "Ella nunca diría eso.", tense: "Condicional" },
+                { pt: "Dir-lhes-íamos.", es: "Se lo diríamos.", tense: "Condicional" },
+                { pt: "O que dirias?", es: "¿Qué dirías?", tense: "Condicional" },
+                { pt: "Disse muitas vezes.", es: "Lo he dicho muchas veces.", tense: "Pretérito Perfecto" },
+                { pt: "Disseste-me antes.", es: "Me lo has dicho antes.", tense: "Pretérito Perfecto" },
+                { pt: "Ele nunca disse isso.", es: "Nunca ha dicho eso.", tense: "Pretérito Perfecto" },
+                { pt: "Ela já lhe disse.", es: "Ya se lo ha dicho.", tense: "Pretérito Perfecto" },
+                { pt: "Dissemos tudo.", es: "Hemos dicho todo.", tense: "Pretérito Perfecto" },
+                { pt: "Digo-te agora.", es: "Te lo digo ahora.", tense: "Presente" },
+                { pt: "Para de dizer isso.", es: "Deja de decir eso.", tense: "Imperativo" },
+                { pt: "Ela continua a dizer isso.", es: "Ella sigue diciendo eso.", tense: "Presente" },
+                { pt: "Sem dizer palavra.", es: "Sin decir una palabra.", tense: "Expresión" },
+                { pt: "Diz-lhe que estou aqui.", es: "Dile que estoy aquí.", tense: "Imperativo" },
+                { pt: "Disse algo de mal?", es: "¿Dije algo malo?", tense: "Pretérito Indefinido" },
+                { pt: "Deveria ter dito que não.", es: "Debería haber dicho que no.", tense: "Condicional Perfecto" },
+                { pt: "Nunca o dirão.", es: "Nunca lo dirán.", tense: "Futuro Simple" },
+                { pt: "Diz outra vez, por favor.", es: "Dilo otra vez, por favor.", tense: "Imperativo" },
+                { pt: "Ouvi-te dizê-lo.", es: "Te oí decirlo.", tense: "Pretérito Indefinido" },
+                { pt: "Disse com um sorriso.", es: "Dijo con una sonrisa.", tense: "Pretérito Indefinido" },
+                { pt: "Ninguém disse que seria fácil.", es: "Nadie dijo que sería fácil.", tense: "Pretérito Indefinido" },
+                { pt: "Ela diz que te ama.", es: "Ella dice que te ama.", tense: "Presente" },
+                { pt: "Nunca direi nunca.", es: "Nunca diré nunca.", tense: "Futuro Simple" },
+                { pt: "Como dizia...", es: "Como decía...", tense: "Pretérito Imperfecto" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

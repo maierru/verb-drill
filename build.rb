@@ -191,6 +191,62 @@ LABELS = {
     phrases: 'phrases',
     target: 'Allemand',
     footer_prefix: "Pratique de l'allemand —"
+  },
+  # Learning Spanish (es)
+  'en_es' => {
+    back: '← Back to verb list',
+    search: 'Search phrases...',
+    show_all: 'Show all translations',
+    hide_all: 'Hide all translations',
+    showing: 'Showing',
+    of: 'of',
+    phrases: 'phrases',
+    target: 'Spanish',
+    footer_prefix: 'Spanish Practice —'
+  },
+  'ru_es' => {
+    back: '← Назад к списку глаголов',
+    search: '🔍 Поиск по фразам...',
+    show_all: 'Показать все переводы',
+    hide_all: 'Скрыть все переводы',
+    showing: 'Показано',
+    of: 'из',
+    phrases: 'фраз',
+    target: 'Español',
+    footer_prefix: 'Практика испанского —'
+  },
+  'pt_es' => {
+    back: '← Voltar para lista de verbos',
+    search: 'Pesquisar frases...',
+    show_all: 'Mostrar todas traduções',
+    hide_all: 'Esconder todas traduções',
+    showing: 'Mostrando',
+    of: 'de',
+    phrases: 'frases',
+    target: 'Español',
+    footer_prefix: 'Prática de espanhol —'
+  },
+  'de_es' => {
+    back: '← Zurück zur Verbliste',
+    search: 'Phrasen suchen...',
+    show_all: 'Alle Übersetzungen anzeigen',
+    hide_all: 'Alle Übersetzungen ausblenden',
+    showing: 'Zeige',
+    of: 'von',
+    phrases: 'Phrasen',
+    target: 'Spanisch',
+    footer_prefix: 'Spanisch-Übung —'
+  },
+  'fr_es' => {
+    back: '← Retour à la liste des verbes',
+    search: 'Rechercher des phrases...',
+    show_all: 'Afficher toutes les traductions',
+    hide_all: 'Masquer toutes les traductions',
+    showing: 'Affichage',
+    of: 'sur',
+    phrases: 'phrases',
+    target: 'Espagnol',
+    footer_prefix: "Pratique de l'espagnol —"
   }
 }
 
@@ -258,6 +314,9 @@ build_verb_pages('de', 'de', %w[en ru pt fr], verb_template)
 
 # Build fr verb pages (learning French from en/ru/pt/de)
 build_verb_pages('fr', 'fr', %w[en ru pt de], verb_template)
+
+# Build es verb pages (learning Spanish from en/ru/pt/de/fr)
+build_verb_pages('es', 'es', %w[en ru pt de fr], verb_template)
 
 # Build pt-eu index
 if File.exist?('src/data/pt-eu/index.yml')
@@ -375,6 +434,36 @@ if File.exist?('src/data/fr/index.yml')
   puts "Built: fr/index.html"
 end
 
+# Build es index
+if File.exist?('src/data/es/index.yml')
+  index_data = YAML.load_file('src/data/es/index.yml')
+
+  title = index_data['title']
+  h1 = index_data['h1']
+  subtitle = index_data['subtitle']
+  back_link = '← Back to languages'
+  footer = 'Verb Drill — Open source language practice'
+
+  verbs = index_data['verbs'].map do |v|
+    {
+      name: v['name'],
+      meaning: v['meaning'],
+      slug: v['slug'],
+      langs: [
+        { code: 'en', label: '🇬🇧 EN' },
+        { code: 'ru', label: '🇷🇺 RU' },
+        { code: 'pt', label: '🇵🇹 PT' },
+        { code: 'de', label: '🇩🇪 DE' },
+        { code: 'fr', label: '🇫🇷 FR' }
+      ]
+    }
+  end
+
+  html = index_template.result(binding)
+  File.write('es/index.html', html)
+  puts "Built: es/index.html"
+end
+
 # Build root index and README from site.yml
 site = YAML.load_file('src/data/site.yml')
 name = site['name']
@@ -396,5 +485,5 @@ readme = readme_template.result(binding)
 File.write('README.md', readme)
 puts "Built: README.md"
 
-total_pages = Dir.glob('pt-eu/*/*.html').count + Dir.glob('en/*/*.html').count + Dir.glob('de/*/*.html').count + Dir.glob('fr/*/*.html').count
+total_pages = Dir.glob('pt-eu/*/*.html').count + Dir.glob('en/*/*.html').count + Dir.glob('de/*/*.html').count + Dir.glob('fr/*/*.html').count + Dir.glob('es/*/*.html').count
 puts "\nDone! Built #{total_pages} verb pages"

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇪🇸 VERB DECIR — 100 Phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Back to verb list</a>
+            <h1>🇪🇸 Verb DECIR</h1>
+            <p class="subtitle">to say, to tell — 100 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Show all translations</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
+        </div>
+
+        <div class="stats" id="stats">Showing: 100 of 100 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Spanish Practice — DECIR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb DECIR</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Present tense - saying, telling</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>digo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>dices</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>dice</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>decimos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>decís</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>dicen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Preterite - said, told</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>dije</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>dijiste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>dijo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>dijimos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>dijisteis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>dijeron</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Imperfect - was saying, used to say</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>decía</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>decías</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>decía</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>decíamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>decíais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>decían</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Future - will say, will tell</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>diré</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>dirás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>dirá</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>diremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>diréis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>dirán</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'en',
+            targetKey: 'es',
+            labels: { target: 'Spanish', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["digo","dices","dice","decimos","decís","dicen","dije","dijiste","dijo","dijimos","dijeron","decía","dirá","diría"],
+            phrases: [
+                { en: "I say yes.", es: "Digo que sí.", tense: "Presente" },
+                { en: "You say the truth.", es: "Dices la verdad.", tense: "Presente" },
+                { en: "He says no.", es: "Dice que no.", tense: "Presente" },
+                { en: "She says hello.", es: "Ella dice hola.", tense: "Presente" },
+                { en: "We say goodbye.", es: "Decimos adiós.", tense: "Presente" },
+                { en: "They say it's true.", es: "Dicen que es verdad.", tense: "Presente" },
+                { en: "What do you say?", es: "¿Qué dices?", tense: "Presente" },
+                { en: "I always tell the truth.", es: "Siempre digo la verdad.", tense: "Presente" },
+                { en: "They say she's coming.", es: "Dicen que ella viene.", tense: "Presente" },
+                { en: "How do you say that?", es: "¿Cómo se dice eso?", tense: "Presente" },
+                { en: "He never says anything.", es: "Él nunca dice nada.", tense: "Presente" },
+                { en: "I don't say that.", es: "No digo eso.", tense: "Presente" },
+                { en: "What does it mean?", es: "¿Qué quiere decir?", tense: "Presente" },
+                { en: "She says she's tired.", es: "Ella dice que está cansada.", tense: "Presente" },
+                { en: "People say it's difficult.", es: "La gente dice que es difícil.", tense: "Presente" },
+                { en: "I just say what I think.", es: "Solo digo lo que pienso.", tense: "Presente" },
+                { en: "You say it in Spanish.", es: "Lo dices en español.", tense: "Presente" },
+                { en: "He says thank you.", es: "Dice gracias.", tense: "Presente" },
+                { en: "We don't say anything.", es: "No decimos nada.", tense: "Presente" },
+                { en: "They always say the same thing.", es: "Siempre dicen lo mismo.", tense: "Presente" },
+                { en: "I said yes.", es: "Dije que sí.", tense: "Pretérito Indefinido" },
+                { en: "You told me the truth.", es: "Me dijiste la verdad.", tense: "Pretérito Indefinido" },
+                { en: "He said no.", es: "Dijo que no.", tense: "Pretérito Indefinido" },
+                { en: "She told me a secret.", es: "Me dijo un secreto.", tense: "Pretérito Indefinido" },
+                { en: "We said goodbye.", es: "Dijimos adiós.", tense: "Pretérito Indefinido" },
+                { en: "They said nothing.", es: "No dijeron nada.", tense: "Pretérito Indefinido" },
+                { en: "What did you say?", es: "¿Qué dijiste?", tense: "Pretérito Indefinido" },
+                { en: "I told you!", es: "¡Te lo dije!", tense: "Pretérito Indefinido" },
+                { en: "She said she was coming.", es: "Dijo que venía.", tense: "Pretérito Indefinido" },
+                { en: "He told her everything.", es: "Le dijo todo.", tense: "Pretérito Indefinido" },
+                { en: "We didn't say anything.", es: "No dijimos nada.", tense: "Pretérito Indefinido" },
+                { en: "They told me yesterday.", es: "Me lo dijeron ayer.", tense: "Pretérito Indefinido" },
+                { en: "Who said that?", es: "¿Quién dijo eso?", tense: "Pretérito Indefinido" },
+                { en: "You said you would help.", es: "Dijiste que ayudarías.", tense: "Pretérito Indefinido" },
+                { en: "I said hello.", es: "Dije hola.", tense: "Pretérito Indefinido" },
+                { en: "She didn't say anything.", es: "Ella no dijo nada.", tense: "Pretérito Indefinido" },
+                { en: "He said it was impossible.", es: "Dijo que era imposible.", tense: "Pretérito Indefinido" },
+                { en: "We told them the news.", es: "Les dijimos las noticias.", tense: "Pretérito Indefinido" },
+                { en: "You said it wrong.", es: "Lo dijiste mal.", tense: "Pretérito Indefinido" },
+                { en: "I always said the truth.", es: "Siempre decía la verdad.", tense: "Pretérito Imperfecto" },
+                { en: "You used to say that.", es: "Tú decías eso.", tense: "Pretérito Imperfecto" },
+                { en: "He was saying goodbye.", es: "Él decía adiós.", tense: "Pretérito Imperfecto" },
+                { en: "She used to tell me stories.", es: "Ella me decía cuentos.", tense: "Pretérito Imperfecto" },
+                { en: "We were saying it.", es: "Lo decíamos.", tense: "Pretérito Imperfecto" },
+                { en: "They said it every day.", es: "Lo decían cada día.", tense: "Pretérito Imperfecto" },
+                { en: "What were you saying?", es: "¿Qué decías?", tense: "Pretérito Imperfecto" },
+                { en: "I was telling the truth.", es: "Decía la verdad.", tense: "Pretérito Imperfecto" },
+                { en: "He always said no.", es: "Siempre decía que no.", tense: "Pretérito Imperfecto" },
+                { en: "They were saying it wrong.", es: "Lo decían mal.", tense: "Pretérito Imperfecto" },
+                { en: "I will say tomorrow.", es: "Lo diré mañana.", tense: "Futuro Simple" },
+                { en: "You will tell the truth.", es: "Dirás la verdad.", tense: "Futuro Simple" },
+                { en: "He will say yes.", es: "Dirá que sí.", tense: "Futuro Simple" },
+                { en: "She will tell you later.", es: "Te lo dirá más tarde.", tense: "Futuro Simple" },
+                { en: "We will say goodbye.", es: "Diremos adiós.", tense: "Futuro Simple" },
+                { en: "They will tell us.", es: "Nos lo dirán.", tense: "Futuro Simple" },
+                { en: "What will you say?", es: "¿Qué dirás?", tense: "Futuro Simple" },
+                { en: "I won't say anything.", es: "No diré nada.", tense: "Futuro Simple" },
+                { en: "He will tell the story.", es: "Dirá la historia.", tense: "Futuro Simple" },
+                { en: "They will say thank you.", es: "Dirán gracias.", tense: "Futuro Simple" },
+                { en: "Tell me the truth.", es: "Dime la verdad.", tense: "Imperativo" },
+                { en: "Don't say that.", es: "No digas eso.", tense: "Imperativo" },
+                { en: "Tell me more.", es: "Dime más.", tense: "Imperativo" },
+                { en: "Say hello to her.", es: "Dile hola.", tense: "Imperativo" },
+                { en: "Don't tell anyone.", es: "No se lo digas a nadie.", tense: "Imperativo" },
+                { en: "That is to say...", es: "Es decir...", tense: "Expresión" },
+                { en: "You could say that.", es: "Se puede decir.", tense: "Expresión" },
+                { en: "As they say...", es: "Como se dice...", tense: "Expresión" },
+                { en: "I mean...", es: "Quiero decir...", tense: "Expresión" },
+                { en: "How do you say it in Spanish?", es: "¿Cómo se dice en español?", tense: "Expresión" },
+                { en: "What are you trying to say?", es: "¿Qué quieres decir?", tense: "Expresión" },
+                { en: "They say it's going to rain.", es: "Se dice que va a llover.", tense: "Expresión" },
+                { en: "It goes without saying.", es: "No hace falta decir.", tense: "Expresión" },
+                { en: "Let's say...", es: "Digamos...", tense: "Expresión" },
+                { en: "I can't say for sure.", es: "No puedo decir con seguridad.", tense: "Expresión" },
+                { en: "I would say yes.", es: "Diría que sí.", tense: "Condicional" },
+                { en: "You would tell the truth.", es: "Dirías la verdad.", tense: "Condicional" },
+                { en: "He would say no.", es: "Diría que no.", tense: "Condicional" },
+                { en: "She would never say that.", es: "Ella nunca diría eso.", tense: "Condicional" },
+                { en: "We would tell them.", es: "Se lo diríamos.", tense: "Condicional" },
+                { en: "What would you say?", es: "¿Qué dirías?", tense: "Condicional" },
+                { en: "I have said it many times.", es: "Lo he dicho muchas veces.", tense: "Pretérito Perfecto" },
+                { en: "You have told me before.", es: "Me lo has dicho antes.", tense: "Pretérito Perfecto" },
+                { en: "He has never said that.", es: "Nunca ha dicho eso.", tense: "Pretérito Perfecto" },
+                { en: "She has already told him.", es: "Ya se lo ha dicho.", tense: "Pretérito Perfecto" },
+                { en: "We have said everything.", es: "Hemos dicho todo.", tense: "Pretérito Perfecto" },
+                { en: "I'm telling you now.", es: "Te lo digo ahora.", tense: "Presente" },
+                { en: "Stop saying that.", es: "Deja de decir eso.", tense: "Imperativo" },
+                { en: "She keeps saying it.", es: "Ella sigue diciendo eso.", tense: "Presente" },
+                { en: "Without saying a word.", es: "Sin decir una palabra.", tense: "Expresión" },
+                { en: "Tell him I'm here.", es: "Dile que estoy aquí.", tense: "Imperativo" },
+                { en: "Did I say something wrong?", es: "¿Dije algo malo?", tense: "Pretérito Indefinido" },
+                { en: "I should have said no.", es: "Debería haber dicho que no.", tense: "Condicional Perfecto" },
+                { en: "They will never say it.", es: "Nunca lo dirán.", tense: "Futuro Simple" },
+                { en: "Say it again, please.", es: "Dilo otra vez, por favor.", tense: "Imperativo" },
+                { en: "I heard you say it.", es: "Te oí decirlo.", tense: "Pretérito Indefinido" },
+                { en: "He said with a smile.", es: "Dijo con una sonrisa.", tense: "Pretérito Indefinido" },
+                { en: "Nobody said it would be easy.", es: "Nadie dijo que sería fácil.", tense: "Pretérito Indefinido" },
+                { en: "She says she loves you.", es: "Ella dice que te ama.", tense: "Presente" },
+                { en: "I will never say never.", es: "Nunca diré nunca.", tense: "Futuro Simple" },
+                { en: "As I was saying...", es: "Como decía...", tense: "Pretérito Imperfecto" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

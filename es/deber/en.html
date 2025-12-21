@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇪🇸 VERB DEBER — 95 Phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Back to verb list</a>
+            <h1>🇪🇸 Verb DEBER</h1>
+            <p class="subtitle">must, should — 95 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Show all translations</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
+        </div>
+
+        <div class="stats" id="stats">Showing: 95 of 95 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Spanish Practice — DEBER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb DEBER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Present tense - obligation, duty, probability, recommendation in the present</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>debo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>debes</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>debe</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>debemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>debéis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>deben</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Simple past - obligation or debt that occurred in the past</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>debí</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>debiste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>debió</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>debimos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>debisteis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>debieron</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Imperfect past - ongoing obligation or habitual duty in the past</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>debía</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>debías</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>debía</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>debíamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>debíais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>debían</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Simple future - obligation or duty in the future</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>deberé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>deberás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>deberá</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>deberemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>deberéis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>deberán</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'en',
+            targetKey: 'es',
+            labels: { target: 'Spanish', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["debo","debes","debe","debemos","debéis","deben","debí","debiste","debió","debimos","debisteis","debieron","debía","debías","debíamos","debíais","debían","deberé","deberás","deberá","deberemos","deberéis","deberán"],
+            phrases: [
+                { en: "I must study for the exam.", es: "Debo estudiar para el examen.", tense: "Presente" },
+                { en: "You should eat more vegetables.", es: "Debes comer más verduras.", tense: "Presente" },
+                { en: "She must arrive on time.", es: "Ella debe llegar a tiempo.", tense: "Presente" },
+                { en: "We must finish the project.", es: "Debemos terminar el proyecto.", tense: "Presente" },
+                { en: "They owe me money.", es: "Me deben dinero.", tense: "Presente" },
+                { en: "You (plural) must be careful.", es: "Debéis tener cuidado.", tense: "Presente" },
+                { en: "I should call my mother.", es: "Debo llamar a mi madre.", tense: "Presente" },
+                { en: "You must respect the rules.", es: "Debes respetar las reglas.", tense: "Presente" },
+                { en: "He must be at home.", es: "Debe estar en casa.", tense: "Presente" },
+                { en: "We owe them an apology.", es: "Les debemos una disculpa.", tense: "Presente" },
+                { en: "They must work harder.", es: "Deben trabajar más duro.", tense: "Presente" },
+                { en: "I must pay the bills.", es: "Debo pagar las facturas.", tense: "Presente" },
+                { en: "You should rest more.", es: "Debes descansar más.", tense: "Presente" },
+                { en: "She owes the bank money.", es: "Ella debe dinero al banco.", tense: "Presente" },
+                { en: "We must be honest.", es: "Debemos ser honestos.", tense: "Presente" },
+                { en: "You (plural) should listen.", es: "Debéis escuchar.", tense: "Presente" },
+                { en: "They must understand this.", es: "Deben entender esto.", tense: "Presente" },
+                { en: "I should exercise daily.", es: "Debo hacer ejercicio diariamente.", tense: "Presente" },
+                { en: "You must tell the truth.", es: "Debes decir la verdad.", tense: "Presente" },
+                { en: "He should ask for help.", es: "Debe pedir ayuda.", tense: "Presente" },
+                { en: "We must protect the environment.", es: "Debemos proteger el medio ambiente.", tense: "Presente" },
+                { en: "They owe taxes.", es: "Deben impuestos.", tense: "Presente" },
+                { en: "I must improve my skills.", es: "Debo mejorar mis habilidades.", tense: "Presente" },
+                { en: "You should be patient.", es: "Debes ser paciente.", tense: "Presente" },
+                { en: "She must be tired.", es: "Debe estar cansada.", tense: "Presente" },
+                { en: "I had to leave early.", es: "Debí salir temprano.", tense: "Pretérito Indefinido" },
+                { en: "You owed him money.", es: "Le debiste dinero.", tense: "Pretérito Indefinido" },
+                { en: "She had to work yesterday.", es: "Ella debió trabajar ayer.", tense: "Pretérito Indefinido" },
+                { en: "We had to cancel the trip.", es: "Debimos cancelar el viaje.", tense: "Pretérito Indefinido" },
+                { en: "They owed a lot of money.", es: "Debieron mucho dinero.", tense: "Pretérito Indefinido" },
+                { en: "You (plural) had to wait.", es: "Debisteis esperar.", tense: "Pretérito Indefinido" },
+                { en: "I had to apologize.", es: "Debí disculparme.", tense: "Pretérito Indefinido" },
+                { en: "You had to study more.", es: "Debiste estudiar más.", tense: "Pretérito Indefinido" },
+                { en: "He owed me a favor.", es: "Me debió un favor.", tense: "Pretérito Indefinido" },
+                { en: "We had to accept it.", es: "Debimos aceptarlo.", tense: "Pretérito Indefinido" },
+                { en: "They had to resign.", es: "Debieron renunciar.", tense: "Pretérito Indefinido" },
+                { en: "I had to choose.", es: "Debí elegir.", tense: "Pretérito Indefinido" },
+                { en: "You owed an explanation.", es: "Debiste una explicación.", tense: "Pretérito Indefinido" },
+                { en: "She had to decide quickly.", es: "Ella debió decidir rápido.", tense: "Pretérito Indefinido" },
+                { en: "We had to solve the problem.", es: "Debimos resolver el problema.", tense: "Pretérito Indefinido" },
+                { en: "You (plural) had to participate.", es: "Debisteis participar.", tense: "Pretérito Indefinido" },
+                { en: "They had to pay immediately.", es: "Debieron pagar inmediatamente.", tense: "Pretérito Indefinido" },
+                { en: "I had to confess.", es: "Debí confesar.", tense: "Pretérito Indefinido" },
+                { en: "You had to be there.", es: "Debiste estar allí.", tense: "Pretérito Indefinido" },
+                { en: "He had to respond.", es: "Debió responder.", tense: "Pretérito Indefinido" },
+                { en: "We had to cooperate.", es: "Debimos cooperar.", tense: "Pretérito Indefinido" },
+                { en: "They owed gratitude.", es: "Debieron gratitud.", tense: "Pretérito Indefinido" },
+                { en: "I had to report daily.", es: "Debía reportar diariamente.", tense: "Pretérito Imperfecto" },
+                { en: "You should have known better.", es: "Debías saberlo mejor.", tense: "Pretérito Imperfecto" },
+                { en: "She had to work weekends.", es: "Ella debía trabajar los fines de semana.", tense: "Pretérito Imperfecto" },
+                { en: "We owed rent every month.", es: "Debíamos la renta cada mes.", tense: "Pretérito Imperfecto" },
+                { en: "They had to attend meetings.", es: "Debían asistir a reuniones.", tense: "Pretérito Imperfecto" },
+                { en: "You (plural) should have listened.", es: "Debíais escuchar.", tense: "Pretérito Imperfecto" },
+                { en: "I had to wake up early.", es: "Debía despertarme temprano.", tense: "Pretérito Imperfecto" },
+                { en: "You owed loyalty.", es: "Debías lealtad.", tense: "Pretérito Imperfecto" },
+                { en: "He had to travel often.", es: "Debía viajar a menudo.", tense: "Pretérito Imperfecto" },
+                { en: "We should have prepared.", es: "Debíamos prepararnos.", tense: "Pretérito Imperfecto" },
+                { en: "They owed respect.", es: "Debían respeto.", tense: "Pretérito Imperfecto" },
+                { en: "I had to practice daily.", es: "Debía practicar diariamente.", tense: "Pretérito Imperfecto" },
+                { en: "You should have been there.", es: "Debías estar allí.", tense: "Pretérito Imperfecto" },
+                { en: "She had to study constantly.", es: "Ella debía estudiar constantemente.", tense: "Pretérito Imperfecto" },
+                { en: "We owed an answer.", es: "Debíamos una respuesta.", tense: "Pretérito Imperfecto" },
+                { en: "You (plural) had to be punctual.", es: "Debíais ser puntuales.", tense: "Pretérito Imperfecto" },
+                { en: "They should have understood.", es: "Debían entender.", tense: "Pretérito Imperfecto" },
+                { en: "I had to obey the rules.", es: "Debía obedecer las reglas.", tense: "Pretérito Imperfecto" },
+                { en: "You owed dedication.", es: "Debías dedicación.", tense: "Pretérito Imperfecto" },
+                { en: "He had to be responsible.", es: "Debía ser responsable.", tense: "Pretérito Imperfecto" },
+                { en: "We should have acted.", es: "Debíamos actuar.", tense: "Pretérito Imperfecto" },
+                { en: "They had to adapt.", es: "Debían adaptarse.", tense: "Pretérito Imperfecto" },
+                { en: "I will have to work tomorrow.", es: "Deberé trabajar mañana.", tense: "Futuro Simple" },
+                { en: "You will owe an explanation.", es: "Deberás una explicación.", tense: "Futuro Simple" },
+                { en: "She will have to decide.", es: "Ella deberá decidir.", tense: "Futuro Simple" },
+                { en: "We will have to move.", es: "Deberemos mudarnos.", tense: "Futuro Simple" },
+                { en: "They will owe taxes.", es: "Deberán impuestos.", tense: "Futuro Simple" },
+                { en: "You (plural) will have to choose.", es: "Deberéis elegir.", tense: "Futuro Simple" },
+                { en: "I will have to travel.", es: "Deberé viajar.", tense: "Futuro Simple" },
+                { en: "You will owe me.", es: "Me deberás.", tense: "Futuro Simple" },
+                { en: "He will have to resign.", es: "Deberá renunciar.", tense: "Futuro Simple" },
+                { en: "We will have to negotiate.", es: "Deberemos negociar.", tense: "Futuro Simple" },
+                { en: "They will have to pay.", es: "Deberán pagar.", tense: "Futuro Simple" },
+                { en: "I will have to prepare.", es: "Deberé prepararme.", tense: "Futuro Simple" },
+                { en: "You will owe gratitude.", es: "Deberás gratitud.", tense: "Futuro Simple" },
+                { en: "She will have to study.", es: "Ella deberá estudiar.", tense: "Futuro Simple" },
+                { en: "We will have to wait.", es: "Deberemos esperar.", tense: "Futuro Simple" },
+                { en: "You (plural) will have to help.", es: "Deberéis ayudar.", tense: "Futuro Simple" },
+                { en: "They will owe respect.", es: "Deberán respeto.", tense: "Futuro Simple" },
+                { en: "I will have to accept.", es: "Deberé aceptar.", tense: "Futuro Simple" },
+                { en: "You will have to learn.", es: "Deberás aprender.", tense: "Futuro Simple" },
+                { en: "He will owe money.", es: "Deberá dinero.", tense: "Futuro Simple" },
+                { en: "We will have to adapt.", es: "Deberemos adaptarnos.", tense: "Futuro Simple" },
+                { en: "They will have to change.", es: "Deberán cambiar.", tense: "Futuro Simple" },
+                { en: "We must be responsible.", es: "Debemos ser responsables.", tense: "Presente" },
+                { en: "I should leave now.", es: "Debo irme ahora.", tense: "Presente" },
+                { en: "You must understand.", es: "Debes entender.", tense: "Presente" },
+                { en: "He must be sick.", es: "Debe estar enfermo.", tense: "Presente" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

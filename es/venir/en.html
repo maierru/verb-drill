@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇪🇸 VERB VENIR — 94 Phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Back to verb list</a>
+            <h1>🇪🇸 Verb VENIR</h1>
+            <p class="subtitle">to come — 94 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Show all translations</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
+        </div>
+
+        <div class="stats" id="stats">Showing: 94 of 94 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Spanish Practice — VENIR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb VENIR</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Present tense - coming to/from places, current movement</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>vengo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>vienes</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>viene</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>venimos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>venís</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>vienen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Simple past - came, completed arrivals</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>vine</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>viniste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>vino</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>vinimos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>vinisteis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>vinieron</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Imperfect - was coming, used to come</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>venía</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>venías</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>venía</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>veníamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>veníais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>venían</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Simple future - will come</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>vendré</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>vendrás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>vendrá</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>vendremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>vendréis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>vendrán</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'en',
+            targetKey: 'es',
+            labels: { target: 'Spanish', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["vengo","vienes","viene","venimos","venís","vienen","vine","vino","venía","venido"],
+            phrases: [
+                { en: "I come from Spain.", es: "Vengo de España.", tense: "Presente" },
+                { en: "She comes here every day.", es: "Ella viene aquí todos los días.", tense: "Presente" },
+                { en: "They are coming to the party.", es: "Ellos vienen a la fiesta.", tense: "Presente" },
+                { en: "We come from the city.", es: "Venimos de la ciudad.", tense: "Presente" },
+                { en: "Where do you come from?", es: "¿De dónde vienes?", tense: "Presente" },
+                { en: "He comes from work late.", es: "Él viene del trabajo tarde.", tense: "Presente" },
+                { en: "I just finished eating.", es: "Vengo de comer.", tense: "Presente" },
+                { en: "This comes in handy.", es: "Esto viene bien.", tense: "Presente" },
+                { en: "That doesn't suit me well.", es: "Eso no me viene bien.", tense: "Presente" },
+                { en: "They come running.", es: "Vienen corriendo.", tense: "Presente" },
+                { en: "I came yesterday.", es: "Vine ayer.", tense: "Pretérito Indefinido" },
+                { en: "She came to see me.", es: "Ella vino a verme.", tense: "Pretérito Indefinido" },
+                { en: "We came by car.", es: "Vinimos en coche.", tense: "Pretérito Indefinido" },
+                { en: "They came from Madrid.", es: "Vinieron de Madrid.", tense: "Pretérito Indefinido" },
+                { en: "He came alone.", es: "Él vino solo.", tense: "Pretérito Indefinido" },
+                { en: "When did you come?", es: "¿Cuándo viniste?", tense: "Pretérito Indefinido" },
+                { en: "I used to come here often.", es: "Yo venía aquí a menudo.", tense: "Pretérito Imperfecto" },
+                { en: "She was coming when I called.", es: "Ella venía cuando llamé.", tense: "Pretérito Imperfecto" },
+                { en: "We used to come every summer.", es: "Veníamos cada verano.", tense: "Pretérito Imperfecto" },
+                { en: "They were coming from school.", es: "Venían del colegio.", tense: "Pretérito Imperfecto" },
+                { en: "I will come tomorrow.", es: "Vendré mañana.", tense: "Futuro Simple" },
+                { en: "She will come with us.", es: "Ella vendrá con nosotros.", tense: "Futuro Simple" },
+                { en: "We will come to visit.", es: "Vendremos de visita.", tense: "Futuro Simple" },
+                { en: "They will come at eight.", es: "Vendrán a las ocho.", tense: "Futuro Simple" },
+                { en: "Will you come to dinner?", es: "¿Vendrás a cenar?", tense: "Futuro Simple" },
+                { en: "I come from a small town.", es: "Vengo de un pueblo pequeño.", tense: "Presente" },
+                { en: "The bus comes at six.", es: "El autobús viene a las seis.", tense: "Presente" },
+                { en: "Come here!", es: "¡Ven aquí!", tense: "Imperativo" },
+                { en: "Come with me.", es: "Ven conmigo.", tense: "Imperativo" },
+                { en: "They come from different countries.", es: "Vienen de diferentes países.", tense: "Presente" },
+                { en: "I'm coming!", es: "¡Ya voy!", tense: "Presente" },
+                { en: "She comes from a rich family.", es: "Ella viene de una familia rica.", tense: "Presente" },
+                { en: "We came to help.", es: "Vinimos a ayudar.", tense: "Pretérito Indefinido" },
+                { en: "He came back home.", es: "Él vino a casa.", tense: "Pretérito Indefinido" },
+                { en: "I just got back from the gym.", es: "Vengo del gimnasio.", tense: "Presente" },
+                { en: "This size fits me well.", es: "Esta talla me viene bien.", tense: "Presente" },
+                { en: "The rain comes from the north.", es: "La lluvia viene del norte.", tense: "Presente" },
+                { en: "Problems come and go.", es: "Los problemas vienen y van.", tense: "Presente" },
+                { en: "He comes and goes as he pleases.", es: "Él viene y va como quiere.", tense: "Presente" },
+                { en: "I came to study.", es: "Vine a estudiar.", tense: "Pretérito Indefinido" },
+                { en: "She came running to tell me.", es: "Ella vino corriendo a decirme.", tense: "Pretérito Indefinido" },
+                { en: "We came prepared.", es: "Vinimos preparados.", tense: "Pretérito Indefinido" },
+                { en: "They came unexpectedly.", es: "Vinieron inesperadamente.", tense: "Pretérito Indefinido" },
+                { en: "You came at the right time.", es: "Viniste en el momento justo.", tense: "Pretérito Indefinido" },
+                { en: "I was coming to see you.", es: "Venía a verte.", tense: "Pretérito Imperfecto" },
+                { en: "She was coming every Monday.", es: "Ella venía todos los lunes.", tense: "Pretérito Imperfecto" },
+                { en: "We were coming from the beach.", es: "Veníamos de la playa.", tense: "Pretérito Imperfecto" },
+                { en: "They were coming more often.", es: "Venían más a menudo.", tense: "Pretérito Imperfecto" },
+                { en: "He was coming to work by train.", es: "Él venía al trabajo en tren.", tense: "Pretérito Imperfecto" },
+                { en: "I will come as soon as possible.", es: "Vendré lo antes posible.", tense: "Futuro Simple" },
+                { en: "She will come if she can.", es: "Ella vendrá si puede.", tense: "Futuro Simple" },
+                { en: "We will come back soon.", es: "Volveremos pronto.", tense: "Futuro Simple" },
+                { en: "They will come to pick you up.", es: "Vendrán a recogerte.", tense: "Futuro Simple" },
+                { en: "When will you come?", es: "¿Cuándo vendrás?", tense: "Futuro Simple" },
+                { en: "I come from work tired.", es: "Vengo del trabajo cansado.", tense: "Presente" },
+                { en: "Good things come to those who wait.", es: "Las cosas buenas vienen a los que esperan.", tense: "Presente" },
+                { en: "She comes from a good background.", es: "Ella viene de buena familia.", tense: "Presente" },
+                { en: "We come in peace.", es: "Venimos en paz.", tense: "Presente" },
+                { en: "They come bearing gifts.", es: "Vienen trayendo regalos.", tense: "Presente" },
+                { en: "I came across an old friend.", es: "Me encontré con un viejo amigo.", tense: "Pretérito Indefinido" },
+                { en: "The idea came to me suddenly.", es: "La idea se me vino de repente.", tense: "Pretérito Indefinido" },
+                { en: "We came to an agreement.", es: "Llegamos a un acuerdo.", tense: "Pretérito Indefinido" },
+                { en: "Everything came together perfectly.", es: "Todo salió perfecto.", tense: "Pretérito Indefinido" },
+                { en: "The package came this morning.", es: "El paquete vino esta mañana.", tense: "Pretérito Indefinido" },
+                { en: "Bad luck was coming my way.", es: "La mala suerte me venía encima.", tense: "Pretérito Imperfecto" },
+                { en: "Memories were coming back.", es: "Los recuerdos venían de vuelta.", tense: "Pretérito Imperfecto" },
+                { en: "I was coming to the same conclusion.", es: "Yo venía a la misma conclusión.", tense: "Pretérito Imperfecto" },
+                { en: "Change was coming.", es: "El cambio venía.", tense: "Pretérito Imperfecto" },
+                { en: "They were coming closer.", es: "Venían más cerca.", tense: "Pretérito Imperfecto" },
+                { en: "I will come what may.", es: "Vendré pase lo que pase.", tense: "Futuro Simple" },
+                { en: "She will come around eventually.", es: "Ella cambiará de opinión eventualmente.", tense: "Futuro Simple" },
+                { en: "Better days will come.", es: "Vendrán días mejores.", tense: "Futuro Simple" },
+                { en: "The truth will come out.", es: "La verdad saldrá a la luz.", tense: "Futuro Simple" },
+                { en: "I will come bearing news.", es: "Vendré con noticias.", tense: "Futuro Simple" },
+                { en: "Where are you coming from?", es: "¿De dónde vienes?", tense: "Presente" },
+                { en: "I just came back from vacation.", es: "Vengo de vacaciones.", tense: "Presente" },
+                { en: "This doesn't suit me at all.", es: "Esto no me viene nada bien.", tense: "Presente" },
+                { en: "The shirt fits me perfectly.", es: "La camisa me viene perfecta.", tense: "Presente" },
+                { en: "Help comes when you least expect it.", es: "La ayuda viene cuando menos lo esperas.", tense: "Presente" },
+                { en: "We came from far away.", es: "Venimos de muy lejos.", tense: "Pretérito Indefinido" },
+                { en: "A great opportunity came along.", es: "Surgió una gran oportunidad.", tense: "Pretérito Indefinido" },
+                { en: "The storm came without warning.", es: "La tormenta vino sin avisar.", tense: "Pretérito Indefinido" },
+                { en: "Inspiration came at midnight.", es: "La inspiración vino a medianoche.", tense: "Pretérito Indefinido" },
+                { en: "We came to celebrate.", es: "Vinimos a celebrar.", tense: "Pretérito Indefinido" },
+                { en: "Guests were coming all evening.", es: "Los invitados venían toda la tarde.", tense: "Pretérito Imperfecto" },
+                { en: "Winter was coming early.", es: "El invierno venía temprano.", tense: "Pretérito Imperfecto" },
+                { en: "The answers were coming to me.", es: "Las respuestas me venían.", tense: "Pretérito Imperfecto" },
+                { en: "Success was coming slowly.", es: "El éxito venía lentamente.", tense: "Pretérito Imperfecto" },
+                { en: "We were coming to terms with it.", es: "Lo íbamos aceptando.", tense: "Pretérito Imperfecto" },
+                { en: "Your time will come.", es: "Tu momento llegará.", tense: "Futuro Simple" },
+                { en: "Spring will come again.", es: "La primavera volverá.", tense: "Futuro Simple" },
+                { en: "They will come to regret this.", es: "Se arrepentirán de esto.", tense: "Futuro Simple" },
+                { en: "Everything will come full circle.", es: "Todo volverá al punto inicial.", tense: "Futuro Simple" },
+                { en: "The moment will come when we meet again.", es: "Llegará el momento en que nos volvamos a ver.", tense: "Futuro Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

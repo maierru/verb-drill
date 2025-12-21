@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇪🇸 VERB HACER — 97 Phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Back to verb list</a>
+            <h1>🇪🇸 Verb HACER</h1>
+            <p class="subtitle">to do, to make — 97 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Show all translations</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Hide all translations</button>
+        </div>
+
+        <div class="stats" id="stats">Showing: 97 of 97 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Spanish Practice — HACER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb HACER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Present tense - actions happening now or habitual actions</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo hago</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú haces</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted hace</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros hacemos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros hacéis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes hacen</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Preterite - completed actions in the past</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo hice</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú hiciste</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted hizo</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros hicimos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros hicisteis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes hicieron</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Imperfect - ongoing or habitual actions in the past</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo hacía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú hacías</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted hacía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros hacíamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros hacíais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes hacían</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Future tense - actions that will happen</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo haré</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú harás</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted hará</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros haremos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros haréis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes harán</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'en',
+            targetKey: 'es',
+            labels: { target: 'Spanish', showing: 'Showing', of: 'of', phrases: 'phrases' },
+            verbForms: ["hago","haces","hace","hacemos","hacéis","hacen","hice","hizo","haré","haría"],
+            phrases: [
+                { en: "What are you doing?", es: "¿Qué haces?", tense: "Presente" },
+                { en: "I'm doing my homework", es: "Hago mi tarea", tense: "Presente" },
+                { en: "It's cold outside", es: "Hace frío afuera", tense: "Presente" },
+                { en: "It's hot today", es: "Hace calor hoy", tense: "Presente" },
+                { en: "We need milk", es: "Nos hace falta leche", tense: "Presente" },
+                { en: "She makes dinner every night", es: "Ella hace la cena cada noche", tense: "Presente" },
+                { en: "I made a mistake", es: "Hice un error", tense: "Pretérito Indefinido" },
+                { en: "They did their best", es: "Hicieron lo mejor que pudieron", tense: "Pretérito Indefinido" },
+                { en: "What did you do yesterday?", es: "¿Qué hiciste ayer?", tense: "Pretérito Indefinido" },
+                { en: "He made a cake", es: "Él hizo un pastel", tense: "Pretérito Indefinido" },
+                { en: "I used to do exercise every morning", es: "Hacía ejercicio cada mañana", tense: "Pretérito Imperfecto" },
+                { en: "It was always sunny", es: "Siempre hacía sol", tense: "Pretérito Imperfecto" },
+                { en: "We will do it tomorrow", es: "Lo haremos mañana", tense: "Futuro Simple" },
+                { en: "I will make a decision", es: "Haré una decisión", tense: "Futuro Simple" },
+                { en: "You need to rest", es: "Te hace falta descansar", tense: "Presente" },
+                { en: "I'm doing the laundry", es: "Hago la ropa", tense: "Presente" },
+                { en: "He does the shopping on Saturdays", es: "Él hace las compras los sábados", tense: "Presente" },
+                { en: "We made a plan", es: "Hicimos un plan", tense: "Pretérito Indefinido" },
+                { en: "It's windy", es: "Hace viento", tense: "Presente" },
+                { en: "It's nice weather", es: "Hace buen tiempo", tense: "Presente" },
+                { en: "She made friends quickly", es: "Ella hizo amigos rápidamente", tense: "Pretérito Indefinido" },
+                { en: "What do you do for work?", es: "¿Qué haces de trabajo?", tense: "Presente" },
+                { en: "I do yoga", es: "Hago yoga", tense: "Presente" },
+                { en: "They make noise", es: "Hacen ruido", tense: "Presente" },
+                { en: "It was very cold", es: "Hacía mucho frío", tense: "Pretérito Imperfecto" },
+                { en: "You will make a great impression", es: "Harás una gran impresión", tense: "Futuro Simple" },
+                { en: "I'm making coffee", es: "Hago café", tense: "Presente" },
+                { en: "He made a promise", es: "Él hizo una promesa", tense: "Pretérito Indefinido" },
+                { en: "We used to make dinner together", es: "Hacíamos la cena juntos", tense: "Pretérito Imperfecto" },
+                { en: "They will do the project", es: "Harán el proyecto", tense: "Futuro Simple" },
+                { en: "I need more time", es: "Me hace falta más tiempo", tense: "Presente" },
+                { en: "It's been two years", es: "Hace dos años", tense: "Presente" },
+                { en: "She does her job well", es: "Ella hace bien su trabajo", tense: "Presente" },
+                { en: "I made a reservation", es: "Hice una reserva", tense: "Pretérito Indefinido" },
+                { en: "What are you making?", es: "¿Qué haces?", tense: "Presente" },
+                { en: "He makes a lot of money", es: "Él hace mucho dinero", tense: "Presente" },
+                { en: "We did everything possible", es: "Hicimos todo lo posible", tense: "Pretérito Indefinido" },
+                { en: "It's bad weather", es: "Hace mal tiempo", tense: "Presente" },
+                { en: "I used to do sports", es: "Hacía deportes", tense: "Pretérito Imperfecto" },
+                { en: "They will make history", es: "Harán historia", tense: "Futuro Simple" },
+                { en: "You make me happy", es: "Me haces feliz", tense: "Presente" },
+                { en: "I'm doing great", es: "Lo hago bien", tense: "Presente" },
+                { en: "She made an effort", es: "Ella hizo un esfuerzo", tense: "Pretérito Indefinido" },
+                { en: "It was warm yesterday", es: "Hacía calor ayer", tense: "Pretérito Imperfecto" },
+                { en: "We will make it happen", es: "Lo haremos realidad", tense: "Futuro Simple" },
+                { en: "I need help", es: "Me hace falta ayuda", tense: "Presente" },
+                { en: "He's doing the dishes", es: "Él hace los platos", tense: "Presente" },
+                { en: "They made a video", es: "Hicieron un video", tense: "Pretérito Indefinido" },
+                { en: "What did she do?", es: "¿Qué hizo ella?", tense: "Pretérito Indefinido" },
+                { en: "I do my best", es: "Hago mi mejor esfuerzo", tense: "Presente" },
+                { en: "It's sunny", es: "Hace sol", tense: "Presente" },
+                { en: "You made a good choice", es: "Hiciste una buena elección", tense: "Pretérito Indefinido" },
+                { en: "She used to make bread", es: "Ella hacía pan", tense: "Pretérito Imperfecto" },
+                { en: "We will do our duty", es: "Haremos nuestro deber", tense: "Futuro Simple" },
+                { en: "I'm making lunch", es: "Hago el almuerzo", tense: "Presente" },
+                { en: "He does magic tricks", es: "Él hace trucos de magia", tense: "Presente" },
+                { en: "They made a movie", es: "Hicieron una película", tense: "Pretérito Indefinido" },
+                { en: "It's foggy", es: "Hace niebla", tense: "Presente" },
+                { en: "I used to make toys", es: "Hacía juguetes", tense: "Pretérito Imperfecto" },
+                { en: "You will do well", es: "Lo harás bien", tense: "Futuro Simple" },
+                { en: "We need money", es: "Nos hace falta dinero", tense: "Presente" },
+                { en: "She makes jewelry", es: "Ella hace joyería", tense: "Presente" },
+                { en: "I made a list", es: "Hice una lista", tense: "Pretérito Indefinido" },
+                { en: "What do they do?", es: "¿Qué hacen ellos?", tense: "Presente" },
+                { en: "He made a drawing", es: "Él hizo un dibujo", tense: "Pretérito Indefinido" },
+                { en: "It was cloudy", es: "Hacía nublado", tense: "Pretérito Imperfecto" },
+                { en: "We will make progress", es: "Haremos progreso", tense: "Futuro Simple" },
+                { en: "I'm doing the cleaning", es: "Hago la limpieza", tense: "Presente" },
+                { en: "They do business", es: "Hacen negocios", tense: "Presente" },
+                { en: "You made me laugh", es: "Me hiciste reír", tense: "Pretérito Indefinido" },
+                { en: "She used to do crafts", es: "Ella hacía manualidades", tense: "Pretérito Imperfecto" },
+                { en: "I will make time", es: "Haré tiempo", tense: "Futuro Simple" },
+                { en: "He's making a call", es: "Él hace una llamada", tense: "Presente" },
+                { en: "We made soup", es: "Hicimos sopa", tense: "Pretérito Indefinido" },
+                { en: "It's been three months", es: "Hace tres meses", tense: "Presente" },
+                { en: "I need courage", es: "Me hace falta valor", tense: "Presente" },
+                { en: "They make art", es: "Hacen arte", tense: "Presente" },
+                { en: "You did a favor", es: "Hiciste un favor", tense: "Pretérito Indefinido" },
+                { en: "She will make a speech", es: "Ella hará un discurso", tense: "Futuro Simple" },
+                { en: "I'm making plans", es: "Hago planes", tense: "Presente" },
+                { en: "He made a sandwich", es: "Él hizo un sándwich", tense: "Pretérito Indefinido" },
+                { en: "It was nice weather", es: "Hacía buen tiempo", tense: "Pretérito Imperfecto" },
+                { en: "We will do exercises", es: "Haremos ejercicios", tense: "Futuro Simple" },
+                { en: "I do the ironing", es: "Hago la plancha", tense: "Presente" },
+                { en: "They made a deal", es: "Hicieron un trato", tense: "Pretérito Indefinido" },
+                { en: "You make me nervous", es: "Me haces nervioso", tense: "Presente" },
+                { en: "She used to make excuses", es: "Ella hacía excusas", tense: "Pretérito Imperfecto" },
+                { en: "I will make an appointment", es: "Haré una cita", tense: "Futuro Simple" },
+                { en: "He does volunteer work", es: "Él hace trabajo voluntario", tense: "Presente" },
+                { en: "We made memories", es: "Hicimos recuerdos", tense: "Pretérito Indefinido" },
+                { en: "It's chilly", es: "Hace fresco", tense: "Presente" },
+                { en: "I need patience", es: "Me hace falta paciencia", tense: "Presente" },
+                { en: "They will do research", es: "Harán investigación", tense: "Futuro Simple" },
+                { en: "You make sense", es: "Tienes razón", tense: "Presente" },
+                { en: "She made changes", es: "Ella hizo cambios", tense: "Pretérito Indefinido" },
+                { en: "I used to do homework at night", es: "Hacía la tarea de noche", tense: "Pretérito Imperfecto" },
+                { en: "He will make arrangements", es: "Él hará arreglos", tense: "Futuro Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

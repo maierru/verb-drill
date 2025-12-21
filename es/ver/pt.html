@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇪🇸 VERB VER — 97 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇪🇸 Verb VER</h1>
+            <p class="subtitle">to see — 97 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 97 de 97 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Prática de espanhol — VER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb VER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Presente - ações acontecendo agora ou ações habituais</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">veo</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ves</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ve</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vemos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">veis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ven</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Pretérito Perfeito - ações completadas no passado</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">vi</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">viste</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vio</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vimos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">visteis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vieron</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Pretérito Imperfeito - ações contínuas ou habituais no passado</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">veía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">veías</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">veía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">veíamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">veíais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">veían</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Futuro Simples - ações que vão acontecer</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">veré</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">verás</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">verá</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">veremos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">veréis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">verán</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'es',
+            labels: { target: 'Español', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["veo","ves","ve","vemos","veis","ven","vi","viste","vio","vimos","visteis","vieron","veía","verá","vería","he visto"],
+            phrases: [
+                { pt: "Vejo um pássaro na árvore", es: "Veo un pájaro en el árbol", tense: "Presente" },
+                { pt: "Vês aquele edifício?", es: "¿Ves ese edificio?", tense: "Presente" },
+                { pt: "Ele vê os amigos todos os dias", es: "Ve a sus amigos todos los días", tense: "Presente" },
+                { pt: "Vemos as montanhas daqui", es: "Vemos las montañas desde aquí", tense: "Presente" },
+                { pt: "Eles veem as estrelas à noite", es: "Ven las estrellas por la noche", tense: "Presente" },
+                { pt: "Vi esse filme ontem", es: "Vi esa película ayer", tense: "Pretérito Indefinido" },
+                { pt: "Viste o acidente", es: "Viste el accidente", tense: "Pretérito Indefinido" },
+                { pt: "Ela viu a mãe na semana passada", es: "Vio a su madre la semana pasada", tense: "Pretérito Indefinido" },
+                { pt: "Vimos o pôr do sol juntos", es: "Vimos el atardecer juntos", tense: "Pretérito Indefinido" },
+                { pt: "Eles viram a exposição", es: "Vieron la exposición", tense: "Pretérito Indefinido" },
+                { pt: "Eu via-o no parque", es: "Lo veía en el parque", tense: "Pretérito Imperfecto" },
+                { pt: "Vias televisão todas as tardes", es: "Veías la tele todas las tardes", tense: "Pretérito Imperfecto" },
+                { pt: "Ele via o amanhecer todas as manhãs", es: "Veía el amanecer todas las mañanas", tense: "Pretérito Imperfecto" },
+                { pt: "Víamo-nos frequentemente", es: "Nos veíamos a menudo", tense: "Pretérito Imperfecto" },
+                { pt: "Ver-te-ei amanhã", es: "Te veré mañana", tense: "Futuro Simple" },
+                { pt: "Verás a diferença", es: "Verás la diferencia", tense: "Futuro Simple" },
+                { pt: "Ela verá o documentário", es: "Verá el documental", tense: "Futuro Simple" },
+                { pt: "Veremos o que acontece", es: "Veremos qué pasa", tense: "Futuro Simple" },
+                { pt: "Não vejo nada", es: "No veo nada", tense: "Presente" },
+                { pt: "Vamos ver o que temos aqui", es: "A ver qué tenemos aquí", tense: "Presente" },
+                { pt: "Vejo-me no espelho", es: "Me veo en el espejo", tense: "Presente" },
+                { pt: "Vês-te a fazer isto?", es: "¿Te ves haciendo esto?", tense: "Presente" },
+                { pt: "Ela vê-se como líder", es: "Se ve como una líder", tense: "Presente" },
+                { pt: "Já veremos", es: "Ya veremos", tense: "Futuro Simple" },
+                { pt: "Vejo o que queres dizer", es: "Veo lo que quieres decir", tense: "Presente" },
+                { pt: "Vês-me agora?", es: "¿Me ves ahora?", tense: "Presente" },
+                { pt: "Não vejo o problema", es: "No veo el problema", tense: "Presente" },
+                { pt: "Vimo-lo a chegar", es: "Lo vimos venir", tense: "Pretérito Indefinido" },
+                { pt: "Não nos podem ver dali", es: "No nos pueden ver desde allí", tense: "Presente" },
+                { pt: "Vi-a no supermercado", es: "La vi en el supermercado", tense: "Pretérito Indefinido" },
+                { pt: "Verás resultados em breve", es: "Verás resultados pronto", tense: "Futuro Simple" },
+                { pt: "Ele vê as coisas de forma diferente", es: "Ve las cosas de manera diferente", tense: "Presente" },
+                { pt: "Concordamos nisto", es: "Estamos de acuerdo en esto", tense: "Presente" },
+                { pt: "Vi a luz no fim", es: "Vi la luz al final", tense: "Pretérito Indefinido" },
+                { pt: "Vês alguma solução?", es: "¿Ves alguna solución?", tense: "Presente" },
+                { pt: "Eles viram tudo", es: "Vieron todo", tense: "Pretérito Indefinido" },
+                { pt: "Vê-la-ei no próximo mês", es: "La veré el próximo mes", tense: "Futuro Simple" },
+                { pt: "Víamos filmes juntos", es: "Veíamos películas juntos", tense: "Pretérito Imperfecto" },
+                { pt: "Ela vê um médico regularmente", es: "Ve a un médico regularmente", tense: "Presente" },
+                { pt: "Agora vejo claramente", es: "Ahora veo claramente", tense: "Presente" },
+                { pt: "Viste com os teus próprios olhos", es: "Lo viste con tus propios ojos", tense: "Pretérito Indefinido" },
+                { pt: "Ele verá a verdade", es: "Verá la verdad", tense: "Futuro Simple" },
+                { pt: "Vemo-nos todas as semanas", es: "Nos vemos cada semana", tense: "Presente" },
+                { pt: "Vi um pôr do sol lindo", es: "Vi un atardecer hermoso", tense: "Pretérito Indefinido" },
+                { pt: "Eles veem oportunidades por todo o lado", es: "Ven oportunidades en todas partes", tense: "Presente" },
+                { pt: "Verás melhorias", es: "Verás mejoras", tense: "Futuro Simple" },
+                { pt: "Ela viu-o ontem", es: "Lo vio ayer", tense: "Pretérito Indefinido" },
+                { pt: "Não vejo razão para preocupação", es: "No veo razón para preocuparse", tense: "Presente" },
+                { pt: "Vimos o concerto ontem à noite", es: "Vimos el concierto anoche", tense: "Pretérito Indefinido" },
+                { pt: "Podes ver o ecrã?", es: "¿Puedes ver la pantalla?", tense: "Presente" },
+                { pt: "Eu via-a todos os dias", es: "La veía todos los días", tense: "Pretérito Imperfecto" },
+                { pt: "Ele vê a família frequentemente", es: "Ve a su familia a menudo", tense: "Presente" },
+                { pt: "Ver-te-ão na festa", es: "Te verán en la fiesta", tense: "Futuro Simple" },
+                { pt: "Vi o sinal", es: "Vi la señal", tense: "Pretérito Indefinido" },
+                { pt: "Vês coisas que eu não vejo", es: "Ves cosas que yo no veo", tense: "Presente" },
+                { pt: "Veremos os resultados", es: "Veremos los resultados", tense: "Futuro Simple" },
+                { pt: "Ela via esse programa", es: "Veía ese programa", tense: "Pretérito Imperfecto" },
+                { pt: "Vejo o teu ponto", es: "Veo tu punto", tense: "Presente" },
+                { pt: "Eles viram as notícias", es: "Vieron las noticias", tense: "Pretérito Indefinido" },
+                { pt: "Ver-me-ás mais tarde", es: "Me verás más tarde", tense: "Futuro Simple" },
+                { pt: "Ele vê potencial em ti", es: "Ve potencial en ti", tense: "Presente" },
+                { pt: "Vi uma luz estranha", es: "Vi una luz extraña", tense: "Pretérito Indefinido" },
+                { pt: "Vemos a mesma coisa", es: "Vemos lo mismo", tense: "Presente" },
+                { pt: "Eles viam peças de teatro", es: "Veían obras de teatro", tense: "Pretérito Imperfecto" },
+                { pt: "Verás mudanças", es: "Verás cambios", tense: "Futuro Simple" },
+                { pt: "Ela vê beleza em todo o lado", es: "Ve belleza en todas partes", tense: "Presente" },
+                { pt: "Vi-o a correr", es: "Lo vi corriendo", tense: "Pretérito Indefinido" },
+                { pt: "Vês a lua?", es: "¿Ves la luna?", tense: "Presente" },
+                { pt: "Veremos-te em breve", es: "Te veremos pronto", tense: "Futuro Simple" },
+                { pt: "Ele viu a oportunidade", es: "Vio la oportunidad", tense: "Pretérito Indefinido" },
+                { pt: "Vejo o panorama geral", es: "Veo el panorama general", tense: "Presente" },
+                { pt: "Eles veem os seus erros", es: "Ven sus errores", tense: "Presente" },
+                { pt: "Viste o email", es: "Viste el correo", tense: "Pretérito Indefinido" },
+                { pt: "Ela verá o médico", es: "Verá al médico", tense: "Futuro Simple" },
+                { pt: "Víamos concertos", es: "Veíamos conciertos", tense: "Pretérito Imperfecto" },
+                { pt: "Não vejo bem sem óculos", es: "No veo bien sin gafas", tense: "Presente" },
+                { pt: "Eles viram muitos países", es: "Vieron muchos países", tense: "Pretérito Indefinido" },
+                { pt: "Verás a cidade", es: "Verás la ciudad", tense: "Futuro Simple" },
+                { pt: "Ele vê o valor nisso", es: "Ve el valor en ello", tense: "Presente" },
+                { pt: "Vi a tua mensagem", es: "Vi tu mensaje", tense: "Pretérito Indefinido" },
+                { pt: "Vemos as coisas claramente", es: "Vemos las cosas claramente", tense: "Presente" },
+                { pt: "Ela via as notícias", es: "Veía las noticias", tense: "Pretérito Imperfecto" },
+                { pt: "Eles verão o oceano", es: "Verán el océano", tense: "Futuro Simple" },
+                { pt: "Vejo esperança nisto", es: "Veo esperanza en esto", tense: "Presente" },
+                { pt: "Viste o jogo", es: "Viste el partido", tense: "Pretérito Indefinido" },
+                { pt: "Ele verá progresso", es: "Verá progreso", tense: "Futuro Simple" },
+                { pt: "Vemos a conexão", es: "Vemos la conexión", tense: "Presente" },
+                { pt: "Vi estrelas ontem à noite", es: "Vi estrellas anoche", tense: "Pretérito Indefinido" },
+                { pt: "Eles veem-se diariamente", es: "Se ven a diario", tense: "Presente" },
+                { pt: "Verás lugares novos", es: "Verás lugares nuevos", tense: "Futuro Simple" },
+                { pt: "Ela viu o desfile", es: "Vio el desfile", tense: "Pretérito Indefinido" },
+                { pt: "Vejo o que fizeste aí", es: "Veo lo que hiciste ahí", tense: "Presente" },
+                { pt: "Víamos peças juntos", es: "Veíamos obras juntos", tense: "Pretérito Imperfecto" },
+                { pt: "Ele vê o seu reflexo", es: "Ve su reflejo", tense: "Presente" },
+                { pt: "Ver-te-ei por aí", es: "Te veré por ahí", tense: "Futuro Simple" },
+                { pt: "Vamos ver se funciona", es: "A ver si funciona", tense: "Presente" },
+                { pt: "Já veremos como vai", es: "Ya veremos cómo va", tense: "Futuro Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

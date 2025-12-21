@@ -22,6 +22,10 @@ languages:
     name: French
     flag: "🇫🇷"
     path: fr/index.html
+  - code: es
+    name: Spanish
+    flag: "🇪🇸"
+    path: es/index.html
 
 origins:
   - { flag: "🇬🇧", name: English }

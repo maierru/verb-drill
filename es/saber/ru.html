@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇪🇸 VERB SABER — 98 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇪🇸 Verb SABER</h1>
+            <p class="subtitle">to know (facts) — 98 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 98 из 98 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика испанского — SABER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb SABER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Настоящее время - используется для фактов, которые вы знаете сейчас</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo sé</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú sabes</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted sabe</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros sabemos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros sabéis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes saben</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Простое прошедшее - используется для момента, когда вы узнали что-то</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo supe</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú supiste</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted supo</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros supimos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros supisteis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes supieron</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Имперфект - используется для фактов, которые вы знали раньше</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo sabía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú sabías</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted sabía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros sabíamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros sabíais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes sabían</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Будущее время - используется для фактов, которые вы будете знать</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo sabré</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú sabrás</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted sabrá</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros sabremos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros sabréis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes sabrán</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'es',
+            labels: { target: 'Español', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["sé","sabes","sabe","sabemos","sabéis","saben","sabía","supe","sabré","sabría"],
+            phrases: [
+                { ru: "Я знаю твоё имя", es: "Sé tu nombre", tense: "Presente" },
+                { ru: "Ты знаешь ответ?", es: "¿Sabes la respuesta?", tense: "Presente" },
+                { ru: "Она знает правду", es: "Ella sabe la verdad", tense: "Presente" },
+                { ru: "Мы знаем дорогу", es: "Sabemos el camino", tense: "Presente" },
+                { ru: "Они знают правила", es: "Ellos saben las reglas", tense: "Presente" },
+                { ru: "Я умею плавать", es: "Sé nadar", tense: "Presente" },
+                { ru: "Ты умеешь готовить?", es: "¿Sabes cocinar?", tense: "Presente" },
+                { ru: "Он умеет водить", es: "Él sabe conducir", tense: "Presente" },
+                { ru: "Мы умеем танцевать", es: "Sabemos bailar", tense: "Presente" },
+                { ru: "Они умеют говорить по-испански", es: "Ellos saben hablar español", tense: "Presente" },
+                { ru: "Я не знаю", es: "No sé", tense: "Presente" },
+                { ru: "Я не знаю, что делать", es: "No sé qué hacer", tense: "Presente" },
+                { ru: "Я не знаю, где это", es: "No sé dónde está", tense: "Presente" },
+                { ru: "Я не знаю почему", es: "No sé por qué", tense: "Presente" },
+                { ru: "Я не знаю как", es: "No sé cómo", tense: "Presente" },
+                { ru: "Знаешь что?", es: "¿Sabes qué?", tense: "Presente" },
+                { ru: "Ты понимаешь, что я имею в виду?", es: "¿Sabes lo que quiero decir?", tense: "Presente" },
+                { ru: "Ты знаешь, который час?", es: "¿Sabes qué hora es?", tense: "Presente" },
+                { ru: "Никто не знает", es: "Nadie sabe", tense: "Presente" },
+                { ru: "Все знают", es: "Todo el mundo sabe", tense: "Presente" },
+                { ru: "Я знаю это наизусть", es: "Lo sé de memoria", tense: "Presente" },
+                { ru: "Кто знает?", es: "¿Quién sabe?", tense: "Presente" },
+                { ru: "Насколько я знаю", es: "Que yo sepa", tense: "Presente" },
+                { ru: "Я хочу знать", es: "Quiero saber", tense: "Presente" },
+                { ru: "Мне нужно знать", es: "Necesito saber", tense: "Presente" },
+                { ru: "Это на вкус как курица", es: "Sabe a pollo", tense: "Presente" },
+                { ru: "Это вкусно", es: "Sabe bien", tense: "Presente" },
+                { ru: "Это невкусно", es: "Sabe mal", tense: "Presente" },
+                { ru: "У этого нет вкуса", es: "No sabe a nada", tense: "Presente" },
+                { ru: "Какой у этого вкус?", es: "¿A qué sabe?", tense: "Presente" },
+                { ru: "Я так и знал!", es: "¡Lo sabía!", tense: "Pretérito Imperfecto" },
+                { ru: "Я знал, что ты придёшь", es: "Sabía que vendrías", tense: "Pretérito Imperfecto" },
+                { ru: "Она знала ответ", es: "Ella sabía la respuesta", tense: "Pretérito Imperfecto" },
+                { ru: "Мы знали правду", es: "Sabíamos la verdad", tense: "Pretérito Imperfecto" },
+                { ru: "Они всё знали", es: "Ellos sabían todo", tense: "Pretérito Imperfecto" },
+                { ru: "Я не знал", es: "No sabía", tense: "Pretérito Imperfecto" },
+                { ru: "Я этого не знал", es: "No sabía eso", tense: "Pretérito Imperfecto" },
+                { ru: "Ты знал?", es: "¿Sabías?", tense: "Pretérito Imperfecto" },
+                { ru: "Откуда ты знал?", es: "¿Cómo lo sabías?", tense: "Pretérito Imperfecto" },
+                { ru: "Я уже знал", es: "Ya lo sabía", tense: "Pretérito Imperfecto" },
+                { ru: "Я узнал вчера", es: "Lo supe ayer", tense: "Pretérito Indefinido" },
+                { ru: "Когда ты узнал?", es: "¿Cuándo lo supiste?", tense: "Pretérito Indefinido" },
+                { ru: "Она узнала правду", es: "Ella supo la verdad", tense: "Pretérito Indefinido" },
+                { ru: "Мы узнали слишком поздно", es: "Lo supimos demasiado tarde", tense: "Pretérito Indefinido" },
+                { ru: "Они так и не узнали", es: "Ellos nunca lo supieron", tense: "Pretérito Indefinido" },
+                { ru: "Я только что узнал", es: "Acabo de saberlo", tense: "Presente" },
+                { ru: "Как он узнал?", es: "¿Cómo lo supo?", tense: "Pretérito Indefinido" },
+                { ru: "Я узнал случайно", es: "Lo supe por casualidad", tense: "Pretérito Indefinido" },
+                { ru: "Мы узнали это на своей шкуре", es: "Lo supimos por las malas", tense: "Pretérito Indefinido" },
+                { ru: "Ты скоро узнаешь", es: "Lo sabrás pronto", tense: "Futuro Simple" },
+                { ru: "Я узнаю завтра", es: "Lo sabré mañana", tense: "Futuro Simple" },
+                { ru: "Мы узнаем результаты", es: "Sabremos los resultados", tense: "Futuro Simple" },
+                { ru: "Они в конце концов узнают", es: "Ellos lo sabrán eventualmente", tense: "Futuro Simple" },
+                { ru: "Ты никогда не узнаешь", es: "Nunca lo sabrás", tense: "Futuro Simple" },
+                { ru: "Время покажет", es: "El tiempo lo dirá", tense: "Futuro Simple" },
+                { ru: "Я знаю, о чём ты думаешь", es: "Sé lo que estás pensando", tense: "Presente" },
+                { ru: "Я знаю, где ты живёшь", es: "Sé dónde vives", tense: "Presente" },
+                { ru: "Я знаю, кто ты", es: "Sé quién eres", tense: "Presente" },
+                { ru: "Я знаю, когда ты ушёл", es: "Sé cuándo te fuiste", tense: "Presente" },
+                { ru: "Ты знаешь моего брата?", es: "¿Conoces a mi hermano?", tense: "Presente" },
+                { ru: "Я знаю испанский", es: "Sé español", tense: "Presente" },
+                { ru: "Она знает три языка", es: "Ella sabe tres idiomas", tense: "Presente" },
+                { ru: "Я хорошо знаю город", es: "Conozco bien la ciudad", tense: "Presente" },
+                { ru: "Я точно знаю", es: "Lo sé con certeza", tense: "Presente" },
+                { ru: "Я знаю это наверняка", es: "Lo sé a ciencia cierta", tense: "Presente" },
+                { ru: "Как ты знаешь", es: "Como sabes", tense: "Presente" },
+                { ru: "Как мы все знаем", es: "Como todos sabemos", tense: "Presente" },
+                { ru: "Дай мне знать", es: "Avísame", tense: "Imperativo" },
+                { ru: "Пожалуйста, сообщи мне", es: "Por favor, hazme saber", tense: "Imperativo" },
+                { ru: "Хотел бы я знать", es: "Ojalá lo supiera", tense: "Subjuntivo" },
+                { ru: "Если бы я знал", es: "Si lo supiera", tense: "Subjuntivo" },
+                { ru: "Я должен был знать", es: "Debería haberlo sabido", tense: "Condicional" },
+                { ru: "Откуда мне было знать?", es: "¿Cómo iba yo a saber?", tense: "Pretérito Imperfecto" },
+                { ru: "Никогда не знаешь", es: "Nunca se sabe", tense: "Presente" },
+                { ru: "Бог знает", es: "Dios sabe", tense: "Presente" },
+                { ru: "Одному богу известно", es: "Vaya usted a saber", tense: "Presente" },
+                { ru: "Я лучше знаю", es: "Sé mejor que eso", tense: "Presente" },
+                { ru: "Тебе следовало бы знать лучше", es: "Deberías saberlo mejor", tense: "Condicional" },
+                { ru: "Я ничего об этом не знаю", es: "No sé nada de eso", tense: "Presente" },
+                { ru: "Я знаю о ней всё", es: "Sé todo sobre ella", tense: "Presente" },
+                { ru: "Я знаю то, чего ты не знаешь", es: "Sé algo que tú no sabes", tense: "Presente" },
+                { ru: "Ты что-то знаешь?", es: "¿Sabes algo?", tense: "Presente" },
+                { ru: "Я знаю достаточно", es: "Sé lo suficiente", tense: "Presente" },
+                { ru: "Я знаю недостаточно", es: "No sé lo suficiente", tense: "Presente" },
+                { ru: "Я знаю слишком много", es: "Sé demasiado", tense: "Presente" },
+                { ru: "Чем больше знаешь", es: "Cuanto más sabes", tense: "Presente" },
+                { ru: "Я хочу, чтобы ты знал", es: "Quiero que sepas", tense: "Subjuntivo" },
+                { ru: "Мне нужно, чтобы ты знал", es: "Necesito que sepas", tense: "Subjuntivo" },
+                { ru: "Тебе следует знать", es: "Deberías saber", tense: "Condicional" },
+                { ru: "Ты должен знать", es: "Debes saber", tense: "Presente" },
+                { ru: "Все должны знать", es: "Todo el mundo debería saber", tense: "Condicional" },
+                { ru: "Я рад знать", es: "Me alegra saber", tense: "Presente" },
+                { ru: "Хорошо знать", es: "Es bueno saber", tense: "Presente" },
+                { ru: "Важно знать", es: "Es importante saber", tense: "Presente" },
+                { ru: "Не хочу тебе говорить, но я знаю", es: "Odio decírtelo, pero lo sé", tense: "Presente" },
+                { ru: "Я думаю, что знаю", es: "Creo que sé", tense: "Presente" },
+                { ru: "Я думал, что знаю", es: "Pensé que sabía", tense: "Pretérito Imperfecto" },
+                { ru: "Я знаю, что видел", es: "Sé lo que vi", tense: "Presente" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

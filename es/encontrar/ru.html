@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇪🇸 VERB ENCONTRAR — 97 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇪🇸 Verb ENCONTRAR</h1>
+            <p class="subtitle">to find — 97 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 97 из 97 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика испанского — ENCONTRAR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb ENCONTRAR</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Настоящее время - действия, происходящие сейчас или регулярно</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">{"person" => "yo", "form" => "encuentro"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "tú", "form" => "encuentras"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "él/ella/usted", "form" => "encuentra"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "nosotros/nosotras", "form" => "encontramos"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "vosotros/vosotras", "form" => "encontráis"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "ellos/ellas/ustedes", "form" => "encuentran"}</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Простое прошедшее - завершенные действия в прошлом</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">{"person" => "yo", "form" => "encontré"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "tú", "form" => "encontraste"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "él/ella/usted", "form" => "encontró"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "nosotros/nosotras", "form" => "encontramos"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "vosotros/vosotras", "form" => "encontrasteis"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "ellos/ellas/ustedes", "form" => "encontraron"}</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Несовершенное прошедшее - продолжительные или регулярные действия в прошлом</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">{"person" => "yo", "form" => "encontraba"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "tú", "form" => "encontrabas"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "él/ella/usted", "form" => "encontraba"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "nosotros/nosotras", "form" => "encontrábamos"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "vosotros/vosotras", "form" => "encontrabais"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "ellos/ellas/ustedes", "form" => "encontraban"}</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Простое будущее - действия, которые произойдут</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">{"person" => "yo", "form" => "encontraré"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "tú", "form" => "encontrarás"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "él/ella/usted", "form" => "encontrará"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "nosotros/nosotras", "form" => "encontraremos"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "vosotros/vosotras", "form" => "encontraréis"}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">{"person" => "ellos/ellas/ustedes", "form" => "encontrarán"}</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'es',
+            labels: { target: 'Español', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["encuentro","encuentras","encuentra","encontramos","encontráis","encuentran","encontré","encontraba","encontraré"],
+            phrases: [
+                { ru: "Я нахожу свои ключи каждое утро", es: "Encuentro mis llaves cada mañana", tense: "Presente" },
+                { ru: "Ты находишь хорошие рестораны здесь", es: "Encuentras buenos restaurantes aquí", tense: "Presente" },
+                { ru: "Она находит решение легко", es: "Ella encuentra la solución fácilmente", tense: "Presente" },
+                { ru: "Мы находим время поговорить", es: "Encontramos tiempo para hablar", tense: "Presente" },
+                { ru: "Они находят работу быстро", es: "Encuentran trabajo rápidamente", tense: "Presente" },
+                { ru: "Я нашёл свой телефон вчера", es: "Encontré mi teléfono ayer", tense: "Pretérito Indefinido" },
+                { ru: "Ты нашёл новую работу", es: "Encontraste un nuevo trabajo", tense: "Pretérito Indefinido" },
+                { ru: "Он нашёл ответ", es: "Él encontró la respuesta", tense: "Pretérito Indefinido" },
+                { ru: "Мы нашли отличное место", es: "Encontramos un lugar genial", tense: "Pretérito Indefinido" },
+                { ru: "Они встретились снова", es: "Se encontraron otra vez", tense: "Pretérito Indefinido" },
+                { ru: "Я всегда находил то, что мне нужно", es: "Siempre encontraba lo que necesitaba", tense: "Pretérito Imperfecto" },
+                { ru: "Ты находил сокровища", es: "Encontrabas tesoros", tense: "Pretérito Imperfecto" },
+                { ru: "Она находила покой на природе", es: "Ella encontraba paz en la naturaleza", tense: "Pretérito Imperfecto" },
+                { ru: "Мы находили радость в простых вещах", es: "Encontrábamos alegría en cosas simples", tense: "Pretérito Imperfecto" },
+                { ru: "Я найду решение", es: "Encontraré una solución", tense: "Futuro Simple" },
+                { ru: "Ты найдёшь свой путь", es: "Encontrarás tu camino", tense: "Futuro Simple" },
+                { ru: "Он найдёт успех", es: "Él encontrará el éxito", tense: "Futuro Simple" },
+                { ru: "Мы найдём правду", es: "Encontraremos la verdad", tense: "Futuro Simple" },
+                { ru: "Они найдут счастье", es: "Encontrarán la felicidad", tense: "Futuro Simple" },
+                { ru: "Я не могу найти свой кошелёк", es: "No encuentro mi cartera", tense: "Presente" },
+                { ru: "Ты можешь найти адрес?", es: "¿Encuentras la dirección?", tense: "Presente" },
+                { ru: "Где мне найти станцию?", es: "¿Dónde encuentro la estación?", tense: "Presente" },
+                { ru: "Мне трудно уснуть", es: "Encuentro difícil dormir", tense: "Presente" },
+                { ru: "Она находит утешение в музыке", es: "Ella encuentra consuelo en la música", tense: "Presente" },
+                { ru: "Мы встречаемся каждый вторник", es: "Nos encontramos cada martes", tense: "Presente" },
+                { ru: "Я чувствую себя счастливым сегодня", es: "Me encuentro feliz hoy", tense: "Presente" },
+                { ru: "Как ты себя чувствуешь?", es: "¿Cómo te encuentras?", tense: "Presente" },
+                { ru: "Она чувствует себя хорошо", es: "Ella se encuentra bien", tense: "Presente" },
+                { ru: "Мы встретились в парке", es: "Nos encontramos en el parque", tense: "Pretérito Indefinido" },
+                { ru: "Я чувствовал себя больным вчера", es: "Me encontraba enfermo ayer", tense: "Pretérito Imperfecto" },
+                { ru: "Я нахожу эту книгу интересной", es: "Encuentro este libro interesante", tense: "Presente" },
+                { ru: "Ты находишь проблемы везде", es: "Encuentras problemas en todas partes", tense: "Presente" },
+                { ru: "Он не находит оправдания", es: "Él no encuentra excusa", tense: "Presente" },
+                { ru: "Мы находим возможности ежедневно", es: "Encontramos oportunidades a diario", tense: "Presente" },
+                { ru: "Они не находят ничего подозрительного", es: "No encuentran nada sospechoso", tense: "Presente" },
+                { ru: "Я нашёл любовь неожиданно", es: "Encontré el amor inesperadamente", tense: "Pretérito Indefinido" },
+                { ru: "Ты нашёл правильный путь", es: "Encontraste el camino correcto", tense: "Pretérito Indefinido" },
+                { ru: "Она нашла свою страсть", es: "Ella encontró su pasión", tense: "Pretérito Indefinido" },
+                { ru: "Мы нашли лучший способ", es: "Encontramos una mejor manera", tense: "Pretérito Indefinido" },
+                { ru: "Они нашли пропавшие документы", es: "Encontraron los documentos perdidos", tense: "Pretérito Indefinido" },
+                { ru: "Я находил монеты на улице", es: "Encontraba monedas en la calle", tense: "Pretérito Imperfecto" },
+                { ru: "Ты всегда находил оправдания", es: "Siempre encontrabas excusas", tense: "Pretérito Imperfecto" },
+                { ru: "Он находил утешение в чтении", es: "Él encontraba consuelo leyendo", tense: "Pretérito Imperfecto" },
+                { ru: "Мы встречались каждые выходные", es: "Nos encontrábamos cada fin de semana", tense: "Pretérito Imperfecto" },
+                { ru: "Они находили вдохновение в искусстве", es: "Encontraban inspiración en el arte", tense: "Pretérito Imperfecto" },
+                { ru: "Я найду ответ завтра", es: "Encontraré la respuesta mañana", tense: "Futuro Simple" },
+                { ru: "Ты найдёшь новых друзей", es: "Encontrarás nuevos amigos", tense: "Futuro Simple" },
+                { ru: "Она найдёт свою судьбу", es: "Ella encontrará su destino", tense: "Futuro Simple" },
+                { ru: "Мы найдём компромисс", es: "Encontraremos un compromiso", tense: "Futuro Simple" },
+                { ru: "Они найдут сокровище", es: "Encontrarán el tesoro", tense: "Futuro Simple" },
+                { ru: "Я не могу найти выход", es: "No encuentro la salida", tense: "Presente" },
+                { ru: "Ты находишь это странным?", es: "¿Lo encuentras extraño?", tense: "Presente" },
+                { ru: "Она не находит это смешным", es: "Ella no lo encuentra gracioso", tense: "Presente" },
+                { ru: "Мы находим эту ситуацию абсурдной", es: "Encontramos esta situación absurda", tense: "Presente" },
+                { ru: "Они не находят доказательств", es: "No encuentran evidencia", tense: "Presente" },
+                { ru: "Я нашёл ошибку в отчёте", es: "Encontré un error en el informe", tense: "Pretérito Indefinido" },
+                { ru: "Ты нашёл короткий путь", es: "Encontraste un atajo", tense: "Pretérito Indefinido" },
+                { ru: "Он нашёл убежище здесь", es: "Él encontró refugio aquí", tense: "Pretérito Indefinido" },
+                { ru: "Мы нашли общие интересы", es: "Encontramos puntos en común", tense: "Pretérito Indefinido" },
+                { ru: "Они нашли виновника", es: "Encontraron al culpable", tense: "Pretérito Indefinido" },
+                { ru: "Я всегда находил помощь когда нужно", es: "Siempre encontraba ayuda cuando la necesitaba", tense: "Pretérito Imperfecto" },
+                { ru: "Ты находил красоту во всём", es: "Encontrabas belleza en todo", tense: "Pretérito Imperfecto" },
+                { ru: "Она находила смысл в своей работе", es: "Ella encontraba sentido en su trabajo", tense: "Pretérito Imperfecto" },
+                { ru: "Мы находили покой в тишине", es: "Encontrábamos paz en el silencio", tense: "Pretérito Imperfecto" },
+                { ru: "Я найду время для тебя", es: "Encontraré tiempo para ti", tense: "Futuro Simple" },
+                { ru: "Ты найдёшь смелость", es: "Encontrarás el valor", tense: "Futuro Simple" },
+                { ru: "Он найдёт свою цель", es: "Él encontrará su propósito", tense: "Futuro Simple" },
+                { ru: "Мы найдём ресурсы", es: "Encontraremos los recursos", tense: "Futuro Simple" },
+                { ru: "Они найдут решение вместе", es: "Encontrarán una solución juntos", tense: "Futuro Simple" },
+                { ru: "Мне нужно найти работу", es: "Necesito encontrar trabajo", tense: "Presente" },
+                { ru: "Ты можешь найти файл?", es: "¿Puedes encontrar el archivo?", tense: "Presente" },
+                { ru: "Она хочет найти покой", es: "Ella quiere encontrar paz", tense: "Presente" },
+                { ru: "Мы надеемся найти ответы", es: "Esperamos encontrar respuestas", tense: "Presente" },
+                { ru: "Я нашёл место для парковки", es: "Encontré un lugar para aparcar", tense: "Pretérito Indefinido" },
+                { ru: "Ты нашёл выгодную покупку", es: "Encontraste una ganga", tense: "Pretérito Indefinido" },
+                { ru: "Он нашёл идеальный подарок", es: "Él encontró el regalo perfecto", tense: "Pretérito Indefinido" },
+                { ru: "Мы нашли хороший отель", es: "Encontramos un hotel agradable", tense: "Pretérito Indefinido" },
+                { ru: "Они нашли ресторан закрытым", es: "Encontraron el restaurante cerrado", tense: "Pretérito Indefinido" },
+                { ru: "Я находил мотивацию в вызовах", es: "Encontraba motivación en los desafíos", tense: "Pretérito Imperfecto" },
+                { ru: "Ты находил радость в мелочах", es: "Encontrabas alegría en las pequeñas cosas", tense: "Pretérito Imperfecto" },
+                { ru: "Она находила силу внутри себя", es: "Ella encontraba fuerza interior", tense: "Pretérito Imperfecto" },
+                { ru: "Мы находили надежду в тёмные времена", es: "Encontrábamos esperanza en tiempos oscuros", tense: "Pretérito Imperfecto" },
+                { ru: "Я найду работу мечты", es: "Encontraré el trabajo de mis sueños", tense: "Futuro Simple" },
+                { ru: "Ты найдёшь то, что ищешь", es: "Encontrarás lo que buscas", tense: "Futuro Simple" },
+                { ru: "Она найдёт свой голос", es: "Ella encontrará su voz", tense: "Futuro Simple" },
+                { ru: "Мы найдём баланс", es: "Encontraremos el equilibrio", tense: "Futuro Simple" },
+                { ru: "Они найдут новые возможности", es: "Encontrarán nuevas oportunidades", tense: "Futuro Simple" },
+                { ru: "Я не могу найти свои очки", es: "No encuentro mis gafas", tense: "Presente" },
+                { ru: "Где ты это нашёл?", es: "¿Dónde encontraste esto?", tense: "Pretérito Indefinido" },
+                { ru: "Я оказался один", es: "Me encontré solo", tense: "Pretérito Indefinido" },
+                { ru: "Мы встречаемся в кафе", es: "Nos encontramos en el café", tense: "Presente" },
+                { ru: "Как ты себя чувствуешь?", es: "¿Cómo te encuentras?", tense: "Presente" },
+                { ru: "Я чувствую себя лучше сейчас", es: "Me encuentro mejor ahora", tense: "Presente" },
+                { ru: "Я нашёл это случайно", es: "Lo encontré por casualidad", tense: "Pretérito Indefinido" },
+                { ru: "Ты найдёшь это полезным", es: "Lo encontrarás útil", tense: "Futuro Simple" },
+                { ru: "Она не нашла причины остаться", es: "Ella no encontró razón para quedarse", tense: "Pretérito Indefinido" },
+                { ru: "Мы оказались в беде", es: "Nos encontramos en problemas", tense: "Presente" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

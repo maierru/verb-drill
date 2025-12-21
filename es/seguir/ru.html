@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇪🇸 VERB SEGUIR — 100 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇪🇸 Verb SEGUIR</h1>
+            <p class="subtitle">to follow, to continue — 100 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 100 из 100 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика испанского — SEGUIR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb SEGUIR</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Настоящее время для действий происходящих сейчас или привычных действий</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">sigo</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sigues</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sigue</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguimos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguís</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">siguen</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Простое прошедшее время для завершенных действий в прошлом</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">seguí</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguiste</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">siguió</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguimos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguisteis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">siguieron</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Имперфект для продолжающихся или привычных действий в прошлом</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">seguía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguías</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguía</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguíamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguíais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguían</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Простое будущее время для действий которые произойдут</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">seguiré</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguirás</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguirá</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguiremos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguiréis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">seguirán</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'es',
+            labels: { target: 'Español', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["sigo","sigues","sigue","seguimos","seguís","siguen","seguí","seguiste","siguió","seguimos","seguisteis","siguieron","seguía","seguías","seguía","seguíamos","seguíais","seguían","seguiré","seguirás","seguirá","seguiremos","seguiréis","seguirán"],
+            phrases: [
+                { ru: "Я слежу за тобой в соцсетях", es: "Te sigo en las redes sociales", tense: "Presente" },
+                { ru: "Ты следуешь инструкциям внимательно", es: "Sigues las instrucciones cuidadosamente", tense: "Presente" },
+                { ru: "Он продолжает работать допоздна", es: "Él sigue trabajando hasta tarde", tense: "Presente" },
+                { ru: "Мы продолжаем пытаться", es: "Seguimos intentando", tense: "Presente" },
+                { ru: "Они следуют за лидером", es: "Ellos siguen al líder", tense: "Presente" },
+                { ru: "Я проследил за ним до дома", es: "Lo seguí hasta casa", tense: "Pretérito Indefinido" },
+                { ru: "Ты продолжал учиться всю ночь", es: "Seguiste estudiando toda la noche", tense: "Pretérito Indefinido" },
+                { ru: "Она следовала по карте", es: "Ella siguió el mapa", tense: "Pretérito Indefinido" },
+                { ru: "Мы продолжали идти", es: "Seguimos caminando", tense: "Pretérito Indefinido" },
+                { ru: "Они следовали правилам", es: "Siguieron las reglas", tense: "Pretérito Indefinido" },
+                { ru: "Я раньше следовал этим путем", es: "Yo seguía ese camino", tense: "Pretérito Imperfecto" },
+                { ru: "Ты продолжал жаловаться", es: "Seguías quejándote", tense: "Pretérito Imperfecto" },
+                { ru: "Он продолжал читать каждый день", es: "Él seguía leyendo cada día", tense: "Pretérito Imperfecto" },
+                { ru: "Мы следовали её совету", es: "Seguíamos su consejo", tense: "Pretérito Imperfecto" },
+                { ru: "Они продолжали смеяться", es: "Seguían riendo", tense: "Pretérito Imperfecto" },
+                { ru: "Я последую твоему примеру", es: "Seguiré tu ejemplo", tense: "Futuro Simple" },
+                { ru: "Ты продолжишь завтра", es: "Seguirás mañana", tense: "Futuro Simple" },
+                { ru: "Она последует за нами", es: "Ella nos seguirá", tense: "Futuro Simple" },
+                { ru: "Мы продолжим бороться", es: "Seguiremos luchando", tense: "Futuro Simple" },
+                { ru: "Они последуют плану", es: "Seguirán el plan", tense: "Futuro Simple" },
+                { ru: "Я слежу за новостями ежедневно", es: "Sigo las noticias diariamente", tense: "Presente" },
+                { ru: "Ты продолжаешь задавать вопросы", es: "Sigues haciendo preguntas", tense: "Presente" },
+                { ru: "Он следует за своим сердцем", es: "Él sigue su corazón", tense: "Presente" },
+                { ru: "Мы продолжаем двигаться вперед", es: "Seguimos adelante", tense: "Presente" },
+                { ru: "Они следуют дорожным знакам", es: "Siguen las señales de tráfico", tense: "Presente" },
+                { ru: "Я в точности следовал рецепту", es: "Seguí la receta exactamente", tense: "Pretérito Indefinido" },
+                { ru: "Ты продолжил без меня", es: "Seguiste sin mí", tense: "Pretérito Indefinido" },
+                { ru: "Она следовала за своими мечтами", es: "Ella siguió sus sueños", tense: "Pretérito Indefinido" },
+                { ru: "Мы сдержали обещание", es: "Seguimos con nuestra promesa", tense: "Pretérito Indefinido" },
+                { ru: "Они следовали вдоль реки", es: "Siguieron el río", tense: "Pretérito Indefinido" },
+                { ru: "Я продолжал думать об этом", es: "Seguía pensando en ello", tense: "Pretérito Imperfecto" },
+                { ru: "Ты следовал за мной повсюду", es: "Me seguías a todas partes", tense: "Pretérito Imperfecto" },
+                { ru: "Он продолжал практиковаться", es: "Él seguía practicando", tense: "Pretérito Imperfecto" },
+                { ru: "Мы следовали этой традиции", es: "Seguíamos esa tradición", tense: "Pretérito Imperfecto" },
+                { ru: "Они продолжали разговаривать", es: "Seguían hablando", tense: "Pretérito Imperfecto" },
+                { ru: "Я последую процедуре", es: "Seguiré el procedimiento", tense: "Futuro Simple" },
+                { ru: "Ты продолжишь учиться", es: "Seguirás aprendiendo", tense: "Futuro Simple" },
+                { ru: "Она последует руководящим принципам", es: "Ella seguirá las pautas", tense: "Futuro Simple" },
+                { ru: "Мы продолжим позже", es: "Seguiremos más tarde", tense: "Futuro Simple" },
+                { ru: "Они последуют расписанию", es: "Seguirán el horario", tense: "Futuro Simple" },
+                { ru: "Я слежу за твоим блогом", es: "Sigo tu blog", tense: "Presente" },
+                { ru: "Ты продолжаешь упрямиться", es: "Sigues siendo terco", tense: "Presente" },
+                { ru: "Он следит за трендами", es: "Él sigue las tendencias", tense: "Presente" },
+                { ru: "Мы поддерживаем связь", es: "Seguimos en contacto", tense: "Presente" },
+                { ru: "Они следуют моде", es: "Siguen la moda", tense: "Presente" },
+                { ru: "Я внимательно следил за историей", es: "Seguí la historia de cerca", tense: "Pretérito Indefinido" },
+                { ru: "Ты продолжал бежать", es: "Seguiste corriendo", tense: "Pretérito Indefinido" },
+                { ru: "Она следовала по следу", es: "Ella siguió el rastro", tense: "Pretérito Indefinido" },
+                { ru: "Мы продолжили разговор", es: "Seguimos la conversación", tense: "Pretérito Indefinido" },
+                { ru: "Они следовали за гидом", es: "Siguieron al guía", tense: "Pretérito Indefinido" },
+                { ru: "Я следил за спортом", es: "Seguía los deportes", tense: "Pretérito Imperfecto" },
+                { ru: "Ты продолжал петь", es: "Seguías cantando", tense: "Pretérito Imperfecto" },
+                { ru: "Он продолжал учебу", es: "Él seguía sus estudios", tense: "Pretérito Imperfecto" },
+                { ru: "Мы следили за сериалом", es: "Seguíamos la serie", tense: "Pretérito Imperfecto" },
+                { ru: "Они продолжали танцевать", es: "Seguían bailando", tense: "Pretérito Imperfecto" },
+                { ru: "Я последую интуиции", es: "Seguiré mi intuición", tense: "Futuro Simple" },
+                { ru: "Ты продолжишь пытаться", es: "Seguirás intentando", tense: "Futuro Simple" },
+                { ru: "Она последует указаниям врача", es: "Ella seguirá las órdenes del médico", tense: "Futuro Simple" },
+                { ru: "Мы продолжим проект", es: "Seguiremos el proyecto", tense: "Futuro Simple" },
+                { ru: "Они доведут до конца", es: "Seguirán hasta el final", tense: "Futuro Simple" },
+                { ru: "Я соблюдаю строгую диету", es: "Sigo una dieta estricta", tense: "Presente" },
+                { ru: "Ты продолжаешь перебивать", es: "Sigues interrumpiendo", tense: "Presente" },
+                { ru: "Он следует одному распорядку", es: "Él sigue la misma rutina", tense: "Presente" },
+                { ru: "Мы продолжаем расти", es: "Seguimos creciendo", tense: "Presente" },
+                { ru: "Они следуют религиозным практикам", es: "Siguen prácticas religiosas", tense: "Presente" },
+                { ru: "Я последовал твоему совету", es: "Seguí tu consejo", tense: "Pretérito Indefinido" },
+                { ru: "Ты продолжал несмотря на трудности", es: "Seguiste a pesar de las dificultades", tense: "Pretérito Indefinido" },
+                { ru: "Она следовала за толпой", es: "Ella siguió a la multitud", tense: "Pretérito Indefinido" },
+                { ru: "Мы продолжали двигаться вперед", es: "Seguimos adelante", tense: "Pretérito Indefinido" },
+                { ru: "Они следовали сценарию", es: "Siguieron el guion", tense: "Pretérito Indefinido" },
+                { ru: "Я продолжал надеяться", es: "Seguía esperando", tense: "Pretérito Imperfecto" },
+                { ru: "Ты следил за той группой", es: "Seguías a esa banda", tense: "Pretérito Imperfecto" },
+                { ru: "Он продолжал несмотря на предупреждения", es: "Él seguía a pesar de las advertencias", tense: "Pretérito Imperfecto" },
+                { ru: "Мы следили за политикой", es: "Seguíamos la política", tense: "Pretérito Imperfecto" },
+                { ru: "Они продолжали настаивать", es: "Seguían insistiendo", tense: "Pretérito Imperfecto" },
+                { ru: "Я последую по пути", es: "Seguiré el camino", tense: "Futuro Simple" },
+                { ru: "Ты продолжишь карьеру", es: "Seguirás tu carrera", tense: "Futuro Simple" },
+                { ru: "Она последует страсти", es: "Ella seguirá su pasión", tense: "Futuro Simple" },
+                { ru: "Мы продолжим поиски", es: "Seguiremos buscando", tense: "Futuro Simple" },
+                { ru: "Они последуют нашему примеру", es: "Seguirán nuestro ejemplo", tense: "Futuro Simple" },
+                { ru: "Я следую тем же маршрутом", es: "Sigo la misma ruta", tense: "Presente" },
+                { ru: "Ты продолжаешь улучшаться", es: "Sigues mejorando", tense: "Presente" },
+                { ru: "Он следует приказам", es: "Él sigue órdenes", tense: "Presente" },
+                { ru: "Мы продолжаем верить", es: "Seguimos creyendo", tense: "Presente" },
+                { ru: "Они плывут по течению", es: "Siguen la corriente", tense: "Presente" },
+                { ru: "Я следовал инструкциям шаг за шагом", es: "Seguí las instrucciones paso a paso", tense: "Pretérito Indefinido" },
+                { ru: "Ты продолжал писать", es: "Seguiste escribiendo", tense: "Pretérito Indefinido" },
+                { ru: "Она следовала знакам", es: "Ella siguió las señales", tense: "Pretérito Indefinido" },
+                { ru: "Мы продолжили путешествие", es: "Seguimos nuestro viaje", tense: "Pretérito Indefinido" },
+                { ru: "Они следовали традиции", es: "Siguieron la tradición", tense: "Pretérito Indefinido" },
+                { ru: "Я следил за тем каналом", es: "Seguía ese canal", tense: "Pretérito Imperfecto" },
+                { ru: "Ты продолжал плакать", es: "Seguías llorando", tense: "Pretérito Imperfecto" },
+                { ru: "Он продолжал работать там", es: "Él seguía trabajando allí", tense: "Pretérito Imperfecto" },
+                { ru: "Мы следовали правилам", es: "Seguíamos las reglas", tense: "Pretérito Imperfecto" },
+                { ru: "Они продолжали улыбаться", es: "Seguían sonriendo", tense: "Pretérito Imperfecto" },
+                { ru: "Я последую примеру", es: "Seguiré el ejemplo", tense: "Futuro Simple" },
+                { ru: "Ты продолжишь двигаться вперед", es: "Seguirás avanzando", tense: "Futuro Simple" },
+                { ru: "Она последует протоколу", es: "Ella seguirá el protocolo", tense: "Futuro Simple" },
+                { ru: "Мы останемся едиными", es: "Seguiremos unidos", tense: "Futuro Simple" },
+                { ru: "Они последуют правилам", es: "Seguirán las regulaciones", tense: "Futuro Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇪🇸 VERB DEBER — 95 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇪🇸 Verb DEBER</h1>
+            <p class="subtitle">must, should — 95 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 95 из 95 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика испанского — DEBER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb DEBER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Настоящее время - обязанность, долг, вероятность, рекомендация в настоящем</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>debo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>debes</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>debe</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>debemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>debéis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>deben</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Простое прошедшее - обязанность или долг в прошлом</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>debí</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>debiste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>debió</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>debimos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>debisteis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>debieron</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Имперфект - продолжительная обязанность или привычный долг в прошлом</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>debía</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>debías</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>debía</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>debíamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>debíais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>debían</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Простое будущее - обязанность или долг в будущем</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>deberé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>deberás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>deberá</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>deberemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>deberéis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>deberán</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'es',
+            labels: { target: 'Español', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["debo","debes","debe","debemos","debéis","deben","debí","debiste","debió","debimos","debisteis","debieron","debía","debías","debíamos","debíais","debían","deberé","deberás","deberá","deberemos","deberéis","deberán"],
+            phrases: [
+                { ru: "Я должен готовиться к экзамену.", es: "Debo estudiar para el examen.", tense: "Presente" },
+                { ru: "Ты должен есть больше овощей.", es: "Debes comer más verduras.", tense: "Presente" },
+                { ru: "Она должна прийти вовремя.", es: "Ella debe llegar a tiempo.", tense: "Presente" },
+                { ru: "Мы должны закончить проект.", es: "Debemos terminar el proyecto.", tense: "Presente" },
+                { ru: "Они должны мне деньги.", es: "Me deben dinero.", tense: "Presente" },
+                { ru: "Вы должны быть осторожными.", es: "Debéis tener cuidado.", tense: "Presente" },
+                { ru: "Я должен позвонить маме.", es: "Debo llamar a mi madre.", tense: "Presente" },
+                { ru: "Ты должен уважать правила.", es: "Debes respetar las reglas.", tense: "Presente" },
+                { ru: "Он должен быть дома.", es: "Debe estar en casa.", tense: "Presente" },
+                { ru: "Мы должны им извинения.", es: "Les debemos una disculpa.", tense: "Presente" },
+                { ru: "Они должны работать усерднее.", es: "Deben trabajar más duro.", tense: "Presente" },
+                { ru: "Я должен оплатить счета.", es: "Debo pagar las facturas.", tense: "Presente" },
+                { ru: "Ты должен больше отдыхать.", es: "Debes descansar más.", tense: "Presente" },
+                { ru: "Она должна банку деньги.", es: "Ella debe dinero al banco.", tense: "Presente" },
+                { ru: "Мы должны быть честными.", es: "Debemos ser honestos.", tense: "Presente" },
+                { ru: "Вы должны слушать.", es: "Debéis escuchar.", tense: "Presente" },
+                { ru: "Они должны это понять.", es: "Deben entender esto.", tense: "Presente" },
+                { ru: "Я должен заниматься спортом ежедневно.", es: "Debo hacer ejercicio diariamente.", tense: "Presente" },
+                { ru: "Ты должен говорить правду.", es: "Debes decir la verdad.", tense: "Presente" },
+                { ru: "Он должен попросить помощи.", es: "Debe pedir ayuda.", tense: "Presente" },
+                { ru: "Мы должны защищать окружающую среду.", es: "Debemos proteger el medio ambiente.", tense: "Presente" },
+                { ru: "Они должны налоги.", es: "Deben impuestos.", tense: "Presente" },
+                { ru: "Я должен улучшить свои навыки.", es: "Debo mejorar mis habilidades.", tense: "Presente" },
+                { ru: "Ты должен быть терпеливым.", es: "Debes ser paciente.", tense: "Presente" },
+                { ru: "Она должна быть уставшей.", es: "Debe estar cansada.", tense: "Presente" },
+                { ru: "Я должен был уйти рано.", es: "Debí salir temprano.", tense: "Pretérito Indefinido" },
+                { ru: "Ты был должен ему деньги.", es: "Le debiste dinero.", tense: "Pretérito Indefinido" },
+                { ru: "Она должна была работать вчера.", es: "Ella debió trabajar ayer.", tense: "Pretérito Indefinido" },
+                { ru: "Мы должны были отменить поездку.", es: "Debimos cancelar el viaje.", tense: "Pretérito Indefinido" },
+                { ru: "Они были должны много денег.", es: "Debieron mucho dinero.", tense: "Pretérito Indefinido" },
+                { ru: "Вы должны были ждать.", es: "Debisteis esperar.", tense: "Pretérito Indefinido" },
+                { ru: "Я должен был извиниться.", es: "Debí disculparme.", tense: "Pretérito Indefinido" },
+                { ru: "Ты должен был больше учиться.", es: "Debiste estudiar más.", tense: "Pretérito Indefinido" },
+                { ru: "Он был должен мне услугу.", es: "Me debió un favor.", tense: "Pretérito Indefinido" },
+                { ru: "Мы должны были принять это.", es: "Debimos aceptarlo.", tense: "Pretérito Indefinido" },
+                { ru: "Они должны были уйти в отставку.", es: "Debieron renunciar.", tense: "Pretérito Indefinido" },
+                { ru: "Я должен был выбрать.", es: "Debí elegir.", tense: "Pretérito Indefinido" },
+                { ru: "Ты был должен объяснение.", es: "Debiste una explicación.", tense: "Pretérito Indefinido" },
+                { ru: "Она должна была решить быстро.", es: "Ella debió decidir rápido.", tense: "Pretérito Indefinido" },
+                { ru: "Мы должны были решить проблему.", es: "Debimos resolver el problema.", tense: "Pretérito Indefinido" },
+                { ru: "Вы должны были участвовать.", es: "Debisteis participar.", tense: "Pretérito Indefinido" },
+                { ru: "Они должны были заплатить немедленно.", es: "Debieron pagar inmediatamente.", tense: "Pretérito Indefinido" },
+                { ru: "Я должен был признаться.", es: "Debí confesar.", tense: "Pretérito Indefinido" },
+                { ru: "Ты должен был быть там.", es: "Debiste estar allí.", tense: "Pretérito Indefinido" },
+                { ru: "Он должен был ответить.", es: "Debió responder.", tense: "Pretérito Indefinido" },
+                { ru: "Мы должны были сотрудничать.", es: "Debimos cooperar.", tense: "Pretérito Indefinido" },
+                { ru: "Они были должны благодарность.", es: "Debieron gratitud.", tense: "Pretérito Indefinido" },
+                { ru: "Я должен был отчитываться ежедневно.", es: "Debía reportar diariamente.", tense: "Pretérito Imperfecto" },
+                { ru: "Ты должен был знать лучше.", es: "Debías saberlo mejor.", tense: "Pretérito Imperfecto" },
+                { ru: "Она должна была работать по выходным.", es: "Ella debía trabajar los fines de semana.", tense: "Pretérito Imperfecto" },
+                { ru: "Мы были должны платить аренду каждый месяц.", es: "Debíamos la renta cada mes.", tense: "Pretérito Imperfecto" },
+                { ru: "Они должны были посещать собрания.", es: "Debían asistir a reuniones.", tense: "Pretérito Imperfecto" },
+                { ru: "Вы должны были слушать.", es: "Debíais escuchar.", tense: "Pretérito Imperfecto" },
+                { ru: "Я должен был просыпаться рано.", es: "Debía despertarme temprano.", tense: "Pretérito Imperfecto" },
+                { ru: "Ты был должен верность.", es: "Debías lealtad.", tense: "Pretérito Imperfecto" },
+                { ru: "Он должен был часто путешествовать.", es: "Debía viajar a menudo.", tense: "Pretérito Imperfecto" },
+                { ru: "Мы должны были подготовиться.", es: "Debíamos prepararnos.", tense: "Pretérito Imperfecto" },
+                { ru: "Они были должны уважение.", es: "Debían respeto.", tense: "Pretérito Imperfecto" },
+                { ru: "Я должен был практиковаться ежедневно.", es: "Debía practicar diariamente.", tense: "Pretérito Imperfecto" },
+                { ru: "Ты должен был быть там.", es: "Debías estar allí.", tense: "Pretérito Imperfecto" },
+                { ru: "Она должна была учиться постоянно.", es: "Ella debía estudiar constantemente.", tense: "Pretérito Imperfecto" },
+                { ru: "Мы были должны ответ.", es: "Debíamos una respuesta.", tense: "Pretérito Imperfecto" },
+                { ru: "Вы должны были быть пунктуальными.", es: "Debíais ser puntuales.", tense: "Pretérito Imperfecto" },
+                { ru: "Они должны были понимать.", es: "Debían entender.", tense: "Pretérito Imperfecto" },
+                { ru: "Я должен был подчиняться правилам.", es: "Debía obedecer las reglas.", tense: "Pretérito Imperfecto" },
+                { ru: "Ты был должен преданность.", es: "Debías dedicación.", tense: "Pretérito Imperfecto" },
+                { ru: "Он должен был быть ответственным.", es: "Debía ser responsable.", tense: "Pretérito Imperfecto" },
+                { ru: "Мы должны были действовать.", es: "Debíamos actuar.", tense: "Pretérito Imperfecto" },
+                { ru: "Они должны были адаптироваться.", es: "Debían adaptarse.", tense: "Pretérito Imperfecto" },
+                { ru: "Я должен буду работать завтра.", es: "Deberé trabajar mañana.", tense: "Futuro Simple" },
+                { ru: "Ты будешь должен объяснение.", es: "Deberás una explicación.", tense: "Futuro Simple" },
+                { ru: "Она должна будет решить.", es: "Ella deberá decidir.", tense: "Futuro Simple" },
+                { ru: "Мы должны будем переехать.", es: "Deberemos mudarnos.", tense: "Futuro Simple" },
+                { ru: "Они будут должны налоги.", es: "Deberán impuestos.", tense: "Futuro Simple" },
+                { ru: "Вы должны будете выбрать.", es: "Deberéis elegir.", tense: "Futuro Simple" },
+                { ru: "Я должен буду путешествовать.", es: "Deberé viajar.", tense: "Futuro Simple" },
+                { ru: "Ты будешь мне должен.", es: "Me deberás.", tense: "Futuro Simple" },
+                { ru: "Он должен будет уйти в отставку.", es: "Deberá renunciar.", tense: "Futuro Simple" },
+                { ru: "Мы должны будем договориться.", es: "Deberemos negociar.", tense: "Futuro Simple" },
+                { ru: "Они должны будут заплатить.", es: "Deberán pagar.", tense: "Futuro Simple" },
+                { ru: "Я должен буду подготовиться.", es: "Deberé prepararme.", tense: "Futuro Simple" },
+                { ru: "Ты будешь должен благодарность.", es: "Deberás gratitud.", tense: "Futuro Simple" },
+                { ru: "Она должна будет учиться.", es: "Ella deberá estudiar.", tense: "Futuro Simple" },
+                { ru: "Мы должны будем ждать.", es: "Deberemos esperar.", tense: "Futuro Simple" },
+                { ru: "Вы должны будете помочь.", es: "Deberéis ayudar.", tense: "Futuro Simple" },
+                { ru: "Они будут должны уважение.", es: "Deberán respeto.", tense: "Futuro Simple" },
+                { ru: "Я должен буду принять.", es: "Deberé aceptar.", tense: "Futuro Simple" },
+                { ru: "Ты должен будешь учиться.", es: "Deberás aprender.", tense: "Futuro Simple" },
+                { ru: "Он будет должен деньги.", es: "Deberá dinero.", tense: "Futuro Simple" },
+                { ru: "Мы должны будем адаптироваться.", es: "Deberemos adaptarnos.", tense: "Futuro Simple" },
+                { ru: "Они должны будут измениться.", es: "Deberán cambiar.", tense: "Futuro Simple" },
+                { ru: "Мы должны быть ответственными.", es: "Debemos ser responsables.", tense: "Presente" },
+                { ru: "Я должен уйти сейчас.", es: "Debo irme ahora.", tense: "Presente" },
+                { ru: "Ты должен понять.", es: "Debes entender.", tense: "Presente" },
+                { ru: "Он должен быть больным.", es: "Debe estar enfermo.", tense: "Presente" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

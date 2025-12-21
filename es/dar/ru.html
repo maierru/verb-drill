@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇪🇸 VERB DAR — 105 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇪🇸 Verb DAR</h1>
+            <p class="subtitle">to give — 105 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 105 из 105 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика испанского — DAR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb DAR</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Настоящее время - действия происходящие сейчас или регулярно</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo doy</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú das</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted da</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros damos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros dais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes dan</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Простое прошедшее - завершенные действия в прошлом</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo di</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú diste</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted dio</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros dimos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros disteis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes dieron</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Несовершенное прошедшее - продолжающиеся или регулярные действия в прошлом</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo daba</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú dabas</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted daba</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros dábamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros dabais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes daban</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Простое будущее - действия которые произойдут</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo daré</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú darás</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted dará</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros daremos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros daréis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes darán</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'es',
+            labels: { target: 'Español', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["doy","das","da","damos","dais","dan","di","dio","daba","daré"],
+            phrases: [
+                { ru: "Я даю тебе своё слово", es: "Te doy mi palabra", tense: "Presente" },
+                { ru: "Она даёт мне подарок", es: "Ella me da un regalo", tense: "Presente" },
+                { ru: "Они проводят занятия каждый день", es: "Dan clases todos los días", tense: "Presente" },
+                { ru: "Я благодарю за всё", es: "Doy gracias por todo", tense: "Presente" },
+                { ru: "Он даёт мне хорошие советы", es: "Él me da buenos consejos", tense: "Presente" },
+                { ru: "Мы оказываем нашу поддержку", es: "Damos nuestro apoyo", tense: "Presente" },
+                { ru: "Я понимаю проблему", es: "Me doy cuenta del problema", tense: "Presente" },
+                { ru: "Ты даёшь мне надежду", es: "Me das esperanza", tense: "Presente" },
+                { ru: "Они дают концерты по выходным", es: "Dan conciertos los fines de semana", tense: "Presente" },
+                { ru: "Она даёт частные уроки", es: "Ella da clases particulares", tense: "Presente" },
+                { ru: "Я даю разрешение уйти", es: "Doy permiso para salir", tense: "Presente" },
+                { ru: "Он даёт мне ключи", es: "Él me da las llaves", tense: "Presente" },
+                { ru: "Мы жертвуем деньги на благотворительность", es: "Damos dinero a la caridad", tense: "Presente" },
+                { ru: "Мне всё равно что они говорят", es: "Me da igual lo que digan", tense: "Presente" },
+                { ru: "Ты приводишь слишком много отговорок", es: "Das demasiadas excusas", tense: "Presente" },
+                { ru: "Они раздают бесплатные образцы", es: "Dan muestras gratis", tense: "Presente" },
+                { ru: "Она целует меня на прощание", es: "Ella me da un beso de despedida", tense: "Presente" },
+                { ru: "Я высказываю своё мнение честно", es: "Doy mi opinión honestamente", tense: "Presente" },
+                { ru: "Он делает презентации на работе", es: "Él da presentaciones en el trabajo", tense: "Presente" },
+                { ru: "Мы гуляем в парке", es: "Damos un paseo por el parque", tense: "Presente" },
+                { ru: "Я дал ему книгу вчера", es: "Le di el libro ayer", tense: "Pretérito Indefinido" },
+                { ru: "Она произнесла отличную речь", es: "Ella dio un discurso excelente", tense: "Pretérito Indefinido" },
+                { ru: "Они дали нам свой ответ", es: "Nos dieron su respuesta", tense: "Pretérito Indefinido" },
+                { ru: "Я уступил ей своё место", es: "Le di mi asiento", tense: "Pretérito Indefinido" },
+                { ru: "Ты сообщил мне хорошие новости", es: "Me diste buenas noticias", tense: "Pretérito Indefinido" },
+                { ru: "Он устроил вечеринку прошлой ночью", es: "Él dio una fiesta anoche", tense: "Pretérito Indefinido" },
+                { ru: "Мы приложили все усилия", es: "Dimos nuestro mejor esfuerzo", tense: "Pretérito Indefinido" },
+                { ru: "Я понял что произошло", es: "Me di cuenta de lo que pasó", tense: "Pretérito Indefinido" },
+                { ru: "Она родила близнецов", es: "Ella dio a luz gemelos", tense: "Pretérito Indefinido" },
+                { ru: "Они дали разрешение продолжать", es: "Dieron permiso para proceder", tense: "Pretérito Indefinido" },
+                { ru: "Я поблагодарил за ужином", es: "Di gracias en la cena", tense: "Pretérito Indefinido" },
+                { ru: "Ты дал неправильный адрес", es: "Diste la dirección equivocada", tense: "Pretérito Indefinido" },
+                { ru: "Он дал мне свой номер телефона", es: "Él me dio su número de teléfono", tense: "Pretérito Indefinido" },
+                { ru: "Мы тепло встретили их", es: "Les dimos una cálida bienvenida", tense: "Pretérito Indefinido" },
+                { ru: "Я подарил ей цветы", es: "Le di flores", tense: "Pretérito Indefinido" },
+                { ru: "Она обняла меня", es: "Ella me dio un abrazo", tense: "Pretérito Indefinido" },
+                { ru: "Они показали отличное выступление", es: "Dieron una gran actuación", tense: "Pretérito Indefinido" },
+                { ru: "Я сдал кровь в больнице", es: "Di sangre en el hospital", tense: "Pretérito Indefinido" },
+                { ru: "Ты дал своё согласие", es: "Diste tu consentimiento", tense: "Pretérito Indefinido" },
+                { ru: "Он дал мне указания", es: "Él me dio indicaciones", tense: "Pretérito Indefinido" },
+                { ru: "Я давал советы всем", es: "Daba consejos a todos", tense: "Pretérito Imperfecto" },
+                { ru: "Она преподавала математику", es: "Ella daba clases de matemáticas", tense: "Pretérito Imperfecto" },
+                { ru: "Они давали деньги нищим", es: "Daban dinero a los mendigos", tense: "Pretérito Imperfecto" },
+                { ru: "Я гулял каждый день", es: "Daba paseos diariamente", tense: "Pretérito Imperfecto" },
+                { ru: "Ты всегда создавал мне проблемы", es: "Siempre me dabas problemas", tense: "Pretérito Imperfecto" },
+                { ru: "Он давал концерты здесь", es: "Él daba conciertos aquí", tense: "Pretérito Imperfecto" },
+                { ru: "Мы устраивали вечеринки каждый месяц", es: "Dábamos fiestas cada mes", tense: "Pretérito Imperfecto" },
+                { ru: "Раньше мне было всё равно", es: "Antes eso me daba igual", tense: "Pretérito Imperfecto" },
+                { ru: "Она дарила мне подарки", es: "Ella me daba regalos", tense: "Pretérito Imperfecto" },
+                { ru: "Они проводили экзамены по пятницам", es: "Daban exámenes los viernes", tense: "Pretérito Imperfecto" },
+                { ru: "Я дам тебе ответ завтра", es: "Te daré la respuesta mañana", tense: "Futuro Simple" },
+                { ru: "Она сделает презентацию", es: "Ella dará una presentación", tense: "Futuro Simple" },
+                { ru: "Они дадут нам инструкции", es: "Nos darán instrucciones", tense: "Futuro Simple" },
+                { ru: "Я сделаю всё возможное", es: "Daré lo mejor de mí", tense: "Futuro Simple" },
+                { ru: "Ты дашь мне своё мнение", es: "Me darás tu opinión", tense: "Futuro Simple" },
+                { ru: "Он прочитает лекцию", es: "Él dará una conferencia", tense: "Futuro Simple" },
+                { ru: "Мы окажем им поддержку", es: "Les daremos nuestro apoyo", tense: "Futuro Simple" },
+                { ru: "Я пойму позже", es: "Me daré cuenta más tarde", tense: "Futuro Simple" },
+                { ru: "Она родит в марте", es: "Ella dará a luz en marzo", tense: "Futuro Simple" },
+                { ru: "Они раздадут призы", es: "Darán premios", tense: "Futuro Simple" },
+                { ru: "Солнце даёт свет и тепло", es: "El sol da luz y calor", tense: "Presente" },
+                { ru: "Это дерево плодоносит летом", es: "Este árbol da frutos en verano", tense: "Presente" },
+                { ru: "Я даю тебе своё благословение", es: "Te doy mi bendición", tense: "Presente" },
+                { ru: "Она даёт уроки гитары", es: "Ella da clases de guitarra", tense: "Presente" },
+                { ru: "Они дают интервью прессе", es: "Dan entrevistas a la prensa", tense: "Presente" },
+                { ru: "Я даю ему презумпцию невиновности", es: "Le doy el beneficio de la duda", tense: "Presente" },
+                { ru: "Часы бьют двенадцать", es: "El reloj da las doce", tense: "Presente" },
+                { ru: "У меня от тебя мурашки", es: "Me das escalofríos", tense: "Presente" },
+                { ru: "Он даёт своё одобрение", es: "Él da su aprobación", tense: "Presente" },
+                { ru: "Мы даём честное слово", es: "Damos nuestra palabra de honor", tense: "Presente" },
+                { ru: "Я включаю свет", es: "Doy la luz", tense: "Presente" },
+                { ru: "Она производит хорошее впечатление", es: "Ella da buena impresión", tense: "Presente" },
+                { ru: "Они поднимают тревогу", es: "Dan la alarma", tense: "Presente" },
+                { ru: "Я поздравляю тебя", es: "Te doy la enhorabuena", tense: "Presente" },
+                { ru: "Ты протягиваешь мне руку", es: "Me das la mano", tense: "Presente" },
+                { ru: "Он подаёт признаки жизни", es: "Él da señales de vida", tense: "Presente" },
+                { ru: "Мы кричим от радости", es: "Damos gritos de alegría", tense: "Presente" },
+                { ru: "Я выражаю тебе соболезнования", es: "Te doy el pésame", tense: "Presente" },
+                { ru: "От неё у меня бабочки в животе", es: "Me da mariposas", tense: "Presente" },
+                { ru: "Они отдают приоритет клиентам", es: "Dan prioridad a los clientes", tense: "Presente" },
+                { ru: "Я подпрыгнул от испуга", es: "Di un salto del susto", tense: "Pretérito Indefinido" },
+                { ru: "Ты нанёс последний удар", es: "Diste el golpe final", tense: "Pretérito Indefinido" },
+                { ru: "Он подал в отставку", es: "Él dio su renuncia", tense: "Pretérito Indefinido" },
+                { ru: "Мы зааплодировали", es: "Dimos un aplauso", tense: "Pretérito Indefinido" },
+                { ru: "Я дал руку", es: "Di el brazo", tense: "Pretérito Indefinido" },
+                { ru: "Она закричала", es: "Ella dio un grito", tense: "Pretérito Indefinido" },
+                { ru: "Они дали зелёный свет", es: "Dieron luz verde", tense: "Pretérito Indefinido" },
+                { ru: "Я обошёл квартал", es: "Di una vuelta a la manzana", tense: "Pretérito Indefinido" },
+                { ru: "Ты отдал приказ", es: "Diste la orden", tense: "Pretérito Indefinido" },
+                { ru: "У меня мурашки по коже пошли", es: "Me dio piel de gallina", tense: "Pretérito Indefinido" },
+                { ru: "Окно выходит на улицу", es: "La ventana da a la calle", tense: "Presente" },
+                { ru: "Моя комната выходит в сад", es: "Mi habitación da al jardín", tense: "Presente" },
+                { ru: "Эта дверь ведёт во внутренний дворик", es: "Esta puerta da al patio", tense: "Presente" },
+                { ru: "Я кормлю животных", es: "Doy de comer a los animales", tense: "Presente" },
+                { ru: "Она кормит грудью ребёнка", es: "Ella da de mamar al bebé", tense: "Presente" },
+                { ru: "Я считаю вопрос закрытым", es: "Doy el asunto por cerrado", tense: "Presente" },
+                { ru: "Они вызывают у меня смех", es: "Me dan risa", tense: "Presente" },
+                { ru: "Мне из-за тебя стыдно", es: "Me das vergüenza", tense: "Presente" },
+                { ru: "Мне грустно от этого", es: "Me da tristeza", tense: "Presente" },
+                { ru: "Он меня злит", es: "Me da rabia", tense: "Presente" },
+                { ru: "Они вызывают у меня зависть", es: "Me dan envidia", tense: "Presente" },
+                { ru: "Я подвезу тебя", es: "Te daré un aventón", tense: "Futuro Simple" },
+                { ru: "Она даст показания", es: "Ella dará su testimonio", tense: "Futuro Simple" },
+                { ru: "Они сделают скидку", es: "Darán un descuento", tense: "Futuro Simple" },
+                { ru: "Я дам тебе кредит", es: "Te daré crédito", tense: "Futuro Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

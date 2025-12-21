@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇪🇸 VERB DAR — 105 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇪🇸 Verb DAR</h1>
+            <p class="subtitle">to give — 105 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 105 de 105 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Prática de espanhol — DAR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb DAR</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Presente - ações que acontecem agora ou habitualmente</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo doy</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú das</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted da</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros damos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros dais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes dan</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Pretérito perfeito - ações completadas no passado</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo di</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú diste</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted dio</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros dimos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros disteis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes dieron</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Pretérito imperfeito - ações contínuas ou habituais no passado</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo daba</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú dabas</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted daba</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros dábamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros dabais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes daban</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Futuro simples - ações que vão acontecer</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo daré</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú darás</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted dará</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros daremos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros daréis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes darán</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'es',
+            labels: { target: 'Español', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["doy","das","da","damos","dais","dan","di","dio","daba","daré"],
+            phrases: [
+                { pt: "Dou-te a minha palavra", es: "Te doy mi palabra", tense: "Presente" },
+                { pt: "Ela dá-me um presente", es: "Ella me da un regalo", tense: "Presente" },
+                { pt: "Dão aulas todos os dias", es: "Dan clases todos los días", tense: "Presente" },
+                { pt: "Dou graças por tudo", es: "Doy gracias por todo", tense: "Presente" },
+                { pt: "Ele dá-me bons conselhos", es: "Él me da buenos consejos", tense: "Presente" },
+                { pt: "Damos o nosso apoio", es: "Damos nuestro apoyo", tense: "Presente" },
+                { pt: "Dou-me conta do problema", es: "Me doy cuenta del problema", tense: "Presente" },
+                { pt: "Dás-me esperança", es: "Me das esperanza", tense: "Presente" },
+                { pt: "Dão concertos aos fins de semana", es: "Dan conciertos los fines de semana", tense: "Presente" },
+                { pt: "Ela dá aulas particulares", es: "Ella da clases particulares", tense: "Presente" },
+                { pt: "Dou permissão para sair", es: "Doy permiso para salir", tense: "Presente" },
+                { pt: "Ele dá-me as chaves", es: "Él me da las llaves", tense: "Presente" },
+                { pt: "Damos dinheiro à caridade", es: "Damos dinero a la caridad", tense: "Presente" },
+                { pt: "Dá-me igual o que digam", es: "Me da igual lo que digan", tense: "Presente" },
+                { pt: "Dás demasiadas desculpas", es: "Das demasiadas excusas", tense: "Presente" },
+                { pt: "Dão amostras grátis", es: "Dan muestras gratis", tense: "Presente" },
+                { pt: "Ela dá-me um beijo de despedida", es: "Ella me da un beso de despedida", tense: "Presente" },
+                { pt: "Dou a minha opinião honestamente", es: "Doy mi opinión honestamente", tense: "Presente" },
+                { pt: "Ele faz apresentações no trabalho", es: "Él da presentaciones en el trabajo", tense: "Presente" },
+                { pt: "Damos um passeio pelo parque", es: "Damos un paseo por el parque", tense: "Presente" },
+                { pt: "Dei-lhe o livro ontem", es: "Le di el libro ayer", tense: "Pretérito Indefinido" },
+                { pt: "Ela deu um discurso excelente", es: "Ella dio un discurso excelente", tense: "Pretérito Indefinido" },
+                { pt: "Deram-nos a sua resposta", es: "Nos dieron su respuesta", tense: "Pretérito Indefinido" },
+                { pt: "Dei-lhe o meu lugar", es: "Le di mi asiento", tense: "Pretérito Indefinido" },
+                { pt: "Deste-me boas notícias", es: "Me diste buenas noticias", tense: "Pretérito Indefinido" },
+                { pt: "Ele deu uma festa ontem à noite", es: "Él dio una fiesta anoche", tense: "Pretérito Indefinido" },
+                { pt: "Demos o nosso melhor esforço", es: "Dimos nuestro mejor esfuerzo", tense: "Pretérito Indefinido" },
+                { pt: "Dei-me conta do que aconteceu", es: "Me di cuenta de lo que pasó", tense: "Pretérito Indefinido" },
+                { pt: "Ela deu à luz gémeos", es: "Ella dio a luz gemelos", tense: "Pretérito Indefinido" },
+                { pt: "Deram permissão para prosseguir", es: "Dieron permiso para proceder", tense: "Pretérito Indefinido" },
+                { pt: "Dei graças ao jantar", es: "Di gracias en la cena", tense: "Pretérito Indefinido" },
+                { pt: "Deste a morada errada", es: "Diste la dirección equivocada", tense: "Pretérito Indefinido" },
+                { pt: "Ele deu-me o número de telefone", es: "Él me dio su número de teléfono", tense: "Pretérito Indefinido" },
+                { pt: "Demos-lhes uma calorosa boas-vindas", es: "Les dimos una cálida bienvenida", tense: "Pretérito Indefinido" },
+                { pt: "Dei-lhe flores", es: "Le di flores", tense: "Pretérito Indefinido" },
+                { pt: "Ela deu-me um abraço", es: "Ella me dio un abrazo", tense: "Pretérito Indefinido" },
+                { pt: "Deram uma grande atuação", es: "Dieron una gran actuación", tense: "Pretérito Indefinido" },
+                { pt: "Dei sangue no hospital", es: "Di sangre en el hospital", tense: "Pretérito Indefinido" },
+                { pt: "Deste o teu consentimento", es: "Diste tu consentimiento", tense: "Pretérito Indefinido" },
+                { pt: "Ele deu-me indicações", es: "Él me dio indicaciones", tense: "Pretérito Indefinido" },
+                { pt: "Dava conselhos a todos", es: "Daba consejos a todos", tense: "Pretérito Imperfecto" },
+                { pt: "Ela dava aulas de matemática", es: "Ella daba clases de matemáticas", tense: "Pretérito Imperfecto" },
+                { pt: "Davam dinheiro aos mendigos", es: "Daban dinero a los mendigos", tense: "Pretérito Imperfecto" },
+                { pt: "Dava passeios diariamente", es: "Daba paseos diariamente", tense: "Pretérito Imperfecto" },
+                { pt: "Davas-me sempre problemas", es: "Siempre me dabas problemas", tense: "Pretérito Imperfecto" },
+                { pt: "Ele dava concertos aqui", es: "Él daba conciertos aquí", tense: "Pretérito Imperfecto" },
+                { pt: "Dávamos festas todos os meses", es: "Dábamos fiestas cada mes", tense: "Pretérito Imperfecto" },
+                { pt: "Antes isso dava-me igual", es: "Antes eso me daba igual", tense: "Pretérito Imperfecto" },
+                { pt: "Ela dava-me presentes", es: "Ella me daba regalos", tense: "Pretérito Imperfecto" },
+                { pt: "Davam exames às sextas-feiras", es: "Daban exámenes los viernes", tense: "Pretérito Imperfecto" },
+                { pt: "Dar-te-ei a resposta amanhã", es: "Te daré la respuesta mañana", tense: "Futuro Simple" },
+                { pt: "Ela dará uma apresentação", es: "Ella dará una presentación", tense: "Futuro Simple" },
+                { pt: "Dar-nos-ão instruções", es: "Nos darán instrucciones", tense: "Futuro Simple" },
+                { pt: "Darei o meu melhor", es: "Daré lo mejor de mí", tense: "Futuro Simple" },
+                { pt: "Dar-me-ás a tua opinião", es: "Me darás tu opinión", tense: "Futuro Simple" },
+                { pt: "Ele dará uma conferência", es: "Él dará una conferencia", tense: "Futuro Simple" },
+                { pt: "Dar-lhes-emos o nosso apoio", es: "Les daremos nuestro apoyo", tense: "Futuro Simple" },
+                { pt: "Dar-me-ei conta mais tarde", es: "Me daré cuenta más tarde", tense: "Futuro Simple" },
+                { pt: "Ela dará à luz em março", es: "Ella dará a luz en marzo", tense: "Futuro Simple" },
+                { pt: "Darão prémios", es: "Darán premios", tense: "Futuro Simple" },
+                { pt: "O sol dá luz e calor", es: "El sol da luz y calor", tense: "Presente" },
+                { pt: "Esta árvore dá frutos no verão", es: "Este árbol da frutos en verano", tense: "Presente" },
+                { pt: "Dou-te a minha bênção", es: "Te doy mi bendición", tense: "Presente" },
+                { pt: "Ela dá aulas de guitarra", es: "Ella da clases de guitarra", tense: "Presente" },
+                { pt: "Dão entrevistas à imprensa", es: "Dan entrevistas a la prensa", tense: "Presente" },
+                { pt: "Dou-lhe o benefício da dúvida", es: "Le doy el beneficio de la duda", tense: "Presente" },
+                { pt: "O relógio dá as doze", es: "El reloj da las doce", tense: "Presente" },
+                { pt: "Dás-me arrepios", es: "Me das escalofríos", tense: "Presente" },
+                { pt: "Ele dá a sua aprovação", es: "Él da su aprobación", tense: "Presente" },
+                { pt: "Damos a nossa palavra de honra", es: "Damos nuestra palabra de honor", tense: "Presente" },
+                { pt: "Dou a luz", es: "Doy la luz", tense: "Presente" },
+                { pt: "Ela dá boa impressão", es: "Ella da buena impresión", tense: "Presente" },
+                { pt: "Dão o alarme", es: "Dan la alarma", tense: "Presente" },
+                { pt: "Dou-te os parabéns", es: "Te doy la enhorabuena", tense: "Presente" },
+                { pt: "Dás-me a mão", es: "Me das la mano", tense: "Presente" },
+                { pt: "Ele dá sinais de vida", es: "Él da señales de vida", tense: "Presente" },
+                { pt: "Damos gritos de alegria", es: "Damos gritos de alegría", tense: "Presente" },
+                { pt: "Dou-te os pêsames", es: "Te doy el pésame", tense: "Presente" },
+                { pt: "Dá-me borboletas", es: "Me da mariposas", tense: "Presente" },
+                { pt: "Dão prioridade aos clientes", es: "Dan prioridad a los clientes", tense: "Presente" },
+                { pt: "Dei um salto do susto", es: "Di un salto del susto", tense: "Pretérito Indefinido" },
+                { pt: "Deste o golpe final", es: "Diste el golpe final", tense: "Pretérito Indefinido" },
+                { pt: "Ele deu a sua demissão", es: "Él dio su renuncia", tense: "Pretérito Indefinido" },
+                { pt: "Demos um aplauso", es: "Dimos un aplauso", tense: "Pretérito Indefinido" },
+                { pt: "Dei o braço", es: "Di el brazo", tense: "Pretérito Indefinido" },
+                { pt: "Ela deu um grito", es: "Ella dio un grito", tense: "Pretérito Indefinido" },
+                { pt: "Deram luz verde", es: "Dieron luz verde", tense: "Pretérito Indefinido" },
+                { pt: "Dei uma volta ao quarteirão", es: "Di una vuelta a la manzana", tense: "Pretérito Indefinido" },
+                { pt: "Deste a ordem", es: "Diste la orden", tense: "Pretérito Indefinido" },
+                { pt: "Deu-me pele de galinha", es: "Me dio piel de gallina", tense: "Pretérito Indefinido" },
+                { pt: "A janela dá para a rua", es: "La ventana da a la calle", tense: "Presente" },
+                { pt: "O meu quarto dá para o jardim", es: "Mi habitación da al jardín", tense: "Presente" },
+                { pt: "Esta porta dá para o pátio", es: "Esta puerta da al patio", tense: "Presente" },
+                { pt: "Dou de comer aos animais", es: "Doy de comer a los animales", tense: "Presente" },
+                { pt: "Ela dá de mamar ao bebé", es: "Ella da de mamar al bebé", tense: "Presente" },
+                { pt: "Dou o assunto por encerrado", es: "Doy el asunto por cerrado", tense: "Presente" },
+                { pt: "Dão-me riso", es: "Me dan risa", tense: "Presente" },
+                { pt: "Dás-me vergonha", es: "Me das vergüenza", tense: "Presente" },
+                { pt: "Dá-me tristeza", es: "Me da tristeza", tense: "Presente" },
+                { pt: "Dá-me raiva", es: "Me da rabia", tense: "Presente" },
+                { pt: "Dão-me inveja", es: "Me dan envidia", tense: "Presente" },
+                { pt: "Dar-te-ei boleia", es: "Te daré un aventón", tense: "Futuro Simple" },
+                { pt: "Ela dará o seu testemunho", es: "Ella dará su testimonio", tense: "Futuro Simple" },
+                { pt: "Darão um desconto", es: "Darán un descuento", tense: "Futuro Simple" },
+                { pt: "Dar-te-ei crédito", es: "Te daré crédito", tense: "Futuro Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

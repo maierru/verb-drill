@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇪🇸 VERB QUERER — 98 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇪🇸 Verb QUERER</h1>
+            <p class="subtitle">to want — 98 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 98 von 98 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Spanisch-Übung — QUERER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb QUERER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Präsens - wird für aktuelle Wünsche verwendet</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo quiero</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú quieres</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted quiere</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros queremos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros queréis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes quieren</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Indefinido - wird für abgeschlossene Wünsche in der Vergangenheit verwendet</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo quise</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú quisiste</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted quiso</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros quisimos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros quisisteis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes quisieron</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Imperfekt - wird für andauernde oder gewohnheitsmäßige Wünsche in der Vergangenheit verwendet</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo quería</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú querías</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted quería</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros queríamos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros queríais</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes querían</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Futur - wird für zukünftige Wünsche verwendet</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo querré</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú querrás</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted querrá</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros querremos</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros querréis</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ellas/ustedes querrán</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'es',
+            labels: { target: 'Spanisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["quiero","quieres","quiere","queremos","queréis","quieren","quise","quisiera","querré"],
+            phrases: [
+                { de: "Ich will Spanisch lernen", es: "Quiero aprender español", tense: "Presente" },
+                { de: "Willst du Kaffee?", es: "¿Quieres café?", tense: "Presente" },
+                { de: "Sie will reisen", es: "Ella quiere viajar", tense: "Presente" },
+                { de: "Wir wollen essen", es: "Queremos comer", tense: "Presente" },
+                { de: "Sie wollen mehr Zeit", es: "Quieren más tiempo", tense: "Presente" },
+                { de: "Ich liebe dich", es: "Te quiero", tense: "Presente" },
+                { de: "Ich wollte gehen", es: "Quise ir", tense: "Pretérito Indefinido" },
+                { de: "Sie wollte sprechen", es: "Ella quiso hablar", tense: "Pretérito Indefinido" },
+                { de: "Ich hätte gerne Wasser", es: "Quisiera agua", tense: "Pretérito Imperfecto Subjuntivo" },
+                { de: "Wir wollten ein Haus", es: "Queríamos una casa", tense: "Pretérito Imperfecto" },
+                { de: "Ich will schlafen", es: "Quiero dormir", tense: "Presente" },
+                { de: "Willst du tanzen?", es: "¿Quieres bailar?", tense: "Presente" },
+                { de: "Er will Hilfe", es: "Él quiere ayuda", tense: "Presente" },
+                { de: "Ich will dieses Buch", es: "Quiero este libro", tense: "Presente" },
+                { de: "Sie wollen Frieden", es: "Quieren paz", tense: "Presente" },
+                { de: "Ich werde dich sehen wollen", es: "Querré verte", tense: "Futuro Simple" },
+                { de: "Ich wollte dir sagen", es: "Quería decirte", tense: "Pretérito Imperfecto" },
+                { de: "Sie will einen Hund", es: "Ella quiere un perro", tense: "Presente" },
+                { de: "Wir wollen arbeiten", es: "Queremos trabajar", tense: "Presente" },
+                { de: "Ich liebe meine Familie", es: "Quiero a mi familia", tense: "Presente" },
+                { de: "Willst du etwas?", es: "¿Quieres algo?", tense: "Presente" },
+                { de: "Ich will mich ausruhen", es: "Quiero descansar", tense: "Presente" },
+                { de: "Sie wollten weggehen", es: "Quisieron salir", tense: "Pretérito Indefinido" },
+                { de: "Ich möchte fragen", es: "Quisiera preguntar", tense: "Pretérito Imperfecto Subjuntivo" },
+                { de: "Sie will Antworten", es: "Ella quiere respuestas", tense: "Presente" },
+                { de: "Wir wollen Gerechtigkeit", es: "Queremos justicia", tense: "Presente" },
+                { de: "Ich will verstehen", es: "Quiero entender", tense: "Presente" },
+                { de: "Er wollte Geld", es: "Él quería dinero", tense: "Pretérito Imperfecto" },
+                { de: "Ich will hier leben", es: "Quiero vivir aquí", tense: "Presente" },
+                { de: "Willst du kommen?", es: "¿Quieres venir?", tense: "Presente" },
+                { de: "Sie wollen Freiheit", es: "Quieren libertad", tense: "Presente" },
+                { de: "Ich wollte wissen", es: "Quería saber", tense: "Pretérito Imperfecto" },
+                { de: "Sie will studieren", es: "Ella quiere estudiar", tense: "Presente" },
+                { de: "Wir lieben uns", es: "Nos queremos", tense: "Presente" },
+                { de: "Ich will die Wahrheit", es: "Quiero la verdad", tense: "Presente" },
+                { de: "Ich möchte versuchen", es: "Quisiera intentar", tense: "Pretérito Imperfecto Subjuntivo" },
+                { de: "Er will gewinnen", es: "Él quiere ganar", tense: "Presente" },
+                { de: "Ich wollte helfen", es: "Quise ayudar", tense: "Pretérito Indefinido" },
+                { de: "Sie wollen Essen", es: "Quieren comida", tense: "Presente" },
+                { de: "Ich will glücklich sein", es: "Quiero ser feliz", tense: "Presente" },
+                { de: "Willst du Tee?", es: "¿Quieres té?", tense: "Presente" },
+                { de: "Sie wollte weinen", es: "Ella quería llorar", tense: "Pretérito Imperfecto" },
+                { de: "Wir wollen eine Veränderung", es: "Queremos un cambio", tense: "Presente" },
+                { de: "Ich will glauben", es: "Quiero creer", tense: "Presente" },
+                { de: "Ich liebe dich sehr", es: "Te quiero mucho", tense: "Presente" },
+                { de: "Er will Macht", es: "Él quiere poder", tense: "Presente" },
+                { de: "Ich wollte vergessen", es: "Quería olvidar", tense: "Pretérito Imperfecto" },
+                { de: "Sie wollen Rache", es: "Quieren venganza", tense: "Presente" },
+                { de: "Ich will schreiben", es: "Quiero escribir", tense: "Presente" },
+                { de: "Möchten Sie Wein?", es: "¿Quisiera vino?", tense: "Pretérito Imperfecto Subjuntivo" },
+                { de: "Sie will Aufmerksamkeit", es: "Ella quiere atención", tense: "Presente" },
+                { de: "Wir wollten entkommen", es: "Queríamos escapar", tense: "Pretérito Imperfecto" },
+                { de: "Ich will singen", es: "Quiero cantar", tense: "Presente" },
+                { de: "Ich wollte bleiben", es: "Quise quedarme", tense: "Pretérito Indefinido" },
+                { de: "Willst du mehr?", es: "¿Quieres más?", tense: "Presente" },
+                { de: "Er will Respekt", es: "Él quiere respeto", tense: "Presente" },
+                { de: "Ich will mich erinnern", es: "Quiero recordar", tense: "Presente" },
+                { de: "Sie wollten kämpfen", es: "Quisieron pelear", tense: "Pretérito Indefinido" },
+                { de: "Ich möchte kommentieren", es: "Quisiera comentar", tense: "Pretérito Imperfecto Subjuntivo" },
+                { de: "Sie will Liebe", es: "Ella quiere amor", tense: "Presente" },
+                { de: "Wir wollen zuhören", es: "Queremos escuchar", tense: "Presente" },
+                { de: "Ich will laufen", es: "Quiero correr", tense: "Presente" },
+                { de: "Ich wollte lesen", es: "Quería leer", tense: "Pretérito Imperfecto" },
+                { de: "Er wollte gehen", es: "Él quería irse", tense: "Pretérito Imperfecto" },
+                { de: "Ich will spielen", es: "Quiero jugar", tense: "Presente" },
+                { de: "Willst du Nachtisch?", es: "¿Quieres postre?", tense: "Presente" },
+                { de: "Sie wollen Ergebnisse", es: "Quieren resultados", tense: "Presente" },
+                { de: "Ich will kochen", es: "Quiero cocinar", tense: "Presente" },
+                { de: "Sie wollte lachen", es: "Ella quería reír", tense: "Pretérito Imperfecto" },
+                { de: "Wir lieben unsere Kinder", es: "Queremos a nuestros hijos", tense: "Presente" },
+                { de: "Ich will malen", es: "Quiero pintar", tense: "Presente" },
+                { de: "Ich möchte erklären", es: "Quisiera explicar", tense: "Pretérito Imperfecto Subjuntivo" },
+                { de: "Er will Erfolg", es: "Él quiere éxito", tense: "Presente" },
+                { de: "Ich wollte träumen", es: "Quería soñar", tense: "Pretérito Imperfecto" },
+                { de: "Sie wollen feiern", es: "Quieren celebrar", tense: "Presente" },
+                { de: "Ich will schwimmen", es: "Quiero nadar", tense: "Presente" },
+                { de: "Willst du reden?", es: "¿Quieres hablar?", tense: "Presente" },
+                { de: "Sie will jetzt Antworten", es: "Ella quiere respuestas ahora", tense: "Presente" },
+                { de: "Wir wollten ein Wunder", es: "Queríamos un milagro", tense: "Pretérito Imperfecto" },
+                { de: "Ich will fliegen", es: "Quiero volar", tense: "Presente" },
+                { de: "Ich wollte dir glauben", es: "Quise creerte", tense: "Pretérito Indefinido" },
+                { de: "Er will Schokolade", es: "Él quiere chocolate", tense: "Presente" },
+                { de: "Ich will wachsen", es: "Quiero crecer", tense: "Presente" },
+                { de: "Sie wollten sich verstecken", es: "Quisieron esconderse", tense: "Pretérito Indefinido" },
+                { de: "Ich möchte mitmachen", es: "Quisiera unirme", tense: "Pretérito Imperfecto Subjuntivo" },
+                { de: "Sie will Blumen", es: "Ella quiere flores", tense: "Presente" },
+                { de: "Wir wollen teilen", es: "Queremos compartir", tense: "Presente" },
+                { de: "Ich will erkunden", es: "Quiero explorar", tense: "Presente" },
+                { de: "Ich wollte schreien", es: "Quería gritar", tense: "Pretérito Imperfecto" },
+                { de: "Willst du Pizza?", es: "¿Quieres pizza?", tense: "Presente" },
+                { de: "Er will Abenteuer", es: "Él quiere aventura", tense: "Presente" },
+                { de: "Ich will erschaffen", es: "Quiero crear", tense: "Presente" },
+                { de: "Sie wollten Ruhe", es: "Querían silencio", tense: "Pretérito Imperfecto" },
+                { de: "Ich liebe ihn", es: "Lo quiero", tense: "Presente" },
+                { de: "Sie will dich küssen", es: "Ella quiere besarte", tense: "Presente" },
+                { de: "Wir wollen beten", es: "Queremos rezar", tense: "Presente" },
+                { de: "Ich will bauen", es: "Quiero construir", tense: "Presente" },
+                { de: "Ich möchte vorschlagen", es: "Quisiera sugerir", tense: "Pretérito Imperfecto Subjuntivo" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbe 🇪🇸 VERB HABER — 99 phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Retour à la liste des verbes</a>
+            <h1>🇪🇸 Verb HABER</h1>
+            <p class="subtitle">to have (auxiliary) — 99 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Rechercher des phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Afficher toutes les traductions</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Masquer toutes les traductions</button>
+        </div>
+
+        <div class="stats" id="stats">Affichage: 99 sur 99 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Pratique de l'espagnol — HABER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb HABER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Présent - auxiliaire pour temps composés, 'hay' pour il y a</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>he</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>has</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>ha</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>hemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>habéis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>han</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Passé simple - il y eut (action terminée)</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>hube</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>hubiste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>hubo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>hubimos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>hubisteis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>hubieron</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Imparfait - il y avait (continu ou habituel)</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>había</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>habías</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>había</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>habíamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>habíais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>habían</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Futur simple - il y aura</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>habré</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>habrás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>habrá</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>habremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>habréis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>habrán</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'fr',
+            targetKey: 'es',
+            labels: { target: 'Espagnol', showing: 'Affichage', of: 'sur', phrases: 'phrases' },
+            verbForms: ["he","has","ha","hay","hemos","habéis","han","había","hubo","habido"],
+            phrases: [
+                { fr: "Il y a un livre sur la table.", es: "Hay un libro en la mesa.", tense: "Presente" },
+                { fr: "Il y a beaucoup de monde ici.", es: "Hay mucha gente aquí.", tense: "Presente" },
+                { fr: "J'ai mangé.", es: "He comido.", tense: "Presente Perfecto" },
+                { fr: "Tu as vu ça.", es: "Has visto eso.", tense: "Presente Perfecto" },
+                { fr: "Elle est arrivée.", es: "Ella ha llegado.", tense: "Presente Perfecto" },
+                { fr: "Nous avons fini.", es: "Hemos terminado.", tense: "Presente Perfecto" },
+                { fr: "Ils sont partis.", es: "Han salido.", tense: "Presente Perfecto" },
+                { fr: "Il y avait un problème.", es: "Había un problema.", tense: "Pretérito Imperfecto" },
+                { fr: "Il y avait trois options.", es: "Había tres opciones.", tense: "Pretérito Imperfecto" },
+                { fr: "Je l'avais déjà fait.", es: "Ya lo había hecho.", tense: "Pluscuamperfecto" },
+                { fr: "Il avait dit ça.", es: "Él había dicho eso.", tense: "Pluscuamperfecto" },
+                { fr: "Il y aura une fête.", es: "Habrá una fiesta.", tense: "Futuro Simple" },
+                { fr: "Il y aura des problèmes.", es: "Habrá problemas.", tense: "Futuro Simple" },
+                { fr: "J'aurai fini d'ici là.", es: "Habré terminado para entonces.", tense: "Futuro Perfecto" },
+                { fr: "Y a-t-il du café ?", es: "¿Hay café?", tense: "Presente" },
+                { fr: "Y a-t-il des questions ?", es: "¿Hay preguntas?", tense: "Presente" },
+                { fr: "Il n'y a pas de temps.", es: "No hay tiempo.", tense: "Presente" },
+                { fr: "Il n'y a pas assez d'espace.", es: "No hay suficiente espacio.", tense: "Presente" },
+                { fr: "Qu'y a-t-il à manger ?", es: "¿Qué hay de comer?", tense: "Presente" },
+                { fr: "Combien y en a-t-il ?", es: "¿Cuántos hay?", tense: "Presente" },
+                { fr: "Il n'y avait personne.", es: "No había nadie.", tense: "Pretérito Imperfecto" },
+                { fr: "Il y avait beaucoup de voitures.", es: "Había muchos coches.", tense: "Pretérito Imperfecto" },
+                { fr: "Je n'y suis jamais allé.", es: "Nunca he estado allí.", tense: "Presente Perfecto" },
+                { fr: "As-tu déjà essayé ?", es: "¿Alguna vez lo has probado?", tense: "Presente Perfecto" },
+                { fr: "Elle n'a jamais dit ça.", es: "Ella nunca ha dicho eso.", tense: "Presente Perfecto" },
+                { fr: "Nous venons d'arriver.", es: "Acabamos de llegar.", tense: "Presente Perfecto" },
+                { fr: "Ils sont déjà partis.", es: "Ya se han ido.", tense: "Presente Perfecto" },
+                { fr: "Je ne l'ai pas vu.", es: "No lo he visto.", tense: "Presente Perfecto" },
+                { fr: "Tu ne m'as pas dit.", es: "No me has dicho.", tense: "Presente Perfecto" },
+                { fr: "Il n'a pas encore fini.", es: "Él no ha terminado todavía.", tense: "Presente Perfecto" },
+                { fr: "Nous avons vécu ici pendant des années.", es: "Hemos vivido aquí durante años.", tense: "Presente Perfecto" },
+                { fr: "Ils ont travaillé dur.", es: "Han trabajado duro.", tense: "Presente Perfecto" },
+                { fr: "Il y avait eu un accident.", es: "Había habido un accidente.", tense: "Pluscuamperfecto" },
+                { fr: "Elle l'avait oublié.", es: "Ella lo había olvidado.", tense: "Pluscuamperfecto" },
+                { fr: "Nous avions déjà payé.", es: "Ya habíamos pagado.", tense: "Pluscuamperfecto" },
+                { fr: "Ils étaient venus tôt.", es: "Habían venido temprano.", tense: "Pluscuamperfecto" },
+                { fr: "Je n'avais jamais entendu ça.", es: "Nunca había oído eso.", tense: "Pluscuamperfecto" },
+                { fr: "Tu avais promis.", es: "Habías prometido.", tense: "Pluscuamperfecto" },
+                { fr: "Il était déjà parti.", es: "Él ya se había ido.", tense: "Pluscuamperfecto" },
+                { fr: "Il y a une solution.", es: "Hay una solución.", tense: "Presente" },
+                { fr: "Il y a des options.", es: "Hay opciones.", tense: "Presente" },
+                { fr: "Y a-t-il un médecin ?", es: "¿Hay un médico?", tense: "Presente" },
+                { fr: "Il n'y a pas de pain.", es: "No hay pan.", tense: "Presente" },
+                { fr: "Il y a cinq étudiants.", es: "Hay cinco estudiantes.", tense: "Presente" },
+                { fr: "Il y a quelque chose qui ne va pas.", es: "Hay algo mal.", tense: "Presente" },
+                { fr: "Il y a beaucoup à faire.", es: "Hay mucho que hacer.", tense: "Presente" },
+                { fr: "Il y a eu un incendie.", es: "Hubo un incendio.", tense: "Pretérito Indefinido" },
+                { fr: "Il y a eu des complications.", es: "Hubo complicaciones.", tense: "Pretérito Indefinido" },
+                { fr: "Je l'ai cassé.", es: "Lo he roto.", tense: "Presente Perfecto" },
+                { fr: "Tu as beaucoup appris.", es: "Has aprendido mucho.", tense: "Presente Perfecto" },
+                { fr: "Elle a écrit un livre.", es: "Ella ha escrito un libro.", tense: "Presente Perfecto" },
+                { fr: "Nous avons décidé.", es: "Hemos decidido.", tense: "Presente Perfecto" },
+                { fr: "Ils ont gagné.", es: "Han ganado.", tense: "Presente Perfecto" },
+                { fr: "J'ai fait une erreur.", es: "He cometido un error.", tense: "Presente Perfecto" },
+                { fr: "Tu as changé.", es: "Has cambiado.", tense: "Presente Perfecto" },
+                { fr: "Il a perdu ses clés.", es: "Él ha perdido sus llaves.", tense: "Presente Perfecto" },
+                { fr: "Nous l'avons trouvé.", es: "Lo hemos encontrado.", tense: "Presente Perfecto" },
+                { fr: "Ils ont ouvert un magasin.", es: "Han abierto una tienda.", tense: "Presente Perfecto" },
+                { fr: "Il y aura des conséquences.", es: "Habrá consecuencias.", tense: "Futuro Simple" },
+                { fr: "Il y aura des changements.", es: "Habrá cambios.", tense: "Futuro Simple" },
+                { fr: "J'aurai appris d'ici là.", es: "Habré aprendido para entonces.", tense: "Futuro Perfecto" },
+                { fr: "Tu auras fini.", es: "Habrás terminado.", tense: "Futuro Perfecto" },
+                { fr: "Elle sera partie.", es: "Ella se habrá ido.", tense: "Futuro Perfecto" },
+                { fr: "Nous serons arrivés.", es: "Habremos llegado.", tense: "Futuro Perfecto" },
+                { fr: "Ils l'auront vu.", es: "Lo habrán visto.", tense: "Futuro Perfecto" },
+                { fr: "Il y a de l'espoir.", es: "Hay esperanza.", tense: "Presente" },
+                { fr: "Il y a plusieurs façons.", es: "Hay muchas maneras.", tense: "Presente" },
+                { fr: "Y a-t-il un problème ?", es: "¿Hay algún problema?", tense: "Presente" },
+                { fr: "Il n'en reste pas beaucoup.", es: "No hay muchos que queden.", tense: "Presente" },
+                { fr: "Il y avait de la musique.", es: "Había música.", tense: "Pretérito Imperfecto" },
+                { fr: "Il y avait des enfants qui jouaient.", es: "Había niños jugando.", tense: "Pretérito Imperfecto" },
+                { fr: "J'ai oublié.", es: "He olvidado.", tense: "Presente Perfecto" },
+                { fr: "Tu as compris.", es: "Has entendido.", tense: "Presente Perfecto" },
+                { fr: "Il est revenu.", es: "Él ha vuelto.", tense: "Presente Perfecto" },
+                { fr: "Nous avons choisi.", es: "Hemos elegido.", tense: "Presente Perfecto" },
+                { fr: "Ils ont cru.", es: "Han creído.", tense: "Presente Perfecto" },
+                { fr: "J'avais vécu là-bas.", es: "Había vivido allí.", tense: "Pluscuamperfecto" },
+                { fr: "Tu avais travaillé ici.", es: "Habías trabajado aquí.", tense: "Pluscuamperfecto" },
+                { fr: "Il avait étudié la médecine.", es: "Él había estudiado medicina.", tense: "Pluscuamperfecto" },
+                { fr: "Nous nous étions rencontrés avant.", es: "Nos habíamos conocido antes.", tense: "Pluscuamperfecto" },
+                { fr: "Ils avaient tout préparé.", es: "Habían preparado todo.", tense: "Pluscuamperfecto" },
+                { fr: "Il y a une chance.", es: "Hay una oportunidad.", tense: "Presente" },
+                { fr: "Il y a des possibilités.", es: "Hay posibilidades.", tense: "Presente" },
+                { fr: "Il n'y a rien ici.", es: "No hay nada aquí.", tense: "Presente" },
+                { fr: "Il y en a trop.", es: "Hay demasiados.", tense: "Presente" },
+                { fr: "Je l'ai lu.", es: "Lo he leído.", tense: "Presente Perfecto" },
+                { fr: "Tu as entendu les nouvelles.", es: "Has oído las noticias.", tense: "Presente Perfecto" },
+                { fr: "Elle a beaucoup voyagé.", es: "Ella ha viajado mucho.", tense: "Presente Perfecto" },
+                { fr: "Nous en avons parlé.", es: "Hemos hablado de ello.", tense: "Presente Perfecto" },
+                { fr: "Ils ont été d'accord.", es: "Han estado de acuerdo.", tense: "Presente Perfecto" },
+                { fr: "J'ai attendu.", es: "He estado esperando.", tense: "Presente Perfecto" },
+                { fr: "Tu as travaillé.", es: "Has estado trabajando.", tense: "Presente Perfecto" },
+                { fr: "Il a étudié.", es: "Él ha estado estudiando.", tense: "Presente Perfecto" },
+                { fr: "Nous avons vécu ici.", es: "Hemos estado viviendo aquí.", tense: "Presente Perfecto" },
+                { fr: "Ils ont essayé.", es: "Han estado intentando.", tense: "Presente Perfecto" },
+                { fr: "Il y a eu une erreur.", es: "Hubo un error.", tense: "Pretérito Indefinido" },
+                { fr: "Il y a eu des témoins.", es: "Hubo testigos.", tense: "Pretérito Indefinido" },
+                { fr: "Il y aura des opportunités.", es: "Habrá oportunidades.", tense: "Futuro Simple" },
+                { fr: "Il y aura du temps.", es: "Habrá tiempo.", tense: "Futuro Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

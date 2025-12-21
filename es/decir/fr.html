@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbe 🇪🇸 VERB DECIR — 100 phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Retour à la liste des verbes</a>
+            <h1>🇪🇸 Verb DECIR</h1>
+            <p class="subtitle">to say, to tell — 100 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Rechercher des phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Afficher toutes les traductions</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Masquer toutes les traductions</button>
+        </div>
+
+        <div class="stats" id="stats">Affichage: 100 sur 100 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Pratique de l'espagnol — DECIR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇪🇸 Verb DECIR</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p>Présent - dire</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>digo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>dices</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>dice</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>decimos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>decís</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>dicen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Indefinido</h4>
+                <p>Passé composé - a dit</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>dije</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>dijiste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>dijo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>dijimos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>dijisteis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>dijeron</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfecto</h4>
+                <p>Imparfait - disait</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>decía</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>decías</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>decía</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>decíamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>decíais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>decían</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro Simple</h4>
+                <p>Futur simple - dira</p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">yo</td>
+                        <td>diré</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tú</td>
+                        <td>dirás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">él/ella/usted</td>
+                        <td>dirá</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nosotros</td>
+                        <td>diremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vosotros</td>
+                        <td>diréis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ellos/ustedes</td>
+                        <td>dirán</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'fr',
+            targetKey: 'es',
+            labels: { target: 'Espagnol', showing: 'Affichage', of: 'sur', phrases: 'phrases' },
+            verbForms: ["digo","dices","dice","decimos","decís","dicen","dije","dijiste","dijo","dijimos","dijeron","decía","dirá","diría"],
+            phrases: [
+                { fr: "Je dis oui.", es: "Digo que sí.", tense: "Presente" },
+                { fr: "Tu dis la vérité.", es: "Dices la verdad.", tense: "Presente" },
+                { fr: "Il dit non.", es: "Dice que no.", tense: "Presente" },
+                { fr: "Elle dit bonjour.", es: "Ella dice hola.", tense: "Presente" },
+                { fr: "Nous disons au revoir.", es: "Decimos adiós.", tense: "Presente" },
+                { fr: "Ils disent que c'est vrai.", es: "Dicen que es verdad.", tense: "Presente" },
+                { fr: "Qu'est-ce que tu dis ?", es: "¿Qué dices?", tense: "Presente" },
+                { fr: "Je dis toujours la vérité.", es: "Siempre digo la verdad.", tense: "Presente" },
+                { fr: "Ils disent qu'elle vient.", es: "Dicen que ella viene.", tense: "Presente" },
+                { fr: "Comment dit-on ça ?", es: "¿Cómo se dice eso?", tense: "Presente" },
+                { fr: "Il ne dit jamais rien.", es: "Él nunca dice nada.", tense: "Presente" },
+                { fr: "Je ne dis pas ça.", es: "No digo eso.", tense: "Presente" },
+                { fr: "Qu'est-ce que ça veut dire ?", es: "¿Qué quiere decir?", tense: "Presente" },
+                { fr: "Elle dit qu'elle est fatiguée.", es: "Ella dice que está cansada.", tense: "Presente" },
+                { fr: "Les gens disent que c'est difficile.", es: "La gente dice que es difícil.", tense: "Presente" },
+                { fr: "Je dis juste ce que je pense.", es: "Solo digo lo que pienso.", tense: "Presente" },
+                { fr: "Tu le dis en espagnol.", es: "Lo dices en español.", tense: "Presente" },
+                { fr: "Il dit merci.", es: "Dice gracias.", tense: "Presente" },
+                { fr: "Nous ne disons rien.", es: "No decimos nada.", tense: "Presente" },
+                { fr: "Ils disent toujours la même chose.", es: "Siempre dicen lo mismo.", tense: "Presente" },
+                { fr: "J'ai dit oui.", es: "Dije que sí.", tense: "Pretérito Indefinido" },
+                { fr: "Tu m'as dit la vérité.", es: "Me dijiste la verdad.", tense: "Pretérito Indefinido" },
+                { fr: "Il a dit non.", es: "Dijo que no.", tense: "Pretérito Indefinido" },
+                { fr: "Elle m'a dit un secret.", es: "Me dijo un secreto.", tense: "Pretérito Indefinido" },
+                { fr: "Nous avons dit au revoir.", es: "Dijimos adiós.", tense: "Pretérito Indefinido" },
+                { fr: "Ils n'ont rien dit.", es: "No dijeron nada.", tense: "Pretérito Indefinido" },
+                { fr: "Qu'est-ce que tu as dit ?", es: "¿Qué dijiste?", tense: "Pretérito Indefinido" },
+                { fr: "Je te l'avais dit !", es: "¡Te lo dije!", tense: "Pretérito Indefinido" },
+                { fr: "Elle a dit qu'elle venait.", es: "Dijo que venía.", tense: "Pretérito Indefinido" },
+                { fr: "Il lui a tout dit.", es: "Le dijo todo.", tense: "Pretérito Indefinido" },
+                { fr: "Nous n'avons rien dit.", es: "No dijimos nada.", tense: "Pretérito Indefinido" },
+                { fr: "Ils me l'ont dit hier.", es: "Me lo dijeron ayer.", tense: "Pretérito Indefinido" },
+                { fr: "Qui a dit ça ?", es: "¿Quién dijo eso?", tense: "Pretérito Indefinido" },
+                { fr: "Tu as dit que tu aiderais.", es: "Dijiste que ayudarías.", tense: "Pretérito Indefinido" },
+                { fr: "J'ai dit bonjour.", es: "Dije hola.", tense: "Pretérito Indefinido" },
+                { fr: "Elle n'a rien dit.", es: "Ella no dijo nada.", tense: "Pretérito Indefinido" },
+                { fr: "Il a dit que c'était impossible.", es: "Dijo que era imposible.", tense: "Pretérito Indefinido" },
+                { fr: "Nous leur avons dit les nouvelles.", es: "Les dijimos las noticias.", tense: "Pretérito Indefinido" },
+                { fr: "Tu l'as mal dit.", es: "Lo dijiste mal.", tense: "Pretérito Indefinido" },
+                { fr: "Je disais toujours la vérité.", es: "Siempre decía la verdad.", tense: "Pretérito Imperfecto" },
+                { fr: "Tu disais ça.", es: "Tú decías eso.", tense: "Pretérito Imperfecto" },
+                { fr: "Il disait au revoir.", es: "Él decía adiós.", tense: "Pretérito Imperfecto" },
+                { fr: "Elle me racontait des histoires.", es: "Ella me decía cuentos.", tense: "Pretérito Imperfecto" },
+                { fr: "Nous le disions.", es: "Lo decíamos.", tense: "Pretérito Imperfecto" },
+                { fr: "Ils le disaient tous les jours.", es: "Lo decían cada día.", tense: "Pretérito Imperfecto" },
+                { fr: "Qu'est-ce que tu disais ?", es: "¿Qué decías?", tense: "Pretérito Imperfecto" },
+                { fr: "Je disais la vérité.", es: "Decía la verdad.", tense: "Pretérito Imperfecto" },
+                { fr: "Il disait toujours non.", es: "Siempre decía que no.", tense: "Pretérito Imperfecto" },
+                { fr: "Ils le disaient mal.", es: "Lo decían mal.", tense: "Pretérito Imperfecto" },
+                { fr: "Je le dirai demain.", es: "Lo diré mañana.", tense: "Futuro Simple" },
+                { fr: "Tu diras la vérité.", es: "Dirás la verdad.", tense: "Futuro Simple" },
+                { fr: "Il dira oui.", es: "Dirá que sí.", tense: "Futuro Simple" },
+                { fr: "Elle te le dira plus tard.", es: "Te lo dirá más tarde.", tense: "Futuro Simple" },
+                { fr: "Nous dirons au revoir.", es: "Diremos adiós.", tense: "Futuro Simple" },
+                { fr: "Ils nous le diront.", es: "Nos lo dirán.", tense: "Futuro Simple" },
+                { fr: "Qu'est-ce que tu diras ?", es: "¿Qué dirás?", tense: "Futuro Simple" },
+                { fr: "Je ne dirai rien.", es: "No diré nada.", tense: "Futuro Simple" },
+                { fr: "Il racontera l'histoire.", es: "Dirá la historia.", tense: "Futuro Simple" },
+                { fr: "Ils diront merci.", es: "Dirán gracias.", tense: "Futuro Simple" },
+                { fr: "Dis-moi la vérité.", es: "Dime la verdad.", tense: "Imperativo" },
+                { fr: "Ne dis pas ça.", es: "No digas eso.", tense: "Imperativo" },
+                { fr: "Dis-moi plus.", es: "Dime más.", tense: "Imperativo" },
+                { fr: "Dis-lui bonjour.", es: "Dile hola.", tense: "Imperativo" },
+                { fr: "Ne le dis à personne.", es: "No se lo digas a nadie.", tense: "Imperativo" },
+                { fr: "C'est-à-dire...", es: "Es decir...", tense: "Expresión" },
+                { fr: "On peut dire.", es: "Se puede decir.", tense: "Expresión" },
+                { fr: "Comme on dit...", es: "Como se dice...", tense: "Expresión" },
+                { fr: "Je veux dire...", es: "Quiero decir...", tense: "Expresión" },
+                { fr: "Comment dit-on en espagnol ?", es: "¿Cómo se dice en español?", tense: "Expresión" },
+                { fr: "Qu'est-ce que tu veux dire ?", es: "¿Qué quieres decir?", tense: "Expresión" },
+                { fr: "On dit qu'il va pleuvoir.", es: "Se dice que va a llover.", tense: "Expresión" },
+                { fr: "Pas besoin de dire.", es: "No hace falta decir.", tense: "Expresión" },
+                { fr: "Disons...", es: "Digamos...", tense: "Expresión" },
+                { fr: "Je ne peux pas dire avec certitude.", es: "No puedo decir con seguridad.", tense: "Expresión" },
+                { fr: "Je dirais oui.", es: "Diría que sí.", tense: "Condicional" },
+                { fr: "Tu dirais la vérité.", es: "Dirías la verdad.", tense: "Condicional" },
+                { fr: "Il dirait non.", es: "Diría que no.", tense: "Condicional" },
+                { fr: "Elle ne dirait jamais ça.", es: "Ella nunca diría eso.", tense: "Condicional" },
+                { fr: "Nous le leur dirions.", es: "Se lo diríamos.", tense: "Condicional" },
+                { fr: "Qu'est-ce que tu dirais ?", es: "¿Qué dirías?", tense: "Condicional" },
+                { fr: "Je l'ai dit plusieurs fois.", es: "Lo he dicho muchas veces.", tense: "Pretérito Perfecto" },
+                { fr: "Tu me l'as dit avant.", es: "Me lo has dicho antes.", tense: "Pretérito Perfecto" },
+                { fr: "Il n'a jamais dit ça.", es: "Nunca ha dicho eso.", tense: "Pretérito Perfecto" },
+                { fr: "Elle le lui a déjà dit.", es: "Ya se lo ha dicho.", tense: "Pretérito Perfecto" },
+                { fr: "Nous avons tout dit.", es: "Hemos dicho todo.", tense: "Pretérito Perfecto" },
+                { fr: "Je te le dis maintenant.", es: "Te lo digo ahora.", tense: "Presente" },
+                { fr: "Arrête de dire ça.", es: "Deja de decir eso.", tense: "Imperativo" },
+                { fr: "Elle continue à dire ça.", es: "Ella sigue diciendo eso.", tense: "Presente" },
+                { fr: "Sans dire un mot.", es: "Sin decir una palabra.", tense: "Expresión" },
+                { fr: "Dis-lui que je suis là.", es: "Dile que estoy aquí.", tense: "Imperativo" },
+                { fr: "J'ai dit quelque chose de mal ?", es: "¿Dije algo malo?", tense: "Pretérito Indefinido" },
+                { fr: "J'aurais dû dire non.", es: "Debería haber dicho que no.", tense: "Condicional Perfecto" },
+                { fr: "Ils ne le diront jamais.", es: "Nunca lo dirán.", tense: "Futuro Simple" },
+                { fr: "Redis-le, s'il te plaît.", es: "Dilo otra vez, por favor.", tense: "Imperativo" },
+                { fr: "Je t'ai entendu le dire.", es: "Te oí decirlo.", tense: "Pretérito Indefinido" },
+                { fr: "Il a dit avec un sourire.", es: "Dijo con una sonrisa.", tense: "Pretérito Indefinido" },
+                { fr: "Personne n'a dit que ce serait facile.", es: "Nadie dijo que sería fácil.", tense: "Pretérito Indefinido" },
+                { fr: "Elle dit qu'elle t'aime.", es: "Ella dice que te ama.", tense: "Presente" },
+                { fr: "Je ne dirai jamais jamais.", es: "Nunca diré nunca.", tense: "Futuro Simple" },
+                { fr: "Comme je disais...", es: "Como decía...", tense: "Pretérito Imperfecto" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>
