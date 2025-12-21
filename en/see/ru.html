@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇬🇧 VERB SEE — 96 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇬🇧 Verb SEE</h1>
+            <p class="subtitle">to perceive, to understand — 96 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 96 из 96 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика английского — SEE · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'en',
+            labels: { target: 'English', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["see","sees","saw","seen","seeing"],
+            phrases: [
+                { ru: "Я вижу тебя", en: "I see you", tense: "Present Simple" },
+                { ru: "Он видит меня каждый день", en: "He sees me every day", tense: "Present Simple" },
+                { ru: "Мы видели этот фильм вчера", en: "We saw this movie yesterday", tense: "Past Simple" },
+                { ru: "Они видели её в парке", en: "They saw her in the park", tense: "Past Simple" },
+                { ru: "Я никогда не видел такого раньше", en: "I have never seen this before", tense: "Present Perfect" },
+                { ru: "Она видела его вчера", en: "She saw him yesterday", tense: "Past Simple" },
+                { ru: "Ты видишь ту птицу?", en: "Do you see that bird?", tense: "Present Simple" },
+                { ru: "Я вижу проблему", en: "I see the problem", tense: "Present Simple" },
+                { ru: "Мы увидимся завтра", en: "We will see each other tomorrow", tense: "Future Simple" },
+                { ru: "Он не видит разницы", en: "He doesn't see the difference", tense: "Present Simple" },
+                { ru: "Я видел её на прошлой неделе", en: "I saw her last week", tense: "Past Simple" },
+                { ru: "Они видят всё", en: "They see everything", tense: "Present Simple" },
+                { ru: "Мы видели много интересных вещей", en: "We saw many interesting things", tense: "Past Simple" },
+                { ru: "Ты видел мои ключи?", en: "Have you seen my keys?", tense: "Present Perfect" },
+                { ru: "Она видит будущее", en: "She sees the future", tense: "Present Simple" },
+                { ru: "Я не вижу ничего", en: "I don't see anything", tense: "Present Simple" },
+                { ru: "Мы видели его там", en: "We saw him there", tense: "Past Simple" },
+                { ru: "Он видел этот спектакль трижды", en: "He has seen this play three times", tense: "Present Perfect" },
+                { ru: "Я вижу, что ты имеешь в виду", en: "I see what you mean", tense: "Present Simple" },
+                { ru: "Они увидели красивый закат", en: "They saw a beautiful sunset", tense: "Past Simple" },
+                { ru: "Ты видишь звёзды?", en: "Do you see the stars?", tense: "Present Simple" },
+                { ru: "Она не видела его целую вечность", en: "She hasn't seen him in ages", tense: "Present Perfect" },
+                { ru: "Я увижу тебя позже", en: "I will see you later", tense: "Future Simple" },
+                { ru: "Мы видим океан из нашего окна", en: "We see the ocean from our window", tense: "Present Simple" },
+                { ru: "Он видел аварию", en: "He saw the accident", tense: "Past Simple" },
+                { ru: "Я вижу твою точку зрения", en: "I see your point", tense: "Present Simple" },
+                { ru: "Они никогда не видели снега", en: "They have never seen snow", tense: "Present Perfect" },
+                { ru: "Ты видел новости?", en: "Did you see the news?", tense: "Past Simple" },
+                { ru: "Она видит лучшее в людях", en: "She sees the best in people", tense: "Present Simple" },
+                { ru: "Я видел его вчера вечером", en: "I saw him last night", tense: "Past Simple" },
+                { ru: "Мы видим много возможностей", en: "We see many opportunities", tense: "Present Simple" },
+                { ru: "Он не видел этого приближающимся", en: "He didn't see it coming", tense: "Past Simple" },
+                { ru: "Я вижу свет в конце туннеля", en: "I see light at the end of the tunnel", tense: "Present Simple" },
+                { ru: "Они видели НЛО", en: "They saw a UFO", tense: "Past Simple" },
+                { ru: "Ты видишь то, что я вижу?", en: "Do you see what I see?", tense: "Present Simple" },
+                { ru: "Она видела его с другой женщиной", en: "She saw him with another woman", tense: "Past Simple" },
+                { ru: "Я не вижу смысла", en: "I don't see the point", tense: "Present Simple" },
+                { ru: "Мы видели восход солнца", en: "We saw the sunrise", tense: "Past Simple" },
+                { ru: "Он видит всё в чёрно-белом цвете", en: "He sees everything in black and white", tense: "Present Simple" },
+                { ru: "Я видел это своими глазами", en: "I saw it with my own eyes", tense: "Past Simple" },
+                { ru: "Они видят новую возможность", en: "They see a new opportunity", tense: "Present Simple" },
+                { ru: "Ты видел доктора?", en: "Have you seen the doctor?", tense: "Present Perfect" },
+                { ru: "Она видит сквозь его ложь", en: "She sees through his lies", tense: "Present Simple" },
+                { ru: "Я увидел её на улице", en: "I saw her on the street", tense: "Past Simple" },
+                { ru: "Мы не видим никакой опасности", en: "We don't see any danger", tense: "Present Simple" },
+                { ru: "Он видел призрака", en: "He saw a ghost", tense: "Past Simple" },
+                { ru: "Я вижу, что происходит", en: "I see what's happening", tense: "Present Simple" },
+                { ru: "Они увидели радугу", en: "They saw a rainbow", tense: "Past Simple" },
+                { ru: "Ты видишь разницу сейчас?", en: "Do you see the difference now?", tense: "Present Simple" },
+                { ru: "Она не видела его с понедельника", en: "She hasn't seen him since Monday", tense: "Present Perfect" },
+                { ru: "Я вижу красоту в простых вещах", en: "I see beauty in simple things", tense: "Present Simple" },
+                { ru: "Мы видели дельфинов в океане", en: "We saw dolphins in the ocean", tense: "Past Simple" },
+                { ru: "Он видит потенциал в этом проекте", en: "He sees potential in this project", tense: "Present Simple" },
+                { ru: "Я никогда не видел её такой счастливой", en: "I have never seen her so happy", tense: "Present Perfect" },
+                { ru: "Они видели салют", en: "They saw the fireworks", tense: "Past Simple" },
+                { ru: "Ты видишь тот дом?", en: "Do you see that house?", tense: "Present Simple" },
+                { ru: "Она видит правду", en: "She sees the truth", tense: "Present Simple" },
+                { ru: "Я видел его в магазине", en: "I saw him at the store", tense: "Past Simple" },
+                { ru: "Мы видим прогресс", en: "We see progress", tense: "Present Simple" },
+                { ru: "Он видел падающую звезду", en: "He saw a shooting star", tense: "Past Simple" },
+                { ru: "Я вижу, куда это ведёт", en: "I see where this is going", tense: "Present Simple" },
+                { ru: "Они не видели меня", en: "They didn't see me", tense: "Past Simple" },
+                { ru: "Ты видел этот новый ресторан?", en: "Have you seen that new restaurant?", tense: "Present Perfect" },
+                { ru: "Она видит только хорошие стороны", en: "She sees only the good sides", tense: "Present Simple" },
+                { ru: "Я видел знак", en: "I saw the sign", tense: "Past Simple" },
+                { ru: "Мы видим луну сегодня ночью", en: "We see the moon tonight", tense: "Present Simple" },
+                { ru: "Он видел её плачущей", en: "He saw her crying", tense: "Past Simple" },
+                { ru: "Я вижу картину целиком", en: "I see the big picture", tense: "Present Simple" },
+                { ru: "Они видели медведя в лесу", en: "They saw a bear in the forest", tense: "Past Simple" },
+                { ru: "Ты видишь проблему здесь?", en: "Do you see a problem here?", tense: "Present Simple" },
+                { ru: "Она никогда не видела такой красоты", en: "She has never seen such beauty", tense: "Present Perfect" },
+                { ru: "Я видел это во сне", en: "I saw it in a dream", tense: "Past Simple" },
+                { ru: "Мы видим изменения каждый день", en: "We see changes every day", tense: "Present Simple" },
+                { ru: "Он видел её уходящей", en: "He saw her leaving", tense: "Past Simple" },
+                { ru: "Я вижу решение", en: "I see the solution", tense: "Present Simple" },
+                { ru: "Они видели парад", en: "They saw the parade", tense: "Past Simple" },
+                { ru: "Ты когда-нибудь видел китов?", en: "Have you ever seen whales?", tense: "Present Perfect" },
+                { ru: "Она видит мир по-другому", en: "She sees the world differently", tense: "Present Simple" },
+                { ru: "Я видел их вместе", en: "I saw them together", tense: "Past Simple" },
+                { ru: "Мы видим надежду", en: "We see hope", tense: "Present Simple" },
+                { ru: "Он видел эту выставку", en: "He saw this exhibition", tense: "Past Simple" },
+                { ru: "Я вижу причину для празднования", en: "I see a reason to celebrate", tense: "Present Simple" },
+                { ru: "Они увидели результаты вчера", en: "They saw the results yesterday", tense: "Past Simple" },
+                { ru: "Ты видишь эту возможность?", en: "Do you see this opportunity?", tense: "Present Simple" },
+                { ru: "Она видела его последним", en: "She saw him last", tense: "Past Simple" },
+                { ru: "Я вижу ясно теперь", en: "I see clearly now", tense: "Present Simple" },
+                { ru: "Мы видели её вчера на концерте", en: "We saw her at the concert yesterday", tense: "Past Simple" },
+                { ru: "Он видит опасность впереди", en: "He sees danger ahead", tense: "Present Simple" },
+                { ru: "Я видел знаменитость в аэропорту", en: "I saw a celebrity at the airport", tense: "Past Simple" },
+                { ru: "Они видят улучшения", en: "They see improvements", tense: "Present Simple" },
+                { ru: "Ты видел мою сумку?", en: "Have you seen my bag?", tense: "Present Perfect" },
+                { ru: "Она видит возможности везде", en: "She sees opportunities everywhere", tense: "Present Simple" },
+                { ru: "Я видел её в библиотеке", en: "I saw her at the library", tense: "Past Simple" },
+                { ru: "Мы видим звёзды ночью", en: "We see stars at night", tense: "Present Simple" },
+                { ru: "Он видел документальный фильм", en: "He saw the documentary", tense: "Past Simple" },
+                { ru: "Я вижу выход", en: "I see a way out", tense: "Present Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

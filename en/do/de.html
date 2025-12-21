@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇬🇧 VERB DO — 97 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇬🇧 Verb DO</h1>
+            <p class="subtitle">to perform, to execute — 97 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 97 von 97 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Englisch-Übung — DO · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'en',
+            labels: { target: 'Englisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["do","does","did","done","doing"],
+            phrases: [
+                { de: "Was machst du?", en: "What do you do?", tense: "Present" },
+                { de: "Ich mache Hausaufgaben.", en: "I do homework.", tense: "Present" },
+                { de: "Er macht das jeden Tag.", en: "He does it every day.", tense: "Present" },
+                { de: "Wir machen Übungen.", en: "We do exercises.", tense: "Present" },
+                { de: "Sie macht samstags sauber.", en: "She does cleaning on Saturdays.", tense: "Present" },
+                { de: "Ich mache das nicht.", en: "I don't do that.", tense: "Present" },
+                { de: "Er macht keine Fehler.", en: "He doesn't make mistakes.", tense: "Present" },
+                { de: "Du machst es richtig.", en: "You do it right.", tense: "Present" },
+                { de: "Sie geben ihr Bestes.", en: "They do their best.", tense: "Present" },
+                { de: "Was macht sie bei der Arbeit?", en: "What does she do at work?", tense: "Present" },
+                { de: "Ich habe das gestern gemacht.", en: "I did it yesterday.", tense: "Past Simple" },
+                { de: "Er hat einen Fehler gemacht.", en: "He did a mistake.", tense: "Past Simple" },
+                { de: "Wir haben alles pünktlich gemacht.", en: "We did everything on time.", tense: "Past Simple" },
+                { de: "Sie hat morgens geputzt.", en: "She did the cleaning in the morning.", tense: "Past Simple" },
+                { de: "Was hast du gestern gemacht?", en: "What did you do yesterday?", tense: "Past Simple" },
+                { de: "Ich habe das nicht gemacht.", en: "I didn't do that.", tense: "Past Simple" },
+                { de: "Sie haben gute Arbeit geleistet.", en: "They did a good job.", tense: "Past Simple" },
+                { de: "Wer hat das gemacht?", en: "Who did this?", tense: "Past Simple" },
+                { de: "Wir haben das schon mal gemacht.", en: "We did this before.", tense: "Past Simple" },
+                { de: "Er hat es schnell gemacht.", en: "He did it quickly.", tense: "Past Simple" },
+                { de: "Ich mache es gerade.", en: "I'm doing it now.", tense: "Present Continuous" },
+                { de: "Was machst du gerade?", en: "What are you doing?", tense: "Present Continuous" },
+                { de: "Er macht gerade seine Hausaufgaben.", en: "He's doing his homework.", tense: "Present Continuous" },
+                { de: "Wir machen gerade ein Projekt.", en: "We're doing a project.", tense: "Present Continuous" },
+                { de: "Sie macht gerade Einkäufe.", en: "She's doing shopping.", tense: "Present Continuous" },
+                { de: "Sie machen gerade eine Präsentation.", en: "They're doing a presentation.", tense: "Present Continuous" },
+                { de: "Ich mache das jetzt nicht.", en: "I'm not doing it now.", tense: "Present Continuous" },
+                { de: "Was machst du dieses Wochenende?", en: "What are you doing this weekend?", tense: "Present Continuous" },
+                { de: "Er macht gerade Übungen.", en: "He's doing exercises.", tense: "Present Continuous" },
+                { de: "Wir machen alles richtig.", en: "We're doing everything right.", tense: "Present Continuous" },
+                { de: "Ich habe es schon gemacht.", en: "I've already done it.", tense: "Present Perfect" },
+                { de: "Hast du deine Hausaufgaben gemacht?", en: "Have you done your homework?", tense: "Present Perfect" },
+                { de: "Er hat viel Arbeit gemacht.", en: "He's done a lot of work.", tense: "Present Perfect" },
+                { de: "Wir haben unser Bestes gegeben.", en: "We've done our best.", tense: "Present Perfect" },
+                { de: "Sie hat das noch nie gemacht.", en: "She's never done this.", tense: "Present Perfect" },
+                { de: "Sie haben große Fortschritte gemacht.", en: "They've done great progress.", tense: "Present Perfect" },
+                { de: "Ich habe es noch nicht gemacht.", en: "I haven't done it yet.", tense: "Present Perfect" },
+                { de: "Was hast du gemacht?", en: "What have you done?", tense: "Present Perfect" },
+                { de: "Er hat das schon mal gemacht.", en: "He's done it before.", tense: "Present Perfect" },
+                { de: "Wir haben die Arbeit erledigt.", en: "We've done the work.", tense: "Present Perfect" },
+                { de: "Ich werde es morgen machen.", en: "I'll do it tomorrow.", tense: "Future" },
+                { de: "Was wirst du machen?", en: "What will you do?", tense: "Future" },
+                { de: "Er wird es später machen.", en: "He'll do it later.", tense: "Future" },
+                { de: "Wir werden alles pünktlich machen.", en: "We'll do everything on time.", tense: "Future" },
+                { de: "Sie wird es richtig machen.", en: "She'll do it right.", tense: "Future" },
+                { de: "Sie werden das nicht machen.", en: "They won't do it.", tense: "Future" },
+                { de: "Ich werde mein Bestes geben.", en: "I'll do my best.", tense: "Future" },
+                { de: "Was werden wir machen?", en: "What will we do?", tense: "Future" },
+                { de: "Er wird es schnell machen.", en: "He'll do it quickly.", tense: "Future" },
+                { de: "Ich werde das nicht machen.", en: "I won't do that.", tense: "Future" },
+                { de: "Mach das!", en: "Do it!", tense: "Imperative" },
+                { de: "Mach das nicht!", en: "Don't do that!", tense: "Imperative" },
+                { de: "Mach deine Hausaufgaben!", en: "Do your homework!", tense: "Imperative" },
+                { de: "Lass uns das zusammen machen!", en: "Let's do it together!", tense: "Imperative" },
+                { de: "Mach, was man dir sagt!", en: "Do as you're told!", tense: "Imperative" },
+                { de: "Gib dein Bestes!", en: "Do your best!", tense: "Imperative" },
+                { de: "Mach keine Fehler!", en: "Don't make mistakes!", tense: "Imperative" },
+                { de: "Mach es richtig!", en: "Do it right!", tense: "Imperative" },
+                { de: "Mach es jetzt!", en: "Do it now!", tense: "Imperative" },
+                { de: "Lass uns eine Pause machen!", en: "Let's do a break!", tense: "Imperative" },
+                { de: "Ich will das wirklich machen.", en: "I do want to do it.", tense: "Present" },
+                { de: "Er macht das wirklich.", en: "He does do it.", tense: "Present" },
+                { de: "Ich habe das wirklich gemacht.", en: "I did do it.", tense: "Past Simple" },
+                { de: "Sie versucht es wirklich.", en: "She does try.", tense: "Present" },
+                { de: "Wir lieben es wirklich, das zu machen.", en: "We do love doing this.", tense: "Present" },
+                { de: "Ich mache jeden Morgen Yoga.", en: "I do yoga every morning.", tense: "Present" },
+                { de: "Er macht viele Fehler.", en: "He does many mistakes.", tense: "Present" },
+                { de: "Was kann ich tun?", en: "What can I do?", tense: "Present" },
+                { de: "Wie viel Arbeit hast du gemacht?", en: "How much work have you done?", tense: "Present Perfect" },
+                { de: "Ich mache alles selbst.", en: "I do everything myself.", tense: "Present" },
+                { de: "Sie tun so, als ob sie es wüssten.", en: "They do pretend to know.", tense: "Present" },
+                { de: "Sie hat es alleine gemacht.", en: "She did it alone.", tense: "Past Simple" },
+                { de: "Wir machen samstags Einkäufe.", en: "We do shopping on Saturday.", tense: "Present" },
+                { de: "Ich werde es für dich machen.", en: "I'll do it for you.", tense: "Future" },
+                { de: "Was macht er beruflich?", en: "What does he do for a living?", tense: "Present" },
+                { de: "Ich mache jeden Tag Übungen.", en: "I do exercises every day.", tense: "Present" },
+                { de: "Er tut gerade einen Gefallen.", en: "He's doing a favor.", tense: "Present Continuous" },
+                { de: "Du hast die richtige Wahl getroffen.", en: "You did the right choice.", tense: "Past Simple" },
+                { de: "Wir machen gerade Forschung.", en: "We're doing research.", tense: "Present Continuous" },
+                { de: "Sie schminkt sich gerade.", en: "She's doing makeup.", tense: "Present Continuous" },
+                { de: "Ich habe das absichtlich gemacht.", en: "I did it on purpose.", tense: "Past Simple" },
+                { de: "Sie machen gerade einen Test.", en: "They're doing a test.", tense: "Present Continuous" },
+                { de: "Du machst Fortschritte.", en: "You're doing progress.", tense: "Present Continuous" },
+                { de: "Ich habe das noch nie gemacht.", en: "I've never done this before.", tense: "Present Perfect" },
+                { de: "Er macht Geschäfte.", en: "He does business.", tense: "Present" },
+                { de: "Was haben wir falsch gemacht?", en: "What did we do wrong?", tense: "Past Simple" },
+                { de: "Ich mache alles der Reihe nach.", en: "I do everything in order.", tense: "Present" },
+                { de: "Sie hat das schon zweimal gemacht.", en: "She's already done it twice.", tense: "Present Perfect" },
+                { de: "Wir werden das anders machen.", en: "We'll do it differently.", tense: "Future" },
+                { de: "Er tut so, als ob er es nicht wüsste.", en: "He does pretend not to know.", tense: "Present" },
+                { de: "Ich habe alles getan, was ich konnte.", en: "I did everything I could.", tense: "Past Simple" },
+                { de: "Du machst mich glücklich.", en: "You do make me happy.", tense: "Present" },
+                { de: "Sie haben eine Entdeckung gemacht.", en: "They did a discovery.", tense: "Past Simple" },
+                { de: "Ich mache das mit Vergnügen.", en: "I do it with pleasure.", tense: "Present" },
+                { de: "Mach es vorsichtig!", en: "Do it carefully!", tense: "Imperative" },
+                { de: "Wir machen gerade Renovierung.", en: "We're doing renovation.", tense: "Present Continuous" },
+                { de: "Sie macht sich gerade die Haare.", en: "She's doing her hair.", tense: "Present Continuous" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

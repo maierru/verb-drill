@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇬🇧 VERB HAVE — 95 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇬🇧 Verb HAVE</h1>
+            <p class="subtitle">to possess, to experience — 95 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 95 из 95 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика английского — HAVE · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'en',
+            labels: { target: 'English', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["have","has","had","having"],
+            phrases: [
+                { ru: "У меня есть вопрос", en: "I have a question", tense: "Present" },
+                { ru: "У неё есть собака", en: "She has a dog", tense: "Present" },
+                { ru: "У них есть время", en: "They have time", tense: "Present" },
+                { ru: "У нас есть дом", en: "We have a house", tense: "Present" },
+                { ru: "У него есть машина", en: "He has a car", tense: "Present" },
+                { ru: "У меня есть идея", en: "I have an idea", tense: "Present" },
+                { ru: "У тебя есть деньги?", en: "Do you have money?", tense: "Present" },
+                { ru: "У нас нет выбора", en: "We don't have a choice", tense: "Present" },
+                { ru: "У неё есть работа", en: "She has a job", tense: "Present" },
+                { ru: "У них есть дети", en: "They have children", tense: "Present" },
+                { ru: "У меня был шанс", en: "I had a chance", tense: "Past Simple" },
+                { ru: "У нас была встреча", en: "We had a meeting", tense: "Past Simple" },
+                { ru: "У него был план", en: "He had a plan", tense: "Past Simple" },
+                { ru: "У них были проблемы", en: "They had problems", tense: "Past Simple" },
+                { ru: "У неё был брат", en: "She had a brother", tense: "Past Simple" },
+                { ru: "У меня было время подумать", en: "I had time to think", tense: "Past Simple" },
+                { ru: "У тебя было право знать", en: "You had the right to know", tense: "Past Simple" },
+                { ru: "У нас был хороший день", en: "We had a good day", tense: "Past Simple" },
+                { ru: "У него была возможность", en: "He had an opportunity", tense: "Past Simple" },
+                { ru: "У них был выбор", en: "They had a choice", tense: "Past Simple" },
+                { ru: "Я уже сделал это", en: "I have already done it", tense: "Present Perfect" },
+                { ru: "Мы уже видели этот фильм", en: "We have already seen this movie", tense: "Present Perfect" },
+                { ru: "Она уже ушла", en: "She has already left", tense: "Present Perfect" },
+                { ru: "Они уже приехали", en: "They have already arrived", tense: "Present Perfect" },
+                { ru: "Он уже закончил работу", en: "He has already finished the work", tense: "Present Perfect" },
+                { ru: "Я никогда не был там", en: "I have never been there", tense: "Present Perfect" },
+                { ru: "Ты когда-нибудь пробовал это?", en: "Have you ever tried this?", tense: "Present Perfect" },
+                { ru: "Мы ещё не решили", en: "We haven't decided yet", tense: "Present Perfect" },
+                { ru: "Она уже позавтракала", en: "She has already had breakfast", tense: "Present Perfect" },
+                { ru: "Они уже встречались раньше", en: "They have met before", tense: "Present Perfect" },
+                { ru: "У меня будет время завтра", en: "I will have time tomorrow", tense: "Future" },
+                { ru: "У нас будет вечеринка", en: "We will have a party", tense: "Future" },
+                { ru: "У неё будет ребёнок", en: "She will have a baby", tense: "Future" },
+                { ru: "У них будет шанс", en: "They will have a chance", tense: "Future" },
+                { ru: "У него будет собеседование", en: "He will have an interview", tense: "Future" },
+                { ru: "У тебя будет возможность", en: "You will have an opportunity", tense: "Future" },
+                { ru: "У меня будет встреча в три", en: "I will have a meeting at three", tense: "Future" },
+                { ru: "У нас будет много работы", en: "We will have a lot of work", tense: "Future" },
+                { ru: "У неё будет отпуск", en: "She will have a vacation", tense: "Future" },
+                { ru: "У них будет свадьба", en: "They will have a wedding", tense: "Future" },
+                { ru: "У меня была бы возможность", en: "I would have a chance", tense: "Conditional" },
+                { ru: "У нас было бы время", en: "We would have time", tense: "Conditional" },
+                { ru: "У неё был бы выбор", en: "She would have a choice", tense: "Conditional" },
+                { ru: "У них было бы решение", en: "They would have a solution", tense: "Conditional" },
+                { ru: "У него была бы идея", en: "He would have an idea", tense: "Conditional" },
+                { ru: "Я бы сделал это, если бы у меня было время", en: "I would have done it if I had had time", tense: "Conditional" },
+                { ru: "У тебя была бы возможность", en: "You would have an opportunity", tense: "Conditional" },
+                { ru: "У нас было бы больше денег", en: "We would have more money", tense: "Conditional" },
+                { ru: "У неё был бы шанс", en: "She would have a chance", tense: "Conditional" },
+                { ru: "У них было бы преимущество", en: "They would have an advantage", tense: "Conditional" },
+                { ru: "У меня есть головная боль", en: "I have a headache", tense: "Expression" },
+                { ru: "Повеселись!", en: "Have fun!", tense: "Expression" },
+                { ru: "Приятного аппетита!", en: "Have a nice meal!", tense: "Expression" },
+                { ru: "У меня есть право сказать", en: "I have the right to say", tense: "Expression" },
+                { ru: "Мне нужно поговорить с тобой", en: "I have to talk to you", tense: "Expression" },
+                { ru: "У неё простуда", en: "She has a cold", tense: "Expression" },
+                { ru: "Мне нужно идти", en: "I have to go", tense: "Expression" },
+                { ru: "У нас есть проблема", en: "We have a problem", tense: "Expression" },
+                { ru: "Хорошего дня!", en: "Have a nice day!", tense: "Expression" },
+                { ru: "У него есть талант", en: "He has talent", tense: "Expression" },
+                { ru: "У меня есть чувство, что...", en: "I have a feeling that...", tense: "Expression" },
+                { ru: "У тебя есть минутка?", en: "Do you have a minute?", tense: "Expression" },
+                { ru: "У неё есть опыт", en: "She has experience", tense: "Expression" },
+                { ru: "Мне нужно подумать об этом", en: "I have to think about it", tense: "Expression" },
+                { ru: "У них есть влияние", en: "They have influence", tense: "Expression" },
+                { ru: "У меня нет понятия", en: "I have no idea", tense: "Expression" },
+                { ru: "Хороших выходных!", en: "Have a good weekend!", tense: "Expression" },
+                { ru: "У неё есть точка зрения", en: "She has a point", tense: "Expression" },
+                { ru: "Мне нужно признать", en: "I have to admit", tense: "Expression" },
+                { ru: "У нас есть соглашение", en: "We have an agreement", tense: "Expression" },
+                { ru: "У меня три брата", en: "I have three brothers", tense: "Present" },
+                { ru: "У неё голубые глаза", en: "She has blue eyes", tense: "Present" },
+                { ru: "У нас большой сад", en: "We have a big garden", tense: "Present" },
+                { ru: "У него много друзей", en: "He has many friends", tense: "Present" },
+                { ru: "У них новая квартира", en: "They have a new apartment", tense: "Present" },
+                { ru: "У меня был плохой день", en: "I had a bad day", tense: "Past Simple" },
+                { ru: "У нас был долгий разговор", en: "We had a long conversation", tense: "Past Simple" },
+                { ru: "У неё была температура", en: "She had a fever", tense: "Past Simple" },
+                { ru: "У них был аргумент", en: "They had an argument", tense: "Past Simple" },
+                { ru: "У него была мечта", en: "He had a dream", tense: "Past Simple" },
+                { ru: "Я только что пообедал", en: "I have just had lunch", tense: "Present Perfect" },
+                { ru: "Мы уже обсудили это", en: "We have already discussed this", tense: "Present Perfect" },
+                { ru: "Она жила здесь пять лет", en: "She has lived here for five years", tense: "Present Perfect" },
+                { ru: "Они потеряли ключи", en: "They have lost their keys", tense: "Present Perfect" },
+                { ru: "Он изменил своё мнение", en: "He has changed his mind", tense: "Present Perfect" },
+                { ru: "У меня будет отпуск в июле", en: "I will have a vacation in July", tense: "Future" },
+                { ru: "У нас будет гость", en: "We will have a guest", tense: "Future" },
+                { ru: "У неё будет экзамен", en: "She will have an exam", tense: "Future" },
+                { ru: "У них будет проблема", en: "They will have a problem", tense: "Future" },
+                { ru: "У него будет успех", en: "He will have success", tense: "Future" },
+                { ru: "Если бы у меня были деньги", en: "If I had money", tense: "Conditional" },
+                { ru: "Я бы помог, если бы мог", en: "I would have helped if I could have", tense: "Conditional" },
+                { ru: "У неё было бы больше друзей", en: "She would have more friends", tense: "Conditional" },
+                { ru: "Мы бы выиграли, если бы попытались", en: "We would have won if we had tried", tense: "Conditional" },
+                { ru: "У них было бы меньше стресса", en: "They would have less stress", tense: "Conditional" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇬🇧 VERB GIVE — 98 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇬🇧 Verb GIVE</h1>
+            <p class="subtitle">to provide, to offer — 98 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 98 von 98 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Englisch-Übung — GIVE · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'en',
+            labels: { target: 'Englisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["give","gives","gave","given","giving"],
+            phrases: [
+                { de: "Ich gebe dir das Buch", en: "I give you the book", tense: "Present Simple" },
+                { de: "Er gibt mir Rat", en: "He gives me advice", tense: "Present Simple" },
+                { de: "Wir gaben ihnen Geld", en: "We gave them money", tense: "Past Simple" },
+                { de: "Sie gab mir eine Antwort", en: "She gave me an answer", tense: "Past Simple" },
+                { de: "Sie geben uns Zeit", en: "They give us time", tense: "Present Simple" },
+                { de: "Ich gab ihm eine Chance", en: "I gave him a chance", tense: "Past Simple" },
+                { de: "Du gibst ein gutes Beispiel", en: "You give a good example", tense: "Present Simple" },
+                { de: "Wir geben Kindern Bildung", en: "We give children education", tense: "Present Simple" },
+                { de: "Er gab mir seine Telefonnummer", en: "He gave me his phone number", tense: "Past Simple" },
+                { de: "Sie gibt Musikunterricht", en: "She gives music lessons", tense: "Present Simple" },
+                { de: "Ich werde es morgen zurückgeben", en: "I will give it back tomorrow", tense: "Future Simple" },
+                { de: "Sie gaben uns die Schlüssel", en: "They gave us the keys", tense: "Past Simple" },
+                { de: "Du gibst mir Hoffnung", en: "You give me hope", tense: "Present Simple" },
+                { de: "Er gibt viel Geld für Wohltätigkeit", en: "He gives a lot of money to charity", tense: "Present Simple" },
+                { de: "Wir gaben ihnen Erlaubnis", en: "We gave them permission", tense: "Past Simple" },
+                { de: "Sie gab mir ein Geschenk", en: "She gave me a gift", tense: "Past Simple" },
+                { de: "Ich gebe dir mein Wort", en: "I give you my word", tense: "Present Simple" },
+                { de: "Sie geben jede Woche Konzerte", en: "They give concerts every week", tense: "Present Simple" },
+                { de: "Er gab mir den Rat, mit dem Rauchen aufzuhören", en: "He gave me advice to give up smoking", tense: "Past Simple" },
+                { de: "Du machst zu viele Versprechungen", en: "You give too many promises", tense: "Present Simple" },
+                { de: "Wir werden dir Bescheid geben", en: "We will give you a call", tense: "Future Simple" },
+                { de: "Sie gibt mir Kraft", en: "She gives me strength", tense: "Present Simple" },
+                { de: "Ich gab ihm das Buch zurück", en: "I gave him the book back", tense: "Past Simple" },
+                { de: "Sie geben kostenlose Proben", en: "They give free samples", tense: "Present Simple" },
+                { de: "Er gab mir eine zweite Chance", en: "He gave me a second chance", tense: "Past Simple" },
+                { de: "Du gibst mir einen Grund zu lächeln", en: "You give me a reason to smile", tense: "Present Simple" },
+                { de: "Wir geben ihnen Unterstützung", en: "We give them support", tense: "Present Simple" },
+                { de: "Sie gab mir einige Ratschläge", en: "She gave me some advice", tense: "Past Simple" },
+                { de: "Ich gebe Englischunterricht", en: "I give English lessons", tense: "Present Simple" },
+                { de: "Sie gaben uns Wegbeschreibungen", en: "They gave us directions", tense: "Past Simple" },
+                { de: "Er gibt selten Interviews", en: "He gives interviews rarely", tense: "Present Simple" },
+                { de: "Du gabst mir eine gute Idee", en: "You gave me a good idea", tense: "Past Simple" },
+                { de: "Wir spenden jeden Monat", en: "We give donations every month", tense: "Present Simple" },
+                { de: "Sie gab mir eine Erklärung", en: "She gave me an explanation", tense: "Past Simple" },
+                { de: "Ich gebe dir fünf Minuten", en: "I give you five minutes", tense: "Present Simple" },
+                { de: "Sie geben Studenten Rabatte", en: "They give discounts to students", tense: "Present Simple" },
+                { de: "Er gab mir seine Visitenkarte", en: "He gave me his business card", tense: "Past Simple" },
+                { de: "Du machst zu viele Versprechen", en: "You give too many promises", tense: "Present Simple" },
+                { de: "Wir gaben ihnen Anweisungen", en: "We gave them instructions", tense: "Past Simple" },
+                { de: "Sie hält jede Woche Präsentationen", en: "She gives presentations every week", tense: "Present Simple" },
+                { de: "Ich gab auf", en: "I gave up", tense: "Past Simple" },
+                { de: "Sie geben Feedback", en: "They give feedback", tense: "Present Simple" },
+                { de: "Er gab mir die Erlaubnis zu gehen", en: "He gave me permission to leave", tense: "Past Simple" },
+                { de: "Du gibst mir Inspiration", en: "You give me inspiration", tense: "Present Simple" },
+                { de: "Wir geben Garantie auf alle Produkte", en: "We give a warranty on all products", tense: "Present Simple" },
+                { de: "Sie machte mir ein Kompliment", en: "She gave me a compliment", tense: "Past Simple" },
+                { de: "Ich gebe dir meine Adresse", en: "I give you my address", tense: "Present Simple" },
+                { de: "Sie gaben uns eine Karte", en: "They gave us a map", tense: "Past Simple" },
+                { de: "Er gibt Bettlern Geld", en: "He gives money to beggars", tense: "Present Simple" },
+                { de: "Du gabst mir Vertrauen", en: "You gave me confidence", tense: "Past Simple" },
+                { de: "Wir geben den Gewinnern Preise", en: "We give prizes to winners", tense: "Present Simple" },
+                { de: "Sie gab mir eine Einladung", en: "She gave me an invitation", tense: "Past Simple" },
+                { de: "Ich gebe dir eine letzte Chance", en: "I give you one last chance", tense: "Present Simple" },
+                { de: "Sie geben Empfehlungen", en: "They give recommendations", tense: "Present Simple" },
+                { de: "Er gab mir eine Warnung", en: "He gave me a warning", tense: "Past Simple" },
+                { de: "Du gibst mir Energie", en: "You give me energy", tense: "Present Simple" },
+                { de: "Wir machten ihnen ein Angebot", en: "We gave them an offer", tense: "Past Simple" },
+                { de: "Sie gibt kostenlos Ratschläge", en: "She gives advice for free", tense: "Present Simple" },
+                { de: "Ich gab ihm eine helfende Hand", en: "I gave him a helping hand", tense: "Past Simple" },
+                { de: "Sie machen Versprechen", en: "They give promises", tense: "Present Simple" },
+                { de: "Er gab mir eine Beschreibung", en: "He gave me a description", tense: "Past Simple" },
+                { de: "Du gibst Kindern ein gutes Beispiel", en: "You give children a good example", tense: "Present Simple" },
+                { de: "Wir geben ihnen eine Gelegenheit", en: "We give them an opportunity", tense: "Present Simple" },
+                { de: "Sie gab mir ein Rezept", en: "She gave me a recipe", tense: "Past Simple" },
+                { de: "Ich gebe Geld für Wohltätigkeit", en: "I give money to charity", tense: "Present Simple" },
+                { de: "Sie gaben uns eine Wahl", en: "They gave us a choice", tense: "Past Simple" },
+                { de: "Er verspricht, die Schulden zurückzugeben", en: "He gives a promise to give back the debt", tense: "Present Simple" },
+                { de: "Du gabst mir wichtige Informationen", en: "You gave me important information", tense: "Past Simple" },
+                { de: "Wir geben Rabatte auf Großbestellungen", en: "We give discounts on bulk orders", tense: "Present Simple" },
+                { de: "Sie gab mir eine Erinnerung", en: "She gave me a reminder", tense: "Past Simple" },
+                { de: "Ich gebe dir das Recht zu wählen", en: "I give you the right to choose", tense: "Present Simple" },
+                { de: "Sie geben Studenten Stipendien", en: "They give scholarships to students", tense: "Present Simple" },
+                { de: "Er gab mir eine Notiz", en: "He gave me a note", tense: "Past Simple" },
+                { de: "Du gibst mir Motivation", en: "You give me motivation", tense: "Present Simple" },
+                { de: "Wir gaben ihnen eine Warnung", en: "We gave them a warning", tense: "Past Simple" },
+                { de: "Sie gibt Privatunterricht", en: "She gives private lessons", tense: "Present Simple" },
+                { de: "Ich gebe auf", en: "I give up", tense: "Present Simple" },
+                { de: "Sie gaben uns Tickets", en: "They gave us tickets", tense: "Past Simple" },
+                { de: "Er macht Versprechen, die er nicht hält", en: "He gives promises he doesn't keep", tense: "Present Simple" },
+                { de: "Du gabst mir eine wertvolle Lektion", en: "You gave me a valuable lesson", tense: "Past Simple" },
+                { de: "Wir geben ihnen eine Chance sich zu verbessern", en: "We give them a chance to improve", tense: "Present Simple" },
+                { de: "Sie gab mir ihre Telefonnummer", en: "She gave me her phone number", tense: "Past Simple" },
+                { de: "Ich gebe dir vollkommene Freiheit", en: "I give you complete freedom", tense: "Present Simple" },
+                { de: "Sie geben eine Geld-zurück-Garantie", en: "They give a money-back guarantee", tense: "Present Simple" },
+                { de: "Er gab mir zu verstehen", en: "He gave me to understand", tense: "Past Simple" },
+                { de: "Du gibst mir Selbstvertrauen", en: "You give me self-confidence", tense: "Present Simple" },
+                { de: "Wir gaben ihnen eine Antwort", en: "We gave them an answer", tense: "Past Simple" },
+                { de: "Sie gebärt ein Kind", en: "She gives birth to a child", tense: "Present Simple" },
+                { de: "Ich werde dir das Buch morgen zurückgeben", en: "I will give you the book back tomorrow", tense: "Future Simple" },
+                { de: "Sie sagen vor Gericht aus", en: "They give testimony in court", tense: "Present Simple" },
+                { de: "Er gab mir das Passwort", en: "He gave me the password", tense: "Past Simple" },
+                { de: "Du gibst mir einen Grund weiterzumachen", en: "You give me a reason to continue", tense: "Present Simple" },
+                { de: "Wir geben ihnen eine Stimme", en: "We give them a voice", tense: "Present Simple" },
+                { de: "Sie gab mir ein Zeichen", en: "She gave me a sign", tense: "Past Simple" },
+                { de: "Ich gebe dir mein Ehrenwort", en: "I give you my honest word", tense: "Present Simple" },
+                { de: "Sie gaben uns ein Signal", en: "They gave us a signal", tense: "Past Simple" },
+                { de: "Er gibt niemals auf", en: "He never gives up", tense: "Present Simple" },
+                { de: "Du gabst mir Grund zur Sorge", en: "You gave me cause for concern", tense: "Past Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

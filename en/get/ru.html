@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇬🇧 VERB GET — 96 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇬🇧 Verb GET</h1>
+            <p class="subtitle">to obtain, to become — 96 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 96 из 96 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика английского — GET · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'en',
+            labels: { target: 'English', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["get","gets","got","gotten","getting"],
+            phrases: [
+                { ru: "Я получаю письма каждый день", en: "I get letters every day", tense: "Present Simple" },
+                { ru: "Он получил работу в новой компании", en: "He got a job at a new company", tense: "Past Simple" },
+                { ru: "Мы получим результаты завтра", en: "We will get the results tomorrow", tense: "Future Simple" },
+                { ru: "Она становится лучше с каждым днём", en: "She is getting better every day", tense: "Present Continuous" },
+                { ru: "Я встаю в шесть утра", en: "I get up at six in the morning", tense: "Present Simple" },
+                { ru: "Они добрались до дома поздно", en: "They got home late", tense: "Past Simple" },
+                { ru: "Ты понимаешь, что я имею в виду?", en: "Do you get what I mean?", tense: "Present Simple" },
+                { ru: "Она получила хорошие оценки", en: "She got good grades", tense: "Past Simple" },
+                { ru: "Мне нужно купить молоко", en: "I need to get some milk", tense: "Infinitive" },
+                { ru: "Он всегда получает то, что хочет", en: "He always gets what he wants", tense: "Present Simple" },
+                { ru: "Мы выбрались из машины", en: "We got out of the car", tense: "Past Simple" },
+                { ru: "Становится холодно", en: "It's getting cold", tense: "Present Continuous" },
+                { ru: "Я получил твоё сообщение", en: "I got your message", tense: "Past Simple" },
+                { ru: "Они хорошо ладят друг с другом", en: "They get along well with each other", tense: "Present Simple" },
+                { ru: "Ты получишь это позже", en: "You will get it later", tense: "Future Simple" },
+                { ru: "Он садится на автобус каждое утро", en: "He gets on the bus every morning", tense: "Present Simple" },
+                { ru: "Я пытаюсь получить билеты", en: "I'm trying to get tickets", tense: "Present Continuous" },
+                { ru: "Она добралась до вокзала вовремя", en: "She got to the station on time", tense: "Past Simple" },
+                { ru: "Мы должны вернуться к работе", en: "We need to get back to work", tense: "Infinitive" },
+                { ru: "Он разбогател за год", en: "He got rich in a year", tense: "Past Simple" },
+                { ru: "Я получаю удовольствие от музыки", en: "I get pleasure from music", tense: "Present Simple" },
+                { ru: "Они выходят из автобуса здесь", en: "They get off the bus here", tense: "Present Simple" },
+                { ru: "Становится поздно", en: "It's getting late", tense: "Present Continuous" },
+                { ru: "Я получил новый телефон", en: "I got a new phone", tense: "Past Simple" },
+                { ru: "Ты доберёшься туда за час", en: "You'll get there in an hour", tense: "Future Simple" },
+                { ru: "Она становится нервной", en: "She's getting nervous", tense: "Present Continuous" },
+                { ru: "Мы получили приглашение на свадьбу", en: "We got an invitation to the wedding", tense: "Past Simple" },
+                { ru: "Он преодолевает свои страхи", en: "He is getting over his fears", tense: "Present Continuous" },
+                { ru: "Я должен достать деньги", en: "I need to get some money", tense: "Infinitive" },
+                { ru: "Они получают хорошую зарплату", en: "They get a good salary", tense: "Present Simple" },
+                { ru: "Ты становишься сильнее", en: "You're getting stronger", tense: "Present Continuous" },
+                { ru: "Я добрался до офиса в девять", en: "I got to the office at nine", tense: "Past Simple" },
+                { ru: "Она уходит с работы рано", en: "She gets off work early", tense: "Present Simple" },
+                { ru: "Мы получим ответ на следующей неделе", en: "We will get an answer next week", tense: "Future Simple" },
+                { ru: "Он вылез из постели с трудом", en: "He got out of bed with difficulty", tense: "Past Simple" },
+                { ru: "Я понимаю твою точку зрения", en: "I get your point", tense: "Present Simple" },
+                { ru: "Они садятся в поезд в семь", en: "They get on the train at seven", tense: "Present Simple" },
+                { ru: "Становится темно", en: "It's getting dark", tense: "Present Continuous" },
+                { ru: "Я получила письмо от него", en: "I got a letter from him", tense: "Past Simple" },
+                { ru: "Ты сможешь получить это завтра", en: "You can get it tomorrow", tense: "Modal + Infinitive" },
+                { ru: "Она встаёт рано каждый день", en: "She gets up early every day", tense: "Present Simple" },
+                { ru: "Мы вернулись домой поздно", en: "We got back home late", tense: "Past Simple" },
+                { ru: "Он получает много звонков", en: "He gets many calls", tense: "Present Simple" },
+                { ru: "Я начинаю понимать это", en: "I'm getting to understand it", tense: "Present Continuous" },
+                { ru: "Они получили разрешение", en: "They got permission", tense: "Past Simple" },
+                { ru: "Ты доберёшься вовремя?", en: "Will you get there on time?", tense: "Future Simple" },
+                { ru: "Она пробирается через толпу", en: "She's getting through the crowd", tense: "Present Continuous" },
+                { ru: "Я получил травму на тренировке", en: "I got injured at training", tense: "Past Simple" },
+                { ru: "Мы выходим на следующей остановке", en: "We get off at the next stop", tense: "Present Simple" },
+                { ru: "Он становится умнее", en: "He's getting smarter", tense: "Present Continuous" },
+                { ru: "Я достану билеты на концерт", en: "I'll get tickets to the concert", tense: "Future Simple" },
+                { ru: "Они получили плохие новости", en: "They got bad news", tense: "Past Simple" },
+                { ru: "Ты понял шутку?", en: "Did you get the joke?", tense: "Past Simple" },
+                { ru: "Она получает помощь от друзей", en: "She gets help from friends", tense: "Present Simple" },
+                { ru: "Мы уезжаем рано утром", en: "We're getting away early in the morning", tense: "Present Continuous" },
+                { ru: "Он получил повышение", en: "He got a promotion", tense: "Past Simple" },
+                { ru: "Я выхожу здесь", en: "I get out here", tense: "Present Simple" },
+                { ru: "Они добираются до работы на метро", en: "They get to work by metro", tense: "Present Simple" },
+                { ru: "Становится жарко", en: "It's getting hot", tense: "Present Continuous" },
+                { ru: "Я получил подарок на день рождения", en: "I got a gift for my birthday", tense: "Past Simple" },
+                { ru: "Ты сможешь получить это бесплатно", en: "You can get it for free", tense: "Modal + Infinitive" },
+                { ru: "Она уладит это", en: "She'll get it sorted", tense: "Future Simple" },
+                { ru: "Мы получили скидку", en: "We got a discount", tense: "Past Simple" },
+                { ru: "Он вступает в клуб", en: "He's getting into the club", tense: "Present Continuous" },
+                { ru: "Я должен убираться отсюда", en: "I need to get out of here", tense: "Infinitive" },
+                { ru: "Они получают удовольствие от игры", en: "They get enjoyment from the game", tense: "Present Simple" },
+                { ru: "Ты становишься лучше в этом", en: "You're getting better at this", tense: "Present Continuous" },
+                { ru: "Я добрался до аэропорта вовремя", en: "I got to the airport on time", tense: "Past Simple" },
+                { ru: "Она получит ответ скоро", en: "She will get an answer soon", tense: "Future Simple" },
+                { ru: "Мы садимся в самолёт сейчас", en: "We're getting on the plane now", tense: "Present Continuous" },
+                { ru: "Он получил наказание", en: "He got punished", tense: "Past Simple" },
+                { ru: "Я понимаю идею", en: "I get the idea", tense: "Present Simple" },
+                { ru: "Они возвращаются вместе", en: "They're getting back together", tense: "Present Continuous" },
+                { ru: "Ты получил моё письмо?", en: "Did you get my email?", tense: "Past Simple" },
+                { ru: "Она выходит из такси", en: "She gets out of the taxi", tense: "Present Simple" },
+                { ru: "Мы получим компенсацию", en: "We will get compensation", tense: "Future Simple" },
+                { ru: "Он становится знаменитым", en: "He's getting famous", tense: "Present Continuous" },
+                { ru: "Я получил шанс", en: "I got a chance", tense: "Past Simple" },
+                { ru: "Они прибывают завтра", en: "They get in tomorrow", tense: "Present Simple" },
+                { ru: "Ты доберёшься туда на автобусе", en: "You'll get there by bus", tense: "Future Simple" },
+                { ru: "Она получает комплименты", en: "She gets compliments", tense: "Present Simple" },
+                { ru: "Мы встаём поздно по выходным", en: "We get up late on weekends", tense: "Present Simple" },
+                { ru: "Он получил опыт", en: "He got experience", tense: "Past Simple" },
+                { ru: "Я спускаюсь с горы", en: "I'm getting down the mountain", tense: "Present Continuous" },
+                { ru: "Они получат приз", en: "They will get a prize", tense: "Future Simple" },
+                { ru: "Ты становишься успешным", en: "You're getting successful", tense: "Present Continuous" },
+                { ru: "Я получила совет от учителя", en: "I got advice from the teacher", tense: "Past Simple" },
+                { ru: "Она выходит на пенсию в следующем году", en: "She's getting retired next year", tense: "Present Continuous" },
+                { ru: "Мы получаем информацию из новостей", en: "We get information from the news", tense: "Present Simple" },
+                { ru: "Он добрался до вершины", en: "He got to the top", tense: "Past Simple" },
+                { ru: "Я получу визу на следующей неделе", en: "I'll get a visa next week", tense: "Future Simple" },
+                { ru: "Они прибывают в полночь", en: "They get in at midnight", tense: "Present Simple" },
+                { ru: "Ты понимаешь ситуацию?", en: "Do you get the situation?", tense: "Present Simple" },
+                { ru: "Она получила образование за границей", en: "She got her education abroad", tense: "Past Simple" },
+                { ru: "Мы начинаем работать сейчас", en: "We're getting to work now", tense: "Present Continuous" },
+                { ru: "Он получит то, что заслуживает", en: "He will get what he deserves", tense: "Future Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

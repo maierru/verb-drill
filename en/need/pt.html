@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇬🇧 VERB NEED — 100 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇬🇧 Verb NEED</h1>
+            <p class="subtitle">to require, to must have — 100 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 100 de 100 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            English Practice — NEED · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'en',
+            labels: { target: 'English', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["need","needs","needed","needing"],
+            phrases: [
+                { pt: "Eu preciso da tua ajuda.", en: "I need your help.", tense: "Present" },
+                { pt: "Tu precisas de descansar.", en: "You need to rest.", tense: "Present" },
+                { pt: "Ele precisa de dinheiro.", en: "He needs money.", tense: "Present" },
+                { pt: "Ela precisa de tempo.", en: "She needs time.", tense: "Present" },
+                { pt: "Nós precisamos de falar.", en: "We need to talk.", tense: "Present" },
+                { pt: "Vocês precisam de saber isto.", en: "You need to know this.", tense: "Present" },
+                { pt: "Eles precisam de informação.", en: "They need information.", tense: "Present" },
+                { pt: "Eu não preciso disto.", en: "I don't need this.", tense: "Present" },
+                { pt: "Tu não precisas de te preocupar.", en: "You don't need to worry.", tense: "Present" },
+                { pt: "Ele não precisa de ajuda.", en: "He doesn't need help.", tense: "Present" },
+                { pt: "Eu preciso de ir.", en: "I need to go.", tense: "Present" },
+                { pt: "Tu precisas de comer.", en: "You need to eat.", tense: "Present" },
+                { pt: "Ela precisa de dormir.", en: "She needs to sleep.", tense: "Present" },
+                { pt: "Nós precisamos de uma solução.", en: "We need a solution.", tense: "Present" },
+                { pt: "Eles precisam de um conselho.", en: "They need advice.", tense: "Present" },
+                { pt: "Eu preciso de um carro.", en: "I need a car.", tense: "Present" },
+                { pt: "Tu precisas de um médico.", en: "You need a doctor.", tense: "Present" },
+                { pt: "Ele precisa de uma explicação.", en: "He needs an explanation.", tense: "Present" },
+                { pt: "Ela precisa de umas férias.", en: "She needs a vacation.", tense: "Present" },
+                { pt: "Nós precisamos de mais tempo.", en: "We need more time.", tense: "Present" },
+                { pt: "Eu precisava de ajuda.", en: "I needed help.", tense: "Past Simple" },
+                { pt: "Tu precisavas de ligar.", en: "You needed to call.", tense: "Past Simple" },
+                { pt: "Ele precisava de informação.", en: "He needed information.", tense: "Past Simple" },
+                { pt: "Ela precisava de saber.", en: "She needed to know.", tense: "Past Simple" },
+                { pt: "Nós precisávamos de dinheiro.", en: "We needed money.", tense: "Past Simple" },
+                { pt: "Vocês precisavam de esperar.", en: "You needed to wait.", tense: "Past Simple" },
+                { pt: "Eles precisavam de autorização.", en: "They needed permission.", tense: "Past Simple" },
+                { pt: "Eu não precisava de fazer isto.", en: "I didn't need to do this.", tense: "Past Simple" },
+                { pt: "Tu não precisavas de vir.", en: "You didn't need to come.", tense: "Past Simple" },
+                { pt: "Ela não precisava de explicar.", en: "She didn't need to explain.", tense: "Past Simple" },
+                { pt: "Eu vou precisar da tua opinião.", en: "I will need your opinion.", tense: "Future" },
+                { pt: "Tu vais precisar de ajuda.", en: "You will need help.", tense: "Future" },
+                { pt: "Ele vai precisar de mais tempo.", en: "He will need more time.", tense: "Future" },
+                { pt: "Ela vai precisar de documentos novos.", en: "She will need new documents.", tense: "Future" },
+                { pt: "Nós vamos precisar de um plano.", en: "We will need a plan.", tense: "Future" },
+                { pt: "Vocês vão precisar de um bilhete.", en: "You will need a ticket.", tense: "Future" },
+                { pt: "Eles vão precisar de autorização.", en: "They will need permission.", tense: "Future" },
+                { pt: "Eu não vou precisar disto.", en: "I won't need this.", tense: "Future" },
+                { pt: "Tu não vais precisar de um carro.", en: "You won't need a car.", tense: "Future" },
+                { pt: "Ele não vai precisar de ajuda.", en: "He won't need help.", tense: "Future" },
+                { pt: "Eu preciso de um conselho.", en: "I need advice.", tense: "Present" },
+                { pt: "Tu precisas de uma razão.", en: "You need a reason.", tense: "Present" },
+                { pt: "Ele precisa de apoio.", en: "He needs support.", tense: "Present" },
+                { pt: "Ela precisa de uma pausa.", en: "She needs a break.", tense: "Present" },
+                { pt: "Nós precisamos da tua ajuda.", en: "We need your help.", tense: "Present" },
+                { pt: "Vocês precisam de uma resposta.", en: "You need an answer.", tense: "Present" },
+                { pt: "Eles precisam de provas.", en: "They need proof.", tense: "Present" },
+                { pt: "Eu preciso de pensar.", en: "I need to think.", tense: "Present" },
+                { pt: "Tu precisas de tentar.", en: "You need to try.", tense: "Present" },
+                { pt: "Ele precisa de estudar.", en: "He needs to study.", tense: "Present" },
+                { pt: "O que é que tu precisas?", en: "What do you need?", tense: "Present" },
+                { pt: "Quanto é que precisas?", en: "How much do you need?", tense: "Present" },
+                { pt: "Quando é que precisas disto?", en: "When do you need this?", tense: "Present" },
+                { pt: "Quem precisa disto?", en: "Who needs this?", tense: "Present" },
+                { pt: "Porque é que precisas disto?", en: "Why do you need this?", tense: "Present" },
+                { pt: "Eu preciso mesmo disto.", en: "I really need this.", tense: "Present" },
+                { pt: "Tu precisas urgentemente disto.", en: "You urgently need this.", tense: "Present" },
+                { pt: "Ele precisa mesmo de ajuda.", en: "He really needs help.", tense: "Present" },
+                { pt: "Ela só precisa de tempo.", en: "She just needs time.", tense: "Present" },
+                { pt: "Todos nós precisamos disto.", en: "We all need this.", tense: "Present" },
+                { pt: "Eu precisava de dizer.", en: "I needed to say.", tense: "Past Simple" },
+                { pt: "Tu precisavas de ficar.", en: "You needed to stay.", tense: "Past Simple" },
+                { pt: "Ele precisava de um carro.", en: "He needed a car.", tense: "Past Simple" },
+                { pt: "Ela precisava de um conselho.", en: "She needed advice.", tense: "Past Simple" },
+                { pt: "Nós precisávamos de uma pausa.", en: "We needed a break.", tense: "Past Simple" },
+                { pt: "Eles precisavam de mais tempo.", en: "They needed more time.", tense: "Past Simple" },
+                { pt: "Eu precisava de pensar.", en: "I needed to think.", tense: "Past Simple" },
+                { pt: "Tu precisavas de perguntar.", en: "You needed to ask.", tense: "Past Simple" },
+                { pt: "Ele precisava de trabalhar.", en: "He needed to work.", tense: "Past Simple" },
+                { pt: "Ela precisava de sair.", en: "She needed to leave.", tense: "Past Simple" },
+                { pt: "Eu vou precisar do teu apoio.", en: "I will need your support.", tense: "Future" },
+                { pt: "Tu vais precisar de paciência.", en: "You will need patience.", tense: "Future" },
+                { pt: "Ele vai precisar de experiência.", en: "He will need experience.", tense: "Future" },
+                { pt: "Ela vai precisar de um conselho.", en: "She will need advice.", tense: "Future" },
+                { pt: "Nós vamos precisar de sorte.", en: "We will need luck.", tense: "Future" },
+                { pt: "Vocês vão precisar de uma palavra-passe.", en: "You will need a password.", tense: "Future" },
+                { pt: "Eles vão precisar de um mapa.", en: "They will need a map.", tense: "Future" },
+                { pt: "Eu posso precisar de ajuda.", en: "I might need help.", tense: "Conditional" },
+                { pt: "Tu podes precisar disto.", en: "You might need this.", tense: "Conditional" },
+                { pt: "Ele pode precisar de apoio.", en: "He might need support.", tense: "Conditional" },
+                { pt: "Ela pode precisar de tempo.", en: "She might need time.", tense: "Conditional" },
+                { pt: "Nós podemos precisar de um plano.", en: "We might need a plan.", tense: "Conditional" },
+                { pt: "Vocês podem precisar de ajuda.", en: "You might need help.", tense: "Conditional" },
+                { pt: "Eles podem precisar de informação.", en: "They might need information.", tense: "Conditional" },
+                { pt: "Se precisares de alguma coisa...", en: "If you need anything...", tense: "Conditional" },
+                { pt: "Se eu precisasse disto...", en: "If I needed this...", tense: "Conditional" },
+                { pt: "Se ele precisar de ajuda...", en: "If he needs help...", tense: "Conditional" },
+                { pt: "Eu não preciso de desculpas.", en: "I don't need excuses.", tense: "Present" },
+                { pt: "Isto não é necessário.", en: "This is not needed.", tense: "Present" },
+                { pt: "Nada é necessário.", en: "Nothing is needed.", tense: "Present" },
+                { pt: "Tudo o que precisas.", en: "Everything you need.", tense: "Expression" },
+                { pt: "É tudo o que precisamos.", en: "That's all we need.", tense: "Expression" },
+                { pt: "Eu precisava de ouvir isto.", en: "I needed to hear this.", tense: "Past Simple" },
+                { pt: "Tu precisavas de saber a verdade.", en: "You needed to know the truth.", tense: "Past Simple" },
+                { pt: "Ele precisava de perceber.", en: "He needed to understand.", tense: "Past Simple" },
+                { pt: "Eu preciso da tua assinatura.", en: "I need your signature.", tense: "Present" },
+                { pt: "Tu precisas de um plano novo.", en: "You need a new plan.", tense: "Present" },
+                { pt: "Ela precisa de mais prática.", en: "She needs more practice.", tense: "Present" },
+                { pt: "Nós precisamos do teu consentimento.", en: "We need your consent.", tense: "Present" },
+                { pt: "Eles precisam de autorização.", en: "They need authorization.", tense: "Present" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

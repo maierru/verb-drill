@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇬🇧 VERB MAKE — 98 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇬🇧 Verb MAKE</h1>
+            <p class="subtitle">to create, to cause — 98 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 98 de 98 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            English Practice — MAKE · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'en',
+            labels: { target: 'English', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["make","makes","made","making"],
+            phrases: [
+                { pt: "Eu faço café todas as manhãs", en: "I make coffee every morning", tense: "Present Simple" },
+                { pt: "Ela comete erros", en: "She makes mistakes", tense: "Present Simple" },
+                { pt: "Nós fizemos um bolo ontem", en: "We made a cake yesterday", tense: "Past Simple" },
+                { pt: "Ele ganha dinheiro", en: "He makes money", tense: "Present Simple" },
+                { pt: "Eles tomam uma decisão", en: "They make a decision", tense: "Present Simple" },
+                { pt: "Tu fazes-me feliz", en: "You make me happy", tense: "Present Simple" },
+                { pt: "Eu fiz uma escolha", en: "I made a choice", tense: "Past Simple" },
+                { pt: "Ela faz o almoço", en: "She makes lunch", tense: "Present Simple" },
+                { pt: "Nós fazemos progresso", en: "We make progress", tense: "Present Simple" },
+                { pt: "Ele fez uma oferta", en: "He made an offer", tense: "Past Simple" },
+                { pt: "Isso faz sentido", en: "It makes sense", tense: "Present Simple" },
+                { pt: "Eu faço os trabalhos de casa", en: "I make homework", tense: "Present Simple" },
+                { pt: "Eles cometeram um erro", en: "They made a mistake", tense: "Past Simple" },
+                { pt: "Tu fazes um bom trabalho", en: "You make good work", tense: "Present Simple" },
+                { pt: "Ela faz a diferença", en: "She makes a difference", tense: "Present Simple" },
+                { pt: "Nós fazemos um plano", en: "We make a plan", tense: "Present Simple" },
+                { pt: "Ele faz um esforço", en: "He makes an effort", tense: "Present Simple" },
+                { pt: "Eu fiz uma chamada", en: "I made a call", tense: "Past Simple" },
+                { pt: "Eles fazem uma confusão", en: "They make a mess", tense: "Present Simple" },
+                { pt: "Tu tornaste isso possível", en: "You made it possible", tense: "Past Simple" },
+                { pt: "Ela faz uma promessa", en: "She makes a promise", tense: "Present Simple" },
+                { pt: "Nós fizemos um acordo", en: "We made a deal", tense: "Past Simple" },
+                { pt: "Ele faz uma declaração", en: "He makes a statement", tense: "Present Simple" },
+                { pt: "Eu faço mudanças", en: "I make changes", tense: "Present Simple" },
+                { pt: "Eles fazem barulho", en: "They make noise", tense: "Present Simple" },
+                { pt: "Tu fazes um favor", en: "You make a favor", tense: "Present Simple" },
+                { pt: "Ela fez uma reserva", en: "She made a reservation", tense: "Past Simple" },
+                { pt: "Nós fazemos investimentos", en: "We make investments", tense: "Present Simple" },
+                { pt: "Ele faz uma tentativa", en: "He makes an attempt", tense: "Present Simple" },
+                { pt: "Eu fiz um elogio", en: "I made a compliment", tense: "Past Simple" },
+                { pt: "Eles fazem uma impressão", en: "They make an impression", tense: "Present Simple" },
+                { pt: "Tu fazes um ponto", en: "You make a point", tense: "Present Simple" },
+                { pt: "Ela faz uma contribuição", en: "She makes a contribution", tense: "Present Simple" },
+                { pt: "Nós fizemos uma descoberta", en: "We made a discovery", tense: "Past Simple" },
+                { pt: "Ele faz uma observação", en: "He makes a remark", tense: "Present Simple" },
+                { pt: "Eu faço uma suposição", en: "I make an assumption", tense: "Present Simple" },
+                { pt: "Eles fizeram um avanço", en: "They made a breakthrough", tense: "Past Simple" },
+                { pt: "Tu fazes compras", en: "You make purchases", tense: "Present Simple" },
+                { pt: "Ela faz anotações", en: "She makes notes", tense: "Present Simple" },
+                { pt: "Nós fazemos melhorias", en: "We make improvements", tense: "Present Simple" },
+                { pt: "Ele fez uma confissão", en: "He made a confession", tense: "Past Simple" },
+                { pt: "Eu faço um pedido", en: "I make an order", tense: "Present Simple" },
+                { pt: "Eles fazem uma reclamação", en: "They make a complaint", tense: "Present Simple" },
+                { pt: "Tu fizeste um pedido", en: "You made a request", tense: "Past Simple" },
+                { pt: "Ela faz uma sugestão", en: "She makes a suggestion", tense: "Present Simple" },
+                { pt: "Nós fazemos ajustes", en: "We make adjustments", tense: "Present Simple" },
+                { pt: "Ele faz cálculos", en: "He makes calculations", tense: "Present Simple" },
+                { pt: "Eu fiz uma observação", en: "I made an observation", tense: "Past Simple" },
+                { pt: "Eles fazem uma comparação", en: "They make a comparison", tense: "Present Simple" },
+                { pt: "Tu fazes uma verificação", en: "You make a check", tense: "Present Simple" },
+                { pt: "Ela faz uma cópia", en: "She makes a copy", tense: "Present Simple" },
+                { pt: "Nós fizemos uma lista", en: "We made a list", tense: "Past Simple" },
+                { pt: "Ele marca uma consulta", en: "He makes an appointment", tense: "Present Simple" },
+                { pt: "Eu faço uma apresentação", en: "I make a presentation", tense: "Present Simple" },
+                { pt: "Eles fazem uma avaliação", en: "They make an assessment", tense: "Present Simple" },
+                { pt: "Tu fizeste uma análise", en: "You made an analysis", tense: "Past Simple" },
+                { pt: "Ela faz uma recomendação", en: "She makes a recommendation", tense: "Present Simple" },
+                { pt: "Nós fazemos uma previsão", en: "We make a forecast", tense: "Present Simple" },
+                { pt: "Ele faz um orçamento", en: "He makes an estimate", tense: "Present Simple" },
+                { pt: "Eu fiz uma medição", en: "I made a measurement", tense: "Past Simple" },
+                { pt: "Eles fazem um estudo", en: "They make a study", tense: "Present Simple" },
+                { pt: "Tu fazes uma experiência", en: "You make an experiment", tense: "Present Simple" },
+                { pt: "Ela faz um teste", en: "She makes a test", tense: "Present Simple" },
+                { pt: "Nós fizemos uma verificação", en: "We made a verification", tense: "Past Simple" },
+                { pt: "Ele faz uma correção", en: "He makes a correction", tense: "Present Simple" },
+                { pt: "Eu faço uma transição", en: "I make a transition", tense: "Present Simple" },
+                { pt: "Eles fazem uma transformação", en: "They make a transformation", tense: "Present Simple" },
+                { pt: "Tu fizeste uma substituição", en: "You made a replacement", tense: "Past Simple" },
+                { pt: "Ela faz uma troca", en: "She makes an exchange", tense: "Present Simple" },
+                { pt: "Nós fazemos uma transferência", en: "We make a transfer", tense: "Present Simple" },
+                { pt: "Ele faz uma transação", en: "He makes a transaction", tense: "Present Simple" },
+                { pt: "Eu fiz um pagamento", en: "I made a payment", tense: "Past Simple" },
+                { pt: "Eles fazem um depósito", en: "They make a deposit", tense: "Present Simple" },
+                { pt: "Tu fazes um levantamento", en: "You make a withdrawal", tense: "Present Simple" },
+                { pt: "Ela faz uma doação", en: "She makes a donation", tense: "Present Simple" },
+                { pt: "Nós fizemos um investimento", en: "We made an investment", tense: "Past Simple" },
+                { pt: "Ele faz uma compra", en: "He makes a purchase", tense: "Present Simple" },
+                { pt: "Eu faço uma venda", en: "I make a sale", tense: "Present Simple" },
+                { pt: "Eles fazem uma oferta", en: "They make a bid", tense: "Past Simple" },
+                { pt: "Tu fizeste uma troca", en: "You made a trade", tense: "Past Simple" },
+                { pt: "Ela faz um negócio", en: "She makes a bargain", tense: "Present Simple" },
+                { pt: "Nós fazemos um acordo", en: "We make an agreement", tense: "Present Simple" },
+                { pt: "Ele faz um contrato", en: "He makes a contract", tense: "Present Simple" },
+                { pt: "Eu fiz um arranjo", en: "I made an arrangement", tense: "Past Simple" },
+                { pt: "Eles fazem um compromisso", en: "They make a compromise", tense: "Present Simple" },
+                { pt: "Tu fazes uma concessão", en: "You make a concession", tense: "Present Simple" },
+                { pt: "Ela faz uma permissão", en: "She makes an allowance", tense: "Present Simple" },
+                { pt: "Nós fizemos uma exceção", en: "We made an exception", tense: "Past Simple" },
+                { pt: "Ele faz uma distinção", en: "He makes a distinction", tense: "Present Simple" },
+                { pt: "Eu faço uma diferenciação", en: "I make a differentiation", tense: "Present Simple" },
+                { pt: "Eles fazem uma separação", en: "They make a separation", tense: "Present Simple" },
+                { pt: "Tu fizeste um corte", en: "You made a cut", tense: "Past Simple" },
+                { pt: "Ela faz uma incisão", en: "She makes an incision", tense: "Present Simple" },
+                { pt: "Nós fazemos um buraco", en: "We make a hole", tense: "Present Simple" },
+                { pt: "Ele faz uma abertura", en: "He makes an opening", tense: "Present Simple" },
+                { pt: "Eu fiz um caminho", en: "I made a way", tense: "Past Simple" },
+                { pt: "Eles fazem uma estrada", en: "They make a road", tense: "Present Simple" },
+                { pt: "Tu fazes um trilho", en: "You make a path", tense: "Present Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbe 🇬🇧 VERB SEE — 95 phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Retour à la liste des verbes</a>
+            <h1>🇬🇧 Verb SEE</h1>
+            <p class="subtitle">to perceive, to understand — 95 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Rechercher des phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Afficher toutes les traductions</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Masquer toutes les traductions</button>
+        </div>
+
+        <div class="stats" id="stats">Affichage: 95 sur 95 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Pratique de l'anglais — SEE · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'fr',
+            targetKey: 'en',
+            labels: { target: 'Anglais', showing: 'Affichage', of: 'sur', phrases: 'phrases' },
+            verbForms: ["see","sees","saw","seen","seeing"],
+            phrases: [
+                { fr: "Je te vois.", en: "I see you.", tense: "Present" },
+                { fr: "Tu vois ça?", en: "Do you see this?", tense: "Present" },
+                { fr: "Il m'a vu hier.", en: "He saw me yesterday.", tense: "Past Simple" },
+                { fr: "Nous nous verrons demain.", en: "We will see each other tomorrow.", tense: "Future" },
+                { fr: "Ils voient les oiseaux.", en: "They see the birds.", tense: "Present" },
+                { fr: "Elle a vu le film.", en: "She saw the movie.", tense: "Past Simple" },
+                { fr: "Je ne vois pas le problème.", en: "I don't see the problem.", tense: "Present" },
+                { fr: "Tu as vu mon frère?", en: "Did you see my brother?", tense: "Past Simple" },
+                { fr: "Il n'a pas vu le panneau.", en: "He didn't see the sign.", tense: "Past Simple" },
+                { fr: "Nous ne le verrons pas aujourd'hui.", en: "We won't see him today.", tense: "Future" },
+                { fr: "On verra.", en: "We'll see.", tense: "Future" },
+                { fr: "À plus tard.", en: "See you later.", tense: "Future" },
+                { fr: "Regarde ça.", en: "See this.", tense: "Imperative" },
+                { fr: "Regardez l'écran.", en: "See the screen.", tense: "Imperative" },
+                { fr: "Je regarde la télé.", en: "I'm seeing TV.", tense: "Present Continuous" },
+                { fr: "Tu vois quelqu'un?", en: "Are you seeing someone?", tense: "Present Continuous" },
+                { fr: "Il regardait par la fenêtre quand je suis entré.", en: "He was seeing out the window when I entered.", tense: "Past Continuous" },
+                { fr: "Nous voyons le médecin maintenant.", en: "We are seeing the doctor right now.", tense: "Present Continuous" },
+                { fr: "Ils regardaient le spectacle toute la soirée.", en: "They were seeing the show all evening.", tense: "Past Continuous" },
+                { fr: "J'ai déjà vu ce film.", en: "I have already seen this movie.", tense: "Present Perfect" },
+                { fr: "Tu as déjà vu la mer?", en: "Have you ever seen the sea?", tense: "Present Perfect" },
+                { fr: "Il a connu des jours meilleurs.", en: "He has seen better days.", tense: "Present Perfect" },
+                { fr: "Nous avons déjà vu cette maison.", en: "We have already seen this house.", tense: "Present Perfect" },
+                { fr: "Ils n'ont jamais vu la neige.", en: "They have never seen snow.", tense: "Present Perfect" },
+                { fr: "Je le verrais si j'avais le temps.", en: "I would see it if I had time.", tense: "Conditional" },
+                { fr: "Tu verrais la différence?", en: "Would you see the difference?", tense: "Conditional" },
+                { fr: "Il ne verrait pas ça.", en: "He wouldn't see that.", tense: "Conditional" },
+                { fr: "Nous le verrions.", en: "We would see him.", tense: "Conditional" },
+                { fr: "Ils verraient les étoiles.", en: "They would see the stars.", tense: "Conditional" },
+                { fr: "Tu verras ça plus tard.", en: "You will see this later.", tense: "Future" },
+                { fr: "Elle verra la vérité.", en: "She will see the truth.", tense: "Future" },
+                { fr: "Je vois ton point de vue.", en: "I see your point.", tense: "Present" },
+                { fr: "Je vois ce que tu veux dire.", en: "I see what you mean.", tense: "Present" },
+                { fr: "Je vois ce qui se passe.", en: "I see what's happening.", tense: "Present" },
+                { fr: "Tu vois?", en: "See?", tense: "Present" },
+                { fr: "Voyons ce qui se passe.", en: "Let's see what happens.", tense: "Future" },
+                { fr: "On verra.", en: "We'll see.", tense: "Future" },
+                { fr: "Voyons voir.", en: "Let's see.", tense: "Imperative" },
+                { fr: "Je te vois clair.", en: "I see through you.", tense: "Present" },
+                { fr: "Tu ne vois pas l'évident.", en: "You don't see the obvious.", tense: "Present" },
+                { fr: "Il a vu la lumière.", en: "He saw the light.", tense: "Past Simple" },
+                { fr: "Nous voyons l'avenir.", en: "We see the future.", tense: "Present" },
+                { fr: "Ils ont tout vu.", en: "They saw everything.", tense: "Past Simple" },
+                { fr: "Je te verrai à la réunion.", en: "I will see you at the meeting.", tense: "Future" },
+                { fr: "Tu as vu sa voiture?", en: "Did you see his car?", tense: "Past Simple" },
+                { fr: "Regarde qui c'est.", en: "See who it is.", tense: "Imperative" },
+                { fr: "Je vois un médecin.", en: "I'm seeing a doctor.", tense: "Present Continuous" },
+                { fr: "Il a vu un fantôme.", en: "He saw a ghost.", tense: "Past Simple" },
+                { fr: "Nous verrons les étoiles ce soir.", en: "We will see the stars tonight.", tense: "Future" },
+                { fr: "Ils nous voient.", en: "They see us.", tense: "Present" },
+                { fr: "Je ne vois pas l'intérêt.", en: "I don't see the point.", tense: "Present" },
+                { fr: "Tu as vu cette nouvelle?", en: "Did you see this news?", tense: "Past Simple" },
+                { fr: "Vois par toi-même.", en: "See for yourself.", tense: "Imperative" },
+                { fr: "Je verrai ce que je peux faire.", en: "I'll see what I can do.", tense: "Future" },
+                { fr: "Il voit des opportunités.", en: "He sees opportunities.", tense: "Present" },
+                { fr: "Nous avons vu le coucher de soleil.", en: "We saw the sunset.", tense: "Past Simple" },
+                { fr: "Ils verront la différence.", en: "They will see the difference.", tense: "Future" },
+                { fr: "Je vois un problème.", en: "I see a problem.", tense: "Present" },
+                { fr: "Tu vois la solution?", en: "Do you see the solution?", tense: "Present" },
+                { fr: "Voyons ensemble.", en: "Let's see together.", tense: "Imperative" },
+                { fr: "Je vois les lumières.", en: "I see the lights.", tense: "Present" },
+                { fr: "Elle a vu un arc-en-ciel.", en: "She saw a rainbow.", tense: "Past Simple" },
+                { fr: "Nous verrons les résultats bientôt.", en: "We will see the results soon.", tense: "Future" },
+                { fr: "Ils ne voient pas la menace.", en: "They don't see the threat.", tense: "Present" },
+                { fr: "Je vois des amis.", en: "I'm seeing friends.", tense: "Present Continuous" },
+                { fr: "Tu as vu le chien?", en: "Did you see the dog?", tense: "Past Simple" },
+                { fr: "Regardez le ciel.", en: "See the sky.", tense: "Imperative" },
+                { fr: "Je ne peux pas le voir.", en: "I can't see him.", tense: "Present" },
+                { fr: "Il a vu l'accident.", en: "He saw the accident.", tense: "Past Simple" },
+                { fr: "Nous verrons la nouvelle maison.", en: "We will see the new house.", tense: "Future" },
+                { fr: "Ils ont vu un miracle.", en: "They saw a miracle.", tense: "Past Simple" },
+                { fr: "Je vois la beauté.", en: "I see beauty.", tense: "Present" },
+                { fr: "Tu vois l'étoile?", en: "Do you see the star?", tense: "Present" },
+                { fr: "Il verra ses parents.", en: "He will see his parents.", tense: "Future" },
+                { fr: "Nous voyons les montagnes.", en: "We see the mountains.", tense: "Present" },
+                { fr: "Ils ont vu un navire.", en: "They saw a ship.", tense: "Past Simple" },
+                { fr: "Regarde la vérité en face.", en: "See the truth.", tense: "Imperative" },
+                { fr: "Je vois ses intentions.", en: "I see his intentions.", tense: "Present" },
+                { fr: "Tu as vu le chat?", en: "Did you see the cat?", tense: "Past Simple" },
+                { fr: "Il ne voit pas le problème.", en: "He doesn't see the problem.", tense: "Present" },
+                { fr: "Nous avons vu de bons moments.", en: "We saw good times.", tense: "Past Simple" },
+                { fr: "Ils verront une nouvelle ère.", en: "They will see a new era.", tense: "Future" },
+                { fr: "Je le verrai demain.", en: "I will see him tomorrow.", tense: "Future" },
+                { fr: "Tu as fait un rêve?", en: "Did you see a dream?", tense: "Past Simple" },
+                { fr: "Regarde la carte.", en: "See the map.", tense: "Imperative" },
+                { fr: "Je ne vois pas d'issue.", en: "I don't see a way out.", tense: "Present" },
+                { fr: "Il voit l'espoir.", en: "He sees hope.", tense: "Present" },
+                { fr: "Nous verrons des changements.", en: "We will see changes.", tense: "Future" },
+                { fr: "Ils voient l'image.", en: "They see the picture.", tense: "Present" },
+                { fr: "À bientôt!", en: "See you!", tense: "Future" },
+                { fr: "Je vois ce que tu fais.", en: "I see what you're doing.", tense: "Present" },
+                { fr: "Tu me reverras.", en: "You will see me again.", tense: "Future" },
+                { fr: "Il a vu un signe.", en: "He saw a sign.", tense: "Past Simple" },
+                { fr: "Nous voyons la beauté dans la simplicité.", en: "We see beauty in simplicity.", tense: "Present" },
+                { fr: "Ils verront un nouveau monde.", en: "They will see a new world.", tense: "Future" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

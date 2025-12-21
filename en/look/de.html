@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇬🇧 VERB LOOK — 97 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇬🇧 Verb LOOK</h1>
+            <p class="subtitle">to see, to appear — 97 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 97 von 97 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Englisch-Übung — LOOK · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'en',
+            labels: { target: 'Englisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["look","looks","looked","looking"],
+            phrases: [
+                { de: "Ich schaue dich an", en: "I look at you", tense: "Present Simple" },
+                { de: "Er schaut aus dem Fenster", en: "He looks out the window", tense: "Present Simple" },
+                { de: "Wir suchen die Schlüssel", en: "We look for the keys", tense: "Present Simple" },
+                { de: "Sie suchte ihre Tasche", en: "She looked for her bag", tense: "Past Simple" },
+                { de: "Sie schauen das Gemälde an", en: "They look at the painting", tense: "Present Simple" },
+                { de: "Ich werde es im Wörterbuch nachschlagen", en: "I will look it up in the dictionary", tense: "Future Simple" },
+                { de: "Du siehst müde aus", en: "You look tired", tense: "Present Simple" },
+                { de: "Sie sieht glücklich aus", en: "She looks happy", tense: "Present Simple" },
+                { de: "Er schaute mich seltsam an", en: "He looked at me strangely", tense: "Past Simple" },
+                { de: "Schau auf die Tafel", en: "Look at the board", tense: "Imperative" },
+                { de: "Ich suche einen Job", en: "I'm looking for a job", tense: "Present Continuous" },
+                { de: "Sie schauten auf den Bildschirm", en: "They were looking at the screen", tense: "Past Continuous" },
+                { de: "Schau dir das an", en: "Look at this", tense: "Imperative" },
+                { de: "Er sieht krank aus", en: "He looks sick", tense: "Present Simple" },
+                { de: "Ich schaue es mir später an", en: "I'll look at it later", tense: "Future Simple" },
+                { de: "Sie sucht eine neue Wohnung", en: "She's looking for a new apartment", tense: "Present Continuous" },
+                { de: "Wir schauten die Sterne an", en: "We looked at the stars", tense: "Past Simple" },
+                { de: "Du siehst toll aus", en: "You look great", tense: "Present Simple" },
+                { de: "Schau nach oben", en: "Look up", tense: "Imperative" },
+                { de: "Ich habe überall nach dir gesucht", en: "I looked for you everywhere", tense: "Past Simple" },
+                { de: "Er schaut auf die Uhr", en: "He looks at his watch", tense: "Present Simple" },
+                { de: "Sie schaute nach unten", en: "She looked down", tense: "Past Simple" },
+                { de: "Wir suchen eine Lösung", en: "We're looking for a solution", tense: "Present Continuous" },
+                { de: "Schau in den Spiegel", en: "Look in the mirror", tense: "Imperative" },
+                { de: "Du siehst besorgt aus", en: "You look worried", tense: "Present Simple" },
+                { de: "Ich schaue in die Zukunft", en: "I look to the future", tense: "Present Simple" },
+                { de: "Sie suchte ihr Handy", en: "She was looking for her phone", tense: "Past Continuous" },
+                { de: "Er sieht jünger aus", en: "He looks younger", tense: "Present Simple" },
+                { de: "Schauen wir uns die Fakten an", en: "Let's look at the facts", tense: "Imperative" },
+                { de: "Ich schaute zurück", en: "I looked back", tense: "Past Simple" },
+                { de: "Sie suchen Informationen", en: "They're looking for information", tense: "Present Continuous" },
+                { de: "Schau mich an", en: "Look at me", tense: "Imperative" },
+                { de: "Sie sieht schön aus", en: "She looks beautiful", tense: "Present Simple" },
+                { de: "Ich suchte diese Datei", en: "I looked for this file", tense: "Past Simple" },
+                { de: "Er schaut nach vorne", en: "He looks ahead", tense: "Present Simple" },
+                { de: "Wir schauen uns das morgen an", en: "We'll look at this tomorrow", tense: "Future Simple" },
+                { de: "Du suchst Ärger", en: "You're looking for trouble", tense: "Present Continuous" },
+                { de: "Sie schaute mich an und lächelte", en: "She looked at me and smiled", tense: "Past Simple" },
+                { de: "Es sieht interessant aus", en: "It looks interesting", tense: "Present Simple" },
+                { de: "Schau da drüben", en: "Look over there", tense: "Imperative" },
+                { de: "Ich suche meine Brille", en: "I'm looking for my glasses", tense: "Present Continuous" },
+                { de: "Er schaute sich um", en: "He looked around", tense: "Past Simple" },
+                { de: "Sie sieht traurig aus", en: "She looks sad", tense: "Present Simple" },
+                { de: "Wir haben den ganzen Tag nach dir gesucht", en: "We've been looking for you all day", tense: "Present Perfect Continuous" },
+                { de: "Schau in den Himmel", en: "Look at the sky", tense: "Imperative" },
+                { de: "Du siehst besser aus", en: "You look better", tense: "Present Simple" },
+                { de: "Ich werde dieser Sache nachgehen", en: "I'll look into this matter", tense: "Future Simple" },
+                { de: "Er sucht seine Schlüssel", en: "He's looking for his keys", tense: "Present Continuous" },
+                { de: "Sie schaute auf die Uhr", en: "She looked at the clock", tense: "Past Simple" },
+                { de: "Das sieht gut aus", en: "This looks good", tense: "Present Simple" },
+                { de: "Schau nach links", en: "Look left", tense: "Imperative" },
+                { de: "Ich suchte dieses Buch", en: "I was looking for this book", tense: "Past Continuous" },
+                { de: "Er sieht selbstbewusst aus", en: "He looks confident", tense: "Present Simple" },
+                { de: "Wir schauen uns Optionen an", en: "We're looking at options", tense: "Present Continuous" },
+                { de: "Schau nach rechts", en: "Look right", tense: "Imperative" },
+                { de: "Du siehst bekannt aus", en: "You look familiar", tense: "Present Simple" },
+                { de: "Ich schaute aus dem Fenster", en: "I looked out the window", tense: "Past Simple" },
+                { de: "Sie sucht Rat", en: "She's looking for advice", tense: "Present Continuous" },
+                { de: "Er sieht ernst aus", en: "He looks serious", tense: "Present Simple" },
+                { de: "Schauen wir der Wahrheit ins Gesicht", en: "Let's look the truth in the face", tense: "Imperative" },
+                { de: "Ich suche eine Gelegenheit", en: "I'm looking for an opportunity", tense: "Present Continuous" },
+                { de: "Sie schauten einander an", en: "They looked at each other", tense: "Past Simple" },
+                { de: "Sie sieht jung aus", en: "She looks young", tense: "Present Simple" },
+                { de: "Schau, wer da ist", en: "Look who's here", tense: "Imperative" },
+                { de: "Ich werde nach der Antwort suchen", en: "I'll look for the answer", tense: "Future Simple" },
+                { de: "Er schaute auf die Karte", en: "He looked at the map", tense: "Past Simple" },
+                { de: "Es sieht teuer aus", en: "It looks expensive", tense: "Present Simple" },
+                { de: "Wir suchen einen Partner", en: "We're looking for a partner", tense: "Present Continuous" },
+                { de: "Schau selbst", en: "Look for yourself", tense: "Imperative" },
+                { de: "Du siehst verwirrt aus", en: "You look confused", tense: "Present Simple" },
+                { de: "Ich schaute mir die Ergebnisse an", en: "I looked at the results", tense: "Past Simple" },
+                { de: "Sie sucht Hilfe", en: "She's looking for help", tense: "Present Continuous" },
+                { de: "Er sieht älter aus", en: "He looks older", tense: "Present Simple" },
+                { de: "Schau auf die Uhrzeit", en: "Look at the time", tense: "Imperative" },
+                { de: "Ich suchte diese Information", en: "I looked for this information", tense: "Past Simple" },
+                { de: "Wir schauen uns das später an", en: "We'll look at it later", tense: "Future Simple" },
+                { de: "Das sieht kompliziert aus", en: "This looks complicated", tense: "Present Simple" },
+                { de: "Sie schaute nach oben", en: "She looked up", tense: "Past Simple" },
+                { de: "Du suchst Ärger", en: "You're looking for trouble", tense: "Present Continuous" },
+                { de: "Schau, was ich gefunden habe", en: "Look what I found", tense: "Imperative" },
+                { de: "Ich schaue mir die Situation an", en: "I'm looking at the situation", tense: "Present Continuous" },
+                { de: "Er sieht wütend aus", en: "He looks angry", tense: "Present Simple" },
+                { de: "Sie suchte nach Antworten", en: "She looked for answers", tense: "Past Simple" },
+                { de: "Wir sehen gut zusammen aus", en: "We look good together", tense: "Present Simple" },
+                { de: "Schau mir in die Augen", en: "Look me in the eye", tense: "Imperative" },
+                { de: "Ich suche Inspiration", en: "I'm looking for inspiration", tense: "Present Continuous" },
+                { de: "Er schaute sie liebevoll an", en: "He looked at her lovingly", tense: "Past Simple" },
+                { de: "Es sieht einfach aus", en: "It looks easy", tense: "Present Simple" },
+                { de: "Du siehst aufgeregt aus", en: "You look excited", tense: "Present Simple" },
+                { de: "Ich werde diese Dokumente durchsehen", en: "I'll look through these documents", tense: "Future Simple" },
+                { de: "Sie sucht neue Möglichkeiten", en: "She's looking for new opportunities", tense: "Present Continuous" },
+                { de: "Schau genau hin", en: "Look carefully", tense: "Imperative" },
+                { de: "Er sieht verärgert aus", en: "He looks upset", tense: "Present Simple" },
+                { de: "Wir suchten überall nach ihm", en: "We looked for him everywhere", tense: "Past Simple" },
+                { de: "Ich schaue dieses Problem anders an", en: "I look at this problem differently", tense: "Present Simple" },
+                { de: "Sie sieht fantastisch aus", en: "She looks amazing", tense: "Present Simple" },
+                { de: "Schau, was du getan hast", en: "Look what you've done", tense: "Imperative" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

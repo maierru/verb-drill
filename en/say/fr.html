@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbe 🇬🇧 VERB SAY — 100 phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Retour à la liste des verbes</a>
+            <h1>🇬🇧 Verb SAY</h1>
+            <p class="subtitle">to speak, to tell — 100 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Rechercher des phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Afficher toutes les traductions</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Masquer toutes les traductions</button>
+        </div>
+
+        <div class="stats" id="stats">Affichage: 100 sur 100 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Pratique de l'anglais — SAY · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'fr',
+            targetKey: 'en',
+            labels: { target: 'Anglais', showing: 'Affichage', of: 'sur', phrases: 'phrases' },
+            verbForms: ["say","says","said","saying","don't say","doesn't say","didn't say","won't say","wouldn't say","can't say"],
+            phrases: [
+                { fr: "Je dis la vérité.", en: "I say the truth.", tense: "Present" },
+                { fr: "Tu dis ça en anglais.", en: "You say it in English.", tense: "Present" },
+                { fr: "Il dit merci.", en: "He says thank you.", tense: "Present" },
+                { fr: "Elle dit non.", en: "She says no.", tense: "Present" },
+                { fr: "Nous disons oui.", en: "We say yes.", tense: "Present" },
+                { fr: "Vous dites bonjour.", en: "You say hello.", tense: "Present" },
+                { fr: "Ils disent au revoir.", en: "They say goodbye.", tense: "Present" },
+                { fr: "Je ne dis pas ça.", en: "I don't say that.", tense: "Present" },
+                { fr: "Tu ne dis rien.", en: "You don't say anything.", tense: "Present" },
+                { fr: "Il ne dit rien.", en: "He doesn't say anything.", tense: "Present" },
+                { fr: "Qu'est-ce que tu dis?", en: "What do you say?", tense: "Present" },
+                { fr: "Qu'est-ce qu'il dit?", en: "What does he say?", tense: "Present" },
+                { fr: "Comment tu dis ça?", en: "How do you say that?", tense: "Present" },
+                { fr: "Ils disent qu'ils sont fatigués.", en: "They say they are tired.", tense: "Present" },
+                { fr: "Elle dit qu'elle viendra.", en: "She says she will come.", tense: "Present" },
+                { fr: "Je dis toujours la vérité.", en: "I always say the truth.", tense: "Present" },
+                { fr: "Il ne dit jamais de mensonges.", en: "He never says lies.", tense: "Present" },
+                { fr: "Comment dit-on ça en anglais?", en: "How do you say this in English?", tense: "Present" },
+                { fr: "Que disent les gens?", en: "What do people say?", tense: "Present" },
+                { fr: "Je dis juste.", en: "I'm just saying.", tense: "Present" },
+                { fr: "Je t'ai dit.", en: "I said to you.", tense: "Past Simple" },
+                { fr: "Tu as dit la vérité.", en: "You said the truth.", tense: "Past Simple" },
+                { fr: "Il a dit oui.", en: "He said yes.", tense: "Past Simple" },
+                { fr: "Elle a dit non.", en: "She said no.", tense: "Past Simple" },
+                { fr: "Nous avons dit merci.", en: "We said thank you.", tense: "Past Simple" },
+                { fr: "Vous avez dit au revoir.", en: "You said goodbye.", tense: "Past Simple" },
+                { fr: "Ils ont dit bonjour.", en: "They said hello.", tense: "Past Simple" },
+                { fr: "Je n'ai pas dit ça.", en: "I didn't say that.", tense: "Past Simple" },
+                { fr: "Tu n'as rien dit.", en: "You didn't say anything.", tense: "Past Simple" },
+                { fr: "Il n'a rien dit.", en: "He didn't say anything.", tense: "Past Simple" },
+                { fr: "Qu'est-ce que tu as dit?", en: "What did you say?", tense: "Past Simple" },
+                { fr: "Qu'est-ce qu'elle a dit?", en: "What did she say?", tense: "Past Simple" },
+                { fr: "J'ai dit que je viendrais.", en: "I said I would come.", tense: "Past Simple" },
+                { fr: "Elle a dit qu'elle était fatiguée.", en: "She said she was tired.", tense: "Past Simple" },
+                { fr: "Ils ont dit qu'ils ne savaient pas.", en: "They said they didn't know.", tense: "Past Simple" },
+                { fr: "Qui a dit ça?", en: "Who said that?", tense: "Past Simple" },
+                { fr: "Je te l'avais dit!", en: "I told you! / I said to you!", tense: "Past Simple" },
+                { fr: "Tu as dit que tu aiderais.", en: "You said you would help.", tense: "Past Simple" },
+                { fr: "Il a dit qu'il serait ici.", en: "He said he would be here.", tense: "Past Simple" },
+                { fr: "Comment as-tu dit?", en: "What did you say? / How did you say?", tense: "Past Simple" },
+                { fr: "Je dis la vérité en ce moment.", en: "I am saying the truth right now.", tense: "Present Continuous" },
+                { fr: "Tu dis quelque chose?", en: "Are you saying something?", tense: "Present Continuous" },
+                { fr: "Il fait un discours.", en: "He is saying a speech.", tense: "Present Continuous" },
+                { fr: "Elle dit une prière.", en: "She is saying a prayer.", tense: "Present Continuous" },
+                { fr: "Nous disons au revoir.", en: "We are saying goodbye.", tense: "Present Continuous" },
+                { fr: "Qu'est-ce que tu dis?", en: "What are you saying?", tense: "Present Continuous" },
+                { fr: "Je ne dis rien de mal.", en: "I'm not saying anything bad.", tense: "Present Continuous" },
+                { fr: "Il dit des bêtises.", en: "He is saying nonsense.", tense: "Present Continuous" },
+                { fr: "Ils disent quelque chose d'important.", en: "They are saying something important.", tense: "Present Continuous" },
+                { fr: "Je dis juste ce que je pense.", en: "I'm just saying what I think.", tense: "Present Continuous" },
+                { fr: "Je disais quand tu es arrivé.", en: "I was saying when you came.", tense: "Past Continuous" },
+                { fr: "Tu disais quelque chose?", en: "Were you saying something?", tense: "Past Continuous" },
+                { fr: "Il faisait un discours pendant une heure.", en: "He was saying a speech for an hour.", tense: "Past Continuous" },
+                { fr: "Nous disions au revoir.", en: "We were saying goodbye.", tense: "Past Continuous" },
+                { fr: "Qu'est-ce que tu disais?", en: "What were you saying?", tense: "Past Continuous" },
+                { fr: "J'ai déjà dit ça.", en: "I have already said this.", tense: "Present Perfect" },
+                { fr: "Tu lui as déjà dit?", en: "Have you said to her already?", tense: "Present Perfect" },
+                { fr: "Il a déjà tout dit.", en: "He has already said everything.", tense: "Present Perfect" },
+                { fr: "Nous leur avons déjà dit.", en: "We have already said to them.", tense: "Present Perfect" },
+                { fr: "Je n'ai pas encore dit.", en: "I haven't said yet.", tense: "Present Perfect" },
+                { fr: "Elle n'a jamais dit ça.", en: "She has never said that.", tense: "Present Perfect" },
+                { fr: "Je te l'ai dit plusieurs fois.", en: "I have said to you many times.", tense: "Present Perfect" },
+                { fr: "As-tu déjà dit ça?", en: "Have you ever said this?", tense: "Present Perfect" },
+                { fr: "Je te dirai demain.", en: "I will say to you tomorrow.", tense: "Future" },
+                { fr: "Tu diras la vérité?", en: "Will you say the truth?", tense: "Future" },
+                { fr: "Il dira oui.", en: "He will say yes.", tense: "Future" },
+                { fr: "Elle dira non.", en: "She will say no.", tense: "Future" },
+                { fr: "Nous leur dirons.", en: "We will say to them.", tense: "Future" },
+                { fr: "Ils diront merci.", en: "They will say thank you.", tense: "Future" },
+                { fr: "Je ne dirai rien.", en: "I won't say anything.", tense: "Future" },
+                { fr: "Il ne dira rien.", en: "He won't say anything.", tense: "Future" },
+                { fr: "Qu'est-ce que tu diras?", en: "What will you say?", tense: "Future" },
+                { fr: "Je te le dirai plus tard.", en: "I will say to you later.", tense: "Future" },
+                { fr: "Je dirais oui.", en: "I would say yes.", tense: "Conditional" },
+                { fr: "Tu dirais la vérité?", en: "Would you say the truth?", tense: "Conditional" },
+                { fr: "Il dirait non.", en: "He would say no.", tense: "Conditional" },
+                { fr: "Nous ne dirions pas ça.", en: "We wouldn't say that.", tense: "Conditional" },
+                { fr: "Je ne dirais pas ça.", en: "I wouldn't say that.", tense: "Conditional" },
+                { fr: "Qu'est-ce que tu dirais?", en: "What would you say?", tense: "Conditional" },
+                { fr: "Je dirais que c'est vrai.", en: "I would say it's true.", tense: "Conditional" },
+                { fr: "Elle ne dirait pas ça.", en: "She wouldn't say that.", tense: "Conditional" },
+                { fr: "Ils diraient merci.", en: "They would say thank you.", tense: "Conditional" },
+                { fr: "Je pourrais en dire plus.", en: "I could say more.", tense: "Conditional" },
+                { fr: "Dis-moi.", en: "Say to me.", tense: "Imperative" },
+                { fr: "Dites la vérité.", en: "Say the truth.", tense: "Imperative" },
+                { fr: "Ne dis pas ça.", en: "Don't say that.", tense: "Imperative" },
+                { fr: "Ne dites rien.", en: "Don't say anything.", tense: "Imperative" },
+                { fr: "Dis oui.", en: "Say yes.", tense: "Imperative" },
+                { fr: "Dis-moi, s'il te plaît.", en: "Say to me, please.", tense: "Imperative" },
+                { fr: "Dis-le en anglais.", en: "Say it in English.", tense: "Imperative" },
+                { fr: "Je ne peux pas dire.", en: "Can't say.", tense: "Expression" },
+                { fr: "Quoi dire?", en: "What to say?", tense: "Expression" },
+                { fr: "Rien à dire.", en: "Nothing to say.", tense: "Expression" },
+                { fr: "Facile à dire.", en: "Easy to say.", tense: "Expression" },
+                { fr: "Comme on dit...", en: "As they say...", tense: "Expression" },
+                { fr: "C'est-à-dire...", en: "That is to say...", tense: "Expression" },
+                { fr: "Disons...", en: "Let's say...", tense: "Expression" },
+                { fr: "Je ne veux rien dire.", en: "I don't want to say anything.", tense: "Expression" },
+                { fr: "On pourrait dire ça.", en: "You could say that.", tense: "Expression" },
+                { fr: "Qu'est-ce que tu veux dire?", en: "What are you trying to say?", tense: "Expression" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

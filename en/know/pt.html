@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇬🇧 VERB KNOW — 97 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇬🇧 Verb KNOW</h1>
+            <p class="subtitle">to be aware, to understand — 97 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 97 de 97 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            English Practice — KNOW · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'en',
+            labels: { target: 'English', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["know","knows","knew","known","knowing"],
+            phrases: [
+                { pt: "Eu sei a verdade", en: "I know the truth", tense: "Present Simple" },
+                { pt: "Ela sabe a resposta", en: "She knows the answer", tense: "Present Simple" },
+                { pt: "Nós sabíamos disso", en: "We knew about it", tense: "Past Simple" },
+                { pt: "Eles conhecem-se", en: "They know each other", tense: "Present Simple" },
+                { pt: "Eu conhecia-o há muito tempo", en: "I knew him long ago", tense: "Past Simple" },
+                { pt: "Sabes a minha morada?", en: "Do you know my address?", tense: "Present Simple" },
+                { pt: "Ele não sabia o que fazer", en: "He didn't know what to do", tense: "Past Simple" },
+                { pt: "Sempre soube disso", en: "I've always known this", tense: "Present Perfect" },
+                { pt: "Eles sabem o caminho para casa", en: "They know the way home", tense: "Present Simple" },
+                { pt: "Nós sabemos esta história", en: "We know this story", tense: "Present Simple" },
+                { pt: "Ela sabia todos os segredos", en: "She knew all the secrets", tense: "Past Simple" },
+                { pt: "Eu sei onde ele mora", en: "I know where he lives", tense: "Present Simple" },
+                { pt: "Vocês sabiam do problema?", en: "Did you know about the problem?", tense: "Past Simple" },
+                { pt: "Ele sabe três línguas", en: "He knows three languages", tense: "Present Simple" },
+                { pt: "Não sei a hora exata", en: "I don't know the exact time", tense: "Present Simple" },
+                { pt: "Eles sabiam as regras do jogo", en: "They knew the rules of the game", tense: "Past Simple" },
+                { pt: "Nós conhecemos esta canção", en: "We know this song", tense: "Present Simple" },
+                { pt: "Ela sabe o seu ofício", en: "She knows her business", tense: "Present Simple" },
+                { pt: "Eu sabia que virias", en: "I knew you would come", tense: "Past Simple" },
+                { pt: "Conheces a minha irmã?", en: "Do you know my sister?", tense: "Present Simple" },
+                { pt: "Ele sabia a resposta antecipadamente", en: "He knew the answer beforehand", tense: "Past Simple" },
+                { pt: "Sabemos disso há muito tempo", en: "We've known about this for a long time", tense: "Present Perfect" },
+                { pt: "Eles não me conhecem", en: "They don't know me", tense: "Present Simple" },
+                { pt: "Eu conheço cada rua aqui", en: "I know every street here", tense: "Present Simple" },
+                { pt: "Ela sabia que isso aconteceria", en: "She knew it would happen", tense: "Past Simple" },
+                { pt: "Você conhece esta pessoa?", en: "Do you know this person?", tense: "Present Simple" },
+                { pt: "Ele sabe o meu nome", en: "He knows my name", tense: "Present Simple" },
+                { pt: "Eu não sabia disso", en: "I didn't know about it", tense: "Past Simple" },
+                { pt: "Nós sabemos toda a verdade", en: "We know the whole truth", tense: "Present Simple" },
+                { pt: "Eles conheciam o pai dele", en: "They knew his father", tense: "Past Simple" },
+                { pt: "Sabes que horas são?", en: "Do you know what time it is?", tense: "Present Simple" },
+                { pt: "Eu conheço bem esta cidade", en: "I know this city well", tense: "Present Simple" },
+                { pt: "Ela não sabia o meu número", en: "She didn't know my number", tense: "Past Simple" },
+                { pt: "Nós conhecemos este problema", en: "We know this problem", tense: "Present Simple" },
+                { pt: "Ele sabia todos os detalhes", en: "He knew all the details", tense: "Past Simple" },
+                { pt: "Eu sei como funciona", en: "I know how it works", tense: "Present Simple" },
+                { pt: "Eles conhecem-me desde a infância", en: "They've known me since childhood", tense: "Present Perfect" },
+                { pt: "Vocês sabiam das mudanças?", en: "Did you know about the changes?", tense: "Past Simple" },
+                { pt: "Ela conhece toda a gente aqui", en: "She knows everyone here", tense: "Present Simple" },
+                { pt: "Não sei os planos dele", en: "I don't know his plans", tense: "Present Simple" },
+                { pt: "Nós sabíamos este segredo", en: "We knew this secret", tense: "Past Simple" },
+                { pt: "Ele sabe o melhor caminho", en: "He knows the best way", tense: "Present Simple" },
+                { pt: "Eu sabia a tua resposta", en: "I knew your answer", tense: "Past Simple" },
+                { pt: "Eles conhecem esta lenda", en: "They know this legend", tense: "Present Simple" },
+                { pt: "Sabes onde estão as minhas chaves?", en: "Do you know where my keys are?", tense: "Present Simple" },
+                { pt: "Ela sabia todos os nomes", en: "She knew all the names", tense: "Past Simple" },
+                { pt: "Nós conhecemos a família dele", en: "We know his family", tense: "Present Simple" },
+                { pt: "Eu sei este livro de cor", en: "I know this book by heart", tense: "Present Simple" },
+                { pt: "Ele não sabia a razão", en: "He didn't know the reason", tense: "Past Simple" },
+                { pt: "Você sabe este facto?", en: "Do you know this fact?", tense: "Present Simple" },
+                { pt: "Eles conheciam a minha mãe", en: "They knew my mom", tense: "Past Simple" },
+                { pt: "Eu sei o teu segredo", en: "I know your secret", tense: "Present Simple" },
+                { pt: "Ela sabe a resposta correta", en: "She knows the right answer", tense: "Present Simple" },
+                { pt: "Nós não sabíamos disso", en: "We didn't know about it", tense: "Past Simple" },
+                { pt: "Ele sabe todos os pormenores", en: "He knows all the details", tense: "Present Simple" },
+                { pt: "Eu sabia que ia chover", en: "I knew it would rain", tense: "Past Simple" },
+                { pt: "Conheces este autor?", en: "Do you know this author?", tense: "Present Simple" },
+                { pt: "Eles sabem os seus direitos", en: "They know their rights", tense: "Present Simple" },
+                { pt: "Não sei o número exato", en: "I don't know the exact number", tense: "Present Simple" },
+                { pt: "Ela conhecia o meu carácter", en: "She knew my character", tense: "Past Simple" },
+                { pt: "Nós conhecemos este lugar", en: "We know this place", tense: "Present Simple" },
+                { pt: "Ele sabia as consequências", en: "He knew the consequences", tense: "Past Simple" },
+                { pt: "Eu sei cada palavra", en: "I know every word", tense: "Present Simple" },
+                { pt: "Vocês sabiam da reunião?", en: "Did you know about the meeting?", tense: "Past Simple" },
+                { pt: "Eles conhecem as nossas tradições", en: "They know our traditions", tense: "Present Simple" },
+                { pt: "Conheces este filme?", en: "Do you know this movie?", tense: "Present Simple" },
+                { pt: "Ela não sabia o caminho", en: "She didn't know the way", tense: "Past Simple" },
+                { pt: "Conheço-o há um ano", en: "I've known him for a year", tense: "Present Perfect" },
+                { pt: "Nós conhecemos esta metodologia", en: "We know this method", tense: "Present Simple" },
+                { pt: "Ele sabia a minha opinião", en: "He knew my opinion", tense: "Past Simple" },
+                { pt: "Eu sei porque é importante", en: "I know why it's important", tense: "Present Simple" },
+                { pt: "Eles sabiam o nosso plano", en: "They knew our plan", tense: "Past Simple" },
+                { pt: "Sabes a morada deles?", en: "Do you know their address?", tense: "Present Simple" },
+                { pt: "Ela sabe todos os nomes", en: "She knows all the names", tense: "Present Simple" },
+                { pt: "Nós não sabíamos o resultado", en: "We didn't know the result", tense: "Past Simple" },
+                { pt: "Ele conhece bem esta área", en: "He knows this field well", tense: "Present Simple" },
+                { pt: "Eu sabia a tua decisão", en: "I knew your decision", tense: "Past Simple" },
+                { pt: "Vocês conhecem a história desta casa?", en: "Do you know the history of this house?", tense: "Present Simple" },
+                { pt: "Eles sabem todos os factos", en: "They know all the facts", tense: "Present Simple" },
+                { pt: "Eu sei para onde ir", en: "I know where to go", tense: "Present Simple" },
+                { pt: "Ela conhecia os hábitos dele", en: "She knew his habits", tense: "Past Simple" },
+                { pt: "Nós sabemos estas regras", en: "We know these rules", tense: "Present Simple" },
+                { pt: "Ele não sabia o número dela", en: "He didn't know her number", tense: "Past Simple" },
+                { pt: "Eu sei dos teus planos", en: "I know about your plans", tense: "Present Simple" },
+                { pt: "Conheces esta receita?", en: "Do you know this recipe?", tense: "Present Simple" },
+                { pt: "Eles sabiam os nossos nomes", en: "They knew our names", tense: "Past Simple" },
+                { pt: "Eu sei o caminho certo", en: "I know the right way", tense: "Present Simple" },
+                { pt: "Ela sabe todas as respostas", en: "She knows all the answers", tense: "Present Simple" },
+                { pt: "Nós sabíamos do perigo", en: "We knew about the danger", tense: "Past Simple" },
+                { pt: "Ele conhece a minha história", en: "He knows my story", tense: "Present Simple" },
+                { pt: "Não sabia desse facto", en: "I didn't know this fact", tense: "Past Simple" },
+                { pt: "Vocês conhecem a cultura deles?", en: "Do you know their culture?", tense: "Present Simple" },
+                { pt: "Eles conhecem esta técnica", en: "They know this technique", tense: "Present Simple" },
+                { pt: "Sabes quando ele vem?", en: "Do you know when he'll come?", tense: "Present Simple" },
+                { pt: "Ela conhecia as minhas fraquezas", en: "She knew my weaknesses", tense: "Past Simple" },
+                { pt: "Nós conhecemos este exercício", en: "We know this exercise", tense: "Present Simple" },
+                { pt: "Eu conheço todos os participantes", en: "I know all the participants", tense: "Present Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

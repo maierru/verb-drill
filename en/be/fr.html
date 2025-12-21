@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbe 🇬🇧 VERB BE — 96 phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Retour à la liste des verbes</a>
+            <h1>🇬🇧 Verb BE</h1>
+            <p class="subtitle">to exist, to equal — 96 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Rechercher des phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Afficher toutes les traductions</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Masquer toutes les traductions</button>
+        </div>
+
+        <div class="stats" id="stats">Affichage: 96 sur 96 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Pratique de l'anglais — BE · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'fr',
+            targetKey: 'en',
+            labels: { target: 'Anglais', showing: 'Affichage', of: 'sur', phrases: 'phrases' },
+            verbForms: ["be","am","is","are","was","were","been","being"],
+            phrases: [
+                { fr: "Je suis médecin", en: "I am a doctor", tense: "Present" },
+                { fr: "Il est étudiant", en: "He is a student", tense: "Present" },
+                { fr: "Nous sommes à la maison", en: "We are at home", tense: "Present" },
+                { fr: "Ils sont heureux", en: "They are happy", tense: "Present" },
+                { fr: "Elle était ici hier", en: "She was here yesterday", tense: "Past Simple" },
+                { fr: "Nous étions à Paris", en: "We were in Paris", tense: "Past Simple" },
+                { fr: "J'étais occupé", en: "I was busy", tense: "Past Simple" },
+                { fr: "Ils étaient amis", en: "They were friends", tense: "Past Simple" },
+                { fr: "Je suis en train de travailler", en: "I am working now", tense: "Present Continuous" },
+                { fr: "Elle est en train de lire un livre", en: "She is reading a book", tense: "Present Continuous" },
+                { fr: "Nous allons en ville", en: "We are going to the city", tense: "Present Continuous" },
+                { fr: "Ils jouent au football", en: "They are playing football", tense: "Present Continuous" },
+                { fr: "Je préparais le dîner", en: "I was cooking dinner", tense: "Past Continuous" },
+                { fr: "Il dormait quand je suis arrivé", en: "He was sleeping when I came", tense: "Past Continuous" },
+                { fr: "Nous regardions la télévision", en: "We were watching TV", tense: "Past Continuous" },
+                { fr: "Ils dansaient toute la nuit", en: "They were dancing all night", tense: "Past Continuous" },
+                { fr: "J'y suis déjà allé", en: "I have been there before", tense: "Present Perfect" },
+                { fr: "Elle est allée à Londres", en: "She has been to London", tense: "Present Perfect" },
+                { fr: "Nous sommes amis depuis des années", en: "We have been friends for years", tense: "Present Perfect" },
+                { fr: "Il est professeur depuis 2010", en: "He has been a teacher since 2010", tense: "Present Perfect" },
+                { fr: "Je serai là demain", en: "I will be there tomorrow", tense: "Future" },
+                { fr: "Elle sera heureuse", en: "She will be happy", tense: "Future" },
+                { fr: "Nous serons prêts", en: "We will be ready", tense: "Future" },
+                { fr: "Ils seront ici à six heures", en: "They will be here at six", tense: "Future" },
+                { fr: "Je serais ravi d'aider", en: "I would be glad to help", tense: "Conditional" },
+                { fr: "Ce serait génial", en: "It would be great", tense: "Conditional" },
+                { fr: "Nous serions là si nous pouvions", en: "We would be there if we could", tense: "Conditional" },
+                { fr: "Elle serait un bon leader", en: "She would be a good leader", tense: "Conditional" },
+                { fr: "Sois prudent", en: "Be careful", tense: "Imperative" },
+                { fr: "Soyez gentils", en: "Be kind", tense: "Imperative" },
+                { fr: "Ne sois pas bête", en: "Don't be silly", tense: "Imperative" },
+                { fr: "Sois toi-même", en: "Be yourself", tense: "Imperative" },
+                { fr: "C'est vrai", en: "It is true", tense: "Present" },
+                { fr: "Je suis fatigué", en: "I am tired", tense: "Present" },
+                { fr: "Le temps est bon", en: "The weather is good", tense: "Present" },
+                { fr: "Nous sommes prêts à commencer", en: "We are ready to start", tense: "Present" },
+                { fr: "Il avait raison", en: "He was right", tense: "Past Simple" },
+                { fr: "Il faisait froid", en: "It was cold", tense: "Past Simple" },
+                { fr: "Je suis en train de réfléchir", en: "I am thinking now", tense: "Present Continuous" },
+                { fr: "Elle étudie à l'université", en: "She is studying at university", tense: "Present Continuous" },
+                { fr: "Ils voyagent en Europe", en: "They are traveling around Europe", tense: "Present Continuous" },
+                { fr: "Je t'attendais", en: "I was waiting for you", tense: "Past Continuous" },
+                { fr: "Il pleuvait", en: "It was raining", tense: "Past Continuous" },
+                { fr: "Il travaillait sur le projet", en: "He was working on the project", tense: "Past Continuous" },
+                { fr: "Je ne suis jamais allé au Japon", en: "I have never been to Japan", tense: "Present Perfect" },
+                { fr: "Ça a été la meilleure décision", en: "It has been the best decision", tense: "Present Perfect" },
+                { fr: "Nous sommes amis depuis l'enfance", en: "We have been friends since childhood", tense: "Present Perfect" },
+                { fr: "Il a été occupé toute la journée", en: "He has been busy all day", tense: "Present Perfect" },
+                { fr: "Tout ira bien", en: "Everything will be fine", tense: "Future" },
+                { fr: "Je serai ingénieur", en: "I will be an engineer", tense: "Future" },
+                { fr: "Ce sera difficile", en: "It will be difficult", tense: "Future" },
+                { fr: "Ils seront surpris", en: "They will be surprised", tense: "Future" },
+                { fr: "Ce serait une erreur", en: "It would be a mistake", tense: "Conditional" },
+                { fr: "Je serais heureux", en: "I would be happy", tense: "Conditional" },
+                { fr: "Il vaudrait mieux attendre", en: "It would be better to wait", tense: "Conditional" },
+                { fr: "Ils seraient ici s'ils savaient", en: "They would be here if they knew", tense: "Conditional" },
+                { fr: "Sois honnête", en: "Be honest", tense: "Imperative" },
+                { fr: "Soyez silencieux", en: "Be quiet", tense: "Imperative" },
+                { fr: "Sois patient", en: "Be patient", tense: "Imperative" },
+                { fr: "Soyez attentifs", en: "Be attentive", tense: "Imperative" },
+                { fr: "J'ai faim", en: "I am hungry", tense: "Present" },
+                { fr: "Elle est belle", en: "She is beautiful", tense: "Present" },
+                { fr: "C'est important", en: "It is important", tense: "Present" },
+                { fr: "Nous sommes en retard", en: "We are late", tense: "Present" },
+                { fr: "Il faisait sombre", en: "It was dark", tense: "Past Simple" },
+                { fr: "Ils étaient contents", en: "They were glad", tense: "Past Simple" },
+                { fr: "J'étais surpris", en: "I was surprised", tense: "Past Simple" },
+                { fr: "C'était intéressant", en: "It was interesting", tense: "Past Simple" },
+                { fr: "J'écris une lettre", en: "I am writing a letter", tense: "Present Continuous" },
+                { fr: "Il court dans le parc", en: "He is running in the park", tense: "Present Continuous" },
+                { fr: "Nous écoutons de la musique", en: "We are listening to music", tense: "Present Continuous" },
+                { fr: "Elle pleure", en: "She is crying", tense: "Present Continuous" },
+                { fr: "Nous parlions de toi", en: "We were talking about you", tense: "Past Continuous" },
+                { fr: "Il essayait d'appeler", en: "He was trying to call", tense: "Past Continuous" },
+                { fr: "Je réfléchissais au problème", en: "I was thinking about the problem", tense: "Past Continuous" },
+                { fr: "Ils construisaient une maison", en: "They were building a house", tense: "Past Continuous" },
+                { fr: "Ça a été une longue journée", en: "It has been a long day", tense: "Present Perfect" },
+                { fr: "Je suis déjà venu ici", en: "I have been here before", tense: "Present Perfect" },
+                { fr: "Elle a toujours été comme ça", en: "She has always been like this", tense: "Present Perfect" },
+                { fr: "Ils sont ensemble depuis deux ans", en: "They have been together for two years", tense: "Present Perfect" },
+                { fr: "Ce sera amusant", en: "It will be fun", tense: "Future" },
+                { fr: "Je serai là dans une heure", en: "I will be there in an hour", tense: "Future" },
+                { fr: "Elle sera la première", en: "She will be first", tense: "Future" },
+                { fr: "Nous attendrons", en: "We will be waiting", tense: "Future" },
+                { fr: "Je serais reconnaissant", en: "I would be grateful", tense: "Conditional" },
+                { fr: "Ce serait incroyable", en: "It would be amazing", tense: "Conditional" },
+                { fr: "Il serait un bon ami", en: "He would be a good friend", tense: "Conditional" },
+                { fr: "Ce serait bien de se rencontrer", en: "It would be nice to meet", tense: "Conditional" },
+                { fr: "Sois courageux", en: "Be brave", tense: "Imperative" },
+                { fr: "Soyez réalistes", en: "Be realistic", tense: "Imperative" },
+                { fr: "Ne sois pas impoli", en: "Don't be rude", tense: "Imperative" },
+                { fr: "Soyez prêts", en: "Be ready", tense: "Imperative" },
+                { fr: "Je viens de Russie", en: "I am from Russia", tense: "Present" },
+                { fr: "C'est mon frère", en: "He is my brother", tense: "Present" },
+                { fr: "Nous sommes collègues", en: "We are colleagues", tense: "Present" },
+                { fr: "Ils sont voisins", en: "They are neighbors", tense: "Present" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

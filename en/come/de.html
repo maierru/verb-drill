@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇬🇧 VERB COME — 94 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇬🇧 Verb COME</h1>
+            <p class="subtitle">to arrive, to approach — 94 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 94 von 94 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Englisch-Übung — COME · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'en',
+            labels: { target: 'Englisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["come","comes","came","coming"],
+            phrases: [
+                { de: "Ich komme morgen", en: "I will come tomorrow", tense: "Future Simple" },
+                { de: "Er kam gestern", en: "He came yesterday", tense: "Past Simple" },
+                { de: "Sie kommen jeden Tag", en: "They come every day", tense: "Present Simple" },
+                { de: "Sie wird später kommen", en: "She will come later", tense: "Future Simple" },
+                { de: "Wir kamen früh", en: "We came early", tense: "Past Simple" },
+                { de: "Kommst du?", en: "Are you coming?", tense: "Present Continuous" },
+                { de: "Er kommt um 6 nach Hause", en: "He comes home at 6", tense: "Present Simple" },
+                { de: "Sie kam mit einem Geschenk", en: "She came with a gift", tense: "Past Simple" },
+                { de: "Komm zu uns", en: "Come to us", tense: "Imperative" },
+                { de: "Ich komme, wenn ich kann", en: "I will come if I can", tense: "Future Simple" },
+                { de: "Sie kamen zusammen", en: "They came together", tense: "Past Simple" },
+                { de: "Wir kommen oft hierher", en: "We come here often", tense: "Present Simple" },
+                { de: "Wirst du zur Party kommen?", en: "Will you come to the party?", tense: "Future Simple" },
+                { de: "Er kam nicht zum Treffen", en: "He didn't come to the meeting", tense: "Past Simple" },
+                { de: "Sie kommt jede Woche", en: "She comes every week", tense: "Present Simple" },
+                { de: "Komm bald zurück", en: "Come back soon", tense: "Imperative" },
+                { de: "Er kam spät nach Hause zurück", en: "He came back home late", tense: "Past Simple" },
+                { de: "Ich komme in einer Stunde zurück", en: "I will come back in an hour", tense: "Future Simple" },
+                { de: "Sie kommen morgen zurück", en: "They are coming back tomorrow", tense: "Present Continuous" },
+                { de: "Sie kam aus dem Urlaub zurück", en: "She came back from vacation", tense: "Past Simple" },
+                { de: "Kommen Sie bitte herein", en: "Please come in", tense: "Imperative" },
+                { de: "Er kam ins Zimmer", en: "He came in the room", tense: "Past Simple" },
+                { de: "Kann ich reinkommen?", en: "Can I come in?", tense: "Present Simple" },
+                { de: "Sie kam leise herein", en: "She came in quietly", tense: "Past Simple" },
+                { de: "Sie kommen einer nach dem anderen rein", en: "They come in one by one", tense: "Present Simple" },
+                { de: "Komm hier raus", en: "Come out here", tense: "Imperative" },
+                { de: "Er kam aus dem Haus", en: "He came out of the house", tense: "Past Simple" },
+                { de: "Die Sonne kommt hinter den Wolken hervor", en: "The sun is coming out from behind the clouds", tense: "Present Continuous" },
+                { de: "Sie kam auf die Bühne", en: "She came out on stage", tense: "Past Simple" },
+                { de: "Die Wahrheit kommt immer ans Licht", en: "The truth always comes out", tense: "Present Simple" },
+                { de: "Ich komme mit einem Freund", en: "I will come with a friend", tense: "Future Simple" },
+                { de: "Er kam zu Fuß", en: "He came on foot", tense: "Past Simple" },
+                { de: "Sie kommen mit dem Bus", en: "They come by bus", tense: "Present Simple" },
+                { de: "Sie wird allein kommen", en: "She will come alone", tense: "Future Simple" },
+                { de: "Wir kamen mit dem Taxi", en: "We came by taxi", tense: "Past Simple" },
+                { de: "Du kommst früh zur Arbeit", en: "You come to work early", tense: "Present Simple" },
+                { de: "Er wird in 10 Minuten kommen", en: "He will come in 10 minutes", tense: "Future Simple" },
+                { de: "Sie kam ohne Einladung", en: "She came without invitation", tense: "Past Simple" },
+                { de: "Kommen Sie jederzeit", en: "Come at any time", tense: "Imperative" },
+                { de: "Ich komme jeden Tag hierher", en: "I come here every day", tense: "Present Simple" },
+                { de: "Sie werden mit uns zusammen kommen", en: "They will come together with us", tense: "Future Simple" },
+                { de: "Wir kamen, um dich zu beglückwünschen", en: "We came to congratulate you", tense: "Past Simple" },
+                { de: "Wirst du allein kommen?", en: "Will you come alone?", tense: "Future Simple" },
+                { de: "Er kommt immer pünktlich", en: "He always comes on time", tense: "Present Simple" },
+                { de: "Sie kam früher als alle anderen", en: "She came earlier than everyone", tense: "Past Simple" },
+                { de: "Kommt zurück, wann immer ihr wollt", en: "Come back whenever you want", tense: "Imperative" },
+                { de: "Ich kam am nächsten Tag zurück", en: "I came back the next day", tense: "Past Simple" },
+                { de: "Sie werden in einer Woche zurückkommen", en: "They will come back in a week", tense: "Future Simple" },
+                { de: "Wir kommen jeden Sommer zurück", en: "We come back every summer", tense: "Present Simple" },
+                { de: "Du kamst zu früh zurück", en: "You came back too early", tense: "Past Simple" },
+                { de: "Er wird zurückkommen, da bin ich sicher", en: "He will come back, I'm sure", tense: "Future Simple" },
+                { de: "Sie kommt spät nach Hause zurück", en: "She comes back home late", tense: "Present Simple" },
+                { de: "Komm rein und schließ die Tür", en: "Come in and close the door", tense: "Imperative" },
+                { de: "Ich kam als Erster rein", en: "I came in first", tense: "Past Simple" },
+                { de: "Sie werden durch den Haupteingang hereinkommen", en: "They will come in through the main entrance", tense: "Future Simple" },
+                { de: "Wir kommen durch die Hintertür rein", en: "We come in through the back door", tense: "Present Simple" },
+                { de: "Du kamst sehr laut rein", en: "You came in very noisily", tense: "Past Simple" },
+                { de: "Er wird als Letzter reinkommen", en: "He will come in last", tense: "Future Simple" },
+                { de: "Sie kommt rein ohne zu klopfen", en: "She comes in without knocking", tense: "Present Simple" },
+                { de: "Komm sofort raus", en: "Come out immediately", tense: "Imperative" },
+                { de: "Ich kam auf die Straße", en: "I came out to the street", tense: "Past Simple" },
+                { de: "Sie werden in einer Minute rauskommen", en: "They will come out in a minute", tense: "Future Simple" },
+                { de: "Wir kommen jeden Abend in den Garten", en: "We come out to the garden every evening", tense: "Present Simple" },
+                { de: "Du kamst als Sieger heraus", en: "You came out as the winner", tense: "Past Simple" },
+                { de: "Er wird um 8 auf die Bühne kommen", en: "He will come out on stage at 8", tense: "Future Simple" },
+                { de: "Sie kommt um 6 aus dem Büro", en: "She comes out of the office at 6", tense: "Present Simple" },
+                { de: "Komm so schnell wie möglich", en: "Come as soon as possible", tense: "Imperative" },
+                { de: "Ich kam, um zu helfen", en: "I came to help", tense: "Past Simple" },
+                { de: "Sie werden mit dem Auto kommen", en: "They will come by car", tense: "Future Simple" },
+                { de: "Wir kommen zu Fuß", en: "We come on foot", tense: "Present Simple" },
+                { de: "Du kamst zur richtigen Zeit", en: "You came at the right time", tense: "Past Simple" },
+                { de: "Er wird mit seiner Familie kommen", en: "He will come with his family", tense: "Future Simple" },
+                { de: "Sie kommt mit dem Fahrrad", en: "She comes by bicycle", tense: "Present Simple" },
+                { de: "Komm vor Einbruch der Dunkelheit zurück", en: "Come back before dark", tense: "Imperative" },
+                { de: "Ich kam mit guten Nachrichten zurück", en: "I came back with good news", tense: "Past Simple" },
+                { de: "Sie werden erfolgreich zurückkommen", en: "They will come back successful", tense: "Future Simple" },
+                { de: "Wir kommen müde zurück", en: "We come back tired", tense: "Present Simple" },
+                { de: "Du kamst als anderer Mensch zurück", en: "You came back a different person", tense: "Past Simple" },
+                { de: "Er wird als Sieger zurückkommen", en: "He will come back as a winner", tense: "Future Simple" },
+                { de: "Sie kommt glücklich zurück", en: "She comes back happy", tense: "Present Simple" },
+                { de: "Kommt einzeln rein", en: "Come in one at a time", tense: "Imperative" },
+                { de: "Ich kam ins neue Büro", en: "I came in the new office", tense: "Past Simple" },
+                { de: "Sie werden alle zusammen reinkommen", en: "They will all come in together", tense: "Future Simple" },
+                { de: "Wir kommen durch die Lobby ins Gebäude", en: "We come in the building through the lobby", tense: "Present Simple" },
+                { de: "Du kamst als Erster ins Zimmer", en: "You came in the room first", tense: "Past Simple" },
+                { de: "Er wird nach mir reinkommen", en: "He will come in after me", tense: "Future Simple" },
+                { de: "Sie kommt leise rein, um die Kinder nicht zu wecken", en: "She comes in quietly not to wake the children", tense: "Present Simple" },
+                { de: "Komm raus und schau dir die Sterne an", en: "Come out and look at the stars", tense: "Imperative" },
+                { de: "Ich kam raus, um frische Luft zu atmen", en: "I came out to breathe fresh air", tense: "Past Simple" },
+                { de: "Sie werden nach dem Regen rauskommen", en: "They will come out after the rain", tense: "Future Simple" },
+                { de: "Wir kommen abends zum Spaziergang raus", en: "We come out for a walk in the evening", tense: "Present Simple" },
+                { de: "Du kamst wütend aus dem Zimmer", en: "You came out of the room angry", tense: "Past Simple" },
+                { de: "Er wird morgen aus dem Krankenhaus kommen", en: "He will come out of the hospital tomorrow", tense: "Future Simple" },
+                { de: "Sie kommt um 7 Uhr morgens aus dem Haus", en: "She comes out of the house at 7 AM", tense: "Present Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

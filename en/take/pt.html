@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇬🇧 VERB TAKE — 96 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇬🇧 Verb TAKE</h1>
+            <p class="subtitle">to grab, to accept — 96 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 96 de 96 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            English Practice — TAKE · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'en',
+            labels: { target: 'English', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["take","takes","took","taken","taking","don't take","doesn't take","didn't take","won't take","wouldn't take","will take","would take","have taken","has taken","had taken"],
+            phrases: [
+                { pt: "Vou levar isto.", en: "I will take this.", tense: "Future" },
+                { pt: "Levas café?", en: "Do you take coffee?", tense: "Present" },
+                { pt: "Ele levou o livro.", en: "He took the book.", tense: "Past Simple" },
+                { pt: "Vamos apanhar um táxi.", en: "We will take a taxi.", tense: "Future" },
+                { pt: "Eles levam os bilhetes.", en: "They take the tickets.", tense: "Present" },
+                { pt: "Ela levou um guarda-chuva.", en: "She took an umbrella.", tense: "Past Simple" },
+                { pt: "Não ponho açúcar.", en: "I don't take sugar.", tense: "Present" },
+                { pt: "Levaste o meu telefone?", en: "Did you take my phone?", tense: "Past Simple" },
+                { pt: "Ele não levou o dinheiro.", en: "He didn't take the money.", tense: "Past Simple" },
+                { pt: "Não vamos levar o carro.", en: "We won't take the car.", tense: "Future" },
+                { pt: "Leva isto.", en: "Take this.", tense: "Imperative" },
+                { pt: "Tome assento.", en: "Take a seat.", tense: "Imperative" },
+                { pt: "Não leves isso.", en: "Don't take that.", tense: "Imperative" },
+                { pt: "Leva o teu passaporte contigo.", en: "Take your passport with you.", tense: "Imperative" },
+                { pt: "Estou a tirar férias.", en: "I'm taking a vacation.", tense: "Present Continuous" },
+                { pt: "Estás a ter aulas agora?", en: "Are you taking lessons now?", tense: "Present Continuous" },
+                { pt: "Ele estava a tomar banho quando liguei.", en: "He was taking a shower when I called.", tense: "Past Continuous" },
+                { pt: "Estamos a apanhar um táxi agora mesmo.", en: "We are taking a taxi right now.", tense: "Present Continuous" },
+                { pt: "Eles estavam a fazer entrevistas o dia todo.", en: "They were taking interviews all day.", tense: "Past Continuous" },
+                { pt: "Já tomei o remédio.", en: "I have already taken the medicine.", tense: "Present Perfect" },
+                { pt: "Já tiveste aulas de espanhol?", en: "Have you ever taken Spanish lessons?", tense: "Present Perfect" },
+                { pt: "Ele aceitou o meu conselho.", en: "He has taken my advice.", tense: "Present Perfect" },
+                { pt: "Já levámos os bilhetes.", en: "We have already taken the tickets.", tense: "Present Perfect" },
+                { pt: "Eles nunca aceitaram subornos.", en: "They have never taken bribes.", tense: "Present Perfect" },
+                { pt: "Levava isto se fosse mais barato.", en: "I would take it if it were cheaper.", tense: "Conditional" },
+                { pt: "Aceitavas este trabalho?", en: "Would you take this job?", tense: "Conditional" },
+                { pt: "Ele não levaria isso.", en: "He wouldn't take that.", tense: "Conditional" },
+                { pt: "Levávamo-lo connosco.", en: "We would take him with us.", tense: "Conditional" },
+                { pt: "Eles tirariam um dia de folga.", en: "They would take a day off.", tense: "Conditional" },
+                { pt: "Quanto tempo vai demorar?", en: "How long will it take?", tense: "Future" },
+                { pt: "Vai demorar uma hora.", en: "It will take an hour.", tense: "Future" },
+                { pt: "Demorou muito tempo.", en: "It took a long time.", tense: "Past Simple" },
+                { pt: "Quanto tempo demorou?", en: "How long did it take?", tense: "Past Simple" },
+                { pt: "Demora um minuto.", en: "It takes a minute.", tense: "Present" },
+                { pt: "Assumo a responsabilidade.", en: "I take responsibility.", tense: "Present" },
+                { pt: "Controla-te.", en: "Take yourself in hand.", tense: "Imperative" },
+                { pt: "Ele está a tomar uma decisão.", en: "He is taking a decision.", tense: "Present Continuous" },
+                { pt: "Tomámos uma decisão.", en: "We have taken a decision.", tense: "Present Perfect" },
+                { pt: "Eles tomaram medidas.", en: "They took measures.", tense: "Past Simple" },
+                { pt: "Não tomo drogas.", en: "I don't take drugs.", tense: "Present" },
+                { pt: "Tomaste os comprimidos?", en: "Did you take your pills?", tense: "Past Simple" },
+                { pt: "Leva o teu tempo.", en: "Take your time.", tense: "Imperative" },
+                { pt: "Não te apresses.", en: "Don't take it too fast.", tense: "Imperative" },
+                { pt: "Vou ter isso em conta.", en: "I will take that into account.", tense: "Future" },
+                { pt: "Levas isto a sério?", en: "Do you take this seriously?", tense: "Present" },
+                { pt: "Ele levou isso a peito.", en: "He took it to heart.", tense: "Past Simple" },
+                { pt: "Tomámos rumo a norte.", en: "We took a course to the north.", tense: "Past Simple" },
+                { pt: "Eles estão a participar.", en: "They are taking part.", tense: "Present Continuous" },
+                { pt: "Vou correr o risco.", en: "I will take a risk.", tense: "Future" },
+                { pt: "Tiraste um dia de folga?", en: "Did you take a day off?", tense: "Past Simple" },
+                { pt: "Faz uma pausa.", en: "Take a break.", tense: "Imperative" },
+                { pt: "Estou a tirar uma folga.", en: "I'm taking time off.", tense: "Present Continuous" },
+                { pt: "Ele levou a melhor.", en: "He took the upper hand.", tense: "Past Simple" },
+                { pt: "Vamos tomar a iniciativa.", en: "We will take the initiative.", tense: "Future" },
+                { pt: "Eles tomaram controlo.", en: "They took control.", tense: "Past Simple" },
+                { pt: "Assumo isso.", en: "I take it upon myself.", tense: "Present" },
+                { pt: "Assumiste demasiado.", en: "You took on too much.", tense: "Past Simple" },
+                { pt: "Toma nota disto.", en: "Take note of this.", tense: "Imperative" },
+                { pt: "Não posso aceitar isto.", en: "I can't take this.", tense: "Present" },
+                { pt: "Ele não aceitou o pedido de desculpas.", en: "He didn't take the apology.", tense: "Past Simple" },
+                { pt: "Não aceitamos cartões.", en: "We don't take cards.", tense: "Present" },
+                { pt: "Eles não aceitaram a oferta.", en: "They didn't take the offer.", tense: "Past Simple" },
+                { pt: "Leva-me contigo.", en: "Take me with you.", tense: "Imperative" },
+                { pt: "Aceito a tua palavra.", en: "I take you at your word.", tense: "Present" },
+                { pt: "Levaste as chaves?", en: "Did you take the keys?", tense: "Past Simple" },
+                { pt: "Ele tem aulas de guitarra.", en: "He takes guitar lessons.", tense: "Present" },
+                { pt: "Vamos levar o cão a passear.", en: "We will take the dog for a walk.", tense: "Future" },
+                { pt: "Eles apanharam-nos de surpresa.", en: "They took us by surprise.", tense: "Past Simple" },
+                { pt: "Estou a tomar banho.", en: "I'm taking a bath.", tense: "Present Continuous" },
+                { pt: "Estás a levar isto?", en: "Are you taking this?", tense: "Present Continuous" },
+                { pt: "Leva um guarda-chuva, está a chover.", en: "Take an umbrella, it's raining.", tense: "Imperative" },
+                { pt: "Vou apanhar um táxi para o aeroporto.", en: "I will take a taxi to the airport.", tense: "Future" },
+                { pt: "Ele pegou-me pela mão.", en: "He took me by the hand.", tense: "Past Simple" },
+                { pt: "Estamos a pedir emprestado.", en: "We are taking a loan.", tense: "Present Continuous" },
+                { pt: "Eles pediram um empréstimo.", en: "They took a loan.", tense: "Past Simple" },
+                { pt: "Não leves isso para o lado pessoal.", en: "Don't take it personally.", tense: "Imperative" },
+                { pt: "Aceito a tua oferta.", en: "I take your offer.", tense: "Present" },
+                { pt: "Aceitaste o convite?", en: "Did you take the invitation?", tense: "Past Simple" },
+                { pt: "Ele não atende chamadas.", en: "He doesn't take calls.", tense: "Present" },
+                { pt: "Fizemos uma pausa.", en: "We took a pause.", tense: "Past Simple" },
+                { pt: "Eles estão a recolher amostras.", en: "They are taking samples.", tense: "Present Continuous" },
+                { pt: "Vou levar-te ao trabalho.", en: "I will take you to work.", tense: "Future" },
+                { pt: "Tiraste as impressões digitais?", en: "Did you take the fingerprints?", tense: "Past Simple" },
+                { pt: "Leva a máquina fotográfica.", en: "Take the camera.", tense: "Imperative" },
+                { pt: "Estou a tirar fotografias.", en: "I'm taking photos.", tense: "Present Continuous" },
+                { pt: "Ele tirou uma amostra.", en: "He took a sample.", tense: "Past Simple" },
+                { pt: "Estamos a fazer testes.", en: "We are taking tests.", tense: "Present Continuous" },
+                { pt: "Vão tirar sangue.", en: "They will take blood.", tense: "Future" },
+                { pt: "Não aceito gorjetas.", en: "I don't take tips.", tense: "Present" },
+                { pt: "Levaste o dinheiro?", en: "Did you take the money?", tense: "Past Simple" },
+                { pt: "Ele aceita subornos.", en: "He takes bribes.", tense: "Present" },
+                { pt: "Não aceitamos presentes.", en: "We don't take gifts.", tense: "Present" },
+                { pt: "Leva isto de graça.", en: "Take it for free.", tense: "Imperative" },
+                { pt: "Fico com metade.", en: "I take half.", tense: "Present" },
+                { pt: "Levaste o último pedaço?", en: "Did you take the last piece?", tense: "Past Simple" },
+                { pt: "Ele leva tudo.", en: "He takes everything.", tense: "Present" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

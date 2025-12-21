@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇬🇧 VERB GO — 100 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇬🇧 Verb GO</h1>
+            <p class="subtitle">to move, to travel — 100 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 100 von 100 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Englisch-Übung — GO · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'en',
+            labels: { target: 'Englisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["go","goes","went","gone","going","don't go","doesn't go","didn't go","won't go","wouldn't go","can't go"],
+            phrases: [
+                { de: "Ich gehe nach Hause.", en: "I go home.", tense: "Present" },
+                { de: "Du gehst zur Arbeit.", en: "You go to work.", tense: "Present" },
+                { de: "Er geht zur Schule.", en: "He goes to school.", tense: "Present" },
+                { de: "Sie geht zum Laden.", en: "She goes to the store.", tense: "Present" },
+                { de: "Wir gehen in den Park.", en: "We go to the park.", tense: "Present" },
+                { de: "Ihr geht ins Kino.", en: "You go to the cinema.", tense: "Present" },
+                { de: "Sie gehen ins Fitnessstudio.", en: "They go to the gym.", tense: "Present" },
+                { de: "Ich gehe nicht dorthin.", en: "I don't go there.", tense: "Present" },
+                { de: "Du gehst nicht zum Training.", en: "You don't go to training.", tense: "Present" },
+                { de: "Er geht nicht in die Kirche.", en: "He doesn't go to church.", tense: "Present" },
+                { de: "Wohin gehst du?", en: "Where do you go?", tense: "Present" },
+                { de: "Wann geht sie?", en: "When does she go?", tense: "Present" },
+                { de: "Wie oft gehst du?", en: "How often do you go?", tense: "Present" },
+                { de: "Wir gehen normalerweise zu Fuß.", en: "We usually go on foot.", tense: "Present" },
+                { de: "Er geht immer alleine.", en: "He always goes alone.", tense: "Present" },
+                { de: "Sie gehen selten dorthin.", en: "They rarely go there.", tense: "Present" },
+                { de: "Ich gehe jeden Tag zur Arbeit.", en: "I go to work every day.", tense: "Present" },
+                { de: "Sie geht manchmal in die Bibliothek.", en: "She sometimes goes to the library.", tense: "Present" },
+                { de: "Wohin gehst du normalerweise?", en: "Where do you usually go?", tense: "Present" },
+                { de: "Lass uns gehen!", en: "Let's go!", tense: "Present" },
+                { de: "Ich ging nach Hause.", en: "I went home.", tense: "Past Simple" },
+                { de: "Du gingst zur Arbeit.", en: "You went to work.", tense: "Past Simple" },
+                { de: "Er ging zur Schule.", en: "He went to school.", tense: "Past Simple" },
+                { de: "Sie ging zum Laden.", en: "She went to the store.", tense: "Past Simple" },
+                { de: "Wir gingen in den Park.", en: "We went to the park.", tense: "Past Simple" },
+                { de: "Ihr gingt ins Museum.", en: "You went to the museum.", tense: "Past Simple" },
+                { de: "Sie gingen zum Konzert.", en: "They went to the concert.", tense: "Past Simple" },
+                { de: "Ich ging nicht dorthin.", en: "I didn't go there.", tense: "Past Simple" },
+                { de: "Du gingst nicht mit ihnen.", en: "You didn't go with them.", tense: "Past Simple" },
+                { de: "Er ging nirgendwohin.", en: "He didn't go anywhere.", tense: "Past Simple" },
+                { de: "Wohin bist du gegangen?", en: "Where did you go?", tense: "Past Simple" },
+                { de: "Was ging schief?", en: "What went wrong?", tense: "Past Simple" },
+                { de: "Ich ging gestern dorthin.", en: "I went there yesterday.", tense: "Past Simple" },
+                { de: "Sie ging letzte Woche ins Kino.", en: "She went to the cinema last week.", tense: "Past Simple" },
+                { de: "Sie gingen früh nach Hause.", en: "They went home early.", tense: "Past Simple" },
+                { de: "Wir gingen spazieren.", en: "We went for a walk.", tense: "Past Simple" },
+                { de: "Bist du alleine gegangen?", en: "Did you go alone?", tense: "Past Simple" },
+                { de: "Er ging ohne sich zu verabschieden.", en: "He went without saying goodbye.", tense: "Past Simple" },
+                { de: "Die Zeit verging schnell.", en: "Time went fast.", tense: "Past Simple" },
+                { de: "Ich gehe jetzt nach Hause.", en: "I am going home now.", tense: "Present Continuous" },
+                { de: "Gehst du irgendwohin?", en: "Are you going somewhere?", tense: "Present Continuous" },
+                { de: "Er geht zu einem Meeting.", en: "He is going to a meeting.", tense: "Present Continuous" },
+                { de: "Sie geht zur Arbeit.", en: "She is going to work.", tense: "Present Continuous" },
+                { de: "Wir gehen in ein Restaurant.", en: "We are going to a restaurant.", tense: "Present Continuous" },
+                { de: "Wohin geht ihr?", en: "Where are you going?", tense: "Present Continuous" },
+                { de: "Sie gehen nach Hause.", en: "They are going home.", tense: "Present Continuous" },
+                { de: "Ich gehe nicht dorthin.", en: "I'm not going there.", tense: "Present Continuous" },
+                { de: "Alles läuft gut.", en: "Everything is going well.", tense: "Present Continuous" },
+                { de: "Was ist los?", en: "What's going on?", tense: "Present Continuous" },
+                { de: "Ich ging gerade, als du anriefst.", en: "I was going when you called.", tense: "Past Continuous" },
+                { de: "Du gingst zu schnell.", en: "You were going too fast.", tense: "Past Continuous" },
+                { de: "Er ging in Richtung Bahnhof.", en: "He was going towards the station.", tense: "Past Continuous" },
+                { de: "Wir gingen den ganzen Abend nach Hause.", en: "We were going home all evening.", tense: "Past Continuous" },
+                { de: "Wohin gingst du?", en: "Where were you going?", tense: "Past Continuous" },
+                { de: "Ich bin dort gewesen.", en: "I have been there.", tense: "Present Perfect" },
+                { de: "Bist du schon dorthin gegangen?", en: "Have you gone there already?", tense: "Present Perfect" },
+                { de: "Er ist schon gegangen.", en: "He has already gone.", tense: "Present Perfect" },
+                { de: "Sie war noch nie in Paris.", en: "She has never been to Paris.", tense: "Present Perfect" },
+                { de: "Wir sind schon dort gewesen.", en: "We have already been there.", tense: "Present Perfect" },
+                { de: "Sie sind gegangen.", en: "They have gone.", tense: "Present Perfect" },
+                { de: "Ich bin noch nicht dorthin gegangen.", en: "I haven't gone there yet.", tense: "Present Perfect" },
+                { de: "Wohin ist er gegangen?", en: "Where has he gone?", tense: "Present Perfect" },
+                { de: "Die Zeit ist vergangen.", en: "Time has gone.", tense: "Present Perfect" },
+                { de: "Warst du jemals in London?", en: "Have you ever been to London?", tense: "Present Perfect" },
+                { de: "Ich werde morgen dorthin gehen.", en: "I will go there tomorrow.", tense: "Future" },
+                { de: "Wirst du mit uns gehen?", en: "Will you go with us?", tense: "Future" },
+                { de: "Er wird zur Universität gehen.", en: "He will go to university.", tense: "Future" },
+                { de: "Sie wird zur Party gehen.", en: "She will go to the party.", tense: "Future" },
+                { de: "Wir werden ins Theater gehen.", en: "We will go to the theatre.", tense: "Future" },
+                { de: "Sie werden zum Strand gehen.", en: "They will go to the beach.", tense: "Future" },
+                { de: "Ich werde nicht dorthin gehen.", en: "I won't go there.", tense: "Future" },
+                { de: "Er wird nirgendwohin gehen.", en: "He won't go anywhere.", tense: "Future" },
+                { de: "Wohin wirst du gehen?", en: "Where will you go?", tense: "Future" },
+                { de: "Alles wird gut gehen.", en: "Everything will go well.", tense: "Future" },
+                { de: "Ich würde mit dir gehen.", en: "I would go with you.", tense: "Conditional" },
+                { de: "Würdest du dorthin gehen?", en: "Would you go there?", tense: "Conditional" },
+                { de: "Er würde nicht alleine gehen.", en: "He wouldn't go alone.", tense: "Conditional" },
+                { de: "Wir würden gehen, aber wir sind beschäftigt.", en: "We would go, but we're busy.", tense: "Conditional" },
+                { de: "Ich würde nicht dorthin gehen.", en: "I wouldn't go there.", tense: "Conditional" },
+                { de: "Wohin würdest du gehen?", en: "Where would you go?", tense: "Conditional" },
+                { de: "Sie würde gerne gehen.", en: "She would gladly go.", tense: "Conditional" },
+                { de: "Sie würden gehen, wenn sie könnten.", en: "They would go if they could.", tense: "Conditional" },
+                { de: "Was würdest du tun?", en: "What would you do? (Lit: Where would you go?)", tense: "Conditional" },
+                { de: "Ich würde gerne gehen.", en: "I would love to go.", tense: "Conditional" },
+                { de: "Geh!", en: "Go!", tense: "Imperative" },
+                { de: "Geht nach Hause.", en: "Go home.", tense: "Imperative" },
+                { de: "Geh nicht dorthin.", en: "Don't go there.", tense: "Imperative" },
+                { de: "Geh nicht.", en: "Don't go.", tense: "Imperative" },
+                { de: "Komm her.", en: "Go here. / Come here.", tense: "Imperative" },
+                { de: "Lass uns gehen!", en: "Let's go!", tense: "Imperative" },
+                { de: "Geh schlafen.", en: "Go to sleep.", tense: "Imperative" },
+                { de: "Mach weiter!", en: "Go ahead!", tense: "Expression" },
+                { de: "Los geht's!", en: "Let's go!", tense: "Expression" },
+                { de: "Wie geht's?", en: "How's it going?", tense: "Expression" },
+                { de: "Es ist Zeit zu gehen.", en: "Time to go.", tense: "Expression" },
+                { de: "Geh und sieh nach.", en: "Go and see.", tense: "Expression" },
+                { de: "Geh weg!", en: "Go away!", tense: "Expression" },
+                { de: "Geh deinen Weg.", en: "Go your way.", tense: "Expression" },
+                { de: "Einen Kompromiss eingehen.", en: "To go for a compromise.", tense: "Expression" },
+                { de: "Alles läuft nach Plan.", en: "Everything is going according to plan.", tense: "Expression" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

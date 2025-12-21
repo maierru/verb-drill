@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇬🇧 VERB FIND — 99 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇬🇧 Verb FIND</h1>
+            <p class="subtitle">to discover, to locate — 99 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 99 из 99 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика английского — FIND · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'en',
+            labels: { target: 'English', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["find","finds","found","finding"],
+            phrases: [
+                { ru: "Я не могу найти свои ключи", en: "I can't find my keys", tense: "Present" },
+                { ru: "Он находит решение каждой проблемы", en: "He finds a solution to every problem", tense: "Present" },
+                { ru: "Мы нашли отличный ресторан вчера", en: "We found a great restaurant yesterday", tense: "Past Simple" },
+                { ru: "Она нашла новую работу в прошлом месяце", en: "She found a new job last month", tense: "Past Simple" },
+                { ru: "Они ищут свою собаку уже два часа", en: "They have been finding their dog for two hours", tense: "Present Continuous" },
+                { ru: "Я ищу информацию сейчас", en: "I am finding information now", tense: "Present Continuous" },
+                { ru: "Ты нашёл то, что искал?", en: "Did you find what you were looking for?", tense: "Past Simple" },
+                { ru: "Мы всегда находим время для семьи", en: "We always find time for family", tense: "Present" },
+                { ru: "Она искала свой телефон, когда я позвонил", en: "She was finding her phone when I called", tense: "Past Continuous" },
+                { ru: "Они нашли старые фотографии на чердаке", en: "They found old photos in the attic", tense: "Past Simple" },
+                { ru: "Я уже нашёл ответ на этот вопрос", en: "I have already found the answer to this question", tense: "Present Perfect" },
+                { ru: "Ты найдёшь это легко", en: "You will find it easily", tense: "Future" },
+                { ru: "Он находил это трудным в начале", en: "He was finding it difficult at first", tense: "Past Continuous" },
+                { ru: "Мы найдём способ решить эту проблему", en: "We will find a way to solve this problem", tense: "Future" },
+                { ru: "Найди мне, пожалуйста, эту книгу", en: "Find me this book, please", tense: "Imperative" },
+                { ru: "Она находит радость в простых вещах", en: "She finds joy in simple things", tense: "Present" },
+                { ru: "Я нашёл это очень интересным", en: "I found it very interesting", tense: "Past Simple" },
+                { ru: "Они никогда не находили это место раньше", en: "They have never found this place before", tense: "Present Perfect" },
+                { ru: "Ты находишь это странным?", en: "Do you find this strange?", tense: "Present" },
+                { ru: "Мы искали отель, когда начался дождь", en: "We were finding a hotel when it started raining", tense: "Past Continuous" },
+                { ru: "Он нашёл своё призвание в музыке", en: "He found his calling in music", tense: "Past Simple" },
+                { ru: "Я найду время для этого завтра", en: "I will find time for this tomorrow", tense: "Future" },
+                { ru: "Она уже нашла билеты на концерт", en: "She has already found tickets to the concert", tense: "Present Perfect" },
+                { ru: "Найдите своё место и садитесь", en: "Find your seat and sit down", tense: "Imperative" },
+                { ru: "Мы находим это предложение очень привлекательным", en: "We find this offer very attractive", tense: "Present" },
+                { ru: "Ты нашёл свой паспорт?", en: "Have you found your passport?", tense: "Present Perfect" },
+                { ru: "Они находили новых друзей каждый день", en: "They were finding new friends every day", tense: "Past Continuous" },
+                { ru: "Я бы нашёл это, если бы у меня было больше времени", en: "I would find it if I had more time", tense: "Conditional" },
+                { ru: "Он всегда находит ошибки в моей работе", en: "He always finds mistakes in my work", tense: "Present" },
+                { ru: "Мы нашли потерянного ребёнка в парке", en: "We found the lost child in the park", tense: "Past Simple" },
+                { ru: "Она ищет новую квартиру уже месяц", en: "She has been finding a new apartment for a month", tense: "Present Perfect" },
+                { ru: "Найди в себе силы продолжать", en: "Find the strength to continue", tense: "Imperative" },
+                { ru: "Я нашёл эту статью очень полезной", en: "I found this article very useful", tense: "Past Simple" },
+                { ru: "Ты найдёшь всё необходимое в этом магазине", en: "You will find everything you need in this store", tense: "Future" },
+                { ru: "Они находят утешение в музыке", en: "They find comfort in music", tense: "Present" },
+                { ru: "Мы искали выход из этой ситуации", en: "We were finding a way out of this situation", tense: "Past Continuous" },
+                { ru: "Он нашёл смысл жизни в помощи другим", en: "He found the meaning of life in helping others", tense: "Past Simple" },
+                { ru: "Я уже нашёл несколько хороших вариантов", en: "I have already found several good options", tense: "Present Perfect" },
+                { ru: "Она бы нашла решение, если бы попыталась", en: "She would find a solution if she tried", tense: "Conditional" },
+                { ru: "Найдите общий язык с коллегами", en: "Find common ground with colleagues", tense: "Imperative" },
+                { ru: "Мы находим вдохновение в природе", en: "We find inspiration in nature", tense: "Present" },
+                { ru: "Ты находил эту работу сложной?", en: "Were you finding this work difficult?", tense: "Past Continuous" },
+                { ru: "Они нашли компромисс после долгих переговоров", en: "They found a compromise after long negotiations", tense: "Past Simple" },
+                { ru: "Я найду доказательства моей правоты", en: "I will find proof of my being right", tense: "Future" },
+                { ru: "Он никогда не находил времени на хобби", en: "He has never found time for hobbies", tense: "Present Perfect" },
+                { ru: "Она находит красоту везде", en: "She finds beauty everywhere", tense: "Present" },
+                { ru: "Мы нашли идеальное место для пикника", en: "We found the perfect spot for a picnic", tense: "Past Simple" },
+                { ru: "Найди себя в этой жизни", en: "Find yourself in this life", tense: "Imperative" },
+                { ru: "Я искал свою куртку весь вечер", en: "I was finding my jacket all evening", tense: "Past Continuous" },
+                { ru: "Ты находишь этот фильм скучным?", en: "Do you find this movie boring?", tense: "Present" },
+                { ru: "Они уже нашли замену ушедшему сотруднику", en: "They have already found a replacement for the employee who left", tense: "Present Perfect" },
+                { ru: "Он найдёт выход из любой ситуации", en: "He will find a way out of any situation", tense: "Future" },
+                { ru: "Мы бы нашли это место, если бы у нас была карта", en: "We would find this place if we had a map", tense: "Conditional" },
+                { ru: "Она нашла свою вторую половинку", en: "She found her soulmate", tense: "Past Simple" },
+                { ru: "Я нахожу это предложение неприемлемым", en: "I find this proposal unacceptable", tense: "Present" },
+                { ru: "Найдите минутку для разговора", en: "Find a minute for a talk", tense: "Imperative" },
+                { ru: "Ты нашёл свой стиль в одежде?", en: "Have you found your style in clothes?", tense: "Present Perfect" },
+                { ru: "Они искали сокровища на острове", en: "They were finding treasures on the island", tense: "Past Continuous" },
+                { ru: "Мы находим поддержку в наших друзьях", en: "We find support in our friends", tense: "Present" },
+                { ru: "Он нашёл новый подход к обучению", en: "He found a new approach to learning", tense: "Past Simple" },
+                { ru: "Я найду доказательства завтра", en: "I will find the evidence tomorrow", tense: "Future" },
+                { ru: "Она находит счастье в маленьких вещах", en: "She finds happiness in little things", tense: "Present" },
+                { ru: "Ты бы нашёл это легко, если бы знал, где искать", en: "You would find it easily if you knew where to look", tense: "Conditional" },
+                { ru: "Они нашли общий язык с первой встречи", en: "They found common ground from the first meeting", tense: "Past Simple" },
+                { ru: "Мы уже нашли решение этой проблемы", en: "We have already found the solution to this problem", tense: "Present Perfect" },
+                { ru: "Найдите причину вашего недовольства", en: "Find the reason for your dissatisfaction", tense: "Imperative" },
+                { ru: "Я искал свои очки, когда ты пришёл", en: "I was finding my glasses when you came", tense: "Past Continuous" },
+                { ru: "Он находит энергию в спорте", en: "He finds energy in sports", tense: "Present" },
+                { ru: "Она нашла своё место в команде", en: "She found her place in the team", tense: "Past Simple" },
+                { ru: "Мы найдём способ помочь им", en: "We will find a way to help them", tense: "Future" },
+                { ru: "Ты нашёл ответы на все вопросы?", en: "Have you found answers to all questions?", tense: "Present Perfect" },
+                { ru: "Они находят утешение в вере", en: "They find solace in faith", tense: "Present" },
+                { ru: "Я бы нашёл лучший вариант при других обстоятельствах", en: "I would find a better option under different circumstances", tense: "Conditional" },
+                { ru: "Найди баланс между работой и личной жизнью", en: "Find balance between work and personal life", tense: "Imperative" },
+                { ru: "Он искал вдохновение в путешествиях", en: "He was finding inspiration in travels", tense: "Past Continuous" },
+                { ru: "Мы нашли компромисс, который устраивает всех", en: "We found a compromise that suits everyone", tense: "Past Simple" },
+                { ru: "Она находит мотивацию в успехах других", en: "She finds motivation in others' success", tense: "Present" },
+                { ru: "Я уже нашёл подходящий подарок", en: "I have already found a suitable gift", tense: "Present Perfect" },
+                { ru: "Ты найдёшь всё, что нужно, в интернете", en: "You will find everything you need online", tense: "Future" },
+                { ru: "Они нашли клад в старом доме", en: "They found treasure in the old house", tense: "Past Simple" },
+                { ru: "Найдите своё призвание", en: "Find your calling", tense: "Imperative" },
+                { ru: "Мы находим смысл в нашей работе", en: "We find meaning in our work", tense: "Present" },
+                { ru: "Он бы нашёл это, если бы искал внимательнее", en: "He would find it if he looked more carefully", tense: "Conditional" },
+                { ru: "Я искал информацию об этом весь день", en: "I was finding information about this all day", tense: "Past Continuous" },
+                { ru: "Она нашла своё счастье в семье", en: "She found her happiness in family", tense: "Past Simple" },
+                { ru: "Ты находишь это забавным?", en: "Do you find this amusing?", tense: "Present" },
+                { ru: "Они уже нашли новый дом", en: "They have already found a new home", tense: "Present Perfect" },
+                { ru: "Мы найдём выход из этого лабиринта", en: "We will find a way out of this maze", tense: "Future" },
+                { ru: "Найди время для себя", en: "Find time for yourself", tense: "Imperative" },
+                { ru: "Я нахожу это очень важным", en: "I find this very important", tense: "Present" },
+                { ru: "Он нашёл покой в медитации", en: "He found peace in meditation", tense: "Past Simple" },
+                { ru: "Она бы нашла решение, если бы у неё было больше информации", en: "She would find a solution if she had more information", tense: "Conditional" },
+                { ru: "Мы искали подходящее место для встречи", en: "We were finding a suitable place for the meeting", tense: "Past Continuous" },
+                { ru: "Ты нашёл свой путь в жизни?", en: "Have you found your path in life?", tense: "Present Perfect" },
+                { ru: "Они находят радость в помощи другим", en: "They find joy in helping others", tense: "Present" },
+                { ru: "Я найду доказательства его невиновности", en: "I will find proof of his innocence", tense: "Future" },
+                { ru: "Найдите выход из сложной ситуации", en: "Find a way out of a difficult situation", tense: "Imperative" },
+                { ru: "Он находит вдохновение в искусстве", en: "He finds inspiration in art", tense: "Present" },
+                { ru: "Мы нашли идеальное решение для всех", en: "We found the perfect solution for everyone", tense: "Past Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

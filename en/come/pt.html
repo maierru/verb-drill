@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇬🇧 VERB COME — 94 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇬🇧 Verb COME</h1>
+            <p class="subtitle">to arrive, to approach — 94 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 94 de 94 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            English Practice — COME · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'en',
+            labels: { target: 'English', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["come","comes","came","coming"],
+            phrases: [
+                { pt: "Eu venho amanhã", en: "I will come tomorrow", tense: "Future Simple" },
+                { pt: "Ele veio ontem", en: "He came yesterday", tense: "Past Simple" },
+                { pt: "Eles vêm todos os dias", en: "They come every day", tense: "Present Simple" },
+                { pt: "Ela virá mais tarde", en: "She will come later", tense: "Future Simple" },
+                { pt: "Nós viemos cedo", en: "We came early", tense: "Past Simple" },
+                { pt: "Tu vens?", en: "Are you coming?", tense: "Present Continuous" },
+                { pt: "Ele vem para casa às 6", en: "He comes home at 6", tense: "Present Simple" },
+                { pt: "Ela veio com um presente", en: "She came with a gift", tense: "Past Simple" },
+                { pt: "Vem ter connosco", en: "Come to us", tense: "Imperative" },
+                { pt: "Eu virei se puder", en: "I will come if I can", tense: "Future Simple" },
+                { pt: "Eles vieram juntos", en: "They came together", tense: "Past Simple" },
+                { pt: "Nós vimos aqui frequentemente", en: "We come here often", tense: "Present Simple" },
+                { pt: "Tu virás à festa?", en: "Will you come to the party?", tense: "Future Simple" },
+                { pt: "Ele não veio à reunião", en: "He didn't come to the meeting", tense: "Past Simple" },
+                { pt: "Ela vem todas as semanas", en: "She comes every week", tense: "Present Simple" },
+                { pt: "Volta logo", en: "Come back soon", tense: "Imperative" },
+                { pt: "Ele voltou para casa tarde", en: "He came back home late", tense: "Past Simple" },
+                { pt: "Eu voltarei dentro de uma hora", en: "I will come back in an hour", tense: "Future Simple" },
+                { pt: "Eles voltam amanhã", en: "They are coming back tomorrow", tense: "Present Continuous" },
+                { pt: "Ela voltou das férias", en: "She came back from vacation", tense: "Past Simple" },
+                { pt: "Entre, por favor", en: "Please come in", tense: "Imperative" },
+                { pt: "Ele entrou na sala", en: "He came in the room", tense: "Past Simple" },
+                { pt: "Posso entrar?", en: "Can I come in?", tense: "Present Simple" },
+                { pt: "Ela entrou silenciosamente", en: "She came in quietly", tense: "Past Simple" },
+                { pt: "Eles entram um a um", en: "They come in one by one", tense: "Present Simple" },
+                { pt: "Sai aqui", en: "Come out here", tense: "Imperative" },
+                { pt: "Ele saiu de casa", en: "He came out of the house", tense: "Past Simple" },
+                { pt: "O sol está a sair das nuvens", en: "The sun is coming out from behind the clouds", tense: "Present Continuous" },
+                { pt: "Ela saiu para o palco", en: "She came out on stage", tense: "Past Simple" },
+                { pt: "A verdade sempre aparece", en: "The truth always comes out", tense: "Present Simple" },
+                { pt: "Eu virei com um amigo", en: "I will come with a friend", tense: "Future Simple" },
+                { pt: "Ele veio a pé", en: "He came on foot", tense: "Past Simple" },
+                { pt: "Eles vêm de autocarro", en: "They come by bus", tense: "Present Simple" },
+                { pt: "Ela virá sozinha", en: "She will come alone", tense: "Future Simple" },
+                { pt: "Nós viemos de táxi", en: "We came by taxi", tense: "Past Simple" },
+                { pt: "Tu vens cedo para o trabalho", en: "You come to work early", tense: "Present Simple" },
+                { pt: "Ele virá em 10 minutos", en: "He will come in 10 minutes", tense: "Future Simple" },
+                { pt: "Ela veio sem convite", en: "She came without invitation", tense: "Past Simple" },
+                { pt: "Venham a qualquer hora", en: "Come at any time", tense: "Imperative" },
+                { pt: "Eu venho aqui todos os dias", en: "I come here every day", tense: "Present Simple" },
+                { pt: "Eles virão connosco", en: "They will come together with us", tense: "Future Simple" },
+                { pt: "Nós viemos para te felicitar", en: "We came to congratulate you", tense: "Past Simple" },
+                { pt: "Tu virás sozinho?", en: "Will you come alone?", tense: "Future Simple" },
+                { pt: "Ele vem sempre a horas", en: "He always comes on time", tense: "Present Simple" },
+                { pt: "Ela veio mais cedo que todos", en: "She came earlier than everyone", tense: "Past Simple" },
+                { pt: "Voltem quando quiserem", en: "Come back whenever you want", tense: "Imperative" },
+                { pt: "Eu voltei no dia seguinte", en: "I came back the next day", tense: "Past Simple" },
+                { pt: "Eles voltarão numa semana", en: "They will come back in a week", tense: "Future Simple" },
+                { pt: "Nós voltamos todos os verões", en: "We come back every summer", tense: "Present Simple" },
+                { pt: "Tu voltaste demasiado cedo", en: "You came back too early", tense: "Past Simple" },
+                { pt: "Ele voltará, tenho certeza", en: "He will come back, I'm sure", tense: "Future Simple" },
+                { pt: "Ela volta para casa tarde", en: "She comes back home late", tense: "Present Simple" },
+                { pt: "Entre e feche a porta", en: "Come in and close the door", tense: "Imperative" },
+                { pt: "Eu entrei primeiro", en: "I came in first", tense: "Past Simple" },
+                { pt: "Eles entrarão pela entrada principal", en: "They will come in through the main entrance", tense: "Future Simple" },
+                { pt: "Nós entramos pela porta de trás", en: "We come in through the back door", tense: "Present Simple" },
+                { pt: "Tu entraste muito barulhento", en: "You came in very noisily", tense: "Past Simple" },
+                { pt: "Ele entrará por último", en: "He will come in last", tense: "Future Simple" },
+                { pt: "Ela entra sem bater", en: "She comes in without knocking", tense: "Present Simple" },
+                { pt: "Sai imediatamente", en: "Come out immediately", tense: "Imperative" },
+                { pt: "Eu saí para a rua", en: "I came out to the street", tense: "Past Simple" },
+                { pt: "Eles sairão num minuto", en: "They will come out in a minute", tense: "Future Simple" },
+                { pt: "Nós saímos para o jardim todas as tardes", en: "We come out to the garden every evening", tense: "Present Simple" },
+                { pt: "Tu saíste vencedor", en: "You came out as the winner", tense: "Past Simple" },
+                { pt: "Ele sairá ao palco às 8", en: "He will come out on stage at 8", tense: "Future Simple" },
+                { pt: "Ela sai do escritório às 6", en: "She comes out of the office at 6", tense: "Present Simple" },
+                { pt: "Vem o mais rápido possível", en: "Come as soon as possible", tense: "Imperative" },
+                { pt: "Eu vim para ajudar", en: "I came to help", tense: "Past Simple" },
+                { pt: "Eles virão de carro", en: "They will come by car", tense: "Future Simple" },
+                { pt: "Nós vimos a pé", en: "We come on foot", tense: "Present Simple" },
+                { pt: "Tu vieste na hora certa", en: "You came at the right time", tense: "Past Simple" },
+                { pt: "Ele virá com a família", en: "He will come with his family", tense: "Future Simple" },
+                { pt: "Ela vem de bicicleta", en: "She comes by bicycle", tense: "Present Simple" },
+                { pt: "Volta antes de escurecer", en: "Come back before dark", tense: "Imperative" },
+                { pt: "Eu voltei com boas notícias", en: "I came back with good news", tense: "Past Simple" },
+                { pt: "Eles voltarão bem-sucedidos", en: "They will come back successful", tense: "Future Simple" },
+                { pt: "Nós voltamos cansados", en: "We come back tired", tense: "Present Simple" },
+                { pt: "Tu voltaste uma pessoa diferente", en: "You came back a different person", tense: "Past Simple" },
+                { pt: "Ele voltará vencedor", en: "He will come back as a winner", tense: "Future Simple" },
+                { pt: "Ela volta feliz", en: "She comes back happy", tense: "Present Simple" },
+                { pt: "Entrem um de cada vez", en: "Come in one at a time", tense: "Imperative" },
+                { pt: "Eu entrei no escritório novo", en: "I came in the new office", tense: "Past Simple" },
+                { pt: "Eles entrarão todos juntos", en: "They will all come in together", tense: "Future Simple" },
+                { pt: "Nós entramos no edifício pelo saguão", en: "We come in the building through the lobby", tense: "Present Simple" },
+                { pt: "Tu entraste na sala primeiro", en: "You came in the room first", tense: "Past Simple" },
+                { pt: "Ele entrará depois de mim", en: "He will come in after me", tense: "Future Simple" },
+                { pt: "Ela entra silenciosamente para não acordar as crianças", en: "She comes in quietly not to wake the children", tense: "Present Simple" },
+                { pt: "Sai e olha para as estrelas", en: "Come out and look at the stars", tense: "Imperative" },
+                { pt: "Eu saí para respirar ar fresco", en: "I came out to breathe fresh air", tense: "Past Simple" },
+                { pt: "Eles sairão depois da chuva", en: "They will come out after the rain", tense: "Future Simple" },
+                { pt: "Nós saímos para passear à noite", en: "We come out for a walk in the evening", tense: "Present Simple" },
+                { pt: "Tu saíste da sala zangado", en: "You came out of the room angry", tense: "Past Simple" },
+                { pt: "Ele sairá do hospital amanhã", en: "He will come out of the hospital tomorrow", tense: "Future Simple" },
+                { pt: "Ela sai de casa às 7 da manhã", en: "She comes out of the house at 7 AM", tense: "Present Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

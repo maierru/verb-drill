@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇬🇧 VERB TELL — 98 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇬🇧 Verb TELL</h1>
+            <p class="subtitle">to inform, to narrate — 98 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 98 из 98 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика английского — TELL · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'en',
+            labels: { target: 'English', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["tell","tells","told","telling"],
+            phrases: [
+                { ru: "Я расскажу тебе секрет", en: "I will tell you a secret", tense: "Future Simple" },
+                { ru: "Он рассказал мне историю", en: "He told me a story", tense: "Past Simple" },
+                { ru: "Она всегда говорит правду", en: "She always tells the truth", tense: "Present Simple" },
+                { ru: "Скажи мне, что случилось", en: "Tell me what happened", tense: "Imperative" },
+                { ru: "Я говорю тебе это впервые", en: "I'm telling you this for the first time", tense: "Present Continuous" },
+                { ru: "Они рассказали нам все детали", en: "They told us all the details", tense: "Past Simple" },
+                { ru: "Не говори никому об этом", en: "Don't tell anyone about this", tense: "Imperative" },
+                { ru: "Я уже рассказал ему новости", en: "I've already told him the news", tense: "Present Perfect" },
+                { ru: "Она рассказывает детям сказки каждый вечер", en: "She tells children stories every evening", tense: "Present Simple" },
+                { ru: "Он не сказал мне правды", en: "He didn't tell me the truth", tense: "Past Simple" },
+                { ru: "Я расскажу тебе позже", en: "I'll tell you later", tense: "Future Simple" },
+                { ru: "Что ты мне говоришь?", en: "What are you telling me?", tense: "Present Continuous" },
+                { ru: "Они сказали нам встретиться здесь", en: "They told us to meet here", tense: "Past Simple" },
+                { ru: "Никто не говорил мне об этом", en: "Nobody told me about this", tense: "Past Simple" },
+                { ru: "Я всегда говорю то, что думаю", en: "I always tell what I think", tense: "Present Simple" },
+                { ru: "Она рассказывала эту историю много раз", en: "She has told this story many times", tense: "Present Perfect" },
+                { ru: "Скажи мне свое имя", en: "Tell me your name", tense: "Imperative" },
+                { ru: "Он говорит мне каждый день звонить", en: "He tells me to call every day", tense: "Present Simple" },
+                { ru: "Я не могу тебе сказать", en: "I can't tell you", tense: "Present Simple" },
+                { ru: "Они рассказали нам о своих планах", en: "They told us about their plans", tense: "Past Simple" },
+                { ru: "Кто тебе это сказал?", en: "Who told you that?", tense: "Past Simple" },
+                { ru: "Я говорю тебе последний раз", en: "I'm telling you for the last time", tense: "Present Continuous" },
+                { ru: "Она никогда не говорит неправду", en: "She never tells lies", tense: "Present Simple" },
+                { ru: "Мы рассказали им всю правду", en: "We told them the whole truth", tense: "Past Simple" },
+                { ru: "Расскажи мне о своей работе", en: "Tell me about your work", tense: "Imperative" },
+                { ru: "Он не сказал нам куда идет", en: "He didn't tell us where he's going", tense: "Past Simple" },
+                { ru: "Я расскажу тебе завтра", en: "I will tell you tomorrow", tense: "Future Simple" },
+                { ru: "Она рассказывает очень интересные истории", en: "She tells very interesting stories", tense: "Present Simple" },
+                { ru: "Они сказали мне подождать", en: "They told me to wait", tense: "Past Simple" },
+                { ru: "Никто не может сказать будущее", en: "Nobody can tell the future", tense: "Present Simple" },
+                { ru: "Я уже рассказывал тебе об этом", en: "I've already told you about this", tense: "Present Perfect" },
+                { ru: "Скажи мне честно", en: "Tell me honestly", tense: "Imperative" },
+                { ru: "Он всегда говорит одно и то же", en: "He always tells the same thing", tense: "Present Simple" },
+                { ru: "Мы не говорили ей о проблеме", en: "We didn't tell her about the problem", tense: "Past Simple" },
+                { ru: "Я расскажу всем о твоем успехе", en: "I'll tell everyone about your success", tense: "Future Simple" },
+                { ru: "Она говорила мне не волноваться", en: "She told me not to worry", tense: "Past Simple" },
+                { ru: "Что ты им сказал?", en: "What did you tell them?", tense: "Past Simple" },
+                { ru: "Я говорю тебе серьезно", en: "I'm telling you seriously", tense: "Present Continuous" },
+                { ru: "Они никогда не говорят секреты", en: "They never tell secrets", tense: "Present Simple" },
+                { ru: "Он рассказал мне о своей семье", en: "He told me about his family", tense: "Past Simple" },
+                { ru: "Расскажи мне что-нибудь интересное", en: "Tell me something interesting", tense: "Imperative" },
+                { ru: "Я не хочу тебе говорить", en: "I don't want to tell you", tense: "Present Simple" },
+                { ru: "Она сказала мне приходить рано", en: "She told me to come early", tense: "Past Simple" },
+                { ru: "Мы расскажем им позже", en: "We'll tell them later", tense: "Future Simple" },
+                { ru: "Он рассказывает анекдоты очень хорошо", en: "He tells jokes very well", tense: "Present Simple" },
+                { ru: "Никто не сказал мне правила", en: "Nobody told me the rules", tense: "Past Simple" },
+                { ru: "Я уже говорил тебе это", en: "I've already told you this", tense: "Present Perfect" },
+                { ru: "Скажи им правду", en: "Tell them the truth", tense: "Imperative" },
+                { ru: "Она говорит детям слушаться", en: "She tells children to obey", tense: "Present Simple" },
+                { ru: "Они рассказали нам о происшествии", en: "They told us about the incident", tense: "Past Simple" },
+                { ru: "Я расскажу тебе все", en: "I'll tell you everything", tense: "Future Simple" },
+                { ru: "Он не говорит мне свои планы", en: "He doesn't tell me his plans", tense: "Present Simple" },
+                { ru: "Кто-то сказал мне, что ты уезжаешь", en: "Someone told me you're leaving", tense: "Past Simple" },
+                { ru: "Я говорю тебе правду", en: "I'm telling you the truth", tense: "Present Continuous" },
+                { ru: "Она всегда говорит комплименты", en: "She always tells compliments", tense: "Present Simple" },
+                { ru: "Мы сказали им не опаздывать", en: "We told them not to be late", tense: "Past Simple" },
+                { ru: "Расскажи мне о своих мечтах", en: "Tell me about your dreams", tense: "Imperative" },
+                { ru: "Он сказал нам идти домой", en: "He told us to go home", tense: "Past Simple" },
+                { ru: "Я не могу сказать разницу", en: "I can't tell the difference", tense: "Present Simple" },
+                { ru: "Они рассказали все подробности", en: "They told all the details", tense: "Past Simple" },
+                { ru: "Скажи мне время", en: "Tell me the time", tense: "Imperative" },
+                { ru: "Она говорила мне об этом вчера", en: "She told me about it yesterday", tense: "Past Simple" },
+                { ru: "Я расскажу тебе секрет завтра", en: "I'll tell you a secret tomorrow", tense: "Future Simple" },
+                { ru: "Он рассказывает истории перед сном", en: "He tells stories before bed", tense: "Present Simple" },
+                { ru: "Никто не говорил мне, что делать", en: "Nobody told me what to do", tense: "Past Simple" },
+                { ru: "Я уже рассказал им новость", en: "I've already told them the news", tense: "Present Perfect" },
+                { ru: "Не говори ей об этом", en: "Don't tell her about this", tense: "Imperative" },
+                { ru: "Она говорит мне звонить каждый день", en: "She tells me to call every day", tense: "Present Simple" },
+                { ru: "Мы рассказали ему о встрече", en: "We told him about the meeting", tense: "Past Simple" },
+                { ru: "Я расскажу тебе когда-нибудь", en: "I'll tell you someday", tense: "Future Simple" },
+                { ru: "Что он тебе говорит?", en: "What is he telling you?", tense: "Present Continuous" },
+                { ru: "Они сказали нам оставаться здесь", en: "They told us to stay here", tense: "Past Simple" },
+                { ru: "Скажи мне адрес", en: "Tell me the address", tense: "Imperative" },
+                { ru: "Я не хочу говорить ложь", en: "I don't want to tell lies", tense: "Present Simple" },
+                { ru: "Он рассказал мне удивительную историю", en: "He told me an amazing story", tense: "Past Simple" },
+                { ru: "Она всегда говорит приятные вещи", en: "She always tells nice things", tense: "Present Simple" },
+                { ru: "Мы не сказали им о проблемах", en: "We didn't tell them about the problems", tense: "Past Simple" },
+                { ru: "Я расскажу тебе в следующий раз", en: "I'll tell you next time", tense: "Future Simple" },
+                { ru: "Расскажи мне о своем дне", en: "Tell me about your day", tense: "Imperative" },
+                { ru: "Он говорит нам быть осторожными", en: "He tells us to be careful", tense: "Present Simple" },
+                { ru: "Никто не сказал мне ответ", en: "Nobody told me the answer", tense: "Past Simple" },
+                { ru: "Я говорю тебе сейчас", en: "I'm telling you now", tense: "Present Continuous" },
+                { ru: "Они рассказали нам о своих проблемах", en: "They told us about their problems", tense: "Past Simple" },
+                { ru: "Скажи мне причину", en: "Tell me the reason", tense: "Imperative" },
+                { ru: "Она сказала мне не уходить", en: "She told me not to leave", tense: "Past Simple" },
+                { ru: "Я не могу тебе этого сказать", en: "I can't tell you that", tense: "Present Simple" },
+                { ru: "Мы расскажем им правду", en: "We'll tell them the truth", tense: "Future Simple" },
+                { ru: "Он никогда не говорит плохие вещи", en: "He never tells bad things", tense: "Present Simple" },
+                { ru: "Кто сказал тебе эту новость?", en: "Who told you this news?", tense: "Past Simple" },
+                { ru: "Я уже рассказывал эту историю", en: "I've already told this story", tense: "Present Perfect" },
+                { ru: "Расскажи мне всё с начала", en: "Tell me everything from the beginning", tense: "Imperative" },
+                { ru: "Она говорит мне не беспокоиться", en: "She tells me not to worry", tense: "Present Simple" },
+                { ru: "Они сказали нам прийти завтра", en: "They told us to come tomorrow", tense: "Past Simple" },
+                { ru: "Я расскажу тебе о своей поездке", en: "I'll tell you about my trip", tense: "Future Simple" },
+                { ru: "Что она тебе говорила?", en: "What did she tell you?", tense: "Past Simple" },
+                { ru: "Я говорю тебе важную вещь", en: "I'm telling you an important thing", tense: "Present Continuous" },
+                { ru: "Он рассказывает истории каждый вечер", en: "He tells stories every evening", tense: "Present Simple" },
+                { ru: "Мы не говорили им о решении", en: "We didn't tell them about the decision", tense: "Past Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

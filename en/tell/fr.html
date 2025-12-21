@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbe 🇬🇧 VERB TELL — 98 phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Retour à la liste des verbes</a>
+            <h1>🇬🇧 Verb TELL</h1>
+            <p class="subtitle">to inform, to narrate — 98 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Rechercher des phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Afficher toutes les traductions</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Masquer toutes les traductions</button>
+        </div>
+
+        <div class="stats" id="stats">Affichage: 98 sur 98 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Pratique de l'anglais — TELL · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'fr',
+            targetKey: 'en',
+            labels: { target: 'Anglais', showing: 'Affichage', of: 'sur', phrases: 'phrases' },
+            verbForms: ["tell","tells","told","telling"],
+            phrases: [
+                { fr: "Je vais te dire un secret", en: "I will tell you a secret", tense: "Future Simple" },
+                { fr: "Il m'a raconté une histoire", en: "He told me a story", tense: "Past Simple" },
+                { fr: "Elle dit toujours la vérité", en: "She always tells the truth", tense: "Present Simple" },
+                { fr: "Dis-moi ce qui s'est passé", en: "Tell me what happened", tense: "Imperative" },
+                { fr: "Je te dis ça pour la première fois", en: "I'm telling you this for the first time", tense: "Present Continuous" },
+                { fr: "Ils nous ont raconté tous les détails", en: "They told us all the details", tense: "Past Simple" },
+                { fr: "Ne dis à personne à ce sujet", en: "Don't tell anyone about this", tense: "Imperative" },
+                { fr: "Je lui ai déjà dit les nouvelles", en: "I've already told him the news", tense: "Present Perfect" },
+                { fr: "Elle raconte des histoires aux enfants chaque soir", en: "She tells children stories every evening", tense: "Present Simple" },
+                { fr: "Il ne m'a pas dit la vérité", en: "He didn't tell me the truth", tense: "Past Simple" },
+                { fr: "Je te dirai plus tard", en: "I'll tell you later", tense: "Future Simple" },
+                { fr: "Qu'est-ce que tu me dis?", en: "What are you telling me?", tense: "Present Continuous" },
+                { fr: "Ils nous ont dit de nous rencontrer ici", en: "They told us to meet here", tense: "Past Simple" },
+                { fr: "Personne ne m'a parlé de ça", en: "Nobody told me about this", tense: "Past Simple" },
+                { fr: "Je dis toujours ce que je pense", en: "I always tell what I think", tense: "Present Simple" },
+                { fr: "Elle a raconté cette histoire plusieurs fois", en: "She has told this story many times", tense: "Present Perfect" },
+                { fr: "Dis-moi ton nom", en: "Tell me your name", tense: "Imperative" },
+                { fr: "Il me dit d'appeler tous les jours", en: "He tells me to call every day", tense: "Present Simple" },
+                { fr: "Je ne peux pas te le dire", en: "I can't tell you", tense: "Present Simple" },
+                { fr: "Ils nous ont parlé de leurs projets", en: "They told us about their plans", tense: "Past Simple" },
+                { fr: "Qui t'a dit ça?", en: "Who told you that?", tense: "Past Simple" },
+                { fr: "Je te le dis pour la dernière fois", en: "I'm telling you for the last time", tense: "Present Continuous" },
+                { fr: "Elle ne dit jamais de mensonges", en: "She never tells lies", tense: "Present Simple" },
+                { fr: "Nous leur avons dit toute la vérité", en: "We told them the whole truth", tense: "Past Simple" },
+                { fr: "Parle-moi de ton travail", en: "Tell me about your work", tense: "Imperative" },
+                { fr: "Il ne nous a pas dit où il va", en: "He didn't tell us where he's going", tense: "Past Simple" },
+                { fr: "Je te dirai demain", en: "I will tell you tomorrow", tense: "Future Simple" },
+                { fr: "Elle raconte des histoires très intéressantes", en: "She tells very interesting stories", tense: "Present Simple" },
+                { fr: "Ils m'ont dit d'attendre", en: "They told me to wait", tense: "Past Simple" },
+                { fr: "Personne ne peut prédire l'avenir", en: "Nobody can tell the future", tense: "Present Simple" },
+                { fr: "Je t'ai déjà parlé de ça", en: "I've already told you about this", tense: "Present Perfect" },
+                { fr: "Dis-moi honnêtement", en: "Tell me honestly", tense: "Imperative" },
+                { fr: "Il dit toujours la même chose", en: "He always tells the same thing", tense: "Present Simple" },
+                { fr: "Nous ne lui avons pas parlé du problème", en: "We didn't tell her about the problem", tense: "Past Simple" },
+                { fr: "Je vais dire à tout le monde ton succès", en: "I'll tell everyone about your success", tense: "Future Simple" },
+                { fr: "Elle m'a dit de ne pas m'inquiéter", en: "She told me not to worry", tense: "Past Simple" },
+                { fr: "Qu'est-ce que tu leur as dit?", en: "What did you tell them?", tense: "Past Simple" },
+                { fr: "Je te le dis sérieusement", en: "I'm telling you seriously", tense: "Present Continuous" },
+                { fr: "Ils ne racontent jamais de secrets", en: "They never tell secrets", tense: "Present Simple" },
+                { fr: "Il m'a parlé de sa famille", en: "He told me about his family", tense: "Past Simple" },
+                { fr: "Raconte-moi quelque chose d'intéressant", en: "Tell me something interesting", tense: "Imperative" },
+                { fr: "Je ne veux pas te le dire", en: "I don't want to tell you", tense: "Present Simple" },
+                { fr: "Elle m'a dit de venir tôt", en: "She told me to come early", tense: "Past Simple" },
+                { fr: "Nous leur dirons plus tard", en: "We'll tell them later", tense: "Future Simple" },
+                { fr: "Il raconte des blagues très bien", en: "He tells jokes very well", tense: "Present Simple" },
+                { fr: "Personne ne m'a dit les règles", en: "Nobody told me the rules", tense: "Past Simple" },
+                { fr: "Je t'ai déjà dit ça", en: "I've already told you this", tense: "Present Perfect" },
+                { fr: "Dis-leur la vérité", en: "Tell them the truth", tense: "Imperative" },
+                { fr: "Elle dit aux enfants d'obéir", en: "She tells children to obey", tense: "Present Simple" },
+                { fr: "Ils nous ont raconté l'incident", en: "They told us about the incident", tense: "Past Simple" },
+                { fr: "Je vais tout te dire", en: "I'll tell you everything", tense: "Future Simple" },
+                { fr: "Il ne me dit pas ses projets", en: "He doesn't tell me his plans", tense: "Present Simple" },
+                { fr: "Quelqu'un m'a dit que tu pars", en: "Someone told me you're leaving", tense: "Past Simple" },
+                { fr: "Je te dis la vérité", en: "I'm telling you the truth", tense: "Present Continuous" },
+                { fr: "Elle fait toujours des compliments", en: "She always tells compliments", tense: "Present Simple" },
+                { fr: "Nous leur avons dit de ne pas être en retard", en: "We told them not to be late", tense: "Past Simple" },
+                { fr: "Parle-moi de tes rêves", en: "Tell me about your dreams", tense: "Imperative" },
+                { fr: "Il nous a dit de rentrer à la maison", en: "He told us to go home", tense: "Past Simple" },
+                { fr: "Je ne peux pas voir la différence", en: "I can't tell the difference", tense: "Present Simple" },
+                { fr: "Ils ont raconté tous les détails", en: "They told all the details", tense: "Past Simple" },
+                { fr: "Dis-moi l'heure", en: "Tell me the time", tense: "Imperative" },
+                { fr: "Elle m'en a parlé hier", en: "She told me about it yesterday", tense: "Past Simple" },
+                { fr: "Je vais te dire un secret demain", en: "I'll tell you a secret tomorrow", tense: "Future Simple" },
+                { fr: "Il raconte des histoires avant de dormir", en: "He tells stories before bed", tense: "Present Simple" },
+                { fr: "Personne ne m'a dit quoi faire", en: "Nobody told me what to do", tense: "Past Simple" },
+                { fr: "Je leur ai déjà dit les nouvelles", en: "I've already told them the news", tense: "Present Perfect" },
+                { fr: "Ne lui dis rien à ce sujet", en: "Don't tell her about this", tense: "Imperative" },
+                { fr: "Elle me dit d'appeler tous les jours", en: "She tells me to call every day", tense: "Present Simple" },
+                { fr: "Nous lui avons parlé de la réunion", en: "We told him about the meeting", tense: "Past Simple" },
+                { fr: "Je te le dirai un jour", en: "I'll tell you someday", tense: "Future Simple" },
+                { fr: "Qu'est-ce qu'il te dit?", en: "What is he telling you?", tense: "Present Continuous" },
+                { fr: "Ils nous ont dit de rester ici", en: "They told us to stay here", tense: "Past Simple" },
+                { fr: "Dis-moi l'adresse", en: "Tell me the address", tense: "Imperative" },
+                { fr: "Je ne veux pas dire de mensonges", en: "I don't want to tell lies", tense: "Present Simple" },
+                { fr: "Il m'a raconté une histoire incroyable", en: "He told me an amazing story", tense: "Past Simple" },
+                { fr: "Elle dit toujours des choses agréables", en: "She always tells nice things", tense: "Present Simple" },
+                { fr: "Nous ne leur avons pas parlé des problèmes", en: "We didn't tell them about the problems", tense: "Past Simple" },
+                { fr: "Je te le dirai la prochaine fois", en: "I'll tell you next time", tense: "Future Simple" },
+                { fr: "Parle-moi de ta journée", en: "Tell me about your day", tense: "Imperative" },
+                { fr: "Il nous dit d'être prudents", en: "He tells us to be careful", tense: "Present Simple" },
+                { fr: "Personne ne m'a dit la réponse", en: "Nobody told me the answer", tense: "Past Simple" },
+                { fr: "Je te le dis maintenant", en: "I'm telling you now", tense: "Present Continuous" },
+                { fr: "Ils nous ont parlé de leurs problèmes", en: "They told us about their problems", tense: "Past Simple" },
+                { fr: "Dis-moi la raison", en: "Tell me the reason", tense: "Imperative" },
+                { fr: "Elle m'a dit de ne pas partir", en: "She told me not to leave", tense: "Past Simple" },
+                { fr: "Je ne peux pas te dire ça", en: "I can't tell you that", tense: "Present Simple" },
+                { fr: "Nous allons leur dire la vérité", en: "We'll tell them the truth", tense: "Future Simple" },
+                { fr: "Il ne dit jamais de mauvaises choses", en: "He never tells bad things", tense: "Present Simple" },
+                { fr: "Qui t'a dit cette nouvelle?", en: "Who told you this news?", tense: "Past Simple" },
+                { fr: "J'ai déjà raconté cette histoire", en: "I've already told this story", tense: "Present Perfect" },
+                { fr: "Dis-moi tout depuis le début", en: "Tell me everything from the beginning", tense: "Imperative" },
+                { fr: "Elle me dit de ne pas m'inquiéter", en: "She tells me not to worry", tense: "Present Simple" },
+                { fr: "Ils nous ont dit de venir demain", en: "They told us to come tomorrow", tense: "Past Simple" },
+                { fr: "Je vais te parler de mon voyage", en: "I'll tell you about my trip", tense: "Future Simple" },
+                { fr: "Qu'est-ce qu'elle t'a dit?", en: "What did she tell you?", tense: "Past Simple" },
+                { fr: "Je te dis quelque chose d'important", en: "I'm telling you an important thing", tense: "Present Continuous" },
+                { fr: "Il raconte des histoires chaque soir", en: "He tells stories every evening", tense: "Present Simple" },
+                { fr: "Nous ne leur avons pas parlé de la décision", en: "We didn't tell them about the decision", tense: "Past Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

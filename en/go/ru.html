@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇬🇧 VERB GO — 100 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇬🇧 Verb GO</h1>
+            <p class="subtitle">to move, to travel — 100 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 100 из 100 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика английского — GO · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'en',
+            labels: { target: 'English', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["go","goes","went","gone","going","don't go","doesn't go","didn't go","won't go","wouldn't go","can't go"],
+            phrases: [
+                { ru: "Я иду домой.", en: "I go home.", tense: "Present" },
+                { ru: "Ты идёшь на работу.", en: "You go to work.", tense: "Present" },
+                { ru: "Он идёт в школу.", en: "He goes to school.", tense: "Present" },
+                { ru: "Она ходит в магазин.", en: "She goes to the store.", tense: "Present" },
+                { ru: "Мы идём в парк.", en: "We go to the park.", tense: "Present" },
+                { ru: "Вы идёте в кино.", en: "You go to the cinema.", tense: "Present" },
+                { ru: "Они ходят в спортзал.", en: "They go to the gym.", tense: "Present" },
+                { ru: "Я не иду туда.", en: "I don't go there.", tense: "Present" },
+                { ru: "Ты не ходишь на тренировки.", en: "You don't go to training.", tense: "Present" },
+                { ru: "Он не ходит в церковь.", en: "He doesn't go to church.", tense: "Present" },
+                { ru: "Куда ты идёшь?", en: "Where do you go?", tense: "Present" },
+                { ru: "Когда она идёт?", en: "When does she go?", tense: "Present" },
+                { ru: "Как часто ты ходишь?", en: "How often do you go?", tense: "Present" },
+                { ru: "Мы обычно ходим пешком.", en: "We usually go on foot.", tense: "Present" },
+                { ru: "Он всегда ходит один.", en: "He always goes alone.", tense: "Present" },
+                { ru: "Они редко ходят туда.", en: "They rarely go there.", tense: "Present" },
+                { ru: "Я каждый день хожу на работу.", en: "I go to work every day.", tense: "Present" },
+                { ru: "Она иногда ходит в библиотеку.", en: "She sometimes goes to the library.", tense: "Present" },
+                { ru: "Куда ты обычно ходишь?", en: "Where do you usually go?", tense: "Present" },
+                { ru: "Пойдём!", en: "Let's go!", tense: "Present" },
+                { ru: "Я пошёл домой.", en: "I went home.", tense: "Past Simple" },
+                { ru: "Ты пошёл на работу.", en: "You went to work.", tense: "Past Simple" },
+                { ru: "Он ходил в школу.", en: "He went to school.", tense: "Past Simple" },
+                { ru: "Она ходила в магазин.", en: "She went to the store.", tense: "Past Simple" },
+                { ru: "Мы пошли в парк.", en: "We went to the park.", tense: "Past Simple" },
+                { ru: "Вы ходили в музей.", en: "You went to the museum.", tense: "Past Simple" },
+                { ru: "Они ходили на концерт.", en: "They went to the concert.", tense: "Past Simple" },
+                { ru: "Я не ходил туда.", en: "I didn't go there.", tense: "Past Simple" },
+                { ru: "Ты не пошёл с ними.", en: "You didn't go with them.", tense: "Past Simple" },
+                { ru: "Он никуда не ходил.", en: "He didn't go anywhere.", tense: "Past Simple" },
+                { ru: "Куда ты ходил?", en: "Where did you go?", tense: "Past Simple" },
+                { ru: "Что пошло не так?", en: "What went wrong?", tense: "Past Simple" },
+                { ru: "Я ходил туда вчера.", en: "I went there yesterday.", tense: "Past Simple" },
+                { ru: "Она ходила в кино на прошлой неделе.", en: "She went to the cinema last week.", tense: "Past Simple" },
+                { ru: "Они пошли домой рано.", en: "They went home early.", tense: "Past Simple" },
+                { ru: "Мы ходили гулять.", en: "We went for a walk.", tense: "Past Simple" },
+                { ru: "Ты пошёл один?", en: "Did you go alone?", tense: "Past Simple" },
+                { ru: "Он ушёл без прощания.", en: "He went without saying goodbye.", tense: "Past Simple" },
+                { ru: "Время пошло быстро.", en: "Time went fast.", tense: "Past Simple" },
+                { ru: "Я иду домой сейчас.", en: "I am going home now.", tense: "Present Continuous" },
+                { ru: "Ты куда-то идёшь?", en: "Are you going somewhere?", tense: "Present Continuous" },
+                { ru: "Он идёт на встречу.", en: "He is going to a meeting.", tense: "Present Continuous" },
+                { ru: "Она идёт на работу.", en: "She is going to work.", tense: "Present Continuous" },
+                { ru: "Мы идём в ресторан.", en: "We are going to a restaurant.", tense: "Present Continuous" },
+                { ru: "Куда вы идёте?", en: "Where are you going?", tense: "Present Continuous" },
+                { ru: "Они идут домой.", en: "They are going home.", tense: "Present Continuous" },
+                { ru: "Я не иду туда.", en: "I'm not going there.", tense: "Present Continuous" },
+                { ru: "Всё идёт хорошо.", en: "Everything is going well.", tense: "Present Continuous" },
+                { ru: "Что происходит?", en: "What's going on?", tense: "Present Continuous" },
+                { ru: "Я шёл, когда ты позвонил.", en: "I was going when you called.", tense: "Past Continuous" },
+                { ru: "Ты шёл слишком быстро.", en: "You were going too fast.", tense: "Past Continuous" },
+                { ru: "Он шёл в сторону станции.", en: "He was going towards the station.", tense: "Past Continuous" },
+                { ru: "Мы шли домой весь вечер.", en: "We were going home all evening.", tense: "Past Continuous" },
+                { ru: "Куда ты шёл?", en: "Where were you going?", tense: "Past Continuous" },
+                { ru: "Я был там.", en: "I have been there.", tense: "Present Perfect" },
+                { ru: "Ты уже ходил туда?", en: "Have you gone there already?", tense: "Present Perfect" },
+                { ru: "Он уже ушёл.", en: "He has already gone.", tense: "Present Perfect" },
+                { ru: "Она никогда не была в Париже.", en: "She has never been to Paris.", tense: "Present Perfect" },
+                { ru: "Мы уже были там.", en: "We have already been there.", tense: "Present Perfect" },
+                { ru: "Они ушли.", en: "They have gone.", tense: "Present Perfect" },
+                { ru: "Я ещё не ходил туда.", en: "I haven't gone there yet.", tense: "Present Perfect" },
+                { ru: "Куда он ушёл?", en: "Where has he gone?", tense: "Present Perfect" },
+                { ru: "Время прошло.", en: "Time has gone.", tense: "Present Perfect" },
+                { ru: "Ты когда-нибудь был в Лондоне?", en: "Have you ever been to London?", tense: "Present Perfect" },
+                { ru: "Я пойду туда завтра.", en: "I will go there tomorrow.", tense: "Future" },
+                { ru: "Ты пойдёшь с нами?", en: "Will you go with us?", tense: "Future" },
+                { ru: "Он пойдёт в университет.", en: "He will go to university.", tense: "Future" },
+                { ru: "Она пойдёт на вечеринку.", en: "She will go to the party.", tense: "Future" },
+                { ru: "Мы пойдём в театр.", en: "We will go to the theatre.", tense: "Future" },
+                { ru: "Они пойдут на пляж.", en: "They will go to the beach.", tense: "Future" },
+                { ru: "Я не пойду туда.", en: "I won't go there.", tense: "Future" },
+                { ru: "Он никуда не пойдёт.", en: "He won't go anywhere.", tense: "Future" },
+                { ru: "Куда ты пойдёшь?", en: "Where will you go?", tense: "Future" },
+                { ru: "Всё будет хорошо.", en: "Everything will go well.", tense: "Future" },
+                { ru: "Я бы пошёл с тобой.", en: "I would go with you.", tense: "Conditional" },
+                { ru: "Ты бы пошёл туда?", en: "Would you go there?", tense: "Conditional" },
+                { ru: "Он бы не пошёл один.", en: "He wouldn't go alone.", tense: "Conditional" },
+                { ru: "Мы бы пошли, но заняты.", en: "We would go, but we're busy.", tense: "Conditional" },
+                { ru: "Я бы не пошёл туда.", en: "I wouldn't go there.", tense: "Conditional" },
+                { ru: "Куда бы ты пошёл?", en: "Where would you go?", tense: "Conditional" },
+                { ru: "Она бы с радостью пошла.", en: "She would gladly go.", tense: "Conditional" },
+                { ru: "Они бы пошли, если бы могли.", en: "They would go if they could.", tense: "Conditional" },
+                { ru: "Что бы ты сделал?", en: "What would you do? (Lit: Where would you go?)", tense: "Conditional" },
+                { ru: "Я бы с удовольствием пошёл.", en: "I would love to go.", tense: "Conditional" },
+                { ru: "Иди!", en: "Go!", tense: "Imperative" },
+                { ru: "Идите домой.", en: "Go home.", tense: "Imperative" },
+                { ru: "Не ходи туда.", en: "Don't go there.", tense: "Imperative" },
+                { ru: "Не уходи.", en: "Don't go.", tense: "Imperative" },
+                { ru: "Иди сюда.", en: "Go here. / Come here.", tense: "Imperative" },
+                { ru: "Идём!", en: "Let's go!", tense: "Imperative" },
+                { ru: "Иди спать.", en: "Go to sleep.", tense: "Imperative" },
+                { ru: "Вперёд!", en: "Go ahead!", tense: "Expression" },
+                { ru: "Пошли!", en: "Let's go!", tense: "Expression" },
+                { ru: "Как дела?", en: "How's it going?", tense: "Expression" },
+                { ru: "Пора идти.", en: "Time to go.", tense: "Expression" },
+                { ru: "Пойди и посмотри.", en: "Go and see.", tense: "Expression" },
+                { ru: "Уходи!", en: "Go away!", tense: "Expression" },
+                { ru: "Иди своей дорогой.", en: "Go your way.", tense: "Expression" },
+                { ru: "Пойти на компромисс.", en: "To go for a compromise.", tense: "Expression" },
+                { ru: "Всё идёт по плану.", en: "Everything is going according to plan.", tense: "Expression" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇬🇧 VERB LOOK — 97 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇬🇧 Verb LOOK</h1>
+            <p class="subtitle">to see, to appear — 97 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 97 из 97 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика английского — LOOK · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'en',
+            labels: { target: 'English', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["look","looks","looked","looking"],
+            phrases: [
+                { ru: "Я смотрю на тебя", en: "I look at you", tense: "Present Simple" },
+                { ru: "Он смотрит в окно", en: "He looks out the window", tense: "Present Simple" },
+                { ru: "Мы ищем ключи", en: "We look for the keys", tense: "Present Simple" },
+                { ru: "Она искала свою сумку", en: "She looked for her bag", tense: "Past Simple" },
+                { ru: "Они смотрят на картину", en: "They look at the painting", tense: "Present Simple" },
+                { ru: "Я посмотрю в словаре", en: "I will look it up in the dictionary", tense: "Future Simple" },
+                { ru: "Ты выглядишь уставшим", en: "You look tired", tense: "Present Simple" },
+                { ru: "Она выглядит счастливой", en: "She looks happy", tense: "Present Simple" },
+                { ru: "Он смотрел на меня странно", en: "He looked at me strangely", tense: "Past Simple" },
+                { ru: "Смотри на доску", en: "Look at the board", tense: "Imperative" },
+                { ru: "Я ищу работу", en: "I'm looking for a job", tense: "Present Continuous" },
+                { ru: "Они смотрели фильм", en: "They were looking at the screen", tense: "Past Continuous" },
+                { ru: "Посмотри на это", en: "Look at this", tense: "Imperative" },
+                { ru: "Он выглядит больным", en: "He looks sick", tense: "Present Simple" },
+                { ru: "Я посмотрю это позже", en: "I'll look at it later", tense: "Future Simple" },
+                { ru: "Она ищет новую квартиру", en: "She's looking for a new apartment", tense: "Present Continuous" },
+                { ru: "Мы смотрели на звезды", en: "We looked at the stars", tense: "Past Simple" },
+                { ru: "Ты выглядишь великолепно", en: "You look great", tense: "Present Simple" },
+                { ru: "Посмотри вверх", en: "Look up", tense: "Imperative" },
+                { ru: "Я искал тебя везде", en: "I looked for you everywhere", tense: "Past Simple" },
+                { ru: "Он смотрит на часы", en: "He looks at his watch", tense: "Present Simple" },
+                { ru: "Она посмотрела вниз", en: "She looked down", tense: "Past Simple" },
+                { ru: "Мы ищем решение", en: "We're looking for a solution", tense: "Present Continuous" },
+                { ru: "Посмотри в зеркало", en: "Look in the mirror", tense: "Imperative" },
+                { ru: "Ты выглядишь обеспокоенным", en: "You look worried", tense: "Present Simple" },
+                { ru: "Я смотрю на будущее", en: "I look to the future", tense: "Present Simple" },
+                { ru: "Она искала свой телефон", en: "She was looking for her phone", tense: "Past Continuous" },
+                { ru: "Он выглядит моложе", en: "He looks younger", tense: "Present Simple" },
+                { ru: "Посмотрим на факты", en: "Let's look at the facts", tense: "Imperative" },
+                { ru: "Я посмотрел назад", en: "I looked back", tense: "Past Simple" },
+                { ru: "Они ищут информацию", en: "They're looking for information", tense: "Present Continuous" },
+                { ru: "Посмотри на меня", en: "Look at me", tense: "Imperative" },
+                { ru: "Она выглядит красиво", en: "She looks beautiful", tense: "Present Simple" },
+                { ru: "Я искал этот файл", en: "I looked for this file", tense: "Past Simple" },
+                { ru: "Он смотрит вперед", en: "He looks ahead", tense: "Present Simple" },
+                { ru: "Мы посмотрим на это завтра", en: "We'll look at this tomorrow", tense: "Future Simple" },
+                { ru: "Ты ищешь проблемы", en: "You're looking for trouble", tense: "Present Continuous" },
+                { ru: "Она посмотрела на меня и улыбнулась", en: "She looked at me and smiled", tense: "Past Simple" },
+                { ru: "Это выглядит интересно", en: "It looks interesting", tense: "Present Simple" },
+                { ru: "Посмотри туда", en: "Look over there", tense: "Imperative" },
+                { ru: "Я ищу свои очки", en: "I'm looking for my glasses", tense: "Present Continuous" },
+                { ru: "Он посмотрел вокруг", en: "He looked around", tense: "Past Simple" },
+                { ru: "Она выглядит грустной", en: "She looks sad", tense: "Present Simple" },
+                { ru: "Мы искали тебя весь день", en: "We've been looking for you all day", tense: "Present Perfect Continuous" },
+                { ru: "Посмотри на небо", en: "Look at the sky", tense: "Imperative" },
+                { ru: "Ты выглядишь лучше", en: "You look better", tense: "Present Simple" },
+                { ru: "Я посмотрю на это дело", en: "I'll look into this matter", tense: "Future Simple" },
+                { ru: "Он ищет свои ключи", en: "He's looking for his keys", tense: "Present Continuous" },
+                { ru: "Она посмотрела на часы", en: "She looked at the clock", tense: "Past Simple" },
+                { ru: "Это выглядит хорошо", en: "This looks good", tense: "Present Simple" },
+                { ru: "Посмотри налево", en: "Look left", tense: "Imperative" },
+                { ru: "Я искал эту книгу", en: "I was looking for this book", tense: "Past Continuous" },
+                { ru: "Он выглядит уверенным", en: "He looks confident", tense: "Present Simple" },
+                { ru: "Мы смотрим на варианты", en: "We're looking at options", tense: "Present Continuous" },
+                { ru: "Посмотри направо", en: "Look right", tense: "Imperative" },
+                { ru: "Ты выглядишь знакомо", en: "You look familiar", tense: "Present Simple" },
+                { ru: "Я посмотрел в окно", en: "I looked out the window", tense: "Past Simple" },
+                { ru: "Она ищет совета", en: "She's looking for advice", tense: "Present Continuous" },
+                { ru: "Он выглядит серьезным", en: "He looks serious", tense: "Present Simple" },
+                { ru: "Посмотрим правде в глаза", en: "Let's look the truth in the face", tense: "Imperative" },
+                { ru: "Я ищу возможность", en: "I'm looking for an opportunity", tense: "Present Continuous" },
+                { ru: "Они посмотрели друг на друга", en: "They looked at each other", tense: "Past Simple" },
+                { ru: "Она выглядит молодой", en: "She looks young", tense: "Present Simple" },
+                { ru: "Посмотри, кто пришел", en: "Look who's here", tense: "Imperative" },
+                { ru: "Я буду искать ответ", en: "I'll look for the answer", tense: "Future Simple" },
+                { ru: "Он посмотрел на карту", en: "He looked at the map", tense: "Past Simple" },
+                { ru: "Это выглядит дорого", en: "It looks expensive", tense: "Present Simple" },
+                { ru: "Мы ищем партнера", en: "We're looking for a partner", tense: "Present Continuous" },
+                { ru: "Посмотри сам", en: "Look for yourself", tense: "Imperative" },
+                { ru: "Ты выглядишь растерянным", en: "You look confused", tense: "Present Simple" },
+                { ru: "Я посмотрел на результаты", en: "I looked at the results", tense: "Past Simple" },
+                { ru: "Она ищет помощи", en: "She's looking for help", tense: "Present Continuous" },
+                { ru: "Он выглядит старше", en: "He looks older", tense: "Present Simple" },
+                { ru: "Посмотри на время", en: "Look at the time", tense: "Imperative" },
+                { ru: "Я искал эту информацию", en: "I looked for this information", tense: "Past Simple" },
+                { ru: "Мы посмотрим на это позже", en: "We'll look at it later", tense: "Future Simple" },
+                { ru: "Это выглядит сложно", en: "This looks complicated", tense: "Present Simple" },
+                { ru: "Она посмотрела вверх", en: "She looked up", tense: "Past Simple" },
+                { ru: "Ты ищешь неприятности", en: "You're looking for trouble", tense: "Present Continuous" },
+                { ru: "Посмотри, что я нашел", en: "Look what I found", tense: "Imperative" },
+                { ru: "Я смотрю на ситуацию", en: "I'm looking at the situation", tense: "Present Continuous" },
+                { ru: "Он выглядит злым", en: "He looks angry", tense: "Present Simple" },
+                { ru: "Она искала ответы", en: "She looked for answers", tense: "Past Simple" },
+                { ru: "Мы выглядим хорошо вместе", en: "We look good together", tense: "Present Simple" },
+                { ru: "Посмотри в глаза мне", en: "Look me in the eye", tense: "Imperative" },
+                { ru: "Я ищу вдохновение", en: "I'm looking for inspiration", tense: "Present Continuous" },
+                { ru: "Он посмотрел на нее с любовью", en: "He looked at her lovingly", tense: "Past Simple" },
+                { ru: "Это выглядит легко", en: "It looks easy", tense: "Present Simple" },
+                { ru: "Ты выглядишь взволнованным", en: "You look excited", tense: "Present Simple" },
+                { ru: "Я посмотрю эти документы", en: "I'll look through these documents", tense: "Future Simple" },
+                { ru: "Она ищет новые возможности", en: "She's looking for new opportunities", tense: "Present Continuous" },
+                { ru: "Посмотри внимательно", en: "Look carefully", tense: "Imperative" },
+                { ru: "Он выглядит расстроенным", en: "He looks upset", tense: "Present Simple" },
+                { ru: "Мы искали его повсюду", en: "We looked for him everywhere", tense: "Past Simple" },
+                { ru: "Я смотрю на эту проблему по-другому", en: "I look at this problem differently", tense: "Present Simple" },
+                { ru: "Она выглядит потрясающе", en: "She looks amazing", tense: "Present Simple" },
+                { ru: "Посмотри, что ты наделал", en: "Look what you've done", tense: "Imperative" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

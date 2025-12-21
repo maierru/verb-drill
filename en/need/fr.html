@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbe 🇬🇧 VERB NEED — 100 phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Retour à la liste des verbes</a>
+            <h1>🇬🇧 Verb NEED</h1>
+            <p class="subtitle">to require, to must have — 100 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Rechercher des phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Afficher toutes les traductions</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Masquer toutes les traductions</button>
+        </div>
+
+        <div class="stats" id="stats">Affichage: 100 sur 100 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Pratique de l'anglais — NEED · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'fr',
+            targetKey: 'en',
+            labels: { target: 'Anglais', showing: 'Affichage', of: 'sur', phrases: 'phrases' },
+            verbForms: ["need","needs","needed","needing"],
+            phrases: [
+                { fr: "J'ai besoin de ton aide.", en: "I need your help.", tense: "Present" },
+                { fr: "Tu as besoin de te reposer.", en: "You need to rest.", tense: "Present" },
+                { fr: "Il a besoin d'argent.", en: "He needs money.", tense: "Present" },
+                { fr: "Elle a besoin de temps.", en: "She needs time.", tense: "Present" },
+                { fr: "Nous avons besoin de parler.", en: "We need to talk.", tense: "Present" },
+                { fr: "Vous avez besoin de savoir cela.", en: "You need to know this.", tense: "Present" },
+                { fr: "Ils ont besoin d'information.", en: "They need information.", tense: "Present" },
+                { fr: "Je n'ai pas besoin de cela.", en: "I don't need this.", tense: "Present" },
+                { fr: "Tu n'as pas besoin de t'inquiéter.", en: "You don't need to worry.", tense: "Present" },
+                { fr: "Il n'a pas besoin d'aide.", en: "He doesn't need help.", tense: "Present" },
+                { fr: "Je dois y aller.", en: "I need to go.", tense: "Present" },
+                { fr: "Tu dois manger.", en: "You need to eat.", tense: "Present" },
+                { fr: "Elle a besoin de dormir.", en: "She needs to sleep.", tense: "Present" },
+                { fr: "Nous avons besoin d'une solution.", en: "We need a solution.", tense: "Present" },
+                { fr: "Ils ont besoin de conseils.", en: "They need advice.", tense: "Present" },
+                { fr: "J'ai besoin d'une voiture.", en: "I need a car.", tense: "Present" },
+                { fr: "Tu as besoin d'un médecin.", en: "You need a doctor.", tense: "Present" },
+                { fr: "Il a besoin d'une explication.", en: "He needs an explanation.", tense: "Present" },
+                { fr: "Elle a besoin de vacances.", en: "She needs a vacation.", tense: "Present" },
+                { fr: "Nous avons besoin de plus de temps.", en: "We need more time.", tense: "Present" },
+                { fr: "J'avais besoin d'aide.", en: "I needed help.", tense: "Past Simple" },
+                { fr: "Tu avais besoin d'appeler.", en: "You needed to call.", tense: "Past Simple" },
+                { fr: "Il avait besoin d'information.", en: "He needed information.", tense: "Past Simple" },
+                { fr: "Elle avait besoin de savoir.", en: "She needed to know.", tense: "Past Simple" },
+                { fr: "Nous avions besoin d'argent.", en: "We needed money.", tense: "Past Simple" },
+                { fr: "Vous aviez besoin d'attendre.", en: "You needed to wait.", tense: "Past Simple" },
+                { fr: "Ils avaient besoin d'une autorisation.", en: "They needed permission.", tense: "Past Simple" },
+                { fr: "Je n'avais pas besoin de faire ça.", en: "I didn't need to do this.", tense: "Past Simple" },
+                { fr: "Tu n'avais pas besoin de venir.", en: "You didn't need to come.", tense: "Past Simple" },
+                { fr: "Elle n'avait pas besoin d'expliquer.", en: "She didn't need to explain.", tense: "Past Simple" },
+                { fr: "J'aurai besoin de ton avis.", en: "I will need your opinion.", tense: "Future" },
+                { fr: "Tu auras besoin d'aide.", en: "You will need help.", tense: "Future" },
+                { fr: "Il aura besoin de plus de temps.", en: "He will need more time.", tense: "Future" },
+                { fr: "Elle aura besoin de nouveaux documents.", en: "She will need new documents.", tense: "Future" },
+                { fr: "Nous aurons besoin d'un plan.", en: "We will need a plan.", tense: "Future" },
+                { fr: "Vous aurez besoin d'un billet.", en: "You will need a ticket.", tense: "Future" },
+                { fr: "Ils auront besoin d'une autorisation.", en: "They will need permission.", tense: "Future" },
+                { fr: "Je n'aurai pas besoin de cela.", en: "I won't need this.", tense: "Future" },
+                { fr: "Tu n'auras pas besoin de voiture.", en: "You won't need a car.", tense: "Future" },
+                { fr: "Il n'aura pas besoin d'aide.", en: "He won't need help.", tense: "Future" },
+                { fr: "J'ai besoin d'un conseil.", en: "I need advice.", tense: "Present" },
+                { fr: "Tu as besoin d'une raison.", en: "You need a reason.", tense: "Present" },
+                { fr: "Il a besoin de soutien.", en: "He needs support.", tense: "Present" },
+                { fr: "Elle a besoin d'une pause.", en: "She needs a break.", tense: "Present" },
+                { fr: "Nous avons besoin de ton aide.", en: "We need your help.", tense: "Present" },
+                { fr: "Vous avez besoin d'une réponse.", en: "You need an answer.", tense: "Present" },
+                { fr: "Ils ont besoin de preuves.", en: "They need proof.", tense: "Present" },
+                { fr: "J'ai besoin de réfléchir.", en: "I need to think.", tense: "Present" },
+                { fr: "Tu dois essayer.", en: "You need to try.", tense: "Present" },
+                { fr: "Il doit étudier.", en: "He needs to study.", tense: "Present" },
+                { fr: "De quoi as-tu besoin?", en: "What do you need?", tense: "Present" },
+                { fr: "Combien as-tu besoin?", en: "How much do you need?", tense: "Present" },
+                { fr: "Quand as-tu besoin de cela?", en: "When do you need this?", tense: "Present" },
+                { fr: "Qui a besoin de cela?", en: "Who needs this?", tense: "Present" },
+                { fr: "Pourquoi as-tu besoin de cela?", en: "Why do you need this?", tense: "Present" },
+                { fr: "J'ai vraiment besoin de ça.", en: "I really need this.", tense: "Present" },
+                { fr: "Tu as un besoin urgent de ça.", en: "You urgently need this.", tense: "Present" },
+                { fr: "Il a vraiment besoin d'aide.", en: "He really needs help.", tense: "Present" },
+                { fr: "Elle a juste besoin de temps.", en: "She just needs time.", tense: "Present" },
+                { fr: "Nous avons tous besoin de ça.", en: "We all need this.", tense: "Present" },
+                { fr: "J'avais besoin de dire.", en: "I needed to say.", tense: "Past Simple" },
+                { fr: "Tu avais besoin de rester.", en: "You needed to stay.", tense: "Past Simple" },
+                { fr: "Il avait besoin d'une voiture.", en: "He needed a car.", tense: "Past Simple" },
+                { fr: "Elle avait besoin d'un conseil.", en: "She needed advice.", tense: "Past Simple" },
+                { fr: "Nous avions besoin d'une pause.", en: "We needed a break.", tense: "Past Simple" },
+                { fr: "Ils avaient besoin de plus de temps.", en: "They needed more time.", tense: "Past Simple" },
+                { fr: "J'avais besoin de réfléchir.", en: "I needed to think.", tense: "Past Simple" },
+                { fr: "Tu avais besoin de demander.", en: "You needed to ask.", tense: "Past Simple" },
+                { fr: "Il avait besoin de travailler.", en: "He needed to work.", tense: "Past Simple" },
+                { fr: "Elle avait besoin de partir.", en: "She needed to leave.", tense: "Past Simple" },
+                { fr: "J'aurai besoin de ton soutien.", en: "I will need your support.", tense: "Future" },
+                { fr: "Tu auras besoin de patience.", en: "You will need patience.", tense: "Future" },
+                { fr: "Il aura besoin d'expérience.", en: "He will need experience.", tense: "Future" },
+                { fr: "Elle aura besoin de conseils.", en: "She will need advice.", tense: "Future" },
+                { fr: "Nous aurons besoin de chance.", en: "We will need luck.", tense: "Future" },
+                { fr: "Vous aurez besoin d'un mot de passe.", en: "You will need a password.", tense: "Future" },
+                { fr: "Ils auront besoin d'une carte.", en: "They will need a map.", tense: "Future" },
+                { fr: "Je pourrais avoir besoin d'aide.", en: "I might need help.", tense: "Conditional" },
+                { fr: "Tu pourrais avoir besoin de cela.", en: "You might need this.", tense: "Conditional" },
+                { fr: "Il pourrait avoir besoin de soutien.", en: "He might need support.", tense: "Conditional" },
+                { fr: "Elle pourrait avoir besoin de temps.", en: "She might need time.", tense: "Conditional" },
+                { fr: "Nous pourrions avoir besoin d'un plan.", en: "We might need a plan.", tense: "Conditional" },
+                { fr: "Vous pourriez avoir besoin d'aide.", en: "You might need help.", tense: "Conditional" },
+                { fr: "Ils pourraient avoir besoin d'information.", en: "They might need information.", tense: "Conditional" },
+                { fr: "Si tu as besoin de quelque chose...", en: "If you need anything...", tense: "Conditional" },
+                { fr: "Si j'avais besoin de cela...", en: "If I needed this...", tense: "Conditional" },
+                { fr: "S'il a besoin d'aide...", en: "If he needs help...", tense: "Conditional" },
+                { fr: "Je n'ai pas besoin d'excuses.", en: "I don't need excuses.", tense: "Present" },
+                { fr: "Ce n'est pas nécessaire.", en: "This is not needed.", tense: "Present" },
+                { fr: "Rien n'est nécessaire.", en: "Nothing is needed.", tense: "Present" },
+                { fr: "Tout ce dont tu as besoin.", en: "Everything you need.", tense: "Expression" },
+                { fr: "C'est tout ce dont nous avons besoin.", en: "That's all we need.", tense: "Expression" },
+                { fr: "J'avais besoin d'entendre ça.", en: "I needed to hear this.", tense: "Past Simple" },
+                { fr: "Tu avais besoin de savoir la vérité.", en: "You needed to know the truth.", tense: "Past Simple" },
+                { fr: "Il avait besoin de comprendre.", en: "He needed to understand.", tense: "Past Simple" },
+                { fr: "J'ai besoin de ta signature.", en: "I need your signature.", tense: "Present" },
+                { fr: "Tu as besoin d'un nouveau plan.", en: "You need a new plan.", tense: "Present" },
+                { fr: "Elle a besoin de plus de pratique.", en: "She needs more practice.", tense: "Present" },
+                { fr: "Nous avons besoin de ton consentement.", en: "We need your consent.", tense: "Present" },
+                { fr: "Ils ont besoin d'une autorisation.", en: "They need authorization.", tense: "Present" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

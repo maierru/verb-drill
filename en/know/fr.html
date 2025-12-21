@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbe 🇬🇧 VERB KNOW — 97 phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Retour à la liste des verbes</a>
+            <h1>🇬🇧 Verb KNOW</h1>
+            <p class="subtitle">to be aware, to understand — 97 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Rechercher des phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Afficher toutes les traductions</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Masquer toutes les traductions</button>
+        </div>
+
+        <div class="stats" id="stats">Affichage: 97 sur 97 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Pratique de l'anglais — KNOW · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'fr',
+            targetKey: 'en',
+            labels: { target: 'Anglais', showing: 'Affichage', of: 'sur', phrases: 'phrases' },
+            verbForms: ["know","knows","knew","known","knowing"],
+            phrases: [
+                { fr: "Je sais la vérité", en: "I know the truth", tense: "Present Simple" },
+                { fr: "Elle sait la réponse", en: "She knows the answer", tense: "Present Simple" },
+                { fr: "Nous savions cela", en: "We knew about it", tense: "Past Simple" },
+                { fr: "Ils se connaissent", en: "They know each other", tense: "Present Simple" },
+                { fr: "Je le connaissais il y a longtemps", en: "I knew him long ago", tense: "Past Simple" },
+                { fr: "Connais-tu mon adresse?", en: "Do you know my address?", tense: "Present Simple" },
+                { fr: "Il ne savait pas quoi faire", en: "He didn't know what to do", tense: "Past Simple" },
+                { fr: "J'ai toujours su cela", en: "I've always known this", tense: "Present Perfect" },
+                { fr: "Ils savent le chemin de la maison", en: "They know the way home", tense: "Present Simple" },
+                { fr: "Nous connaissons cette histoire", en: "We know this story", tense: "Present Simple" },
+                { fr: "Elle savait tous les secrets", en: "She knew all the secrets", tense: "Past Simple" },
+                { fr: "Je sais où il habite", en: "I know where he lives", tense: "Present Simple" },
+                { fr: "Saviez-vous le problème?", en: "Did you know about the problem?", tense: "Past Simple" },
+                { fr: "Il connaît trois langues", en: "He knows three languages", tense: "Present Simple" },
+                { fr: "Je ne sais pas l'heure exacte", en: "I don't know the exact time", tense: "Present Simple" },
+                { fr: "Ils connaissaient les règles du jeu", en: "They knew the rules of the game", tense: "Past Simple" },
+                { fr: "Nous connaissons cette chanson", en: "We know this song", tense: "Present Simple" },
+                { fr: "Elle connaît son métier", en: "She knows her business", tense: "Present Simple" },
+                { fr: "Je savais que tu viendrais", en: "I knew you would come", tense: "Past Simple" },
+                { fr: "Connais-tu ma sœur?", en: "Do you know my sister?", tense: "Present Simple" },
+                { fr: "Il savait la réponse à l'avance", en: "He knew the answer beforehand", tense: "Past Simple" },
+                { fr: "Nous savons cela depuis longtemps", en: "We've known about this for a long time", tense: "Present Perfect" },
+                { fr: "Ils ne me connaissent pas", en: "They don't know me", tense: "Present Simple" },
+                { fr: "Je connais chaque rue ici", en: "I know every street here", tense: "Present Simple" },
+                { fr: "Elle savait que cela arriverait", en: "She knew it would happen", tense: "Past Simple" },
+                { fr: "Connaissez-vous cette personne?", en: "Do you know this person?", tense: "Present Simple" },
+                { fr: "Il sait mon nom", en: "He knows my name", tense: "Present Simple" },
+                { fr: "Je ne savais pas cela", en: "I didn't know about it", tense: "Past Simple" },
+                { fr: "Nous savons toute la vérité", en: "We know the whole truth", tense: "Present Simple" },
+                { fr: "Ils connaissaient son père", en: "They knew his father", tense: "Past Simple" },
+                { fr: "Sais-tu quelle heure il est?", en: "Do you know what time it is?", tense: "Present Simple" },
+                { fr: "Je connais bien cette ville", en: "I know this city well", tense: "Present Simple" },
+                { fr: "Elle ne savait pas mon numéro", en: "She didn't know my number", tense: "Past Simple" },
+                { fr: "Nous connaissons ce problème", en: "We know this problem", tense: "Present Simple" },
+                { fr: "Il savait tous les détails", en: "He knew all the details", tense: "Past Simple" },
+                { fr: "Je sais comment ça marche", en: "I know how it works", tense: "Present Simple" },
+                { fr: "Ils me connaissent depuis l'enfance", en: "They've known me since childhood", tense: "Present Perfect" },
+                { fr: "Saviez-vous des changements?", en: "Did you know about the changes?", tense: "Past Simple" },
+                { fr: "Elle connaît tout le monde ici", en: "She knows everyone here", tense: "Present Simple" },
+                { fr: "Je ne connais pas ses plans", en: "I don't know his plans", tense: "Present Simple" },
+                { fr: "Nous savions ce secret", en: "We knew this secret", tense: "Past Simple" },
+                { fr: "Il connaît le meilleur chemin", en: "He knows the best way", tense: "Present Simple" },
+                { fr: "Je savais ta réponse", en: "I knew your answer", tense: "Past Simple" },
+                { fr: "Ils connaissent cette légende", en: "They know this legend", tense: "Present Simple" },
+                { fr: "Sais-tu où sont mes clés?", en: "Do you know where my keys are?", tense: "Present Simple" },
+                { fr: "Elle savait tous les noms", en: "She knew all the names", tense: "Past Simple" },
+                { fr: "Nous connaissons sa famille", en: "We know his family", tense: "Present Simple" },
+                { fr: "Je connais ce livre par cœur", en: "I know this book by heart", tense: "Present Simple" },
+                { fr: "Il ne savait pas la raison", en: "He didn't know the reason", tense: "Past Simple" },
+                { fr: "Connaissez-vous ce fait?", en: "Do you know this fact?", tense: "Present Simple" },
+                { fr: "Ils connaissaient ma mère", en: "They knew my mom", tense: "Past Simple" },
+                { fr: "Je sais ton secret", en: "I know your secret", tense: "Present Simple" },
+                { fr: "Elle sait la bonne réponse", en: "She knows the right answer", tense: "Present Simple" },
+                { fr: "Nous ne savions pas cela", en: "We didn't know about it", tense: "Past Simple" },
+                { fr: "Il connaît tous les détails", en: "He knows all the details", tense: "Present Simple" },
+                { fr: "Je savais qu'il pleuvrait", en: "I knew it would rain", tense: "Past Simple" },
+                { fr: "Connais-tu cet auteur?", en: "Do you know this author?", tense: "Present Simple" },
+                { fr: "Ils connaissent leurs droits", en: "They know their rights", tense: "Present Simple" },
+                { fr: "Je ne sais pas le nombre exact", en: "I don't know the exact number", tense: "Present Simple" },
+                { fr: "Elle connaissait mon caractère", en: "She knew my character", tense: "Past Simple" },
+                { fr: "Nous connaissons cet endroit", en: "We know this place", tense: "Present Simple" },
+                { fr: "Il savait les conséquences", en: "He knew the consequences", tense: "Past Simple" },
+                { fr: "Je connais chaque mot", en: "I know every word", tense: "Present Simple" },
+                { fr: "Saviez-vous de la réunion?", en: "Did you know about the meeting?", tense: "Past Simple" },
+                { fr: "Ils connaissent nos traditions", en: "They know our traditions", tense: "Present Simple" },
+                { fr: "Connais-tu ce film?", en: "Do you know this movie?", tense: "Present Simple" },
+                { fr: "Elle ne savait pas le chemin", en: "She didn't know the way", tense: "Past Simple" },
+                { fr: "Je le connais depuis un an", en: "I've known him for a year", tense: "Present Perfect" },
+                { fr: "Nous connaissons cette méthode", en: "We know this method", tense: "Present Simple" },
+                { fr: "Il savait mon opinion", en: "He knew my opinion", tense: "Past Simple" },
+                { fr: "Je sais pourquoi c'est important", en: "I know why it's important", tense: "Present Simple" },
+                { fr: "Ils savaient notre plan", en: "They knew our plan", tense: "Past Simple" },
+                { fr: "Connais-tu leur adresse?", en: "Do you know their address?", tense: "Present Simple" },
+                { fr: "Elle sait tous les noms", en: "She knows all the names", tense: "Present Simple" },
+                { fr: "Nous ne savions pas le résultat", en: "We didn't know the result", tense: "Past Simple" },
+                { fr: "Il connaît bien ce domaine", en: "He knows this field well", tense: "Present Simple" },
+                { fr: "Je savais ta décision", en: "I knew your decision", tense: "Past Simple" },
+                { fr: "Connaissez-vous l'histoire de cette maison?", en: "Do you know the history of this house?", tense: "Present Simple" },
+                { fr: "Ils savent tous les faits", en: "They know all the facts", tense: "Present Simple" },
+                { fr: "Je sais où aller", en: "I know where to go", tense: "Present Simple" },
+                { fr: "Elle connaissait ses habitudes", en: "She knew his habits", tense: "Past Simple" },
+                { fr: "Nous connaissons ces règles", en: "We know these rules", tense: "Present Simple" },
+                { fr: "Il ne savait pas son numéro", en: "He didn't know her number", tense: "Past Simple" },
+                { fr: "Je sais de tes plans", en: "I know about your plans", tense: "Present Simple" },
+                { fr: "Connais-tu cette recette?", en: "Do you know this recipe?", tense: "Present Simple" },
+                { fr: "Ils savaient nos noms", en: "They knew our names", tense: "Past Simple" },
+                { fr: "Je connais le bon chemin", en: "I know the right way", tense: "Present Simple" },
+                { fr: "Elle sait toutes les réponses", en: "She knows all the answers", tense: "Present Simple" },
+                { fr: "Nous savions du danger", en: "We knew about the danger", tense: "Past Simple" },
+                { fr: "Il connaît mon histoire", en: "He knows my story", tense: "Present Simple" },
+                { fr: "Je ne savais pas ce fait", en: "I didn't know this fact", tense: "Past Simple" },
+                { fr: "Connaissez-vous leur culture?", en: "Do you know their culture?", tense: "Present Simple" },
+                { fr: "Ils connaissent cette technique", en: "They know this technique", tense: "Present Simple" },
+                { fr: "Sais-tu quand il viendra?", en: "Do you know when he'll come?", tense: "Present Simple" },
+                { fr: "Elle connaissait mes faiblesses", en: "She knew my weaknesses", tense: "Past Simple" },
+                { fr: "Nous connaissons cet exercice", en: "We know this exercise", tense: "Present Simple" },
+                { fr: "Je connais tous les participants", en: "I know all the participants", tense: "Present Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

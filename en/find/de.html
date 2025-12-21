@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇬🇧 VERB FIND — 99 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇬🇧 Verb FIND</h1>
+            <p class="subtitle">to discover, to locate — 99 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 99 von 99 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Englisch-Übung — FIND · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'en',
+            labels: { target: 'Englisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["find","finds","found","finding"],
+            phrases: [
+                { de: "Ich kann meine Schlüssel nicht finden", en: "I can't find my keys", tense: "Present" },
+                { de: "Er findet für jedes Problem eine Lösung", en: "He finds a solution to every problem", tense: "Present" },
+                { de: "Wir haben gestern ein tolles Restaurant gefunden", en: "We found a great restaurant yesterday", tense: "Past Simple" },
+                { de: "Sie hat letzten Monat einen neuen Job gefunden", en: "She found a new job last month", tense: "Past Simple" },
+                { de: "Sie suchen seit zwei Stunden nach ihrem Hund", en: "They have been finding their dog for two hours", tense: "Present Continuous" },
+                { de: "Ich suche gerade nach Informationen", en: "I am finding information now", tense: "Present Continuous" },
+                { de: "Hast du gefunden, wonach du gesucht hast?", en: "Did you find what you were looking for?", tense: "Past Simple" },
+                { de: "Wir finden immer Zeit für die Familie", en: "We always find time for family", tense: "Present" },
+                { de: "Sie suchte gerade ihr Handy, als ich anrief", en: "She was finding her phone when I called", tense: "Past Continuous" },
+                { de: "Sie fanden alte Fotos auf dem Dachboden", en: "They found old photos in the attic", tense: "Past Simple" },
+                { de: "Ich habe bereits die Antwort auf diese Frage gefunden", en: "I have already found the answer to this question", tense: "Present Perfect" },
+                { de: "Du wirst es leicht finden", en: "You will find it easily", tense: "Future" },
+                { de: "Er fand es am Anfang schwierig", en: "He was finding it difficult at first", tense: "Past Continuous" },
+                { de: "Wir werden einen Weg finden, dieses Problem zu lösen", en: "We will find a way to solve this problem", tense: "Future" },
+                { de: "Finde mir bitte dieses Buch", en: "Find me this book, please", tense: "Imperative" },
+                { de: "Sie findet Freude in einfachen Dingen", en: "She finds joy in simple things", tense: "Present" },
+                { de: "Ich fand es sehr interessant", en: "I found it very interesting", tense: "Past Simple" },
+                { de: "Sie haben diesen Ort noch nie zuvor gefunden", en: "They have never found this place before", tense: "Present Perfect" },
+                { de: "Findest du das seltsam?", en: "Do you find this strange?", tense: "Present" },
+                { de: "Wir suchten ein Hotel, als es zu regnen begann", en: "We were finding a hotel when it started raining", tense: "Past Continuous" },
+                { de: "Er fand seine Berufung in der Musik", en: "He found his calling in music", tense: "Past Simple" },
+                { de: "Ich werde morgen Zeit dafür finden", en: "I will find time for this tomorrow", tense: "Future" },
+                { de: "Sie hat bereits Tickets für das Konzert gefunden", en: "She has already found tickets to the concert", tense: "Present Perfect" },
+                { de: "Findet euren Platz und setzt euch", en: "Find your seat and sit down", tense: "Imperative" },
+                { de: "Wir finden dieses Angebot sehr attraktiv", en: "We find this offer very attractive", tense: "Present" },
+                { de: "Hast du deinen Reisepass gefunden?", en: "Have you found your passport?", tense: "Present Perfect" },
+                { de: "Sie fanden jeden Tag neue Freunde", en: "They were finding new friends every day", tense: "Past Continuous" },
+                { de: "Ich würde es finden, wenn ich mehr Zeit hätte", en: "I would find it if I had more time", tense: "Conditional" },
+                { de: "Er findet immer Fehler in meiner Arbeit", en: "He always finds mistakes in my work", tense: "Present" },
+                { de: "Wir fanden das verlorene Kind im Park", en: "We found the lost child in the park", tense: "Past Simple" },
+                { de: "Sie sucht seit einem Monat nach einer neuen Wohnung", en: "She has been finding a new apartment for a month", tense: "Present Perfect" },
+                { de: "Finde die Kraft weiterzumachen", en: "Find the strength to continue", tense: "Imperative" },
+                { de: "Ich fand diesen Artikel sehr nützlich", en: "I found this article very useful", tense: "Past Simple" },
+                { de: "Du wirst alles finden, was du brauchst, in diesem Geschäft", en: "You will find everything you need in this store", tense: "Future" },
+                { de: "Sie finden Trost in der Musik", en: "They find comfort in music", tense: "Present" },
+                { de: "Wir suchten nach einem Ausweg aus dieser Situation", en: "We were finding a way out of this situation", tense: "Past Continuous" },
+                { de: "Er fand den Sinn des Lebens darin, anderen zu helfen", en: "He found the meaning of life in helping others", tense: "Past Simple" },
+                { de: "Ich habe bereits mehrere gute Optionen gefunden", en: "I have already found several good options", tense: "Present Perfect" },
+                { de: "Sie würde eine Lösung finden, wenn sie es versuchte", en: "She would find a solution if she tried", tense: "Conditional" },
+                { de: "Findet eine gemeinsame Basis mit den Kollegen", en: "Find common ground with colleagues", tense: "Imperative" },
+                { de: "Wir finden Inspiration in der Natur", en: "We find inspiration in nature", tense: "Present" },
+                { de: "Fandest du diese Arbeit schwierig?", en: "Were you finding this work difficult?", tense: "Past Continuous" },
+                { de: "Sie fanden nach langen Verhandlungen einen Kompromiss", en: "They found a compromise after long negotiations", tense: "Past Simple" },
+                { de: "Ich werde Beweise für mein Rechthaben finden", en: "I will find proof of my being right", tense: "Future" },
+                { de: "Er hat nie Zeit für Hobbys gefunden", en: "He has never found time for hobbies", tense: "Present Perfect" },
+                { de: "Sie findet überall Schönheit", en: "She finds beauty everywhere", tense: "Present" },
+                { de: "Wir fanden den perfekten Ort für ein Picknick", en: "We found the perfect spot for a picnic", tense: "Past Simple" },
+                { de: "Finde dich selbst in diesem Leben", en: "Find yourself in this life", tense: "Imperative" },
+                { de: "Ich suchte den ganzen Abend nach meiner Jacke", en: "I was finding my jacket all evening", tense: "Past Continuous" },
+                { de: "Findest du diesen Film langweilig?", en: "Do you find this movie boring?", tense: "Present" },
+                { de: "Sie haben bereits einen Ersatz für den ausgeschiedenen Mitarbeiter gefunden", en: "They have already found a replacement for the employee who left", tense: "Present Perfect" },
+                { de: "Er wird aus jeder Situation einen Ausweg finden", en: "He will find a way out of any situation", tense: "Future" },
+                { de: "Wir würden diesen Ort finden, wenn wir eine Karte hätten", en: "We would find this place if we had a map", tense: "Conditional" },
+                { de: "Sie fand ihren Seelenverwandten", en: "She found her soulmate", tense: "Past Simple" },
+                { de: "Ich finde diesen Vorschlag inakzeptabel", en: "I find this proposal unacceptable", tense: "Present" },
+                { de: "Findet eine Minute für ein Gespräch", en: "Find a minute for a talk", tense: "Imperative" },
+                { de: "Hast du deinen Kleidungsstil gefunden?", en: "Have you found your style in clothes?", tense: "Present Perfect" },
+                { de: "Sie suchten nach Schätzen auf der Insel", en: "They were finding treasures on the island", tense: "Past Continuous" },
+                { de: "Wir finden Unterstützung bei unseren Freunden", en: "We find support in our friends", tense: "Present" },
+                { de: "Er fand einen neuen Ansatz zum Lernen", en: "He found a new approach to learning", tense: "Past Simple" },
+                { de: "Ich werde die Beweise morgen finden", en: "I will find the evidence tomorrow", tense: "Future" },
+                { de: "Sie findet Glück in kleinen Dingen", en: "She finds happiness in little things", tense: "Present" },
+                { de: "Du würdest es leicht finden, wenn du wüsstest, wo du suchen musst", en: "You would find it easily if you knew where to look", tense: "Conditional" },
+                { de: "Sie fanden vom ersten Treffen an eine gemeinsame Basis", en: "They found common ground from the first meeting", tense: "Past Simple" },
+                { de: "Wir haben bereits die Lösung für dieses Problem gefunden", en: "We have already found the solution to this problem", tense: "Present Perfect" },
+                { de: "Finde den Grund für deine Unzufriedenheit", en: "Find the reason for your dissatisfaction", tense: "Imperative" },
+                { de: "Ich suchte nach meiner Brille, als du kamst", en: "I was finding my glasses when you came", tense: "Past Continuous" },
+                { de: "Er findet Energie im Sport", en: "He finds energy in sports", tense: "Present" },
+                { de: "Sie fand ihren Platz im Team", en: "She found her place in the team", tense: "Past Simple" },
+                { de: "Wir werden einen Weg finden, ihnen zu helfen", en: "We will find a way to help them", tense: "Future" },
+                { de: "Hast du Antworten auf alle Fragen gefunden?", en: "Have you found answers to all questions?", tense: "Present Perfect" },
+                { de: "Sie finden Trost im Glauben", en: "They find solace in faith", tense: "Present" },
+                { de: "Ich würde unter anderen Umständen eine bessere Option finden", en: "I would find a better option under different circumstances", tense: "Conditional" },
+                { de: "Finde die Balance zwischen Arbeit und Privatleben", en: "Find balance between work and personal life", tense: "Imperative" },
+                { de: "Er suchte Inspiration auf Reisen", en: "He was finding inspiration in travels", tense: "Past Continuous" },
+                { de: "Wir fanden einen Kompromiss, der allen passt", en: "We found a compromise that suits everyone", tense: "Past Simple" },
+                { de: "Sie findet Motivation im Erfolg anderer", en: "She finds motivation in others' success", tense: "Present" },
+                { de: "Ich habe bereits ein passendes Geschenk gefunden", en: "I have already found a suitable gift", tense: "Present Perfect" },
+                { de: "Du wirst alles finden, was du brauchst, im Internet", en: "You will find everything you need online", tense: "Future" },
+                { de: "Sie fanden einen Schatz in einem alten Haus", en: "They found treasure in the old house", tense: "Past Simple" },
+                { de: "Finde deine Berufung", en: "Find your calling", tense: "Imperative" },
+                { de: "Wir finden Sinn in unserer Arbeit", en: "We find meaning in our work", tense: "Present" },
+                { de: "Er würde es finden, wenn er genauer suchen würde", en: "He would find it if he looked more carefully", tense: "Conditional" },
+                { de: "Ich suchte den ganzen Tag nach Informationen darüber", en: "I was finding information about this all day", tense: "Past Continuous" },
+                { de: "Sie fand ihr Glück in der Familie", en: "She found her happiness in family", tense: "Past Simple" },
+                { de: "Findest du das lustig?", en: "Do you find this amusing?", tense: "Present" },
+                { de: "Sie haben bereits ein neues Zuhause gefunden", en: "They have already found a new home", tense: "Present Perfect" },
+                { de: "Wir werden einen Ausweg aus diesem Labyrinth finden", en: "We will find a way out of this maze", tense: "Future" },
+                { de: "Finde Zeit für dich selbst", en: "Find time for yourself", tense: "Imperative" },
+                { de: "Ich finde das sehr wichtig", en: "I find this very important", tense: "Present" },
+                { de: "Er fand Frieden in der Meditation", en: "He found peace in meditation", tense: "Past Simple" },
+                { de: "Sie würde eine Lösung finden, wenn sie mehr Informationen hätte", en: "She would find a solution if she had more information", tense: "Conditional" },
+                { de: "Wir suchten einen geeigneten Ort für das Treffen", en: "We were finding a suitable place for the meeting", tense: "Past Continuous" },
+                { de: "Hast du deinen Weg im Leben gefunden?", en: "Have you found your path in life?", tense: "Present Perfect" },
+                { de: "Sie finden Freude daran, anderen zu helfen", en: "They find joy in helping others", tense: "Present" },
+                { de: "Ich werde Beweise für seine Unschuld finden", en: "I will find proof of his innocence", tense: "Future" },
+                { de: "Findet einen Ausweg aus einer schwierigen Situation", en: "Find a way out of a difficult situation", tense: "Imperative" },
+                { de: "Er findet Inspiration in der Kunst", en: "He finds inspiration in art", tense: "Present" },
+                { de: "Wir fanden die perfekte Lösung für alle", en: "We found the perfect solution for everyone", tense: "Past Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

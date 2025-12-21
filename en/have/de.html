@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇬🇧 VERB HAVE — 95 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇬🇧 Verb HAVE</h1>
+            <p class="subtitle">to possess, to experience — 95 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 95 von 95 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Englisch-Übung — HAVE · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'en',
+            labels: { target: 'Englisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["have","has","had","having"],
+            phrases: [
+                { de: "Ich habe eine Frage", en: "I have a question", tense: "Present" },
+                { de: "Sie hat einen Hund", en: "She has a dog", tense: "Present" },
+                { de: "Sie haben Zeit", en: "They have time", tense: "Present" },
+                { de: "Wir haben ein Haus", en: "We have a house", tense: "Present" },
+                { de: "Er hat ein Auto", en: "He has a car", tense: "Present" },
+                { de: "Ich habe eine Idee", en: "I have an idea", tense: "Present" },
+                { de: "Hast du Geld?", en: "Do you have money?", tense: "Present" },
+                { de: "Wir haben keine Wahl", en: "We don't have a choice", tense: "Present" },
+                { de: "Sie hat einen Job", en: "She has a job", tense: "Present" },
+                { de: "Sie haben Kinder", en: "They have children", tense: "Present" },
+                { de: "Ich hatte eine Chance", en: "I had a chance", tense: "Past Simple" },
+                { de: "Wir hatten ein Meeting", en: "We had a meeting", tense: "Past Simple" },
+                { de: "Er hatte einen Plan", en: "He had a plan", tense: "Past Simple" },
+                { de: "Sie hatten Probleme", en: "They had problems", tense: "Past Simple" },
+                { de: "Sie hatte einen Bruder", en: "She had a brother", tense: "Past Simple" },
+                { de: "Ich hatte Zeit zum Nachdenken", en: "I had time to think", tense: "Past Simple" },
+                { de: "Du hattest das Recht zu wissen", en: "You had the right to know", tense: "Past Simple" },
+                { de: "Wir hatten einen guten Tag", en: "We had a good day", tense: "Past Simple" },
+                { de: "Er hatte eine Gelegenheit", en: "He had an opportunity", tense: "Past Simple" },
+                { de: "Sie hatten eine Wahl", en: "They had a choice", tense: "Past Simple" },
+                { de: "Ich habe es schon gemacht", en: "I have already done it", tense: "Present Perfect" },
+                { de: "Wir haben diesen Film schon gesehen", en: "We have already seen this movie", tense: "Present Perfect" },
+                { de: "Sie ist schon gegangen", en: "She has already left", tense: "Present Perfect" },
+                { de: "Sie sind schon angekommen", en: "They have already arrived", tense: "Present Perfect" },
+                { de: "Er hat die Arbeit schon beendet", en: "He has already finished the work", tense: "Present Perfect" },
+                { de: "Ich bin nie dort gewesen", en: "I have never been there", tense: "Present Perfect" },
+                { de: "Hast du das jemals probiert?", en: "Have you ever tried this?", tense: "Present Perfect" },
+                { de: "Wir haben noch nicht entschieden", en: "We haven't decided yet", tense: "Present Perfect" },
+                { de: "Sie hat schon gefrühstückt", en: "She has already had breakfast", tense: "Present Perfect" },
+                { de: "Sie haben sich schon getroffen", en: "They have met before", tense: "Present Perfect" },
+                { de: "Ich werde morgen Zeit haben", en: "I will have time tomorrow", tense: "Future" },
+                { de: "Wir werden eine Party haben", en: "We will have a party", tense: "Future" },
+                { de: "Sie wird ein Baby haben", en: "She will have a baby", tense: "Future" },
+                { de: "Sie werden eine Chance haben", en: "They will have a chance", tense: "Future" },
+                { de: "Er wird ein Interview haben", en: "He will have an interview", tense: "Future" },
+                { de: "Du wirst eine Gelegenheit haben", en: "You will have an opportunity", tense: "Future" },
+                { de: "Ich werde um drei ein Meeting haben", en: "I will have a meeting at three", tense: "Future" },
+                { de: "Wir werden viel Arbeit haben", en: "We will have a lot of work", tense: "Future" },
+                { de: "Sie wird Urlaub haben", en: "She will have a vacation", tense: "Future" },
+                { de: "Sie werden eine Hochzeit haben", en: "They will have a wedding", tense: "Future" },
+                { de: "Ich hätte eine Chance", en: "I would have a chance", tense: "Conditional" },
+                { de: "Wir hätten Zeit", en: "We would have time", tense: "Conditional" },
+                { de: "Sie hätte eine Wahl", en: "She would have a choice", tense: "Conditional" },
+                { de: "Sie hätten eine Lösung", en: "They would have a solution", tense: "Conditional" },
+                { de: "Er hätte eine Idee", en: "He would have an idea", tense: "Conditional" },
+                { de: "Ich hätte es gemacht, wenn ich Zeit gehabt hätte", en: "I would have done it if I had had time", tense: "Conditional" },
+                { de: "Du hättest eine Gelegenheit", en: "You would have an opportunity", tense: "Conditional" },
+                { de: "Wir hätten mehr Geld", en: "We would have more money", tense: "Conditional" },
+                { de: "Sie hätte eine Chance", en: "She would have a chance", tense: "Conditional" },
+                { de: "Sie hätten einen Vorteil", en: "They would have an advantage", tense: "Conditional" },
+                { de: "Ich habe Kopfschmerzen", en: "I have a headache", tense: "Expression" },
+                { de: "Viel Spaß!", en: "Have fun!", tense: "Expression" },
+                { de: "Guten Appetit!", en: "Have a nice meal!", tense: "Expression" },
+                { de: "Ich habe das Recht zu sagen", en: "I have the right to say", tense: "Expression" },
+                { de: "Ich muss mit dir reden", en: "I have to talk to you", tense: "Expression" },
+                { de: "Sie hat eine Erkältung", en: "She has a cold", tense: "Expression" },
+                { de: "Ich muss gehen", en: "I have to go", tense: "Expression" },
+                { de: "Wir haben ein Problem", en: "We have a problem", tense: "Expression" },
+                { de: "Hab einen schönen Tag!", en: "Have a nice day!", tense: "Expression" },
+                { de: "Er hat Talent", en: "He has talent", tense: "Expression" },
+                { de: "Ich habe das Gefühl, dass...", en: "I have a feeling that...", tense: "Expression" },
+                { de: "Hast du eine Minute?", en: "Do you have a minute?", tense: "Expression" },
+                { de: "Sie hat Erfahrung", en: "She has experience", tense: "Expression" },
+                { de: "Ich muss darüber nachdenken", en: "I have to think about it", tense: "Expression" },
+                { de: "Sie haben Einfluss", en: "They have influence", tense: "Expression" },
+                { de: "Ich habe keine Ahnung", en: "I have no idea", tense: "Expression" },
+                { de: "Hab ein schönes Wochenende!", en: "Have a good weekend!", tense: "Expression" },
+                { de: "Sie hat recht", en: "She has a point", tense: "Expression" },
+                { de: "Ich muss zugeben", en: "I have to admit", tense: "Expression" },
+                { de: "Wir haben eine Vereinbarung", en: "We have an agreement", tense: "Expression" },
+                { de: "Ich habe drei Brüder", en: "I have three brothers", tense: "Present" },
+                { de: "Sie hat blaue Augen", en: "She has blue eyes", tense: "Present" },
+                { de: "Wir haben einen großen Garten", en: "We have a big garden", tense: "Present" },
+                { de: "Er hat viele Freunde", en: "He has many friends", tense: "Present" },
+                { de: "Sie haben eine neue Wohnung", en: "They have a new apartment", tense: "Present" },
+                { de: "Ich hatte einen schlechten Tag", en: "I had a bad day", tense: "Past Simple" },
+                { de: "Wir hatten ein langes Gespräch", en: "We had a long conversation", tense: "Past Simple" },
+                { de: "Sie hatte Fieber", en: "She had a fever", tense: "Past Simple" },
+                { de: "Sie hatten einen Streit", en: "They had an argument", tense: "Past Simple" },
+                { de: "Er hatte einen Traum", en: "He had a dream", tense: "Past Simple" },
+                { de: "Ich habe gerade zu Mittag gegessen", en: "I have just had lunch", tense: "Present Perfect" },
+                { de: "Wir haben das schon besprochen", en: "We have already discussed this", tense: "Present Perfect" },
+                { de: "Sie wohnt seit fünf Jahren hier", en: "She has lived here for five years", tense: "Present Perfect" },
+                { de: "Sie haben ihre Schlüssel verloren", en: "They have lost their keys", tense: "Present Perfect" },
+                { de: "Er hat seine Meinung geändert", en: "He has changed his mind", tense: "Present Perfect" },
+                { de: "Ich werde im Juli Urlaub haben", en: "I will have a vacation in July", tense: "Future" },
+                { de: "Wir werden einen Gast haben", en: "We will have a guest", tense: "Future" },
+                { de: "Sie wird eine Prüfung haben", en: "She will have an exam", tense: "Future" },
+                { de: "Sie werden ein Problem haben", en: "They will have a problem", tense: "Future" },
+                { de: "Er wird Erfolg haben", en: "He will have success", tense: "Future" },
+                { de: "Wenn ich Geld hätte", en: "If I had money", tense: "Conditional" },
+                { de: "Ich hätte geholfen, wenn ich gekonnt hätte", en: "I would have helped if I could have", tense: "Conditional" },
+                { de: "Sie hätte mehr Freunde", en: "She would have more friends", tense: "Conditional" },
+                { de: "Wir hätten gewonnen, wenn wir es versucht hätten", en: "We would have won if we had tried", tense: "Conditional" },
+                { de: "Sie hätten weniger Stress", en: "They would have less stress", tense: "Conditional" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇬🇧 VERB GET — 96 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇬🇧 Verb GET</h1>
+            <p class="subtitle">to obtain, to become — 96 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 96 de 96 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            English Practice — GET · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'en',
+            labels: { target: 'English', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["get","gets","got","gotten","getting"],
+            phrases: [
+                { pt: "Eu recebo e-mails todos os dias", en: "I get emails every day", tense: "Present Simple" },
+                { pt: "Ele conseguiu um emprego novo", en: "He got a new job", tense: "Past Simple" },
+                { pt: "Nós vamos receber a resposta amanhã", en: "We will get the answer tomorrow", tense: "Future Simple" },
+                { pt: "Ela está a ficar melhor", en: "She is getting better", tense: "Present Continuous" },
+                { pt: "Eu levanto-me às sete", en: "I get up at seven", tense: "Present Simple" },
+                { pt: "Eles chegaram a casa tarde", en: "They got home late", tense: "Past Simple" },
+                { pt: "Tu entendes o que quero dizer?", en: "Do you get what I mean?", tense: "Present Simple" },
+                { pt: "Ela recebeu boas notas", en: "She got good grades", tense: "Past Simple" },
+                { pt: "Preciso de comprar pão", en: "I need to get some bread", tense: "Infinitive" },
+                { pt: "Ele sempre consegue o que quer", en: "He always gets what he wants", tense: "Present Simple" },
+                { pt: "Nós saímos do carro", en: "We got out of the car", tense: "Past Simple" },
+                { pt: "Está a ficar frio", en: "It's getting cold", tense: "Present Continuous" },
+                { pt: "Recebi a tua mensagem", en: "I got your message", tense: "Past Simple" },
+                { pt: "Eles dão-se bem um com o outro", en: "They get along well with each other", tense: "Present Simple" },
+                { pt: "Vais receber isso mais tarde", en: "You will get it later", tense: "Future Simple" },
+                { pt: "Ele apanha o autocarro todas as manhãs", en: "He gets on the bus every morning", tense: "Present Simple" },
+                { pt: "Estou a tentar conseguir bilhetes", en: "I'm trying to get tickets", tense: "Present Continuous" },
+                { pt: "Ela chegou à estação a tempo", en: "She got to the station on time", tense: "Past Simple" },
+                { pt: "Precisamos de voltar ao trabalho", en: "We need to get back to work", tense: "Infinitive" },
+                { pt: "Ele ficou rico num ano", en: "He got rich in a year", tense: "Past Simple" },
+                { pt: "Tenho prazer em música", en: "I get pleasure from music", tense: "Present Simple" },
+                { pt: "Eles saem do autocarro aqui", en: "They get off the bus here", tense: "Present Simple" },
+                { pt: "Está a ficar tarde", en: "It's getting late", tense: "Present Continuous" },
+                { pt: "Comprei um telemóvel novo", en: "I got a new phone", tense: "Past Simple" },
+                { pt: "Chegarás lá numa hora", en: "You'll get there in an hour", tense: "Future Simple" },
+                { pt: "Ela está a ficar nervosa", en: "She's getting nervous", tense: "Present Continuous" },
+                { pt: "Recebemos um convite para o casamento", en: "We got an invitation to the wedding", tense: "Past Simple" },
+                { pt: "Ele está a superar os seus medos", en: "He is getting over his fears", tense: "Present Continuous" },
+                { pt: "Preciso de arranjar dinheiro", en: "I need to get some money", tense: "Infinitive" },
+                { pt: "Eles recebem um bom salário", en: "They get a good salary", tense: "Present Simple" },
+                { pt: "Estás a ficar mais forte", en: "You're getting stronger", tense: "Present Continuous" },
+                { pt: "Cheguei ao escritório às nove", en: "I got to the office at nine", tense: "Past Simple" },
+                { pt: "Ela sai do trabalho cedo", en: "She gets off work early", tense: "Present Simple" },
+                { pt: "Vamos receber uma resposta na próxima semana", en: "We will get an answer next week", tense: "Future Simple" },
+                { pt: "Ele saiu da cama com dificuldade", en: "He got out of bed with difficulty", tense: "Past Simple" },
+                { pt: "Eu entendo o teu ponto de vista", en: "I get your point", tense: "Present Simple" },
+                { pt: "Eles apanham o comboio às sete", en: "They get on the train at seven", tense: "Present Simple" },
+                { pt: "Está a escurecer", en: "It's getting dark", tense: "Present Continuous" },
+                { pt: "Recebi uma carta dele", en: "I got a letter from him", tense: "Past Simple" },
+                { pt: "Podes arranjar isso amanhã", en: "You can get it tomorrow", tense: "Modal + Infinitive" },
+                { pt: "Ela levanta-se cedo todos os dias", en: "She gets up early every day", tense: "Present Simple" },
+                { pt: "Voltámos para casa tarde", en: "We got back home late", tense: "Past Simple" },
+                { pt: "Ele recebe muitas chamadas", en: "He gets many calls", tense: "Present Simple" },
+                { pt: "Estou a começar a entender isto", en: "I'm getting to understand it", tense: "Present Continuous" },
+                { pt: "Eles receberam permissão", en: "They got permission", tense: "Past Simple" },
+                { pt: "Vais chegar a tempo?", en: "Will you get there on time?", tense: "Future Simple" },
+                { pt: "Ela está a passar pela multidão", en: "She's getting through the crowd", tense: "Present Continuous" },
+                { pt: "Fiquei ferido no treino", en: "I got injured at training", tense: "Past Simple" },
+                { pt: "Saímos na próxima paragem", en: "We get off at the next stop", tense: "Present Simple" },
+                { pt: "Ele está a ficar mais inteligente", en: "He's getting smarter", tense: "Present Continuous" },
+                { pt: "Vou arranjar bilhetes para o concerto", en: "I'll get tickets to the concert", tense: "Future Simple" },
+                { pt: "Eles receberam más notícias", en: "They got bad news", tense: "Past Simple" },
+                { pt: "Entendeste a piada?", en: "Did you get the joke?", tense: "Past Simple" },
+                { pt: "Ela recebe ajuda dos amigos", en: "She gets help from friends", tense: "Present Simple" },
+                { pt: "Vamos sair cedo de manhã", en: "We're getting away early in the morning", tense: "Present Continuous" },
+                { pt: "Ele recebeu uma promoção", en: "He got a promotion", tense: "Past Simple" },
+                { pt: "Eu saio aqui", en: "I get out here", tense: "Present Simple" },
+                { pt: "Eles chegam ao trabalho de metro", en: "They get to work by metro", tense: "Present Simple" },
+                { pt: "Está a ficar quente", en: "It's getting hot", tense: "Present Continuous" },
+                { pt: "Recebi uma prenda de aniversário", en: "I got a gift for my birthday", tense: "Past Simple" },
+                { pt: "Podes conseguir isso de graça", en: "You can get it for free", tense: "Modal + Infinitive" },
+                { pt: "Ela vai resolver isso", en: "She'll get it sorted", tense: "Future Simple" },
+                { pt: "Recebemos um desconto", en: "We got a discount", tense: "Past Simple" },
+                { pt: "Ele está a entrar no clube", en: "He's getting into the club", tense: "Present Continuous" },
+                { pt: "Preciso de sair daqui", en: "I need to get out of here", tense: "Infinitive" },
+                { pt: "Eles têm prazer no jogo", en: "They get enjoyment from the game", tense: "Present Simple" },
+                { pt: "Estás a melhorar nisto", en: "You're getting better at this", tense: "Present Continuous" },
+                { pt: "Cheguei ao aeroporto a tempo", en: "I got to the airport on time", tense: "Past Simple" },
+                { pt: "Ela vai receber uma resposta em breve", en: "She will get an answer soon", tense: "Future Simple" },
+                { pt: "Estamos a embarcar no avião agora", en: "We're getting on the plane now", tense: "Present Continuous" },
+                { pt: "Ele foi castigado", en: "He got punished", tense: "Past Simple" },
+                { pt: "Eu entendo a ideia", en: "I get the idea", tense: "Present Simple" },
+                { pt: "Eles estão a voltar juntos", en: "They're getting back together", tense: "Present Continuous" },
+                { pt: "Recebeste o meu e-mail?", en: "Did you get my email?", tense: "Past Simple" },
+                { pt: "Ela sai do táxi", en: "She gets out of the taxi", tense: "Present Simple" },
+                { pt: "Vamos receber compensação", en: "We will get compensation", tense: "Future Simple" },
+                { pt: "Ele está a ficar famoso", en: "He's getting famous", tense: "Present Continuous" },
+                { pt: "Tive uma oportunidade", en: "I got a chance", tense: "Past Simple" },
+                { pt: "Eles chegam amanhã", en: "They get in tomorrow", tense: "Present Simple" },
+                { pt: "Chegarás lá de autocarro", en: "You'll get there by bus", tense: "Future Simple" },
+                { pt: "Ela recebe elogios", en: "She gets compliments", tense: "Present Simple" },
+                { pt: "Levantamo-nos tarde aos fins de semana", en: "We get up late on weekends", tense: "Present Simple" },
+                { pt: "Ele ganhou experiência", en: "He got experience", tense: "Past Simple" },
+                { pt: "Estou a descer a montanha", en: "I'm getting down the mountain", tense: "Present Continuous" },
+                { pt: "Eles vão receber um prémio", en: "They will get a prize", tense: "Future Simple" },
+                { pt: "Estás a ficar bem-sucedido", en: "You're getting successful", tense: "Present Continuous" },
+                { pt: "Recebi um conselho do professor", en: "I got advice from the teacher", tense: "Past Simple" },
+                { pt: "Ela vai reformar-se no próximo ano", en: "She's getting retired next year", tense: "Present Continuous" },
+                { pt: "Obtemos informação das notícias", en: "We get information from the news", tense: "Present Simple" },
+                { pt: "Ele chegou ao topo", en: "He got to the top", tense: "Past Simple" },
+                { pt: "Vou obter um visto na próxima semana", en: "I'll get a visa next week", tense: "Future Simple" },
+                { pt: "Eles chegam à meia-noite", en: "They get in at midnight", tense: "Present Simple" },
+                { pt: "Entendes a situação?", en: "Do you get the situation?", tense: "Present Simple" },
+                { pt: "Ela recebeu educação no estrangeiro", en: "She got her education abroad", tense: "Past Simple" },
+                { pt: "Estamos a começar a trabalhar agora", en: "We're getting to work now", tense: "Present Continuous" },
+                { pt: "Ele vai receber o que merece", en: "He will get what he deserves", tense: "Future Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

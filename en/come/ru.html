@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇬🇧 VERB COME — 94 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇬🇧 Verb COME</h1>
+            <p class="subtitle">to arrive, to approach — 94 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 94 из 94 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика английского — COME · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'en',
+            labels: { target: 'English', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["come","comes","came","coming"],
+            phrases: [
+                { ru: "Я приду завтра", en: "I will come tomorrow", tense: "Future Simple" },
+                { ru: "Он пришёл вчера", en: "He came yesterday", tense: "Past Simple" },
+                { ru: "Они приходят каждый день", en: "They come every day", tense: "Present Simple" },
+                { ru: "Она придёт позже", en: "She will come later", tense: "Future Simple" },
+                { ru: "Мы пришли рано", en: "We came early", tense: "Past Simple" },
+                { ru: "Ты приходишь?", en: "Are you coming?", tense: "Present Continuous" },
+                { ru: "Он приходит домой в 6", en: "He comes home at 6", tense: "Present Simple" },
+                { ru: "Она пришла с подарком", en: "She came with a gift", tense: "Past Simple" },
+                { ru: "Приходи к нам", en: "Come to us", tense: "Imperative" },
+                { ru: "Я приду, если смогу", en: "I will come if I can", tense: "Future Simple" },
+                { ru: "Они пришли вместе", en: "They came together", tense: "Past Simple" },
+                { ru: "Мы приходим сюда часто", en: "We come here often", tense: "Present Simple" },
+                { ru: "Ты придёшь на вечеринку?", en: "Will you come to the party?", tense: "Future Simple" },
+                { ru: "Он не пришёл на встречу", en: "He didn't come to the meeting", tense: "Past Simple" },
+                { ru: "Она приходит каждую неделю", en: "She comes every week", tense: "Present Simple" },
+                { ru: "Возвращайся скорее", en: "Come back soon", tense: "Imperative" },
+                { ru: "Он вернулся домой поздно", en: "He came back home late", tense: "Past Simple" },
+                { ru: "Я вернусь через час", en: "I will come back in an hour", tense: "Future Simple" },
+                { ru: "Они возвращаются завтра", en: "They are coming back tomorrow", tense: "Present Continuous" },
+                { ru: "Она вернулась из отпуска", en: "She came back from vacation", tense: "Past Simple" },
+                { ru: "Войдите, пожалуйста", en: "Please come in", tense: "Imperative" },
+                { ru: "Он вошёл в комнату", en: "He came in the room", tense: "Past Simple" },
+                { ru: "Можно войти?", en: "Can I come in?", tense: "Present Simple" },
+                { ru: "Она вошла тихо", en: "She came in quietly", tense: "Past Simple" },
+                { ru: "Они входят один за другим", en: "They come in one by one", tense: "Present Simple" },
+                { ru: "Выходи сюда", en: "Come out here", tense: "Imperative" },
+                { ru: "Он вышел из дома", en: "He came out of the house", tense: "Past Simple" },
+                { ru: "Солнце выходит из-за туч", en: "The sun is coming out from behind the clouds", tense: "Present Continuous" },
+                { ru: "Она вышла на сцену", en: "She came out on stage", tense: "Past Simple" },
+                { ru: "Правда всегда выходит наружу", en: "The truth always comes out", tense: "Present Simple" },
+                { ru: "Я приду с другом", en: "I will come with a friend", tense: "Future Simple" },
+                { ru: "Он пришёл пешком", en: "He came on foot", tense: "Past Simple" },
+                { ru: "Они приходят на автобусе", en: "They come by bus", tense: "Present Simple" },
+                { ru: "Она придёт одна", en: "She will come alone", tense: "Future Simple" },
+                { ru: "Мы пришли на такси", en: "We came by taxi", tense: "Past Simple" },
+                { ru: "Ты приходишь на работу рано", en: "You come to work early", tense: "Present Simple" },
+                { ru: "Он придёт через 10 минут", en: "He will come in 10 minutes", tense: "Future Simple" },
+                { ru: "Она пришла без приглашения", en: "She came without invitation", tense: "Past Simple" },
+                { ru: "Приходите в любое время", en: "Come at any time", tense: "Imperative" },
+                { ru: "Я прихожу сюда каждый день", en: "I come here every day", tense: "Present Simple" },
+                { ru: "Они придут вместе с нами", en: "They will come together with us", tense: "Future Simple" },
+                { ru: "Мы пришли поздравить тебя", en: "We came to congratulate you", tense: "Past Simple" },
+                { ru: "Ты придёшь один?", en: "Will you come alone?", tense: "Future Simple" },
+                { ru: "Он приходит всегда вовремя", en: "He always comes on time", tense: "Present Simple" },
+                { ru: "Она пришла раньше всех", en: "She came earlier than everyone", tense: "Past Simple" },
+                { ru: "Возвращайтесь, когда захотите", en: "Come back whenever you want", tense: "Imperative" },
+                { ru: "Я вернулся на следующий день", en: "I came back the next day", tense: "Past Simple" },
+                { ru: "Они вернутся через неделю", en: "They will come back in a week", tense: "Future Simple" },
+                { ru: "Мы возвращаемся каждое лето", en: "We come back every summer", tense: "Present Simple" },
+                { ru: "Ты вернулся слишком рано", en: "You came back too early", tense: "Past Simple" },
+                { ru: "Он вернётся, я уверен", en: "He will come back, I'm sure", tense: "Future Simple" },
+                { ru: "Она возвращается домой поздно", en: "She comes back home late", tense: "Present Simple" },
+                { ru: "Войдите и закройте дверь", en: "Come in and close the door", tense: "Imperative" },
+                { ru: "Я вошёл первым", en: "I came in first", tense: "Past Simple" },
+                { ru: "Они войдут через главный вход", en: "They will come in through the main entrance", tense: "Future Simple" },
+                { ru: "Мы входим через заднюю дверь", en: "We come in through the back door", tense: "Present Simple" },
+                { ru: "Ты вошёл очень шумно", en: "You came in very noisily", tense: "Past Simple" },
+                { ru: "Он войдёт последним", en: "He will come in last", tense: "Future Simple" },
+                { ru: "Она входит без стука", en: "She comes in without knocking", tense: "Present Simple" },
+                { ru: "Выходи немедленно", en: "Come out immediately", tense: "Imperative" },
+                { ru: "Я вышел на улицу", en: "I came out to the street", tense: "Past Simple" },
+                { ru: "Они выйдут через минуту", en: "They will come out in a minute", tense: "Future Simple" },
+                { ru: "Мы выходим в сад каждый вечер", en: "We come out to the garden every evening", tense: "Present Simple" },
+                { ru: "Ты вышел победителем", en: "You came out as the winner", tense: "Past Simple" },
+                { ru: "Он выйдет на сцену в 8", en: "He will come out on stage at 8", tense: "Future Simple" },
+                { ru: "Она выходит из офиса в 6", en: "She comes out of the office at 6", tense: "Present Simple" },
+                { ru: "Приди как можно скорее", en: "Come as soon as possible", tense: "Imperative" },
+                { ru: "Я пришёл, чтобы помочь", en: "I came to help", tense: "Past Simple" },
+                { ru: "Они придут на машине", en: "They will come by car", tense: "Future Simple" },
+                { ru: "Мы приходим пешком", en: "We come on foot", tense: "Present Simple" },
+                { ru: "Ты пришёл в правильное время", en: "You came at the right time", tense: "Past Simple" },
+                { ru: "Он придёт с семьёй", en: "He will come with his family", tense: "Future Simple" },
+                { ru: "Она приходит на велосипеде", en: "She comes by bicycle", tense: "Present Simple" },
+                { ru: "Вернись до темноты", en: "Come back before dark", tense: "Imperative" },
+                { ru: "Я вернулся с хорошими новостями", en: "I came back with good news", tense: "Past Simple" },
+                { ru: "Они вернутся успешными", en: "They will come back successful", tense: "Future Simple" },
+                { ru: "Мы возвращаемся усталые", en: "We come back tired", tense: "Present Simple" },
+                { ru: "Ты вернулся другим человеком", en: "You came back a different person", tense: "Past Simple" },
+                { ru: "Он вернётся победителем", en: "He will come back as a winner", tense: "Future Simple" },
+                { ru: "Она возвращается счастливая", en: "She comes back happy", tense: "Present Simple" },
+                { ru: "Входите по одному", en: "Come in one at a time", tense: "Imperative" },
+                { ru: "Я вошёл в новый офис", en: "I came in the new office", tense: "Past Simple" },
+                { ru: "Они войдут все вместе", en: "They will all come in together", tense: "Future Simple" },
+                { ru: "Мы входим в здание через лобби", en: "We come in the building through the lobby", tense: "Present Simple" },
+                { ru: "Ты вошёл в комнату первым", en: "You came in the room first", tense: "Past Simple" },
+                { ru: "Он войдёт после меня", en: "He will come in after me", tense: "Future Simple" },
+                { ru: "Она входит тихо, чтобы не разбудить детей", en: "She comes in quietly not to wake the children", tense: "Present Simple" },
+                { ru: "Выйди и посмотри на звёзды", en: "Come out and look at the stars", tense: "Imperative" },
+                { ru: "Я вышел подышать свежим воздухом", en: "I came out to breathe fresh air", tense: "Past Simple" },
+                { ru: "Они выйдут после дождя", en: "They will come out after the rain", tense: "Future Simple" },
+                { ru: "Мы выходим на прогулку вечером", en: "We come out for a walk in the evening", tense: "Present Simple" },
+                { ru: "Ты вышел из комнаты сердитый", en: "You came out of the room angry", tense: "Past Simple" },
+                { ru: "Он выйдет из больницы завтра", en: "He will come out of the hospital tomorrow", tense: "Future Simple" },
+                { ru: "Она выходит из дома в 7 утра", en: "She comes out of the house at 7 AM", tense: "Present Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

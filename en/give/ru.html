@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇬🇧 VERB GIVE — 98 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇬🇧 Verb GIVE</h1>
+            <p class="subtitle">to provide, to offer — 98 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 98 из 98 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика английского — GIVE · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'en',
+            labels: { target: 'English', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["give","gives","gave","given","giving"],
+            phrases: [
+                { ru: "Я даю тебе книгу", en: "I give you the book", tense: "Present Simple" },
+                { ru: "Он дает мне совет", en: "He gives me advice", tense: "Present Simple" },
+                { ru: "Мы дали им деньги", en: "We gave them money", tense: "Past Simple" },
+                { ru: "Она дала мне ответ", en: "She gave me an answer", tense: "Past Simple" },
+                { ru: "Они дают нам время", en: "They give us time", tense: "Present Simple" },
+                { ru: "Я дал ему шанс", en: "I gave him a chance", tense: "Past Simple" },
+                { ru: "Ты даешь хороший пример", en: "You give a good example", tense: "Present Simple" },
+                { ru: "Мы даем детям образование", en: "We give children education", tense: "Present Simple" },
+                { ru: "Он дал мне свой номер телефона", en: "He gave me his phone number", tense: "Past Simple" },
+                { ru: "Она дает уроки музыки", en: "She gives music lessons", tense: "Present Simple" },
+                { ru: "Я отдам это завтра", en: "I will give it back tomorrow", tense: "Future Simple" },
+                { ru: "Они дали нам ключи", en: "They gave us the keys", tense: "Past Simple" },
+                { ru: "Ты даешь мне надежду", en: "You give me hope", tense: "Present Simple" },
+                { ru: "Он дает много денег на благотворительность", en: "He gives a lot of money to charity", tense: "Present Simple" },
+                { ru: "Мы дали им разрешение", en: "We gave them permission", tense: "Past Simple" },
+                { ru: "Она дала мне подарок", en: "She gave me a gift", tense: "Past Simple" },
+                { ru: "Я даю тебе слово", en: "I give you my word", tense: "Present Simple" },
+                { ru: "Они дают концерты каждую неделю", en: "They give concerts every week", tense: "Present Simple" },
+                { ru: "Он дал мне совет бросить курить", en: "He gave me advice to give up smoking", tense: "Past Simple" },
+                { ru: "Ты даешь слишком много обещаний", en: "You give too many promises", tense: "Present Simple" },
+                { ru: "Мы дадим вам знать", en: "We will give you a call", tense: "Future Simple" },
+                { ru: "Она дает мне силы", en: "She gives me strength", tense: "Present Simple" },
+                { ru: "Я дал ему книгу назад", en: "I gave him the book back", tense: "Past Simple" },
+                { ru: "Они дают бесплатные образцы", en: "They give free samples", tense: "Present Simple" },
+                { ru: "Он дал мне второй шанс", en: "He gave me a second chance", tense: "Past Simple" },
+                { ru: "Ты даешь мне причину улыбаться", en: "you give me a reason to smile", tense: "Present Simple" },
+                { ru: "Мы даем им поддержку", en: "We give them support", tense: "Present Simple" },
+                { ru: "Она дала мне совет", en: "She gave me some advice", tense: "Past Simple" },
+                { ru: "Я даю уроки английского", en: "I give English lessons", tense: "Present Simple" },
+                { ru: "Они дали нам направление", en: "They gave us directions", tense: "Past Simple" },
+                { ru: "Он дает интервью редко", en: "He gives interviews rarely", tense: "Present Simple" },
+                { ru: "Ты дал мне хорошую идею", en: "You gave me a good idea", tense: "Past Simple" },
+                { ru: "Мы даем пожертвования каждый месяц", en: "We give donations every month", tense: "Present Simple" },
+                { ru: "Она дала мне объяснение", en: "She gave me an explanation", tense: "Past Simple" },
+                { ru: "Я даю тебе пять минут", en: "I give you five minutes", tense: "Present Simple" },
+                { ru: "Они дают скидки студентам", en: "They give discounts to students", tense: "Present Simple" },
+                { ru: "Он дал мне свою визитку", en: "He gave me his business card", tense: "Past Simple" },
+                { ru: "Ты даешь слишком много обещаний", en: "You give too many promises", tense: "Present Simple" },
+                { ru: "Мы дали им инструкции", en: "We gave them instructions", tense: "Past Simple" },
+                { ru: "Она дает презентации каждую неделю", en: "She gives presentations every week", tense: "Present Simple" },
+                { ru: "Я сдался", en: "I gave up", tense: "Past Simple" },
+                { ru: "Они дают обратную связь", en: "They give feedback", tense: "Present Simple" },
+                { ru: "Он дал мне разрешение уйти", en: "He gave me permission to leave", tense: "Past Simple" },
+                { ru: "Ты даешь мне вдохновение", en: "You give me inspiration", tense: "Present Simple" },
+                { ru: "Мы даем гарантию на все товары", en: "We give a warranty on all products", tense: "Present Simple" },
+                { ru: "Она дала мне комплимент", en: "She gave me a compliment", tense: "Past Simple" },
+                { ru: "Я даю тебе мой адрес", en: "I give you my address", tense: "Present Simple" },
+                { ru: "Они дали нам карту", en: "They gave us a map", tense: "Past Simple" },
+                { ru: "Он дает деньги нищим", en: "He gives money to beggars", tense: "Present Simple" },
+                { ru: "Ты дал мне уверенность", en: "You gave me confidence", tense: "Past Simple" },
+                { ru: "Мы даем призы победителям", en: "We give prizes to winners", tense: "Present Simple" },
+                { ru: "Она дала мне приглашение", en: "She gave me an invitation", tense: "Past Simple" },
+                { ru: "Я даю тебе последний шанс", en: "I give you one last chance", tense: "Present Simple" },
+                { ru: "Они дают рекомендации", en: "They give recommendations", tense: "Present Simple" },
+                { ru: "Он дал мне предупреждение", en: "He gave me a warning", tense: "Past Simple" },
+                { ru: "Ты даешь мне энергию", en: "You give me energy", tense: "Present Simple" },
+                { ru: "Мы дали им предложение", en: "We gave them an offer", tense: "Past Simple" },
+                { ru: "Она дает советы бесплатно", en: "She gives advice for free", tense: "Present Simple" },
+                { ru: "Я дал ему руку помощи", en: "I gave him a helping hand", tense: "Past Simple" },
+                { ru: "Они дают обещания", en: "They give promises", tense: "Present Simple" },
+                { ru: "Он дал мне описание", en: "He gave me a description", tense: "Past Simple" },
+                { ru: "Ты даешь детям хороший пример", en: "You give children a good example", tense: "Present Simple" },
+                { ru: "Мы даем им возможность", en: "We give them an opportunity", tense: "Present Simple" },
+                { ru: "Она дала мне рецепт", en: "She gave me a recipe", tense: "Past Simple" },
+                { ru: "Я даю деньги на благотворительность", en: "I give money to charity", tense: "Present Simple" },
+                { ru: "Они дали нам выбор", en: "They gave us a choice", tense: "Past Simple" },
+                { ru: "Он дает обещание вернуть долг", en: "He gives a promise to give back the debt", tense: "Present Simple" },
+                { ru: "Ты дал мне важную информацию", en: "You gave me important information", tense: "Past Simple" },
+                { ru: "Мы даем скидки на оптовые заказы", en: "We give discounts on bulk orders", tense: "Present Simple" },
+                { ru: "Она дала мне напоминание", en: "She gave me a reminder", tense: "Past Simple" },
+                { ru: "Я даю тебе право выбора", en: "I give you the right to choose", tense: "Present Simple" },
+                { ru: "Они дают стипендии студентам", en: "They give scholarships to students", tense: "Present Simple" },
+                { ru: "Он дал мне записку", en: "He gave me a note", tense: "Past Simple" },
+                { ru: "Ты даешь мне мотивацию", en: "You give me motivation", tense: "Present Simple" },
+                { ru: "Мы дали им предупреждение", en: "We gave them a warning", tense: "Past Simple" },
+                { ru: "Она дает частные уроки", en: "She gives private lessons", tense: "Present Simple" },
+                { ru: "Я сдаюсь", en: "I give up", tense: "Present Simple" },
+                { ru: "Они дали нам билеты", en: "They gave us tickets", tense: "Past Simple" },
+                { ru: "Он дает обещания, которые не выполняет", en: "He gives promises he doesn't keep", tense: "Present Simple" },
+                { ru: "Ты дал мне ценный урок", en: "You gave me a valuable lesson", tense: "Past Simple" },
+                { ru: "Мы даем им шанс исправиться", en: "We give them a chance to improve", tense: "Present Simple" },
+                { ru: "Она дала мне номер своего телефона", en: "She gave me her phone number", tense: "Past Simple" },
+                { ru: "Я даю тебе полную свободу", en: "I give you complete freedom", tense: "Present Simple" },
+                { ru: "Они дают гарантию возврата денег", en: "They give a money-back guarantee", tense: "Present Simple" },
+                { ru: "Он дал мне понять", en: "He gave me to understand", tense: "Past Simple" },
+                { ru: "Ты даешь мне уверенность в себе", en: "You give me self-confidence", tense: "Present Simple" },
+                { ru: "Мы дали им ответ", en: "We gave them an answer", tense: "Past Simple" },
+                { ru: "Она дает рождение ребенку", en: "She gives birth to a child", tense: "Present Simple" },
+                { ru: "Я верну тебе книгу завтра", en: "I will give you the book back tomorrow", tense: "Future Simple" },
+                { ru: "Они дают показания в суде", en: "They give testimony in court", tense: "Present Simple" },
+                { ru: "Он дал мне пароль", en: "He gave me the password", tense: "Past Simple" },
+                { ru: "Ты даешь мне причину продолжать", en: "You give me a reason to continue", tense: "Present Simple" },
+                { ru: "Мы даем им право голоса", en: "We give them a voice", tense: "Present Simple" },
+                { ru: "Она дала мне знак", en: "She gave me a sign", tense: "Past Simple" },
+                { ru: "Я даю тебе честное слово", en: "I give you my honest word", tense: "Present Simple" },
+                { ru: "Они дали нам сигнал", en: "They gave us a signal", tense: "Past Simple" },
+                { ru: "Он не сдается никогда", en: "He never gives up", tense: "Present Simple" },
+                { ru: "Ты дал мне повод для беспокойства", en: "You gave me cause for concern", tense: "Past Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

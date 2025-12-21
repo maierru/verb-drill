@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇬🇧 VERB THINK — 98 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇬🇧 Verb THINK</h1>
+            <p class="subtitle">to consider, to believe — 98 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 98 von 98 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Englisch-Übung — THINK · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'en',
+            labels: { target: 'Englisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["think","thinks","thought","thinking"],
+            phrases: [
+                { de: "Ich denke jeden Tag an dich", en: "I think about you every day", tense: "Present Simple" },
+                { de: "Sie denkt, es ist eine gute Idee", en: "She thinks it's a good idea", tense: "Present Simple" },
+                { de: "Wir dachten, du würdest kommen", en: "We thought you would come", tense: "Past Simple" },
+                { de: "Er denkt über seine Zukunft nach", en: "He thinks about his future", tense: "Present Simple" },
+                { de: "Ich habe die ganze Nacht darüber nachgedacht", en: "I thought about it all night", tense: "Past Simple" },
+                { de: "Sie denken, ich habe recht", en: "They think I'm right", tense: "Present Simple" },
+                { de: "Was denkst du darüber?", en: "What do you think about this?", tense: "Present Simple" },
+                { de: "Ich denke, es wird regnen", en: "I think it will rain", tense: "Present Simple" },
+                { de: "Sie dachte, sie hätte ihre Schlüssel verloren", en: "She thought she had lost her keys", tense: "Past Simple" },
+                { de: "Wir denken darüber nach umzuziehen", en: "We're thinking about moving", tense: "Present Continuous" },
+                { de: "Er dachte, er wüsste die Antwort", en: "He thought he knew the answer", tense: "Past Simple" },
+                { de: "Ich denke immer an die Konsequenzen", en: "I always think about the consequences", tense: "Present Simple" },
+                { de: "Hast du über meinen Vorschlag nachgedacht?", en: "Have you thought about my proposal?", tense: "Present Perfect" },
+                { de: "Sie denken, wir kommen zu spät", en: "They think we'll be late", tense: "Present Simple" },
+                { de: "Ich denke, das ist falsch", en: "I think this is wrong", tense: "Present Simple" },
+                { de: "Sie denkt nur an sich selbst", en: "She only thinks about herself", tense: "Present Simple" },
+                { de: "Wir dachten, der Laden wäre geöffnet", en: "We thought the shop was open", tense: "Past Simple" },
+                { de: "Er denkt, er kann gewinnen", en: "He thinks he can win", tense: "Present Simple" },
+                { de: "Ich denke, du bist talentiert", en: "I think you're talented", tense: "Present Simple" },
+                { de: "Sie dachten, wir wären gegangen", en: "They thought we had left", tense: "Past Simple" },
+                { de: "Woran denkst du?", en: "What are you thinking about?", tense: "Present Continuous" },
+                { de: "Ich dachte, es wäre einfach", en: "I thought it was easy", tense: "Past Simple" },
+                { de: "Sie denkt, ich bin schuldig", en: "She thinks I'm guilty", tense: "Present Simple" },
+                { de: "Wir haben nicht daran gedacht", en: "We didn't think about it", tense: "Past Simple" },
+                { de: "Er denkt, er weiß alles", en: "He thinks he knows everything", tense: "Present Simple" },
+                { de: "Ich denke, ich brauche Urlaub", en: "I think I need a vacation", tense: "Present Simple" },
+                { de: "Denkst du, es ist möglich?", en: "Do you think it's possible?", tense: "Present Simple" },
+                { de: "Sie denken darüber nach, ein Haus zu kaufen", en: "They're thinking about buying a house", tense: "Present Continuous" },
+                { de: "Ich dachte, ich hätte dich gestern gesehen", en: "I thought I saw you yesterday", tense: "Past Simple" },
+                { de: "Sie denkt, ich lüge", en: "She thinks I'm lying", tense: "Present Simple" },
+                { de: "Wir denken, es ist fair", en: "We think it's fair", tense: "Present Simple" },
+                { de: "Er dachte, er wäre zu spät", en: "He thought he was late", tense: "Past Simple" },
+                { de: "Ich denke, ich verstehe", en: "I think I understand", tense: "Present Simple" },
+                { de: "Sie denken, wir sind Freunde", en: "They think we're friends", tense: "Present Simple" },
+                { de: "Hast du vorher darüber nachgedacht?", en: "Did you think about this before?", tense: "Past Simple" },
+                { de: "Ich denke, es ist schön", en: "I think it's beautiful", tense: "Present Simple" },
+                { de: "Sie dachte, du würdest zustimmen", en: "She thought you would agree", tense: "Past Simple" },
+                { de: "Wir denken über die Zukunft nach", en: "We're thinking about the future", tense: "Present Continuous" },
+                { de: "Er denkt, ich habe vergessen", en: "He thinks I forgot", tense: "Present Simple" },
+                { de: "Ich habe nie daran gedacht", en: "I've never thought about it", tense: "Present Perfect" },
+                { de: "Sie denken, es ist teuer", en: "They think it's expensive", tense: "Present Simple" },
+                { de: "Denkst du, ich habe recht?", en: "Do you think I'm right?", tense: "Present Simple" },
+                { de: "Ich dachte, du wärst gegangen", en: "I thought you had gone", tense: "Past Simple" },
+                { de: "Sie denkt darüber nach, den Job zu wechseln", en: "She's thinking about changing jobs", tense: "Present Continuous" },
+                { de: "Wir dachten, es wäre einfacher", en: "We thought it would be easier", tense: "Past Simple" },
+                { de: "Er denkt, ich mache Witze", en: "He thinks I'm joking", tense: "Present Simple" },
+                { de: "Ich denke, es ist wahr", en: "I think it's true", tense: "Present Simple" },
+                { de: "Sie dachten, wir würden nicht kommen", en: "They thought we wouldn't come", tense: "Past Simple" },
+                { de: "Denkst du, das ist wichtig?", en: "Do you think this is important?", tense: "Present Simple" },
+                { de: "Ich denke, ich habe Glück", en: "I think I'm lucky", tense: "Present Simple" },
+                { de: "Sie denkt, ich weiß es nicht", en: "She thinks I don't know", tense: "Present Simple" },
+                { de: "Wir denken an dich", en: "We're thinking about you", tense: "Present Continuous" },
+                { de: "Er dachte, alles wäre vorbei", en: "He thought it was all over", tense: "Past Simple" },
+                { de: "Ich denke, es ist interessant", en: "I think it's interesting", tense: "Present Simple" },
+                { de: "Sie denken, ich habe Angst", en: "They think I'm afraid", tense: "Present Simple" },
+                { de: "Hast du an die Konsequenzen gedacht?", en: "Did you think about the consequences?", tense: "Past Simple" },
+                { de: "Ich dachte, du würdest schlafen", en: "I thought you were sleeping", tense: "Past Simple" },
+                { de: "Sie denkt, es ist unmöglich", en: "She thinks it's impossible", tense: "Present Simple" },
+                { de: "Wir dachten, du wärst krank", en: "We thought you were sick", tense: "Past Simple" },
+                { de: "Er denkt über seine Fehler nach", en: "He's thinking about his mistakes", tense: "Present Continuous" },
+                { de: "Ich denke, ich kann helfen", en: "I think I can help", tense: "Present Simple" },
+                { de: "Sie denken, es ist gefährlich", en: "They think it's dangerous", tense: "Present Simple" },
+                { de: "Denkst du, ich bin dumm?", en: "Do you think I'm stupid?", tense: "Present Simple" },
+                { de: "Ich dachte, du hättest verstanden", en: "I thought you understood", tense: "Past Simple" },
+                { de: "Sie denkt, ich bin wütend", en: "She thinks I'm angry", tense: "Present Simple" },
+                { de: "Wir denken über eine Reise nach Europa nach", en: "We're thinking about a trip to Europe", tense: "Present Continuous" },
+                { de: "Er dachte, es wäre ein Traum", en: "He thought it was a dream", tense: "Past Simple" },
+                { de: "Ich denke, es ist ein guter Plan", en: "I think it's a good plan", tense: "Present Simple" },
+                { de: "Sie denken, ich habe gelogen", en: "They think I lied", tense: "Present Simple" },
+                { de: "Dachtest du, ich würde es nicht bemerken?", en: "Did you think I wouldn't notice?", tense: "Past Simple" },
+                { de: "Ich denke, es ist einen Versuch wert", en: "I think it's worth trying", tense: "Present Simple" },
+                { de: "Sie dachte, ich hätte vergessen", en: "She thought I had forgotten", tense: "Past Simple" },
+                { de: "Wir denken, es ist die richtige Entscheidung", en: "We think it's the right decision", tense: "Present Simple" },
+                { de: "Er denkt über die Vergangenheit nach", en: "He's thinking about the past", tense: "Present Continuous" },
+                { de: "Ich denke schon lange darüber nach", en: "I've been thinking about this for a long time", tense: "Present Perfect Continuous" },
+                { de: "Sie denken, ich bin reich", en: "They think I'm rich", tense: "Present Simple" },
+                { de: "Denkst du, das ist lustig?", en: "Do you think it's funny?", tense: "Present Simple" },
+                { de: "Ich dachte, wir wären Freunde", en: "I thought we were friends", tense: "Past Simple" },
+                { de: "Sie denkt, ich höre nicht zu", en: "She thinks I'm not listening", tense: "Present Simple" },
+                { de: "Wir dachten, es wäre unmöglich", en: "We thought it was impossible", tense: "Past Simple" },
+                { de: "Er denkt, er wird gewinnen", en: "He thinks he'll win", tense: "Present Simple" },
+                { de: "Ich denke, ich kenne die Antwort", en: "I think I know the answer", tense: "Present Simple" },
+                { de: "Sie denken über ein neues Projekt nach", en: "They're thinking about a new project", tense: "Present Continuous" },
+                { de: "Dachtest du, ich würde nicht kommen?", en: "Did you think I wouldn't come?", tense: "Past Simple" },
+                { de: "Ich dachte, es wäre ein Geheimnis", en: "I thought it was a secret", tense: "Past Simple" },
+                { de: "Sie denkt, ich bin müde", en: "She thinks I'm tired", tense: "Present Simple" },
+                { de: "Wir denken an die Kinder", en: "We're thinking about the children", tense: "Present Continuous" },
+                { de: "Er dachte, es wäre ein Scherz", en: "He thought it was a joke", tense: "Past Simple" },
+                { de: "Ich denke, das ist wichtig", en: "I think this is important", tense: "Present Simple" },
+                { de: "Sie denken, ich bin nicht bereit", en: "They think I'm not ready", tense: "Present Simple" },
+                { de: "Denkst du jeden Tag daran?", en: "Do you think about this every day?", tense: "Present Simple" },
+                { de: "Ich dachte, du wüsstest es", en: "I thought you knew", tense: "Past Simple" },
+                { de: "Sie denkt, ich bin verrückt", en: "She thinks I'm crazy", tense: "Present Simple" },
+                { de: "Wir dachten, es wäre billiger", en: "We thought it would be cheaper", tense: "Past Simple" },
+                { de: "Er denkt oft an seine Familie", en: "He often thinks about his family", tense: "Present Simple" },
+                { de: "Ich denke, das ist richtig", en: "I think this is right", tense: "Present Simple" },
+                { de: "Sie denken, ich kann es nicht", en: "They think I can't do it", tense: "Present Simple" },
+                { de: "Hast du über Plan B nachgedacht?", en: "Have you thought about plan B?", tense: "Present Perfect" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

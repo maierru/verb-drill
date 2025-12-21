@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇬🇧 VERB USE — 82 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇬🇧 Verb USE</h1>
+            <p class="subtitle">to employ, to utilize — 82 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 82 из 82 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика английского — USE · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'en',
+            labels: { target: 'English', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["use","uses","used","using"],
+            phrases: [
+                { ru: "Я использую компьютер", en: "I use a computer", tense: "Present" },
+                { ru: "Ты используешь мой телефон", en: "You use my phone", tense: "Present" },
+                { ru: "Он использует Интернет", en: "He uses the Internet", tense: "Present" },
+                { ru: "Она использует этот метод", en: "She uses this method", tense: "Present" },
+                { ru: "Мы используем эту программу", en: "We use this program", tense: "Present" },
+                { ru: "Они используют общественный транспорт", en: "They use public transport", tense: "Present" },
+                { ru: "Я использовал твою ручку", en: "I used your pen", tense: "Past Simple" },
+                { ru: "Ты использовал мою идею", en: "You used my idea", tense: "Past Simple" },
+                { ru: "Он использовал неправильный инструмент", en: "He used the wrong tool", tense: "Past Simple" },
+                { ru: "Она использовала кредитную карту", en: "She used a credit card", tense: "Past Simple" },
+                { ru: "Мы использовали старую технику", en: "We used old equipment", tense: "Past Simple" },
+                { ru: "Они использовали все ресурсы", en: "They used all the resources", tense: "Past Simple" },
+                { ru: "Я использую сейчас туалет", en: "I am using the bathroom now", tense: "Present Continuous" },
+                { ru: "Ты используешь мою машину?", en: "Are you using my car?", tense: "Present Continuous" },
+                { ru: "Он использует новую стратегию", en: "He is using a new strategy", tense: "Present Continuous" },
+                { ru: "Она использует мой компьютер", en: "She is using my computer", tense: "Present Continuous" },
+                { ru: "Мы используем новую систему", en: "We are using a new system", tense: "Present Continuous" },
+                { ru: "Они используют наши данные", en: "They are using our data", tense: "Present Continuous" },
+                { ru: "Я использовал принтер, когда он сломался", en: "I was using the printer when it broke", tense: "Past Continuous" },
+                { ru: "Ты использовал мой ноутбук?", en: "Were you using my laptop?", tense: "Past Continuous" },
+                { ru: "Он использовал телефон весь день", en: "He was using the phone all day", tense: "Past Continuous" },
+                { ru: "Она использовала эту комнату", en: "She was using this room", tense: "Past Continuous" },
+                { ru: "Мы использовали старую версию", en: "We were using the old version", tense: "Past Continuous" },
+                { ru: "Они использовали наше оборудование", en: "They were using our equipment", tense: "Past Continuous" },
+                { ru: "Я никогда не использовал это", en: "I have never used this", tense: "Present Perfect" },
+                { ru: "Ты уже использовал новое приложение?", en: "Have you used the new app yet?", tense: "Present Perfect" },
+                { ru: "Он использовал этот трюк раньше", en: "He has used this trick before", tense: "Present Perfect" },
+                { ru: "Она уже использовала все попытки", en: "She has already used all attempts", tense: "Present Perfect" },
+                { ru: "Мы использовали этот подход много раз", en: "We have used this approach many times", tense: "Present Perfect" },
+                { ru: "Они использовали весь бюджет", en: "They have used the entire budget", tense: "Present Perfect" },
+                { ru: "Я буду использовать другой метод", en: "I will use a different method", tense: "Future" },
+                { ru: "Ты будешь использовать мою машину?", en: "Will you use my car?", tense: "Future" },
+                { ru: "Он будет использовать эту информацию", en: "He will use this information", tense: "Future" },
+                { ru: "Она будет использовать новую технологию", en: "She will use new technology", tense: "Future" },
+                { ru: "Мы будем использовать лучшие материалы", en: "We will use the best materials", tense: "Future" },
+                { ru: "Они будут использовать наш план", en: "They will use our plan", tense: "Future" },
+                { ru: "Я бы использовал другой подход", en: "I would use a different approach", tense: "Conditional" },
+                { ru: "Ты бы использовал это?", en: "Would you use this?", tense: "Conditional" },
+                { ru: "Он бы использовал больше времени", en: "He would use more time", tense: "Conditional" },
+                { ru: "Она бы использовала помощь", en: "She would use some help", tense: "Conditional" },
+                { ru: "Мы бы использовали твой совет", en: "We would use your advice", tense: "Conditional" },
+                { ru: "Они бы использовали другой способ", en: "They would use another way", tense: "Conditional" },
+                { ru: "Используй свой мозг", en: "Use your brain", tense: "Imperative" },
+                { ru: "Используй эту возможность", en: "Use this opportunity", tense: "Imperative" },
+                { ru: "Используйте эту дверь", en: "Use this door", tense: "Imperative" },
+                { ru: "Используйте инструкции", en: "Use the instructions", tense: "Imperative" },
+                { ru: "Не используй это", en: "Don't use this", tense: "Imperative" },
+                { ru: "Не используйте лифт", en: "Don't use the elevator", tense: "Imperative" },
+                { ru: "Я раньше жил в Москве", en: "I used to live in Moscow", tense: "Expressions" },
+                { ru: "Ты раньше играл в футбол?", en: "Did you use to play football?", tense: "Expressions" },
+                { ru: "Он раньше курил", en: "He used to smoke", tense: "Expressions" },
+                { ru: "Она раньше работала здесь", en: "She used to work here", tense: "Expressions" },
+                { ru: "Мы раньше встречались каждый день", en: "We used to meet every day", tense: "Expressions" },
+                { ru: "Они раньше были друзьями", en: "They used to be friends", tense: "Expressions" },
+                { ru: "Я не использую социальные сети", en: "I don't use social media", tense: "Present" },
+                { ru: "Ты не используешь правильный подход", en: "You don't use the right approach", tense: "Present" },
+                { ru: "Он не использует насилие", en: "He doesn't use violence", tense: "Present" },
+                { ru: "Она не использует макияж", en: "She doesn't use makeup", tense: "Present" },
+                { ru: "Мы не используем пластик", en: "We don't use plastic", tense: "Present" },
+                { ru: "Они не используют химикаты", en: "They don't use chemicals", tense: "Present" },
+                { ru: "Я не использовал силу", en: "I didn't use force", tense: "Past Simple" },
+                { ru: "Ты не использовал шанс", en: "You didn't use the chance", tense: "Past Simple" },
+                { ru: "Он не использовал моё имя", en: "He didn't use my name", tense: "Past Simple" },
+                { ru: "Она не использовала инструкцию", en: "She didn't use the manual", tense: "Past Simple" },
+                { ru: "Мы не использовали правильные слова", en: "We didn't use the right words", tense: "Past Simple" },
+                { ru: "Они не использовали оружие", en: "They didn't use weapons", tense: "Past Simple" },
+                { ru: "Что ты используешь для этого?", en: "What do you use for this?", tense: "Present" },
+                { ru: "Как ты используешь это?", en: "How do you use this?", tense: "Present" },
+                { ru: "Почему он использует это?", en: "Why does he use this?", tense: "Present" },
+                { ru: "Когда ты использовал это?", en: "When did you use this?", tense: "Past Simple" },
+                { ru: "Где они используют это?", en: "Where do they use this?", tense: "Present" },
+                { ru: "Кто использует мой компьютер?", en: "Who is using my computer?", tense: "Present Continuous" },
+                { ru: "Я привык к холоду", en: "I am used to the cold", tense: "Expressions" },
+                { ru: "Ты привык к шуму", en: "You are used to the noise", tense: "Expressions" },
+                { ru: "Он привык вставать рано", en: "He is used to getting up early", tense: "Expressions" },
+                { ru: "Она привыкла работать одна", en: "She is used to working alone", tense: "Expressions" },
+                { ru: "Мы привыкли к жаре", en: "We are used to the heat", tense: "Expressions" },
+                { ru: "Они привыкли к давлению", en: "They are used to pressure", tense: "Expressions" },
+                { ru: "Я привыкаю к новой работе", en: "I am getting used to the new job", tense: "Expressions" },
+                { ru: "Ты привыкаешь к новому дому", en: "You are getting used to the new house", tense: "Expressions" },
+                { ru: "Он привыкает к новой школе", en: "He is getting used to the new school", tense: "Expressions" },
+                { ru: "Она привыкает к новой стране", en: "She is getting used to the new country", tense: "Expressions" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

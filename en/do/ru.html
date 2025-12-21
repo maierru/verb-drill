@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇬🇧 VERB DO — 97 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇬🇧 Verb DO</h1>
+            <p class="subtitle">to perform, to execute — 97 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 97 из 97 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика английского — DO · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'en',
+            labels: { target: 'English', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["do","does","did","done","doing"],
+            phrases: [
+                { ru: "Что ты делаешь?", en: "What do you do?", tense: "Present" },
+                { ru: "Я делаю домашнюю работу.", en: "I do homework.", tense: "Present" },
+                { ru: "Он делает это каждый день.", en: "He does it every day.", tense: "Present" },
+                { ru: "Мы делаем упражнения.", en: "We do exercises.", tense: "Present" },
+                { ru: "Она делает уборку по субботам.", en: "She does cleaning on Saturdays.", tense: "Present" },
+                { ru: "Я не делаю этого.", en: "I don't do that.", tense: "Present" },
+                { ru: "Он не делает ошибок.", en: "He doesn't make mistakes.", tense: "Present" },
+                { ru: "Ты делаешь правильно.", en: "You do it right.", tense: "Present" },
+                { ru: "Они делают всё возможное.", en: "They do their best.", tense: "Present" },
+                { ru: "Что она делает на работе?", en: "What does she do at work?", tense: "Present" },
+                { ru: "Я делал это вчера.", en: "I did it yesterday.", tense: "Past Simple" },
+                { ru: "Он сделал ошибку.", en: "He did a mistake.", tense: "Past Simple" },
+                { ru: "Мы сделали всё вовремя.", en: "We did everything on time.", tense: "Past Simple" },
+                { ru: "Она сделала уборку утром.", en: "She did the cleaning in the morning.", tense: "Past Simple" },
+                { ru: "Что ты делал вчера?", en: "What did you do yesterday?", tense: "Past Simple" },
+                { ru: "Я не делал этого.", en: "I didn't do that.", tense: "Past Simple" },
+                { ru: "Они сделали хорошую работу.", en: "They did a good job.", tense: "Past Simple" },
+                { ru: "Кто это сделал?", en: "Who did this?", tense: "Past Simple" },
+                { ru: "Мы делали это раньше.", en: "We did this before.", tense: "Past Simple" },
+                { ru: "Он сделал это быстро.", en: "He did it quickly.", tense: "Past Simple" },
+                { ru: "Я делаю это сейчас.", en: "I'm doing it now.", tense: "Present Continuous" },
+                { ru: "Что ты делаешь?", en: "What are you doing?", tense: "Present Continuous" },
+                { ru: "Он делает уроки.", en: "He's doing his homework.", tense: "Present Continuous" },
+                { ru: "Мы делаем проект.", en: "We're doing a project.", tense: "Present Continuous" },
+                { ru: "Она делает покупки.", en: "She's doing shopping.", tense: "Present Continuous" },
+                { ru: "Они делают презентацию.", en: "They're doing a presentation.", tense: "Present Continuous" },
+                { ru: "Я не делаю это сейчас.", en: "I'm not doing it now.", tense: "Present Continuous" },
+                { ru: "Что вы делаете в эти выходные?", en: "What are you doing this weekend?", tense: "Present Continuous" },
+                { ru: "Он делает зарядку.", en: "He's doing exercises.", tense: "Present Continuous" },
+                { ru: "Мы делаем всё правильно.", en: "We're doing everything right.", tense: "Present Continuous" },
+                { ru: "Я уже сделал это.", en: "I've already done it.", tense: "Present Perfect" },
+                { ru: "Ты сделал домашнее задание?", en: "Have you done your homework?", tense: "Present Perfect" },
+                { ru: "Он сделал много работы.", en: "He's done a lot of work.", tense: "Present Perfect" },
+                { ru: "Мы сделали всё возможное.", en: "We've done our best.", tense: "Present Perfect" },
+                { ru: "Она никогда не делала этого.", en: "She's never done this.", tense: "Present Perfect" },
+                { ru: "Они сделали большой прогресс.", en: "They've done great progress.", tense: "Present Perfect" },
+                { ru: "Я не сделал это ещё.", en: "I haven't done it yet.", tense: "Present Perfect" },
+                { ru: "Что ты сделал?", en: "What have you done?", tense: "Present Perfect" },
+                { ru: "Он уже сделал это раньше.", en: "He's done it before.", tense: "Present Perfect" },
+                { ru: "Мы закончили работу.", en: "We've done the work.", tense: "Present Perfect" },
+                { ru: "Я буду делать это завтра.", en: "I'll do it tomorrow.", tense: "Future" },
+                { ru: "Что ты будешь делать?", en: "What will you do?", tense: "Future" },
+                { ru: "Он сделает это позже.", en: "He'll do it later.", tense: "Future" },
+                { ru: "Мы сделаем всё вовремя.", en: "We'll do everything on time.", tense: "Future" },
+                { ru: "Она сделает это правильно.", en: "She'll do it right.", tense: "Future" },
+                { ru: "Они не будут делать это.", en: "They won't do it.", tense: "Future" },
+                { ru: "Я сделаю всё возможное.", en: "I'll do my best.", tense: "Future" },
+                { ru: "Что мы будем делать?", en: "What will we do?", tense: "Future" },
+                { ru: "Он сделает это быстро.", en: "He'll do it quickly.", tense: "Future" },
+                { ru: "Я не буду этого делать.", en: "I won't do that.", tense: "Future" },
+                { ru: "Делай это!", en: "Do it!", tense: "Imperative" },
+                { ru: "Не делай этого!", en: "Don't do that!", tense: "Imperative" },
+                { ru: "Сделай уроки!", en: "Do your homework!", tense: "Imperative" },
+                { ru: "Давай сделаем это вместе!", en: "Let's do it together!", tense: "Imperative" },
+                { ru: "Делайте то, что говорят!", en: "Do as you're told!", tense: "Imperative" },
+                { ru: "Сделай всё возможное!", en: "Do your best!", tense: "Imperative" },
+                { ru: "Не делай ошибок!", en: "Don't make mistakes!", tense: "Imperative" },
+                { ru: "Делайте это правильно!", en: "Do it right!", tense: "Imperative" },
+                { ru: "Сделай это сейчас!", en: "Do it now!", tense: "Imperative" },
+                { ru: "Давайте сделаем перерыв!", en: "Let's do a break!", tense: "Imperative" },
+                { ru: "Я действительно хочу это сделать.", en: "I do want to do it.", tense: "Present" },
+                { ru: "Он действительно делает это.", en: "He does do it.", tense: "Present" },
+                { ru: "Я действительно сделал это.", en: "I did do it.", tense: "Past Simple" },
+                { ru: "Она действительно старается.", en: "She does try.", tense: "Present" },
+                { ru: "Мы действительно любим это делать.", en: "We do love doing this.", tense: "Present" },
+                { ru: "Я делаю йогу каждое утро.", en: "I do yoga every morning.", tense: "Present" },
+                { ru: "Он делает много ошибок.", en: "He does many mistakes.", tense: "Present" },
+                { ru: "Что я могу сделать?", en: "What can I do?", tense: "Present" },
+                { ru: "Сколько работы ты сделал?", en: "How much work have you done?", tense: "Present Perfect" },
+                { ru: "Я делаю всё сам.", en: "I do everything myself.", tense: "Present" },
+                { ru: "Они делают вид, что знают.", en: "They do pretend to know.", tense: "Present" },
+                { ru: "Она сделала это одна.", en: "She did it alone.", tense: "Past Simple" },
+                { ru: "Мы делаем покупки в субботу.", en: "We do shopping on Saturday.", tense: "Present" },
+                { ru: "Я сделаю это для тебя.", en: "I'll do it for you.", tense: "Future" },
+                { ru: "Что он делает в жизни?", en: "What does he do for a living?", tense: "Present" },
+                { ru: "Я делаю зарядку каждый день.", en: "I do exercises every day.", tense: "Present" },
+                { ru: "Он делает одолжение.", en: "He's doing a favor.", tense: "Present Continuous" },
+                { ru: "Ты сделал правильный выбор.", en: "You did the right choice.", tense: "Past Simple" },
+                { ru: "Мы делаем исследование.", en: "We're doing research.", tense: "Present Continuous" },
+                { ru: "Она делает макияж.", en: "She's doing makeup.", tense: "Present Continuous" },
+                { ru: "Я сделал это специально.", en: "I did it on purpose.", tense: "Past Simple" },
+                { ru: "Они делают тест.", en: "They're doing a test.", tense: "Present Continuous" },
+                { ru: "Ты делаешь успехи.", en: "You're doing progress.", tense: "Present Continuous" },
+                { ru: "Я никогда не делал этого раньше.", en: "I've never done this before.", tense: "Present Perfect" },
+                { ru: "Он делает бизнес.", en: "He does business.", tense: "Present" },
+                { ru: "Что мы сделали неправильно?", en: "What did we do wrong?", tense: "Past Simple" },
+                { ru: "Я делаю всё по порядку.", en: "I do everything in order.", tense: "Present" },
+                { ru: "Она уже сделала это дважды.", en: "She's already done it twice.", tense: "Present Perfect" },
+                { ru: "Мы сделаем это по-другому.", en: "We'll do it differently.", tense: "Future" },
+                { ru: "Он делает вид, что не знает.", en: "He does pretend not to know.", tense: "Present" },
+                { ru: "Я сделал всё, что мог.", en: "I did everything I could.", tense: "Past Simple" },
+                { ru: "Ты делаешь меня счастливым.", en: "You do make me happy.", tense: "Present" },
+                { ru: "Они сделали открытие.", en: "They did a discovery.", tense: "Past Simple" },
+                { ru: "Я делаю это с удовольствием.", en: "I do it with pleasure.", tense: "Present" },
+                { ru: "Сделай это аккуратно!", en: "Do it carefully!", tense: "Imperative" },
+                { ru: "Мы делаем ремонт.", en: "We're doing renovation.", tense: "Present Continuous" },
+                { ru: "Она делает прическу.", en: "She's doing her hair.", tense: "Present Continuous" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇬🇧 VERB TAKE — 96 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇬🇧 Verb TAKE</h1>
+            <p class="subtitle">to grab, to accept — 96 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 96 из 96 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика английского — TAKE · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'en',
+            labels: { target: 'English', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["take","takes","took","taken","taking","don't take","doesn't take","didn't take","won't take","wouldn't take","will take","would take","have taken","has taken","had taken"],
+            phrases: [
+                { ru: "Я возьму это.", en: "I will take this.", tense: "Future" },
+                { ru: "Ты берёшь кофе?", en: "Do you take coffee?", tense: "Present" },
+                { ru: "Он взял книгу.", en: "He took the book.", tense: "Past Simple" },
+                { ru: "Мы возьмём такси.", en: "We will take a taxi.", tense: "Future" },
+                { ru: "Они берут билеты.", en: "They take the tickets.", tense: "Present" },
+                { ru: "Она взяла зонт.", en: "She took an umbrella.", tense: "Past Simple" },
+                { ru: "Я не беру сахар.", en: "I don't take sugar.", tense: "Present" },
+                { ru: "Ты взял мой телефон?", en: "Did you take my phone?", tense: "Past Simple" },
+                { ru: "Он не взял деньги.", en: "He didn't take the money.", tense: "Past Simple" },
+                { ru: "Мы не будем брать машину.", en: "We won't take the car.", tense: "Future" },
+                { ru: "Возьми это.", en: "Take this.", tense: "Imperative" },
+                { ru: "Возьмите место.", en: "Take a seat.", tense: "Imperative" },
+                { ru: "Не бери это.", en: "Don't take that.", tense: "Imperative" },
+                { ru: "Возьмите с собой паспорт.", en: "Take your passport with you.", tense: "Imperative" },
+                { ru: "Я беру отпуск.", en: "I'm taking a vacation.", tense: "Present Continuous" },
+                { ru: "Ты сейчас берёшь уроки?", en: "Are you taking lessons now?", tense: "Present Continuous" },
+                { ru: "Он брал душ, когда я позвонил.", en: "He was taking a shower when I called.", tense: "Past Continuous" },
+                { ru: "Мы берём такси прямо сейчас.", en: "We are taking a taxi right now.", tense: "Present Continuous" },
+                { ru: "Они брали интервью весь день.", en: "They were taking interviews all day.", tense: "Past Continuous" },
+                { ru: "Я уже взял лекарство.", en: "I have already taken the medicine.", tense: "Present Perfect" },
+                { ru: "Ты когда-нибудь брал уроки испанского?", en: "Have you ever taken Spanish lessons?", tense: "Present Perfect" },
+                { ru: "Он взял мой совет.", en: "He has taken my advice.", tense: "Present Perfect" },
+                { ru: "Мы уже взяли билеты.", en: "We have already taken the tickets.", tense: "Present Perfect" },
+                { ru: "Они никогда не брали взятки.", en: "They have never taken bribes.", tense: "Present Perfect" },
+                { ru: "Я взял бы это, если бы было дешевле.", en: "I would take it if it were cheaper.", tense: "Conditional" },
+                { ru: "Ты бы взял эту работу?", en: "Would you take this job?", tense: "Conditional" },
+                { ru: "Он бы не взял это.", en: "He wouldn't take that.", tense: "Conditional" },
+                { ru: "Мы бы взяли его с собой.", en: "We would take him with us.", tense: "Conditional" },
+                { ru: "Они бы взяли выходной.", en: "They would take a day off.", tense: "Conditional" },
+                { ru: "Сколько времени это займёт?", en: "How long will it take?", tense: "Future" },
+                { ru: "Это займёт час.", en: "It will take an hour.", tense: "Future" },
+                { ru: "Это заняло много времени.", en: "It took a long time.", tense: "Past Simple" },
+                { ru: "Сколько это заняло?", en: "How long did it take?", tense: "Past Simple" },
+                { ru: "Это займёт минуту.", en: "It takes a minute.", tense: "Present" },
+                { ru: "Я беру ответственность.", en: "I take responsibility.", tense: "Present" },
+                { ru: "Возьми себя в руки.", en: "Take yourself in hand.", tense: "Imperative" },
+                { ru: "Он принимает решение.", en: "He is taking a decision.", tense: "Present Continuous" },
+                { ru: "Мы приняли решение.", en: "We have taken a decision.", tense: "Present Perfect" },
+                { ru: "Они приняли меры.", en: "They took measures.", tense: "Past Simple" },
+                { ru: "Я не принимаю наркотики.", en: "I don't take drugs.", tense: "Present" },
+                { ru: "Ты принял таблетки?", en: "Did you take your pills?", tense: "Past Simple" },
+                { ru: "Возьми своё время.", en: "Take your time.", tense: "Imperative" },
+                { ru: "Не торопись.", en: "Don't take it too fast.", tense: "Imperative" },
+                { ru: "Я приму это во внимание.", en: "I will take that into account.", tense: "Future" },
+                { ru: "Ты это серьёзно?", en: "Do you take this seriously?", tense: "Present" },
+                { ru: "Он принял это близко к сердцу.", en: "He took it to heart.", tense: "Past Simple" },
+                { ru: "Мы взяли курс на север.", en: "We took a course to the north.", tense: "Past Simple" },
+                { ru: "Они берут участие.", en: "They are taking part.", tense: "Present Continuous" },
+                { ru: "Я возьму риск.", en: "I will take a risk.", tense: "Future" },
+                { ru: "Ты взял выходной?", en: "Did you take a day off?", tense: "Past Simple" },
+                { ru: "Возьми перерыв.", en: "Take a break.", tense: "Imperative" },
+                { ru: "Я беру отгул.", en: "I'm taking time off.", tense: "Present Continuous" },
+                { ru: "Он взял верх.", en: "He took the upper hand.", tense: "Past Simple" },
+                { ru: "Мы возьмём инициативу.", en: "We will take the initiative.", tense: "Future" },
+                { ru: "Они взяли контроль.", en: "They took control.", tense: "Past Simple" },
+                { ru: "Я беру на себя.", en: "I take it upon myself.", tense: "Present" },
+                { ru: "Ты взял на себя слишком много.", en: "You took on too much.", tense: "Past Simple" },
+                { ru: "Возьми это на заметку.", en: "Take note of this.", tense: "Imperative" },
+                { ru: "Я не могу это принять.", en: "I can't take this.", tense: "Present" },
+                { ru: "Он не принял извинения.", en: "He didn't take the apology.", tense: "Past Simple" },
+                { ru: "Мы не берём карты.", en: "We don't take cards.", tense: "Present" },
+                { ru: "Они не взяли предложение.", en: "They didn't take the offer.", tense: "Past Simple" },
+                { ru: "Возьми меня с собой.", en: "Take me with you.", tense: "Imperative" },
+                { ru: "Я беру тебя на слово.", en: "I take you at your word.", tense: "Present" },
+                { ru: "Ты взял ключи?", en: "Did you take the keys?", tense: "Past Simple" },
+                { ru: "Он берёт уроки игры на гитаре.", en: "He takes guitar lessons.", tense: "Present" },
+                { ru: "Мы возьмём собаку на прогулку.", en: "We will take the dog for a walk.", tense: "Future" },
+                { ru: "Они взяли нас врасплох.", en: "They took us by surprise.", tense: "Past Simple" },
+                { ru: "Я беру ванну.", en: "I'm taking a bath.", tense: "Present Continuous" },
+                { ru: "Ты берёшь это?", en: "Are you taking this?", tense: "Present Continuous" },
+                { ru: "Возьми зонт, идёт дождь.", en: "Take an umbrella, it's raining.", tense: "Imperative" },
+                { ru: "Я возьму такси до аэропорта.", en: "I will take a taxi to the airport.", tense: "Future" },
+                { ru: "Он взял меня за руку.", en: "He took me by the hand.", tense: "Past Simple" },
+                { ru: "Мы берём взаймы.", en: "We are taking a loan.", tense: "Present Continuous" },
+                { ru: "Они взяли кредит.", en: "They took a loan.", tense: "Past Simple" },
+                { ru: "Не принимай это на свой счёт.", en: "Don't take it personally.", tense: "Imperative" },
+                { ru: "Я принимаю твоё предложение.", en: "I take your offer.", tense: "Present" },
+                { ru: "Ты принял приглашение?", en: "Did you take the invitation?", tense: "Past Simple" },
+                { ru: "Он не принимает звонки.", en: "He doesn't take calls.", tense: "Present" },
+                { ru: "Мы взяли паузу.", en: "We took a pause.", tense: "Past Simple" },
+                { ru: "Они берут образцы.", en: "They are taking samples.", tense: "Present Continuous" },
+                { ru: "Я возьму тебя на работу.", en: "I will take you to work.", tense: "Future" },
+                { ru: "Ты взял отпечатки?", en: "Did you take the fingerprints?", tense: "Past Simple" },
+                { ru: "Возьми фотоаппарат.", en: "Take the camera.", tense: "Imperative" },
+                { ru: "Я беру фотографии.", en: "I'm taking photos.", tense: "Present Continuous" },
+                { ru: "Он взял пробу.", en: "He took a sample.", tense: "Past Simple" },
+                { ru: "Мы берём анализы.", en: "We are taking tests.", tense: "Present Continuous" },
+                { ru: "Они возьмут кровь.", en: "They will take blood.", tense: "Future" },
+                { ru: "Я не беру чаевые.", en: "I don't take tips.", tense: "Present" },
+                { ru: "Ты взял деньги?", en: "Did you take the money?", tense: "Past Simple" },
+                { ru: "Он берёт взятки.", en: "He takes bribes.", tense: "Present" },
+                { ru: "Мы не берём подарки.", en: "We don't take gifts.", tense: "Present" },
+                { ru: "Возьми это бесплатно.", en: "Take it for free.", tense: "Imperative" },
+                { ru: "Я беру половину.", en: "I take half.", tense: "Present" },
+                { ru: "Ты взял последний кусок?", en: "Did you take the last piece?", tense: "Past Simple" },
+                { ru: "Он берёт всё.", en: "He takes everything.", tense: "Present" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

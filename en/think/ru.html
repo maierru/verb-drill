@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇬🇧 VERB THINK — 98 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇬🇧 Verb THINK</h1>
+            <p class="subtitle">to consider, to believe — 98 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 98 из 98 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика английского — THINK · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'en',
+            labels: { target: 'English', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["think","thinks","thought","thinking"],
+            phrases: [
+                { ru: "Я думаю о тебе каждый день", en: "I think about you every day", tense: "Present Simple" },
+                { ru: "Она думает, что это хорошая идея", en: "She thinks it's a good idea", tense: "Present Simple" },
+                { ru: "Мы думали, что ты придёшь", en: "We thought you would come", tense: "Past Simple" },
+                { ru: "Он думает о своём будущем", en: "He thinks about his future", tense: "Present Simple" },
+                { ru: "Я думал об этом всю ночь", en: "I thought about it all night", tense: "Past Simple" },
+                { ru: "Они думают, что я прав", en: "They think I'm right", tense: "Present Simple" },
+                { ru: "Что ты думаешь об этом?", en: "What do you think about this?", tense: "Present Simple" },
+                { ru: "Я думаю, что пойдёт дождь", en: "I think it will rain", tense: "Present Simple" },
+                { ru: "Она думала, что потеряла ключи", en: "She thought she had lost her keys", tense: "Past Simple" },
+                { ru: "Мы думаем о переезде", en: "We're thinking about moving", tense: "Present Continuous" },
+                { ru: "Он думал, что знает ответ", en: "He thought he knew the answer", tense: "Past Simple" },
+                { ru: "Я всегда думаю о последствиях", en: "I always think about the consequences", tense: "Present Simple" },
+                { ru: "Ты думал о моём предложении?", en: "Have you thought about my proposal?", tense: "Present Perfect" },
+                { ru: "Они думают, что мы опоздаем", en: "They think we'll be late", tense: "Present Simple" },
+                { ru: "Я думаю, это неправильно", en: "I think this is wrong", tense: "Present Simple" },
+                { ru: "Она думает только о себе", en: "She only thinks about herself", tense: "Present Simple" },
+                { ru: "Мы думали, что магазин открыт", en: "We thought the shop was open", tense: "Past Simple" },
+                { ru: "Он думает, что может выиграть", en: "He thinks he can win", tense: "Present Simple" },
+                { ru: "Я думаю, что ты талантлив", en: "I think you're talented", tense: "Present Simple" },
+                { ru: "Они думали, что мы уехали", en: "They thought we had left", tense: "Past Simple" },
+                { ru: "О чём ты думаешь?", en: "What are you thinking about?", tense: "Present Continuous" },
+                { ru: "Я думал, что это легко", en: "I thought it was easy", tense: "Past Simple" },
+                { ru: "Она думает, что я виноват", en: "She thinks I'm guilty", tense: "Present Simple" },
+                { ru: "Мы не думали об этом", en: "We didn't think about it", tense: "Past Simple" },
+                { ru: "Он думает, что всё знает", en: "He thinks he knows everything", tense: "Present Simple" },
+                { ru: "Я думаю, мне нужен отпуск", en: "I think I need a vacation", tense: "Present Simple" },
+                { ru: "Ты думаешь, что это возможно?", en: "Do you think it's possible?", tense: "Present Simple" },
+                { ru: "Они думают о покупке дома", en: "They're thinking about buying a house", tense: "Present Continuous" },
+                { ru: "Я думал, что видел тебя вчера", en: "I thought I saw you yesterday", tense: "Past Simple" },
+                { ru: "Она думает, что я лгу", en: "She thinks I'm lying", tense: "Present Simple" },
+                { ru: "Мы думаем, что это справедливо", en: "We think it's fair", tense: "Present Simple" },
+                { ru: "Он думал, что опоздал", en: "He thought he was late", tense: "Past Simple" },
+                { ru: "Я думаю, что понимаю", en: "I think I understand", tense: "Present Simple" },
+                { ru: "Они думают, что мы друзья", en: "They think we're friends", tense: "Present Simple" },
+                { ru: "Ты думал об этом раньше?", en: "Did you think about this before?", tense: "Past Simple" },
+                { ru: "Я думаю, что это красиво", en: "I think it's beautiful", tense: "Present Simple" },
+                { ru: "Она думала, что ты согласишься", en: "She thought you would agree", tense: "Past Simple" },
+                { ru: "Мы думаем о будущем", en: "We're thinking about the future", tense: "Present Continuous" },
+                { ru: "Он думает, что я забыл", en: "He thinks I forgot", tense: "Present Simple" },
+                { ru: "Я никогда не думал об этом", en: "I've never thought about it", tense: "Present Perfect" },
+                { ru: "Они думают, что это дорого", en: "They think it's expensive", tense: "Present Simple" },
+                { ru: "Ты думаешь, что я прав?", en: "Do you think I'm right?", tense: "Present Simple" },
+                { ru: "Я думал, что ты ушёл", en: "I thought you had gone", tense: "Past Simple" },
+                { ru: "Она думает о смене работы", en: "She's thinking about changing jobs", tense: "Present Continuous" },
+                { ru: "Мы думали, что это легче", en: "We thought it would be easier", tense: "Past Simple" },
+                { ru: "Он думает, что я шучу", en: "He thinks I'm joking", tense: "Present Simple" },
+                { ru: "Я думаю, что это правда", en: "I think it's true", tense: "Present Simple" },
+                { ru: "Они думали, что мы не придём", en: "They thought we wouldn't come", tense: "Past Simple" },
+                { ru: "Ты думаешь, что это важно?", en: "Do you think this is important?", tense: "Present Simple" },
+                { ru: "Я думаю, что мне повезло", en: "I think I'm lucky", tense: "Present Simple" },
+                { ru: "Она думает, что я не знаю", en: "She thinks I don't know", tense: "Present Simple" },
+                { ru: "Мы думаем о тебе", en: "We're thinking about you", tense: "Present Continuous" },
+                { ru: "Он думал, что всё кончено", en: "He thought it was all over", tense: "Past Simple" },
+                { ru: "Я думаю, что это интересно", en: "I think it's interesting", tense: "Present Simple" },
+                { ru: "Они думают, что я боюсь", en: "They think I'm afraid", tense: "Present Simple" },
+                { ru: "Ты думал о последствиях?", en: "Did you think about the consequences?", tense: "Past Simple" },
+                { ru: "Я думал, что ты спишь", en: "I thought you were sleeping", tense: "Past Simple" },
+                { ru: "Она думает, что это невозможно", en: "She thinks it's impossible", tense: "Present Simple" },
+                { ru: "Мы думали, что ты болен", en: "We thought you were sick", tense: "Past Simple" },
+                { ru: "Он думает о своих ошибках", en: "He's thinking about his mistakes", tense: "Present Continuous" },
+                { ru: "Я думаю, что могу помочь", en: "I think I can help", tense: "Present Simple" },
+                { ru: "Они думают, что это опасно", en: "They think it's dangerous", tense: "Present Simple" },
+                { ru: "Ты думаешь, что я глупый?", en: "Do you think I'm stupid?", tense: "Present Simple" },
+                { ru: "Я думал, что ты понимаешь", en: "I thought you understood", tense: "Past Simple" },
+                { ru: "Она думает, что я злюсь", en: "She thinks I'm angry", tense: "Present Simple" },
+                { ru: "Мы думаем о поездке в Европу", en: "We're thinking about a trip to Europe", tense: "Present Continuous" },
+                { ru: "Он думал, что это сон", en: "He thought it was a dream", tense: "Past Simple" },
+                { ru: "Я думаю, что это хороший план", en: "I think it's a good plan", tense: "Present Simple" },
+                { ru: "Они думают, что я солгал", en: "They think I lied", tense: "Present Simple" },
+                { ru: "Ты думал, что я не замечу?", en: "Did you think I wouldn't notice?", tense: "Past Simple" },
+                { ru: "Я думаю, что это стоит попробовать", en: "I think it's worth trying", tense: "Present Simple" },
+                { ru: "Она думала, что я забыл", en: "She thought I had forgotten", tense: "Past Simple" },
+                { ru: "Мы думаем, что это правильное решение", en: "We think it's the right decision", tense: "Present Simple" },
+                { ru: "Он думает о прошлом", en: "He's thinking about the past", tense: "Present Continuous" },
+                { ru: "Я долго думал над этим", en: "I've been thinking about this for a long time", tense: "Present Perfect Continuous" },
+                { ru: "Они думают, что я богатый", en: "They think I'm rich", tense: "Present Simple" },
+                { ru: "Ты думаешь, что это смешно?", en: "Do you think it's funny?", tense: "Present Simple" },
+                { ru: "Я думал, что мы друзья", en: "I thought we were friends", tense: "Past Simple" },
+                { ru: "Она думает, что я не слушаю", en: "She thinks I'm not listening", tense: "Present Simple" },
+                { ru: "Мы думали, что это невозможно", en: "We thought it was impossible", tense: "Past Simple" },
+                { ru: "Он думает, что победит", en: "He thinks he'll win", tense: "Present Simple" },
+                { ru: "Я думаю, что знаю ответ", en: "I think I know the answer", tense: "Present Simple" },
+                { ru: "Они думают о новом проекте", en: "They're thinking about a new project", tense: "Present Continuous" },
+                { ru: "Ты думал, что я не приду?", en: "Did you think I wouldn't come?", tense: "Past Simple" },
+                { ru: "Я думал, что это секрет", en: "I thought it was a secret", tense: "Past Simple" },
+                { ru: "Она думает, что я устал", en: "She thinks I'm tired", tense: "Present Simple" },
+                { ru: "Мы думаем о детях", en: "We're thinking about the children", tense: "Present Continuous" },
+                { ru: "Он думал, что это шутка", en: "He thought it was a joke", tense: "Past Simple" },
+                { ru: "Я думаю, что это важно", en: "I think this is important", tense: "Present Simple" },
+                { ru: "Они думают, что я не готов", en: "They think I'm not ready", tense: "Present Simple" },
+                { ru: "Ты думаешь об этом каждый день?", en: "Do you think about this every day?", tense: "Present Simple" },
+                { ru: "Я думал, что ты знаешь", en: "I thought you knew", tense: "Past Simple" },
+                { ru: "Она думает, что я сумасшедший", en: "She thinks I'm crazy", tense: "Present Simple" },
+                { ru: "Мы думали, что это дешевле", en: "We thought it would be cheaper", tense: "Past Simple" },
+                { ru: "Он часто думает о семье", en: "He often thinks about his family", tense: "Present Simple" },
+                { ru: "Я думаю, что это правильно", en: "I think this is right", tense: "Present Simple" },
+                { ru: "Они думают, что я не умею", en: "They think I can't do it", tense: "Present Simple" },
+                { ru: "Ты думал о плане Б?", en: "Have you thought about plan B?", tense: "Present Perfect" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

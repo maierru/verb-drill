@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇬🇧 VERB GO — 100 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇬🇧 Verb GO</h1>
+            <p class="subtitle">to move, to travel — 100 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 100 de 100 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            English Practice — GO · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'en',
+            labels: { target: 'English', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["go","goes","went","gone","going","don't go","doesn't go","didn't go","won't go","wouldn't go","can't go"],
+            phrases: [
+                { pt: "Eu vou para casa.", en: "I go home.", tense: "Present" },
+                { pt: "Tu vais para o trabalho.", en: "You go to work.", tense: "Present" },
+                { pt: "Ele vai para a escola.", en: "He goes to school.", tense: "Present" },
+                { pt: "Ela vai à loja.", en: "She goes to the store.", tense: "Present" },
+                { pt: "Nós vamos ao parque.", en: "We go to the park.", tense: "Present" },
+                { pt: "Vocês vão ao cinema.", en: "You go to the cinema.", tense: "Present" },
+                { pt: "Eles vão ao ginásio.", en: "They go to the gym.", tense: "Present" },
+                { pt: "Eu não vou lá.", en: "I don't go there.", tense: "Present" },
+                { pt: "Tu não vais aos treinos.", en: "You don't go to training.", tense: "Present" },
+                { pt: "Ele não vai à igreja.", en: "He doesn't go to church.", tense: "Present" },
+                { pt: "Para onde vais?", en: "Where do you go?", tense: "Present" },
+                { pt: "Quando é que ela vai?", en: "When does she go?", tense: "Present" },
+                { pt: "Com que frequência vais?", en: "How often do you go?", tense: "Present" },
+                { pt: "Nós costumamos ir a pé.", en: "We usually go on foot.", tense: "Present" },
+                { pt: "Ele vai sempre sozinho.", en: "He always goes alone.", tense: "Present" },
+                { pt: "Eles raramente vão lá.", en: "They rarely go there.", tense: "Present" },
+                { pt: "Eu vou ao trabalho todos os dias.", en: "I go to work every day.", tense: "Present" },
+                { pt: "Ela às vezes vai à biblioteca.", en: "She sometimes goes to the library.", tense: "Present" },
+                { pt: "Para onde costumas ir?", en: "Where do you usually go?", tense: "Present" },
+                { pt: "Vamos!", en: "Let's go!", tense: "Present" },
+                { pt: "Eu fui para casa.", en: "I went home.", tense: "Past Simple" },
+                { pt: "Tu foste para o trabalho.", en: "You went to work.", tense: "Past Simple" },
+                { pt: "Ele foi à escola.", en: "He went to school.", tense: "Past Simple" },
+                { pt: "Ela foi à loja.", en: "She went to the store.", tense: "Past Simple" },
+                { pt: "Nós fomos ao parque.", en: "We went to the park.", tense: "Past Simple" },
+                { pt: "Vocês foram ao museu.", en: "You went to the museum.", tense: "Past Simple" },
+                { pt: "Eles foram ao concerto.", en: "They went to the concert.", tense: "Past Simple" },
+                { pt: "Eu não fui lá.", en: "I didn't go there.", tense: "Past Simple" },
+                { pt: "Tu não foste com eles.", en: "You didn't go with them.", tense: "Past Simple" },
+                { pt: "Ele não foi a lado nenhum.", en: "He didn't go anywhere.", tense: "Past Simple" },
+                { pt: "Para onde foste?", en: "Where did you go?", tense: "Past Simple" },
+                { pt: "O que correu mal?", en: "What went wrong?", tense: "Past Simple" },
+                { pt: "Eu fui lá ontem.", en: "I went there yesterday.", tense: "Past Simple" },
+                { pt: "Ela foi ao cinema na semana passada.", en: "She went to the cinema last week.", tense: "Past Simple" },
+                { pt: "Eles foram para casa cedo.", en: "They went home early.", tense: "Past Simple" },
+                { pt: "Nós fomos dar um passeio.", en: "We went for a walk.", tense: "Past Simple" },
+                { pt: "Foste sozinho?", en: "Did you go alone?", tense: "Past Simple" },
+                { pt: "Ele foi-se embora sem se despedir.", en: "He went without saying goodbye.", tense: "Past Simple" },
+                { pt: "O tempo passou depressa.", en: "Time went fast.", tense: "Past Simple" },
+                { pt: "Estou a ir para casa agora.", en: "I am going home now.", tense: "Present Continuous" },
+                { pt: "Vais a algum lado?", en: "Are you going somewhere?", tense: "Present Continuous" },
+                { pt: "Ele está a ir para uma reunião.", en: "He is going to a meeting.", tense: "Present Continuous" },
+                { pt: "Ela está a ir trabalhar.", en: "She is going to work.", tense: "Present Continuous" },
+                { pt: "Estamos a ir a um restaurante.", en: "We are going to a restaurant.", tense: "Present Continuous" },
+                { pt: "Para onde estão a ir?", en: "Where are you going?", tense: "Present Continuous" },
+                { pt: "Eles estão a ir para casa.", en: "They are going home.", tense: "Present Continuous" },
+                { pt: "Não estou a ir lá.", en: "I'm not going there.", tense: "Present Continuous" },
+                { pt: "Está tudo a correr bem.", en: "Everything is going well.", tense: "Present Continuous" },
+                { pt: "O que se passa?", en: "What's going on?", tense: "Present Continuous" },
+                { pt: "Eu estava a ir quando ligaste.", en: "I was going when you called.", tense: "Past Continuous" },
+                { pt: "Estavas a ir rápido demais.", en: "You were going too fast.", tense: "Past Continuous" },
+                { pt: "Ele estava a ir em direção à estação.", en: "He was going towards the station.", tense: "Past Continuous" },
+                { pt: "Estávamos a ir para casa toda a tarde.", en: "We were going home all evening.", tense: "Past Continuous" },
+                { pt: "Para onde estavas a ir?", en: "Where were you going?", tense: "Past Continuous" },
+                { pt: "Eu já lá estive.", en: "I have been there.", tense: "Present Perfect" },
+                { pt: "Já foste lá?", en: "Have you gone there already?", tense: "Present Perfect" },
+                { pt: "Ele já se foi embora.", en: "He has already gone.", tense: "Present Perfect" },
+                { pt: "Ela nunca esteve em Paris.", en: "She has never been to Paris.", tense: "Present Perfect" },
+                { pt: "Já lá estivemos.", en: "We have already been there.", tense: "Present Perfect" },
+                { pt: "Eles foram-se embora.", en: "They have gone.", tense: "Present Perfect" },
+                { pt: "Ainda não fui lá.", en: "I haven't gone there yet.", tense: "Present Perfect" },
+                { pt: "Para onde foi ele?", en: "Where has he gone?", tense: "Present Perfect" },
+                { pt: "O tempo passou.", en: "Time has gone.", tense: "Present Perfect" },
+                { pt: "Já alguma vez estiveste em Londres?", en: "Have you ever been to London?", tense: "Present Perfect" },
+                { pt: "Vou lá amanhã.", en: "I will go there tomorrow.", tense: "Future" },
+                { pt: "Vais connosco?", en: "Will you go with us?", tense: "Future" },
+                { pt: "Ele vai para a universidade.", en: "He will go to university.", tense: "Future" },
+                { pt: "Ela vai à festa.", en: "She will go to the party.", tense: "Future" },
+                { pt: "Vamos ao teatro.", en: "We will go to the theatre.", tense: "Future" },
+                { pt: "Eles vão à praia.", en: "They will go to the beach.", tense: "Future" },
+                { pt: "Não vou lá.", en: "I won't go there.", tense: "Future" },
+                { pt: "Ele não vai a lado nenhum.", en: "He won't go anywhere.", tense: "Future" },
+                { pt: "Para onde vais?", en: "Where will you go?", tense: "Future" },
+                { pt: "Vai correr tudo bem.", en: "Everything will go well.", tense: "Future" },
+                { pt: "Eu iria contigo.", en: "I would go with you.", tense: "Conditional" },
+                { pt: "Tu irias lá?", en: "Would you go there?", tense: "Conditional" },
+                { pt: "Ele não iria sozinho.", en: "He wouldn't go alone.", tense: "Conditional" },
+                { pt: "Nós iríamos, mas estamos ocupados.", en: "We would go, but we're busy.", tense: "Conditional" },
+                { pt: "Eu não iria lá.", en: "I wouldn't go there.", tense: "Conditional" },
+                { pt: "Para onde irias?", en: "Where would you go?", tense: "Conditional" },
+                { pt: "Ela iria com prazer.", en: "She would gladly go.", tense: "Conditional" },
+                { pt: "Eles iriam se pudessem.", en: "They would go if they could.", tense: "Conditional" },
+                { pt: "O que farias?", en: "What would you do? (Lit: Where would you go?)", tense: "Conditional" },
+                { pt: "Eu iria com todo o gosto.", en: "I would love to go.", tense: "Conditional" },
+                { pt: "Vai!", en: "Go!", tense: "Imperative" },
+                { pt: "Vão para casa.", en: "Go home.", tense: "Imperative" },
+                { pt: "Não vás lá.", en: "Don't go there.", tense: "Imperative" },
+                { pt: "Não te vás embora.", en: "Don't go.", tense: "Imperative" },
+                { pt: "Vem cá.", en: "Go here. / Come here.", tense: "Imperative" },
+                { pt: "Vamos!", en: "Let's go!", tense: "Imperative" },
+                { pt: "Vai dormir.", en: "Go to sleep.", tense: "Imperative" },
+                { pt: "Vai em frente!", en: "Go ahead!", tense: "Expression" },
+                { pt: "Vamos!", en: "Let's go!", tense: "Expression" },
+                { pt: "Como vai?", en: "How's it going?", tense: "Expression" },
+                { pt: "Está na hora de ir.", en: "Time to go.", tense: "Expression" },
+                { pt: "Vai ver.", en: "Go and see.", tense: "Expression" },
+                { pt: "Vai-te embora!", en: "Go away!", tense: "Expression" },
+                { pt: "Segue o teu caminho.", en: "Go your way.", tense: "Expression" },
+                { pt: "Fazer um compromisso.", en: "To go for a compromise.", tense: "Expression" },
+                { pt: "Tudo está a correr conforme planeado.", en: "Everything is going according to plan.", tense: "Expression" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

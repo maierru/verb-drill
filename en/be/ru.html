@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇬🇧 VERB BE — 96 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇬🇧 Verb BE</h1>
+            <p class="subtitle">to exist, to equal — 96 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 96 из 96 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика английского — BE · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'en',
+            labels: { target: 'English', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["be","am","is","are","was","were","been","being"],
+            phrases: [
+                { ru: "Я врач", en: "I am a doctor", tense: "Present" },
+                { ru: "Он студент", en: "He is a student", tense: "Present" },
+                { ru: "Мы дома", en: "We are at home", tense: "Present" },
+                { ru: "Они счастливы", en: "They are happy", tense: "Present" },
+                { ru: "Она была здесь вчера", en: "She was here yesterday", tense: "Past Simple" },
+                { ru: "Мы были в Москве", en: "We were in Moscow", tense: "Past Simple" },
+                { ru: "Я был занят", en: "I was busy", tense: "Past Simple" },
+                { ru: "Они были друзьями", en: "They were friends", tense: "Past Simple" },
+                { ru: "Я работаю сейчас", en: "I am working now", tense: "Present Continuous" },
+                { ru: "Она читает книгу", en: "She is reading a book", tense: "Present Continuous" },
+                { ru: "Мы едем в город", en: "We are going to the city", tense: "Present Continuous" },
+                { ru: "Они играют в футбол", en: "They are playing football", tense: "Present Continuous" },
+                { ru: "Я готовил ужин", en: "I was cooking dinner", tense: "Past Continuous" },
+                { ru: "Он спал когда я пришел", en: "He was sleeping when I came", tense: "Past Continuous" },
+                { ru: "Мы смотрели телевизор", en: "We were watching TV", tense: "Past Continuous" },
+                { ru: "Они танцевали всю ночь", en: "They were dancing all night", tense: "Past Continuous" },
+                { ru: "Я был там раньше", en: "I have been there before", tense: "Present Perfect" },
+                { ru: "Она была в Лондоне", en: "She has been to London", tense: "Present Perfect" },
+                { ru: "Мы были друзьями много лет", en: "We have been friends for years", tense: "Present Perfect" },
+                { ru: "Он был учителем с 2010 года", en: "He has been a teacher since 2010", tense: "Present Perfect" },
+                { ru: "Я буду там завтра", en: "I will be there tomorrow", tense: "Future" },
+                { ru: "Она будет счастлива", en: "She will be happy", tense: "Future" },
+                { ru: "Мы будем готовы", en: "We will be ready", tense: "Future" },
+                { ru: "Они будут здесь в шесть", en: "They will be here at six", tense: "Future" },
+                { ru: "Я был бы рад помочь", en: "I would be glad to help", tense: "Conditional" },
+                { ru: "Это было бы здорово", en: "It would be great", tense: "Conditional" },
+                { ru: "Мы были бы там, если бы могли", en: "We would be there if we could", tense: "Conditional" },
+                { ru: "Она была бы хорошим лидером", en: "She would be a good leader", tense: "Conditional" },
+                { ru: "Будь осторожен", en: "Be careful", tense: "Imperative" },
+                { ru: "Будьте добры", en: "Be kind", tense: "Imperative" },
+                { ru: "Не будь глупым", en: "Don't be silly", tense: "Imperative" },
+                { ru: "Будь собой", en: "Be yourself", tense: "Imperative" },
+                { ru: "Это правда", en: "It is true", tense: "Present" },
+                { ru: "Я устал", en: "I am tired", tense: "Present" },
+                { ru: "Погода хорошая", en: "The weather is good", tense: "Present" },
+                { ru: "Мы готовы начать", en: "We are ready to start", tense: "Present" },
+                { ru: "Он был прав", en: "He was right", tense: "Past Simple" },
+                { ru: "Было холодно", en: "It was cold", tense: "Past Simple" },
+                { ru: "Я думаю сейчас", en: "I am thinking now", tense: "Present Continuous" },
+                { ru: "Она учится в университете", en: "She is studying at university", tense: "Present Continuous" },
+                { ru: "Они путешествуют по Европе", en: "They are traveling around Europe", tense: "Present Continuous" },
+                { ru: "Я ждал тебя", en: "I was waiting for you", tense: "Past Continuous" },
+                { ru: "Шел дождь", en: "It was raining", tense: "Past Continuous" },
+                { ru: "Он работал над проектом", en: "He was working on the project", tense: "Past Continuous" },
+                { ru: "Я никогда не был в Японии", en: "I have never been to Japan", tense: "Present Perfect" },
+                { ru: "Это было лучшим решением", en: "It has been the best decision", tense: "Present Perfect" },
+                { ru: "Мы знакомы с детства", en: "We have been friends since childhood", tense: "Present Perfect" },
+                { ru: "Он занят весь день", en: "He has been busy all day", tense: "Present Perfect" },
+                { ru: "Все будет хорошо", en: "Everything will be fine", tense: "Future" },
+                { ru: "Я буду инженером", en: "I will be an engineer", tense: "Future" },
+                { ru: "Это будет сложно", en: "It will be difficult", tense: "Future" },
+                { ru: "Они будут удивлены", en: "They will be surprised", tense: "Future" },
+                { ru: "Это было бы ошибкой", en: "It would be a mistake", tense: "Conditional" },
+                { ru: "Я был бы счастлив", en: "I would be happy", tense: "Conditional" },
+                { ru: "Было бы лучше подождать", en: "It would be better to wait", tense: "Conditional" },
+                { ru: "Они были бы здесь, если бы знали", en: "They would be here if they knew", tense: "Conditional" },
+                { ru: "Будь честным", en: "Be honest", tense: "Imperative" },
+                { ru: "Будьте тихими", en: "Be quiet", tense: "Imperative" },
+                { ru: "Будь терпеливым", en: "Be patient", tense: "Imperative" },
+                { ru: "Будьте внимательны", en: "Be attentive", tense: "Imperative" },
+                { ru: "Я голоден", en: "I am hungry", tense: "Present" },
+                { ru: "Она красивая", en: "She is beautiful", tense: "Present" },
+                { ru: "Это важно", en: "It is important", tense: "Present" },
+                { ru: "Мы опаздываем", en: "We are late", tense: "Present" },
+                { ru: "Было темно", en: "It was dark", tense: "Past Simple" },
+                { ru: "Они были рады", en: "They were glad", tense: "Past Simple" },
+                { ru: "Я был удивлен", en: "I was surprised", tense: "Past Simple" },
+                { ru: "Было интересно", en: "It was interesting", tense: "Past Simple" },
+                { ru: "Я пишу письмо", en: "I am writing a letter", tense: "Present Continuous" },
+                { ru: "Он бежит в парке", en: "He is running in the park", tense: "Present Continuous" },
+                { ru: "Мы слушаем музыку", en: "We are listening to music", tense: "Present Continuous" },
+                { ru: "Она плачет", en: "She is crying", tense: "Present Continuous" },
+                { ru: "Мы разговаривали о тебе", en: "We were talking about you", tense: "Past Continuous" },
+                { ru: "Он пытался позвонить", en: "He was trying to call", tense: "Past Continuous" },
+                { ru: "Я думал о проблеме", en: "I was thinking about the problem", tense: "Past Continuous" },
+                { ru: "Они строили дом", en: "They were building a house", tense: "Past Continuous" },
+                { ru: "Это был долгий день", en: "It has been a long day", tense: "Present Perfect" },
+                { ru: "Я был здесь раньше", en: "I have been here before", tense: "Present Perfect" },
+                { ru: "Она всегда была такой", en: "She has always been like this", tense: "Present Perfect" },
+                { ru: "Они были вместе два года", en: "They have been together for two years", tense: "Present Perfect" },
+                { ru: "Это будет весело", en: "It will be fun", tense: "Future" },
+                { ru: "Я буду там через час", en: "I will be there in an hour", tense: "Future" },
+                { ru: "Она будет первой", en: "She will be first", tense: "Future" },
+                { ru: "Мы будем ждать", en: "We will be waiting", tense: "Future" },
+                { ru: "Я был бы признателен", en: "I would be grateful", tense: "Conditional" },
+                { ru: "Это было бы удивительно", en: "It would be amazing", tense: "Conditional" },
+                { ru: "Он был бы хорошим другом", en: "He would be a good friend", tense: "Conditional" },
+                { ru: "Было бы неплохо встретиться", en: "It would be nice to meet", tense: "Conditional" },
+                { ru: "Будь смелым", en: "Be brave", tense: "Imperative" },
+                { ru: "Будьте реалистичны", en: "Be realistic", tense: "Imperative" },
+                { ru: "Не будь грубым", en: "Don't be rude", tense: "Imperative" },
+                { ru: "Будьте готовы", en: "Be ready", tense: "Imperative" },
+                { ru: "Я из России", en: "I am from Russia", tense: "Present" },
+                { ru: "Это мой брат", en: "He is my brother", tense: "Present" },
+                { ru: "Мы коллеги", en: "We are colleagues", tense: "Present" },
+                { ru: "Они соседи", en: "They are neighbors", tense: "Present" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

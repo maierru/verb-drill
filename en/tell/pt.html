@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇬🇧 VERB TELL — 98 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇬🇧 Verb TELL</h1>
+            <p class="subtitle">to inform, to narrate — 98 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 98 de 98 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            English Practice — TELL · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'en',
+            labels: { target: 'English', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["tell","tells","told","telling"],
+            phrases: [
+                { pt: "Vou-te contar um segredo", en: "I will tell you a secret", tense: "Future Simple" },
+                { pt: "Ele contou-me uma história", en: "He told me a story", tense: "Past Simple" },
+                { pt: "Ela sempre diz a verdade", en: "She always tells the truth", tense: "Present Simple" },
+                { pt: "Diz-me o que aconteceu", en: "Tell me what happened", tense: "Imperative" },
+                { pt: "Estou a dizer-te isto pela primeira vez", en: "I'm telling you this for the first time", tense: "Present Continuous" },
+                { pt: "Eles contaram-nos todos os detalhes", en: "They told us all the details", tense: "Past Simple" },
+                { pt: "Não digas a ninguém sobre isto", en: "Don't tell anyone about this", tense: "Imperative" },
+                { pt: "Já lhe contei as notícias", en: "I've already told him the news", tense: "Present Perfect" },
+                { pt: "Ela conta histórias às crianças todas as noites", en: "She tells children stories every evening", tense: "Present Simple" },
+                { pt: "Ele não me disse a verdade", en: "He didn't tell me the truth", tense: "Past Simple" },
+                { pt: "Vou contar-te mais tarde", en: "I'll tell you later", tense: "Future Simple" },
+                { pt: "O que é que me estás a dizer?", en: "What are you telling me?", tense: "Present Continuous" },
+                { pt: "Eles disseram-nos para nos encontrarmos aqui", en: "They told us to meet here", tense: "Past Simple" },
+                { pt: "Ninguém me contou sobre isto", en: "Nobody told me about this", tense: "Past Simple" },
+                { pt: "Digo sempre o que penso", en: "I always tell what I think", tense: "Present Simple" },
+                { pt: "Ela já contou esta história muitas vezes", en: "She has told this story many times", tense: "Present Perfect" },
+                { pt: "Diz-me o teu nome", en: "Tell me your name", tense: "Imperative" },
+                { pt: "Ele diz-me para ligar todos os dias", en: "He tells me to call every day", tense: "Present Simple" },
+                { pt: "Não te posso contar", en: "I can't tell you", tense: "Present Simple" },
+                { pt: "Eles contaram-nos sobre os seus planos", en: "They told us about their plans", tense: "Past Simple" },
+                { pt: "Quem te disse isso?", en: "Who told you that?", tense: "Past Simple" },
+                { pt: "Estou a dizer-te pela última vez", en: "I'm telling you for the last time", tense: "Present Continuous" },
+                { pt: "Ela nunca diz mentiras", en: "She never tells lies", tense: "Present Simple" },
+                { pt: "Nós contámos-lhes toda a verdade", en: "We told them the whole truth", tense: "Past Simple" },
+                { pt: "Conta-me sobre o teu trabalho", en: "Tell me about your work", tense: "Imperative" },
+                { pt: "Ele não nos disse para onde vai", en: "He didn't tell us where he's going", tense: "Past Simple" },
+                { pt: "Vou contar-te amanhã", en: "I will tell you tomorrow", tense: "Future Simple" },
+                { pt: "Ela conta histórias muito interessantes", en: "She tells very interesting stories", tense: "Present Simple" },
+                { pt: "Eles disseram-me para esperar", en: "They told me to wait", tense: "Past Simple" },
+                { pt: "Ninguém pode dizer o futuro", en: "Nobody can tell the future", tense: "Present Simple" },
+                { pt: "Já te contei sobre isto", en: "I've already told you about this", tense: "Present Perfect" },
+                { pt: "Diz-me honestamente", en: "Tell me honestly", tense: "Imperative" },
+                { pt: "Ele diz sempre a mesma coisa", en: "He always tells the same thing", tense: "Present Simple" },
+                { pt: "Nós não lhe contámos sobre o problema", en: "We didn't tell her about the problem", tense: "Past Simple" },
+                { pt: "Vou contar a todos sobre o teu sucesso", en: "I'll tell everyone about your success", tense: "Future Simple" },
+                { pt: "Ela disse-me para não me preocupar", en: "She told me not to worry", tense: "Past Simple" },
+                { pt: "O que lhes disseste?", en: "What did you tell them?", tense: "Past Simple" },
+                { pt: "Estou a dizer-te a sério", en: "I'm telling you seriously", tense: "Present Continuous" },
+                { pt: "Eles nunca contam segredos", en: "They never tell secrets", tense: "Present Simple" },
+                { pt: "Ele contou-me sobre a sua família", en: "He told me about his family", tense: "Past Simple" },
+                { pt: "Conta-me algo interessante", en: "Tell me something interesting", tense: "Imperative" },
+                { pt: "Não te quero contar", en: "I don't want to tell you", tense: "Present Simple" },
+                { pt: "Ela disse-me para vir cedo", en: "She told me to come early", tense: "Past Simple" },
+                { pt: "Vamos contar-lhes mais tarde", en: "We'll tell them later", tense: "Future Simple" },
+                { pt: "Ele conta piadas muito bem", en: "He tells jokes very well", tense: "Present Simple" },
+                { pt: "Ninguém me disse as regras", en: "Nobody told me the rules", tense: "Past Simple" },
+                { pt: "Já te disse isto", en: "I've already told you this", tense: "Present Perfect" },
+                { pt: "Diz-lhes a verdade", en: "Tell them the truth", tense: "Imperative" },
+                { pt: "Ela diz às crianças para obedecerem", en: "She tells children to obey", tense: "Present Simple" },
+                { pt: "Eles contaram-nos sobre o incidente", en: "They told us about the incident", tense: "Past Simple" },
+                { pt: "Vou contar-te tudo", en: "I'll tell you everything", tense: "Future Simple" },
+                { pt: "Ele não me diz os seus planos", en: "He doesn't tell me his plans", tense: "Present Simple" },
+                { pt: "Alguém me disse que vais embora", en: "Someone told me you're leaving", tense: "Past Simple" },
+                { pt: "Estou a dizer-te a verdade", en: "I'm telling you the truth", tense: "Present Continuous" },
+                { pt: "Ela diz sempre elogios", en: "She always tells compliments", tense: "Present Simple" },
+                { pt: "Nós dissemos-lhes para não se atrasarem", en: "We told them not to be late", tense: "Past Simple" },
+                { pt: "Conta-me sobre os teus sonhos", en: "Tell me about your dreams", tense: "Imperative" },
+                { pt: "Ele disse-nos para irmos para casa", en: "He told us to go home", tense: "Past Simple" },
+                { pt: "Não consigo ver a diferença", en: "I can't tell the difference", tense: "Present Simple" },
+                { pt: "Eles contaram todos os detalhes", en: "They told all the details", tense: "Past Simple" },
+                { pt: "Diz-me as horas", en: "Tell me the time", tense: "Imperative" },
+                { pt: "Ela contou-me sobre isso ontem", en: "She told me about it yesterday", tense: "Past Simple" },
+                { pt: "Vou contar-te um segredo amanhã", en: "I'll tell you a secret tomorrow", tense: "Future Simple" },
+                { pt: "Ele conta histórias antes de dormir", en: "He tells stories before bed", tense: "Present Simple" },
+                { pt: "Ninguém me disse o que fazer", en: "Nobody told me what to do", tense: "Past Simple" },
+                { pt: "Já lhes contei as notícias", en: "I've already told them the news", tense: "Present Perfect" },
+                { pt: "Não lhe digas sobre isto", en: "Don't tell her about this", tense: "Imperative" },
+                { pt: "Ela diz-me para ligar todos os dias", en: "She tells me to call every day", tense: "Present Simple" },
+                { pt: "Nós contámos-lhe sobre a reunião", en: "We told him about the meeting", tense: "Past Simple" },
+                { pt: "Vou contar-te um dia destes", en: "I'll tell you someday", tense: "Future Simple" },
+                { pt: "O que é que ele te está a dizer?", en: "What is he telling you?", tense: "Present Continuous" },
+                { pt: "Eles disseram-nos para ficarmos aqui", en: "They told us to stay here", tense: "Past Simple" },
+                { pt: "Diz-me a morada", en: "Tell me the address", tense: "Imperative" },
+                { pt: "Não quero dizer mentiras", en: "I don't want to tell lies", tense: "Present Simple" },
+                { pt: "Ele contou-me uma história incrível", en: "He told me an amazing story", tense: "Past Simple" },
+                { pt: "Ela diz sempre coisas agradáveis", en: "She always tells nice things", tense: "Present Simple" },
+                { pt: "Nós não lhes contámos sobre os problemas", en: "We didn't tell them about the problems", tense: "Past Simple" },
+                { pt: "Vou contar-te da próxima vez", en: "I'll tell you next time", tense: "Future Simple" },
+                { pt: "Conta-me sobre o teu dia", en: "Tell me about your day", tense: "Imperative" },
+                { pt: "Ele diz-nos para termos cuidado", en: "He tells us to be careful", tense: "Present Simple" },
+                { pt: "Ninguém me disse a resposta", en: "Nobody told me the answer", tense: "Past Simple" },
+                { pt: "Estou a dizer-te agora", en: "I'm telling you now", tense: "Present Continuous" },
+                { pt: "Eles contaram-nos sobre os seus problemas", en: "They told us about their problems", tense: "Past Simple" },
+                { pt: "Diz-me a razão", en: "Tell me the reason", tense: "Imperative" },
+                { pt: "Ela disse-me para não ir embora", en: "She told me not to leave", tense: "Past Simple" },
+                { pt: "Não te posso dizer isso", en: "I can't tell you that", tense: "Present Simple" },
+                { pt: "Vamos contar-lhes a verdade", en: "We'll tell them the truth", tense: "Future Simple" },
+                { pt: "Ele nunca diz coisas más", en: "He never tells bad things", tense: "Present Simple" },
+                { pt: "Quem te contou esta notícia?", en: "Who told you this news?", tense: "Past Simple" },
+                { pt: "Já contei esta história", en: "I've already told this story", tense: "Present Perfect" },
+                { pt: "Conta-me tudo desde o início", en: "Tell me everything from the beginning", tense: "Imperative" },
+                { pt: "Ela diz-me para não me preocupar", en: "She tells me not to worry", tense: "Present Simple" },
+                { pt: "Eles disseram-nos para virmos amanhã", en: "They told us to come tomorrow", tense: "Past Simple" },
+                { pt: "Vou contar-te sobre a minha viagem", en: "I'll tell you about my trip", tense: "Future Simple" },
+                { pt: "O que é que ela te disse?", en: "What did she tell you?", tense: "Past Simple" },
+                { pt: "Estou a dizer-te uma coisa importante", en: "I'm telling you an important thing", tense: "Present Continuous" },
+                { pt: "Ele conta histórias todas as noites", en: "He tells stories every evening", tense: "Present Simple" },
+                { pt: "Nós não lhes contámos sobre a decisão", en: "We didn't tell them about the decision", tense: "Past Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

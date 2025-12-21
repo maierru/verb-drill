@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇬🇧 VERB USE — 82 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇬🇧 Verb USE</h1>
+            <p class="subtitle">to employ, to utilize — 82 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 82 von 82 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Englisch-Übung — USE · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'en',
+            labels: { target: 'Englisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["use","uses","used","using"],
+            phrases: [
+                { de: "Ich benutze einen Computer", en: "I use a computer", tense: "Present" },
+                { de: "Du benutzt mein Telefon", en: "You use my phone", tense: "Present" },
+                { de: "Er benutzt das Internet", en: "He uses the Internet", tense: "Present" },
+                { de: "Sie benutzt diese Methode", en: "She uses this method", tense: "Present" },
+                { de: "Wir benutzen dieses Programm", en: "We use this program", tense: "Present" },
+                { de: "Sie benutzen öffentliche Verkehrsmittel", en: "They use public transport", tense: "Present" },
+                { de: "Ich benutzte deinen Stift", en: "I used your pen", tense: "Past Simple" },
+                { de: "Du benutzt meine Idee", en: "You used my idea", tense: "Past Simple" },
+                { de: "Er benutzte das falsche Werkzeug", en: "He used the wrong tool", tense: "Past Simple" },
+                { de: "Sie benutzte eine Kreditkarte", en: "She used a credit card", tense: "Past Simple" },
+                { de: "Wir benutzten alte Ausrüstung", en: "We used old equipment", tense: "Past Simple" },
+                { de: "Sie benutzten alle Ressourcen", en: "They used all the resources", tense: "Past Simple" },
+                { de: "Ich benutze gerade das Badezimmer", en: "I am using the bathroom now", tense: "Present Continuous" },
+                { de: "Benutzt du mein Auto?", en: "Are you using my car?", tense: "Present Continuous" },
+                { de: "Er benutzt eine neue Strategie", en: "He is using a new strategy", tense: "Present Continuous" },
+                { de: "Sie benutzt meinen Computer", en: "She is using my computer", tense: "Present Continuous" },
+                { de: "Wir benutzen ein neues System", en: "We are using a new system", tense: "Present Continuous" },
+                { de: "Sie benutzen unsere Daten", en: "They are using our data", tense: "Present Continuous" },
+                { de: "Ich benutzte den Drucker, als er kaputt ging", en: "I was using the printer when it broke", tense: "Past Continuous" },
+                { de: "Benutzt du meinen Laptop?", en: "Were you using my laptop?", tense: "Past Continuous" },
+                { de: "Er benutzte den ganzen Tag das Telefon", en: "He was using the phone all day", tense: "Past Continuous" },
+                { de: "Sie benutzte diesen Raum", en: "She was using this room", tense: "Past Continuous" },
+                { de: "Wir benutzten die alte Version", en: "We were using the old version", tense: "Past Continuous" },
+                { de: "Sie benutzten unsere Ausrüstung", en: "They were using our equipment", tense: "Past Continuous" },
+                { de: "Ich habe das nie benutzt", en: "I have never used this", tense: "Present Perfect" },
+                { de: "Hast du die neue App schon benutzt?", en: "Have you used the new app yet?", tense: "Present Perfect" },
+                { de: "Er hat diesen Trick schon mal benutzt", en: "He has used this trick before", tense: "Present Perfect" },
+                { de: "Sie hat bereits alle Versuche benutzt", en: "She has already used all attempts", tense: "Present Perfect" },
+                { de: "Wir haben diesen Ansatz viele Male benutzt", en: "We have used this approach many times", tense: "Present Perfect" },
+                { de: "Sie haben das gesamte Budget verbraucht", en: "They have used the entire budget", tense: "Present Perfect" },
+                { de: "Ich werde eine andere Methode benutzen", en: "I will use a different method", tense: "Future" },
+                { de: "Wirst du mein Auto benutzen?", en: "Will you use my car?", tense: "Future" },
+                { de: "Er wird diese Information benutzen", en: "He will use this information", tense: "Future" },
+                { de: "Sie wird neue Technologie benutzen", en: "She will use new technology", tense: "Future" },
+                { de: "Wir werden die besten Materialien verwenden", en: "We will use the best materials", tense: "Future" },
+                { de: "Sie werden unseren Plan benutzen", en: "They will use our plan", tense: "Future" },
+                { de: "Ich würde einen anderen Ansatz verwenden", en: "I would use a different approach", tense: "Conditional" },
+                { de: "Würdest du das benutzen?", en: "Would you use this?", tense: "Conditional" },
+                { de: "Er würde mehr Zeit verwenden", en: "He would use more time", tense: "Conditional" },
+                { de: "Sie könnte etwas Hilfe gebrauchen", en: "She would use some help", tense: "Conditional" },
+                { de: "Wir würden deinen Rat verwenden", en: "We would use your advice", tense: "Conditional" },
+                { de: "Sie würden einen anderen Weg benutzen", en: "They would use another way", tense: "Conditional" },
+                { de: "Benutze dein Gehirn", en: "Use your brain", tense: "Imperative" },
+                { de: "Nutze diese Gelegenheit", en: "Use this opportunity", tense: "Imperative" },
+                { de: "Benutzen Sie diese Tür", en: "Use this door", tense: "Imperative" },
+                { de: "Benutzen Sie die Anleitung", en: "Use the instructions", tense: "Imperative" },
+                { de: "Benutze das nicht", en: "Don't use this", tense: "Imperative" },
+                { de: "Benutzen Sie nicht den Aufzug", en: "Don't use the elevator", tense: "Imperative" },
+                { de: "Ich lebte früher in Berlin", en: "I used to live in Berlin", tense: "Expressions" },
+                { de: "Hast du früher Fußball gespielt?", en: "Did you use to play football?", tense: "Expressions" },
+                { de: "Er rauchte früher", en: "He used to smoke", tense: "Expressions" },
+                { de: "Sie arbeitete früher hier", en: "She used to work here", tense: "Expressions" },
+                { de: "Wir trafen uns früher jeden Tag", en: "We used to meet every day", tense: "Expressions" },
+                { de: "Sie waren früher Freunde", en: "They used to be friends", tense: "Expressions" },
+                { de: "Ich benutze keine sozialen Medien", en: "I don't use social media", tense: "Present" },
+                { de: "Du benutzt nicht den richtigen Ansatz", en: "You don't use the right approach", tense: "Present" },
+                { de: "Er wendet keine Gewalt an", en: "He doesn't use violence", tense: "Present" },
+                { de: "Sie benutzt kein Make-up", en: "She doesn't use makeup", tense: "Present" },
+                { de: "Wir benutzen kein Plastik", en: "We don't use plastic", tense: "Present" },
+                { de: "Sie benutzen keine Chemikalien", en: "They don't use chemicals", tense: "Present" },
+                { de: "Ich habe keine Gewalt angewendet", en: "I didn't use force", tense: "Past Simple" },
+                { de: "Du hast die Chance nicht genutzt", en: "You didn't use the chance", tense: "Past Simple" },
+                { de: "Er benutzte meinen Namen nicht", en: "He didn't use my name", tense: "Past Simple" },
+                { de: "Sie benutzte das Handbuch nicht", en: "She didn't use the manual", tense: "Past Simple" },
+                { de: "Wir benutzten nicht die richtigen Worte", en: "We didn't use the right words", tense: "Past Simple" },
+                { de: "Sie benutzten keine Waffen", en: "They didn't use weapons", tense: "Past Simple" },
+                { de: "Was benutzt du dafür?", en: "What do you use for this?", tense: "Present" },
+                { de: "Wie benutzt du das?", en: "How do you use this?", tense: "Present" },
+                { de: "Warum benutzt er das?", en: "Why does he use this?", tense: "Present" },
+                { de: "Wann hast du das benutzt?", en: "When did you use this?", tense: "Past Simple" },
+                { de: "Wo benutzen sie das?", en: "Where do they use this?", tense: "Present" },
+                { de: "Wer benutzt meinen Computer?", en: "Who is using my computer?", tense: "Present Continuous" },
+                { de: "Ich bin an die Kälte gewöhnt", en: "I am used to the cold", tense: "Expressions" },
+                { de: "Du bist an den Lärm gewöhnt", en: "You are used to the noise", tense: "Expressions" },
+                { de: "Er ist daran gewöhnt, früh aufzustehen", en: "He is used to getting up early", tense: "Expressions" },
+                { de: "Sie ist daran gewöhnt, alleine zu arbeiten", en: "She is used to working alone", tense: "Expressions" },
+                { de: "Wir sind an die Hitze gewöhnt", en: "We are used to the heat", tense: "Expressions" },
+                { de: "Sie sind an Druck gewöhnt", en: "They are used to pressure", tense: "Expressions" },
+                { de: "Ich gewöhne mich an den neuen Job", en: "I am getting used to the new job", tense: "Expressions" },
+                { de: "Du gewöhnst dich an das neue Haus", en: "You are getting used to the new house", tense: "Expressions" },
+                { de: "Er gewöhnt sich an die neue Schule", en: "He is getting used to the new school", tense: "Expressions" },
+                { de: "Sie gewöhnt sich an das neue Land", en: "She is getting used to the new country", tense: "Expressions" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

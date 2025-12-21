@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇬🇧 VERB USE — 82 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇬🇧 Verb USE</h1>
+            <p class="subtitle">to employ, to utilize — 82 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 82 de 82 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            English Practice — USE · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'en',
+            labels: { target: 'English', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["use","uses","used","using"],
+            phrases: [
+                { pt: "Eu uso um computador", en: "I use a computer", tense: "Present" },
+                { pt: "Tu usas o meu telefone", en: "You use my phone", tense: "Present" },
+                { pt: "Ele usa a Internet", en: "He uses the Internet", tense: "Present" },
+                { pt: "Ela usa este método", en: "She uses this method", tense: "Present" },
+                { pt: "Nós usamos este programa", en: "We use this program", tense: "Present" },
+                { pt: "Eles usam transportes públicos", en: "They use public transport", tense: "Present" },
+                { pt: "Eu usei a tua caneta", en: "I used your pen", tense: "Past Simple" },
+                { pt: "Tu usaste a minha ideia", en: "You used my idea", tense: "Past Simple" },
+                { pt: "Ele usou a ferramenta errada", en: "He used the wrong tool", tense: "Past Simple" },
+                { pt: "Ela usou um cartão de crédito", en: "She used a credit card", tense: "Past Simple" },
+                { pt: "Nós usámos equipamento antigo", en: "We used old equipment", tense: "Past Simple" },
+                { pt: "Eles usaram todos os recursos", en: "They used all the resources", tense: "Past Simple" },
+                { pt: "Eu estou a usar a casa de banho agora", en: "I am using the bathroom now", tense: "Present Continuous" },
+                { pt: "Tu estás a usar o meu carro?", en: "Are you using my car?", tense: "Present Continuous" },
+                { pt: "Ele está a usar uma nova estratégia", en: "He is using a new strategy", tense: "Present Continuous" },
+                { pt: "Ela está a usar o meu computador", en: "She is using my computer", tense: "Present Continuous" },
+                { pt: "Nós estamos a usar um sistema novo", en: "We are using a new system", tense: "Present Continuous" },
+                { pt: "Eles estão a usar os nossos dados", en: "They are using our data", tense: "Present Continuous" },
+                { pt: "Eu estava a usar a impressora quando avariou", en: "I was using the printer when it broke", tense: "Past Continuous" },
+                { pt: "Tu estavas a usar o meu portátil?", en: "Were you using my laptop?", tense: "Past Continuous" },
+                { pt: "Ele estava a usar o telefone o dia todo", en: "He was using the phone all day", tense: "Past Continuous" },
+                { pt: "Ela estava a usar esta sala", en: "She was using this room", tense: "Past Continuous" },
+                { pt: "Nós estávamos a usar a versão antiga", en: "We were using the old version", tense: "Past Continuous" },
+                { pt: "Eles estavam a usar o nosso equipamento", en: "They were using our equipment", tense: "Past Continuous" },
+                { pt: "Eu nunca usei isto", en: "I have never used this", tense: "Present Perfect" },
+                { pt: "Tu já usaste a nova aplicação?", en: "Have you used the new app yet?", tense: "Present Perfect" },
+                { pt: "Ele usou este truque antes", en: "He has used this trick before", tense: "Present Perfect" },
+                { pt: "Ela já usou todas as tentativas", en: "She has already used all attempts", tense: "Present Perfect" },
+                { pt: "Nós usámos esta abordagem muitas vezes", en: "We have used this approach many times", tense: "Present Perfect" },
+                { pt: "Eles usaram todo o orçamento", en: "They have used the entire budget", tense: "Present Perfect" },
+                { pt: "Eu vou usar um método diferente", en: "I will use a different method", tense: "Future" },
+                { pt: "Tu vais usar o meu carro?", en: "Will you use my car?", tense: "Future" },
+                { pt: "Ele vai usar esta informação", en: "He will use this information", tense: "Future" },
+                { pt: "Ela vai usar nova tecnologia", en: "She will use new technology", tense: "Future" },
+                { pt: "Nós vamos usar os melhores materiais", en: "We will use the best materials", tense: "Future" },
+                { pt: "Eles vão usar o nosso plano", en: "They will use our plan", tense: "Future" },
+                { pt: "Eu usaria uma abordagem diferente", en: "I would use a different approach", tense: "Conditional" },
+                { pt: "Tu usarias isto?", en: "Would you use this?", tense: "Conditional" },
+                { pt: "Ele usaria mais tempo", en: "He would use more time", tense: "Conditional" },
+                { pt: "Ela usaria alguma ajuda", en: "She would use some help", tense: "Conditional" },
+                { pt: "Nós usaríamos o teu conselho", en: "We would use your advice", tense: "Conditional" },
+                { pt: "Eles usariam outra maneira", en: "They would use another way", tense: "Conditional" },
+                { pt: "Usa o teu cérebro", en: "Use your brain", tense: "Imperative" },
+                { pt: "Usa esta oportunidade", en: "Use this opportunity", tense: "Imperative" },
+                { pt: "Usem esta porta", en: "Use this door", tense: "Imperative" },
+                { pt: "Usem as instruções", en: "Use the instructions", tense: "Imperative" },
+                { pt: "Não uses isto", en: "Don't use this", tense: "Imperative" },
+                { pt: "Não usem o elevador", en: "Don't use the elevator", tense: "Imperative" },
+                { pt: "Eu costumava viver em Lisboa", en: "I used to live in Lisbon", tense: "Expressions" },
+                { pt: "Tu costumavas jogar futebol?", en: "Did you use to play football?", tense: "Expressions" },
+                { pt: "Ele costumava fumar", en: "He used to smoke", tense: "Expressions" },
+                { pt: "Ela costumava trabalhar aqui", en: "She used to work here", tense: "Expressions" },
+                { pt: "Nós costumávamos encontrar-nos todos os dias", en: "We used to meet every day", tense: "Expressions" },
+                { pt: "Eles costumavam ser amigos", en: "They used to be friends", tense: "Expressions" },
+                { pt: "Eu não uso redes sociais", en: "I don't use social media", tense: "Present" },
+                { pt: "Tu não usas a abordagem certa", en: "You don't use the right approach", tense: "Present" },
+                { pt: "Ele não usa violência", en: "He doesn't use violence", tense: "Present" },
+                { pt: "Ela não usa maquilhagem", en: "She doesn't use makeup", tense: "Present" },
+                { pt: "Nós não usamos plástico", en: "We don't use plastic", tense: "Present" },
+                { pt: "Eles não usam químicos", en: "They don't use chemicals", tense: "Present" },
+                { pt: "Eu não usei força", en: "I didn't use force", tense: "Past Simple" },
+                { pt: "Tu não usaste a oportunidade", en: "You didn't use the chance", tense: "Past Simple" },
+                { pt: "Ele não usou o meu nome", en: "He didn't use my name", tense: "Past Simple" },
+                { pt: "Ela não usou o manual", en: "She didn't use the manual", tense: "Past Simple" },
+                { pt: "Nós não usámos as palavras certas", en: "We didn't use the right words", tense: "Past Simple" },
+                { pt: "Eles não usaram armas", en: "They didn't use weapons", tense: "Past Simple" },
+                { pt: "O que é que tu usas para isto?", en: "What do you use for this?", tense: "Present" },
+                { pt: "Como é que tu usas isto?", en: "How do you use this?", tense: "Present" },
+                { pt: "Porque é que ele usa isto?", en: "Why does he use this?", tense: "Present" },
+                { pt: "Quando é que tu usaste isto?", en: "When did you use this?", tense: "Past Simple" },
+                { pt: "Onde é que eles usam isto?", en: "Where do they use this?", tense: "Present" },
+                { pt: "Quem está a usar o meu computador?", en: "Who is using my computer?", tense: "Present Continuous" },
+                { pt: "Eu estou habituado ao frio", en: "I am used to the cold", tense: "Expressions" },
+                { pt: "Tu estás habituado ao barulho", en: "You are used to the noise", tense: "Expressions" },
+                { pt: "Ele está habituado a levantar-se cedo", en: "He is used to getting up early", tense: "Expressions" },
+                { pt: "Ela está habituada a trabalhar sozinha", en: "She is used to working alone", tense: "Expressions" },
+                { pt: "Nós estamos habituados ao calor", en: "We are used to the heat", tense: "Expressions" },
+                { pt: "Eles estão habituados à pressão", en: "They are used to pressure", tense: "Expressions" },
+                { pt: "Eu estou a habituar-me ao novo trabalho", en: "I am getting used to the new job", tense: "Expressions" },
+                { pt: "Tu estás a habituar-te à casa nova", en: "You are getting used to the new house", tense: "Expressions" },
+                { pt: "Ele está a habituar-se à escola nova", en: "He is getting used to the new school", tense: "Expressions" },
+                { pt: "Ela está a habituar-se ao novo país", en: "She is getting used to the new country", tense: "Expressions" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

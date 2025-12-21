@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbe 🇬🇧 VERB LOOK — 97 phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Retour à la liste des verbes</a>
+            <h1>🇬🇧 Verb LOOK</h1>
+            <p class="subtitle">to see, to appear — 97 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Rechercher des phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Afficher toutes les traductions</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Masquer toutes les traductions</button>
+        </div>
+
+        <div class="stats" id="stats">Affichage: 97 sur 97 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Pratique de l'anglais — LOOK · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'fr',
+            targetKey: 'en',
+            labels: { target: 'Anglais', showing: 'Affichage', of: 'sur', phrases: 'phrases' },
+            verbForms: ["look","looks","looked","looking"],
+            phrases: [
+                { fr: "Je te regarde", en: "I look at you", tense: "Present Simple" },
+                { fr: "Il regarde par la fenêtre", en: "He looks out the window", tense: "Present Simple" },
+                { fr: "Nous cherchons les clés", en: "We look for the keys", tense: "Present Simple" },
+                { fr: "Elle a cherché son sac", en: "She looked for her bag", tense: "Past Simple" },
+                { fr: "Ils regardent le tableau", en: "They look at the painting", tense: "Present Simple" },
+                { fr: "Je vais chercher dans le dictionnaire", en: "I will look it up in the dictionary", tense: "Future Simple" },
+                { fr: "Tu as l'air fatigué", en: "You look tired", tense: "Present Simple" },
+                { fr: "Elle a l'air heureuse", en: "She looks happy", tense: "Present Simple" },
+                { fr: "Il m'a regardé étrangement", en: "He looked at me strangely", tense: "Past Simple" },
+                { fr: "Regarde le tableau", en: "Look at the board", tense: "Imperative" },
+                { fr: "Je cherche un emploi", en: "I'm looking for a job", tense: "Present Continuous" },
+                { fr: "Ils regardaient l'écran", en: "They were looking at the screen", tense: "Past Continuous" },
+                { fr: "Regarde ça", en: "Look at this", tense: "Imperative" },
+                { fr: "Il a l'air malade", en: "He looks sick", tense: "Present Simple" },
+                { fr: "Je le regarderai plus tard", en: "I'll look at it later", tense: "Future Simple" },
+                { fr: "Elle cherche un nouvel appartement", en: "She's looking for a new apartment", tense: "Present Continuous" },
+                { fr: "Nous avons regardé les étoiles", en: "We looked at the stars", tense: "Past Simple" },
+                { fr: "Tu as l'air super", en: "You look great", tense: "Present Simple" },
+                { fr: "Regarde en haut", en: "Look up", tense: "Imperative" },
+                { fr: "Je t'ai cherché partout", en: "I looked for you everywhere", tense: "Past Simple" },
+                { fr: "Il regarde sa montre", en: "He looks at his watch", tense: "Present Simple" },
+                { fr: "Elle a regardé en bas", en: "She looked down", tense: "Past Simple" },
+                { fr: "Nous cherchons une solution", en: "We're looking for a solution", tense: "Present Continuous" },
+                { fr: "Regarde dans le miroir", en: "Look in the mirror", tense: "Imperative" },
+                { fr: "Tu as l'air inquiet", en: "You look worried", tense: "Present Simple" },
+                { fr: "Je regarde vers l'avenir", en: "I look to the future", tense: "Present Simple" },
+                { fr: "Elle cherchait son téléphone", en: "She was looking for her phone", tense: "Past Continuous" },
+                { fr: "Il a l'air plus jeune", en: "He looks younger", tense: "Present Simple" },
+                { fr: "Regardons les faits", en: "Let's look at the facts", tense: "Imperative" },
+                { fr: "J'ai regardé en arrière", en: "I looked back", tense: "Past Simple" },
+                { fr: "Ils cherchent des informations", en: "They're looking for information", tense: "Present Continuous" },
+                { fr: "Regarde-moi", en: "Look at me", tense: "Imperative" },
+                { fr: "Elle a l'air belle", en: "She looks beautiful", tense: "Present Simple" },
+                { fr: "J'ai cherché ce fichier", en: "I looked for this file", tense: "Past Simple" },
+                { fr: "Il regarde devant lui", en: "He looks ahead", tense: "Present Simple" },
+                { fr: "Nous verrons ça demain", en: "We'll look at this tomorrow", tense: "Future Simple" },
+                { fr: "Tu cherches les ennuis", en: "You're looking for trouble", tense: "Present Continuous" },
+                { fr: "Elle m'a regardé et a souri", en: "She looked at me and smiled", tense: "Past Simple" },
+                { fr: "Ça a l'air intéressant", en: "It looks interesting", tense: "Present Simple" },
+                { fr: "Regarde là-bas", en: "Look over there", tense: "Imperative" },
+                { fr: "Je cherche mes lunettes", en: "I'm looking for my glasses", tense: "Present Continuous" },
+                { fr: "Il a regardé autour de lui", en: "He looked around", tense: "Past Simple" },
+                { fr: "Elle a l'air triste", en: "She looks sad", tense: "Present Simple" },
+                { fr: "Nous te cherchons toute la journée", en: "We've been looking for you all day", tense: "Present Perfect Continuous" },
+                { fr: "Regarde le ciel", en: "Look at the sky", tense: "Imperative" },
+                { fr: "Tu as l'air mieux", en: "You look better", tense: "Present Simple" },
+                { fr: "Je vais examiner cette affaire", en: "I'll look into this matter", tense: "Future Simple" },
+                { fr: "Il cherche ses clés", en: "He's looking for his keys", tense: "Present Continuous" },
+                { fr: "Elle a regardé l'horloge", en: "She looked at the clock", tense: "Past Simple" },
+                { fr: "Ça a l'air bon", en: "This looks good", tense: "Present Simple" },
+                { fr: "Regarde à gauche", en: "Look left", tense: "Imperative" },
+                { fr: "Je cherchais ce livre", en: "I was looking for this book", tense: "Past Continuous" },
+                { fr: "Il a l'air confiant", en: "He looks confident", tense: "Present Simple" },
+                { fr: "Nous regardons les options", en: "We're looking at options", tense: "Present Continuous" },
+                { fr: "Regarde à droite", en: "Look right", tense: "Imperative" },
+                { fr: "Tu as l'air familier", en: "You look familiar", tense: "Present Simple" },
+                { fr: "J'ai regardé par la fenêtre", en: "I looked out the window", tense: "Past Simple" },
+                { fr: "Elle cherche des conseils", en: "She's looking for advice", tense: "Present Continuous" },
+                { fr: "Il a l'air sérieux", en: "He looks serious", tense: "Present Simple" },
+                { fr: "Regardons la vérité en face", en: "Let's look the truth in the face", tense: "Imperative" },
+                { fr: "Je cherche une opportunité", en: "I'm looking for an opportunity", tense: "Present Continuous" },
+                { fr: "Ils se sont regardés", en: "They looked at each other", tense: "Past Simple" },
+                { fr: "Elle a l'air jeune", en: "She looks young", tense: "Present Simple" },
+                { fr: "Regarde qui est là", en: "Look who's here", tense: "Imperative" },
+                { fr: "Je chercherai la réponse", en: "I'll look for the answer", tense: "Future Simple" },
+                { fr: "Il a regardé la carte", en: "He looked at the map", tense: "Past Simple" },
+                { fr: "Ça a l'air cher", en: "It looks expensive", tense: "Present Simple" },
+                { fr: "Nous cherchons un partenaire", en: "We're looking for a partner", tense: "Present Continuous" },
+                { fr: "Regarde toi-même", en: "Look for yourself", tense: "Imperative" },
+                { fr: "Tu as l'air confus", en: "You look confused", tense: "Present Simple" },
+                { fr: "J'ai regardé les résultats", en: "I looked at the results", tense: "Past Simple" },
+                { fr: "Elle cherche de l'aide", en: "She's looking for help", tense: "Present Continuous" },
+                { fr: "Il a l'air plus vieux", en: "He looks older", tense: "Present Simple" },
+                { fr: "Regarde l'heure", en: "Look at the time", tense: "Imperative" },
+                { fr: "J'ai cherché cette information", en: "I looked for this information", tense: "Past Simple" },
+                { fr: "Nous verrons ça plus tard", en: "We'll look at it later", tense: "Future Simple" },
+                { fr: "Ça a l'air compliqué", en: "This looks complicated", tense: "Present Simple" },
+                { fr: "Elle a regardé en haut", en: "She looked up", tense: "Past Simple" },
+                { fr: "Tu cherches les problèmes", en: "You're looking for trouble", tense: "Present Continuous" },
+                { fr: "Regarde ce que j'ai trouvé", en: "Look what I found", tense: "Imperative" },
+                { fr: "Je regarde la situation", en: "I'm looking at the situation", tense: "Present Continuous" },
+                { fr: "Il a l'air en colère", en: "He looks angry", tense: "Present Simple" },
+                { fr: "Elle a cherché des réponses", en: "She looked for answers", tense: "Past Simple" },
+                { fr: "Nous allons bien ensemble", en: "We look good together", tense: "Present Simple" },
+                { fr: "Regarde-moi dans les yeux", en: "Look me in the eye", tense: "Imperative" },
+                { fr: "Je cherche l'inspiration", en: "I'm looking for inspiration", tense: "Present Continuous" },
+                { fr: "Il l'a regardée avec amour", en: "He looked at her lovingly", tense: "Past Simple" },
+                { fr: "Ça a l'air facile", en: "It looks easy", tense: "Present Simple" },
+                { fr: "Tu as l'air excité", en: "You look excited", tense: "Present Simple" },
+                { fr: "Je vais parcourir ces documents", en: "I'll look through these documents", tense: "Future Simple" },
+                { fr: "Elle cherche de nouvelles opportunités", en: "She's looking for new opportunities", tense: "Present Continuous" },
+                { fr: "Regarde attentivement", en: "Look carefully", tense: "Imperative" },
+                { fr: "Il a l'air contrarié", en: "He looks upset", tense: "Present Simple" },
+                { fr: "Nous l'avons cherché partout", en: "We looked for him everywhere", tense: "Past Simple" },
+                { fr: "Je vois ce problème différemment", en: "I look at this problem differently", tense: "Present Simple" },
+                { fr: "Elle a l'air incroyable", en: "She looks amazing", tense: "Present Simple" },
+                { fr: "Regarde ce que tu as fait", en: "Look what you've done", tense: "Imperative" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

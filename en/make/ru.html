@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇬🇧 VERB MAKE — 98 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇬🇧 Verb MAKE</h1>
+            <p class="subtitle">to create, to cause — 98 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 98 из 98 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика английского — MAKE · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'en',
+            labels: { target: 'English', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["make","makes","made","making"],
+            phrases: [
+                { ru: "Я делаю кофе каждое утро", en: "I make coffee every morning", tense: "Present Simple" },
+                { ru: "Она делает ошибки", en: "She makes mistakes", tense: "Present Simple" },
+                { ru: "Мы сделали торт вчера", en: "We made a cake yesterday", tense: "Past Simple" },
+                { ru: "Он делает деньги", en: "He makes money", tense: "Present Simple" },
+                { ru: "Они делают решение", en: "They make a decision", tense: "Present Simple" },
+                { ru: "Ты делаешь меня счастливым", en: "You make me happy", tense: "Present Simple" },
+                { ru: "Я сделал выбор", en: "I made a choice", tense: "Past Simple" },
+                { ru: "Она делает обед", en: "She makes lunch", tense: "Present Simple" },
+                { ru: "Мы делаем прогресс", en: "We make progress", tense: "Present Simple" },
+                { ru: "Он сделал предложение", en: "He made an offer", tense: "Past Simple" },
+                { ru: "Это имеет смысл", en: "It makes sense", tense: "Present Simple" },
+                { ru: "Я делаю домашнюю работу", en: "I make homework", tense: "Present Simple" },
+                { ru: "Они сделали ошибку", en: "They made a mistake", tense: "Past Simple" },
+                { ru: "Ты делаешь хорошую работу", en: "You make good work", tense: "Present Simple" },
+                { ru: "Она делает разницу", en: "She makes a difference", tense: "Present Simple" },
+                { ru: "Мы делаем план", en: "We make a plan", tense: "Present Simple" },
+                { ru: "Он делает усилие", en: "He makes an effort", tense: "Present Simple" },
+                { ru: "Я сделал звонок", en: "I made a call", tense: "Past Simple" },
+                { ru: "Они делают беспорядок", en: "They make a mess", tense: "Present Simple" },
+                { ru: "Ты сделал это возможным", en: "You made it possible", tense: "Past Simple" },
+                { ru: "Она делает обещание", en: "She makes a promise", tense: "Present Simple" },
+                { ru: "Мы сделали договор", en: "We made a deal", tense: "Past Simple" },
+                { ru: "Он делает заявление", en: "He makes a statement", tense: "Present Simple" },
+                { ru: "Я делаю изменения", en: "I make changes", tense: "Present Simple" },
+                { ru: "Они делают шум", en: "They make noise", tense: "Present Simple" },
+                { ru: "Ты делаешь одолжение", en: "You make a favor", tense: "Present Simple" },
+                { ru: "Она сделала резервацию", en: "She made a reservation", tense: "Past Simple" },
+                { ru: "Мы делаем инвестиции", en: "We make investments", tense: "Present Simple" },
+                { ru: "Он делает попытку", en: "He makes an attempt", tense: "Present Simple" },
+                { ru: "Я сделал комплимент", en: "I made a compliment", tense: "Past Simple" },
+                { ru: "Они делают впечатление", en: "They make an impression", tense: "Present Simple" },
+                { ru: "Ты делаешь точку", en: "You make a point", tense: "Present Simple" },
+                { ru: "Она делает вклад", en: "She makes a contribution", tense: "Present Simple" },
+                { ru: "Мы сделали открытие", en: "We made a discovery", tense: "Past Simple" },
+                { ru: "Он делает замечание", en: "He makes a remark", tense: "Present Simple" },
+                { ru: "Я делаю предположение", en: "I make an assumption", tense: "Present Simple" },
+                { ru: "Они сделали прорыв", en: "They made a breakthrough", tense: "Past Simple" },
+                { ru: "Ты делаешь покупки", en: "You make purchases", tense: "Present Simple" },
+                { ru: "Она делает записи", en: "She makes notes", tense: "Present Simple" },
+                { ru: "Мы делаем улучшения", en: "We make improvements", tense: "Present Simple" },
+                { ru: "Он сделал признание", en: "He made a confession", tense: "Past Simple" },
+                { ru: "Я делаю заказ", en: "I make an order", tense: "Present Simple" },
+                { ru: "Они делают жалобу", en: "They make a complaint", tense: "Present Simple" },
+                { ru: "Ты сделал запрос", en: "You made a request", tense: "Past Simple" },
+                { ru: "Она делает предложение", en: "She makes a suggestion", tense: "Present Simple" },
+                { ru: "Мы делаем корректировки", en: "We make adjustments", tense: "Present Simple" },
+                { ru: "Он делает расчеты", en: "He makes calculations", tense: "Present Simple" },
+                { ru: "Я сделал наблюдение", en: "I made an observation", tense: "Past Simple" },
+                { ru: "Они делают сравнение", en: "They make a comparison", tense: "Present Simple" },
+                { ru: "Ты делаешь проверку", en: "You make a check", tense: "Present Simple" },
+                { ru: "Она делает копию", en: "She makes a copy", tense: "Present Simple" },
+                { ru: "Мы сделали список", en: "We made a list", tense: "Past Simple" },
+                { ru: "Он делает назначение", en: "He makes an appointment", tense: "Present Simple" },
+                { ru: "Я делаю презентацию", en: "I make a presentation", tense: "Present Simple" },
+                { ru: "Они делают оценку", en: "They make an assessment", tense: "Present Simple" },
+                { ru: "Ты сделал анализ", en: "You made an analysis", tense: "Past Simple" },
+                { ru: "Она делает рекомендацию", en: "She makes a recommendation", tense: "Present Simple" },
+                { ru: "Мы делаем прогноз", en: "We make a forecast", tense: "Present Simple" },
+                { ru: "Он делает оценку", en: "He makes an estimate", tense: "Present Simple" },
+                { ru: "Я сделал измерение", en: "I made a measurement", tense: "Past Simple" },
+                { ru: "Они делают исследование", en: "They make a study", tense: "Present Simple" },
+                { ru: "Ты делаешь эксперимент", en: "You make an experiment", tense: "Present Simple" },
+                { ru: "Она делает тест", en: "She makes a test", tense: "Present Simple" },
+                { ru: "Мы сделали проверку", en: "We made a verification", tense: "Past Simple" },
+                { ru: "Он делает исправление", en: "He makes a correction", tense: "Present Simple" },
+                { ru: "Я делаю переход", en: "I make a transition", tense: "Present Simple" },
+                { ru: "Они делают трансформацию", en: "They make a transformation", tense: "Present Simple" },
+                { ru: "Ты сделал замену", en: "You made a replacement", tense: "Past Simple" },
+                { ru: "Она делает обмен", en: "She makes an exchange", tense: "Present Simple" },
+                { ru: "Мы делаем передачу", en: "We make a transfer", tense: "Present Simple" },
+                { ru: "Он делает сделку", en: "He makes a transaction", tense: "Present Simple" },
+                { ru: "Я сделал платеж", en: "I made a payment", tense: "Past Simple" },
+                { ru: "Они делают депозит", en: "They make a deposit", tense: "Present Simple" },
+                { ru: "Ты делаешь снятие", en: "You make a withdrawal", tense: "Present Simple" },
+                { ru: "Она делает пожертвование", en: "She makes a donation", tense: "Present Simple" },
+                { ru: "Мы сделали инвестицию", en: "We made an investment", tense: "Past Simple" },
+                { ru: "Он делает покупку", en: "He makes a purchase", tense: "Present Simple" },
+                { ru: "Я делаю продажу", en: "I make a sale", tense: "Present Simple" },
+                { ru: "Они делают предложение", en: "They make a bid", tense: "Present Simple" },
+                { ru: "Ты сделал обмен", en: "You made a trade", tense: "Past Simple" },
+                { ru: "Она делает сделку", en: "She makes a bargain", tense: "Present Simple" },
+                { ru: "Мы делаем соглашение", en: "We make an agreement", tense: "Present Simple" },
+                { ru: "Он делает контракт", en: "He makes a contract", tense: "Present Simple" },
+                { ru: "Я сделал договор", en: "I made an arrangement", tense: "Past Simple" },
+                { ru: "Они делают компромисс", en: "They make a compromise", tense: "Present Simple" },
+                { ru: "Ты делаешь концессию", en: "You make a concession", tense: "Present Simple" },
+                { ru: "Она делает уступку", en: "She makes an allowance", tense: "Present Simple" },
+                { ru: "Мы сделали исключение", en: "We made an exception", tense: "Past Simple" },
+                { ru: "Он делает разницу", en: "He makes a distinction", tense: "Present Simple" },
+                { ru: "Я делаю различие", en: "I make a differentiation", tense: "Present Simple" },
+                { ru: "Они делают разделение", en: "They make a separation", tense: "Present Simple" },
+                { ru: "Ты сделал разрез", en: "You made a cut", tense: "Past Simple" },
+                { ru: "Она делает надрез", en: "She makes an incision", tense: "Present Simple" },
+                { ru: "Мы делаем отверстие", en: "We make a hole", tense: "Present Simple" },
+                { ru: "Он делает дыру", en: "He makes an opening", tense: "Present Simple" },
+                { ru: "Я сделал путь", en: "I made a way", tense: "Past Simple" },
+                { ru: "Они делают дорогу", en: "They make a road", tense: "Present Simple" },
+                { ru: "Ты делаешь тропу", en: "You make a path", tense: "Present Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

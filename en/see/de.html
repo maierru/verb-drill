@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇬🇧 VERB SEE — 95 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇬🇧 Verb SEE</h1>
+            <p class="subtitle">to perceive, to understand — 95 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 95 von 95 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Englisch-Übung — SEE · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'en',
+            labels: { target: 'Englisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["see","sees","saw","seen","seeing"],
+            phrases: [
+                { de: "Ich sehe dich.", en: "I see you.", tense: "Present" },
+                { de: "Siehst du das?", en: "Do you see this?", tense: "Present" },
+                { de: "Er sah mich gestern.", en: "He saw me yesterday.", tense: "Past Simple" },
+                { de: "Wir sehen uns morgen.", en: "We will see each other tomorrow.", tense: "Future" },
+                { de: "Sie sehen die Vögel.", en: "They see the birds.", tense: "Present" },
+                { de: "Sie sah den Film.", en: "She saw the movie.", tense: "Past Simple" },
+                { de: "Ich sehe das Problem nicht.", en: "I don't see the problem.", tense: "Present" },
+                { de: "Hast du meinen Bruder gesehen?", en: "Did you see my brother?", tense: "Past Simple" },
+                { de: "Er sah das Schild nicht.", en: "He didn't see the sign.", tense: "Past Simple" },
+                { de: "Wir werden ihn heute nicht sehen.", en: "We won't see him today.", tense: "Future" },
+                { de: "Mal sehen.", en: "We'll see.", tense: "Future" },
+                { de: "Bis später.", en: "See you later.", tense: "Future" },
+                { de: "Sieh dir das an.", en: "See this.", tense: "Imperative" },
+                { de: "Sehen Sie auf den Bildschirm.", en: "See the screen.", tense: "Imperative" },
+                { de: "Ich sehe fern.", en: "I'm seeing TV.", tense: "Present Continuous" },
+                { de: "Triffst du dich mit jemandem?", en: "Are you seeing someone?", tense: "Present Continuous" },
+                { de: "Er schaute aus dem Fenster, als ich eintrat.", en: "He was seeing out the window when I entered.", tense: "Past Continuous" },
+                { de: "Wir sehen gerade den Arzt.", en: "We are seeing the doctor right now.", tense: "Present Continuous" },
+                { de: "Sie sahen die ganze Nacht die Show.", en: "They were seeing the show all evening.", tense: "Past Continuous" },
+                { de: "Ich habe diesen Film schon gesehen.", en: "I have already seen this movie.", tense: "Present Perfect" },
+                { de: "Hast du jemals das Meer gesehen?", en: "Have you ever seen the sea?", tense: "Present Perfect" },
+                { de: "Er hat bessere Tage gesehen.", en: "He has seen better days.", tense: "Present Perfect" },
+                { de: "Wir haben dieses Haus schon gesehen.", en: "We have already seen this house.", tense: "Present Perfect" },
+                { de: "Sie haben noch nie Schnee gesehen.", en: "They have never seen snow.", tense: "Present Perfect" },
+                { de: "Ich würde es sehen, wenn ich Zeit hätte.", en: "I would see it if I had time.", tense: "Conditional" },
+                { de: "Würdest du den Unterschied sehen?", en: "Would you see the difference?", tense: "Conditional" },
+                { de: "Er würde das nicht sehen.", en: "He wouldn't see that.", tense: "Conditional" },
+                { de: "Wir würden ihn sehen.", en: "We would see him.", tense: "Conditional" },
+                { de: "Sie würden die Sterne sehen.", en: "They would see the stars.", tense: "Conditional" },
+                { de: "Du wirst das später sehen.", en: "You will see this later.", tense: "Future" },
+                { de: "Sie wird die Wahrheit sehen.", en: "She will see the truth.", tense: "Future" },
+                { de: "Ich verstehe deinen Standpunkt.", en: "I see your point.", tense: "Present" },
+                { de: "Ich verstehe, was du meinst.", en: "I see what you mean.", tense: "Present" },
+                { de: "Ich sehe, was passiert.", en: "I see what's happening.", tense: "Present" },
+                { de: "Siehst du?", en: "See?", tense: "Present" },
+                { de: "Mal sehen, was passiert.", en: "Let's see what happens.", tense: "Future" },
+                { de: "Wir werden sehen.", en: "We'll see.", tense: "Future" },
+                { de: "Lass uns sehen.", en: "Let's see.", tense: "Imperative" },
+                { de: "Ich durchschaue dich.", en: "I see through you.", tense: "Present" },
+                { de: "Du siehst das Offensichtliche nicht.", en: "You don't see the obvious.", tense: "Present" },
+                { de: "Er sah das Licht.", en: "He saw the light.", tense: "Past Simple" },
+                { de: "Wir sehen die Zukunft.", en: "We see the future.", tense: "Present" },
+                { de: "Sie sahen alles.", en: "They saw everything.", tense: "Past Simple" },
+                { de: "Ich sehe dich beim Meeting.", en: "I will see you at the meeting.", tense: "Future" },
+                { de: "Hast du sein Auto gesehen?", en: "Did you see his car?", tense: "Past Simple" },
+                { de: "Sieh nach, wer es ist.", en: "See who it is.", tense: "Imperative" },
+                { de: "Ich gehe zum Arzt.", en: "I'm seeing a doctor.", tense: "Present Continuous" },
+                { de: "Er sah einen Geist.", en: "He saw a ghost.", tense: "Past Simple" },
+                { de: "Wir werden heute Nacht die Sterne sehen.", en: "We will see the stars tonight.", tense: "Future" },
+                { de: "Sie sehen uns.", en: "They see us.", tense: "Present" },
+                { de: "Ich sehe den Sinn nicht.", en: "I don't see the point.", tense: "Present" },
+                { de: "Hast du diese Nachricht gesehen?", en: "Did you see this news?", tense: "Past Simple" },
+                { de: "Sieh selbst.", en: "See for yourself.", tense: "Imperative" },
+                { de: "Ich werde sehen, was ich tun kann.", en: "I'll see what I can do.", tense: "Future" },
+                { de: "Er sieht Möglichkeiten.", en: "He sees opportunities.", tense: "Present" },
+                { de: "Wir sahen den Sonnenuntergang.", en: "We saw the sunset.", tense: "Past Simple" },
+                { de: "Sie werden den Unterschied sehen.", en: "They will see the difference.", tense: "Future" },
+                { de: "Ich sehe ein Problem.", en: "I see a problem.", tense: "Present" },
+                { de: "Siehst du die Lösung?", en: "Do you see the solution?", tense: "Present" },
+                { de: "Lass uns zusammen sehen.", en: "Let's see together.", tense: "Imperative" },
+                { de: "Ich sehe die Lichter.", en: "I see the lights.", tense: "Present" },
+                { de: "Sie sah einen Regenbogen.", en: "She saw a rainbow.", tense: "Past Simple" },
+                { de: "Wir werden die Ergebnisse bald sehen.", en: "We will see the results soon.", tense: "Future" },
+                { de: "Sie sehen die Bedrohung nicht.", en: "They don't see the threat.", tense: "Present" },
+                { de: "Ich treffe Freunde.", en: "I'm seeing friends.", tense: "Present Continuous" },
+                { de: "Hast du den Hund gesehen?", en: "Did you see the dog?", tense: "Past Simple" },
+                { de: "Seht den Himmel.", en: "See the sky.", tense: "Imperative" },
+                { de: "Ich kann ihn nicht sehen.", en: "I can't see him.", tense: "Present" },
+                { de: "Er sah den Unfall.", en: "He saw the accident.", tense: "Past Simple" },
+                { de: "Wir werden das neue Haus sehen.", en: "We will see the new house.", tense: "Future" },
+                { de: "Sie sahen ein Wunder.", en: "They saw a miracle.", tense: "Past Simple" },
+                { de: "Ich sehe Schönheit.", en: "I see beauty.", tense: "Present" },
+                { de: "Siehst du den Stern?", en: "Do you see the star?", tense: "Present" },
+                { de: "Er wird seine Eltern sehen.", en: "He will see his parents.", tense: "Future" },
+                { de: "Wir sehen die Berge.", en: "We see the mountains.", tense: "Present" },
+                { de: "Sie sahen ein Schiff.", en: "They saw a ship.", tense: "Past Simple" },
+                { de: "Sieh der Wahrheit ins Gesicht.", en: "See the truth.", tense: "Imperative" },
+                { de: "Ich sehe seine Absichten.", en: "I see his intentions.", tense: "Present" },
+                { de: "Hast du die Katze gesehen?", en: "Did you see the cat?", tense: "Past Simple" },
+                { de: "Er sieht das Problem nicht.", en: "He doesn't see the problem.", tense: "Present" },
+                { de: "Wir sahen gute Zeiten.", en: "We saw good times.", tense: "Past Simple" },
+                { de: "Sie werden eine neue Ära sehen.", en: "They will see a new era.", tense: "Future" },
+                { de: "Ich werde ihn morgen sehen.", en: "I will see him tomorrow.", tense: "Future" },
+                { de: "Hast du einen Traum gesehen?", en: "Did you see a dream?", tense: "Past Simple" },
+                { de: "Sieh dir die Karte an.", en: "See the map.", tense: "Imperative" },
+                { de: "Ich sehe keinen Ausweg.", en: "I don't see a way out.", tense: "Present" },
+                { de: "Er sieht Hoffnung.", en: "He sees hope.", tense: "Present" },
+                { de: "Wir werden Veränderungen sehen.", en: "We will see changes.", tense: "Future" },
+                { de: "Sie sehen das Bild.", en: "They see the picture.", tense: "Present" },
+                { de: "Bis dann!", en: "See you!", tense: "Future" },
+                { de: "Ich sehe, was du machst.", en: "I see what you're doing.", tense: "Present" },
+                { de: "Du wirst mich wiedersehen.", en: "You will see me again.", tense: "Future" },
+                { de: "Er sah ein Zeichen.", en: "He saw a sign.", tense: "Past Simple" },
+                { de: "Wir sehen Schönheit in der Einfachheit.", en: "We see beauty in simplicity.", tense: "Present" },
+                { de: "Sie werden eine neue Welt sehen.", en: "They will see a new world.", tense: "Future" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

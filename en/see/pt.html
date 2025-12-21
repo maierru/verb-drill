@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇬🇧 VERB SEE — 95 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇬🇧 Verb SEE</h1>
+            <p class="subtitle">to perceive, to understand — 95 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 95 de 95 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            English Practice — SEE · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'en',
+            labels: { target: 'English', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["see","sees","saw","seen","seeing"],
+            phrases: [
+                { pt: "Eu vejo-te.", en: "I see you.", tense: "Present" },
+                { pt: "Vês isto?", en: "Do you see this?", tense: "Present" },
+                { pt: "Ele viu-me ontem.", en: "He saw me yesterday.", tense: "Past Simple" },
+                { pt: "Vamos ver-nos amanhã.", en: "We will see each other tomorrow.", tense: "Future" },
+                { pt: "Eles veem os pássaros.", en: "They see the birds.", tense: "Present" },
+                { pt: "Ela viu o filme.", en: "She saw the movie.", tense: "Past Simple" },
+                { pt: "Não vejo o problema.", en: "I don't see the problem.", tense: "Present" },
+                { pt: "Viste o meu irmão?", en: "Did you see my brother?", tense: "Past Simple" },
+                { pt: "Ele não viu o sinal.", en: "He didn't see the sign.", tense: "Past Simple" },
+                { pt: "Não o vamos ver hoje.", en: "We won't see him today.", tense: "Future" },
+                { pt: "Vamos ver.", en: "We'll see.", tense: "Future" },
+                { pt: "Até logo.", en: "See you later.", tense: "Future" },
+                { pt: "Vê isto.", en: "See this.", tense: "Imperative" },
+                { pt: "Vejam o ecrã.", en: "See the screen.", tense: "Imperative" },
+                { pt: "Estou a ver televisão.", en: "I'm seeing TV.", tense: "Present Continuous" },
+                { pt: "Estás a ver-te com alguém?", en: "Are you seeing someone?", tense: "Present Continuous" },
+                { pt: "Ele estava a olhar pela janela quando entrei.", en: "He was seeing out the window when I entered.", tense: "Past Continuous" },
+                { pt: "Estamos a ver o médico agora mesmo.", en: "We are seeing the doctor right now.", tense: "Present Continuous" },
+                { pt: "Eles estavam a ver o espetáculo toda a noite.", en: "They were seeing the show all evening.", tense: "Past Continuous" },
+                { pt: "Já vi este filme.", en: "I have already seen this movie.", tense: "Present Perfect" },
+                { pt: "Já viste o mar?", en: "Have you ever seen the sea?", tense: "Present Perfect" },
+                { pt: "Ele viu dias melhores.", en: "He has seen better days.", tense: "Present Perfect" },
+                { pt: "Já vimos esta casa.", en: "We have already seen this house.", tense: "Present Perfect" },
+                { pt: "Eles nunca viram neve.", en: "They have never seen snow.", tense: "Present Perfect" },
+                { pt: "Eu veria isto se tivesse tempo.", en: "I would see it if I had time.", tense: "Conditional" },
+                { pt: "Verias a diferença?", en: "Would you see the difference?", tense: "Conditional" },
+                { pt: "Ele não veria isso.", en: "He wouldn't see that.", tense: "Conditional" },
+                { pt: "Nós veríamos ele.", en: "We would see him.", tense: "Conditional" },
+                { pt: "Eles veriam as estrelas.", en: "They would see the stars.", tense: "Conditional" },
+                { pt: "Verás isto mais tarde.", en: "You will see this later.", tense: "Future" },
+                { pt: "Ela verá a verdade.", en: "She will see the truth.", tense: "Future" },
+                { pt: "Vejo o teu ponto de vista.", en: "I see your point.", tense: "Present" },
+                { pt: "Vejo o que queres dizer.", en: "I see what you mean.", tense: "Present" },
+                { pt: "Vejo o que está a acontecer.", en: "I see what's happening.", tense: "Present" },
+                { pt: "Vês?", en: "See?", tense: "Present" },
+                { pt: "Vamos ver o que acontece.", en: "Let's see what happens.", tense: "Future" },
+                { pt: "Veremos.", en: "We'll see.", tense: "Future" },
+                { pt: "Vamos ver.", en: "Let's see.", tense: "Imperative" },
+                { pt: "Vejo através de ti.", en: "I see through you.", tense: "Present" },
+                { pt: "Não vês o óbvio.", en: "You don't see the obvious.", tense: "Present" },
+                { pt: "Ele viu a luz.", en: "He saw the light.", tense: "Past Simple" },
+                { pt: "Vemos o futuro.", en: "We see the future.", tense: "Present" },
+                { pt: "Eles viram tudo.", en: "They saw everything.", tense: "Past Simple" },
+                { pt: "Vejo-te na reunião.", en: "I will see you at the meeting.", tense: "Future" },
+                { pt: "Viste o carro dele?", en: "Did you see his car?", tense: "Past Simple" },
+                { pt: "Vê quem é.", en: "See who it is.", tense: "Imperative" },
+                { pt: "Estou a ver um médico.", en: "I'm seeing a doctor.", tense: "Present Continuous" },
+                { pt: "Ele viu um fantasma.", en: "He saw a ghost.", tense: "Past Simple" },
+                { pt: "Vamos ver as estrelas esta noite.", en: "We will see the stars tonight.", tense: "Future" },
+                { pt: "Eles veem-nos.", en: "They see us.", tense: "Present" },
+                { pt: "Não vejo o sentido.", en: "I don't see the point.", tense: "Present" },
+                { pt: "Viste esta notícia?", en: "Did you see this news?", tense: "Past Simple" },
+                { pt: "Vê por ti mesmo.", en: "See for yourself.", tense: "Imperative" },
+                { pt: "Vou ver o que posso fazer.", en: "I'll see what I can do.", tense: "Future" },
+                { pt: "Ele vê oportunidades.", en: "He sees opportunities.", tense: "Present" },
+                { pt: "Vimos o pôr do sol.", en: "We saw the sunset.", tense: "Past Simple" },
+                { pt: "Eles verão a diferença.", en: "They will see the difference.", tense: "Future" },
+                { pt: "Vejo um problema.", en: "I see a problem.", tense: "Present" },
+                { pt: "Vês a solução?", en: "Do you see the solution?", tense: "Present" },
+                { pt: "Vamos ver juntos.", en: "Let's see together.", tense: "Imperative" },
+                { pt: "Vejo as luzes.", en: "I see the lights.", tense: "Present" },
+                { pt: "Ela viu um arco-íris.", en: "She saw a rainbow.", tense: "Past Simple" },
+                { pt: "Veremos os resultados em breve.", en: "We will see the results soon.", tense: "Future" },
+                { pt: "Eles não veem a ameaça.", en: "They don't see the threat.", tense: "Present" },
+                { pt: "Estou a ver amigos.", en: "I'm seeing friends.", tense: "Present Continuous" },
+                { pt: "Viste o cão?", en: "Did you see the dog?", tense: "Past Simple" },
+                { pt: "Vejam o céu.", en: "See the sky.", tense: "Imperative" },
+                { pt: "Não o consigo ver.", en: "I can't see him.", tense: "Present" },
+                { pt: "Ele viu o acidente.", en: "He saw the accident.", tense: "Past Simple" },
+                { pt: "Veremos a casa nova.", en: "We will see the new house.", tense: "Future" },
+                { pt: "Eles viram um milagre.", en: "They saw a miracle.", tense: "Past Simple" },
+                { pt: "Vejo beleza.", en: "I see beauty.", tense: "Present" },
+                { pt: "Vês a estrela?", en: "Do you see the star?", tense: "Present" },
+                { pt: "Ele verá os pais.", en: "He will see his parents.", tense: "Future" },
+                { pt: "Vemos as montanhas.", en: "We see the mountains.", tense: "Present" },
+                { pt: "Eles viram um navio.", en: "They saw a ship.", tense: "Past Simple" },
+                { pt: "Vê a verdade de frente.", en: "See the truth.", tense: "Imperative" },
+                { pt: "Vejo as suas intenções.", en: "I see his intentions.", tense: "Present" },
+                { pt: "Viste o gato?", en: "Did you see the cat?", tense: "Past Simple" },
+                { pt: "Ele não vê o problema.", en: "He doesn't see the problem.", tense: "Present" },
+                { pt: "Vimos bons tempos.", en: "We saw good times.", tense: "Past Simple" },
+                { pt: "Eles verão uma nova era.", en: "They will see a new era.", tense: "Future" },
+                { pt: "Vou vê-lo amanhã.", en: "I will see him tomorrow.", tense: "Future" },
+                { pt: "Tiveste um sonho?", en: "Did you see a dream?", tense: "Past Simple" },
+                { pt: "Vê o mapa.", en: "See the map.", tense: "Imperative" },
+                { pt: "Não vejo saída.", en: "I don't see a way out.", tense: "Present" },
+                { pt: "Ele vê esperança.", en: "He sees hope.", tense: "Present" },
+                { pt: "Veremos mudanças.", en: "We will see changes.", tense: "Future" },
+                { pt: "Eles veem o quadro.", en: "They see the picture.", tense: "Present" },
+                { pt: "Até à vista!", en: "See you!", tense: "Future" },
+                { pt: "Vejo o que estás a fazer.", en: "I see what you're doing.", tense: "Present" },
+                { pt: "Verás-me outra vez.", en: "You will see me again.", tense: "Future" },
+                { pt: "Ele viu um sinal.", en: "He saw a sign.", tense: "Past Simple" },
+                { pt: "Vemos beleza na simplicidade.", en: "We see beauty in simplicity.", tense: "Present" },
+                { pt: "Eles verão um novo mundo.", en: "They will see a new world.", tense: "Future" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

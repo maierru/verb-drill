@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbe 🇬🇧 VERB TAKE — 96 phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Retour à la liste des verbes</a>
+            <h1>🇬🇧 Verb TAKE</h1>
+            <p class="subtitle">to grab, to accept — 96 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Rechercher des phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Afficher toutes les traductions</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Masquer toutes les traductions</button>
+        </div>
+
+        <div class="stats" id="stats">Affichage: 96 sur 96 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Pratique de l'anglais — TAKE · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'fr',
+            targetKey: 'en',
+            labels: { target: 'Anglais', showing: 'Affichage', of: 'sur', phrases: 'phrases' },
+            verbForms: ["take","takes","took","taken","taking","don't take","doesn't take","didn't take","won't take","wouldn't take","will take","would take","have taken","has taken","had taken"],
+            phrases: [
+                { fr: "Je vais prendre ça.", en: "I will take this.", tense: "Future" },
+                { fr: "Tu prends du café?", en: "Do you take coffee?", tense: "Present" },
+                { fr: "Il a pris le livre.", en: "He took the book.", tense: "Past Simple" },
+                { fr: "Nous prendrons un taxi.", en: "We will take a taxi.", tense: "Future" },
+                { fr: "Ils prennent les billets.", en: "They take the tickets.", tense: "Present" },
+                { fr: "Elle a pris un parapluie.", en: "She took an umbrella.", tense: "Past Simple" },
+                { fr: "Je ne prends pas de sucre.", en: "I don't take sugar.", tense: "Present" },
+                { fr: "Tu as pris mon téléphone?", en: "Did you take my phone?", tense: "Past Simple" },
+                { fr: "Il n'a pas pris l'argent.", en: "He didn't take the money.", tense: "Past Simple" },
+                { fr: "Nous ne prendrons pas la voiture.", en: "We won't take the car.", tense: "Future" },
+                { fr: "Prends ça.", en: "Take this.", tense: "Imperative" },
+                { fr: "Prenez place.", en: "Take a seat.", tense: "Imperative" },
+                { fr: "Ne prends pas ça.", en: "Don't take that.", tense: "Imperative" },
+                { fr: "Prenez votre passeport avec vous.", en: "Take your passport with you.", tense: "Imperative" },
+                { fr: "Je prends des vacances.", en: "I'm taking a vacation.", tense: "Present Continuous" },
+                { fr: "Tu prends des cours maintenant?", en: "Are you taking lessons now?", tense: "Present Continuous" },
+                { fr: "Il prenait une douche quand j'ai appelé.", en: "He was taking a shower when I called.", tense: "Past Continuous" },
+                { fr: "Nous prenons un taxi maintenant.", en: "We are taking a taxi right now.", tense: "Present Continuous" },
+                { fr: "Ils faisaient des entretiens toute la journée.", en: "They were taking interviews all day.", tense: "Past Continuous" },
+                { fr: "J'ai déjà pris le médicament.", en: "I have already taken the medicine.", tense: "Present Perfect" },
+                { fr: "As-tu déjà pris des cours d'espagnol?", en: "Have you ever taken Spanish lessons?", tense: "Present Perfect" },
+                { fr: "Il a suivi mon conseil.", en: "He has taken my advice.", tense: "Present Perfect" },
+                { fr: "Nous avons déjà pris les billets.", en: "We have already taken the tickets.", tense: "Present Perfect" },
+                { fr: "Ils n'ont jamais pris de pots-de-vin.", en: "They have never taken bribes.", tense: "Present Perfect" },
+                { fr: "Je le prendrais si c'était moins cher.", en: "I would take it if it were cheaper.", tense: "Conditional" },
+                { fr: "Tu prendrais ce travail?", en: "Would you take this job?", tense: "Conditional" },
+                { fr: "Il ne prendrait pas ça.", en: "He wouldn't take that.", tense: "Conditional" },
+                { fr: "Nous l'emmènerions avec nous.", en: "We would take him with us.", tense: "Conditional" },
+                { fr: "Ils prendraient un jour de congé.", en: "They would take a day off.", tense: "Conditional" },
+                { fr: "Combien de temps ça prendra?", en: "How long will it take?", tense: "Future" },
+                { fr: "Ça prendra une heure.", en: "It will take an hour.", tense: "Future" },
+                { fr: "Ça a pris beaucoup de temps.", en: "It took a long time.", tense: "Past Simple" },
+                { fr: "Combien de temps ça a pris?", en: "How long did it take?", tense: "Past Simple" },
+                { fr: "Ça prend une minute.", en: "It takes a minute.", tense: "Present" },
+                { fr: "Je prends la responsabilité.", en: "I take responsibility.", tense: "Present" },
+                { fr: "Reprends-toi.", en: "Take yourself in hand.", tense: "Imperative" },
+                { fr: "Il prend une décision.", en: "He is taking a decision.", tense: "Present Continuous" },
+                { fr: "Nous avons pris une décision.", en: "We have taken a decision.", tense: "Present Perfect" },
+                { fr: "Ils ont pris des mesures.", en: "They took measures.", tense: "Past Simple" },
+                { fr: "Je ne prends pas de drogue.", en: "I don't take drugs.", tense: "Present" },
+                { fr: "Tu as pris tes pilules?", en: "Did you take your pills?", tense: "Past Simple" },
+                { fr: "Prends ton temps.", en: "Take your time.", tense: "Imperative" },
+                { fr: "Ne te presse pas trop.", en: "Don't take it too fast.", tense: "Imperative" },
+                { fr: "Je vais prendre ça en compte.", en: "I will take that into account.", tense: "Future" },
+                { fr: "Tu prends ça au sérieux?", en: "Do you take this seriously?", tense: "Present" },
+                { fr: "Il l'a pris à cœur.", en: "He took it to heart.", tense: "Past Simple" },
+                { fr: "Nous avons mis le cap au nord.", en: "We took a course to the north.", tense: "Past Simple" },
+                { fr: "Ils prennent part.", en: "They are taking part.", tense: "Present Continuous" },
+                { fr: "Je vais prendre un risque.", en: "I will take a risk.", tense: "Future" },
+                { fr: "Tu as pris un jour de congé?", en: "Did you take a day off?", tense: "Past Simple" },
+                { fr: "Fais une pause.", en: "Take a break.", tense: "Imperative" },
+                { fr: "Je prends un congé.", en: "I'm taking time off.", tense: "Present Continuous" },
+                { fr: "Il a pris le dessus.", en: "He took the upper hand.", tense: "Past Simple" },
+                { fr: "Nous prendrons l'initiative.", en: "We will take the initiative.", tense: "Future" },
+                { fr: "Ils ont pris le contrôle.", en: "They took control.", tense: "Past Simple" },
+                { fr: "Je prends ça sur moi.", en: "I take it upon myself.", tense: "Present" },
+                { fr: "Tu as pris trop de choses.", en: "You took on too much.", tense: "Past Simple" },
+                { fr: "Prends note de ça.", en: "Take note of this.", tense: "Imperative" },
+                { fr: "Je ne peux pas accepter ça.", en: "I can't take this.", tense: "Present" },
+                { fr: "Il n'a pas accepté les excuses.", en: "He didn't take the apology.", tense: "Past Simple" },
+                { fr: "Nous n'acceptons pas les cartes.", en: "We don't take cards.", tense: "Present" },
+                { fr: "Ils n'ont pas accepté l'offre.", en: "They didn't take the offer.", tense: "Past Simple" },
+                { fr: "Emmène-moi avec toi.", en: "Take me with you.", tense: "Imperative" },
+                { fr: "Je te prends au mot.", en: "I take you at your word.", tense: "Present" },
+                { fr: "Tu as pris les clés?", en: "Did you take the keys?", tense: "Past Simple" },
+                { fr: "Il prend des cours de guitare.", en: "He takes guitar lessons.", tense: "Present" },
+                { fr: "Nous promènerons le chien.", en: "We will take the dog for a walk.", tense: "Future" },
+                { fr: "Ils nous ont pris par surprise.", en: "They took us by surprise.", tense: "Past Simple" },
+                { fr: "Je prends un bain.", en: "I'm taking a bath.", tense: "Present Continuous" },
+                { fr: "Tu prends ça?", en: "Are you taking this?", tense: "Present Continuous" },
+                { fr: "Prends un parapluie, il pleut.", en: "Take an umbrella, it's raining.", tense: "Imperative" },
+                { fr: "Je vais prendre un taxi pour l'aéroport.", en: "I will take a taxi to the airport.", tense: "Future" },
+                { fr: "Il m'a pris par la main.", en: "He took me by the hand.", tense: "Past Simple" },
+                { fr: "Nous prenons un prêt.", en: "We are taking a loan.", tense: "Present Continuous" },
+                { fr: "Ils ont pris un prêt.", en: "They took a loan.", tense: "Past Simple" },
+                { fr: "Ne le prends pas personnellement.", en: "Don't take it personally.", tense: "Imperative" },
+                { fr: "J'accepte ton offre.", en: "I take your offer.", tense: "Present" },
+                { fr: "Tu as accepté l'invitation?", en: "Did you take the invitation?", tense: "Past Simple" },
+                { fr: "Il ne prend pas d'appels.", en: "He doesn't take calls.", tense: "Present" },
+                { fr: "Nous avons fait une pause.", en: "We took a pause.", tense: "Past Simple" },
+                { fr: "Ils prennent des échantillons.", en: "They are taking samples.", tense: "Present Continuous" },
+                { fr: "Je vais t'emmener au travail.", en: "I will take you to work.", tense: "Future" },
+                { fr: "Tu as pris les empreintes?", en: "Did you take the fingerprints?", tense: "Past Simple" },
+                { fr: "Prends l'appareil photo.", en: "Take the camera.", tense: "Imperative" },
+                { fr: "Je prends des photos.", en: "I'm taking photos.", tense: "Present Continuous" },
+                { fr: "Il a pris un échantillon.", en: "He took a sample.", tense: "Past Simple" },
+                { fr: "Nous faisons des tests.", en: "We are taking tests.", tense: "Present Continuous" },
+                { fr: "Ils vont prendre du sang.", en: "They will take blood.", tense: "Future" },
+                { fr: "Je ne prends pas de pourboires.", en: "I don't take tips.", tense: "Present" },
+                { fr: "Tu as pris l'argent?", en: "Did you take the money?", tense: "Past Simple" },
+                { fr: "Il prend des pots-de-vin.", en: "He takes bribes.", tense: "Present" },
+                { fr: "Nous n'acceptons pas de cadeaux.", en: "We don't take gifts.", tense: "Present" },
+                { fr: "Prends-le gratuitement.", en: "Take it for free.", tense: "Imperative" },
+                { fr: "Je prends la moitié.", en: "I take half.", tense: "Present" },
+                { fr: "Tu as pris le dernier morceau?", en: "Did you take the last piece?", tense: "Past Simple" },
+                { fr: "Il prend tout.", en: "He takes everything.", tense: "Present" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

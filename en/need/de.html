@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇬🇧 VERB NEED — 100 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇬🇧 Verb NEED</h1>
+            <p class="subtitle">to require, to must have — 100 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 100 von 100 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Englisch-Übung — NEED · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'en',
+            labels: { target: 'Englisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["need","needs","needed","needing"],
+            phrases: [
+                { de: "Ich brauche deine Hilfe.", en: "I need your help.", tense: "Present" },
+                { de: "Du musst dich ausruhen.", en: "You need to rest.", tense: "Present" },
+                { de: "Er braucht Geld.", en: "He needs money.", tense: "Present" },
+                { de: "Sie braucht Zeit.", en: "She needs time.", tense: "Present" },
+                { de: "Wir müssen reden.", en: "We need to talk.", tense: "Present" },
+                { de: "Ihr müsst das wissen.", en: "You need to know this.", tense: "Present" },
+                { de: "Sie brauchen Informationen.", en: "They need information.", tense: "Present" },
+                { de: "Ich brauche das nicht.", en: "I don't need this.", tense: "Present" },
+                { de: "Du brauchst dir keine Sorgen zu machen.", en: "You don't need to worry.", tense: "Present" },
+                { de: "Er braucht keine Hilfe.", en: "He doesn't need help.", tense: "Present" },
+                { de: "Ich muss gehen.", en: "I need to go.", tense: "Present" },
+                { de: "Du musst essen.", en: "You need to eat.", tense: "Present" },
+                { de: "Sie muss schlafen.", en: "She needs to sleep.", tense: "Present" },
+                { de: "Wir brauchen eine Lösung.", en: "We need a solution.", tense: "Present" },
+                { de: "Sie brauchen einen Rat.", en: "They need advice.", tense: "Present" },
+                { de: "Ich brauche ein Auto.", en: "I need a car.", tense: "Present" },
+                { de: "Du brauchst einen Arzt.", en: "You need a doctor.", tense: "Present" },
+                { de: "Er braucht eine Erklärung.", en: "He needs an explanation.", tense: "Present" },
+                { de: "Sie braucht Urlaub.", en: "She needs a vacation.", tense: "Present" },
+                { de: "Wir brauchen mehr Zeit.", en: "We need more time.", tense: "Present" },
+                { de: "Ich brauchte Hilfe.", en: "I needed help.", tense: "Past Simple" },
+                { de: "Du musstest anrufen.", en: "You needed to call.", tense: "Past Simple" },
+                { de: "Er brauchte Informationen.", en: "He needed information.", tense: "Past Simple" },
+                { de: "Sie musste es wissen.", en: "She needed to know.", tense: "Past Simple" },
+                { de: "Wir brauchten Geld.", en: "We needed money.", tense: "Past Simple" },
+                { de: "Ihr musstet warten.", en: "You needed to wait.", tense: "Past Simple" },
+                { de: "Sie brauchten eine Genehmigung.", en: "They needed permission.", tense: "Past Simple" },
+                { de: "Ich musste das nicht tun.", en: "I didn't need to do this.", tense: "Past Simple" },
+                { de: "Du brauchtest nicht zu kommen.", en: "You didn't need to come.", tense: "Past Simple" },
+                { de: "Sie brauchte nicht zu erklären.", en: "She didn't need to explain.", tense: "Past Simple" },
+                { de: "Ich werde deine Meinung brauchen.", en: "I will need your opinion.", tense: "Future" },
+                { de: "Du wirst Hilfe brauchen.", en: "You will need help.", tense: "Future" },
+                { de: "Er wird mehr Zeit brauchen.", en: "He will need more time.", tense: "Future" },
+                { de: "Sie wird neue Dokumente brauchen.", en: "She will need new documents.", tense: "Future" },
+                { de: "Wir werden einen Plan brauchen.", en: "We will need a plan.", tense: "Future" },
+                { de: "Ihr werdet ein Ticket brauchen.", en: "You will need a ticket.", tense: "Future" },
+                { de: "Sie werden eine Genehmigung brauchen.", en: "They will need permission.", tense: "Future" },
+                { de: "Ich werde das nicht brauchen.", en: "I won't need this.", tense: "Future" },
+                { de: "Du wirst kein Auto brauchen.", en: "You won't need a car.", tense: "Future" },
+                { de: "Er wird keine Hilfe brauchen.", en: "He won't need help.", tense: "Future" },
+                { de: "Ich brauche einen Rat.", en: "I need advice.", tense: "Present" },
+                { de: "Du brauchst einen Grund.", en: "You need a reason.", tense: "Present" },
+                { de: "Er braucht Unterstützung.", en: "He needs support.", tense: "Present" },
+                { de: "Sie braucht eine Pause.", en: "She needs a break.", tense: "Present" },
+                { de: "Wir brauchen deine Hilfe.", en: "We need your help.", tense: "Present" },
+                { de: "Ihr braucht eine Antwort.", en: "You need an answer.", tense: "Present" },
+                { de: "Sie brauchen einen Beweis.", en: "They need proof.", tense: "Present" },
+                { de: "Ich muss nachdenken.", en: "I need to think.", tense: "Present" },
+                { de: "Du musst es versuchen.", en: "You need to try.", tense: "Present" },
+                { de: "Er muss lernen.", en: "He needs to study.", tense: "Present" },
+                { de: "Was brauchst du?", en: "What do you need?", tense: "Present" },
+                { de: "Wie viel brauchst du?", en: "How much do you need?", tense: "Present" },
+                { de: "Wann brauchst du das?", en: "When do you need this?", tense: "Present" },
+                { de: "Wer braucht das?", en: "Who needs this?", tense: "Present" },
+                { de: "Warum brauchst du das?", en: "Why do you need this?", tense: "Present" },
+                { de: "Ich brauche das wirklich.", en: "I really need this.", tense: "Present" },
+                { de: "Du brauchst das dringend.", en: "You urgently need this.", tense: "Present" },
+                { de: "Er braucht wirklich Hilfe.", en: "He really needs help.", tense: "Present" },
+                { de: "Sie braucht nur Zeit.", en: "She just needs time.", tense: "Present" },
+                { de: "Wir alle brauchen das.", en: "We all need this.", tense: "Present" },
+                { de: "Ich musste es sagen.", en: "I needed to say.", tense: "Past Simple" },
+                { de: "Du musstest bleiben.", en: "You needed to stay.", tense: "Past Simple" },
+                { de: "Er brauchte ein Auto.", en: "He needed a car.", tense: "Past Simple" },
+                { de: "Sie brauchte einen Rat.", en: "She needed advice.", tense: "Past Simple" },
+                { de: "Wir brauchten eine Pause.", en: "We needed a break.", tense: "Past Simple" },
+                { de: "Sie brauchten mehr Zeit.", en: "They needed more time.", tense: "Past Simple" },
+                { de: "Ich musste nachdenken.", en: "I needed to think.", tense: "Past Simple" },
+                { de: "Du musstest fragen.", en: "You needed to ask.", tense: "Past Simple" },
+                { de: "Er musste arbeiten.", en: "He needed to work.", tense: "Past Simple" },
+                { de: "Sie musste gehen.", en: "She needed to leave.", tense: "Past Simple" },
+                { de: "Ich werde deine Unterstützung brauchen.", en: "I will need your support.", tense: "Future" },
+                { de: "Du wirst Geduld brauchen.", en: "You will need patience.", tense: "Future" },
+                { de: "Er wird Erfahrung brauchen.", en: "He will need experience.", tense: "Future" },
+                { de: "Sie wird einen Rat brauchen.", en: "She will need advice.", tense: "Future" },
+                { de: "Wir werden Glück brauchen.", en: "We will need luck.", tense: "Future" },
+                { de: "Ihr werdet ein Passwort brauchen.", en: "You will need a password.", tense: "Future" },
+                { de: "Sie werden eine Karte brauchen.", en: "They will need a map.", tense: "Future" },
+                { de: "Ich könnte Hilfe brauchen.", en: "I might need help.", tense: "Conditional" },
+                { de: "Du könntest das brauchen.", en: "You might need this.", tense: "Conditional" },
+                { de: "Er könnte Unterstützung brauchen.", en: "He might need support.", tense: "Conditional" },
+                { de: "Sie könnte Zeit brauchen.", en: "She might need time.", tense: "Conditional" },
+                { de: "Wir könnten einen Plan brauchen.", en: "We might need a plan.", tense: "Conditional" },
+                { de: "Ihr könntet Hilfe brauchen.", en: "You might need help.", tense: "Conditional" },
+                { de: "Sie könnten Informationen brauchen.", en: "They might need information.", tense: "Conditional" },
+                { de: "Falls du etwas brauchst...", en: "If you need anything...", tense: "Conditional" },
+                { de: "Wenn ich das bräuchte...", en: "If I needed this...", tense: "Conditional" },
+                { de: "Falls er Hilfe braucht...", en: "If he needs help...", tense: "Conditional" },
+                { de: "Ich brauche keine Ausreden.", en: "I don't need excuses.", tense: "Present" },
+                { de: "Das ist nicht nötig.", en: "This is not needed.", tense: "Present" },
+                { de: "Nichts ist nötig.", en: "Nothing is needed.", tense: "Present" },
+                { de: "Alles, was du brauchst.", en: "Everything you need.", tense: "Expression" },
+                { de: "Das ist alles, was wir brauchen.", en: "That's all we need.", tense: "Expression" },
+                { de: "Ich musste das hören.", en: "I needed to hear this.", tense: "Past Simple" },
+                { de: "Du musstest die Wahrheit wissen.", en: "You needed to know the truth.", tense: "Past Simple" },
+                { de: "Er musste verstehen.", en: "He needed to understand.", tense: "Past Simple" },
+                { de: "Ich brauche deine Unterschrift.", en: "I need your signature.", tense: "Present" },
+                { de: "Du brauchst einen neuen Plan.", en: "You need a new plan.", tense: "Present" },
+                { de: "Sie braucht mehr Übung.", en: "She needs more practice.", tense: "Present" },
+                { de: "Wir brauchen deine Zustimmung.", en: "We need your consent.", tense: "Present" },
+                { de: "Sie brauchen eine Genehmigung.", en: "They need authorization.", tense: "Present" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

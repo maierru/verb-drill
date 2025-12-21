@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇬🇧 VERB WANT — 95 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇬🇧 Verb WANT</h1>
+            <p class="subtitle">to desire, to wish — 95 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 95 de 95 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            English Practice — WANT · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'en',
+            labels: { target: 'English', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["want","wants","wanted","wanting"],
+            phrases: [
+                { pt: "Eu quero café", en: "I want coffee", tense: "Present" },
+                { pt: "Tu queres ajudar-me?", en: "Do you want to help me?", tense: "Present" },
+                { pt: "Ele quer um carro novo", en: "He wants a new car", tense: "Present" },
+                { pt: "Ela quer falar contigo", en: "She wants to talk to you", tense: "Present" },
+                { pt: "Nós queremos ir de férias", en: "We want to go on vacation", tense: "Present" },
+                { pt: "Eles querem comprar uma casa", en: "They want to buy a house", tense: "Present" },
+                { pt: "Eu queria perguntar-te", en: "I wanted to ask you", tense: "Past Simple" },
+                { pt: "Tu querias ver isto?", en: "Did you want to see this?", tense: "Past Simple" },
+                { pt: "Ele queria tornar-se médico", en: "He wanted to become a doctor", tense: "Past Simple" },
+                { pt: "Ela queria ir ao cinema", en: "She wanted to go to the cinema", tense: "Past Simple" },
+                { pt: "Nós queríamos ficar em casa", en: "We wanted to stay home", tense: "Past Simple" },
+                { pt: "Eles queriam começar cedo", en: "They wanted to start early", tense: "Past Simple" },
+                { pt: "Eu sempre quis visitar o Japão", en: "I've always wanted to visit Japan", tense: "Present Perfect" },
+                { pt: "Tu alguma vez quiseste viver no estrangeiro?", en: "Have you ever wanted to live abroad?", tense: "Present Perfect" },
+                { pt: "Ele nunca quis ter filhos", en: "He has never wanted children", tense: "Present Perfect" },
+                { pt: "Ela sempre quis um cão", en: "She has always wanted a dog", tense: "Present Perfect" },
+                { pt: "Nós há muito tempo que queríamos encontrar-vos", en: "We've wanted to meet you for a long time", tense: "Present Perfect" },
+                { pt: "Eles sempre quiseram abrir o próprio negócio", en: "They've always wanted to start their own business", tense: "Present Perfect" },
+                { pt: "Eu vou querer saber os resultados", en: "I will want to know the results", tense: "Future" },
+                { pt: "Tu vais querer descansar depois do trabalho", en: "You will want to rest after work", tense: "Future" },
+                { pt: "Ele vai querer mais dinheiro", en: "He will want more money", tense: "Future" },
+                { pt: "Ela vai querer ver provas", en: "She will want to see proof", tense: "Future" },
+                { pt: "Nós vamos querer ouvir a tua opinião", en: "We will want to hear your opinion", tense: "Future" },
+                { pt: "Eles vão querer participar", en: "They will want to participate", tense: "Future" },
+                { pt: "Eu queria uma chávena de chá", en: "I would want a cup of tea", tense: "Conditional" },
+                { pt: "Tu querias vir comigo?", en: "Would you want to come with me?", tense: "Conditional" },
+                { pt: "Ele queria receber uma promoção", en: "He would want to get a promotion", tense: "Conditional" },
+                { pt: "Ela queria estudar arte", en: "She would want to study art", tense: "Conditional" },
+                { pt: "Nós queríamos reservar uma mesa", en: "We would want to book a table", tense: "Conditional" },
+                { pt: "Eles queriam mudar-se para o campo", en: "They would want to move to the countryside", tense: "Conditional" },
+                { pt: "Eu não quero discutir", en: "I don't want to argue", tense: "Present" },
+                { pt: "Tu não queres tentar?", en: "Don't you want to try?", tense: "Present" },
+                { pt: "Ele não quer ir", en: "He doesn't want to go", tense: "Present" },
+                { pt: "Ela não quer falar sobre isso", en: "She doesn't want to talk about it", tense: "Present" },
+                { pt: "Nós não queremos chegar atrasados", en: "We don't want to be late", tense: "Present" },
+                { pt: "Eles não querem ouvir", en: "They don't want to listen", tense: "Present" },
+                { pt: "Eu não queria magoar-te", en: "I didn't want to hurt you", tense: "Past Simple" },
+                { pt: "Tu não querias fazer isto", en: "You didn't want to do this", tense: "Past Simple" },
+                { pt: "Ele não queria sair", en: "He didn't want to leave", tense: "Past Simple" },
+                { pt: "Ela não queria incomodar-vos", en: "She didn't want to bother you", tense: "Past Simple" },
+                { pt: "Nós não queríamos criar problemas", en: "We didn't want to cause problems", tense: "Past Simple" },
+                { pt: "Eles não queriam pagar tanto", en: "They didn't want to pay so much", tense: "Past Simple" },
+                { pt: "O que tu queres para jantar?", en: "What do you want for dinner?", tense: "Present" },
+                { pt: "Quanto é que tu queres por isto?", en: "How much do you want for this?", tense: "Present" },
+                { pt: "Quando é que tu queres encontrar-nos?", en: "When do you want to meet?", tense: "Present" },
+                { pt: "Porque é que tu queres ir embora?", en: "Why do you want to leave?", tense: "Present" },
+                { pt: "Onde é que tu queres viver?", en: "Where do you want to live?", tense: "Present" },
+                { pt: "Quem quer gelado?", en: "Who wants ice cream?", tense: "Present" },
+                { pt: "Eu quero a verdade", en: "I want the truth", tense: "Present" },
+                { pt: "Eu quero que tu sejas feliz", en: "I want you to be happy", tense: "Present" },
+                { pt: "Eu quero mudar a minha vida", en: "I want to change my life", tense: "Present" },
+                { pt: "Tu queres dizer-me alguma coisa?", en: "Do you want to tell me something?", tense: "Present" },
+                { pt: "Tu queres vir comigo?", en: "Do you want to come with me?", tense: "Present" },
+                { pt: "Tu queres ficar a dormir?", en: "Do you want to stay the night?", tense: "Present" },
+                { pt: "Ele quer dormir", en: "He wants to sleep", tense: "Present" },
+                { pt: "Ele quer sucesso", en: "He wants success", tense: "Present" },
+                { pt: "Ele quer estar sozinho", en: "He wants to be alone", tense: "Present" },
+                { pt: "Ela quer um bebé", en: "She wants a baby", tense: "Present" },
+                { pt: "Ela quer o divórcio", en: "She wants a divorce", tense: "Present" },
+                { pt: "Ela quer provar-se", en: "She wants to prove herself", tense: "Present" },
+                { pt: "Nós queremos justiça", en: "We want justice", tense: "Present" },
+                { pt: "Nós queremos paz", en: "We want peace", tense: "Present" },
+                { pt: "Nós queremos saber a resposta", en: "We want to know the answer", tense: "Present" },
+                { pt: "Eles querem mudança", en: "They want change", tense: "Present" },
+                { pt: "Eles querem voltar para casa", en: "They want to go back home", tense: "Present" },
+                { pt: "Eles querem jogar futebol", en: "They want to play football", tense: "Present" },
+                { pt: "Eu queria acreditar em ti", en: "I would want to believe you", tense: "Conditional" },
+                { pt: "Eu queria pedir desculpa", en: "I would want to apologize", tense: "Conditional" },
+                { pt: "Tu querias experimentar isto?", en: "Would you want to try this?", tense: "Conditional" },
+                { pt: "Tu querias recomeçar?", en: "Would you want to start over?", tense: "Conditional" },
+                { pt: "Ele queria viajar mais", en: "He would want to travel more", tense: "Conditional" },
+                { pt: "Ele queria agradecer-vos", en: "He would want to thank you", tense: "Conditional" },
+                { pt: "Ela queria aprender a cozinhar", en: "She would want to learn to cook", tense: "Conditional" },
+                { pt: "Ela queria casar-se", en: "She would want to get married", tense: "Conditional" },
+                { pt: "Nós queríamos convidar-vos", en: "We would want to invite you", tense: "Conditional" },
+                { pt: "Nós queríamos ficar mais tempo", en: "We would want to stay longer", tense: "Conditional" },
+                { pt: "Eles queriam ajudar", en: "They would want to help", tense: "Conditional" },
+                { pt: "Eles queriam saber mais", en: "They would want to know more", tense: "Conditional" },
+                { pt: "Ninguém quer perder", en: "Nobody wants to lose", tense: "Present" },
+                { pt: "Toda a gente quer ser amada", en: "Everyone wants to be loved", tense: "Present" },
+                { pt: "Alguém quer ver-te", en: "Someone wants to see you", tense: "Present" },
+                { pt: "Eu ainda quero tentar", en: "I still want to try", tense: "Present" },
+                { pt: "Eu já não quero esperar", en: "I don't want to wait anymore", tense: "Present" },
+                { pt: "Eu realmente quero ir lá", en: "I really want to go there", tense: "Present" },
+                { pt: "Tu queres mesmo fazer isto?", en: "Do you seriously want to do this?", tense: "Present" },
+                { pt: "Tu só queres atenção", en: "You just want attention", tense: "Present" },
+                { pt: "Tu tens a certeza que queres saber?", en: "Do you really want to know?", tense: "Present" },
+                { pt: "Ele sempre quis ser professor", en: "He always wanted to be a teacher", tense: "Past Simple" },
+                { pt: "Ele quer desesperadamente ganhar", en: "He desperately wants to win", tense: "Present" },
+                { pt: "Ela nunca quis separar-se", en: "She never wanted to break up", tense: "Past Simple" },
+                { pt: "Ela só quer ser amiga", en: "She only wants to be friends", tense: "Present" },
+                { pt: "Nós sempre quisemos uma família grande", en: "We always wanted a big family", tense: "Past Simple" },
+                { pt: "Nós queremos muito visitar o museu", en: "We really want to visit the museum", tense: "Present" },
+                { pt: "Eles já não querem trabalhar aqui", en: "They don't want to work here anymore", tense: "Present" },
+                { pt: "Eles também querem juntar-se", en: "They want to join too", tense: "Present" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

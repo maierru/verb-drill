@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол 🇬🇧 VERB SAY — 100 фраз</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Назад к списку глаголов</a>
+            <h1>🇬🇧 Verb SAY</h1>
+            <p class="subtitle">to speak, to tell — 100 фраз</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Поиск по фразам..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Показать все переводы</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Скрыть все переводы</button>
+        </div>
+
+        <div class="stats" id="stats">Показано: 100 из 100 фраз</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Практика английского — SAY · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'ru',
+            targetKey: 'en',
+            labels: { target: 'English', showing: 'Показано', of: 'из', phrases: 'фраз' },
+            verbForms: ["say","says","said","saying","don't say","doesn't say","didn't say","won't say","wouldn't say","can't say"],
+            phrases: [
+                { ru: "Я говорю правду.", en: "I say the truth.", tense: "Present" },
+                { ru: "Ты говоришь по-английски.", en: "You say it in English.", tense: "Present" },
+                { ru: "Он говорит спасибо.", en: "He says thank you.", tense: "Present" },
+                { ru: "Она говорит нет.", en: "She says no.", tense: "Present" },
+                { ru: "Мы говорим да.", en: "We say yes.", tense: "Present" },
+                { ru: "Вы говорите здравствуйте.", en: "You say hello.", tense: "Present" },
+                { ru: "Они говорят до свидания.", en: "They say goodbye.", tense: "Present" },
+                { ru: "Я не говорю этого.", en: "I don't say that.", tense: "Present" },
+                { ru: "Ты не говоришь ничего.", en: "You don't say anything.", tense: "Present" },
+                { ru: "Он ничего не говорит.", en: "He doesn't say anything.", tense: "Present" },
+                { ru: "Что ты говоришь?", en: "What do you say?", tense: "Present" },
+                { ru: "Что он говорит?", en: "What does he say?", tense: "Present" },
+                { ru: "Как ты это говоришь?", en: "How do you say that?", tense: "Present" },
+                { ru: "Они говорят, что устали.", en: "They say they are tired.", tense: "Present" },
+                { ru: "Она говорит, что придёт.", en: "She says she will come.", tense: "Present" },
+                { ru: "Я всегда говорю правду.", en: "I always say the truth.", tense: "Present" },
+                { ru: "Он никогда не говорит неправду.", en: "He never says lies.", tense: "Present" },
+                { ru: "Как это сказать по-английски?", en: "How do you say this in English?", tense: "Present" },
+                { ru: "Что люди говорят?", en: "What do people say?", tense: "Present" },
+                { ru: "Я просто говорю.", en: "I'm just saying.", tense: "Present" },
+                { ru: "Я сказал тебе.", en: "I said to you.", tense: "Past Simple" },
+                { ru: "Ты сказал правду.", en: "You said the truth.", tense: "Past Simple" },
+                { ru: "Он сказал да.", en: "He said yes.", tense: "Past Simple" },
+                { ru: "Она сказала нет.", en: "She said no.", tense: "Past Simple" },
+                { ru: "Мы сказали спасибо.", en: "We said thank you.", tense: "Past Simple" },
+                { ru: "Вы сказали до свидания.", en: "You said goodbye.", tense: "Past Simple" },
+                { ru: "Они сказали привет.", en: "They said hello.", tense: "Past Simple" },
+                { ru: "Я не сказал этого.", en: "I didn't say that.", tense: "Past Simple" },
+                { ru: "Ты не сказал ничего.", en: "You didn't say anything.", tense: "Past Simple" },
+                { ru: "Он ничего не сказал.", en: "He didn't say anything.", tense: "Past Simple" },
+                { ru: "Что ты сказал?", en: "What did you say?", tense: "Past Simple" },
+                { ru: "Что она сказала?", en: "What did she say?", tense: "Past Simple" },
+                { ru: "Я сказал, что приду.", en: "I said I would come.", tense: "Past Simple" },
+                { ru: "Она сказала, что устала.", en: "She said she was tired.", tense: "Past Simple" },
+                { ru: "Они сказали, что не знают.", en: "They said they didn't know.", tense: "Past Simple" },
+                { ru: "Кто это сказал?", en: "Who said that?", tense: "Past Simple" },
+                { ru: "Я же говорил тебе!", en: "I told you! / I said to you!", tense: "Past Simple" },
+                { ru: "Ты сказал, что поможешь.", en: "You said you would help.", tense: "Past Simple" },
+                { ru: "Он сказал, что будет здесь.", en: "He said he would be here.", tense: "Past Simple" },
+                { ru: "Как ты сказал?", en: "What did you say? / How did you say?", tense: "Past Simple" },
+                { ru: "Я говорю правду прямо сейчас.", en: "I am saying the truth right now.", tense: "Present Continuous" },
+                { ru: "Ты говоришь что-то?", en: "Are you saying something?", tense: "Present Continuous" },
+                { ru: "Он говорит речь.", en: "He is saying a speech.", tense: "Present Continuous" },
+                { ru: "Она говорит молитву.", en: "She is saying a prayer.", tense: "Present Continuous" },
+                { ru: "Мы говорим до свидания.", en: "We are saying goodbye.", tense: "Present Continuous" },
+                { ru: "Что ты говоришь?", en: "What are you saying?", tense: "Present Continuous" },
+                { ru: "Я не говорю ничего плохого.", en: "I'm not saying anything bad.", tense: "Present Continuous" },
+                { ru: "Он говорит глупости.", en: "He is saying nonsense.", tense: "Present Continuous" },
+                { ru: "Они говорят что-то важное.", en: "They are saying something important.", tense: "Present Continuous" },
+                { ru: "Я просто говорю, что думаю.", en: "I'm just saying what I think.", tense: "Present Continuous" },
+                { ru: "Я говорил, когда ты пришёл.", en: "I was saying when you came.", tense: "Past Continuous" },
+                { ru: "Ты говорил что-то?", en: "Were you saying something?", tense: "Past Continuous" },
+                { ru: "Он говорил речь весь час.", en: "He was saying a speech for an hour.", tense: "Past Continuous" },
+                { ru: "Мы говорили до свидания.", en: "We were saying goodbye.", tense: "Past Continuous" },
+                { ru: "Что ты говорил?", en: "What were you saying?", tense: "Past Continuous" },
+                { ru: "Я уже сказал это.", en: "I have already said this.", tense: "Present Perfect" },
+                { ru: "Ты уже сказал ей?", en: "Have you said to her already?", tense: "Present Perfect" },
+                { ru: "Он уже сказал всё.", en: "He has already said everything.", tense: "Present Perfect" },
+                { ru: "Мы уже сказали им.", en: "We have already said to them.", tense: "Present Perfect" },
+                { ru: "Я ещё не сказал.", en: "I haven't said yet.", tense: "Present Perfect" },
+                { ru: "Она никогда не говорила этого.", en: "She has never said that.", tense: "Present Perfect" },
+                { ru: "Я уже сказал тебе много раз.", en: "I have said to you many times.", tense: "Present Perfect" },
+                { ru: "Ты когда-нибудь говорил это?", en: "Have you ever said this?", tense: "Present Perfect" },
+                { ru: "Я скажу тебе завтра.", en: "I will say to you tomorrow.", tense: "Future" },
+                { ru: "Ты скажешь правду?", en: "Will you say the truth?", tense: "Future" },
+                { ru: "Он скажет да.", en: "He will say yes.", tense: "Future" },
+                { ru: "Она скажет нет.", en: "She will say no.", tense: "Future" },
+                { ru: "Мы скажем им.", en: "We will say to them.", tense: "Future" },
+                { ru: "Они скажут спасибо.", en: "They will say thank you.", tense: "Future" },
+                { ru: "Я не скажу ничего.", en: "I won't say anything.", tense: "Future" },
+                { ru: "Он ничего не скажет.", en: "He won't say anything.", tense: "Future" },
+                { ru: "Что ты скажешь?", en: "What will you say?", tense: "Future" },
+                { ru: "Я скажу тебе позже.", en: "I will say to you later.", tense: "Future" },
+                { ru: "Я бы сказал да.", en: "I would say yes.", tense: "Conditional" },
+                { ru: "Ты бы сказал правду?", en: "Would you say the truth?", tense: "Conditional" },
+                { ru: "Он бы сказал нет.", en: "He would say no.", tense: "Conditional" },
+                { ru: "Мы бы так не сказали.", en: "We wouldn't say that.", tense: "Conditional" },
+                { ru: "Я бы не сказал этого.", en: "I wouldn't say that.", tense: "Conditional" },
+                { ru: "Что бы ты сказал?", en: "What would you say?", tense: "Conditional" },
+                { ru: "Я бы сказал, что это правда.", en: "I would say it's true.", tense: "Conditional" },
+                { ru: "Она бы так не сказала.", en: "She wouldn't say that.", tense: "Conditional" },
+                { ru: "Они бы сказали спасибо.", en: "They would say thank you.", tense: "Conditional" },
+                { ru: "Я бы мог сказать больше.", en: "I could say more.", tense: "Conditional" },
+                { ru: "Скажи мне.", en: "Say to me.", tense: "Imperative" },
+                { ru: "Скажите правду.", en: "Say the truth.", tense: "Imperative" },
+                { ru: "Не говори этого.", en: "Don't say that.", tense: "Imperative" },
+                { ru: "Не говорите ничего.", en: "Don't say anything.", tense: "Imperative" },
+                { ru: "Скажи да.", en: "Say yes.", tense: "Imperative" },
+                { ru: "Скажи мне, пожалуйста.", en: "Say to me, please.", tense: "Imperative" },
+                { ru: "Скажи это по-английски.", en: "Say it in English.", tense: "Imperative" },
+                { ru: "Не могу сказать.", en: "Can't say.", tense: "Expression" },
+                { ru: "Что сказать?", en: "What to say?", tense: "Expression" },
+                { ru: "Нечего сказать.", en: "Nothing to say.", tense: "Expression" },
+                { ru: "Легко сказать.", en: "Easy to say.", tense: "Expression" },
+                { ru: "Как говорится...", en: "As they say...", tense: "Expression" },
+                { ru: "То есть...", en: "That is to say...", tense: "Expression" },
+                { ru: "Скажем так...", en: "Let's say...", tense: "Expression" },
+                { ru: "Не хочу ничего говорить.", en: "I don't want to say anything.", tense: "Expression" },
+                { ru: "Можно так сказать.", en: "You could say that.", tense: "Expression" },
+                { ru: "Что ты хочешь сказать?", en: "What are you trying to say?", tense: "Expression" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

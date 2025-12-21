@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbe 🇬🇧 VERB GET — 96 phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Retour à la liste des verbes</a>
+            <h1>🇬🇧 Verb GET</h1>
+            <p class="subtitle">to obtain, to become — 96 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Rechercher des phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Afficher toutes les traductions</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Masquer toutes les traductions</button>
+        </div>
+
+        <div class="stats" id="stats">Affichage: 96 sur 96 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Pratique de l'anglais — GET · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'fr',
+            targetKey: 'en',
+            labels: { target: 'Anglais', showing: 'Affichage', of: 'sur', phrases: 'phrases' },
+            verbForms: ["get","gets","got","gotten","getting"],
+            phrases: [
+                { fr: "Je reçois des e-mails tous les jours", en: "I get emails every day", tense: "Present Simple" },
+                { fr: "Il a obtenu un nouveau travail", en: "He got a new job", tense: "Past Simple" },
+                { fr: "Nous aurons la réponse demain", en: "We will get the answer tomorrow", tense: "Future Simple" },
+                { fr: "Elle va mieux", en: "She is getting better", tense: "Present Continuous" },
+                { fr: "Je me lève à sept heures", en: "I get up at seven", tense: "Present Simple" },
+                { fr: "Ils sont rentrés tard", en: "They got home late", tense: "Past Simple" },
+                { fr: "Tu comprends ce que je veux dire?", en: "Do you get what I mean?", tense: "Present Simple" },
+                { fr: "Elle a eu de bonnes notes", en: "She got good grades", tense: "Past Simple" },
+                { fr: "Je dois acheter du lait", en: "I need to get some milk", tense: "Infinitive" },
+                { fr: "Il obtient toujours ce qu'il veut", en: "He always gets what he wants", tense: "Present Simple" },
+                { fr: "Nous sommes sortis de la voiture", en: "We got out of the car", tense: "Past Simple" },
+                { fr: "Il commence à faire froid", en: "It's getting cold", tense: "Present Continuous" },
+                { fr: "J'ai reçu ton message", en: "I got your message", tense: "Past Simple" },
+                { fr: "Ils s'entendent bien l'un avec l'autre", en: "They get along well with each other", tense: "Present Simple" },
+                { fr: "Tu l'auras plus tard", en: "You will get it later", tense: "Future Simple" },
+                { fr: "Il prend le bus tous les matins", en: "He gets on the bus every morning", tense: "Present Simple" },
+                { fr: "J'essaie d'obtenir des billets", en: "I'm trying to get tickets", tense: "Present Continuous" },
+                { fr: "Elle est arrivée à la gare à temps", en: "She got to the station on time", tense: "Past Simple" },
+                { fr: "Nous devons retourner au travail", en: "We need to get back to work", tense: "Infinitive" },
+                { fr: "Il est devenu riche en un an", en: "He got rich in a year", tense: "Past Simple" },
+                { fr: "Je tire du plaisir de la musique", en: "I get pleasure from music", tense: "Present Simple" },
+                { fr: "Ils descendent du bus ici", en: "They get off the bus here", tense: "Present Simple" },
+                { fr: "Il se fait tard", en: "It's getting late", tense: "Present Continuous" },
+                { fr: "J'ai eu un nouveau téléphone", en: "I got a new phone", tense: "Past Simple" },
+                { fr: "Tu y arriveras en une heure", en: "You'll get there in an hour", tense: "Future Simple" },
+                { fr: "Elle devient nerveuse", en: "She's getting nervous", tense: "Present Continuous" },
+                { fr: "Nous avons reçu une invitation au mariage", en: "We got an invitation to the wedding", tense: "Past Simple" },
+                { fr: "Il surmonte ses peurs", en: "He is getting over his fears", tense: "Present Continuous" },
+                { fr: "Je dois me procurer de l'argent", en: "I need to get some money", tense: "Infinitive" },
+                { fr: "Ils reçoivent un bon salaire", en: "They get a good salary", tense: "Present Simple" },
+                { fr: "Tu deviens plus fort", en: "You're getting stronger", tense: "Present Continuous" },
+                { fr: "Je suis arrivé au bureau à neuf heures", en: "I got to the office at nine", tense: "Past Simple" },
+                { fr: "Elle finit le travail tôt", en: "She gets off work early", tense: "Present Simple" },
+                { fr: "Nous aurons une réponse la semaine prochaine", en: "We will get an answer next week", tense: "Future Simple" },
+                { fr: "Il est sorti du lit avec difficulté", en: "He got out of bed with difficulty", tense: "Past Simple" },
+                { fr: "Je comprends ton point de vue", en: "I get your point", tense: "Present Simple" },
+                { fr: "Ils montent dans le train à sept heures", en: "They get on the train at seven", tense: "Present Simple" },
+                { fr: "Il commence à faire sombre", en: "It's getting dark", tense: "Present Continuous" },
+                { fr: "J'ai reçu une lettre de lui", en: "I got a letter from him", tense: "Past Simple" },
+                { fr: "Tu peux l'avoir demain", en: "You can get it tomorrow", tense: "Modal + Infinitive" },
+                { fr: "Elle se lève tôt tous les jours", en: "She gets up early every day", tense: "Present Simple" },
+                { fr: "Nous sommes rentrés tard", en: "We got back home late", tense: "Past Simple" },
+                { fr: "Il reçoit beaucoup d'appels", en: "He gets many calls", tense: "Present Simple" },
+                { fr: "Je commence à comprendre ça", en: "I'm getting to understand it", tense: "Present Continuous" },
+                { fr: "Ils ont obtenu la permission", en: "They got permission", tense: "Past Simple" },
+                { fr: "Arriveras-tu à l'heure?", en: "Will you get there on time?", tense: "Future Simple" },
+                { fr: "Elle se fraye un chemin dans la foule", en: "She's getting through the crowd", tense: "Present Continuous" },
+                { fr: "Je me suis blessé à l'entraînement", en: "I got injured at training", tense: "Past Simple" },
+                { fr: "Nous descendons au prochain arrêt", en: "We get off at the next stop", tense: "Present Simple" },
+                { fr: "Il devient plus intelligent", en: "He's getting smarter", tense: "Present Continuous" },
+                { fr: "Je vais obtenir des billets pour le concert", en: "I'll get tickets to the concert", tense: "Future Simple" },
+                { fr: "Ils ont reçu de mauvaises nouvelles", en: "They got bad news", tense: "Past Simple" },
+                { fr: "As-tu compris la blague?", en: "Did you get the joke?", tense: "Past Simple" },
+                { fr: "Elle reçoit de l'aide de ses amis", en: "She gets help from friends", tense: "Present Simple" },
+                { fr: "Nous partons tôt le matin", en: "We're getting away early in the morning", tense: "Present Continuous" },
+                { fr: "Il a obtenu une promotion", en: "He got a promotion", tense: "Past Simple" },
+                { fr: "Je descends ici", en: "I get out here", tense: "Present Simple" },
+                { fr: "Ils vont au travail en métro", en: "They get to work by metro", tense: "Present Simple" },
+                { fr: "Il commence à faire chaud", en: "It's getting hot", tense: "Present Continuous" },
+                { fr: "J'ai reçu un cadeau d'anniversaire", en: "I got a gift for my birthday", tense: "Past Simple" },
+                { fr: "Tu peux l'avoir gratuitement", en: "You can get it for free", tense: "Modal + Infinitive" },
+                { fr: "Elle va régler ça", en: "She'll get it sorted", tense: "Future Simple" },
+                { fr: "Nous avons eu une réduction", en: "We got a discount", tense: "Past Simple" },
+                { fr: "Il entre dans le club", en: "He's getting into the club", tense: "Present Continuous" },
+                { fr: "Je dois sortir d'ici", en: "I need to get out of here", tense: "Infinitive" },
+                { fr: "Ils prennent du plaisir au jeu", en: "They get enjoyment from the game", tense: "Present Simple" },
+                { fr: "Tu t'améliores dans ça", en: "You're getting better at this", tense: "Present Continuous" },
+                { fr: "Je suis arrivé à l'aéroport à temps", en: "I got to the airport on time", tense: "Past Simple" },
+                { fr: "Elle aura une réponse bientôt", en: "She will get an answer soon", tense: "Future Simple" },
+                { fr: "Nous montons dans l'avion maintenant", en: "We're getting on the plane now", tense: "Present Continuous" },
+                { fr: "Il a été puni", en: "He got punished", tense: "Past Simple" },
+                { fr: "Je comprends l'idée", en: "I get the idea", tense: "Present Simple" },
+                { fr: "Ils se remettent ensemble", en: "They're getting back together", tense: "Present Continuous" },
+                { fr: "As-tu reçu mon e-mail?", en: "Did you get my email?", tense: "Past Simple" },
+                { fr: "Elle sort du taxi", en: "She gets out of the taxi", tense: "Present Simple" },
+                { fr: "Nous recevrons une compensation", en: "We will get compensation", tense: "Future Simple" },
+                { fr: "Il devient célèbre", en: "He's getting famous", tense: "Present Continuous" },
+                { fr: "J'ai eu une chance", en: "I got a chance", tense: "Past Simple" },
+                { fr: "Ils arrivent demain", en: "They get in tomorrow", tense: "Present Simple" },
+                { fr: "Tu y arriveras en bus", en: "You'll get there by bus", tense: "Future Simple" },
+                { fr: "Elle reçoit des compliments", en: "She gets compliments", tense: "Present Simple" },
+                { fr: "Nous nous levons tard le week-end", en: "We get up late on weekends", tense: "Present Simple" },
+                { fr: "Il a acquis de l'expérience", en: "He got experience", tense: "Past Simple" },
+                { fr: "Je descends de la montagne", en: "I'm getting down the mountain", tense: "Present Continuous" },
+                { fr: "Ils recevront un prix", en: "They will get a prize", tense: "Future Simple" },
+                { fr: "Tu deviens prospère", en: "You're getting successful", tense: "Present Continuous" },
+                { fr: "J'ai reçu des conseils du professeur", en: "I got advice from the teacher", tense: "Past Simple" },
+                { fr: "Elle prend sa retraite l'année prochaine", en: "She's getting retired next year", tense: "Present Continuous" },
+                { fr: "Nous obtenons des informations des nouvelles", en: "We get information from the news", tense: "Present Simple" },
+                { fr: "Il est arrivé au sommet", en: "He got to the top", tense: "Past Simple" },
+                { fr: "J'obtiendrai un visa la semaine prochaine", en: "I'll get a visa next week", tense: "Future Simple" },
+                { fr: "Ils arrivent à minuit", en: "They get in at midnight", tense: "Present Simple" },
+                { fr: "Comprends-tu la situation?", en: "Do you get the situation?", tense: "Present Simple" },
+                { fr: "Elle a reçu son éducation à l'étranger", en: "She got her education abroad", tense: "Past Simple" },
+                { fr: "Nous nous mettons au travail maintenant", en: "We're getting to work now", tense: "Present Continuous" },
+                { fr: "Il obtiendra ce qu'il mérite", en: "He will get what he deserves", tense: "Future Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

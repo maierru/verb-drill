@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇬🇧 VERB HAVE — 95 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇬🇧 Verb HAVE</h1>
+            <p class="subtitle">to possess, to experience — 95 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 95 de 95 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            English Practice — HAVE · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'en',
+            labels: { target: 'English', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["have","has","had","having"],
+            phrases: [
+                { pt: "Eu tenho uma pergunta", en: "I have a question", tense: "Present" },
+                { pt: "Ela tem um cachorro", en: "She has a dog", tense: "Present" },
+                { pt: "Eles têm tempo", en: "They have time", tense: "Present" },
+                { pt: "Nós temos uma casa", en: "We have a house", tense: "Present" },
+                { pt: "Ele tem um carro", en: "He has a car", tense: "Present" },
+                { pt: "Eu tenho uma ideia", en: "I have an idea", tense: "Present" },
+                { pt: "Você tem dinheiro?", en: "Do you have money?", tense: "Present" },
+                { pt: "Nós não temos escolha", en: "We don't have a choice", tense: "Present" },
+                { pt: "Ela tem um emprego", en: "She has a job", tense: "Present" },
+                { pt: "Eles têm filhos", en: "They have children", tense: "Present" },
+                { pt: "Eu tive uma oportunidade", en: "I had a chance", tense: "Past Simple" },
+                { pt: "Nós tivemos uma reunião", en: "We had a meeting", tense: "Past Simple" },
+                { pt: "Ele teve um plano", en: "He had a plan", tense: "Past Simple" },
+                { pt: "Eles tiveram problemas", en: "They had problems", tense: "Past Simple" },
+                { pt: "Ela teve um irmão", en: "She had a brother", tense: "Past Simple" },
+                { pt: "Eu tive tempo para pensar", en: "I had time to think", tense: "Past Simple" },
+                { pt: "Você tinha o direito de saber", en: "You had the right to know", tense: "Past Simple" },
+                { pt: "Nós tivemos um bom dia", en: "We had a good day", tense: "Past Simple" },
+                { pt: "Ele teve uma oportunidade", en: "He had an opportunity", tense: "Past Simple" },
+                { pt: "Eles tiveram uma escolha", en: "They had a choice", tense: "Past Simple" },
+                { pt: "Eu já fiz isso", en: "I have already done it", tense: "Present Perfect" },
+                { pt: "Nós já vimos este filme", en: "We have already seen this movie", tense: "Present Perfect" },
+                { pt: "Ela já saiu", en: "She has already left", tense: "Present Perfect" },
+                { pt: "Eles já chegaram", en: "They have already arrived", tense: "Present Perfect" },
+                { pt: "Ele já terminou o trabalho", en: "He has already finished the work", tense: "Present Perfect" },
+                { pt: "Eu nunca estive lá", en: "I have never been there", tense: "Present Perfect" },
+                { pt: "Você já experimentou isso?", en: "Have you ever tried this?", tense: "Present Perfect" },
+                { pt: "Nós ainda não decidimos", en: "We haven't decided yet", tense: "Present Perfect" },
+                { pt: "Ela já tomou café da manhã", en: "She has already had breakfast", tense: "Present Perfect" },
+                { pt: "Eles já se conheceram antes", en: "They have met before", tense: "Present Perfect" },
+                { pt: "Eu terei tempo amanhã", en: "I will have time tomorrow", tense: "Future" },
+                { pt: "Nós teremos uma festa", en: "We will have a party", tense: "Future" },
+                { pt: "Ela terá um bebê", en: "She will have a baby", tense: "Future" },
+                { pt: "Eles terão uma chance", en: "They will have a chance", tense: "Future" },
+                { pt: "Ele terá uma entrevista", en: "He will have an interview", tense: "Future" },
+                { pt: "Você terá uma oportunidade", en: "You will have an opportunity", tense: "Future" },
+                { pt: "Eu terei uma reunião às três", en: "I will have a meeting at three", tense: "Future" },
+                { pt: "Nós teremos muito trabalho", en: "We will have a lot of work", tense: "Future" },
+                { pt: "Ela terá férias", en: "She will have a vacation", tense: "Future" },
+                { pt: "Eles terão um casamento", en: "They will have a wedding", tense: "Future" },
+                { pt: "Eu teria uma chance", en: "I would have a chance", tense: "Conditional" },
+                { pt: "Nós teríamos tempo", en: "We would have time", tense: "Conditional" },
+                { pt: "Ela teria uma escolha", en: "She would have a choice", tense: "Conditional" },
+                { pt: "Eles teriam uma solução", en: "They would have a solution", tense: "Conditional" },
+                { pt: "Ele teria uma ideia", en: "He would have an idea", tense: "Conditional" },
+                { pt: "Eu teria feito se tivesse tempo", en: "I would have done it if I had had time", tense: "Conditional" },
+                { pt: "Você teria uma oportunidade", en: "You would have an opportunity", tense: "Conditional" },
+                { pt: "Nós teríamos mais dinheiro", en: "We would have more money", tense: "Conditional" },
+                { pt: "Ela teria uma chance", en: "She would have a chance", tense: "Conditional" },
+                { pt: "Eles teriam uma vantagem", en: "They would have an advantage", tense: "Conditional" },
+                { pt: "Eu tenho dor de cabeça", en: "I have a headache", tense: "Expression" },
+                { pt: "Divirta-se!", en: "Have fun!", tense: "Expression" },
+                { pt: "Bom apetite!", en: "Have a nice meal!", tense: "Expression" },
+                { pt: "Eu tenho o direito de dizer", en: "I have the right to say", tense: "Expression" },
+                { pt: "Eu tenho que falar com você", en: "I have to talk to you", tense: "Expression" },
+                { pt: "Ela está resfriada", en: "She has a cold", tense: "Expression" },
+                { pt: "Eu tenho que ir", en: "I have to go", tense: "Expression" },
+                { pt: "Nós temos um problema", en: "We have a problem", tense: "Expression" },
+                { pt: "Tenha um bom dia!", en: "Have a nice day!", tense: "Expression" },
+                { pt: "Ele tem talento", en: "He has talent", tense: "Expression" },
+                { pt: "Eu tenho a sensação de que...", en: "I have a feeling that...", tense: "Expression" },
+                { pt: "Você tem um minuto?", en: "Do you have a minute?", tense: "Expression" },
+                { pt: "Ela tem experiência", en: "She has experience", tense: "Expression" },
+                { pt: "Eu tenho que pensar sobre isso", en: "I have to think about it", tense: "Expression" },
+                { pt: "Eles têm influência", en: "They have influence", tense: "Expression" },
+                { pt: "Eu não tenho ideia", en: "I have no idea", tense: "Expression" },
+                { pt: "Tenha um bom fim de semana!", en: "Have a good weekend!", tense: "Expression" },
+                { pt: "Ela tem razão", en: "She has a point", tense: "Expression" },
+                { pt: "Eu tenho que admitir", en: "I have to admit", tense: "Expression" },
+                { pt: "Nós temos um acordo", en: "We have an agreement", tense: "Expression" },
+                { pt: "Eu tenho três irmãos", en: "I have three brothers", tense: "Present" },
+                { pt: "Ela tem olhos azuis", en: "She has blue eyes", tense: "Present" },
+                { pt: "Nós temos um jardim grande", en: "We have a big garden", tense: "Present" },
+                { pt: "Ele tem muitos amigos", en: "He has many friends", tense: "Present" },
+                { pt: "Eles têm um apartamento novo", en: "They have a new apartment", tense: "Present" },
+                { pt: "Eu tive um dia ruim", en: "I had a bad day", tense: "Past Simple" },
+                { pt: "Nós tivemos uma conversa longa", en: "We had a long conversation", tense: "Past Simple" },
+                { pt: "Ela teve febre", en: "She had a fever", tense: "Past Simple" },
+                { pt: "Eles tiveram uma discussão", en: "They had an argument", tense: "Past Simple" },
+                { pt: "Ele teve um sonho", en: "He had a dream", tense: "Past Simple" },
+                { pt: "Eu acabei de almoçar", en: "I have just had lunch", tense: "Present Perfect" },
+                { pt: "Nós já discutimos isso", en: "We have already discussed this", tense: "Present Perfect" },
+                { pt: "Ela mora aqui há cinco anos", en: "She has lived here for five years", tense: "Present Perfect" },
+                { pt: "Eles perderam as chaves", en: "They have lost their keys", tense: "Present Perfect" },
+                { pt: "Ele mudou de ideia", en: "He has changed his mind", tense: "Present Perfect" },
+                { pt: "Eu terei férias em julho", en: "I will have a vacation in July", tense: "Future" },
+                { pt: "Nós teremos um convidado", en: "We will have a guest", tense: "Future" },
+                { pt: "Ela terá um exame", en: "She will have an exam", tense: "Future" },
+                { pt: "Eles terão um problema", en: "They will have a problem", tense: "Future" },
+                { pt: "Ele terá sucesso", en: "He will have success", tense: "Future" },
+                { pt: "Se eu tivesse dinheiro", en: "If I had money", tense: "Conditional" },
+                { pt: "Eu teria ajudado se pudesse", en: "I would have helped if I could have", tense: "Conditional" },
+                { pt: "Ela teria mais amigos", en: "She would have more friends", tense: "Conditional" },
+                { pt: "Nós teríamos ganho se tentássemos", en: "We would have won if we had tried", tense: "Conditional" },
+                { pt: "Eles teriam menos estresse", en: "They would have less stress", tense: "Conditional" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

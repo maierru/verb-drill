@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbe 🇬🇧 VERB HAVE — 95 phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Retour à la liste des verbes</a>
+            <h1>🇬🇧 Verb HAVE</h1>
+            <p class="subtitle">to possess, to experience — 95 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Rechercher des phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Afficher toutes les traductions</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Masquer toutes les traductions</button>
+        </div>
+
+        <div class="stats" id="stats">Affichage: 95 sur 95 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Pratique de l'anglais — HAVE · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'fr',
+            targetKey: 'en',
+            labels: { target: 'Anglais', showing: 'Affichage', of: 'sur', phrases: 'phrases' },
+            verbForms: ["have","has","had","having"],
+            phrases: [
+                { fr: "J'ai une question", en: "I have a question", tense: "Present" },
+                { fr: "Elle a un chien", en: "She has a dog", tense: "Present" },
+                { fr: "Ils ont du temps", en: "They have time", tense: "Present" },
+                { fr: "Nous avons une maison", en: "We have a house", tense: "Present" },
+                { fr: "Il a une voiture", en: "He has a car", tense: "Present" },
+                { fr: "J'ai une idée", en: "I have an idea", tense: "Present" },
+                { fr: "Tu as de l'argent?", en: "Do you have money?", tense: "Present" },
+                { fr: "Nous n'avons pas le choix", en: "We don't have a choice", tense: "Present" },
+                { fr: "Elle a un travail", en: "She has a job", tense: "Present" },
+                { fr: "Ils ont des enfants", en: "They have children", tense: "Present" },
+                { fr: "J'ai eu une chance", en: "I had a chance", tense: "Past Simple" },
+                { fr: "Nous avons eu une réunion", en: "We had a meeting", tense: "Past Simple" },
+                { fr: "Il avait un plan", en: "He had a plan", tense: "Past Simple" },
+                { fr: "Ils ont eu des problèmes", en: "They had problems", tense: "Past Simple" },
+                { fr: "Elle avait un frère", en: "She had a brother", tense: "Past Simple" },
+                { fr: "J'ai eu le temps de réfléchir", en: "I had time to think", tense: "Past Simple" },
+                { fr: "Tu avais le droit de savoir", en: "You had the right to know", tense: "Past Simple" },
+                { fr: "Nous avons eu une bonne journée", en: "We had a good day", tense: "Past Simple" },
+                { fr: "Il a eu une opportunité", en: "He had an opportunity", tense: "Past Simple" },
+                { fr: "Ils avaient un choix", en: "They had a choice", tense: "Past Simple" },
+                { fr: "J'ai déjà fait ça", en: "I have already done it", tense: "Present Perfect" },
+                { fr: "Nous avons déjà vu ce film", en: "We have already seen this movie", tense: "Present Perfect" },
+                { fr: "Elle est déjà partie", en: "She has already left", tense: "Present Perfect" },
+                { fr: "Ils sont déjà arrivés", en: "They have already arrived", tense: "Present Perfect" },
+                { fr: "Il a déjà fini le travail", en: "He has already finished the work", tense: "Present Perfect" },
+                { fr: "Je ne suis jamais allé là-bas", en: "I have never been there", tense: "Present Perfect" },
+                { fr: "As-tu déjà essayé ça?", en: "Have you ever tried this?", tense: "Present Perfect" },
+                { fr: "Nous n'avons pas encore décidé", en: "We haven't decided yet", tense: "Present Perfect" },
+                { fr: "Elle a déjà pris le petit-déjeuner", en: "She has already had breakfast", tense: "Present Perfect" },
+                { fr: "Ils se sont déjà rencontrés", en: "They have met before", tense: "Present Perfect" },
+                { fr: "J'aurai du temps demain", en: "I will have time tomorrow", tense: "Future" },
+                { fr: "Nous aurons une fête", en: "We will have a party", tense: "Future" },
+                { fr: "Elle aura un bébé", en: "She will have a baby", tense: "Future" },
+                { fr: "Ils auront une chance", en: "They will have a chance", tense: "Future" },
+                { fr: "Il aura un entretien", en: "He will have an interview", tense: "Future" },
+                { fr: "Tu auras une opportunité", en: "You will have an opportunity", tense: "Future" },
+                { fr: "J'aurai une réunion à trois heures", en: "I will have a meeting at three", tense: "Future" },
+                { fr: "Nous aurons beaucoup de travail", en: "We will have a lot of work", tense: "Future" },
+                { fr: "Elle aura des vacances", en: "She will have a vacation", tense: "Future" },
+                { fr: "Ils auront un mariage", en: "They will have a wedding", tense: "Future" },
+                { fr: "J'aurais une chance", en: "I would have a chance", tense: "Conditional" },
+                { fr: "Nous aurions du temps", en: "We would have time", tense: "Conditional" },
+                { fr: "Elle aurait un choix", en: "She would have a choice", tense: "Conditional" },
+                { fr: "Ils auraient une solution", en: "They would have a solution", tense: "Conditional" },
+                { fr: "Il aurait une idée", en: "He would have an idea", tense: "Conditional" },
+                { fr: "J'aurais fait ça si j'avais eu le temps", en: "I would have done it if I had had time", tense: "Conditional" },
+                { fr: "Tu aurais une opportunité", en: "You would have an opportunity", tense: "Conditional" },
+                { fr: "Nous aurions plus d'argent", en: "We would have more money", tense: "Conditional" },
+                { fr: "Elle aurait une chance", en: "She would have a chance", tense: "Conditional" },
+                { fr: "Ils auraient un avantage", en: "They would have an advantage", tense: "Conditional" },
+                { fr: "J'ai mal à la tête", en: "I have a headache", tense: "Expression" },
+                { fr: "Amuse-toi bien!", en: "Have fun!", tense: "Expression" },
+                { fr: "Bon appétit!", en: "Have a nice meal!", tense: "Expression" },
+                { fr: "J'ai le droit de dire", en: "I have the right to say", tense: "Expression" },
+                { fr: "Je dois te parler", en: "I have to talk to you", tense: "Expression" },
+                { fr: "Elle a un rhume", en: "She has a cold", tense: "Expression" },
+                { fr: "Je dois y aller", en: "I have to go", tense: "Expression" },
+                { fr: "Nous avons un problème", en: "We have a problem", tense: "Expression" },
+                { fr: "Passe une bonne journée!", en: "Have a nice day!", tense: "Expression" },
+                { fr: "Il a du talent", en: "He has talent", tense: "Expression" },
+                { fr: "J'ai le sentiment que...", en: "I have a feeling that...", tense: "Expression" },
+                { fr: "Tu as une minute?", en: "Do you have a minute?", tense: "Expression" },
+                { fr: "Elle a de l'expérience", en: "She has experience", tense: "Expression" },
+                { fr: "Je dois y réfléchir", en: "I have to think about it", tense: "Expression" },
+                { fr: "Ils ont de l'influence", en: "They have influence", tense: "Expression" },
+                { fr: "Je n'ai aucune idée", en: "I have no idea", tense: "Expression" },
+                { fr: "Passe un bon week-end!", en: "Have a good weekend!", tense: "Expression" },
+                { fr: "Elle a raison", en: "She has a point", tense: "Expression" },
+                { fr: "Je dois admettre", en: "I have to admit", tense: "Expression" },
+                { fr: "Nous avons un accord", en: "We have an agreement", tense: "Expression" },
+                { fr: "J'ai trois frères", en: "I have three brothers", tense: "Present" },
+                { fr: "Elle a les yeux bleus", en: "She has blue eyes", tense: "Present" },
+                { fr: "Nous avons un grand jardin", en: "We have a big garden", tense: "Present" },
+                { fr: "Il a beaucoup d'amis", en: "He has many friends", tense: "Present" },
+                { fr: "Ils ont un nouvel appartement", en: "They have a new apartment", tense: "Present" },
+                { fr: "J'ai eu une mauvaise journée", en: "I had a bad day", tense: "Past Simple" },
+                { fr: "Nous avons eu une longue conversation", en: "We had a long conversation", tense: "Past Simple" },
+                { fr: "Elle avait de la fièvre", en: "She had a fever", tense: "Past Simple" },
+                { fr: "Ils ont eu une dispute", en: "They had an argument", tense: "Past Simple" },
+                { fr: "Il a fait un rêve", en: "He had a dream", tense: "Past Simple" },
+                { fr: "Je viens de déjeuner", en: "I have just had lunch", tense: "Present Perfect" },
+                { fr: "Nous avons déjà discuté de ça", en: "We have already discussed this", tense: "Present Perfect" },
+                { fr: "Elle habite ici depuis cinq ans", en: "She has lived here for five years", tense: "Present Perfect" },
+                { fr: "Ils ont perdu leurs clés", en: "They have lost their keys", tense: "Present Perfect" },
+                { fr: "Il a changé d'avis", en: "He has changed his mind", tense: "Present Perfect" },
+                { fr: "J'aurai des vacances en juillet", en: "I will have a vacation in July", tense: "Future" },
+                { fr: "Nous aurons un invité", en: "We will have a guest", tense: "Future" },
+                { fr: "Elle aura un examen", en: "She will have an exam", tense: "Future" },
+                { fr: "Ils auront un problème", en: "They will have a problem", tense: "Future" },
+                { fr: "Il aura du succès", en: "He will have success", tense: "Future" },
+                { fr: "Si j'avais de l'argent", en: "If I had money", tense: "Conditional" },
+                { fr: "J'aurais aidé si j'avais pu", en: "I would have helped if I could have", tense: "Conditional" },
+                { fr: "Elle aurait plus d'amis", en: "She would have more friends", tense: "Conditional" },
+                { fr: "Nous aurions gagné si nous avions essayé", en: "We would have won if we had tried", tense: "Conditional" },
+                { fr: "Ils auraient moins de stress", en: "They would have less stress", tense: "Conditional" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

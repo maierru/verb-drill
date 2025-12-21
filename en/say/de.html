@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇬🇧 VERB SAY — 100 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇬🇧 Verb SAY</h1>
+            <p class="subtitle">to speak, to tell — 100 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 100 von 100 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Englisch-Übung — SAY · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'en',
+            labels: { target: 'Englisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["say","says","said","saying","don't say","doesn't say","didn't say","won't say","wouldn't say","can't say"],
+            phrases: [
+                { de: "Ich sage die Wahrheit.", en: "I say the truth.", tense: "Present" },
+                { de: "Du sagst es auf Englisch.", en: "You say it in English.", tense: "Present" },
+                { de: "Er sagt danke.", en: "He says thank you.", tense: "Present" },
+                { de: "Sie sagt nein.", en: "She says no.", tense: "Present" },
+                { de: "Wir sagen ja.", en: "We say yes.", tense: "Present" },
+                { de: "Ihr sagt hallo.", en: "You say hello.", tense: "Present" },
+                { de: "Sie sagen auf Wiedersehen.", en: "They say goodbye.", tense: "Present" },
+                { de: "Ich sage das nicht.", en: "I don't say that.", tense: "Present" },
+                { de: "Du sagst nichts.", en: "You don't say anything.", tense: "Present" },
+                { de: "Er sagt nichts.", en: "He doesn't say anything.", tense: "Present" },
+                { de: "Was sagst du?", en: "What do you say?", tense: "Present" },
+                { de: "Was sagt er?", en: "What does he say?", tense: "Present" },
+                { de: "Wie sagst du das?", en: "How do you say that?", tense: "Present" },
+                { de: "Sie sagen, dass sie müde sind.", en: "They say they are tired.", tense: "Present" },
+                { de: "Sie sagt, dass sie kommen wird.", en: "She says she will come.", tense: "Present" },
+                { de: "Ich sage immer die Wahrheit.", en: "I always say the truth.", tense: "Present" },
+                { de: "Er sagt nie Lügen.", en: "He never says lies.", tense: "Present" },
+                { de: "Wie sagt man das auf Englisch?", en: "How do you say this in English?", tense: "Present" },
+                { de: "Was sagen die Leute?", en: "What do people say?", tense: "Present" },
+                { de: "Ich sage nur.", en: "I'm just saying.", tense: "Present" },
+                { de: "Ich sagte dir.", en: "I said to you.", tense: "Past Simple" },
+                { de: "Du sagtest die Wahrheit.", en: "You said the truth.", tense: "Past Simple" },
+                { de: "Er sagte ja.", en: "He said yes.", tense: "Past Simple" },
+                { de: "Sie sagte nein.", en: "She said no.", tense: "Past Simple" },
+                { de: "Wir sagten danke.", en: "We said thank you.", tense: "Past Simple" },
+                { de: "Ihr sagtet auf Wiedersehen.", en: "You said goodbye.", tense: "Past Simple" },
+                { de: "Sie sagten hallo.", en: "They said hello.", tense: "Past Simple" },
+                { de: "Ich sagte das nicht.", en: "I didn't say that.", tense: "Past Simple" },
+                { de: "Du sagtest nichts.", en: "You didn't say anything.", tense: "Past Simple" },
+                { de: "Er sagte nichts.", en: "He didn't say anything.", tense: "Past Simple" },
+                { de: "Was hast du gesagt?", en: "What did you say?", tense: "Past Simple" },
+                { de: "Was hat sie gesagt?", en: "What did she say?", tense: "Past Simple" },
+                { de: "Ich sagte, ich würde kommen.", en: "I said I would come.", tense: "Past Simple" },
+                { de: "Sie sagte, sie war müde.", en: "She said she was tired.", tense: "Past Simple" },
+                { de: "Sie sagten, sie wussten es nicht.", en: "They said they didn't know.", tense: "Past Simple" },
+                { de: "Wer hat das gesagt?", en: "Who said that?", tense: "Past Simple" },
+                { de: "Ich habe es dir gesagt!", en: "I told you! / I said to you!", tense: "Past Simple" },
+                { de: "Du sagtest, du würdest helfen.", en: "You said you would help.", tense: "Past Simple" },
+                { de: "Er sagte, er wäre hier.", en: "He said he would be here.", tense: "Past Simple" },
+                { de: "Wie hast du gesagt?", en: "What did you say? / How did you say?", tense: "Past Simple" },
+                { de: "Ich sage gerade die Wahrheit.", en: "I am saying the truth right now.", tense: "Present Continuous" },
+                { de: "Sagst du etwas?", en: "Are you saying something?", tense: "Present Continuous" },
+                { de: "Er hält eine Rede.", en: "He is saying a speech.", tense: "Present Continuous" },
+                { de: "Sie spricht ein Gebet.", en: "She is saying a prayer.", tense: "Present Continuous" },
+                { de: "Wir sagen auf Wiedersehen.", en: "We are saying goodbye.", tense: "Present Continuous" },
+                { de: "Was sagst du?", en: "What are you saying?", tense: "Present Continuous" },
+                { de: "Ich sage nichts Schlechtes.", en: "I'm not saying anything bad.", tense: "Present Continuous" },
+                { de: "Er redet Unsinn.", en: "He is saying nonsense.", tense: "Present Continuous" },
+                { de: "Sie sagen etwas Wichtiges.", en: "They are saying something important.", tense: "Present Continuous" },
+                { de: "Ich sage nur, was ich denke.", en: "I'm just saying what I think.", tense: "Present Continuous" },
+                { de: "Ich sagte gerade, als du kamst.", en: "I was saying when you came.", tense: "Past Continuous" },
+                { de: "Sagtest du etwas?", en: "Were you saying something?", tense: "Past Continuous" },
+                { de: "Er hielt eine Stunde lang eine Rede.", en: "He was saying a speech for an hour.", tense: "Past Continuous" },
+                { de: "Wir sagten auf Wiedersehen.", en: "We were saying goodbye.", tense: "Past Continuous" },
+                { de: "Was sagtest du?", en: "What were you saying?", tense: "Past Continuous" },
+                { de: "Ich habe das schon gesagt.", en: "I have already said this.", tense: "Present Perfect" },
+                { de: "Hast du ihr schon gesagt?", en: "Have you said to her already?", tense: "Present Perfect" },
+                { de: "Er hat schon alles gesagt.", en: "He has already said everything.", tense: "Present Perfect" },
+                { de: "Wir haben es ihnen schon gesagt.", en: "We have already said to them.", tense: "Present Perfect" },
+                { de: "Ich habe noch nicht gesagt.", en: "I haven't said yet.", tense: "Present Perfect" },
+                { de: "Sie hat das nie gesagt.", en: "She has never said that.", tense: "Present Perfect" },
+                { de: "Ich habe dir schon oft gesagt.", en: "I have said to you many times.", tense: "Present Perfect" },
+                { de: "Hast du das jemals gesagt?", en: "Have you ever said this?", tense: "Present Perfect" },
+                { de: "Ich werde es dir morgen sagen.", en: "I will say to you tomorrow.", tense: "Future" },
+                { de: "Wirst du die Wahrheit sagen?", en: "Will you say the truth?", tense: "Future" },
+                { de: "Er wird ja sagen.", en: "He will say yes.", tense: "Future" },
+                { de: "Sie wird nein sagen.", en: "She will say no.", tense: "Future" },
+                { de: "Wir werden es ihnen sagen.", en: "We will say to them.", tense: "Future" },
+                { de: "Sie werden danke sagen.", en: "They will say thank you.", tense: "Future" },
+                { de: "Ich werde nichts sagen.", en: "I won't say anything.", tense: "Future" },
+                { de: "Er wird nichts sagen.", en: "He won't say anything.", tense: "Future" },
+                { de: "Was wirst du sagen?", en: "What will you say?", tense: "Future" },
+                { de: "Ich werde es dir später sagen.", en: "I will say to you later.", tense: "Future" },
+                { de: "Ich würde ja sagen.", en: "I would say yes.", tense: "Conditional" },
+                { de: "Würdest du die Wahrheit sagen?", en: "Would you say the truth?", tense: "Conditional" },
+                { de: "Er würde nein sagen.", en: "He would say no.", tense: "Conditional" },
+                { de: "Wir würden das nicht sagen.", en: "We wouldn't say that.", tense: "Conditional" },
+                { de: "Ich würde das nicht sagen.", en: "I wouldn't say that.", tense: "Conditional" },
+                { de: "Was würdest du sagen?", en: "What would you say?", tense: "Conditional" },
+                { de: "Ich würde sagen, es ist wahr.", en: "I would say it's true.", tense: "Conditional" },
+                { de: "Sie würde das nicht sagen.", en: "She wouldn't say that.", tense: "Conditional" },
+                { de: "Sie würden danke sagen.", en: "They would say thank you.", tense: "Conditional" },
+                { de: "Ich könnte mehr sagen.", en: "I could say more.", tense: "Conditional" },
+                { de: "Sag mir.", en: "Say to me.", tense: "Imperative" },
+                { de: "Sagen Sie die Wahrheit.", en: "Say the truth.", tense: "Imperative" },
+                { de: "Sag das nicht.", en: "Don't say that.", tense: "Imperative" },
+                { de: "Sagen Sie nichts.", en: "Don't say anything.", tense: "Imperative" },
+                { de: "Sag ja.", en: "Say yes.", tense: "Imperative" },
+                { de: "Sag mir bitte.", en: "Say to me, please.", tense: "Imperative" },
+                { de: "Sag es auf Englisch.", en: "Say it in English.", tense: "Imperative" },
+                { de: "Kann nicht sagen.", en: "Can't say.", tense: "Expression" },
+                { de: "Was sagen?", en: "What to say?", tense: "Expression" },
+                { de: "Nichts zu sagen.", en: "Nothing to say.", tense: "Expression" },
+                { de: "Leicht gesagt.", en: "Easy to say.", tense: "Expression" },
+                { de: "Wie man sagt...", en: "As they say...", tense: "Expression" },
+                { de: "Das heißt...", en: "That is to say...", tense: "Expression" },
+                { de: "Sagen wir mal...", en: "Let's say...", tense: "Expression" },
+                { de: "Ich will nichts sagen.", en: "I don't want to say anything.", tense: "Expression" },
+                { de: "Man könnte sagen...", en: "You could say that.", tense: "Expression" },
+                { de: "Was willst du sagen?", en: "What are you trying to say?", tense: "Expression" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbe 🇬🇧 VERB GIVE — 98 phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Retour à la liste des verbes</a>
+            <h1>🇬🇧 Verb GIVE</h1>
+            <p class="subtitle">to provide, to offer — 98 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Rechercher des phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Afficher toutes les traductions</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Masquer toutes les traductions</button>
+        </div>
+
+        <div class="stats" id="stats">Affichage: 98 sur 98 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Pratique de l'anglais — GIVE · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'fr',
+            targetKey: 'en',
+            labels: { target: 'Anglais', showing: 'Affichage', of: 'sur', phrases: 'phrases' },
+            verbForms: ["give","gives","gave","given","giving"],
+            phrases: [
+                { fr: "Je te donne le livre", en: "I give you the book", tense: "Present Simple" },
+                { fr: "Il me donne des conseils", en: "He gives me advice", tense: "Present Simple" },
+                { fr: "Nous leur avons donné de l'argent", en: "We gave them money", tense: "Past Simple" },
+                { fr: "Elle m'a donné une réponse", en: "She gave me an answer", tense: "Past Simple" },
+                { fr: "Ils nous donnent du temps", en: "They give us time", tense: "Present Simple" },
+                { fr: "Je lui ai donné une chance", en: "I gave him a chance", tense: "Past Simple" },
+                { fr: "Tu donnes un bon exemple", en: "You give a good example", tense: "Present Simple" },
+                { fr: "Nous donnons une éducation aux enfants", en: "We give children education", tense: "Present Simple" },
+                { fr: "Il m'a donné son numéro de téléphone", en: "He gave me his phone number", tense: "Past Simple" },
+                { fr: "Elle donne des cours de musique", en: "She gives music lessons", tense: "Present Simple" },
+                { fr: "Je vais le rendre demain", en: "I will give it back tomorrow", tense: "Future Simple" },
+                { fr: "Ils nous ont donné les clés", en: "They gave us the keys", tense: "Past Simple" },
+                { fr: "Tu me donnes de l'espoir", en: "You give me hope", tense: "Present Simple" },
+                { fr: "Il donne beaucoup d'argent à la charité", en: "He gives a lot of money to charity", tense: "Present Simple" },
+                { fr: "Nous leur avons donné la permission", en: "We gave them permission", tense: "Past Simple" },
+                { fr: "Elle m'a donné un cadeau", en: "She gave me a gift", tense: "Past Simple" },
+                { fr: "Je te donne ma parole", en: "I give you my word", tense: "Present Simple" },
+                { fr: "Ils donnent des concerts chaque semaine", en: "They give concerts every week", tense: "Present Simple" },
+                { fr: "Il m'a donné le conseil d'arrêter de fumer", en: "He gave me advice to give up smoking", tense: "Past Simple" },
+                { fr: "Tu fais trop de promesses", en: "You give too many promises", tense: "Present Simple" },
+                { fr: "Nous vous donnerons des nouvelles", en: "We will give you a call", tense: "Future Simple" },
+                { fr: "Elle me donne de la force", en: "She gives me strength", tense: "Present Simple" },
+                { fr: "Je lui ai rendu le livre", en: "I gave him the book back", tense: "Past Simple" },
+                { fr: "Ils donnent des échantillons gratuits", en: "They give free samples", tense: "Present Simple" },
+                { fr: "Il m'a donné une deuxième chance", en: "He gave me a second chance", tense: "Past Simple" },
+                { fr: "Tu me donnes une raison de sourire", en: "You give me a reason to smile", tense: "Present Simple" },
+                { fr: "Nous leur donnons du soutien", en: "We give them support", tense: "Present Simple" },
+                { fr: "Elle m'a donné quelques conseils", en: "She gave me some advice", tense: "Past Simple" },
+                { fr: "Je donne des cours d'anglais", en: "I give English lessons", tense: "Present Simple" },
+                { fr: "Ils nous ont donné des indications", en: "They gave us directions", tense: "Past Simple" },
+                { fr: "Il donne rarement des interviews", en: "He gives interviews rarely", tense: "Present Simple" },
+                { fr: "Tu m'as donné une bonne idée", en: "You gave me a good idea", tense: "Past Simple" },
+                { fr: "Nous faisons des dons chaque mois", en: "We give donations every month", tense: "Present Simple" },
+                { fr: "Elle m'a donné une explication", en: "She gave me an explanation", tense: "Past Simple" },
+                { fr: "Je te donne cinq minutes", en: "I give you five minutes", tense: "Present Simple" },
+                { fr: "Ils donnent des réductions aux étudiants", en: "They give discounts to students", tense: "Present Simple" },
+                { fr: "Il m'a donné sa carte de visite", en: "He gave me his business card", tense: "Past Simple" },
+                { fr: "Tu fais trop de promesses", en: "You give too many promises", tense: "Present Simple" },
+                { fr: "Nous leur avons donné des instructions", en: "We gave them instructions", tense: "Past Simple" },
+                { fr: "Elle fait des présentations chaque semaine", en: "She gives presentations every week", tense: "Present Simple" },
+                { fr: "J'ai abandonné", en: "I gave up", tense: "Past Simple" },
+                { fr: "Ils donnent du feedback", en: "They give feedback", tense: "Present Simple" },
+                { fr: "Il m'a donné la permission de partir", en: "He gave me permission to leave", tense: "Past Simple" },
+                { fr: "Tu me donnes de l'inspiration", en: "You give me inspiration", tense: "Present Simple" },
+                { fr: "Nous donnons une garantie sur tous les produits", en: "We give a warranty on all products", tense: "Present Simple" },
+                { fr: "Elle m'a fait un compliment", en: "She gave me a compliment", tense: "Past Simple" },
+                { fr: "Je te donne mon adresse", en: "I give you my address", tense: "Present Simple" },
+                { fr: "Ils nous ont donné une carte", en: "They gave us a map", tense: "Past Simple" },
+                { fr: "Il donne de l'argent aux mendiants", en: "He gives money to beggars", tense: "Present Simple" },
+                { fr: "Tu m'as donné confiance", en: "You gave me confidence", tense: "Past Simple" },
+                { fr: "Nous donnons des prix aux gagnants", en: "We give prizes to winners", tense: "Present Simple" },
+                { fr: "Elle m'a donné une invitation", en: "She gave me an invitation", tense: "Past Simple" },
+                { fr: "Je te donne une dernière chance", en: "I give you one last chance", tense: "Present Simple" },
+                { fr: "Ils donnent des recommandations", en: "They give recommendations", tense: "Present Simple" },
+                { fr: "Il m'a donné un avertissement", en: "He gave me a warning", tense: "Past Simple" },
+                { fr: "Tu me donnes de l'énergie", en: "You give me energy", tense: "Present Simple" },
+                { fr: "Nous leur avons fait une offre", en: "We gave them an offer", tense: "Past Simple" },
+                { fr: "Elle donne des conseils gratuitement", en: "She gives advice for free", tense: "Present Simple" },
+                { fr: "Je lui ai donné un coup de main", en: "I gave him a helping hand", tense: "Past Simple" },
+                { fr: "Ils font des promesses", en: "They give promises", tense: "Present Simple" },
+                { fr: "Il m'a donné une description", en: "He gave me a description", tense: "Past Simple" },
+                { fr: "Tu donnes aux enfants un bon exemple", en: "You give children a good example", tense: "Present Simple" },
+                { fr: "Nous leur donnons une opportunité", en: "We give them an opportunity", tense: "Present Simple" },
+                { fr: "Elle m'a donné une recette", en: "She gave me a recipe", tense: "Past Simple" },
+                { fr: "Je donne de l'argent à la charité", en: "I give money to charity", tense: "Present Simple" },
+                { fr: "Ils nous ont donné un choix", en: "They gave us a choice", tense: "Past Simple" },
+                { fr: "Il promet de rendre la dette", en: "He gives a promise to give back the debt", tense: "Present Simple" },
+                { fr: "Tu m'as donné des informations importantes", en: "You gave me important information", tense: "Past Simple" },
+                { fr: "Nous donnons des réductions sur les commandes en gros", en: "We give discounts on bulk orders", tense: "Present Simple" },
+                { fr: "Elle m'a donné un rappel", en: "She gave me a reminder", tense: "Past Simple" },
+                { fr: "Je te donne le droit de choisir", en: "I give you the right to choose", tense: "Present Simple" },
+                { fr: "Ils donnent des bourses aux étudiants", en: "They give scholarships to students", tense: "Present Simple" },
+                { fr: "Il m'a donné une note", en: "He gave me a note", tense: "Past Simple" },
+                { fr: "Tu me donnes de la motivation", en: "You give me motivation", tense: "Present Simple" },
+                { fr: "Nous leur avons donné un avertissement", en: "We gave them a warning", tense: "Past Simple" },
+                { fr: "Elle donne des cours particuliers", en: "She gives private lessons", tense: "Present Simple" },
+                { fr: "J'abandonne", en: "I give up", tense: "Present Simple" },
+                { fr: "Ils nous ont donné des billets", en: "They gave us tickets", tense: "Past Simple" },
+                { fr: "Il fait des promesses qu'il ne tient pas", en: "He gives promises he doesn't keep", tense: "Present Simple" },
+                { fr: "Tu m'as donné une leçon précieuse", en: "You gave me a valuable lesson", tense: "Past Simple" },
+                { fr: "Nous leur donnons une chance de s'améliorer", en: "We give them a chance to improve", tense: "Present Simple" },
+                { fr: "Elle m'a donné son numéro de téléphone", en: "She gave me her phone number", tense: "Past Simple" },
+                { fr: "Je te donne une liberté totale", en: "I give you complete freedom", tense: "Present Simple" },
+                { fr: "Ils donnent une garantie satisfait ou remboursé", en: "They give a money-back guarantee", tense: "Present Simple" },
+                { fr: "Il m'a fait comprendre", en: "He gave me to understand", tense: "Past Simple" },
+                { fr: "Tu me donnes confiance en moi", en: "You give me self-confidence", tense: "Present Simple" },
+                { fr: "Nous leur avons donné une réponse", en: "We gave them an answer", tense: "Past Simple" },
+                { fr: "Elle donne naissance à un enfant", en: "She gives birth to a child", tense: "Present Simple" },
+                { fr: "Je te rendrai le livre demain", en: "I will give you the book back tomorrow", tense: "Future Simple" },
+                { fr: "Ils témoignent au tribunal", en: "They give testimony in court", tense: "Present Simple" },
+                { fr: "Il m'a donné le mot de passe", en: "He gave me the password", tense: "Past Simple" },
+                { fr: "Tu me donnes une raison de continuer", en: "You give me a reason to continue", tense: "Present Simple" },
+                { fr: "Nous leur donnons une voix", en: "We give them a voice", tense: "Present Simple" },
+                { fr: "Elle m'a donné un signe", en: "She gave me a sign", tense: "Past Simple" },
+                { fr: "Je te donne ma parole d'honneur", en: "I give you my honest word", tense: "Present Simple" },
+                { fr: "Ils nous ont donné un signal", en: "They gave us a signal", tense: "Past Simple" },
+                { fr: "Il n'abandonne jamais", en: "He never gives up", tense: "Present Simple" },
+                { fr: "Tu m'as donné une raison de m'inquiéter", en: "You gave me cause for concern", tense: "Past Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

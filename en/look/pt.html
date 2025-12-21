@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇬🇧 VERB LOOK — 97 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇬🇧 Verb LOOK</h1>
+            <p class="subtitle">to see, to appear — 97 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 97 de 97 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            English Practice — LOOK · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'en',
+            labels: { target: 'English', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["look","looks","looked","looking"],
+            phrases: [
+                { pt: "Eu olho para ti", en: "I look at you", tense: "Present Simple" },
+                { pt: "Ele olha pela janela", en: "He looks out the window", tense: "Present Simple" },
+                { pt: "Nós procuramos as chaves", en: "We look for the keys", tense: "Present Simple" },
+                { pt: "Ela procurou a sua mala", en: "She looked for her bag", tense: "Past Simple" },
+                { pt: "Eles olham para a pintura", en: "They look at the painting", tense: "Present Simple" },
+                { pt: "Vou consultar no dicionário", en: "I will look it up in the dictionary", tense: "Future Simple" },
+                { pt: "Pareces cansado", en: "You look tired", tense: "Present Simple" },
+                { pt: "Ela parece feliz", en: "She looks happy", tense: "Present Simple" },
+                { pt: "Ele olhou para mim estranhamente", en: "He looked at me strangely", tense: "Past Simple" },
+                { pt: "Olha para o quadro", en: "Look at the board", tense: "Imperative" },
+                { pt: "Estou à procura de emprego", en: "I'm looking for a job", tense: "Present Continuous" },
+                { pt: "Eles estavam a olhar para o ecrã", en: "They were looking at the screen", tense: "Past Continuous" },
+                { pt: "Olha para isto", en: "Look at this", tense: "Imperative" },
+                { pt: "Ele parece doente", en: "He looks sick", tense: "Present Simple" },
+                { pt: "Vou ver isso mais tarde", en: "I'll look at it later", tense: "Future Simple" },
+                { pt: "Ela procura um apartamento novo", en: "She's looking for a new apartment", tense: "Present Continuous" },
+                { pt: "Olhámos para as estrelas", en: "We looked at the stars", tense: "Past Simple" },
+                { pt: "Pareces ótimo", en: "You look great", tense: "Present Simple" },
+                { pt: "Olha para cima", en: "Look up", tense: "Imperative" },
+                { pt: "Procurei-te por todo o lado", en: "I looked for you everywhere", tense: "Past Simple" },
+                { pt: "Ele olha para o relógio", en: "He looks at his watch", tense: "Present Simple" },
+                { pt: "Ela olhou para baixo", en: "She looked down", tense: "Past Simple" },
+                { pt: "Procuramos uma solução", en: "We're looking for a solution", tense: "Present Continuous" },
+                { pt: "Olha no espelho", en: "Look in the mirror", tense: "Imperative" },
+                { pt: "Pareces preocupado", en: "You look worried", tense: "Present Simple" },
+                { pt: "Olho para o futuro", en: "I look to the future", tense: "Present Simple" },
+                { pt: "Ela procurava o telemóvel", en: "She was looking for her phone", tense: "Past Continuous" },
+                { pt: "Ele parece mais jovem", en: "He looks younger", tense: "Present Simple" },
+                { pt: "Vamos olhar para os factos", en: "Let's look at the facts", tense: "Imperative" },
+                { pt: "Olhei para trás", en: "I looked back", tense: "Past Simple" },
+                { pt: "Eles procuram informação", en: "They're looking for information", tense: "Present Continuous" },
+                { pt: "Olha para mim", en: "Look at me", tense: "Imperative" },
+                { pt: "Ela parece bonita", en: "She looks beautiful", tense: "Present Simple" },
+                { pt: "Procurei este ficheiro", en: "I looked for this file", tense: "Past Simple" },
+                { pt: "Ele olha em frente", en: "He looks ahead", tense: "Present Simple" },
+                { pt: "Vamos ver isto amanhã", en: "We'll look at this tomorrow", tense: "Future Simple" },
+                { pt: "Procuras problemas", en: "You're looking for trouble", tense: "Present Continuous" },
+                { pt: "Ela olhou para mim e sorriu", en: "She looked at me and smiled", tense: "Past Simple" },
+                { pt: "Parece interessante", en: "It looks interesting", tense: "Present Simple" },
+                { pt: "Olha ali", en: "Look over there", tense: "Imperative" },
+                { pt: "Procuro os meus óculos", en: "I'm looking for my glasses", tense: "Present Continuous" },
+                { pt: "Ele olhou à volta", en: "He looked around", tense: "Past Simple" },
+                { pt: "Ela parece triste", en: "She looks sad", tense: "Present Simple" },
+                { pt: "Temos andado à tua procura o dia todo", en: "We've been looking for you all day", tense: "Present Perfect Continuous" },
+                { pt: "Olha para o céu", en: "Look at the sky", tense: "Imperative" },
+                { pt: "Pareces melhor", en: "You look better", tense: "Present Simple" },
+                { pt: "Vou investigar este assunto", en: "I'll look into this matter", tense: "Future Simple" },
+                { pt: "Ele procura as chaves", en: "He's looking for his keys", tense: "Present Continuous" },
+                { pt: "Ela olhou para o relógio", en: "She looked at the clock", tense: "Past Simple" },
+                { pt: "Isto parece bom", en: "This looks good", tense: "Present Simple" },
+                { pt: "Olha à esquerda", en: "Look left", tense: "Imperative" },
+                { pt: "Procurava este livro", en: "I was looking for this book", tense: "Past Continuous" },
+                { pt: "Ele parece confiante", en: "He looks confident", tense: "Present Simple" },
+                { pt: "Olhamos para as opções", en: "We're looking at options", tense: "Present Continuous" },
+                { pt: "Olha à direita", en: "Look right", tense: "Imperative" },
+                { pt: "Pareces familiar", en: "You look familiar", tense: "Present Simple" },
+                { pt: "Olhei pela janela", en: "I looked out the window", tense: "Past Simple" },
+                { pt: "Ela procura conselhos", en: "She's looking for advice", tense: "Present Continuous" },
+                { pt: "Ele parece sério", en: "He looks serious", tense: "Present Simple" },
+                { pt: "Vamos encarar a verdade", en: "Let's look the truth in the face", tense: "Imperative" },
+                { pt: "Procuro uma oportunidade", en: "I'm looking for an opportunity", tense: "Present Continuous" },
+                { pt: "Eles olharam um para o outro", en: "They looked at each other", tense: "Past Simple" },
+                { pt: "Ela parece jovem", en: "She looks young", tense: "Present Simple" },
+                { pt: "Olha quem está aqui", en: "Look who's here", tense: "Imperative" },
+                { pt: "Vou procurar a resposta", en: "I'll look for the answer", tense: "Future Simple" },
+                { pt: "Ele olhou para o mapa", en: "He looked at the map", tense: "Past Simple" },
+                { pt: "Parece caro", en: "It looks expensive", tense: "Present Simple" },
+                { pt: "Procuramos um parceiro", en: "We're looking for a partner", tense: "Present Continuous" },
+                { pt: "Vê tu mesmo", en: "Look for yourself", tense: "Imperative" },
+                { pt: "Pareces confuso", en: "You look confused", tense: "Present Simple" },
+                { pt: "Olhei para os resultados", en: "I looked at the results", tense: "Past Simple" },
+                { pt: "Ela procura ajuda", en: "She's looking for help", tense: "Present Continuous" },
+                { pt: "Ele parece mais velho", en: "He looks older", tense: "Present Simple" },
+                { pt: "Olha as horas", en: "Look at the time", tense: "Imperative" },
+                { pt: "Procurei esta informação", en: "I looked for this information", tense: "Past Simple" },
+                { pt: "Vamos ver isso mais tarde", en: "We'll look at it later", tense: "Future Simple" },
+                { pt: "Isto parece complicado", en: "This looks complicated", tense: "Present Simple" },
+                { pt: "Ela olhou para cima", en: "She looked up", tense: "Past Simple" },
+                { pt: "Procuras sarilhos", en: "You're looking for trouble", tense: "Present Continuous" },
+                { pt: "Olha o que encontrei", en: "Look what I found", tense: "Imperative" },
+                { pt: "Estou a olhar para a situação", en: "I'm looking at the situation", tense: "Present Continuous" },
+                { pt: "Ele parece zangado", en: "He looks angry", tense: "Present Simple" },
+                { pt: "Ela procurou respostas", en: "She looked for answers", tense: "Past Simple" },
+                { pt: "Ficamos bem juntos", en: "We look good together", tense: "Present Simple" },
+                { pt: "Olha-me nos olhos", en: "Look me in the eye", tense: "Imperative" },
+                { pt: "Procuro inspiração", en: "I'm looking for inspiration", tense: "Present Continuous" },
+                { pt: "Ele olhou para ela com amor", en: "He looked at her lovingly", tense: "Past Simple" },
+                { pt: "Parece fácil", en: "It looks easy", tense: "Present Simple" },
+                { pt: "Pareces animado", en: "You look excited", tense: "Present Simple" },
+                { pt: "Vou rever estes documentos", en: "I'll look through these documents", tense: "Future Simple" },
+                { pt: "Ela procura novas oportunidades", en: "She's looking for new opportunities", tense: "Present Continuous" },
+                { pt: "Olha com atenção", en: "Look carefully", tense: "Imperative" },
+                { pt: "Ele parece chateado", en: "He looks upset", tense: "Present Simple" },
+                { pt: "Procurámo-lo por todo o lado", en: "We looked for him everywhere", tense: "Past Simple" },
+                { pt: "Olho para este problema de forma diferente", en: "I look at this problem differently", tense: "Present Simple" },
+                { pt: "Ela parece incrível", en: "She looks amazing", tense: "Present Simple" },
+                { pt: "Olha o que fizeste", en: "Look what you've done", tense: "Imperative" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

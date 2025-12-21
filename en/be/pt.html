@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo 🇬🇧 VERB BE — 96 Frases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Voltar para lista de verbos</a>
+            <h1>🇬🇧 Verb BE</h1>
+            <p class="subtitle">to exist, to equal — 96 frases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Pesquisar frases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Mostrar todas traduções</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Esconder todas traduções</button>
+        </div>
+
+        <div class="stats" id="stats">Mostrando: 96 de 96 frases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            English Practice — BE · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'pt',
+            targetKey: 'en',
+            labels: { target: 'English', showing: 'Mostrando', of: 'de', phrases: 'frases' },
+            verbForms: ["be","am","is","are","was","were","been","being"],
+            phrases: [
+                { pt: "Eu sou médico", en: "I am a doctor", tense: "Present" },
+                { pt: "Ele é estudante", en: "He is a student", tense: "Present" },
+                { pt: "Nós estamos em casa", en: "We are at home", tense: "Present" },
+                { pt: "Eles são felizes", en: "They are happy", tense: "Present" },
+                { pt: "Ela estava aqui ontem", en: "She was here yesterday", tense: "Past Simple" },
+                { pt: "Nós estávamos em Lisboa", en: "We were in Lisbon", tense: "Past Simple" },
+                { pt: "Eu estava ocupado", en: "I was busy", tense: "Past Simple" },
+                { pt: "Eles eram amigos", en: "They were friends", tense: "Past Simple" },
+                { pt: "Eu estou trabalhando agora", en: "I am working now", tense: "Present Continuous" },
+                { pt: "Ela está lendo um livro", en: "She is reading a book", tense: "Present Continuous" },
+                { pt: "Nós estamos indo para a cidade", en: "We are going to the city", tense: "Present Continuous" },
+                { pt: "Eles estão jogando futebol", en: "They are playing football", tense: "Present Continuous" },
+                { pt: "Eu estava cozinhando o jantar", en: "I was cooking dinner", tense: "Past Continuous" },
+                { pt: "Ele estava dormindo quando cheguei", en: "He was sleeping when I came", tense: "Past Continuous" },
+                { pt: "Nós estávamos vendo televisão", en: "We were watching TV", tense: "Past Continuous" },
+                { pt: "Eles estavam dançando a noite toda", en: "They were dancing all night", tense: "Past Continuous" },
+                { pt: "Eu já estive lá antes", en: "I have been there before", tense: "Present Perfect" },
+                { pt: "Ela já esteve em Londres", en: "She has been to London", tense: "Present Perfect" },
+                { pt: "Nós somos amigos há anos", en: "We have been friends for years", tense: "Present Perfect" },
+                { pt: "Ele é professor desde 2010", en: "He has been a teacher since 2010", tense: "Present Perfect" },
+                { pt: "Eu estarei lá amanhã", en: "I will be there tomorrow", tense: "Future" },
+                { pt: "Ela será feliz", en: "She will be happy", tense: "Future" },
+                { pt: "Nós estaremos prontos", en: "We will be ready", tense: "Future" },
+                { pt: "Eles estarão aqui às seis", en: "They will be here at six", tense: "Future" },
+                { pt: "Eu ficaria feliz em ajudar", en: "I would be glad to help", tense: "Conditional" },
+                { pt: "Seria ótimo", en: "It would be great", tense: "Conditional" },
+                { pt: "Nós estaríamos lá se pudéssemos", en: "We would be there if we could", tense: "Conditional" },
+                { pt: "Ela seria uma boa líder", en: "She would be a good leader", tense: "Conditional" },
+                { pt: "Seja cuidadoso", en: "Be careful", tense: "Imperative" },
+                { pt: "Sejam gentis", en: "Be kind", tense: "Imperative" },
+                { pt: "Não seja tolo", en: "Don't be silly", tense: "Imperative" },
+                { pt: "Seja você mesmo", en: "Be yourself", tense: "Imperative" },
+                { pt: "É verdade", en: "It is true", tense: "Present" },
+                { pt: "Eu estou cansado", en: "I am tired", tense: "Present" },
+                { pt: "O tempo está bom", en: "The weather is good", tense: "Present" },
+                { pt: "Nós estamos prontos para começar", en: "We are ready to start", tense: "Present" },
+                { pt: "Ele estava certo", en: "He was right", tense: "Past Simple" },
+                { pt: "Estava frio", en: "It was cold", tense: "Past Simple" },
+                { pt: "Eu estou pensando agora", en: "I am thinking now", tense: "Present Continuous" },
+                { pt: "Ela está estudando na universidade", en: "She is studying at university", tense: "Present Continuous" },
+                { pt: "Eles estão viajando pela Europa", en: "They are traveling around Europe", tense: "Present Continuous" },
+                { pt: "Eu estava esperando por você", en: "I was waiting for you", tense: "Past Continuous" },
+                { pt: "Estava chovendo", en: "It was raining", tense: "Past Continuous" },
+                { pt: "Ele estava trabalhando no projeto", en: "He was working on the project", tense: "Past Continuous" },
+                { pt: "Eu nunca estive no Japão", en: "I have never been to Japan", tense: "Present Perfect" },
+                { pt: "Foi a melhor decisão", en: "It has been the best decision", tense: "Present Perfect" },
+                { pt: "Nós somos amigos desde a infância", en: "We have been friends since childhood", tense: "Present Perfect" },
+                { pt: "Ele tem estado ocupado o dia todo", en: "He has been busy all day", tense: "Present Perfect" },
+                { pt: "Tudo vai ficar bem", en: "Everything will be fine", tense: "Future" },
+                { pt: "Eu serei engenheiro", en: "I will be an engineer", tense: "Future" },
+                { pt: "Será difícil", en: "It will be difficult", tense: "Future" },
+                { pt: "Eles ficarão surpresos", en: "They will be surprised", tense: "Future" },
+                { pt: "Seria um erro", en: "It would be a mistake", tense: "Conditional" },
+                { pt: "Eu seria feliz", en: "I would be happy", tense: "Conditional" },
+                { pt: "Seria melhor esperar", en: "It would be better to wait", tense: "Conditional" },
+                { pt: "Eles estariam aqui se soubessem", en: "They would be here if they knew", tense: "Conditional" },
+                { pt: "Seja honesto", en: "Be honest", tense: "Imperative" },
+                { pt: "Sejam silenciosos", en: "Be quiet", tense: "Imperative" },
+                { pt: "Seja paciente", en: "Be patient", tense: "Imperative" },
+                { pt: "Sejam atentos", en: "Be attentive", tense: "Imperative" },
+                { pt: "Eu estou com fome", en: "I am hungry", tense: "Present" },
+                { pt: "Ela é linda", en: "She is beautiful", tense: "Present" },
+                { pt: "É importante", en: "It is important", tense: "Present" },
+                { pt: "Nós estamos atrasados", en: "We are late", tense: "Present" },
+                { pt: "Estava escuro", en: "It was dark", tense: "Past Simple" },
+                { pt: "Eles estavam contentes", en: "They were glad", tense: "Past Simple" },
+                { pt: "Eu fiquei surpreso", en: "I was surprised", tense: "Past Simple" },
+                { pt: "Foi interessante", en: "It was interesting", tense: "Past Simple" },
+                { pt: "Eu estou escrevendo uma carta", en: "I am writing a letter", tense: "Present Continuous" },
+                { pt: "Ele está correndo no parque", en: "He is running in the park", tense: "Present Continuous" },
+                { pt: "Nós estamos ouvindo música", en: "We are listening to music", tense: "Present Continuous" },
+                { pt: "Ela está chorando", en: "She is crying", tense: "Present Continuous" },
+                { pt: "Nós estávamos falando sobre você", en: "We were talking about you", tense: "Past Continuous" },
+                { pt: "Ele estava tentando ligar", en: "He was trying to call", tense: "Past Continuous" },
+                { pt: "Eu estava pensando sobre o problema", en: "I was thinking about the problem", tense: "Past Continuous" },
+                { pt: "Eles estavam construindo uma casa", en: "They were building a house", tense: "Past Continuous" },
+                { pt: "Foi um dia longo", en: "It has been a long day", tense: "Present Perfect" },
+                { pt: "Eu já estive aqui antes", en: "I have been here before", tense: "Present Perfect" },
+                { pt: "Ela sempre foi assim", en: "She has always been like this", tense: "Present Perfect" },
+                { pt: "Eles estão juntos há dois anos", en: "They have been together for two years", tense: "Present Perfect" },
+                { pt: "Será divertido", en: "It will be fun", tense: "Future" },
+                { pt: "Eu estarei lá em uma hora", en: "I will be there in an hour", tense: "Future" },
+                { pt: "Ela será a primeira", en: "She will be first", tense: "Future" },
+                { pt: "Nós estaremos esperando", en: "We will be waiting", tense: "Future" },
+                { pt: "Eu ficaria grato", en: "I would be grateful", tense: "Conditional" },
+                { pt: "Seria incrível", en: "It would be amazing", tense: "Conditional" },
+                { pt: "Ele seria um bom amigo", en: "He would be a good friend", tense: "Conditional" },
+                { pt: "Seria bom encontrar", en: "It would be nice to meet", tense: "Conditional" },
+                { pt: "Seja corajoso", en: "Be brave", tense: "Imperative" },
+                { pt: "Sejam realistas", en: "Be realistic", tense: "Imperative" },
+                { pt: "Não seja rude", en: "Don't be rude", tense: "Imperative" },
+                { pt: "Estejam prontos", en: "Be ready", tense: "Imperative" },
+                { pt: "Eu sou da Rússia", en: "I am from Russia", tense: "Present" },
+                { pt: "Ele é meu irmão", en: "He is my brother", tense: "Present" },
+                { pt: "Nós somos colegas", en: "We are colleagues", tense: "Present" },
+                { pt: "Eles são vizinhos", en: "They are neighbors", tense: "Present" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

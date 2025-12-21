@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbe 🇬🇧 VERB THINK — 98 phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Retour à la liste des verbes</a>
+            <h1>🇬🇧 Verb THINK</h1>
+            <p class="subtitle">to consider, to believe — 98 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Rechercher des phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Afficher toutes les traductions</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Masquer toutes les traductions</button>
+        </div>
+
+        <div class="stats" id="stats">Affichage: 98 sur 98 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Pratique de l'anglais — THINK · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'fr',
+            targetKey: 'en',
+            labels: { target: 'Anglais', showing: 'Affichage', of: 'sur', phrases: 'phrases' },
+            verbForms: ["think","thinks","thought","thinking"],
+            phrases: [
+                { fr: "Je pense à toi tous les jours", en: "I think about you every day", tense: "Present Simple" },
+                { fr: "Elle pense que c'est une bonne idée", en: "She thinks it's a good idea", tense: "Present Simple" },
+                { fr: "Nous pensions que tu viendrais", en: "We thought you would come", tense: "Past Simple" },
+                { fr: "Il pense à son avenir", en: "He thinks about his future", tense: "Present Simple" },
+                { fr: "J'y ai pensé toute la nuit", en: "I thought about it all night", tense: "Past Simple" },
+                { fr: "Ils pensent que j'ai raison", en: "They think I'm right", tense: "Present Simple" },
+                { fr: "Qu'est-ce que tu penses de ça?", en: "What do you think about this?", tense: "Present Simple" },
+                { fr: "Je pense qu'il va pleuvoir", en: "I think it will rain", tense: "Present Simple" },
+                { fr: "Elle pensait qu'elle avait perdu ses clés", en: "She thought she had lost her keys", tense: "Past Simple" },
+                { fr: "Nous pensons à déménager", en: "We're thinking about moving", tense: "Present Continuous" },
+                { fr: "Il pensait qu'il connaissait la réponse", en: "He thought he knew the answer", tense: "Past Simple" },
+                { fr: "Je pense toujours aux conséquences", en: "I always think about the consequences", tense: "Present Simple" },
+                { fr: "As-tu pensé à ma proposition?", en: "Have you thought about my proposal?", tense: "Present Perfect" },
+                { fr: "Ils pensent qu'on va être en retard", en: "They think we'll be late", tense: "Present Simple" },
+                { fr: "Je pense que c'est faux", en: "I think this is wrong", tense: "Present Simple" },
+                { fr: "Elle ne pense qu'à elle-même", en: "She only thinks about herself", tense: "Present Simple" },
+                { fr: "Nous pensions que le magasin était ouvert", en: "We thought the shop was open", tense: "Past Simple" },
+                { fr: "Il pense qu'il peut gagner", en: "He thinks he can win", tense: "Present Simple" },
+                { fr: "Je pense que tu es talentueux", en: "I think you're talented", tense: "Present Simple" },
+                { fr: "Ils pensaient que nous étions partis", en: "They thought we had left", tense: "Past Simple" },
+                { fr: "À quoi penses-tu?", en: "What are you thinking about?", tense: "Present Continuous" },
+                { fr: "Je pensais que c'était facile", en: "I thought it was easy", tense: "Past Simple" },
+                { fr: "Elle pense que je suis coupable", en: "She thinks I'm guilty", tense: "Present Simple" },
+                { fr: "Nous n'y avons pas pensé", en: "We didn't think about it", tense: "Past Simple" },
+                { fr: "Il pense qu'il sait tout", en: "He thinks he knows everything", tense: "Present Simple" },
+                { fr: "Je pense que j'ai besoin de vacances", en: "I think I need a vacation", tense: "Present Simple" },
+                { fr: "Penses-tu que c'est possible?", en: "Do you think it's possible?", tense: "Present Simple" },
+                { fr: "Ils pensent à acheter une maison", en: "They're thinking about buying a house", tense: "Present Continuous" },
+                { fr: "Je pensais t'avoir vu hier", en: "I thought I saw you yesterday", tense: "Past Simple" },
+                { fr: "Elle pense que je mens", en: "She thinks I'm lying", tense: "Present Simple" },
+                { fr: "Nous pensons que c'est juste", en: "We think it's fair", tense: "Present Simple" },
+                { fr: "Il pensait qu'il était en retard", en: "He thought he was late", tense: "Past Simple" },
+                { fr: "Je pense que je comprends", en: "I think I understand", tense: "Present Simple" },
+                { fr: "Ils pensent que nous sommes amis", en: "They think we're friends", tense: "Present Simple" },
+                { fr: "As-tu pensé à ça avant?", en: "Did you think about this before?", tense: "Past Simple" },
+                { fr: "Je pense que c'est beau", en: "I think it's beautiful", tense: "Present Simple" },
+                { fr: "Elle pensait que tu serais d'accord", en: "She thought you would agree", tense: "Past Simple" },
+                { fr: "Nous pensons à l'avenir", en: "We're thinking about the future", tense: "Present Continuous" },
+                { fr: "Il pense que j'ai oublié", en: "He thinks I forgot", tense: "Present Simple" },
+                { fr: "Je n'y ai jamais pensé", en: "I've never thought about it", tense: "Present Perfect" },
+                { fr: "Ils pensent que c'est cher", en: "They think it's expensive", tense: "Present Simple" },
+                { fr: "Penses-tu que j'ai raison?", en: "Do you think I'm right?", tense: "Present Simple" },
+                { fr: "Je pensais que tu étais parti", en: "I thought you had gone", tense: "Past Simple" },
+                { fr: "Elle pense à changer de travail", en: "She's thinking about changing jobs", tense: "Present Continuous" },
+                { fr: "Nous pensions que ce serait plus facile", en: "We thought it would be easier", tense: "Past Simple" },
+                { fr: "Il pense que je plaisante", en: "He thinks I'm joking", tense: "Present Simple" },
+                { fr: "Je pense que c'est vrai", en: "I think it's true", tense: "Present Simple" },
+                { fr: "Ils pensaient qu'on ne viendrait pas", en: "They thought we wouldn't come", tense: "Past Simple" },
+                { fr: "Penses-tu que c'est important?", en: "Do you think this is important?", tense: "Present Simple" },
+                { fr: "Je pense que j'ai de la chance", en: "I think I'm lucky", tense: "Present Simple" },
+                { fr: "Elle pense que je ne sais pas", en: "She thinks I don't know", tense: "Present Simple" },
+                { fr: "Nous pensons à toi", en: "We're thinking about you", tense: "Present Continuous" },
+                { fr: "Il pensait que tout était fini", en: "He thought it was all over", tense: "Past Simple" },
+                { fr: "Je pense que c'est intéressant", en: "I think it's interesting", tense: "Present Simple" },
+                { fr: "Ils pensent que j'ai peur", en: "They think I'm afraid", tense: "Present Simple" },
+                { fr: "As-tu pensé aux conséquences?", en: "Did you think about the consequences?", tense: "Past Simple" },
+                { fr: "Je pensais que tu dormais", en: "I thought you were sleeping", tense: "Past Simple" },
+                { fr: "Elle pense que c'est impossible", en: "She thinks it's impossible", tense: "Present Simple" },
+                { fr: "Nous pensions que tu étais malade", en: "We thought you were sick", tense: "Past Simple" },
+                { fr: "Il pense à ses erreurs", en: "He's thinking about his mistakes", tense: "Present Continuous" },
+                { fr: "Je pense que je peux aider", en: "I think I can help", tense: "Present Simple" },
+                { fr: "Ils pensent que c'est dangereux", en: "They think it's dangerous", tense: "Present Simple" },
+                { fr: "Penses-tu que je suis stupide?", en: "Do you think I'm stupid?", tense: "Present Simple" },
+                { fr: "Je pensais que tu comprenais", en: "I thought you understood", tense: "Past Simple" },
+                { fr: "Elle pense que je suis en colère", en: "She thinks I'm angry", tense: "Present Simple" },
+                { fr: "Nous pensons à un voyage en Europe", en: "We're thinking about a trip to Europe", tense: "Present Continuous" },
+                { fr: "Il pensait que c'était un rêve", en: "He thought it was a dream", tense: "Past Simple" },
+                { fr: "Je pense que c'est un bon plan", en: "I think it's a good plan", tense: "Present Simple" },
+                { fr: "Ils pensent que j'ai menti", en: "They think I lied", tense: "Present Simple" },
+                { fr: "Pensais-tu que je ne remarquerais pas?", en: "Did you think I wouldn't notice?", tense: "Past Simple" },
+                { fr: "Je pense que ça vaut la peine d'essayer", en: "I think it's worth trying", tense: "Present Simple" },
+                { fr: "Elle pensait que j'avais oublié", en: "She thought I had forgotten", tense: "Past Simple" },
+                { fr: "Nous pensons que c'est la bonne décision", en: "We think it's the right decision", tense: "Present Simple" },
+                { fr: "Il pense au passé", en: "He's thinking about the past", tense: "Present Continuous" },
+                { fr: "Je pense à ça depuis longtemps", en: "I've been thinking about this for a long time", tense: "Present Perfect Continuous" },
+                { fr: "Ils pensent que je suis riche", en: "They think I'm rich", tense: "Present Simple" },
+                { fr: "Penses-tu que c'est drôle?", en: "Do you think it's funny?", tense: "Present Simple" },
+                { fr: "Je pensais que nous étions amis", en: "I thought we were friends", tense: "Past Simple" },
+                { fr: "Elle pense que je n'écoute pas", en: "She thinks I'm not listening", tense: "Present Simple" },
+                { fr: "Nous pensions que c'était impossible", en: "We thought it was impossible", tense: "Past Simple" },
+                { fr: "Il pense qu'il va gagner", en: "He thinks he'll win", tense: "Present Simple" },
+                { fr: "Je pense que je connais la réponse", en: "I think I know the answer", tense: "Present Simple" },
+                { fr: "Ils pensent à un nouveau projet", en: "They're thinking about a new project", tense: "Present Continuous" },
+                { fr: "Pensais-tu que je ne viendrais pas?", en: "Did you think I wouldn't come?", tense: "Past Simple" },
+                { fr: "Je pensais que c'était un secret", en: "I thought it was a secret", tense: "Past Simple" },
+                { fr: "Elle pense que je suis fatigué", en: "She thinks I'm tired", tense: "Present Simple" },
+                { fr: "Nous pensons aux enfants", en: "We're thinking about the children", tense: "Present Continuous" },
+                { fr: "Il pensait que c'était une blague", en: "He thought it was a joke", tense: "Past Simple" },
+                { fr: "Je pense que c'est important", en: "I think this is important", tense: "Present Simple" },
+                { fr: "Ils pensent que je ne suis pas prêt", en: "They think I'm not ready", tense: "Present Simple" },
+                { fr: "Penses-tu à ça tous les jours?", en: "Do you think about this every day?", tense: "Present Simple" },
+                { fr: "Je pensais que tu savais", en: "I thought you knew", tense: "Past Simple" },
+                { fr: "Elle pense que je suis fou", en: "She thinks I'm crazy", tense: "Present Simple" },
+                { fr: "Nous pensions que ce serait moins cher", en: "We thought it would be cheaper", tense: "Past Simple" },
+                { fr: "Il pense souvent à sa famille", en: "He often thinks about his family", tense: "Present Simple" },
+                { fr: "Je pense que c'est correct", en: "I think this is right", tense: "Present Simple" },
+                { fr: "Ils pensent que je ne peux pas le faire", en: "They think I can't do it", tense: "Present Simple" },
+                { fr: "As-tu pensé au plan B?", en: "Have you thought about plan B?", tense: "Present Perfect" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

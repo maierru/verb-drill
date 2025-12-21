@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbe 🇬🇧 VERB DO — 97 phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Retour à la liste des verbes</a>
+            <h1>🇬🇧 Verb DO</h1>
+            <p class="subtitle">to perform, to execute — 97 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Rechercher des phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Afficher toutes les traductions</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Masquer toutes les traductions</button>
+        </div>
+
+        <div class="stats" id="stats">Affichage: 97 sur 97 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Pratique de l'anglais — DO · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'fr',
+            targetKey: 'en',
+            labels: { target: 'Anglais', showing: 'Affichage', of: 'sur', phrases: 'phrases' },
+            verbForms: ["do","does","did","done","doing"],
+            phrases: [
+                { fr: "Que fais-tu?", en: "What do you do?", tense: "Present" },
+                { fr: "Je fais mes devoirs.", en: "I do homework.", tense: "Present" },
+                { fr: "Il fait ça tous les jours.", en: "He does it every day.", tense: "Present" },
+                { fr: "Nous faisons des exercices.", en: "We do exercises.", tense: "Present" },
+                { fr: "Elle fait le ménage le samedi.", en: "She does cleaning on Saturdays.", tense: "Present" },
+                { fr: "Je ne fais pas ça.", en: "I don't do that.", tense: "Present" },
+                { fr: "Il ne fait pas d'erreurs.", en: "He doesn't make mistakes.", tense: "Present" },
+                { fr: "Tu le fais bien.", en: "You do it right.", tense: "Present" },
+                { fr: "Ils font de leur mieux.", en: "They do their best.", tense: "Present" },
+                { fr: "Que fait-elle au travail?", en: "What does she do at work?", tense: "Present" },
+                { fr: "Je l'ai fait hier.", en: "I did it yesterday.", tense: "Past Simple" },
+                { fr: "Il a fait une erreur.", en: "He did a mistake.", tense: "Past Simple" },
+                { fr: "Nous avons tout fait à temps.", en: "We did everything on time.", tense: "Past Simple" },
+                { fr: "Elle a fait le ménage le matin.", en: "She did the cleaning in the morning.", tense: "Past Simple" },
+                { fr: "Qu'as-tu fait hier?", en: "What did you do yesterday?", tense: "Past Simple" },
+                { fr: "Je n'ai pas fait ça.", en: "I didn't do that.", tense: "Past Simple" },
+                { fr: "Ils ont fait du bon travail.", en: "They did a good job.", tense: "Past Simple" },
+                { fr: "Qui a fait ça?", en: "Who did this?", tense: "Past Simple" },
+                { fr: "Nous avons déjà fait ça.", en: "We did this before.", tense: "Past Simple" },
+                { fr: "Il l'a fait rapidement.", en: "He did it quickly.", tense: "Past Simple" },
+                { fr: "Je le fais maintenant.", en: "I'm doing it now.", tense: "Present Continuous" },
+                { fr: "Que fais-tu en ce moment?", en: "What are you doing?", tense: "Present Continuous" },
+                { fr: "Il fait ses devoirs.", en: "He's doing his homework.", tense: "Present Continuous" },
+                { fr: "Nous faisons un projet.", en: "We're doing a project.", tense: "Present Continuous" },
+                { fr: "Elle fait des courses.", en: "She's doing shopping.", tense: "Present Continuous" },
+                { fr: "Ils font une présentation.", en: "They're doing a presentation.", tense: "Present Continuous" },
+                { fr: "Je ne le fais pas maintenant.", en: "I'm not doing it now.", tense: "Present Continuous" },
+                { fr: "Que fais-tu ce week-end?", en: "What are you doing this weekend?", tense: "Present Continuous" },
+                { fr: "Il fait des exercices.", en: "He's doing exercises.", tense: "Present Continuous" },
+                { fr: "Nous faisons tout bien.", en: "We're doing everything right.", tense: "Present Continuous" },
+                { fr: "Je l'ai déjà fait.", en: "I've already done it.", tense: "Present Perfect" },
+                { fr: "As-tu fait tes devoirs?", en: "Have you done your homework?", tense: "Present Perfect" },
+                { fr: "Il a fait beaucoup de travail.", en: "He's done a lot of work.", tense: "Present Perfect" },
+                { fr: "Nous avons fait de notre mieux.", en: "We've done our best.", tense: "Present Perfect" },
+                { fr: "Elle n'a jamais fait ça.", en: "She's never done this.", tense: "Present Perfect" },
+                { fr: "Ils ont fait de grands progrès.", en: "They've done great progress.", tense: "Present Perfect" },
+                { fr: "Je ne l'ai pas encore fait.", en: "I haven't done it yet.", tense: "Present Perfect" },
+                { fr: "Qu'as-tu fait?", en: "What have you done?", tense: "Present Perfect" },
+                { fr: "Il l'a déjà fait avant.", en: "He's done it before.", tense: "Present Perfect" },
+                { fr: "Nous avons terminé le travail.", en: "We've done the work.", tense: "Present Perfect" },
+                { fr: "Je le ferai demain.", en: "I'll do it tomorrow.", tense: "Future" },
+                { fr: "Que feras-tu?", en: "What will you do?", tense: "Future" },
+                { fr: "Il le fera plus tard.", en: "He'll do it later.", tense: "Future" },
+                { fr: "Nous ferons tout à temps.", en: "We'll do everything on time.", tense: "Future" },
+                { fr: "Elle le fera bien.", en: "She'll do it right.", tense: "Future" },
+                { fr: "Ils ne feront pas ça.", en: "They won't do it.", tense: "Future" },
+                { fr: "Je ferai de mon mieux.", en: "I'll do my best.", tense: "Future" },
+                { fr: "Que ferons-nous?", en: "What will we do?", tense: "Future" },
+                { fr: "Il le fera rapidement.", en: "He'll do it quickly.", tense: "Future" },
+                { fr: "Je ne ferai pas ça.", en: "I won't do that.", tense: "Future" },
+                { fr: "Fais-le!", en: "Do it!", tense: "Imperative" },
+                { fr: "Ne fais pas ça!", en: "Don't do that!", tense: "Imperative" },
+                { fr: "Fais tes devoirs!", en: "Do your homework!", tense: "Imperative" },
+                { fr: "Faisons-le ensemble!", en: "Let's do it together!", tense: "Imperative" },
+                { fr: "Fais ce qu'on te dit!", en: "Do as you're told!", tense: "Imperative" },
+                { fr: "Fais de ton mieux!", en: "Do your best!", tense: "Imperative" },
+                { fr: "Ne fais pas d'erreurs!", en: "Don't make mistakes!", tense: "Imperative" },
+                { fr: "Fais-le bien!", en: "Do it right!", tense: "Imperative" },
+                { fr: "Fais-le maintenant!", en: "Do it now!", tense: "Imperative" },
+                { fr: "Faisons une pause!", en: "Let's do a break!", tense: "Imperative" },
+                { fr: "Je veux vraiment le faire.", en: "I do want to do it.", tense: "Present" },
+                { fr: "Il le fait vraiment.", en: "He does do it.", tense: "Present" },
+                { fr: "Je l'ai vraiment fait.", en: "I did do it.", tense: "Past Simple" },
+                { fr: "Elle essaie vraiment.", en: "She does try.", tense: "Present" },
+                { fr: "Nous adorons vraiment faire ça.", en: "We do love doing this.", tense: "Present" },
+                { fr: "Je fais du yoga tous les matins.", en: "I do yoga every morning.", tense: "Present" },
+                { fr: "Il fait beaucoup d'erreurs.", en: "He does many mistakes.", tense: "Present" },
+                { fr: "Que puis-je faire?", en: "What can I do?", tense: "Present" },
+                { fr: "Combien de travail as-tu fait?", en: "How much work have you done?", tense: "Present Perfect" },
+                { fr: "Je fais tout moi-même.", en: "I do everything myself.", tense: "Present" },
+                { fr: "Ils font semblant de savoir.", en: "They do pretend to know.", tense: "Present" },
+                { fr: "Elle l'a fait seule.", en: "She did it alone.", tense: "Past Simple" },
+                { fr: "Nous faisons les courses le samedi.", en: "We do shopping on Saturday.", tense: "Present" },
+                { fr: "Je le ferai pour toi.", en: "I'll do it for you.", tense: "Future" },
+                { fr: "Que fait-il dans la vie?", en: "What does he do for a living?", tense: "Present" },
+                { fr: "Je fais des exercices tous les jours.", en: "I do exercises every day.", tense: "Present" },
+                { fr: "Il rend un service.", en: "He's doing a favor.", tense: "Present Continuous" },
+                { fr: "Tu as fait le bon choix.", en: "You did the right choice.", tense: "Past Simple" },
+                { fr: "Nous faisons de la recherche.", en: "We're doing research.", tense: "Present Continuous" },
+                { fr: "Elle se maquille.", en: "She's doing makeup.", tense: "Present Continuous" },
+                { fr: "Je l'ai fait exprès.", en: "I did it on purpose.", tense: "Past Simple" },
+                { fr: "Ils font un test.", en: "They're doing a test.", tense: "Present Continuous" },
+                { fr: "Tu fais des progrès.", en: "You're doing progress.", tense: "Present Continuous" },
+                { fr: "Je n'ai jamais fait ça avant.", en: "I've never done this before.", tense: "Present Perfect" },
+                { fr: "Il fait des affaires.", en: "He does business.", tense: "Present" },
+                { fr: "Qu'avons-nous fait de mal?", en: "What did we do wrong?", tense: "Past Simple" },
+                { fr: "Je fais tout dans l'ordre.", en: "I do everything in order.", tense: "Present" },
+                { fr: "Elle l'a déjà fait deux fois.", en: "She's already done it twice.", tense: "Present Perfect" },
+                { fr: "Nous le ferons différemment.", en: "We'll do it differently.", tense: "Future" },
+                { fr: "Il fait semblant de ne pas savoir.", en: "He does pretend not to know.", tense: "Present" },
+                { fr: "J'ai fait tout ce que je pouvais.", en: "I did everything I could.", tense: "Past Simple" },
+                { fr: "Tu me rends heureux.", en: "You do make me happy.", tense: "Present" },
+                { fr: "Ils ont fait une découverte.", en: "They did a discovery.", tense: "Past Simple" },
+                { fr: "Je le fais avec plaisir.", en: "I do it with pleasure.", tense: "Present" },
+                { fr: "Fais-le avec soin!", en: "Do it carefully!", tense: "Imperative" },
+                { fr: "Nous faisons des rénovations.", en: "We're doing renovation.", tense: "Present Continuous" },
+                { fr: "Elle se coiffe.", en: "She's doing her hair.", tense: "Present Continuous" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>
