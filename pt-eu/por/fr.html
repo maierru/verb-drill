@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbe 🇵🇹 VERB PÔR — 20 phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Retour à la liste des verbes</a>
+            <h1>🇵🇹 Verb PÔR</h1>
+            <p class="subtitle">to put — 20 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Rechercher des phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Afficher toutes les traductions</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Masquer toutes les traductions</button>
+        </div>
+
+        <div class="stats" id="stats">Affichage: 20 sur 20 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Pratique du portugais — POR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇵🇹 Verb PÔR</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>ponho</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>pões</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>põe</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>pomos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>põem</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>punha</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>punhas</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>punha</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>púnhamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>punham</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Perfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>pus</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>puseste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>pôs</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>pusemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>puseram</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>porei</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>porás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>porá</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>poremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>porão</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Condicional</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>poria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>porias</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>poria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>poríamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>poriam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Conjuntivo Presente</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>ponha</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>ponhas</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>ponha</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>ponhamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>ponham</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Conjuntivo Imperfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>pusesse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>pusesses</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>pusesse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>puséssemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>pusessem</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'fr',
+            targetKey: 'pt',
+            labels: { target: 'Portugais européen', showing: 'Affichage', of: 'sur', phrases: 'phrases' },
+            verbForms: ["ponho","pões","põe","pomos","põem","punha","punhas","púnhamos","punham","pus","puseste","pôs","pusemos","puseram","porei","porás","porá","poremos","porão","poria","porias","poríamos","poriam","ponha","ponhas","ponhamos","ponham","pusesse","pusesses","puséssemos","pusessem","puser","puseres","pusermos","puserem","pôr","pondo","posto"],
+            phrases: [
+                { fr: "Je le mets ici.", pt: "Ponho aqui.", tense: "Presente" },
+                { fr: "Où le mets-tu?", pt: "Onde pões?", tense: "Presente" },
+                { fr: "Il met ses lunettes.", pt: "Ele põe os óculos.", tense: "Presente" },
+                { fr: "Elle met les livres sur la table.", pt: "Ela põe os livros na mesa.", tense: "Presente" },
+                { fr: "Nous mettons tout en ordre.", pt: "Pomos tudo em ordem.", tense: "Presente" },
+                { fr: "Je mettais là.", pt: "Punha ali.", tense: "Imperfeito" },
+                { fr: "Tu mettais du sucre.", pt: "Punhas açúcar.", tense: "Imperfeito" },
+                { fr: "Il mettait de la musique.", pt: "Ele punha música.", tense: "Imperfeito" },
+                { fr: "J'ai mis sur la table.", pt: "Pus na mesa.", tense: "Perfeito" },
+                { fr: "Tu as rangé.", pt: "Puseste guardado.", tense: "Perfeito" },
+                { fr: "Il a mis une cravate.", pt: "Ele pôs gravata.", tense: "Perfeito" },
+                { fr: "Je mettrai ici.", pt: "Porei aqui.", tense: "Futuro" },
+                { fr: "Tu rangeras.", pt: "Porás guardado.", tense: "Futuro" },
+                { fr: "Il mettra un costume.", pt: "Ele porá um fato.", tense: "Futuro" },
+                { fr: "Je mettrais là.", pt: "Poria ali.", tense: "Condicional" },
+                { fr: "Tu mettrais plus.", pt: "Porias mais.", tense: "Condicional" },
+                { fr: "Il mettrait de la musique.", pt: "Ele poria música.", tense: "Condicional" },
+                { fr: "J'espère que tu mettes ici.", pt: "Espero que ponhas aqui.", tense: "Conjuntivo" },
+                { fr: "Il est important qu'il mette.", pt: "É importante que ele ponha.", tense: "Conjuntivo" },
+                { fr: "Si je mettais...", pt: "Se eu pusesse...", tense: "Imperfeito Conj." },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

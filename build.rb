@@ -157,6 +157,40 @@ LABELS = {
     phrases: 'Phrasen',
     target: 'Französisch',
     footer_prefix: 'Französisch-Übung —'
+  },
+  # French as origin language
+  'fr_pt' => {
+    back: '← Retour à la liste des verbes',
+    search: 'Rechercher des phrases...',
+    show_all: 'Afficher toutes les traductions',
+    hide_all: 'Masquer toutes les traductions',
+    showing: 'Affichage',
+    of: 'sur',
+    phrases: 'phrases',
+    target: 'Portugais européen',
+    footer_prefix: 'Pratique du portugais —'
+  },
+  'fr_en' => {
+    back: '← Retour à la liste des verbes',
+    search: 'Rechercher des phrases...',
+    show_all: 'Afficher toutes les traductions',
+    hide_all: 'Masquer toutes les traductions',
+    showing: 'Affichage',
+    of: 'sur',
+    phrases: 'phrases',
+    target: 'Anglais',
+    footer_prefix: "Pratique de l'anglais —"
+  },
+  'fr_de' => {
+    back: '← Retour à la liste des verbes',
+    search: 'Rechercher des phrases...',
+    show_all: 'Afficher toutes les traductions',
+    hide_all: 'Masquer toutes les traductions',
+    showing: 'Affichage',
+    of: 'sur',
+    phrases: 'phrases',
+    target: 'Allemand',
+    footer_prefix: "Pratique de l'allemand —"
   }
 }
 
@@ -190,6 +224,9 @@ def build_verb_pages(lang_folder, target_lang, origins, verb_template)
       elsif origin == 'de'
         title = "Verb #{data['name'].upcase} — #{phrases.length} Sätze"
         subtitle = "#{data['meaning']} — #{phrases.length} Sätze"
+      elsif origin == 'fr'
+        title = "Verbe #{data['name'].upcase} — #{phrases.length} phrases"
+        subtitle = "#{data['meaning']} — #{phrases.length} phrases"
       else
         title = "Verbo #{data['name'].upcase} — #{phrases.length} Frases"
         subtitle = "#{data['meaning']} — #{phrases.length} frases"
@@ -210,14 +247,14 @@ def build_verb_pages(lang_folder, target_lang, origins, verb_template)
   end
 end
 
-# Build pt-eu verb pages (learning Portuguese from en/ru/de)
-build_verb_pages('pt-eu', 'pt', %w[en ru de], verb_template)
+# Build pt-eu verb pages (learning Portuguese from en/ru/de/fr)
+build_verb_pages('pt-eu', 'pt', %w[en ru de fr], verb_template)
 
-# Build en verb pages (learning English from ru/pt/de)
-build_verb_pages('en', 'en', %w[ru pt de], verb_template)
+# Build en verb pages (learning English from ru/pt/de/fr)
+build_verb_pages('en', 'en', %w[ru pt de fr], verb_template)
 
-# Build de verb pages (learning German from en/ru/pt)
-build_verb_pages('de', 'de', %w[en ru pt], verb_template)
+# Build de verb pages (learning German from en/ru/pt/fr)
+build_verb_pages('de', 'de', %w[en ru pt fr], verb_template)
 
 # Build fr verb pages (learning French from en/ru/pt/de)
 build_verb_pages('fr', 'fr', %w[en ru pt de], verb_template)
@@ -240,7 +277,8 @@ if File.exist?('src/data/pt-eu/index.yml')
       langs: [
         { code: 'en', label: '🇬🇧 EN' },
         { code: 'ru', label: '🇷🇺 RU' },
-        { code: 'de', label: '🇩🇪 DE' }
+        { code: 'de', label: '🇩🇪 DE' },
+        { code: 'fr', label: '🇫🇷 FR' }
       ]
     }
   end
@@ -268,7 +306,8 @@ if File.exist?('src/data/en/index.yml')
       langs: [
         { code: 'ru', label: '🇷🇺 RU' },
         { code: 'pt', label: '🇵🇹 PT' },
-        { code: 'de', label: '🇩🇪 DE' }
+        { code: 'de', label: '🇩🇪 DE' },
+        { code: 'fr', label: '🇫🇷 FR' }
       ]
     }
   end
@@ -296,7 +335,8 @@ if File.exist?('src/data/de/index.yml')
       langs: [
         { code: 'en', label: '🇬🇧 EN' },
         { code: 'ru', label: '🇷🇺 RU' },
-        { code: 'pt', label: '🇵🇹 PT' }
+        { code: 'pt', label: '🇵🇹 PT' },
+        { code: 'fr', label: '🇫🇷 FR' }
       ]
     }
   end

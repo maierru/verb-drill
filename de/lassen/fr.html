@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbe 🇩🇪 VERB LASSEN — 20 phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Retour à la liste des verbes</a>
+            <h1>🇩🇪 Verb LASSEN</h1>
+            <p class="subtitle">to let, to allow — 20 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Rechercher des phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Afficher toutes les traductions</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Masquer toutes les traductions</button>
+        </div>
+
+        <div class="stats" id="stats">Affichage: 20 sur 20 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Pratique de l'allemand — LASSEN · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇩🇪 Verb LASSEN</h2>
+            <div class="tense-explanation">
+                <h4>Präsens</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>lasse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>lässt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>lässt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>lassen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>lasst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>lassen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Präteritum</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>ließ</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>ließt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>ließ</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>ließen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>ließt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>ließen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Perfekt</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>habe gelassen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>hast gelassen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>hat gelassen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>haben gelassen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>habt gelassen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>haben gelassen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur I</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>werde lassen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>wirst lassen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>wird lassen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>werden lassen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>werdet lassen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>werden lassen</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'fr',
+            targetKey: 'de',
+            labels: { target: 'Allemand', showing: 'Affichage', of: 'sur', phrases: 'phrases' },
+            verbForms: ["lasse","lässt","lassen","lasst","ließ","ließt","ließen","ließt","gelassen"],
+            phrases: [
+                { fr: "Je laisse la porte ouverte.", de: "Ich lasse die Tür offen.", tense: "Präsens" },
+                { fr: "Laisses-tu ton vélo ici ?", de: "Lässt du dein Fahrrad hier?", tense: "Präsens" },
+                { fr: "Elle laisse son fils jouer.", de: "Sie lässt ihren Sohn spielen.", tense: "Präsens" },
+                { fr: "Nous laissons tout comme ça.", de: "Wir lassen alles so.", tense: "Präsens" },
+                { fr: "Ils laissent faire.", de: "Sie lassen es geschehen.", tense: "Präsens" },
+                { fr: "Je laissais toujours un pourboire.", de: "Ich ließ immer Trinkgeld.", tense: "Präteritum" },
+                { fr: "Nous ne laissions rien.", de: "Wir ließen nichts zurück.", tense: "Präteritum" },
+                { fr: "Il a laissé tomber.", de: "Er hat es fallen lassen.", tense: "Perfekt" },
+                { fr: "Je laisserai un message.", de: "Ich werde eine Nachricht hinterlassen.", tense: "Futur I" },
+                { fr: "Que laisses-tu ?", de: "Was lässt du da?", tense: "Präsens" },
+                { fr: "Je me laisse pousser la barbe.", de: "Ich lasse mir einen Bart wachsen.", tense: "Präsens" },
+                { fr: "Elle laissait toujours les fenêtres ouvertes.", de: "Sie ließ immer die Fenster offen.", tense: "Präteritum" },
+                { fr: "As-tu laissé les clés ?", de: "Hast du die Schlüssel gelassen?", tense: "Perfekt" },
+                { fr: "Nous laisserons la lumière allumée.", de: "Wir werden das Licht anlassen.", tense: "Futur I" },
+                { fr: "Je ne peux pas laisser ça.", de: "Ich kann das nicht lassen.", tense: "Präsens" },
+                { fr: "Ils laissaient leurs affaires partout.", de: "Sie ließen ihre Sachen überall liegen.", tense: "Präteritum" },
+                { fr: "Laisse-moi tranquille !", de: "Lass mich in Ruhe!", tense: "Imperativ" },
+                { fr: "Il laisse tout traîner.", de: "Er lässt alles herumliegen.", tense: "Präsens" },
+                { fr: "Nous laissions la porte déverrouillée.", de: "Wir ließen die Tür unverschlossen.", tense: "Präteritum" },
+                { fr: "Je te laisserai décider.", de: "Ich werde dich entscheiden lassen.", tense: "Futur I" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

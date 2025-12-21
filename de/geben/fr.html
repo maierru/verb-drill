@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbe 🇩🇪 VERB GEBEN — 20 phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Retour à la liste des verbes</a>
+            <h1>🇩🇪 Verb GEBEN</h1>
+            <p class="subtitle">to give — 20 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Rechercher des phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Afficher toutes les traductions</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Masquer toutes les traductions</button>
+        </div>
+
+        <div class="stats" id="stats">Affichage: 20 sur 20 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Pratique de l'allemand — GEBEN · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇩🇪 Verb GEBEN</h2>
+            <div class="tense-explanation">
+                <h4>Präsens</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>gebe</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>gibst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>gibt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>geben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>gebt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>geben</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Präteritum</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>gab</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>gabst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>gab</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>gaben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>gabt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>gaben</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Perfekt</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>habe gegeben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>hast gegeben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>hat gegeben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>haben gegeben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>habt gegeben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>haben gegeben</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur I</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>werde geben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>wirst geben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>wird geben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>werden geben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>werdet geben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>werden geben</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'fr',
+            targetKey: 'de',
+            labels: { target: 'Allemand', showing: 'Affichage', of: 'sur', phrases: 'phrases' },
+            verbForms: ["gebe","gibst","gibt","geben","gebt","gab","gabst","gaben","gabt","gegeben"],
+            phrases: [
+                { fr: "Je donne un cadeau.", de: "Ich gebe ein Geschenk.", tense: "Präsens" },
+                { fr: "Donnes-tu de l'argent ?", de: "Gibst du Geld?", tense: "Präsens" },
+                { fr: "Elle donne des cours.", de: "Sie gibt Unterricht.", tense: "Präsens" },
+                { fr: "Nous donnons notre avis.", de: "Wir geben unsere Meinung ab.", tense: "Präsens" },
+                { fr: "Ils donnent de l'aide.", de: "Sie geben Hilfe.", tense: "Präsens" },
+                { fr: "Je donnais des conseils.", de: "Ich gab Rat.", tense: "Präteritum" },
+                { fr: "Nous ne donnions rien.", de: "Wir gaben nichts.", tense: "Präteritum" },
+                { fr: "Il a donné sa parole.", de: "Er hat sein Wort gegeben.", tense: "Perfekt" },
+                { fr: "Je te donnerai une réponse.", de: "Ich werde dir eine Antwort geben.", tense: "Futur I" },
+                { fr: "Que donne-t-il ?", de: "Was gibt er?", tense: "Präsens" },
+                { fr: "Je donne mon accord.", de: "Ich gebe meine Zustimmung.", tense: "Präsens" },
+                { fr: "Elle donnait toujours raison.", de: "Sie gab immer recht.", tense: "Präteritum" },
+                { fr: "As-tu donné le livre ?", de: "Hast du das Buch gegeben?", tense: "Perfekt" },
+                { fr: "Nous donnerons une fête.", de: "Wir werden eine Party geben.", tense: "Futur I" },
+                { fr: "Je ne donne pas mon numéro.", de: "Ich gebe meine Nummer nicht.", tense: "Präsens" },
+                { fr: "Ils donnaient des excuses.", de: "Sie gaben Ausreden.", tense: "Präteritum" },
+                { fr: "Donne-moi ça !", de: "Gib mir das!", tense: "Imperativ" },
+                { fr: "Il y a beaucoup de monde.", de: "Es gibt viele Leute.", tense: "Präsens" },
+                { fr: "Nous donnions des exemples.", de: "Wir gaben Beispiele.", tense: "Präteritum" },
+                { fr: "Je te donnerai un conseil.", de: "Ich werde dir einen Rat geben.", tense: "Futur I" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

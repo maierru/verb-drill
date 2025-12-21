@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbe 🇩🇪 VERB KÖNNEN — 20 phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Retour à la liste des verbes</a>
+            <h1>🇩🇪 Verb KÖNNEN</h1>
+            <p class="subtitle">can, to be able to — 20 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Rechercher des phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Afficher toutes les traductions</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Masquer toutes les traductions</button>
+        </div>
+
+        <div class="stats" id="stats">Affichage: 20 sur 20 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Pratique de l'allemand — KOENNEN · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇩🇪 Verb KÖNNEN</h2>
+            <div class="tense-explanation">
+                <h4>Präsens</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>kann</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>kannst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>kann</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>können</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>könnt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>können</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Präteritum</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>konnte</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>konntest</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>konnte</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>konnten</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>konntet</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>konnten</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Perfekt</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>habe gekonnt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>hast gekonnt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>hat gekonnt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>haben gekonnt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>habt gekonnt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>haben gekonnt</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur I</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>werde können</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>wirst können</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>wird können</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>werden können</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>werdet können</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>werden können</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'fr',
+            targetKey: 'de',
+            labels: { target: 'Allemand', showing: 'Affichage', of: 'sur', phrases: 'phrases' },
+            verbForms: ["kann","kannst","können","könnt","konnte","konntest","konnten","konntet","gekonnt"],
+            phrases: [
+                { fr: "Je peux nager.", de: "Ich kann schwimmen.", tense: "Präsens" },
+                { fr: "Peux-tu m'aider ?", de: "Kannst du mir helfen?", tense: "Präsens" },
+                { fr: "Elle peut parler allemand.", de: "Sie kann Deutsch sprechen.", tense: "Präsens" },
+                { fr: "Nous pouvons venir demain.", de: "Wir können morgen kommen.", tense: "Präsens" },
+                { fr: "Ils peuvent attendre.", de: "Sie können warten.", tense: "Präsens" },
+                { fr: "Je pouvais le voir.", de: "Ich konnte es sehen.", tense: "Präteritum" },
+                { fr: "Nous ne pouvions pas dormir.", de: "Wir konnten nicht schlafen.", tense: "Präteritum" },
+                { fr: "Il a pu gagner.", de: "Er hat gewinnen können.", tense: "Perfekt" },
+                { fr: "Je pourrai t'appeler.", de: "Ich werde dich anrufen können.", tense: "Futur I" },
+                { fr: "Pouvez-vous répéter ?", de: "Können Sie wiederholen?", tense: "Präsens" },
+                { fr: "Je peux le faire.", de: "Ich kann das machen.", tense: "Präsens" },
+                { fr: "Elle ne pouvait pas croire ça.", de: "Sie konnte es nicht glauben.", tense: "Präteritum" },
+                { fr: "As-tu pu le trouver ?", de: "Hast du es finden können?", tense: "Perfekt" },
+                { fr: "Nous pourrons partir tôt.", de: "Wir werden früh gehen können.", tense: "Futur I" },
+                { fr: "Je ne peux pas venir.", de: "Ich kann nicht kommen.", tense: "Präsens" },
+                { fr: "Ils ne pouvaient pas comprendre.", de: "Sie konnten nicht verstehen.", tense: "Präteritum" },
+                { fr: "Peux-tu conduire ?", de: "Kannst du Auto fahren?", tense: "Präsens" },
+                { fr: "Il peut jouer du piano.", de: "Er kann Klavier spielen.", tense: "Präsens" },
+                { fr: "Nous pouvions entendre la musique.", de: "Wir konnten die Musik hören.", tense: "Präteritum" },
+                { fr: "Je pourrai t'aider demain.", de: "Ich werde dir morgen helfen können.", tense: "Futur I" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

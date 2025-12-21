@@ -21,6 +21,7 @@ More coming.
 - 🇷🇺 Russian
 - 🇵🇹 Portuguese
 - 🇩🇪 German
+- 🇫🇷 French
 
 ## How many phrases per verb?
 

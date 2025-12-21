@@ -411,6 +411,67 @@ phrases:
   - en: I've never spoken to him.
     pt: Nunca falei com ele.
     tense: Perfeito
+  fr:
+  - fr: Je parle portugais.
+    pt: Falo português.
+    tense: Presente
+  - fr: Tu parles bien.
+    pt: Falas bem.
+    tense: Presente
+  - fr: Il parle trois langues.
+    pt: Ele fala três línguas.
+    tense: Presente
+  - fr: Nous parlons tous les jours.
+    pt: Falamos todos os dias.
+    tense: Presente
+  - fr: Ils parlent trop vite.
+    pt: Eles falam muito depressa.
+    tense: Presente
+  - fr: Je parlais français.
+    pt: Falava francês.
+    tense: Imperfeito
+  - fr: Tu parlais beaucoup.
+    pt: Falavas muito.
+    tense: Imperfeito
+  - fr: Il parlait lentement.
+    pt: Ele falava devagar.
+    tense: Imperfeito
+  - fr: J'ai parlé hier.
+    pt: Falei ontem.
+    tense: Perfeito
+  - fr: Tu as parlé avec le chef.
+    pt: Falaste com o chefe.
+    tense: Perfeito
+  - fr: Il a parlé pendant une heure.
+    pt: Ele falou durante uma hora.
+    tense: Perfeito
+  - fr: Nous avons parlé la semaine dernière.
+    pt: Falámos na semana passada.
+    tense: Perfeito
+  - fr: Je parlerai demain.
+    pt: Falarei amanhã.
+    tense: Futuro
+  - fr: Tu parleras avec elle.
+    pt: Falarás com ela.
+    tense: Futuro
+  - fr: Il parlera à la conférence.
+    pt: Ele falará na conferência.
+    tense: Futuro
+  - fr: Je parlerais.
+    pt: Falaria.
+    tense: Condicional
+  - fr: Je veux que tu parles.
+    pt: Quero que fales.
+    tense: Conjuntivo
+  - fr: Si je parlais.
+    pt: Se eu falasse.
+    tense: Imperfeito Conj.
+  - fr: Parles-tu anglais?
+    pt: Falas inglês?
+    tense: Presente
+  - fr: Je ne parle pas allemand.
+    pt: Não falo alemão.
+    tense: Presente
   de:
   - de: Ich spreche Portugiesisch.
     pt: Falo português.
@@ -893,3 +954,61 @@ phrases:
   - ru: Я никогда с ним не говорил.
     pt: Nunca falei com ele.
     tense: Perfeito
+  fr:
+  - fr: Je parle portugais.
+    pt: Falo português.
+    tense: Presente
+  - fr: Tu parles fort.
+    pt: Falas alto.
+    tense: Presente
+  - fr: Il parle avec elle.
+    pt: Ele fala com ela.
+    tense: Presente
+  - fr: Nous parlons ensemble.
+    pt: Falamos juntos.
+    tense: Presente
+  - fr: Je parlais toujours.
+    pt: Falava sempre.
+    tense: Imperfeito
+  - fr: Tu parlais vite.
+    pt: Falavas rápido.
+    tense: Imperfeito
+  - fr: Il parlait lentement.
+    pt: Ele falava devagar.
+    tense: Imperfeito
+  - fr: J'ai parlé avec lui.
+    pt: Falei com ele.
+    tense: Perfeito
+  - fr: Tu as parlé français.
+    pt: Falaste francês.
+    tense: Perfeito
+  - fr: Elle a parlé hier.
+    pt: Ela falou ontem.
+    tense: Perfeito
+  - fr: Nous avons parlé longtemps.
+    pt: Falámos muito tempo.
+    tense: Perfeito
+  - fr: Je parlerai demain.
+    pt: Falarei amanhã.
+    tense: Futuro
+  - fr: Tu parleras avec lui.
+    pt: Falarás com ele.
+    tense: Futuro
+  - fr: Je parlerais si je pouvais.
+    pt: Falaria se pudesse.
+    tense: Condicional
+  - fr: Tu parlerais mieux.
+    pt: Falarias melhor.
+    tense: Condicional
+  - fr: Je veux que tu parles.
+    pt: Quero que fales.
+    tense: Conjuntivo
+  - fr: Il faut qu'il parle.
+    pt: É preciso que ele fale.
+    tense: Conjuntivo
+  - fr: Si je parlais...
+    pt: Se eu falasse...
+    tense: Imperfeito Conj.
+  - fr: Parle-moi!
+    pt: Fala-me!
+    tense: Imperativo

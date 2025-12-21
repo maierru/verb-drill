@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbe 🇩🇪 VERB WERDEN — 20 phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Retour à la liste des verbes</a>
+            <h1>🇩🇪 Verb WERDEN</h1>
+            <p class="subtitle">to become — 20 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Rechercher des phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Afficher toutes les traductions</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Masquer toutes les traductions</button>
+        </div>
+
+        <div class="stats" id="stats">Affichage: 20 sur 20 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Pratique de l'allemand — WERDEN · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇩🇪 Verb WERDEN</h2>
+            <div class="tense-explanation">
+                <h4>Präsens</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>werde</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>wirst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>wird</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>werden</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>werdet</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>werden</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Präteritum</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>wurde</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>wurdest</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>wurde</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>wurden</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>wurdet</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>wurden</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Perfekt</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>bin geworden</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>bist geworden</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>ist geworden</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>sind geworden</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>seid geworden</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>sind geworden</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur I</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>werde werden</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>wirst werden</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>wird werden</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>werden werden</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>werdet werden</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>werden werden</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'fr',
+            targetKey: 'de',
+            labels: { target: 'Allemand', showing: 'Affichage', of: 'sur', phrases: 'phrases' },
+            verbForms: ["werde","wirst","wird","werden","werdet","wurde","wurdest","wurden","wurdet","geworden"],
+            phrases: [
+                { fr: "Je serai médecin.", de: "Ich werde Arzt werden.", tense: "Futur I" },
+                { fr: "Il devient froid.", de: "Es wird kalt.", tense: "Präsens" },
+                { fr: "Elle deviendra célèbre.", de: "Sie wird berühmt werden.", tense: "Futur I" },
+                { fr: "Nous devenons vieux.", de: "Wir werden alt.", tense: "Präsens" },
+                { fr: "Ils deviennent fatigués.", de: "Sie werden müde.", tense: "Präsens" },
+                { fr: "Je suis devenu professeur.", de: "Ich bin Lehrer geworden.", tense: "Perfekt" },
+                { fr: "Il faisait sombre.", de: "Es wurde dunkel.", tense: "Präteritum" },
+                { fr: "Elle est devenue malade.", de: "Sie ist krank geworden.", tense: "Perfekt" },
+                { fr: "Que vas-tu devenir ?", de: "Was wirst du werden?", tense: "Futur I" },
+                { fr: "Ça va bien se passer.", de: "Alles wird gut werden.", tense: "Futur I" },
+                { fr: "Il devient tard.", de: "Es wird spät.", tense: "Präsens" },
+                { fr: "Nous sommes devenus amis.", de: "Wir sind Freunde geworden.", tense: "Perfekt" },
+                { fr: "Tout ira bien.", de: "Alles wird gut.", tense: "Futur I" },
+                { fr: "Il devenait nerveux.", de: "Er wurde nervös.", tense: "Präteritum" },
+                { fr: "Je vais avoir 30 ans.", de: "Ich werde 30 Jahre alt.", tense: "Präsens" },
+                { fr: "Elle est devenue mère.", de: "Sie ist Mutter geworden.", tense: "Perfekt" },
+                { fr: "Ça va être difficile.", de: "Es wird schwer werden.", tense: "Futur I" },
+                { fr: "Ils devenaient impatients.", de: "Sie wurden ungeduldig.", tense: "Präteritum" },
+                { fr: "Il sera récompensé.", de: "Er wird belohnt werden.", tense: "Futur I" },
+                { fr: "Nous sommes devenus forts.", de: "Wir sind stark geworden.", tense: "Perfekt" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

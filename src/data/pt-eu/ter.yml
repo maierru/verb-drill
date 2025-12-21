@@ -711,6 +711,67 @@ phrases:
   - de: Sei vorsichtig!
     pt: Tem cuidado!
     tense: Expressão
+  fr:
+  - fr: J'ai une voiture.
+    pt: Tenho um carro.
+    tense: Presente
+  - fr: Tu as du temps.
+    pt: Tu tens tempo.
+    tense: Presente
+  - fr: Il a un frère.
+    pt: Ele tem um irmão.
+    tense: Presente
+  - fr: Elle a les yeux bleus.
+    pt: Ela tem olhos azuis.
+    tense: Presente
+  - fr: Nous avons une réunion.
+    pt: Temos uma reunião.
+    tense: Presente
+  - fr: J'avais un chien quand j'étais jeune.
+    pt: Eu tinha um cão quando era novo.
+    tense: Imperfeito
+  - fr: Tu avais plus de patience avant.
+    pt: Tu tinhas mais paciência antes.
+    tense: Imperfeito
+  - fr: Il avait un bon emploi.
+    pt: Ele tinha um bom emprego.
+    tense: Imperfeito
+  - fr: J'ai eu une excellente journée.
+    pt: Tive um ótimo dia.
+    tense: Perfeito
+  - fr: Tu as eu de la chance.
+    pt: Tu tiveste sorte.
+    tense: Perfeito
+  - fr: Il a eu un accident.
+    pt: Ele teve um acidente.
+    tense: Perfeito
+  - fr: J'aurai du temps demain.
+    pt: Terei tempo amanhã.
+    tense: Futuro
+  - fr: Tu auras du succès.
+    pt: Tu terás sucesso.
+    tense: Futuro
+  - fr: Il devra décider.
+    pt: Ele terá de decidir.
+    tense: Futuro
+  - fr: J'aurais plus de temps.
+    pt: Teria mais tempo.
+    tense: Condicional
+  - fr: Tu aurais une meilleure vie.
+    pt: Tu terias uma vida melhor.
+    tense: Condicional
+  - fr: Il devrait accepter.
+    pt: Ele teria de concordar.
+    tense: Condicional
+  - fr: J'espère que tu aies de la chance.
+    pt: Espero que tenhas sorte.
+    tense: Conjuntivo
+  - fr: Il est important qu'il ait du soutien.
+    pt: É importante que ele tenha apoio.
+    tense: Conjuntivo
+  - fr: Si j'avais de l'argent...
+    pt: Se eu tivesse dinheiro...
+    tense: Imperfeito Conj.
   ru:
   - ru: У меня есть машина.
     pt: Tenho um carro.
@@ -1011,4 +1072,62 @@ phrases:
     tense: Expressão
   - ru: Будь осторожен!
     pt: Tem cuidado!
+    tense: Expressão
+  fr:
+  - fr: J'ai un chien.
+    pt: Tenho um cão.
+    tense: Presente
+  - fr: Tu as raison.
+    pt: Tens razão.
+    tense: Presente
+  - fr: Il a de la chance.
+    pt: Ele tem sorte.
+    tense: Presente
+  - fr: Nous avons du temps.
+    pt: Temos tempo.
+    tense: Presente
+  - fr: J'avais une voiture.
+    pt: Tinha um carro.
+    tense: Imperfeito
+  - fr: Tu avais peur.
+    pt: Tinhas medo.
+    tense: Imperfeito
+  - fr: Il avait froid.
+    pt: Ele tinha frio.
+    tense: Imperfeito
+  - fr: J'ai eu de la chance.
+    pt: Tive sorte.
+    tense: Perfeito
+  - fr: Tu as eu un problème.
+    pt: Tiveste um problema.
+    tense: Perfeito
+  - fr: Elle a eu une idée.
+    pt: Ela teve uma ideia.
+    tense: Perfeito
+  - fr: Nous avons eu du succès.
+    pt: Tivemos sucesso.
+    tense: Perfeito
+  - fr: J'aurai du temps.
+    pt: Terei tempo.
+    tense: Futuro
+  - fr: Tu auras une surprise.
+    pt: Terás uma surpresa.
+    tense: Futuro
+  - fr: J'aurais de la patience.
+    pt: Teria paciência.
+    tense: Condicional
+  - fr: Tu aurais raison.
+    pt: Terias razão.
+    tense: Condicional
+  - fr: Je veux que tu aies.
+    pt: Quero que tenhas.
+    tense: Conjuntivo
+  - fr: Il faut qu'il ait.
+    pt: É preciso que ele tenha.
+    tense: Conjuntivo
+  - fr: Si j'avais...
+    pt: Se eu tivesse...
+    tense: Imperfeito Conj.
+  - fr: Il y a.
+    pt: Há.
     tense: Expressão

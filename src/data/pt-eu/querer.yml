@@ -1012,3 +1012,64 @@ phrases:
   - de: Wie du willst.
     pt: Como quiseres.
     tense: Expressão
+  fr:
+  - fr: Je veux de l'eau.
+    pt: Quero água.
+    tense: Presente
+  - fr: Que veux-tu?
+    pt: O que queres?
+    tense: Presente
+  - fr: Il veut partir.
+    pt: Ele quer ir.
+    tense: Presente
+  - fr: Elle veut aider.
+    pt: Ela quer ajudar.
+    tense: Presente
+  - fr: Nous voulons la paix.
+    pt: Queremos paz.
+    tense: Presente
+  - fr: Je voulais partir.
+    pt: Eu queria ir.
+    tense: Imperfeito
+  - fr: Tu voulais aider.
+    pt: Tu querias ajudar.
+    tense: Imperfeito
+  - fr: Il voulait rester.
+    pt: Ele queria ficar.
+    tense: Imperfeito
+  - fr: J'ai voulu tellement.
+    pt: Quis tanto.
+    tense: Perfeito
+  - fr: Tu as voulu partir.
+    pt: Tu quiseste sair.
+    tense: Perfeito
+  - fr: Il a voulu essayer.
+    pt: Ele quis tentar.
+    tense: Perfeito
+  - fr: Je voudrai plus.
+    pt: Quererei mais.
+    tense: Futuro
+  - fr: Tu voudras savoir.
+    pt: Tu quererás saber.
+    tense: Futuro
+  - fr: Il voudra rester.
+    pt: Ele quererá ficar.
+    tense: Futuro
+  - fr: Je voudrais partir.
+    pt: Quereria ir.
+    tense: Condicional
+  - fr: Tu voudrais plus.
+    pt: Tu quererias mais.
+    tense: Condicional
+  - fr: Il voudrait savoir.
+    pt: Ele quereria saber.
+    tense: Condicional
+  - fr: J'espère que tu veuilles venir.
+    pt: Espero que queiras vir.
+    tense: Conjuntivo
+  - fr: Il est important qu'il veuille apprendre.
+    pt: É importante que ele queira aprender.
+    tense: Conjuntivo
+  - fr: Si je voulais...
+    pt: Se eu quisesse...
+    tense: Imperfeito Conj.

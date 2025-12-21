@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbe 🇩🇪 VERB BLEIBEN — 20 phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Retour à la liste des verbes</a>
+            <h1>🇩🇪 Verb BLEIBEN</h1>
+            <p class="subtitle">to stay, to remain — 20 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Rechercher des phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Afficher toutes les traductions</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Masquer toutes les traductions</button>
+        </div>
+
+        <div class="stats" id="stats">Affichage: 20 sur 20 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Pratique de l'allemand — BLEIBEN · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇩🇪 Verb BLEIBEN</h2>
+            <div class="tense-explanation">
+                <h4>Präsens</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>bleibe</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>bleibst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>bleibt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>bleiben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>bleibt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>bleiben</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Präteritum</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>blieb</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>bliebst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>blieb</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>blieben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>bliebt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>blieben</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Perfekt</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>bin geblieben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>bist geblieben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>ist geblieben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>sind geblieben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>seid geblieben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>sind geblieben</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur I</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>werde bleiben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>wirst bleiben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>wird bleiben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>werden bleiben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>werdet bleiben</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>werden bleiben</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'fr',
+            targetKey: 'de',
+            labels: { target: 'Allemand', showing: 'Affichage', of: 'sur', phrases: 'phrases' },
+            verbForms: ["bleibe","bleibst","bleibt","bleiben","blieb","bliebst","blieben","bliebt","geblieben"],
+            phrases: [
+                { fr: "Je reste à la maison.", de: "Ich bleibe zu Hause.", tense: "Präsens" },
+                { fr: "Restes-tu ici ?", de: "Bleibst du hier?", tense: "Präsens" },
+                { fr: "Elle reste calme.", de: "Sie bleibt ruhig.", tense: "Präsens" },
+                { fr: "Nous restons ensemble.", de: "Wir bleiben zusammen.", tense: "Präsens" },
+                { fr: "Ils restent au lit.", de: "Sie bleiben im Bett.", tense: "Präsens" },
+                { fr: "Je restais souvent tard.", de: "Ich blieb oft lange.", tense: "Präteritum" },
+                { fr: "Nous ne restions jamais longtemps.", de: "Wir blieben nie lange.", tense: "Präteritum" },
+                { fr: "Il est resté à l'hôtel.", de: "Er ist im Hotel geblieben.", tense: "Perfekt" },
+                { fr: "Je resterai une semaine.", de: "Ich werde eine Woche bleiben.", tense: "Futur I" },
+                { fr: "Où restes-tu ?", de: "Wo bleibst du?", tense: "Präsens" },
+                { fr: "Je reste en contact.", de: "Ich bleibe in Kontakt.", tense: "Präsens" },
+                { fr: "Elle restait toujours positive.", de: "Sie blieb immer positiv.", tense: "Präteritum" },
+                { fr: "Es-tu resté à la maison ?", de: "Bist du zu Hause geblieben?", tense: "Perfekt" },
+                { fr: "Nous resterons amis.", de: "Wir werden Freunde bleiben.", tense: "Futur I" },
+                { fr: "Je ne reste pas.", de: "Ich bleibe nicht.", tense: "Präsens" },
+                { fr: "Ils restaient silencieux.", de: "Sie blieben still.", tense: "Präteritum" },
+                { fr: "Reste ici !", de: "Bleib hier!", tense: "Imperativ" },
+                { fr: "Tout reste pareil.", de: "Alles bleibt gleich.", tense: "Präsens" },
+                { fr: "Nous restions éveillés.", de: "Wir blieben wach.", tense: "Präteritum" },
+                { fr: "Je resterai fidèle.", de: "Ich werde treu bleiben.", tense: "Futur I" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

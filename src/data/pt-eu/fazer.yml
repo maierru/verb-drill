@@ -711,6 +711,67 @@ phrases:
   - ru: Это выполнимо.
     pt: É fazível.
     tense: Expressão
+  fr:
+  - fr: Je fais mes devoirs.
+    pt: Faço os meus trabalhos de casa.
+    tense: Presente
+  - fr: Que fais-tu?
+    pt: O que fazes?
+    tense: Presente
+  - fr: Il fait du café.
+    pt: Ele faz café.
+    tense: Presente
+  - fr: Elle fait le dîner.
+    pt: Ela faz o jantar.
+    tense: Presente
+  - fr: Nous faisons de l'exercice.
+    pt: Fazemos exercício.
+    tense: Presente
+  - fr: Je faisais du yoga.
+    pt: Eu fazia yoga.
+    tense: Imperfeito
+  - fr: Tu faisais du pain.
+    pt: Tu fazias pão.
+    tense: Imperfeito
+  - fr: Il faisait tout.
+    pt: Ele fazia tudo.
+    tense: Imperfeito
+  - fr: Il faisait froid.
+    pt: Fazia frio.
+    tense: Imperfeito
+  - fr: Je l'ai fait.
+    pt: Fiz isso.
+    tense: Perfeito
+  - fr: Tu as fait une erreur.
+    pt: Tu fizeste um erro.
+    tense: Perfeito
+  - fr: Il a fait de son mieux.
+    pt: Ele fez o seu melhor.
+    tense: Perfeito
+  - fr: Qu'as-tu fait?
+    pt: O que fizeste?
+    tense: Perfeito
+  - fr: Je le ferai demain.
+    pt: Farei isso amanhã.
+    tense: Futuro
+  - fr: Il fera chaud demain.
+    pt: Fará calor amanhã.
+    tense: Futuro
+  - fr: Je ferais différemment.
+    pt: Faria de forma diferente.
+    tense: Condicional
+  - fr: Que ferais-tu?
+    pt: O que farias?
+    tense: Condicional
+  - fr: J'espère que tu fasses bien.
+    pt: Espero que faças bem.
+    tense: Conjuntivo
+  - fr: Si je faisais cela...
+    pt: Se eu fizesse isso...
+    tense: Imperfeito Conj.
+  - fr: Ça fait deux ans.
+    pt: Faz dois anos.
+    tense: Tempo
   de:
   - de: Ich mache meine Hausaufgaben.
     pt: Faço os meus trabalhos de casa.
@@ -770,5 +831,63 @@ phrases:
     pt: Fazer compras.
     tense: Expressão
   - de: Mach es!
+    pt: Faz!
+    tense: Imperativo
+  fr:
+  - fr: Je fais mon travail.
+    pt: Faço o meu trabalho.
+    tense: Presente
+  - fr: Tu fais tes devoirs.
+    pt: Fazes os teus deveres.
+    tense: Presente
+  - fr: Il fait du sport.
+    pt: Ele faz desporto.
+    tense: Presente
+  - fr: Nous faisons de notre mieux.
+    pt: Fazemos o nosso melhor.
+    tense: Presente
+  - fr: Je faisais toujours.
+    pt: Fazia sempre.
+    tense: Imperfeito
+  - fr: Tu faisais bien.
+    pt: Fazias bem.
+    tense: Imperfeito
+  - fr: Il faisait du bruit.
+    pt: Ele fazia barulho.
+    tense: Imperfeito
+  - fr: J'ai fait mes devoirs.
+    pt: Fiz os meus deveres.
+    tense: Perfeito
+  - fr: Tu as fait un gâteau.
+    pt: Fizeste um bolo.
+    tense: Perfeito
+  - fr: Elle a fait une erreur.
+    pt: Ela fez um erro.
+    tense: Perfeito
+  - fr: Nous avons fait le travail.
+    pt: Fizemos o trabalho.
+    tense: Perfeito
+  - fr: Je ferai demain.
+    pt: Farei amanhã.
+    tense: Futuro
+  - fr: Tu feras mieux.
+    pt: Farás melhor.
+    tense: Futuro
+  - fr: Je ferais si je pouvais.
+    pt: Faria se pudesse.
+    tense: Condicional
+  - fr: Tu ferais autrement.
+    pt: Farias diferente.
+    tense: Condicional
+  - fr: Je veux que tu fasses.
+    pt: Quero que faças.
+    tense: Conjuntivo
+  - fr: Il faut qu'il fasse.
+    pt: É preciso que ele faça.
+    tense: Conjuntivo
+  - fr: Si je faisais...
+    pt: Se eu fizesse...
+    tense: Imperfeito Conj.
+  - fr: Fais-le!
     pt: Faz!
     tense: Imperativo

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbe 🇩🇪 VERB MÜSSEN — 20 phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Retour à la liste des verbes</a>
+            <h1>🇩🇪 Verb MÜSSEN</h1>
+            <p class="subtitle">must, to have to — 20 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Rechercher des phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Afficher toutes les traductions</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Masquer toutes les traductions</button>
+        </div>
+
+        <div class="stats" id="stats">Affichage: 20 sur 20 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Pratique de l'allemand — MUESSEN · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇩🇪 Verb MÜSSEN</h2>
+            <div class="tense-explanation">
+                <h4>Präsens</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>muss</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>musst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>muss</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>müssen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>müsst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>müssen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Präteritum</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>musste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>musstest</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>musste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>mussten</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>musstet</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>mussten</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Perfekt</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>habe gemusst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>hast gemusst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>hat gemusst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>haben gemusst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>habt gemusst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>haben gemusst</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur I</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>werde müssen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>wirst müssen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>wird müssen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>werden müssen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>werdet müssen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>werden müssen</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'fr',
+            targetKey: 'de',
+            labels: { target: 'Allemand', showing: 'Affichage', of: 'sur', phrases: 'phrases' },
+            verbForms: ["muss","musst","müssen","müsst","musste","musstest","mussten","musstet","gemusst"],
+            phrases: [
+                { fr: "Je dois partir.", de: "Ich muss gehen.", tense: "Präsens" },
+                { fr: "Tu dois étudier.", de: "Du musst lernen.", tense: "Präsens" },
+                { fr: "Elle doit travailler.", de: "Sie muss arbeiten.", tense: "Präsens" },
+                { fr: "Nous devons nous dépêcher.", de: "Wir müssen uns beeilen.", tense: "Präsens" },
+                { fr: "Ils doivent attendre.", de: "Sie müssen warten.", tense: "Präsens" },
+                { fr: "Je devais rentrer tôt.", de: "Ich musste früh nach Hause.", tense: "Präteritum" },
+                { fr: "Nous devions partir.", de: "Wir mussten gehen.", tense: "Präteritum" },
+                { fr: "Il a dû payer.", de: "Er hat bezahlen müssen.", tense: "Perfekt" },
+                { fr: "Je devrai me lever tôt.", de: "Ich werde früh aufstehen müssen.", tense: "Futur I" },
+                { fr: "Dois-je venir ?", de: "Muss ich kommen?", tense: "Präsens" },
+                { fr: "Je dois y aller maintenant.", de: "Ich muss jetzt gehen.", tense: "Präsens" },
+                { fr: "Elle devait rester à la maison.", de: "Sie musste zu Hause bleiben.", tense: "Präteritum" },
+                { fr: "As-tu dû attendre longtemps ?", de: "Musstest du lange warten?", tense: "Präteritum" },
+                { fr: "Nous devrons travailler dur.", de: "Wir werden hart arbeiten müssen.", tense: "Futur I" },
+                { fr: "Je ne dois pas oublier.", de: "Ich darf nicht vergessen.", tense: "Präsens" },
+                { fr: "Ils devaient être prudents.", de: "Sie mussten vorsichtig sein.", tense: "Präteritum" },
+                { fr: "Dois-tu vraiment partir ?", de: "Musst du wirklich gehen?", tense: "Präsens" },
+                { fr: "Il doit finir ses devoirs.", de: "Er muss seine Hausaufgaben machen.", tense: "Präsens" },
+                { fr: "Nous devions nous taire.", de: "Wir mussten still sein.", tense: "Präteritum" },
+                { fr: "Je devrai lui dire la vérité.", de: "Ich muss dir etwas sagen.", tense: "Präsens" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

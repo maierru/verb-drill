@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbe 🇩🇪 VERB MACHEN — 20 phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Retour à la liste des verbes</a>
+            <h1>🇩🇪 Verb MACHEN</h1>
+            <p class="subtitle">to do, to make — 20 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Rechercher des phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Afficher toutes les traductions</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Masquer toutes les traductions</button>
+        </div>
+
+        <div class="stats" id="stats">Affichage: 20 sur 20 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Pratique de l'allemand — MACHEN · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇩🇪 Verb MACHEN</h2>
+            <div class="tense-explanation">
+                <h4>Präsens</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>mache</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>machst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>macht</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>machen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>macht</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>machen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Präteritum</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>machte</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>machtest</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>machte</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>machten</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>machtet</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>machten</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Perfekt</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>habe gemacht</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>hast gemacht</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>hat gemacht</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>haben gemacht</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>habt gemacht</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>haben gemacht</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur I</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>werde machen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>wirst machen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>wird machen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>werden machen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>werdet machen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>werden machen</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'fr',
+            targetKey: 'de',
+            labels: { target: 'Allemand', showing: 'Affichage', of: 'sur', phrases: 'phrases' },
+            verbForms: ["mache","machst","macht","machen","machte","machtest","machten","machtet","gemacht"],
+            phrases: [
+                { fr: "Je fais mes devoirs.", de: "Ich mache meine Hausaufgaben.", tense: "Präsens" },
+                { fr: "Que fais-tu ?", de: "Was machst du?", tense: "Präsens" },
+                { fr: "Elle fait du sport.", de: "Sie macht Sport.", tense: "Präsens" },
+                { fr: "Nous faisons une pause.", de: "Wir machen eine Pause.", tense: "Präsens" },
+                { fr: "Ils font du bruit.", de: "Sie machen Lärm.", tense: "Präsens" },
+                { fr: "Je faisais du vélo.", de: "Ich machte Fahrrad.", tense: "Präteritum" },
+                { fr: "Nous ne faisions rien.", de: "Wir machten nichts.", tense: "Präteritum" },
+                { fr: "Il a fait une erreur.", de: "Er hat einen Fehler gemacht.", tense: "Perfekt" },
+                { fr: "Je ferai de mon mieux.", de: "Ich werde mein Bestes tun.", tense: "Futur I" },
+                { fr: "Que fait-il ?", de: "Was macht er?", tense: "Präsens" },
+                { fr: "Je fais du café.", de: "Ich mache Kaffee.", tense: "Präsens" },
+                { fr: "Elle faisait la cuisine.", de: "Sie machte das Essen.", tense: "Präteritum" },
+                { fr: "As-tu fait tes devoirs ?", de: "Hast du deine Hausaufgaben gemacht?", tense: "Perfekt" },
+                { fr: "Nous ferons un gâteau.", de: "Wir werden einen Kuchen machen.", tense: "Futur I" },
+                { fr: "Je ne fais rien.", de: "Ich mache nichts.", tense: "Präsens" },
+                { fr: "Ils faisaient la fête.", de: "Sie machten eine Party.", tense: "Präteritum" },
+                { fr: "Fais attention !", de: "Pass auf!", tense: "Imperativ" },
+                { fr: "Il fait toujours ça.", de: "Er macht das immer.", tense: "Präsens" },
+                { fr: "Nous faisions du jardinage.", de: "Wir machten Gartenarbeit.", tense: "Präteritum" },
+                { fr: "Je ferai un plan.", de: "Ich werde einen Plan machen.", tense: "Futur I" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

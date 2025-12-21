@@ -410,6 +410,67 @@ phrases:
   - en: I'm listening.
     pt: Estou a ouvir.
     tense: Expressão
+  fr:
+  - fr: Je suis à la maison.
+    pt: Estou em casa.
+    tense: Presente
+  - fr: Tu es fatigué.
+    pt: Tu estás cansado.
+    tense: Presente
+  - fr: Il est malade.
+    pt: Ele está doente.
+    tense: Presente
+  - fr: Elle est heureuse aujourd'hui.
+    pt: Ela está feliz hoje.
+    tense: Presente
+  - fr: Nous sommes prêts.
+    pt: Estamos prontos.
+    tense: Presente
+  - fr: J'étais en train d'attendre.
+    pt: Eu estava à tua espera.
+    tense: Imperfeito
+  - fr: Tu dormais.
+    pt: Tu estavas a dormir.
+    tense: Imperfeito
+  - fr: Il travaillait.
+    pt: Ele estava a trabalhar.
+    tense: Imperfeito
+  - fr: J'étais là hier.
+    pt: Estive lá ontem.
+    tense: Perfeito
+  - fr: Tu étais à la fête.
+    pt: Tu estiveste na festa.
+    tense: Perfeito
+  - fr: Il était malade la semaine dernière.
+    pt: Ele esteve doente na semana passada.
+    tense: Perfeito
+  - fr: Nous étions à Lisbonne.
+    pt: Estivemos em Lisboa.
+    tense: Perfeito
+  - fr: Je serai là.
+    pt: Estarei lá.
+    tense: Futuro
+  - fr: Tu iras bien.
+    pt: Tu estarás bem.
+    tense: Futuro
+  - fr: Il attendra.
+    pt: Ele estará à espera.
+    tense: Futuro
+  - fr: Je serais reconnaissant.
+    pt: Estaria grato.
+    tense: Condicional
+  - fr: J'espère que tu ailles bien.
+    pt: Espero que estejas bem.
+    tense: Conjuntivo
+  - fr: Si j'étais là...
+    pt: Se eu estivesse lá...
+    tense: Imperfeito Conj.
+  - fr: Comment vas-tu?
+    pt: Como estás?
+    tense: Presente
+  - fr: J'ai faim.
+    pt: Estou com fome.
+    tense: Expressão
   de:
   - de: Ich bin zu Hause.
     pt: Estou em casa.
@@ -1011,4 +1072,62 @@ phrases:
     tense: Expressão
   - ru: Я слушаю.
     pt: Estou a ouvir.
+    tense: Expressão
+  fr:
+  - fr: Je suis ici.
+    pt: Estou aqui.
+    tense: Presente
+  - fr: Tu es à la maison.
+    pt: Estás em casa.
+    tense: Presente
+  - fr: Il est content.
+    pt: Ele está contente.
+    tense: Presente
+  - fr: Nous sommes prêts.
+    pt: Estamos prontos.
+    tense: Presente
+  - fr: J'étais malade.
+    pt: Estava doente.
+    tense: Imperfeito
+  - fr: Tu étais fatigué.
+    pt: Estavas cansado.
+    tense: Imperfeito
+  - fr: Il était triste.
+    pt: Ele estava triste.
+    tense: Imperfeito
+  - fr: J'ai été à Paris.
+    pt: Estive em Paris.
+    tense: Perfeito
+  - fr: Tu as été occupé.
+    pt: Estiveste ocupado.
+    tense: Perfeito
+  - fr: Elle a été là.
+    pt: Ela esteve lá.
+    tense: Perfeito
+  - fr: Nous avons été ensemble.
+    pt: Estivemos juntos.
+    tense: Perfeito
+  - fr: Je serai là.
+    pt: Estarei lá.
+    tense: Futuro
+  - fr: Tu seras en retard.
+    pt: Estarás atrasado.
+    tense: Futuro
+  - fr: Je serais content.
+    pt: Estaria contente.
+    tense: Condicional
+  - fr: Tu serais mieux.
+    pt: Estarias melhor.
+    tense: Condicional
+  - fr: Je veux que tu sois ici.
+    pt: Quero que estejas aqui.
+    tense: Conjuntivo
+  - fr: Il faut qu'il soit prêt.
+    pt: É preciso que ele esteja pronto.
+    tense: Conjuntivo
+  - fr: Si j'étais là...
+    pt: Se eu estivesse lá...
+    tense: Imperfeito Conj.
+  - fr: Comment vas-tu?
+    pt: Como estás?
     tense: Expressão

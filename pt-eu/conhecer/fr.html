@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbe 🇵🇹 CONHECER — 19 phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Retour à la liste des verbes</a>
+            <h1>🇵🇹 Conhecer</h1>
+            <p class="subtitle">to know, to meet — 19 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Rechercher des phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Afficher toutes les traductions</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Masquer toutes les traductions</button>
+        </div>
+
+        <div class="stats" id="stats">Affichage: 19 sur 19 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Pratique du portugais — CONHECER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇵🇹 Conhecer</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>conheço</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>conheces</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>conhece</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>conhecemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>conhecem</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>conhecia</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>conhecias</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>conhecia</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>conhecíamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>conheciam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Perfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>conheci</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>conheceste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>conheceu</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>conhecemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>conheceram</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>conhecerei</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>conhecerás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>conhecerá</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>conheceremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>conhecerão</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Condicional</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>conheceria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>conhecerias</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>conheceria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>conheceríamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>conheceriam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Presente do Conjuntivo</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>conheça</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>conheças</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>conheça</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>conheçamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>conheçam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imperfeito do Conjuntivo</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>conhecesse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>conhecesses</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>conhecesse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>conhecêssemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>conhecessem</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'fr',
+            targetKey: 'pt',
+            labels: { target: 'Portugais européen', showing: 'Affichage', of: 'sur', phrases: 'phrases' },
+            verbForms: ["conheço","conheces","conhece","conhecemos","conhecem","conhecia","conhecias","conhecíamos","conheciam","conheci","conheceste","conheceu","conheceram","conhecerei","conhecerás","conhecerá","conheceremos","conhecerão","conheceria","conhecerias","conheceríamos","conheceriam","conheça","conheças","conheçamos","conheçam","conhecesse","conhecesses","conhecêssemos","conhecessem","conhecer","conheceres","conhecermos","conhecerem","conhecê","conhecemo"],
+            phrases: [
+                { fr: "Je connais cette ville.", pt: "Conheço esta cidade.", tense: "Presente" },
+                { fr: "Tu connais mon ami.", pt: "Conheces o meu amigo.", tense: "Presente" },
+                { fr: "Il connaît la réponse.", pt: "Ele conhece a resposta.", tense: "Presente" },
+                { fr: "Nous connaissons le chemin.", pt: "Conhecemos o caminho.", tense: "Presente" },
+                { fr: "Je connaissais ce lieu.", pt: "Conhecia este lugar.", tense: "Imperfeito" },
+                { fr: "Tu connaissais la vérité.", pt: "Conhecias a verdade.", tense: "Imperfeito" },
+                { fr: "Il connaissait tout le monde.", pt: "Ele conhecia toda a gente.", tense: "Imperfeito" },
+                { fr: "J'ai connu ton père.", pt: "Conheci o teu pai.", tense: "Perfeito" },
+                { fr: "Tu as connu la difficulté.", pt: "Conheceste a dificuldade.", tense: "Perfeito" },
+                { fr: "Elle a connu le succès.", pt: "Ela conheceu o sucesso.", tense: "Perfeito" },
+                { fr: "Nous avons connu Paris.", pt: "Conhecemos Paris.", tense: "Perfeito" },
+                { fr: "Je connaîtrai la ville.", pt: "Conhecerei a cidade.", tense: "Futuro" },
+                { fr: "Tu connaîtras la vérité.", pt: "Conhecerás a verdade.", tense: "Futuro" },
+                { fr: "Je connaîtrais mieux.", pt: "Conheceria melhor.", tense: "Condicional" },
+                { fr: "Tu connaîtrais le problème.", pt: "Conhecerias o problema.", tense: "Condicional" },
+                { fr: "Je veux que tu connaisses.", pt: "Quero que conheças.", tense: "Conjuntivo" },
+                { fr: "Il faut qu'il connaisse.", pt: "É preciso que ele conheça.", tense: "Conjuntivo" },
+                { fr: "Si je connaissais...", pt: "Se eu conhecesse...", tense: "Imperfeito Conj." },
+                { fr: "Enchanté de vous connaître.", pt: "Prazer em conhecê-lo.", tense: "Expressão" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

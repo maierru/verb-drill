@@ -741,6 +741,67 @@ phrases:
   - ru: Было бы хорошо, если бы они могли.
     pt: Seria bom se eles pudessem.
     tense: Imperfeito Conj.
+  fr:
+  - fr: Je peux t'aider.
+    pt: Posso ajudar-te.
+    tense: Presente
+  - fr: Tu peux entrer.
+    pt: Podes entrar.
+    tense: Presente
+  - fr: Il peut venir demain.
+    pt: Ele pode vir amanhã.
+    tense: Presente
+  - fr: Nous pouvons commencer.
+    pt: Podemos começar.
+    tense: Presente
+  - fr: Ils peuvent parler portugais.
+    pt: Eles podem falar português.
+    tense: Presente
+  - fr: Je pouvais courir plus vite avant.
+    pt: Eu podia correr mais rápido antes.
+    tense: Imperfeito
+  - fr: Tu pouvais voir la mer de la fenêtre.
+    pt: Podias ver o mar da janela.
+    tense: Imperfeito
+  - fr: Il pouvait travailler beaucoup d'heures.
+    pt: Ele podia trabalhar muitas horas.
+    tense: Imperfeito
+  - fr: J'ai pu finir le travail.
+    pt: Pude terminar o trabalho.
+    tense: Perfeito
+  - fr: Tu as pu trouver la réponse.
+    pt: Pudeste encontrar a resposta.
+    tense: Perfeito
+  - fr: Il a pu résoudre le problème.
+    pt: Ele pôde resolver o problema.
+    tense: Perfeito
+  - fr: Je pourrai aider demain.
+    pt: Poderei ajudar amanhã.
+    tense: Futuro
+  - fr: Tu pourras comprendre plus tard.
+    pt: Poderás compreender mais tarde.
+    tense: Futuro
+  - fr: Il pourra venir la semaine prochaine.
+    pt: Ele poderá vir na próxima semana.
+    tense: Futuro
+  - fr: Je pourrais aider si je savais.
+    pt: Poderia ajudar se soubesse.
+    tense: Condicional
+  - fr: Tu pourrais essayer encore.
+    pt: Poderias tentar outra vez.
+    tense: Condicional
+  - fr: Nous pourrions aller au cinéma.
+    pt: Poderíamos ir ao cinema.
+    tense: Condicional
+  - fr: J'espère que tu peux venir.
+    pt: Espero que possas vir.
+    tense: Conjuntivo
+  - fr: Il est important qu'il puisse participer.
+    pt: É importante que ele possa participar.
+    tense: Conjuntivo
+  - fr: Si je pouvais, je le ferais.
+    pt: Se pudesse, fazia.
+    tense: Imperfeito Conj.
   de:
   - de: Ich kann dir helfen.
     pt: Posso ajudar-te.
@@ -801,4 +862,62 @@ phrases:
     tense: Expressão
   - de: Das ist möglich.
     pt: É possível. / Pode acontecer.
+    tense: Expressão
+  fr:
+  - fr: Je peux venir.
+    pt: Posso vir.
+    tense: Presente
+  - fr: Tu peux m'aider.
+    pt: Podes ajudar-me.
+    tense: Presente
+  - fr: Il peut partir.
+    pt: Ele pode partir.
+    tense: Presente
+  - fr: Nous pouvons entrer.
+    pt: Podemos entrar.
+    tense: Presente
+  - fr: Je pouvais toujours.
+    pt: Podia sempre.
+    tense: Imperfeito
+  - fr: Tu pouvais sortir.
+    pt: Podias sair.
+    tense: Imperfeito
+  - fr: Il pouvait venir.
+    pt: Ele podia vir.
+    tense: Imperfeito
+  - fr: J'ai pu terminer.
+    pt: Pude acabar.
+    tense: Perfeito
+  - fr: Tu as pu entrer.
+    pt: Pudeste entrar.
+    tense: Perfeito
+  - fr: Elle a pu venir.
+    pt: Ela pôde vir.
+    tense: Perfeito
+  - fr: Nous avons pu sortir.
+    pt: Pudemos sair.
+    tense: Perfeito
+  - fr: Je pourrai venir.
+    pt: Poderei vir.
+    tense: Futuro
+  - fr: Tu pourras aider.
+    pt: Poderás ajudar.
+    tense: Futuro
+  - fr: Je pourrais essayer.
+    pt: Poderia tentar.
+    tense: Condicional
+  - fr: Tu pourrais venir.
+    pt: Poderias vir.
+    tense: Condicional
+  - fr: Je veux que tu puisses.
+    pt: Quero que possas.
+    tense: Conjuntivo
+  - fr: Il faut qu'il puisse.
+    pt: É preciso que ele possa.
+    tense: Conjuntivo
+  - fr: Si je pouvais...
+    pt: Se eu pudesse...
+    tense: Imperfeito Conj.
+  - fr: Puis-je entrer?
+    pt: Posso entrar?
     tense: Expressão

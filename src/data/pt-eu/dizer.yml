@@ -771,3 +771,64 @@ phrases:
   - de: Sag es nochmal.
     pt: Diz outra vez.
     tense: Imperativo
+  fr:
+  - fr: Je dis la vérité.
+    pt: Digo a verdade.
+    tense: Presente
+  - fr: Tu dis toujours ça.
+    pt: Dizes sempre isso.
+    tense: Presente
+  - fr: Il dit non.
+    pt: Ele diz que não.
+    tense: Presente
+  - fr: Nous disons oui.
+    pt: Dizemos que sim.
+    tense: Presente
+  - fr: Je disais toujours.
+    pt: Dizia sempre.
+    tense: Imperfeito
+  - fr: Tu disais la vérité.
+    pt: Dizias a verdade.
+    tense: Imperfeito
+  - fr: Il disait des mensonges.
+    pt: Ele dizia mentiras.
+    tense: Imperfeito
+  - fr: J'ai dit quelque chose.
+    pt: Disse alguma coisa.
+    tense: Perfeito
+  - fr: Tu as dit bonjour.
+    pt: Disseste olá.
+    tense: Perfeito
+  - fr: Elle a dit merci.
+    pt: Ela disse obrigada.
+    tense: Perfeito
+  - fr: Nous avons dit au revoir.
+    pt: Dissemos adeus.
+    tense: Perfeito
+  - fr: Je dirai tout.
+    pt: Direi tudo.
+    tense: Futuro
+  - fr: Tu diras la vérité.
+    pt: Dirás a verdade.
+    tense: Futuro
+  - fr: Je dirais oui.
+    pt: Diria que sim.
+    tense: Condicional
+  - fr: Tu dirais non.
+    pt: Dirias que não.
+    tense: Condicional
+  - fr: Je veux que tu dises.
+    pt: Quero que digas.
+    tense: Conjuntivo
+  - fr: Il faut qu'il dise.
+    pt: É preciso que ele diga.
+    tense: Conjuntivo
+  - fr: Si je disais...
+    pt: Se eu dissesse...
+    tense: Imperfeito Conj.
+  - fr: Dis-moi!
+    pt: Diz-me!
+    tense: Imperativo
+  - fr: Je te dis la vérité.
+    pt: Digo-te a verdade.
+    tense: Presente

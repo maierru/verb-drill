@@ -835,3 +835,61 @@ phrases:
   - ru: Вот так обстоят дела.
     pt: É o que há.
     tense: Expressão
+  fr:
+  - fr: Il y a un problème.
+    pt: Há um problema.
+    tense: Presente
+  - fr: Il y a beaucoup de gens.
+    pt: Há muitas pessoas.
+    tense: Presente
+  - fr: Y a-t-il de l'eau?
+    pt: Há água?
+    tense: Presente
+  - fr: Il n'y a pas de temps.
+    pt: Não há tempo.
+    tense: Presente
+  - fr: Il y a deux options.
+    pt: Há duas opções.
+    tense: Presente
+  - fr: Il y a deux ans.
+    pt: Há dois anos.
+    tense: Tempo
+  - fr: Il y a longtemps.
+    pt: Há muito tempo.
+    tense: Tempo
+  - fr: Il y avait une maison ici.
+    pt: Havia uma casa aqui.
+    tense: Imperfeito
+  - fr: Il y avait beaucoup d'arbres.
+    pt: Havia muitas árvores.
+    tense: Imperfeito
+  - fr: Il n'y avait pas d'internet.
+    pt: Não havia internet.
+    tense: Imperfeito
+  - fr: Il y a eu un accident.
+    pt: Houve um acidente.
+    tense: Perfeito
+  - fr: Il y a eu des changements.
+    pt: Houve mudanças.
+    tense: Perfeito
+  - fr: Qu'est-ce qui s'est passé?
+    pt: O que houve?
+    tense: Perfeito
+  - fr: Il y aura une fête.
+    pt: Haverá uma festa.
+    tense: Futuro
+  - fr: Il y aura des changements.
+    pt: Haverá mudanças.
+    tense: Futuro
+  - fr: Il y aurait un problème.
+    pt: Haveria um problema.
+    tense: Condicional
+  - fr: J'espère qu'il y a du temps.
+    pt: Espero que haja tempo.
+    tense: Conjuntivo
+  - fr: S'il y avait du temps...
+    pt: Se houvesse tempo...
+    tense: Imperfeito Conj.
+  - fr: Qu'est-ce qu'il y a?
+    pt: O que é que há?
+    tense: Expressão

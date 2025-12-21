@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbe 🇩🇪 VERB SEIN — 20 phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Retour à la liste des verbes</a>
+            <h1>🇩🇪 Verb SEIN</h1>
+            <p class="subtitle">to be — 20 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Rechercher des phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Afficher toutes les traductions</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Masquer toutes les traductions</button>
+        </div>
+
+        <div class="stats" id="stats">Affichage: 20 sur 20 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Pratique de l'allemand — SEIN · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇩🇪 Verb SEIN</h2>
+            <div class="tense-explanation">
+                <h4>Präsens</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>bin</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>bist</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>ist</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>sind</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>seid</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>sind</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Präteritum</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>war</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>warst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>war</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>waren</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>wart</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>waren</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Perfekt</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>bin gewesen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>bist gewesen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>ist gewesen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>sind gewesen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>seid gewesen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>sind gewesen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur I</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>werde sein</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>wirst sein</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>wird sein</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>werden sein</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>werdet sein</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>werden sein</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'fr',
+            targetKey: 'de',
+            labels: { target: 'Allemand', showing: 'Affichage', of: 'sur', phrases: 'phrases' },
+            verbForms: ["bin","bist","ist","sind","seid","war","warst","waren","wart","gewesen"],
+            phrases: [
+                { fr: "Je suis fatigué.", de: "Ich bin müde.", tense: "Präsens" },
+                { fr: "Elle est médecin.", de: "Sie ist Ärztin.", tense: "Präsens" },
+                { fr: "Nous sommes heureux.", de: "Wir sind glücklich.", tense: "Präsens" },
+                { fr: "As-tu faim ?", de: "Bist du hungrig?", tense: "Präsens" },
+                { fr: "Ils sont étudiants.", de: "Sie sind Studenten.", tense: "Präsens" },
+                { fr: "J'étais à la maison hier.", de: "Ich war gestern zu Hause.", tense: "Präteritum" },
+                { fr: "Nous étions à Berlin.", de: "Wir waren in Berlin.", tense: "Präteritum" },
+                { fr: "Il a été malade.", de: "Er ist krank gewesen.", tense: "Perfekt" },
+                { fr: "Je serai là demain.", de: "Ich werde morgen da sein.", tense: "Futur I" },
+                { fr: "Il fait froid aujourd'hui.", de: "Es ist heute kalt.", tense: "Präsens" },
+                { fr: "Le livre est sur la table.", de: "Das Buch ist auf dem Tisch.", tense: "Präsens" },
+                { fr: "Où étais-tu ?", de: "Wo warst du?", tense: "Präteritum" },
+                { fr: "Je suis d'Allemagne.", de: "Ich bin aus Deutschland.", tense: "Präsens" },
+                { fr: "Elle était très gentille.", de: "Sie war sehr nett.", tense: "Präteritum" },
+                { fr: "Nous serons bientôt prêts.", de: "Wir werden bald fertig sein.", tense: "Futur I" },
+                { fr: "C'est ta voiture ?", de: "Ist das dein Auto?", tense: "Präsens" },
+                { fr: "Ils étaient en retard.", de: "Sie waren spät dran.", tense: "Präteritum" },
+                { fr: "Il a 25 ans.", de: "Er ist 25 Jahre alt.", tense: "Präsens" },
+                { fr: "Il fera beau demain.", de: "Es wird morgen schön sein.", tense: "Futur I" },
+                { fr: "Je n'ai jamais été à Paris.", de: "Ich bin nie in Paris gewesen.", tense: "Perfekt" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

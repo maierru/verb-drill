@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbe 🇩🇪 VERB SAGEN — 20 phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Retour à la liste des verbes</a>
+            <h1>🇩🇪 Verb SAGEN</h1>
+            <p class="subtitle">to say — 20 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Rechercher des phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Afficher toutes les traductions</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Masquer toutes les traductions</button>
+        </div>
+
+        <div class="stats" id="stats">Affichage: 20 sur 20 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Pratique de l'allemand — SAGEN · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇩🇪 Verb SAGEN</h2>
+            <div class="tense-explanation">
+                <h4>Präsens</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>sage</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>sagst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>sagt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>sagen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>sagt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>sagen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Präteritum</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>sagte</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>sagtest</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>sagte</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>sagten</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>sagtet</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>sagten</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Perfekt</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>habe gesagt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>hast gesagt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>hat gesagt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>haben gesagt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>habt gesagt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>haben gesagt</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur I</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>werde sagen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>wirst sagen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>wird sagen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>werden sagen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>werdet sagen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>werden sagen</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'fr',
+            targetKey: 'de',
+            labels: { target: 'Allemand', showing: 'Affichage', of: 'sur', phrases: 'phrases' },
+            verbForms: ["sage","sagst","sagt","sagen","sagte","sagtest","sagten","sagtet","gesagt"],
+            phrases: [
+                { fr: "Je dis la vérité.", de: "Ich sage die Wahrheit.", tense: "Präsens" },
+                { fr: "Que dis-tu ?", de: "Was sagst du?", tense: "Präsens" },
+                { fr: "Elle dit toujours oui.", de: "Sie sagt immer ja.", tense: "Präsens" },
+                { fr: "Nous disons au revoir.", de: "Wir sagen auf Wiedersehen.", tense: "Präsens" },
+                { fr: "Ils disent que c'est vrai.", de: "Sie sagen, es ist wahr.", tense: "Präsens" },
+                { fr: "J'ai dit bonjour.", de: "Ich habe Hallo gesagt.", tense: "Perfekt" },
+                { fr: "Nous ne disions rien.", de: "Wir sagten nichts.", tense: "Präteritum" },
+                { fr: "Il a dit merci.", de: "Er hat danke gesagt.", tense: "Perfekt" },
+                { fr: "Je te le dirai demain.", de: "Ich werde es dir morgen sagen.", tense: "Futur I" },
+                { fr: "Que dit-il ?", de: "Was sagt er?", tense: "Präsens" },
+                { fr: "Je dis juste.", de: "Ich sage nur.", tense: "Präsens" },
+                { fr: "Elle disait toujours la vérité.", de: "Sie sagte immer die Wahrheit.", tense: "Präteritum" },
+                { fr: "As-tu dit quelque chose ?", de: "Hast du etwas gesagt?", tense: "Perfekt" },
+                { fr: "Nous dirons la vérité.", de: "Wir werden die Wahrheit sagen.", tense: "Futur I" },
+                { fr: "Je ne dis rien.", de: "Ich sage nichts.", tense: "Präsens" },
+                { fr: "Ils disaient des mensonges.", de: "Sie sagten Lügen.", tense: "Präteritum" },
+                { fr: "Dis-moi ton nom.", de: "Sag mir deinen Namen.", tense: "Imperativ" },
+                { fr: "Il dit toujours non.", de: "Er sagt immer nein.", tense: "Präsens" },
+                { fr: "Nous disions nos opinions.", de: "Wir sagten unsere Meinungen.", tense: "Präteritum" },
+                { fr: "Je te dirai un secret.", de: "Ich werde dir ein Geheimnis sagen.", tense: "Futur I" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

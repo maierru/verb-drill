@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbe 🇩🇪 VERB KOMMEN — 20 phrases</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Retour à la liste des verbes</a>
+            <h1>🇩🇪 Verb KOMMEN</h1>
+            <p class="subtitle">to come — 20 phrases</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Rechercher des phrases..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Afficher toutes les traductions</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Masquer toutes les traductions</button>
+        </div>
+
+        <div class="stats" id="stats">Affichage: 20 sur 20 phrases</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Pratique de l'allemand — KOMMEN · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇩🇪 Verb KOMMEN</h2>
+            <div class="tense-explanation">
+                <h4>Präsens</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>komme</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>kommst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>kommt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>kommen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>kommt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>kommen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Präteritum</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>kam</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>kamst</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>kam</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>kamen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>kamt</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>kamen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Perfekt</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>bin gekommen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>bist gekommen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>ist gekommen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>sind gekommen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>seid gekommen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>sind gekommen</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur I</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">ich</td>
+                        <td>werde kommen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">du</td>
+                        <td>wirst kommen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">er/sie/es</td>
+                        <td>wird kommen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">wir</td>
+                        <td>werden kommen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ihr</td>
+                        <td>werdet kommen</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">sie/Sie</td>
+                        <td>werden kommen</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'fr',
+            targetKey: 'de',
+            labels: { target: 'Allemand', showing: 'Affichage', of: 'sur', phrases: 'phrases' },
+            verbForms: ["komme","kommst","kommt","kommen","kam","kamst","kamen","kamt","gekommen"],
+            phrases: [
+                { fr: "Je viens de France.", de: "Ich komme aus Frankreich.", tense: "Präsens" },
+                { fr: "D'où viens-tu ?", de: "Woher kommst du?", tense: "Präsens" },
+                { fr: "Elle vient demain.", de: "Sie kommt morgen.", tense: "Präsens" },
+                { fr: "Nous venons plus tard.", de: "Wir kommen später.", tense: "Präsens" },
+                { fr: "Ils viennent en voiture.", de: "Sie kommen mit dem Auto.", tense: "Präsens" },
+                { fr: "Je venais tous les jours.", de: "Ich kam jeden Tag.", tense: "Präteritum" },
+                { fr: "Nous ne venions jamais.", de: "Wir kamen nie.", tense: "Präteritum" },
+                { fr: "Il est venu en retard.", de: "Er ist zu spät gekommen.", tense: "Perfekt" },
+                { fr: "Je viendrai te voir.", de: "Ich werde dich besuchen kommen.", tense: "Futur I" },
+                { fr: "Viens-tu aussi ?", de: "Kommst du auch?", tense: "Präsens" },
+                { fr: "Je viens tout de suite.", de: "Ich komme gleich.", tense: "Präsens" },
+                { fr: "Elle venait souvent.", de: "Sie kam oft.", tense: "Präteritum" },
+                { fr: "Es-tu venu seul ?", de: "Bist du allein gekommen?", tense: "Perfekt" },
+                { fr: "Nous viendrons ensemble.", de: "Wir werden zusammen kommen.", tense: "Futur I" },
+                { fr: "Je ne viens pas.", de: "Ich komme nicht.", tense: "Präsens" },
+                { fr: "Ils venaient toujours à l'heure.", de: "Sie kamen immer pünktlich.", tense: "Präteritum" },
+                { fr: "Viens ici !", de: "Komm her!", tense: "Imperativ" },
+                { fr: "Il vient de Berlin.", de: "Er kommt aus Berlin.", tense: "Präsens" },
+                { fr: "Nous venions en train.", de: "Wir kamen mit dem Zug.", tense: "Präteritum" },
+                { fr: "Je viendrai te chercher.", de: "Ich werde dich abholen kommen.", tense: "Futur I" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>
