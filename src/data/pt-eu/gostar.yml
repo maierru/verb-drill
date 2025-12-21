@@ -767,6 +767,304 @@ phrases:
   - de: Ich mag Portugiesisch.
     pt: Gosto de português.
     tense: Presente
+  es:
+  - es: Me gusta.
+    pt: Gosto.
+    tense: Presente
+  - es: Te gusta el café.
+    pt: Gostas de café.
+    tense: Presente
+  - es: A él le gusta la música.
+    pt: Ele gosta de música.
+    tense: Presente
+  - es: Nos gusta la playa.
+    pt: Gostamos da praia.
+    tense: Presente
+  - es: Les gusta viajar.
+    pt: Eles gostam de viajar.
+    tense: Presente
+  - es: Me gusta esto.
+    pt: Gosto disto.
+    tense: Presente
+  - es: Te gusta leer.
+    pt: Gostas de ler.
+    tense: Presente
+  - es: A ella le gusta bailar.
+    pt: Ela gosta de dançar.
+    tense: Presente
+  - es: Nos gusta la comida portuguesa.
+    pt: Gostamos de comida portuguesa.
+    tense: Presente
+  - es: Les gusta la ciudad.
+    pt: Eles gostam da cidade.
+    tense: Presente
+  - es: Me gustaba.
+    pt: Gostava.
+    tense: Imperfeito
+  - es: Te gustaban los dulces.
+    pt: Gostavas de doces.
+    tense: Imperfeito
+  - es: A él le gustaba el fútbol.
+    pt: Ele gostava de futebol.
+    tense: Imperfeito
+  - es: Nos gustaba la casa antigua.
+    pt: Gostávamos da casa antiga.
+    tense: Imperfeito
+  - es: Les gustaba aquel lugar.
+    pt: Eles gostavam daquele lugar.
+    tense: Imperfeito
+  - es: Me estaba gustando.
+    pt: Estava a gostar.
+    tense: Imperfeito
+  - es: Te estaba gustando la película.
+    pt: Estavas a gostar do filme.
+    tense: Imperfeito
+  - es: A ella le estaba gustando el libro.
+    pt: Ela estava a gostar do livro.
+    tense: Imperfeito
+  - es: Nos estaba gustando el viaje.
+    pt: Estávamos a gostar da viagem.
+    tense: Imperfeito
+  - es: Les estaba gustando la comida.
+    pt: Eles estavam a gostar da comida.
+    tense: Imperfeito
+  - es: Me gustó.
+    pt: Gostei.
+    tense: Perfeito
+  - es: Te gustó la película.
+    pt: Gostaste do filme.
+    tense: Perfeito
+  - es: A él le gustó el regalo.
+    pt: Ele gostou do presente.
+    tense: Perfeito
+  - es: Nos gustó el concierto.
+    pt: Gostámos do concerto.
+    tense: Perfeito
+  - es: Les gustó la idea.
+    pt: Eles gostaram da ideia.
+    tense: Perfeito
+  - es: Me gustó conocerte.
+    pt: Gostei de te conhecer.
+    tense: Perfeito
+  - es: Te gustó la cena.
+    pt: Gostaste do jantar.
+    tense: Perfeito
+  - es: A ella le gustó la sorpresa.
+    pt: Ela gostou da surpresa.
+    tense: Perfeito
+  - es: Nos gustó el hotel.
+    pt: Gostámos do hotel.
+    tense: Perfeito
+  - es: Les gustó todo.
+    pt: Eles gostaram de tudo.
+    tense: Perfeito
+  - es: Me gustará.
+    pt: Gostarei.
+    tense: Futuro
+  - es: Te gustará este lugar.
+    pt: Gostarás deste lugar.
+    tense: Futuro
+  - es: A él le gustarán las noticias.
+    pt: Ele gostará das notícias.
+    tense: Futuro
+  - es: Nos gustará vivir aquí.
+    pt: Gostaremos de viver aqui.
+    tense: Futuro
+  - es: Les gustará el resultado.
+    pt: Eles gostarão do resultado.
+    tense: Futuro
+  - es: Me gustará el cambio.
+    pt: Gostarei da mudança.
+    tense: Futuro
+  - es: Te gustará Portugal.
+    pt: Gostarás de Portugal.
+    tense: Futuro
+  - es: A ella le gustará el apartamento.
+    pt: Ela gostará do apartamento.
+    tense: Futuro
+  - es: Nos gustará el nuevo trabajo.
+    pt: Gostaremos do novo trabalho.
+    tense: Futuro
+  - es: Se gustarán.
+    pt: Eles gostarão um do outro.
+    tense: Futuro
+  - es: Me gustaría.
+    pt: Gostaria.
+    tense: Condicional
+  - es: Te gustaría venir.
+    pt: Gostarias de vir.
+    tense: Condicional
+  - es: A él le gustaría ayudar.
+    pt: Ele gostaria de ajudar.
+    tense: Condicional
+  - es: Nos gustaría saber.
+    pt: Gostaríamos de saber.
+    tense: Condicional
+  - es: Les gustaría quedarse.
+    pt: Eles gostariam de ficar.
+    tense: Condicional
+  - es: Me gustaría un café.
+    pt: Gostaria de um café.
+    tense: Condicional
+  - es: Te gustaría ver.
+    pt: Gostarias de ver.
+    tense: Condicional
+  - es: A ella le gustaría probar.
+    pt: Ela gostaria de experimentar.
+    tense: Condicional
+  - es: Nos gustaría ir.
+    pt: Gostaríamos de ir.
+    tense: Condicional
+  - es: Les gustaría visitar.
+    pt: Eles gostariam de visitar.
+    tense: Condicional
+  - es: Quiero que te guste.
+    pt: Quero que gostes.
+    tense: Conjuntivo
+  - es: Espero que a él le guste.
+    pt: Espero que ele goste.
+    tense: Conjuntivo
+  - es: Es importante que nos guste.
+    pt: É importante que gostemos.
+    tense: Conjuntivo
+  - es: Dudo que les guste.
+    pt: Duvido que eles gostem.
+    tense: Conjuntivo
+  - es: Aunque me guste.
+    pt: Embora eu goste.
+    tense: Conjuntivo
+  - es: Para que te guste.
+    pt: Para que tu gostes.
+    tense: Conjuntivo
+  - es: A menos que a ella le guste.
+    pt: A menos que ela goste.
+    tense: Conjuntivo
+  - es: Antes de que les guste.
+    pt: Antes que eles gostem.
+    tense: Conjuntivo
+  - es: Es posible que nos guste.
+    pt: É possível que gostemos.
+    tense: Conjuntivo
+  - es: Prefiero que te guste.
+    pt: Prefiro que tu gostes.
+    tense: Conjuntivo
+  - es: Si me gustara.
+    pt: Se eu gostasse.
+    tense: Imperfeito Conj.
+  - es: Si te gustara.
+    pt: Se tu gostasses.
+    tense: Imperfeito Conj.
+  - es: Si a él le gustara.
+    pt: Se ele gostasse.
+    tense: Imperfeito Conj.
+  - es: Si nos gustara.
+    pt: Se nós gostássemos.
+    tense: Imperfeito Conj.
+  - es: Si les gustara.
+    pt: Se eles gostassem.
+    tense: Imperfeito Conj.
+  - es: Ojalá me gustara.
+    pt: Quem me dera gostar.
+    tense: Imperfeito Conj.
+  - es: Como si a ella le gustara.
+    pt: Como se ela gostasse.
+    tense: Imperfeito Conj.
+  - es: Si te gustara.
+    pt: Se tu gostasses.
+    tense: Imperfeito Conj.
+  - es: Quería que te gustara.
+    pt: Queria que tu gostasses.
+    tense: Imperfeito Conj.
+  - es: Sería bueno si les gustara.
+    pt: Seria bom se eles gostassem.
+    tense: Imperfeito Conj.
+  - es: Cuando me guste.
+    pt: Quando eu gostar.
+    tense: Futuro Conj.
+  - es: En cuanto te guste.
+    pt: Assim que gostares.
+    tense: Futuro Conj.
+  - es: Si a él le gusta.
+    pt: Se ele gostar.
+    tense: Futuro Conj.
+  - es: Cuando nos guste.
+    pt: Quando gostarmos.
+    tense: Futuro Conj.
+  - es: Conforme les guste.
+    pt: Conforme eles gostarem.
+    tense: Futuro Conj.
+  - es: ¿Te gusta?
+    pt: Gostas?
+    tense: Presente
+  - es: ¿Te gusta la comida?
+    pt: Gostas da comida?
+    tense: Presente
+  - es: ¿A él le gusta ella?
+    pt: Ele gosta dela?
+    tense: Presente
+  - es: ¿Les gusta aquí?
+    pt: Eles gostam daqui?
+    tense: Presente
+  - es: ¿Te gustó?
+    pt: Gostaste?
+    tense: Perfeito
+  - es: No me gusta.
+    pt: Não gosto.
+    tense: Presente
+  - es: No te gustan las verduras.
+    pt: Não gostas de legumes.
+    tense: Presente
+  - es: A él no le gusta el frío.
+    pt: Ele não gosta do frio.
+    tense: Presente
+  - es: No nos gusta esperar.
+    pt: Não gostamos de esperar.
+    tense: Presente
+  - es: No les gusta el ruido.
+    pt: Eles não gostam de barulho.
+    tense: Presente
+  - es: No me gustó.
+    pt: Não gostei.
+    tense: Perfeito
+  - es: Me gusta mucho.
+    pt: Gosto muito.
+    tense: Presente
+  - es: Me gusta bastante.
+    pt: Gosto bastante.
+    tense: Presente
+  - es: Me gustas.
+    pt: Gosto de ti.
+    tense: Presente
+  - es: ¿Te gusto?
+    pt: Gostas de mim?
+    tense: Presente
+  - es: Estoy empezando a que me guste.
+    pt: Estou a começar a gostar.
+    tense: Presente
+  - es: Me gustaría mucho.
+    pt: Gostaria muito.
+    tense: Condicional
+  - es: Te gustaría saber.
+    pt: Gostarias de saber.
+    tense: Condicional
+  - es: Me gusta cómo piensas.
+    pt: Gosto da forma como pensas.
+    tense: Presente
+  - es: A ella le gusta lo que hace.
+    pt: Ela gosta do que faz.
+    tense: Presente
+  - es: Nos gusta estar juntos.
+    pt: Gostamos de estar juntos.
+    tense: Presente
+  - es: A él le gusta cocinar.
+    pt: Ele gosta de cozinhar.
+    tense: Presente
+  - es: Me gustaría hablar portugués.
+    pt: Gostaria de falar português.
+    tense: Condicional
+  - es: ¿Te gustaría algo?
+    pt: Gostarias de alguma coisa?
+    tense: Condicional
   fr:
   - fr: J'aime ça.
     pt: Gosto.

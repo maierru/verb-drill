@@ -1013,6 +1013,256 @@ phrases:
   - de: Wer hat es genommen?
     pt: Quem levou?
     tense: Perfeito
+  es:
+  - es: Lo llevo.
+    pt: Levo.
+    tense: Presente
+  - es: Llevas la maleta.
+    pt: Levas a mala.
+    tense: Presente
+  - es: Él lleva el coche.
+    pt: Ele leva o carro.
+    tense: Presente
+  - es: Llevamos esto.
+    pt: Levamos isto.
+    tense: Presente
+  - es: Ellos llevan dinero.
+    pt: Eles levam dinheiro.
+    tense: Presente
+  - es: Llevo tiempo.
+    pt: Levo tempo.
+    tense: Presente
+  - es: ¿Llevas el abrigo?
+    pt: Levas o casaco?
+    tense: Presente
+  - es: Ella lleva a los niños.
+    pt: Ela leva as crianças.
+    tense: Presente
+  - es: Llevamos comida.
+    pt: Levamos comida.
+    tense: Presente
+  - es: Ellos llevan las llaves.
+    pt: Eles levam as chaves.
+    tense: Presente
+  - es: Llevaba todos los días.
+    pt: Levava todos os dias.
+    tense: Imperfeito
+  - es: Llevabas la mochila.
+    pt: Levavas a mochila.
+    tense: Imperfeito
+  - es: Él llevaba gafas.
+    pt: Ele levava óculos.
+    tense: Imperfeito
+  - es: Llevábamos el paraguas.
+    pt: Levávamos o guarda-chuva.
+    tense: Imperfeito
+  - es: Ellos llevaban tiempo.
+    pt: Eles levavam tempo.
+    tense: Imperfeito
+  - es: Llevaba mucho peso.
+    pt: Levava muito peso.
+    tense: Imperfeito
+  - es: ¿Qué llevabas?
+    pt: O que levavas?
+    tense: Imperfeito
+  - es: Ella llevaba el bolso.
+    pt: Ela levava a bolsa.
+    tense: Imperfeito
+  - es: Llevábamos flores.
+    pt: Levávamos flores.
+    tense: Imperfeito
+  - es: Llevaban comida.
+    pt: Levavam comida.
+    tense: Imperfeito
+  - es: Llevé el libro.
+    pt: Levei o livro.
+    tense: Perfeito
+  - es: Llevaste las llaves.
+    pt: Levaste as chaves.
+    tense: Perfeito
+  - es: Él llevó el coche.
+    pt: Ele levou o carro.
+    tense: Perfeito
+  - es: Llevamos regalos.
+    pt: Levámos presentes.
+    tense: Perfeito
+  - es: Ellos llevaron tiempo.
+    pt: Eles levaram tempo.
+    tense: Perfeito
+  - es: Llevé esto.
+    pt: Levei isto.
+    tense: Perfeito
+  - es: ¿Qué llevaste?
+    pt: O que levaste?
+    tense: Perfeito
+  - es: Ella se llevó su tiempo.
+    pt: Ela levou o seu tempo.
+    tense: Perfeito
+  - es: Llevamos el coche.
+    pt: Levámos o carro.
+    tense: Perfeito
+  - es: Ellos llevaron el dinero.
+    pt: Eles levaram o dinheiro.
+    tense: Perfeito
+  - es: Llevaré.
+    pt: Levarei.
+    tense: Futuro
+  - es: Llevarás esto.
+    pt: Levarás isto.
+    tense: Futuro
+  - es: Él llevará el coche.
+    pt: Ele levará o carro.
+    tense: Futuro
+  - es: Llevaremos tiempo.
+    pt: Levaremos tempo.
+    tense: Futuro
+  - es: Ellos llevarán comida.
+    pt: Eles levarão comida.
+    tense: Futuro
+  - es: Llevaré el paraguas.
+    pt: Levarei o guarda-chuva.
+    tense: Futuro
+  - es: ¿Llevarás la maleta?
+    pt: Levarás a mala?
+    tense: Futuro
+  - es: Ella llevará a los niños.
+    pt: Ela levará as crianças.
+    tense: Futuro
+  - es: Llevaremos regalos.
+    pt: Levaremos presentes.
+    tense: Futuro
+  - es: No llevarán.
+    pt: Não levarão.
+    tense: Futuro
+  - es: Llevaría si pudiera.
+    pt: Levaria se pudesse.
+    tense: Condicional
+  - es: Llevarías esto.
+    pt: Levarias isto.
+    tense: Condicional
+  - es: Él llevaría el coche.
+    pt: Ele levaria o carro.
+    tense: Condicional
+  - es: Llevaríamos tiempo.
+    pt: Levaríamos tempo.
+    tense: Condicional
+  - es: Ellos llevarían dinero.
+    pt: Eles levariam dinheiro.
+    tense: Condicional
+  - es: Llevaría la maleta.
+    pt: Levaria a mala.
+    tense: Condicional
+  - es: ¿Llevarías esto?
+    pt: Levarias isto?
+    tense: Condicional
+  - es: Ella llevaría comida.
+    pt: Ela levaria comida.
+    tense: Condicional
+  - es: Llevaríamos regalos.
+    pt: Levaríamos presentes.
+    tense: Condicional
+  - es: No llevarían.
+    pt: Não levariam.
+    tense: Condicional
+  - es: Espero que lleves.
+    pt: Espero que leves.
+    tense: Conjuntivo
+  - es: Es importante que él lleve.
+    pt: É importante que ele leve.
+    tense: Conjuntivo
+  - es: Dudo que llevemos.
+    pt: Duvido que levemos.
+    tense: Conjuntivo
+  - es: Aunque ellos lleven.
+    pt: Embora eles levem.
+    tense: Conjuntivo
+  - es: Para que tú lleves.
+    pt: Para que tu leves.
+    tense: Conjuntivo
+  - es: A menos que ella lleve.
+    pt: A menos que ela leve.
+    tense: Conjuntivo
+  - es: Es necesario que llevemos.
+    pt: É preciso que levemos.
+    tense: Conjuntivo
+  - es: No creo que lleven.
+    pt: Não acho que levem.
+    tense: Conjuntivo
+  - es: Espero que lleves esto.
+    pt: Espero que leves isto.
+    tense: Conjuntivo
+  - es: Quiero que lleves.
+    pt: Quero que leves.
+    tense: Conjuntivo
+  - es: Si yo llevara...
+    pt: Se eu levasse...
+    tense: Imperfeito Conj.
+  - es: Ojalá llevaras.
+    pt: Quem me dera que levasses.
+    tense: Imperfeito Conj.
+  - es: Si él llevara...
+    pt: Se ele levasse...
+    tense: Imperfeito Conj.
+  - es: Si lleváramos...
+    pt: Se levássemos...
+    tense: Imperfeito Conj.
+  - es: Si ellos llevaran...
+    pt: Se eles levassem...
+    tense: Imperfeito Conj.
+  - es: Iría si tú llevaras.
+    pt: Iria se levasses.
+    tense: Imperfeito Conj.
+  - es: Aunque llevara...
+    pt: Mesmo que levasse...
+    tense: Imperfeito Conj.
+  - es: Como si no llevara nada.
+    pt: Como se não levasse nada.
+    tense: Imperfeito Conj.
+  - es: Si llevara esto...
+    pt: Se levasse isto...
+    tense: Imperfeito Conj.
+  - es: Ojalá lleváramos.
+    pt: Quem me dera que levássemos.
+    tense: Imperfeito Conj.
+  - es: Cuando lleve...
+    pt: Quando levar...
+    tense: Futuro Conj.
+  - es: Si llevas...
+    pt: Se levares...
+    tense: Futuro Conj.
+  - es: Cuando él lleve...
+    pt: Quando ele levar...
+    tense: Futuro Conj.
+  - es: Si llevamos...
+    pt: Se levarmos...
+    tense: Futuro Conj.
+  - es: Cuando ellos lleven...
+    pt: Quando eles levarem...
+    tense: Futuro Conj.
+  - es: En cuanto lleve...
+    pt: Assim que levar...
+    tense: Futuro Conj.
+  - es: Si alguna vez llevas...
+    pt: Se alguma vez levares...
+    tense: Futuro Conj.
+  - es: Cuando llevemos...
+    pt: Quando levarmos...
+    tense: Futuro Conj.
+  - es: Donde quiera que lleves...
+    pt: Onde quer que leves...
+    tense: Futuro Conj.
+  - es: Si llevas esto, yo llevo aquello.
+    pt: Se levares isto, eu levo aquilo.
+    tense: Futuro Conj.
+  - es: ¿Qué llevas?
+    pt: O que levas?
+    tense: Presente
+  - es: ¿Quién lo llevó?
+    pt: Quem levou?
+    tense: Perfeito
+  - es: Me llevo este.
+    pt: Levo este.
+    tense: Presente
   fr:
   - fr: Je le prends.
     pt: Levo.

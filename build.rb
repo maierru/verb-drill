@@ -247,6 +247,51 @@ LABELS = {
     phrases: 'phrases',
     target: 'Espagnol',
     footer_prefix: "Pratique de l'espagnol —"
+  },
+  # Spanish as origin language
+  'es_pt' => {
+    back: '← Volver a la lista de verbos',
+    search: 'Buscar frases...',
+    show_all: 'Mostrar todas las traducciones',
+    hide_all: 'Ocultar todas las traducciones',
+    showing: 'Mostrando',
+    of: 'de',
+    phrases: 'frases',
+    target: 'Portugués europeo',
+    footer_prefix: 'Práctica de portugués —'
+  },
+  'es_en' => {
+    back: '← Volver a la lista de verbos',
+    search: 'Buscar frases...',
+    show_all: 'Mostrar todas las traducciones',
+    hide_all: 'Ocultar todas las traducciones',
+    showing: 'Mostrando',
+    of: 'de',
+    phrases: 'frases',
+    target: 'Inglés',
+    footer_prefix: 'Práctica de inglés —'
+  },
+  'es_de' => {
+    back: '← Volver a la lista de verbos',
+    search: 'Buscar frases...',
+    show_all: 'Mostrar todas las traducciones',
+    hide_all: 'Ocultar todas las traducciones',
+    showing: 'Mostrando',
+    of: 'de',
+    phrases: 'frases',
+    target: 'Alemán',
+    footer_prefix: 'Práctica de alemán —'
+  },
+  'es_fr' => {
+    back: '← Volver a la lista de verbos',
+    search: 'Buscar frases...',
+    show_all: 'Mostrar todas las traducciones',
+    hide_all: 'Ocultar todas las traducciones',
+    showing: 'Mostrando',
+    of: 'de',
+    phrases: 'frases',
+    target: 'Francés',
+    footer_prefix: 'Práctica de francés —'
   }
 }
 
@@ -295,6 +340,10 @@ def build_verb_pages(lang_folder, target_lang, origins, verb_template, site_url,
         title = "Verbe #{data['name'].upcase} — #{phrases.length} phrases"
         subtitle = "#{data['meaning']} — #{phrases.length} phrases"
         meta_description = "Pratiquez la conjugaison de #{data['name']} avec #{phrases.length} phrases. Apprenez les formes verbales en #{labels[:target]}."
+      elsif origin == 'es'
+        title = "Verbo #{data['name'].upcase} — #{phrases.length} frases"
+        subtitle = "#{data['meaning']} — #{phrases.length} frases"
+        meta_description = "Practica la conjugación de #{data['name']} con #{phrases.length} frases. Aprende las formas verbales en #{labels[:target]}."
       else
         title = "Verbo #{data['name'].upcase} — #{phrases.length} Frases"
         subtitle = "#{data['meaning']} — #{phrases.length} frases"
@@ -321,17 +370,17 @@ def build_verb_pages(lang_folder, target_lang, origins, verb_template, site_url,
   end
 end
 
-# Build pt-eu verb pages (learning Portuguese from en/ru/de/fr)
-build_verb_pages('pt-eu', 'pt', %w[en ru de fr], verb_template, site_url, sitemap_urls)
+# Build pt-eu verb pages (learning Portuguese from en/ru/de/fr/es)
+build_verb_pages('pt-eu', 'pt', %w[en ru de fr es], verb_template, site_url, sitemap_urls)
 
-# Build en verb pages (learning English from ru/pt/de/fr)
-build_verb_pages('en', 'en', %w[ru pt de fr], verb_template, site_url, sitemap_urls)
+# Build en verb pages (learning English from ru/pt/de/fr/es)
+build_verb_pages('en', 'en', %w[ru pt de fr es], verb_template, site_url, sitemap_urls)
 
-# Build de verb pages (learning German from en/ru/pt/fr)
-build_verb_pages('de', 'de', %w[en ru pt fr], verb_template, site_url, sitemap_urls)
+# Build de verb pages (learning German from en/ru/pt/fr/es)
+build_verb_pages('de', 'de', %w[en ru pt fr es], verb_template, site_url, sitemap_urls)
 
-# Build fr verb pages (learning French from en/ru/pt/de)
-build_verb_pages('fr', 'fr', %w[en ru pt de], verb_template, site_url, sitemap_urls)
+# Build fr verb pages (learning French from en/ru/pt/de/es)
+build_verb_pages('fr', 'fr', %w[en ru pt de es], verb_template, site_url, sitemap_urls)
 
 # Build es verb pages (learning Spanish from en/ru/pt/de/fr)
 build_verb_pages('es', 'es', %w[en ru pt de fr], verb_template, site_url, sitemap_urls)
@@ -358,7 +407,8 @@ if File.exist?('src/data/pt-eu/index.yml')
         { code: 'en', label: '🇬🇧 EN' },
         { code: 'ru', label: '🇷🇺 RU' },
         { code: 'de', label: '🇩🇪 DE' },
-        { code: 'fr', label: '🇫🇷 FR' }
+        { code: 'fr', label: '🇫🇷 FR' },
+        { code: 'es', label: '🇪🇸 ES' }
       ]
     }
   end
@@ -391,7 +441,8 @@ if File.exist?('src/data/en/index.yml')
         { code: 'ru', label: '🇷🇺 RU' },
         { code: 'pt', label: '🇵🇹 PT' },
         { code: 'de', label: '🇩🇪 DE' },
-        { code: 'fr', label: '🇫🇷 FR' }
+        { code: 'fr', label: '🇫🇷 FR' },
+        { code: 'es', label: '🇪🇸 ES' }
       ]
     }
   end
@@ -424,7 +475,8 @@ if File.exist?('src/data/de/index.yml')
         { code: 'en', label: '🇬🇧 EN' },
         { code: 'ru', label: '🇷🇺 RU' },
         { code: 'pt', label: '🇵🇹 PT' },
-        { code: 'fr', label: '🇫🇷 FR' }
+        { code: 'fr', label: '🇫🇷 FR' },
+        { code: 'es', label: '🇪🇸 ES' }
       ]
     }
   end
@@ -457,7 +509,8 @@ if File.exist?('src/data/fr/index.yml')
         { code: 'en', label: '🇬🇧 EN' },
         { code: 'ru', label: '🇷🇺 RU' },
         { code: 'pt', label: '🇵🇹 PT' },
-        { code: 'de', label: '🇩🇪 DE' }
+        { code: 'de', label: '🇩🇪 DE' },
+        { code: 'es', label: '🇪🇸 ES' }
       ]
     }
   end

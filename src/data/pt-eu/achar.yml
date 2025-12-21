@@ -1071,3 +1071,304 @@ phrases:
   - fr: Qu'est-ce que tu penses?
     pt: O que achas?
     tense: Presente
+  es:
+  - es: Creo que sí.
+    pt: Acho que sim.
+    tense: Presente
+  - es: ¿Qué piensas?
+    pt: O que achas?
+    tense: Presente
+  - es: Él cree que es bueno.
+    pt: Ele acha que é bom.
+    tense: Presente
+  - es: Creemos que es importante.
+    pt: Achamos que é importante.
+    tense: Presente
+  - es: Ellos creen que es fácil.
+    pt: Eles acham que é fácil.
+    tense: Presente
+  - es: Creo que tienes razón.
+    pt: Acho que tens razão.
+    tense: Presente
+  - es: ¿Crees?
+    pt: Achas?
+    tense: Presente
+  - es: Ella cree que es bonito.
+    pt: Ela acha que é bonito.
+    tense: Presente
+  - es: Creemos que es posible.
+    pt: Achamos que é possível.
+    tense: Presente
+  - es: Ellos piensan diferente.
+    pt: Eles acham diferente.
+    tense: Presente
+  - es: Yo pensaba eso.
+    pt: Achava isso.
+    tense: Imperfeito
+  - es: Tú pensabas que era fácil.
+    pt: Achavas que era fácil.
+    tense: Imperfeito
+  - es: Él pensaba que sí.
+    pt: Ele achava que sim.
+    tense: Imperfeito
+  - es: Pensábamos diferente.
+    pt: Achávamos diferente.
+    tense: Imperfeito
+  - es: Ellos pensaban que era verdad.
+    pt: Eles achavam que era verdade.
+    tense: Imperfeito
+  - es: Yo pensaba que era bueno.
+    pt: Achava que era bom.
+    tense: Imperfeito
+  - es: Tú encontrabas extraño.
+    pt: Achavas estranho.
+    tense: Imperfeito
+  - es: Ella encontraba interesante.
+    pt: Ela achava interessante.
+    tense: Imperfeito
+  - es: Encontrábamos imposible.
+    pt: Achávamos impossível.
+    tense: Imperfeito
+  - es: Ellos encontraban incorrecto.
+    pt: Eles achavam errado.
+    tense: Imperfeito
+  - es: Encontré la llave.
+    pt: Achei a chave.
+    tense: Perfeito
+  - es: Encontraste interesante.
+    pt: Achaste interessante.
+    tense: Perfeito
+  - es: Él encontró la respuesta.
+    pt: Ele achou a resposta.
+    tense: Perfeito
+  - es: Encontramos difícil.
+    pt: Achámos difícil.
+    tense: Perfeito
+  - es: Ellos encontraron el libro.
+    pt: Eles acharam o livro.
+    tense: Perfeito
+  - es: Lo encontré genial.
+    pt: Achei ótimo.
+    tense: Perfeito
+  - es: Lo encontraste divertido.
+    pt: Achaste engraçado.
+    tense: Perfeito
+  - es: Ella encontró su bolso.
+    pt: Ela achou a mala dela.
+    tense: Perfeito
+  - es: Encontramos la solución.
+    pt: Achámos a solução.
+    tense: Perfeito
+  - es: Ellos lo encontraron caro.
+    pt: Eles acharam caro.
+    tense: Perfeito
+  - es: Lo encontraré.
+    pt: Acharei.
+    tense: Futuro
+  - es: Pensarás diferente.
+    pt: Acharás diferente.
+    tense: Futuro
+  - es: Él encontrará la verdad.
+    pt: Ele achará a verdade.
+    tense: Futuro
+  - es: Lo encontraremos.
+    pt: Acharemos.
+    tense: Futuro
+  - es: Ellos creerán que sí.
+    pt: Eles acharão que sim.
+    tense: Futuro
+  - es: Encontraré un camino.
+    pt: Acharei um caminho.
+    tense: Futuro
+  - es: Lo encontrarás fácil.
+    pt: Acharás fácil.
+    tense: Futuro
+  - es: Ella pensará sobre eso.
+    pt: Ela achará sobre isso.
+    tense: Futuro
+  - es: Encontraremos la respuesta.
+    pt: Acharemos a resposta.
+    tense: Futuro
+  - es: Ellos lo encontrarán útil.
+    pt: Eles acharão útil.
+    tense: Futuro
+  - es: Yo pensaría.
+    pt: Acharia.
+    tense: Condicional
+  - es: Tú lo encontrarías bueno.
+    pt: Acharias bom.
+    tense: Condicional
+  - es: Él pensaría que sí.
+    pt: Ele acharia que sim.
+    tense: Condicional
+  - es: Lo encontraríamos fácil.
+    pt: Acharíamos fácil.
+    tense: Condicional
+  - es: Ellos pensarían diferente.
+    pt: Eles achariam diferente.
+    tense: Condicional
+  - es: Lo encontraría extraño.
+    pt: Acharia estranho.
+    tense: Condicional
+  - es: Lo encontrarías posible.
+    pt: Acharias possível.
+    tense: Condicional
+  - es: Ella encontraría la solución.
+    pt: Ela acharia a solução.
+    tense: Condicional
+  - es: Lo encontraríamos interesante.
+    pt: Acharíamos interessante.
+    tense: Condicional
+  - es: Ellos pensarían lo mismo.
+    pt: Eles achariam o mesmo.
+    tense: Condicional
+  - es: Espero que lo encuentres.
+    pt: Espero que aches.
+    tense: Conjuntivo
+  - es: Quiero que él piense.
+    pt: Quero que ele ache.
+    tense: Conjuntivo
+  - es: Es importante que encontremos.
+    pt: É importante que achemos.
+    tense: Conjuntivo
+  - es: Dudo que ellos piensen.
+    pt: Duvido que eles achem.
+    tense: Conjuntivo
+  - es: Aunque yo piense.
+    pt: Embora eu ache.
+    tense: Conjuntivo
+  - es: Para que tú encuentres.
+    pt: Para que tu aches.
+    tense: Conjuntivo
+  - es: A menos que ella encuentre.
+    pt: A menos que ela ache.
+    tense: Conjuntivo
+  - es: Antes de que ellos piensen.
+    pt: Antes que eles achem.
+    tense: Conjuntivo
+  - es: Es posible que encontremos.
+    pt: É possível que achemos.
+    tense: Conjuntivo
+  - es: Prefiero que tú pienses.
+    pt: Prefiro que tu aches.
+    tense: Conjuntivo
+  - es: Si yo pensara.
+    pt: Se eu achasse.
+    tense: Imperfeito Conj.
+  - es: Si tú encontraras.
+    pt: Se tu achasses.
+    tense: Imperfeito Conj.
+  - es: Si él pensara.
+    pt: Se ele achasse.
+    tense: Imperfeito Conj.
+  - es: Si nosotros encontráramos.
+    pt: Se nós achássemos.
+    tense: Imperfeito Conj.
+  - es: Si ellos pensaran.
+    pt: Se eles achassem.
+    tense: Imperfeito Conj.
+  - es: Ojalá lo encontrara.
+    pt: Quem me dera achar.
+    tense: Imperfeito Conj.
+  - es: Como si ella pensara.
+    pt: Como se ela achasse.
+    tense: Imperfeito Conj.
+  - es: Si solo tú encontraras.
+    pt: Se tu achasses.
+    tense: Imperfeito Conj.
+  - es: Quería que tú pensaras.
+    pt: Queria que tu achasses.
+    tense: Imperfeito Conj.
+  - es: Sería bueno si ellos encontraran.
+    pt: Seria bom se eles achassem.
+    tense: Imperfeito Conj.
+  - es: Cuando yo encuentre.
+    pt: Quando eu achar.
+    tense: Futuro Conj.
+  - es: En cuanto encuentres.
+    pt: Assim que achares.
+    tense: Futuro Conj.
+  - es: Si él encuentra.
+    pt: Se ele achar.
+    tense: Futuro Conj.
+  - es: Cuando encontremos.
+    pt: Quando acharmos.
+    tense: Futuro Conj.
+  - es: Conforme ellos encuentren.
+    pt: Conforme eles acharem.
+    tense: Futuro Conj.
+  - es: Creo que no.
+    pt: Acho que não.
+    tense: Presente
+  - es: Creo que es verdad.
+    pt: Acho que é verdade.
+    tense: Presente
+  - es: ¿Qué piensas de esto?
+    pt: O que achas disto?
+    tense: Presente
+  - es: Lo encuentro difícil.
+    pt: Acho difícil.
+    tense: Presente
+  - es: Ella lo encuentra fácil.
+    pt: Ela acha fácil.
+    tense: Presente
+  - es: ¿Crees que es posible?
+    pt: Achas que é possível?
+    tense: Presente
+  - es: Lo encuentro interesante.
+    pt: Acho interessante.
+    tense: Presente
+  - es: Creemos que es buena idea.
+    pt: Achamos que é uma boa ideia.
+    tense: Presente
+  - es: Ellos lo encuentran extraño.
+    pt: Eles acham estranho.
+    tense: Presente
+  - es: Creo que estás equivocado.
+    pt: Acho que estás errado.
+    tense: Presente
+  - es: No encuentro mi móvil.
+    pt: Não consigo achar o meu telemóvel.
+    tense: Presente
+  - es: ¿Lo encontraste?
+    pt: Achaste?
+    tense: Perfeito
+  - es: ¡Lo encontré!
+    pt: Achei!
+    tense: Perfeito
+  - es: ¿Dónde encontraste esto?
+    pt: Onde achaste isto?
+    tense: Perfeito
+  - es: Nunca encontramos la respuesta.
+    pt: Nunca achámos a resposta.
+    tense: Perfeito
+  - es: Lo encuentro gracioso.
+    pt: Acho engraçado.
+    tense: Presente
+  - es: Él lo encuentra aburrido.
+    pt: Ele acha aborrecido.
+    tense: Presente
+  - es: Creo que es demasiado caro.
+    pt: Acho que é caro demais.
+    tense: Presente
+  - es: ¿Qué pensaste?
+    pt: O que achaste?
+    tense: Perfeito
+  - es: Pensé que eras tú.
+    pt: Achei que eras tu.
+    tense: Perfeito
+  - es: Ella lo encontró hermoso.
+    pt: Ela achou lindo.
+    tense: Perfeito
+  - es: Pensamos que era imposible.
+    pt: Achámos que era impossível.
+    tense: Perfeito
+  - es: Creo que es hora de ir.
+    pt: Acho que está na hora de ir.
+    tense: Presente
+  - es: ¿No crees?
+    pt: Não achas?
+    tense: Presente
+  - es: Creo que entiendo.
+    pt: Acho que percebo.
+    tense: Presente

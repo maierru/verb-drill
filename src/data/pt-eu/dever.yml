@@ -913,3 +913,289 @@ phrases:
   - fr: Je dois partir.
     pt: Devo partir.
     tense: Presente
+  es:
+  - es: Debo hacerlo.
+    pt: Devo fazer.
+    tense: Presente
+  - es: Debes estudiar.
+    pt: Deves estudar.
+    tense: Presente
+  - es: Él debe trabajar.
+    pt: Ele deve trabalhar.
+    tense: Presente
+  - es: Debemos ir.
+    pt: Devemos ir.
+    tense: Presente
+  - es: Ellos deben llegar.
+    pt: Eles devem chegar.
+    tense: Presente
+  - es: Debo dinero.
+    pt: Devo dinheiro.
+    tense: Presente
+  - es: Me debes un favor.
+    pt: Deves-me um favor.
+    tense: Presente
+  - es: Ella debe ser feliz.
+    pt: Ela deve ser feliz.
+    tense: Presente
+  - es: Debemos ayudar.
+    pt: Devemos ajudar.
+    tense: Presente
+  - es: Ellos deben pagar.
+    pt: Eles devem pagar.
+    tense: Presente
+  - es: Debía hacerlo.
+    pt: Devia fazer.
+    tense: Imperfeito
+  - es: Debías estudiar.
+    pt: Devias estudar.
+    tense: Imperfeito
+  - es: Él debía trabajar.
+    pt: Ele devia trabalhar.
+    tense: Imperfeito
+  - es: Debíamos ir.
+    pt: Devíamos ir.
+    tense: Imperfeito
+  - es: Ellos debían llegar.
+    pt: Eles deviam chegar.
+    tense: Imperfeito
+  - es: Debía dinero.
+    pt: Devia dinheiro.
+    tense: Imperfeito
+  - es: Me debías un favor.
+    pt: Devias-me um favor.
+    tense: Imperfeito
+  - es: Ella debía ser feliz.
+    pt: Ela devia ser feliz.
+    tense: Imperfeito
+  - es: Debíamos ayudar.
+    pt: Devíamos ajudar.
+    tense: Imperfeito
+  - es: Ellos debían pagar.
+    pt: Eles deviam pagar.
+    tense: Imperfeito
+  - es: Debí hacerlo.
+    pt: Devi fazer.
+    tense: Perfeito
+  - es: Debiste estudiar.
+    pt: Deveste estudar.
+    tense: Perfeito
+  - es: Él debió trabajar.
+    pt: Ele deveu trabalhar.
+    tense: Perfeito
+  - es: Debimos ir.
+    pt: Devemos ir.
+    tense: Perfeito
+  - es: Ellos debieron llegar.
+    pt: Eles deveram chegar.
+    tense: Perfeito
+  - es: Le debí dinero.
+    pt: Devi-lhe dinheiro.
+    tense: Perfeito
+  - es: Me debiste un favor.
+    pt: Deveste-me um favor.
+    tense: Perfeito
+  - es: Ella debió ser feliz.
+    pt: Ela deveu ser feliz.
+    tense: Perfeito
+  - es: Debimos ayudar.
+    pt: Devemos ajudar.
+    tense: Perfeito
+  - es: Ellos debieron pagar.
+    pt: Eles deveram pagar.
+    tense: Perfeito
+  - es: Deberé hacerlo.
+    pt: Deverei fazer.
+    tense: Futuro
+  - es: Deberás estudiar.
+    pt: Deverás estudar.
+    tense: Futuro
+  - es: Él deberá trabajar.
+    pt: Ele deverá trabalhar.
+    tense: Futuro
+  - es: Deberemos ir.
+    pt: Deveremos ir.
+    tense: Futuro
+  - es: Ellos deberán llegar.
+    pt: Eles deverão chegar.
+    tense: Futuro
+  - es: Le deberé dinero.
+    pt: Dever-lhe-ei dinheiro.
+    tense: Futuro
+  - es: Me deberás un favor.
+    pt: Dever-me-ás um favor.
+    tense: Futuro
+  - es: Ella deberá ser feliz.
+    pt: Ela deverá ser feliz.
+    tense: Futuro
+  - es: Deberemos ayudar.
+    pt: Deveremos ajudar.
+    tense: Futuro
+  - es: Ellos deberán pagar.
+    pt: Eles deverão pagar.
+    tense: Futuro
+  - es: Debería hacerlo.
+    pt: Deveria fazer.
+    tense: Condicional
+  - es: Deberías estudiar.
+    pt: Deverias estudar.
+    tense: Condicional
+  - es: Él debería trabajar.
+    pt: Ele deveria trabalhar.
+    tense: Condicional
+  - es: Deberíamos ir.
+    pt: Deveríamos ir.
+    tense: Condicional
+  - es: Ellos deberían llegar.
+    pt: Eles deveriam chegar.
+    tense: Condicional
+  - es: Debería pagar.
+    pt: Deveria pagar.
+    tense: Condicional
+  - es: Me deberías un favor.
+    pt: Deverias-me um favor.
+    tense: Condicional
+  - es: Ella debería ser feliz.
+    pt: Ela deveria ser feliz.
+    tense: Condicional
+  - es: Deberíamos ayudar.
+    pt: Deveríamos ajudar.
+    tense: Condicional
+  - es: Ellos deberían pagar más.
+    pt: Eles deveriam pagar mais.
+    tense: Condicional
+  - es: Quiero que debas.
+    pt: Quero que devas.
+    tense: Conjuntivo
+  - es: Espero que él deba.
+    pt: Espero que ele deva.
+    tense: Conjuntivo
+  - es: Es importante que debamos.
+    pt: É importante que devamos.
+    tense: Conjuntivo
+  - es: Dudo que ellos deban.
+    pt: Duvido que eles devam.
+    tense: Conjuntivo
+  - es: Aunque yo deba.
+    pt: Embora eu deva.
+    tense: Conjuntivo
+  - es: Para que tú debas.
+    pt: Para que tu devas.
+    tense: Conjuntivo
+  - es: A menos que ella deba.
+    pt: A menos que ela deva.
+    tense: Conjuntivo
+  - es: Antes de que ellos deban.
+    pt: Antes que eles devam.
+    tense: Conjuntivo
+  - es: Es posible que debamos.
+    pt: É possível que devamos.
+    tense: Conjuntivo
+  - es: Prefiero que tú debas.
+    pt: Prefiro que tu devas.
+    tense: Conjuntivo
+  - es: Si yo debiera.
+    pt: Se eu devesse.
+    tense: Imperfeito Conj.
+  - es: Si tú debieras.
+    pt: Se tu devesses.
+    tense: Imperfeito Conj.
+  - es: Si él debiera.
+    pt: Se ele devesse.
+    tense: Imperfeito Conj.
+  - es: Si nosotros debiéramos.
+    pt: Se nós devêssemos.
+    tense: Imperfeito Conj.
+  - es: Si ellos debieran.
+    pt: Se eles devessem.
+    tense: Imperfeito Conj.
+  - es: Ojalá no debiera dinero.
+    pt: Quem me dera não dever dinheiro.
+    tense: Imperfeito Conj.
+  - es: Como si ella debiera.
+    pt: Como se ela devesse.
+    tense: Imperfeito Conj.
+  - es: Si solo tú debieras.
+    pt: Se tu devesses.
+    tense: Imperfeito Conj.
+  - es: Quería que tú debieras.
+    pt: Queria que tu devesses.
+    tense: Imperfeito Conj.
+  - es: Sería bueno si ellos debieran.
+    pt: Seria bom se eles devessem.
+    tense: Imperfeito Conj.
+  - es: Cuando yo deba.
+    pt: Quando eu dever.
+    tense: Futuro Conj.
+  - es: En cuanto debas.
+    pt: Assim que deveres.
+    tense: Futuro Conj.
+  - es: Si él debe.
+    pt: Se ele dever.
+    tense: Futuro Conj.
+  - es: Cuando debamos.
+    pt: Quando devermos.
+    tense: Futuro Conj.
+  - es: A medida que ellos deban.
+    pt: Conforme eles deverem.
+    tense: Futuro Conj.
+  - es: Debo irme.
+    pt: Devo ir-me embora.
+    tense: Presente
+  - es: Debes saber.
+    pt: Deves saber.
+    tense: Presente
+  - es: Él debe estar cansado.
+    pt: Ele deve estar cansado.
+    tense: Presente
+  - es: Debemos terminar.
+    pt: Devemos acabar.
+    tense: Presente
+  - es: Ellos deben venir.
+    pt: Eles devem vir.
+    tense: Presente
+  - es: Me debes dinero.
+    pt: Deves-me dinheiro.
+    tense: Presente
+  - es: Te debo una explicación.
+    pt: Devo-te uma explicação.
+    tense: Presente
+  - es: Ella le debe todo.
+    pt: Ela deve-lhe tudo.
+    tense: Presente
+  - es: Les debemos respeto.
+    pt: Devemos-lhes respeito.
+    tense: Presente
+  - es: Ellos me deben un favor.
+    pt: Eles devem-me um favor.
+    tense: Presente
+  - es: ¿Qué debo hacer?
+    pt: O que devo fazer?
+    tense: Presente
+  - es: ¿Debes algo?
+    pt: Deves alguma coisa?
+    tense: Presente
+  - es: ¿Él debe pagar?
+    pt: Ele deve pagar?
+    tense: Presente
+  - es: No debo nada.
+    pt: Não devo nada.
+    tense: Presente
+  - es: Ella no debe preocuparse.
+    pt: Ela não deve preocupar-se.
+    tense: Presente
+  - es: Debo de ser yo.
+    pt: Devo ser eu.
+    tense: Presente
+  - es: Debes de estar cansado.
+    pt: Deves estar cansado.
+    tense: Presente
+  - es: Debe de ser tarde.
+    pt: Deve ser tarde.
+    tense: Presente
+  - es: Debemos partir ahora.
+    pt: Devemos partir agora.
+    tense: Presente
+  - es: Ellos deben haber llegado.
+    pt: Eles devem ter chegado.
+    tense: Presente

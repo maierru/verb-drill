@@ -921,3 +921,304 @@ phrases:
   - fr: Comment vas-tu?
     pt: Como andas?
     tense: Expressão
+  es:
+  - es: Camino todos los días.
+    pt: Ando todos os dias.
+    tense: Presente
+  - es: Caminas rápido.
+    pt: Andas depressa.
+    tense: Presente
+  - es: Él camina despacio.
+    pt: Ele anda devagar.
+    tense: Presente
+  - es: Caminamos juntos.
+    pt: Andamos juntos.
+    tense: Presente
+  - es: Ellos van a la escuela.
+    pt: Eles andam para a escola.
+    tense: Presente
+  - es: Voy por la calle.
+    pt: Ando na rua.
+    tense: Presente
+  - es: Vas muy despacio.
+    pt: Andas muito devagar.
+    tense: Presente
+  - es: Ella camina conmigo.
+    pt: Ela anda comigo.
+    tense: Presente
+  - es: Caminamos en el parque.
+    pt: Andamos no parque.
+    tense: Presente
+  - es: Ellos van a casa.
+    pt: Eles andam para casa.
+    tense: Presente
+  - es: Yo caminaba.
+    pt: Andava.
+    tense: Imperfeito
+  - es: Tú caminabas por ahí.
+    pt: Andavas por aí.
+    tense: Imperfeito
+  - es: Él caminaba mucho.
+    pt: Ele andava muito.
+    tense: Imperfeito
+  - es: Caminábamos todos los días.
+    pt: Andávamos todos os dias.
+    tense: Imperfeito
+  - es: Ellos caminaban despacio.
+    pt: Eles andavam devagar.
+    tense: Imperfeito
+  - es: Caminaba aquí.
+    pt: Andava aqui.
+    tense: Imperfeito
+  - es: Caminabas con él.
+    pt: Andavas com ele.
+    tense: Imperfeito
+  - es: Ella caminaba sola.
+    pt: Ela andava sozinha.
+    tense: Imperfeito
+  - es: Caminábamos de noche.
+    pt: Andávamos à noite.
+    tense: Imperfeito
+  - es: Ellos andaban por la ciudad.
+    pt: Eles andavam na cidade.
+    tense: Imperfeito
+  - es: Caminé ayer.
+    pt: Andei ontem.
+    tense: Perfeito
+  - es: Caminaste todo el día.
+    pt: Andaste o dia todo.
+    tense: Perfeito
+  - es: Él caminó durante horas.
+    pt: Ele andou durante horas.
+    tense: Perfeito
+  - es: Caminamos juntos.
+    pt: Andámos juntos.
+    tense: Perfeito
+  - es: Ellos caminaron hasta la playa.
+    pt: Eles andaram até à praia.
+    tense: Perfeito
+  - es: Caminé mucho hoy.
+    pt: Andei muito hoje.
+    tense: Perfeito
+  - es: Caminaste muy rápido.
+    pt: Andaste muito depressa.
+    tense: Perfeito
+  - es: Ella caminó bajo la lluvia.
+    pt: Ela andou à chuva.
+    tense: Perfeito
+  - es: Anduvimos por la ciudad.
+    pt: Andámos pela cidade.
+    tense: Perfeito
+  - es: Ellos fueron a casa.
+    pt: Eles andaram para casa.
+    tense: Perfeito
+  - es: Caminaré.
+    pt: Andarei.
+    tense: Futuro
+  - es: Caminarás conmigo.
+    pt: Andarás comigo.
+    tense: Futuro
+  - es: Él caminará allí.
+    pt: Ele andará lá.
+    tense: Futuro
+  - es: Caminaremos mañana.
+    pt: Andaremos amanhã.
+    tense: Futuro
+  - es: Ellos caminarán juntos.
+    pt: Eles andarão juntos.
+    tense: Futuro
+  - es: Caminaré más.
+    pt: Andarei mais.
+    tense: Futuro
+  - es: Caminarás más rápido.
+    pt: Andarás mais depressa.
+    tense: Futuro
+  - es: Ella caminará en el parque.
+    pt: Ela andará no parque.
+    tense: Futuro
+  - es: Caminaremos todos los días.
+    pt: Andaremos todos os dias.
+    tense: Futuro
+  - es: Ellos irán al trabajo.
+    pt: Eles andarão para o trabalho.
+    tense: Futuro
+  - es: Yo caminaría.
+    pt: Andaria.
+    tense: Condicional
+  - es: Tú caminarías conmigo.
+    pt: Andarias comigo.
+    tense: Condicional
+  - es: Él caminaría más.
+    pt: Ele andaria mais.
+    tense: Condicional
+  - es: Caminaríamos juntos.
+    pt: Andaríamos juntos.
+    tense: Condicional
+  - es: Ellos caminarían aquí.
+    pt: Eles andariam aqui.
+    tense: Condicional
+  - es: Caminaría si pudiera.
+    pt: Andaria se pudesse.
+    tense: Condicional
+  - es: Caminarías más rápido.
+    pt: Andarias mais depressa.
+    tense: Condicional
+  - es: Ella caminaría sola.
+    pt: Ela andaria sozinha.
+    tense: Condicional
+  - es: Caminaríamos todos los días.
+    pt: Andaríamos todos os dias.
+    tense: Condicional
+  - es: Ellos caminarían hasta el parque.
+    pt: Eles andariam até ao parque.
+    tense: Condicional
+  - es: Quiero que camines.
+    pt: Quero que andes.
+    tense: Conjuntivo
+  - es: Espero que él camine.
+    pt: Espero que ele ande.
+    tense: Conjuntivo
+  - es: Es importante que caminemos.
+    pt: É importante que andemos.
+    tense: Conjuntivo
+  - es: Dudo que ellos caminen.
+    pt: Duvido que eles andem.
+    tense: Conjuntivo
+  - es: Aunque yo camine.
+    pt: Embora eu ande.
+    tense: Conjuntivo
+  - es: Para que tú camines.
+    pt: Para que tu andes.
+    tense: Conjuntivo
+  - es: A menos que ella camine.
+    pt: A menos que ela ande.
+    tense: Conjuntivo
+  - es: Antes de que ellos caminen.
+    pt: Antes que eles andem.
+    tense: Conjuntivo
+  - es: Es posible que caminemos.
+    pt: É possível que andemos.
+    tense: Conjuntivo
+  - es: Prefiero que tú camines.
+    pt: Prefiro que tu andes.
+    tense: Conjuntivo
+  - es: Si yo caminara.
+    pt: Se eu andasse.
+    tense: Imperfeito Conj.
+  - es: Si tú caminaras.
+    pt: Se tu andasses.
+    tense: Imperfeito Conj.
+  - es: Si él caminara.
+    pt: Se ele andasse.
+    tense: Imperfeito Conj.
+  - es: Si nosotros camináramos.
+    pt: Se nós andássemos.
+    tense: Imperfeito Conj.
+  - es: Si ellos caminaran.
+    pt: Se eles andassem.
+    tense: Imperfeito Conj.
+  - es: Ojalá caminara más.
+    pt: Quem me dera andar mais.
+    tense: Imperfeito Conj.
+  - es: Como si ella caminara.
+    pt: Como se ela andasse.
+    tense: Imperfeito Conj.
+  - es: Si solo tú caminaras.
+    pt: Se tu andasses.
+    tense: Imperfeito Conj.
+  - es: Quería que tú caminaras.
+    pt: Queria que tu andasses.
+    tense: Imperfeito Conj.
+  - es: Sería bueno si ellos caminaran.
+    pt: Seria bom se eles andassem.
+    tense: Imperfeito Conj.
+  - es: Estoy ocupado últimamente.
+    pt: Ando ocupado.
+    tense: Presente
+  - es: Estás cansado últimamente.
+    pt: Andas cansado.
+    tense: Presente
+  - es: Él está triste últimamente.
+    pt: Ele anda triste.
+    tense: Presente
+  - es: Estamos trabajando.
+    pt: Andamos a trabalhar.
+    tense: Presente
+  - es: Ellos están estudiando.
+    pt: Eles andam a estudar.
+    tense: Presente
+  - es: ¿Cómo estás?
+    pt: Como andas?
+    tense: Presente
+  - es: Estoy bien.
+    pt: Ando bem.
+    tense: Presente
+  - es: Ella está estresada.
+    pt: Ela anda stressada.
+    tense: Presente
+  - es: Estamos ocupados últimamente.
+    pt: Andamos ocupados ultimamente.
+    tense: Presente
+  - es: Ellos están felices.
+    pt: Eles andam felizes.
+    tense: Presente
+  - es: ¡Camina más rápido!
+    pt: Anda mais depressa!
+    tense: Imperativo
+  - es: ¡Caminemos!
+    pt: Andemos!
+    tense: Imperativo
+  - es: ¡Camina conmigo!
+    pt: Anda comigo!
+    tense: Imperativo
+  - es: ¡No vayas ahí!
+    pt: Não andes lá!
+    tense: Imperativo
+  - es: ¡Camina despacio!
+    pt: Anda devagar!
+    tense: Imperativo
+  - es: ¿Estás caminando?
+    pt: Estás a andar?
+    tense: Presente
+  - es: ¿Él está caminando?
+    pt: Ele está a andar?
+    tense: Presente
+  - es: ¿Ellos están caminando?
+    pt: Eles estão a andar?
+    tense: Presente
+  - es: No estoy caminando.
+    pt: Não estou a andar.
+    tense: Presente
+  - es: Ella no está caminando.
+    pt: Ela não está a andar.
+    tense: Presente
+  - es: Cuando yo camine.
+    pt: Quando eu andar.
+    tense: Futuro Conj.
+  - es: En cuanto camines.
+    pt: Assim que andares.
+    tense: Futuro Conj.
+  - es: Si él camina.
+    pt: Se ele andar.
+    tense: Futuro Conj.
+  - es: Cuando caminemos.
+    pt: Quando andarmos.
+    tense: Futuro Conj.
+  - es: Conforme ellos caminen.
+    pt: Conforme eles andarem.
+    tense: Futuro Conj.
+  - es: Ando por ahí.
+    pt: Ando por aí.
+    tense: Presente
+  - es: Tú caminas mucho.
+    pt: Tu andas muito.
+    tense: Presente
+  - es: Él va al trabajo.
+    pt: Ele anda para o trabalho.
+    tense: Presente
+  - es: Caminamos juntos.
+    pt: Andamos juntos.
+    tense: Presente
+  - es: Ellos caminan por la mañana.
+    pt: Eles andam de manhã.
+    tense: Presente

@@ -772,6 +772,253 @@ phrases:
   - de: Kann ich dich bitten?
     pt: Posso pedir-te?
     tense: Presente
+  es:
+  - es: Pido.
+    pt: Peço.
+    tense: Presente
+  - es: Pides ayuda.
+    pt: Pedes ajuda.
+    tense: Presente
+  - es: Él pide comida.
+    pt: Ele pede comida.
+    tense: Presente
+  - es: Pedimos agua.
+    pt: Pedimos água.
+    tense: Presente
+  - es: Ellos piden permiso.
+    pt: Eles pedem permissão.
+    tense: Presente
+  - es: Pido disculpas.
+    pt: Peço desculpa.
+    tense: Presente
+  - es: ¿Pides café?
+    pt: Pedes café?
+    tense: Presente
+  - es: Ella pide dinero.
+    pt: Ela pede dinheiro.
+    tense: Presente
+  - es: Pedimos tiempo.
+    pt: Pedimos tempo.
+    tense: Presente
+  - es: Ellos piden información.
+    pt: Eles pedem informação.
+    tense: Presente
+  - es: Pedía todos los días.
+    pt: Pedia todos os dias.
+    tense: Imperfeito
+  - es: Pedías ayuda.
+    pt: Pedias ajuda.
+    tense: Imperfeito
+  - es: Él pedía comida.
+    pt: Ele pedia comida.
+    tense: Imperfeito
+  - es: Pedíamos dinero.
+    pt: Pedíamos dinheiro.
+    tense: Imperfeito
+  - es: Ellos pedían permiso.
+    pt: Eles pediam permissão.
+    tense: Imperfeito
+  - es: Pedía disculpas.
+    pt: Pedia desculpa.
+    tense: Imperfeito
+  - es: ¿Qué pedías?
+    pt: O que pedias?
+    tense: Imperfeito
+  - es: Ella pedía tiempo.
+    pt: Ela pedia tempo.
+    tense: Imperfeito
+  - es: Pedíamos café.
+    pt: Pedíamos café.
+    tense: Imperfeito
+  - es: Pedían información.
+    pt: Pediam informação.
+    tense: Imperfeito
+  - es: Pedí ayuda.
+    pt: Pedi ajuda.
+    tense: Perfeito
+  - es: Pediste comida.
+    pt: Pediste comida.
+    tense: Perfeito
+  - es: Él pidió dinero.
+    pt: Ele pediu dinheiro.
+    tense: Perfeito
+  - es: Pedimos tiempo.
+    pt: Pedimos tempo.
+    tense: Perfeito
+  - es: Ellos pidieron permiso.
+    pt: Eles pediram permissão.
+    tense: Perfeito
+  - es: Pedí disculpas.
+    pt: Pedi desculpa.
+    tense: Perfeito
+  - es: ¿Qué pediste?
+    pt: O que pediste?
+    tense: Perfeito
+  - es: Ella pidió café.
+    pt: Ela pediu café.
+    tense: Perfeito
+  - es: Pedimos información.
+    pt: Pedimos informação.
+    tense: Perfeito
+  - es: Pidieron ayuda.
+    pt: Pediram ajuda.
+    tense: Perfeito
+  - es: Pediré.
+    pt: Pedirei.
+    tense: Futuro
+  - es: Pedirás ayuda.
+    pt: Pedirás ajuda.
+    tense: Futuro
+  - es: Él pedirá comida.
+    pt: Ele pedirá comida.
+    tense: Futuro
+  - es: Pediremos tiempo.
+    pt: Pediremos tempo.
+    tense: Futuro
+  - es: Ellos pedirán permiso.
+    pt: Eles pedirão permissão.
+    tense: Futuro
+  - es: Pediré disculpas.
+    pt: Pedirei desculpa.
+    tense: Futuro
+  - es: ¿Pedirás café?
+    pt: Pedirás café?
+    tense: Futuro
+  - es: Ella pedirá dinero.
+    pt: Ela pedirá dinheiro.
+    tense: Futuro
+  - es: Pediremos información.
+    pt: Pediremos informação.
+    tense: Futuro
+  - es: No pedirán.
+    pt: Não pedirão.
+    tense: Futuro
+  - es: Pediría.
+    pt: Pediria.
+    tense: Condicional
+  - es: Pedirías ayuda.
+    pt: Pedirias ajuda.
+    tense: Condicional
+  - es: Él pediría comida.
+    pt: Ele pediria comida.
+    tense: Condicional
+  - es: Pediríamos tiempo.
+    pt: Pediríamos tempo.
+    tense: Condicional
+  - es: Ellos pedirían permiso.
+    pt: Eles pediriam permissão.
+    tense: Condicional
+  - es: Pediría disculpas.
+    pt: Pediria desculpa.
+    tense: Condicional
+  - es: ¿Pedirías café?
+    pt: Pedirias café?
+    tense: Condicional
+  - es: Ella pediría dinero.
+    pt: Ela pediria dinheiro.
+    tense: Condicional
+  - es: Pediríamos información.
+    pt: Pediríamos informação.
+    tense: Condicional
+  - es: No pedirían.
+    pt: Não pediriam.
+    tense: Condicional
+  - es: Espero que pidas.
+    pt: Espero que peças.
+    tense: Conjuntivo
+  - es: Es importante que él pida.
+    pt: É importante que ele peça.
+    tense: Conjuntivo
+  - es: Dudo que pidamos.
+    pt: Duvido que peçamos.
+    tense: Conjuntivo
+  - es: Aunque ellos pidan.
+    pt: Embora eles peçam.
+    tense: Conjuntivo
+  - es: Para que tú pidas.
+    pt: Para que tu peças.
+    tense: Conjuntivo
+  - es: A menos que ella pida.
+    pt: A menos que ela peça.
+    tense: Conjuntivo
+  - es: Es necesario que pidamos.
+    pt: É preciso que peçamos.
+    tense: Conjuntivo
+  - es: No creo que pidan.
+    pt: Não acho que peçam.
+    tense: Conjuntivo
+  - es: Espero que pidas ayuda.
+    pt: Espero que peças ajuda.
+    tense: Conjuntivo
+  - es: Quiero que pidas.
+    pt: Quero que peças.
+    tense: Conjuntivo
+  - es: Si yo pidiera...
+    pt: Se eu pedisse...
+    tense: Imperfeito Conj.
+  - es: Ojalá pidieras.
+    pt: Quem me dera que pedisses.
+    tense: Imperfeito Conj.
+  - es: Si él pidiera...
+    pt: Se ele pedisse...
+    tense: Imperfeito Conj.
+  - es: Si pidiéramos...
+    pt: Se pedíssemos...
+    tense: Imperfeito Conj.
+  - es: Si ellos pidieran...
+    pt: Se eles pedissem...
+    tense: Imperfeito Conj.
+  - es: Iría si tú pidieras.
+    pt: Iria se pedisses.
+    tense: Imperfeito Conj.
+  - es: Aunque pidiera...
+    pt: Mesmo que pedisse...
+    tense: Imperfeito Conj.
+  - es: Como si no pidiera nada.
+    pt: Como se não pedisse nada.
+    tense: Imperfeito Conj.
+  - es: Si pidiera ayuda...
+    pt: Se pedisse ajuda...
+    tense: Imperfeito Conj.
+  - es: Ojalá pidiéramos.
+    pt: Quem me dera que pedíssemos.
+    tense: Imperfeito Conj.
+  - es: Cuando pida...
+    pt: Quando pedir...
+    tense: Futuro Conj.
+  - es: Si pides...
+    pt: Se pedires...
+    tense: Futuro Conj.
+  - es: Cuando él pida...
+    pt: Quando ele pedir...
+    tense: Futuro Conj.
+  - es: Si pedimos...
+    pt: Se pedirmos...
+    tense: Futuro Conj.
+  - es: Cuando ellos pidan...
+    pt: Quando eles pedirem...
+    tense: Futuro Conj.
+  - es: En cuanto pida...
+    pt: Assim que pedir...
+    tense: Futuro Conj.
+  - es: Si alguna vez pides...
+    pt: Se alguma vez pedires...
+    tense: Futuro Conj.
+  - es: Cuando pidamos...
+    pt: Quando pedirmos...
+    tense: Futuro Conj.
+  - es: Donde quiera que pidas...
+    pt: Onde quer que peças...
+    tense: Futuro Conj.
+  - es: Si pides ayuda, te ayudo.
+    pt: Se pedires ajuda, ajudo-te.
+    tense: Futuro Conj.
+  - es: ¡Pide!
+    pt: Pede!
+    tense: Imperativo
+  - es: ¿Puedo pedirte?
+    pt: Posso pedir-te?
+    tense: Presente
   fr:
   - fr: Je demande.
     pt: Peço.
