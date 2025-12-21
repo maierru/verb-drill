@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇵🇹 VERB CONSEGUIR — 53 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇵🇹 Verb CONSEGUIR</h1>
+            <p class="subtitle">to manage, to be able to — 53 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 53 von 53 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Portugiesisch-Übung — CONSEGUIR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇵🇹 Verb CONSEGUIR</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>consigo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>consegues</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>consegue</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>conseguimos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>conseguem</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>conseguia</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>conseguias</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>conseguia</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>conseguíamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>conseguiam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Perfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>consegui</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>conseguiste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>conseguiu</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>conseguimos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>conseguiram</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>conseguirei</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>conseguirás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>conseguirá</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>conseguiremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>conseguirão</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Condicional</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>conseguiria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>conseguirias</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>conseguiria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>conseguiríamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>conseguiriam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Presente do Conjuntivo</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>consiga</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>consigas</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>consiga</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>consigamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>consigam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imperfeito do Conjuntivo</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>conseguisse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>conseguisses</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>conseguisse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>conseguíssemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>conseguissem</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'pt',
+            labels: { target: 'Europäisches Portugiesisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["consigo","consegues","consegue","conseguimos","conseguem","conseguia","conseguias","conseguíamos","conseguiam","consegui","conseguiste","conseguiu","conseguiram","conseguirei","conseguirás","conseguirá","conseguiremos","conseguirão","conseguiria","conseguirias","conseguiríamos","conseguiriam","consiga","consigas","consigamos","consigam","conseguisse","conseguisses","conseguíssemos","conseguissem","conseguir","conseguires","conseguirmos","conseguirem","conseguindo","conseguido"],
+            phrases: [
+                { de: "Ich kann es schaffen.", pt: "Consigo fazer.", tense: "Presente" },
+                { de: "Kannst du sehen?", pt: "Consegues ver?", tense: "Presente" },
+                { de: "Er schafft es pünktlich anzukommen.", pt: "Ele consegue chegar a tempo.", tense: "Presente" },
+                { de: "Sie kann nicht schlafen.", pt: "Ela não consegue dormir.", tense: "Presente" },
+                { de: "Wir können helfen.", pt: "Conseguimos ajudar.", tense: "Presente" },
+                { de: "Sie können es nicht verstehen.", pt: "Eles não conseguem perceber.", tense: "Presente" },
+                { de: "Ich kann es nicht finden.", pt: "Não consigo encontrar.", tense: "Presente" },
+                { de: "Kannst du mich hören?", pt: "Consegues ouvir-me?", tense: "Presente" },
+                { de: "Er kann Portugiesisch sprechen.", pt: "Ele consegue falar português.", tense: "Presente" },
+                { de: "Sie schafft alles.", pt: "Ela consegue tudo.", tense: "Presente" },
+                { de: "Ich kann es nicht glauben.", pt: "Não consigo acreditar.", tense: "Presente" },
+                { de: "Kannst du es erklären?", pt: "Consegues explicar?", tense: "Presente" },
+                { de: "Er kann sich nicht konzentrieren.", pt: "Ele não consegue concentrar-se.", tense: "Presente" },
+                { de: "Sie kann es lösen.", pt: "Ela consegue resolver.", tense: "Presente" },
+                { de: "Wir können heute fertig werden.", pt: "Conseguimos acabar hoje.", tense: "Presente" },
+                { de: "Sie schaffen es zu überleben.", pt: "Eles conseguem sobreviver.", tense: "Presente" },
+                { de: "Ich konnte es schaffen.", pt: "Conseguia.", tense: "Imperfeito" },
+                { de: "Du konntest es vorher.", pt: "Conseguias fazer antes.", tense: "Imperfeito" },
+                { de: "Er konnte schneller laufen.", pt: "Ele conseguia correr mais rápido.", tense: "Imperfeito" },
+                { de: "Sie konnte nicht schlafen.", pt: "Ela não conseguia dormir.", tense: "Imperfeito" },
+                { de: "Wir konnten es verstehen.", pt: "Conseguíamos perceber.", tense: "Imperfeito" },
+                { de: "Ich habe es geschafft.", pt: "Consegui acabar.", tense: "Perfeito" },
+                { de: "Hast du es gesehen?", pt: "Conseguiste ver?", tense: "Perfeito" },
+                { de: "Er hat es geschafft zu entkommen.", pt: "Ele conseguiu escapar.", tense: "Perfeito" },
+                { de: "Sie hat die Stelle bekommen.", pt: "Ela conseguiu o emprego.", tense: "Perfeito" },
+                { de: "Wir haben es geschafft anzukommen.", pt: "Conseguimos chegar.", tense: "Perfeito" },
+                { de: "Sie haben es geschafft zu gewinnen.", pt: "Eles conseguiram ganhar.", tense: "Perfeito" },
+                { de: "Ich werde es schaffen.", pt: "Conseguirei.", tense: "Futuro" },
+                { de: "Du wirst es können.", pt: "Conseguirás.", tense: "Futuro" },
+                { de: "Er wird es schaffen fertig zu werden.", pt: "Ele conseguirá acabar.", tense: "Futuro" },
+                { de: "Wir werden es irgendwie schaffen.", pt: "Conseguiremos de alguma forma.", tense: "Futuro" },
+                { de: "Sie werden es schaffen zu kommen.", pt: "Eles conseguirão vir.", tense: "Futuro" },
+                { de: "Ich würde es schaffen.", pt: "Conseguiria.", tense: "Condicional" },
+                { de: "Du würdest es können.", pt: "Conseguirias.", tense: "Condicional" },
+                { de: "Er würde es schaffen, wenn...", pt: "Ele conseguiria se...", tense: "Condicional" },
+                { de: "Wir würden es zusammen schaffen.", pt: "Conseguiríamos juntos.", tense: "Condicional" },
+                { de: "Sie würden helfen können.", pt: "Eles conseguiriam ajudar.", tense: "Condicional" },
+                { de: "Ich hoffe, du schaffst es.", pt: "Espero que consigas.", tense: "Conjuntivo" },
+                { de: "Es ist wichtig, dass er es schafft.", pt: "É importante que ele consiga.", tense: "Conjuntivo" },
+                { de: "Ich bezweifle, dass sie es schafft.", pt: "Duvido que ela consiga.", tense: "Conjuntivo" },
+                { de: "Selbst wenn du es schaffst...", pt: "Mesmo que consigas...", tense: "Conjuntivo" },
+                { de: "Wenn ich es schaffte...", pt: "Se eu conseguisse...", tense: "Imperfeito Conj." },
+                { de: "Ich wünschte, du würdest es schaffen.", pt: "Quem me dera que conseguisses.", tense: "Imperfeito Conj." },
+                { de: "Wenn er es schaffte...", pt: "Se ele conseguisse...", tense: "Imperfeito Conj." },
+                { de: "Wenn wir es schafften...", pt: "Se conseguíssemos...", tense: "Imperfeito Conj." },
+                { de: "Wenn ich es schaffe...", pt: "Quando conseguir...", tense: "Futuro Conj." },
+                { de: "Wenn du es schaffst...", pt: "Se conseguires...", tense: "Futuro Conj." },
+                { de: "Sobald ich es schaffe...", pt: "Assim que conseguir...", tense: "Futuro Conj." },
+                { de: "In der Lage sein.", pt: "Conseguir fazer.", tense: "Expressão" },
+                { de: "Ich kann nicht mehr.", pt: "Não consigo mais.", tense: "Expressão" },
+                { de: "Schaffst du es?", pt: "Consegues?", tense: "Expressão" },
+                { de: "Eine Stelle bekommen.", pt: "Conseguir emprego.", tense: "Expressão" },
+                { de: "Erfolg haben.", pt: "Conseguir sucesso.", tense: "Expressão" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

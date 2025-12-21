@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇵🇹 VERB QUERER — 100 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇵🇹 Verb QUERER</h1>
+            <p class="subtitle">to want — 100 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 100 von 100 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Portugiesisch-Übung — QUERER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇵🇹 Verb QUERER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>quero</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>queres</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>quer</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>queremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>querem</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>queria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>querias</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>queria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>queríamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>queriam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Perfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>quis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>quiseste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>quis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>quisemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>quiseram</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>quererei</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>quererás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>quererá</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>quereremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>quererão</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Condicional</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>quereria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>quererias</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>quereria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>quereríamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>quereriam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Presente do Conjuntivo</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>queira</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>queiras</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>queira</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>queiramos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>queiram</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imperfeito do Conjuntivo</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>quisesse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>quisesses</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>quisesse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>quiséssemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>quisessem</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'pt',
+            labels: { target: 'Europäisches Portugiesisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["quero","queres","quer","queremos","querem","queria","querias","queríamos","queriam","quis","quiseste","quisemos","quiseram","quererei","quererás","quererá","quereremos","quererão","quereria","quererias","quereríamos","quereriam","queira","queiras","queiramos","queiram","quisesse","quisesses","quiséssemos","quisessem","querer","querendo","querido","quiseres"],
+            phrases: [
+                { de: "Ich will Wasser.", pt: "Quero água.", tense: "Presente" },
+                { de: "Was willst du?", pt: "O que queres?", tense: "Presente" },
+                { de: "Er will gehen.", pt: "Ele quer ir.", tense: "Presente" },
+                { de: "Sie will helfen.", pt: "Ela quer ajudar.", tense: "Presente" },
+                { de: "Wir wollen Frieden.", pt: "Queremos paz.", tense: "Presente" },
+                { de: "Ihr wollt mehr.", pt: "Vocês querem mais.", tense: "Presente" },
+                { de: "Sie wollen wissen.", pt: "Eles querem saber.", tense: "Presente" },
+                { de: "Ich will das nicht.", pt: "Não quero isso.", tense: "Presente" },
+                { de: "Willst du Kaffee?", pt: "Queres café?", tense: "Presente" },
+                { de: "Ich will Portugiesisch lernen.", pt: "Quero aprender português.", tense: "Presente" },
+                { de: "Was willst du essen?", pt: "O que queres comer?", tense: "Presente" },
+                { de: "Willst du kommen?", pt: "Queres vir?", tense: "Presente" },
+                { de: "Will er bleiben?", pt: "Ele quer ficar?", tense: "Presente" },
+                { de: "Wer will gehen?", pt: "Quem quer ir?", tense: "Presente" },
+                { de: "Warum willst du das?", pt: "Porque queres isso?", tense: "Presente" },
+                { de: "Willst du, dass ich helfe?", pt: "Queres que eu ajude?", tense: "Presente" },
+                { de: "Was will sie?", pt: "O que é que ela quer?", tense: "Presente" },
+                { de: "Wollen sie spielen?", pt: "Eles querem jogar?", tense: "Presente" },
+                { de: "Wie viel willst du?", pt: "Quanto queres?", tense: "Presente" },
+                { de: "Willst du noch etwas?", pt: "Queres mais alguma coisa?", tense: "Presente" },
+                { de: "Ich wollte gehen.", pt: "Eu queria ir.", tense: "Imperfeito" },
+                { de: "Du wolltest helfen.", pt: "Tu querias ajudar.", tense: "Imperfeito" },
+                { de: "Er wollte bleiben.", pt: "Ele queria ficar.", tense: "Imperfeito" },
+                { de: "Sie wollte einen neuen Job.", pt: "Ela queria um emprego novo.", tense: "Imperfeito" },
+                { de: "Wir wollten reisen.", pt: "Queríamos viajar.", tense: "Imperfeito" },
+                { de: "Sie wollten mehr Zeit.", pt: "Eles queriam mais tempo.", tense: "Imperfeito" },
+                { de: "Was wolltest du?", pt: "O que querias?", tense: "Imperfeito" },
+                { de: "Ich wollte nicht stören.", pt: "Não queria incomodar.", tense: "Imperfeito" },
+                { de: "Ich wollte dir sagen.", pt: "Queria dizer-te.", tense: "Imperfeito" },
+                { de: "Wir wollten dich sehen.", pt: "Queríamos ver-te.", tense: "Imperfeito" },
+                { de: "Ich wollte es so sehr.", pt: "Quis tanto.", tense: "Perfeito" },
+                { de: "Du wolltest gehen.", pt: "Tu quiseste sair.", tense: "Perfeito" },
+                { de: "Er wollte es versuchen.", pt: "Ele quis tentar.", tense: "Perfeito" },
+                { de: "Sie wollte nicht kommen.", pt: "Ela não quis vir.", tense: "Perfeito" },
+                { de: "Wir wollten helfen.", pt: "Quisemos ajudar.", tense: "Perfeito" },
+                { de: "Sie wollten wissen.", pt: "Eles quiseram saber.", tense: "Perfeito" },
+                { de: "Ich wollte das nie.", pt: "Nunca quis isso.", tense: "Perfeito" },
+                { de: "Wolltest du gehen?", pt: "Quiseste ir?", tense: "Perfeito" },
+                { de: "Wer wollte das?", pt: "Quem quis isto?", tense: "Perfeito" },
+                { de: "Ich wollte nur helfen.", pt: "Só quis ajudar.", tense: "Perfeito" },
+                { de: "Ich werde mehr wollen.", pt: "Quererei mais.", tense: "Futuro" },
+                { de: "Du wirst wissen wollen.", pt: "Tu quererás saber.", tense: "Futuro" },
+                { de: "Er wird bleiben wollen.", pt: "Ele quererá ficar.", tense: "Futuro" },
+                { de: "Wir werden sehen wollen.", pt: "Quereremos ver.", tense: "Futuro" },
+                { de: "Sie werden Antworten wollen.", pt: "Eles quererão respostas.", tense: "Futuro" },
+                { de: "Ich werde nicht gehen wollen.", pt: "Não quererei sair.", tense: "Futuro" },
+                { de: "Wirst du kommen wollen?", pt: "Quererás vir?", tense: "Futuro" },
+                { de: "Sie wird helfen wollen.", pt: "Ela quererá ajudar.", tense: "Futuro" },
+                { de: "Alle werden es wollen.", pt: "Todos quererão.", tense: "Futuro" },
+                { de: "Du wirst es später wollen.", pt: "Quererás mais tarde.", tense: "Futuro" },
+                { de: "Ich würde gehen wollen.", pt: "Quereria ir.", tense: "Condicional" },
+                { de: "Du würdest mehr wollen.", pt: "Tu quererias mais.", tense: "Condicional" },
+                { de: "Er würde wissen wollen.", pt: "Ele quereria saber.", tense: "Condicional" },
+                { de: "Wir würden helfen wollen.", pt: "Quereríamos ajudar.", tense: "Condicional" },
+                { de: "Sie würden bleiben wollen.", pt: "Eles quereriam ficar.", tense: "Condicional" },
+                { de: "Ich würde das nicht wollen.", pt: "Não quereria isso.", tense: "Condicional" },
+                { de: "Würdest du kommen wollen?", pt: "Quererias vir?", tense: "Condicional" },
+                { de: "Sie würde das Beste wollen.", pt: "Ela quereria o melhor.", tense: "Condicional" },
+                { de: "Wer würde das wollen?", pt: "Quem quereria isso?", tense: "Condicional" },
+                { de: "Ich würde es gern versuchen.", pt: "Quereria tentar.", tense: "Condicional" },
+                { de: "Ich hoffe, du willst kommen.", pt: "Espero que queiras vir.", tense: "Conjuntivo" },
+                { de: "Es ist wichtig, dass er lernen will.", pt: "É importante que ele queira aprender.", tense: "Conjuntivo" },
+                { de: "Ich bezweifle, dass sie bleiben will.", pt: "Duvido que ela queira ficar.", tense: "Conjuntivo" },
+                { de: "Auch wenn du es willst...", pt: "Embora queiras...", tense: "Conjuntivo" },
+                { de: "Was auch immer du willst...", pt: "O que quer que queiras...", tense: "Conjuntivo" },
+                { de: "Es ist nötig, dass wir es wollen.", pt: "É preciso que queiramos.", tense: "Conjuntivo" },
+                { de: "Ich glaube nicht, dass er gehen will.", pt: "Não acho que ele queira ir.", tense: "Conjuntivo" },
+                { de: "Es sei denn, du willst...", pt: "A menos que queiras...", tense: "Conjuntivo" },
+                { de: "Wer auch immer mitmachen will...", pt: "Quem queira participar...", tense: "Conjuntivo" },
+                { de: "Wenn du willst...", pt: "Se quiseres...", tense: "Conjuntivo" },
+                { de: "Wenn ich wollte...", pt: "Se eu quisesse...", tense: "Imperfeito Conj." },
+                { de: "Ich wünschte, du wolltest kommen.", pt: "Quem me dera que quisesses vir.", tense: "Imperfeito Conj." },
+                { de: "Wenn er helfen wollte...", pt: "Se ele quisesse ajudar...", tense: "Imperfeito Conj." },
+                { de: "Wenn wir gehen wollten...", pt: "Se quiséssemos sair...", tense: "Imperfeito Conj." },
+                { de: "Wenn sie wissen wollten...", pt: "Se eles quisessem saber...", tense: "Imperfeito Conj." },
+                { de: "Ich würde helfen, wenn du wolltest.", pt: "Ajudaria se quisesses.", tense: "Imperfeito Conj." },
+                { de: "Selbst wenn ich wollte...", pt: "Mesmo que quisesse...", tense: "Imperfeito Conj." },
+                { de: "Wenn sie bleiben wollte...", pt: "Se ela quisesse ficar...", tense: "Imperfeito Conj." },
+                { de: "Als ob ich das wollte...", pt: "Como se quisesse isso...", tense: "Imperfeito Conj." },
+                { de: "Ich wünschte, alle wollten Frieden.", pt: "Quem me dera que todos quisessem paz.", tense: "Imperfeito Conj." },
+                { de: "Ich will essen.", pt: "Quero comer.", tense: "Infinitivo" },
+                { de: "Ich will schlafen.", pt: "Quero dormir.", tense: "Infinitivo" },
+                { de: "Ich will sehen.", pt: "Quero ver.", tense: "Infinitivo" },
+                { de: "Ich will reden.", pt: "Quero falar.", tense: "Infinitivo" },
+                { de: "Ich will verstehen.", pt: "Quero perceber.", tense: "Infinitivo" },
+                { de: "Ich will es versuchen.", pt: "Quero tentar.", tense: "Infinitivo" },
+                { de: "Ich will bleiben.", pt: "Quero ficar.", tense: "Infinitivo" },
+                { de: "Ich will gehen.", pt: "Quero sair.", tense: "Infinitivo" },
+                { de: "Ich will kaufen.", pt: "Quero comprar.", tense: "Infinitivo" },
+                { de: "Ich will wissen.", pt: "Quero saber.", tense: "Infinitivo" },
+                { de: "Was meinst du?", pt: "O que queres dizer?", tense: "Expressão" },
+                { de: "Ich meine...", pt: "Quero dizer...", tense: "Expressão" },
+                { de: "Willst du?", pt: "Queres?", tense: "Expressão" },
+                { de: "Ich will nichts wissen.", pt: "Não quero saber.", tense: "Expressão" },
+                { de: "Was du willst.", pt: "O que quiseres.", tense: "Expressão" },
+                { de: "Wenn du willst.", pt: "Se quiseres.", tense: "Expressão" },
+                { de: "Ich will nur sagen...", pt: "Só quero dizer...", tense: "Expressão" },
+                { de: "Ich wünschte, ich könnte.", pt: "Quem me dera.", tense: "Expressão" },
+                { de: "Wo ein Wille ist, ist auch ein Weg.", pt: "Querer é poder.", tense: "Expressão" },
+                { de: "Wie du willst.", pt: "Como quiseres.", tense: "Expressão" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

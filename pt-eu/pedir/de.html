@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇵🇹 PEDIR — 20 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇵🇹 Pedir</h1>
+            <p class="subtitle">to ask, to request — 20 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 20 von 20 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Portugiesisch-Übung — PEDIR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇵🇹 Pedir</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>peço</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>pedes</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>pede</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>pedimos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>pedem</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>pedia</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>pedias</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>pedia</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>pedíamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>pediam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Perfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>pedi</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>pediste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>pediu</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>pedimos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>pediram</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>pedirei</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>pedirás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>pedirá</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>pediremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>pedirão</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Condicional</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>pediria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>pedirias</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>pediria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>pediríamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>pediriam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Presente do Conjuntivo</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>peça</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>peças</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>peça</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>peçamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>peçam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imperfeito do Conjuntivo</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>pedisse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>pedisses</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>pedisse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>pedíssemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>pedissem</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'pt',
+            labels: { target: 'Europäisches Portugiesisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["peço","pedes","pede","pedimos","pedem","pedia","pedias","pedíamos","pediam","pedi","pediste","pediu","pediram","pedirei","pedirás","pedirá","pediremos","pedirão","pediria","pedirias","pediríamos","pediriam","peça","peças","peçamos","peçam","pedisse","pedisses","pedíssemos","pedissem","pedir","pedires","pedirmos","pedirem"],
+            phrases: [
+                { de: "Ich bitte.", pt: "Peço.", tense: "Presente" },
+                { de: "Du bittest um Hilfe.", pt: "Pedes ajuda.", tense: "Presente" },
+                { de: "Er bittet um Geld.", pt: "Ele pede dinheiro.", tense: "Presente" },
+                { de: "Wir bitten um Informationen.", pt: "Pedimos informações.", tense: "Presente" },
+                { de: "Sie bitten um mehr Zeit.", pt: "Eles pedem mais tempo.", tense: "Presente" },
+                { de: "Ich bitte um einen Gefallen.", pt: "Peço um favor.", tense: "Presente" },
+                { de: "Du bestellst die Rechnung.", pt: "Pedes a conta.", tense: "Presente" },
+                { de: "Sie bittet um Verzeihung.", pt: "Ela pede desculpa.", tense: "Presente" },
+                { de: "Ich bat um Hilfe.", pt: "Pedia ajuda.", tense: "Imperfeito" },
+                { de: "Er stellte Fragen.", pt: "Ele pedia perguntas.", tense: "Imperfeito" },
+                { de: "Ich habe gebeten.", pt: "Pedi.", tense: "Perfeito" },
+                { de: "Du hast die Rechnung bestellt.", pt: "Pediste a conta.", tense: "Perfeito" },
+                { de: "Ich werde bitten.", pt: "Pedirei.", tense: "Futuro" },
+                { de: "Ich würde bitten.", pt: "Pediria.", tense: "Condicional" },
+                { de: "Ich hoffe, du bittest.", pt: "Espero que peças.", tense: "Conjuntivo" },
+                { de: "Wenn ich bitten würde...", pt: "Se eu pedisse...", tense: "Imperfeito Conj." },
+                { de: "Ich bestelle einen Kaffee.", pt: "Vou pedir um café.", tense: "Presente" },
+                { de: "Entschuldigung.", pt: "Peço desculpa.", tense: "Presente" },
+                { de: "Bitte!", pt: "Pede!", tense: "Imperativo" },
+                { de: "Kann ich dich bitten?", pt: "Posso pedir-te?", tense: "Presente" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

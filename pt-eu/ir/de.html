@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇵🇹 VERB IR — 24 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇵🇹 Verb IR</h1>
+            <p class="subtitle">to go — 24 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 24 von 24 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Portugiesisch-Übung — IR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇵🇹 Verb IR</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>vou</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>vais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>vai</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>vamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>vão</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>ia</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>ias</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>ia</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>íamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>iam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Perfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>fui</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>foste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>foi</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>fomos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>foram</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>irei</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>irás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>irá</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>iremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>irão</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Condicional</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>iria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>irias</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>iria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>iríamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>iriam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Presente do Conjuntivo</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>vá</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>vás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>vá</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>vamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>vão</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imperfeito do Conjuntivo</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>fosse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>fosses</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>fosse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>fôssemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>fossem</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'pt',
+            labels: { target: 'Europäisches Portugiesisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["vou","vais","vai","vamos","vão","ia","ias","íamos","iam","fui","foste","foi","fomos","foram","irei","irás","irá","iremos","irão","iria","irias","iríamos","iriam","vá","vás","fosse","fosses","fôssemos","fossem","ir","indo","ido"],
+            phrases: [
+                { de: "Ich gehe zur Arbeit.", pt: "Vou ao trabalho.", tense: "Presente" },
+                { de: "Wohin gehst du?", pt: "Onde vais?", tense: "Presente" },
+                { de: "Er geht zur Schule.", pt: "Ele vai à escola.", tense: "Presente" },
+                { de: "Sie geht nach Hause.", pt: "Ela vai para casa.", tense: "Presente" },
+                { de: "Wir gehen zusammen.", pt: "Vamos juntos.", tense: "Presente" },
+                { de: "Sie gehen jeden Tag.", pt: "Eles vão todos os dias.", tense: "Presente" },
+                { de: "Ich gehe nicht dorthin.", pt: "Não vou lá.", tense: "Presente" },
+                { de: "Gehst du?", pt: "Vais?", tense: "Presente" },
+                { de: "Los geht's!", pt: "Vamos!", tense: "Presente" },
+                { de: "Ich werde essen.", pt: "Vou comer.", tense: "Futuro Próximo" },
+                { de: "Es wird dir gefallen.", pt: "Vais gostar.", tense: "Futuro Próximo" },
+                { de: "Er wird bald ankommen.", pt: "Ele vai chegar em breve.", tense: "Futuro Próximo" },
+                { de: "Wir werden reisen.", pt: "Vamos viajar.", tense: "Futuro Próximo" },
+                { de: "Es wird regnen.", pt: "Vai chover.", tense: "Futuro Próximo" },
+                { de: "Wirst du kommen?", pt: "Vais vir?", tense: "Futuro Próximo" },
+                { de: "Alles wird gut.", pt: "Vai correr tudo bem.", tense: "Futuro Próximo" },
+                { de: "Ich muss gehen.", pt: "Tenho de ir.", tense: "Presente" },
+                { de: "Geh geradeaus.", pt: "Vai em frente.", tense: "Imperativo" },
+                { de: "Gehen wir!", pt: "Vamos!", tense: "Imperativo" },
+                { de: "Wie geht's?", pt: "Como vai isso?", tense: "Expressão" },
+                { de: null, pt: "Pronto para ir?", tense: "Expressão" },
+                { de: null, pt: "E lá vamos!", tense: "Expressão" },
+                { de: null, pt: "Onde vai dar esta estrada?", tense: "Expressão" },
+                { de: null, pt: "As coisas vão bem.", tense: "Expressão" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

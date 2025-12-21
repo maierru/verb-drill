@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇫🇷 VERB VOIR — 20 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇫🇷 Verb VOIR</h1>
+            <p class="subtitle">to see — 20 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 20 von 20 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Französisch-Übung — VOIR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇫🇷 Verb VOIR</h2>
+            <div class="tense-explanation">
+                <h4>Présent</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>vois</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>vois</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>voit</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>voyons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>voyez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>voient</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Passé Composé</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>ai vu</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>as vu</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>a vu</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>avons vu</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>avez vu</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>ont vu</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imparfait</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>voyais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>voyais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>voyait</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>voyions</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>voyiez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>voyaient</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur Simple</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>verrai</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>verras</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>verra</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>verrons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>verrez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>verront</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'fr',
+            labels: { target: 'Französisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["vois","voit","voyons","voyez","voient","voyais","voyait","voyions","voyiez","voyaient","vu","verrai","verras","verra","verrons","verrez","verront"],
+            phrases: [
+                { de: "Ich verstehe.", fr: "Je vois.", tense: "Présent" },
+                { de: "Siehst du das?", fr: "Tu vois ça ?", tense: "Présent" },
+                { de: "Ich habe ihn gestern gesehen.", fr: "Je l'ai vu hier.", tense: "Passé Composé" },
+                { de: "Bis später!", fr: "À plus tard !", tense: "Présent" },
+                { de: "Wir werden sehen.", fr: "On verra.", tense: "Futur Simple" },
+                { de: "Er hat den Film gesehen.", fr: "Il a vu le film.", tense: "Passé Composé" },
+                { de: "Ich habe das noch nie gesehen.", fr: "Je n'ai jamais vu ça.", tense: "Passé Composé" },
+                { de: "Hast du das gesehen?", fr: "Tu as vu ça ?", tense: "Passé Composé" },
+                { de: "Ich sehe, was du meinst.", fr: "Je vois ce que tu veux dire.", tense: "Présent" },
+                { de: "Wir haben uns gesehen.", fr: "Nous nous sommes vus.", tense: "Passé Composé" },
+                { de: "Ich sehe dich morgen.", fr: "Je te verrai demain.", tense: "Futur Simple" },
+                { de: "Er hat nichts gesehen.", fr: "Il n'a rien vu.", tense: "Passé Composé" },
+                { de: "Lass mich sehen.", fr: "Laisse-moi voir.", tense: "Présent" },
+                { de: "Sie hat den Unfall gesehen.", fr: "Elle a vu l'accident.", tense: "Passé Composé" },
+                { de: "Ich habe sie seit Jahren nicht gesehen.", fr: "Je ne l'ai pas vue depuis des années.", tense: "Passé Composé" },
+                { de: "Wir haben sie oft gesehen.", fr: "Nous les voyions souvent.", tense: "Imparfait" },
+                { de: "Bis bald!", fr: "À bientôt !", tense: "Présent" },
+                { de: "Ich habe es kommen sehen.", fr: "Je l'ai vu venir.", tense: "Passé Composé" },
+                { de: "Du wirst es selbst sehen.", fr: "Tu verras par toi-même.", tense: "Futur Simple" },
+                { de: "Ich sehe kein Problem.", fr: "Je ne vois pas de problème.", tense: "Présent" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

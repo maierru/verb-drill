@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇵🇹 VERB SER — 110 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇵🇹 Verb SER</h1>
+            <p class="subtitle">to be (permanent) — 110 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 110 von 110 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Portugiesisch-Übung — SER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇵🇹 Verb SER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>sou</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>és</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>é</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>somos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>são</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>era</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>eras</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>era</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>éramos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>eram</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Perfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>fui</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>foste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>foi</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>fomos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>foram</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>serei</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>serás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>será</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>seremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>serão</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Condicional</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>seria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>serias</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>seria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>seríamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>seriam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Presente do Conjuntivo</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>seja</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>sejas</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>seja</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>sejamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>sejam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imperfeito do Conjuntivo</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>fosse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>fosses</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>fosse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>fôssemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>fossem</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'pt',
+            labels: { target: 'Europäisches Portugiesisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["sou","és","é","somos","são","era","eras","éramos","eram","fui","foste","foi","fomos","foram","serei","serás","será","seremos","serão","seria","serias","seríamos","seriam","seja","sejas","sejamos","sejam","fosse","fosses","fôssemos","fossem","ser","sendo","sido"],
+            phrases: [
+                { de: "Ich bin Student.", pt: "Sou estudante.", tense: "Presente" },
+                { de: "Du bist mein Freund.", pt: "Tu és meu amigo.", tense: "Presente" },
+                { de: "Er ist Arzt.", pt: "Ele é médico.", tense: "Presente" },
+                { de: "Sie ist schön.", pt: "Ela é bonita.", tense: "Presente" },
+                { de: "Wir sind Portugiesen.", pt: "Somos portugueses.", tense: "Presente" },
+                { de: "Ihr seid willkommen.", pt: "Vocês são bem-vindos.", tense: "Presente" },
+                { de: "Sie sind Brüder.", pt: "Eles são irmãos.", tense: "Presente" },
+                { de: "Es ist wichtig.", pt: "É importante.", tense: "Presente" },
+                { de: "Ich bin nicht müde.", pt: "Não sou cansado.", tense: "Presente" },
+                { de: "Du bist nicht allein.", pt: "Tu não és sozinho.", tense: "Presente" },
+                { de: "Bist du bereit?", pt: "Estás pronto? / És pronto?", tense: "Presente" },
+                { de: "Wer ist das?", pt: "Quem é?", tense: "Presente" },
+                { de: "Was ist das?", pt: "O que é isto?", tense: "Presente" },
+                { de: "Woher kommst du?", pt: "De onde és?", tense: "Presente" },
+                { de: "Ist das wahr?", pt: "É verdade?", tense: "Presente" },
+                { de: "Ist sie deine Schwester?", pt: "Ela é a tua irmã?", tense: "Presente" },
+                { de: "Sind wir zu spät?", pt: "Estamos atrasados? / Somos atrasados?", tense: "Presente" },
+                { de: "Ist es weit?", pt: "É longe?", tense: "Presente" },
+                { de: "Sind sie verheiratet?", pt: "Eles são casados?", tense: "Presente" },
+                { de: "Wie heißt du?", pt: "Qual é o teu nome?", tense: "Presente" },
+                { de: "Ich war jung.", pt: "Eu era jovem.", tense: "Imperfeito" },
+                { de: "Du warst sehr nett.", pt: "Tu eras muito simpático.", tense: "Imperfeito" },
+                { de: "Er war Lehrer.", pt: "Ele era professor.", tense: "Imperfeito" },
+                { de: "Sie war immer glücklich.", pt: "Ela era sempre feliz.", tense: "Imperfeito" },
+                { de: "Wir waren Nachbarn.", pt: "Éramos vizinhos.", tense: "Imperfeito" },
+                { de: "Sie waren beste Freunde.", pt: "Eles eram melhores amigos.", tense: "Imperfeito" },
+                { de: "Es war früher anders.", pt: "Era diferente antes.", tense: "Imperfeito" },
+                { de: "Das Leben war einfacher.", pt: "A vida era mais simples.", tense: "Imperfeito" },
+                { de: "Das Haus war alt.", pt: "A casa era velha.", tense: "Imperfeito" },
+                { de: "Ich war dort nicht glücklich.", pt: "Eu não era feliz lá.", tense: "Imperfeito" },
+                { de: "Ich war gestern dort.", pt: "Fui lá ontem.", tense: "Perfeito" },
+                { de: "Du warst der Beste.", pt: "Tu foste o melhor.", tense: "Perfeito" },
+                { de: "Er war Präsident.", pt: "Ele foi presidente.", tense: "Perfeito" },
+                { de: "Es war ein guter Tag.", pt: "Foi um bom dia.", tense: "Perfeito" },
+                { de: "Wir waren Meister.", pt: "Fomos campeões.", tense: "Perfeito" },
+                { de: "Sie waren sehr hilfsbereit.", pt: "Eles foram muito prestáveis.", tense: "Perfeito" },
+                { de: "Die Reise war unglaublich.", pt: "A viagem foi incrível.", tense: "Perfeito" },
+                { de: "Das war nicht meine Schuld.", pt: "Não foi culpa minha.", tense: "Perfeito" },
+                { de: "Du hattest recht.", pt: "Tu tiveste razão. / Foste certeiro.", tense: "Perfeito" },
+                { de: "Der Film war langweilig.", pt: "O filme foi aborrecido.", tense: "Perfeito" },
+                { de: "Ich werde da sein.", pt: "Serei lá. / Estarei lá.", tense: "Futuro" },
+                { de: "Du wirst glücklich sein.", pt: "Tu serás feliz.", tense: "Futuro" },
+                { de: "Er wird ein großartiger Arzt sein.", pt: "Ele será um grande médico.", tense: "Futuro" },
+                { de: "Es wird einfach sein.", pt: "Será fácil.", tense: "Futuro" },
+                { de: "Wir werden zusammen sein.", pt: "Seremos juntos. / Estaremos juntos.", tense: "Futuro" },
+                { de: "Sie werden berühmt sein.", pt: "Eles serão famosos.", tense: "Futuro" },
+                { de: "Die Party wird lustig sein.", pt: "A festa será divertida.", tense: "Futuro" },
+                { de: "Ich werde nicht zu spät kommen.", pt: "Não serei atrasado. / Não chegarei atrasado.", tense: "Futuro" },
+                { de: "Es wird sich lohnen.", pt: "Valerá a pena. / Será válido.", tense: "Futuro" },
+                { de: "Morgen wird besser sein.", pt: "Amanhã será melhor.", tense: "Futuro" },
+                { de: "Ich wäre dankbar.", pt: "Seria grato.", tense: "Condicional" },
+                { de: "Das wäre schön.", pt: "Seria bom.", tense: "Condicional" },
+                { de: "Du wärst ein guter Anführer.", pt: "Tu serias um bom líder.", tense: "Condicional" },
+                { de: "Er wäre stolz.", pt: "Ele seria orgulhoso.", tense: "Condicional" },
+                { de: "Wir wären geehrt.", pt: "Seríamos honrados.", tense: "Condicional" },
+                { de: "Sie wären überrascht.", pt: "Eles seriam surpreendidos.", tense: "Condicional" },
+                { de: "Es wäre unmöglich.", pt: "Seria impossível.", tense: "Condicional" },
+                { de: "Das wäre perfekt.", pt: "Isso seria perfeito.", tense: "Condicional" },
+                { de: "Ich wäre mir nicht so sicher.", pt: "Não seria tão certo.", tense: "Condicional" },
+                { de: "Es wäre besser zu warten.", pt: "Seria melhor esperar.", tense: "Condicional" },
+                { de: "Ich hoffe, es geht dir gut.", pt: "Espero que sejas bem. / Espero que estejas bem.", tense: "Conjuntivo" },
+                { de: "Es ist wichtig, dass er vorsichtig ist.", pt: "É importante que ele seja cuidadoso.", tense: "Conjuntivo" },
+                { de: "Ich möchte, dass wir Freunde sind.", pt: "Quero que sejamos amigos.", tense: "Conjuntivo" },
+                { de: "Ich bezweifle, dass das wahr ist.", pt: "Duvido que seja verdade.", tense: "Conjuntivo" },
+                { de: "Ich glaube nicht, dass sie recht hat.", pt: "Não acho que ela tenha razão. / Não acho que seja certo.", tense: "Conjuntivo" },
+                { de: "Obwohl es schwierig ist...", pt: "Embora seja difícil...", tense: "Conjuntivo" },
+                { de: "Es ist notwendig, dass wir vereint sind.", pt: "É preciso que sejamos unidos.", tense: "Conjuntivo" },
+                { de: "Was auch immer es ist...", pt: "Seja o que for...", tense: "Conjuntivo" },
+                { de: "Wer auch immer du bist...", pt: "Sejas quem fores...", tense: "Conjuntivo" },
+                { de: "Lass es sein.", pt: "Que seja.", tense: "Conjuntivo" },
+                { de: "Wenn ich reich wäre...", pt: "Se eu fosse rico...", tense: "Imperfeito Conj." },
+                { de: "Ich wünschte, du wärst hier.", pt: "Quem me dera que estivesses aqui. / Se fosses aqui...", tense: "Imperfeito Conj." },
+                { de: "Wenn er jünger wäre...", pt: "Se ele fosse mais novo...", tense: "Imperfeito Conj." },
+                { de: "Wenn wir zusammen wären...", pt: "Se fôssemos juntos...", tense: "Imperfeito Conj." },
+                { de: "Wenn sie hier wären...", pt: "Se eles fossem aqui... / Se estivessem aqui...", tense: "Imperfeito Conj." },
+                { de: "Ich würde gehen, wenn es möglich wäre.", pt: "Iria se fosse possível.", tense: "Imperfeito Conj." },
+                { de: "Selbst wenn es wahr wäre...", pt: "Mesmo que fosse verdade...", tense: "Imperfeito Conj." },
+                { de: "Wenn ich du wäre...", pt: "Se eu fosse a ti...", tense: "Imperfeito Conj." },
+                { de: "Als ob es nichts wäre...", pt: "Como se não fosse nada...", tense: "Imperfeito Conj." },
+                { de: "Ich wünschte, es wäre anders.", pt: "Quem me dera que fosse diferente.", tense: "Imperfeito Conj." },
+                { de: "Ich bin Portugiese.", pt: "Sou português.", tense: "Presente" },
+                { de: "Sie ist Brasilianerin.", pt: "Ela é brasileira.", tense: "Presente" },
+                { de: "Er ist groß.", pt: "Ele é alto.", tense: "Presente" },
+                { de: "Sie sind intelligent.", pt: "Eles são inteligentes.", tense: "Presente" },
+                { de: "Wir sind ein Team.", pt: "Somos uma equipa.", tense: "Presente" },
+                { de: "Es ist natürlich.", pt: "É natural.", tense: "Presente" },
+                { de: "Du bist besonders.", pt: "Tu és especial.", tense: "Presente" },
+                { de: "Das gehört mir.", pt: "Isto é meu.", tense: "Presente" },
+                { de: "Das gehört dir.", pt: "Isso é teu.", tense: "Presente" },
+                { de: "Das Buch ist interessant.", pt: "O livro é interessante.", tense: "Presente" },
+                { de: "Das ist es!", pt: "É isso!", tense: "Expressão" },
+                { de: "Schon gut.", pt: "Está bem. / Tudo bem.", tense: "Expressão" },
+                { de: "Das ist nichts.", pt: "Não é nada.", tense: "Expressão" },
+                { de: "Es ist mir ein Vergnügen.", pt: "É um prazer.", tense: "Expressão" },
+                { de: "So ist das Leben.", pt: "É a vida.", tense: "Expressão" },
+                { de: "Es ist Zeit.", pt: "É hora. / Está na hora.", tense: "Expressão" },
+                { de: "Das ist nicht fair.", pt: "Não é justo.", tense: "Expressão" },
+                { de: "Es lohnt sich.", pt: "Vale a pena.", tense: "Expressão" },
+                { de: "Es liegt an dir.", pt: "Depende de ti. / É contigo.", tense: "Expressão" },
+                { de: "Das ist das Problem.", pt: "É esse o problema.", tense: "Expressão" },
+                { de: "Heute ist Montag.", pt: "Hoje é segunda-feira.", tense: "Presente" },
+                { de: "Wie spät ist es?", pt: "Que horas são?", tense: "Presente" },
+                { de: "Es ist zwei Uhr.", pt: "São duas horas.", tense: "Presente" },
+                { de: "Wo ist der Bahnhof?", pt: "Onde é a estação?", tense: "Presente" },
+                { de: "Wer ist verantwortlich?", pt: "Quem é o responsável?", tense: "Presente" },
+                { de: "Wie ist das Wetter?", pt: "Como é o tempo?", tense: "Presente" },
+                { de: "Das Treffen ist morgen.", pt: "A reunião é amanhã.", tense: "Presente" },
+                { de: "Mein Geburtstag ist im Mai.", pt: "O meu aniversário é em maio.", tense: "Presente" },
+                { de: "Glücklich sein ist wichtig.", pt: "Ser feliz é importante.", tense: "Presente" },
+                { de: "Sein oder nicht sein.", pt: "Ser ou não ser.", tense: "Expressão" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

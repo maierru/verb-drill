@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇵🇹 SAIR — 20 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇵🇹 Sair</h1>
+            <p class="subtitle">to go out, to leave — 20 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 20 von 20 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Portugiesisch-Übung — SAIR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇵🇹 Sair</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>saio</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>sais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>sai</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>saímos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>saem</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>saía</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>saías</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>saía</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>saíamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>saíam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Perfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>saí</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>saíste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>saiu</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>saímos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>saíram</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>sairei</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>sairás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>sairá</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>sairemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>sairão</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Condicional</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>sairia</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>sairias</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>sairia</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>sairíamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>sairiam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Conjuntivo Presente</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>saia</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>saias</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>saia</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>saiamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>saiam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Conjuntivo Imperfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>saísse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>saísses</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>saísse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>saíssemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>saíssem</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'pt',
+            labels: { target: 'Europäisches Portugiesisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["saio","sais","sai","saímos","saem","saía","saías","saíamos","saíam","saí","saíste","saiu","saíram","sairei","sairás","sairá","sairemos","sairão","sairia","sairias","sairíamos","sairiam","saia","saias","saiamos","saiam","saísse","saísses","saíssemos","saíssem","sair","saíres","sairmos","saírem"],
+            phrases: [
+                { de: "Ich gehe heute aus.", pt: "Saio hoje.", tense: "Presente" },
+                { de: "Du gehst früh.", pt: "Sais cedo.", tense: "Presente" },
+                { de: "Er geht nachts aus.", pt: "Ele sai à noite.", tense: "Presente" },
+                { de: "Wir gehen zusammen.", pt: "Saímos juntos.", tense: "Presente" },
+                { de: "Ich ging früher oft aus.", pt: "Saía muito.", tense: "Imperfeito" },
+                { de: "Du gingst früher früh.", pt: "Saías cedo.", tense: "Imperfeito" },
+                { de: "Er ging jede Nacht aus.", pt: "Ele saía todas as noites.", tense: "Imperfeito" },
+                { de: "Ich ging gestern aus.", pt: "Saí ontem.", tense: "Perfeito" },
+                { de: "Du bist gestern Abend ausgegangen.", pt: "Saíste ontem à noite.", tense: "Perfeito" },
+                { de: "Er verließ das Büro.", pt: "Ele saiu do escritório.", tense: "Perfeito" },
+                { de: "Ich werde ausgehen.", pt: "Sairei.", tense: "Futuro" },
+                { de: "Du wirst bald gehen.", pt: "Sairás em breve.", tense: "Futuro" },
+                { de: "Wir werden morgen gehen.", pt: "Sairemos amanhã.", tense: "Futuro" },
+                { de: "Ich würde ausgehen.", pt: "Sairia.", tense: "Condicional" },
+                { de: "Du würdest gehen.", pt: "Sairias.", tense: "Condicional" },
+                { de: "Ich würde ausgehen, wenn ich könnte.", pt: "Sairia se pudesse.", tense: "Condicional" },
+                { de: "Ich will, dass du gehst.", pt: "Quero que saias.", tense: "Conjuntivo" },
+                { de: "Wenn ich ausgehen würde.", pt: "Se eu saísse.", tense: "Imperfeito Conj." },
+                { de: "Geh raus!", pt: "Sai!", tense: "Imperativo" },
+                { de: "Lasst uns ausgehen!", pt: "Saiamos!", tense: "Imperativo" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

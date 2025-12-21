@@ -20,6 +20,7 @@ More coming.
 - 🇬🇧 English
 - 🇷🇺 Russian
 - 🇵🇹 Portuguese
+- 🇩🇪 German
 
 ## How many phrases per verb?
 

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇵🇹 VERB VIR — 20 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇵🇹 Verb VIR</h1>
+            <p class="subtitle">to come — 20 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 20 von 20 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Portugiesisch-Übung — VIR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇵🇹 Verb VIR</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>venho</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>vens</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>vem</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>vimos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>vêm</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>vinha</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>vinhas</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>vinha</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>vínhamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>vinham</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Perfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>vim</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>vieste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>veio</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>viemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>vieram</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>virei</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>virás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>virá</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>viremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>virão</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Condicional</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>viria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>virias</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>viria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>viríamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>viriam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Presente do Conjuntivo</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>venha</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>venhas</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>venha</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>venhamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>venham</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imperfeito do Conjuntivo</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>viesse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>viesses</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>viesse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>viéssemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>viessem</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'pt',
+            labels: { target: 'Europäisches Portugiesisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["venho","vens","vem","vimos","vêm","vinha","vinhas","vínhamos","vinham","vim","vieste","veio","viemos","vieram","virei","virás","virá","viremos","virão","viria","virias","viríamos","viriam","venha","venhas","venhamos","venham","viesse","viesses","viéssemos","viessem","vir","vindo","vier"],
+            phrases: [
+                { de: "Ich komme aus Portugal.", pt: "Venho de Portugal.", tense: "Presente" },
+                { de: "Woher kommst du?", pt: "De onde vens?", tense: "Presente" },
+                { de: "Er kommt jeden Tag.", pt: "Ele vem todos os dias.", tense: "Presente" },
+                { de: "Sie kommt mit uns.", pt: "Ela vem connosco.", tense: "Presente" },
+                { de: "Wir kommen zusammen.", pt: "Vimos juntos.", tense: "Presente" },
+                { de: "Ich kam früher hierher.", pt: "Eu vinha aqui.", tense: "Imperfeito" },
+                { de: "Du kamst jede Woche.", pt: "Tu vinhas todas as semanas.", tense: "Imperfeito" },
+                { de: "Sie kam mit ihrer Mutter.", pt: "Ela vinha com a mãe.", tense: "Imperfeito" },
+                { de: "Ich kam gestern.", pt: "Vim ontem.", tense: "Perfeito" },
+                { de: "Du kamst früh.", pt: "Tu vieste cedo.", tense: "Perfeito" },
+                { de: "Er kam zum Treffen.", pt: "Ele veio à reunião.", tense: "Perfeito" },
+                { de: "Niemand kam.", pt: "Ninguém veio.", tense: "Perfeito" },
+                { de: "Ich werde morgen kommen.", pt: "Virei amanhã.", tense: "Futuro" },
+                { de: "Du wirst zurückkommen.", pt: "Tu virás de volta.", tense: "Futuro" },
+                { de: "Er wird bald kommen.", pt: "Ele virá em breve.", tense: "Futuro" },
+                { de: "Ich würde mit dir kommen.", pt: "Viria contigo.", tense: "Condicional" },
+                { de: "Er würde kommen, wenn er könnte.", pt: "Ele viria se pudesse.", tense: "Condicional" },
+                { de: "Komm her!", pt: "Vem cá!", tense: "Imperativo" },
+                { de: "Komm mit mir.", pt: "Vem comigo.", tense: "Imperativo" },
+                { de: "Willkommen!", pt: "Bem-vindo!", tense: "Expressão" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

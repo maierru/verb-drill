@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇫🇷 VERB FALLOIR — 20 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇫🇷 Verb FALLOIR</h1>
+            <p class="subtitle">to be necessary — 20 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 20 von 20 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Französisch-Übung — FALLOIR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇫🇷 Verb FALLOIR</h2>
+            <div class="tense-explanation">
+                <h4>Présent</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">il</td>
+                        <td>faut</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Passé Composé</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">il</td>
+                        <td>a fallu</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imparfait</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">il</td>
+                        <td>fallait</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur Simple</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">il</td>
+                        <td>faudra</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'fr',
+            labels: { target: 'Französisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["faut","fallait","fallu","faudra"],
+            phrases: [
+                { de: "Man muss gehen.", fr: "Il faut partir.", tense: "Présent" },
+                { de: "Wir müssen uns beeilen.", fr: "Il faut se dépêcher.", tense: "Présent" },
+                { de: "Man muss geduldig sein.", fr: "Il faut être patient.", tense: "Présent" },
+                { de: "Wir mussten warten.", fr: "Il a fallu attendre.", tense: "Passé Composé" },
+                { de: "Man wird entscheiden müssen.", fr: "Il faudra décider.", tense: "Futur Simple" },
+                { de: "Wir brauchen mehr Zeit.", fr: "Il faut plus de temps.", tense: "Présent" },
+                { de: "Man musste handeln.", fr: "Il fallait agir.", tense: "Imparfait" },
+                { de: "Man muss es versuchen.", fr: "Il faut essayer.", tense: "Présent" },
+                { de: "Man wird hart arbeiten müssen.", fr: "Il faudra travailler dur.", tense: "Futur Simple" },
+                { de: "Man musste da sein.", fr: "Il fallait être là.", tense: "Imparfait" },
+                { de: "Was braucht man?", fr: "Qu'est-ce qu'il faut ?", tense: "Présent" },
+                { de: "Wir mussten alles ändern.", fr: "Il a fallu tout changer.", tense: "Passé Composé" },
+                { de: "Man muss verstehen.", fr: "Il faut comprendre.", tense: "Présent" },
+                { de: "Es wird Zeit brauchen.", fr: "Il faudra du temps.", tense: "Futur Simple" },
+                { de: "Wir brauchten Hilfe.", fr: "Il fallait de l'aide.", tense: "Imparfait" },
+                { de: "Man muss das sehen.", fr: "Il faut voir ça.", tense: "Présent" },
+                { de: "Wir mussten gehen.", fr: "Il a fallu partir.", tense: "Passé Composé" },
+                { de: "Man wird bezahlen müssen.", fr: "Il faudra payer.", tense: "Futur Simple" },
+                { de: "Man muss es wissen.", fr: "Il faut savoir.", tense: "Présent" },
+                { de: "Es brauchte Mut.", fr: "Il a fallu du courage.", tense: "Passé Composé" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

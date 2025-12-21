@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇫🇷 VERB METTRE — 20 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇫🇷 Verb METTRE</h1>
+            <p class="subtitle">to put — 20 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 20 von 20 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Französisch-Übung — METTRE · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇫🇷 Verb METTRE</h2>
+            <div class="tense-explanation">
+                <h4>Présent</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>mets</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>mets</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>met</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>mettons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>mettez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>mettent</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Passé Composé</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>ai mis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>as mis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>a mis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>avons mis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>avez mis</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>ont mis</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imparfait</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>mettais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>mettais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>mettait</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>mettions</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>mettiez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>mettaient</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur Simple</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>mettrai</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>mettras</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>mettra</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>mettrons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>mettrez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>mettront</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'fr',
+            labels: { target: 'Französisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["mets","met","mettons","mettez","mettent","mettais","mettait","mettions","mettiez","mettaient","mis","mettrai","mettras","mettra","mettrons","mettrez","mettront"],
+            phrases: [
+                { de: "Ich lege es auf den Tisch.", fr: "Je le mets sur la table.", tense: "Présent" },
+                { de: "Zieh deinen Mantel an.", fr: "Mets ton manteau.", tense: "Présent" },
+                { de: "Sie schminkt sich.", fr: "Elle se maquille.", tense: "Présent" },
+                { de: "Ich habe die Schlüssel hierhin gelegt.", fr: "J'ai mis les clés ici.", tense: "Passé Composé" },
+                { de: "Er zog einen Anzug an.", fr: "Il a mis un costume.", tense: "Passé Composé" },
+                { de: "Wir werden es wegräumen.", fr: "Nous le rangerons.", tense: "Futur Simple" },
+                { de: "Wo hast du es hingelegt?", fr: "Où l'as-tu mis ?", tense: "Passé Composé" },
+                { de: "Sie räumte auf.", fr: "Elle mettait de l'ordre.", tense: "Imparfait" },
+                { de: "Ich mache Musik an.", fr: "Je mets de la musique.", tense: "Présent" },
+                { de: "Sie haben alles nach drinnen gelegt.", fr: "Ils ont tout mis à l'intérieur.", tense: "Passé Composé" },
+                { de: "Leg es da hin.", fr: "Mets-le là.", tense: "Présent" },
+                { de: "Es dauert eine Stunde.", fr: "Ça met une heure.", tense: "Présent" },
+                { de: "Ich trug Jeans.", fr: "Je mettais des jeans.", tense: "Imparfait" },
+                { de: "Er legte das Buch hin.", fr: "Il a posé le livre.", tense: "Passé Composé" },
+                { de: "Wir legen Geld beiseite.", fr: "Nous mettons de l'argent de côté.", tense: "Présent" },
+                { de: "Sie wird ein Kleid anziehen.", fr: "Elle mettra une robe.", tense: "Futur Simple" },
+                { de: "Ich tue Zucker in meinen Kaffee.", fr: "Je mets du sucre dans mon café.", tense: "Présent" },
+                { de: "Sie haben Dekoration aufgehängt.", fr: "Ils ont mis des décorations.", tense: "Passé Composé" },
+                { de: "Versetz dich in meine Lage.", fr: "Mets-toi à ma place.", tense: "Présent" },
+                { de: "Ich werde etwas Warmes anziehen.", fr: "Je mettrai quelque chose de chaud.", tense: "Futur Simple" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

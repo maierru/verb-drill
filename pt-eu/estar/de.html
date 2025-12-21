@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇵🇹 VERB ESTAR — 100 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇵🇹 Verb ESTAR</h1>
+            <p class="subtitle">to be (temporary) — 100 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 100 von 100 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Portugiesisch-Übung — ESTAR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇵🇹 Verb ESTAR</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>estou</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>estás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>está</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>estamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>estão</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>estava</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>estavas</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>estava</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>estávamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>estavam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Perfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>estive</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>estiveste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>esteve</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>estivemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>estiveram</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>estarei</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>estarás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>estará</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>estaremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>estarão</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Condicional</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>estaria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>estarias</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>estaria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>estaríamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>estariam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Presente do Conjuntivo</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>esteja</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>estejas</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>esteja</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>estejamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>estejam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imperfeito do Conjuntivo</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>estivesse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>estivesses</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>estivesse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>estivéssemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>estivessem</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'pt',
+            labels: { target: 'Europäisches Portugiesisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["estou","estás","está","estamos","estão","estava","estavas","estávamos","estavam","estive","estiveste","esteve","estivemos","estiveram","estarei","estarás","estará","estaremos","estarão","estaria","estarias","estaríamos","estariam","esteja","estejas","estejamos","estejam","estivesse","estivesses","estivéssemos","estivessem","estar","estando","estado"],
+            phrases: [
+                { de: "Ich bin zu Hause.", pt: "Estou em casa.", tense: "Presente" },
+                { de: "Du bist müde.", pt: "Tu estás cansado.", tense: "Presente" },
+                { de: "Er ist krank.", pt: "Ele está doente.", tense: "Presente" },
+                { de: "Sie ist heute glücklich.", pt: "Ela está feliz hoje.", tense: "Presente" },
+                { de: "Wir sind bereit.", pt: "Estamos prontos.", tense: "Presente" },
+                { de: "Ihr seid beschäftigt.", pt: "Vocês estão ocupados.", tense: "Presente" },
+                { de: "Sie sind bei der Arbeit.", pt: "Eles estão no trabalho.", tense: "Presente" },
+                { de: "Es ist kalt.", pt: "Está frio.", tense: "Presente" },
+                { de: "Mir geht es nicht gut.", pt: "Não estou bem.", tense: "Presente" },
+                { de: "Du bist nicht allein.", pt: "Tu não estás sozinho.", tense: "Presente" },
+                { de: "Wie geht es dir?", pt: "Como estás?", tense: "Presente" },
+                { de: "Wo bist du?", pt: "Onde estás?", tense: "Presente" },
+                { de: "Geht es dir gut?", pt: "Estás bem?", tense: "Presente" },
+                { de: "Ist alles in Ordnung?", pt: "Está tudo bem?", tense: "Presente" },
+                { de: "Sind sie zu Hause?", pt: "Eles estão em casa?", tense: "Presente" },
+                { de: "Ist sie wach?", pt: "Ela está acordada?", tense: "Presente" },
+                { de: "Sind wir zu spät?", pt: "Estamos atrasados?", tense: "Presente" },
+                { de: "Ist es geöffnet?", pt: "Está aberto?", tense: "Presente" },
+                { de: "Ist das Essen fertig?", pt: "A comida está pronta?", tense: "Presente" },
+                { de: "Warum bist du wütend?", pt: "Porque estás zangado?", tense: "Presente" },
+                { de: "Ich habe auf dich gewartet.", pt: "Eu estava à tua espera.", tense: "Imperfeito" },
+                { de: "Du hast geschlafen.", pt: "Tu estavas a dormir.", tense: "Imperfeito" },
+                { de: "Er hat gearbeitet.", pt: "Ele estava a trabalhar.", tense: "Imperfeito" },
+                { de: "Sie war immer müde.", pt: "Ela estava sempre cansada.", tense: "Imperfeito" },
+                { de: "Wir waren am Strand.", pt: "Estávamos na praia.", tense: "Imperfeito" },
+                { de: "Sie haben gelernt.", pt: "Eles estavam a estudar.", tense: "Imperfeito" },
+                { de: "Es hat geregnet.", pt: "Estava a chover.", tense: "Imperfeito" },
+                { de: "Die Tür war offen.", pt: "A porta estava aberta.", tense: "Imperfeito" },
+                { de: "Mir ging es nicht gut.", pt: "Eu não estava a sentir-me bem.", tense: "Imperfeito" },
+                { de: "Wo warst du?", pt: "Onde estavas?", tense: "Imperfeito" },
+                { de: "Ich war gestern dort.", pt: "Estive lá ontem.", tense: "Perfeito" },
+                { de: "Du warst auf der Party.", pt: "Tu estiveste na festa.", tense: "Perfeito" },
+                { de: "Er war letzte Woche krank.", pt: "Ele esteve doente na semana passada.", tense: "Perfeito" },
+                { de: "Wir waren in Lissabon.", pt: "Estivemos em Lisboa.", tense: "Perfeito" },
+                { de: "Sie waren früher hier.", pt: "Eles estiveram aqui mais cedo.", tense: "Perfeito" },
+                { de: "Das Wetter war gut.", pt: "O tempo esteve bom.", tense: "Perfeito" },
+                { de: "Ich war nicht zu Hause.", pt: "Não estive em casa.", tense: "Perfeito" },
+                { de: "Warst du im Meeting?", pt: "Estiveste na reunião?", tense: "Perfeito" },
+                { de: "Sie war sehr still.", pt: "Ela esteve muito calada.", tense: "Perfeito" },
+                { de: "Es war eine schwierige Zeit.", pt: "Esteve difícil.", tense: "Perfeito" },
+                { de: "Ich werde da sein.", pt: "Estarei lá.", tense: "Futuro" },
+                { de: "Dir wird es gut gehen.", pt: "Tu estarás bem.", tense: "Futuro" },
+                { de: "Er wird warten.", pt: "Ele estará à espera.", tense: "Futuro" },
+                { de: "Morgen wird es heiß sein.", pt: "Estará calor amanhã.", tense: "Futuro" },
+                { de: "Wir werden bereit sein.", pt: "Estaremos prontos.", tense: "Futuro" },
+                { de: "Sie werden am Flughafen sein.", pt: "Eles estarão no aeroporto.", tense: "Futuro" },
+                { de: "Das Geschäft wird geöffnet sein.", pt: "A loja estará aberta.", tense: "Futuro" },
+                { de: "Ich werde nicht zu spät sein.", pt: "Não estarei atrasado.", tense: "Futuro" },
+                { de: "Wirst du verfügbar sein?", pt: "Estarás disponível?", tense: "Futuro" },
+                { de: "Alles wird gut sein.", pt: "Tudo estará bem.", tense: "Futuro" },
+                { de: "Ich wäre dankbar.", pt: "Estaria grato.", tense: "Condicional" },
+                { de: "Es wäre besser.", pt: "Estaria melhor.", tense: "Condicional" },
+                { de: "Du wärst dort glücklicher.", pt: "Tu estarias mais feliz lá.", tense: "Condicional" },
+                { de: "Er würde jetzt arbeiten.", pt: "Ele estaria a trabalhar agora.", tense: "Condicional" },
+                { de: "Wir wären zusammen.", pt: "Estaríamos juntos.", tense: "Condicional" },
+                { de: "Sie wären überrascht.", pt: "Eles estariam surpreendidos.", tense: "Condicional" },
+                { de: "Ich wäre nicht hier.", pt: "Não estaria aqui.", tense: "Condicional" },
+                { de: "Wärst du interessiert?", pt: "Estarias interessado?", tense: "Condicional" },
+                { de: "Der Kaffee wäre kalt.", pt: "O café estaria frio.", tense: "Condicional" },
+                { de: "Ich würde lügen.", pt: "Estaria a mentir.", tense: "Condicional" },
+                { de: "Ich hoffe, es geht dir gut.", pt: "Espero que estejas bem.", tense: "Conjuntivo" },
+                { de: "Es ist wichtig, dass er anwesend ist.", pt: "É importante que ele esteja presente.", tense: "Conjuntivo" },
+                { de: "Ich möchte, dass wir zusammen sind.", pt: "Quero que estejamos juntos.", tense: "Conjuntivo" },
+                { de: "Ich bezweifle, dass sie zu Hause ist.", pt: "Duvido que ela esteja em casa.", tense: "Conjuntivo" },
+                { de: "Obwohl es kalt ist...", pt: "Embora esteja frio...", tense: "Conjuntivo" },
+                { de: "Wo immer du bist...", pt: "Onde quer que estejas...", tense: "Conjuntivo" },
+                { de: "Es ist notwendig, dass wir bereit sind.", pt: "É preciso que estejamos prontos.", tense: "Conjuntivo" },
+                { de: "Ich glaube nicht, dass sie hier sind.", pt: "Não acho que eles estejam aqui.", tense: "Conjuntivo" },
+                { de: "Es sei denn, du bist beschäftigt...", pt: "A menos que estejas ocupado...", tense: "Conjuntivo" },
+                { de: "Ich möchte, dass du glücklich bist.", pt: "Quero que estejas feliz.", tense: "Conjuntivo" },
+                { de: "Wenn ich dort wäre...", pt: "Se eu estivesse lá...", tense: "Imperfeito Conj." },
+                { de: "Ich wünschte, du wärst hier.", pt: "Quem me dera que estivesses aqui.", tense: "Imperfeito Conj." },
+                { de: "Wenn er wach wäre...", pt: "Se ele estivesse acordado...", tense: "Imperfeito Conj." },
+                { de: "Wenn wir zusammen wären...", pt: "Se estivéssemos juntos...", tense: "Imperfeito Conj." },
+                { de: "Wenn sie zu Hause wären...", pt: "Se eles estivessem em casa...", tense: "Imperfeito Conj." },
+                { de: "Ich würde gehen, wenn die Sonne scheinen würde.", pt: "Iria se estivesse sol.", tense: "Imperfeito Conj." },
+                { de: "Selbst wenn ich müde wäre...", pt: "Mesmo que estivesse cansado...", tense: "Imperfeito Conj." },
+                { de: "Wenn es geöffnet wäre...", pt: "Se estivesse aberto...", tense: "Imperfeito Conj." },
+                { de: "Als ob nichts falsch wäre...", pt: "Como se nada estivesse mal...", tense: "Imperfeito Conj." },
+                { de: "Ich wünschte, es wäre wärmer.", pt: "Quem me dera que estivesse mais quente.", tense: "Imperfeito Conj." },
+                { de: "Die Schlüssel sind auf dem Tisch.", pt: "As chaves estão na mesa.", tense: "Presente" },
+                { de: "Das Auto ist in der Garage.", pt: "O carro está na garagem.", tense: "Presente" },
+                { de: "Wir sind in Portugal.", pt: "Estamos em Portugal.", tense: "Presente" },
+                { de: "Das Restaurant ist in der Nähe.", pt: "O restaurante está perto.", tense: "Presente" },
+                { de: "Wo ist die Toilette?", pt: "Onde está a casa de banho?", tense: "Presente" },
+                { de: "Das Buch ist im Regal.", pt: "O livro está na prateleira.", tense: "Presente" },
+                { de: "Ich bin im Büro.", pt: "Estou no escritório.", tense: "Presente" },
+                { de: "Die Kinder sind in der Schule.", pt: "As crianças estão na escola.", tense: "Presente" },
+                { de: "Sie ist oben.", pt: "Ela está lá em cima.", tense: "Presente" },
+                { de: "Der Zug ist am Bahnhof.", pt: "O comboio está na estação.", tense: "Presente" },
+                { de: "Mir geht es gut, danke.", pt: "Estou bem, obrigado.", tense: "Expressão" },
+                { de: "Ich habe Hunger.", pt: "Estou com fome.", tense: "Expressão" },
+                { de: "Ich habe Durst.", pt: "Estou com sede.", tense: "Expressão" },
+                { de: "Ich habe es eilig.", pt: "Estou com pressa.", tense: "Expressão" },
+                { de: "Ich habe Angst.", pt: "Estou com medo.", tense: "Expressão" },
+                { de: "Mir ist heiß.", pt: "Estou com calor.", tense: "Expressão" },
+                { de: "Mir ist kalt.", pt: "Estou com frio.", tense: "Expressão" },
+                { de: "Ich bin schläfrig.", pt: "Estou com sono.", tense: "Expressão" },
+                { de: "Ich mache nur Spaß.", pt: "Estou a brincar.", tense: "Expressão" },
+                { de: "Ich höre zu.", pt: "Estou a ouvir.", tense: "Expressão" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

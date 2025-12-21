@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇫🇷 VERB POUVOIR — 20 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇫🇷 Verb POUVOIR</h1>
+            <p class="subtitle">can, to be able to — 20 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 20 von 20 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Französisch-Übung — POUVOIR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇫🇷 Verb POUVOIR</h2>
+            <div class="tense-explanation">
+                <h4>Présent</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>peux</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>peux</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>peut</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>pouvons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>pouvez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>peuvent</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Passé Composé</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>ai pu</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>as pu</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>a pu</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>avons pu</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>avez pu</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>ont pu</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imparfait</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>pouvais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>pouvais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>pouvait</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>pouvions</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>pouviez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>pouvaient</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur Simple</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>pourrai</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>pourras</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>pourra</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>pourrons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>pourrez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>pourront</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'fr',
+            labels: { target: 'Französisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["peux","peut","pouvons","pouvez","peuvent","pouvais","pouvait","pouvions","pouviez","pouvaient","pu","pourrai","pourras","pourra","pourrons","pourrez","pourront"],
+            phrases: [
+                { de: "Ich kann Französisch sprechen.", fr: "Je peux parler français.", tense: "Présent" },
+                { de: "Kannst du mir helfen?", fr: "Peux-tu m'aider ?", tense: "Présent" },
+                { de: "Sie kann sehr gut schwimmen.", fr: "Elle sait très bien nager.", tense: "Présent" },
+                { de: "Wir können morgen kommen.", fr: "Nous pouvons venir demain.", tense: "Présent" },
+                { de: "Ich konnte nicht schlafen.", fr: "Je n'ai pas pu dormir.", tense: "Passé Composé" },
+                { de: "Darf ich eine Frage stellen?", fr: "Puis-je poser une question ?", tense: "Présent" },
+                { de: "Sie können es selbst machen.", fr: "Ils peuvent le faire eux-mêmes.", tense: "Présent" },
+                { de: "Ich werde kommen können.", fr: "Je pourrai venir.", tense: "Futur Simple" },
+                { de: "Du kannst hier bleiben.", fr: "Tu peux rester ici.", tense: "Présent" },
+                { de: "Wir konnten es nicht finden.", fr: "Nous n'avons pas pu le trouver.", tense: "Passé Composé" },
+                { de: "Kannst du das sehen?", fr: "Tu peux voir ça ?", tense: "Présent" },
+                { de: "Sie konnte es nicht verstehen.", fr: "Elle ne pouvait pas comprendre.", tense: "Imparfait" },
+                { de: "Ich kann Auto fahren.", fr: "Je sais conduire.", tense: "Présent" },
+                { de: "Könnten Sie das wiederholen?", fr: "Pourriez-vous répéter ?", tense: "Présent" },
+                { de: "Wir können es noch einmal versuchen.", fr: "Nous pouvons réessayer.", tense: "Présent" },
+                { de: "Ich konnte alles hören.", fr: "Je pouvais tout entendre.", tense: "Imparfait" },
+                { de: "Darf ich dein Handy benutzen?", fr: "Puis-je utiliser ton téléphone ?", tense: "Présent" },
+                { de: "Sie konnten nicht kommen.", fr: "Ils n'ont pas pu venir.", tense: "Passé Composé" },
+                { de: "Du wirst sehen können.", fr: "Tu pourras voir.", tense: "Futur Simple" },
+                { de: "Ich kann das nicht machen.", fr: "Je ne peux pas faire ça.", tense: "Présent" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

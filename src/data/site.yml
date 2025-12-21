@@ -27,5 +27,6 @@ origins:
   - { flag: "🇬🇧", name: English }
   - { flag: "🇷🇺", name: Russian }
   - { flag: "🇵🇹", name: Portuguese }
+  - { flag: "🇩🇪", name: German }
 
 phrases_per_verb: 100

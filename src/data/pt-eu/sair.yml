@@ -711,3 +711,64 @@ phrases:
   - ru: Всё получилось.
     pt: Tudo saiu bem.
     tense: Perfeito
+  de:
+  - de: Ich gehe heute aus.
+    pt: Saio hoje.
+    tense: Presente
+  - de: Du gehst früh.
+    pt: Sais cedo.
+    tense: Presente
+  - de: Er geht nachts aus.
+    pt: Ele sai à noite.
+    tense: Presente
+  - de: Wir gehen zusammen.
+    pt: Saímos juntos.
+    tense: Presente
+  - de: Ich ging früher oft aus.
+    pt: Saía muito.
+    tense: Imperfeito
+  - de: Du gingst früher früh.
+    pt: Saías cedo.
+    tense: Imperfeito
+  - de: Er ging jede Nacht aus.
+    pt: Ele saía todas as noites.
+    tense: Imperfeito
+  - de: Ich ging gestern aus.
+    pt: Saí ontem.
+    tense: Perfeito
+  - de: Du bist gestern Abend ausgegangen.
+    pt: Saíste ontem à noite.
+    tense: Perfeito
+  - de: Er verließ das Büro.
+    pt: Ele saiu do escritório.
+    tense: Perfeito
+  - de: Ich werde ausgehen.
+    pt: Sairei.
+    tense: Futuro
+  - de: Du wirst bald gehen.
+    pt: Sairás em breve.
+    tense: Futuro
+  - de: Wir werden morgen gehen.
+    pt: Sairemos amanhã.
+    tense: Futuro
+  - de: Ich würde ausgehen.
+    pt: Sairia.
+    tense: Condicional
+  - de: Du würdest gehen.
+    pt: Sairias.
+    tense: Condicional
+  - de: Ich würde ausgehen, wenn ich könnte.
+    pt: Sairia se pudesse.
+    tense: Condicional
+  - de: Ich will, dass du gehst.
+    pt: Quero que saias.
+    tense: Conjuntivo
+  - de: Wenn ich ausgehen würde.
+    pt: Se eu saísse.
+    tense: Imperfeito Conj.
+  - de: Geh raus!
+    pt: Sai!
+    tense: Imperativo
+  - de: Lasst uns ausgehen!
+    pt: Saiamos!
+    tense: Imperativo

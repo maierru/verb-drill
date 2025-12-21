@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇵🇹 VERB DIZER — 20 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇵🇹 Verb DIZER</h1>
+            <p class="subtitle">to say, to tell — 20 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 20 von 20 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Portugiesisch-Übung — DIZER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇵🇹 Verb DIZER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>digo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>dizes</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>diz</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>dizemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>dizem</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>dizia</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>dizias</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>dizia</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>dizíamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>diziam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Perfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>disse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>disseste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>disse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>dissemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>disseram</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>direi</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>dirás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>dirá</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>diremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>dirão</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Condicional</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>diria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>dirias</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>diria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>diríamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>diriam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Presente do Conjuntivo</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>diga</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>digas</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>diga</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>digamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>digam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imperfeito do Conjuntivo</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>dissesse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>dissesses</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>dissesse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>disséssemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>dissessem</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'pt',
+            labels: { target: 'Europäisches Portugiesisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["digo","dizes","diz","dizemos","dizem","dizia","dizias","dizíamos","diziam","disse","disseste","dissemos","disseram","direi","dirás","dirá","diremos","dirão","diria","dirias","diríamos","diriam","diga","digas","digamos","digam","dissesse","dissesses","disséssemos","dissessem","dizer","dizendo","dito"],
+            phrases: [
+                { de: "Ich sage die Wahrheit.", pt: "Digo a verdade.", tense: "Presente" },
+                { de: "Was sagst du?", pt: "O que dizes?", tense: "Presente" },
+                { de: "Er sagt ja.", pt: "Ele diz que sim.", tense: "Presente" },
+                { de: "Sie sagt nichts.", pt: "Ela não diz nada.", tense: "Presente" },
+                { de: "Wir sagen auf Wiedersehen.", pt: "Dizemos adeus.", tense: "Presente" },
+                { de: "Ich sagte das immer.", pt: "Eu dizia isso.", tense: "Imperfeito" },
+                { de: "Du sagtest immer die Wahrheit.", pt: "Tu dizias sempre a verdade.", tense: "Imperfeito" },
+                { de: "Ich habe es klar gesagt.", pt: "Disse claramente.", tense: "Perfeito" },
+                { de: "Du hast ja gesagt.", pt: "Tu disseste que sim.", tense: "Perfeito" },
+                { de: "Er hat auf Wiedersehen gesagt.", pt: "Ele disse adeus.", tense: "Perfeito" },
+                { de: "Was hast du gesagt?", pt: "O que disseste?", tense: "Perfeito" },
+                { de: "Ich werde die Wahrheit sagen.", pt: "Direi a verdade.", tense: "Futuro" },
+                { de: "Du wirst nichts sagen.", pt: "Tu não dirás nada.", tense: "Futuro" },
+                { de: "Ich würde ja sagen.", pt: "Diria que sim.", tense: "Condicional" },
+                { de: "Was würdest du sagen?", pt: "O que dirias?", tense: "Condicional" },
+                { de: "Ich hoffe, du sagst ja.", pt: "Espero que digas que sim.", tense: "Conjuntivo" },
+                { de: "Wenn ich das sagen würde...", pt: "Se eu dissesse isso...", tense: "Imperfeito Conj." },
+                { de: "Das heißt...", pt: "Quer dizer...", tense: "Expressão" },
+                { de: "Was kann ich sagen?", pt: "O que posso dizer?", tense: "Expressão" },
+                { de: "Sag es nochmal.", pt: "Diz outra vez.", tense: "Imperativo" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

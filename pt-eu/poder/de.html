@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇵🇹 VERB PODER — 20 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇵🇹 Verb PODER</h1>
+            <p class="subtitle">can, to be able to — 20 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 20 von 20 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Portugiesisch-Übung — PODER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇵🇹 Verb PODER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>posso</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>podes</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>pode</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>podemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>podem</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>podia</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>podias</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>podia</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>podíamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>podiam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Perfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>pude</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>pudeste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>pôde</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>pudemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>puderam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>poderei</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>poderás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>poderá</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>poderemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>poderão</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Condicional</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>poderia</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>poderias</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>poderia</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>poderíamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>poderiam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Presente do Conjuntivo</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>possa</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>possas</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>possa</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>possamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>possam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imperfeito do Conjuntivo</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>pudesse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>pudesses</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>pudesse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>pudéssemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>pudessem</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'pt',
+            labels: { target: 'Europäisches Portugiesisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["posso","podes","pode","podemos","podem","podia","podias","podíamos","podiam","pude","pudeste","pôde","pudemos","puderam","poderei","poderás","poderá","poderemos","poderão","poderia","poderias","poderíamos","poderiam","possa","possas","possamos","possam","pudesse","pudesses","pudéssemos","pudessem","poder","podendo","podido"],
+            phrases: [
+                { de: "Ich kann dir helfen.", pt: "Posso ajudar-te.", tense: "Presente" },
+                { de: "Du kannst hereinkommen.", pt: "Podes entrar.", tense: "Presente" },
+                { de: "Er kann morgen kommen.", pt: "Ele pode vir amanhã.", tense: "Presente" },
+                { de: "Wir können anfangen.", pt: "Podemos começar.", tense: "Presente" },
+                { de: "Ich konnte schneller laufen.", pt: "Eu podia correr mais rápido antes.", tense: "Imperfeito" },
+                { de: "Du konntest das Meer vom Fenster sehen.", pt: "Podias ver o mar da janela.", tense: "Imperfeito" },
+                { de: "Wir konnten jeden Tag spazieren gehen.", pt: "Podíamos passear todos os dias.", tense: "Imperfeito" },
+                { de: "Ich konnte die Arbeit beenden.", pt: "Pude terminar o trabalho.", tense: "Perfeito" },
+                { de: "Du konntest die Antwort finden.", pt: "Pudeste encontrar a resposta.", tense: "Perfeito" },
+                { de: "Er konnte das Problem lösen.", pt: "Ele pôde resolver o problema.", tense: "Perfeito" },
+                { de: "Ich werde morgen helfen können.", pt: "Poderei ajudar amanhã.", tense: "Futuro" },
+                { de: "Du wirst es später verstehen.", pt: "Poderás compreender mais tarde.", tense: "Futuro" },
+                { de: "Ich werde nicht kommen können.", pt: "Não poderei vir.", tense: "Futuro" },
+                { de: "Ich könnte helfen, wenn ich wüsste.", pt: "Poderia ajudar se soubesse.", tense: "Condicional" },
+                { de: "Du könntest es noch einmal versuchen.", pt: "Poderias tentar outra vez.", tense: "Condicional" },
+                { de: "Wir könnten ins Kino gehen.", pt: "Poderíamos ir ao cinema.", tense: "Condicional" },
+                { de: "Könnten Sie mir helfen?", pt: "Poderia ajudar-me?", tense: "Condicional" },
+                { de: "Könnten Sie langsamer sprechen?", pt: "Poderia falar mais devagar?", tense: "Condicional" },
+                { de: "Vielleicht.", pt: "Pode ser.", tense: "Expressão" },
+                { de: "Das ist möglich.", pt: "É possível. / Pode acontecer.", tense: "Expressão" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

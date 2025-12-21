@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇵🇹 TRAZER — 100 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇵🇹 Trazer</h1>
+            <p class="subtitle">to bring — 100 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 100 von 100 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Portugiesisch-Übung — TRAZER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇵🇹 Trazer</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>trago</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>trazes</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>traz</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>trazemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>trazem</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>trazia</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>trazias</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>trazia</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>trazíamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>traziam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Perfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>trouxe</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>trouxeste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>trouxe</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>trouxemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>trouxeram</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>trarei</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>trarás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>trará</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>traremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>trarão</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Condicional</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>traria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>trarias</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>traria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>traríamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>trariam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Conjuntivo Presente</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>traga</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>tragas</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>traga</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>tragamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>tragam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Conjuntivo Imperfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>trouxesse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>trouxesses</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>trouxesse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>trouxéssemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>trouxessem</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'pt',
+            labels: { target: 'Europäisches Portugiesisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["trago","trazes","traz","trazemos","trazem","trazia","trazias","trazíamos","traziam","trouxe","trouxeste","trouxemos","trouxeram","trarei","trarás","trará","traremos","trarão","traria","trarias","traríamos","trariam","traga","tragas","tragamos","tragam","trouxesse","trouxesses","trouxéssemos","trouxessem","trazer","trouxer","trouxeres","trouxermos","trouxerem"],
+            phrases: [
+                { de: "Ich bringe es.", pt: "Trago.", tense: "Presente" },
+                { de: "Du bringst das Essen.", pt: "Trazes a comida.", tense: "Presente" },
+                { de: "Er bringt die Nachrichten.", pt: "Ele traz as notícias.", tense: "Presente" },
+                { de: "Wir bringen alles.", pt: "Trazemos tudo.", tense: "Presente" },
+                { de: "Sie bringen Geschenke.", pt: "Eles trazem presentes.", tense: "Presente" },
+                { de: "Ich bringe es mit.", pt: "Trago comigo.", tense: "Presente" },
+                { de: "Du bringst gute Nachrichten.", pt: "Trazes boas notícias.", tense: "Presente" },
+                { de: "Sie bringt die Dokumente.", pt: "Ela traz os documentos.", tense: "Presente" },
+                { de: "Wir bringen den Wein.", pt: "Trazemos o vinho.", tense: "Presente" },
+                { de: "Sie bringen die Kinder.", pt: "Eles trazem as crianças.", tense: "Presente" },
+                { de: "Ich brachte immer.", pt: "Trazia.", tense: "Imperfeito" },
+                { de: "Du brachtest Essen.", pt: "Trazias comida.", tense: "Imperfeito" },
+                { de: "Er brachte Geschenke.", pt: "Ele trazia presentes.", tense: "Imperfeito" },
+                { de: "Wir brachten das Mittagessen.", pt: "Trazíamos o almoço.", tense: "Imperfeito" },
+                { de: "Sie brachten Wein.", pt: "Eles traziam vinho.", tense: "Imperfeito" },
+                { de: "Ich war am Bringen.", pt: "Estava a trazer.", tense: "Imperfeito" },
+                { de: "Du warst die Tasche am Bringen.", pt: "Estavas a trazer a mala.", tense: "Imperfeito" },
+                { de: "Sie war etwas am Bringen.", pt: "Ela estava a trazer algo.", tense: "Imperfeito" },
+                { de: "Wir waren alles am Bringen.", pt: "Estávamos a trazer tudo.", tense: "Imperfeito" },
+                { de: "Sie waren das Essen am Bringen.", pt: "Eles estavam a trazer a comida.", tense: "Imperfeito" },
+                { de: "Ich habe es gebracht.", pt: "Trouxe.", tense: "Perfeito" },
+                { de: "Du hast das Buch gebracht.", pt: "Trouxeste o livro.", tense: "Perfeito" },
+                { de: "Er hat Blumen gebracht.", pt: "Ele trouxe flores.", tense: "Perfeito" },
+                { de: "Wir haben Essen gebracht.", pt: "Trouxemos comida.", tense: "Perfeito" },
+                { de: "Sie haben das Geld gebracht.", pt: "Eles trouxeram o dinheiro.", tense: "Perfeito" },
+                { de: "Ich habe ein Geschenk gebracht.", pt: "Trouxe um presente.", tense: "Perfeito" },
+                { de: "Du hast gute Nachrichten gebracht.", pt: "Trouxeste boas notícias.", tense: "Perfeito" },
+                { de: "Sie hat ihre Freundin mitgebracht.", pt: "Ela trouxe a amiga.", tense: "Perfeito" },
+                { de: "Wir haben alles gebracht.", pt: "Trouxemos tudo.", tense: "Perfeito" },
+                { de: "Sie haben die Kinder gebracht.", pt: "Eles trouxeram as crianças.", tense: "Perfeito" },
+                { de: "Ich werde bringen.", pt: "Trarei.", tense: "Futuro" },
+                { de: "Du wirst den Wein bringen.", pt: "Trarás o vinho.", tense: "Futuro" },
+                { de: "Er wird es morgen bringen.", pt: "Ele trará amanhã.", tense: "Futuro" },
+                { de: "Wir werden Essen bringen.", pt: "Traremos comida.", tense: "Futuro" },
+                { de: "Sie werden Geschenke bringen.", pt: "Eles trarão presentes.", tense: "Futuro" },
+                { de: "Ich werde es später bringen.", pt: "Trarei mais tarde.", tense: "Futuro" },
+                { de: "Du wirst gute Nachrichten bringen.", pt: "Trarás boas notícias.", tense: "Futuro" },
+                { de: "Sie wird die Dokumente bringen.", pt: "Ela trará os documentos.", tense: "Futuro" },
+                { de: "Wir werden alles bringen.", pt: "Traremos tudo.", tense: "Futuro" },
+                { de: "Sie werden das Auto bringen.", pt: "Eles trarão o carro.", tense: "Futuro" },
+                { de: "Ich würde bringen.", pt: "Traria.", tense: "Condicional" },
+                { de: "Du würdest mehr bringen.", pt: "Trarias mais.", tense: "Condicional" },
+                { de: "Er würde es bringen.", pt: "Ele traria.", tense: "Condicional" },
+                { de: "Wir würden Essen bringen.", pt: "Traríamos comida.", tense: "Condicional" },
+                { de: "Sie würden alles bringen.", pt: "Eles trariam tudo.", tense: "Condicional" },
+                { de: "Ich würde bringen, wenn ich könnte.", pt: "Traria se pudesse.", tense: "Condicional" },
+                { de: "Du würdest Wein bringen.", pt: "Trarias vinho.", tense: "Condicional" },
+                { de: "Sie würde ein Geschenk bringen.", pt: "Ela traria um presente.", tense: "Condicional" },
+                { de: "Wir würden die Kinder bringen.", pt: "Traríamos as crianças.", tense: "Condicional" },
+                { de: "Sie würden mehr bringen.", pt: "Eles trariam mais.", tense: "Condicional" },
+                { de: "Ich möchte, dass du bringst.", pt: "Quero que tragas.", tense: "Conjuntivo" },
+                { de: "Ich hoffe, er bringt.", pt: "Espero que ele traga.", tense: "Conjuntivo" },
+                { de: "Es ist wichtig, dass wir bringen.", pt: "É importante que tragamos.", tense: "Conjuntivo" },
+                { de: "Ich bezweifle, dass sie bringen.", pt: "Duvido que eles tragam.", tense: "Conjuntivo" },
+                { de: "Obwohl ich bringe.", pt: "Embora eu traga.", tense: "Conjuntivo" },
+                { de: "Damit du bringst.", pt: "Para que tu tragas.", tense: "Conjuntivo" },
+                { de: "Es sei denn, sie bringt.", pt: "A menos que ela traga.", tense: "Conjuntivo" },
+                { de: "Bevor sie bringen.", pt: "Antes que eles tragam.", tense: "Conjuntivo" },
+                { de: "Es ist möglich, dass wir bringen.", pt: "É possível que tragamos.", tense: "Conjuntivo" },
+                { de: "Ich bevorzuge, dass du bringst.", pt: "Prefiro que tu tragas.", tense: "Conjuntivo" },
+                { de: "Wenn ich brächte.", pt: "Se eu trouxesse.", tense: "Imperfeito Conj." },
+                { de: "Wenn du brächtest.", pt: "Se tu trouxesses.", tense: "Imperfeito Conj." },
+                { de: "Wenn er brächte.", pt: "Se ele trouxesse.", tense: "Imperfeito Conj." },
+                { de: "Wenn wir brächten.", pt: "Se nós trouxéssemos.", tense: "Imperfeito Conj." },
+                { de: "Wenn sie brächten.", pt: "Se eles trouxessem.", tense: "Imperfeito Conj." },
+                { de: "Ich wünschte, ich könnte bringen.", pt: "Quem me dera trazer.", tense: "Imperfeito Conj." },
+                { de: "Als ob sie brächte.", pt: "Como se ela trouxesse.", tense: "Imperfeito Conj." },
+                { de: "Wenn du nur brächtest.", pt: "Se tu trouxesses.", tense: "Imperfeito Conj." },
+                { de: "Ich wollte, dass du brächtest.", pt: "Queria que tu trouxesses.", tense: "Imperfeito Conj." },
+                { de: "Es wäre gut, wenn sie brächten.", pt: "Seria bom se eles trouxessem.", tense: "Imperfeito Conj." },
+                { de: "Wenn ich bringe.", pt: "Quando eu trouxer.", tense: "Futuro Conj." },
+                { de: "Sobald du bringst.", pt: "Assim que trouxeres.", tense: "Futuro Conj." },
+                { de: "Wenn er bringt.", pt: "Se ele trouxer.", tense: "Futuro Conj." },
+                { de: "Wenn wir bringen.", pt: "Quando trouxermos.", tense: "Futuro Conj." },
+                { de: "Während sie bringen.", pt: "Conforme eles trouxerem.", tense: "Futuro Conj." },
+                { de: "Bring es!", pt: "Traz!", tense: "Imperativo" },
+                { de: "Lass uns bringen!", pt: "Tragamos!", tense: "Imperativo" },
+                { de: "Bring das!", pt: "Traz isto!", tense: "Imperativo" },
+                { de: "Bring nicht!", pt: "Não tragas!", tense: "Imperativo" },
+                { de: "Bring mir Wasser!", pt: "Traz-me água!", tense: "Imperativo" },
+                { de: "Was bringst du?", pt: "O que trazes?", tense: "Presente" },
+                { de: "Was hast du gebracht?", pt: "O que trouxeste?", tense: "Perfeito" },
+                { de: "Ich bringe es.", pt: "Estou a trazer.", tense: "Presente" },
+                { de: "Du bringst Essen.", pt: "Estás a trazer comida.", tense: "Presente" },
+                { de: "Er bringt das Auto.", pt: "Ele está a trazer o carro.", tense: "Presente" },
+                { de: "Wir bringen alles.", pt: "Estamos a trazer tudo.", tense: "Presente" },
+                { de: "Sie bringen Geschenke.", pt: "Eles estão a trazer presentes.", tense: "Presente" },
+                { de: "Ich habe nichts gebracht.", pt: "Não trouxe nada.", tense: "Perfeito" },
+                { de: "Hast du die Schlüssel gebracht?", pt: "Trouxeste as chaves?", tense: "Perfeito" },
+                { de: "Ich habe vergessen zu bringen.", pt: "Esqueci-me de trazer.", tense: "Perfeito" },
+                { de: "Ich muss bringen.", pt: "Preciso de trazer.", tense: "Presente" },
+                { de: "Ich will bringen.", pt: "Quero trazer.", tense: "Presente" },
+                { de: "Kann ich einen Freund mitbringen?", pt: "Posso trazer um amigo?", tense: "Presente" },
+                { de: "Ich muss bringen.", pt: "Tenho de trazer.", tense: "Presente" },
+                { de: "Bring es hierher.", pt: "Traz para cá.", tense: "Imperativo" },
+                { de: "Es bringt Glück.", pt: "Traz felicidade.", tense: "Presente" },
+                { de: "Es bringt Probleme.", pt: "Traz problemas.", tense: "Presente" },
+                { de: "Was führt dich hierher?", pt: "O que te traz aqui?", tense: "Presente" },
+                { de: "Ich habe es dir gebracht.", pt: "Trouxe-te.", tense: "Perfeito" },
+                { de: "Sie hat mir Blumen gebracht.", pt: "Ela trouxe-me flores.", tense: "Perfeito" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

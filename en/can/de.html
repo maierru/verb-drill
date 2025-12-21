@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇬🇧 VERB CAN — 105 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇬🇧 Verb CAN</h1>
+            <p class="subtitle">can, to be able to — 105 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 105 von 105 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Englisch-Übung — CAN · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'en',
+            labels: { target: 'Englisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["can","can't","cannot","could","couldn't","could not","be able to","able to","was able to","were able to","will be able to","won't be able to"],
+            phrases: [
+                { de: "Ich kann dir helfen.", en: "I can help you.", tense: "Present" },
+                { de: "Du kannst reinkommen.", en: "You can come in.", tense: "Present" },
+                { de: "Er kann morgen kommen.", en: "He can come tomorrow.", tense: "Present" },
+                { de: "Wir können anfangen.", en: "We can start.", tense: "Present" },
+                { de: "Ihr könnt hier warten.", en: "You can wait here.", tense: "Present" },
+                { de: "Sie können Englisch sprechen.", en: "They can speak English.", tense: "Present" },
+                { de: "Ich kann nicht verstehen.", en: "I can't understand.", tense: "Present" },
+                { de: "Du kannst jetzt nicht gehen.", en: "You can't leave now.", tense: "Present" },
+                { de: "Sie kann heute nicht arbeiten.", en: "She can't work today.", tense: "Present" },
+                { de: "Wir können nicht länger warten.", en: "We can't wait any longer.", tense: "Present" },
+                { de: "Darf ich fragen?", en: "Can I ask?", tense: "Present" },
+                { de: "Kannst du mir helfen?", en: "Can you help me?", tense: "Present" },
+                { de: "Können wir reden?", en: "Can we talk?", tense: "Present" },
+                { de: "Kann ich mich hier hinsetzen?", en: "Can I sit here?", tense: "Present" },
+                { de: "Kannst du das wiederholen?", en: "Can you repeat that?", tense: "Present" },
+                { de: "Können Sie langsamer sprechen?", en: "Can you speak slower?", tense: "Present" },
+                { de: "Darf ich es versuchen?", en: "Can I try?", tense: "Present" },
+                { de: "Kannst du eine Minute warten?", en: "Can you wait a minute?", tense: "Present" },
+                { de: "Können wir zusammen gehen?", en: "Can we go together?", tense: "Present" },
+                { de: "Kann ich das nehmen?", en: "Can I take this?", tense: "Present" },
+                { de: "Früher konnte ich schneller laufen.", en: "I could run faster before.", tense: "Past" },
+                { de: "Du konntest das Meer vom Fenster sehen.", en: "You could see the sea from the window.", tense: "Past" },
+                { de: "Er konnte viele Stunden arbeiten.", en: "He could work many hours.", tense: "Past" },
+                { de: "Wir konnten jeden Tag spazieren gehen.", en: "We could walk every day.", tense: "Past" },
+                { de: "Sie konnten kommen, wann sie wollten.", en: "They could come whenever they wanted.", tense: "Past" },
+                { de: "Früher konnte ich alles essen.", en: "Before, I could eat anything.", tense: "Past" },
+                { de: "Du konntest frei sprechen.", en: "You could speak freely.", tense: "Past" },
+                { de: "Sie konnte die ganze Nacht tanzen.", en: "She could dance all night.", tense: "Past" },
+                { de: "Wir konnten öfter reisen.", en: "We could travel more often.", tense: "Past" },
+                { de: "Sie konnten den Grund nicht verstehen.", en: "They couldn't understand the reason.", tense: "Past" },
+                { de: "Ich konnte die Arbeit beenden.", en: "I was able to finish the work.", tense: "Past" },
+                { de: "Du konntest die Antwort finden.", en: "You were able to find the answer.", tense: "Past" },
+                { de: "Er konnte das Problem lösen.", en: "He was able to solve the problem.", tense: "Past" },
+                { de: "Wir konnten eine Einigung erzielen.", en: "We were able to reach an agreement.", tense: "Past" },
+                { de: "Sie konnten rechtzeitig ankommen.", en: "They were able to arrive on time.", tense: "Past" },
+                { de: "Ich konnte dich nicht anrufen.", en: "I wasn't able to call you.", tense: "Past" },
+                { de: "Du konntest nicht kommen.", en: "You weren't able to come.", tense: "Past" },
+                { de: "Sie konnte nicht antworten.", en: "She wasn't able to answer.", tense: "Past" },
+                { de: "Wir konnten die Tickets nicht kaufen.", en: "We weren't able to buy the tickets.", tense: "Past" },
+                { de: "Sie konnten es nicht verstehen.", en: "They weren't able to understand.", tense: "Past" },
+                { de: "Ich werde morgen helfen können.", en: "I will be able to help tomorrow.", tense: "Future" },
+                { de: "Du wirst es später verstehen können.", en: "You will be able to understand later.", tense: "Future" },
+                { de: "Er wird nächste Woche kommen können.", en: "He will be able to come next week.", tense: "Future" },
+                { de: "Wir werden uns am Freitag treffen können.", en: "We will be able to meet on Friday.", tense: "Future" },
+                { de: "Sie werden das Projekt abschließen können.", en: "They will be able to finish the project.", tense: "Future" },
+                { de: "Ich werde nicht kommen können.", en: "I won't be able to come.", tense: "Future" },
+                { de: "Du wirst das nicht alleine schaffen können.", en: "You won't be able to do it alone.", tense: "Future" },
+                { de: "Sie wird am Samstag nicht arbeiten können.", en: "She won't be able to work on Saturday.", tense: "Future" },
+                { de: "Wir werden nicht in den Urlaub fahren können.", en: "We won't be able to go on vacation.", tense: "Future" },
+                { de: "Sie werden nicht teilnehmen können.", en: "They won't be able to attend.", tense: "Future" },
+                { de: "Ich könnte helfen, wenn ich es wüsste.", en: "I could help if I knew.", tense: "Conditional" },
+                { de: "Du könntest es nochmal versuchen.", en: "You could try again.", tense: "Conditional" },
+                { de: "Er könnte aufmerksamer sein.", en: "He could be more attentive.", tense: "Conditional" },
+                { de: "Wir könnten ins Kino gehen.", en: "We could go to the cinema.", tense: "Conditional" },
+                { de: "Sie könnten vorher anrufen.", en: "They could call in advance.", tense: "Conditional" },
+                { de: "Du hättest es mir früher sagen können.", en: "You could have told me earlier.", tense: "Conditional" },
+                { de: "Sie könnte hier sein.", en: "She could be here.", tense: "Conditional" },
+                { de: "Wir könnten es besser machen.", en: "We could do better.", tense: "Conditional" },
+                { de: "Könnten Sie das erklären?", en: "Could you explain?", tense: "Conditional" },
+                { de: "Ich könnte länger bleiben.", en: "I could stay longer.", tense: "Conditional" },
+                { de: "Könnten Sie mir helfen?", en: "Could you help me?", tense: "Polite" },
+                { de: "Könnten Sie das wiederholen?", en: "Could you repeat that?", tense: "Polite" },
+                { de: "Könnten Sie langsamer sprechen?", en: "Could you speak slower?", tense: "Polite" },
+                { de: "Könnten Sie das Fenster öffnen?", en: "Could you open the window?", tense: "Polite" },
+                { de: "Könnten Sie warten?", en: "Could you wait?", tense: "Polite" },
+                { de: "Könnten Sie es mir zeigen?", en: "Could you show me?", tense: "Polite" },
+                { de: "Könnten Sie das nochmal erklären?", en: "Could you explain again?", tense: "Polite" },
+                { de: "Könnten Sie die Rechnung bringen?", en: "Could you bring the bill?", tense: "Polite" },
+                { de: "Könnten Sie mich anrufen?", en: "Could you call me?", tense: "Polite" },
+                { de: "Könnten Sie die Information schicken?", en: "Could you send the information?", tense: "Polite" },
+                { de: "Ich bin in der Lage, das zu tun.", en: "I am able to do that.", tense: "Present" },
+                { de: "Du bist in der Lage, das zu lösen.", en: "You are able to solve this.", tense: "Present" },
+                { de: "Sie ist in der Lage zu helfen.", en: "She is able to help.", tense: "Present" },
+                { de: "Ich kann den Unterschied nicht sehen.", en: "I'm not able to see the difference.", tense: "Present" },
+                { de: "Er kann nicht schwimmen.", en: "He is not able to swim.", tense: "Present" },
+                { de: "Darf ich gehen?", en: "Can I go? / May I go?", tense: "Permission" },
+                { de: "Kann ich dein Telefon benutzen?", en: "Can I use your phone?", tense: "Permission" },
+                { de: "Darf ich reinkommen?", en: "Can I come in?", tense: "Permission" },
+                { de: "Du kannst früher gehen.", en: "You can leave early.", tense: "Permission" },
+                { de: "Hier darf man nicht rauchen.", en: "You can't smoke here.", tense: "Permission" },
+                { de: "Kann sein.", en: "It can be. / Maybe.", tense: "Expression" },
+                { de: "Das kann passieren.", en: "That can happen.", tense: "Expression" },
+                { de: "Ich kann nichts daran ändern.", en: "I can't do anything about it.", tense: "Expression" },
+                { de: "Was kann ich für dich tun?", en: "What can I do for you?", tense: "Expression" },
+                { de: "Das kann warten.", en: "That can wait.", tense: "Expression" },
+                { de: "Ich kann nicht mehr.", en: "I can't take it anymore.", tense: "Expression" },
+                { de: "Du kannst auf mich zählen.", en: "You can count on me.", tense: "Expression" },
+                { de: "Ich kann es nicht glauben!", en: "I can't believe it!", tense: "Expression" },
+                { de: "Wie kann ich helfen?", en: "How can I help?", tense: "Expression" },
+                { de: "Das sehe ich.", en: "I can see that.", tense: "Expression" },
+                { de: "Kann ich irgendwie helfen?", en: "Can I help with anything?", tense: "Present" },
+                { de: "Du kannst gehen.", en: "You can go.", tense: "Present" },
+                { de: "Wir können von vorne anfangen.", en: "We can start over.", tense: "Present" },
+                { de: "Sie kann das Abendessen vorbereiten.", en: "She can prepare dinner.", tense: "Present" },
+                { de: "Ich kann es nicht garantieren.", en: "I can't guarantee.", tense: "Present" },
+                { de: "Du kannst mir vertrauen.", en: "You can trust me.", tense: "Present" },
+                { de: "Wir können das arrangieren.", en: "We can arrange that.", tense: "Present" },
+                { de: "Sie können jederzeit kommen.", en: "They can come anytime.", tense: "Present" },
+                { de: "Ich kann es erklären.", en: "I can explain.", tense: "Present" },
+                { de: "Du kannst bleiben.", en: "You can stay.", tense: "Present" },
+                { de: "Wenn ich könnte, würde ich.", en: "If I could, I would.", tense: "Conditional" },
+                { de: "Wenn er kommen könnte...", en: "If he could come...", tense: "Conditional" },
+                { de: "Wenn wir von vorne anfangen könnten...", en: "If we could start over...", tense: "Conditional" },
+                { de: "Es wäre gut, wenn sie könnten.", en: "It would be good if they could.", tense: "Conditional" },
+                { de: "Was würdest du tun, wenn du könntest?", en: "What would you do if you could?", tense: "Conditional" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

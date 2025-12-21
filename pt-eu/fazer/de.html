@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇵🇹 VERB FAZER — 20 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇵🇹 Verb FAZER</h1>
+            <p class="subtitle">to do, to make — 20 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 20 von 20 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Portugiesisch-Übung — FAZER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇵🇹 Verb FAZER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>faço</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>fazes</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>faz</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>fazemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>fazem</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>fazia</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>fazias</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>fazia</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>fazíamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>faziam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Perfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>fiz</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>fizeste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>fez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>fizemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>fizeram</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>farei</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>farás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>fará</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>faremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>farão</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Condicional</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>faria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>farias</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>faria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>faríamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>fariam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Presente do Conjuntivo</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>faça</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>faças</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>faça</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>façamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>façam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imperfeito do Conjuntivo</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>fizesse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>fizesses</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>fizesse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>fizéssemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>fizessem</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'pt',
+            labels: { target: 'Europäisches Portugiesisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["faço","fazes","faz","fazemos","fazem","fazia","fazias","fazíamos","faziam","fiz","fizeste","fez","fizemos","fizeram","farei","farás","fará","faremos","farão","faria","farias","faríamos","fariam","faça","faças","façamos","façam","fizesse","fizesses","fizéssemos","fizessem","fazer","fazendo","feito"],
+            phrases: [
+                { de: "Ich mache meine Hausaufgaben.", pt: "Faço os meus trabalhos de casa.", tense: "Presente" },
+                { de: "Was machst du?", pt: "O que fazes?", tense: "Presente" },
+                { de: "Er macht Kaffee.", pt: "Ele faz café.", tense: "Presente" },
+                { de: "Sie macht das Abendessen.", pt: "Ela faz o jantar.", tense: "Presente" },
+                { de: "Es ist heiß.", pt: "Faz calor.", tense: "Presente" },
+                { de: "Es ist kalt.", pt: "Faz frio.", tense: "Presente" },
+                { de: "Ich machte früher Yoga.", pt: "Eu fazia yoga.", tense: "Imperfeito" },
+                { de: "Ich habe es gemacht.", pt: "Fiz isso.", tense: "Perfeito" },
+                { de: "Du hast einen Fehler gemacht.", pt: "Tu fizeste um erro.", tense: "Perfeito" },
+                { de: "Er hat sein Bestes getan.", pt: "Ele fez o seu melhor.", tense: "Perfeito" },
+                { de: "Was hast du gemacht?", pt: "O que fizeste?", tense: "Perfeito" },
+                { de: "Ich werde es morgen machen.", pt: "Farei isso amanhã.", tense: "Futuro" },
+                { de: "Ich würde es anders machen.", pt: "Faria de forma diferente.", tense: "Condicional" },
+                { de: "Was würdest du tun?", pt: "O que farias?", tense: "Condicional" },
+                { de: "Ich hoffe, du machst es gut.", pt: "Espero que faças bem.", tense: "Conjuntivo" },
+                { de: "Wenn ich das täte...", pt: "Se eu fizesse isso...", tense: "Imperfeito Conj." },
+                { de: "Es ist zwei Jahre her.", pt: "Faz dois anos.", tense: "Tempo" },
+                { de: "Das macht nichts.", pt: "Não faz mal.", tense: "Expressão" },
+                { de: "Einkaufen gehen.", pt: "Fazer compras.", tense: "Expressão" },
+                { de: "Mach es!", pt: "Faz!", tense: "Imperativo" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

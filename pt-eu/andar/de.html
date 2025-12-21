@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇵🇹 ANDAR — 50 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇵🇹 Andar</h1>
+            <p class="subtitle">to walk, to go — 50 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 50 von 50 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Portugiesisch-Übung — ANDAR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇵🇹 Andar</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>ando</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>andas</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>anda</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>andamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>andam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>andava</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>andavas</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>andava</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>andávamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>andavam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Perfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>andei</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>andaste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>andou</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>andámos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>andaram</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>andarei</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>andarás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>andará</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>andaremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>andarão</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Condicional</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>andaria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>andarias</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>andaria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>andaríamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>andariam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Presente do Conjuntivo</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>ande</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>andes</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>ande</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>andemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>andem</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imperfeito do Conjuntivo</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>andasse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>andasses</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>andasse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>andássemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>andassem</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'pt',
+            labels: { target: 'Europäisches Portugiesisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["ando","andas","anda","andamos","andam","andava","andavas","andávamos","andavam","andei","andaste","andou","andámos","andaram","andarei","andarás","andará","andaremos","andarão","andaria","andarias","andaríamos","andariam","ande","andes","andemos","andem","andasse","andasses","andássemos","andassem","andar","andares","andarmos","andarem"],
+            phrases: [
+                { de: "Ich gehe jeden Tag.", pt: "Ando todos os dias.", tense: "Presente" },
+                { de: "Du gehst schnell.", pt: "Andas depressa.", tense: "Presente" },
+                { de: "Er geht langsam.", pt: "Ele anda devagar.", tense: "Presente" },
+                { de: "Wir gehen zusammen.", pt: "Andamos juntos.", tense: "Presente" },
+                { de: "Sie gehen zur Schule.", pt: "Eles andam para a escola.", tense: "Presente" },
+                { de: "Ich gehe auf der Straße.", pt: "Ando na rua.", tense: "Presente" },
+                { de: "Du gehst zu langsam.", pt: "Andas muito devagar.", tense: "Presente" },
+                { de: "Sie geht mit mir.", pt: "Ela anda comigo.", tense: "Presente" },
+                { de: "Wir gehen im Park.", pt: "Andamos no parque.", tense: "Presente" },
+                { de: "Sie gehen nach Hause.", pt: "Eles andam para casa.", tense: "Presente" },
+                { de: "Ich ging.", pt: "Andava.", tense: "Imperfeito" },
+                { de: "Du gingst herum.", pt: "Andavas por aí.", tense: "Imperfeito" },
+                { de: "Er ging viel.", pt: "Ele andava muito.", tense: "Imperfeito" },
+                { de: "Wir gingen jeden Tag.", pt: "Andávamos todos os dias.", tense: "Imperfeito" },
+                { de: "Sie gingen langsam.", pt: "Eles andavam devagar.", tense: "Imperfeito" },
+                { de: "Ich bin gestern gegangen.", pt: "Andei ontem.", tense: "Perfeito" },
+                { de: "Du bist den ganzen Tag gegangen.", pt: "Andaste o dia todo.", tense: "Perfeito" },
+                { de: "Er ist stundenlang gegangen.", pt: "Ele andou durante horas.", tense: "Perfeito" },
+                { de: "Wir sind zusammen gegangen.", pt: "Andámos juntos.", tense: "Perfeito" },
+                { de: "Sie sind zum Strand gelaufen.", pt: "Eles andaram até à praia.", tense: "Perfeito" },
+                { de: "Ich werde gehen.", pt: "Andarei.", tense: "Futuro" },
+                { de: "Du wirst mit mir gehen.", pt: "Andarás comigo.", tense: "Futuro" },
+                { de: "Er wird dort gehen.", pt: "Ele andará lá.", tense: "Futuro" },
+                { de: "Wir werden morgen gehen.", pt: "Andaremos amanhã.", tense: "Futuro" },
+                { de: "Sie werden zusammen gehen.", pt: "Eles andarão juntos.", tense: "Futuro" },
+                { de: "Ich würde gehen.", pt: "Andaria.", tense: "Condicional" },
+                { de: "Du würdest mit mir gehen.", pt: "Andarias comigo.", tense: "Condicional" },
+                { de: "Er würde mehr gehen.", pt: "Ele andaria mais.", tense: "Condicional" },
+                { de: "Wir würden zusammen gehen.", pt: "Andaríamos juntos.", tense: "Condicional" },
+                { de: "Sie würden hier gehen.", pt: "Eles andariam aqui.", tense: "Condicional" },
+                { de: "Ich möchte, dass du gehst.", pt: "Quero que andes.", tense: "Conjuntivo" },
+                { de: "Ich hoffe, er geht.", pt: "Espero que ele ande.", tense: "Conjuntivo" },
+                { de: "Es ist wichtig, dass wir gehen.", pt: "É importante que andemos.", tense: "Conjuntivo" },
+                { de: "Ich bezweifle, dass sie gehen.", pt: "Duvido que eles andem.", tense: "Conjuntivo" },
+                { de: "Wenn ich ginge.", pt: "Se eu andasse.", tense: "Imperfeito Conj." },
+                { de: "Wenn du gingest.", pt: "Se tu andasses.", tense: "Imperfeito Conj." },
+                { de: "Wenn er ginge.", pt: "Se ele andasse.", tense: "Imperfeito Conj." },
+                { de: "Wenn wir gingen.", pt: "Se nós andássemos.", tense: "Imperfeito Conj." },
+                { de: "Ich bin beschäftigt in letzter Zeit.", pt: "Ando ocupado.", tense: "Presente" },
+                { de: "Du bist müde in letzter Zeit.", pt: "Andas cansado.", tense: "Presente" },
+                { de: "Er ist traurig in letzter Zeit.", pt: "Ele anda triste.", tense: "Presente" },
+                { de: "Wir arbeiten.", pt: "Andamos a trabalhar.", tense: "Presente" },
+                { de: "Sie lernen.", pt: "Eles andam a estudar.", tense: "Presente" },
+                { de: "Wie geht es dir?", pt: "Como andas?", tense: "Presente" },
+                { de: "Mir geht es gut.", pt: "Ando bem.", tense: "Presente" },
+                { de: "Sie ist gestresst.", pt: "Ela anda stressada.", tense: "Presente" },
+                { de: "Geh schneller!", pt: "Anda mais depressa!", tense: "Imperativo" },
+                { de: "Lass uns gehen!", pt: "Andemos!", tense: "Imperativo" },
+                { de: "Geh mit mir!", pt: "Anda comigo!", tense: "Imperativo" },
+                { de: "Geh nicht dort hin!", pt: "Não andes lá!", tense: "Imperativo" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

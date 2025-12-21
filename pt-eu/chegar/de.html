@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇵🇹 CHEGAR — 52 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇵🇹 Chegar</h1>
+            <p class="subtitle">to arrive, to reach — 52 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 52 von 52 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Portugiesisch-Übung — CHEGAR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇵🇹 Chegar</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>chego</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>chegas</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>chega</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>chegamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>chegam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>chegava</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>chegavas</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>chegava</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>chegávamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>chegavam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Perfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>cheguei</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>chegaste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>chegou</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>chegámos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>chegaram</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>chegarei</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>chegarás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>chegará</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>chegaremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>chegarão</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Condicional</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>chegaria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>chegarias</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>chegaria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>chegaríamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>chegariam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Presente do Conjuntivo</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>chegue</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>chegues</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>chegue</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>cheguemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>cheguem</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imperfeito do Conjuntivo</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>chegasse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>chegasses</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>chegasse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>chegássemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>chegassem</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'pt',
+            labels: { target: 'Europäisches Portugiesisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["chego","chegas","chega","chegamos","chegam","chegava","chegavas","chegávamos","chegavam","cheguei","chegaste","chegou","chegámos","chegaram","chegarei","chegarás","chegará","chegaremos","chegarão","chegaria","chegarias","chegaríamos","chegariam","chegue","chegues","cheguemos","cheguem","chegasse","chegasses","chegássemos","chegassem","chegar","chegares","chegarmos","chegarem"],
+            phrases: [
+                { de: "Ich komme um 8 an.", pt: "Chego às 8.", tense: "Presente" },
+                { de: "Du kommst zu spät.", pt: "Chegas atrasado.", tense: "Presente" },
+                { de: "Er kommt früh an.", pt: "Ele chega cedo.", tense: "Presente" },
+                { de: "Wir kommen zusammen an.", pt: "Chegamos juntos.", tense: "Presente" },
+                { de: "Sie kommen morgen.", pt: "Eles chegam amanhã.", tense: "Presente" },
+                { de: "Ich komme um 6 nach Hause.", pt: "Chego a casa às 6.", tense: "Presente" },
+                { de: "Du kommst immer pünktlich.", pt: "Chegas sempre a horas.", tense: "Presente" },
+                { de: "Sie kommt heute an.", pt: "Ela chega hoje.", tense: "Presente" },
+                { de: "Wir kommen in Lissabon an.", pt: "Chegamos a Lisboa.", tense: "Presente" },
+                { de: "Sie kommen mit dem Zug.", pt: "Eles chegam de comboio.", tense: "Presente" },
+                { de: "Ich kam früh an.", pt: "Chegava cedo.", tense: "Imperfeito" },
+                { de: "Du kamst spät an.", pt: "Chegavas tarde.", tense: "Imperfeito" },
+                { de: "Er kam um Mittag an.", pt: "Ele chegava ao meio-dia.", tense: "Imperfeito" },
+                { de: "Wir kamen zusammen an.", pt: "Chegávamos juntos.", tense: "Imperfeito" },
+                { de: "Sie kamen müde an.", pt: "Eles chegavam cansados.", tense: "Imperfeito" },
+                { de: "Ich bin gestern angekommen.", pt: "Cheguei ontem.", tense: "Perfeito" },
+                { de: "Du bist zu spät gekommen.", pt: "Chegaste atrasado.", tense: "Perfeito" },
+                { de: "Er kam pünktlich an.", pt: "Ele chegou a horas.", tense: "Perfeito" },
+                { de: "Wir kamen nachts an.", pt: "Chegámos à noite.", tense: "Perfeito" },
+                { de: "Sie kamen heute Morgen an.", pt: "Eles chegaram esta manhã.", tense: "Perfeito" },
+                { de: "Ich werde bald ankommen.", pt: "Chegarei em breve.", tense: "Futuro" },
+                { de: "Du wirst morgen ankommen.", pt: "Chegarás amanhã.", tense: "Futuro" },
+                { de: "Er wird um 5 ankommen.", pt: "Ele chegará às 5.", tense: "Futuro" },
+                { de: "Wir werden nächste Woche ankommen.", pt: "Chegaremos na próxima semana.", tense: "Futuro" },
+                { de: "Sie werden später ankommen.", pt: "Eles chegarão mais tarde.", tense: "Futuro" },
+                { de: "Ich würde ankommen.", pt: "Chegaria.", tense: "Condicional" },
+                { de: "Du würdest früh ankommen.", pt: "Chegarias cedo.", tense: "Condicional" },
+                { de: "Er würde pünktlich ankommen.", pt: "Ele chegaria a horas.", tense: "Condicional" },
+                { de: "Wir würden zusammen ankommen.", pt: "Chegaríamos juntos.", tense: "Condicional" },
+                { de: "Sie würden spät ankommen.", pt: "Eles chegariam tarde.", tense: "Condicional" },
+                { de: "Ich möchte, dass du ankommst.", pt: "Quero que chegues.", tense: "Conjuntivo" },
+                { de: "Ich hoffe, er kommt an.", pt: "Espero que ele chegue.", tense: "Conjuntivo" },
+                { de: "Es ist wichtig, dass wir ankommen.", pt: "É importante que cheguemos.", tense: "Conjuntivo" },
+                { de: "Ich bezweifle, dass sie ankommen.", pt: "Duvido que eles cheguem.", tense: "Conjuntivo" },
+                { de: "Wenn ich ankäme.", pt: "Se eu chegasse.", tense: "Imperfeito Conj." },
+                { de: "Wenn du ankämest.", pt: "Se tu chegasses.", tense: "Imperfeito Conj." },
+                { de: "Wenn er ankäme.", pt: "Se ele chegasse.", tense: "Imperfeito Conj." },
+                { de: "Wenn wir ankämen.", pt: "Se nós chegássemos.", tense: "Imperfeito Conj." },
+                { de: "Wenn ich ankomme...", pt: "Quando eu chegar.", tense: "Futuro Conj." },
+                { de: "Sobald du ankommst.", pt: "Assim que chegares.", tense: "Futuro Conj." },
+                { de: "Wenn er ankommt.", pt: "Se ele chegar.", tense: "Futuro Conj." },
+                { de: "Das reicht!", pt: "Chega!", tense: "Expressão" },
+                { de: "Komm her!", pt: "Chega aqui!", tense: "Imperativo" },
+                { de: "Komm pünktlich an!", pt: "Chega a horas!", tense: "Imperativo" },
+                { de: "Lass uns zusammen ankommen!", pt: "Cheguemos juntos!", tense: "Imperativo" },
+                { de: "Komm nicht zu spät!", pt: "Não chegues atrasado!", tense: "Imperativo" },
+                { de: "Bist du am Ankommen?", pt: "Estás a chegar?", tense: "Presente" },
+                { de: "Kommt er an?", pt: "Ele está a chegar?", tense: "Presente" },
+                { de: "Kommen sie an?", pt: "Eles estão a chegar?", tense: "Presente" },
+                { de: "Ich bin fast da.", pt: "Estou quase a chegar.", tense: "Presente" },
+                { de: "Wir sind gleich da.", pt: "Estamos a chegar.", tense: "Presente" },
+                { de: "Sie sind gerade angekommen.", pt: "Eles acabaram de chegar.", tense: "Perfeito" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

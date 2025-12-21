@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇵🇹 VERB DEVER — 46 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇵🇹 Verb DEVER</h1>
+            <p class="subtitle">should, must, to owe — 46 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 46 von 46 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Portugiesisch-Übung — DEVER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇵🇹 Verb DEVER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>devo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>deves</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>deve</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>devemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>devem</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>devia</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>devias</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>devia</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>devíamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>deviam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Perfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>devi</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>deveste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>deveu</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>devemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>deveram</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>deverei</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>deverás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>deverá</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>deveremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>deverão</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Condicional</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>deveria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>deverias</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>deveria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>deveríamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>deveriam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Presente do Conjuntivo</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>deva</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>devas</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>deva</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>devamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>devam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imperfeito do Conjuntivo</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>devesse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>devesses</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>devesse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>devêssemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>devessem</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'pt',
+            labels: { target: 'Europäisches Portugiesisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["devo","deves","deve","devemos","devem","devia","devias","devíamos","deviam","devi","deveste","deveu","deveram","deverei","deverás","deverá","deveremos","deverão","deveria","deverias","deveríamos","deveriam","deva","devas","devamos","devam","devesse","devesses","devêssemos","devessem","dever","deveres","devermos","deverem","devendo","devido"],
+            phrases: [
+                { de: "Ich sollte gehen.", pt: "Devo ir.", tense: "Presente" },
+                { de: "Du solltest lernen.", pt: "Deves estudar.", tense: "Presente" },
+                { de: "Er muss arbeiten.", pt: "Ele deve trabalhar.", tense: "Presente" },
+                { de: "Sie sollte sich ausruhen.", pt: "Ela deve descansar.", tense: "Presente" },
+                { de: "Wir müssen helfen.", pt: "Devemos ajudar.", tense: "Presente" },
+                { de: "Sie sollten warten.", pt: "Eles devem esperar.", tense: "Presente" },
+                { de: "Ich sollte das nicht essen.", pt: "Não devo comer isto.", tense: "Presente" },
+                { de: "Muss ich es tun?", pt: "Devo fazer?", tense: "Presente" },
+                { de: "Er schuldet mir Geld.", pt: "Ele deve-me dinheiro.", tense: "Presente" },
+                { de: "Sie muss müde sein.", pt: "Ela deve estar cansada.", tense: "Presente" },
+                { de: "Ich hätte lernen sollen.", pt: "Devia ter estudado.", tense: "Imperfeito" },
+                { de: "Du hättest anrufen sollen.", pt: "Devias ter ligado.", tense: "Imperfeito" },
+                { de: "Er hätte warten sollen.", pt: "Ele devia ter esperado.", tense: "Imperfeito" },
+                { de: "Sie hätte kommen sollen.", pt: "Ela devia ter vindo.", tense: "Imperfeito" },
+                { de: "Wir hätten helfen sollen.", pt: "Devíamos ter ajudado.", tense: "Imperfeito" },
+                { de: "Ich musste gehen.", pt: "Devi sair.", tense: "Perfeito" },
+                { de: "Du musstest arbeiten.", pt: "Deveste trabalhar.", tense: "Perfeito" },
+                { de: "Er musste helfen.", pt: "Ele deveu ajudar.", tense: "Perfeito" },
+                { de: "Wir mussten entscheiden.", pt: "Devemos decidir.", tense: "Perfeito" },
+                { de: "Sie mussten bezahlen.", pt: "Eles deveram pagar.", tense: "Perfeito" },
+                { de: "Ich werde gehen müssen.", pt: "Deverei ir.", tense: "Futuro" },
+                { de: "Du wirst lernen müssen.", pt: "Deverás estudar.", tense: "Futuro" },
+                { de: "Er wird arbeiten müssen.", pt: "Ele deverá trabalhar.", tense: "Futuro" },
+                { de: "Wir werden entscheiden müssen.", pt: "Deveremos decidir.", tense: "Futuro" },
+                { de: "Sie werden bezahlen müssen.", pt: "Eles deverão pagar.", tense: "Futuro" },
+                { de: "Ich sollte gehen.", pt: "Deveria ir.", tense: "Condicional" },
+                { de: "Du solltest mehr lernen.", pt: "Deverias estudar mais.", tense: "Condicional" },
+                { de: "Er sollte helfen.", pt: "Ele deveria ajudar.", tense: "Condicional" },
+                { de: "Wir sollten warten.", pt: "Deveríamos esperar.", tense: "Condicional" },
+                { de: "Sie sollten verstehen.", pt: "Eles deveriam perceber.", tense: "Condicional" },
+                { de: "Ich hoffe, du solltest gehen.", pt: "Espero que devas ir.", tense: "Conjuntivo" },
+                { de: "Es ist wichtig, dass er muss.", pt: "É importante que ele deva.", tense: "Conjuntivo" },
+                { de: "Ich bezweifle, dass sie sollte.", pt: "Duvido que ela deva.", tense: "Conjuntivo" },
+                { de: "Selbst wenn du solltest...", pt: "Mesmo que devas...", tense: "Conjuntivo" },
+                { de: "Wenn ich sollte...", pt: "Se eu devesse...", tense: "Imperfeito Conj." },
+                { de: "Ich wünschte, du solltest.", pt: "Quem me dera que devesses.", tense: "Imperfeito Conj." },
+                { de: "Wenn er sollte...", pt: "Se ele devesse...", tense: "Imperfeito Conj." },
+                { de: "Wenn wir sollten...", pt: "Se devêssemos...", tense: "Imperfeito Conj." },
+                { de: "Wenn ich sollte...", pt: "Quando dever...", tense: "Futuro Conj." },
+                { de: "Wenn du solltest...", pt: "Se deveres...", tense: "Futuro Conj." },
+                { de: "Sobald ich sollte...", pt: "Assim que dever...", tense: "Futuro Conj." },
+                { de: "Geld schulden.", pt: "Dever dinheiro.", tense: "Expressão" },
+                { de: "Wie es sein sollte.", pt: "Como deve ser.", tense: "Expressão" },
+                { de: "Du solltest wissen.", pt: "Deves saber.", tense: "Expressão" },
+                { de: "Es muss sein.", pt: "Deve ser.", tense: "Expressão" },
+                { de: "Die Pflicht ruft.", pt: "O dever chama.", tense: "Expressão" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

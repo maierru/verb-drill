@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇫🇷 VERB CROIRE — 20 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇫🇷 Verb CROIRE</h1>
+            <p class="subtitle">to believe — 20 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 20 von 20 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Französisch-Übung — CROIRE · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇫🇷 Verb CROIRE</h2>
+            <div class="tense-explanation">
+                <h4>Présent</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>crois</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>crois</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>croit</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>croyons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>croyez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>croient</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Passé Composé</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>ai cru</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>as cru</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>a cru</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>avons cru</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>avez cru</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>ont cru</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imparfait</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>croyais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>croyais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>croyait</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>croyions</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>croyiez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>croyaient</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur Simple</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>croirai</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>croiras</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>croira</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>croirons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>croirez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>croiront</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'fr',
+            labels: { target: 'Französisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["crois","croit","croyons","croyez","croient","croyais","croyait","croyions","croyiez","croyaient","cru","croirai","croiras","croira","croirons","croirez","croiront"],
+            phrases: [
+                { de: "Ich glaube dir.", fr: "Je te crois.", tense: "Présent" },
+                { de: "Ich glaube das nicht.", fr: "Je n'y crois pas.", tense: "Présent" },
+                { de: "Glaubst du an Gott?", fr: "Tu crois en Dieu ?", tense: "Présent" },
+                { de: "Sie glaubt alles.", fr: "Elle croit tout.", tense: "Présent" },
+                { de: "Ich dachte, es wäre wahr.", fr: "J'ai cru que c'était vrai.", tense: "Passé Composé" },
+                { de: "Er glaubte an sich.", fr: "Il croyait en lui.", tense: "Imparfait" },
+                { de: "Wir haben dir geglaubt.", fr: "Nous t'avons cru.", tense: "Passé Composé" },
+                { de: "Du wirst mir glauben.", fr: "Tu me croiras.", tense: "Futur Simple" },
+                { de: "Ich glaube schon.", fr: "Je crois que oui.", tense: "Présent" },
+                { de: "Niemand glaubte ihm.", fr: "Personne ne le croyait.", tense: "Imparfait" },
+                { de: "Ich konnte es nicht glauben.", fr: "Je n'arrivais pas à y croire.", tense: "Imparfait" },
+                { de: "Sie glauben an Wunder.", fr: "Ils croient aux miracles.", tense: "Présent" },
+                { de: "Ich dachte, ich hätte recht.", fr: "Je croyais avoir raison.", tense: "Imparfait" },
+                { de: "Sie wird das nie glauben.", fr: "Elle ne croira jamais ça.", tense: "Futur Simple" },
+                { de: "Wer würde das glauben?", fr: "Qui le croirait ?", tense: "Présent" },
+                { de: "Ich glaubte an den Weihnachtsmann.", fr: "Je croyais au Père Noël.", tense: "Imparfait" },
+                { de: "Er hat mir nicht geglaubt.", fr: "Il ne m'a pas cru.", tense: "Passé Composé" },
+                { de: "Du glaubst, was du willst.", fr: "Tu crois ce que tu veux.", tense: "Présent" },
+                { de: "Ich glaube an dich.", fr: "Je crois en toi.", tense: "Présent" },
+                { de: "Sie glaubten die Geschichte.", fr: "Ils ont cru l'histoire.", tense: "Passé Composé" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

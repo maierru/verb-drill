@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇵🇹 ACABAR — 100 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇵🇹 Acabar</h1>
+            <p class="subtitle">to finish, to end — 100 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 100 von 100 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Portugiesisch-Übung — ACABAR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇵🇹 Acabar</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>acabo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>acabas</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>acaba</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>acabamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>acabam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>acabava</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>acabavas</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>acabava</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>acabávamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>acabavam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Perfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>acabei</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>acabaste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>acabou</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>acabámos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>acabaram</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>acabarei</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>acabarás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>acabará</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>acabaremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>acabarão</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Condicional</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>acabaria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>acabarias</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>acabaria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>acabaríamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>acabariam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Presente do Conjuntivo</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>acabe</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>acabes</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>acabe</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>acabemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>acabem</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imperfeito do Conjuntivo</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>acabasse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>acabasses</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>acabasse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>acabássemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>acabassem</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'pt',
+            labels: { target: 'Europäisches Portugiesisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["acabo","acabas","acaba","acabamos","acabam","acabava","acabavas","acabávamos","acabavam","acabei","acabaste","acabou","acabámos","acabaram","acabarei","acabarás","acabará","acabaremos","acabarão","acabaria","acabarias","acabaríamos","acabariam","acabe","acabes","acabemos","acabem","acabasse","acabasses","acabássemos","acabassem","acabar","acabares","acabarmos","acabarem"],
+            phrases: [
+                { de: "Ich beende jetzt.", pt: "Acabo agora.", tense: "Presente" },
+                { de: "Du beendest früh.", pt: "Acabas cedo.", tense: "Presente" },
+                { de: "Er beendet die Arbeit.", pt: "Ele acaba o trabalho.", tense: "Presente" },
+                { de: "Wir beenden zusammen.", pt: "Acabamos juntos.", tense: "Presente" },
+                { de: "Sie beenden spät.", pt: "Eles acabam tarde.", tense: "Presente" },
+                { de: "Ich beende um 5.", pt: "Acabo às 5.", tense: "Presente" },
+                { de: "Du beendest das Buch.", pt: "Acabas o livro.", tense: "Presente" },
+                { de: "Sie hört auf zu essen.", pt: "Ela acaba de comer.", tense: "Presente" },
+                { de: "Wir beenden das Projekt.", pt: "Acabamos o projeto.", tense: "Presente" },
+                { de: "Sie beenden den Kurs.", pt: "Eles acabam o curso.", tense: "Presente" },
+                { de: "Ich beendete früh.", pt: "Acabava cedo.", tense: "Imperfeito" },
+                { de: "Du beendetest spät.", pt: "Acabavas tarde.", tense: "Imperfeito" },
+                { de: "Er beendete die Arbeit.", pt: "Ele acabava o trabalho.", tense: "Imperfeito" },
+                { de: "Wir beendeten zusammen.", pt: "Acabávamos juntos.", tense: "Imperfeito" },
+                { de: "Sie beendeten hier.", pt: "Eles acabavam aqui.", tense: "Imperfeito" },
+                { de: "Ich war am Beenden.", pt: "Estava a acabar.", tense: "Imperfeito" },
+                { de: "Du warst die Aufgabe am Beenden.", pt: "Estavas a acabar a tarefa.", tense: "Imperfeito" },
+                { de: "Sie war das Abendessen am Beenden.", pt: "Ela estava a acabar o jantar.", tense: "Imperfeito" },
+                { de: "Wir waren die Arbeit am Beenden.", pt: "Estávamos a acabar o trabalho.", tense: "Imperfeito" },
+                { de: "Sie waren am Beenden.", pt: "Eles estavam a acabar.", tense: "Imperfeito" },
+                { de: "Ich habe beendet.", pt: "Acabei.", tense: "Perfeito" },
+                { de: "Du hast die Prüfung beendet.", pt: "Acabaste o exame.", tense: "Perfeito" },
+                { de: "Er hat das Meeting beendet.", pt: "Ele acabou a reunião.", tense: "Perfeito" },
+                { de: "Wir haben früh beendet.", pt: "Acabámos cedo.", tense: "Perfeito" },
+                { de: "Sie haben alles beendet.", pt: "Eles acabaram tudo.", tense: "Perfeito" },
+                { de: "Ich habe zu lesen beendet.", pt: "Acabei de ler.", tense: "Perfeito" },
+                { de: "Du hast zu arbeiten beendet.", pt: "Acabaste de trabalhar.", tense: "Perfeito" },
+                { de: "Sie hat zu studieren beendet.", pt: "Ela acabou de estudar.", tense: "Perfeito" },
+                { de: "Wir haben das Projekt beendet.", pt: "Acabámos o projeto.", tense: "Perfeito" },
+                { de: "Sie haben das Spiel beendet.", pt: "Eles acabaram o jogo.", tense: "Perfeito" },
+                { de: "Ich werde beenden.", pt: "Acabarei.", tense: "Futuro" },
+                { de: "Du wirst bald beenden.", pt: "Acabarás em breve.", tense: "Futuro" },
+                { de: "Er wird morgen beenden.", pt: "Ele acabará amanhã.", tense: "Futuro" },
+                { de: "Wir werden nächste Woche beenden.", pt: "Acabaremos na próxima semana.", tense: "Futuro" },
+                { de: "Sie werden später beenden.", pt: "Eles acabarão mais tarde.", tense: "Futuro" },
+                { de: "Ich werde die Arbeit beenden.", pt: "Acabarei o trabalho.", tense: "Futuro" },
+                { de: "Du wirst den Kurs beenden.", pt: "Acabarás o curso.", tense: "Futuro" },
+                { de: "Sie wird früh beenden.", pt: "Ela acabará cedo.", tense: "Futuro" },
+                { de: "Wir werden rechtzeitig beenden.", pt: "Acabaremos a tempo.", tense: "Futuro" },
+                { de: "Sie werden alles beenden.", pt: "Eles acabarão tudo.", tense: "Futuro" },
+                { de: "Ich würde beenden.", pt: "Acabaria.", tense: "Condicional" },
+                { de: "Du würdest früh beenden.", pt: "Acabarias cedo.", tense: "Condicional" },
+                { de: "Er würde jetzt beenden.", pt: "Ele acabaria agora.", tense: "Condicional" },
+                { de: "Wir würden zusammen beenden.", pt: "Acabaríamos juntos.", tense: "Condicional" },
+                { de: "Sie würden später beenden.", pt: "Eles acabariam mais tarde.", tense: "Condicional" },
+                { de: "Ich würde beenden, wenn ich könnte.", pt: "Acabaria se pudesse.", tense: "Condicional" },
+                { de: "Du würdest schneller beenden.", pt: "Acabarias mais rápido.", tense: "Condicional" },
+                { de: "Sie würde das Buch beenden.", pt: "Ela acabaria o livro.", tense: "Condicional" },
+                { de: "Wir würden das Projekt beenden.", pt: "Acabaríamos o projeto.", tense: "Condicional" },
+                { de: "Sie würden rechtzeitig beenden.", pt: "Eles acabariam a tempo.", tense: "Condicional" },
+                { de: "Ich möchte, dass du beendest.", pt: "Quero que acabes.", tense: "Conjuntivo" },
+                { de: "Ich hoffe, er beendet.", pt: "Espero que ele acabe.", tense: "Conjuntivo" },
+                { de: "Es ist wichtig, dass wir beenden.", pt: "É importante que acabemos.", tense: "Conjuntivo" },
+                { de: "Ich bezweifle, dass sie beenden.", pt: "Duvido que eles acabem.", tense: "Conjuntivo" },
+                { de: "Obwohl ich beende.", pt: "Embora eu acabe.", tense: "Conjuntivo" },
+                { de: "Damit du beendest.", pt: "Para que tu acabes.", tense: "Conjuntivo" },
+                { de: "Es sei denn, sie beendet.", pt: "A menos que ela acabe.", tense: "Conjuntivo" },
+                { de: "Bevor sie beenden.", pt: "Antes que eles acabem.", tense: "Conjuntivo" },
+                { de: "Es ist möglich, dass wir beenden.", pt: "É possível que acabemos.", tense: "Conjuntivo" },
+                { de: "Ich bevorzuge, dass du beendest.", pt: "Prefiro que tu acabes.", tense: "Conjuntivo" },
+                { de: "Wenn ich beendete.", pt: "Se eu acabasse.", tense: "Imperfeito Conj." },
+                { de: "Wenn du beendetest.", pt: "Se tu acabasses.", tense: "Imperfeito Conj." },
+                { de: "Wenn er beendete.", pt: "Se ele acabasse.", tense: "Imperfeito Conj." },
+                { de: "Wenn wir beendeten.", pt: "Se nós acabássemos.", tense: "Imperfeito Conj." },
+                { de: "Wenn sie beendeten.", pt: "Se eles acabassem.", tense: "Imperfeito Conj." },
+                { de: "Ich wünschte, ich könnte beenden.", pt: "Quem me dera acabar.", tense: "Imperfeito Conj." },
+                { de: "Als ob sie beendete.", pt: "Como se ela acabasse.", tense: "Imperfeito Conj." },
+                { de: "Wenn du nur beendetest.", pt: "Se tu acabasses.", tense: "Imperfeito Conj." },
+                { de: "Ich wollte, dass du beendetest.", pt: "Queria que tu acabasses.", tense: "Imperfeito Conj." },
+                { de: "Es wäre gut, wenn sie beendeten.", pt: "Seria bom se eles acabassem.", tense: "Imperfeito Conj." },
+                { de: "Wenn ich beende.", pt: "Quando eu acabar.", tense: "Futuro Conj." },
+                { de: "Sobald du beendest.", pt: "Assim que acabares.", tense: "Futuro Conj." },
+                { de: "Wenn er beendet.", pt: "Se ele acabar.", tense: "Futuro Conj." },
+                { de: "Wenn wir beenden.", pt: "Quando acabarmos.", tense: "Futuro Conj." },
+                { de: "Während sie beenden.", pt: "Conforme eles acabarem.", tense: "Futuro Conj." },
+                { de: "Beende!", pt: "Acaba!", tense: "Imperativo" },
+                { de: "Lass uns beenden!", pt: "Acabemos!", tense: "Imperativo" },
+                { de: "Beende jetzt!", pt: "Acaba agora!", tense: "Imperativo" },
+                { de: "Beende nicht!", pt: "Não acabes!", tense: "Imperativo" },
+                { de: "Beende das!", pt: "Acaba isto!", tense: "Imperativo" },
+                { de: "Ich bin gerade angekommen.", pt: "Acabo de chegar.", tense: "Presente" },
+                { de: "Du bist gerade gegangen.", pt: "Acabas de sair.", tense: "Presente" },
+                { de: "Er hat gerade angerufen.", pt: "Ele acaba de ligar.", tense: "Presente" },
+                { de: "Wir haben gerade beendet.", pt: "Acabamos de terminar.", tense: "Presente" },
+                { de: "Sie haben gerade angefangen.", pt: "Eles acabam de começar.", tense: "Presente" },
+                { de: "Ich hatte gerade gegessen.", pt: "Acabava de comer.", tense: "Imperfeito" },
+                { de: "Es ist vorbei.", pt: "Acabou.", tense: "Perfeito" },
+                { de: "Es ist alles vorbei.", pt: "Acabou tudo.", tense: "Perfeito" },
+                { de: "Ist es fertig?", pt: "Acabou?", tense: "Perfeito" },
+                { de: "Der Film ist zu Ende.", pt: "O filme acabou.", tense: "Perfeito" },
+                { de: "Die Party ist vorbei.", pt: "A festa acabou.", tense: "Perfeito" },
+                { de: "Ich beende gerade.", pt: "Estou a acabar.", tense: "Presente" },
+                { de: "Beendest du gerade?", pt: "Estás a acabar?", tense: "Presente" },
+                { de: "Er beendet gerade.", pt: "Ele está a acabar.", tense: "Presente" },
+                { de: "Wir sind fast fertig.", pt: "Estamos quase a acabar.", tense: "Presente" },
+                { de: "Sie beenden die Arbeit.", pt: "Eles estão a acabar o trabalho.", tense: "Presente" },
+                { de: "Es endet nie.", pt: "Nunca acaba.", tense: "Presente" },
+                { de: "Alles endet.", pt: "Tudo acaba.", tense: "Presente" },
+                { de: "Ich muss beenden.", pt: "Preciso de acabar.", tense: "Presente" },
+                { de: "Ich will beenden.", pt: "Quero acabar.", tense: "Presente" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

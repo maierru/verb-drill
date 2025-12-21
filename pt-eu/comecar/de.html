@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇵🇹 COMEÇAR — 20 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇵🇹 Começar</h1>
+            <p class="subtitle">to start, to begin — 20 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 20 von 20 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Portugiesisch-Übung — COMECAR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇵🇹 Começar</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>começo</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>começas</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>começa</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>começamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>começam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>começava</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>começavas</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>começava</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>começávamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>começavam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Perfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>comecei</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>começaste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>começou</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>começámos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>começaram</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>começarei</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>começarás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>começará</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>começaremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>começarão</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Condicional</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>começaria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>começarias</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>começaria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>começaríamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>começariam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Presente do Conjuntivo</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>comece</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>comeces</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>comece</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>comecemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>comecem</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imperfeito do Conjuntivo</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>começasse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>começasses</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>começasse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>começássemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>começassem</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'pt',
+            labels: { target: 'Europäisches Portugiesisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["começo","começas","começa","começamos","começam","começava","começavas","começávamos","começavam","comecei","começaste","começou","começámos","começaram","começarei","começarás","começará","começaremos","começarão","começaria","começarias","começaríamos","começariam","comece","comeces","comecemos","comecem","começasse","começasses","começássemos","começassem","começar","começares","começarmos","começarem"],
+            phrases: [
+                { de: "Ich fange jetzt an.", pt: "Começo agora.", tense: "Presente" },
+                { de: "Du fängst früh an.", pt: "Começas cedo.", tense: "Presente" },
+                { de: "Er fängt mit der Arbeit an.", pt: "Ele começa o trabalho.", tense: "Presente" },
+                { de: "Wir fangen zusammen an.", pt: "Começamos juntos.", tense: "Presente" },
+                { de: "Sie fangen morgen an.", pt: "Eles começam amanhã.", tense: "Presente" },
+                { de: "Ich fing früh an.", pt: "Começava cedo.", tense: "Imperfeito" },
+                { de: "Er fing mit der Arbeit an.", pt: "Ele começava o trabalho.", tense: "Imperfeito" },
+                { de: "Ich habe gestern angefangen.", pt: "Comecei ontem.", tense: "Perfeito" },
+                { de: "Du hast gut angefangen.", pt: "Começaste bem.", tense: "Perfeito" },
+                { de: "Er hat die Besprechung begonnen.", pt: "Ele começou a reunião.", tense: "Perfeito" },
+                { de: "Wir haben früh angefangen.", pt: "Começámos cedo.", tense: "Perfeito" },
+                { de: "Ich werde anfangen.", pt: "Começarei.", tense: "Futuro" },
+                { de: "Du wirst bald anfangen.", pt: "Começarás em breve.", tense: "Futuro" },
+                { de: "Er wird morgen anfangen.", pt: "Ele começará amanhã.", tense: "Futuro" },
+                { de: "Ich würde anfangen.", pt: "Começaria.", tense: "Condicional" },
+                { de: "Ich hoffe, dass er anfängt.", pt: "Espero que ele comece.", tense: "Conjuntivo" },
+                { de: "Wenn ich anfangen würde.", pt: "Se eu começasse.", tense: "Imperfeito Conj." },
+                { de: "Wann fängt es an?", pt: "Quando começa?", tense: "Presente" },
+                { de: "Der Film fängt bald an.", pt: "O filme começa em breve.", tense: "Presente" },
+                { de: "Fangen wir an!", pt: "Comecemos!", tense: "Imperativo" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

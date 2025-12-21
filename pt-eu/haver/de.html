@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇵🇹 VERB HAVER — 29 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇵🇹 Verb HAVER</h1>
+            <p class="subtitle">there is/are, to exist — 29 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 29 von 29 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Portugiesisch-Übung — HAVER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇵🇹 Verb HAVER</h2>
+            <div class="tense-explanation">
+                <h4>Presente</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>hei</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>hás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>há</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>havemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>hão</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Imperfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>havia</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>havias</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>havia</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>havíamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>haviam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Pretérito Perfeito</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>houve</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>houveste</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>houve</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>houvemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>houveram</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futuro</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>haverei</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>haverás</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>haverá</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>haveremos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>haverão</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Condicional</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>haveria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>haverias</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>haveria</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>haveríamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>haveriam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Presente do Conjuntivo</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>haja</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>hajas</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>haja</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>hajamos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>hajam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imperfeito do Conjuntivo</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">eu</td>
+                        <td>houvesse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>houvesses</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ele/ela</td>
+                        <td>houvesse</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nós</td>
+                        <td>houvéssemos</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">eles/elas</td>
+                        <td>houvessem</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'pt',
+            labels: { target: 'Europäisches Portugiesisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["hei","hás","há","havemos","hão","havia","havias","havíamos","haviam","houve","houveste","houvemos","houveram","haverei","haverás","haverá","haveremos","haverão","haveria","haverias","haveríamos","haveriam","haja","hajas","hajamos","hajam","houvesse","houvesses","houvéssemos","houvessem","houver","houveres","houvermos","houverem","haver","havendo","havido"],
+            phrases: [
+                { de: "Es gibt ein Problem.", pt: "Há um problema.", tense: "Presente" },
+                { de: "Es gibt viele Leute.", pt: "Há muitas pessoas.", tense: "Presente" },
+                { de: "Gibt es Wasser?", pt: "Há água?", tense: "Presente" },
+                { de: "Es gibt keine Zeit.", pt: "Não há tempo.", tense: "Presente" },
+                { de: "Es gibt zwei Möglichkeiten.", pt: "Há duas opções.", tense: "Presente" },
+                { de: "Ist hier jemand?", pt: "Há alguém aqui?", tense: "Presente" },
+                { de: "Es gibt nichts zu tun.", pt: "Não há nada para fazer.", tense: "Presente" },
+                { de: "Es gibt Hoffnung.", pt: "Há esperança.", tense: "Presente" },
+                { de: "Es gibt viel Arbeit.", pt: "Há muito trabalho.", tense: "Presente" },
+                { de: "Gibt es ein Problem?", pt: "Há algum problema?", tense: "Presente" },
+                { de: "Es gibt keinen Zweifel.", pt: "Não há dúvida.", tense: "Presente" },
+                { de: "Es gibt noch Zeit.", pt: "Ainda há tempo.", tense: "Presente" },
+                { de: "Es gab Probleme.", pt: "Houve problemas.", tense: "Perfeito" },
+                { de: "Es wird etwas geben.", pt: "Haverá algo.", tense: "Futuro" },
+                { de: "Es würde mehr geben.", pt: "Haveria mais.", tense: "Condicional" },
+                { de: "Ich hoffe, es gibt eine Lösung.", pt: "Espero que haja uma solução.", tense: "Conjuntivo" },
+                { de: "Wenn es Zeit gäbe...", pt: "Se houvesse tempo...", tense: "Imperfeito Conj." },
+                { de: "Was gibt es Neues?", pt: "O que é que há de novo?", tense: "Expressão" },
+                { de: "Es gibt einen Weg.", pt: "Há uma maneira.", tense: "Presente" },
+                { de: "Was ist los?", pt: "O que é que há?", tense: "Expressão" },
+                { de: null, pt: "O que há?", tense: "Expressão" },
+                { de: null, pt: "Olha lá!", tense: "Expressão" },
+                { de: null, pt: "Não há maneira.", tense: "Expressão" },
+                { de: null, pt: "Haja o que houver.", tense: "Expressão" },
+                { de: null, pt: "Aconteça o que acontecer.", tense: "Expressão" },
+                { de: null, pt: "O que houve?", tense: "Expressão" },
+                { de: null, pt: "Não há remédio.", tense: "Expressão" },
+                { de: null, pt: "Há algum problema?", tense: "Expressão" },
+                { de: null, pt: "É o que há.", tense: "Expressão" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

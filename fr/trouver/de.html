@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇫🇷 VERB TROUVER — 20 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇫🇷 Verb TROUVER</h1>
+            <p class="subtitle">to find — 20 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 20 von 20 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Französisch-Übung — TROUVER · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇫🇷 Verb TROUVER</h2>
+            <div class="tense-explanation">
+                <h4>Présent</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>trouve</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>trouves</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>trouve</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>trouvons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>trouvez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>trouvent</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Passé Composé</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>ai trouvé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>as trouvé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>a trouvé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>avons trouvé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>avez trouvé</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>ont trouvé</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imparfait</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>trouvais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>trouvais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>trouvait</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>trouvions</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>trouviez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>trouvaient</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur Simple</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>trouverai</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>trouveras</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>trouvera</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>trouverons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>trouverez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>trouveront</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'fr',
+            labels: { target: 'Französisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["trouve","trouves","trouvons","trouvez","trouvent","trouvais","trouvait","trouvions","trouviez","trouvaient","trouvé","trouverai","trouveras","trouvera","trouverons","trouverez","trouveront"],
+            phrases: [
+                { de: "Ich finde das interessant.", fr: "Je trouve ça intéressant.", tense: "Présent" },
+                { de: "Hast du deine Schlüssel gefunden?", fr: "Tu as trouvé tes clés ?", tense: "Passé Composé" },
+                { de: "Sie findet ihn schön.", fr: "Elle le trouve beau.", tense: "Présent" },
+                { de: "Wir haben eine Lösung gefunden.", fr: "Nous avons trouvé une solution.", tense: "Passé Composé" },
+                { de: "Ich werde einen Weg finden.", fr: "Je trouverai un moyen.", tense: "Futur Simple" },
+                { de: "Er fand sein Handy nicht.", fr: "Il ne trouvait pas son téléphone.", tense: "Imparfait" },
+                { de: "Ich finde das komisch.", fr: "Je trouve ça bizarre.", tense: "Présent" },
+                { de: "Sie haben die Antwort gefunden.", fr: "Ils ont trouvé la réponse.", tense: "Passé Composé" },
+                { de: "Ich kann es nicht finden.", fr: "Je ne le trouve pas.", tense: "Présent" },
+                { de: "Sie hat eine Arbeit gefunden.", fr: "Elle a trouvé un travail.", tense: "Passé Composé" },
+                { de: "Findest du?", fr: "Tu trouves ?", tense: "Présent" },
+                { de: "Wir werden die Wahrheit finden.", fr: "Nous trouverons la vérité.", tense: "Futur Simple" },
+                { de: "Ich fand das schwierig.", fr: "Je trouvais ça difficile.", tense: "Imparfait" },
+                { de: "Er findet sie attraktiv.", fr: "Il la trouve attirante.", tense: "Présent" },
+                { de: "Endlich gefunden!", fr: "J'ai enfin trouvé !", tense: "Passé Composé" },
+                { de: "Du wirst deinen Platz finden.", fr: "Tu trouveras ta place.", tense: "Futur Simple" },
+                { de: "Ich finde das lustig.", fr: "Je trouve ça drôle.", tense: "Présent" },
+                { de: "Sie fanden das einfach.", fr: "Ils trouvaient ça facile.", tense: "Imparfait" },
+                { de: "Wo hast du das gefunden?", fr: "Où as-tu trouvé ça ?", tense: "Passé Composé" },
+                { de: "Ich finde das schwer zu glauben.", fr: "Je trouve ça dur à croire.", tense: "Présent" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb 🇫🇷 VERB DEVOIR — 20 Sätze</title>
+    <link rel="stylesheet" href="../../assets/css/verb.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">← Zurück zur Verbliste</a>
+            <h1>🇫🇷 Verb DEVOIR</h1>
+            <p class="subtitle">must, to have to — 20 Sätze</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Phrasen suchen..." id="searchInput">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="showAll()">Alle Übersetzungen anzeigen</button>
+            <button class="btn btn-secondary" onclick="hideAll()">Alle Übersetzungen ausblenden</button>
+        </div>
+
+        <div class="stats" id="stats">Zeige: 20 von 20 Phrasen</div>
+
+        <div class="phrase-list" id="phraseList">
+        </div>
+
+        <footer>
+            Französisch-Übung — DEVOIR · <a href="https://github.com/maierru/verb-drill">GitHub</a>
+        </footer>
+    </div>
+
+    <!-- Conjugation FAB -->
+    <button class="conjugation-fab" onclick="openConjugation()" title="Conjugation table">📖</button>
+
+    <!-- Conjugation Modal -->
+    <div class="conjugation-modal" id="conjugationModal">
+        <div class="conjugation-content">
+            <button class="conjugation-close" onclick="closeConjugation()">&times;</button>
+            <h2 class="conjugation-title">🇫🇷 Verb DEVOIR</h2>
+            <div class="tense-explanation">
+                <h4>Présent</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>dois</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>dois</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>doit</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>devons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>devez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>doivent</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Passé Composé</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>ai dû</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>as dû</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>a dû</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>avons dû</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>avez dû</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>ont dû</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Imparfait</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>devais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>devais</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>devait</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>devions</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>deviez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>devaient</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tense-explanation">
+                <h4>Futur Simple</h4>
+                <p></p>
+            </div>
+            <table class="conjugation-table">
+                <thead>
+                    <tr>
+                        <th>Pronoun</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pronoun">je</td>
+                        <td>devrai</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">tu</td>
+                        <td>devras</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">il/elle</td>
+                        <td>devra</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">nous</td>
+                        <td>devrons</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">vous</td>
+                        <td>devrez</td>
+                    </tr>
+                    <tr>
+                        <td class="pronoun">ils/elles</td>
+                        <td>devront</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const VERB_CONFIG = {
+            originKey: 'de',
+            targetKey: 'fr',
+            labels: { target: 'Französisch', showing: 'Zeige', of: 'von', phrases: 'Phrasen' },
+            verbForms: ["dois","doit","devons","devez","doivent","devais","devait","devions","deviez","devaient","dû","devrai","devras","devra","devrons","devrez","devront"],
+            phrases: [
+                { de: "Ich muss jetzt gehen.", fr: "Je dois partir maintenant.", tense: "Présent" },
+                { de: "Du musst lernen.", fr: "Tu dois étudier.", tense: "Présent" },
+                { de: "Sie muss heute arbeiten.", fr: "Elle doit travailler aujourd'hui.", tense: "Présent" },
+                { de: "Wir müssen vorsichtig sein.", fr: "Nous devons être prudents.", tense: "Présent" },
+                { de: "Ich musste warten.", fr: "J'ai dû attendre.", tense: "Passé Composé" },
+                { de: "Er musste früh gehen.", fr: "Il a dû partir tôt.", tense: "Passé Composé" },
+                { de: "Ich werde darüber nachdenken müssen.", fr: "Je devrai y réfléchir.", tense: "Futur Simple" },
+                { de: "Muss ich das tun?", fr: "Dois-je faire ça ?", tense: "Présent" },
+                { de: "Sie müssen sich beeilen.", fr: "Ils doivent se dépêcher.", tense: "Présent" },
+                { de: "Ich schulde dir Geld.", fr: "Je te dois de l'argent.", tense: "Présent" },
+                { de: "Wir mussten unsere Pläne ändern.", fr: "Nous avons dû changer nos plans.", tense: "Passé Composé" },
+                { de: "Du musst das sehen.", fr: "Tu dois voir ça.", tense: "Présent" },
+                { de: "Sie musste zu Hause bleiben.", fr: "Elle a dû rester à la maison.", tense: "Passé Composé" },
+                { de: "Ich muss meine Mutter anrufen.", fr: "Je dois appeler ma mère.", tense: "Présent" },
+                { de: "Er wird zahlen müssen.", fr: "Il devra payer.", tense: "Futur Simple" },
+                { de: "Wir müssen eine Lösung finden.", fr: "Nous devons trouver une solution.", tense: "Présent" },
+                { de: "Ich sollte kommen.", fr: "Je devais venir.", tense: "Imparfait" },
+                { de: "Du musst nicht kommen.", fr: "Tu n'es pas obligé de venir.", tense: "Présent" },
+                { de: "Sie mussten von vorne anfangen.", fr: "Ils ont dû recommencer.", tense: "Passé Composé" },
+                { de: "Ich muss dir etwas sagen.", fr: "Je dois te dire quelque chose.", tense: "Présent" },
+            ]
+        };
+    </script>
+    <script src="../../assets/js/verb.js"></script>
+</body>
+</html>
