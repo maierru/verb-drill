@@ -3,7 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= name %></title>
+    <title><%= name %> — <%= tagline %></title>
+    <meta name="description" content="<%= description %>. Learn <%= languages.map { |l| l['name'] }.join(', ') %> verbs with real-world phrases.">
+    <link rel="canonical" href="<%= site_url %>/">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="<%= name %> — <%= tagline %>">
+    <meta property="og:description" content="<%= description %>">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<%= site_url %>/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="<%= name %>">
+    <meta name="twitter:description" content="<%= description %>">
     <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body>
@@ -32,5 +42,19 @@
             <p><%= name %> — <a href="<%= github_url %>">Open source</a> language practice</p>
         </footer>
     </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "<%= name %>",
+        "description": "<%= description %>",
+        "url": "<%= site_url %>",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "<%= site_url %>/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
 </body>
 </html>

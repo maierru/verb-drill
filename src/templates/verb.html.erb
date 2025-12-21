@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= title %></title>
+    <meta name="description" content="<%= meta_description %>">
+    <link rel="canonical" href="<%= canonical_url %>">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="<%= title %>">
+    <meta property="og:description" content="<%= meta_description %>">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<%= canonical_url %>">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="<%= title %>">
+    <meta name="twitter:description" content="<%= meta_description %>">
+<% alternate_langs.each do |alt| -%>
+    <link rel="alternate" hreflang="<%= alt[:lang] %>" href="<%= alt[:url] %>">
+<% end -%>
     <link rel="stylesheet" href="../../assets/css/verb.css">
 </head>
 <body>
@@ -82,5 +95,23 @@
         };
     </script>
     <script src="../../assets/js/verb.js"></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Course",
+        "name": "<%= title %>",
+        "description": "<%= meta_description %>",
+        "provider": {
+            "@type": "Organization",
+            "name": "Verb Drill",
+            "url": "<%= site_url %>"
+        },
+        "inLanguage": "<%= target_key %>",
+        "audience": {
+            "@type": "Audience",
+            "audienceType": "Language learners"
+        }
+    }
+    </script>
 </body>
 </html>

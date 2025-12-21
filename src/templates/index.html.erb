@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= title %></title>
+    <meta name="description" content="<%= meta_description %>">
+    <link rel="canonical" href="<%= canonical_url %>">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="<%= title %>">
+    <meta property="og:description" content="<%= meta_description %>">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<%= canonical_url %>">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="<%= title %>">
+    <meta name="twitter:description" content="<%= meta_description %>">
     <link rel="stylesheet" href="../assets/css/index.css">
 </head>
 <body>
@@ -35,5 +45,19 @@
             <p><%= footer %> · <a href="https://github.com/maierru/verb-drill">GitHub</a></p>
         </footer>
     </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "<%= title %>",
+        "description": "<%= meta_description %>",
+        "numberOfItems": <%= verbs.length %>,
+        "itemListElement": [
+<% verbs.each_with_index do |verb, i| -%>
+            {"@type": "ListItem", "position": <%= i + 1 %>, "name": "<%= verb[:name] %>", "url": "<%= site_url %>/<%= lang_folder %>/<%= verb[:slug] %>/en.html"}<%= i < verbs.length - 1 ? ',' : '' %>
+<% end -%>
+        ]
+    }
+    </script>
 </body>
 </html>
