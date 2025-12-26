@@ -1,0 +1,614 @@
+{
+  "languages": {
+    "pt-eu": {
+      "title": "Portuguese (European) — Verb Drill",
+      "h1": "🇵🇹 Portuguese (European)",
+      "subtitle": "Select a verb to practice",
+      "verbs": [
+        {
+          "name": "ser",
+          "meaning": "to be (permanent) — 100 phrases",
+          "slug": "ser"
+        },
+        {
+          "name": "estar",
+          "meaning": "to be (temporary) — 100 phrases",
+          "slug": "estar"
+        },
+        {
+          "name": "ter",
+          "meaning": "to have — 100 phrases",
+          "slug": "ter"
+        },
+        {
+          "name": "fazer",
+          "meaning": "to do, to make — 100 phrases",
+          "slug": "fazer"
+        },
+        {
+          "name": "poder",
+          "meaning": "can, to be able to — 100 phrases",
+          "slug": "poder"
+        },
+        {
+          "name": "dizer",
+          "meaning": "to say, to tell — 100 phrases",
+          "slug": "dizer"
+        },
+        {
+          "name": "ir",
+          "meaning": "to go — 100 phrases",
+          "slug": "ir"
+        },
+        {
+          "name": "ver",
+          "meaning": "to see — 100 phrases",
+          "slug": "ver"
+        },
+        {
+          "name": "dar",
+          "meaning": "to give — 100 phrases",
+          "slug": "dar"
+        },
+        {
+          "name": "saber",
+          "meaning": "to know — 100 phrases",
+          "slug": "saber"
+        },
+        {
+          "name": "querer",
+          "meaning": "to want — 100 phrases",
+          "slug": "querer"
+        },
+        {
+          "name": "vir",
+          "meaning": "to come — 100 phrases",
+          "slug": "vir"
+        },
+        {
+          "name": "haver",
+          "meaning": "there is/are, to exist — 100 phrases",
+          "slug": "haver"
+        },
+        {
+          "name": "ficar",
+          "meaning": "to stay, to become — 100 phrases",
+          "slug": "ficar"
+        },
+        {
+          "name": "pôr",
+          "meaning": "to put — 100 phrases",
+          "slug": "por"
+        },
+        {
+          "name": "conseguir",
+          "meaning": "to manage, to be able to — 100 phrases",
+          "slug": "conseguir"
+        },
+        {
+          "name": "dever",
+          "meaning": "should, must, to owe — 100 phrases",
+          "slug": "dever"
+        },
+        {
+          "name": "conhecer",
+          "meaning": "to know, to meet — 100 phrases",
+          "slug": "conhecer"
+        },
+        {
+          "name": "andar",
+          "meaning": "to walk, to go — 100 phrases",
+          "slug": "andar"
+        },
+        {
+          "name": "chegar",
+          "meaning": "to arrive, to reach — 100 phrases",
+          "slug": "chegar"
+        },
+        {
+          "name": "falar",
+          "meaning": "to speak, to talk — 100 phrases",
+          "slug": "falar"
+        },
+        {
+          "name": "achar",
+          "meaning": "to think, to find — 100 phrases",
+          "slug": "achar"
+        },
+        {
+          "name": "precisar",
+          "meaning": "to need — 100 phrases",
+          "slug": "precisar"
+        },
+        {
+          "name": "deixar",
+          "meaning": "to leave, to let — 100 phrases",
+          "slug": "deixar"
+        },
+        {
+          "name": "passar",
+          "meaning": "to pass, to spend (time) — 100 phrases",
+          "slug": "passar"
+        },
+        {
+          "name": "começar",
+          "meaning": "to start, to begin — 100 phrases",
+          "slug": "comecar"
+        },
+        {
+          "name": "sair",
+          "meaning": "to go out, to leave — 100 phrases",
+          "slug": "sair"
+        },
+        {
+          "name": "gostar",
+          "meaning": "to like — 100 phrases",
+          "slug": "gostar"
+        },
+        {
+          "name": "acabar",
+          "meaning": "to finish, to end — 100 phrases",
+          "slug": "acabar"
+        },
+        {
+          "name": "levar",
+          "meaning": "to take, to carry — 100 phrases",
+          "slug": "levar"
+        },
+        {
+          "name": "trazer",
+          "meaning": "to bring — 100 phrases",
+          "slug": "trazer"
+        },
+        {
+          "name": "ouvir",
+          "meaning": "to hear, to listen — 100 phrases",
+          "slug": "ouvir"
+        },
+        {
+          "name": "entender",
+          "meaning": "to understand — 100 phrases",
+          "slug": "entender"
+        },
+        {
+          "name": "pedir",
+          "meaning": "to ask, to request — 100 phrases",
+          "slug": "pedir"
+        },
+        {
+          "name": "encontrar",
+          "meaning": "to find, to meet — 100 phrases",
+          "slug": "encontrar"
+        }
+      ]
+    },
+    "en": {
+      "title": "English — Verb Drill",
+      "h1": "🇬🇧 English",
+      "subtitle": "Select a verb to practice",
+      "verbs": [
+        {
+          "name": "be",
+          "meaning": "to exist, to occur",
+          "slug": "be"
+        },
+        {
+          "name": "have",
+          "meaning": "to possess, to own",
+          "slug": "have"
+        },
+        {
+          "name": "do",
+          "meaning": "to perform, to execute",
+          "slug": "do"
+        },
+        {
+          "name": "say",
+          "meaning": "to speak, to express",
+          "slug": "say"
+        },
+        {
+          "name": "go",
+          "meaning": "to move, to travel",
+          "slug": "go"
+        },
+        {
+          "name": "can",
+          "meaning": "to be able to",
+          "slug": "can"
+        },
+        {
+          "name": "get",
+          "meaning": "to obtain, to receive",
+          "slug": "get"
+        },
+        {
+          "name": "make",
+          "meaning": "to create, to produce",
+          "slug": "make"
+        },
+        {
+          "name": "know",
+          "meaning": "to understand, to be aware",
+          "slug": "know"
+        },
+        {
+          "name": "think",
+          "meaning": "to consider, to believe",
+          "slug": "think"
+        },
+        {
+          "name": "take",
+          "meaning": "to grab, to accept",
+          "slug": "take"
+        },
+        {
+          "name": "see",
+          "meaning": "to view, to understand",
+          "slug": "see"
+        },
+        {
+          "name": "come",
+          "meaning": "to arrive, to approach",
+          "slug": "come"
+        },
+        {
+          "name": "want",
+          "meaning": "to desire, to wish",
+          "slug": "want"
+        },
+        {
+          "name": "look",
+          "meaning": "to see, to appear",
+          "slug": "look"
+        },
+        {
+          "name": "use",
+          "meaning": "to employ, to utilize",
+          "slug": "use"
+        },
+        {
+          "name": "find",
+          "meaning": "to discover, to locate",
+          "slug": "find"
+        },
+        {
+          "name": "give",
+          "meaning": "to provide, to offer",
+          "slug": "give"
+        },
+        {
+          "name": "tell",
+          "meaning": "to inform, to narrate",
+          "slug": "tell"
+        },
+        {
+          "name": "need",
+          "meaning": "to require, to want",
+          "slug": "need"
+        }
+      ]
+    },
+    "es": {
+      "title": "Spanish — Verb Drill",
+      "h1": "🇪🇸 Spanish",
+      "subtitle": "Select a verb to practice",
+      "verbs": [
+        {
+          "name": "ser",
+          "meaning": "to be (permanent)",
+          "slug": "ser"
+        },
+        {
+          "name": "estar",
+          "meaning": "to be (temporary)",
+          "slug": "estar"
+        },
+        {
+          "name": "haber",
+          "meaning": "to have (auxiliary)",
+          "slug": "haber"
+        },
+        {
+          "name": "tener",
+          "meaning": "to have",
+          "slug": "tener"
+        },
+        {
+          "name": "hacer",
+          "meaning": "to do, to make",
+          "slug": "hacer"
+        },
+        {
+          "name": "ir",
+          "meaning": "to go",
+          "slug": "ir"
+        },
+        {
+          "name": "poder",
+          "meaning": "can, to be able to",
+          "slug": "poder"
+        },
+        {
+          "name": "decir",
+          "meaning": "to say, to tell",
+          "slug": "decir"
+        },
+        {
+          "name": "dar",
+          "meaning": "to give",
+          "slug": "dar"
+        },
+        {
+          "name": "saber",
+          "meaning": "to know (facts)",
+          "slug": "saber"
+        },
+        {
+          "name": "querer",
+          "meaning": "to want",
+          "slug": "querer"
+        },
+        {
+          "name": "ver",
+          "meaning": "to see",
+          "slug": "ver"
+        },
+        {
+          "name": "poner",
+          "meaning": "to put",
+          "slug": "poner"
+        },
+        {
+          "name": "deber",
+          "meaning": "must, should",
+          "slug": "deber"
+        },
+        {
+          "name": "venir",
+          "meaning": "to come",
+          "slug": "venir"
+        },
+        {
+          "name": "seguir",
+          "meaning": "to follow, to continue",
+          "slug": "seguir"
+        },
+        {
+          "name": "hablar",
+          "meaning": "to speak",
+          "slug": "hablar"
+        },
+        {
+          "name": "llevar",
+          "meaning": "to carry, to wear",
+          "slug": "llevar"
+        },
+        {
+          "name": "encontrar",
+          "meaning": "to find",
+          "slug": "encontrar"
+        },
+        {
+          "name": "quedar",
+          "meaning": "to stay",
+          "slug": "quedar"
+        }
+      ]
+    },
+    "de": {
+      "title": "German — Verb Drill",
+      "h1": "🇩🇪 German",
+      "subtitle": "Select a verb to practice",
+      "verbs": [
+        {
+          "name": "sein",
+          "meaning": "to be",
+          "slug": "sein"
+        },
+        {
+          "name": "haben",
+          "meaning": "to have",
+          "slug": "haben"
+        },
+        {
+          "name": "werden",
+          "meaning": "to become",
+          "slug": "werden"
+        },
+        {
+          "name": "können",
+          "meaning": "can, to be able to",
+          "slug": "koennen"
+        },
+        {
+          "name": "müssen",
+          "meaning": "must, to have to",
+          "slug": "muessen"
+        },
+        {
+          "name": "sagen",
+          "meaning": "to say",
+          "slug": "sagen"
+        },
+        {
+          "name": "machen",
+          "meaning": "to do, to make",
+          "slug": "machen"
+        },
+        {
+          "name": "geben",
+          "meaning": "to give",
+          "slug": "geben"
+        },
+        {
+          "name": "kommen",
+          "meaning": "to come",
+          "slug": "kommen"
+        },
+        {
+          "name": "sollen",
+          "meaning": "should, ought to",
+          "slug": "sollen"
+        },
+        {
+          "name": "wollen",
+          "meaning": "to want",
+          "slug": "wollen"
+        },
+        {
+          "name": "gehen",
+          "meaning": "to go",
+          "slug": "gehen"
+        },
+        {
+          "name": "wissen",
+          "meaning": "to know (facts)",
+          "slug": "wissen"
+        },
+        {
+          "name": "sehen",
+          "meaning": "to see",
+          "slug": "sehen"
+        },
+        {
+          "name": "lassen",
+          "meaning": "to let, to allow",
+          "slug": "lassen"
+        },
+        {
+          "name": "stehen",
+          "meaning": "to stand",
+          "slug": "stehen"
+        },
+        {
+          "name": "finden",
+          "meaning": "to find",
+          "slug": "finden"
+        },
+        {
+          "name": "bleiben",
+          "meaning": "to stay, to remain",
+          "slug": "bleiben"
+        },
+        {
+          "name": "liegen",
+          "meaning": "to lie, to be located",
+          "slug": "liegen"
+        },
+        {
+          "name": "heißen",
+          "meaning": "to be called",
+          "slug": "heissen"
+        }
+      ]
+    },
+    "fr": {
+      "title": "French — Verb Drill",
+      "h1": "🇫🇷 French",
+      "subtitle": "Select a verb to practice",
+      "verbs": [
+        {
+          "name": "être",
+          "meaning": "to be",
+          "slug": "etre"
+        },
+        {
+          "name": "avoir",
+          "meaning": "to have",
+          "slug": "avoir"
+        },
+        {
+          "name": "faire",
+          "meaning": "to do, to make",
+          "slug": "faire"
+        },
+        {
+          "name": "aller",
+          "meaning": "to go",
+          "slug": "aller"
+        },
+        {
+          "name": "pouvoir",
+          "meaning": "can, to be able to",
+          "slug": "pouvoir"
+        },
+        {
+          "name": "dire",
+          "meaning": "to say",
+          "slug": "dire"
+        },
+        {
+          "name": "vouloir",
+          "meaning": "to want",
+          "slug": "vouloir"
+        },
+        {
+          "name": "voir",
+          "meaning": "to see",
+          "slug": "voir"
+        },
+        {
+          "name": "savoir",
+          "meaning": "to know",
+          "slug": "savoir"
+        },
+        {
+          "name": "devoir",
+          "meaning": "must, to have to",
+          "slug": "devoir"
+        },
+        {
+          "name": "venir",
+          "meaning": "to come",
+          "slug": "venir"
+        },
+        {
+          "name": "falloir",
+          "meaning": "must (impersonal)",
+          "slug": "falloir"
+        },
+        {
+          "name": "prendre",
+          "meaning": "to take",
+          "slug": "prendre"
+        },
+        {
+          "name": "mettre",
+          "meaning": "to put",
+          "slug": "mettre"
+        },
+        {
+          "name": "croire",
+          "meaning": "to believe",
+          "slug": "croire"
+        },
+        {
+          "name": "parler",
+          "meaning": "to speak",
+          "slug": "parler"
+        },
+        {
+          "name": "trouver",
+          "meaning": "to find",
+          "slug": "trouver"
+        },
+        {
+          "name": "aimer",
+          "meaning": "to like, to love",
+          "slug": "aimer"
+        },
+        {
+          "name": "donner",
+          "meaning": "to give",
+          "slug": "donner"
+        },
+        {
+          "name": "passer",
+          "meaning": "to pass, to spend",
+          "slug": "passer"
+        }
+      ]
+    }
+  }
+}
