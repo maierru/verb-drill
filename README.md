@@ -33,6 +33,10 @@ More coming.
 
 Yes. Static HTML, no backend. Save the page or clone the repo.
 
+## iOS App
+
+[Download on App Store](https://apps.apple.com/pt/app/verb-drill/id6756883141?l=en-GB)
+
 ## Contributing
 
 PRs welcome. See `.claude/CLAUDE.md` for structure and how to add verbs.
