@@ -12,12 +12,19 @@ settings:
     TARGETED_DEVICE_FAMILY: "1,2"
     INFOPLIST_KEY_CFBundleDisplayName: "Verb Drill"
 
+packages:
+  Heartbeat:
+    url: https://github.com/maierru/heartbeat-tracker.git
+    from: 1.0.1
+
 targets:
   VerbDrill:
     type: application
     platform: iOS
     sources:
       - VerbDrill
+    dependencies:
+      - package: Heartbeat
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: cc.verb-drill.app
@@ -29,3 +36,10 @@ targets:
         INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+    info:
+      path: VerbDrill/Info.plist
+      properties:
+        UIBackgroundModes:
+          - fetch
+        BGTaskSchedulerPermittedIdentifiers:
+          - cc.verb-drill.heartbeat

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 63;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		0A045C79B8B37CA4649D8F24 /* pt-eu_pedir.json in Resources */ = {isa = PBXBuildFile; fileRef = 43DFBEB4CDD11A3820301EA3 /* pt-eu_pedir.json */; };
 		0B69DBAF8464F9E44CBBE547 /* es_estar.json in Resources */ = {isa = PBXBuildFile; fileRef = 68D33F1C7966282DA9861C00 /* es_estar.json */; };
 		0CE30A675D24E646833E5B0B /* de_werden.json in Resources */ = {isa = PBXBuildFile; fileRef = DC0AD1032C1D16B3B85509A7 /* de_werden.json */; };
+		0D09C400B3E9B506406C3CFC /* Heartbeat in Frameworks */ = {isa = PBXBuildFile; productRef = 585272E05A4D9BE8C7266AC5 /* Heartbeat */; };
 		0F5422C8A49EE6852DA0B6DD /* VerbListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5698F64DC97A49C64C924DC /* VerbListView.swift */; };
 		106DEE9EC434D97CEB066243 /* fr_prendre.json in Resources */ = {isa = PBXBuildFile; fileRef = FAF089B787AD6F1DF15B66B1 /* fr_prendre.json */; };
 		1250DD8B94FC79BA769889B0 /* es_quedar.json in Resources */ = {isa = PBXBuildFile; fileRef = 447CB8C92670D4008B1F2065 /* es_quedar.json */; };
@@ -168,6 +169,7 @@
 		447CB8C92670D4008B1F2065 /* es_quedar.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = es_quedar.json; sourceTree = "<group>"; };
 		4486EB361F898C7160C3E543 /* fr_savoir.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fr_savoir.json; sourceTree = "<group>"; };
 		45A3D54F6F9D74F013B4C0EE /* es_seguir.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = es_seguir.json; sourceTree = "<group>"; };
+		48E1ADABC74CB12176E77581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4A3A643021421D433D6906B8 /* es_decir.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = es_decir.json; sourceTree = "<group>"; };
 		4A7515537AF49DCA5D4A558A /* es_poder.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = es_poder.json; sourceTree = "<group>"; };
 		4AF87BAC2906E623B7E18C0D /* pt-eu_trazer.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "pt-eu_trazer.json"; sourceTree = "<group>"; };
@@ -205,7 +207,7 @@
 		98909C044B67DEADF23CB9F3 /* DrillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillView.swift; sourceTree = "<group>"; };
 		98C111B0E15E5F4F5E06ED81 /* fr_aimer.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fr_aimer.json; sourceTree = "<group>"; };
 		9A1E7635BBEFEEEFF0848B57 /* pt-eu_vir.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "pt-eu_vir.json"; sourceTree = "<group>"; };
-		A0273AE4BF4A485DFE56A10B /* VerbDrill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VerbDrill.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0273AE4BF4A485DFE56A10B /* VerbDrill.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = VerbDrill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A09E2DB538F47AA601BC2544 /* fr_faire.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fr_faire.json; sourceTree = "<group>"; };
 		A3E84FA572E53AB24C4752A9 /* de_gehen.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = de_gehen.json; sourceTree = "<group>"; };
 		A8B6A4826D47A738F8BDAC60 /* pt-eu_querer.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "pt-eu_querer.json"; sourceTree = "<group>"; };
@@ -260,6 +262,17 @@
 		FAF089B787AD6F1DF15B66B1 /* fr_prendre.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fr_prendre.json; sourceTree = "<group>"; };
 		FD26DF631FFB3B2F33827DA1 /* pt-eu_andar.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "pt-eu_andar.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1B523082FE77F6304E725F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D09C400B3E9B506406C3CFC /* Heartbeat in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		1B4F7E0D480CABA9870193DB = {
@@ -408,6 +421,7 @@
 				3819106A77D81F74E11E77AE /* App.swift */,
 				3E8788982BC4CF4860531237 /* Assets.xcassets */,
 				1DF6C282B39078E83D1B3EBE /* ContentView.swift */,
+				48E1ADABC74CB12176E77581 /* Info.plist */,
 				5C5DDB28B380AFF40BE17CC8 /* Models */,
 				579DDB3AC55069D8A1335EFC /* Resources */,
 				B72564AF6B9F5D8F50643F39 /* Views */,
@@ -442,6 +456,7 @@
 			buildPhases = (
 				D67CB687771F3B2C9BCEAA30 /* Sources */,
 				3474ED4399D82503B8BA58EC /* Resources */,
+				D1B523082FE77F6304E725F6 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -449,6 +464,7 @@
 			);
 			name = VerbDrill;
 			packageProductDependencies = (
+				585272E05A4D9BE8C7266AC5 /* Heartbeat */,
 			);
 			productName = VerbDrill;
 			productReference = A0273AE4BF4A485DFE56A10B /* VerbDrill.app */;
@@ -473,6 +489,10 @@
 			);
 			mainGroup = 1B4F7E0D480CABA9870193DB;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				165559EFE83B6EE16F684DC5 /* XCRemoteSwiftPackageReference "heartbeat-tracker" */,
+			);
+			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -633,8 +653,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9QM76V3A3Q;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VerbDrill/Info.plist;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -779,8 +799,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9QM76V3A3Q;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VerbDrill/Info.plist;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -817,6 +837,25 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		165559EFE83B6EE16F684DC5 /* XCRemoteSwiftPackageReference "heartbeat-tracker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maierru/heartbeat-tracker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		585272E05A4D9BE8C7266AC5 /* Heartbeat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 165559EFE83B6EE16F684DC5 /* XCRemoteSwiftPackageReference "heartbeat-tracker" */;
+			productName = Heartbeat;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 892AAF02DB37DA06CD90B058 /* Project object */;
 }
