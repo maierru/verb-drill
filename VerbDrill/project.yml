@@ -15,7 +15,7 @@ settings:
 packages:
   Heartbeat:
     url: https://github.com/maierru/heartbeat-tracker.git
-    from: 1.0.1
+    from: 1.1.0
 
 targets:
   VerbDrill:
@@ -30,7 +30,7 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: cc.verb-drill.app
         GENERATE_INFOPLIST_FILE: YES
         MARKETING_VERSION: "1.1.0"
-        CURRENT_PROJECT_VERSION: "2"
+        CURRENT_PROJECT_VERSION: "3"
         INFOPLIST_KEY_UILaunchScreen_Generation: true
         INFOPLIST_KEY_UISupportedInterfaceOrientations: "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
         INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
